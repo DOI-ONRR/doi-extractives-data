@@ -298,6 +298,13 @@ var howItWorksNativeProductionPageFrontmatter = "---"+os.EOL+
 							"permalink: /how-it-works/native-american-production/"+os.EOL+
 							"redirect_from: /how-it-works/tribal-production/"+os.EOL+
 							"---"+os.EOL;
+							
+var howItWorksStateLawsPageFrontmatter = "---"+os.EOL+
+							"title:  State laws and regulations | How It Works"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /how-it-works/state-laws-and-regulations/"+os.EOL+
+							"redirect_from: /how-it-works/state-legal-fiscal-info/"+os.EOL+
+							"---"+os.EOL;
 
 var howItWorksNativeProductionPageFrontmatter = "---"+os.EOL+
 							"title:  Native American Lands | Natural Resource Production"+os.EOL+
@@ -388,6 +395,7 @@ var explorePageFrontmatter = "---"+os.EOL+
 exports.onPostBuild = () => {
 	console.log("Prepending frontmatter to files...");
     prependFile.sync(__dirname+'/public/how-it-works/coal/index.html', howItWorksCoalPageFrontmatter);
+    prependFile.sync(__dirname+'/public/how-it-works/state-laws-and-regulations/index.html', howItWorksStateLawsPageFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/federal-reforms/index.html', howItWorksFederalReformsPageFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/federal-laws/index.html', howItWorksFederalLawsPageFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/renewables/index.html', howItWorksRenewablesFrontmatter);

@@ -13,6 +13,7 @@ import utils from '../js/utils';
 
 import {PageToc} from '../components/navigation/PageToc'
 
+
 class DefaultTemplate extends React.Component {
 
   constructor(props){

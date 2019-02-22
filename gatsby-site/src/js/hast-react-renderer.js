@@ -18,6 +18,7 @@ import {Accordion} from '../components/layouts/Accordion';
 import {DidYouKnow} from '../components/layouts/DidYouKnow';
 import {ProcessGroup} from '../components/layouts/ProcessGroup';
 import {ProcessStep} from '../components/layouts/ProcessGroup';
+import {MsgPrioritizedStatesSvg} from '../components/maps/MsgPrioritizedStatesSvg'
 
 /***
  * This utility is used to render html and react components from markdown files
@@ -38,6 +39,7 @@ const hastReactRenderer = new rehypeReact({
                 'display-disbursement':DisplayDisbursement,
                 'page-toc': PageToc,
                 'custom-link':Link,
+                'msg-prioritzed-states-svg':MsgPrioritizedStatesSvg,
                 'a': Link,
                 'accordion-component': Accordion,
                 'did-you-know': DidYouKnow,

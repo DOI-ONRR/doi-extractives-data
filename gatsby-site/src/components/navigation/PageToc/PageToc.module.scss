@@ -1,7 +1,7 @@
 @value colors: "../../../css-global/colors.css";
 @value black-light, gray-light, gray-lighter, green-light from colors;
 @value variables: "../../../css-global/variables.scss";
-@value base-padding-lite, portrait-tablet-breakpoint-down from variables;
+@value base-padding-lite, portrait-tablet-breakpoint-up , portrait-tablet-breakpoint-down from variables;
 
 .root {
 	background-color: white;

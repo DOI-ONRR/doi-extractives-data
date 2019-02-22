@@ -15,6 +15,9 @@ import {DisplayDisbursement} from '../components/stats/DisplayDisbursement'
 import {PageToc} from '../components/navigation/PageToc'
 import Link from '../components/utils/temp-link';
 import {Accordion} from '../components/layouts/Accordion';
+import {DidYouKnow} from '../components/layouts/DidYouKnow';
+import {ProcessGroup} from '../components/layouts/ProcessGroup';
+import {ProcessStep} from '../components/layouts/ProcessGroup';
 
 /***
  * This utility is used to render html and react components from markdown files
@@ -37,6 +40,9 @@ const hastReactRenderer = new rehypeReact({
                 'custom-link':Link,
                 'a': Link,
                 'accordion-component': Accordion,
+                'did-you-know': DidYouKnow,
+                'process-group': ProcessGroup,
+                'process-step': ProcessStep,
               },
 
 }).Compiler; 

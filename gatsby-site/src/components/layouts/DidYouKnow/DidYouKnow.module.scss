@@ -1,0 +1,96 @@
+@value colors: "../../../css-global/colors.css";
+@value variables: "../../../css-global/variables.scss";
+@value white, blue, red, black from colors;
+@value portrait-tablet-breakpoint-down, portrait-tablet-breakpoint-up from variables;
+
+.root {
+	border-radius: 5px;
+	display: block;
+	float: left;
+	margin-bottom: 1.25em;
+	margin-right: 2.35765%;
+	margin-top: 40%;
+	overflow: hidden;
+	position: relative;
+	width: 14.70196%;
+	z-index: 3;
+}
+
+.root[aria-expanded=true] {
+	width: 23.23176%;
+}
+
+.headingRed {
+	background-color: red;
+	color: white;
+}
+
+.headingBlue {
+	background-color: blue;
+	color: white;
+}
+
+.heading {
+	font-size: 0.8125rem;
+	font-weight: 600;
+	margin: 0px;
+	line-height: 1.1875rem;
+	padding: 0.73529em;
+	padding-left: 1.25em;
+	text-align: left;
+}
+
+.content {
+	background-color: white;
+	color: black;
+	font-size: 0.8125rem;
+	font-weight: 300;
+	line-height: 1.1875rem;
+	margin: 0;
+	padding: 0.73529em;
+	padding-left: 1.25em;
+}
+
+.contentExpanded {
+	background-color: white;
+	color: black;
+	font-size: 0.8125rem;
+	font-weight: 300;
+	padding: 0.73529em;
+	padding-left: 1.25em;
+}
+
+.toggleContainer {
+	background-color: white;
+	padding-right: 0.73529em;
+	text-align: right;
+	width: 100%;
+}
+
+.toggleButton {
+	background-color: white;
+	color: blue;
+	font-size: 12px;
+	svg {
+	  top: .125em;
+	  left: 0.25em;
+	  position: relative;
+		height: 12px;
+		width: 12px;
+	}
+}
+
+@media screen and (max-width: portrait-tablet-breakpoint-down) {
+	.root {
+		display: block;
+		margin: 0;
+		margin-bottom: 1.25em;
+		width: 100%;
+	}
+
+	.root[aria-expanded=true] {
+		width: 100%;
+	}
+
+}
+

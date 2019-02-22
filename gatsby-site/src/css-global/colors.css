@@ -31,3 +31,6 @@
 @value blue-dark: #086996; /* darker link color for use over @value blue-cthru, for accessibility */
 @value blue-darker: #005078;
 @value blue-deep: #00354f;
+
+/* Reds */
+@value red: #c5403c;

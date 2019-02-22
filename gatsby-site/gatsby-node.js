@@ -3,6 +3,9 @@ const { createFilePath } = require(`gatsby-source-filesystem`);
 
 const GRAPHQL_QUERIES = require('./src/js/graphql-queries');
 
+
+
+
 // Custom Data Transformers
 const DATA_TRANSFORMER_CONSTANTS = require('./src/js/data-transformers/constants');
 const productionVolumesTransformer = require('./src/js/data-transformers/production-volumes-transformer');
@@ -67,14 +70,28 @@ exports.sourceNodes = ({ getNodes, boundActionCreators }) => {
 
 }
 
+
 // Implement the Gatsby API “createPages”. This is called once the
 // data layer is bootstrapped to let plugins create pages from data.
-
-const DEFAULT_TEMPLATE = path.resolve(`src/templates/default.js`);
 exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators;
 
   return Promise.all([createStatePages(createPage, graphql), createHowItWorksPages(createPage, graphql)]);
+};
+
+// Page Templates
+const CONTENT_DEFAULT_TEMPLATE = path.resolve(`src/templates/content-default.js`);
+const HOWITWORKS_DEFAULT_TEMPLATE = path.resolve(`src/templates/how-it-works-default.js`);
+const HOWITWORKS_PROCESS_TEMPLATE = path.resolve(`src/templates/how-it-works-process.js`);
+const getPageTemplate = (templateId) => {
+	switch(templateId) {
+		case 'howitworks-default':
+			return HOWITWORKS_DEFAULT_TEMPLATE;
+		case 'howitworks-process':
+			return HOWITWORKS_PROCESS_TEMPLATE;
+	}
+
+	return CONTENT_DEFAULT_TEMPLATE;
 };
 
 const withPathPrefix = (url, pathPrefix) => {
@@ -210,8 +227,6 @@ const createStatePages = (createPage, graphql) => {
 
 const createHowItWorksPages = (createPage, graphql) => {
 
-	const howItWorksDefault_Template = path.resolve(`src/templates/how-it-works-default.js`);
-
 	const graphQLQueryString = "{"+GRAPHQL_QUERIES.MARKDOWN_HOWITWORKS+GRAPHQL_QUERIES.DISBURSEMENTS_SORT_BY_YEAR_DESC+"}";
 	
 	return new Promise((resolve, reject) => {
@@ -225,7 +240,7 @@ const createHowItWorksPages = (createPage, graphql) => {
 	        	// Create pages for each markdown file.
 		        result.data.allMarkdownRemark.pages.forEach(({ page }) => {
 		          const path = page.frontmatter.permalink;
-		          let template = (path === '/how-it-works/' || path === '/how-it-works/coal/')? howItWorksDefault_Template : DEFAULT_TEMPLATE;
+		          const template = getPageTemplate(page.frontmatter.layout);
 
 		          createPage({
 		            path,
@@ -343,6 +358,12 @@ var howItWorksFederalReformsPageFrontmatter = "---"+os.EOL+
 							"permalink: /how-it-works/federal-reforms/"+os.EOL+
 							"---"+os.EOL;
 
+var howItWorksCoalPageFrontmatter = "---"+os.EOL+
+							"title: Coal | How it Works"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /how-it-works/coal/"+os.EOL+
+							"---"+os.EOL;
+
 var aboutPageFrontmatter = "---"+os.EOL+
 							"title: About"+os.EOL+
 							"layout: none"+os.EOL+
@@ -366,6 +387,7 @@ var explorePageFrontmatter = "---"+os.EOL+
 
 exports.onPostBuild = () => {
 	console.log("Prepending frontmatter to files...");
+    prependFile.sync(__dirname+'/public/how-it-works/coal/index.html', howItWorksCoalPageFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/federal-reforms/index.html', howItWorksFederalReformsPageFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/federal-laws/index.html', howItWorksFederalLawsPageFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/renewables/index.html', howItWorksRenewablesFrontmatter);

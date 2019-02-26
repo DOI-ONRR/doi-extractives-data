@@ -29,10 +29,6 @@ export class ProcessStep extends React.Component {
 		expanded: false,
 	}
 
-	componentDidMount() {
-		console.log("Here");
-	}
-
 	handleClick() {
 		this.setState({expanded: !this.state.expanded})
 	}

@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Helmet from 'react-helmet';
+import Link from '../components/utils/temp-link';
 
 import * as CONSTANTS from '../js/constants';
 
@@ -53,11 +54,11 @@ class HowItWorksDefault extends React.Component {
           <section className="container-page-wrapper">
             <ul>
               <h3>Choose a resource to explore:</h3>
-              <li><a href="/how-it-works/coal/"><CoalIcon /> Coal</a></li>
-              <li><a href="/how-it-works/offshore-oil-gas/"><OilGasIcon /> Oil &amp; Gas</a></li>
-              <li><a href="/how-it-works/minerals/"><MineralsIcon /> Nonenergy Minerals</a></li>
-              <li><a href="/how-it-works/offshore-renewables/"><RenewablesIcon /> Renewables</a></li>
-              <li><a href="/how-it-works/"><ChevronIcon /> Back to How it works</a></li>
+              <li><Link to="/how-it-works/coal/"><CoalIcon /> Coal</Link></li>
+              <li><Link to="/how-it-works/offshore-oil-gas/"><OilGasIcon /> Oil &amp; Gas</Link></li>
+              <li><Link to="/how-it-works/minerals/"><MineralsIcon /> Nonenergy Minerals</Link></li>
+              <li><Link to="/how-it-works/offshore-renewables/"><RenewablesIcon /> Renewables</Link></li>
+              <li><Link to="/how-it-works/"><ChevronIcon /> Back to How it works</Link></li>
             </ul>
           </section>
         </div>

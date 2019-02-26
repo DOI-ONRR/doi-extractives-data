@@ -19,6 +19,7 @@ import {DidYouKnow} from '../components/layouts/DidYouKnow';
 import {ProcessGroup} from '../components/layouts/ProcessGroup';
 import {ProcessStep} from '../components/layouts/ProcessGroup';
 import {MsgPrioritizedStatesSvg} from '../components/maps/MsgPrioritizedStatesSvg'
+import ImgWrapper from '../components/utils/img-wrapper'
 
 /***
  * This utility is used to render html and react components from markdown files
@@ -45,6 +46,7 @@ const hastReactRenderer = new rehypeReact({
                 'did-you-know': DidYouKnow,
                 'process-group': ProcessGroup,
                 'process-step': ProcessStep,
+                'img': ImgWrapper,
               },
 
 }).Compiler; 

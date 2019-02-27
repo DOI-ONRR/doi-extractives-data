@@ -60,7 +60,7 @@ The House of Representatives on Tuesday, February 26, 2019, passed the [Natural 
 
 {% include update-flag.html date="2/14/19" %}
 
-The Senate on Tuesday, February 12, 2019, passed the [Natural Resources Management Act (PDF)](https://www.congress.gov/116/bills/s47/BILLS-116s47pcs.pdf), part of which permanently {{ "authorizes" | term: "authorization" }} the Land and Water Conservation Fund.
+The Senate on Tuesday, February 12, 2019, passed the [Natural Resources Management Act (PDF)](https://www.congress.gov/116/bills/s47/BILLS-116s47pcs.pdf), part of which permanently authorizes the Land and Water Conservation Fund.
 
 Permanent authorization of the LWCF means the fund would be authorized to receive and distribute designated revenue from offshore oil and gas production indefinitely. The annual amount of funding would still be subject to the annual budget process.
 

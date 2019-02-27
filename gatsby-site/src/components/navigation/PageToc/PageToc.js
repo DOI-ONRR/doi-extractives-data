@@ -114,7 +114,7 @@ class PageToc extends React.Component {
 
 		tocState.tocItems = elementArrayToTocArray(allTocElems, excludeClassNames, this.state.scrollOffset);
 
-		this.setState({...tocState, mobileActive: (document.documentElement.clientWidth <= parseInt(styles['portrait-tablet-breakpoint']))});
+		this.setState({...tocState, mobileActive: (document.documentElement.clientWidth <= parseInt(styles['portrait-tablet-breakpoint-down']))});
 	}
 
 	handleClick() {
@@ -129,12 +129,12 @@ class PageToc extends React.Component {
 			<div className={styles.root}>
 				<StickyWrapper bottomBoundary={this.props.bottomBoundary} innerZ="1000">
 					<div className={styles.tocContainer}>
-						<MediaQuery minWidth={styles['portrait-tablet-breakpoint']}>	
+						<MediaQuery minWidth={styles['portrait-tablet-breakpoint-up']}>	
 							{this.state.displayTitle &&
 								<h3 className={styles.displayTitle}>{this.state.displayTitle}</h3>
 							}
 						</MediaQuery>
-						<MediaQuery maxWidth={styles['portrait-tablet-breakpoint']}>	
+						<MediaQuery maxWidth={styles['portrait-tablet-breakpoint-down']}>	
 							<button id='page-toc-toggle' 
 											is="aria-toggle" 
 											aria-controls="page-toc-nav" 

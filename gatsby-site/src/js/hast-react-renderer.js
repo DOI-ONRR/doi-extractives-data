@@ -13,8 +13,13 @@ import {DisplayStatistic} from '../components/utils/DisplayStatistic';
 import {DisplayYear} from '../components/stats/DisplayYear'
 import {DisplayDisbursement} from '../components/stats/DisplayDisbursement'
 import {PageToc} from '../components/navigation/PageToc'
-import Link from '../components/utils/temp-link'
+import Link from '../components/utils/temp-link';
+import {Accordion} from '../components/layouts/Accordion';
+import {DidYouKnow} from '../components/layouts/DidYouKnow';
+import {ProcessGroup} from '../components/layouts/ProcessGroup';
+import {ProcessStep} from '../components/layouts/ProcessGroup';
 import {MsgPrioritizedStatesSvg} from '../components/maps/MsgPrioritizedStatesSvg'
+import ImgWrapper from '../components/utils/img-wrapper'
 
 /***
  * This utility is used to render html and react components from markdown files
@@ -37,6 +42,11 @@ const hastReactRenderer = new rehypeReact({
                 'custom-link':Link,
                 'msg-prioritzed-states-svg':MsgPrioritizedStatesSvg,
                 'a': Link,
+                'accordion-component': Accordion,
+                'did-you-know': DidYouKnow,
+                'process-group': ProcessGroup,
+                'process-step': ProcessStep,
+                'img': ImgWrapper,
               },
 
 }).Compiler; 

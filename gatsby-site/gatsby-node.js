@@ -387,6 +387,7 @@ var howItWorksRevenuesPageFrontmatter = "---"+os.EOL+
 							"title: Revenues | How It Works"+os.EOL+
 							"layout: none"+os.EOL+
 							"permalink: /how-it-works/revenues/"+os.EOL+
+							"---"+os.EOL;
 
 var howItWorksAmlPageFrontmatter = "---"+os.EOL+
 							"title: AML Reclamation Program | How It Works"+os.EOL+

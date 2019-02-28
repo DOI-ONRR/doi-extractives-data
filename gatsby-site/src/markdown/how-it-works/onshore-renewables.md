@@ -15,11 +15,11 @@ permalink: /how-it-works/onshore-renewables/
   <div class="revenues_subpage-tabs">
     <ul>
         <li class="revenues_subpage-tab">
-          <a href="/how-it-works/offshore-oil-gas/">Offshore</a>
+          <a href="/how-it-works/offshore-renewables/">Offshore</a>
         </li>
         </a>
         <li class="revenues_subpage-tab active">
-          <a href="/how-it-works/onshore-oil-gas/">Onshore</a>
+          <a href="/how-it-works/onshore-renewables/">Onshore</a>
         </li>
     </ul>
   </div>

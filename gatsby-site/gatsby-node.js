@@ -83,12 +83,15 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 const CONTENT_DEFAULT_TEMPLATE = path.resolve(`src/templates/content-default.js`);
 const HOWITWORKS_DEFAULT_TEMPLATE = path.resolve(`src/templates/how-it-works-default.js`);
 const HOWITWORKS_PROCESS_TEMPLATE = path.resolve(`src/templates/how-it-works-process.js`);
+const HOWITWORKS_REVENUE_BY_COMPANY_TEMPLATE = path.resolve(`src/templates/how-it-works-revenue-by-company.js`);
 const getPageTemplate = (templateId) => {
 	switch(templateId) {
 		case 'howitworks-default':
 			return HOWITWORKS_DEFAULT_TEMPLATE;
 		case 'howitworks-process':
 			return HOWITWORKS_PROCESS_TEMPLATE;
+		case 'howitworks-revenue-by-company':
+			return HOWITWORKS_REVENUE_BY_COMPANY_TEMPLATE;
 	}
 
 	return CONTENT_DEFAULT_TEMPLATE;
@@ -383,6 +386,12 @@ var howItWorksOnshoreOilGasPageFrontmatter = "---"+os.EOL+
 							"permalink: /how-it-works/onshore-oil-gas/"+os.EOL+
 							"---"+os.EOL;
 
+var howItWorksCompanyRevenue2017Frontmatter = "---"+os.EOL+
+							"title: Federal Revenue By Company (2017) | How it works | Natural Resources Revenue Data"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /how-it-works/federal-revenue-by-company/2017/"+os.EOL+
+							"---"+os.EOL;
+
 var aboutPageFrontmatter = "---"+os.EOL+
 							"title: About"+os.EOL+
 							"layout: none"+os.EOL+
@@ -406,6 +415,7 @@ var explorePageFrontmatter = "---"+os.EOL+
 
 exports.onPostBuild = () => {
 	console.log("Prepending frontmatter to files...");
+    prependFile.sync(__dirname+'/public/how-it-works/federal-revenue-by-company/2017/index.html', howItWorksCompanyRevenue2017Frontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/onshore-oil-gas/index.html', howItWorksOnshoreOilGasPageFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/offshore-oil-gas/index.html', howItWorksOffshoreOilGasPageFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/coal/index.html', howItWorksCoalPageFrontmatter);

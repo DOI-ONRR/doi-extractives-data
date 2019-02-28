@@ -51,7 +51,7 @@ class DefaultTemplate extends React.Component {
 					<article className="container-left-9">
 						{hastReactRenderer(this.props.pathContext.markdown.htmlAst)}
 					</article>
-					<MediaQuery minWidth={767}>	
+					<MediaQuery minWidth={768}>	
 						<div className="container-right-3">			
 							<PageToc scrollOffset={190}/>
 						</div>

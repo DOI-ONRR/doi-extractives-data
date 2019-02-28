@@ -54,6 +54,6 @@ See [where the U.S. gets its coal](http://www.eia.gov/Energyexplained/index.cfm?
 
 There are three common types of reserves, or the amount of a particular natural resource available for extraction:
 
-* **Proved reserves** are the estimated volumes of a natural resource that geological and engineering data demonstrate with reasonable certainty to be recoverable in future years from known reservoirs under existing economic and operating conditions
-* **Technically recoverable resources** include natural resources that can be produced based on current technology, industry practices, and geological knowledge
-* **Economically recoverable resources** are the portion of technically recoverable natural resources that can be profitably produced
+* **Proved reserves** are the estimated volumes of a natural resource that geological and engineering data demonstrate with reasonable certainty to be recoverable in future years from known reservoirs under existing economic and operating conditions.
+* **Technically recoverable resources** include natural resources that can be produced based on current technology, industry practices, and geological knowledge.
+* **Economically recoverable resources** are the portion of technically recoverable natural resources that can be profitably produced.

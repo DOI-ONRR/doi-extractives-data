@@ -14,7 +14,7 @@
   padding: $base-padding-lite;
 }
 
-@include respond-to(tiny-down) {
+@include respond-to(medium-down) {
 	.how-it-works-page-toc {
 		position: absolute;
 		width: 100%;

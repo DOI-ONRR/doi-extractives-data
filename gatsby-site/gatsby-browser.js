@@ -80,7 +80,7 @@ exports.onClientEntry = () => {
   else if(path.includes("/how-it-works") && !lastFourteen.includes("default-page")){
 
     if(path.includes("/native-american-ownership-governance") && !lastFourteen.includes("default-page")){
-      loader.addPagesArray([{"componentChunkName":"component---src-templates-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-native-american-ownership-governance.json","path":path}]);
+      loader.addPagesArray([{"componentChunkName":"component---src-templates-content-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-native-american-ownership-governance.json","path":path}]);
     }
     else if(path.includes("/offshore-oil-gas") && !lastFourteen.includes("default-page")){
       loader.addPagesArray([,{"componentChunkName":"component---src-templates-how-it-works-process-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-offshore-oil-gas.json","path":path}]);
@@ -92,34 +92,34 @@ exports.onClientEntry = () => {
       loader.addPagesArray([,{"componentChunkName":"component---src-templates-how-it-works-process-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-coal.json","path":path}]);
     }
     else if(path.includes("/state-laws-and-regulations") && !lastFourteen.includes("default-page")){
-      loader.addPagesArray([{"componentChunkName":"component---src-templates-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-state-laws-and-regulations.json","path":path}]);
+      loader.addPagesArray([{"componentChunkName":"component---src-templates-content-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-state-laws-and-regulations.json","path":path}]);
     }
     else if(path.includes("/federal-laws") && !lastFourteen.includes("default-page")){
-      loader.addPagesArray([{"componentChunkName":"component---src-templates-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-federal-laws.json","path":path}]);
+      loader.addPagesArray([{"componentChunkName":"component---src-templates-content-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-federal-laws.json","path":path}]);
     }
     else if(path.includes("/federal-reforms") && !lastFourteen.includes("default-page")){
-      loader.addPagesArray([{"componentChunkName":"component---src-templates-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-federal-reforms.json","path":path}]);
+      loader.addPagesArray([{"componentChunkName":"component---src-templates-content-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-federal-reforms.json","path":path}]);
     }
     else if(path.includes("/renewables") && !lastFourteen.includes("default-page")){
-      loader.addPagesArray([{"componentChunkName":"component---src-templates-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-renewables.json","path":path}]);
+      loader.addPagesArray([{"componentChunkName":"component---src-templates-content-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-renewables.json","path":path}]);
     }
     else if(path.includes("/nonenergy-minerals") && !lastFourteen.includes("default-page")){
-      loader.addPagesArray([{"componentChunkName":"component---src-templates-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-nonenergy-minerals.json","path":path}]);
+      loader.addPagesArray([{"componentChunkName":"component---src-templates-content-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-nonenergy-minerals.json","path":path}]);
     }
     else if(path.includes("/fossil-fuels") && !lastFourteen.includes("default-page")){
-      loader.addPagesArray([{"componentChunkName":"component---src-templates-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-fossil-fuels.json","path":path}]);
+      loader.addPagesArray([{"componentChunkName":"component---src-templates-content-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-fossil-fuels.json","path":path}]);
     }
     else if(path.includes("/native-american-production") && !lastFourteen.includes("default-page")){
-      loader.addPagesArray([{"componentChunkName":"component---src-templates-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-native-american-production.json","path":path}]);
+      loader.addPagesArray([{"componentChunkName":"component---src-templates-content-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-native-american-production.json","path":path}]);
     }
     else if(path.includes("/ownership") && !lastFourteen.includes("default-page")){
-      loader.addPagesArray([{"componentChunkName":"component---src-templates-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-ownership.json","path":path}]);
+      loader.addPagesArray([{"componentChunkName":"component---src-templates-content-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-ownership.json","path":path}]);
     }
     else if(path.includes("/native-american-revenue") && !lastFourteen.includes("default-page")){
-      loader.addPagesArray([{"componentChunkName":"component---src-templates-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-native-american-revenue.json","path":path}]);
+      loader.addPagesArray([{"componentChunkName":"component---src-templates-content-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-native-american-revenue.json","path":path}]);
     }
     else if(path.includes("/native-american-economic-impact") && !lastFourteen.includes("default-page")){
-      loader.addPagesArray([{"componentChunkName":"component---src-templates-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-native-american-economic-impact.json","path":path}]);
+      loader.addPagesArray([{"componentChunkName":"component---src-templates-content-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-native-american-economic-impact.json","path":path}]);
     }
     else{
       loader.addPagesArray([{"componentChunkName":"component---src-templates-how-it-works-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works.json","path":path}]);

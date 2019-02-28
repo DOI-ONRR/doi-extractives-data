@@ -392,6 +392,30 @@ var howItWorksCompanyRevenue2017Frontmatter = "---"+os.EOL+
 							"permalink: /how-it-works/federal-revenue-by-company/2017/"+os.EOL+
 							"---"+os.EOL;
 
+var howItWorksCompanyRevenue2016Frontmatter = "---"+os.EOL+
+							"title: Federal Revenue By Company (2016) | How it works | Natural Resources Revenue Data"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /how-it-works/federal-revenue-by-company/2016/"+os.EOL+
+							"---"+os.EOL;
+
+var howItWorksCompanyRevenue2015Frontmatter = "---"+os.EOL+
+							"title: Federal Revenue By Company (2015) | How it works | Natural Resources Revenue Data"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /how-it-works/federal-revenue-by-company/2015/"+os.EOL+
+							"---"+os.EOL;
+
+var howItWorksCompanyRevenue2014Frontmatter = "---"+os.EOL+
+							"title: Federal Revenue By Company (2014) | How it works | Natural Resources Revenue Data"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /how-it-works/federal-revenue-by-company/2014/"+os.EOL+
+							"---"+os.EOL;
+
+var howItWorksCompanyRevenue2013Frontmatter = "---"+os.EOL+
+							"title: Federal Revenue By Company (2013) | How it works | Natural Resources Revenue Data"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /how-it-works/federal-revenue-by-company/2013/"+os.EOL+
+							"---"+os.EOL;
+
 var aboutPageFrontmatter = "---"+os.EOL+
 							"title: About"+os.EOL+
 							"layout: none"+os.EOL+
@@ -415,6 +439,10 @@ var explorePageFrontmatter = "---"+os.EOL+
 
 exports.onPostBuild = () => {
 	console.log("Prepending frontmatter to files...");
+    prependFile.sync(__dirname+'/public/how-it-works/federal-revenue-by-company/2013/index.html', howItWorksCompanyRevenue2013Frontmatter);
+    prependFile.sync(__dirname+'/public/how-it-works/federal-revenue-by-company/2014/index.html', howItWorksCompanyRevenue2014Frontmatter);
+    prependFile.sync(__dirname+'/public/how-it-works/federal-revenue-by-company/2015/index.html', howItWorksCompanyRevenue2015Frontmatter);
+    prependFile.sync(__dirname+'/public/how-it-works/federal-revenue-by-company/2016/index.html', howItWorksCompanyRevenue2016Frontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/federal-revenue-by-company/2017/index.html', howItWorksCompanyRevenue2017Frontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/onshore-oil-gas/index.html', howItWorksOnshoreOilGasPageFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/offshore-oil-gas/index.html', howItWorksOffshoreOilGasPageFrontmatter);

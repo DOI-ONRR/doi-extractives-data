@@ -9,8 +9,9 @@ const WhatsNew = (props) => (
 			<h2>What's new</h2>
 			<p>In our latest release on February 28, 2019, we made the following changes:</p>
         <ul className="list-bullet ribbon-card-top-list">
+          <li>Added <Link to="/explore/#federal-disbursements">disbursements data</Link> back to 2009 (previously 2014–2018)</li>
           <li>Updated the status of the <Link to="/how-it-works/land-and-water-conservation-fund/">Land and Water Conservation Fund</Link> following legislative action</li>
-          <li>Refactors some supporting content to new framework</li>
+          <li>Refactored some supporting content to new framework</li>
           <li>Updated <a href="https://github.com/ONRR/doi-extractives-data/wiki/Content-guide">content guide</a> to encourage consistent use of grammar and style</li>
           <li>Minor content edits and updates</li>
         </ul>

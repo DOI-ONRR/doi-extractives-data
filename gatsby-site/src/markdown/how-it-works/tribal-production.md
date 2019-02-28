@@ -39,8 +39,7 @@ Key documents and resources:
   + [Sample mineral leases](https://www.bia.gov/WhoWeAre/AS-IA/IEED/DEMD/WIL/index.htm)
   + [Oil and Gas](https://bia.gov/WhoWeAre/AS-IA/IEED/DEMD/oilgas/index.htm)
   + [Minerals](https://bia.gov/WhoWeAre/AS-IA/IEED/DEMD/IMO/index.htm)
-  + [Oil and Gas Outlook in Indian Country (PDF)](https://bia.gov/cs/groups/xieed/documents/document/idc1-024535.pdf)
-  + [Information on tribes actively seeking mineral development on their reservations](https://bia.gov/WhoWeAre/AS-IA/IEED/DEMD/IMO/index.htm)
+  + [Information on tribes actively seeking mineral development on their reservations](https://www.bia.gov/as-ia/ieed/division-energy-and-mineral-development/business-development)
 
 ### Oil and gas
 

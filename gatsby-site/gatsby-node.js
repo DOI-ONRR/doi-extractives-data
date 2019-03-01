@@ -1,6 +1,11 @@
 const path = require(`path`);
 const { createFilePath } = require(`gatsby-source-filesystem`);
 
+const GRAPHQL_QUERIES = require('./src/js/graphql-queries');
+
+
+
+
 // Custom Data Transformers
 const DATA_TRANSFORMER_CONSTANTS = require('./src/js/data-transformers/constants');
 const productionVolumesTransformer = require('./src/js/data-transformers/production-volumes-transformer');
@@ -54,23 +59,39 @@ exports.onCreateNode = ({ node, pathPrefix, getNode, boundActionCreators }) => {
 exports.sourceNodes = ({ getNodes, boundActionCreators }) => {
 	const { createNode } = boundActionCreators;
 
-	revenuesTransformer(createNode, 
-		getNodes().filter(n => n.internal.type === DATA_TRANSFORMER_CONSTANTS.REVENUES_MONTHLY_EXCEL));
-
 	productionVolumesTransformer(createNode, 
 		getNodes().filter(n => n.internal.type === DATA_TRANSFORMER_CONSTANTS.PRODUCTION_VOLUMES_EXCEL));
+
+	revenuesTransformer(createNode, 
+		getNodes().filter(n => n.internal.type === DATA_TRANSFORMER_CONSTANTS.REVENUES_MONTHLY_EXCEL));
 
 	federalDisbursementsTransformer(createNode, 
 		getNodes().filter(n => n.internal.type === DATA_TRANSFORMER_CONSTANTS.FEDERAL_DISBURSEMENTS_EXCEL));
 
 }
 
+
 // Implement the Gatsby API “createPages”. This is called once the
 // data layer is bootstrapped to let plugins create pages from data.
 exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators;
 
-  return Promise.all([createStatePages(createPage, graphql)]);
+  return Promise.all([createStatePages(createPage, graphql), createHowItWorksPages(createPage, graphql)]);
+};
+
+// Page Templates
+const CONTENT_DEFAULT_TEMPLATE = path.resolve(`src/templates/content-default.js`);
+const HOWITWORKS_DEFAULT_TEMPLATE = path.resolve(`src/templates/how-it-works-default.js`);
+const HOWITWORKS_PROCESS_TEMPLATE = path.resolve(`src/templates/how-it-works-process.js`);
+const getPageTemplate = (templateId) => {
+	switch(templateId) {
+		case 'howitworks-default':
+			return HOWITWORKS_DEFAULT_TEMPLATE;
+		case 'howitworks-process':
+			return HOWITWORKS_PROCESS_TEMPLATE;
+	}
+
+	return CONTENT_DEFAULT_TEMPLATE;
 };
 
 const withPathPrefix = (url, pathPrefix) => {
@@ -204,6 +225,38 @@ const createStatePages = (createPage, graphql) => {
 	  });
 };
 
+const createHowItWorksPages = (createPage, graphql) => {
+
+	const graphQLQueryString = "{"+GRAPHQL_QUERIES.MARKDOWN_HOWITWORKS+GRAPHQL_QUERIES.DISBURSEMENTS_SORT_BY_YEAR_DESC+"}";
+	
+	return new Promise((resolve, reject) => {
+	    resolve(
+	      graphql(graphQLQueryString).then(result => {
+	        if (result.errors) {
+	        	console.error(result.errors);
+	          reject(result.errors);
+	        }
+	        else{ 
+	        	// Create pages for each markdown file.
+		        result.data.allMarkdownRemark.pages.forEach(({ page }) => {
+		          const path = page.frontmatter.permalink;
+		          const template = getPageTemplate(page.frontmatter.layout);
+
+		          createPage({
+		            path,
+		            component: template,
+		            context: {
+		              markdown: page,
+		              disbursements: result.data.Disbursements.disbursements,
+		            },
+		          });
+		        });
+	        	resolve();
+	        }
+	      })
+	    );
+	  });
+};
 
 exports.modifyBabelrc = ({ babelrc }) => {
   if (process.env.NODE_ENV !== `production`) {
@@ -224,6 +277,111 @@ var prependFile = require('prepend-file');
 var copydir = require('copy-dir');
 var copyfile = require('fs-copy-file-sync');
 var os = require('os');
+
+var howItWorksPageFrontmatter = "---"+os.EOL+
+							"title: How It Works"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /how-it-works/"+os.EOL+
+							"redirect_from: /how-it-works/production/"+os.EOL+
+							"---"+os.EOL;
+
+var howItWorksNativeOwnerPageFrontmatter = "---"+os.EOL+
+							"title:  Native American Lands | Ownership and Governance"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /how-it-works/native-american-ownership-governance/"+os.EOL+
+							"redirect_from: /how-it-works/tribal-ownership-governance/"+os.EOL+
+							"---"+os.EOL;
+							
+var howItWorksNativeProductionPageFrontmatter = "---"+os.EOL+
+							"title:  Native American Lands | Natural Resource Production"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /how-it-works/native-american-production/"+os.EOL+
+							"redirect_from: /how-it-works/tribal-production/"+os.EOL+
+							"---"+os.EOL;
+							
+var howItWorksStateLawsPageFrontmatter = "---"+os.EOL+
+							"title:  State laws and regulations | How It Works"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /how-it-works/state-laws-and-regulations/"+os.EOL+
+							"redirect_from: /how-it-works/state-legal-fiscal-info/"+os.EOL+
+							"---"+os.EOL;
+
+var howItWorksNativeProductionPageFrontmatter = "---"+os.EOL+
+							"title:  Native American Lands | Natural Resource Production"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /how-it-works/native-american-production/"+os.EOL+
+							"redirect_from: /how-it-works/tribal-production/"+os.EOL+
+							"---"+os.EOL;
+
+
+
+var howItWorksOwnershipPageFrontmatter = "---"+os.EOL+
+							"title:  Ownership | How it Works"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /how-it-works/ownership/"+os.EOL+
+							"---"+os.EOL;
+
+var howItWorksNativeRevenuePageFrontmatter = "---"+os.EOL+
+							"title: Native American Lands | Revenue"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /how-it-works/native-american-revenue/"+os.EOL+
+							"redirect_from: /how-it-works/tribal-revenue/"+os.EOL+
+							"---"+os.EOL;
+
+var howItWorksNativeImpactPageFrontmatter = "---"+os.EOL+
+							"title: Native American Lands | Economic Impact"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /how-it-works/native-american-economic-impact/"+os.EOL+
+							"redirect_from: /how-it-works/tribal-economic-impact/"+os.EOL+
+							"---"+os.EOL;
+
+var howItWorksFossilFuelsPageFrontmatter = "---"+os.EOL+
+							"title: Fossil Fuels | How It Works"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /how-it-works/fossil-fuels/"+os.EOL+
+							"---"+os.EOL;
+
+var howItWorksNonenergyMineralsPageFrontmatter = "---"+os.EOL+
+							"title: Nonenergy Minerals | How It Works"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /how-it-works/nonenergy-minerals/"+os.EOL+
+							"---"+os.EOL;
+
+var howItWorksRenewablesFrontmatter = "---"+os.EOL+
+							"title: How It Works"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /how-it-works/renewables/"+os.EOL+
+							"---"+os.EOL;
+
+var howItWorksFederalLawsPageFrontmatter = "---"+os.EOL+
+							"title: How It Works"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /how-it-works/federal-laws/"+os.EOL+
+							"---"+os.EOL;
+
+var howItWorksFederalReformsPageFrontmatter = "---"+os.EOL+
+							"title: How It Works"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /how-it-works/federal-reforms/"+os.EOL+
+							"---"+os.EOL;
+
+var howItWorksCoalPageFrontmatter = "---"+os.EOL+
+							"title: Coal | How it Works"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /how-it-works/coal/"+os.EOL+
+							"---"+os.EOL;
+
+var howItWorksOffshoreOilGasPageFrontmatter = "---"+os.EOL+
+							"title: Offshore Oil & Gas | How it Works"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /how-it-works/offshore-oil-gas/"+os.EOL+
+							"---"+os.EOL;
+
+var howItWorksOnshoreOilGasPageFrontmatter = "---"+os.EOL+
+							"title: Onshore Oil & Gas | How it Works"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /how-it-works/onshore-oil-gas/"+os.EOL+
+							"---"+os.EOL;
 
 var aboutPageFrontmatter = "---"+os.EOL+
 							"title: About"+os.EOL+
@@ -248,6 +406,21 @@ var explorePageFrontmatter = "---"+os.EOL+
 
 exports.onPostBuild = () => {
 	console.log("Prepending frontmatter to files...");
+    prependFile.sync(__dirname+'/public/how-it-works/onshore-oil-gas/index.html', howItWorksOnshoreOilGasPageFrontmatter);
+    prependFile.sync(__dirname+'/public/how-it-works/offshore-oil-gas/index.html', howItWorksOffshoreOilGasPageFrontmatter);
+    prependFile.sync(__dirname+'/public/how-it-works/coal/index.html', howItWorksCoalPageFrontmatter);
+    prependFile.sync(__dirname+'/public/how-it-works/state-laws-and-regulations/index.html', howItWorksStateLawsPageFrontmatter);
+    prependFile.sync(__dirname+'/public/how-it-works/federal-reforms/index.html', howItWorksFederalReformsPageFrontmatter);
+    prependFile.sync(__dirname+'/public/how-it-works/federal-laws/index.html', howItWorksFederalLawsPageFrontmatter);
+    prependFile.sync(__dirname+'/public/how-it-works/renewables/index.html', howItWorksRenewablesFrontmatter);
+    prependFile.sync(__dirname+'/public/how-it-works/nonenergy-minerals/index.html', howItWorksNonenergyMineralsPageFrontmatter);
+    prependFile.sync(__dirname+'/public/how-it-works/fossil-fuels/index.html', howItWorksFossilFuelsPageFrontmatter);
+    prependFile.sync(__dirname+'/public/how-it-works/ownership/index.html', howItWorksOwnershipPageFrontmatter);
+    prependFile.sync(__dirname+'/public/how-it-works/native-american-production/index.html', howItWorksNativeProductionPageFrontmatter);
+    prependFile.sync(__dirname+'/public/how-it-works/native-american-economic-impact/index.html', howItWorksNativeImpactPageFrontmatter);
+    prependFile.sync(__dirname+'/public/how-it-works/native-american-revenue/index.html', howItWorksNativeRevenuePageFrontmatter);
+    prependFile.sync(__dirname+'/public/how-it-works/native-american-ownership-governance/index.html', howItWorksNativeOwnerPageFrontmatter);
+    prependFile.sync(__dirname+'/public/how-it-works/index.html', howItWorksPageFrontmatter);
     prependFile.sync(__dirname+'/public/about/index.html', aboutPageFrontmatter);
     prependFile.sync(__dirname+'/public/explore/index.html', explorePageFrontmatter);
     allStateIds.map((stateId,index) => {

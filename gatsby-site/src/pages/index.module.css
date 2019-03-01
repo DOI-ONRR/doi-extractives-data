@@ -1,5 +1,5 @@
 @value colors: "../css-global/colors.css";
-@value variables: "../css-global/variables.css";
+@value variables: "../css-global/variables.scss";
 @value gray-pale, gray-light, gray-darkest, green-light from colors;
 @value container-max-width from variables;
 

@@ -5,9 +5,25 @@ import React from 'react';
 
 class TempLink extends React.Component {
   render() {
-    const { to, className, ...rest } = this.props;
+    let { to, className, href, ...rest } = this.props;
+    
+    if(href) {
+      if(href.includes('gatsby-public')) {
+        to = href.replace('/gatsby-public', '');
+        to = withPrefix(to);
+      }
+      else if(href.startsWith('/')) {
+        to = withPrefix(href);
+      }
+      else {
+        to = href;
+      }
+    }
+    else {
+      to = withPrefix(to);
+    }
     return (
-      <a {...rest} href={withPrefix(to)} className={className}>
+      <a {...rest} href={to} className={className}>
         {this.props.children}
       </a>
     );

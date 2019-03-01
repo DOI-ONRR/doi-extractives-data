@@ -26,9 +26,11 @@ class Accordion extends React.Component {
   }
 
   render() {
-    const { id, children, text } = this.props;
+    let { id, children, text } = this.props;
     const { expandableId, expanded } = this.state;
     const toggle = () => this.toggle();
+
+    text = (typeof text === 'string')? text.split(',') : text;
 
     return (
       <div id={id} className={styles.root}>

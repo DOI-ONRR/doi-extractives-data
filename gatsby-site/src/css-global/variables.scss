@@ -1,0 +1,28 @@
+:export{
+	sans-serif: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
+	base-font-family: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
+	container-max-width: 60em;
+	/* Padding */
+	base-padding: 1.25em; /* 20px */
+	base-padding-lite: .41667em; /* 6.66px */
+	base-padding-small: 0.7em; /* 11.2px Reduced from .9em */
+	base-padding-base: 1em; /* 16px */
+	base-padding-large: 1.875em; /* 30px */
+	base-padding-extra: 3.125em; /* 50px */
+	base-padding-jumbo: 3.8em; /* 60.8px */
+
+	/* Padding on rem scale */
+	standard-padding: 1.25rem;
+	standard-padding-standard: 1rem;
+	standard-padding-lite: .41667em;
+	standard-padding-small: 0.7rem; /* 11.2px Reduced from .9em */
+	standard-padding-large: 1.875rem; /* 30px */
+	standard-padding-extra: 3.125rem; /* 50px */
+	standard-padding-jumbo: 3.8rem;
+	standard-padding-fluffed: 5rem;
+	standard-padding-separation: 6rem;
+
+	mobile-breakpoint: 481px;
+	portrait-tablet-breakpoint-up: 768px;
+	portrait-tablet-breakpoint-down: 767px;
+}

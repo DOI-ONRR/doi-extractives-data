@@ -383,6 +383,12 @@ var howItWorksOnshoreOilGasPageFrontmatter = "---"+os.EOL+
 							"permalink: /how-it-works/onshore-oil-gas/"+os.EOL+
 							"---"+os.EOL;
 
+var howItWorksLwcfPageFrontmatter = "---"+os.EOL+
+							"title: Land and Water Conservation Fund | How It Works"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /how-it-works/land-and-water-conservation-fund/"+os.EOL+
+							"---"+os.EOL;
+
 var aboutPageFrontmatter = "---"+os.EOL+
 							"title: About"+os.EOL+
 							"layout: none"+os.EOL+
@@ -406,6 +412,7 @@ var explorePageFrontmatter = "---"+os.EOL+
 
 exports.onPostBuild = () => {
 	console.log("Prepending frontmatter to files...");
+    prependFile.sync(__dirname+'/public/how-it-works/land-and-water-conservation-fund/index.html', howItWorksLwcfPageFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/onshore-oil-gas/index.html', howItWorksOnshoreOilGasPageFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/offshore-oil-gas/index.html', howItWorksOffshoreOilGasPageFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/coal/index.html', howItWorksCoalPageFrontmatter);

@@ -91,6 +91,9 @@ exports.onClientEntry = () => {
     else if(path.includes("/coal") && !lastFourteen.includes("default-page")){
       loader.addPagesArray([,{"componentChunkName":"component---src-templates-how-it-works-process-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-coal.json","path":path}]);
     }
+    else if(path.includes("/and-and-water-conservation-fund") && !lastFourteen.includes("default-page")){
+      loader.addPagesArray([{"componentChunkName":"component---src-templates-content-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-and-and-water-conservation-fund.json","path":path}]);
+    }
     else if(path.includes("/state-laws-and-regulations") && !lastFourteen.includes("default-page")){
       loader.addPagesArray([{"componentChunkName":"component---src-templates-content-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-state-laws-and-regulations.json","path":path}]);
     }

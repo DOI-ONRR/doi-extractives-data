@@ -383,6 +383,12 @@ var howItWorksOnshoreOilGasPageFrontmatter = "---"+os.EOL+
 							"permalink: /how-it-works/onshore-oil-gas/"+os.EOL+
 							"---"+os.EOL;
 
+var howItWorksHpfPageFrontmatter = "---"+os.EOL+
+							"title: Historic Preservation Fund | How It Works"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /how-it-works/historic-preservation-fund/"+os.EOL+
+							"---"+os.EOL;
+
 var aboutPageFrontmatter = "---"+os.EOL+
 							"title: About"+os.EOL+
 							"layout: none"+os.EOL+
@@ -406,6 +412,7 @@ var explorePageFrontmatter = "---"+os.EOL+
 
 exports.onPostBuild = () => {
 	console.log("Prepending frontmatter to files...");
+    prependFile.sync(__dirname+'/public/how-it-works/historic-preservation-fund/index.html', howItWorksHpfPageFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/onshore-oil-gas/index.html', howItWorksOnshoreOilGasPageFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/offshore-oil-gas/index.html', howItWorksOffshoreOilGasPageFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/coal/index.html', howItWorksCoalPageFrontmatter);

@@ -10,7 +10,6 @@ class TempLink extends React.Component {
     if(href) {
       if(href.includes('gatsby-public')) {
         to = href.replace('/gatsby-public', '');
-        to = withPrefix(to);
       }
       else if(href.startsWith('/')) {
         to = withPrefix(href);

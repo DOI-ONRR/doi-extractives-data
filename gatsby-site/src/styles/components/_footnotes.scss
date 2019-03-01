@@ -42,6 +42,7 @@ body {
 
   p {
     @include heading('para-md');
+    display: inline;
   }
 
   li {
@@ -49,6 +50,16 @@ body {
   }
 }
 
+.footnote-ref {
+  @include heading('para-sm');
+  @extend .link-charlie;
+  @include font-size(0.75);
+
+  color: $blue;
+  font-weight: $weight-book;
+  line-height: $base-font-size;
+  vertical-align: super; // 2
+} 
 .footnote {
   @include heading('para-sm');
   @extend .link-charlie;

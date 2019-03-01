@@ -2,7 +2,6 @@
 title: Disbursements | How It Works
 layout: content
 permalink: /how-it-works/disbursements/
-description: After collecting revenue from natural resource extraction, the Office of Natural Resources Revenue distributes that revenue to different agencies, funds, and local governments. This process is called "disbursement."
 tag:
 - how it works
 - disbursements
@@ -14,34 +13,14 @@ tag:
 - revenue
 - grants
 - National Park Service
-breadcrumb:
-  - title: How it works
-    permalink: /how-it-works/
-title_display: Disbursements
-nav_items:
-  - name: introduction
-    title: Top
-  - name: disbursement-recipients
-    title: Disbursement recipients
-  - name: disbursements-and-location
-    title: Disbursements and location
-    subnav_items:
-      - name: onshore-and-offshore
-        title: Onshore and offshore
-      - name: disbursements-from-offshore-revenues
-        title: Disbursements from offshore revenues
-      - name: native-american-disbursements
-        title: Native American disbursements
-  - name: revenue-and-disbursement-totals
-    title: Revenue and disbursement totals    
-selector: list
 ---
 
-> {{ page.description }}
+<custom-link to="/how-it-works/" className="breadcrumb link-charlie">How it works</custom-link> /
+# Disbursements
 
-{% include selector.html %}
+> After collecting revenue from natural resource extraction, the Office of Natural Resources Revenue distributes that revenue to different agencies, funds, and local governments. This process is called "disbursement."
 
-Companies pay {{ "bonuses" | term:"bonus" }}, rents, and royalties to extract natural resources on federal lands and waters. The result is revenue collected by the Office of Natural Resources Revenue (ONRR). ONRR then disburses that revenue according to [federal laws and regulations]({{site.baseurl}}/how-it-works/federal-laws/). These laws and regulations govern how, when, and to whom disbursements are paid.
+Companies pay <glossary-term term.key="bonus">bonuses</glossary-term>, rents, and royalties to extract natural resources on federal lands and waters. The result is revenue collected by the Office of Natural Resources Revenue (ONRR). ONRR then disburses that revenue according to [federal laws and regulations](`/how-it-works/federal-laws/). These laws and regulations govern how, when, and to whom disbursements are paid.
 
 ## Disbursement recipients
 
@@ -55,13 +34,13 @@ ONRR disburses revenue to six main funds, recipients, or groups:
 
 - **Native American tribes and individuals**: ONRR disburses 100% of revenue collected from resource extraction on Native American lands back to tribes, nations, and individuals.
 
-- **Land and Water Conservation Fund**: Provides matching grants to states and local governments to buy and develop public outdoor recreation areas across the 50 states. [How this fund works]({{site.baseurl}}/how-it-works/land-and-water-conservation-fund/)
+- **Land and Water Conservation Fund**: Provides matching grants to states and local governments to buy and develop public outdoor recreation areas across the 50 states. [How this fund works](/how-it-works/land-and-water-conservation-fund/)
 
-- **Historic Preservation Fund**: Helps preserve U.S. historical and archaeological sites and cultural heritage through grants to state and tribal historic preservation offices. [How this fund works]({{site.baseurl}}/how-it-works/historic-preservation-fund/)
+- **Historic Preservation Fund**: Helps preserve U.S. historical and archaeological sites and cultural heritage through grants to state and tribal historic preservation offices. [How this fund works](/how-it-works/historic-preservation-fund/)
 
 - **Other funds**: A portion of funds goes back to federal land management agencies to help cover operational costs or special projects. "Other funds" also include disbursements to the Ultra-Deepwater Research Program and the Mescal Settlement Agreement.
 
-We share [disbursements data for each fund by fiscal year]({{site.baseurl}}/explore/#by-fund).
+We share [disbursements data for each fund by fiscal year](/explore/#by-fund).
 
 ## Disbursements and location
 
@@ -77,15 +56,15 @@ ONRR disburses 40% of onshore revenues to the Reclamation Fund to be used for in
 
 #### Native American disbursements
 
-ONRR disburses 100% of revenue collected from resource extraction on Native American lands back to tribes, nations, and individuals. [Learn more about natural resources on Native American land]({{site.baseurl}}/how-it-works/#tribal-overview).
+ONRR disburses 100% of revenue collected from resource extraction on Native American lands back to tribes, nations, and individuals. [Learn more about natural resources on Native American land](/how-it-works/#tribal-overview).
 
 ### Disbursements from offshore revenues
 
 Most offshore areas are under the jurisdiction of the federal government, so offshore revenues make up the majority of disbursements to the U.S. Treasury. The Land and Water Conservation Fund and Historic Preservation Fund receive disbursements exclusively from offshore revenues.
 
-A portion of revenue generated from offshore leases within three miles of a given state's shoreline is shared with that state. This three-mile region is called the {{ "8(g)" | term }} zone.
+A portion of revenue generated from offshore leases within three miles of a given state's shoreline is shared with that state. This three-mile region is called the <glossary-term>8(g)</glossary-term> zone.
 
-Most offshore revenue comes from oil and gas production in the Gulf of Mexico. The [Gulf of Mexico Energy Security Act (GOMESA)]({{site.baseurl}}/how-it-works/gomesa/) of 2006 requires a portion of that revenue be shared with four states that border the Gulf of Mexico: Alabama, Louisiana, Mississippi, and Texas. 
+Most offshore revenue comes from oil and gas production in the Gulf of Mexico. The [Gulf of Mexico Energy Security Act (GOMESA)](/how-it-works/gomesa/) of 2006 requires a portion of that revenue be shared with four states that border the Gulf of Mexico: Alabama, Louisiana, Mississippi, and Texas. 
 
 ## Revenue and disbursement totals
 

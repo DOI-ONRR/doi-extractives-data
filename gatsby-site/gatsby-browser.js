@@ -88,11 +88,14 @@ exports.onClientEntry = () => {
     else if(path.includes("/onshore-oil-gas") && !lastFourteen.includes("default-page")){
       loader.addPagesArray([,{"componentChunkName":"component---src-templates-how-it-works-process-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-onshore-oil-gas.json","path":path}]);
     }
-    else if(path.includes("/coal") && !lastFourteen.includes("default-page")){
+    else if(path.includes("/coal") && !path.includes("/coal-excise-tax")){
       loader.addPagesArray([,{"componentChunkName":"component---src-templates-how-it-works-process-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-coal.json","path":path}]);
     }
     else if(path.includes("/audits-and-assurances") && !lastFourteen.includes("default-page")){
       loader.addPagesArray([{"componentChunkName":"component---src-templates-content-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-audits-and-assurances.json","path":path}]);
+    }
+    else if(path.includes("/coal-excise-tax") && !lastFourteen.includes("default-page")){
+      loader.addPagesArray([{"componentChunkName":"component---src-templates-content-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-coal-excise-tax.json","path":path}]);
     }
     else if(path.includes("/state-laws-and-regulations") && !lastFourteen.includes("default-page")){
       loader.addPagesArray([{"componentChunkName":"component---src-templates-content-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-state-laws-and-regulations.json","path":path}]);

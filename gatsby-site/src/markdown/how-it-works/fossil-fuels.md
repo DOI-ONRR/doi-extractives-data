@@ -39,12 +39,12 @@ To see where oil and gas resources exist and where exploration is taking place, 
 * [Different types of oil and gas plays](http://energy.usgs.gov/OilGas/AssessmentsData/NationalOilGasAssessment.aspx#.VlMX5BCrSV7)
 * [Current and prospective shale plays (PDF)](http://www.eia.gov/oil_gas/rpd/shale_gas.pdf)
 * [Undiscovered, technically recoverable gas resources (PDF)](http://certmapper.cr.usgs.gov/data/noga00/natl/graphic/2013/total_mean_gas_2013.pdf)
-* [Offshore exploration and development plans](http://www.data.boem.gov/homepg/data_center/plans/plans/master.asp)
+* [Offshore exploration and development plans](https://www.boem.gov/Status-of-Gulf-of-Mexico-Plans/)
 
 
 ### Coal
 
-Coal forms in the ground in coal seams or beds. Miners extract coal through surface and subsurface mining. In surface mining, the coal is close to the surface. Miners remove the “overburden,” or the soil and rock covering the coal, before mining it. In subsurface mining, the coal is farther down in the earth. Through passages that go into the earth, miners remove the coal from [underground rooms or long coal seams](http://teeic.indianaffairs.gov/er/coal/restech/tech/index.htm). In 2014, the U.S. was the world’s second largest coal producer after China.
+Coal forms in the ground in coal seams or beds. Miners extract coal through surface and subsurface mining. In surface mining, the coal is close to the surface. Miners remove the “overburden,” or the soil and rock covering the coal, before mining it. In subsurface mining, the coal is farther down in the earth. Through passages that go into the earth, miners remove the coal from underground rooms or long coal seams. In 2014, the U.S. was the world’s second largest coal producer after China.
 
 Coal is concentrated in three regions: the Appalachian Region, the Interior Region, and the Western Region. In recent years, the Western Region — most of which is the Powder River Basin in Wyoming — produced [more than half of U.S. coal](http://www.eia.gov/Energyexplained/index.cfm?page=coal_where). From 2014 to 2015, proved coal reserves [decreased by 5.3% (PDF)](http://www.eia.gov/coal/annual/pdf/table14.pdf).
 
@@ -54,6 +54,6 @@ See [where the U.S. gets its coal](http://www.eia.gov/Energyexplained/index.cfm?
 
 There are three common types of reserves, or the amount of a particular natural resource available for extraction:
 
-* **Proved reserves** are the estimated volumes of a natural resource that geological and engineering data demonstrate with reasonable certainty to be recoverable in future years from known reservoirs under existing economic and operating conditions
-* **Technically recoverable resources** include natural resources that can be produced based on current technology, industry practices, and geological knowledge
-* **Economically recoverable resources** are the portion of technically recoverable natural resources that can be profitably produced
+* **Proved reserves** are the estimated volumes of a natural resource that geological and engineering data demonstrate with reasonable certainty to be recoverable in future years from known reservoirs under existing economic and operating conditions.
+* **Technically recoverable resources** include natural resources that can be produced based on current technology, industry practices, and geological knowledge.
+* **Economically recoverable resources** are the portion of technically recoverable natural resources that can be profitably produced.

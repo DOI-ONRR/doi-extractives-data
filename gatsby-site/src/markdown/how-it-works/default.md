@@ -195,7 +195,7 @@ redirect_from: /how-it-works/production/
             <p><custom-link to="/how-it-works/audits-and-assurances">Learn about audits and assurances</custom-link>.</p>
           </div>
           <div>
-            <h3 class="h3 landing-heading"><custom-link to="/how-it-works/reconciliation">Reconciliation</custom-link></h3>
+            <h3 class="h3 landing-heading"><custom-link to="/how-it-works/reconciliation/2016">Reconciliation</custom-link></h3>
             <p>During the reconciliation process, company reports of payments are compared to government records of revenue received.</p>
             <p><custom-link to="/how-it-works/reconciliation">Learn about reconciliation</custom-link>.</p>
           </div>

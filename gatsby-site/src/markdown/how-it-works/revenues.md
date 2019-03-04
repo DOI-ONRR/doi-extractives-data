@@ -14,11 +14,11 @@ tag:
 ---
 
 <custom-link to="/how-it-works/" className="breadcrumb link-charlie">How it works</custom-link> /
-# Federal laws and regulations
+# Revenues
 
 > Companies pay a wide range of fees, rates, and taxes to extract natural resources in the U.S. The amounts differ depending on the ownership of the resources. We'll cover some of the major types of payments companies make here. They are usually called &#8216;revenue&#8217; because they represent revenue to the American public.
 
-<h2 id="federal-lands-and-waters">Payments to extract natural resources from federal land and waters</h2>
+<h2 id="federal-lands-and-waters" displayTitle="Extraction from federal lands and waters">Payments to extract natural resources from federal land and waters</h2>
 
 When companies extract natural resources on federal onshore lands and the Outer Continental Shelf, they pay revenue to the Department of the Interior (DOI).
 
@@ -171,7 +171,7 @@ Lease holders also pay different fees to the Bureau of Land Management, Bureau o
   </tbody>
 </table>
 
-<h2 id="all-lands-and-waters">Payments to extract natural resources from any land or water in the U.S.</h2>
+<h2 id="all-lands-and-waters" displayTitle="Extraction from any land or water">Payments to extract natural resources from any land or water in the U.S.</h2>
 
 ### Corporate income taxes
 

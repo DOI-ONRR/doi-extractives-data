@@ -1,8 +1,6 @@
 ---
-title: 'AML Reclamation Program | How It Works'
-title_display: Abandoned Mine Land Reclamation Program
+title: AML Reclamation Program | How It Works
 layout: content
-description: The Abandoned Mine Land (AML) Reclamation Program uses fees paid by present-day coal mining companies to reclaim coal mines abandoned before 1977. This makes these areas safer for people and the environment. The Surface Mining Control and Reclamation Act (SMCRA) of 1977 created this program. The program sets standards for today's coal companies as they reclaim past mining areas while they mine others and to post bonds to cover the cost if unable to reclaim current coal mines.
 tag:
 - How it works
 - AML
@@ -12,45 +10,12 @@ tag:
 - Coal
 - Mining
 permalink: /how-it-works/aml-reclamation-program/
-nav_items:
-  - name: intro
-    title: Top
-  - name: abandoned-mine-land-areas
-    title: Areas
-    subnav_items:
-      - name: priority-reclamation-sites
-        title: Priority reclamation sites
-      - name: map-of-sites
-        title: Map of sites
-      - name: areas-undergoing-or-requiring-reclamation
-        title: Areas undergoing or requiring reclamation  
-  - name: revenue-and-disbursements
-    title: Revenue and disbursements
-    subnav_items:
-      - name: fund-distribution
-        title: Fund distribution
-      - name: state-and-tribal-spending
-        title: State and tribal spending
-      - name: certification
-        title: Certification    
-  - name: the-aml-fund
-    title: The AML fund
-    subnav_items:
-      - name: interest-on-the-fund
-        title: Interest on the fund
-      - name: grants-to-states-and-tribes
-        title: Grants to states and tribes
-      - name: the-fund-today
-        title: The fund today
-      - name: allocation-of-unappropriated-balance
-        title: Allocation of unappropriated balance
-breadcrumb:
-  - title: How it works
-    permalink: /how-it-works/
-selector: list
 ---
 
-> The Abandoned Mine Land (AML) Reclamation Program uses fees paid by present-day coal mining companies to {{ "reclaim" | term:"reclamation" }} coal mines abandoned before 1977. This makes these areas safer for people and the environment. The Surface Mining Control and Reclamation Act (SMCRA) of 1977, as amended, created this program. Provisions of the act set standards for today's coal companies as they reclaim past mining areas while they mine others and post bonds to cover the cost if unable to reclaim current coal mines.
+<custom-link to="/how-it-works/" className="breadcrumb link-charlie">How it works</custom-link> /
+# Abandoned Mine Land Reclamation Program
+
+> The Abandoned Mine Land (AML) Reclamation Program uses fees paid by present-day coal mining companies to <glossary-term term.key="reclamation">reclaim</glossary-term> coal mines abandoned before 1977. This makes these areas safer for people and the environment. The Surface Mining Control and Reclamation Act (SMCRA) of 1977, as amended, created this program. Provisions of the act set standards for today's coal companies as they reclaim past mining areas while they mine others and post bonds to cover the cost if unable to reclaim current coal mines.
 
 ## Abandoned mine land areas
 
@@ -66,9 +31,9 @@ State and tribal AML programs rank abandoned mine land problems on a priority sc
 
 ### Map of sites
 
-To see AML data by location, visit the {{ "OSMRE" | term }} [data site](https://amlis.osmre.gov/Map.aspx) and click on 'Mapping' in the navigation bar. 
+To see AML data by location, visit the <glossary-term>OSMRE</glossary-term> [data site](https://amlis.osmre.gov/Map.aspx) and click on 'Mapping' in the navigation bar. 
 
-To see data by completed, funded, and unfunded sites, click on 'Summary.' <a href="https://amlis.osmre.gov/Map.aspx"><img src="{{ site.baseurl }}/public/img/AML_OSMREmap.png" alt="image of Office of Surface Mining Reclamation and Enforcement's data site." class="article_img-100 u-margin-top u-margin-bottom"></a>
+To see data by completed, funded, and unfunded sites, click on 'Summary.' <a href="https://amlis.osmre.gov/Map.aspx"><img src="/public/img/AML_OSMREmap.png" alt="image of Office of Surface Mining Reclamation and Enforcement's data site." class="article_img-100 u-margin-top u-margin-bottom"></a>
 
 ### Areas undergoing or requiring reclamation
 
@@ -145,7 +110,7 @@ Prior to 2006, companies often paid more money into the [AML fund](http://www.os
 
 **Growth of the AML fund's unappropriated balance**
 
-<img src="{{ site.baseurl }}/public/img/AML_unapprop-growth.svg" alt="Chart shows the growth of the AML fund's unappropriated balance from 1989 to 2017. It grew from around $500 million to nearly $2.5 billion dollars in 2015, before falling slightly to $2.38 billion in 2017." class="article_img-100 u-margin-top u-margin-bottom">
+<img src="/public/img/AML_unapprop-growth.svg" alt="Chart shows the growth of the AML fund's unappropriated balance from 1989 to 2017. It grew from around $500 million to nearly $2.5 billion dollars in 2015, before falling slightly to $2.38 billion in 2017." class="article_img-100 u-margin-top u-margin-bottom">
 
 ### Interest on the fund
 

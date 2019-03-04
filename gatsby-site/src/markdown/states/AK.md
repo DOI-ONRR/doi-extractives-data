@@ -27,7 +27,7 @@ locality_name: 'Borough or census area'
 nearby_offshore_region: '<Link to="/explore/offshore-alaska/">offshore Alaska</Link>'
 
 case_study_link: |
-    For a detailed view of how oil extraction affects communities in Alaska, read the [North Slope Borough case study]({{ site.baseurl }}/case-studies/north-slope/).
+    For a detailed view of how oil extraction affects communities in Alaska, read the [North Slope Borough case study](/case-studies/north-slope/).
 
 state_optin_intro: |
     To understand the extractive industries in Alaska, learn about Alaska's unique [land ownership](#understanding-land-ownership), [trust funds](#saving-and-spending), and [revenue sustainability considerations](#revenue-sustainability).

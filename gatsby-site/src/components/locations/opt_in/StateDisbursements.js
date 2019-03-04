@@ -26,7 +26,7 @@ const StateDisbursements = (props) => {
 					<h4>Distribution of {props.usStateData.title} state revenues ({ revenueYear })</h4>
 					
 					<p>
-						In { revenueYear }, the state of {props.usStateData.title} distributed<strong>{utils.formatToDollarInt(revenueTotal)} in state revenue from natural resource extraction</strong> to state and local funds.
+						In { revenueYear }, the state of {props.usStateData.title} distributed <strong>{utils.formatToDollarInt(revenueTotal)} in state revenue from natural resource extraction</strong> to state and local funds.
 					</p>
 
 					<table is="bar-chart-table" class="table-basic">

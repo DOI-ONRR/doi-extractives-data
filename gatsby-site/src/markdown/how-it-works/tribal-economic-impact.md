@@ -22,7 +22,7 @@ Little data exists to measure the economic impact of extraction on Native Americ
 
 ## Gross domestic product and jobs
 
-The Bureau of Economic Analysis, Bureau of Labor Statistics, and the U.S. Census Bureau do not collect Native American-specific information related to the extractive industries. The closest indicator for the extractive industries’ effect on Native American economies comes from the [Department of the Interior’s Economic Report (PDF)](https://www.doi.gov/sites/doi.gov/files/uploads/fy_2016_doi_economic_report_2017-09-25.pdf). See page 10 of this annual report for estimates of the direct economic contribution, total economic contribution, and total value added by DOI’s activities, as well as the total number of domestic jobs supported by those activities.
+The Bureau of Economic Analysis, Bureau of Labor Statistics, and the U.S. Census Bureau do not collect Native American-specific information related to the extractive industries. The closest indicator for the extractive industries’ effect on Native American economies comes from the [Department of the Interior’s Economic Report (PDF)](https://www.doi.gov/sites/doi.gov/files/uploads/fy_2017_econ_report_final_11_1_18.pdf). See page 12 of this annual report for estimates of the direct economic contribution, total economic contribution, and total value added by DOI’s activities, as well as the total number of domestic jobs supported by those activities.
 
 ## Costs
 
@@ -36,4 +36,4 @@ Reclamation activity has occurred or needs to occur on 17 reservations. Three tr
 
 AML reclamation work has been conducted with 14 additional tribes that do not regulate their own AML programs. These tribes, and states like them, are called non-primacy tribes. The majority of identified reclamation has occurred; only five tribes (plus the Navajo Nation) have unfunded reclamation needs.
 
-OSMRE’s [annual evaluation reports](https://www.odocs.osmre.gov/) on Native American AML programs provide more information on the state and history of each AML program, including its status, unfunded costs, and completed costs. The [OSMRE FY2017 Grant Distribution Report (PDF)](https://www.osmre.gov/resources/grants/docs/FY17GrantDist.pdf) provides data about 2017 grants.
+OSMRE’s [annual evaluation reports](https://www.odocs.osmre.gov/) on Native American AML programs provide more information on the state and history of each AML program, including its status, unfunded costs, and completed costs. The [OSMRE Grant Resources page](https://www.osmre.gov/resources/grants.shtm) provides annual grant reports.

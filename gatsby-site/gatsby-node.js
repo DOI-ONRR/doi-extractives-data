@@ -76,19 +76,22 @@ exports.sourceNodes = ({ getNodes, boundActionCreators }) => {
 exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators;
 
-  return Promise.all([createStatePages(createPage, graphql), createHowItWorksPages(createPage, graphql)]);
+  return Promise.all([createStatePages(createPage, graphql), createHowItWorksPages(createPage, graphql), createDownloadsPages(createPage, graphql)]);
 };
 
 // Page Templates
 const CONTENT_DEFAULT_TEMPLATE = path.resolve(`src/templates/content-default.js`);
 const HOWITWORKS_DEFAULT_TEMPLATE = path.resolve(`src/templates/how-it-works-default.js`);
 const HOWITWORKS_PROCESS_TEMPLATE = path.resolve(`src/templates/how-it-works-process.js`);
+const DOWNLOADS_TEMPLATE = path.resolve(`src/templates/downloads-default.js`);
 const getPageTemplate = (templateId) => {
 	switch(templateId) {
 		case 'howitworks-default':
 			return HOWITWORKS_DEFAULT_TEMPLATE;
 		case 'howitworks-process':
 			return HOWITWORKS_PROCESS_TEMPLATE;
+		case 'downloads':
+			return DOWNLOADS_TEMPLATE;
 	}
 
 	return CONTENT_DEFAULT_TEMPLATE;
@@ -248,6 +251,38 @@ const createHowItWorksPages = (createPage, graphql) => {
 		            context: {
 		              markdown: page,
 		              disbursements: result.data.Disbursements.disbursements,
+		            },
+		          });
+		        });
+	        	resolve();
+	        }
+	      })
+	    );
+	  });
+};
+
+const createDownloadsPages = (createPage, graphql) => {
+
+	const graphQLQueryString = "{"+GRAPHQL_QUERIES.MARKDOWN_DOWNLOADS+"}";
+	
+	return new Promise((resolve, reject) => {
+	    resolve(
+	      graphql(graphQLQueryString).then(result => {
+	        if (result.errors) {
+	        	console.error(result.errors);
+	          reject(result.errors);
+	        }
+	        else{ 
+	        	// Create pages for each markdown file.
+		        result.data.allMarkdownRemark.pages.forEach(({ page }) => {
+		          const path = page.frontmatter.permalink;
+		          const template = getPageTemplate(page.frontmatter.layout);
+
+		          createPage({
+		            path,
+		            component: template,
+		            context: {
+		              markdown: page,
 		            },
 		          });
 		        });

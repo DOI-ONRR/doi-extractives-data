@@ -20,6 +20,7 @@ import {ProcessGroup} from '../components/layouts/ProcessGroup';
 import {ProcessStep} from '../components/layouts/ProcessGroup';
 import {MsgPrioritizedStatesSvg} from '../components/maps/MsgPrioritizedStatesSvg'
 import ImgWrapper from '../components/utils/img-wrapper'
+import {DownloadDataLink} from '../components/layouts/icon-links/DownloadDataLink'
 
 /***
  * This utility is used to render html and react components from markdown files
@@ -47,6 +48,7 @@ const hastReactRenderer = new rehypeReact({
                 'process-group': ProcessGroup,
                 'process-step': ProcessStep,
                 'img': ImgWrapper,
+                'download-data-link': DownloadDataLink,
               },
 
 }).Compiler; 

@@ -10,7 +10,7 @@ tag:
 
 # Download Data & Documentation
 
-> We use many government datasets on this site to power our [interactive visualizations]({{ site.baseurl }}/explore/). Some of these are available here for download. For those from other government sources, we provide links so you can find fresh data whenever you need it.
+> We use many government datasets on this site to power our [interactive visualizations](/explore/). Some of these are available here for download. For those from other government sources, we provide links so you can find fresh data whenever you need it.
 
 
 ## Production
@@ -29,9 +29,7 @@ tag:
   <li class="downloads-download_links">
     <a href="/downloads/federal-production/" class="link-no_under"><h3 id="federal-lands-and-waters">Federal lands and waters</h3></a>
     <p>Commodity volumes of natural resources extracted from federal land and waters. We offer production data by calendar year, fiscal year, and month. These datasets are from the <a href="http://www.onrr.gov/">Office of Natural Resources Revenue</a> (ONRR), which is part of the Department of the Interior.</p>
-    <a href="/downloads/federal-production/">
-      {% include data_and_docs.html %}
-    </a>
+    <download-data-link to="/downloads/federal-production/">Downloads and documentation</download-data-link>
   </li>
 
 </ul>
@@ -43,19 +41,15 @@ tag:
     <a href="/downloads/federal-revenue-by-location/" class="link-no_under"><h3 id="all-revenue">
     Revenue</h3></a>
     <p>Federal revenue from natural resources extracted from federal land and waters. We offer revenue data by year, by month, and by company. These datasets are from the <a href="http://www.onrr.gov/">Office of Natural Resources Revenue</a>, which is part of the Department of the Interior.</p>
-    <a href="/downloads/federal-revenue-by-location/">
-      {% include data_and_docs.html %}
-    </a>
+    <download-data-link to="/downloads/federal-revenue-by-location/">Downloads and documentation</download-data-link>
   </li>
 
 <!-- USEITI archive -->
   <li class="downloads-download_links">
     <a href="/downloads/reconciliation/" id="reconciliation" class="link-no_under"><h3>Reconciliation</h3></a>
-    <p class="para-sm">This content was created to support {{ 'USEITI' | term: 'EITI Standard' }} and is no longer being updated.</p>
+    <p class="para-sm">This content was created to support <glossary-term term.key="EITI Standard">USEITI</glossary-term> and is no longer being updated.</p>
     <p>In the reconciliation process, companies report payments to the government (e.g., rents, taxes, royalties) and the government reports what it received. These figures are compiled and reconciled. The 2015 reconciliation data is at the link below.</p>
-    <a href="/downloads/reconciliation/">
-      {% include docs_archive.html %}
-    </a>
+    <download-data-link to="/downloads/reconciliation/">Downloads and documentation</download-data-link>
   </li>
 
   <li class="downloads-download_links">
@@ -76,9 +70,7 @@ tag:
   <li class="downloads-download_links">
     <a href="/downloads/disbursements/" class="link-no_under"><h3 id="disbursements">Disbursements</h3></a>
     <p>The amount of money earned from extraction of natural resources on federal lands that is disbursed to various legislated funds. Our fund overview dataset is from the <a href="http://www.onrr.gov/">Office of Natural Resources Revenue</a>, which is part of the Department of the Interior.</p>
-    <a href="/downloads/disbursements/">
-      {% include data_and_docs.html %}
-    </a>
+    <download-data-link to="/downloads/disbursements/">Downloads and documentation</download-data-link>
   </li>
 </ul>
 
@@ -155,5 +147,3 @@ tag:
 ## Contact us
 
 --------------------------------------------------------------------------------
-
-{% include contact.html %}

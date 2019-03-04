@@ -8,6 +8,9 @@ import hastReactRenderer from '../js/hast-react-renderer';
 import utils from '../js/utils';
 
 import {PageToc} from '../components/navigation/PageToc'
+import GlossaryTerm from '../components/utils/glossary-term'
+
+import CONTACT_INFO from '../data/contact.yml'
 
 class DownloadsTemplate extends React.Component {
 
@@ -29,6 +32,7 @@ class DownloadsTemplate extends React.Component {
 				<section className='layout-content container-page-wrapper container-margin'>
 					<article className="container-left-9">
 						{hastReactRenderer(this.props.pathContext.markdown.htmlAst)}
+						<p>Do you need <GlossaryTerm>ONRR</GlossaryTerm> data that isn't here? Contact our { CONTACT_INFO.data_retrieval.name } team at <a href={"mailto:"+CONTACT_INFO.data_retrieval.email}>{CONTACT_INFO.data_retrieval.email }</a>.</p>
 					</article>
 					<MediaQuery minWidth={768}>	
 						<div className="container-right-3">			

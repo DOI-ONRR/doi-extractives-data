@@ -18,7 +18,7 @@ tag:
 
 > Companies pay a wide range of fees, rates, and taxes to extract natural resources in the U.S. The amounts differ depending on the ownership of the resources. We'll cover some of the major types of payments companies make here. They are usually called &#8216;revenue&#8217; because they represent revenue to the American public.
 
-<h2 id="federal-lands-and-waters" displayTitle="Extraction from federal lands and waters">Payments to extract natural resources from federal land and waters</h2>
+<h2 id="federal-lands-and-waters" alt="Extraction from federal lands and waters">Payments to extract natural resources from federal land and waters</h2>
 
 When companies extract natural resources on federal onshore lands and the Outer Continental Shelf, they pay revenue to the Department of the Interior (DOI).
 
@@ -26,7 +26,7 @@ In general, companies pay bonuses, rents, royalties, or fees and penalties (if i
 
 Lease holders also pay different fees to the Bureau of Land Management, Bureau of Safety and Environmental Enforcement, and Bureau of Ocean Energy Management, often to reimburse the federal government for costs associated with awarding, administering, and enforcing leases. For extracting locatable hardrock minerals on federal lands, companies pay fees, but not royalties under the Mining Law of 1872.
 
-### Revenue streams and rates
+<h3 data-toc-exclude="true">Revenue streams and rates</h3>
 
 <!--Oil and gas-->
 <p style="margin: 2em 0 0 0;"><oil-gas-icon></oil-gas-icon> <strong>Oil and gas</strong></p>
@@ -171,9 +171,9 @@ Lease holders also pay different fees to the Bureau of Land Management, Bureau o
   </tbody>
 </table>
 
-<h2 id="all-lands-and-waters" displayTitle="Extraction from any land or water">Payments to extract natural resources from any land or water in the U.S.</h2>
+<h2 id="all-lands-and-waters" alt="Extraction from any land or water">Payments to extract natural resources from any land or water in the U.S.</h2>
 
-### Corporate income taxes
+<h3 data-toc-exclude="true">Corporate income taxes</h3>
 
 Corporations operating in the extractive industries pay taxes to the IRS on their income. These companies pay federal corporate income taxes regardless of whether they extract natural resources from federal, state, or privately held lands, so long as they have a liability. These companies also pay taxes on income from extracting natural resources and processing them into other products and commodities. There are different types of companies operating in these industries, with different ownership structures, and as a result, they are treated as different taxpayers:
 
@@ -182,13 +182,13 @@ Corporations operating in the extractive industries pay taxes to the IRS on thei
 * Partnerships where two or more members own the business; members individually pay income taxes to the IRS.
 * Sole proprietorships with one individual owner; the individual owner pays personal income tax to the IRS.
 
-### Other taxes and fees
+<h3 data-toc-exclude="true">Other taxes and fees</h3>
 
 In the U.S., coal producers must pay a federal [coal excise tax](/how-it-works/coal-excise-tax/) when they mine coal (a producer is any person or entity that owns the coal after it’s mined from the ground). Producers pay the tax when the coal is first sold or used. The tax does not apply to lignite or to coal mined in the U.S. for export.
 
 The [Abandoned Mine Land (AML) Reclamation Program](/how-it-works/aml-reclamation-program/) uses fees paid by present-day coal mining companies to <glossary-term term.key="reclamation">reclaim</glossary-term> coal mines abandoned before 1977.
 
-### Revenue policy provisions
+<h3 data-toc-display-as="h2">Revenue policy provisions</h3>
 
 While royalty rates can reach as high as 18.75%, and the federal corporate income tax rate can reach as high as 21% depending on company income, companies may pay less. Revenue policy provisions, including royalty relief and tax expenditures, can result in smaller revenue and tax payments to the federal government to promote other policy goals.
 
@@ -209,9 +209,9 @@ Tax expenditures are defined in the law as “revenue losses attributable to pro
 
 The Treasury estimates the total dollar amount of each tax expenditure in a given year and publishes a [report of these estimates](https://www.treasury.gov/resource-center/tax-policy/Pages/Tax-Expenditures.aspx).
 
-## After a payment, what happens to the revenue?
+<h2 data-toc-exclude="true">After a payment, what happens to the revenue?</h2>
 
-### Federal budget process
+<h3 data-toc-display-as="h2">Federal budget process</h3>
 
 Once revenue is collected by the federal government, it passes through a series of budgetary gateways before ultimately funding public services and community development. These gateways are described below, and you can [explore disbursement data here](/explore/#federal-disbursements).
 

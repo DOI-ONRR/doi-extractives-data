@@ -82,8 +82,35 @@ exports.onClientEntry = () => {
     if(path.includes("/native-american-ownership-governance") && !lastFourteen.includes("default-page")){
       loader.addPagesArray([{"componentChunkName":"component---src-templates-content-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-native-american-ownership-governance.json","path":path}]);
     }
+    else if(path.includes("/aml-reclamation-program") && !lastFourteen.includes("default-page")){
+      loader.addPagesArray([,{"componentChunkName":"component---src-templates-content-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-aml-reclamation-program.json","path":path}]);
+    }
     else if(path.includes("/minerals") && !lastFourteen.includes("default-page")){
       loader.addPagesArray([,{"componentChunkName":"component---src-templates-how-it-works-process-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-minerals.json","path":path}]);
+    }
+    else if(path.includes("/onshore-renewables") && !lastFourteen.includes("default-page")){
+      loader.addPagesArray([,{"componentChunkName":"component---src-templates-how-it-works-process-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-onshore-renewables.json","path":path}]);
+    }
+    else if(path.includes("/offshore-renewables") && !lastFourteen.includes("default-page")){
+      loader.addPagesArray([,{"componentChunkName":"component---src-templates-how-it-works-process-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-offshore-renewables.json","path":path}]);
+    }
+    else if(path.includes("/minerals") && !lastFourteen.includes("default-page")){
+      loader.addPagesArray([,{"componentChunkName":"component---src-templates-how-it-works-process-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-minerals.json","path":path}]);
+    }
+    else if(path.includes("/federal-revenue-by-company/2017") && !lastFourteen.includes("default-page")){
+      loader.addPagesArray([,{"componentChunkName":"component---src-templates-how-it-works-revenue-by-company-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-federal-revenue-by-company-2017.json","path":path}]);
+    }
+    else if(path.includes("/federal-revenue-by-company/2016") && !lastFourteen.includes("default-page")){
+      loader.addPagesArray([,{"componentChunkName":"component---src-templates-how-it-works-revenue-by-company-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-federal-revenue-by-company-2016.json","path":path}]);
+    }
+    else if(path.includes("/federal-revenue-by-company/2015") && !lastFourteen.includes("default-page")){
+      loader.addPagesArray([,{"componentChunkName":"component---src-templates-how-it-works-revenue-by-company-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-federal-revenue-by-company-2015.json","path":path}]);
+    }
+    else if(path.includes("/federal-revenue-by-company/2014") && !lastFourteen.includes("default-page")){
+      loader.addPagesArray([,{"componentChunkName":"component---src-templates-how-it-works-revenue-by-company-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-federal-revenue-by-company-2014.json","path":path}]);
+    }
+    else if(path.includes("/federal-revenue-by-company/2013") && !lastFourteen.includes("default-page")){
+      loader.addPagesArray([,{"componentChunkName":"component---src-templates-how-it-works-revenue-by-company-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-federal-revenue-by-company-2013.json","path":path}]);
     }
     else if(path.includes("/offshore-oil-gas") && !lastFourteen.includes("default-page")){
       loader.addPagesArray([,{"componentChunkName":"component---src-templates-how-it-works-process-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-offshore-oil-gas.json","path":path}]);
@@ -91,8 +118,11 @@ exports.onClientEntry = () => {
     else if(path.includes("/onshore-oil-gas") && !lastFourteen.includes("default-page")){
       loader.addPagesArray([,{"componentChunkName":"component---src-templates-how-it-works-process-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-onshore-oil-gas.json","path":path}]);
     }
-    else if(path.includes("/coal") && !lastFourteen.includes("default-page")){
+    else if(path.includes("/coal") && !path.includes("/coal-excise-tax")){
       loader.addPagesArray([,{"componentChunkName":"component---src-templates-how-it-works-process-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-coal.json","path":path}]);
+    }
+    else if(path.includes("/coal-excise-tax") && !lastFourteen.includes("default-page")){
+      loader.addPagesArray([{"componentChunkName":"component---src-templates-content-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-coal-excise-tax.json","path":path}]);
     }
     else if(path.includes("/state-laws-and-regulations") && !lastFourteen.includes("default-page")){
       loader.addPagesArray([{"componentChunkName":"component---src-templates-content-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-state-laws-and-regulations.json","path":path}]);

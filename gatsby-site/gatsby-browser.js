@@ -85,6 +85,15 @@ exports.onClientEntry = () => {
     else if(path.includes("/minerals") && !lastFourteen.includes("default-page")){
       loader.addPagesArray([,{"componentChunkName":"component---src-templates-how-it-works-process-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-minerals.json","path":path}]);
     }
+    else if(path.includes("/onshore-renewables") && !lastFourteen.includes("default-page")){
+      loader.addPagesArray([,{"componentChunkName":"component---src-templates-how-it-works-process-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-onshore-renewables.json","path":path}]);
+    }
+    else if(path.includes("/offshore-renewables") && !lastFourteen.includes("default-page")){
+      loader.addPagesArray([,{"componentChunkName":"component---src-templates-how-it-works-process-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-offshore-renewables.json","path":path}]);
+    }
+    else if(path.includes("/minerals") && !lastFourteen.includes("default-page")){
+      loader.addPagesArray([,{"componentChunkName":"component---src-templates-how-it-works-process-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-minerals.json","path":path}]);
+    }
     else if(path.includes("/offshore-oil-gas") && !lastFourteen.includes("default-page")){
       loader.addPagesArray([,{"componentChunkName":"component---src-templates-how-it-works-process-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-offshore-oil-gas.json","path":path}]);
     }

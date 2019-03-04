@@ -383,6 +383,12 @@ var howItWorksOnshoreOilGasPageFrontmatter = "---"+os.EOL+
 							"permalink: /how-it-works/onshore-oil-gas/"+os.EOL+
 							"---"+os.EOL;
 
+var howItWorksCoalExciseTaxPageFrontmatter = "---"+os.EOL+
+							"title: Onshore Oil & Gas | How it Works"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /how-it-works/coal-excise-tax/"+os.EOL+
+							"---"+os.EOL;
+    
 var howItWorksMineralsPageFrontmatter = "---"+os.EOL+
 							"title: Nonenergy Minerals | How it Works"+os.EOL+
 							"layout: none"+os.EOL+
@@ -412,6 +418,7 @@ var explorePageFrontmatter = "---"+os.EOL+
 
 exports.onPostBuild = () => {
 	console.log("Prepending frontmatter to files...");
+    prependFile.sync(__dirname+'/public/how-it-works/coal-excise-tax/index.html', howItWorksCoalExciseTaxPageFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/minerals/index.html', howItWorksMineralsPageFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/onshore-oil-gas/index.html', howItWorksOnshoreOilGasPageFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/offshore-oil-gas/index.html', howItWorksOffshoreOilGasPageFrontmatter);

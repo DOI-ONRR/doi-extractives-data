@@ -1,25 +1,18 @@
 ---
 title: 'Coal excise tax | How It Works'
 title_display: Coal excise tax
+permalink: /how-it-works/coal-excise-tax/
 layout: content
-description: In the United States, one of the taxes coal producers must pay is a federal excise tax when they mine coal. Producers pay the tax when the coal is first sold or used. The tax does not apply to lignite or to coal mined in the U.S. for export.
 tag:
 - How it works
 - Coal
 - Excise tax
-nav_items:
-  - name: introduction
-    title: Top
-  - name: coal-excise-tax-rates
-    title: Coal excise tax rates
-permalink: /how-it-works/coal-excise-tax/
-breadcrumb:
-  - title: How it works
-    permalink: /how-it-works/
-selector: list
 ---
 
-> In the United States, one of the taxes coal producers must pay is a federal excise tax when they mine coal. Producers pay the tax when the coal is first sold or used.[^1] The tax does not apply to lignite or to coal mined in the U.S. for export. Learn more about [how coal revenues work]({{ site.baseurl }}/how-it-works/coal/).
+<custom-link to="/how-it-works/" className="breadcrumb link-charlie">How it works</custom-link> /
+# Coal excise tax
+
+> In the United States, one of the taxes coal producers must pay is a federal excise tax when they mine coal. Producers pay the tax when the coal is first sold or used.[^1] The tax does not apply to lignite or to coal mined in the U.S. for export. Learn more about [how coal revenues work](/how-it-works/coal/).
 
 This tax originated in 1977 with the Black Lung Revenue Act. The excise tax is the chief source of revenue for the [Black Lung Program](https://www.dol.gov/owcp/dcmwc/) and Black Lung Disability Trust Fund (BLDTF), which pays benefits to miners disabled by black lung disease, as well as their eligible survivors and dependents.[^2]
 
@@ -27,7 +20,7 @@ Coal excise tax payments are collected by the Internal Revenue Service and trans
 
 **Coal excise tax revenue**[^4]
 
-<img src="{{site.baseurl}}/public/img/chart-coal-excise-tax.svg" alt="Bar chart showing Coal Excise tax revenue. The chart compares Mined Underground and Surface mined.">
+<img src="/public/img/chart-coal-excise-tax.svg" alt="Bar chart showing Coal Excise tax revenue. The chart compares Mined Underground and Surface mined.">
 
 ## Coal excise tax rates
 

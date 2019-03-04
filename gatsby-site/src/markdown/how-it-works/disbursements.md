@@ -56,7 +56,7 @@ ONRR disburses 40% of onshore revenues to the Reclamation Fund to be used for in
 
 #### Native American disbursements
 
-ONRR disburses 100% of revenue collected from resource extraction on Native American lands back to tribes, nations, and individuals. [Learn more about natural resources on Native American land](/how-it-works/#tribal-overview).
+ONRR disburses 100% of revenue collected from resource extraction on Native American lands back to tribes, nations, and individuals. [Learn more about natural resources on Native American land](/how-it-works/#native-american-overview).
 
 ### Disbursements from offshore revenues
 

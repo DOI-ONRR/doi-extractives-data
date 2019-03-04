@@ -47,7 +47,7 @@ permalink: /how-it-works/coal/
 			<did-you-know intro='“Fair market value” is determined differently by different state offices.'>BLM guidance allows for flexibility in how state offices estimate fair market value, according to the Government Accountability Office (GAO). Some offices only consider recent comparable sites, while others also estimate future revenue. The GAO report also found that some state offices were falling short on documenting and reviewing fair market value determinations.</did-you-know>
 		  <div class="container">
 		  	<process-group>
-		  		<process-step step.id="1" step.name="Plan">
+		  		<process-step step.id="1" step.name="Plan" expanded="true">
             <p>BLM evaluates federal lands for potential coal extraction through the multiple-use planning process, which includes:</p>
             <ul class="list-bullet">
               <li>Identifying coal to potentially extract on federal land</li>

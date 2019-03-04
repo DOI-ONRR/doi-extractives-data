@@ -66,7 +66,7 @@ permalink: /how-it-works/offshore-oil-gas/
         </ul></did-you-know>
       <div class="container">
         <process-group>
-          <process-step step.id="1" step.name="Plan">
+          <process-step step.id="1" step.name="Plan" expanded="true">
             <p>In accordance with the 1978 OCSLA amendment, BOEM develops a schedule of planning areas across the Outer Continental Shelf to offer for oil and gas leasing. This program is known as the Five Year Outer Continental Shelf Leasing Program. In developing five year plans, BOEM strives to address national energy needs while balancing economic, environmental, and social considerations.</p>
             <p>To implement the program, BOEM creates a programmatic <glossary-term term.key="Environmental Impact Statement (EIS)">Environmental Impact Statement</glossary-term>. The public has the opportunity to comment on the Environmental Impact Statement and the proposed leasing program. BOEM submits public comments for the program, along with the plan, to Congress and the President.</p>   
           </process-step>

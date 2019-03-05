@@ -82,6 +82,12 @@ exports.onClientEntry = () => {
     if(path.includes("/native-american-ownership-governance") && !lastFourteen.includes("default-page")){
       loader.addPagesArray([{"componentChunkName":"component---src-templates-content-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-native-american-ownership-governance.json","path":path}]);
     }
+    else if(path.includes("/aml-reclamation-program") && !lastFourteen.includes("default-page")){
+      loader.addPagesArray([,{"componentChunkName":"component---src-templates-content-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-aml-reclamation-program.json","path":path}]);
+    }
+    else if(path.includes("/revenues") && !lastFourteen.includes("default-page")){
+      loader.addPagesArray([{"componentChunkName":"component---src-templates-content-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-revenues.json","path":path}]);
+    }
     else if(path.includes("/minerals") && !lastFourteen.includes("default-page")){
       loader.addPagesArray([,{"componentChunkName":"component---src-templates-how-it-works-process-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-minerals.json","path":path}]);
     }

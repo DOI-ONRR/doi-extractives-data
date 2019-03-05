@@ -45,11 +45,11 @@ Download revenue by month:
 
 This dataset includes revenues paid by companies to extract natural resources on U.S. federal lands and waters. It also includes revenues generated on Native American tribal and individual lands. It does not include privately owned lands or state lands. The dataset includes data tracked and managed by the Department of the Interior’s Office of Natural Resources Revenue. The data is presented by month, from January 2008 through the most recently completed month (we update the data every month).
 
-### Why are some values negative?
+<h3 alt="Negative values">Why are some values negative?</h3>
 
 Companies can adjust and correct their payments for up to seven years after a transaction takes place. If a company overpays their royalty, rent, or bonus, they are entitled to recover their overpayment. If the overpayment and recovered payment happen in different years, the recovered payment will appear as a negative amount in the data.
 
-### Why is there a Gas value, an Oil value and an Oil & Gas value?
+<h3 alt="Oil and gas values">Why is there a Gas value, an Oil value and an Oil & Gas value?</h3>
 
 “Oil & Gas” is the commodity category used for offshore oil and gas rents and bonuses. At the time of lease sale, it isn’t known whether a lease will produce oil, gas or both oil and gas. After a lease starts producing a commodity (or commodities), the lease owner starts paying royalties. These can then be associated with either oil or gas. Hence, rent and bonus lines of data will be associated with an “Oil & Gas” commodity type, while royalty lines of data will be associated with either “Oil” or “Gas” commodity types.
 

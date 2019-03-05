@@ -31,7 +31,7 @@ state_production: |
 
     **Nonenergy minerals:** In 2013, Wyoming's nonenergy mineral production was valued at over $2.26 billion. Notably, Wyoming produces more trona (the chief source of [soda ash](http://minerals.usgs.gov/minerals/pubs/commodity/soda_ash/)) than any other state, and the largest deposit of trona in the world sits under Sweetwater County in Wyoming. For details about what other minerals are extracted, see the [USGS Minerals Yearbook for Wyoming](http://minerals.usgs.gov/minerals/pubs/state/wy.html).
 state_land: |
-    The state government of Wyoming administers 3.4 million surface acres of land (about 5.5% of the state) and 3.9 million {{ "mineral acres" | term_end }}. For detailed information about land ownership in each county, see the [Wyoming Statewide Parcel Viewer](http://gis.wyo.gov/parcels/).
+    The state government of Wyoming administers 3.4 million surface acres of land (about 5.5% of the state) and 3.9 million <glossary-term>mineral acres</glossary-term>. For detailed information about land ownership in each county, see the [Wyoming Statewide Parcel Viewer](http://gis.wyo.gov/parcels/).
 state_land_production: |
     In FY 2014, 29.3 million short tons of surface-mined coal and 2.4 million short tons of underground-mined coal were extracted on state lands in Wyoming.
 

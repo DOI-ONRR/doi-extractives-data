@@ -46,7 +46,7 @@ state_revenue: |
 
     Alaska collects oil and gas production taxes and royalties based on the assessed value of the gross product, resulting in revenues sensitive to price fluctuations.
 
-    Alaska deducts property taxes paid to municipalities from the amount owed in state taxes. The state collects and retains all property taxes assessed on {{ "unorganized lands" | term:"unorganized land" }}. In 2016, unorganized territory petroleum property taxes totaled $60.4 million, or 54% of the total petroleum property taxes collected by the state.
+    Alaska deducts property taxes paid to municipalities from the amount owed in state taxes. The state collects and retains all property taxes assessed on <glossary-term term.key="unorganized land">unorganized lands</glossary-term>. In 2016, unorganized territory petroleum property taxes totaled $60.4 million, or 54% of the total petroleum property taxes collected by the state.
 state_revenue_sustainability: |
     ![Alaska revenues compared to Alaska revenues from oil and gas for 2010-2018. 2016-18 figures are projected. Total state revenues were highest in 2011, at nearly $20 billion, and ranged from $13.5 billion to $19.5 billion between 2012 and 2014 before dropping to just under $9 billion in 2015. The total petroleum based revenue amount rose from just over $6 billion in 2010 to $10 billion in 2012, then fell steadily to under $3 billion in 2015. For 2016-2018, revenues from petroleum based revenue is projected to drop to about $1.5 billion, then rise to just under $2 billion, while total revenues are expected to rise steadily to just under $11 billion. The average price of oil is listed under the chart for context. The price of oil was highest in 2011 and 2012, at $99 per barrel, and lowest in 2015, when it dropped to just $41.]({{ site.baseurl }}/public/img/AK_revenue_sustainability.svg)
 
@@ -140,7 +140,7 @@ The [Mining, Land, and Water Division](http://dnr.alaska.gov/mlw/) is the primar
 * Managing state mineral exploration, development and leasing programs on 96 million acres of state lands available for exploration
 * Planning, leasing, and permitting industrial use mines
 * Administering the [Surface Coal Mining Control and Reclamation Program](http://dnr.alaska.gov/mlw/mining/coal/)
-* Administering the [Abandoned Mine Land Program](http://dnr.alaska.gov/mlw/mining/aml/), which regulates surface mines and mining {{ "reclamation" | term }} activities (in 2014, there were 23 sites awaiting reclamation)
+* Administering the [Abandoned Mine Land Program](http://dnr.alaska.gov/mlw/mining/aml/), which regulates surface mines and mining <glossary-term>reclamation</glossary-term> activities (in 2014, there were 23 sites awaiting reclamation)
 * Overseeing major land development project authorizations like the North Slope
 * Publishing information on [Public Land Titles](http://dnr.alaska.gov/mlw/title/index.cfm) and [State Land Sales](http://dnr.alaska.gov/mlw/landsale/index.cfm)
 * Publishing Alaska’s [mineral development policies (PDF)](http://dnr.alaska.gov/mlw/mining/AK_MineralPolicy.pdf), [mining factsheets](http://dnr.alaska.gov/mlw/factsht/), and [mining regulations](http://dnr.alaska.gov/mlw/mining/sb175.pdf)

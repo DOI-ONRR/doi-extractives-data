@@ -84,7 +84,7 @@ exports.onClientEntry = () => {
     loader.addPagesArray([{"componentChunkName":"component---src-pages-downloads-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"federal-production-by-month.json","path": path}]);
   }
   else if(path.includes("/downloads")){
-    loader.addPagesArray([{"componentChunkName":"component---src-pages-downloads-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"downloads.json","path": path}]);
+    loader.addPagesArray([{"componentChunkName":"component---src-templates-downloads-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"downloads.json","path": path}]);
   }
   else if(path.includes("/how-it-works") && !lastFourteen.includes("default-page")){
 

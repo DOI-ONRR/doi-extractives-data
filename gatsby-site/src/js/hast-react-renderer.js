@@ -20,6 +20,9 @@ import {ProcessGroup} from '../components/layouts/ProcessGroup';
 import {ProcessStep} from '../components/layouts/ProcessGroup';
 import {MsgPrioritizedStatesSvg} from '../components/maps/MsgPrioritizedStatesSvg'
 import ImgWrapper from '../components/utils/img-wrapper'
+import IconArchive from '-!svg-react-loader!../img/svg/icon-archive.svg';
+import {DataArchiveLink} from '../components/layouts/icon-links/DataArchiveLink';
+import {ArchiveBanner} from '../components/info/ArchiveBanner'
 import CoalIcon from '-!svg-react-loader!../img/svg/icon-coal.svg';
 import OilGasIcon from '-!svg-react-loader!../img/svg/icon-oil.svg';
 import HardrockIcon from '-!svg-react-loader!../img/svg/icon-hardrock.svg';
@@ -52,6 +55,9 @@ const hastReactRenderer = new rehypeReact({
                 'process-group': ProcessGroup,
                 'process-step': ProcessStep,
                 'img': ImgWrapper,
+                'icon-archive': IconArchive,
+                'data-archive-link': DataArchiveLink,
+                'archive-banner': ArchiveBanner,
                 'coal-icon': CoalIcon,
                 'oil-gas-icon': OilGasIcon,
                 'hardrock-icon': HardrockIcon,

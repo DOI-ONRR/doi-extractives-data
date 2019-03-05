@@ -83,6 +83,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 const CONTENT_DEFAULT_TEMPLATE = path.resolve(`src/templates/content-default.js`);
 const HOWITWORKS_DEFAULT_TEMPLATE = path.resolve(`src/templates/how-it-works-default.js`);
 const HOWITWORKS_PROCESS_TEMPLATE = path.resolve(`src/templates/how-it-works-process.js`);
+const HOWITWORKS_RECONCILIATION_TEMPLATE = path.resolve(`src/templates/how-it-works-reconciliation.js`);
 const HOWITWORKS_REVENUE_BY_COMPANY_TEMPLATE = path.resolve(`src/templates/how-it-works-revenue-by-company.js`);
 const getPageTemplate = (templateId) => {
 	switch(templateId) {
@@ -90,6 +91,8 @@ const getPageTemplate = (templateId) => {
 			return HOWITWORKS_DEFAULT_TEMPLATE;
 		case 'howitworks-process':
 			return HOWITWORKS_PROCESS_TEMPLATE;
+		case 'how-it-works-reconciliation':
+			return HOWITWORKS_RECONCILIATION_TEMPLATE;
 		case 'howitworks-revenue-by-company':
 			return HOWITWORKS_REVENUE_BY_COMPANY_TEMPLATE;
 	}
@@ -440,6 +443,18 @@ var howItWorksCoalExciseTaxPageFrontmatter = "---"+os.EOL+
 							"permalink: /how-it-works/coal-excise-tax/"+os.EOL+
 							"---"+os.EOL;
 
+var howItWorksReconcile2015PageFrontmatter = "---"+os.EOL+
+							"title: Reconciliation | How it works"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /how-it-works/reconciliation/2015/"+os.EOL+
+							"---"+os.EOL;
+
+var howItWorksReconcile2016PageFrontmatter = "---"+os.EOL+
+							"title: Reconciliation | How it works"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /how-it-works/reconciliation/2016/"+os.EOL+
+							"---"+os.EOL;
+ 
 var howItWorksMineralsPageFrontmatter = "---"+os.EOL+
 							"title: Nonenergy Minerals | How it Works"+os.EOL+
 							"layout: none"+os.EOL+
@@ -481,6 +496,8 @@ var explorePageFrontmatter = "---"+os.EOL+
 
 exports.onPostBuild = () => {
 	console.log("Prepending frontmatter to files...");
+    prependFile.sync(__dirname+'/public/how-it-works/reconciliation/2015/index.html', howItWorksReconcile2015PageFrontmatter);
+    prependFile.sync(__dirname+'/public/how-it-works/reconciliation/2016/index.html', howItWorksReconcile2016PageFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/disbursements/index.html', howItWorksDisbursementsPageFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/revenues/index.html', howItWorksRevenuesPageFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/aml-reclamation-program/index.html', howItWorksAmlPageFrontmatter);

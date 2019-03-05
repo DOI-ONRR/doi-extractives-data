@@ -87,10 +87,10 @@ exports.onClientEntry = () => {
     loader.addPagesArray([{"componentChunkName":"component---src-templates-downloads-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"federal-revenue-by-location.json","path": path}]);
   }
   else if(path.includes("/downloads/federal-production/")){
-    loader.addPagesArray([{"componentChunkName":"component---src-templates-downloads-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"federal-production.json","path": path}]);
+    loader.addPagesArray([{"componentChunkName":"component---src-templates-downloads-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"downloads-federal-production.json","path": path}]);
   }
   else if(path.includes("/downloads/federal-production-by-month/")){
-    loader.addPagesArray([{"componentChunkName":"component---src-templates-downloads-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"federal-production-by-month.json","path": path}]);
+    loader.addPagesArray([{"componentChunkName":"component---src-templates-downloads-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"downloads-federal-production-by-month.json","path": path}]);
   }
   else if(path.includes("/downloads")){
     loader.addPagesArray([{"componentChunkName":"component---src-templates-downloads-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"downloads.json","path": path}]);

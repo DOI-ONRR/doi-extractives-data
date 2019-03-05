@@ -538,7 +538,7 @@ var explorePageFrontmatter = "---"+os.EOL+
 
 exports.onPostBuild = () => {
 	console.log("Prepending frontmatter to files...");
-    prependFile.sync(__dirname+'/public/how-it-works/downloads/index.html', downloadsPageFrontmatter);
+    prependFile.sync(__dirname+'/public/downloads/index.html', downloadsPageFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/reconciliation/2015/index.html', howItWorksReconcile2015PageFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/reconciliation/2016/index.html', howItWorksReconcile2016PageFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/disbursements/index.html', howItWorksDisbursementsPageFrontmatter);

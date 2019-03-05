@@ -1,6 +1,6 @@
 ---
 title: Reconciliation | Documentation
-layout: content
+layout: downloads
 permalink: /downloads/reconciliation/
 tag:
 - Data

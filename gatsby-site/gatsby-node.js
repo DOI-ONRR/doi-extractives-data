@@ -386,6 +386,12 @@ var howItWorksOnshoreOilGasPageFrontmatter = "---"+os.EOL+
 							"permalink: /how-it-works/onshore-oil-gas/"+os.EOL+
 							"---"+os.EOL;
 
+var howItWorksRevenuesPageFrontmatter = "---"+os.EOL+
+							"title: Revenues | How It Works"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /how-it-works/revenues/"+os.EOL+
+							"---"+os.EOL;
+
 var howItWorksAmlPageFrontmatter = "---"+os.EOL+
 							"title: AML Reclamation Program | How It Works"+os.EOL+
 							"layout: none"+os.EOL+
@@ -469,6 +475,8 @@ var explorePageFrontmatter = "---"+os.EOL+
 
 exports.onPostBuild = () => {
 	console.log("Prepending frontmatter to files...");
+    prependFile.sync(__dirname+'/public/how-it-works/revenues/index.html', howItWorksRevenuesPageFrontmatter);
+    prependFile.sync(__dirname+'/public/how-it-works/aml-reclamation-program/index.html', howItWorksAmlPageFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/aml-reclamation-program/index.html', howItWorksAmlPageFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/federal-revenue-by-company/2013/index.html', howItWorksCompanyRevenue2013Frontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/federal-revenue-by-company/2014/index.html', howItWorksCompanyRevenue2014Frontmatter);

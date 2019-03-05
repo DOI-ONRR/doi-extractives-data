@@ -10,11 +10,9 @@ tag:
 - Reconciliation
 archive: true
 ---
-
 <custom-link to="/downloads/" className="breadcrumb link-charlie">Downloads</custom-link> /
 # Reconciliation
 
-<archive-banner></archive-banner>
 
 > As a part of the implementation of the <glossary-term>EITI Standard</glossary-term>, companies reported payments to the government (e.g., rents, taxes, royalties) and the government reported what it received. These figures were compiled and reconciled by an <glossary-term>Independent Administrator (IA)</glossary-term> and published. The 2015 USEITI Report reconciled calendar year 2013 data. The 2016 USEITI Report reconciled calendar year 2015 data.
 
@@ -42,11 +40,11 @@ After the independent administrator compared company payments to government reve
 
 Several companies also allowed for corporate income tax reconciliation. Of the companies invited to participate, only C-corporations are eligible to report taxes.
 
-<img src="/public/img/reconciliation-revenue-report.png" alt="Chart the scope of reconciliation reporting participation in 2013: Thousands of companies large and small, $12.64 billion unilaterally disclosed by DOI, 45 companies invited to report, $10.44 billion in-scope revenue reported by DOI, 31 companies reported $8.5 billion which represents 81% of in-scope DOI revenue and 67% of DOI revenue unilaterally disclosed by DOI" class="article_img-60 u-margin-top" />
+<img src="/public/img/reconciliation-revenue-report.png" alt="Chart the scope of reconciliation reporting participation in 2013: Thousands of companies large and small, $12.64 billion unilaterally disclosed by DOI, 45 companies invited to report, $10.44 billion in-scope revenue reported by DOI, 31 companies reported $8.5 billion which represents 81% of in-scope DOI revenue and 67% of DOI revenue unilaterally disclosed by DOI" class="article_img-60 u-margin-top">
 
-<img src="/public/img/reconciliation-revenue-rec.png" alt="Chart the scope of reconciliation reporting participation in 2013: Thousands of companies large and small, $12.64 billion unilaterally disclosed by DOI, 45 companies invited to report, $10.44 billion in-scope revenue reported by DOI, 31 companies reported $8.5 billion which represents 81% of in-scope DOI revenue and 67% of DOI revenue unilaterally disclosed by DOI" class="article_img-60 u-margin-top" />
+<img src="/public/img/reconciliation-revenue-rec.png" alt="Chart the scope of reconciliation reporting participation in 2013: Thousands of companies large and small, $12.64 billion unilaterally disclosed by DOI, 45 companies invited to report, $10.44 billion in-scope revenue reported by DOI, 31 companies reported $8.5 billion which represents 81% of in-scope DOI revenue and 67% of DOI revenue unilaterally disclosed by DOI" class="article_img-60 u-margin-top">
 
-<img src="/public/img/reconciliation-taxes.png" alt="Chart of 2013 federal corporate income taxes reported: Thousands of companies large and small, $11.8 billion in corporate tax receipts, 41 applicable companies maximum, 12 companies reported net $190 million, comes from 2013 IRS statistics from Petroleum and coal products manufacturing and mining industries" class="article_img-60 u-margin-top" />
+<img src="/public/img/reconciliation-taxes.png" alt="Chart of 2013 federal corporate income taxes reported: Thousands of companies large and small, $11.8 billion in corporate tax receipts, 41 applicable companies maximum, 12 companies reported net $190 million, comes from 2013 IRS statistics from Petroleum and coal products manufacturing and mining industries" class="article_img-60 u-margin-top">
 
 ## Scope
 

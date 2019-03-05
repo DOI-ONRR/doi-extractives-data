@@ -10,7 +10,9 @@ import styles from "./PageToc.module.scss"
 
 import {StickyWrapper} from '../../utils/StickyWrapper';
 
-const tocSubAttr = 'data-toc-sub';
+const TOC_SUB_ATTRB = 'data-toc-sub';
+const TOC_EXCLUDE_ATTRB = 'data-toc-exclude';
+const TOC_DISPLAY_AS_ATTRB = 'data-toc-display-as';
 
 /**
  * This component assumes a single main tag for the page and a single h1 element (which is the title for the menu).
@@ -165,10 +167,10 @@ class PageToc extends React.Component {
 													<a href={"#"+tocItem.id} onClick={this.handleClick.bind(this)}>
 														{ (tocItem.getAttribute('alt') || tocItem.innerText) }
 													</a>
-													{tocItem[tocSubAttr] &&
+													{tocItem[TOC_SUB_ATTRB] &&
 														<ul className={styles.tocSub}>
 															{
-																tocItem[tocSubAttr].map((tocSubItem, subIndex) => {
+																tocItem[TOC_SUB_ATTRB].map((tocSubItem, subIndex) => {
 																	return (
 																		<li className={styles.tocSubItem} key={subIndex+tocSubItem.id+"-toc-sub-item"}>
 																			<a data-toc-type="sub" href={"#"+tocSubItem.id} onClick={this.handleClick.bind(this)}>
@@ -195,7 +197,8 @@ class PageToc extends React.Component {
 }
 
 PageToc.propTypes = {
-	/** Can pass a default title or it will be resolved by the H1 tag **/
+	/** Can pass a default title or it will be resolved by the H1 tag 
+			Can also use on heading tags to diaply a new label **/
 	displayTitle: PropTypes.string,
 	/** Can hide title if not needed **/
 	shouldDisplayTitle: PropTypes.bool,
@@ -205,6 +208,8 @@ PageToc.propTypes = {
 	scrollOffset: PropTypes.oneOfType([PropTypes.string,PropTypes.number]),
 	/** An array of all class names to not use in the toc **/
 	excludeClassNames:  PropTypes.oneOfType([PropTypes.string,PropTypes.array]),
+	/** Can use onm heading tags to change the hierarchy of the element **/
+	displayAs: PropTypes.string,
 }
 
 PageToc.defaultProps = {
@@ -230,9 +235,9 @@ const elementArrayToTocArray = (elems, excludeClassNames, offset) => {
 	}
 
 	const addChild = (elem, parent) => {
-		parent[tocSubAttr] = parent[tocSubAttr] || [];
+		parent[TOC_SUB_ATTRB] = parent[TOC_SUB_ATTRB] || [];
 		createTocItem(elem);
-		parent[tocSubAttr].push(elem);
+		parent[TOC_SUB_ATTRB].push(elem);
 	}
 
 	let filteredElems = elems;
@@ -251,18 +256,25 @@ const elementArrayToTocArray = (elems, excludeClassNames, offset) => {
 
 		// Clear any previous info
 		filteredElems.forEach((elem) => {
-			elem[tocSubAttr] = undefined;
+			elem[TOC_SUB_ATTRB] = undefined;
 		})
 
 		filteredElems.map((elem, index) => {
-			if(parseInt(elem.tagName.slice(-1)) > parseInt(currentTocItem.tagName.slice(-1))){
-				addChild(elem, currentTocItem);
+			let currentElemHierarchyIndex = ( elem.getAttribute(TOC_DISPLAY_AS_ATTRB) )? 
+							parseInt(elem.getAttribute(TOC_DISPLAY_AS_ATTRB)) : parseInt(elem.tagName.slice(-1)) 
+
+			if(currentElemHierarchyIndex > parseInt(currentTocItem.tagName.slice(-1))){
+				if(elem.getAttribute(TOC_EXCLUDE_ATTRB) !== 'true') {
+					addChild(elem, currentTocItem);
+				}
 			}
 			else {
-				createTocItem(elem);
-				currentTocItem = elem;
+				if(elem.getAttribute(TOC_EXCLUDE_ATTRB) !== 'true') {
+					createTocItem(elem);
+					currentTocItem = elem;
 
-				toc.push(elem);
+					toc.push(elem);
+				}
 			}
 
 			// make sure last element is able to be active, given the max scroll value vs pos of last element

@@ -32,6 +32,7 @@ module.exports = Object.freeze({
 	          permalink
 	          layout
 	          redirect_from
+            report_year
 	        }
 	        htmlAst
 	      }

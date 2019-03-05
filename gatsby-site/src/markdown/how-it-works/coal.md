@@ -1,7 +1,6 @@
 ---
 title: Coal | How it Works
 layout: howitworks-process
-description: The Department of the Interior is responsible for 570 million acres of federal land with coal resources. This responsibility comes from the Mineral Leasing Act of 1920 and the Mineral Leasing Act for Acquired Lands of 1947, as amended.
 tag:
 - How it works
 - Coal

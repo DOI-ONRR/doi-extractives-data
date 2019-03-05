@@ -84,6 +84,7 @@ const CONTENT_DEFAULT_TEMPLATE = path.resolve(`src/templates/content-default.js`
 const HOWITWORKS_DEFAULT_TEMPLATE = path.resolve(`src/templates/how-it-works-default.js`);
 const HOWITWORKS_PROCESS_TEMPLATE = path.resolve(`src/templates/how-it-works-process.js`);
 const HOWITWORKS_RECONCILIATION_TEMPLATE = path.resolve(`src/templates/how-it-works-reconciliation.js`);
+const HOWITWORKS_REVENUE_BY_COMPANY_TEMPLATE = path.resolve(`src/templates/how-it-works-revenue-by-company.js`);
 const getPageTemplate = (templateId) => {
 	switch(templateId) {
 		case 'howitworks-default':
@@ -92,6 +93,8 @@ const getPageTemplate = (templateId) => {
 			return HOWITWORKS_PROCESS_TEMPLATE;
 		case 'how-it-works-reconciliation':
 			return HOWITWORKS_RECONCILIATION_TEMPLATE;
+		case 'howitworks-revenue-by-company':
+			return HOWITWORKS_REVENUE_BY_COMPANY_TEMPLATE;
 	}
 
 	return CONTENT_DEFAULT_TEMPLATE;
@@ -386,6 +389,54 @@ var howItWorksOnshoreOilGasPageFrontmatter = "---"+os.EOL+
 							"permalink: /how-it-works/onshore-oil-gas/"+os.EOL+
 							"---"+os.EOL;
 
+var howItWorksDisbursementsPageFrontmatter = "---"+os.EOL+
+							"title: Disbursements | How it Works"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /how-it-works/disbursements/"+os.EOL+
+							"---"+os.EOL;
+
+var howItWorksRevenuesPageFrontmatter = "---"+os.EOL+
+							"title: Revenues | How It Works"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /how-it-works/revenues/"+os.EOL+
+							"---"+os.EOL;
+
+var howItWorksAmlPageFrontmatter = "---"+os.EOL+
+							"title: AML Reclamation Program | How It Works"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /how-it-works/aml-reclamation-program/"+os.EOL+
+							"---"+os.EOL;
+
+var howItWorksCompanyRevenue2017Frontmatter = "---"+os.EOL+
+							"title: Federal Revenue By Company (2017) | How it works | Natural Resources Revenue Data"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /how-it-works/federal-revenue-by-company/2017/"+os.EOL+
+							"---"+os.EOL;
+
+var howItWorksCompanyRevenue2016Frontmatter = "---"+os.EOL+
+							"title: Federal Revenue By Company (2016) | How it works | Natural Resources Revenue Data"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /how-it-works/federal-revenue-by-company/2016/"+os.EOL+
+							"---"+os.EOL;
+
+var howItWorksCompanyRevenue2015Frontmatter = "---"+os.EOL+
+							"title: Federal Revenue By Company (2015) | How it works | Natural Resources Revenue Data"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /how-it-works/federal-revenue-by-company/2015/"+os.EOL+
+							"---"+os.EOL;
+
+var howItWorksCompanyRevenue2014Frontmatter = "---"+os.EOL+
+							"title: Federal Revenue By Company (2014) | How it works | Natural Resources Revenue Data"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /how-it-works/federal-revenue-by-company/2014/"+os.EOL+
+							"---"+os.EOL;
+
+var howItWorksCompanyRevenue2013Frontmatter = "---"+os.EOL+
+							"title: Federal Revenue By Company (2013) | How it works | Natural Resources Revenue Data"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /how-it-works/federal-revenue-by-company/2013/"+os.EOL+
+							"---"+os.EOL;
+
 var howItWorksCoalExciseTaxPageFrontmatter = "---"+os.EOL+
 							"title: Onshore Oil & Gas | How it Works"+os.EOL+
 							"layout: none"+os.EOL+
@@ -402,6 +453,24 @@ var howItWorksReconcile2016PageFrontmatter = "---"+os.EOL+
 							"title: Reconciliation | How it works"+os.EOL+
 							"layout: none"+os.EOL+
 							"permalink: /how-it-works/reconciliation/2016/"+os.EOL+
+							"---"+os.EOL;
+ 
+var howItWorksMineralsPageFrontmatter = "---"+os.EOL+
+							"title: Nonenergy Minerals | How it Works"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /how-it-works/minerals/"+os.EOL+
+							"---"+os.EOL;
+
+var howItWorksOnshoreRenewablesPageFrontmatter = "---"+os.EOL+
+							"title: Onshore Renewables | How it Works"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /how-it-works/onshore-renewables/"+os.EOL+
+							"---"+os.EOL;
+
+var howItWorksOffshoreRenewablesPageFrontmatter = "---"+os.EOL+
+							"title: Offshore Renewables | How it Works"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /how-it-works/offshore-renewables/"+os.EOL+
 							"---"+os.EOL;
 
 var aboutPageFrontmatter = "---"+os.EOL+
@@ -429,7 +498,19 @@ exports.onPostBuild = () => {
 	console.log("Prepending frontmatter to files...");
     prependFile.sync(__dirname+'/public/how-it-works/reconciliation/2015/index.html', howItWorksReconcile2015PageFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/reconciliation/2016/index.html', howItWorksReconcile2016PageFrontmatter);
+    prependFile.sync(__dirname+'/public/how-it-works/disbursements/index.html', howItWorksDisbursementsPageFrontmatter);
+    prependFile.sync(__dirname+'/public/how-it-works/revenues/index.html', howItWorksRevenuesPageFrontmatter);
+    prependFile.sync(__dirname+'/public/how-it-works/aml-reclamation-program/index.html', howItWorksAmlPageFrontmatter);
+    prependFile.sync(__dirname+'/public/how-it-works/aml-reclamation-program/index.html', howItWorksAmlPageFrontmatter);
+    prependFile.sync(__dirname+'/public/how-it-works/federal-revenue-by-company/2013/index.html', howItWorksCompanyRevenue2013Frontmatter);
+    prependFile.sync(__dirname+'/public/how-it-works/federal-revenue-by-company/2014/index.html', howItWorksCompanyRevenue2014Frontmatter);
+    prependFile.sync(__dirname+'/public/how-it-works/federal-revenue-by-company/2015/index.html', howItWorksCompanyRevenue2015Frontmatter);
+    prependFile.sync(__dirname+'/public/how-it-works/federal-revenue-by-company/2016/index.html', howItWorksCompanyRevenue2016Frontmatter);
+    prependFile.sync(__dirname+'/public/how-it-works/federal-revenue-by-company/2017/index.html', howItWorksCompanyRevenue2017Frontmatter);
+    prependFile.sync(__dirname+'/public/how-it-works/offshore-renewables/index.html', howItWorksOffshoreRenewablesPageFrontmatter);
+    prependFile.sync(__dirname+'/public/how-it-works/onshore-renewables/index.html', howItWorksOnshoreRenewablesPageFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/coal-excise-tax/index.html', howItWorksCoalExciseTaxPageFrontmatter);
+    prependFile.sync(__dirname+'/public/how-it-works/minerals/index.html', howItWorksMineralsPageFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/onshore-oil-gas/index.html', howItWorksOnshoreOilGasPageFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/offshore-oil-gas/index.html', howItWorksOffshoreOilGasPageFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/coal/index.html', howItWorksCoalPageFrontmatter);

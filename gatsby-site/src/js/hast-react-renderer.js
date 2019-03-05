@@ -23,6 +23,11 @@ import ImgWrapper from '../components/utils/img-wrapper'
 import IconArchive from '-!svg-react-loader!../img/svg/icon-archive.svg';
 import {DataArchiveLink} from '../components/layouts/icon-links/DataArchiveLink';
 import {ArchiveBanner} from '../components/info/ArchiveBanner'
+import CoalIcon from '-!svg-react-loader!../img/svg/icon-coal.svg';
+import OilGasIcon from '-!svg-react-loader!../img/svg/icon-oil.svg';
+import HardrockIcon from '-!svg-react-loader!../img/svg/icon-hardrock.svg';
+import RenewablesIcon from '-!svg-react-loader!../img/svg/icon-renewables.svg';
+import ChevronIcon from '-!svg-react-loader!../img/svg/chevron-lt.svg';
 
 /***
  * This utility is used to render html and react components from markdown files
@@ -53,6 +58,11 @@ const hastReactRenderer = new rehypeReact({
                 'icon-archive': IconArchive,
                 'data-archive-link': DataArchiveLink,
                 'archive-banner': ArchiveBanner,
+                'coal-icon': CoalIcon,
+                'oil-gas-icon': OilGasIcon,
+                'hardrock-icon': HardrockIcon,
+                'renewables-icon': RenewablesIcon,
+                'chevron-icon': ChevronIcon,
               },
 
 }).Compiler; 

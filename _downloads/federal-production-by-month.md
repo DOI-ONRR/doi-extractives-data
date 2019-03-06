@@ -43,7 +43,7 @@ tag:
 
 <p class="downloads-download_links-intro">Download production data by month:
   <ul class="downloads-download_links list-unstyled">
-    <li><a href="{{site.baseurl}}/downloads/monthly_production_02-2019.xlsx">{% include svg/icon-download.svg %}Production by month, 1/2008–10/2018 (xlsx, 51 KB)</a></li>
+    <li><a href="{{site.baseurl}}/downloads/monthly_production_03-2019.xlsx">{% include svg/icon-download.svg %}Production by month, 1/2008–11/2018 (xlsx, 54 KB)</a></li>
   </ul>
 </p>
 
@@ -69,7 +69,7 @@ The sum of 12-month production totals for a given calendar or fiscal year may no
 
 _Month_ The month for which the production was reported.
 
-_Calendar Year_ The calendar year for the month in which the production was reported. 
+_Calendar Year_ The calendar year for the month in which the production was reported.
 
 _Land Class_ This field distinguishes federal lands and waters from Native American lands.
 

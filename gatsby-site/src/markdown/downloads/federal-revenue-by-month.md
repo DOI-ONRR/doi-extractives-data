@@ -1,7 +1,7 @@
 ---
 title: Revenue by Month | Documentation
 layout: downloads
-permalink: /downloads/federal-revenue-by-month/ 
+permalink: /downloads/federal-revenue-by-month/
 tag:
 - Data
 - Downloads
@@ -38,7 +38,7 @@ tag:
 Download revenue by month:
 
 <ul class="downloads-download_links list-unstyled">
-  <li><download-link to="/downloads/monthly_revenue_01-2019.xlsx">Revenue by month, 1/2008–01/2019 (xlsx, 295 KB)</download-link></li>
+  <li><download-link to="/downloads/monthly_revenue_02-2019.xlsx">Revenue by month, 1/2008–02/2019 (xlsx, 296 KB)</download-link></li>
 </ul>
 
 ## Scope

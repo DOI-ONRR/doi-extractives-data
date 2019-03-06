@@ -1,6 +1,7 @@
 import React from 'react';
 import rehypeReact from "rehype-react";
 
+import OilRig from '-!svg-react-loader!../img/svg/icon-ribbon-oil-rig.svg';
 import HowItWorksRibbonGraphic from '-!svg-react-loader!../img/svg/how-it-works-ribbon-graphic.svg';
 import HowMainIconOil from '-!svg-react-loader!../img/svg/how-main-icon-oil.svg';
 import HowMainIconCoal from '-!svg-react-loader!../img/svg/how-main-icon-coal.svg';
@@ -38,7 +39,8 @@ import ChevronIcon from '-!svg-react-loader!../img/svg/chevron-lt.svg';
 const hastReactRenderer = new rehypeReact({
   createElement: React.createElement,
   components: { "glossary-term": GlossaryTerm,
-  							"nav-list": NavList,
+                "nav-list": NavList,
+                "oil-rig": OilRig,
   							"how-it-works-ribbon-graphic": HowItWorksRibbonGraphic,
   							"how-main-icon-oil": HowMainIconOil,
   							"how-main-icon-coal": HowMainIconCoal,

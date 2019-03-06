@@ -20,6 +20,15 @@ import {ProcessGroup} from '../components/layouts/ProcessGroup';
 import {ProcessStep} from '../components/layouts/ProcessGroup';
 import {MsgPrioritizedStatesSvg} from '../components/maps/MsgPrioritizedStatesSvg'
 import ImgWrapper from '../components/utils/img-wrapper'
+import {DownloadDataLink} from '../components/layouts/icon-links/DownloadDataLink'
+import IconArchive from '-!svg-react-loader!../img/svg/icon-archive.svg';
+import {DataArchiveLink} from '../components/layouts/icon-links/DataArchiveLink';
+import {ArchiveBanner} from '../components/info/ArchiveBanner'
+import CoalIcon from '-!svg-react-loader!../img/svg/icon-coal.svg';
+import OilGasIcon from '-!svg-react-loader!../img/svg/icon-oil.svg';
+import HardrockIcon from '-!svg-react-loader!../img/svg/icon-hardrock.svg';
+import RenewablesIcon from '-!svg-react-loader!../img/svg/icon-renewables.svg';
+import ChevronIcon from '-!svg-react-loader!../img/svg/chevron-lt.svg';
 
 /***
  * This utility is used to render html and react components from markdown files
@@ -47,6 +56,15 @@ const hastReactRenderer = new rehypeReact({
                 'process-group': ProcessGroup,
                 'process-step': ProcessStep,
                 'img': ImgWrapper,
+                'download-data-link': DownloadDataLink,
+                'icon-archive': IconArchive,
+                'data-archive-link': DataArchiveLink,
+                'archive-banner': ArchiveBanner,
+                'coal-icon': CoalIcon,
+                'oil-gas-icon': OilGasIcon,
+                'hardrock-icon': HardrockIcon,
+                'renewables-icon': RenewablesIcon,
+                'chevron-icon': ChevronIcon,
               },
 
 }).Compiler; 

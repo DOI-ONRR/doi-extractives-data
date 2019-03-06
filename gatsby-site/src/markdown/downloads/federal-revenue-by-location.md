@@ -49,7 +49,7 @@ Download fiscal year data:
   <li><download-link to="/downloads/federal_revenue_acct-year_FY06-18_2018-12-13.xlsx">Onshore and offshore revenue dataset, FY 2006–2018 (xlsx, 2.0 MB)</download-link></li>
 </ul>
 
-<p class="u-margin-top" markdown="1">We also have [notes on this data](https://github.com/onrr/doi-extractives-data/wiki/Data-Catalog#federal-revenue) from the web development team as they built the interactions on this site.</p>
+We also have [notes on this data](https://github.com/onrr/doi-extractives-data/wiki/Data-Catalog#federal-revenue) from the web development team as they built the interactions on this site.
 
 ## Scope
 

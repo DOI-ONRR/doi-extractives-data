@@ -47,7 +47,7 @@ permalink: /how-it-works/onshore-renewables/
   </div>
   <div class="revenues_subpage-steps onshore-renewables">
     <section class="container-outer">
-      <did-you-know color='blue' intro='BLM tracks the status of solar, wind, and geothermal projects on federal land.'>You can review <a href="https://www.blm.gov/programs/energy-and-minerals/renewable-energy/data">current and historical renewable energy data on BLM's website</a>.</did-you-know>
+      <did-you-know color='blue' intro='BLM tracks the status of solar, wind, and geothermal projects on federal land.'>You can review <a href="https://www.blm.gov/programs/energy-and-minerals/renewable-energy">current and historical renewable energy data on BLM's website</a>.</did-you-know>
       <div class="container">
         <process-group>
           <process-step step.id="1" step.name="Plan" expanded="true">

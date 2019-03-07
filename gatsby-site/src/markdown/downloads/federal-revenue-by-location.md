@@ -63,7 +63,7 @@ Companies can adjust and correct their payments for up to seven years after a tr
 
 “Oil & Gas” is the commodity category used for offshore oil and gas rents and bonuses. At the time of lease sale, it isn’t known whether a lease will produce oil, gas or both oil and gas. After a lease starts producing a commodity (or commodities), the lease owner starts paying royalties. These can then be associated with either oil or gas. Hence, rent and bonus lines of data will be associated with an “Oil & Gas” commodity type, while royalty lines of data will be associated with either “Oil” or “Gas” commodity types.
 
-<h3 alt="Revenue by location and by company"> Why is the calendar year _revenue by location national total_ slightly different than the _revenue by company total_?</h3>
+<h3 alt="Revenue by location and by company"> Why is the calendar year <span style='font-style:italic'>revenue by location national total</span> slightly different than the <span style='font-style:italic'>revenue by company total</span>?</h3>
 
 Our site has two federal revenue datasets. The one on this page is organized by location. [The federal revenue by company dataset](/downloads/federal-revenue-by-company/) is organized by the company that paid the revenue. However, the national revenue totals are slightly different (by about $90 million). This is because the revenue by location dataset excludes revenue from offshore rights-of-way because they don't map to an offshore planning area.
 

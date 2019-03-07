@@ -30,7 +30,7 @@ My varied experiences likely led me to my current position. My knowledge in econ
 
 In early 2017, I was hired to supervise a team of program analysts who helped with the U.S. implementation of the EITI standards--[the origin of our site](https://revenuedata.doi.gov/about/#history). Early on, my position entailed a lot of coordination with 18F who had designed and developed the website for the Department of the Interior.
 
-My small team also took on responsibility for supporting an advisory committee, which was not directly tied to EITI implementation. Later in 2017, the U.S. withdrew as an implementing country from EITI, but the Administration maintained the commitment to enhancing transparency and accountability by providing open data through our newly named [Natural Resources Revenue Data site](revenuedata.doi.gov).
+My small team also took on responsibility for supporting an advisory committee, which was not directly tied to EITI implementation. Later in 2017, the U.S. withdrew as an implementing country from EITI, but the Administration maintained the commitment to enhancing transparency and accountability by providing open data through our newly named [Natural Resources Revenue Data site](https://revenuedata.doi.gov).
 
 Around the same time, we began implementing a plan to bring the site management responsibilities in-house. For years, 18F provided the technical expertise that the Department of the Interior needed to execute our vision for a user-centered, open data site, but 18F does not stay on projects permanently. We also knew that ONRR would benefit in many ways by bringing the site maintenance in-house. These benefits include lower site management costs and the ability to expand our own technical capacity.
 

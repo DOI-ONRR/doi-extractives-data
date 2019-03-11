@@ -80,22 +80,22 @@ The Indian Mineral Leasing Act of 1938 (IMLA) increased the amount of control tr
 
 The Indian Mineral Development Act of 1982 (IMDA) increased Native American self-governance concerning extraction. With IMDA, tribes and individuals gained the right to negotiate their own “mineral development agreements” (MDAs) with companies in the extractive industries. These agreements could cover the full range of the extraction process, from exploration to processing, and might contain stipulations as to employment of tribal members or subcontracting to tribally-owned entities. An individual Native American can include their mineral interests in a tribally-negotiated mineral development agreement. The federal government may assist in the negotiations of MDAs when requested by the tribe. The Secretary of the Interior must still approve MDAs as in the best interest of the tribe.
 
-### Indian Tribal Energy Development & Self-Determination Act of 2005
+### Indian Tribal Energy Development and Self-Determination Act of 2005
 
-The Tribal Energy Development & Self-Determination Act continued the move towards tribal self-determination regarding extraction. The Act enables tribes to enter “tribal energy resource agreements” (TERAs) with the Secretary of the Interior. Entering into this agreement with the Secretary of the Interior grants the tribe a much wider latitude of self-determination. Specifically it enables them to “enter into business agreements and leases for energy resource development and grant rights-of-way for pipelines or electric transmission or distribution lines on tribal land without the Secretary’s review and approval.”
+The Tribal Energy Development and Self-Determination Act continued the move towards tribal self-determination regarding extraction. The Act enables tribes to enter “tribal energy resource agreements” (TERAs) with the Secretary of the Interior. Entering into this agreement with the Secretary of the Interior grants the tribe a much wider latitude of self-determination. Specifically it enables them to “enter into business agreements and leases for energy resource development and grant rights-of-way for pipelines or electric transmission or distribution lines on tribal land without the Secretary’s review and approval.”
 
-### Indian Tribal Energy Development & Self-Determination Act Amendments of 2017
+### Indian Tribal Energy Development and Self-Determination Act Amendments of 2017
 Chairman Hoeven introduced a bill [S.245](https://www.congress.gov/bill/115th-congress/senate-bill/245) to amend the Indian Tribal Energy Development and Self Determination Act of 2005, and for other purposes. The bill passed the Senate and the president signed it into law in December 2018.
 
 The bill is composed of two Titles. Title I amends the Indian Tribal Energy Development and Self-Determination Act of 2005 to address grants and technical assistance, loan guarantees, and tribal energy resources agreements (TERAs). Title II "Miscellaneous Amendments," amends several statutory provisions that were enacted in legislation other than the 2005 Act.
 
-Title I - Indian Tribal Energy Development and Self-Determination Act Amendments
+#### Title I - Indian Tribal Energy Development and Self-Determination Act Amendments
 - Directs the Department of the Interior (DOI) to provide Native American tribes with technical assistance in planning energy resource development programs.
 - Allows leases and business agreements that pool a tribe's energy resources with other energy resources.
 - Streamlines the Bureau of Indian Affairs’ approval process for Tribal Energy Resource Agreements (TERAs)
 - Requires the Department of Energy (DOE) to collaborate with the Directors of the National Laboratories in making the full array of DOE technical and scientific resources available for tribal energy activities and projects.
 
-Title II - Miscellaneous Amendments
+#### Title II - Miscellaneous Amendments
 - Amends the Federal Power Act to require the Federal Energy Regulatory Commission to give tribes, in addition to states and municipalities, preference for the receipt of preliminary hydroelectric licenses.
 - Authorizes tribal biomass demonstration projects under the Tribal Forest Protection Act of 2004 to assist tribes in securing reliable, long-term supplies of woody biomass materials
 - Amends the Energy Conservation and Production Act to revise requirements for direct home weatherization grants to tribes.

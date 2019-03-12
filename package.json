@@ -35,7 +35,6 @@
 		"update-webpack": "webpack --debug --devtool source-map --output-pathinfo",
 		"js-dev-start": "rm -rf js/lib && npm run watch-webpack",
 		"js-dev-end": "npm run update-webpack",
-		"watch-webpack": "webpack --watch",
 		"build-styleguide": "cd nrrd-design-system && fractal build && cd ..",
 		"release-styleguide": "npm run build-styleguide",
 		"lint": "(npm run lint-js; npm run lint-scss) || echo '(there were linting errors)'",

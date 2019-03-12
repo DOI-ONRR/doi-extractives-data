@@ -38,7 +38,6 @@
 		"watch-webpack": "webpack --watch",
 		"build-styleguide": "cd nrrd-design-system && fractal build && cd ..",
 		"release-styleguide": "npm run build-styleguide",
-		"watch-styleguide": "cd nrrd-design-system && fractal start --sync && cd ..",
 		"lint": "(npm run lint-js; npm run lint-scss) || echo '(there were linting errors)'",
 		"lint-js": "eslint --ignore-path .eslintignore js",
 		"lint-ruby": "bundle exec rubocop -c .rubocop.yml _plugins/eiti_*.rb",

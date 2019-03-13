@@ -54,9 +54,13 @@ Depending on the agency or program, the LWCF supports:
 
 ## Authorization and funding
 
+{% include update-flag.html date="3/13/19" %}
+
+On March 12, 2019, the President signed into law the [John D. Dingell, Jr. Conservation, Management, and Recreation Act](https://www.congress.gov/bill/116th-congress/senate-bill/47) (formerly the Natural Resources Management Act). This bill reauthorizes the Land and Water Conservation Fund and also permanently {{ "authorizes" | term: "authorization" }} the fund, which means the fund no longer needs to be reauthorized by Congress in order to receive funding. Congress must still appropriate funds for the program each year during the annual budget process in order for the LWCF to receive funds.
+
 {% include update-flag.html date="2/28/19" %}
 
-The House of Representatives on Tuesday, February 26, 2019, passed the [Natural Resources Management Act](https://www.congress.gov/bill/116th-congress/senate-bill/47), part of which permanently {{ "authorizes" | term: "authorization" }} the Land and Water Conservation Fund. The bill now proceeds to the President to be signed into law.
+The House of Representatives on Tuesday, February 26, 2019, passed the [Natural Resources Management Act](https://www.congress.gov/bill/116th-congress/senate-bill/47), part of which permanently authorizes the Land and Water Conservation Fund. The bill now proceeds to the President to be signed into law.
 
 {% include update-flag.html date="2/14/19" %}
 
@@ -75,10 +79,10 @@ Lawmakers have [introduced bills in both the House and the Senate](https://www.c
 ### Annual funding
 The fund doesn't receive any tax revenue, but is instead funded largely by offshore oil and gas revenue. When authorized, {{ "ONRR" | term }} disburses that revenue to the fund each year.
 
-Until it expired, the LWCF was authorized to receive and distribute up to $900 million each year, but the fund is subject to congressional budget appropriations. Actual annual appropriations to the fund met the authorized threshold only twice (1998, 2001), while annual appropriations have been limited to between $255 million and $450 million since 2008.
+The LWCF is authorized to receive and distribute up to $900 million each year, but the fund is subject to congressional budget appropriations. Actual annual appropriations to the fund met the authorized threshold only twice (1998, 2001), while annual appropriations have been limited to between $255 million and $450 million since 2008.
 
 ## Distribution of funds
-Most of the funds from the LWCF are distributed to support two general purposes:
+Most of the funds from the LWCF support two general purposes:
 
 - federal acquisition of land for the benefit of the public
 - grants to states for recreational planning, acquiring recreational lands, or developing outdoor recreational facilities 

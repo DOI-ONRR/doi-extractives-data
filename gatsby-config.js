@@ -1,7 +1,9 @@
 
 // Federalist provides the BASEURL env variable for preview builds.
 // https://github.com/18F/federalist-garden-build#variables-exposed-during-builds
-const BASEURL = process.env.BASEURL || '';
+const BASEURL = process.env.BASEURL || undefined;
+
+
 
 // Federalist provides the google_analytics env variable
 const GOOGLE_ANALYTICS_ID = (process.env.google_analytics) ?
@@ -9,13 +11,7 @@ const GOOGLE_ANALYTICS_ID = (process.env.google_analytics) ?
                 :
                 "UA-48605964-8";
 
-module.exports = {
-  // Note: it must *not* have a trailing slash.
-  // This is currently the realtive path in our Jekyl deployment. This path points to our Gatsby Pages.
-
-  // This prefix is prepended to load all our related images, code, and pages.
-  pathPrefix: `${BASEURL}`,
-
+let config = {
   siteMetadata: {
     title: 'Natural Resources Revenue Data',
     description: 'This site provides open data about natural resource management on federal lands and waters in the United States, including oil, gas, coal, and other extractive industries.',
@@ -67,3 +63,9 @@ module.exports = {
     'gatsby-transformer-excel',
   ],
 };
+
+if(BASEURL) {
+  config.pathPrefix = `${BASEURL}`;
+}
+
+module.exports = config;

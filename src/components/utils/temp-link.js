@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Link, {withPrefix as withPrefixGatsby}  from "gatsby-link"
 // This is a temporary solution for links that allow integration with jekyll
 // When jekyl is retired this can be replaced with gatsby-link
 
@@ -32,9 +32,10 @@ class TempLink extends React.Component {
 export default TempLink;
 
 export function withPrefix(path) {
-  return (__PATH_PREFIX__);
+  return withPrefixGatsby(path);
 
 }
 export function withPrefixSVG(path) {
-  return withPrefix(path);
+
+  return withPrefixGatsby(path);
 }

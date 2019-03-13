@@ -325,6 +325,6 @@ exports.onPostBuild = () => {
 
 	// index.html will be created or overwritten by default.
 	console.log("Copying index.html to root...");
-	copyfile(__dirname+'/public/index.html', __dirname+'./index.html');
+	copyfile(__dirname+'/public/index.html', __dirname+'/index.html');
 	console.log("Finished Copying index.html to root.");
 }

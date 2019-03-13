@@ -22,7 +22,7 @@ tag:
 
 When companies extract natural resources on federal onshore lands and the Outer Continental Shelf, they pay revenue to the Department of the Interior (DOI).
 
-In general, companies pay bonuses, rents, royalties, or fees and penalties (if incurred) to <glossary-term>ONRR</glossary-term>, and in some cases bonuses and rents to the Bureau of Land Management. Royalties, a percentage of the sales value of extracted resources, make up most of the revenue paid to DOI.
+In general, companies pay <glossary-term term.key="bonus">bonuses</glossary-term>, <glossary-term term.key="rent">rents</glossary-term>, <glossary-term term.key="royalty">royalties</glossary-term>, or fees and penalties (if incurred) to <glossary-term>ONRR</glossary-term>, and in some cases bonuses and rents to the Bureau of Land Management. Royalties, a percentage of the sales value of extracted resources, make up most of the revenue paid to DOI.
 
 Lease holders also pay different fees to the Bureau of Land Management, Bureau of Safety and Environmental Enforcement, and Bureau of Ocean Energy Management, often to reimburse the federal government for costs associated with awarding, administering, and enforcing leases. For extracting locatable hardrock minerals on federal lands, companies pay fees, but not royalties under the Mining Law of 1872.
 
@@ -39,9 +39,9 @@ Lease holders also pay different fees to the Bureau of Land Management, Bureau o
     </tr>
     <tr>
       <th></th>
-      <th>Securing a lease or claim</th>
-      <th>Before production</th>
-      <th>During production</th>
+      <th>Bonus</th>
+      <th>Rent</th>
+      <th>Royalty</th>
     </tr>
   </thead>
   <tbody>
@@ -55,8 +55,14 @@ Lease holders also pay different fees to the Bureau of Land Management, Bureau o
     <tr>
       <td>Offshore</td>
       <td><strong>Bonus</strong></td>
-      <td><strong>$7</strong> or <strong>$11</strong> annual rent per acre increasing over time up to <strong>$44</strong> per acre in some cases</td>
-      <td><strong>12.5%</strong>, <strong>16.67%</strong>, or <strong>18.75%</strong> of production value in royalties</td>
+      <td><strong>Water depth 0–200m:</strong> Years 1–5 rent is $7/acre, deep well extensions - year 6 rent is $14/acre, year 7 rent is $21/acre, year 8 rent is $28/acre<br>
+      <strong>Water depth 200–400m:</strong> Years 1–5 rent is $11/acre, deep well extensions - year 6 rent is $22/acre, year 7 rent is $33/acre, year 8 rent is $44/acre<br> 
+      <strong>Water depth 400–800m:</strong> Years 1–5 rent is $11/acre, years 6–8 rent is $16/acre<br>
+      <strong>Water depth 800–2000m+:</strong> Years 1–5 rent is $11/acre, years 6–10 rent is $16/acre
+      </td>
+      <td><strong>12.5%</strong> for leases located in water depths less than 200 meters<br>
+      <strong>18.75%</strong> for leases located in water depths of 200 meters and deeper
+      </td>
     </tr>
   </tbody>
 </table>
@@ -72,9 +78,9 @@ Lease holders also pay different fees to the Bureau of Land Management, Bureau o
     </tr>
     <tr>
       <th></th>
-      <th>Securing a lease or claim</th>
-      <th>Before production</th>
-      <th>During production</th>
+      <th>Bonus</th>
+      <th>Rent</th>
+      <th>Royalty</th>
     </tr>
   </thead>
   <tbody>
@@ -104,32 +110,27 @@ Lease holders also pay different fees to the Bureau of Land Management, Bureau o
   <thead>
     <tr>
       <td style="border-top: none;"></td>
-      <th colspan="3" class="article_table-thin">Phase</th>
+      <th colspan="4" class="article_table-thin">Phase</th>
     </tr>
     <tr>
       <th></th>
-      <th>Securing a lease or claim</th>
-      <th>Before production</th>
-      <th>During production</th>
+      <th>Bonus</th>
+      <th>Rent</th>
+      <th>Fee</th>
+      <th>Royalty</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>Public domain lands</td>
-      <td><strong>$20</strong> processing fee <br>
-          <strong>$37</strong> location fee <br>
-          <strong>$155</strong> initial maintenance fee
+      <td></td>
+      <td></td>
+      <td><strong>$20</strong> processing fee<br>
+          <strong>$37</strong> location fee<br>
+          <strong>$155</strong> initial maintenance fee<br>
+          <strong>$155</strong> annual maintenance fee for the assesment year in which the claim/site was located
       </td>
-      <td><strong>$155</strong> annual maintenance fee per claim</td>
-      <td><strong>No royalties</strong> are required to be paid.</td>
-    </tr>
-    <tr>
-      <td>Acquired lands</td>
-      <td><strong>$6,500</strong> prospecting permit fee</td>
-      <td><strong>$0.50</strong> annual prospecting fee per acre <br>
-          <strong>$1</strong> annual rent per acre</td>
-      <td><strong>Royalty rates</strong> are exempt from minimums and determined on an individual case basis by the authorized leasing officers.
-      </td>
+      <td></td>
     </tr>
   </tbody>
 </table>

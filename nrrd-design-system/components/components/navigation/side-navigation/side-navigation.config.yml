@@ -1,6 +1,0 @@
-title: Sticky side navigation
-status: jscomponent
-preview: '@side-navigation-preview'
-display:
-  # This component does not display under 48em
-  min-width: 49em

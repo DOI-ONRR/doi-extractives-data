@@ -1,4 +1,0 @@
-'{fips}':
-  name: '{county}'
-  revenue:
-    '{year}': '{revenue}'

@@ -1,0 +1,40 @@
+import React from 'react';
+
+// This is a temporary solution for links that allow integration with jekyll
+// When jekyl is retired this can be replaced with gatsby-link
+
+class TempLink extends React.Component {
+  render() {
+    let { to, className, href, ...rest } = this.props;
+    
+    if(href) {
+      if(href.includes('gatsby-public')) {
+        to = href.replace('/gatsby-public', '');
+      }
+      else if(href.startsWith('/')) {
+        to = withPrefix(href);
+      }
+      else {
+        to = href;
+      }
+    }
+    else {
+      to = withPrefix(to);
+    }
+    return (
+      <a {...rest} href={to} className={className}>
+        {this.props.children}
+      </a>
+    );
+  }
+}
+
+export default TempLink;
+
+export function withPrefix(path) {
+  return (__PATH_PREFIX__);
+
+}
+export function withPrefixSVG(path) {
+  return withPrefix(path);
+}

@@ -21,3 +21,4 @@ styleguide
 /.project
 gatsby-public
 blog
+.cache/

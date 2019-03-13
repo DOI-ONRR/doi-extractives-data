@@ -90,16 +90,16 @@ Chairman Hoeven introduced a bill [S.245](https://www.congress.gov/bill/115th-co
 The bill is composed of two Titles. Title I amends the Indian Tribal Energy Development and Self-Determination Act of 2005 to address grants and technical assistance, loan guarantees, and tribal energy resources agreements (TERAs). Title II "Miscellaneous Amendments," amends several statutory provisions that were enacted in legislation other than the 2005 Act.
 
 #### Title I: Indian Tribal Energy Development and Self-Determination Act Amendments
-- Directs the Department of the Interior (DOI) to provide Native American tribes with technical assistance in planning energy resource development programs.
-- Allows leases and business agreements that pool a tribe's energy resources with other energy resources.
+- Directs the Department of the Interior (DOI) to provide Native American tribes with technical assistance in planning energy resource development programs
+- Allows leases and business agreements that pool a tribe's energy resources with other energy resources
 - Streamlines the Bureau of Indian Affairs’ approval process for Tribal Energy Resource Agreements (TERAs)
-- Requires the Department of Energy (DOE) to collaborate with the Directors of the National Laboratories in making the full array of DOE technical and scientific resources available for tribal energy activities and projects.
+- Requires the Department of Energy (DOE) to collaborate with the Directors of the National Laboratories in making the full array of DOE technical and scientific resources available for tribal energy activities and projects
 
 #### Title II: Miscellaneous Amendments
-- Amends the Federal Power Act to require the Federal Energy Regulatory Commission to give tribes, in addition to states and municipalities, preference for the receipt of preliminary hydroelectric licenses.
+- Amends the Federal Power Act to require the Federal Energy Regulatory Commission to give tribes, in addition to states and municipalities, preference for the receipt of preliminary hydroelectric licenses
 - Authorizes tribal biomass demonstration projects under the Tribal Forest Protection Act of 2004 to assist tribes in securing reliable, long-term supplies of woody biomass materials
-- Amends the Energy Conservation and Production Act to revise requirements for direct home weatherization grants to tribes.
-- Authorizes Indian tribes and certified third parties to conduct energy appraisals, in addition to the Secretary of the Interior.
+- Amends the Energy Conservation and Production Act to revise requirements for direct home weatherization grants to tribes
+- Authorizes Indian tribes and certified third parties to conduct energy appraisals, in addition to the Secretary of the Interior
 - Amends the Long-Term Leasing Act to allow the Navajo Nation to enter into mineral resource leases on their restricted lands without Interior's approval
-- Allows the Crow Tribe of Montana to enter into leases of their land held in trust for a term of up to 99 years.
-- Sets forth provisions for money held by Interior in the trust fund system for the benefit of the Indian tribe and individual Indian from whose land the funds were generated.
+- Allows the Crow Tribe of Montana to enter into leases of their land held in trust for a term of up to 99 years
+- Sets forth provisions for money held by Interior in the trust fund system for the benefit of the Native American tribes and individuals from whose land the funds were generated

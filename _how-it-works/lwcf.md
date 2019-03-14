@@ -54,7 +54,7 @@ Depending on the agency or program, the LWCF supports:
 
 ## Authorization and funding
 
-{% include update-flag.html date="3/13/19" %}
+{% include update-flag.html date="3/14/19" %}
 
 On March 12, 2019, the President signed into law the [John D. Dingell, Jr. Conservation, Management, and Recreation Act](https://www.congress.gov/bill/116th-congress/senate-bill/47) (formerly the Natural Resources Management Act). This bill reauthorizes the Land and Water Conservation Fund and also permanently {{ "authorizes" | term: "authorization" }} the fund, which means the fund no longer needs to be reauthorized by Congress in order to receive funding. Congress must still appropriate funds for the program each year during the annual budget process in order for the LWCF to receive funds.
 

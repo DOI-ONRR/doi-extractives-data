@@ -20,7 +20,7 @@ Coal excise tax payments are collected by the Internal Revenue Service and trans
 
 **Coal excise tax revenue**[^4]
 
-<table class="article_table">
+<table class="article_table article_table-numbers">
   <thead>
     <tr>
       <th>Year</th>

@@ -123,13 +123,21 @@ Lease holders also pay different fees to the Bureau of Land Management, Bureau o
     <tr>
       <td>Public domain lands</td>
       <td></td>
-      <td></td>
+      <td><strong>$1/acre</strong></td>
       <td><strong>$20</strong> processing fee<br>
           <strong>$37</strong> location fee<br>
           <strong>$155</strong> initial maintenance fee<br>
-          <strong>$155</strong> annual maintenance fee for the assesment year in which the claim/site was located
+          <strong>$155</strong> annual maintenance fee for the assessment year in which the claim/site was located
       </td>
       <td></td>
+    </tr>
+    <tr>
+      <td>Acquired lands</td>
+      <td>Minimum bond amount for prospecting permits is <strong>$1,000</strong><br>
+          Minimum bond amount for leases is <strong>$5,000</strong></td>
+      <td><strong>$0.50/acre</strong> or fraction of an acre</td>
+      <td></td>
+      <td>Royalty rates are exempt from minimums and determined on an individual basis by the authorized leasing officers.</td>
     </tr>
   </tbody>
 </table>

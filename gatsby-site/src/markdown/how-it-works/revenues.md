@@ -55,10 +55,9 @@ Lease holders also pay different fees to the Bureau of Land Management, Bureau o
     <tr>
       <td>Offshore</td>
       <td><strong>Bonus</strong></td>
-      <td><strong>Water depth 0–200m:</strong> Years 1–5 rent is $7/acre, deep well extensions - year 6 rent is $14/acre, year 7 rent is $21/acre, year 8 rent is $28/acre<br>
-      <strong>Water depth 200–400m:</strong> Years 1–5 rent is $11/acre, deep well extensions - year 6 rent is $22/acre, year 7 rent is $33/acre, year 8 rent is $44/acre<br> 
-      <strong>Water depth 400–800m:</strong> Years 1–5 rent is $11/acre, years 6–8 rent is $16/acre<br>
-      <strong>Water depth 800–2000m+:</strong> Years 1–5 rent is $11/acre, years 6–10 rent is $16/acre
+      <td><strong>Water depth 0–200m:</strong> Years 1–5 rent is $7/acre, year 6 rent is $14/acre, year 7 rent is $21/acre, year 8+ rent is $28/acre<br>
+      <strong>Water depth 200–400m:</strong> Years 1–5 rent is $11/acre, year 6 rent is $22/acre, year 7 rent is $33/acre, year 8+ rent is $44/acre<br> 
+      <strong>Water depth 400+:</strong> Years 1–5 rent is $11/acre, years 6+ rent is $16/acre
       </td>
       <td><strong>12.5%</strong> for leases located in water depths less than 200 meters<br>
       <strong>18.75%</strong> for leases located in water depths of 200 meters and deeper

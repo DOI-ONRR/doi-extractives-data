@@ -123,7 +123,7 @@ Lease holders also pay different fees to the Bureau of Land Management, Bureau o
     <tr>
       <td>Public domain lands</td>
       <td></td>
-      <td><strong>$1/acre</strong></td>
+      <td><strong>$1</strong> per acre</td>
       <td><strong>$20</strong> processing fee<br>
           <strong>$37</strong> location fee<br>
           <strong>$155</strong> initial maintenance fee<br>
@@ -135,7 +135,7 @@ Lease holders also pay different fees to the Bureau of Land Management, Bureau o
       <td>Acquired lands</td>
       <td>Minimum bond amount for prospecting permits is <strong>$1,000</strong><br>
           Minimum bond amount for leases is <strong>$5,000</strong></td>
-      <td><strong>$0.50/acre</strong> or fraction of an acre</td>
+      <td><strong>$0.50</strong> per acre or fraction of an acre</td>
       <td></td>
       <td>Royalty rates are exempt from minimums and determined on an individual basis by the authorized leasing officers.</td>
     </tr>
@@ -153,28 +153,75 @@ Lease holders also pay different fees to the Bureau of Land Management, Bureau o
     </tr>
     <tr>
       <th></th>
-      <th>Securing a lease or claim</th>
-      <th>Before production</th>
-      <th>During production</th>
+      <th>Bonus</th>
+      <th>Rent</th>
+      <th>Fee</th>
+      <th>Royalty</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>Onshore (solar and wind)</td>
-      <td><strong>Bonus</strong> (inside designated leasing areas)<br>
-          <strong>$15</strong> per acre application filing fee (outside designated leasing areas)
+      <td>
+        <strong>$15</strong> per acre application filing fee (outside designated leasing areas)
       </td>
       <td><strong>Rent</strong> determined by acreage and land value</td>
-      <td> <strong>$6.21</strong> megawatt capacity fee per KW from wind<br>
-           <strong>$3.55–$5.32</strong> megawatt capacity fee per KW from solar</td>
+      <td>Wind: Megawatt capacity fee of <strong>$5,010</strong> 
+          Solar: Megawatt capacity fee varies according to technology. The fee is <strong>$2,863</strong> for photovoltaic solar facilities, <strong>$3,578</strong> for concentrated photovoltaic solar facilities and concentrated solar power facilities, and <strong>$4,294</strong> for concentrated solar power facilities with storage capacity of 3 hours or more</td>
     </tr>
     <tr>
       <td>Offshore (wind)</td>
       <td><strong>Bonus</strong> (competitive lease)<br>
           <strong>$0.25</strong> per acre for acquisition fee (uncompetitive lease)</td>
       <td><strong>$3</strong> annual rent per acre</td>
+      <td></td>
       <td><strong>2%</strong> (unless otherwise specified or waived) of anticipated value of wind energy produced in operating fee
       </td>
+    </tr>
+  </tbody>
+</table>
+
+<!--Geothermal-->
+<p style="margin: 2em 0 0 0;"><geothermal-icon></geothermal-icon> <strong>Geothermal</strong></p>
+
+<table class="article_table">
+  <thead>
+    <tr>
+      <td style="border-top: none;"></td>
+      <th colspan="3" class="article_table-thin">Phase</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Bonus</th>
+      <th>Rent</th>
+      <th>Fee</th>
+      <th>Royalty</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Competitive leasing</td>
+      <td>
+        Nomination fee: <strong>$115</strong> per nomination + <strong>$0.12</strong> per acre<br>
+        Application fee: <strong>$165</strong>
+      </td>
+      <td><strong>$2</strong> per acre for the first year<br>
+          <strong>$3</strong> annual rent per acre for years 2–10<br>
+          <strong>$5</strong> annual rent per acre after 10 years
+      </td>
+      <td>Direct-use fees for energy needs other than the commercial production or generation of electricity</td>
+      <td>Electricity sales: <strong>1.75%</strong> of gross proceeds for 10 years, then <strong>3.5%</strong><br>
+          Arm’s length sales: <strong>10%</strong> of gross proceeds from contract multiplied by lease royalty rate
+      </td>    
+    </tr>
+    <tr>
+      <td>Noncompetitive leasing</td>
+      <td>Application fee: <strong>$415</strong></td>
+      <td><strong>$1</strong> annual rent per acre for 10 years<br>
+          <strong>$5</strong> annual rent per acre thereafter
+      </td>
+      <td></td>
+      <td></td>
     </tr>
   </tbody>
 </table>

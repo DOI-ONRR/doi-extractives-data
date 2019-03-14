@@ -61,7 +61,7 @@ permalink: /how-it-works/onshore-oil-gas/
       <p>Hydraulic fracturing pumps water, sand, and chemicals into the earth to fracture the shale rock so that natural gas and oil can flow through the well to the surface. Major oil and gas shale rock formations in the U.S. include the Permian, Haynesville, and Eagle Ford Regions mostly in Texas; the Marcellus Region in West Virginia, Pennsylvania, and New York; the Niobrara Region in Wyoming and Colorado; and the Bakken Region in North Dakota and Montana.</p></did-you-know>
       <div class="container">
         <process-group>
-          <process-step step.id="1" step.name="Plan">
+          <process-step step.id="1" step.name="Plan" expanded="true">
             <p>BLM field offices prepare comprehensive Resource Management Plans (RMPs) to guide leasing decisions on federal lands, including which lands are open to oil and gas leasing, and which lands are closed. Currently 8% of all oil and 11% of all natural gas on federal lands are available for extraction through leasing. BLM field offices develop RMPs in line with multiple-use and sustained-yield principles, and by engaging the public and various levels of government.</p>
           </process-step>
           <process-step step.id="2" step.name="Lease">

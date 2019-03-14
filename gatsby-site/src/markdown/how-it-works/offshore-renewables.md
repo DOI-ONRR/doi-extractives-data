@@ -61,7 +61,7 @@ permalink: /how-it-works/offshore-renewables/
       <did-you-know color='blue' intro='To date, BOEM has issued over a dozen commercial wind energy leases on the Atlantic Outer Continental Shelf, including those offshore of Delaware, Maryland, Massachusetts, Rhode Island, Virginia, New York, New Jersey, and North Carolina.'>BOEM is in the planning stages for additional offshore areas in South Carolina, California, and Hawaii.</did-you-know>
       <div class="container">
         <process-group>
-          <process-step step.id="1" step.name="Plan">
+          <process-step step.id="1" step.name="Plan" expanded="true">
             <p>The planning and analysis phase identifies suitable areas for wind energy leasing consideration through collaborative, consultative, and analytical processes that engage stakeholders and government agencies. This is the phase when BOEM conducts environmental compliance reviews and consultations with tribes, states, and natural resource agencies.</p>
           </process-step>
           <process-step step.id="2" step.name="Lease">

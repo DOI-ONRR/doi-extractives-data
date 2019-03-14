@@ -34,61 +34,61 @@ Coal excise tax payments are collected by the Internal Revenue Service and trans
       <td>2008</td>
       <td>$326,258,000</td>
       <td>$318,332,000</td>
-      <td>$644,590,000</td>
+      <td><strong>$644,590,000</strong></td>
     </tr>
     <tr>
       <td>2009</td>
       <td>$324,093,000</td>
       <td>$307,045,000</td>
-      <td>$631,138,000</td>
+      <td><strong>$631,138,000</strong></td>
     </tr>
     <tr>
       <td>2010</td>
       <td>$309,170,000</td>
       <td>$300,898,000</td>
-      <td>$610,068,000</td>
+      <td><strong>$610,068,000</strong></td>
     </tr>
     <tr>
       <td>2011</td>
       <td>$324,756,000</td>
       <td>$298,922,000</td>
-      <td>$623,678,000</td>
+      <td><strong>$623,678,000</strong></td>
     </tr>
     <tr>
       <td>2012</td>
       <td>$307,383,000</td>
       <td>$281,232,000</td>
-      <td>$588,615,000</td>
+      <td><strong>$588,615,000</strong></td>
     </tr>
     <tr>
       <td>2013</td>
       <td>$280,477,000</td>
       <td>$290,189,000</td>
-      <td>$570,661,000</td>
+      <td><strong>$570,661,000</strong></td>
     </tr>
     <tr>
       <td>2014</td>
       <td>$277,469,000</td>
       <td>$296,936,000</td>
-      <td>$574,405,000</td>
+      <td><strong>$574,405,000</strong></td>
     </tr>
     <tr>
       <td>2015</td>
       <td>$270,390,000</td>
       <td>$270,561,000</td>
-      <td>$540,951,000</td>
+      <td><strong>$540,951,000</strong></td>
     </tr>
     <tr>
       <td>2016</td>
       <td>$208,428,000</td>
       <td>$226,515,000</td>
-      <td>$434,943,000</td>
+      <td><strong>$434,943,000</strong></td>
     </tr>
     <tr>
       <td>2017</td>
       <td>$207,631,000</td>
       <td>$224,094,000</td>
-      <td>$431,725,000</td>
+      <td><strong>$431,725,000</strong></td>
     </tr>
   </tbody>
 </table>

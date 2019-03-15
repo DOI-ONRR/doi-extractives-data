@@ -17,7 +17,7 @@ import RenewablesIcon from '-!svg-react-loader!../img/svg/icon-renewables.svg';
 import ChevronIcon from '-!svg-react-loader!../img/svg/chevron-lt.svg';
 
 
-class HowItWorksDefault extends React.Component {
+class HowItWorksProcess extends React.Component {
 
   constructor(props){
     super(props);
@@ -70,4 +70,4 @@ export default connect(
   state => ({}),
   dispatch => ({  hydateDataManager: (dataSets) => dispatch(hydateDataManagerAction(dataSets)),
               }),
-)(HowItWorksDefault);
+)(HowItWorksProcess);

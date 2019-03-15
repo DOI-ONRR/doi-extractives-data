@@ -14,7 +14,7 @@ redirect_from: /how-it-works/production/
     </div>
     <div class="container-right-4 ribbon-card-column ribbon-card">
       <div class="ribbon-card-top ribbon-card-top-text">
-        <h2 class="ribbon-card-top-text-header" style="display: inline-table;">The U.S. ranks at or near the top worldwide in the production of many natural resources.</h2>
+        <h2 class="ribbon-card-top-text-header" style="display: inline-table;">Natural resource extraction in the U.S. is governed by laws and regulations tied primarily to land ownership and the commodities being extracted.</h2>
         <how-it-works-ribbon-graphic></how-it-works-ribbon-graphic>
       </div>
       <div class="ribbon-card-bottom">

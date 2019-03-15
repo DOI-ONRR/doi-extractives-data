@@ -586,7 +586,6 @@ exports.onPostBuild = () => {
     prependFile.sync(__dirname+'/public/how-it-works/disbursements/index.html', howItWorksDisbursementsPageFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/revenues/index.html', howItWorksRevenuesPageFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/aml-reclamation-program/index.html', howItWorksAmlPageFrontmatter);
-    prependFile.sync(__dirname+'/public/how-it-works/aml-reclamation-program/index.html', howItWorksAmlPageFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/federal-revenue-by-company/2013/index.html', howItWorksCompanyRevenue2013Frontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/federal-revenue-by-company/2014/index.html', howItWorksCompanyRevenue2014Frontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/federal-revenue-by-company/2015/index.html', howItWorksCompanyRevenue2015Frontmatter);

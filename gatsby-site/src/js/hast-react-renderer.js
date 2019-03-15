@@ -1,6 +1,7 @@
 import React from 'react';
 import rehypeReact from "rehype-react";
 
+import OilRig from '-!svg-react-loader!../img/svg/icon-ribbon-oil-rig.svg';
 import HowItWorksRibbonGraphic from '-!svg-react-loader!../img/svg/how-it-works-ribbon-graphic.svg';
 import HowMainIconOil from '-!svg-react-loader!../img/svg/how-main-icon-oil.svg';
 import HowMainIconCoal from '-!svg-react-loader!../img/svg/how-main-icon-coal.svg';
@@ -21,6 +22,16 @@ import {ProcessStep} from '../components/layouts/ProcessGroup';
 import {MsgPrioritizedStatesSvg} from '../components/maps/MsgPrioritizedStatesSvg'
 import ImgWrapper from '../components/utils/img-wrapper'
 import {UpdateFlag} from '../components/layouts/UpdateFlag'
+import {DownloadDataLink} from '../components/layouts/icon-links/DownloadDataLink'
+import IconArchive from '-!svg-react-loader!../img/svg/icon-archive.svg';
+import {DataArchiveLink} from '../components/layouts/icon-links/DataArchiveLink';
+import {ArchiveBanner} from '../components/info/ArchiveBanner'
+import CoalIcon from '-!svg-react-loader!../img/svg/icon-coal.svg';
+import OilGasIcon from '-!svg-react-loader!../img/svg/icon-oil.svg';
+import HardrockIcon from '-!svg-react-loader!../img/svg/icon-hardrock.svg';
+import RenewablesIcon from '-!svg-react-loader!../img/svg/icon-renewables.svg';
+import ChevronIcon from '-!svg-react-loader!../img/svg/chevron-lt.svg';
+import DownloadLink from '../components/layouts/icon-links/DownloadLink';
 
 /***
  * This utility is used to render html and react components from markdown files
@@ -30,7 +41,8 @@ import {UpdateFlag} from '../components/layouts/UpdateFlag'
 const hastReactRenderer = new rehypeReact({
   createElement: React.createElement,
   components: { "glossary-term": GlossaryTerm,
-  							"nav-list": NavList,
+                "nav-list": NavList,
+                "oil-rig": OilRig,
   							"how-it-works-ribbon-graphic": HowItWorksRibbonGraphic,
   							"how-main-icon-oil": HowMainIconOil,
   							"how-main-icon-coal": HowMainIconCoal,
@@ -49,6 +61,16 @@ const hastReactRenderer = new rehypeReact({
                 'process-step': ProcessStep,
                 'img': ImgWrapper,
                 'update-flag': UpdateFlag,
+                'download-data-link': DownloadDataLink,
+                'icon-archive': IconArchive,
+                'data-archive-link': DataArchiveLink,
+                'archive-banner': ArchiveBanner,
+                'coal-icon': CoalIcon,
+                'oil-gas-icon': OilGasIcon,
+                'hardrock-icon': HardrockIcon,
+                'renewables-icon': RenewablesIcon,
+                'chevron-icon': ChevronIcon,
+                'download-link': DownloadLink,
               },
 
 }).Compiler; 

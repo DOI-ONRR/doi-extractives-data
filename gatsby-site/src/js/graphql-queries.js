@@ -32,11 +32,26 @@ module.exports = Object.freeze({
 	          permalink
 	          layout
 	          redirect_from
+            report_year
 	        }
 	        htmlAst
 	      }
 	    }
 	  }`,
+  MARKDOWN_DOWNLOADS: 
+    `allMarkdownRemark(filter: {id: {regex: "/downloads/"}}) {
+      pages: edges {
+        page: node {
+          frontmatter {
+            title
+            permalink
+            layout
+            redirect_from
+          }
+          htmlAst
+        }
+      }
+    }`,
 
 });
 

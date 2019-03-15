@@ -1,4 +1,5 @@
 import React from 'react';
+import hastReactRenderer from '../../js/hast-react-renderer';
 import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from 'react-html-parser';
 import Link from '../utils/temp-link';
 import { withPrefixSVG } from 'components/utils/temp-link';
@@ -255,10 +256,10 @@ const OptIn = (props) => {
 
 /* Includes case study link, if there is one */
 const CaseStudyLink = (props) => {
-  //console.log(JSON.parse(props.caseStudyHtml));
+  console.log(JSON.parse(props.caseStudyHtml));
   return (
     <div>
-      {renderAst(JSON.parse(props.caseStudyHtml))}
+      {hastReactRenderer(JSON.parse(props.caseStudyHtml))}
     </div>
   );
 }  

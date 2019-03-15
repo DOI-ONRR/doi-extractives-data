@@ -26,7 +26,7 @@ export default ProcessGroup;
 export class ProcessStep extends React.Component {
 
 	state = {
-		expanded: false,
+		expanded: (typeof this.props.expanded === 'string')? (this.props.expanded === 'true') : this.props.expanded,
 	}
 
 	handleClick() {
@@ -73,5 +73,12 @@ export class ProcessStep extends React.Component {
 }
 
 ProcessStep.propTypes = {
+	expanded: PropTypes.oneOfType([
+						  PropTypes.string,
+						  PropTypes.boolean
+						])
+}
 
+ProcessStep.defaultProps = {
+	expanded: false,
 }

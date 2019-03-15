@@ -7,9 +7,7 @@ import HowMainIconOil from '-!svg-react-loader!../img/svg/how-main-icon-oil.svg'
 import HowMainIconCoal from '-!svg-react-loader!../img/svg/how-main-icon-coal.svg';
 import HowMainIconHardrock from '-!svg-react-loader!../img/svg/how-main-icon-hardrock.svg';
 import HowMainIconWind from '-!svg-react-loader!../img/svg/how-main-icon-wind.svg';
-import IconArchive from '-!svg-react-loader!../img/svg/icon-archive.svg';
 import IconDownload from '-!svg-react-loader!../img/svg/icon-download.svg';
-
 import GlossaryTerm from '../components/utils/glossary-term.js';
 import NavList from '../components/layouts/NavList';
 import {DisplayStatistic} from '../components/utils/DisplayStatistic';

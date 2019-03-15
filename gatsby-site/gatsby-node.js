@@ -515,6 +515,18 @@ var downloadsPageFrontmatter = "---"+os.EOL+
 							"permalink: /downloads/"+os.EOL+
 							"---"+os.EOL;
 
+var downloadsFederalProdYearPageFrontmatter = "---"+os.EOL+
+							"title: Federal Production | Documentation"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /downloads/federal-production/"+os.EOL+
+							"---"+os.EOL;
+
+var downloadsFederalProdMonthPageFrontmatter = "---"+os.EOL+
+							"title: Production by Month | Documentation"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /downloads/federal-production-by-month/"+os.EOL+
+							"---"+os.EOL;
+
 var aboutPageFrontmatter = "---"+os.EOL+
 							"title: About"+os.EOL+
 							"layout: none"+os.EOL+
@@ -538,6 +550,8 @@ var explorePageFrontmatter = "---"+os.EOL+
 
 exports.onPostBuild = () => {
 	console.log("Prepending frontmatter to files...");
+    prependFile.sync(__dirname+'/public/downloads/federal-production/index.html', downloadsFederalProdYearPageFrontmatter);
+    prependFile.sync(__dirname+'/public/downloads/federal-production-by-month/index.html', downloadsFederalProdMonthPageFrontmatter);
     prependFile.sync(__dirname+'/public/downloads/index.html', downloadsPageFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/reconciliation/2015/index.html', howItWorksReconcile2015PageFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/reconciliation/2016/index.html', howItWorksReconcile2016PageFrontmatter);

@@ -1,29 +1,7 @@
 ---
 title: Production by Month | Documentation
-title_display: Production by Month
-layout: content
+layout: downloads
 permalink: /downloads/federal-production-by-month/
-nav_items:
-  - name: introduction
-    title: Top
-  - name: scope
-    title: Scope
-  - name: data-publication
-    title: Data publication
-  - name: monthly-totals-and-annual-totals
-    title: Monthly totals and annual totals  
-  - name: data-dictionary
-    title: Data dictionary
-    subnav_items:
-      - name: fields-and-definitions
-        title: Fields and definitions
-  - name: contact-us
-    title: Contact us
-selector: list
-breadcrumb:
-  - title: Downloads
-    permalink: /downloads/
-description: This dataset contains monthly production volumes on federal lands and waters and Native American lands. We have monthly production data from January 2008 through the most recently available month, which is usually 3-4 months prior to the current month.
 tag:
 - Data
 - Downloads
@@ -37,13 +15,29 @@ tag:
 - gas
 ---
 
-{% include production-nav.html %}
+<custom-link to="/downloads/" className="breadcrumb link-charlie">Downloads</custom-link> /
+# Production by Month
 
-> {{ page.description }}
+<section class="explore-subpage container">
+    <section>
+      <div class="explore-subpage-tabs">
+        <ul>
+          <li class="explore-subpage-tab">
+            <a href="/downloads/federal-production/">Production by year</a>
+          </li>
+          <li class="explore-subpage-tab active">
+            <a href="/downloads/federal-production-by-month/">Production by month</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+</section>
+
+> This dataset contains monthly production volumes on federal lands and waters and Native American lands. We have monthly production data from January 2008 through the most recently available month, which is usually 3-4 months prior to the current month.
 
 <p class="downloads-download_links-intro">Download production data by month:
   <ul class="downloads-download_links list-unstyled">
-    <li><a href="{{site.baseurl}}/downloads/monthly_production_03-2019.xlsx">{% include svg/icon-download.svg %}Production by month, 1/2008–11/2018 (xlsx, 54 KB)</a></li>
+    <li><download-link to="/downloads/monthly_production_03-2019.xlsx">Production by month, 1/2008–11/2018 (xlsx, 54 KB)</download-link></li>
   </ul>
 </p>
 
@@ -57,11 +51,11 @@ We update this production data every month, but final production numbers aren't 
 
 ## Monthly totals and annual totals
 
-The sum of 12-month production totals for a given calendar or fiscal year may not add up to the annual total found in the [production by year data]({{site.baseurl}}//downloads/federal-production/). While the production volume (amount of a commodity coming out of the ground) doesn't change, the way it is accounted for might. There are two main reasons why:
+The sum of 12-month production totals for a given calendar or fiscal year may not add up to the annual total found in the [production by year data](/downloads/federal-production/). While the production volume (amount of a commodity coming out of the ground) doesn't change, the way it is accounted for might. There are two main reasons why:
 
 - Operators may not report on time, meaning production for a past month might increase when the operator submits the report and ONRR updates the data.
 
-- The Bureau of Land Management may choose to change agreements and units after production. These changes may affect the allocation of the production volume, changing the data. <br><br>For example, changing an agreement retroactively may change the allocation of production among states, the federal government, and Native American tribes and individuals. As a result, the apportioned totals in the data would change.
+- The Bureau of Land Management may choose to change agreements and units after production. These changes may affect the allocation of the production volume, changing the data. <br/><br/>For example, changing an agreement retroactively may change the allocation of production among states, the federal government, and Native American tribes and individuals. As a result, the apportioned totals in the data would change.
 
 ## Data dictionary
 
@@ -69,7 +63,7 @@ The sum of 12-month production totals for a given calendar or fiscal year may no
 
 _Month_ The month for which the production was reported.
 
-_Calendar Year_ The calendar year for the month in which the production was reported. 
+_Calendar Year_ The calendar year for the month in which the production was reported.
 
 _Land Class_ This field distinguishes federal lands and waters from Native American lands.
 
@@ -84,5 +78,3 @@ _Commodity_ We have monthly data for oil, gas, and coal, since these are high-vo
 _Volume_ Shows the production volume (amount produced). The units for volume are shown in the preceding field (Commodity).
 
 ## Contact us
-
-{% include contact.html %}

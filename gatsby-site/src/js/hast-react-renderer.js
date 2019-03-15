@@ -64,7 +64,6 @@ const hastReactRenderer = new rehypeReact({
                 'icon-archive': IconArchive,
                 'icon-download': IconDownload,
                 'download-data-link': DownloadDataLink,
-                'icon-archive': IconArchive,
                 'data-archive-link': DataArchiveLink,
                 'archive-banner': ArchiveBanner,
                 'coal-icon': CoalIcon,

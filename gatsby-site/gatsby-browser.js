@@ -154,7 +154,7 @@ exports.onClientEntry = () => {
     else if(path.includes("/coal") && !path.includes("/coal-excise-tax")){
       loader.addPagesArray([,{"componentChunkName":"component---src-templates-how-it-works-process-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-coal.json","path":path}]);
     }
-    else if(path.includes("/and-and-water-conservation-fund") && !lastFourteen.includes("default-page")){
+    else if(path.includes("/land-and-water-conservation-fund") && !lastFourteen.includes("default-page")){
       loader.addPagesArray([{"componentChunkName":"component---src-templates-content-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-and-and-water-conservation-fund.json","path":path}]);
     }
     else if(path.includes("/disbursements") && !lastFourteen.includes("default-page")){

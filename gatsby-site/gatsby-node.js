@@ -527,6 +527,30 @@ var downloadsFederalProdMonthPageFrontmatter = "---"+os.EOL+
 							"permalink: /downloads/federal-production-by-month/"+os.EOL+
 							"---"+os.EOL;
 
+var downloadsFederalRevByLocPageFrontmatter = "---"+os.EOL+
+							"title: Revenue by Year | Documentation"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /downloads/federal-revenue-by-location/"+os.EOL+
+							"---"+os.EOL;
+
+var downloadsFederalRevByMonthPageFrontmatter = "---"+os.EOL+
+							"title: Revenue by Month | Documentation"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /downloads/federal-revenue-by-month/"+os.EOL+
+							"---"+os.EOL;
+
+var downloadsFederalRevByCompanyPageFrontmatter = "---"+os.EOL+
+							"title: Revenue by Company | Documentation"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /downloads/federal-revenue-by-company/"+os.EOL+
+							"---"+os.EOL;
+
+var downloadsDisbursementsFrontmatter = "---"+os.EOL+
+							"title: Disbursements | Documentation"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /downloads/disbursements/"+os.EOL+
+							"---"+os.EOL;
+
 var aboutPageFrontmatter = "---"+os.EOL+
 							"title: About"+os.EOL+
 							"layout: none"+os.EOL+
@@ -550,6 +574,10 @@ var explorePageFrontmatter = "---"+os.EOL+
 
 exports.onPostBuild = () => {
 	console.log("Prepending frontmatter to files...");
+    prependFile.sync(__dirname+'/public/downloads/disbursements/index.html', downloadsDisbursementsFrontmatter);
+    prependFile.sync(__dirname+'/public/downloads/federal-revenue-by-company/index.html', downloadsFederalRevByCompanyPageFrontmatter);
+    prependFile.sync(__dirname+'/public/downloads/federal-revenue-by-month/index.html', downloadsFederalRevByMonthPageFrontmatter);
+    prependFile.sync(__dirname+'/public/downloads/federal-revenue-by-location/index.html', downloadsFederalRevByLocPageFrontmatter);
     prependFile.sync(__dirname+'/public/downloads/federal-production/index.html', downloadsFederalProdYearPageFrontmatter);
     prependFile.sync(__dirname+'/public/downloads/federal-production-by-month/index.html', downloadsFederalProdMonthPageFrontmatter);
     prependFile.sync(__dirname+'/public/downloads/index.html', downloadsPageFrontmatter);

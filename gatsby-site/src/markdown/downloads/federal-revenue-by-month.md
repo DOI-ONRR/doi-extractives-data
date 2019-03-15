@@ -1,32 +1,7 @@
 ---
 title: Revenue by Month | Documentation
-layout: content
-permalink: /downloads/federal-revenue-by-month/
-title_display: 'Revenue by Month'
-nav_items:
-  - name: introduction
-    title: Top
-  - name: scope
-    title: Scope
-    subnav_items:
-      - name: why-are-some-values-negative
-        title: Negative values
-      - name: why-is-there-a-gas-value-an-oil-value-and-an-oil--gas-value
-        title: Oil and gas values
-  - name: data-dictionary
-    title: Data dictionary
-    subnav_items:
-      - name: fields-and-definitions
-        title: Fields and definitions
-  - name: commodities-and-products
-    title: Commodities and products
-  - name: contact-us
-    title: Contact us
-selector: list
-breadcrumb:
-  - title: Downloads
-    permalink: /downloads/
-description: We offer revenue by month for January 2008 through the most recently completed month of the current year. The data includes federal offshore and onshore revenue, along with revenue from Native American lands. The data is further broken down by revenue type (e.g., bonuses, rents, and royalties) and commodity.
+layout: downloads
+permalink: /downloads/federal-revenue-by-month/ 
 tag:
 - Data
 - Downloads
@@ -37,27 +12,44 @@ tag:
 - By location
 ---
 
-{% include revenue-nav.html %}
+<custom-link to="/downloads/" className="breadcrumb link-charlie">Downloads</custom-link> /
+# Revenue by Month
 
-> {{ page.description }}
+<section class="explore-subpage container">
+    <section>
+      <div class="explore-subpage-tabs">
+        <ul>
+          <li class="explore-subpage-tab">
+            <a href="/downloads/federal-revenue-by-location/">Revenue by year</a>
+          </li>
+          <li class="explore-subpage-tab active">
+            <a href="/downloads/federal-revenue-by-month/">Revenue by month</a>
+          </li>
+          <li class="explore-subpage-tab">
+            <a href="/downloads/federal-revenue-by-company/">Revenue by company</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+</section>
+
+> We offer revenue by month for January 2008 through the most recently completed month of the current year. The data includes federal offshore and onshore revenue, along with revenue from Native American lands. The data is further broken down by revenue type (e.g., bonuses, rents, and royalties) and commodity.
 
 Download revenue by month:
 
 <ul class="downloads-download_links list-unstyled">
-  <li><a href="{{ site.baseurl }}/downloads/monthly_revenue_02-2019.xlsx">{% include svg/icon-download.svg %} Revenue by month, 1/2008–02/2019 (xlsx, 296 KB)
-  </a></li>
+  <li><download-link to="/downloads/monthly_revenue_02-2019.xlsx">Revenue by month, 1/2008–02/2019 (xlsx, 296 KB)</download-link></li>
 </ul>
-<!--<p class="u-margin-top" markdown="1">We also have [notes on this data](https://github.com/onrr/doi-extractives-data/wiki/Data-Catalog#federal-revenue) from the web development team as they built the interactions on this site.</p>-->
 
 ## Scope
 
 This dataset includes revenues paid by companies to extract natural resources on U.S. federal lands and waters. It also includes revenues generated on Native American tribal and individual lands. It does not include privately owned lands or state lands. The dataset includes data tracked and managed by the Department of the Interior’s Office of Natural Resources Revenue. The data is presented by month, from January 2008 through the most recently completed month (we update the data every month).
 
-### Why are some values negative?
+<h3 alt="Negative values">Why are some values negative?</h3>
 
 Companies can adjust and correct their payments for up to seven years after a transaction takes place. If a company overpays their royalty, rent, or bonus, they are entitled to recover their overpayment. If the overpayment and recovered payment happen in different years, the recovered payment will appear as a negative amount in the data.
 
-### Why is there a Gas value, an Oil value and an Oil & Gas value?
+<h3 alt="Oil and gas values">Why is there a Gas value, an Oil value and an Oil & Gas value?</h3>
 
 “Oil & Gas” is the commodity category used for offshore oil and gas rents and bonuses. At the time of lease sale, it isn’t known whether a lease will produce oil, gas or both oil and gas. After a lease starts producing a commodity (or commodities), the lease owner starts paying royalties. These can then be associated with either oil or gas. Hence, rent and bonus lines of data will be associated with an “Oil & Gas” commodity type, while royalty lines of data will be associated with either “Oil” or “Gas” commodity types.
 
@@ -75,10 +67,10 @@ _Land Category_ This field distinguishes between onshore and offshore revenue. S
 
 _Revenue Type_ Revenues from U.S. natural resources fall into one of several types:
 
-* _Royalties_ A natural resource lease holder pays royalties after the lease starts producing a commodity in {{"paying quantities" | term_end }}. The amount is based on a percentage of the revenue from the commodity sold. The exact percentage is set in the original lease document that went along with the lease sale.
+* _Royalties_ A natural resource lease holder pays royalties after the lease starts producing a commodity in <glossary-term>paying quantities</glossary-term>. The amount is based on a percentage of the revenue from the commodity sold. The exact percentage is set in the original lease document that went along with the lease sale.
 * _Bonus_ The amount paid by the highest successful bidder for a natural resource lease. The winning bid.
 * _Rents_ A natural resource lease might not produce anything in paying quantities for some time after it is sold. Until it does, periodic payments are made for the right to continue exploration and development of the land for future natural resource production. These payments are called rent.
-* _Civil Penalties_ {{ "ONRR" | term }} issues civil penalties when companies fail to comply with, or knowingly or willfully violate, regulations or laws
+* _Civil Penalties_ <glossary-term>ONRR</glossary-term> issues civil penalties when companies fail to comply with, or knowingly or willfully violate, regulations or laws
 * _Inspection Fees_ The Department of the Interior inspects offshore oil and gas drilling rigs at least once a year. Inspection fees help recover some of the costs associated with these inspections.
 * _Other Revenues_ This category includes revenues that are not included in the royalty, rent, or bonus categories, such as minimum royalties, estimated royalties, settlement agreements, and interest.
 
@@ -103,5 +95,3 @@ _Wind_ Wind.
 _Other Commodities_ Anhydrous Sodium Sulfate (ton), Borax-Decahydrate (ton), Borax-Pentahydrate (ton), Boric Acid (ton), Carbon Dioxide Gas (CO2) (mcf), Cinders (ton), Clay (ton), Copper Concentrate (ton), Gilsonite (ton), Gold (ton), Gypsum (ton), Helium (bbl), Langbeinite (ton), Lead Concentrate (ton), Leonardite (ton), Limestone (ton), Magnesium Chloride Brine (ton), Manure Salts (ton), Muriate Of Potash-Granular (ton), Muriate Of Potash-Standard (ton), Other (ton), Phosphate Raw Ore (ton), Potash (ton), Purge Liquor (ton), Quartz Crystal (lb), Salt (ton), Sand/Gravel (ton), Sand/Gravel-Cubic Yards (cyd), Silver (oz), Soda Ash (ton), Sodium Bi-Carbonate (ton), Sodium Bisulfite (ton), Sodium Sesquicarbonate (ton), Sulfide (ton), Sulfur (lton), Sylvite-Raw Ore (ton), Trona Ore (ton), Zinc Concentrate (ton).
 
 ## Contact us
-
-{% include contact.html %}

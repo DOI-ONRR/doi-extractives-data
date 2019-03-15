@@ -207,7 +207,7 @@ In some situations, if oil and gas prices rise above certain thresholds, lease h
 
 Tax expenditures are defined in the law as “revenue losses attributable to provisions of the federal tax laws which allow a special exclusion, exemption, or deduction from gross income or which provide a special credit, a preferential rate of tax, or a deferral of tax liability.” These exceptions may be viewed as alternatives to other policy instruments, such as spending or regulatory programs.
 
-The Treasury estimates the total dollar amount of each tax expenditure in a given year and publishes a [report of these estimates](https://www.treasury.gov/resource-center/tax-policy/Pages/Tax-Expenditures.aspx).
+The Treasury estimates the total dollar amount of each tax expenditure in a given year and publishes a [report of these estimates](https://home.treasury.gov/policy-issues/tax-policy/tax-expenditures).
 
 <h2 data-toc-exclude="true">After a payment, what happens to the revenue?</h2>
 

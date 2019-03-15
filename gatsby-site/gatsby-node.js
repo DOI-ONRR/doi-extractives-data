@@ -545,6 +545,12 @@ var downloadsFederalRevByCompanyPageFrontmatter = "---"+os.EOL+
 							"permalink: /downloads/federal-revenue-by-company/"+os.EOL+
 							"---"+os.EOL;
 
+var downloadsDisbursementsFrontmatter = "---"+os.EOL+
+							"title: Disbursements | Documentation"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /downloads/disbursements/"+os.EOL+
+							"---"+os.EOL;
+
 var aboutPageFrontmatter = "---"+os.EOL+
 							"title: About"+os.EOL+
 							"layout: none"+os.EOL+
@@ -568,6 +574,7 @@ var explorePageFrontmatter = "---"+os.EOL+
 
 exports.onPostBuild = () => {
 	console.log("Prepending frontmatter to files...");
+    prependFile.sync(__dirname+'/public/downloads/disbursements/index.html', downloadsDisbursementsFrontmatter);
     prependFile.sync(__dirname+'/public/downloads/federal-revenue-by-company/index.html', downloadsFederalRevByCompanyPageFrontmatter);
     prependFile.sync(__dirname+'/public/downloads/federal-revenue-by-month/index.html', downloadsFederalRevByMonthPageFrontmatter);
     prependFile.sync(__dirname+'/public/downloads/federal-revenue-by-location/index.html', downloadsFederalRevByLocPageFrontmatter);
@@ -578,7 +585,6 @@ exports.onPostBuild = () => {
     prependFile.sync(__dirname+'/public/how-it-works/reconciliation/2016/index.html', howItWorksReconcile2016PageFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/disbursements/index.html', howItWorksDisbursementsPageFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/revenues/index.html', howItWorksRevenuesPageFrontmatter);
-    prependFile.sync(__dirname+'/public/how-it-works/aml-reclamation-program/index.html', howItWorksAmlPageFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/aml-reclamation-program/index.html', howItWorksAmlPageFrontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/federal-revenue-by-company/2013/index.html', howItWorksCompanyRevenue2013Frontmatter);
     prependFile.sync(__dirname+'/public/how-it-works/federal-revenue-by-company/2014/index.html', howItWorksCompanyRevenue2014Frontmatter);

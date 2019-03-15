@@ -77,6 +77,9 @@ exports.onClientEntry = () => {
   else if(path.includes("/about")){
     loader.addPagesArray([{"componentChunkName":"component---src-pages-about-index-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"about.json","path": path}]);
   }
+  else if(path.includes("/downloads/disbursements/")){
+    loader.addPagesArray([{"componentChunkName":"component---src-templates-downloads-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"downloads-disbursements.json","path": path}]);
+  }
   else if(path.includes("/downloads/federal-revenue-by-company/")){
     loader.addPagesArray([{"componentChunkName":"component---src-templates-downloads-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"downloads-federal-revenue-by-company.json","path": path}]);
   }

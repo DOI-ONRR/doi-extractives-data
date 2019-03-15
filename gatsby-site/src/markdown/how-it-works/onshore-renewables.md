@@ -47,10 +47,10 @@ permalink: /how-it-works/onshore-renewables/
   </div>
   <div class="revenues_subpage-steps onshore-renewables">
     <section class="container-outer">
-      <did-you-know color='blue' intro='BLM tracks the status of solar, wind, and geothermal projects on federal land.'>You can review <a href="https://www.blm.gov/programs/energy-and-minerals/renewable-energy/data">current and historical renewable energy data on BLM's website</a>.</did-you-know>
+      <did-you-know color='blue' intro='BLM tracks the status of solar, wind, and geothermal projects on federal land.'>You can review <a href="https://www.blm.gov/programs/energy-and-minerals/renewable-energy">current and historical renewable energy data on BLM's website</a>.</did-you-know>
       <div class="container">
         <process-group>
-          <process-step step.id="1" step.name="Plan">
+          <process-step step.id="1" step.name="Plan" expanded="true">
             <p>Over the past decade, the federal government has taken steps to update regulations to clarify and encourage planning for renewable energy development on federal lands, particularly for wind and solar energy.</p>
             <p>In 2005, BLM published a programmatic <glossary-term term.key="Environmental Impact Statement (EIS)">Environmental Impact Statement</glossary-term> to create a framework for developing wind energy on federal lands in the West. At the same time, BLM amended 53 land-use plans to allow for wind energy development. BLM field offices can amend additional land-use plans any time to support wind energy development.</p>
             <p>In 2012, BLM released the final solar Environmental Impact Statement. This statement furthered a proposal to create a competitive leasing program on federal lands for commercial scale solar development in 17 new <a href="https://www.blm.gov/programs/energy-and-minerals/renewable-energy/solar-energy/permitting-and-development/land-use-planning">Solar Energy Zones</a>.</p>

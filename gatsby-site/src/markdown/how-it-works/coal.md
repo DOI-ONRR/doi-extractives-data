@@ -47,7 +47,7 @@ permalink: /how-it-works/coal/
 			<did-you-know intro='“Fair market value” is determined differently by different state offices.'>BLM guidance allows for flexibility in how state offices estimate fair market value, according to the Government Accountability Office (GAO). Some offices only consider recent comparable sites, while others also estimate future revenue. The GAO report also found that some state offices were falling short on documenting and reviewing fair market value determinations.</did-you-know>
 		  <div class="container">
 		  	<process-group>
-		  		<process-step step.id="1" step.name="Plan">
+		  		<process-step step.id="1" step.name="Plan" expanded="true">
             <p>BLM evaluates federal lands for potential coal extraction through the multiple-use planning process, which includes:</p>
             <ul class="list-bullet">
               <li>Identifying coal to potentially extract on federal land</li>
@@ -59,7 +59,7 @@ permalink: /how-it-works/coal/
           </process-step>
 		  		<process-step step.id="2" step.name="Lease">
             <p>The Federal Coal Leasing Amendments Act of 1976 requires the federal government to lease coal competitively, meaning that any interested party can bid on a coal lease. BLM primarily uses the lease by application process. During this process, the public nominates a coal tract for BLM to sell. BLM reviews each application submitted by the public to make sure it complies with land-use plans. Next, a Regional Coal Team consisting of members from federal, state, local, and tribal governments reviews the application, consults the public, and decides whether to continue, change, or reject the application. At this point, BLM prepares an <glossary-term>Environmental Impact Statement (EIS)</glossary-term> or Environmental Assessment for public comment in accordance with the National Environmental Policy Act.</p>
-            <p>Next, BLM prepares to sell the lease. In advance of the sale, BLM estimates the <glossary-term>fair market value"</glossary-term> of the coal lease. BLM holds a lease sale where each bidder submits a sealed bid, and BLM opens the bids publicly. The highest bid wins, so long as it is equal to or greater than the coal tract’s presale estimated fair market value, and the bidder meets all requirements (such as paying fees). Once BLM accepts a bid, the bidder must pay one fifth of the <glossary-term>bonus</glossary-term> and the first year’s rent.</p>
+            <p>Next, BLM prepares to sell the lease. In advance of the sale, BLM estimates the <glossary-term>fair market value</glossary-term> of the coal lease. BLM holds a lease sale where each bidder submits a sealed bid, and BLM opens the bids publicly. The highest bid wins, so long as it is equal to or greater than the coal tract’s presale estimated fair market value, and the bidder meets all requirements (such as paying fees). Once BLM accepts a bid, the bidder must pay one fifth of the <glossary-term>bonus</glossary-term> and the first year’s rent.</p>
           </process-step>
 		  		<process-step step.id="3" step.name="Explore">
             <p>The lease holder must obtain a Coal Exploration License from the BLM to explore the lands for coal deposits. Exploration is the process of discovering the specific location, quantity, and quality of natural resources on leased land. Exploration typically takes place after leasing, but in some instances, exploration by multiple parties occurs before leasing to increase competition during the lease sale.</p>

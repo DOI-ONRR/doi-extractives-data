@@ -31,7 +31,7 @@ state_production: |
 
     **Nonenergy minerals:** In 2013, Wyoming's nonenergy mineral production was valued at over $2.26 billion. Notably, Wyoming produces more trona (the chief source of [soda ash](http://minerals.usgs.gov/minerals/pubs/commodity/soda_ash/)) than any other state, and the largest deposit of trona in the world sits under Sweetwater County in Wyoming. For details about what other minerals are extracted, see the [USGS Minerals Yearbook for Wyoming](http://minerals.usgs.gov/minerals/pubs/state/wy.html).
 state_land: |
-    The state government of Wyoming administers 3.4 million surface acres of land (about 5.5% of the state) and 3.9 million {{ "mineral acres" | term_end }}. For detailed information about land ownership in each county, see the [Wyoming Statewide Parcel Viewer](http://gis.wyo.gov/parcels/).
+    The state government of Wyoming administers 3.4 million surface acres of land (about 5.5% of the state) and 3.9 million <glossary-term>mineral acres</glossary-term>. For detailed information about land ownership in each county, see the [Wyoming Statewide Parcel Viewer](http://gis.wyo.gov/parcels/).
 state_land_production: |
     In FY 2014, 29.3 million short tons of surface-mined coal and 2.4 million short tons of underground-mined coal were extracted on state lands in Wyoming.
 
@@ -41,7 +41,7 @@ state_revenue: |
 
     In production year 2016, all 23 of Wyoming’s counties had taxable mineral production, though over 70% percent of the taxable value of mineral production came from Campbell, Sublette, and Sweetwater counties. In general, the state of Wyoming collects revenue from extraction in the form of severance taxes and counties collect revenue from extraction through ad valorem taxes.
 state_revenue_sustainability: |
-    ![Bar graph comparing Wyoming natural resources revenue to total Wyoming General Fund revenue from 2004-2016. Total revenue rose from just under $800 million in 2005 to over $1.2 billion in 2008, then fell to about $1 billion in 2009 and 2010 before rising to over $1.4 billion by 2015. In 2016, total general fund revenue fell to just over $900 million. Natural resources revenues followed a similar pattern, and accounted for more than a third and less than half of general fund revenues each year.]({{ site.baseurl }}/public/img/WY_revenue_sustainability.svg)
+    ![Bar graph comparing Wyoming natural resources revenue to total Wyoming General Fund revenue from 2004-2016. Total revenue rose from just under $800 million in 2005 to over $1.2 billion in 2008, then fell to about $1 billion in 2009 and 2010 before rising to over $1.4 billion by 2015. In 2016, total general fund revenue fell to just over $900 million. Natural resources revenues followed a similar pattern, and accounted for more than a third and less than half of general fund revenues each year.](/public/img/WY_revenue_sustainability.svg)
 
     In 2016, natural resource revenue streams contributed 34% of the state’s total general fund revenues. Wyoming’s general fund revenues from extractive industries have fluctuated from $315 million in 2005 to $640 million in 2014 and back down to $337 million in 2016. The percentage of total general fund revenues from extraction has also fluctuated between a low of 33% (in 2009) and a high of 46% (in 2014). Severance tax revenues hold particular importance for Wyoming, and have accounted for between 13% and 20% of general fund revenues in the last decade.
 

@@ -1,12 +1,7 @@
 ---
 title: Reconciliation | Documentation
-layout: content
+layout: downloads
 permalink: /downloads/reconciliation/
-title_display: Reconciliation
-breadcrumb:
-  - title: Downloads
-    permalink: /downloads/
-description: As a part of USEITI, companies reported payments to the government (e.g., rents, taxes, royalties) and the government reports what it received. These figures are compiled and reconciled by an Independent Administrator (IA) and published. The 2015 USEITI Report reconciled calendar year 2013 data. The 2016 USEITI Report reconciled calendar year 2015 data.
 tag:
 - Data
 - Downloads
@@ -15,48 +10,48 @@ tag:
 - Reconciliation
 archive: true
 ---
+<custom-link to="/downloads/" className="breadcrumb link-charlie">Downloads</custom-link> /
+# Reconciliation
 
-{% include archive-banner.html %}
+<div><archive-banner></archive-banner></div>
 
-> As a part of the implementation of the {{ "EITI Standard" | term_end }}, companies reported payments to the government (e.g., rents, taxes, royalties) and the government reported what it received. These figures were compiled and reconciled by an {{ "Independent Administrator (IA)" | term }} and published. The 2015 USEITI Report reconciled calendar year 2013 data. The 2016 USEITI Report reconciled calendar year 2015 data.
+> As a part of the implementation of the <glossary-term>EITI Standard</glossary-term>, companies reported payments to the government (e.g., rents, taxes, royalties) and the government reported what it received. These figures were compiled and reconciled by an <glossary-term>Independent Administrator (IA)</glossary-term> and published. The 2015 USEITI Report reconciled calendar year 2013 data. The 2016 USEITI Report reconciled calendar year 2015 data.
 
 Download calendar year data:
 
 <ul class="downloads-download_links list-unstyled">
-  <li><a href="{{site.baseurl}}/downloads/reconciliation_2015-12-10.xlsx">{% include svg/icon-download.svg %}
-  Full dataset, 2015 USEITI Report (xlsx, 39 KB)</a></li>
-  <li><a href="{{site.baseurl}}/downloads/reconciliation_2016-11-03.xlsx">{% include svg/icon-download.svg %}
-  Full dataset, 2016 USEITI Report (xlsx, 37 KB)</a></li>
+  <li><download-link to="/downloads/reconciliation_2015-12-10.xlsx">Full dataset, 2015 USEITI Report (xlsx, 39 KB)</download-link></li>
+  <li><download-link to="/downloads/reconciliation_2016-11-03.xlsx">Full dataset, 2016 USEITI Report (xlsx, 37 KB)</download-link></li>
 </ul>
 
 ## Background
 
-To implement the {{ "EITI Standard" | term_end}}, government, industry, and civil society collaborate in a disclosure process called reconciliation. The three sectors in a participating country develop a framework for reconciliation. Government and industry share the total amount of revenue the government received and industry paid in the year under review with the {{ "IA" | term_end:"independent administrator (IA)" }}. The IA reconciles reported revenue and investigates any discrepancies. The public can see the results for their country in an annual EITI report.
+To implement the <glossary-term>EITI Standard</glossary-term>, government, industry, and civil society collaborate in a disclosure process called reconciliation. The three sectors in a participating country develop a framework for reconciliation. Government and industry share the total amount of revenue the government received and industry paid in the year under review with the <glossary-term term.key="independent administrator (IA)">IA</glossary-term>. The IA reconciles reported revenue and investigates any discrepancies. The public can see the results for their country in an annual EITI report.
 
 Through a unilateral disclosure, the Department of the Interior (DOI) has published online all in-scope revenue from extraction on federal lands by revenue stream and company for CY 2013 and CY 2015:
 
 - For the 2015 report, DOI reported a total of $12.64 billion in revenue, disclosing to the public 100% of in-scope DOI revenue from extraction on federal lands during CY 2013.
 - For the 2016 report, DOI reported a total of $7.80 billion in revenue, disclosing to the public 100% of in-scope DOI revenue from extraction on federal lands during CY 2015.
 
-In addition to DOI’s unilateral disclosure, the {{ "Multi-Stakeholder Group (MSG)" | term }} asked companies to report to the IA that same nontax information, revenue payments to DOI, as well as federal corporate income tax payments and refunds from the Internal Revenue Service (IRS).
+In addition to DOI’s unilateral disclosure, the <glossary-term>Multi-Stakeholder Group (MSG)</glossary-term> asked companies to report to the IA that same nontax information, revenue payments to DOI, as well as federal corporate income tax payments and refunds from the Internal Revenue Service (IRS).
 
 ## Reconciliation Results
 
-After the independent administrator compared company payments to government revenue, they worked with companies and government entities to investigate discrepancies exceeding the {{ "margin of variance" | term_end }}, and were able to find explanations for all of them.
+After the independent administrator compared company payments to government revenue, they worked with companies and government entities to investigate discrepancies exceeding the <glossary-term>margin of variance</glossary-term>, and were able to find explanations for all of them.
 
 Several companies also allowed for corporate income tax reconciliation. Of the companies invited to participate, only C-corporations are eligible to report taxes.
 
-<img src="{{ site.baseurl }}/public/img/reconciliation-revenue-report.png" alt="Chart the scope of reconciliation reporting participation in 2013: Thousands of companies large and small, $12.64 billion unilaterally disclosed by DOI, 45 companies invited to report, $10.44 billion in-scope revenue reported by DOI, 31 companies reported $8.5 billion which represents 81% of in-scope DOI revenue and 67% of DOI revenue unilaterally disclosed by DOI" class="article_img-60 u-margin-top">
+<img src="/public/img/reconciliation-revenue-report.png" alt="Chart the scope of reconciliation reporting participation in 2013: Thousands of companies large and small, $12.64 billion unilaterally disclosed by DOI, 45 companies invited to report, $10.44 billion in-scope revenue reported by DOI, 31 companies reported $8.5 billion which represents 81% of in-scope DOI revenue and 67% of DOI revenue unilaterally disclosed by DOI" class="article_img-60 u-margin-top">
 
-<img src="{{ site.baseurl }}/public/img/reconciliation-revenue-rec.png" alt="Chart the scope of reconciliation reporting participation in 2013: Thousands of companies large and small, $12.64 billion unilaterally disclosed by DOI, 45 companies invited to report, $10.44 billion in-scope revenue reported by DOI, 31 companies reported $8.5 billion which represents 81% of in-scope DOI revenue and 67% of DOI revenue unilaterally disclosed by DOI" class="article_img-60 u-margin-top">
+<img src="/public/img/reconciliation-revenue-rec.png" alt="Chart the scope of reconciliation reporting participation in 2013: Thousands of companies large and small, $12.64 billion unilaterally disclosed by DOI, 45 companies invited to report, $10.44 billion in-scope revenue reported by DOI, 31 companies reported $8.5 billion which represents 81% of in-scope DOI revenue and 67% of DOI revenue unilaterally disclosed by DOI" class="article_img-60 u-margin-top">
 
-<img src="{{ site.baseurl }}/public/img/reconciliation-taxes.png" alt="Chart of 2013 federal corporate income taxes reported: Thousands of companies large and small, $11.8 billion in corporate tax receipts, 41 applicable companies maximum, 12 companies reported net $190 million, comes from 2013 IRS statistics from Petroleum and coal products manufacturing and mining industries" class="article_img-60 u-margin-top">
+<img src="/public/img/reconciliation-taxes.png" alt="Chart of 2013 federal corporate income taxes reported: Thousands of companies large and small, $11.8 billion in corporate tax receipts, 41 applicable companies maximum, 12 companies reported net $190 million, comes from 2013 IRS statistics from Petroleum and coal products manufacturing and mining industries" class="article_img-60 u-margin-top">
 
 ## Scope
 
 Requirement 4 of the EITI Standard outlines the responsibility of the MSG to determine the scope of EITI reporting in the United States. In carrying out this responsibility, the MSG considered information from a variety of sources before coming to a consensus on the scope for each USEITI Report.
 
-The MSG publishes meeting minutes and materials for all subcommittee and full MSG meetings on the [MSG website](https://www.doi.gov/eiti/FACA/meetings). These minutes and materials document the MSG’s historical considerations and decisions around scoping. Please refer to *Appendix A: Revenue Reporting Considerations* within the [Extractive Revenue Appendix (PDF)]({{site.baseurl}}/downloads/USEITI_extractive-revenue-appendix_2015-12-10.pdf) for additional background on the scoping process for USEITI.
+The MSG publishes meeting minutes and materials for all subcommittee and full MSG meetings on the [MSG website](https://www.doi.gov/eiti/FACA/meetings). These minutes and materials document the MSG’s historical considerations and decisions around scoping. Please refer to *Appendix A: Revenue Reporting Considerations* within the [Extractive Revenue Appendix (PDF)](/downloads/USEITI_extractive-revenue-appendix_2015-12-10.pdf) for additional background on the scoping process for USEITI.
 
 ### In-scope government entities and revenue streams
 

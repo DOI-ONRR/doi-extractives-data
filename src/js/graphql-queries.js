@@ -52,6 +52,21 @@ module.exports = Object.freeze({
         }
       }
     }`,
+  MARKDOWN_CASE_STUDIES: 
+    `allMarkdownRemark(filter: {id: {regex: "/case-studies/"}}) {
+      pages: edges {
+        page: node {
+          frontmatter {
+            title
+            permalink
+            layout
+            redirect_from
+          }
+          htmlAst
+          html
+        }
+      }
+    }`,
 
 });
 

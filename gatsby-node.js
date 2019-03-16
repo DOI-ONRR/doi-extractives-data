@@ -76,7 +76,12 @@ exports.sourceNodes = ({ getNodes, boundActionCreators }) => {
 exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators;
 
-  return Promise.all([createStatePages(createPage, graphql), createHowItWorksPages(createPage, graphql), createDownloadsPages(createPage, graphql)]);
+  return Promise.all([
+  	createStatePages(createPage, graphql), 
+  	createHowItWorksPages(createPage, graphql), 
+  	createDownloadsPages(createPage, graphql),
+  	createCaseStudiesPages(createPage, graphql),
+	]);
 };
 
 // Page Templates
@@ -86,6 +91,7 @@ const HOWITWORKS_PROCESS_TEMPLATE = path.resolve(`src/templates/how-it-works-pro
 const DOWNLOADS_TEMPLATE = path.resolve(`src/templates/downloads-default.js`);
 const HOWITWORKS_RECONCILIATION_TEMPLATE = path.resolve(`src/templates/how-it-works-reconciliation.js`);
 const HOWITWORKS_REVENUE_BY_COMPANY_TEMPLATE = path.resolve(`src/templates/how-it-works-revenue-by-company.js`);
+const ARCHIVE_TEMPLATE = path.resolve(`src/templates/archive-template.js`);
 
 const getPageTemplate = (templateId) => {
 	switch(templateId) {
@@ -99,6 +105,8 @@ const getPageTemplate = (templateId) => {
 			return HOWITWORKS_RECONCILIATION_TEMPLATE;
 		case 'howitworks-revenue-by-company':
 			return HOWITWORKS_REVENUE_BY_COMPANY_TEMPLATE;
+		case 'archive':
+			return ARCHIVE_TEMPLATE;
 	}
 
 	return CONTENT_DEFAULT_TEMPLATE;
@@ -271,6 +279,39 @@ const createHowItWorksPages = (createPage, graphql) => {
 const createDownloadsPages = (createPage, graphql) => {
 
 	const graphQLQueryString = "{"+GRAPHQL_QUERIES.MARKDOWN_DOWNLOADS+"}";
+	
+	return new Promise((resolve, reject) => {
+	    resolve(
+	      graphql(graphQLQueryString).then(result => {
+	        if (result.errors) {
+	        	console.error(result.errors);
+	          reject(result.errors);
+	        }
+	        else{ 
+	        	// Create pages for each markdown file.
+		        result.data.allMarkdownRemark.pages.forEach(({ page }) => {
+		          const path = page.frontmatter.permalink;
+		          const template = getPageTemplate(page.frontmatter.layout);
+
+		          createPage({
+		            path,
+		            component: template,
+		            context: {
+		              markdown: page,
+		            },
+		          });
+		        });
+	        	resolve();
+	        }
+	      })
+	    );
+	  });
+};
+
+
+const createCaseStudiesPages = (createPage, graphql) => {
+
+	const graphQLQueryString = "{"+GRAPHQL_QUERIES.MARKDOWN_CASE_STUDIES+"}";
 	
 	return new Promise((resolve, reject) => {
 	    resolve(

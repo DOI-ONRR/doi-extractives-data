@@ -14,7 +14,7 @@ import {DisplayStatistic} from '../components/utils/DisplayStatistic';
 import {DisplayYear} from '../components/stats/DisplayYear'
 import {DisplayDisbursement} from '../components/stats/DisplayDisbursement'
 import {PageToc} from '../components/navigation/PageToc'
-import Link from '../components/utils/temp-link';
+import Link, {withPrefix} from '../components/utils/temp-link';
 import {Accordion} from '../components/layouts/Accordion';
 import {DidYouKnow} from '../components/layouts/DidYouKnow';
 import {ProcessGroup} from '../components/layouts/ProcessGroup';
@@ -31,6 +31,49 @@ import HardrockIcon from '-!svg-react-loader!../img/svg/icon-hardrock.svg';
 import RenewablesIcon from '-!svg-react-loader!../img/svg/icon-renewables.svg';
 import ChevronIcon from '-!svg-react-loader!../img/svg/chevron-lt.svg';
 
+const SelectWrapper = (props) => {
+  let { onchange, ...mutableProps } = props;
+
+  let onchangeFunc;
+  if(onchange) {
+    onchange = onchange.replace('this','e.target')
+    onchangeFunc = Function('e', onchange);
+  }
+
+  return (
+    <select {...mutableProps} onChange={(e)=>{ onchangeFunc(e); }} >
+      {props.children}
+    </select>
+  );
+}
+
+const UseWrapper = (props) => {
+  let { ...mutableProps } = props;
+
+  if(mutableProps.xLinkHref) {
+    mutableProps.xlinkHref = (mutableProps.xLinkHref.startsWith('/'))? withPrefix(mutableProps.xLinkHref) : mutableProps.xLinkHref;
+    delete mutableProps.xLinkHref;
+  }
+  return (
+    <use {...mutableProps}>
+      {props.children}
+    </use>
+  );
+}
+
+const SvgWrapper = (props) => {
+  let { ...mutableProps } = props;
+
+  if(mutableProps.xmlnsXLink) {
+    mutableProps.xmlnsXLink = (mutableProps.xmlnsXLink.startsWith('/'))? withPrefix(mutableProps.xmlnsXLink) : mutableProps.xmlnsXLink;
+    delete mutableProps.xmlnsXLink;
+  }
+  return (
+    <svg {...mutableProps}>
+      {props.children}
+    </svg>
+  );
+}
 /***
  * This utility is used to render html and react components from markdown files
  * Gatsby's markdown transformer plugin automatically creates and htmlAst attribute
@@ -67,6 +110,9 @@ const hastReactRenderer = new rehypeReact({
                 'hardrock-icon': HardrockIcon,
                 'renewables-icon': RenewablesIcon,
                 'chevron-icon': ChevronIcon,
+                'select': SelectWrapper,
+                'use': UseWrapper,
+                'svg': SvgWrapper
               },
 
 }).Compiler; 

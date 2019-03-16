@@ -41,7 +41,7 @@ class ArchiveTemplate extends React.Component {
             ]}
 
             />
-        <div dangerouslySetInnerHTML={{__html: this.props.pathContext.markdown.html}} />;
+        {hastReactRenderer(this.props.pathContext.markdown.htmlAst)}
       </main>
     );
   }

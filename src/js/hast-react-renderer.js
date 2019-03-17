@@ -46,7 +46,7 @@ const SelectWrapper = (props) => {
   }
 
   return (
-    <select {...mutableProps} onChange={(e)=>{ onchangeFunc(e); }} >
+    <select {...mutableProps} onChange={onchangeFunc && ( (e) => onchangeFunc(e) )} >
       {props.children}
     </select>
   );

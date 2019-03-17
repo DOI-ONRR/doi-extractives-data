@@ -1,6 +1,9 @@
 import React from 'react';
 import rehypeReact from "rehype-react";
 
+/* @TODO Could we use gatsby to get a list of all components and svgs to add to the renderer automatically?
+We could then prepend the imports to this file as well as the mapping object. Just a thought. */
+
 import OilRig from '-!svg-react-loader!../img/svg/icon-ribbon-oil-rig.svg';
 import HowItWorksRibbonGraphic from '-!svg-react-loader!../img/svg/how-it-works-ribbon-graphic.svg';
 import HowMainIconOil from '-!svg-react-loader!../img/svg/how-main-icon-oil.svg';
@@ -34,9 +37,11 @@ import ChevronIcon from '-!svg-react-loader!../img/svg/chevron-lt.svg';
 const SelectWrapper = (props) => {
   let { onchange, ...mutableProps } = props;
 
+  // Since attribute values are passed in as a string we have to create a function since onchange expects a function
+  // We also will pass in the event and replace 'this' with e.target to replace any code that uses this.value for example
   let onchangeFunc;
   if(onchange) {
-    onchange = onchange.replace('this','e.target')
+    onchange = onchange.replace('this.','e.target.')
     onchangeFunc = Function('e', onchange);
   }
 

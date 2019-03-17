@@ -9,7 +9,7 @@ import {withPrefixSVG} from '../components/utils/temp-link';
 
 import {PageToc} from '../components/navigation/PageToc'
 
-class ArchiveTemplate extends React.Component {
+class CaseStudiesTemplate extends React.Component {
 
   componentDidMount() {
     const script1 = document.createElement("script");
@@ -47,4 +47,4 @@ class ArchiveTemplate extends React.Component {
   }
 
 }
-export default ArchiveTemplate;
+export default CaseStudiesTemplate;

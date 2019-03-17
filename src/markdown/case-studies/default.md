@@ -1,6 +1,6 @@
 ---
 title: Case Studies | Natural Resources Revenue
-layout: archive
+layout: case-studies
 permalink: /case-studies/
 ---
 

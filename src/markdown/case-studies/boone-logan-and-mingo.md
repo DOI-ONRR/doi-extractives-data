@@ -1,6 +1,6 @@
 ---
 title: Boone, Logan, and Mingo Counties, West Virginia | Case Studies | Natural Resources Revenue Data
-layout: archive
+layout: case-studies
 permalink: /case-studies/boone-logan-and-mingo/
 ---
 

@@ -91,7 +91,7 @@ const HOWITWORKS_PROCESS_TEMPLATE = path.resolve(`src/templates/how-it-works-pro
 const DOWNLOADS_TEMPLATE = path.resolve(`src/templates/downloads-default.js`);
 const HOWITWORKS_RECONCILIATION_TEMPLATE = path.resolve(`src/templates/how-it-works-reconciliation.js`);
 const HOWITWORKS_REVENUE_BY_COMPANY_TEMPLATE = path.resolve(`src/templates/how-it-works-revenue-by-company.js`);
-const ARCHIVE_TEMPLATE = path.resolve(`src/templates/archive-template.js`);
+const CASE_STUDIES_TEMPLATE = path.resolve(`src/templates/case-studies-template.js`);
 
 const getPageTemplate = (templateId) => {
 	switch(templateId) {
@@ -105,8 +105,8 @@ const getPageTemplate = (templateId) => {
 			return HOWITWORKS_RECONCILIATION_TEMPLATE;
 		case 'howitworks-revenue-by-company':
 			return HOWITWORKS_REVENUE_BY_COMPANY_TEMPLATE;
-		case 'archive':
-			return ARCHIVE_TEMPLATE;
+		case 'case-studies':
+			return CASE_STUDIES_TEMPLATE;
 	}
 
 	return CONTENT_DEFAULT_TEMPLATE;

@@ -17,10 +17,6 @@ class ProcessGroup extends React.Component {
 
 }
 
-ProcessGroup.propTypes = {
-
-}
-
 export default ProcessGroup;
 
 export class ProcessStep extends React.Component {
@@ -75,7 +71,7 @@ export class ProcessStep extends React.Component {
 ProcessStep.propTypes = {
 	expanded: PropTypes.oneOfType([
 						  PropTypes.string,
-						  PropTypes.boolean
+						  PropTypes.bool
 						])
 }
 

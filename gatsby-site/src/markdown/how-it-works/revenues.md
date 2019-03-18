@@ -166,8 +166,8 @@ Lease holders also pay different fees to the Bureau of Land Management, Bureau o
         <strong>$15</strong> per acre application filing fee (outside designated leasing areas)
       </td>
       <td><strong>Rent</strong> determined by acreage and land value</td>
-      <td><strong>$5,010</strong> megawatt capacity fee for <strong>wind</strong><br>
-          <strong>Solar</strong> megawatt capacity fees vary by technology. The fee is <strong>$2,863</strong> for photovoltaic solar facilities, <strong>$3,578</strong> for concentrated photovoltaic solar facilities and concentrated solar power facilities, and <strong>$4,294</strong> for concentrated solar power facilities with storage capacity of 3 hours or more</td>
+      <td><strong>$5,010</strong> megawatt capacity fee for wind<br><br>
+          Solar megawatt capacity fees vary by technology, ranging from <strong>$2,863</strong> to <strong>$4,294</strong></td>
     </tr>
     <tr>
       <td>Offshore (wind)</td>
@@ -212,13 +212,13 @@ Lease holders also pay different fees to the Bureau of Land Management, Bureau o
           <strong>$5</strong> annual rent per acre after 10 years
       </td>
       <td>Direct-use fees for energy needs other than the commercial production or generation of electricity</td>
-      <td>Electricity sales: <strong>1.75%</strong> of gross proceeds for 10 years, then <strong>3.5%</strong><br>
+      <td>Electricity sales: <strong>1.75%</strong> of gross proceeds for 10 years, then <strong>3.5%</strong><br><br>
           Arm’s length sales: <strong>10%</strong> of gross proceeds from contract multiplied by lease royalty rate
       </td>    
     </tr>
     <tr>
       <td>Noncompetitive leasing</td>
-      <td>Application fee: <strong>$415</strong></td>
+      <td><strong>$415</strong> application fee</td>
       <td><strong>$1</strong> annual rent per acre for 10 years<br>
           <strong>$5</strong> annual rent per acre thereafter
       </td>

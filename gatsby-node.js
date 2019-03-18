@@ -428,7 +428,7 @@ var copyfile = require('fs-copy-file-sync');
 exports.onPostBuild = () => {
 
 	console.log("Copying static html pages to public...");
-	copydir(__dirname+'/public/static/pages', __dirname+'/public');
+	copydir.sync(__dirname+'/static/pages', __dirname+'/public');
 	console.log("Finished Copying istatic html pages to public.");
 
 	console.log("Copying Files from public to _site");

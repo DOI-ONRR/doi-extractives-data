@@ -133,8 +133,8 @@ Lease holders also pay different fees to the Bureau of Land Management, Bureau o
     </tr>
     <tr>
       <td>Acquired lands</td>
-      <td>Minimum bond amount for prospecting permits is <strong>$1,000</strong><br>
-          Minimum bond amount for leases is <strong>$5,000</strong></td>
+      <td><strong>$1,000</strong> minimum bond for prospecting permits<br>
+          <strong>$5,000</strong> minimum bond for leases</td>
       <td><strong>$0.50</strong> per acre or fraction of an acre</td>
       <td></td>
       <td>Royalty rates are exempt from minimums and determined on an individual basis by the authorized leasing officers.</td>
@@ -166,8 +166,8 @@ Lease holders also pay different fees to the Bureau of Land Management, Bureau o
         <strong>$15</strong> per acre application filing fee (outside designated leasing areas)
       </td>
       <td><strong>Rent</strong> determined by acreage and land value</td>
-      <td>Wind: Megawatt capacity fee of <strong>$5,010</strong> 
-          Solar: Megawatt capacity fee varies according to technology. The fee is <strong>$2,863</strong> for photovoltaic solar facilities, <strong>$3,578</strong> for concentrated photovoltaic solar facilities and concentrated solar power facilities, and <strong>$4,294</strong> for concentrated solar power facilities with storage capacity of 3 hours or more</td>
+      <td><strong>$5,010</strong> megawatt capacity fee for <strong>wind</strong><br>
+          <strong>Solar</strong> megawatt capacity fees vary by technology. The fee is <strong>$2,863</strong> for photovoltaic solar facilities, <strong>$3,578</strong> for concentrated photovoltaic solar facilities and concentrated solar power facilities, and <strong>$4,294</strong> for concentrated solar power facilities with storage capacity of 3 hours or more</td>
     </tr>
     <tr>
       <td>Offshore (wind)</td>
@@ -175,11 +175,13 @@ Lease holders also pay different fees to the Bureau of Land Management, Bureau o
           <strong>$0.25</strong> per acre for acquisition fee (uncompetitive lease)</td>
       <td><strong>$3</strong> annual rent per acre</td>
       <td></td>
-      <td><strong>2%</strong> (unless otherwise specified or waived) of anticipated value of wind energy produced in operating fee
+      <td><strong>2%</strong> of anticipated value of wind energy produced in operating fee*
       </td>
     </tr>
   </tbody>
 </table>
+
+<p class="para-sm">* Unless waived or otherwise specified</p>
 
 <!--Geothermal-->
 <p style="margin: 2em 0 0 0;"><geothermal-icon></geothermal-icon> <strong>Geothermal</strong></p>
@@ -202,8 +204,8 @@ Lease holders also pay different fees to the Bureau of Land Management, Bureau o
     <tr>
       <td>Competitive leasing</td>
       <td>
-        Nomination fee: <strong>$115</strong> per nomination + <strong>$0.12</strong> per acre<br>
-        Application fee: <strong>$165</strong>
+        <strong>$115</strong> nomination fee and <strong>$0.12</strong> per acre<br>
+        <strong>$165</strong> application fee
       </td>
       <td><strong>$2</strong> per acre for the first year<br>
           <strong>$3</strong> annual rent per acre for years 2–10<br>

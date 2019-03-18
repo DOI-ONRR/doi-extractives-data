@@ -16,6 +16,7 @@ const initialState = {
 	SourceData: {},
 	SyncIds: {},
 	FilteredResults: {},
+	SelectedYears: {},
 };
 
 
@@ -25,6 +26,7 @@ const GROUP_BY_YEAR = 'GROUP_DATA_SETS_BY_YEAR';
 const GROUP_BY_MONTH = 'GROUP_DATA_SETS_BY_MONTH';
 const SET_DATA_SELECTED_BY_ID = 'SET_DATA_SELECTED_BY_ID';
 const FILTER_DATA_SETS = 'FILTER_DATA_SETS';
+const SET_SELECTED_YEAR_BY_ID = 'SET_SELECTED_YEAR_BY_ID';
 
 
 // Define Action Creators 
@@ -33,6 +35,7 @@ export const groupByYear = (configs) => ({ type: GROUP_BY_YEAR, payload: configs
 export const groupByMonth = (configs) => ({ type: GROUP_BY_MONTH, payload: configs });
 export const setDataSelectedById = (configs) => ({ type: SET_DATA_SELECTED_BY_ID, payload: configs });
 export const filterDataSets = (configs) => ({ type: FILTER_DATA_SETS, payload: configs });
+export const setSelectedYearById = (payload) => ({ type: SET_SELECTED_YEAR_BY_ID, payload: payload });
 
 
 // Define Action Handlers
@@ -56,7 +59,7 @@ const groupByYearHandler = (state, action) => {
 
 	payload.forEach((config) => {
 
-		results[config.id] = dataSetByYear(config.sourceKey, state.SourceData[config.sourceKey], config.filter, config.options);
+		results[config.id] = dataSetByYear(config.id, config.sourceKey, state.SourceData[config.sourceKey], config.filter, config.options);
 		
 		addDataSetSync(config.options.syncId, config.id, results);
 
@@ -124,6 +127,17 @@ const addDataSetSync = (syncId, dataId, results) => {
 	}
 }
 
+const setSelectedYearByIdHandler = (state, action) => {
+	const { payload } = action;
+
+	let updatedSelectedYears = state.SelectedYears;
+	updatedSelectedYears[payload.id] = payload.year;
+	let updatedDataSet = state[payload.id];
+	updatedDataSet.selectedDataKey = payload.year.toString();
+
+  return ({...state, SelectedYears: updatedSelectedYears, ...updatedDataSet });
+}
+
 
 // Export reducer
 export default createReducer(initialState, {
@@ -131,7 +145,8 @@ export default createReducer(initialState, {
 	[GROUP_BY_YEAR]: groupByYearHandler,
 	[GROUP_BY_MONTH]: groupByMonthHandler,
 	[SET_DATA_SELECTED_BY_ID]: setDataSelectedByIdHandler,
-	[FILTER_DATA_SETS]: filterDataSetsHandler
+	[FILTER_DATA_SETS]: filterDataSetsHandler,
+	[SET_SELECTED_YEAR_BY_ID]: setSelectedYearByIdHandler
 });
 
 
@@ -140,7 +155,7 @@ export default createReducer(initialState, {
 // The following Utils are used to resolve differences in data identifiers
 const getDate = (data) => data.ProductionDate || data.RevenueDate;
 const getMonth = (data) => data.ProductionMonth || data.RevenueMonth;
-const getYear = (data) => data.ProductionYear || data.RevenueYear || data.Year;
+const getYear = (data) => data.ProductionYear || data.RevenueYear || data.Year || data.CalendarYear;
 const getMonthKey = (data) => {
 	let key;
 	if(data.ProductionMonth) {
@@ -163,6 +178,9 @@ const getYearKey = (data) => {
 	else if(data.Year) {
 		key = "data.Year";
 	}
+	else if(data.CalendarYear) {
+		key= "data.CalendarYear";
+	}
 	return key;
 }
 const getDateKey = (data) => {
@@ -177,7 +195,10 @@ const getDateKey = (data) => {
 	return key;
 }
 // Used to get the data attribute that will be added
-const getNumToSum = (data) => data.Volume || data.Revenue || data.Disbursement || 0;
+const getNumToSum = (data) => {
+	let num = data.Volume || data.Revenue || data.Disbursement || 0;
+	return (typeof num === 'string')? parseInt(num) : num;
+}
 
 /**
  * Set the most recent year available in our data
@@ -232,7 +253,7 @@ const filterSourceData = (key, state, filter, options) => {
  * 
  * @returns {Object}
  **/
-const dataSetByYear = (key, source, filter, options) => {
+const dataSetByYear = (id, key, source, filter, options) => {
 	if(source === undefined) return source;
 
 	let results, xAxisLabels, legendLabels, groupNames, units, longUnits, selectedDataKey;
@@ -268,6 +289,19 @@ const dataSetByYear = (key, source, filter, options) => {
 
 	if(filter) {
 
+		if(filter.propEquals) {
+			let property = Object.keys(filter.propEquals)[0];
+			// Create a new array for filtered results
+			results = results.map((yearData) => {
+				// filter each entry for the year
+				yearData[Object.keys(yearData)[0]] = yearData[Object.keys(yearData)[0]].filter((item) => {
+					return item.data[property] === filter.propEquals[property];
+				});
+
+				return yearData;
+			});
+		}
+
 		// Sum volume by data key and assign year key to the result
 		if(filter.sumBy) {
 			results = results.map((yearData) => {
@@ -278,6 +312,7 @@ const dataSetByYear = (key, source, filter, options) => {
 							total[item.data[filter.sumBy]]+getNumToSum(item.data) 
 							: 
 							getNumToSum(item.data);
+
 
 					return total;},{})];
 
@@ -317,15 +352,17 @@ const dataSetByYear = (key, source, filter, options) => {
 
 
 	return {
+		dataId: id,
+		syncId: options.syncId,
 		data: results, 
 		groupNames: groupNames,
 		lastUpdated: Date.now(),
 		legendLabels: legendLabels,
 		longUnits: longUnits,
 		selectedDataKey: selectedDataKey,
-		syncId: options.syncId,
 		units: units,
 		xAxisLabels: xAxisLabels,
+		displayName: options.displayName,
 	};
 }
 

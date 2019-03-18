@@ -1,0 +1,28 @@
+@value colors: "../../../css-global/colors.css";
+@value white, gray-dark, gray-light, gray-pale from colors;
+
+.root {
+
+}
+
+.map {
+  background: gray-light;
+  box-sizing: border-box;
+  display: block;
+  height: auto;
+  padding: 3.6%;
+  width: 68%;
+}
+
+.states {
+	fill: gray-pale;
+	pointer-events: none;
+	stroke: gray-dark;
+	stroke-width: 0.5;
+}
+
+.counties {
+	fill: white;
+	stroke: gray-dark;
+	stroke-width: 0.5;
+}

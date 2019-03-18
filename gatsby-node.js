@@ -11,6 +11,13 @@ const DATA_TRANSFORMER_CONSTANTS = require('./src/js/data-transformers/constants
 const productionVolumesTransformer = require('./src/js/data-transformers/production-volumes-transformer');
 const revenuesTransformer = require('./src/js/data-transformers/revenues-transformer');
 const federalDisbursementsTransformer = require('./src/js/data-transformers/federal-disbursements-transformer');
+const offshoreProductionTransformer = require('./src/js/data-transformers/offshore-production-transformer');
+
+// Data to import to be added to graphql schema
+// Import data from yml files
+const yaml = require('js-yaml');
+const fs = require('fs');
+const OFFSHORE_PRODUCTION_DATA = './src/data/offshore_federal_production_regions.yml';
 
 const Remark = require('remark');
 const remarkHTML = require('remark-html');
@@ -68,6 +75,11 @@ exports.sourceNodes = ({ getNodes, boundActionCreators }) => {
 	federalDisbursementsTransformer(createNode, 
 		getNodes().filter(n => n.internal.type === DATA_TRANSFORMER_CONSTANTS.FEDERAL_DISBURSEMENTS_EXCEL));
 
+	try {
+	    offshoreProductionTransformer(createNode, yaml.safeLoad(fs.readFileSync(OFFSHORE_PRODUCTION_DATA, 'utf8')));
+	} catch (e) {
+	    console.log(e);
+	}
 }
 
 
@@ -81,6 +93,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
   	createHowItWorksPages(createPage, graphql), 
   	createDownloadsPages(createPage, graphql),
   	createCaseStudiesPages(createPage, graphql),
+  	//createOffshorePages(createPage, graphql),
 	]);
 };
 
@@ -92,6 +105,7 @@ const DOWNLOADS_TEMPLATE = path.resolve(`src/templates/downloads-default.js`);
 const HOWITWORKS_RECONCILIATION_TEMPLATE = path.resolve(`src/templates/how-it-works-reconciliation.js`);
 const HOWITWORKS_REVENUE_BY_COMPANY_TEMPLATE = path.resolve(`src/templates/how-it-works-revenue-by-company.js`);
 const CASE_STUDIES_TEMPLATE = path.resolve(`src/templates/case-studies-template.js`);
+const OFFSHORE_REGION_TEMPLATE = path.resolve(`src/templates/offshore-region.js`);
 
 const getPageTemplate = (templateId) => {
 	switch(templateId) {
@@ -107,6 +121,8 @@ const getPageTemplate = (templateId) => {
 			return HOWITWORKS_REVENUE_BY_COMPANY_TEMPLATE;
 		case 'case-studies':
 			return CASE_STUDIES_TEMPLATE;
+		case 'offshore-region':
+			return OFFSHORE_REGION_TEMPLATE;
 	}
 
 	return CONTENT_DEFAULT_TEMPLATE;
@@ -341,6 +357,56 @@ const createCaseStudiesPages = (createPage, graphql) => {
 	  });
 };
 
+const createOffshorePages = (createPage, graphql) => {
+
+	const graphQLQueryString = "{"+GRAPHQL_QUERIES.MARKDOWN_OFFSHORE
+																+GRAPHQL_QUERIES.OFFSHORE_PRODUCTION_ALASKA
+																+GRAPHQL_QUERIES.OFFSHORE_PRODUCTION_GULF
+																+GRAPHQL_QUERIES.OFFSHORE_PRODUCTION_PACIFIC+"}";
+	
+	return new Promise((resolve, reject) => {
+	    resolve(
+	      graphql(graphQLQueryString).then(result => {
+	        if (result.errors) {
+	        	console.error(result.errors);
+	          reject(result.errors);
+	        }
+	        else{ 
+	        	// Create pages for each markdown file.
+		        result.data.allMarkdownRemark.pages.forEach(({ page }) => {
+
+		          const path = page.frontmatter.permalink;
+		          const template = getPageTemplate(page.frontmatter.layout);
+		          let dataSet;
+		          switch(page.frontmatter.unique_id) {
+		          	case 'alaska':
+		          		dataSet = result.data.AlaskaOffshoreProduction;
+		          		break;
+		          	case 'gulf':
+		          		dataSet = result.data.GulfOffshoreProduction;
+		          		break;
+		          	case 'pacific':
+		          		dataSet = result.data.PacificOffshoreProduction;
+		          		break;
+
+		          }
+
+		          createPage({
+		            path,
+		            component: template,
+		            context: {
+		              markdown: page,
+		              data: dataSet,
+		            },
+		          });
+		        });
+	        	resolve();
+	        }
+	      })
+	    );
+	  });
+};
+
 exports.modifyBabelrc = ({ babelrc }) => {
   if (process.env.NODE_ENV !== `production`) {
     return {
@@ -360,6 +426,11 @@ var copydir = require('copy-dir');
 var copyfile = require('fs-copy-file-sync');
 
 exports.onPostBuild = () => {
+
+	console.log("Copying static html pages to public...");
+	copydir(__dirname+'/public/static/pages', __dirname+'/public');
+	console.log("Finished Copying istatic html pages to public.");
+
 	console.log("Copying Files from public to _site");
 	copydir.sync(__dirname+'/public', './_site');
 	console.log("Finished Copying Files to _site.");
@@ -368,4 +439,5 @@ exports.onPostBuild = () => {
 	console.log("Copying index.html to root...");
 	copyfile(__dirname+'/public/index.html', __dirname+'/index.html');
 	console.log("Finished Copying index.html to root.");
+
 }

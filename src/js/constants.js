@@ -10,6 +10,8 @@ module.exports = Object.freeze({
   FISCAL_YEAR_KEY: 'FiscalYear',
   CALENDAR_YEAR_KEY: 'CalendarYear',
 
+  // Offshore data keys for redux store
+  OFFSHORE_REGION_DATA_TYPE: 'offshoreRegion',
 
   // Disbursements data keys for redux store
   DISBURSEMENTS_ALL_KEY: 'disbursementsAll',

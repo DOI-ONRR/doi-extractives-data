@@ -1,0 +1,27 @@
+@value colors: "../../../../css-global/colors.css";
+@value green, gray-light from colors;
+
+.root {
+	width: 100%;
+}
+
+.chart {
+	height: 215px;
+}
+
+
+
+.chartContainer {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+}
+
+.mapContainer {
+	float: left;
+  display: block;
+  margin-right:0;
+  width: 65.88078%;
+  padding-left: 0.41667em;
+}

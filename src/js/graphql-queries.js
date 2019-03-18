@@ -67,6 +67,85 @@ module.exports = Object.freeze({
         }
       }
     }`,
+  MARKDOWN_OFFSHORE: 
+    `allMarkdownRemark(filter: {id: {regex: "/offshore_regions/"}}) {
+      pages: edges {
+        page: node {
+          frontmatter {
+            title
+            permalink
+            layout
+            redirect_from
+            unique_id
+            neighbors
+          }
+          htmlAst
+        }
+      }
+    }`,
+  OFFSHORE_PRODUCTION_ALASKA:
+    `AlaskaOffshoreProduction: allOffshoreProduction(filter: {RegionId: {eq: "Alaska"}}) {
+      commodities: group(field: Commodity) {
+        name: fieldValue
+        volumes: edges {
+          data: node {
+            id
+            RegionId
+            DisplayYear
+            DisplayCategory
+            CalendarYear
+            LandCategory
+            LandClass
+            Commodity
+            Date
+            Volume
+            Units
+          }
+        }
+      }
+    }`,
+  OFFSHORE_PRODUCTION_GULF:
+    `GulfOffshoreProduction:allOffshoreProduction (filter: {RegionId: {eq: "Gulf"}}) {
+      commodities: group(field: Commodity) {
+        name: fieldValue
+        volumes:edges {
+          data:node {
+            id
+            RegionId
+            DisplayYear
+            DisplayCategory
+            CalendarYear
+            LandCategory
+            LandClass
+            Commodity
+            Date
+            Volume
+            Units
+          }
+        }
+      }
+    }`,
+  OFFSHORE_PRODUCTION_PACIFIC:
+    `PacificOffshoreProduction:allOffshoreProduction (filter: {RegionId: {eq: "Pacific"}}){
+      commodities: group(field: Commodity) {
+        name: fieldValue
+        volumes:edges {
+          data:node {
+            id
+            RegionId
+            DisplayYear
+            DisplayCategory
+            CalendarYear
+            LandCategory
+            LandClass
+            Commodity
+            Date
+            Volume
+            Units
+          }
+        }
+      }
+    }`,
 
 });
 

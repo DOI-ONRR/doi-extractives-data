@@ -1,0 +1,26 @@
+@value colors: "./colors.css";
+@value green, gray-light from colors;
+
+.chartBar {
+	cursor: pointer;
+	fill: gray-light;
+}
+
+.chartBar[selected=true] {
+	fill: green;
+}
+
+.chartBar:hover{
+	fill: green;
+	opacity: 0.8;
+}
+
+.chartSelectedContentDetails {
+	font-size: 14px;
+	font-weight: 300;
+}
+
+.chartSelectedContentDetailsHighlight {
+	color: green;
+	font-weight: 600;
+}

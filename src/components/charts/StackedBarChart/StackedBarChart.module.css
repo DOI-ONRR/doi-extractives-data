@@ -4,9 +4,6 @@
 @value base-font-family from variables;
 
 .stackedBarChart {
-	height: inherit;
-	margin-top: 5px;
-	width: inherit;
 }
 
 .stackedBarChart text {

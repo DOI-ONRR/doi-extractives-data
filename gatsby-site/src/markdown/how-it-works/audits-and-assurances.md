@@ -50,7 +50,7 @@ Companies and government agencies are each legally responsible for reporting acc
 Many federal agencies make their reports on payments received from U.S. extractive industries available publicly online:
 
 - [IRS publications](https://www.irs.gov/publications/)
-- [Treasury: Combined statement of receipts, outlays, and balances](https://www.fiscal.treasury.gov/fsreports/rpt/combStmt/current_rpt.htm)
+- [U.S. Treasury: Combined statement of receipts, outlays, and balances](https://fiscal.treasury.gov/reports-statements/combined-statement/)
 - [Bureau of Land Management (BLM) publications](https://www.blm.gov/learn/blm-library/agency-publications)
 - [Office of Surface Mining Reclamation and Enforcement (OSMRE) resources](http://www.osmre.gov/resources/InformationFor.shtm)
 

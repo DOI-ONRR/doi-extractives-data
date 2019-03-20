@@ -17,6 +17,9 @@ jobs:
       - run:
           name: Build gatsby
           command: npm run build
+      - run:
+          name: Run tests
+          command: npm test
 
 workflows:
   version: 2

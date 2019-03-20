@@ -1,7 +1,7 @@
 ---
 title: Revenue by Month | Documentation
 layout: downloads
-permalink: /downloads/federal-revenue-by-month/ 
+permalink: /downloads/federal-revenue-by-month/
 tag:
 - Data
 - Downloads

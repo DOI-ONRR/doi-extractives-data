@@ -1,5 +1,9 @@
-@value colors: "../../../css-global/colors.css";
-@value gray-pale, gray-light, gray-darkest from colors;
+:import('../../../css-global/colors.css') {
+  $gray-pale: grayPale;
+  $gray-light: grayLight;
+  $gray-darkest: grayDarkest;
+  $white: white;
+}
 
 .root {
 
@@ -14,11 +18,11 @@
 }
 
 .tab {
-	background-color: white;
-	border-top: 1px solid gray-light;
-	border-left: 1px solid gray-light;
-	border-bottom: 1px solid gray-light;
-	color: gray-darkest;
+	background-color: $white;
+	border-top: 1px solid $gray-light;
+	border-left: 1px solid $gray-light;
+	border-bottom: 1px solid $gray-light;
+	color: $gray-darkest;
 	cursor: pointer;
 	font-size: 16px;
 	font-weight: 200;
@@ -30,7 +34,7 @@
 }
 
 .tab:last-of-type {
-	border-right: 1px solid gray-light;
+	border-right: 1px solid $gray-light;
 }
 
 .tab:hover{
@@ -38,14 +42,14 @@
 }
 
 .tabSelected {
-	background-color: gray-pale;
+	background-color: $gray-pale;
 	border-bottom: none;
 	font-weight: bold;
 }
 
 .tabPanelContainer {
-	background-color: gray-pale;
-	border: 1px solid gray-light;
+	background-color: $gray-pale;
+	border: 1px solid $gray-light;
   overflow: hidden;
   position: relative;
   top: -1px;
@@ -76,7 +80,7 @@
 	}
 	.tab {
 		float: none;
-		border: 1px solid gray-light;
+		border: 1px solid $gray-light;
 		text-align: left;
 		width: 100%;
 	}

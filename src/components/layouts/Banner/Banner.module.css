@@ -1,8 +1,9 @@
-@value colors: "../../../css-global/colors.css";
-@value gray-pale from colors;
+:import('../../../css-global/colors.css') {
+  $gray-pale: grayPale;
+}
 
 .root {
-	background-color: gray-pale;
+	background-color: $gray-pale;
 	margin: 0 0 1rem 0;
 	font-size: 0.8rem;
 	line-height: 1.1875rem;

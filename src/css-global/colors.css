@@ -1,36 +1,43 @@
-/* Grayscale */
-@value white: #ffffff;
-@value gray-pale: #f0f6fa;
-@value gray-lighter: #ebf3f7;
-@value gray-light: #d3dfe6;
-@value gray: #a7bcc7;
-@value gray-dark: #768d99;
-@value gray-darker: #5c737f;
-@value gray-darkest: #435159;
-@value black-light: #323c42;
-@value black: #1c2326;
-@value gray-blue-dark: #4e4e4e;
-@value gray-blue-mid: #a9a9a9;
-@value gray-blue-mid-light: #e0e0e0;
 
-/* Greens */
-@value green-light: #cde3c3;
-@value green-mid: #9dbd92;
-@value green-land: #69995a;
-@value green: #587f4c;
-@value green-dark: #2f4d26;
+:export{
+	/* Grayscale */
+	white: #ffffff;
+	grayPale: #f0f6fa;
+	grayLighter: #ebf3f7;
+	grayLight: #d3dfe6;
+	gray: #a7bcc7;
+	grayDark: #768d99;
+	grayDarker: #5c737f;
+	grayDarkest: #435159;
+	blackLight: #323c42;
+	black: #1c2326;
+	gray-blue-dark: #4e4e4e;
+	gray-blue-mid: #a9a9a9;
+	gray-blue-mid-light: #e0e0e0;
 
-/* Blues */
-@value blue-lighter: #f2fdff;
-@value blue-light: #dcf4fd;
-@value blue-mid-light: #c6e9ff;
-@value blue-cthru: rgba(198, 233, 255, 0.93);
-@value blue-mid: #79bbda;
-@value blue-mid-dark: #3d95bd;
-@value blue: #1478a6;
-@value blue-dark: #086996; /* darker link color for use over @value blue-cthru, for accessibility */
-@value blue-darker: #005078;
-@value blue-deep: #00354f;
+	/* Greens */
+	green-light: #cde3c3;
+	green-mid: #9dbd92;
+	green-land: #69995a;
+	green: #587f4c;
+	green-dark: #2f4d26;
 
-/* Reds */
-@value red: #c5403c;
+	/* Blues */
+	blue-lighter: #f2fdff;
+	blue-light: #dcf4fd;
+	blue-mid-light: #c6e9ff;
+	blue-cthru: rgba(198, 233, 255, 0.93);
+	blue-mid: #79bbda;
+	blue-mid-dark: #3d95bd;
+	blue: #1478a6;
+	blue-dark: #086996; /* darker link color for use over @value blue-cthru, for accessibility */
+	blue-darker: #005078;
+	blue-deep: #00354f;
+
+	/* Reds */
+	red: #c5403c;
+}
+
+.grayPaleBackground {
+  background-color: #f0f6fa;
+}

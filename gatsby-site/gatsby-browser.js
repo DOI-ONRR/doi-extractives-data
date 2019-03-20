@@ -157,6 +157,15 @@ exports.onClientEntry = () => {
     else if(path.includes("/audits-and-assurances") && !lastFourteen.includes("default-page")){
       loader.addPagesArray([{"componentChunkName":"component---src-templates-content-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-audits-and-assurances.json","path":path}]);
     }
+    else if(path.includes("/gomesa") && !lastFourteen.includes("default-page")){
+      loader.addPagesArray([{"componentChunkName":"component---src-templates-content-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-gomesa.json","path":path}]);
+    }
+    else if(path.includes("/historic-preservation-fund") && !lastFourteen.includes("default-page")){
+      loader.addPagesArray([{"componentChunkName":"component---src-templates-content-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-historic-preservation-fund.json","path":path}]);
+    }
+    else if(path.includes("/land-and-water-conservation-fund") && !lastFourteen.includes("default-page")){
+      loader.addPagesArray([{"componentChunkName":"component---src-templates-content-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-land-and-water-conservation-fund.json","path":path}]);
+    }
     else if(path.includes("/disbursements") && !lastFourteen.includes("default-page")){
       loader.addPagesArray([{"componentChunkName":"component---src-templates-content-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-disbursements.json","path":path}]);
     }

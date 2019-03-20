@@ -425,10 +425,29 @@ var howItWorksOnshoreOilGasPageFrontmatter = "---"+os.EOL+
 							"permalink: /how-it-works/onshore-oil-gas/"+os.EOL+
 							"---"+os.EOL;
 
+
 var howItWorksAuditsPageFrontmatter = "---"+os.EOL+
 							"title: Audits and Assurances | How It Works"+os.EOL+
 							"layout: none"+os.EOL+
 							"permalink: /how-it-works/audits-and-assurances/"+os.EOL+
+							"---"+os.EOL;
+
+var howItWorksGomesaPageFrontmatter = "---"+os.EOL+
+							"title: Gulf of Mexico Energy Security Act (GOMESA) | How It Works"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /how-it-works/gomesa/"+os.EOL+
+							"---"+os.EOL;
+
+var howItWorksHpfPageFrontmatter = "---"+os.EOL+
+							"title: Historic Preservation Fund | How It Works"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /how-it-works/historic-preservation-fund/"+os.EOL+
+							"---"+os.EOL;
+
+var howItWorksLwcfPageFrontmatter = "---"+os.EOL+
+							"title: Land and Water Conservation Fund | How It Works"+os.EOL+
+							"layout: none"+os.EOL+
+							"permalink: /how-it-works/land-and-water-conservation-fund/"+os.EOL+
 							"---"+os.EOL;
 
 var howItWorksDisbursementsPageFrontmatter = "---"+os.EOL+
@@ -587,6 +606,9 @@ var explorePageFrontmatter = "---"+os.EOL+
 exports.onPostBuild = () => {
 	console.log("Prepending frontmatter to files...");
     prependFile.sync(__dirname+'/public/how-it-works/audits-and-assurances/index.html', howItWorksAuditsPageFrontmatter);
+    prependFile.sync(__dirname+'/public/how-it-works/gomesa/index.html', howItWorksGomesaPageFrontmatter);
+    prependFile.sync(__dirname+'/public/how-it-works/historic-preservation-fund/index.html', howItWorksHpfPageFrontmatter);
+    prependFile.sync(__dirname+'/public/how-it-works/land-and-water-conservation-fund/index.html', howItWorksLwcfPageFrontmatter);
     prependFile.sync(__dirname+'/public/downloads/reconciliation/index.html', downloadsReconciliationFrontmatter);
     prependFile.sync(__dirname+'/public/downloads/disbursements/index.html', downloadsDisbursementsFrontmatter);
     prependFile.sync(__dirname+'/public/downloads/federal-revenue-by-company/index.html', downloadsFederalRevByCompanyPageFrontmatter);

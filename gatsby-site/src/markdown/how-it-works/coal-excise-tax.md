@@ -1,5 +1,5 @@
 ---
-title: 'Coal excise tax | How It Works'
+title: 'Coal Excise Tax | How It Works'
 title_display: Coal excise tax
 permalink: /how-it-works/coal-excise-tax/
 layout: content
@@ -10,15 +10,15 @@ tag:
 ---
 
 <custom-link to="/how-it-works/" className="breadcrumb link-charlie">How it works</custom-link> /
-# Coal excise tax
+# Coal Excise Tax
 
 > In the United States, one of the taxes coal producers must pay is a federal excise tax when they mine coal. Producers pay the tax when the coal is first sold or used.[^1] The tax does not apply to lignite or to coal mined in the U.S. for export. Learn more about [how coal revenues work](/how-it-works/coal/).
 
 This tax originated in 1977 with the Black Lung Revenue Act. The excise tax is the chief source of revenue for the [Black Lung Program](https://www.dol.gov/owcp/dcmwc/) and Black Lung Disability Trust Fund (BLDTF), which pays benefits to miners disabled by black lung disease, as well as their eligible survivors and dependents.[^2]
 
-Coal excise tax payments are collected by the Internal Revenue Service and transferred to the BLDTF. Amounts in the BLDTF are available, as provided in appropriation acts, for benefit payments that are administered by the Department of Labor’s Division of Coal Mine Workers’ Compensation.[^3]
+Coal Excise Tax payments are collected by the Internal Revenue Service and transferred to the BLDTF. Amounts in the BLDTF are available, as provided in appropriation acts, for benefit payments that are administered by the Department of Labor’s Division of Coal Mine Workers’ Compensation.[^3]
 
-**Coal excise tax revenue**[^4]
+**Coal Excise Tax revenue**[^4]
 
 <table class="article_table article_table-numbers">
   <thead>
@@ -93,7 +93,7 @@ Coal excise tax payments are collected by the Internal Revenue Service and trans
   </tbody>
 </table>
 
-## Coal excise tax rates
+## Rates
 
 On January 1, 2019, the tax rate changed from $1.10 per ton for coal from subsurface mines and $0.55 per ton for coal from surface mines. Both rates were limited to a maximum of 4.4 percent of the coal’s selling price.[^5] The new tax rate is $0.50 per ton for coal from subsurface mines and $0.25 per ton for coal from surface mines. Both rates are limited to 2 percent of the coal's selling price.
 

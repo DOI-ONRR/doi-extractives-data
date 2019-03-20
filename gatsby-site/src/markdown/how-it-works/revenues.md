@@ -164,7 +164,8 @@ Lease holders also pay different fees to the Bureau of Land Management, Bureau o
       <td>
         <strong>$15</strong> per acre application filing fee (outside designated leasing areas)
       </td>
-      <td><strong>Rent</strong> determined by acreage and land value (<a href="https://www.federalregister.gov/documents/2016/12/19/2016-27551/competitive-processes-terms-and-conditions-for-leasing-public-lands-for-solar-and-wind-energy">review the details)</a></td>
+      <td><strong>Rent</strong> determined by acreage and land value<br><br>
+      <a href="https://www.federalregister.gov/documents/2016/12/19/2016-27551/competitive-processes-terms-and-conditions-for-leasing-public-lands-for-solar-and-wind-energy">Review the details</a></td>
       <td>Solar megawatt capacity fees vary by technology, ranging from <strong>$2,863</strong> to <strong>$4,294</strong><br><br>
       <strong>$5,010</strong> megawatt capacity fee for wind<br><br>
       <a href="https://www.blm.gov/policy/im-2017-096">Review the details</a>

@@ -1,77 +1,75 @@
-import React from 'react';
-import Helmet from 'react-helmet';
-import Link from '../components/utils/temp-link';
-import {withPrefixSVG} from '../components/utils/temp-link';
+import React from 'react'
+import Helmet from 'react-helmet'
+import Link from '../components/utils/temp-link'
+import { withPrefixSVG } from '../components/utils/temp-link'
 
-import {DownloadDataLink} from '../components/layouts/icon-links/DownloadDataLink'
+import { DownloadDataLink } from '../components/layouts/icon-links/DownloadDataLink'
 
 import DefaultLayout from '../components/layouts/DefaultLayout'
 
 class HowItWorksRevenueByCompany extends React.Component {
+  componentDidMount () {
+    const script1 = document.createElement('script')
 
-  componentDidMount() {
-    const script1 = document.createElement("script");
+    script1.src = withPrefixSVG('/public/js/main.min.js')
+    script1.async = false
 
-    script1.src = withPrefixSVG("/public/js/main.min.js");
-    script1.async = false;
+    document.body.appendChild(script1)
 
-    document.body.appendChild(script1);
+    const script3 = document.createElement('script')
 
-    const script3 = document.createElement("script");
+    script3.src = withPrefixSVG('/public/js/explore.min.js')
+    script3.async = false
 
-    script3.src = withPrefixSVG("/public/js/explore.min.js");
-    script3.async = false;
+    document.body.appendChild(script3)
 
-    document.body.appendChild(script3);
+    const script2 = document.createElement('script')
 
-    const script2 = document.createElement("script");
+    script2.src = withPrefixSVG('/public/js/company-revenue.min.js')
+    script2.async = false
 
-    script2.src = withPrefixSVG("/public/js/company-revenue.min.js");
-    script2.async = false;
-
-    document.body.appendChild(script2);
+    document.body.appendChild(script2)
   }
 
+  render () {
+    const title = this.props.pathContext.markdown.frontmatter.title || 'Federal Revenue by Company'
+    const reportYear = this.props.pathContext.markdown.frontmatter.report_year || 2017
 
-	render () {
-    const title = this.props.pathContext.markdown.frontmatter.title || "Federal Revenue by Company";
-    const reportYear = this.props.pathContext.markdown.frontmatter.report_year || 2017;
-
-		return (
+    return (
       <DefaultLayout>
   			<div>
           <Helmet
-              title={title}
-              meta={[
-                  // title
-                  { name: "og:title", content: title},
-                  { name: "twitter:title", content: title},
-              ]}
+            title={title}
+            meta={[
+              // title
+              { name: 'og:title', content: title },
+              { name: 'twitter:title', content: title },
+            ]}
 
-              />
+          />
 
           <section id="companies" data-year={reportYear} className="explore-subpage container container-margin">
             <section className="explore-subpage-nav container">
-                <div className="explore-subpage-tabs">
-                  <ul>
-                    <li className={(reportYear === 2013)? "explore-subpage-tab active" : "explore-subpage-tab"}>
-                      <Link to="/how-it-works/federal-revenue-by-company/2013/">2013</Link>
-                    </li>
-                    <li className={(reportYear === 2014)? "explore-subpage-tab active" : "explore-subpage-tab"}>
-                      <Link to="/how-it-works/federal-revenue-by-company/2014/">2014</Link>
-                    </li>
-                    <li className={(reportYear === 2015)? "explore-subpage-tab active" : "explore-subpage-tab"}>
-                      <Link to="/how-it-works/federal-revenue-by-company/2015/">2015</Link>
-                    </li>
-                    <li className={(reportYear === 2016)? "explore-subpage-tab active" : "explore-subpage-tab"}>
-                      <Link to="/how-it-works/federal-revenue-by-company/2016/">2016</Link>
-                    </li>
-                    <li className={(reportYear === 2017)? "explore-subpage-tab active" : "explore-subpage-tab"}>
-                      <Link to="/how-it-works/federal-revenue-by-company/2017/">2017</Link>
-                    </li>
-                  </ul>
-                </div>
-              </section>
+              <div className="explore-subpage-tabs">
+                <ul>
+                  <li className={(reportYear === 2013) ? 'explore-subpage-tab active' : 'explore-subpage-tab'}>
+                    <Link to="/how-it-works/federal-revenue-by-company/2013/">2013</Link>
+                  </li>
+                  <li className={(reportYear === 2014) ? 'explore-subpage-tab active' : 'explore-subpage-tab'}>
+                    <Link to="/how-it-works/federal-revenue-by-company/2014/">2014</Link>
+                  </li>
+                  <li className={(reportYear === 2015) ? 'explore-subpage-tab active' : 'explore-subpage-tab'}>
+                    <Link to="/how-it-works/federal-revenue-by-company/2015/">2015</Link>
+                  </li>
+                  <li className={(reportYear === 2016) ? 'explore-subpage-tab active' : 'explore-subpage-tab'}>
+                    <Link to="/how-it-works/federal-revenue-by-company/2016/">2016</Link>
+                  </li>
+                  <li className={(reportYear === 2017) ? 'explore-subpage-tab active' : 'explore-subpage-tab'}>
+                    <Link to="/how-it-works/federal-revenue-by-company/2017/">2017</Link>
+                  </li>
+                </ul>
+              </div>
+            </section>
             <section className="container-page-wrapper">
               <div className="container-left-4">
                 <div>
@@ -112,7 +110,7 @@ class HowItWorksRevenueByCompany extends React.Component {
                       </div>
                     </div>
 
-                    <div className="container-left-6" style={{marginRight: 0}}>
+                    <div className="container-left-6" style={{ marginRight: 0 }}>
                       <div id="type-filter" className="filter filters-last">
                         <label htmlFor="type-selector">Revenue Type</label>
                         <select id="type-selector" name="type">
@@ -135,8 +133,6 @@ class HowItWorksRevenueByCompany extends React.Component {
                   </div>
 
                 </div>
-
-
 
                 <div className="filter-description_wrapper">
                   <h1 data-filter-description="" className="filter-description filter-description_open">
@@ -178,7 +174,7 @@ class HowItWorksRevenueByCompany extends React.Component {
 
         </div>
       </DefaultLayout>
-		);
-	}
+    )
+  }
 }
-export default HowItWorksRevenueByCompany;
+export default HowItWorksRevenueByCompany

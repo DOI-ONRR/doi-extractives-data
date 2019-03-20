@@ -1,1 +1,1 @@
-export {default as PageToc} from './PageToc'
+export { default as PageToc } from './PageToc'

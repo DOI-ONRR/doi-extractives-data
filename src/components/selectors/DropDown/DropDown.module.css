@@ -1,4 +1,4 @@
-@value colors: "../../../css-global/colors.css";
+@value colors: "../../../css-global/colors.scss";
 @value gray-pale, black-light from colors;
 
 @value radius: 8px;

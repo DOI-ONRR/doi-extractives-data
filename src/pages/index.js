@@ -1,72 +1,70 @@
-import React from 'react';
-import Helmet from 'react-helmet';
-import { connect } from 'react-redux';
-import Link from '../components/utils/temp-link';
+import React from 'react'
+import Helmet from 'react-helmet'
+import { connect } from 'react-redux'
+import Link from '../components/utils/temp-link'
 
-import { hydrate as hydateDataManagerAction } from '../state/reducers/data-sets';
+import { hydrate as hydateDataManagerAction } from '../state/reducers/data-sets'
 
-import * as CONSTANTS from '../js/constants';
-import utils from '../js/utils';
+import * as CONSTANTS from '../js/constants'
+import utils from '../js/utils'
 
-import {KeyStatsSection} from '../components/sections/KeyStatsSection';
-import {WhatsNew} from '../components/sections/WhatsNew';
-import {Tabordion, Tab} from '../components/layouts/Tabordion';
-import StateMap from '../components/maps/StateMap';
-import FederalLandOwnershipLegend from '../components/maps/FederalLandOwnershipLegend';
-import LocationSelector from '../components/selectors/LocationSelector';
-import OilRig from '-!svg-react-loader!../img/svg/icon-ribbon-oil-rig.svg';
-import {ExploreDataButton} from '../components/layouts/buttons/ExploreDataButton';
-import {BlueButton} from '../components/layouts/buttons/BlueButton';
-import {ExploreDataLink} from '../components/layouts/icon-links/ExploreDataLink';
-import {DownloadDataLink} from '../components/layouts/icon-links/DownloadDataLink';
+import { KeyStatsSection } from '../components/sections/KeyStatsSection'
+import { WhatsNew } from '../components/sections/WhatsNew'
+import { Tabordion, Tab } from '../components/layouts/Tabordion'
+import StateMap from '../components/maps/StateMap'
+import FederalLandOwnershipLegend from '../components/maps/FederalLandOwnershipLegend'
+import LocationSelector from '../components/selectors/LocationSelector'
+import OilRig from '-!svg-react-loader!../img/svg/icon-ribbon-oil-rig.svg'
+import { ExploreDataButton } from '../components/layouts/buttons/ExploreDataButton'
+import { BlueButton } from '../components/layouts/buttons/BlueButton'
+import { ExploreDataLink } from '../components/layouts/icon-links/ExploreDataLink'
+import { DownloadDataLink } from '../components/layouts/icon-links/DownloadDataLink'
 
 import DefaultLayout from '../components/layouts/DefaultLayout'
 
-
-import styles from "./index.module.css";
+import styles from './index.module.css'
 
 class HomePage extends React.Component {
+  constructor (props) {
+    super(props)
 
-  constructor(props){
-    super(props);
-
-    this.hydrateStore();
+    this.hydrateStore()
   }
 
   /**
-   * Add the data to the redux store to enable 
-   * the components to access filtered data using the 
+   * Add the data to the redux store to enable
+   * the components to access filtered data using the
    * reducers
    **/
-  hydrateStore(){
+  hydrateStore () {
     this.props.hydateDataManager([
-      {key: CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY, data: this.props.data.OilVolumes.volumes},
-      {key: CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY, data: this.props.data.GasVolumes.volumes},
-      {key: CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY, data: this.props.data.CoalVolumes.volumes},
-      {key: CONSTANTS.REVENUES_ALL_KEY, data: this.props.data.allRevenues.revenues},
-      {key: CONSTANTS.DISBURSEMENTS_ALL_KEY, data: this.props.data.Disbursements.disbursements},
-    ]);
+      { key: CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY, data: this.props.data.OilVolumes.volumes },
+      { key: CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY, data: this.props.data.GasVolumes.volumes },
+      { key: CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY, data: this.props.data.CoalVolumes.volumes },
+      { key: CONSTANTS.REVENUES_ALL_KEY, data: this.props.data.allRevenues.revenues },
+      { key: CONSTANTS.DISBURSEMENTS_ALL_KEY, data: this.props.data.Disbursements.disbursements },
+    ])
   }
 
-  componentDidMount() {
-    utils.hashLinkScroll();
+  componentDidMount () {
+    utils.hashLinkScroll()
   }
 
-	render() {
-		return (
+  render () {
+    return (
       <DefaultLayout>
         <main>
           <Helmet
-              title="Home | Natural Resources Revenue Data"
-              meta={[
-                  // title
-                  { name: "og:title", content: "Home | Natural Resources Revenue Data"},
-                  { name: "twitter:title", content: "Home | Natural Resources Revenue Data"},
-              ]}
+            title="Home | Natural Resources Revenue Data"
+            meta={[
+              // title
+              { name: 'og:title', content: 'Home | Natural Resources Revenue Data' },
+              { name: 'twitter:title', content: 'Home | Natural Resources Revenue Data' },
+            ]}
 
-              />
+          />
           <Tabordion>
-            <Tab id="tab-overview" name="Overview"> 
+            <Tab id="tab-overview" name="Overview">
               <div className={styles.tabContentContainer} >
                 <div className={styles.tabContent}>
                   <p>When companies extract natural resources on federal lands and offshore areas, they pay bonuses, rent, and royalties to the federal government. The government distributes these funds for public use in a variety of ways.</p>
@@ -86,7 +84,7 @@ class HomePage extends React.Component {
                 </div>
               </div>
             </Tab>
-            <Tab id="tab-production" name="Production"> 
+            <Tab id="tab-production" name="Production">
               <div className={styles.tabContentContainer} >
                 <div className={styles.tabContent} >
                   <p>The United States is among the world's top producers of oil, natural gas, and coal. The U.S. is also a global leader in renewable energy production. We have data for energy and mineral production on federal lands and waters, Native American lands, and nationwide production on all lands and waters.</p>
@@ -107,7 +105,7 @@ class HomePage extends React.Component {
                 </div>
               </div>
             </Tab>
-            <Tab id="tab-revenue" name="Revenue"> 
+            <Tab id="tab-revenue" name="Revenue">
               <div className={styles.tabContentContainer} >
                 <div className={styles.tabContent} >
                   <p>Companies pay to extract natural resources on federal lands and waters. These payments include bonuses, rents, and royalties, resulting in revenue to the American public. The Office of Natural Resources Revenue (ONRR) collects and distributes this revenue.</p>
@@ -129,7 +127,7 @@ class HomePage extends React.Component {
                 </div>
               </div>
             </Tab>
-            <Tab id="tab-disbursements" name="Disbursements"> 
+            <Tab id="tab-disbursements" name="Disbursements">
               <div className={styles.tabContentContainer} >
                 <div className={styles.tabContent} >
                   <p>After collecting revenue from natural resource extraction, the Office of Natural Resources Revenue (ONRR) distributes that money to different agencies, funds, and local governments for public use. This process is called “disbursement.”</p>
@@ -151,25 +149,25 @@ class HomePage extends React.Component {
           </Tabordion>
 
           <section className={styles.mapSection}>
-            <div className={styles.mapSectionContainer+" container-page-wrapper"}>
+            <div className={styles.mapSectionContainer + ' container-page-wrapper'}>
               <div className={styles.mapSectionLeft}>
                 <h3>Learn about extractive industries in each state</h3>
                 <p>Explore production, revenue, and disbursements data for each state.</p>
                 <div className={styles.mapSectionLocationSelector}>
                   <label htmlFor="location-selector">State or offshore region:</label>
-                  <LocationSelector 
-                  default='Choose location' 
-                  states={this.props.data.states_data.states}
-                  offshore_regions={this.props.data.offshore_data.offshore_regions}/>
+                  <LocationSelector
+                    default='Choose location'
+                    states={this.props.data.states_data.states}
+                    offshore_regions={this.props.data.offshore_data.offshore_regions}/>
                 </div>
               </div>
               <div className={styles.mapSectionRight}>
                 <figure>
-                  <StateMap 
-                  ownership={true} 
-                  no_outline={true} 
-                  offshore_regions={this.props.data.offshore_data.offshore_regions} 
-                  states={this.props.data.states_data.states}/>
+                  <StateMap
+                    ownership={true}
+                    no_outline={true}
+                    offshore_regions={this.props.data.offshore_data.offshore_regions}
+                    states={this.props.data.states_data.states}/>
                 </figure>
                 <aside>
                   <FederalLandOwnershipLegend land={true} />
@@ -177,22 +175,21 @@ class HomePage extends React.Component {
               </div>
             </div>
           </section>
-        
+
           <KeyStatsSection/>
 
           <WhatsNew />
         </main>
       </DefaultLayout>
-		);
-	}
+    )
+  }
 }
 
 export default connect(
   state => ({}),
-  dispatch => ({  hydateDataManager: (dataSets) => dispatch(hydateDataManagerAction(dataSets)),
-              }),
-)(HomePage);
-
+  dispatch => ({ hydateDataManager: dataSets => dispatch(hydateDataManagerAction(dataSets)),
+  })
+)(HomePage)
 
 export const query = graphql`
   query HomePageQuery {
@@ -319,4 +316,4 @@ export const query = graphql`
       }
     }
   }
-`;
+`

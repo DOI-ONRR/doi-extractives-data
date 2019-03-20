@@ -1,1 +1,1 @@
-export default from './YearDropDown';
+export default from './YearDropDown'

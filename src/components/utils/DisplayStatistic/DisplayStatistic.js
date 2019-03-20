@@ -1,45 +1,43 @@
-import React from 'react';
-import { connect } from 'react-redux';
+import React from 'react'
+import { connect } from 'react-redux'
 
-import { filterDataSets as filterDataSetsAction } from '../../../state/reducers/data-sets';
+import { filterDataSets as filterDataSetsAction } from '../../../state/reducers/data-sets'
 
-import styles from "./DisplayStatistic.module.scss";
+import styles from './DisplayStatistic.module.scss'
 
-import CONSTANTS from '../../../js/constants';
-import utils from '../../../js/utils';
+import CONSTANTS from '../../../js/constants'
+import utils from '../../../js/utils'
 
-class DisplayStatistic extends React.Component{
-  
-  constructor(props){
-    super(props);
+class DisplayStatistic extends React.Component {
+  constructor (props) {
+    super(props)
 
-    this.FilteredResultsId = Date.now().toString();
-    
-    this.filter = ( typeof this.props.filter === 'string' )? JSON.parse(this.props.filter) : this.props.filter;
-    this.options = ( typeof this.props.options === 'string' )? JSON.parse(this.props.options) : this.props.options;
+    this.FilteredResultsId = Date.now().toString()
+
+    this.filter = (typeof this.props.filter === 'string') ? JSON.parse(this.props.filter) : this.props.filter
+    this.options = (typeof this.props.options === 'string') ? JSON.parse(this.props.options) : this.props.options
 
     this.state = {
       text: this.getFilteredData(this.filter)
     }
   }
 
-  componentWillReceiveProps(nextProps) {
-    if(nextProps.FilteredResults) {
-      if(this.options){
-        this.setState({text: utils[this.options.format](nextProps.FilteredResults[this.FilteredResultsId]) });
+  componentWillReceiveProps (nextProps) {
+    if (nextProps.FilteredResults) {
+      if (this.options) {
+        this.setState({ text: utils[this.options.format](nextProps.FilteredResults[this.FilteredResultsId]) })
       }
       else {
-        this.setState({text: nextProps.FilteredResults[this.FilteredResultsId]});
+        this.setState({ text: nextProps.FilteredResults[this.FilteredResultsId] })
       }
-      
     }
   }
 
-  getFilteredData(filter) {
-    let text = "";
+  getFilteredData (filter) {
+    let text = ''
 
-    if(filter.dataAttribute === "FiscalYear") {
-      text = this.props["FiscalYear"][filter.sourceKey];
+    if (filter.dataAttribute === 'FiscalYear') {
+      text = this.props['FiscalYear'][filter.sourceKey]
     }
     else {
       this.props.filterData([{
@@ -52,29 +50,27 @@ class DisplayStatistic extends React.Component{
           where: filter.where,
           select: filter.dataAttribute,
         }
-      }]);
+      }])
     }
 
-    return text;
+    return text
   }
 
-  render() {
+  render () {
     return (
-        <span>
-          {this.state.text}
-        </span>
-    );
+      <span>
+        {this.state.text}
+      </span>
+    )
   }
-
 }
 
 export default connect(
   state => ({
-    "FiscalYear": state[CONSTANTS.DATA_SETS_STATE_KEY]["FiscalYear"],
-    "FilteredResults": state[CONSTANTS.DATA_SETS_STATE_KEY]["FilteredResults"],
+    'FiscalYear': state[CONSTANTS.DATA_SETS_STATE_KEY]['FiscalYear'],
+    'FilteredResults': state[CONSTANTS.DATA_SETS_STATE_KEY]['FilteredResults'],
   }),
   dispatch => ({
-    filterData: (configs) => dispatch( filterDataSetsAction(configs) ),
+    filterData: configs => dispatch(filterDataSetsAction(configs)),
   })
-)(DisplayStatistic);
-
+)(DisplayStatistic)

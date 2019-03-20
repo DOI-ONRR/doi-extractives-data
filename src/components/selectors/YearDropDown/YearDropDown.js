@@ -1,12 +1,12 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { connect } from 'react-redux'
 
-import CONSTANTS from '../../../js/constants';
+import CONSTANTS from '../../../js/constants'
 
-import { setDataSelectedById as setDataSelectedByIdAction } from '../../../state/reducers/data-sets';
+import { setDataSelectedById as setDataSelectedByIdAction } from '../../../state/reducers/data-sets'
 
-import styles from "./YearDropDown.module.scss"
+import styles from './YearDropDown.module.scss'
 
 /***
  * This drop down is integrated with our redux store and can use the dataSet object to get all its info and state change.
@@ -16,83 +16,81 @@ import styles from "./YearDropDown.module.scss"
  * @TODO: Currently this is called the year drop down however this should become the only drop down we use on the site.
  * We should replace the current DropDown with this code.
  ***/
-class YearDropDown extends React.Component{
-
-  state = { 
+class YearDropDown extends React.Component {
+  state = {
     selectedKey: findDefaultKey(this.props),
     options: getOptions(this.props),
     dataSet: this.props.dataSet,
   }
 
-  componentWillReceiveProps(nextProps) {
+  componentWillReceiveProps (nextProps) {
     this.setState({
     	selectedKey: findDefaultKey(nextProps),
     	options: getOptions(nextProps),
-    	dataSet: nextProps.dataSet, 
-    });
+    	dataSet: nextProps.dataSet,
+    })
   }
 
-  shouldComponentUpdate(nextProps, nextState) {
-    return (this.state.selectedKey !== nextState.selectedKey);
+  shouldComponentUpdate (nextProps, nextState) {
+    return (this.state.selectedKey !== nextState.selectedKey)
   }
 
-  onChangeHandler(e, key) {
-    e.stopPropagation();
+  onChangeHandler (e, key) {
+    e.stopPropagation()
 
-    if(this.state.dataSet) {
-    	this.props.setSelectedOption([{id:this.state.dataSet.dataId, dataKey: e.target.value, syncId: this.state.dataSet.syncId}]);
+    if (this.state.dataSet) {
+    	this.props.setSelectedOption([{ id: this.state.dataSet.dataId, dataKey: e.target.value, syncId: this.state.dataSet.syncId }])
     }
 
-    if(this.props.callback) {
-    	this.props.callback(e.target.value);
+    if (this.props.callback) {
+    	this.props.callback(e.target.value)
     }
   }
 
-  render() {
-  	let {options, selectedKey} = this.state;
+  render () {
+  	let { options, selectedKey } = this.state
 
-		return (
-			<div className={styles.root}>
-				<select onChange={this.onChangeHandler.bind(this)}>
-					{options &&
+    return (
+      <div className={styles.root}>
+        <select onChange={this.onChangeHandler.bind(this)}>
+          {options &&
 						options.map((option, index) => {
-							let name,value,isDefault;
+						  let name, value, isDefault
 
-							if(typeof option === 'string' || typeof option === 'number' ) {
-								name = value = option;
-							}
-							else if(typeof option === 'object') {
-								name = option.name;
-								value = option.value;
-							}
-							
-							return (			
-								<option className={styles.option} key={index} value={value} selected={(selectedKey === value)}>
-									{name}
-								</option>
-							);
+						  if (typeof option === 'string' || typeof option === 'number') {
+						    name = value = option
+						  }
+						  else if (typeof option === 'object') {
+						    name = option.name
+						    value = option.value
+						  }
+
+						  return (
+						    <option className={styles.option} key={index} value={value} selected={(selectedKey === value)}>
+						      {name}
+						    </option>
+						  )
 						})
-					}
-				</select>
-			</div>
-		);
+          }
+        </select>
+      </div>
+    )
   }
-
 }
 
 YearDropDown.propTypes = {
-	/** Array of objects or strings for all the options. The default selected vlaue should be mark as default: true */
-	options: PropTypes.array,
-	/** Data set Id to be used for populating and updating selected state. If dataSet is used options is ignored. */
-	dataSetId: PropTypes.string,
-	/** Function to call on change. */
-	callback: PropTypes.func,
-	/** Sorting options in the list */
-	sortType: PropTypes.oneOf(['ascending', 'descending', 'none']),
+  /** Array of objects or strings for all the options. The default selected vlaue should be mark as default: true */
+  options: PropTypes.array,
+  /** Data set Id to be used for populating and updating selected state. If dataSet is used options is ignored. */
+  dataSetId: PropTypes.string,
+  /** Function to call on change. */
+  callback: PropTypes.func,
+  /** Sorting options in the list */
+  sortType: PropTypes.oneOf(['ascending', 'descending', 'none']),
 }
 
 YearDropDown.defaultProps = {
-	sortType: 'descending'
+  sortType: 'descending'
 }
 
 export default connect(
@@ -100,38 +98,38 @@ export default connect(
   	dataSet: state[CONSTANTS.DATA_SETS_STATE_KEY][ownProps.dataSetId],
   }),
   dispatch => ({
-  	setSelectedOption: (payload) => dispatch( setDataSelectedByIdAction(payload) ),
-  }))(YearDropDown);
+  	setSelectedOption: payload => dispatch(setDataSelectedByIdAction(payload)),
+  }))(YearDropDown)
 
-const findDefaultKey = (props) => {
-	let defaultKey;
-	let {options, dataSet} = props;
-	if(dataSet){
-		defaultKey = dataSet.selectedDataKey;
-	}
-	else if(options){
-		defaultKey = options.find((option, index) => {
-			return (typeof option === 'string' || typeof option === 'number' ) ? index === 0 : option.isDefault
-		});
-		defaultKey = (typeof defaultKey === 'object')? defaultKey.value : defaultKey;
-	}
+const findDefaultKey = props => {
+  let defaultKey
+  let { options, dataSet } = props
+  if (dataSet) {
+    defaultKey = dataSet.selectedDataKey
+  }
+  else if (options) {
+    defaultKey = options.find((option, index) => {
+      return (typeof option === 'string' || typeof option === 'number') ? index === 0 : option.isDefault
+    })
+    defaultKey = (typeof defaultKey === 'object') ? defaultKey.value : defaultKey
+  }
 
-	return defaultKey;
+  return defaultKey
 }
 
-const getOptions = (props) => {
-	let {options, dataSet, sortType} = props;
+const getOptions = props => {
+  let { options, dataSet, sortType } = props
 
-	if(dataSet) {
-		options = dataSet.data.map((item) => Object.keys(item)[0] );
-	}
+  if (dataSet) {
+    options = dataSet.data.map(item => Object.keys(item)[0])
+  }
 
-	if(sortType !== 'none' && options) {
-		options.sort();
-		if(sortType === 'descending') {
-			options.reverse();
-		}
-	}
-	
-	return options;
+  if (sortType !== 'none' && options) {
+    options.sort()
+    if (sortType === 'descending') {
+      options.reverse()
+    }
+  }
+
+  return options
 }

@@ -1,43 +1,43 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
+import PropTypes from 'prop-types'
 
-import styles from "./Accordion.module.css";
+import styles from './Accordion.module.css'
 
-import IconPlus from '-!svg-react-loader!../../../img/icons/icon-circled-plus.svg';
-import IconMinus from '-!svg-react-loader!../../../img/icons/icon-circled-minus.svg';
+import IconPlus from '-!svg-react-loader!../../../img/icons/icon-circled-plus.svg'
+import IconMinus from '-!svg-react-loader!../../../img/icons/icon-circled-minus.svg'
 
 class Accordion extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor (props) {
+    super(props)
 
-    const expandableId = `${props.id}-expandable-content`;
-    const { expanded } = props;
+    const expandableId = `${ props.id }-expandable-content`
+    const { expanded } = props
     this.state = {
       expandableId,
       expanded,
-    };
+    }
   }
 
-  toggle() {
-    const { expanded } = this.state;
+  toggle () {
+    const { expanded } = this.state
     this.setState({
       expanded: !expanded,
-    });
+    })
   }
 
-  render() {
-    let { id, children, text } = this.props;
-    const { expandableId, expanded } = this.state;
-    const toggle = () => this.toggle();
+  render () {
+    let { id, children, text } = this.props
+    const { expandableId, expanded } = this.state
+    const toggle = () => this.toggle()
 
-    text = (typeof text === 'string')? text.split(',') : text;
+    text = (typeof text === 'string') ? text.split(',') : text
 
     return (
       <div id={id} className={styles.root}>
-        <div class={styles.toggle} is="aria-toggle" 
-          aria-controls={expandableId} 
-          aria-expanded={expanded} 
-          type="button" 
+        <div class={styles.toggle} is="aria-toggle"
+          aria-controls={expandableId}
+          aria-expanded={expanded}
+          type="button"
           onClick={toggle}>
 
           <span className={styles.plus} >
@@ -53,7 +53,7 @@ class Accordion extends React.Component {
           { children }
         </div>
       </div>
-    );
+    )
   }
 };
 
@@ -70,6 +70,6 @@ Accordion.propTypes = {
 
 Accordion.defaultProps = {
   expanded: false,
-};
+}
 
-export default Accordion;
+export default Accordion

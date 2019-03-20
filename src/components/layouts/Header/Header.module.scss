@@ -1,10 +1,8 @@
-@value colors: "../../../css-global/colors.css";
-@value variables: "../../../css-global/variables.scss";
-@value blue, white from colors;
-@value base-padding from variables;
+@import '../../../css-global/colors.scss';
+@import '../../../css-global/variables.scss';
 
 .root {
-	margin-top: base-padding;
+	margin-top: basePadding;
 }
 
 .mobileNav{

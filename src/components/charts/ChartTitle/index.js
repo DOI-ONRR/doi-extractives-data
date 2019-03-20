@@ -1,1 +1,1 @@
-export {default as ChartTitle} from './ChartTitle'
+export { default as ChartTitle } from './ChartTitle'

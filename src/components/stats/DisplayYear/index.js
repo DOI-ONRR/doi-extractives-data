@@ -1,1 +1,1 @@
-export {default as DisplayYear} from './DisplayYear';
+export { default as DisplayYear } from './DisplayYear'

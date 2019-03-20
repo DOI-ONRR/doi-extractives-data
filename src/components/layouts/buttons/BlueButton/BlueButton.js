@@ -1,22 +1,22 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Link from '../../../utils/temp-link';
+import React from 'react'
+import PropTypes from 'prop-types'
+import Link from '../../../utils/temp-link'
 
-import styles from "./BlueButton.module.css"
+import styles from './BlueButton.module.css'
 
-const BlueButton = (props) => ( 
-    <Link to={props.to} className={styles.root}>
-        <div>
-        	{props.children === undefined ?
-            'Explore the data' :
-            props.children}
-        </div>
-    </Link>
-);
+const BlueButton = props => (
+  <Link to={props.to} className={styles.root}>
+    <div>
+        	{props.children === undefined
+        ? 'Explore the data'
+        : props.children}
+    </div>
+  </Link>
+)
 
 BlueButton.propTypes = {
-	/** The url for the link */
-	to: PropTypes.string,
+  /** The url for the link */
+  to: PropTypes.string,
 }
 
-export default BlueButton;
+export default BlueButton

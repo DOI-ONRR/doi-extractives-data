@@ -1,1 +1,1 @@
-export {default as MsgPrioritizedStatesSvg} from './MsgPrioritizedStatesSvg'
+export { default as MsgPrioritizedStatesSvg } from './MsgPrioritizedStatesSvg'

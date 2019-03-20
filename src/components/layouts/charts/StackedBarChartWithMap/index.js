@@ -1,1 +1,1 @@
-export default from './StackedBarChartWithMap';
+export default from './StackedBarChartWithMap'

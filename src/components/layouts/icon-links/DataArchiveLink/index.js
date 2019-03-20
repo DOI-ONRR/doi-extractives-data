@@ -1,1 +1,1 @@
-export {default as DataArchiveLink} from './DataArchiveLink';
+export { default as DataArchiveLink } from './DataArchiveLink'

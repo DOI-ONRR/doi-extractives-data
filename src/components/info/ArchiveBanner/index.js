@@ -1,1 +1,1 @@
-export {default as ArchiveBanner} from './ArchiveBanner';
+export { default as ArchiveBanner } from './ArchiveBanner'

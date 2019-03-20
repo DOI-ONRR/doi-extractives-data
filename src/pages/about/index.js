@@ -1,17 +1,17 @@
-import React from 'react';
-import Helmet from 'react-helmet';
+import React from 'react'
+import Helmet from 'react-helmet'
 
-import Link from '../../components/utils/temp-link';
-import GlossaryTerm from '../../components/utils/glossary-term.js';
+import Link from '../../components/utils/temp-link'
+import GlossaryTerm from '../../components/utils/glossary-term.js'
 
-import DOImark from "../../img/logos/DOI-mark.png";
-import BLMmark from "../../img/logos/BLM-mark.png";
-import OSMREmark from "../../img/logos/OSMRE-mark.png";
-import BOEMmark from "../../img/logos/BOEM-mark.png";
-import BSEEmark from "../../img/logos/BSEE-mark.png";
-import ONRRmark from "../../img/logos/ONRR-mark.svg";
-import DoTmark from "../../img/logos/DoT-mark.png";
-import IRSmark from "../../img/logos/IRS-mark.svg";
+import DOImark from '../../img/logos/DOI-mark.png'
+import BLMmark from '../../img/logos/BLM-mark.png'
+import OSMREmark from '../../img/logos/OSMRE-mark.png'
+import BOEMmark from '../../img/logos/BOEM-mark.png'
+import BSEEmark from '../../img/logos/BSEE-mark.png'
+import ONRRmark from '../../img/logos/ONRR-mark.svg'
+import DoTmark from '../../img/logos/DoT-mark.png'
+import IRSmark from '../../img/logos/IRS-mark.svg'
 
 import DefaultLayout from '../../components/layouts/DefaultLayout'
 
@@ -22,9 +22,9 @@ const AboutPage = () => {
         <Helmet
           title="About | Natural Resources Revenue Data"
           meta={[
-              // title
-              { name: "og:title", content: "About | Natural Resources Revenue Data"},
-              { name: "twitter:title", content: "About | Natural Resources Revenue Data"},
+            // title
+            { name: 'og:title', content: 'About | Natural Resources Revenue Data' },
+            { name: 'twitter:title', content: 'About | Natural Resources Revenue Data' },
           ]} />
 
         <section className="slab-delta">
@@ -39,19 +39,19 @@ const AboutPage = () => {
               <div className="ribbon-card-top ribbon-card-top-text">
                 <div>
                   <h2 className="ribbon-card-top-text-header">Understand natural resource management on federal land:</h2>
-                    <ul className="list-bullet ribbon-card-top-list">
-                      <li><Link to="/how-it-works/ownership/">Land ownership</Link></li>
-                      <li><Link to="/how-it-works/#laws">Laws and regulations</Link></li>
-                      <li><Link to="/how-it-works/#process">Oil, gas, minerals, and renewable energy</Link></li>
-                      <li><Link to="/how-it-works/audits-and-assurances/">Audits and assurances</Link></li>
-                    </ul>
-                    <Link to="/how-it-works/" className="button-primary">How it works</Link>
+                  <ul className="list-bullet ribbon-card-top-list">
+                    <li><Link to="/how-it-works/ownership/">Land ownership</Link></li>
+                    <li><Link to="/how-it-works/#laws">Laws and regulations</Link></li>
+                    <li><Link to="/how-it-works/#process">Oil, gas, minerals, and renewable energy</Link></li>
+                    <li><Link to="/how-it-works/audits-and-assurances/">Audits and assurances</Link></li>
+                  </ul>
+                  <Link to="/how-it-works/" className="button-primary">How it works</Link>
                 </div>
               </div>
             </div>
           </div>
         </section>
-    
+
         <div className="container-page-wrapper container-margin-separation communities">
 
           <div className="communities-intro">
@@ -59,7 +59,7 @@ const AboutPage = () => {
             <section className="container">
 
               <div className="container-left-7">
-                  <h2 id="whos-involved">Who’s involved</h2>
+                <h2 id="whos-involved">Who’s involved</h2>
 
                 <p>Congress passes laws to govern the extraction of natural resources and the fiscal management of resulting revenue. Federal agencies develop regulations and rules to implement and enforce those laws. DOI has primary responsibility for implementing the relevant statutes and regulations in consultation with other federal agencies.</p>
               </div>
@@ -88,7 +88,7 @@ const AboutPage = () => {
                 </div>
                 <div className="bureau-right">
                   <h4>Bureau of Land Management (BLM)</h4>
-                      <p><a href="http://www.blm.gov/">BLM</a> manages exploration, development, and production of natural resources on federal lands, including lease sales and the permitting and licensing processes. BLM also ensures that developers and operators comply with requirements and regulations. BLM collects revenue in the form of <GlossaryTerm>bonus</GlossaryTerm> bids, first year rentals, and fees.</p>
+                  <p><a href="http://www.blm.gov/">BLM</a> manages exploration, development, and production of natural resources on federal lands, including lease sales and the permitting and licensing processes. BLM also ensures that developers and operators comply with requirements and regulations. BLM collects revenue in the form of <GlossaryTerm>bonus</GlossaryTerm> bids, first year rentals, and fees.</p>
                 </div>
               </article>
 
@@ -155,7 +155,7 @@ const AboutPage = () => {
             </article>
 
           </section>
-        
+
           <section className="container">
 
             <div className="container-left-7">
@@ -188,10 +188,10 @@ const AboutPage = () => {
           </section>
 
         </div>
-    
+
       </div>
     </DefaultLayout>
-  );
+  )
 }
 
-export default AboutPage;
+export default AboutPage

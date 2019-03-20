@@ -1,1 +1,1 @@
-export {default as DidYouKnow} from './DidYouKnow'
+export { default as DidYouKnow } from './DidYouKnow'

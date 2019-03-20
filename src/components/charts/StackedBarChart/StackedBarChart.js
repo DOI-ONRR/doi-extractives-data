@@ -1,88 +1,87 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { connect } from 'react-redux'
+import PropTypes from 'prop-types'
 
-import { setDataSelectedById as setDataSelectedByIdAction } from '../../../state/reducers/data-sets';
+import { setDataSelectedById as setDataSelectedByIdAction } from '../../../state/reducers/data-sets'
 
-import CONSTANTS from '../../../js/constants';
+import CONSTANTS from '../../../js/constants'
 
-import styles from "./StackedBarChart.module.css"
+import styles from './StackedBarChart.module.css'
 
-import stackedBarChart from '../../../js/bar-charts/stacked-bar-chart';
+import stackedBarChart from '../../../js/bar-charts/stacked-bar-chart'
 
 class StackedBarChart extends React.Component {
-  
-  state = { 
+  state = {
     dataSet: this.props.dataSet,
   }
 
-	componentDidMount() {
+  componentDidMount () {
     // This is a hack to get the correct width of the html element in the dev environment.
-    setTimeout(this.delay.bind(this), 1);
-	}
+    setTimeout(this.delay.bind(this), 1)
+  }
 
-  delay() {
-    if(this.state.dataSet){
-      let {data, selectedDataKey, units, xAxisLabels} = this.state.dataSet;
-      let {styleMap, sortOrder, maxBarSize} = {...this.props};
-      stackedBarChart.create(ReactDOM.findDOMNode(this), 
-        {styleMap, sortOrder, maxBarSize, selectedDataKey, units, xAxisLabels, barSelectedCallback: this.barSelectedHandler.bind(this)}, 
-        data);
+  delay () {
+    if (this.state.dataSet) {
+      let { data, selectedDataKey, units, xAxisLabels } = this.state.dataSet
+      let { styleMap, sortOrder, maxBarSize } = { ...this.props }
+      stackedBarChart.create(ReactDOM.findDOMNode(this),
+        { styleMap, sortOrder, maxBarSize, selectedDataKey, units, xAxisLabels, barSelectedCallback: this.barSelectedHandler.bind(this) },
+        data)
     }
     else {
-      let {data, ...rest } = {...this.props};
-      stackedBarChart.create(ReactDOM.findDOMNode(this), ...rest, data);
+      let { data, ...rest } = { ...this.props }
+      stackedBarChart.create(ReactDOM.findDOMNode(this), ...rest, data)
     }
   }
 
-	componentDidUpdate() {
-    if(this.state.dataSet){
-      let {data, selectedDataKey, units, xAxisLabels} = this.state.dataSet;
-      let {styleMap, sortOrder, maxBarSize} = {...this.props};
-      stackedBarChart.update(ReactDOM.findDOMNode(this), 
-        {styleMap, sortOrder, maxBarSize, selectedDataKey, units, xAxisLabels,  barSelectedCallback: this.barSelectedHandler.bind(this)}, 
-        data);
+  componentDidUpdate () {
+    if (this.state.dataSet) {
+      let { data, selectedDataKey, units, xAxisLabels } = this.state.dataSet
+      let { styleMap, sortOrder, maxBarSize } = { ...this.props }
+      stackedBarChart.update(ReactDOM.findDOMNode(this),
+        { styleMap, sortOrder, maxBarSize, selectedDataKey, units, xAxisLabels, barSelectedCallback: this.barSelectedHandler.bind(this) },
+        data)
     }
     else {
-      let {data, ...rest } = {...this.props};
-      stackedBarChart.update(ReactDOM.findDOMNode(this), ...rest, data);
+      let { data, ...rest } = { ...this.props }
+      stackedBarChart.update(ReactDOM.findDOMNode(this), ...rest, data)
     }
-	}
+  }
 
-  componentWillReceiveProps(nextProps) {
+  componentWillReceiveProps (nextProps) {
     this.setState({
-      dataSet: nextProps.dataSet, 
-    });
+      dataSet: nextProps.dataSet,
+    })
   }
 
-  shouldComponentUpdate(nextProps, nextState) {
-    let dataSet = this.state.dataSet || this.props.data;
-    let newDataSet = nextProps.dataSet || nextProps.data;
+  shouldComponentUpdate (nextProps, nextState) {
+    let dataSet = this.state.dataSet || this.props.data
+    let newDataSet = nextProps.dataSet || nextProps.data
 
     return (
-      (dataSet !== undefined && (dataSet.lastUpdated !== newDataSet.lastUpdated)) ||
-      (dataSet !== undefined && (dataSet.selectedDataKey !== newDataSet.selectedDataKey) ||
+      ((dataSet.lastUpdated !== newDataSet.lastUpdated)) ||
+      ((dataSet.selectedDataKey !== newDataSet.selectedDataKey) ||
       dataSet.lastUpdated === undefined)
-    );
+    )
   }
 
-	componentWillUnmount() {
-	
-	}
+  componentWillUnmount () {
 
-  barSelectedHandler(data) {
-    this.props.setSelectedData([{id:this.state.dataSet.dataSetId, dataKey: Object.keys(data)[0], syncId: this.state.dataSet.syncId}]);
   }
 
-	render() {
-		return(
-			<div className={styles.stackedBarChart} />
-		);
-	}
+  barSelectedHandler (data) {
+    this.props.setSelectedData([{ id: this.state.dataSet.dataSetId, dataKey: Object.keys(data)[0], syncId: this.state.dataSet.syncId }])
+  }
+
+  render () {
+    return (
+      <div className={styles.stackedBarChart} />
+    )
+  }
 }
 
-StackedBarChart.propTypes = {    
+StackedBarChart.propTypes = {
   /** Data set id to be used for populating and updating state. This is the preferred method. */
   dataSetId: PropTypes.string,
   /** The max width of the bar */
@@ -112,6 +111,5 @@ export default connect(
     dataSet: state[CONSTANTS.DATA_SETS_STATE_KEY][ownProps.dataSetId],
   }),
   dispatch => ({
-    setSelectedData: (payload) => dispatch( setDataSelectedByIdAction(payload) ),
-  }))(StackedBarChart);
-
+    setSelectedData: payload => dispatch(setDataSelectedByIdAction(payload)),
+  }))(StackedBarChart)

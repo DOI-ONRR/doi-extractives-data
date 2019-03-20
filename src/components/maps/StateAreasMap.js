@@ -1,41 +1,41 @@
-import React from 'react';
+import React from 'react'
 
-import FederalLandOwnershipSvg from './FederalLandOwnershipSvg';
+import FederalLandOwnershipSvg from './FederalLandOwnershipSvg'
 
-import { withPrefixSVG, withPrefix }  from '../utils/temp-link'
+import { withPrefixSVG, withPrefix } from '../utils/temp-link'
 
-const StateAreasMap = (props) => {
-    return (
-        <g id="StateAreasMap">
-            <g className="states features">
-                <use xlinkHref={withPrefixSVG('/maps/states/all.svg')+"#states"}></use>
+const StateAreasMap = props => {
+  return (
+    <g id="StateAreasMap">
+      <g className="states features">
+        <use xlinkHref={withPrefixSVG('/maps/states/all.svg') + '#states'}></use>
+      </g>
+      {props.states.map((item, index) => (
+        <g key={index}>
+          <text>{item.state.frontmatter.unique_id}</text>
+          <a xlinkHref={withPrefix('/explore/' + item.state.frontmatter.unique_id)} href={withPrefix('/explore/' + item.state.frontmatter.unique_id)}>
+            <g className="state feature">
+              <title>{ item.state.frontmatter.title }</title>
+              <use xlinkHref={withPrefixSVG('/maps/states/all.svg#state-' + item.state.frontmatter.unique_id)} aria-label={ item.state.frontmatter.title }></use>
             </g>
-            {props.states.map((item, index) => (
-                <g key={index}>
-                    <text>{item.state.frontmatter.unique_id}</text>
-                    <a xlinkHref={withPrefix("/explore/"+item.state.frontmatter.unique_id)} href={withPrefix("/explore/"+item.state.frontmatter.unique_id)}>
-                        <g className="state feature">
-                            <title>{ item.state.frontmatter.title }</title>
-                            <use xlinkHref={withPrefixSVG("/maps/states/all.svg#state-"+item.state.frontmatter.unique_id)}  aria-label={ item.state.frontmatter.title }></use>
-                        </g>
-                    </a>
-                </g>
-            ))}
-
-            <FederalLandOwnershipSvg />
-
-            <g className="states mesh">
-                <use xlinkHref={withPrefixSVG("/maps/states/all.svg#states-mesh")}></use>
-            </g>
+          </a>
         </g>
-    );
+      ))}
+
+      <FederalLandOwnershipSvg />
+
+      <g className="states mesh">
+        <use xlinkHref={withPrefixSVG('/maps/states/all.svg#states-mesh')}></use>
+      </g>
+    </g>
+  )
 }
 
-export default StateAreasMap;
+export default StateAreasMap
 
 // states=include.states
 //  value=include.value
-// no_ownership=include.case_studies 
+// no_ownership=include.case_studies
 
 // {% assign _svg_path = include.svg | prepend: site.baseurl %}
 // <g class="states features">

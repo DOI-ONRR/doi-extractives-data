@@ -1,1 +1,1 @@
-export {default as ExploreDataButton} from './ExploreDataButton';
+export { default as ExploreDataButton } from './ExploreDataButton'

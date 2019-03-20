@@ -1,9 +1,10 @@
 :export{
-	sans-serif: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
-	base-font-family: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
-	container-max-width: 60em;
+	sansSerif: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
+	baseFontFamily: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
+	containerMaxWidth: 60em;
+
 	/* Padding */
-	base-padding: 1.25em; /* 20px */
+	basePadding: 1.25em; /* 20px */
 	base-padding-lite: .41667em; /* 6.66px */
 	base-padding-small: 0.7em; /* 11.2px Reduced from .9em */
 	base-padding-base: 1em; /* 16px */

@@ -1,1 +1,1 @@
-export {default as DisplayDisbursement} from './DisplayDisbursement';
+export { default as DisplayDisbursement } from './DisplayDisbursement'

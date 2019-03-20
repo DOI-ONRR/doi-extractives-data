@@ -1,1 +1,1 @@
-export {default as DownloadDataLink} from './DownloadDataLink';
+export { default as DownloadDataLink } from './DownloadDataLink'

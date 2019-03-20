@@ -1,4 +1,4 @@
-@value colors: "../../../css-global/colors.css";
+@value colors: "../../../css-global/colors.scss";
 @value variables: "../../../css-global/variables.scss";
 @value blue, white from colors;
 @value base-padding from variables;

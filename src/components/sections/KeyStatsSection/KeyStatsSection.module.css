@@ -1,4 +1,4 @@
-@value colors: "../../../css-global/colors.css";
+@value colors: "../../../css-global/colors.scss";
 @value gray-blue-dark, gray-blue-mid, gray-blue-mid-light, blue-mid-light, blue-dark, blue-mid, gray-light, green-light, black-light from colors;
 
 @value federalOffshoreColor: gray-blue-mid;

@@ -4,7 +4,7 @@
  * For example when data is selcted or needs to be synchronized
  * we will handle it in this reducer for all slices of our data.
  **/
-//import { createReducer } from './index.js'
+// import { createReducer } from './index.js'
 import utils from '../../js/utils'
 
 // Define Initial State

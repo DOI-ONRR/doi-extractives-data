@@ -1,30 +1,28 @@
-import React from 'react';
+import React from 'react'
 import { withPrefix } from '../utils/temp-link'
 
-import { connect } from 'react-redux';
+import { connect } from 'react-redux'
 
-const YearSelector = (props) => {
+const YearSelector = props => {
+  const selectClassNames = { className: 'chart-selector ' + props.classNames }
 
-    const selectClassNames = {className:"chart-selector "+props.classNames}
-   
-    function onChangeHandler(e) {
-        e.stopPropagation();
-        if(props.selectYearAction) {
-            props.selectYear(parseInt(e.target.value), props.selectYearAction);
-        }
+  function onChangeHandler (e) {
+    e.stopPropagation()
+    if (props.selectYearAction) {
+      props.selectYear(parseInt(e.target.value), props.selectYearAction)
     }
+  }
 
-    return (
-        <select {...selectClassNames} onChange={onChangeHandler.bind(this)}>
-            {props.years.map((year, index) => (
-                <option key={index} value={year}>{ year}</option>
-            ))}
-        </select>
-    );
-
-};
+  return (
+    <select {...selectClassNames} onChange={onChangeHandler.bind(this)}>
+      {props.years.map((year, index) => (
+        <option key={index} value={year}>{ year}</option>
+      ))}
+    </select>
+  )
+}
 
 export default connect(
   state => ({}),
-  dispatch => ({ selectYear: (year, action) => dispatch(action(year)) }),
-)(YearSelector);
+  dispatch => ({ selectYear: (year, action) => dispatch(action(year)) })
+)(YearSelector)

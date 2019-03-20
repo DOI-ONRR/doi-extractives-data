@@ -1,1 +1,1 @@
-export {default as StickyWrapper} from './StickyWrapper'
+export { default as StickyWrapper } from './StickyWrapper'

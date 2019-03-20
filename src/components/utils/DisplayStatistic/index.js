@@ -1,1 +1,1 @@
-export {default as DisplayStatistic} from './DisplayStatistic'
+export { default as DisplayStatistic } from './DisplayStatistic'

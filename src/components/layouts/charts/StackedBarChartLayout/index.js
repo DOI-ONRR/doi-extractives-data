@@ -1,1 +1,1 @@
-export {default as StackedBarChartLayout} from './StackedBarChartLayout';
+export { default as StackedBarChartLayout } from './StackedBarChartLayout'

@@ -47,6 +47,10 @@ module.exports = {
     // react plugin - options
     "react/jsx-uses-react": "error",
     "react/jsx-uses-vars": "error",
+
+    "import/no-webpack-loader-syntax": "off",
+
+    "css-modules/no-unused-class": 1,
   },
   parser: "babel-eslint",
   parserOptions: {

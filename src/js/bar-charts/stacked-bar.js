@@ -1,114 +1,134 @@
-import * as d3 from 'd3';
-import utils from '../../js/utils';
+import * as d3 from 'd3'
+import utils from '../../js/utils'
 /**
- *  
+ *
  **/
 const stackedBar = {
-	create(el, props, state) {
-		let self = this;
-		
-		let svg = d3.select(el).append('svg')
-					.attr('height', props.height)
-					.attr('width', el.clientWidth);
+  create (el, props, state) {
+    let self = this
 
-		let stack = d3.stack()
-			.keys(self.getOrderedKeys(props.displayNames, state))
-			.offset(d3.stackOffsetNone);
-			
-		var series = stack(state);
+    let svg = d3.select(el).append('svg')
+      .attr('height', props.height)
+      .attr('width', el.clientWidth)
 
-		let xScale = d3.scaleLinear().rangeRound([0, el.clientWidth]);
+    let stack = d3.stack()
+      .keys(self.getOrderedKeys(props.displayNames, state))
+      .offset(d3.stackOffsetNone)
 
-		if(props.maxValue){
-			xScale.domain([0, props.maxValue]);
-		}
-		else{
-			xScale.domain([0, d3.max(series[series.length - 1], function(d) { return d[1]; }) ]);
-		}
+    let series = stack(state)
 
-		svg.selectAll("g")
-			.data(series)
-			.enter().append("g")
-			.attr("class", (d) =>{ return self.getKeyClassName(d.key); })
-			.append("rect")
-			.attr("x", (d) => { return xScale(d[0][0]); })
-			.attr("height", props.height)
-			.attr("width", function(d) { return xScale(d[0][1]) - xScale(d[0][0]) });
-		      
-		// Redraw based on the new size whenever the browser window is resized.
-      	//window.addEventListener("resize", utils.throttle(self.update.bind(self), 200));
-	},
+    let xScale = d3.scaleLinear().rangeRound([0, el.clientWidth])
 
-	update(el, props, state){
-		let self = this;
+    if (props.maxValue) {
+      xScale.domain([0, props.maxValue])
+    }
+    else {
+      xScale.domain([0, d3.max(series[series.length - 1], function (d) {
+        return d[1]
+      }) ])
+    }
 
-		var svg = d3.select(el).select("svg");
+    svg.selectAll('g')
+      .data(series)
+      .enter().append('g')
+      .attr('class', d => {
+        return self.getKeyClassName(d.key)
+      })
+      .append('rect')
+      .attr('x', d => {
+        return xScale(d[0][0])
+      })
+      .attr('height', props.height)
+      .attr('width', function (d) {
+        return xScale(d[0][1]) - xScale(d[0][0])
+      })
 
-		let stack = d3.stack()
-			.keys(self.getOrderedKeys(props.displayNames, state))
-			.offset(d3.stackOffsetNone);
+    // Redraw based on the new size whenever the browser window is resized.
+      	// window.addEventListener("resize", utils.throttle(self.update.bind(self), 200));
+  },
 
-		var series = stack(state);
+  update (el, props, state) {
+    let self = this
 
-		let xScale = d3.scaleLinear().rangeRound([0, el.clientWidth]);
+    let svg = d3.select(el).select('svg')
 
+    let stack = d3.stack()
+      .keys(self.getOrderedKeys(props.displayNames, state))
+      .offset(d3.stackOffsetNone)
 
-		if(props.maxValue){
-			xScale.domain([0, props.maxValue]);
-		}
-		else{
-			xScale.domain([0, d3.max(series[series.length - 1], function(d) { return d[1]; }) ]);
-		}
+    let series = stack(state)
 
-		let bars = svg.selectAll("g")
-					.data(series);
+    let xScale = d3.scaleLinear().rangeRound([0, el.clientWidth])
 
-		// Remove Bars that we dont need
-		bars.exit()
-			.remove("g");
+    if (props.maxValue) {
+      xScale.domain([0, props.maxValue])
+    }
+    else {
+      xScale.domain([0, d3.max(series[series.length - 1], function (d) {
+        return d[1]
+      }) ])
+    }
 
-		// Add new Bars 
-		bars.enter().append("g")
-			.attr("class", (d) =>{ return self.getKeyClassName(d.key); })
-			.append("rect")
-			.attr("x", (d) => { return xScale(d[0][0]); })
-			.attr("height", props.height)
-			.attr("width", function(d) { return xScale(d[0][1]) - xScale(d[0][0]) });
+    let bars = svg.selectAll('g')
+      .data(series)
 
-		// Update existing Bars 
-		bars.transition()
-			.duration(0)
-			.attr("class", (d) =>{ return self.getKeyClassName(d.key); })
-			.select("rect")
-			.attr("x", (d) => { return xScale(d[0][0]); })
-			.attr("height", props.height)
-			.attr("width", function(d) { return xScale(d[0][1]) - xScale(d[0][0]) });
+    // Remove Bars that we dont need
+    bars.exit()
+      .remove('g')
 
-	},
+    // Add new Bars
+    bars.enter().append('g')
+      .attr('class', d => {
+        return self.getKeyClassName(d.key)
+      })
+      .append('rect')
+      .attr('x', d => {
+        return xScale(d[0][0])
+      })
+      .attr('height', props.height)
+      .attr('width', function (d) {
+        return xScale(d[0][1]) - xScale(d[0][0])
+      })
 
-	destroy(el){
-		//window.removeEventListener("resize", utils.throttle(this.update.bind(this), 200));
-	},
-	
-	getKeyClassName(key) {
-		return ("stacked-bar-"+utils.formatToSlug(key));
-	},
+    // Update existing Bars
+    bars.transition()
+      .duration(0)
+      .attr('class', d => {
+        return self.getKeyClassName(d.key)
+      })
+      .select('rect')
+      .attr('x', d => {
+        return xScale(d[0][0])
+      })
+      .attr('height', props.height)
+      .attr('width', function (d) {
+        return xScale(d[0][1]) - xScale(d[0][0])
+      })
+  },
 
-	getOrderedKeys(displayNames, state) {
-		let orderedKeys = [];
-		if(displayNames){
-			for(let key in displayNames){
-				if(state[0][key]){
-					orderedKeys.push(key);
-				}
-			}
-		}
-		else{
-			orderedKeys = Object.keys(state[0]);
-		}
+  destroy (el) {
+    // window.removeEventListener("resize", utils.throttle(this.update.bind(this), 200));
+  },
 
-		return orderedKeys;
-	}
+  getKeyClassName (key) {
+    return ('stacked-bar-' + utils.formatToSlug(key))
+  },
+
+  getOrderedKeys (displayNames, state) {
+    let orderedKeys = []
+    if (displayNames) {
+      for (let key in displayNames) {
+        if (state[0][key]) {
+          orderedKeys.push(key)
+        }
+      }
+    }
+    else {
+      orderedKeys = Object.keys(state[0])
+    }
+
+    return orderedKeys
+  }
 }
 
-export default stackedBar;
+export default stackedBar

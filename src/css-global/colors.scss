@@ -1,0 +1,38 @@
+:export{
+	/* Grayscale */
+	white: #ffffff;
+	grayPale: #f0f6fa;
+	grayLighter: #ebf3f7;
+	grayLight: #d3dfe6;
+	gray: #a7bcc7;
+	grayDark: #768d99;
+	grayDarker: #5c737f;
+	grayDarkest: #435159;
+	blackLight: #323c42;
+	black: #1c2326;
+	grayBlueDark: #4e4e4e;
+	grayBlueMid: #a9a9a9;
+	grayBlueMidLight: #e0e0e0;
+
+	/* Greens */
+	greenLight: #cde3c3;
+	greenMid: #9dbd92;
+	greenLand: #69995a;
+	green: #587f4c;
+	greenDark: #2f4d26;
+
+	/* Blues */
+	blueLighter: #f2fdff;
+	blueLight: #dcf4fd;
+	bluMidLight: #c6e9ff;
+	blueCthru: rgba(198, 233, 255, 0.93);
+	blueMid: #79bbda;
+	blueMidDark: #3d95bd;
+	blue: #1478a6;
+	blueDark: #086996; /* darker link color for use over @value blue-cthru, for accessibility */
+	blueDarker: #005078;
+	blueDeep: #00354f;
+
+	/* Reds */
+	red: #c5403c;
+}

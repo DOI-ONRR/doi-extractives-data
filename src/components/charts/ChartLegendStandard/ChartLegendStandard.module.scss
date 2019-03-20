@@ -1,5 +1,6 @@
-@value colors: "../../../css-global/colors.css";
-@value gray-light, green-dark, green-light, green-land from colors;
+@value colors: "../../../css-global/colors.scss";
+@value grayLight as --grayLight from colors;
+
 
 .chartLegendStandard {
 	border: none;
@@ -8,7 +9,7 @@
 }
 
 .chartLegendStandard thead {
-	border-bottom: 2px solid gray-light;
+	border-bottom: 2px solid --grayLight;
 }
 
 .chartLegendStandard th:nth-child(2) {
@@ -16,7 +17,7 @@
 }
 
 .chartLegendStandard tr {
-	border-bottom: 1px solid gray-light;
+	border-bottom: 1px solid --grayLight;
 }
 
 .chartLegendStandard .chartLegendStandard_TotalRow {

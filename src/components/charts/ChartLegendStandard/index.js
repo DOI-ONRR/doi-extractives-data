@@ -1,1 +1,1 @@
-export {default as ChartLegendStandard} from './ChartLegendStandard'
+export { default as ChartLegendStandard } from './ChartLegendStandard'

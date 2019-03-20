@@ -76,3 +76,10 @@ const createHowItWorksPages = (createPage, graphql) => {
     );
   });
 };
+
+var copydir = require('copy-dir');
+exports.onPostBuild = () => {
+	console.log("Copying Files from public to _+site...");
+	copydir.sync(__dirname+'/public', './_site');
+	console.log("Finished Copying Files to _site.");
+}

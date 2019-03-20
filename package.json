@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "author": "Jeff Keene <jeff.keene@onrr.gov>",
   "dependencies": {
+    "copy-dir": "^0.4.0",
     "currency-formatter": "^1.5.3",
     "d3": "^5.5.0",
     "gatsby": "^2.1.38",

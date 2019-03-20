@@ -1,8 +1,8 @@
 ---
-title: "Content architecture for this blog"
+title: "Content architecture: how we built support for multiple authors"
 authors:
 - Ryan Johnson
-excerpt: "How we modified this blog's template to apply the DRY (Don't Repeat Yourself) principle to content architecture for author details."
+excerpt: "How we modified this blog's starter template to apply the DRY (Don't Repeat Yourself) principle to content architecture for author details."
 tags:
 - content design
 - content strategy

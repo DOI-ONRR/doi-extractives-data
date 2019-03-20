@@ -38,7 +38,7 @@ export class ProcessStep extends React.Component {
 				{this.props.stepName &&
 					<span className={styles.processStepName}>{this.props.stepName}</span>
 				}
-				<MediaQuery maxWidth={styles['portrait-tablet-breakpoint-down']}>
+				<MediaQuery maxWidth={767}>
 					<button is="aria-toggle" 
 									aria-controls="process-step-content" 
 									aria-expanded={this.state.expanded} 
@@ -52,12 +52,12 @@ export class ProcessStep extends React.Component {
 						}
 					</button>
 				</MediaQuery>
-				<MediaQuery maxWidth={styles['portrait-tablet-breakpoint-down']}>
+				<MediaQuery maxWidth={767}>
 					<div id="process-step-content" className={styles.processStepContent} aria-hidden={!this.state.expanded}>
 						{this.props.children}
 					</div>
 				</MediaQuery>
-				<MediaQuery minDeviceWidth={styles['portrait-tablet-breakpoint-up']}>	
+				<MediaQuery minDeviceWidth={768}>	
 					<div id="process-step-content" className={styles.processStepContent}>
 						{this.props.children}
 					</div>

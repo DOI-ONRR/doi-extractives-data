@@ -1,4 +1,3 @@
-
 // Federalist provides the BASEURL env variable for preview builds.
 // https://github.com/18F/federalist-garden-build#variables-exposed-during-builds
 const BASEURL = process.env.BASEURL || undefined;
@@ -20,21 +19,24 @@ let config = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-resolve-src',
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: 'Natural Resources Revenue Data',
+        short_name: 'NRRD',
+        start_url: '/',
+        background_color: '#663399',
+        theme_color: '#663399',
+        display: 'minimal-ui',
+        icon: 'src/img/favicon-32x32.png', // This path is relative to the root of the site.
+      },
+    },
     {
       resolve: 'gatsby-plugin-sass',
       options: {
         includePaths: [`${__dirname}/src/styles`, `${__dirname}/src/css-global`, `${__dirname}/src/components`],
       },
     },
-
-    // You can have multiple instances of this plugin
-    // to read source nodes from different locations on your
-    // filesystem.
-    //
-    // The following sets up the Jekyll pattern of having a
-    // "pages" directory for Markdown files and a "data" directory
-    // for `.json`, `.yaml`, `.csv`.
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -56,11 +58,32 @@ let config = {
         path: `${__dirname}/src/markdown/`,
       },
     },
-    `gatsby-transformer-yaml`,
-    {
-      resolve: 'gatsby-transformer-remark',
-    },
     'gatsby-transformer-excel',
+    'gatsby-transformer-yaml',
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        // CommonMark mode (default: true)
+        commonmark: true,
+        // Footnotes mode (default: true)
+        footnotes: true,
+        // Pedantic mode (default: true)
+        pedantic: true,
+        // GitHub Flavored Markdown mode (default: true)
+        gfm: true,
+        // Plugins configs
+        plugins: [],
+      },
+    },
+    {
+      resolve: 'custom-excel-transformer',
+      options: {
+        types: [
+          'ProductionVolumesXlsx__Sheet1',
+          'DisbursementsXlsx__Data',
+          'RevenueMonthlyXlsx__MontlyRev']
+      }
+    },
   ],
 };
 

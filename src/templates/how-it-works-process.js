@@ -17,6 +17,8 @@ import RenewablesIcon from '-!svg-react-loader!../img/svg/icon-renewables.svg';
 import ChevronIcon from '-!svg-react-loader!../img/svg/chevron-lt.svg';
 
 
+import DefaultLayout from '../components/layouts/DefaultLayout'
+
 class HowItWorksProcess extends React.Component {
 
   constructor(props){
@@ -39,30 +41,32 @@ class HowItWorksProcess extends React.Component {
 	render () {
     let title = this.props.pathContext.markdown.frontmatter.title || "Natural Resources Revenue Data";
 		return (
-			<div>
-        <Helmet
-            title={title}
-            meta={[
-                // title
-                { name: "og:title", content: title},
-                { name: "twitter:title", content: title},
-            ]}
+      <DefaultLayout>
+  			<div>
+          <Helmet
+              title={title}
+              meta={[
+                  // title
+                  { name: "og:title", content: title},
+                  { name: "twitter:title", content: title},
+              ]}
 
-            />
-        {hastReactRenderer(this.props.pathContext.markdown.htmlAst)} 
-        <div className='pre-footer'>
-          <section className="container-page-wrapper">
-            <ul>
-              <h3>Choose a resource to explore:</h3>
-              <li><Link to="/how-it-works/coal/"><CoalIcon /> Coal</Link></li>
-              <li><Link to="/how-it-works/offshore-oil-gas/"><OilGasIcon /> Oil &amp; Gas</Link></li>
-              <li><Link to="/how-it-works/minerals/"><MineralsIcon /> Nonenergy Minerals</Link></li>
-              <li><Link to="/how-it-works/offshore-renewables/"><RenewablesIcon /> Renewables</Link></li>
-              <li><Link to="/how-it-works/"><ChevronIcon /> Back to How it works</Link></li>
-            </ul>
-          </section>
+              />
+          {hastReactRenderer(this.props.pathContext.markdown.htmlAst)} 
+          <div className='pre-footer'>
+            <section className="container-page-wrapper">
+              <ul>
+                <h3>Choose a resource to explore:</h3>
+                <li><Link to="/how-it-works/coal/"><CoalIcon /> Coal</Link></li>
+                <li><Link to="/how-it-works/offshore-oil-gas/"><OilGasIcon /> Oil &amp; Gas</Link></li>
+                <li><Link to="/how-it-works/minerals/"><MineralsIcon /> Nonenergy Minerals</Link></li>
+                <li><Link to="/how-it-works/offshore-renewables/"><RenewablesIcon /> Renewables</Link></li>
+                <li><Link to="/how-it-works/"><ChevronIcon /> Back to How it works</Link></li>
+              </ul>
+            </section>
+          </div>
         </div>
-      </div>
+      </DefaultLayout>
 		);
 	}
 }

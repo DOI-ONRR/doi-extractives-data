@@ -2,7 +2,7 @@ import React from 'react';
 
 import FederalLandOwnershipSvg from './FederalLandOwnershipSvg';
 
-import { withPrefixSVG, withPrefix }  from 'components/utils/temp-link'
+import { withPrefixSVG, withPrefix }  from '../utils/temp-link'
 
 const StateAreasMap = (props) => {
     return (

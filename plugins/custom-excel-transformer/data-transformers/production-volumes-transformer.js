@@ -8,9 +8,8 @@
  **/
 
 /* Use ES5 require in order to be compatible with version 1.x of gatsby */
-const crypto = require('crypto');
 
-const CONSTANTS = require('../../js/constants');
+const CONSTANTS = require('../../../src/js/constants');
 
 /* Define the column names found in the excel file */
 const SOURCE_COLUMNS = {
@@ -68,32 +67,24 @@ const LOCATION_CATEGORY_TYPE_TO_PRODUCTION_CATEGORY ={
 }
 
 /* Use ES5 exports in order to be compatible with version 1.x of gatsby */
-module.exports = (createNode, sourceData) => {
-	console.log("Production Volumes ",sourceData);
-	sourceData.map((productVolumeData, index) => {
-			createProductVolumeNodeByProduct(createNode, productVolumeData, index);
-		}
-	);
+module.exports = (node) => {
+	return createProductVolumeNodeByProduct(node);
 }
 
-const createProductVolumeNodeByProduct = (createNode, productVolumeData, index) => {
+const createProductVolumeNodeByProduct = (productVolumeData) => {
 	if(productVolumeData[SOURCE_COLUMNS.Commodity] === undefined) return;
 
   let node = {
-  	id: index+"-productvolume",
 	  ProductionMonth: productVolumeData[SOURCE_COLUMNS.Month],
 	  ProductionYear: productVolumeData[SOURCE_COLUMNS.CalendarYear],
 	  LandCategory: productVolumeData[SOURCE_COLUMNS.LandCategory],
 	  OnshoreOffshore: productVolumeData[SOURCE_COLUMNS.OnshoreOffshore],
 	  ProductName: SOURCE_COLUMN_TO_PRODUCT_DISPLAY_NAME[productVolumeData[SOURCE_COLUMNS.Commodity]],
 	  Volume: productVolumeData[SOURCE_COLUMNS.Volume],
-	  parent: null,
-	  children: [],
 	  internal: {
 	    type: `ProductVolumes`,
-	  },
+	  }
   }
-
 
 	node.ProductionDate = new Date(node.ProductionYear, getMonthFromString(node.ProductionMonth));
 
@@ -104,11 +95,7 @@ const createProductVolumeNodeByProduct = (createNode, productVolumeData, index) 
 	node.DisplayMonth = node.ProductionMonth && node.ProductionMonth.substring(0, 3);
 	node.DisplayYear = node.ProductionYear && ("'"+node.ProductionYear.toString().substring(2));
 
-  node.internal.contentDigest = crypto.createHash(`md5`)
-																      .update(JSON.stringify(node))
-																      .digest(`hex`);
-
-	createNode(node);
+	return node;
 }
 
 function getMonthFromString(month){

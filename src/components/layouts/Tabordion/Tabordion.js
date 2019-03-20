@@ -22,6 +22,7 @@ class Tabordion extends React.Component {
 	}
 
   render() {
+  	console.log(styles);
     return (
     	<div>
       	<MediaQuery minWidth={481}>

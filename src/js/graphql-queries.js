@@ -24,7 +24,7 @@ module.exports = Object.freeze({
       }
     }`,
 	MARKDOWN_HOWITWORKS: 
-		`allMarkdownRemark(filter: {id: {regex: "/how-it-works/"}}) {
+		`allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/how-it-works/"}}) {
 	    pages: edges {
 	      page: node {
 	        frontmatter {
@@ -39,7 +39,7 @@ module.exports = Object.freeze({
 	    }
 	  }`,
   MARKDOWN_DOWNLOADS: 
-    `allMarkdownRemark(filter: {id: {regex: "/downloads/"}}) {
+    `allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/downloads/"}}) {
       pages: edges {
         page: node {
           frontmatter {
@@ -53,7 +53,7 @@ module.exports = Object.freeze({
       }
     }`,
   MARKDOWN_CASE_STUDIES: 
-    `allMarkdownRemark(filter: {id: {regex: "/case-studies/"}}) {
+    `allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/case-studies/"}}) {
       pages: edges {
         page: node {
           frontmatter {
@@ -68,7 +68,7 @@ module.exports = Object.freeze({
       }
     }`,
   MARKDOWN_OFFSHORE: 
-    `allMarkdownRemark(filter: {id: {regex: "/offshore_regions/"}}) {
+    `allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/offshore_regions/"}}) {
       pages: edges {
         page: node {
           frontmatter {

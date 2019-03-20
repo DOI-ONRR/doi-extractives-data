@@ -1,14 +1,10 @@
-// include reset
 @import 'reset';
 
-// include Bourbon & Neat
 @import 'lib/bourbon/bourbon';
 @import 'lib/neat/neat';
 
-// include site specific base styles
 @import 'base';
 
-// include print stylesheet overrides
 @media print {
   @import 'print/layout';
   @import 'print/home';

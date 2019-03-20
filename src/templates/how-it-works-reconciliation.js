@@ -6,6 +6,8 @@ import {withPrefixSVG} from '../components/utils/temp-link';
 
 import hastReactRenderer from '../js/hast-react-renderer';
 
+import DefaultLayout from '../components/layouts/DefaultLayout'
+
 class HowItWorksReconciliation extends React.Component {
   componentDidMount() {
     const script1 = document.createElement("script");
@@ -26,18 +28,20 @@ class HowItWorksReconciliation extends React.Component {
 	render () {
     let title = this.props.pathContext.markdown.frontmatter.title || "Natural Resources Revenue Data";
 		return (
-			<div>
-        <Helmet
-            title={title}
-            meta={[
-                // title
-                { name: "og:title", content: title},
-                { name: "twitter:title", content: title},
-            ]}
+      <DefaultLayout>
+  			<div>
+          <Helmet
+              title={title}
+              meta={[
+                  // title
+                  { name: "og:title", content: title},
+                  { name: "twitter:title", content: title},
+              ]}
 
-            />
-        {hastReactRenderer(this.props.pathContext.markdown.htmlAst)} 
-      </div>
+              />
+          {hastReactRenderer(this.props.pathContext.markdown.htmlAst)} 
+        </div>
+      </DefaultLayout>
 		);
 	}
 }

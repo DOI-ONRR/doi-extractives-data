@@ -1,5 +1,5 @@
 import React from 'react';
-import { withPrefix } from 'components/utils/temp-link'
+import { withPrefix } from '../utils/temp-link'
 
 const LocationSelector = (props) => {
    

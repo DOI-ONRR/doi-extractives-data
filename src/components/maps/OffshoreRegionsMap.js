@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { withPrefixSVG, withPrefix }  from 'components/utils/temp-link'
+import { withPrefixSVG, withPrefix }  from '../utils/temp-link'
 
 const OffshoreRegionsMap = (props) => {
 

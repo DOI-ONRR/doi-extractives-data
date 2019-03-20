@@ -1,20 +1,33 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 
-import {Banner} from '../components/layouts/Banner';
-import {AlertBanner} from '../components/layouts/AlertBanner';
-import {Header} from '../components/layouts/Header';
-import {Footer} from '../components/layouts/Footer';
-import Glossary from '../components/utils/Glossary';
+import { useStaticQuery, graphql } from "gatsby"
 
-import "styles/_main.scss";
-import "styles/print.scss";
+import {Banner} from '../Banner';
+import {AlertBanner} from '../AlertBanner';
+import {Header} from '../Header';
+import {Footer} from '../Footer';
+import Glossary from '../../utils/Glossary';
 
-import { withPrefixSVG } from 'components/utils/temp-link';
+import "../../../styles/_main.scss";
+//import "../../../styles/print.scss";
 
-export default ({ data, children}) => {
+import { withPrefixSVG } from '../../utils/temp-link';
+
+const DefaultLayout = ({children}) => {
   let meta_image = withPrefixSVG("/img/unfurl_image.png");
-
+  const data = useStaticQuery(graphql`
+	  query IndexLayoutQuery{
+	    site {
+	      siteMetadata {
+	        title
+	        description
+	        version
+	        googleAnalyticsId
+	      }
+	    }
+	  }
+  `);
   return (
       <div>
         <Helmet
@@ -62,31 +75,18 @@ export default ({ data, children}) => {
             {'<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NCRF98R" height="0" width="0" style="display:none;visibility:hidden"></iframe>'}
           </noscript>
         </Helmet>
-        
-        <Banner />
-        
-        <Header siteMetadata={data && data.site.siteMetadata} />
-        
-        <Glossary />
-        
-        {children()}
-        
+
+				<Banner />
+
+				<Header siteMetadata={data && data.site.siteMetadata} />
+
+				<Glossary />
+
+        {children}
+
         <Footer version={data && data.site.siteMetadata.version} />
       </div>
   );
 }
 
-export const query = graphql`
-  query IndexLayoutQuery{
-    site {
-      siteMetadata {
-        title
-        description
-        version
-        googleAnalyticsId
-      }
-    }
-  }
-
-`;
-
+export default DefaultLayout;

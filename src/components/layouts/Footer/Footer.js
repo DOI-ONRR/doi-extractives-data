@@ -8,7 +8,7 @@ import logo from "../../../img/DOI-2x.png";
 import DownloadIcon from '-!svg-react-loader!../../../img/svg/icon-download-base.svg';
 import BullhornIcon from '-!svg-react-loader!../../../img/svg/icon-bullhorn.svg';
 
-import CONTACT_INFO from '../../../data-graphql/contact.yml';
+import CONTACT_INFO from '../../../data-graphql/contact/contact.yml';
 
 const Footer = ({ version }) => ( 
 <footer className="footer">

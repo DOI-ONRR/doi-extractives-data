@@ -131,12 +131,14 @@ class PageToc extends React.Component {
 			<div className={styles.root}>
 				<StickyWrapper bottomBoundary={this.props.bottomBoundary} innerZ="1000">
 					<div className={styles.tocContainer}>
-						<MediaQuery minWidth={styles['portrait-tablet-breakpoint-up']}>	
-							{this.state.displayTitle &&
+						<MediaQuery minWidth={768}>	
+							{this.state.displayTitle ?
 								<h3 className={styles.displayTitle}>{this.state.displayTitle}</h3>
+								:
+								<div />
 							}
 						</MediaQuery>
-						<MediaQuery maxWidth={styles['portrait-tablet-breakpoint-down']}>	
+						<MediaQuery maxWidth={767}>	
 							<button id='page-toc-toggle' 
 											is="aria-toggle" 
 											aria-controls="page-toc-nav" 

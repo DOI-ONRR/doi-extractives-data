@@ -6,7 +6,6 @@ import MediaQuery from 'react-responsive'
 import utils from '../../../js/utils'
 
 import styles from './PageToc.module.scss'
-import {portraitTabletBreakpointUp, portraitTabletBreakpointDown} from "../../../css-global/variables.scss"
 
 import { StickyWrapper } from '../../utils/StickyWrapper'
 
@@ -110,7 +109,7 @@ class PageToc extends React.Component {
 
 	  tocState.tocItems = elementArrayToTocArray(allTocElems, excludeClassNames, this.state.scrollOffset)
 
-	  this.setState({ ...tocState, mobileActive: (document.documentElement.clientWidth <= parseInt(portraitTabletBreakpointDown)) })
+	  this.setState({ ...tocState, mobileActive: (document.documentElement.clientWidth <= parseInt(styles._portraitTabletBreakpointDown)) })
 	}
 
 	handleClick () {
@@ -124,13 +123,13 @@ class PageToc extends React.Component {
 	    <div className={styles.root}>
 	      <StickyWrapper bottomBoundary={this.props.bottomBoundary} innerZ="1000">
 	        <div className={styles.tocContainer}>
-	          <MediaQuery minWidth={portraitTabletBreakpointUp}>
+	          <MediaQuery minWidth={styles._portraitTabletBreakpointUp}>
 	            {this.state.displayTitle
 	              ? <h3 className={styles.displayTitle}>{this.state.displayTitle}</h3>
 	              :								<div />
 	            }
 	          </MediaQuery>
-	          <MediaQuery maxWidth={portraitTabletBreakpointDown}>
+	          <MediaQuery maxWidth={styles._portraitTabletBreakpointDown}>
 	            <button id='page-toc-toggle'
 	              is="aria-toggle"
 	              aria-controls="page-toc-nav"

@@ -1,8 +1,9 @@
 @value colors: "../../../css-global/colors.scss";
-@value grayDarker as --grayDarker, grayLight as --grayLight, blackLight as --blackLight from colors;
+@value white as _white, grayDarker as _grayDarker, grayLight as _grayLight, blackLight as _blackLight from colors;
 
 @value variables: "../../../css-global/variables.scss";
-@value portraitTabletBreakpointDown as --portraitTabletBreakpointDown from variables;
+@value portraitTabletBreakpointDown as _portraitTabletBreakpointDown from variables;
+@value portraitTabletBreakpointUp as _portraitTabletBreakpointUp from variables;
 
 .root {
 	display: block;
@@ -13,7 +14,7 @@
 
 .processStepContainer {
 	display: table;
-	background-color: white;
+	background-color: _white;
 	margin-bottom: 4px;
 	padding: 1.25em;
 	width: 100%;
@@ -28,7 +29,7 @@
 }
 
 .processStepId {
-	border: 2px solid --grayLight;
+	border: 2px solid _grayLight;
 	border-radius: 50%;
 	color: black;
 	display: inline-block;
@@ -44,7 +45,7 @@
 }
 
 .processStepName {
-	color: --grayDarker;
+	color: _grayDarker;
 	font-size: 1.625rem;
 	font-weight: 600;
 	line-height: 2.25rem;
@@ -53,7 +54,7 @@
 }
 
 .processStepContent {
-	color: --blackLight;
+	color: _blackLight;
 	font-size: 1rem;
 	font-weight: 300;
 	line-height: 1.375rem;
@@ -63,14 +64,14 @@
 }
 
 .processStepContent p {
-	color: --blackLight;
+	color: _blackLight;
 	font-size: 1rem;
 	font-weight: 300;
 	line-height: 1.375rem;
 }
 
 .processStepContent ul {
-	color: --blackLight;
+	color: _blackLight;
 	font-size: 1rem;
 	font-weight: 300;
 	line-height: 1.375rem;
@@ -82,7 +83,7 @@
 	float: right;
 }
 
-@media screen and (max-width: --portraitTabletBreakpointDown) {
+@media screen and (max-width: _portraitTabletBreakpointDown) {
 	.root {
 		padding-bottom: 6.225em;
 		width: 100%;

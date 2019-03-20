@@ -1,13 +1,14 @@
 @value colors: "../../../css-global/colors.scss";
-@value grayLight as --grayLight, grayLighter as --grayLighter from colors;
-@value blackLight as --blackLight, greenLight as --greenLight, white as --white from colors;
+@value grayLight as _grayLight, grayLighter as _grayLighter from colors;
+@value blackLight as _blackLight, greenLight as _greenLight, white as _white from colors;
 
 @value variables: "../../../css-global/variables.scss";
-@value basePaddingLite as --basePaddingLite from variables;
-@value portraitTabletBreakpointDown as --portraitTabletBreakpointDown from variables;
+@value basePaddingLite as _basePaddingLite from variables;
+@value portraitTabletBreakpointDown as _portraitTabletBreakpointDown from variables;
+@value portraitTabletBreakpointUp as _portraitTabletBreakpointUp from variables;
 
 .root {
-	background-color: --white;
+	background-color: _white;
 	width: 100%;
 }
 
@@ -17,11 +18,11 @@
 }
 
 .displayTitle {
-	border-bottom: 1px solid --grayLight;
+	border-bottom: 1px solid _grayLight;
 	font-size: 13px;
 	font-weight: 400;
 	line-height: 16px;
-	padding-bottom: --basePaddingLite;
+	padding-bottom: _basePaddingLite;
 	text-transform: uppercase;
 }
 
@@ -31,7 +32,7 @@
 }
 
 .toc a {
-	color: --blackLight;
+	color: _blackLight;
 	display: block;
 	font-size: 16px;
 	line-height: 19.2px;
@@ -46,12 +47,12 @@
 
 .tocSub {
 	list-style-type: none;
-	margin-top: --basePaddingLite;
+	margin-top: _basePaddingLite;
 	padding-left: 14px;
 }
 
 .tocSub a{
-	color: --blackLight;
+	color: _blackLight;
 	font-size: 0.8125rem;
 	line-height: 1.2;
 	padding: 6.5px;
@@ -79,11 +80,11 @@
 }
 
 .tocSubItem {
-	border-left: 3px solid --grayLight;
+	border-left: 3px solid _grayLight;
   padding: 0 0.5em 0.5em 0.5em;
 
   &:first-of-type {
-    margin-top: --basePaddingLite;
+    margin-top: _basePaddingLite;
     padding-top: 0;
   }
 
@@ -99,7 +100,7 @@
 
 .tocButton {
 	background-color: white;
-	border-bottom: 3px solid --greenLight;
+	border-bottom: 3px solid _greenLight;
 	font-size: 1.125rem;
 	line-height: 1.625rem;
 	margin: 0px;
@@ -119,9 +120,9 @@
 	display: none;
 }
 
-@media screen and (max-width: --portraitTabletBreakpointDown) {
+@media screen and (max-width: _portraitTabletBreakpointDown) {
 	.tocContainer {
-		background-color: --white;
+		background-color: _white;
 		padding: 0px;
 	}	
 	.toc a {
@@ -134,7 +135,7 @@
 		display: block;
 	}
 	.tocItem a {
-		border-bottom: 1px solid --grayLighter;
+		border-bottom: 1px solid _grayLighter;
 	}
 	.tocSubItem a{
 	  font-size: 1rem;

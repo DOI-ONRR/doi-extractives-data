@@ -3,8 +3,6 @@ import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
 import MediaQuery from 'react-responsive'
 
-import {portraitTabletBreakpointUp, portraitTabletBreakpointDown} from "../../../css-global/variables.scss"
-
 import styles from './ProcessGroup.module.scss'
 
 class ProcessGroup extends React.Component {
@@ -29,7 +27,7 @@ export class ProcessStep extends React.Component {
 	}
 
 	render () {
-		console.log(this.props);
+		//console.log(styles);
 		let stepId = this.props.stepId || this.props.stepid;
 		let stepName = this.props.stepName || this.props.stepname;
 	  return (
@@ -40,7 +38,7 @@ export class ProcessStep extends React.Component {
 	      {stepName &&
 					<span className={styles.processStepName}>{stepName}</span>
 	      }
-	      <MediaQuery maxWidth={portraitTabletBreakpointDown}>
+	      <MediaQuery maxWidth={styles._portraitTabletBreakpointDown}>
 	        <button is="aria-toggle"
 	          aria-controls="process-step-content"
 	          aria-expanded={this.state.expanded}
@@ -53,12 +51,12 @@ export class ProcessStep extends React.Component {
 	          }
 	        </button>
 	      </MediaQuery>
-	      <MediaQuery maxWidth={portraitTabletBreakpointDown}>
+	      <MediaQuery maxWidth={styles._portraitTabletBreakpointDown}>
 	        <div id="process-step-content" className={styles.processStepContent} aria-hidden={!this.state.expanded}>
 	          {this.props.children}
 	        </div>
 	      </MediaQuery>
-	      <MediaQuery minDeviceWidth={portraitTabletBreakpointUp}>
+	      <MediaQuery minDeviceWidth={styles._portraitTabletBreakpointUp}>
 	        <div id="process-step-content" className={styles.processStepContent}>
 	          {this.props.children}
 	        </div>

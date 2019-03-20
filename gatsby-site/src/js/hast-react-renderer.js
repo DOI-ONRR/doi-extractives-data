@@ -30,6 +30,7 @@ import CoalIcon from '-!svg-react-loader!../img/svg/icon-coal.svg';
 import OilGasIcon from '-!svg-react-loader!../img/svg/icon-oil.svg';
 import HardrockIcon from '-!svg-react-loader!../img/svg/icon-hardrock.svg';
 import RenewablesIcon from '-!svg-react-loader!../img/svg/icon-renewables.svg';
+import GeothermalIcon from '-!svg-react-loader!../img/svg/icon-geothermal.svg';
 import ChevronIcon from '-!svg-react-loader!../img/svg/chevron-lt.svg';
 import DownloadLink from '../components/layouts/icon-links/DownloadLink';
 
@@ -69,6 +70,7 @@ const hastReactRenderer = new rehypeReact({
                 'oil-gas-icon': OilGasIcon,
                 'hardrock-icon': HardrockIcon,
                 'renewables-icon': RenewablesIcon,
+                'geothermal-icon': GeothermalIcon,
                 'chevron-icon': ChevronIcon,
                 'download-link': DownloadLink,
               },

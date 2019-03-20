@@ -1,18 +1,18 @@
 @value colors: "../../../../css-global/colors.scss";
-@value blue, white from colors;
+@value blue as --blue, white as --white from colors;
 
 .root {
 	display: inline-block;
-	background-color: blue;
+	background-color: --blue;
 	border-radius: 5px;
-	color: white;
+	color: --white;
 	padding: 10px 20px;
 }
 
 .root div{
 	display: inline-block;
 	font-weight: bold;
-	vertical-align: middle;
+
 }
 
 .root:hover > div{

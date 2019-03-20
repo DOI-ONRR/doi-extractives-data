@@ -1,6 +1,3 @@
-@value colors: "../../../../css-global/colors.scss";
-@value green, gray-light from colors;
-
 .root {
 	width: 100%;
 }
@@ -8,8 +5,6 @@
 .chart {
 	height: 215px;
 }
-
-
 
 .chartContainer {
   float: left;

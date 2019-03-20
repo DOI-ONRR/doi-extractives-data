@@ -171,12 +171,12 @@ redirect_from: /how-it-works/production/
           </div>
           <div>
             <h4 class="h3 landing-heading"><custom-link to="/how-it-works/land-and-water-conservation-fund">Land and Water Conservation Fund</custom-link></h4>
-            <p>When <glossary-term term.key="authorization">authorized</glossary-term>, the Land and Water Conservation Fund receives disbursements from offshore oil and gas revenue to support conservation, outdoor recreation, and the needs of local communities.</p>
+            <p>When <glossary-term termKey="authorization">authorized</glossary-term>, the Land and Water Conservation Fund receives disbursements from offshore oil and gas revenue to support conservation, outdoor recreation, and the needs of local communities.</p>
             <p><custom-link to="/how-it-works/land-and-water-conservation-fund">Learn about the Land and Water Conservation Fund</custom-link></p>
           </div>
           <div>
             <h4 class="h3 landing-heading"><custom-link to="/how-it-works/historic-preservation-fund">Historic Preservation Fund</custom-link></h4>
-            <p>When <glossary-term term.key="authorization">authorized</glossary-term>, the Historic Preservation Fund receives disbursements from offshore oil and gas revenue to fund the conservation of cultural and historic sites.</p>
+            <p>When <glossary-term termKey="authorization">authorized</glossary-term>, the Historic Preservation Fund receives disbursements from offshore oil and gas revenue to fund the conservation of cultural and historic sites.</p>
             <p><custom-link to="/how-it-works/historic-preservation-fund">Learn about the Historic Preservation Fund</custom-link></p>
           </div>
           <div>

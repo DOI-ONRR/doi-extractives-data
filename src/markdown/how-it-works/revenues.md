@@ -22,7 +22,7 @@ tag:
 
 When companies extract natural resources on federal onshore lands and the Outer Continental Shelf, they pay revenue to the Department of the Interior (DOI).
 
-In general, companies pay bonuses, rents, royalties, or fees and penalties (if incurred) to <glossary-term>ONRR</glossary-term>, and in some cases bonuses and rents to the Bureau of Land Management. Royalties, a percentage of the sales value of extracted resources, make up most of the revenue paid to DOI.
+In general, companies pay <glossary-term termKey="bonus">bonuses</glossary-term>, <glossary-term termKey="rent">rents</glossary-term>, <glossary-term termKey="royalty">royalties</glossary-term>, or fees and penalties (if incurred) to <glossary-term>ONRR</glossary-term>, and in some cases bonuses and rents to the Bureau of Land Management. Royalties, a percentage of the sales value of extracted resources, make up most of the revenue paid to DOI.
 
 Lease holders also pay different fees to the Bureau of Land Management, Bureau of Safety and Environmental Enforcement, and Bureau of Ocean Energy Management, often to reimburse the federal government for costs associated with awarding, administering, and enforcing leases. For extracting locatable hardrock minerals on federal lands, companies pay fees, but not royalties under the Mining Law of 1872.
 
@@ -39,24 +39,28 @@ Lease holders also pay different fees to the Bureau of Land Management, Bureau o
     </tr>
     <tr>
       <th></th>
-      <th>Securing a lease or claim</th>
-      <th>Before production</th>
-      <th>During production</th>
+      <th>Bonus</th>
+      <th>Rent</th>
+      <th>Royalty</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>Onshore</td>
-      <td><strong>Bonus</strong><br>
-          Amount paid for the lease by the highest bidder</td>
+      <td><strong>Bonus</strong></td>
       <td><strong>$1.50</strong> annual rent per acre for the first 5 years, <strong>$2</strong> annual rent per acre thereafter</td>
       <td><strong>12.5%</strong> of production value in royalties</td>
     </tr>
     <tr>
       <td>Offshore</td>
       <td><strong>Bonus</strong></td>
-      <td><strong>$7</strong> or <strong>$11</strong> annual rent per acre increasing over time up to <strong>$44</strong> per acre in some cases</td>
-      <td><strong>12.5%</strong>, <strong>16.67%</strong>, or <strong>18.75%</strong> of production value in royalties</td>
+      <td><strong>Water depth 0–200m:</strong> Years 1–5 rent is $7/acre, year 6 rent is $14/acre, year 7 rent is $21/acre, year 8+ rent is $28/acre<br>
+      <strong>Water depth 200–400m:</strong> Years 1–5 rent is $11/acre, year 6 rent is $22/acre, year 7 rent is $33/acre, year 8+ rent is $44/acre<br> 
+      <strong>Water depth 400+:</strong> Years 1–5 rent is $11/acre, years 6+ rent is $16/acre
+      </td>
+      <td><strong>12.5%</strong> for leases located in water depths less than 200 meters<br>
+      <strong>18.75%</strong> for leases located in water depths of 200 meters and deeper
+      </td>
     </tr>
   </tbody>
 </table>
@@ -72,9 +76,9 @@ Lease holders also pay different fees to the Bureau of Land Management, Bureau o
     </tr>
     <tr>
       <th></th>
-      <th>Securing a lease or claim</th>
-      <th>Before production</th>
-      <th>During production</th>
+      <th>Bonus</th>
+      <th>Rent</th>
+      <th>Royalty</th>
     </tr>
   </thead>
   <tbody>
@@ -104,32 +108,35 @@ Lease holders also pay different fees to the Bureau of Land Management, Bureau o
   <thead>
     <tr>
       <td style="border-top: none;"></td>
-      <th colspan="3" class="article_table-thin">Phase</th>
+      <th colspan="4" class="article_table-thin">Phase</th>
     </tr>
     <tr>
       <th></th>
-      <th>Securing a lease or claim</th>
-      <th>Before production</th>
-      <th>During production</th>
+      <th>Bonus</th>
+      <th>Rent</th>
+      <th>Fee</th>
+      <th>Royalty</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>Public domain lands</td>
-      <td><strong>$20</strong> processing fee <br>
-          <strong>$37</strong> location fee <br>
-          <strong>$155</strong> initial maintenance fee
+      <td></td>
+      <td><strong>$1</strong> per acre</td>
+      <td><strong>$20</strong> processing fee<br>
+          <strong>$37</strong> location fee<br>
+          <strong>$155</strong> initial maintenance fee<br>
+          <strong>$155</strong> annual maintenance fee for the assessment year in which the claim/site was located
       </td>
-      <td><strong>$155</strong> annual maintenance fee per claim</td>
-      <td><strong>No royalties</strong> are required to be paid.</td>
+      <td></td>
     </tr>
     <tr>
       <td>Acquired lands</td>
-      <td><strong>$6,500</strong> prospecting permit fee</td>
-      <td><strong>$0.50</strong> annual prospecting fee per acre <br>
-          <strong>$1</strong> annual rent per acre</td>
-      <td><strong>Royalty rates</strong> are exempt from minimums and determined on an individual case basis by the authorized leasing officers.
-      </td>
+      <td><strong>$1,000</strong> minimum bond for prospecting permits<br>
+          <strong>$5,000</strong> minimum bond for leases</td>
+      <td><strong>$0.50</strong> per acre or fraction of an acre</td>
+      <td></td>
+      <td>Royalty rates are exempt from minimums and determined on an individual basis by the authorized leasing officers.</td>
     </tr>
   </tbody>
 </table>
@@ -141,32 +148,84 @@ Lease holders also pay different fees to the Bureau of Land Management, Bureau o
   <thead>
     <tr>
       <td style="border-top: none;"></td>
-      <th colspan="3" class="article_table-thin">Phase</th>
+      <th colspan="4" class="article_table-thin">Phase</th>
     </tr>
     <tr>
       <th></th>
-      <th>Securing a lease or claim</th>
-      <th>Before production</th>
-      <th>During production</th>
+      <th>Bonus</th>
+      <th>Rent</th>
+      <th>Fee</th>
+      <th>Royalty</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>Onshore (solar and wind)</td>
-      <td><strong>Bonus</strong> (inside designated leasing areas)<br>
-          <strong>$15</strong> per acre application filing fee (outside designated leasing areas)
+      <td>
+        <strong>$15</strong> per acre application filing fee (outside designated leasing areas)
       </td>
-      <td><strong>Rent</strong> determined by acreage and land value</td>
-      <td> <strong>$6.21</strong> megawatt capacity fee per KW from wind<br>
-           <strong>$3.55–$5.32</strong> megawatt capacity fee per KW from solar</td>
+      <td><strong>Rent</strong> determined by number of acres multiplied by zone rate<br><br>
+      <a href="https://www.federalregister.gov/documents/2016/12/19/2016-27551/competitive-processes-terms-and-conditions-for-leasing-public-lands-for-solar-and-wind-energy">Review the details</a></td>
+      <td>Solar megawatt capacity fees vary by technology, ranging from <strong>$2,863</strong> to <strong>$4,294</strong><br><br>
+      <strong>$5,010</strong> megawatt capacity fee for wind<br><br>
+      <a href="https://www.blm.gov/policy/im-2017-096">Review the details</a>
+      </td>
     </tr>
     <tr>
       <td>Offshore (wind)</td>
       <td><strong>Bonus</strong> (competitive lease)<br>
           <strong>$0.25</strong> per acre for acquisition fee (uncompetitive lease)</td>
       <td><strong>$3</strong> annual rent per acre</td>
-      <td><strong>2%</strong> (unless otherwise specified or waived) of anticipated value of wind energy produced in operating fee
+      <td></td>
+      <td><strong>2%</strong> of anticipated value of wind energy produced in operating fee*
       </td>
+    </tr>
+  </tbody>
+</table>
+
+<p class="para-sm">* Unless waived or otherwise specified</p>
+
+<!--Geothermal-->
+<p style="margin: 2em 0 0 0;"><geothermal-icon></geothermal-icon> <strong>Geothermal</strong></p>
+
+<table class="article_table">
+  <thead>
+    <tr>
+      <td style="border-top: none;"></td>
+      <th colspan="4" class="article_table-thin">Phase</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Bonus</th>
+      <th>Rent</th>
+      <th>Fee</th>
+      <th>Royalty</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Competitive leasing</td>
+      <td>
+        <strong>$115</strong> nomination fee and <strong>$0.12</strong> per acre<br>
+        <strong>$165</strong> application fee
+      </td>
+      <td><strong>$2</strong> per acre for the first year<br>
+          <strong>$3</strong> annual rent per acre for years 2–10<br>
+          <strong>$5</strong> annual rent per acre after 10 years
+      </td>
+      <td>Direct-use fees for energy needs other than the commercial production or generation of electricity</td>
+      <td>Electricity sales: <strong>1.75%</strong> of gross proceeds for 10 years, then <strong>3.5%</strong><br><br>
+          Arm’s length sales: <strong>10%</strong> of gross proceeds from contract multiplied by lease royalty rate
+      </td>    
+    </tr>
+    <tr>
+      <td>Noncompetitive leasing</td>
+      <td><strong>$415</strong> application fee</td>
+      <td><strong>$1</strong> annual rent per acre for 10 years<br>
+          <strong>$5</strong> annual rent per acre thereafter
+      </td>
+      <td></td>
+      <td></td>
     </tr>
   </tbody>
 </table>
@@ -186,7 +245,7 @@ Corporations operating in the extractive industries pay taxes to the IRS on thei
 
 In the U.S., coal producers must pay a federal [coal excise tax](/how-it-works/coal-excise-tax/) when they mine coal (a producer is any person or entity that owns the coal after it’s mined from the ground). Producers pay the tax when the coal is first sold or used. The tax does not apply to lignite or to coal mined in the U.S. for export.
 
-The [Abandoned Mine Land (AML) Reclamation Program](/how-it-works/aml-reclamation-program/) uses fees paid by present-day coal mining companies to <glossary-term term.key="reclamation">reclaim</glossary-term> coal mines abandoned before 1977.
+The [Abandoned Mine Land (AML) Reclamation Program](/how-it-works/aml-reclamation-program/) uses fees paid by present-day coal mining companies to <glossary-term termKey="reclamation">reclaim</glossary-term> coal mines abandoned before 1977.
 
 <h3 data-toc-display-as="h2">Revenue policy provisions</h3>
 

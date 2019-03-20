@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Link from '../../../utils/temp-link'
 
-import styles from './ExploreDataButton.module.css'
+import styles from './ExploreDataButton.module.scss'
 
 import ExploreDataIcon from '-!svg-react-loader!../../../../img/icons/explore-data-square.svg'
 

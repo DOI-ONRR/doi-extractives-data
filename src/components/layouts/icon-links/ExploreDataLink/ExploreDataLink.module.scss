@@ -1,12 +1,12 @@
 @value colors: "../../../../css-global/colors.scss";
-@value blue, white from colors;
+@value blue as --blue from colors;
 
-.root svg{
-	fill: blue;
+.exploreDataLink svg{
+	fill: --blue;
 	vertical-align: middle;
 	margin-right: 8px;
 }
 
-.root span{
+.exploreDataLink span{
 	vertical-align: baseline;
 }

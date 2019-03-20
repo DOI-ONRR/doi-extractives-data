@@ -20,7 +20,7 @@ tag:
 
 > After collecting revenue from natural resource extraction, the Office of Natural Resources Revenue distributes that revenue to different agencies, funds, and local governments. This process is called "disbursement."
 
-Companies pay <glossary-term term.key="bonus">bonuses</glossary-term>, rents, and royalties to extract natural resources on federal lands and waters. The result is revenue collected by the Office of Natural Resources Revenue (ONRR). ONRR then disburses that revenue according to [federal laws and regulations](/how-it-works/federal-laws/). These laws and regulations govern how, when, and to whom disbursements are paid.
+Companies pay <glossary-term termKey="bonus">bonuses</glossary-term>, rents, and royalties to extract natural resources on federal lands and waters. The result is revenue collected by the Office of Natural Resources Revenue (ONRR). ONRR then disburses that revenue according to [federal laws and regulations](/how-it-works/federal-laws/). These laws and regulations govern how, when, and to whom disbursements are paid.
 
 ## Disbursement recipients
 

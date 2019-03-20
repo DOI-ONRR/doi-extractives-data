@@ -68,7 +68,7 @@ permalink: /how-it-works/offshore-oil-gas/
         <process-group>
           <process-step step.id="1" step.name="Plan" expanded="true">
             <p>In accordance with the 1978 OCSLA amendment, BOEM develops a schedule of planning areas across the Outer Continental Shelf to offer for oil and gas leasing. This program is known as the Five Year Outer Continental Shelf Leasing Program. In developing five year plans, BOEM strives to address national energy needs while balancing economic, environmental, and social considerations.</p>
-            <p>To implement the program, BOEM creates a programmatic <glossary-term term.key="Environmental Impact Statement (EIS)">Environmental Impact Statement</glossary-term>. The public has the opportunity to comment on the Environmental Impact Statement and the proposed leasing program. BOEM submits public comments for the program, along with the plan, to Congress and the President.</p>   
+            <p>To implement the program, BOEM creates a programmatic <glossary-term termKey="Environmental Impact Statement (EIS)">Environmental Impact Statement</glossary-term>. The public has the opportunity to comment on the Environmental Impact Statement and the proposed leasing program. BOEM submits public comments for the program, along with the plan, to Congress and the President.</p>   
           </process-step>
           <process-step step.id="2" step.name="Lease">
             <p>Once the Five Year Program is in place, BOEM plans for each regional lease sale, a one to two year process that includes developing site-specific Environmental Impact Statements and offering opportunities for public comment. BOEM will send a notice of sale to interested bidders with the terms and conditions of the “blocks,” the nine-square-mile areas offered in the lease sale.</p>
@@ -81,7 +81,7 @@ permalink: /how-it-works/offshore-oil-gas/
           </process-step>
           <process-step step.id="4" step.name="Develop">
             <p>Before extracting resources, the lease holder must submit a Development or Production Plan for BOEM’s approval. The lease holder must also apply to BSEE for drilling and operations permits to begin extraction. At the start of development, BSEE will conduct initial inspections to ensure the proper installation of structures and equipment. Thereafter, BSEE conducts periodic announced and unannounced inspections to enforce lease terms and other conditions.</p>
-            <p>The lease holder pays annual rent until the operation starts producing oil or gas in paying quantities. At that time, the lease holder stops paying rent and starts paying <glossary-term term.key="royalty">royalties</glossary-term> to ONRR.</p>
+            <p>The lease holder pays annual rent until the operation starts producing oil or gas in paying quantities. At that time, the lease holder stops paying rent and starts paying <glossary-term termKey="royalty">royalties</glossary-term> to ONRR.</p>
           </process-step>
           <process-step step.id="5" step.name="Decommission and reclaim">
             <p>At the close of an operation, the lease holder or operator must return the ocean and seafloor to its pre-lease condition. Under the OCSLA regulations, the lease holder is required to submit a Decommissioning Plan to BSEE for approval two years before the termination of the lease. To satisfy NEPA obligations, BOEM prepares a site-specific Environmental Assessment for each removal application on behalf of BSEE.</p>

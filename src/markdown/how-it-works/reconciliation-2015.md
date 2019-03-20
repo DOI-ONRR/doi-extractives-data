@@ -48,14 +48,14 @@ tag:
                 <li><b>45 companies were asked to report</b></li>
                 <li><b>31 companies reported and reconciled $8.5 billion in Department of the Interior revenue</b></li>
                 <li><b>12 out of 41 applicable companies reported $190 million in corporate income taxes</b></li>
-                <li><b>100% of 17 <glossary-term term.key="material variance">material variances</glossary-term> have been explained</b></li>
+                <li><b>100% of 17 <glossary-term termKey="material variance">material variances</glossary-term> have been explained</b></li>
               </ul>
             </li>
           </ul>
           <h2>How are the numbers verified?</h2>
           <ul>
             <li class="flowchart-dialog flowchart-dialog_top flowchart-join_to_bottom">
-              <span class="flowchart-text_bold">During the USEITI reconciliation process, the <glossary-term term.key="Independent Administrator (IA)">Independent Adminstrator</glossary-term> compares company reports of payments to government records of revenue received. Here’s how they decide what to review and report:</span>
+              <span class="flowchart-text_bold">During the USEITI reconciliation process, the <glossary-term termKey="Independent Administrator (IA)">Independent Adminstrator</glossary-term> compares company reports of payments to government records of revenue received. Here’s how they decide what to review and report:</span>
             </li>
             <li class="flowchart-dialog flowchart-dialog_left flowchart-dialog_left_1 flowchart-dialog_right flowchart-join_to_top">
               <span class="flowchart-text_bold">Is there any difference between the amounts reported by the government and the company?</span>
@@ -80,7 +80,7 @@ tag:
                   <path class="flowchart-stem_bottom_right_extra_long"></path>
                 </li>
                 <li class="flowchart-dialog flowchart-columns_8">
-                  <span class="flowchart-text_bold">This is called a <glossary-term term.key="material variance">material variance</glossary-term>, which means the Independent Administrator reviews details about the transaction to understand what happened.</span>
+                  <span class="flowchart-text_bold">This is called a <glossary-term termKey="material variance">material variance</glossary-term>, which means the Independent Administrator reviews details about the transaction to understand what happened.</span>
                   <div class="flowchart-stem_left"></div>
                 </li>
                 <li class="flowchart-dialog flowchart-no_top flowchart-dialog_transparent flowchart-columns_8">

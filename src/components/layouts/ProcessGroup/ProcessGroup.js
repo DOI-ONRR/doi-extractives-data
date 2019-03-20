@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
 import MediaQuery from 'react-responsive'
 
+import {portraitTabletBreakpointUp, portraitTabletBreakpointDown} from "../../../css-global/variables.scss"
+
 import styles from './ProcessGroup.module.scss'
 
 class ProcessGroup extends React.Component {
@@ -27,15 +29,18 @@ export class ProcessStep extends React.Component {
 	}
 
 	render () {
+		console.log(this.props);
+		let stepId = this.props.stepId || this.props.stepid;
+		let stepName = this.props.stepName || this.props.stepname;
 	  return (
 	    <div className={styles.processStepContainer}>
-	      {this.props.stepId &&
-					<div className={styles.processStepId}>{this.props.stepId}</div>
+	      {stepId &&
+					<div className={styles.processStepId}>{stepId}</div>
 	      }
-	      {this.props.stepName &&
-					<span className={styles.processStepName}>{this.props.stepName}</span>
+	      {stepName &&
+					<span className={styles.processStepName}>{stepName}</span>
 	      }
-	      <MediaQuery maxWidth={767}>
+	      <MediaQuery maxWidth={portraitTabletBreakpointDown}>
 	        <button is="aria-toggle"
 	          aria-controls="process-step-content"
 	          aria-expanded={this.state.expanded}
@@ -48,12 +53,12 @@ export class ProcessStep extends React.Component {
 	          }
 	        </button>
 	      </MediaQuery>
-	      <MediaQuery maxWidth={767}>
+	      <MediaQuery maxWidth={portraitTabletBreakpointDown}>
 	        <div id="process-step-content" className={styles.processStepContent} aria-hidden={!this.state.expanded}>
 	          {this.props.children}
 	        </div>
 	      </MediaQuery>
-	      <MediaQuery minDeviceWidth={768}>
+	      <MediaQuery minDeviceWidth={portraitTabletBreakpointUp}>
 	        <div id="process-step-content" className={styles.processStepContent}>
 	          {this.props.children}
 	        </div>
@@ -64,6 +69,8 @@ export class ProcessStep extends React.Component {
 }
 
 ProcessStep.propTypes = {
+	stepId: PropTypes.string,
+	stepName: PropTypes.string,
   expanded: PropTypes.oneOfType([
 						  PropTypes.string,
 						  PropTypes.bool

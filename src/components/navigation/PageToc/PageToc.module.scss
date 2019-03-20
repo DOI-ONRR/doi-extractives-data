@@ -1,10 +1,13 @@
 @value colors: "../../../css-global/colors.scss";
-@value black-light, gray-light, gray-lighter, green-light from colors;
+@value grayLight as --grayLight, grayLighter as --grayLighter from colors;
+@value blackLight as --blackLight, greenLight as --greenLight, white as --white from colors;
+
 @value variables: "../../../css-global/variables.scss";
-@value base-padding-lite, portrait-tablet-breakpoint-up , portrait-tablet-breakpoint-down from variables;
+@value basePaddingLite as --basePaddingLite from variables;
+@value portraitTabletBreakpointDown as --portraitTabletBreakpointDown from variables;
 
 .root {
-	background-color: white;
+	background-color: --white;
 	width: 100%;
 }
 
@@ -14,11 +17,11 @@
 }
 
 .displayTitle {
-	border-bottom: 1px solid gray-light;
+	border-bottom: 1px solid --grayLight;
 	font-size: 13px;
 	font-weight: 400;
 	line-height: 16px;
-	padding-bottom: base-padding-lite;
+	padding-bottom: --basePaddingLite;
 	text-transform: uppercase;
 }
 
@@ -28,7 +31,7 @@
 }
 
 .toc a {
-	color: black-light;
+	color: --blackLight;
 	display: block;
 	font-size: 16px;
 	line-height: 19.2px;
@@ -43,12 +46,12 @@
 
 .tocSub {
 	list-style-type: none;
-	margin-top: base-padding-lite;
+	margin-top: --basePaddingLite;
 	padding-left: 14px;
 }
 
 .tocSub a{
-	color: black-light;
+	color: --blackLight;
 	font-size: 0.8125rem;
 	line-height: 1.2;
 	padding: 6.5px;
@@ -76,11 +79,11 @@
 }
 
 .tocSubItem {
-	border-left: 3px solid gray-light;
+	border-left: 3px solid --grayLight;
   padding: 0 0.5em 0.5em 0.5em;
 
   &:first-of-type {
-    margin-top: base-padding-lite;
+    margin-top: --basePaddingLite;
     padding-top: 0;
   }
 
@@ -96,7 +99,7 @@
 
 .tocButton {
 	background-color: white;
-	border-bottom: 3px solid green-light;
+	border-bottom: 3px solid --greenLight;
 	font-size: 1.125rem;
 	line-height: 1.625rem;
 	margin: 0px;
@@ -116,9 +119,9 @@
 	display: none;
 }
 
-@media screen and (max-width: portrait-tablet-breakpoint-down) {
+@media screen and (max-width: --portraitTabletBreakpointDown) {
 	.tocContainer {
-		background-color: white;
+		background-color: --white;
 		padding: 0px;
 	}	
 	.toc a {
@@ -131,7 +134,7 @@
 		display: block;
 	}
 	.tocItem a {
-		border-bottom: 1px solid gray-lighter;
+		border-bottom: 1px solid --grayLighter;
 	}
 	.tocSubItem a{
 	  font-size: 1rem;

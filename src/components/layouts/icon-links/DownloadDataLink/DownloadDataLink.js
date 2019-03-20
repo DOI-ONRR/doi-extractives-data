@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Link from '../../../utils/temp-link'
 
-import styles from './DownloadDataLink.module.css'
+import styles from './DownloadDataLink.module.scss'
 
 import DownloadDataIcon from '-!svg-react-loader!../../../../img/svg/icon-download-buttonup.svg'
 

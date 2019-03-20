@@ -1,6 +1,8 @@
+@value colors: "../../../css-global/colors.scss";
+@value paleYellow as --paleYellow from colors;
 
 .root {
-	background-color: #fff1d2;;
+	background-color: --paleYellow;
 	margin: 0 0 1rem 0;
 	font-size: 1rem;
 	font-weight: 300;

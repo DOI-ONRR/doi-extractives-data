@@ -1,7 +1,8 @@
-@import '../../../css-global/colors.scss';
+@value colors: "../../../css-global/colors.scss";
+@value grayPale as --grayPale, blackLight as --blackLight from colors;
 
 .root {
-	background-color: grayPale;
+	background-color: --grayPale;
   border-left: 10px solid gray;
   padding: 1.125em .5em .5em .5em;
   margin-bottom: 2rem;
@@ -9,7 +10,7 @@
 
 .content {
   margin: 0 0 1rem 0;
-  color: blackLight;
+  color: --blackLight;
   font-size: 0.8125rem;
   font-weight: 300;
   line-height: 1.1875rem;

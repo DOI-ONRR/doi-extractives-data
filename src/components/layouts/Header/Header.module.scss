@@ -1,5 +1,8 @@
-@import '../../../css-global/colors.scss';
-@import '../../../css-global/variables.scss';
+@value colors: "../../../css-global/colors.scss";
+@value blue as --blue, white as --white from colors;
+
+@value variables: '../../../css-global/variables.scss';
+@value baseFontFamily as --baseFontFamily from variables;
 
 .root {
 	margin-top: basePadding;
@@ -13,7 +16,7 @@
 }
 
 .mobileNavDrawer {
-	background-color: blue;
+	background-color: --blue;
 	box-sizing: border-box;
 	color: white;
 	padding: 32px;
@@ -39,9 +42,9 @@
 
 .mobileNavDrawerLinkItem {
   margin: 0 0 1rem 0;
-	color: #ffffff;
+	color: --white;
   text-decoration: none;
-  font-family: Lato, "Helvetica Neue", Helvetica, arial, sans-serif;
+  font-family: --baseFontFamily;
   font-size: 1rem;
   line-height: 1.375rem;
   margin-bottom: 0.625rem;
@@ -52,7 +55,7 @@
 }
 
 .mobileNavDrawerLinkItemBreak {
-	border-bottom: 1px solid #ffffff;
+	border-bottom: 1px solid --white;
   margin-bottom: 2.5em;
   padding-bottom: 2.5em;
 }
@@ -61,7 +64,7 @@
   margin: 0 0 1rem 0;
 	color: #ffffff;
   text-decoration: none;
-  font-family: Lato, "Helvetica Neue", Helvetica, arial, sans-serif;
+  font-family: --baseFontFamily;
   font-size: 1rem;
   line-height: 1.375rem;
   margin-bottom: 0.625rem;

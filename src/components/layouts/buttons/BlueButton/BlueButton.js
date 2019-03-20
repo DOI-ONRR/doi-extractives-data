@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Link from '../../../utils/temp-link'
 
-import styles from './BlueButton.module.css'
+import styles from './BlueButton.module.scss'
 
 const BlueButton = props => (
   <Link to={props.to} className={styles.root}>

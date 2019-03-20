@@ -65,7 +65,7 @@ permalink: /how-it-works/offshore-renewables/
             <p>The planning and analysis phase identifies suitable areas for wind energy leasing consideration through collaborative, consultative, and analytical processes that engage stakeholders and government agencies. This is the phase when BOEM conducts environmental compliance reviews and consultations with tribes, states, and natural resource agencies.</p>
           </process-step>
           <process-step step.id="2" step.name="Lease">
-            <p>BOEM grants offshore wind energy leases through either a competitive or an noncompetitive process. In a competitive bid, more than one party is interested in acquiring the lease for specific waters. BOEM will award the lease to the highest bidder above the fair market return, a minimum bid to provide the public a fair price. Once BOEM accepts a competitive bid, the lease holder must pay the <glossary-term>bonus</glossary-term> to ONRR. In an noncompetitive bid, a single party negotiates the lease amount with BOEM and is required to pay an <glossary-term term.key="acquisition fee">Acquisition Fee</glossary-term>.</p>
+            <p>BOEM grants offshore wind energy leases through either a competitive or an noncompetitive process. In a competitive bid, more than one party is interested in acquiring the lease for specific waters. BOEM will award the lease to the highest bidder above the fair market return, a minimum bid to provide the public a fair price. Once BOEM accepts a competitive bid, the lease holder must pay the <glossary-term>bonus</glossary-term> to ONRR. In an noncompetitive bid, a single party negotiates the lease amount with BOEM and is required to pay an <glossary-term termKey="acquisition fee">Acquisition Fee</glossary-term>.</p>
           </process-step>
           <process-step step.id="3" step.name="Explore">
             <p>Companies explore leased waters to locate suitable sites for constructing renewable energy infrastructure. During this phase, the lease holder also conducts surveys and studies of the site (e.g., avian, marine mammal, archaeological). The lease holder must submit a Site Assessment Plan, which contains a detailed proposal for the construction of a meteorological tower and/or the installation of meteorological buoys. BOEM may approve, approve with modification, or disapprove of the Site Assessment Plan.</p>
@@ -73,7 +73,7 @@ permalink: /how-it-works/offshore-renewables/
           </process-step>
           <process-step step.id="4" step.name="Develop">
             <p>To begin development and production, the lease holder submits a Construction and Operations Plan to BOEM. BOEM conducts environmental and technical reviews and decides whether to approve, approve with modification, or disapprove the plan.</p>
-            <p>During this period, ONRR collects annual rent from the lease holder. Once the wind facility produces energy, ONRR also collects an <glossary-term term.key="operating fee">Operating Fee</glossary-term>.</p>
+            <p>During this period, ONRR collects annual rent from the lease holder. Once the wind facility produces energy, ONRR also collects an <glossary-term termKey="operating fee">Operating Fee</glossary-term>.</p>
             <p>Prior to the end of the lease term, the developer must submit a plan to decommission the facilities.</p>
           </process-step>
           <process-step step.name="Learn more">

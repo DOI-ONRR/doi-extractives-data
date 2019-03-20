@@ -1,5 +1,5 @@
 @value colors: "../../../css-global/colors.scss";
-@value blue-dark from colors;
+@value blueDark as --blueDark from colors;
 
 .root {
 	font-size: 13px;
@@ -16,7 +16,7 @@
 }
 
 .toggle span {
-	color: blue-dark;
+	color: --blueDark;
 	cursor: pointer;
 	vertical-align: middle;
 }

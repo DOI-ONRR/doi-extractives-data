@@ -56,7 +56,7 @@ permalink: /how-it-works/minerals/
             <p>All mining claims are initially unpatented claims that permit only those activities necessary for exploration and mining and require the claim to be worked every year. The original 1872 General Mining Act allowed miners to acquire patents to purchase mining claims on federal lands for any legal use. Prospectors could purchase federal lands for $5 per acre for lode claims and $2.50 per acre for placer claims. Congress prohibited this practice through moratorium in 1994; the moratorium has been renewed annually through the Interior Appropriations Acts.</p>
           </process-step>
 		  		<process-step step.id="3" step.name="Explore">
-            <p>The exploration process for hardrock minerals differs depending on where developers are conducting their exploration. On public domain land, developers explore for minerals before staking a claim. Under the 1872 General Mining Act, developers cannot stake a claim until they discover a deposit of valuable minerals. Developers pay <glossary-term term.key="claim-staking fee">claim-staking fees</glossary-term> to BLM after making a discovery.</p>
+            <p>The exploration process for hardrock minerals differs depending on where developers are conducting their exploration. On public domain land, developers explore for minerals before staking a claim. Under the 1872 General Mining Act, developers cannot stake a claim until they discover a deposit of valuable minerals. Developers pay <glossary-term termKey="claim-staking fee">claim-staking fees</glossary-term> to BLM after making a discovery.</p>
             <p>On acquired lands, developers pay a Prospecting Permit Fee to BLM and pay <glossary-term>rent</glossary-term> to ONRR during the exploration phase.</p>
           </process-step>
 		  		<process-step step.id="4" step.name="Develop">
@@ -126,7 +126,7 @@ permalink: /how-it-works/minerals/
     <div class="container-right-8">
       <div class="revenues_subpage-involved_participate">
         <div class="container-half container-half-space">
-          <p><strong>Join a Resource Advisory Council.</strong> BLM formed <glossary-term term.key="resource advisory council (rac)">Resource Advisory Councils</glossary-term> (RACs) in the western U.S. to provide advice on managing public lands and resources. <a href="https://www.blm.gov/get-involved/resource-advisory-council/near-you">Join your local RAC</a>.</p>
+          <p><strong>Join a Resource Advisory Council.</strong> BLM formed <glossary-term termKey="resource advisory council (rac)">Resource Advisory Councils</glossary-term> (RACs) in the western U.S. to provide advice on managing public lands and resources. <a href="https://www.blm.gov/get-involved/resource-advisory-council/near-you">Join your local RAC</a>.</p>
           <p><strong>Volunteer.</strong> <a href="http://volunteer.gov/index.cfm">Find opportunities in your area</a> or <a href="https://www.blm.gov/get-involved/partnerships">create a BLM partnership</a>.</p>
         </div>
         <div class="container-half revenues_subpage-involved_video">

@@ -21,7 +21,7 @@ permalink: /how-it-works/coal/
 		  </div>
 		  <h1>Coal</h1>
 		  <p class="revenues_subpage-intro_text">The Department of the Interior is responsible for 570 million acres of federal land with coal resources. This responsibility comes from the Mineral Leasing Act of 1920 and the Mineral Leasing Act for Acquired Lands of 1947, as amended.</p>
-		  <p class="revenues_subpage-intro_text">In 2013, the United States was the world’s second largest coal producer after China. The U.S. has significant available coal reserves: There are 19.7 billion <glossary-term term.key="tons">short tons</glossary-term> of recoverable reserves in active mines, and another 479.9 billion short tons that could be mined with current technologies.</p>
+		  <p class="revenues_subpage-intro_text">In 2013, the United States was the world’s second largest coal producer after China. The U.S. has significant available coal reserves: There are 19.7 billion <glossary-term termKey="tons">short tons</glossary-term> of recoverable reserves in active mines, and another 479.9 billion short tons that could be mined with current technologies.</p>
 		</div>
 		<div class="revenues_subpage-office_container revenues_subpage-office_container_layout">
 		  <div class="revenues_subpage-office container">
@@ -66,10 +66,10 @@ permalink: /how-it-works/coal/
             <p>To apply for a Coal Exploration License, companies must submit an Exploration Plan detailing the timing, location, method, and potential environmental impact of all exploration activities. The Coal Exploration License expires after two years. During the explore phase, companies pay <glossary-term>rent</glossary-term> and bonus installments to ONRR.</p>
           </process-step>
 		  		<process-step step.id="4" step.name="Develop">
-            <p>After BLM awards the lease, the lease holder must obtain the appropriate permits and licenses from BLM, the Office of Surface Mining Reclamation and Enforcement (OSMRE), and any affected state and local governments before they can begin developing the site and producing coal. As soon as coal production achieves <glossary-term>paying quantities</glossary-term>, the lease holder stops paying rent and starts paying royalties to ONRR. The lease holder also pays <glossary-term term.key="Abandoned Mine Land Fee">Abandoned Mine Land Fees"</glossary-term> to OSMRE for coal produced.</p>
+            <p>After BLM awards the lease, the lease holder must obtain the appropriate permits and licenses from BLM, the Office of Surface Mining Reclamation and Enforcement (OSMRE), and any affected state and local governments before they can begin developing the site and producing coal. As soon as coal production achieves <glossary-term>paying quantities</glossary-term>, the lease holder stops paying rent and starts paying royalties to ONRR. The lease holder also pays <glossary-term termKey="Abandoned Mine Land Fee">Abandoned Mine Land Fees"</glossary-term> to OSMRE for coal produced.</p>
           </process-step>
 		  		<process-step step.id="5" step.name="Decommission and reclaim">
-            <p>At the close of a coal mining operation, the lease holder must decommission the mine and restore the land. State governments, with oversight from OSMRE, regulate and oversee this process. Even before gaining a lease, the lease holder must submit a bond to OSMRE or a state regulatory agency as insurance for complying with the lease and covering the cost of <glossary-term term.key="reclamation">reclaiming</glossary-term> the land.</p>
+            <p>At the close of a coal mining operation, the lease holder must decommission the mine and restore the land. State governments, with oversight from OSMRE, regulate and oversee this process. Even before gaining a lease, the lease holder must submit a bond to OSMRE or a state regulatory agency as insurance for complying with the lease and covering the cost of <glossary-term termKey="reclamation">reclaiming</glossary-term> the land.</p>
             <p>Within coal mining, federal and local governments partner to regulate reclamation. OSMRE is responsible for establishing a nationwide program to protect society and the environment from the adverse effects of surface coal mining operations. To do so, OSMRE works with states and tribes to ensure that citizens and the environment are protected during coal mining, and that the land is restored to beneficial use when mining is finished. OSMRE and its partners are also responsible for reclaiming and restoring lands and waters degraded by mining operations before 1977.</p>
           </process-step>
 		  		<process-step step.name="Learn more">
@@ -124,7 +124,7 @@ permalink: /how-it-works/coal/
       <div class="container-right-8">
         <div class="revenues_subpage-involved_participate">
           <div class="container-half container-half-space">
-            <p><strong>Join a Resource Advisory Council.</strong> BLM formed <glossary-term term.key="resource advisory council (rac)">Resource Advisory Councils</glossary-term> (RACs) in the western U.S. to provide advice on managing public lands and resources. <a href="https://www.blm.gov/get-involved/resource-advisory-council/near-you">Join your local RAC</a>.</p>
+            <p><strong>Join a Resource Advisory Council.</strong> BLM formed <glossary-term termKey="resource advisory council (rac)">Resource Advisory Councils</glossary-term> (RACs) in the western U.S. to provide advice on managing public lands and resources. <a href="https://www.blm.gov/get-involved/resource-advisory-council/near-you">Join your local RAC</a>.</p>
             <p><strong>Volunteer.</strong> <a href="http://volunteer.gov/index.cfm">Find opportunities in your area</a> or <a href="https://www.blm.gov/get-involved/partnerships">create a BLM partnership</a>.</p>
           </div>
           <div class="container-half revenues_subpage-involved_video">

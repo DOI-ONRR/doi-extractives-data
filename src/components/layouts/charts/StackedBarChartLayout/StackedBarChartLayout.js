@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
 import MediaQuery from 'react-responsive'
 
-import styles from './StackedBarChartLayout.module.css'
+import styles from './StackedBarChartLayout.module.scss'
 
 import { ChartTitle } from '../../../charts/ChartTitle'
 import { StackedBarChart } from '../../../charts/StackedBarChart'

@@ -1,7 +1,9 @@
 @value colors: "../../../css-global/colors.scss";
+@value white as --white, blue as --blue, red as --red, black as --black from colors;
+
 @value variables: "../../../css-global/variables.scss";
-@value white, blue, red, black from colors;
-@value portrait-tablet-breakpoint-down, portrait-tablet-breakpoint-up from variables;
+@value portraitTabletBreakpointDown as --portraitTabletBreakpointDown from variables;
+
 
 .root {
 	border-radius: 5px;
@@ -21,13 +23,13 @@
 }
 
 .headingRed {
-	background-color: red;
-	color: white;
+	background-color: --red;
+	color: --white;
 }
 
 .headingBlue {
-	background-color: blue;
-	color: white;
+	background-color: --blue;
+	color: --white;
 }
 
 .heading {
@@ -41,7 +43,7 @@
 }
 
 .content {
-	background-color: white;
+	background-color: --white;
 	color: black;
 	font-size: 0.8125rem;
 	font-weight: 300;
@@ -52,7 +54,7 @@
 }
 
 .contentExpanded {
-	background-color: white;
+	background-color: --white;
 	color: black;
 	font-size: 0.8125rem;
 	font-weight: 300;
@@ -67,15 +69,15 @@
 }
 
 .toggleContainer {
-	background-color: white;
+	background-color: --white;
 	padding-right: 0.73529em;
 	text-align: right;
 	width: 100%;
 }
 
 .toggleButton {
-	background-color: white;
-	color: blue;
+	background-color: --white;
+	color: --blue;
 	font-size: 12px;
 	svg {
 	  top: .125em;
@@ -86,7 +88,7 @@
 	}
 }
 
-@media screen and (max-width: portrait-tablet-breakpoint-down) {
+@media screen and (max-width: --portraitTabletBreakpointDown) {
 	.root {
 		display: block;
 		margin: 0;

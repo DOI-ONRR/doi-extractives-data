@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import styles from './Accordion.module.css'
+import styles from './Accordion.module.scss'
 
 import IconPlus from '-!svg-react-loader!../../../img/icons/icon-circled-plus.svg'
 import IconMinus from '-!svg-react-loader!../../../img/icons/icon-circled-minus.svg'

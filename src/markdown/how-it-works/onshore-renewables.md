@@ -52,7 +52,7 @@ permalink: /how-it-works/onshore-renewables/
         <process-group>
           <process-step step.id="1" step.name="Plan" expanded="true">
             <p>Over the past decade, the federal government has taken steps to update regulations to clarify and encourage planning for renewable energy development on federal lands, particularly for wind and solar energy.</p>
-            <p>In 2005, BLM published a programmatic <glossary-term term.key="Environmental Impact Statement (EIS)">Environmental Impact Statement</glossary-term> to create a framework for developing wind energy on federal lands in the West. At the same time, BLM amended 53 land-use plans to allow for wind energy development. BLM field offices can amend additional land-use plans any time to support wind energy development.</p>
+            <p>In 2005, BLM published a programmatic <glossary-term termKey="Environmental Impact Statement (EIS)">Environmental Impact Statement</glossary-term> to create a framework for developing wind energy on federal lands in the West. At the same time, BLM amended 53 land-use plans to allow for wind energy development. BLM field offices can amend additional land-use plans any time to support wind energy development.</p>
             <p>In 2012, BLM released the final solar Environmental Impact Statement. This statement furthered a proposal to create a competitive leasing program on federal lands for commercial scale solar development in 17 new <a href="https://www.blm.gov/programs/energy-and-minerals/renewable-energy/solar-energy/permitting-and-development/land-use-planning">Solar Energy Zones</a>.</p>
             <p>BLM finalized <a href="https://www.blm.gov/sites/blm.gov/files/Energyandminerals_Renewable_Wind_solar_finalrule.pdf">a new rule (PDF)</a> that promotes competitively offering designated leasing areas for solar and wind energy development. Designated leasing areas have fewer environmental and cultural resource conflicts compared to others, making them better candidates for development.</p>
           </process-step>
@@ -66,7 +66,7 @@ permalink: /how-it-works/onshore-renewables/
             <p>Exploration for onshore renewables is easier and faster than for offshore renewables. Within designated leasing areas, a developer has two years to find a suitable site for infrastructure and submit a Plan of Development. Outside of designated leasing areas, a developer has two years to begin construction. Companies can choose whether or not to extend their leases based on their findings. During exploration, companies pay <glossary-term>rent</glossary-term> to BLM.</p>
           </process-step>
           <process-step step.id="4" step.name="Develop">
-            <p>Once a developer submits a Plan of Development, they have a period of time to construct facilities and begin generating electricity from wind or solar energy. Within designated leasing areas, a developer has seven years to complete construction. Outside of designated leasing areas, a developer has two years. During this phase, the developer pays <glossary-term term.key="Megawatt Capacity (MC) fee">Megawatt Capacity fees</glossary-term> for the energy produced as part of the rent to BLM.</p>
+            <p>Once a developer submits a Plan of Development, they have a period of time to construct facilities and begin generating electricity from wind or solar energy. Within designated leasing areas, a developer has seven years to complete construction. Outside of designated leasing areas, a developer has two years. During this phase, the developer pays <glossary-term termKey="Megawatt Capacity (MC) fee">Megawatt Capacity fees</glossary-term> for the energy produced as part of the rent to BLM.</p>
           </process-step>
           <process-step step.id="5" step.name="Decommission and reclaim">
             <p>At the close of a solar or wind project, developers must remove all facilities and return the land to a sound environmental state. Under the proposed rule, when an applicant gains a solar or wind energy lease or grant, they must provide BLM a bond. BLM holds the bond through the life of the project to ensure compliance with terms and conditions, including site <glossary-term>reclamation</glossary-term>.</p>
@@ -107,7 +107,7 @@ permalink: /how-it-works/onshore-renewables/
         <p>Solar fees are based on solar type and storage capacity.</p>
       </div>
       <div>
-        <em>Note: wind and solar fees are expressed as <glossary-term term.key="Megawatt Capacity (MC) fee">Megawatt Capacity fees</glossary-term>.</em>
+        <em>Note: wind and solar fees are expressed as <glossary-term termKey="Megawatt Capacity (MC) fee">Megawatt Capacity fees</glossary-term>.</em>
       </div>
     </div>
   </section>
@@ -121,7 +121,7 @@ permalink: /how-it-works/onshore-renewables/
     <div class="container-right-8">
       <div class="revenues_subpage-involved_participate">
         <div class="container-half container-half-space">
-          <p><strong>Join a Resource Advisory Council.</strong> BLM formed <glossary-term term.key="resource advisory council (rac)">Resource Advisory Councils</glossary-term> (RACs) in the western U.S. to provide advice on managing public lands and resources. Each council consists of 12 to 15 members with diverse interests in local communities, such as ranchers, environmental groups, tribes, state and local government officials, academics, and other public land users. <a href="https://www.blm.gov/get-involved/resource-advisory-council/near-you">Join your local Resource Advisory Council</a>.</p>
+          <p><strong>Join a Resource Advisory Council.</strong> BLM formed <glossary-term termKey="resource advisory council (rac)">Resource Advisory Councils</glossary-term> (RACs) in the western U.S. to provide advice on managing public lands and resources. Each council consists of 12 to 15 members with diverse interests in local communities, such as ranchers, environmental groups, tribes, state and local government officials, academics, and other public land users. <a href="https://www.blm.gov/get-involved/resource-advisory-council/near-you">Join your local Resource Advisory Council</a>.</p>
           <p><strong>Volunteer.</strong> <a href="http://volunteer.gov/index.cfm">Find opportunities in your area</a> or <a href="https://www.blm.gov/get-involved/partnerships">create a BLM partnership</a>.</p>
         </div>
         <div class="container-half revenues_subpage-involved_video">

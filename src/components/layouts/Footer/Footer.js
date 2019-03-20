@@ -2,7 +2,7 @@ import React from 'react'
 import Link from '../../utils/temp-link'
 import PropTypes from 'prop-types'
 
-import styles from './Footer.module.css'
+import styles from './Footer.module.scss'
 
 import logo from '../../../img/DOI-2x.png'
 import DownloadIcon from '-!svg-react-loader!../../../img/svg/icon-download-base.svg'

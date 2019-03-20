@@ -1,14 +1,14 @@
-:import('../../../css-global/colors.scss') {
-  $gray-dark: grayDark;
-  $gray-light: grayLight;
-  $gray: gray;
-  $green-dark: greenDark;
-  $green-light: greenLight;
-  $green-land: greenLand;
-}
-:import('../../../css-global/variables.scss') {
-  $base-font-family: baseFontFamily;
-}
+@value colors: "../../../css-global/colors.scss";
+@value grayDark as --grayDark, 
+	grayLight as --grayLight,
+	gray as --gray,
+	greenDark as --greenDark
+	greenLight as --greenLight
+	greenLand as --greenLand
+	from colors;
+
+@value vars: "../../../css-global/variables.scss";
+@value baseFontFamily as --baseFontFamily from vars;
 
 
 .stackedBarChart {
@@ -16,58 +16,56 @@
 
 .stackedBarChart text {
 	font-size: 13px;
-	font-family: $base-font-family;
+	font-family: --baseFontFamily;
 	font-weight: 300;
 	text-rendering: optimizeLegibility;
 }
 
 .stackedBarChart path {
-	stroke: $gray-light;
+	stroke: --grayLight;
 }
 
-
-
 .stackedBarChart_bar:hover .stackedBarChart_onshore {
-	fill: $green-dark;
+	fill: --greenDark;
 }
 
 .stackedBarChart_bar:hover .stackedBarChart_offshore {
-	fill: $green-land;
+	fill: --greenLand;
 }
 .stackedBarChart_bar:hover .stackedBarChart_native_american {
-	fill: $green-light;
+	fill: --greenLight;
 }
 
 .stackedBarChart_bar:active .stackedBarChart_onshore {
-	fill: $green-dark;
+	fill: --greenDark;
 }
 
 .stackedBarChart_bar:active .stackedBarChart_offshore {
-	fill: $green-land;
+	fill: --greenLand;
 }
 .stackedBarChart_bar:active .stackedBarChart_native_american{
-	fill: $green-light;
+	fill: --greenLight;
 }
 
 .stackedBarChart_bar.selected .stackedBarChart_onshore {
-	fill: $green-dark;
+	fill: --greenDark;
 }
 
 .stackedBarChart_bar.selected .stackedBarChart_offshore {
-	fill: $green-land;
+	fill: --greenLand;
 }
 .stackedBarChart_bar.selected .stackedBarChart_native_american{
-	fill: $green-light;
+	fill: --greenLight;
 }
 
 .stackedBarChart_onshore {
-	fill: $gray-dark;
+	fill: --greenDark;
 }
 
 .stackedBarChart_offshore {
-	fill: $gray;
+	fill: --gray;
 }
 
 .stackedBarChart_native_american {
-	fill: $gray-light;
+	fill: --grayLight;
 }

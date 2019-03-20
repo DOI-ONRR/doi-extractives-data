@@ -2,7 +2,6 @@
 title: Historic Preservation Fund | How It Works
 layout: content
 permalink: /how-it-works/historic-preservation-fund/
-description: The Historic Preservation Fund (HPF) provides matching grants to state and tribal historic preservation offices to pay for surveys, training, and grants. The HPF is funded by revenue from offshore oil and gas leases.
 tag:
 - how it works
 - offshore
@@ -11,28 +10,12 @@ tag:
 - disbursements
 - historic
 - grants
-breadcrumb:
-  - title: How it works
-    permalink: /how-it-works/
-title_display: Historic Preservation Fund
-nav_items:
-  - name: introduction
-    title: Top
-  - name: funding-priorities
-    title: Funding priorities
-  - name: authorization-and-funding
-    title: Authorization and funding
-  - name: distribution-of-funds
-    title: Distribution of funds
-    subnav_items:
-      - name: requirements
-        title: Requirements
-selector: list
 ---
 
-> {{ page.description }}
+<custom-link to="/how-it-works/" className="breadcrumb link-charlie">How it works</custom-link> /
+# Historic Preservation Fund
 
-{% include selector.html %}
+> The Historic Preservation Fund (HPF) provides matching grants to state and tribal historic preservation offices to pay for surveys, training, and grants. The HPF is funded by revenue from offshore oil and gas leases.
 
 Congress created the fund with the passage of the National Historic Preservation Act of 1966 and began funding it in 1976. The National Parks Service administers the HPF. 
 
@@ -47,7 +30,7 @@ The fund provides grants to state and tribal historic preservation offices to su
 In the act, Congress declared, "the preservation of this irreplaceable heritage is in the public interest so that its vital legacy of cultural, educational, aesthetic, inspirational, economic, and energy benefits will be maintained and enriched for future generations of Americans."
 
 ## Authorization and funding
-The Historic Preservation Fund is {{ "authorized" | term: "authorization" }} to receive $150 million each year through fiscal year 2023. Like the [Land and Water Conservation Fund]({{site.baseurl}}/how-it-works/land-and-water-conservation-fund), the HPF is subject to congressional appropriations during the annual budget process. Actual appropriations to the HPF have varied over the years, ranging from $54 million to $100 million between 2009 and 2017. Congress can choose to appropriate supplemental funding in the event of natural disasters – such as hurricanes – as they did in 2013 and 2018. 
+The Historic Preservation Fund is <glossary-term term.key="authorization">authorized</glossary-term> to receive $150 million each year through fiscal year 2023. Like the [Land and Water Conservation Fund](/how-it-works/land-and-water-conservation-fund), the HPF is subject to congressional appropriations during the annual budget process. Actual appropriations to the HPF have varied over the years, ranging from $54 million to $100 million between 2009 and 2017. Congress can choose to appropriate supplemental funding in the event of natural disasters – such as hurricanes – as they did in 2013 and 2018. 
 
 The National Park Service publishes [annual budget justifications](https://www.nps.gov/aboutus/budget.htm) (the "Green Book") that detail appropriations and spending.
 

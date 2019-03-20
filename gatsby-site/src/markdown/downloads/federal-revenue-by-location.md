@@ -49,7 +49,7 @@ Download fiscal year data:
   <li><download-link to="/downloads/federal_revenue_acct-year_FY06-18_2018-12-13.xlsx">Onshore and offshore revenue dataset, FY 2006–2018 (xlsx, 2.0 MB)</download-link></li>
 </ul>
 
-<p class="u-margin-top" markdown="1">We also have [notes on this data](https://github.com/onrr/doi-extractives-data/wiki/Data-Catalog#federal-revenue) from the web development team as they built the interactions on this site.</p>
+We also have [notes on this data](https://github.com/onrr/doi-extractives-data/wiki/Data-Catalog#federal-revenue) from the web development team as they built the interactions on this site.
 
 ## Scope
 
@@ -63,7 +63,7 @@ Companies can adjust and correct their payments for up to seven years after a tr
 
 “Oil & Gas” is the commodity category used for offshore oil and gas rents and bonuses. At the time of lease sale, it isn’t known whether a lease will produce oil, gas or both oil and gas. After a lease starts producing a commodity (or commodities), the lease owner starts paying royalties. These can then be associated with either oil or gas. Hence, rent and bonus lines of data will be associated with an “Oil & Gas” commodity type, while royalty lines of data will be associated with either “Oil” or “Gas” commodity types.
 
-<h3 alt="Revenue by location and by company"> Why is the calendar year _revenue by location national total_ slightly different than the _revenue by company total_?</h3>
+<h3 alt="Revenue by location and by company"> Why is the calendar year <span style='font-style:italic'>revenue by location national total</span> slightly different than the <span style='font-style:italic'>revenue by company total</span>?</h3>
 
 Our site has two federal revenue datasets. The one on this page is organized by location. [The federal revenue by company dataset](/downloads/federal-revenue-by-company/) is organized by the company that paid the revenue. However, the national revenue totals are slightly different (by about $90 million). This is because the revenue by location dataset excludes revenue from offshore rights-of-way because they don't map to an offshore planning area.
 
@@ -74,7 +74,7 @@ The fees and rates for revenue from geothermal resources on federal land depend 
 Also, different fee rates apply to pre-2005 leases and to direct use facilities:
 
 * For leases signed before the Energy Policy Act of 2005, the lease holder’s reasonable actual transmission and generation costs are deducted from gross proceeds from electricity sales, and the resulting value is multiplied by the lease royalty rate (usually 10%).
-* For {{ "direct use" | term_end }}, the lease holder pays the equivalent value of the least expensive, reasonable alternative energy source. Thermal energy utilized must be measured by lease holder at the inlet and outlet of facility. The resulting value is multiplied by the lease royalty rate of 10%.
+* For <glossary-term>direct use</glossary-term>, the lease holder pays the equivalent value of the least expensive, reasonable alternative energy source. Thermal energy utilized must be measured by lease holder at the inlet and outlet of facility. The resulting value is multiplied by the lease royalty rate of 10%.
 
 The Bureau of Land Management has [more information about geothermal energy on federal lands](https://www.blm.gov/programs/energy-and-minerals/renewable-energy/geothermal-energy).
 
@@ -86,7 +86,7 @@ The offshore dataset is organized by offshore planning areas. There are more off
 
 _Revenue Type_ Revenues from U.S. natural resources fall into one of several types:
 
-* _Royalties_ A natural resource lease holder pays royalties after the lease starts producing a commodity in {{"paying quantities" | term_end }}. The amount is based on a percentage of the revenue from the commodity sold. The exact percentage is set in the original lease document that went along with the lease sale.
+* _Royalties_ A natural resource lease holder pays royalties after the lease starts producing a commodity in <glossary-term>paying quantities</glossary-term>. The amount is based on a percentage of the revenue from the commodity sold. The exact percentage is set in the original lease document that went along with the lease sale.
 * _Bonus_ The amount paid by the highest successful bidder for a natural resource lease. The winning bid.
 * _Other Revenues_ This category includes revenues that are not included in the royalty, rent, or bonus categories, such as minimum royalties, estimated royalties, settlement agreements, and interest.
 * _Rents_ A natural resource lease might not produce anything in paying quantities for some time after it is sold. Until it does, periodic payments are made for the right to continue exploration and development of the land for future natural resource production. These payments are called rent.

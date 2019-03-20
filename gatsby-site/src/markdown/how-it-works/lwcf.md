@@ -2,7 +2,6 @@
 title: Land and Water Conservation Fund | How It Works
 layout: content
 permalink: /how-it-works/land-and-water-conservation-fund/
-description: The Land and Water Conservation Fund (LWCF) was enacted in 1964. It supports preservation, development, and access to outdoor lands for public recreation. The LWCF is funded by revenue from offshore oil and gas leases. 
 tag:
 - how it works
 - offshore
@@ -13,32 +12,12 @@ tag:
 - recreation
 - grants
 - National Park Service
-breadcrumb:
-  - title: How it works
-    permalink: /how-it-works/
-title_display: Land and Water Conservation Fund
-nav_items:
-  - name: introduction
-    title: Top
-  - name: funding-priorities
-    title: Funding priorities
-  - name: authorization-and-funding
-    title: Authorization and funding
-  - name: distribution-of-funds
-    title: Distribution of funds
-    subnav_items:
-      - name: federal-land-acquisition
-        title: Federal land acquisition
-      - name: state-and-local-grant-funding
-        title: State and local grant funding
-      - name: gomesa-grants
-        title: GOMESA grants   
-selector: list
 ---
 
-> {{ page.description }}
+<custom-link to="/how-it-works/" className="breadcrumb link-charlie">How it works</custom-link> /
+# Land and Water Conservation Fund
 
-{% include selector.html %}
+> The Land and Water Conservation Fund (LWCF) was enacted in 1964. It supports preservation, development, and access to outdoor lands for public recreation. The LWCF is funded by revenue from offshore oil and gas leases. 
 
 The [Land and Water Conservation Fund](https://www.nps.gov/subjects/lwcf/index.htm) provides competitive grants to states for local preservation and recreation projects, along with a federal portion to acquire lands and waters for public recreation or cultural resource preservation.
 
@@ -54,15 +33,15 @@ Depending on the agency or program, the LWCF supports:
 
 ## Authorization and funding
 
-{% include update-flag.html date="3/14/19" %}
+<update-flag date="3/14/19"></update-flag>
 
-On March 12, 2019, the President signed into law the [John D. Dingell, Jr. Conservation, Management, and Recreation Act](https://www.congress.gov/bill/116th-congress/senate-bill/47) (formerly the Natural Resources Management Act). This bill reauthorizes the Land and Water Conservation Fund and also permanently {{ "authorizes" | term: "authorization" }} the fund, which means the fund no longer needs to be reauthorized by Congress in order to receive funding. Congress must still appropriate funds for the program each year during the annual budget process in order for the LWCF to receive funds.
+On March 12, 2019, the President signed into law the [John D. Dingell, Jr. Conservation, Management, and Recreation Act](https://www.congress.gov/bill/116th-congress/senate-bill/47) (formerly the Natural Resources Management Act). This bill reauthorizes the Land and Water Conservation Fund and also permanently <glossary-term term.key="authorization">authorizes</glossary-term> the fund, which means the fund no longer needs to be reauthorized by Congress in order to receive funding. Congress must still appropriate funds for the program each year during the annual budget process in order for the LWCF to receive funds.
 
-{% include update-flag.html date="2/28/19" %}
+<update-flag date="2/28/19"></update-flag>
 
-The House of Representatives on Tuesday, February 26, 2019, passed the [Natural Resources Management Act](https://www.congress.gov/bill/116th-congress/senate-bill/47), part of which permanently authorizes the Land and Water Conservation Fund. The bill now proceeds to the President to be signed into law.
+The House of Representatives on Tuesday, February 26, 2019, passed the [Natural Resources Management Act](https://www.congress.gov/bill/116th-congress/senate-bill/47), part of which permanently <glossary-term term.key="authorization">authorizes</glossary-term> the Land and Water Conservation Fund. The bill now proceeds to the President to be signed into law.
 
-{% include update-flag.html date="2/14/19" %}
+<update-flag date="2/14/19"></update-flag>
 
 The Senate on Tuesday, February 12, 2019, passed the [Natural Resources Management Act (PDF)](https://www.congress.gov/116/bills/s47/BILLS-116s47pcs.pdf), part of which permanently authorizes the Land and Water Conservation Fund.
 
@@ -70,7 +49,7 @@ Permanent authorization of the LWCF means the fund would be authorized to receiv
 
 The bill will now go to the House of Representatives where, if passed, it will proceed to the President for signature.
 
-{% include update-flag.html date="10/9/18" %}
+<update-flag date="10/9/18"></update-flag>
 
 The LWCF was authorized through September 30, 2018. Congress did not reauthorize the fund before the end of the 2018 fiscal year. As a result, the requirement that a portion of offshore oil and gas revenues be deposited into the LWCF expired on October 1, 2018. The LWCF is not eligible to receive those disbursements unless Congress reauthorizes it. Congress may continue to appropriate revenues for LWCF-supported programs, if it so chooses.
 

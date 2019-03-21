@@ -21,6 +21,7 @@
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-helmet": "^5.2.0",
+    "react-html-parser": "^2.0.2",
     "react-redux": "^6.0.1",
     "react-responsive": "^6.1.1",
     "react-stickynode": "^2.1.1",

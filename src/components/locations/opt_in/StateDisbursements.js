@@ -7,7 +7,7 @@ import lazy from 'lazy.js'
 import * as OPT_IN_STATE_REVENUES from '../../../data/opt_in_state_revenues'
 import OPT_IN_STATE_FUNDS from '../../../data/opt_in_state_funds.yml'
 
-import DataAndDocs from 'components/layouts/DataAndDocs'
+import DataAndDocs from '../../layouts/DataAndDocs'
 
 import utils from '../../../js/utils'
 

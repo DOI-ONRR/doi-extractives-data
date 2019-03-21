@@ -1,11 +1,83 @@
 const path = require(`path`);
 const GRAPHQL_QUERIES = require('./src/js/graphql-queries');
 
+
+
+/* @TODO Parse markdown from frontmatter. hopefully we cna fidn a btr solution in future */
+const Remark = require('remark');
+const toHAST = require(`mdast-util-to-hast`);
+const stripPosition = require(`unist-util-remove-position`);
+const hastReparseRaw = require(`hast-util-raw`);
+const visit = require(`unist-util-visit`)
+
+const remark = new Remark().data(`settings`, { commonmark: true, footnotes: true, pedantic: true, gfm: true });
+
+exports.onCreateNode = ({ node, pathPrefix, getNode, boundActionCreators }) => {
+
+	const { createNodeField } = boundActionCreators
+
+	createHtmlAstFromFrontmatterField(createNodeField, pathPrefix, node, `case_study_link`);
+	createHtmlAstFromFrontmatterField(createNodeField, pathPrefix, node, `state_optin_intro`);
+	createHtmlAstFromFrontmatterField(createNodeField, pathPrefix, node, `state_production`);
+	createHtmlAstFromFrontmatterField(createNodeField, pathPrefix, node, `state_land`);
+	createHtmlAstFromFrontmatterField(createNodeField, pathPrefix, node, `state_land_production`);
+	createHtmlAstFromFrontmatterField(createNodeField, pathPrefix, node, `state_revenue`);
+	createHtmlAstFromFrontmatterField(createNodeField, pathPrefix, node, `state_revenue_sustainability`);
+	createHtmlAstFromFrontmatterField(createNodeField, pathPrefix, node, `state_tax_expenditures`);
+	createHtmlAstFromFrontmatterField(createNodeField, pathPrefix, node, `state_disbursements`);
+	createHtmlAstFromFrontmatterField(createNodeField, pathPrefix, node, `state_saving_spending`);
+	createHtmlAstFromFrontmatterField(createNodeField, pathPrefix, node, `state_impact`);
+
+};
+
+const createHtmlAstFromFrontmatterField = (createNodeField, pathPrefix, node, field) => {
+	const withPathPrefix = (url, pathPrefix) => {
+		let newPrefix = pathPrefix.slice(0, -14); // remove gatsby_public
+
+	  return ((newPrefix + url).replace(/\/\//, `/`));
+	}
+
+
+	if (node.internal.type === `MarkdownRemark` &&
+		node.frontmatter[field] !== undefined) {
+
+		let html = remark.parse(node.frontmatter[field]);
+
+		let hast = toHAST(html, { allowDangerousHTML: true });
+
+    if (pathPrefix) {
+      // Ensure relative links include `pathPrefix`
+      visit(hast, `link`, node => {
+        if (
+          node.url &&
+          node.url.startsWith(`/`) &&
+          !node.url.startsWith(`//`)
+        ) {
+
+          node.url = withPathPrefix(node.url, pathPrefix)
+        }
+      })
+    }
+
+    const strippedAst = stripPosition(JSON.parse(JSON.stringify(hast)), true);
+
+    const reparseRaw = hastReparseRaw(strippedAst);
+
+		createNodeField({
+			node,
+			name: field+"_htmlAst",
+			value: JSON.stringify(reparseRaw),
+			});
+
+	}
+}
+
+
 exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators;
 
   return Promise.all([
-  	//createStatePages(createPage, graphql), 
+  	createStatePages(createPage, graphql), 
   	createHowItWorksPages(createPage, graphql), 
   	//createDownloadsPages(createPage, graphql),
   	//createCaseStudiesPages(createPage, graphql),
@@ -42,6 +114,79 @@ const getPageTemplate = (templateId) => {
 	}
 
 	return CONTENT_DEFAULT_TEMPLATE;
+};
+
+const createStatePages = (createPage, graphql) => {
+	const createStatePageSlug = (state) => {
+		return '/explore/'+state.frontmatter.unique_id+"/";
+	}
+
+	return new Promise((resolve, reject) => {
+	    const statePageTemplate = path.resolve(`src/templates/state-page.js`);
+	    resolve(
+	      graphql(
+	        `
+	          {
+					    allMarkdownRemark (filter:{fileAbsolutePath: {regex: "/states/"}}) {
+					      us_states:edges {
+					        us_state:node {
+					          frontmatter {
+					            title
+					            unique_id
+					            is_cropped
+					            nearby_offshore_region
+					            opt_in
+					            state_optin_intro
+					            case_study_link
+					            locality_name
+					            state_revenue_year
+					            priority
+					            neighbors
+					          }
+					          fields {
+					          	case_study_link_htmlAst
+					          	case_study_link_htmlAst
+					          	state_optin_intro_htmlAst
+					          	state_production_htmlAst
+					          	state_land_htmlAst
+					          	state_land_production_htmlAst
+					          	state_revenue_htmlAst
+					          	state_revenue_sustainability_htmlAst
+					          	state_tax_expenditures_htmlAst
+					          	state_disbursements_htmlAst
+					          	state_saving_spending_htmlAst
+					          	state_impact_htmlAst
+					          }
+					          html
+					        }
+					      }
+					    }
+	          }
+	        `
+	      ).then(result => {
+	        if (result.errors) {
+	          reject(result.errors);
+	        }
+	        else{ 
+	        	// Create pages for each markdown file.
+		        result.data.allMarkdownRemark.us_states.forEach(({ us_state }) => {
+		          const path = createStatePageSlug(us_state);
+
+		          createPage({
+		            path,
+		            component: statePageTemplate,
+		            // In your blog post template's graphql query, you can use path
+		            // as a GraphQL variable to query for data from the markdown file.
+		            context: {
+		              stateMarkdown: us_state
+		            },
+		          });
+		        });
+	        	resolve();
+	        }
+	      })
+	    );
+	  });
 };
 
 const createHowItWorksPages = (createPage, graphql) => {

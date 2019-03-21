@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from 'react-html-parser'
 import Link from '../utils/temp-link'
-import { withPrefixSVG } from 'components/utils/temp-link'
+import { withPrefixSVG } from '../utils/temp-link'
 
 import lazy from 'lazy.js'
 

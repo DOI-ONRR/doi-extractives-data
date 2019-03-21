@@ -28,6 +28,8 @@ import * as TOP_STATE_PRODUCTS from '../data/top_state_products'
 
 import utils from '../js/utils'
 
+import DefaultLayout from '../components/layouts/DefaultLayout'
+
 const NAV_ITEMS = [
   {
     name: 'title',
@@ -153,6 +155,7 @@ class StatePages extends React.Component {
 
   render () {
 	    return (
+      <DefaultLayout>
       <main id={'state-' + this.usStateData.unique_id} className="container-page-wrapper layout-state-pages">
 	            <Helmet
 	                title={this.usStateData.title + ' | Natural Resources Revenue Data'}
@@ -272,6 +275,7 @@ class StatePages extends React.Component {
           </div>
         </section>
       </main>
+      </DefaultLayout>
 	    )
   }
 }

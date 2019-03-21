@@ -59,7 +59,8 @@ class NationalDisbursements extends React.Component {
 	}
 
 	componentWillReceiveProps (nextProps) {
-	  if (nextProps.year !== this.state.year) {
+	  if (nextProps.year !== this.state.year ||
+	  		nextProps.years.length !== this.state.years.length) {
 	    this.setState({	year: nextProps.year,
 	      years: nextProps.years,
 	      disbursements: nextProps.disbursements })

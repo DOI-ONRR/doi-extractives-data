@@ -27,7 +27,6 @@ export class ProcessStep extends React.Component {
 	}
 
 	render () {
-		//console.log(styles);
 		let stepId = this.props.stepId || this.props.stepid;
 		let stepName = this.props.stepName || this.props.stepname;
 	  return (

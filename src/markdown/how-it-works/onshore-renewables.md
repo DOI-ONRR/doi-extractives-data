@@ -50,30 +50,30 @@ permalink: /how-it-works/onshore-renewables/
       <did-you-know color='blue' intro='BLM tracks the status of solar, wind, and geothermal projects on federal land.'>You can review <a href="https://www.blm.gov/programs/energy-and-minerals/renewable-energy">current and historical renewable energy data on BLM's website</a>.</did-you-know>
       <div class="container">
         <process-group>
-          <process-step step.id="1" step.name="Plan" expanded="true">
+          <process-step stepId="1" stepName="Plan" expanded="true">
             <p>Over the past decade, the federal government has taken steps to update regulations to clarify and encourage planning for renewable energy development on federal lands, particularly for wind and solar energy.</p>
             <p>In 2005, BLM published a programmatic <glossary-term termKey="Environmental Impact Statement (EIS)">Environmental Impact Statement</glossary-term> to create a framework for developing wind energy on federal lands in the West. At the same time, BLM amended 53 land-use plans to allow for wind energy development. BLM field offices can amend additional land-use plans any time to support wind energy development.</p>
             <p>In 2012, BLM released the final solar Environmental Impact Statement. This statement furthered a proposal to create a competitive leasing program on federal lands for commercial scale solar development in 17 new <a href="https://www.blm.gov/programs/energy-and-minerals/renewable-energy/solar-energy/permitting-and-development/land-use-planning">Solar Energy Zones</a>.</p>
             <p>BLM finalized <a href="https://www.blm.gov/sites/blm.gov/files/Energyandminerals_Renewable_Wind_solar_finalrule.pdf">a new rule (PDF)</a> that promotes competitively offering designated leasing areas for solar and wind energy development. Designated leasing areas have fewer environmental and cultural resource conflicts compared to others, making them better candidates for development.</p>
           </process-step>
-          <process-step step.id="2" step.name="Lease">
+          <process-step stepId="2" stepName="Lease">
             <p>BLM regulations allow for two distinct processes for awarding rights to apply to develop wind and solar energy projects on federal lands: one within designated leasing areas, and one outside of designated leasing areas.</p>
             <p>Within designated leasing areas, BLM would competitively offer leases for parcels of land for wind and solar energy development. Interested parties would offer bids for the lease, and BLM would award the lease to the highest bidder, so long as the payment is equal to or greater than the minimum bid (based on administrative costs incurred by the government and the estimated value of the land) and 20% of the bonus bid (any amount the bidder is willing to pay beyond the minimum bid). Some bidders may pre-qualify for offsets up to 20% of the high bid.</p>
             <p>Outside of designated leasing areas, BLM would offer right-of-way grants through a competitive process. BLM would hold pre-application meetings and screen all applicants. Where there are two or more applicants (or at BLM’s discretion), BLM could offer right-of-way grants by holding a competitive offer. The highest bidder becomes the preferred applicant, the only party that could apply for a right-of-way grant for a given parcel of land. BLM could offer the applicant a grant at its discretion. There would be no bid offsets outside of the designated leasing areas, and subsequent site-specific National Environmental Policy Act analysis would be required for right-of-way grants.</p>
           </process-step>
-          <process-step step.id="3" step.name="Explore">
+          <process-step stepId="3" stepName="Explore">
             <p>Companies explore leased land to locate suitable sites for constructing renewable infrastructure. Once BLM grants a developer a lease or right of way, the developer has a period of time to construct facilities and begin generating electricity from wind or solar energy.</p>
             <p>Exploration for onshore renewables is easier and faster than for offshore renewables. Within designated leasing areas, a developer has two years to find a suitable site for infrastructure and submit a Plan of Development. Outside of designated leasing areas, a developer has two years to begin construction. Companies can choose whether or not to extend their leases based on their findings. During exploration, companies pay <glossary-term>rent</glossary-term> to BLM.</p>
           </process-step>
-          <process-step step.id="4" step.name="Develop">
+          <process-step stepId="4" stepName="Develop">
             <p>Once a developer submits a Plan of Development, they have a period of time to construct facilities and begin generating electricity from wind or solar energy. Within designated leasing areas, a developer has seven years to complete construction. Outside of designated leasing areas, a developer has two years. During this phase, the developer pays <glossary-term termKey="Megawatt Capacity (MC) fee">Megawatt Capacity fees</glossary-term> for the energy produced as part of the rent to BLM.</p>
           </process-step>
-          <process-step step.id="5" step.name="Decommission and reclaim">
+          <process-step stepId="5" stepName="Decommission and reclaim">
             <p>At the close of a solar or wind project, developers must remove all facilities and return the land to a sound environmental state. Under the proposed rule, when an applicant gains a solar or wind energy lease or grant, they must provide BLM a bond. BLM holds the bond through the life of the project to ensure compliance with terms and conditions, including site <glossary-term>reclamation</glossary-term>.</p>
             <p>Bonding requirements differ based on whether the project is in a designed leasing area or not. Inside designated leasing areas, the standard bond amounts would be $10,000 per acre for solar energy projects and $20,000 per turbine for wind energy projects. These same amounts would be the minimum requirements for bonds outside designated leasing areas, subject to adjustment by BLM.</p>
             <p>If the developer appropriately decommissions solar and wind projects and meets terms and conditions, BLM returns the bond at the close of the project.</p>
           </process-step>
-          <process-step step.name="Learn more">
+          <process-step stepName="Learn more">
             <ul class="list-bullet">
               <li><a href="https://www.blm.gov/programs/energy-and-minerals/renewable-energy/solar-energy">Solar Energy</a></li>
               <li><a href="https://www.blm.gov/or/regulations/files/FLPMA.pdf">The Federal Land Policy and Management Act of 1976, as Amended (PDF)</a></li>

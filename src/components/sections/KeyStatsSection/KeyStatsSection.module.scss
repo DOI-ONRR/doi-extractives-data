@@ -1,12 +1,14 @@
 @value colors: "../../../css-global/colors.scss";
-@value gray-blue-dark, gray-blue-mid, gray-blue-mid-light, blue-mid-light, blue-dark, blue-mid, gray-light, green-light, black-light from colors;
+@value grayBlueDark as _grayBlueDark, grayBlueMid as _grayBlueMid, grayMidLight as _grayMidLight, grayBlueMidLight as _grayBlueMidLight from colors;
+@value blueMidLight as _blueMidLight, blueMid as _blueMid, blueDark as _blueDark from colors;
+@value greenLight as _greenLight, blueMid as _blueMid, blueDark as _blueDark from colors;
 
-@value federalOffshoreColor: gray-blue-mid;
-@value federalOnshoreColor: gray-blue-dark;
-@value nativeAmericanColor: gray-blue-mid-light;
-@value federalOffshoreColor_selected: blue-mid;
-@value federalOnshoreColor_selected: blue-dark;
-@value nativeAmericanColor_selected: blue-mid-light;
+@value federalOffshoreColor: _grayBlueMid;
+@value federalOnshoreColor: _grayBlueDark;
+@value nativeAmericanColor: _grayBlueMidLight;
+@value federalOffshoreColor_selected: _blueMid;
+@value federalOnshoreColor_selected: _blueDark;
+@value nativeAmericanColor_selected: _blueMidLight;
 
 .root{}
 
@@ -67,7 +69,7 @@
 }
 
 .root h2 {
-	border-bottom: 10px solid green-light;
+	border-bottom: 10px solid _greenLight;
 	padding-bottom: 0.7rem;
 }
 

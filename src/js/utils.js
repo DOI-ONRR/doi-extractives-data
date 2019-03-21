@@ -57,9 +57,6 @@ const utils = {
 	                wait = true						// And allow future invocations
 	            }, limit)
 	        }
-	        else {
-	        	console.log('HERE')
-	        }
 	    }
   },
   groupBy (data, group) {

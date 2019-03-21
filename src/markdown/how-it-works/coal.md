@@ -47,7 +47,7 @@ permalink: /how-it-works/coal/
 			<did-you-know intro='“Fair market value” is determined differently by different state offices.'>BLM guidance allows for flexibility in how state offices estimate fair market value, according to the Government Accountability Office (GAO). Some offices only consider recent comparable sites, while others also estimate future revenue. The GAO report also found that some state offices were falling short on documenting and reviewing fair market value determinations.</did-you-know>
 		  <div class="container">
 		  	<process-group>
-		  		<process-step step.id="1" step.name="Plan" expanded="true">
+		  		<process-step stepId="1" stepName="Plan" expanded="true">
             <p>BLM evaluates federal lands for potential coal extraction through the multiple-use planning process, which includes:</p>
             <ul class="list-bullet">
               <li>Identifying coal to potentially extract on federal land</li>
@@ -57,22 +57,22 @@ permalink: /how-it-works/coal/
             </ul>
             <p>If developing coal resources could conflict with protections or managing other resources and land uses, BLM may add stipulations or restrictions to a lease.</p>   
           </process-step>
-		  		<process-step step.id="2" step.name="Lease">
+		  		<process-step stepId="2" stepName="Lease">
             <p>The Federal Coal Leasing Amendments Act of 1976 requires the federal government to lease coal competitively, meaning that any interested party can bid on a coal lease. BLM primarily uses the lease by application process. During this process, the public nominates a coal tract for BLM to sell. BLM reviews each application submitted by the public to make sure it complies with land-use plans. Next, a Regional Coal Team consisting of members from federal, state, local, and tribal governments reviews the application, consults the public, and decides whether to continue, change, or reject the application. At this point, BLM prepares an <glossary-term>Environmental Impact Statement (EIS)</glossary-term> or Environmental Assessment for public comment in accordance with the National Environmental Policy Act.</p>
             <p>Next, BLM prepares to sell the lease. In advance of the sale, BLM estimates the <glossary-term>fair market value</glossary-term> of the coal lease. BLM holds a lease sale where each bidder submits a sealed bid, and BLM opens the bids publicly. The highest bid wins, so long as it is equal to or greater than the coal tract’s presale estimated fair market value, and the bidder meets all requirements (such as paying fees). Once BLM accepts a bid, the bidder must pay one fifth of the <glossary-term>bonus</glossary-term> and the first year’s rent.</p>
           </process-step>
-		  		<process-step step.id="3" step.name="Explore">
+		  		<process-step stepId="3" stepName="Explore">
             <p>The lease holder must obtain a Coal Exploration License from the BLM to explore the lands for coal deposits. Exploration is the process of discovering the specific location, quantity, and quality of natural resources on leased land. Exploration typically takes place after leasing, but in some instances, exploration by multiple parties occurs before leasing to increase competition during the lease sale.</p>
             <p>To apply for a Coal Exploration License, companies must submit an Exploration Plan detailing the timing, location, method, and potential environmental impact of all exploration activities. The Coal Exploration License expires after two years. During the explore phase, companies pay <glossary-term>rent</glossary-term> and bonus installments to ONRR.</p>
           </process-step>
-		  		<process-step step.id="4" step.name="Develop">
+		  		<process-step stepId="4" stepName="Develop">
             <p>After BLM awards the lease, the lease holder must obtain the appropriate permits and licenses from BLM, the Office of Surface Mining Reclamation and Enforcement (OSMRE), and any affected state and local governments before they can begin developing the site and producing coal. As soon as coal production achieves <glossary-term>paying quantities</glossary-term>, the lease holder stops paying rent and starts paying royalties to ONRR. The lease holder also pays <glossary-term termKey="Abandoned Mine Land Fee">Abandoned Mine Land Fees"</glossary-term> to OSMRE for coal produced.</p>
           </process-step>
-		  		<process-step step.id="5" step.name="Decommission and reclaim">
+		  		<process-step stepId="5" stepName="Decommission and reclaim">
             <p>At the close of a coal mining operation, the lease holder must decommission the mine and restore the land. State governments, with oversight from OSMRE, regulate and oversee this process. Even before gaining a lease, the lease holder must submit a bond to OSMRE or a state regulatory agency as insurance for complying with the lease and covering the cost of <glossary-term termKey="reclamation">reclaiming</glossary-term> the land.</p>
             <p>Within coal mining, federal and local governments partner to regulate reclamation. OSMRE is responsible for establishing a nationwide program to protect society and the environment from the adverse effects of surface coal mining operations. To do so, OSMRE works with states and tribes to ensure that citizens and the environment are protected during coal mining, and that the land is restored to beneficial use when mining is finished. OSMRE and its partners are also responsible for reclaiming and restoring lands and waters degraded by mining operations before 1977.</p>
           </process-step>
-		  		<process-step step.name="Learn more">
+		  		<process-step stepName="Learn more">
             <ul class="list-bullet">
               <li><a href="https://www.blm.gov/programs/energy-and-minerals/coal">Coal leasing</a></li>
               <li><a href="https://www.blm.gov/programs/energy-and-minerals/coal/land-use-planning">Land use planning</a></li>

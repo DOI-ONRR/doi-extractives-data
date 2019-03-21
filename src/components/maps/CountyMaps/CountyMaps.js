@@ -19,7 +19,6 @@ import iconMinus from '../../../img/icons/icon-circled-minus.svg'
 class CountyMaps extends React.Component {
   constructor (props) {
     super(props)
-    console.log('Markdown:', props.usStateMarkdown.frontmatter)
 
 	  this.frontmatterData = props.usStateMarkdown.frontmatter
 	  const usStateFields = props.usStateMarkdown.fields || {}

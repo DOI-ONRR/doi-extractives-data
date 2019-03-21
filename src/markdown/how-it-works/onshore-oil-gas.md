@@ -61,28 +61,28 @@ permalink: /how-it-works/onshore-oil-gas/
       <p>Hydraulic fracturing pumps water, sand, and chemicals into the earth to fracture the shale rock so that natural gas and oil can flow through the well to the surface. Major oil and gas shale rock formations in the U.S. include the Permian, Haynesville, and Eagle Ford Regions mostly in Texas; the Marcellus Region in West Virginia, Pennsylvania, and New York; the Niobrara Region in Wyoming and Colorado; and the Bakken Region in North Dakota and Montana.</p></did-you-know>
       <div class="container">
         <process-group>
-          <process-step step.id="1" step.name="Plan" expanded="true">
+          <process-step stepId="1" stepName="Plan" expanded="true">
             <p>BLM field offices prepare comprehensive Resource Management Plans (RMPs) to guide leasing decisions on federal lands, including which lands are open to oil and gas leasing, and which lands are closed. Currently 8% of all oil and 11% of all natural gas on federal lands are available for extraction through leasing. BLM field offices develop RMPs in line with multiple-use and sustained-yield principles, and by engaging the public and various levels of government.</p>
           </process-step>
-          <process-step step.id="2" step.name="Lease">
+          <process-step stepId="2" stepName="Lease">
             <p>BLM field offices award leases for oil and gas resources on lands designated within RMPs during frequent (often quarterly) live lease auctions open to the public. Before the live auction, the BLM field office estimates the <glossary-term>fair market value</glossary-term> for the natural resources in question.</p>
             <p>During the live auction, bidders compete for a lease by placing bids. The BLM field office awards the lease to the highest bidder, so long as the bid is equal to or greater than the fair market value estimate. Once the BLM field office accepts a bid, the bidder must pay the <glossary-term>bonus</glossary-term> as well as the first year’s rent to BLM to secure the lease.</p>
           </process-step>
-          <process-step step.id="3" step.name="Explore">
+          <process-step stepId="3" stepName="Explore">
             <p>The lease holder must file an Application for Permit to Drill (APD) with the BLM field office in order to explore the leased land for oil and gas deposits. To apply for an APD, lease holders must submit an Exploration Plan that includes information about the well and associated rights of way, roads, pipelines, and production facilities. After the APD is filed, there is a mandatory 30-day public notification period before the permit can be approved.</p>
             <p>While reviewing the APD, BLM analyzes the impact of drilling on the environment using an <glossary-term termKey="Environmental Impact Statement (EIS)">Environmental Impact Statement</glossary-term> or an Environmental Assessment in accordance with the National Environmental Policy Act. BLM must also ensure that conditions for the National Historic Preservation Act and the Endangered Species Act are met before awarding the permit.</p>
             <p>Once granted, the APD expires within two years. During the explore phase, companies pay <glossary-term>rent</glossary-term> to ONRR.</p>
           </process-step>
-          <process-step step.id="4" step.name="Develop">
+          <process-step stepId="4" stepName="Develop">
             <p>The APD is one of many permits a lease holder must obtain to move from exploration to development and production. Once operators and lease holders obtain all needed permits and licenses, companies build their operations and extract oil and gas from federal lands.</p>
             <p>During development and production, the BLM field office performs a number of inspections to enforce lease terms and monitor health, safety, and environmental concerns. Once operators successfully extract oil or gas in paying quantities, the lease holder stops paying rent and starts paying <glossary-term termKey="royalty">royalties</glossary-term> to ONRR.</p>
           </process-step>
-          <process-step step.id="5" step.name="Decommission and reclaim">
+          <process-step stepId="5" stepName="Decommission and reclaim">
             <p>Even before the close of an oil and gas operation, operators and lease holders must begin <glossary-term>reclamation</glossary-term>. At the start of an operation, the operator includes a Reclamation Plan in the Surface Use Plan that must be approved by BLM before construction can start.</p>
             <p>The lease holder also posts a bond of at least $10,000 that BLM holds during the operation to enforce lease terms and reclamation. The operator must conduct interim reclamation throughout the life of the operation, concluding with appropriately plugging wells and restoring the ecosystem.</p>
             <p>The BLM field office performs inspections throughout the operation to ensure that interim reclamation takes place, wells are appropriately plugged, and the ecosystem returns.</p>
           </process-step>
-          <process-step step.name="Learn more">
+          <process-step stepName="Learn more">
             <ul class="list-bullet">
             <li><a href="https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing">Leasing of Onshore Oil and Gas Resources</a></li>
             <li><a href="https://www.blm.gov/or/news/files/BLM-SoundInvestmentforAmerica.pdf">The BLM: A Sound Investment for America (PDF)</a></li>

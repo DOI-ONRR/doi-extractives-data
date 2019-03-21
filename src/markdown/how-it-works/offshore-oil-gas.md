@@ -66,29 +66,29 @@ permalink: /how-it-works/offshore-oil-gas/
         </ul></did-you-know>
       <div class="container">
         <process-group>
-          <process-step step.id="1" step.name="Plan" expanded="true">
+          <process-step stepId="1" stepName="Plan" expanded="true">
             <p>In accordance with the 1978 OCSLA amendment, BOEM develops a schedule of planning areas across the Outer Continental Shelf to offer for oil and gas leasing. This program is known as the Five Year Outer Continental Shelf Leasing Program. In developing five year plans, BOEM strives to address national energy needs while balancing economic, environmental, and social considerations.</p>
             <p>To implement the program, BOEM creates a programmatic <glossary-term termKey="Environmental Impact Statement (EIS)">Environmental Impact Statement</glossary-term>. The public has the opportunity to comment on the Environmental Impact Statement and the proposed leasing program. BOEM submits public comments for the program, along with the plan, to Congress and the President.</p>   
           </process-step>
-          <process-step step.id="2" step.name="Lease">
+          <process-step stepId="2" stepName="Lease">
             <p>Once the Five Year Program is in place, BOEM plans for each regional lease sale, a one to two year process that includes developing site-specific Environmental Impact Statements and offering opportunities for public comment. BOEM will send a notice of sale to interested bidders with the terms and conditions of the “blocks,” the nine-square-mile areas offered in the lease sale.</p>
             <p>BOEM offers leases through a competitive process that anyone can participate in by submitting a sealed bid. BOEM reviews the bids and identifies the apparent winner (the bidder with the highest offer). The apparent winner will receive the lease if their bid is equal to or greater than BOEM’s fair market value estimate. BOEM develops the fair market value estimate after identifying the apparent winner. BOEM calculates fair market value based on the expected value of exploring for and extracting oil and gas resources from the lease block, not based on actual activities and discoveries resulting from the lease sale.</p>
             <p>Once BOEM accepts a bid and awards a lease, the lease holder must pay the <glossary-term>bonus</glossary-term> and the first year’s rent to ONRR and satisfy any bonding requirements.</p>
           </process-step>
-          <process-step step.id="3" step.name="Explore">
+          <process-step stepId="3" stepName="Explore">
             <p>During this phase, the lease holder must file an Exploration Plan with BOEM to explore the leased waters for oil and gas deposits. The plan must include timing, location of wells, method, and potential environmental impact (including the potential environmental impact in the worst-case scenario) for all exploration activities. BOEM then evaluates the plan and determines if extenuating circumstances require the lease holder to complete a site-specific Environmental Assessment before proceeding.</p>
             <p>Once a company begins exploring, the company conducts geophysical surveys, drills to locate the oil or gas, and drills additional wells after a discovery. Exploration can last five to ten years. During the explore phase, companies pay <glossary-term>rent</glossary-term> to ONRR.</p>
           </process-step>
-          <process-step step.id="4" step.name="Develop">
+          <process-step stepId="4" stepName="Develop">
             <p>Before extracting resources, the lease holder must submit a Development or Production Plan for BOEM’s approval. The lease holder must also apply to BSEE for drilling and operations permits to begin extraction. At the start of development, BSEE will conduct initial inspections to ensure the proper installation of structures and equipment. Thereafter, BSEE conducts periodic announced and unannounced inspections to enforce lease terms and other conditions.</p>
             <p>The lease holder pays annual rent until the operation starts producing oil or gas in paying quantities. At that time, the lease holder stops paying rent and starts paying <glossary-term termKey="royalty">royalties</glossary-term> to ONRR.</p>
           </process-step>
-          <process-step step.id="5" step.name="Decommission and reclaim">
+          <process-step stepId="5" stepName="Decommission and reclaim">
             <p>At the close of an operation, the lease holder or operator must return the ocean and seafloor to its pre-lease condition. Under the OCSLA regulations, the lease holder is required to submit a Decommissioning Plan to BSEE for approval two years before the termination of the lease. To satisfy NEPA obligations, BOEM prepares a site-specific Environmental Assessment for each removal application on behalf of BSEE.</p>
             <p>BOEM requires that companies remove retired offshore drilling platforms from the marine environment within one year after the end of an operation. The lease holder is required to remove the platform from its foundation by severing all bottom-founded components at least 15 feet below the mudline and disposing of the structures in a scrap or fabrication yard. Alternatively, the platform can be used to create an artificial reef underwater.</p>
             <p>Lease holders post bonds held by the government to ensure compliance with lease terms, including decommissioning the site. If the lease holder fails to decommission the site, the government may use the bonds to cover the cost of decommissioning. If the lease holder complies, the government returns the bonds to the lease holder at the end of the operation.</p>
           </process-step>
-          <process-step step.name="Learn more">
+          <process-step stepName="Learn more">
             <ul class="list-bullet">
               <li><a href="http://www.boem.gov/uploadedFiles/BOEM/Oil_and_Gas_Energy_Program/Leasing/5BOEMRE_Leasing101.pdf">Oil and Gas Leasing on the Outer Continental Shelf (PDF)</a></li>
               <li><a href="http://www.boem.gov/Resource-Evaluation-Glossary/">Resource Evaluation Glossary</a></li>

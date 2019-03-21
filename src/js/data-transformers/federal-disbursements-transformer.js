@@ -55,8 +55,7 @@ const createDisbursementsNode = (createNode, disbursementsData, index) => {
 	    type: `FederalDisbursements`,
 	  },
   }
-  // console.log(disbursementNode.OnshoreOffshore, ONSHOREOFFSHORE_TO_DISBURSEMENTS_CATEGORY);
-  // console.log(ONSHOREOFFSHORE_TO_DISBURSEMENTS_CATEGORY[disbursementNode.Source]);
+
   disbursementNode.DisbursementCategory = FUND_TO_DISBURSEMENTS_CATEGORY[disbursementNode.Fund] || ONSHOREOFFSHORE_TO_DISBURSEMENTS_CATEGORY[disbursementNode.Source.toLowerCase()]
 
   disbursementNode.internal.contentDigest = crypto.createHash(`md5`)

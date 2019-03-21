@@ -252,7 +252,6 @@ const OptIn = props => {
 
 /* Includes case study link, if there is one */
 const CaseStudyLink = props => {
-  console.log(JSON.parse(props.caseStudyHtml))
   return (
     <div>
       {hastReactRenderer(JSON.parse(props.caseStudyHtml))}

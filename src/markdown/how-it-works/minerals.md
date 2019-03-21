@@ -47,27 +47,27 @@ permalink: /how-it-works/minerals/
 			<did-you-know intro='Every year, BLM recognizes companies for fostering sustainable development practices.'><span>The <a href="https://www.blm.gov/programs/energy-and-minerals/mining-and-minerals">Sustainable Development Awards</a> honor those who are advancing sustainable mining practices in the industry.</span></did-you-know>
 		  <div class="container">
 		  	<process-group>
-		  		<process-step step.id="1" step.name="Plan" expanded="true">
+		  		<process-step stepId="1" stepName="Plan" expanded="true">
             <p>Hardrock mining on federal public domain lands takes place in 19 states, primarily in the western U.S. (Alaska, Alabama, Arizona, Arkansas, California, Colorado, Florida, Idaho, Mississippi, Montana, Nebraska, Nevada, New Mexico, North Dakota, Oregon, South Dakota, Utah, Washington, and Wyoming). Within these states certain federal lands, such as wildlife refuges, are not open for mining.</p>
             <p>While some hardrock mineral leasing occurs on federal acquired lands, the vast majority of hardrock mining on federal lands occurs on public domain lands through the claim-staking process, which was originally outlined in the 1872 General Mining Act to encourage settlement in the West.</p> 
           </process-step>
-		  		<process-step step.id="2" step.name="Claim">
+		  		<process-step stepId="2" stepName="Claim">
             <p>If deposits are not known, interested parties can obtain prospecting permits to explore on federal lands on a first-come, first-serve basis. Claiming federal lands for hardrock mining falls into two categories: deposits with well-defined boundaries are called “lode claims” and all others are called “placer claims.” Each state has unique requirements for the process of marking the boundaries of a mining area, which is called claim staking. Once a prospector stakes a claim, the prospector documents it by filing required forms at the BLM field office and with the county clerk.</p>
             <p>All mining claims are initially unpatented claims that permit only those activities necessary for exploration and mining and require the claim to be worked every year. The original 1872 General Mining Act allowed miners to acquire patents to purchase mining claims on federal lands for any legal use. Prospectors could purchase federal lands for $5 per acre for lode claims and $2.50 per acre for placer claims. Congress prohibited this practice through moratorium in 1994; the moratorium has been renewed annually through the Interior Appropriations Acts.</p>
           </process-step>
-		  		<process-step step.id="3" step.name="Explore">
+		  		<process-step stepId="3" stepName="Explore">
             <p>The exploration process for hardrock minerals differs depending on where developers are conducting their exploration. On public domain land, developers explore for minerals before staking a claim. Under the 1872 General Mining Act, developers cannot stake a claim until they discover a deposit of valuable minerals. Developers pay <glossary-term termKey="claim-staking fee">claim-staking fees</glossary-term> to BLM after making a discovery.</p>
             <p>On acquired lands, developers pay a Prospecting Permit Fee to BLM and pay <glossary-term>rent</glossary-term> to ONRR during the exploration phase.</p>
           </process-step>
-		  		<process-step step.id="4" step.name="Develop">
+		  		<process-step stepId="4" stepName="Develop">
             <p>To extract hardrock minerals, miners must comply with federal and local regulations. Miners cannot construct any permanent or mobile structures or store equipment without the prior approval of an authorized federal official.</p>
             <p>For development and production activities that do not require earthmoving equipment or explosives, miners must submit a notice or Plan of Operations. These actions are processed at the local level, because many states have their own laws and regulations regarding environmental factors such as air and water pollution, use of hazardous materials, or use of suction dredges. Additionally, construction activities must comply with county codes and state public health and safety standards.</p>
             <p>Miners must pay an annual maintenance fee to BLM for each site. Small scale operators may file for a waiver stating that $100 worth of improvement work has been completed annually.</p>
           </process-step>
-		  		<process-step step.id="5" step.name="Decommission and reclaim">
+		  		<process-step stepId="5" stepName="Decommission and reclaim">
             <p>In 1981, BLM issued regulations requiring miners to remove all facilities and return the land to a sound environmental state. In 2001, BLM expanded on these regulations, requiring miners to provide bonds or other financial reassurances regarding reclaiming the land before exploring or mining.</p>
           </process-step>
-		  		<process-step step.name="Learn more">
+		  		<process-step stepName="Learn more">
             <ul class="list-bullet">
               <li><a href="https://www.blm.gov/sites/blm.gov/files/documents/files/PublicRoom_Mining_Claims_Brochure-2016.pdf">Mining Claims and Sites on Federal Lands (PDF)</a></li>
               <li><a href="https://www.blm.gov/programs/energy-and-minerals/mining-and-minerals/locatable-minerals/mining-claims">Mining claims</a></li>

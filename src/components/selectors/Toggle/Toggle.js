@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styles from './Toggle.module.css'
+import styles from './Toggle.module.scss'
 
 const Toggle = props => {
   const onClickHandler = (e, key) => {

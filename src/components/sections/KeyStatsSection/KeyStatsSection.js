@@ -9,7 +9,7 @@ import { setDataSelectedById as setDataSelectedByIdAction } from '../../../state
 
 import CONSTANTS from '../../../js/constants'
 
-import styles from './KeyStatsSection.module.css'
+import styles from './KeyStatsSection.module.scss'
 
 import { ExploreDataLink } from '../../layouts/icon-links/ExploreDataLink'
 import { Toggle } from '../../selectors/Toggle'

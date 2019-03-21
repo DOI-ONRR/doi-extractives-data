@@ -46,9 +46,9 @@ tag:
 <!-- USEITI archive -->
   <li class="downloads-download_links">
     <h3 id="reconciliation">Reconciliation</h3>
-    <p class="para-sm">This content was created to support <glossary-term termKey="EITI Standard">USEITI</glossary-term> and is no longer being updated.</p>
+    <p class="para-sm">This content was created to support <glossary-term term.key="EITI Standard">USEITI</glossary-term> and is no longer being updated.</p>
     <p>In the reconciliation process, companies report payments to the government (e.g., rents, taxes, royalties) and the government reports what it received. These figures are compiled and reconciled. The 2015 reconciliation data is at the link below.</p>
-    <download-data-link to="/downloads/reconciliation/">Downloads and documentation</download-data-link>
+    <data-archive-link to="/downloads/reconciliation/"></data-archive-link>
   </li>
 
   <li class="downloads-download_links">
@@ -137,7 +137,7 @@ tag:
     <a href="http://www.bls.gov/cew/datatoc.htm">Go to BLS quarterly census &#8594;
     </a>
     <p class="u-margin-top">The other type of jobs data we use is <em>self-employment</em>. This data describes the number of people (full-time and part-time) that are self-employed in natural resource extraction. Self-employed people don’t receive wages or salaries because they own their company, either as a sole proprietor, partnership, or small business. This data includes some double counting because people may appear on multiple tax forms.</p>
-    <p>Self-employment data comes from comes from the <a href="http://www.bea.gov/">Bureau of Economic Analysis</a>, or BEA, but must be calculated, by subtracting SA27N Full- and Part-Time Wage and Salary Employment by <glossary-term termKey="north american industry classification system (naics)">NAICS</glossary-term> Industry from SA25N Full- and Part-Time Employment by NAICS Industry. We also have <a href="https://github.com/onrr/doi-extractives-data/wiki/Data-Catalog#self-employment">notes on using this data</a> from our web development team.</p>
+    <p>Self-employment data comes from comes from the <a href="http://www.bea.gov/">Bureau of Economic Analysis</a>, or BEA, but must be calculated, by subtracting SA27N Full- and Part-Time Wage and Salary Employment by <glossary-term term.key="north american industry classification system (naics)">NAICS</glossary-term> Industry from SA25N Full- and Part-Time Employment by NAICS Industry. We also have <a href="https://github.com/onrr/doi-extractives-data/wiki/Data-Catalog#self-employment">notes on using this data</a> from our web development team.</p>
     <a href="http://www.bea.gov/">Go to BEA &#8594;</a>
   </li>
 </ul>

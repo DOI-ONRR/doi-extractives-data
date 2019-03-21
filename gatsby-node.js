@@ -293,6 +293,6 @@ exports.onPostBuild = () => {
 	copydir.sync(__dirname+'/public', './_site');
 	console.log("Finished Copying Files to _site.");
 	console.log("Copying Files from downloads to _site...");
-	copydir.sync(__dirname+'/downloads', './_site');
+	copydir.sync(__dirname+'/downloads', './_site/downloads');
 	console.log("Finished Copying Files to _site.");
 }

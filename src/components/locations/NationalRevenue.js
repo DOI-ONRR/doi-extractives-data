@@ -1,7 +1,7 @@
 import React from 'react'
-import Link from 'components/utils/temp-link'
+import Link from '../utils/temp-link'
 
-import utils from 'js/utils'
+import utils from '../../js/utils'
 import lazy from 'lazy.js'
 
 import StickyHeader from '../layouts/StickyHeader'
@@ -14,8 +14,8 @@ import RevenueProcessTable from '../locations/RevenueProcessTable'
 
 import ChartTitle from '../charts/ChartTitleCollapsible'
 
-import iconCirclePlus from 'img/icons/icon-circled-plus.svg'
-import iconCircleMinus from 'img/icons/icon-circled-minus.svg'
+import iconCirclePlus from '../../img/icons/icon-circled-plus.svg'
+import iconCircleMinus from '../../img/icons/icon-circled-minus.svg'
 
 import NATIONAL_REVENUES from '../../../static/data/national_revenues.yml'
 

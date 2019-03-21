@@ -1,15 +1,15 @@
 import React from 'react'
 
-import Link from 'components/utils/temp-link'
+import Link from '../utils/temp-link'
 
 import lazy from 'lazy.js'
 
-import utils from 'js/utils'
+import utils from '../../js/utils'
 
-import StickyHeader from 'components/layouts/StickyHeader'
-import YearSelector from 'components/selectors/YearSelector'
-import DataAndDocs from 'components/layouts/DataAndDocs'
-import GlossaryTerm from 'components/utils/glossary-term.js'
+import StickyHeader from '../layouts/StickyHeader'
+import YearSelector from '../selectors/YearSelector'
+import DataAndDocs from '../layouts/DataAndDocs'
+import GlossaryTerm from '../utils/glossary-term.js'
 
 import NATIONAL_GDP from '../../../static/data/national_gdp.yml'
 

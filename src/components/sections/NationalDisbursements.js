@@ -93,7 +93,7 @@ class NationalDisbursements extends React.Component {
 	                <YearSelector years={this.state.years} classNames="flex-row-icon" selectYearAction={selectYear} />
 	            </StickyHeader>
 
-	            <table headerId="recipients" className="article_table">
+	            <table id="recipients" className="article_table">
 	            	<thead>
 	            		<tr>
 		            		<th>Recipient</th>

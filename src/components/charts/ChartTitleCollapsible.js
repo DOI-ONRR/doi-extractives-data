@@ -1,5 +1,5 @@
 import React from 'react'
-import icon from 'img/icons/icon-circled-minus.svg'
+import icon from '../../img/icons/icon-circled-minus.svg'
 
 const ChartTitleCollapsible = props => {
   return (

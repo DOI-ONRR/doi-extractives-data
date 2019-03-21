@@ -77,6 +77,8 @@ const createHowItWorksPages = (createPage, graphql) => {
   });
 };
 
+
+/* This is required for Federalist build */
 var copydir = require('copy-dir');
 exports.onPostBuild = () => {
 	console.log("Copying Files from public to _site...");

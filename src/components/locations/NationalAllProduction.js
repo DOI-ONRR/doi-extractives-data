@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'components/utils/temp-link'
+import Link from '../utils/temp-link'
 
 import slugify from 'slugify'
 import lazy from 'lazy.js'

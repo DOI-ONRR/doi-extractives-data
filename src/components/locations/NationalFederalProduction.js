@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'components/utils/temp-link'
+import Link from '../utils/temp-link'
 
 import slugify from 'slugify'
 import lazy from 'lazy.js'
@@ -14,8 +14,8 @@ import { filterTerms } from '../utils/Glossary'
 
 import ChartTitle from '../charts/ChartTitleCollapsible'
 
-import iconCirclePlus from 'img/icons/icon-circled-plus.svg'
-import iconCircleMinus from 'img/icons/icon-circled-minus.svg'
+import iconCirclePlus from '../../img/icons/icon-circled-plus.svg'
+import iconCircleMinus from '../../img/icons/icon-circled-minus.svg'
 
 // @todo: use graphql to import data
 import FEDERAL_PRODUCTION_DATA from '../../../static/data/national_federal_production.yml'

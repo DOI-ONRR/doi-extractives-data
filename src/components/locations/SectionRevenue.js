@@ -3,14 +3,14 @@ import Link from '../utils/temp-link'
 
 import ALL_US_STATES_REVENUES from '../../data/state_revenues.yml'
 
-import StickyHeader from 'components/layouts/StickyHeader'
+import StickyHeader from '../layouts/StickyHeader'
 import { StickyWrapper } from '../utils/StickyWrapper'
-import YearSelector from 'components/selectors/YearSelector'
-import DataAndDocs from 'components/layouts/DataAndDocs'
-import GlossaryTerm from 'components/utils/glossary-term.js'
-import RevenueTypeTable from 'components/locations/RevenueTypeTable'
-import RevenueProcessTable from 'components/locations/RevenueProcessTable'
-import StateRevenue from 'components/locations/opt_in/StateRevenue'
+import YearSelector from '../selectors/YearSelector'
+import DataAndDocs from '../layouts/DataAndDocs'
+import GlossaryTerm from '../utils/glossary-term.js'
+import RevenueTypeTable from '../locations/RevenueTypeTable'
+import RevenueProcessTable from '../locations/RevenueProcessTable'
+import StateRevenue from '../locations/opt_in/StateRevenue'
 
 let year = 2017
 

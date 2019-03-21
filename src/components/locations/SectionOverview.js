@@ -2,7 +2,7 @@ import React from 'react'
 import hastReactRenderer from '../../js/hast-react-renderer'
 import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from 'react-html-parser'
 import Link from '../utils/temp-link'
-import { withPrefixSVG } from 'components/utils/temp-link'
+import { withPrefixSVG } from '../utils/temp-link'
 
 import ALL_US_STATES_GDP from '../../data/state_gdp.yml'
 import ALL_US_STATES_JOBS from '../../data/state_jobs.yml'
@@ -13,7 +13,7 @@ import VIEWBOXES_CROPPED from '../../data/viewboxes_cropped.yml'
 
 import FederalLandOwnershipLegend from '../maps/FederalLandOwnershipLegend'
 import FederalLandOwnershipSvg from '../maps/FederalLandOwnershipSvg'
-import GlossaryTerm from 'components/utils/glossary-term.js'
+import GlossaryTerm from '../utils/glossary-term.js'
 
 import utils from '../../js/utils'
 

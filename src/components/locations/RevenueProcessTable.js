@@ -1,9 +1,9 @@
 import React from 'react'
-import Link from 'components/utils/temp-link'
+import Link from '../utils/temp-link'
 
 import Lazy from 'lazy.js'
 
-import utils from 'js/utils'
+import utils from '../../js/utils'
 
 import ALL_NATIONAL_REVENUES_BY_TYPE from '../../../static/data/national_revenues_by_type.yml'
 import ALL_STATE_REVENUES_BY_TYPE from '../../../static/data/state_revenues_by_type.yml'
@@ -13,10 +13,10 @@ import NATIONAL_REVENUES_INSPECTION_FEES from '../../../static/data/national_rev
 import NATIONAL_REVENUES_CIVIL_PENALTIES from '../../../static/data/national_revenues_civil_penalties.yml'
 import NATIONAL_REVENUES_OTHER_REVENUES from '../../../static/data/national_revenues_other_revenues.yml'
 
-import OilGasIcon from '-!svg-react-loader!img/svg/icon-oil.svg'
-import CoalIcon from '-!svg-react-loader!img/svg/icon-coal.svg'
-import GeothermalIcon from '-!svg-react-loader!img/svg/icon-geothermal.svg'
-import RenewablesIcon from '-!svg-react-loader!img/svg/icon-renewables.svg'
+import OilGasIcon from '-!svg-react-loader!../../img/svg/icon-oil.svg'
+import CoalIcon from '-!svg-react-loader!../../img/svg/icon-coal.svg'
+import GeothermalIcon from '-!svg-react-loader!../../img/svg/icon-geothermal.svg'
+import RenewablesIcon from '-!svg-react-loader!../../img/svg/icon-renewables.svg'
 
 const getYearValueForCommodityRevenueType = (commodityRevenueType, year) => {
   return (commodityRevenueType && commodityRevenueType[year] ? commodityRevenueType[year] : 0)

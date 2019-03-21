@@ -9,6 +9,8 @@ import { withPrefixSVG } from '../components/utils/temp-link'
 
 import { PageToc } from '../components/navigation/PageToc'
 
+import DefaultLayout from '../components/layouts/DefaultLayout'
+
 class CaseStudiesTemplate extends React.Component {
   componentDidMount () {
     const script1 = document.createElement('script')
@@ -30,18 +32,20 @@ class CaseStudiesTemplate extends React.Component {
     let title = this.props.pathContext.markdown.frontmatter.title || 'Natural Resources Revenue Data'
 
     return (
-      <main>
-        <Helmet
-          title={title}
-          meta={[
-            // title
-            { name: 'og:title', content: title },
-            { name: 'twitter:title', content: title },
-          ]}
+      <DefaultLayout>
+        <main>
+          <Helmet
+            title={title}
+            meta={[
+              // title
+              { name: 'og:title', content: title },
+              { name: 'twitter:title', content: title },
+            ]}
 
-        />
-        {hastReactRenderer(this.props.pathContext.markdown.htmlAst)}
-      </main>
+          />
+          {hastReactRenderer(this.props.pathContext.markdown.htmlAst)}
+        </main>
+      </DefaultLayout>
     )
   }
 }

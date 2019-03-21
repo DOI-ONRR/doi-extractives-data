@@ -1,5 +1,5 @@
 ---
-title: "Content architecture: how we built support for multiple authors"
+title: "Content architecture: how we built support for multiple blog post authors"
 authors:
 - Ryan Johnson
 excerpt: "How we modified this blog's starter template to apply the DRY (Don't Repeat Yourself) principle to content architecture for author details."

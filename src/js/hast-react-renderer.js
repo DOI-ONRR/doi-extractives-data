@@ -125,7 +125,7 @@ const hastReactRenderer = new rehypeReact({
                 'select': SelectWrapper,
                 'download-link': DownloadLink,
                 'use': UseWrapper,
-                'svg': SvgWrapper
+                'svg': SvgWrapper,
                 'download-link': DownloadLink,
               },
 

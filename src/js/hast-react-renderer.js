@@ -10,7 +10,7 @@ import HowMainIconOil from '-!svg-react-loader!../img/svg/how-main-icon-oil.svg'
 import HowMainIconCoal from '-!svg-react-loader!../img/svg/how-main-icon-coal.svg';
 import HowMainIconHardrock from '-!svg-react-loader!../img/svg/how-main-icon-hardrock.svg';
 import HowMainIconWind from '-!svg-react-loader!../img/svg/how-main-icon-wind.svg';
-
+import IconDownload from '-!svg-react-loader!../img/svg/icon-download.svg';
 import GlossaryTerm from '../components/utils/glossary-term.js';
 import NavList from '../components/layouts/NavList';
 import {DisplayStatistic} from '../components/utils/DisplayStatistic';
@@ -24,6 +24,7 @@ import {ProcessGroup} from '../components/layouts/ProcessGroup';
 import {ProcessStep} from '../components/layouts/ProcessGroup';
 import {MsgPrioritizedStatesSvg} from '../components/maps/MsgPrioritizedStatesSvg'
 import ImgWrapper from '../components/utils/img-wrapper'
+import {UpdateFlag} from '../components/layouts/UpdateFlag'
 import {DownloadDataLink} from '../components/layouts/icon-links/DownloadDataLink'
 import IconArchive from '-!svg-react-loader!../img/svg/icon-archive.svg';
 import {DataArchiveLink} from '../components/layouts/icon-links/DataArchiveLink';
@@ -32,6 +33,7 @@ import CoalIcon from '-!svg-react-loader!../img/svg/icon-coal.svg';
 import OilGasIcon from '-!svg-react-loader!../img/svg/icon-oil.svg';
 import HardrockIcon from '-!svg-react-loader!../img/svg/icon-hardrock.svg';
 import RenewablesIcon from '-!svg-react-loader!../img/svg/icon-renewables.svg';
+import GeothermalIcon from '-!svg-react-loader!../img/svg/icon-geothermal.svg';
 import ChevronIcon from '-!svg-react-loader!../img/svg/chevron-lt.svg';
 import DownloadLink from '../components/layouts/icon-links/DownloadLink';
 
@@ -107,19 +109,24 @@ const hastReactRenderer = new rehypeReact({
                 'process-group': ProcessGroup,
                 'process-step': ProcessStep,
                 'img': ImgWrapper,
+                'update-flag': UpdateFlag,
                 'download-data-link': DownloadDataLink,
                 'icon-archive': IconArchive,
+                'icon-download': IconDownload,
+                'download-data-link': DownloadDataLink,
                 'data-archive-link': DataArchiveLink,
                 'archive-banner': ArchiveBanner,
                 'coal-icon': CoalIcon,
                 'oil-gas-icon': OilGasIcon,
                 'hardrock-icon': HardrockIcon,
                 'renewables-icon': RenewablesIcon,
+                'geothermal-icon': GeothermalIcon,
                 'chevron-icon': ChevronIcon,
                 'select': SelectWrapper,
                 'download-link': DownloadLink,
                 'use': UseWrapper,
                 'svg': SvgWrapper
+                'download-link': DownloadLink,
               },
 
 }).Compiler; 

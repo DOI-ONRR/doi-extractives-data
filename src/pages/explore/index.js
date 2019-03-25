@@ -21,6 +21,8 @@ import NationalDisbursements from '../../components/sections/NationalDisbursemen
 
 import { withPrefixSVG } from '../../components/utils/temp-link';
 
+import DefaultLayout from '../../components/layouts/DefaultLayout'
+
 const PAGE_ID = 'US';
 const PAGE_TITLE = 'Explore data';
 const NATIONAL_PAGE = true;
@@ -122,6 +124,7 @@ class ExplorePage extends React.Component {
     render () {
         
         return (
+            <DefaultLayout>
             <main id="national" className="layout-state-pages national-page">
                 <Helmet
                     title="Explore data | Natural Resources Revenue Data"
@@ -221,6 +224,7 @@ class ExplorePage extends React.Component {
 
                 </section>
             </main>
+        </DefaultLayout>
         );
     }
 }

@@ -9,7 +9,9 @@ import DataArchiveIcon from '-!svg-react-loader!../../../img/svg/icon-archive.sv
 
 const ArchiveBanner = () => (
 	<div className={styles.root}>
-		<p className={styles.content}><DataArchiveIcon/> This content was created as part of the <GlossaryTerm termKey="EITI Standard">USEITI</GlossaryTerm> and is no longer being updated. <Link to="/about/#history">Learn more about USEITI.</Link></p>
+		<div className={styles.content}>
+			<DataArchiveIcon></DataArchiveIcon> This content was created as part of the <GlossaryTerm termKey="EITI Standard">USEITI</GlossaryTerm> and is no longer being updated. <Link to="/about/#history">Learn more about USEITI.</Link>
+		</div>
 	</div>
 );
 

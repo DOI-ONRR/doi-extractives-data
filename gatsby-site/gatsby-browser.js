@@ -77,6 +77,27 @@ exports.onClientEntry = () => {
   else if(path.includes("/about")){
     loader.addPagesArray([{"componentChunkName":"component---src-pages-about-index-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"about.json","path": path}]);
   }
+  else if(path.includes("/downloads/reconciliation/")){
+    loader.addPagesArray([{"componentChunkName":"component---src-templates-downloads-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"downloads-reconciliation.json","path": path}]);
+  }
+  else if(path.includes("/downloads/disbursements/")){
+    loader.addPagesArray([{"componentChunkName":"component---src-templates-downloads-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"downloads-disbursements.json","path": path}]);
+  }
+  else if(path.includes("/downloads/federal-revenue-by-company/")){
+    loader.addPagesArray([{"componentChunkName":"component---src-templates-downloads-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"downloads-federal-revenue-by-company.json","path": path}]);
+  }
+  else if(path.includes("/downloads/federal-revenue-by-month/")){
+    loader.addPagesArray([{"componentChunkName":"component---src-templates-downloads-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"downloads-federal-revenue-by-month.json","path": path}]);
+  }
+  else if(path.includes("/downloads/federal-revenue-by-location/")){
+    loader.addPagesArray([{"componentChunkName":"component---src-templates-downloads-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"downloads-federal-revenue-by-location.json","path": path}]);
+  }
+  else if(path.includes("/downloads/federal-production/")){
+    loader.addPagesArray([{"componentChunkName":"component---src-templates-downloads-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"downloads-federal-production.json","path": path}]);
+  }
+  else if(path.includes("/downloads/federal-production-by-month/")){
+    loader.addPagesArray([{"componentChunkName":"component---src-templates-downloads-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"downloads-federal-production-by-month.json","path": path}]);
+  }
   else if(path.includes("/downloads")){
     loader.addPagesArray([{"componentChunkName":"component---src-templates-downloads-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"downloads.json","path": path}]);
   }
@@ -132,6 +153,18 @@ exports.onClientEntry = () => {
     }
     else if(path.includes("/coal") && !path.includes("/coal-excise-tax")){
       loader.addPagesArray([,{"componentChunkName":"component---src-templates-how-it-works-process-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-coal.json","path":path}]);
+    }
+    else if(path.includes("/audits-and-assurances") && !lastFourteen.includes("default-page")){
+      loader.addPagesArray([{"componentChunkName":"component---src-templates-content-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-audits-and-assurances.json","path":path}]);
+    }
+    else if(path.includes("/gomesa") && !lastFourteen.includes("default-page")){
+      loader.addPagesArray([{"componentChunkName":"component---src-templates-content-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-gomesa.json","path":path}]);
+    }
+    else if(path.includes("/historic-preservation-fund") && !lastFourteen.includes("default-page")){
+      loader.addPagesArray([{"componentChunkName":"component---src-templates-content-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-historic-preservation-fund.json","path":path}]);
+    }
+    else if(path.includes("/land-and-water-conservation-fund") && !lastFourteen.includes("default-page")){
+      loader.addPagesArray([{"componentChunkName":"component---src-templates-content-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-land-and-water-conservation-fund.json","path":path}]);
     }
     else if(path.includes("/disbursements") && !lastFourteen.includes("default-page")){
       loader.addPagesArray([{"componentChunkName":"component---src-templates-content-default-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"how-it-works-disbursements.json","path":path}]);

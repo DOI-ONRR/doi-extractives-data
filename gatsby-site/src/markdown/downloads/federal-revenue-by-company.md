@@ -1,38 +1,7 @@
 ---
 title: Revenue by Company | Documentation
-layout: content
+layout: downloads
 permalink: /downloads/federal-revenue-by-company/
-title_display: Revenue by Company
-nav_items:
-  - name: introduction
-    title: Top
-  - name: scope
-    title: Scope
-    subnav_items:
-      - name: why-is-there-a-line-in-the-data-called-companies-below-threshold
-        title: Companies below threshold
-      - name: why-is-there-a-line-in-the-data-called-one-mine-one-product
-        title: One mine, one product
-      - name: why-are-some-values-negative
-        title: Negative values
-      - name: why-is-there-a-gas-value-an-oil-value-and-an-oil--gas-value
-        title: Oil and gas values
-      - name: why-is-the-calendar-year-revenue-by-location-national-total-slightly-different-than-the-revenue-by-company-total
-        title: Revenue by location and by company
-  - name: data-dictionary
-    title: Data dictionary
-    subnav_items:
-      - name: fields-and-definitions
-        title: Fields and definitions
-      - name: advanced-information
-        title: Advanced information
-  - name: contact-us
-    title: Contact us
-selector: list
-breadcrumb:
-  - title: Downloads
-    permalink: /downloads/
-description: This dataset provides natural resource revenue data by company for calendar years 2013-2017. It includes revenues by production phase and commodity for companies extracting natural resources on federal lands and waters. It does not include company revenue from Indian lands or privately owned lands, and it is only available at the national level (not state level).
 tag:
 - Data
 - Downloads
@@ -43,14 +12,32 @@ tag:
 - By company
 ---
 
-{% include revenue-nav.html %}
+<custom-link to="/downloads/" className="breadcrumb link-charlie">Downloads</custom-link> /
+# Revenue by Company
 
-> {{ page.description }}
+<section class="explore-subpage container">
+    <section>
+      <div class="explore-subpage-tabs">
+        <ul>
+          <li class="explore-subpage-tab">
+            <a href="/downloads/federal-revenue-by-location/">Revenue by year</a>
+          </li>
+          <li class="explore-subpage-tab">
+            <a href="/downloads/federal-revenue-by-month/">Revenue by month</a>
+          </li>
+          <li class="explore-subpage-tab active">
+            <a href="/downloads/federal-revenue-by-company/">Revenue by company</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+</section>
+
+> This dataset provides natural resource revenue data by company for calendar years 2013-2017. It includes revenues by production phase and commodity for companies extracting natural resources on federal lands and waters. It does not include company revenue from Indian lands or privately owned lands, and it is only available at the national level (not state level).
 
 <p class="downloads-download_links-intro">Download calendar year data:
   <ul class="downloads-download_links list-unstyled">
-    <li><a href="{{ site.baseurl }}/downloads/federal_revenue_by_company_CY2013-CY2017.xlsx">{% include svg/icon-download.svg %}
-    Full dataset (xlsx, 501 KB)</a></li>
+    <li><download-link to="/downloads/federal_revenue_by_company_CY2013-CY2017.xlsx">Full dataset (xlsx, 501 KB)</download-link></li>
   </ul>
 </p>
 
@@ -60,25 +47,25 @@ We also have [notes on this data](https://github.com/onrr/doi-extractives-data/w
 
 This dataset includes revenues for U.S. federal lands and offshore areas. It does not include Indian lands, privately owned lands, or U.S. state lands. The datasets currently include data tracked and managed by the Department of the Interior’s (DOI) Office of Natural Resources Revenue (ONRR), Bureau of Land Management (BLM), and Office of Surface Mining, Reclamation, and Enforcement.
 
-### Why is there a line in the data called 'companies below threshold'?
+<h3 alt="Companies below threshold">Why is there a line in the data called 'companies below threshold'?</h3>
 
 Many of the companies that fall below the $100,000 threshold are small companies, individuals, and family trusts. These aggregated payments also make up less than one quarter of one percent of total payments. Payments made by entities that reported less than $100,000 are aggregated (rolled-up) into this category.
 
-### Why is there a line in the data called 'one mine one product'?
+<h3 alt="One mine, one product">Why is there a line in the data called 'one mine one product'?</h3>
 
 Disclosing payments of solid mineral companies who produce and sell only one product from one mine can reveal proprietary sales price and contracting information and cause competitive harm to these small companies. The Department of the Interior is legally obligated through the Trades Secrets Act to safeguard this data, so payments from these companies are aggregated (rolled-up) in this category. These aggregated payments make up less than three-thousandths of one percent of all payments.
 
-### Why are some values negative?
+<h3 alt="Negative values">Why are some values negative?</h3>
 
 Companies can adjust and correct their payments for up to seven years after a transaction takes place. If a company overpays their royalty, rent, or bonus, they are entitled to recoup their overpayment. If the overpayment and recoupment happen in different years, the recoupment will appear as a negative amount in ONRR’s revenue summaries.
 
-### Why is there a Gas value, an Oil value and an Oil & Gas value?
+<h3 alt="Oil and gas values">Why is there a Gas value, an Oil value and an Oil & Gas value?</h3>
 
 “Oil & Gas” is the commodity category used for offshore oil and gas rents and bonuses. At the time of lease sale, it isn’t known whether a lease will produce oil, gas, or both oil and gas. After a lease starts producing a commodity (or commodities), the lease owner starts paying royalties, and these royalties can then be associated with either oil or gas. Hence, rent and bonus lines of data will be associated with an “Oil & Gas” commodity type, while royalty lines of data will be associated with either “Oil” or “Gas” commodity types.
 
-### Why is the calendar year _revenue by location national total_ slightly different than the _revenue by company total_?
+<h3 alt="Revenue by location and company">Why is the calendar year <span style='font-style:italic'>revenue by location national total</span> slightly different than the _revenue by company total_?</h3>
 
-Our site has two federal revenue datasets. The one on this page is organized by the company that paid the revenue. The [federal revenue by location dataset]({{ site.baseurl }}/downloads/federal-revenue-by-location/) is organized by location. However, the national revenue totals are slightly different (by about $90 million). This is because the revenue by location dataset excludes revenue from offshore rights-of-way because they don't map to an offshore planning area.
+Our site has two federal revenue datasets. The one on this page is organized by the company that paid the revenue. The [federal revenue by location dataset](/downloads/federal-revenue-by-location/) is organized by location. However, the national revenue totals are slightly different (by about $90 million). This is because the revenue by location dataset excludes revenue from offshore rights-of-way because they don't map to an offshore planning area.
 
 ## Data dictionary
 
@@ -88,7 +75,7 @@ _Company Name_ Name of company.
 
 _Revenue Type_ Revenues from U.S. natural resources fall into one of several types:
 
-* _Royalties_ A natural resource lease owner pays royalties after the lease starts producing a commodity in {{ "paying quantities" | term_end }}. The amount is based on a percentage of the revenue from the commodity sold. This royalty rate is set in the original lease document that went along with the lease sale. The onshore royalty rate is 12.5%. Offshore leases can have a royalty rates of 12.5%, 16.67%, 18.75%.
+* _Royalties_ A natural resource lease owner pays royalties after the lease starts producing a commodity in <glossary-term>paying quantities</glossary-term>. The amount is based on a percentage of the revenue from the commodity sold. This royalty rate is set in the original lease document that went along with the lease sale. The onshore royalty rate is 12.5%. Offshore leases can have a royalty rates of 12.5%, 16.67%, 18.75%.
 * _Bonus_ The amount paid by the highest successful bidder for a natural resource lease. The winning bid. Collected by BLM (Onshore) and ONRR (Offshore).
 * _Rents_ A natural resource lease might not produce a commodity in paying quantities for some time after it is sold. Until it does, periodic payments are made for the right to continue exploration and development of the land for future natural resource production. These payments are called rent. The first year rental is collected by BLM and the remaining rental payments are collected by ONRR.
 * _Other revenues_ This category includes revenues that are not included in the royalty, rent, or bonus categories, such as: minimum royalties, estimated royalties, settlement agreements, and interest.
@@ -123,5 +110,3 @@ _Mineral Materials_  The BLM makes mineral materials located on public lands, 
 _Other Commodities_ Anhydrous Sodium Sulfate (ton), Borax-Decahydrate (ton), Borax-Pentahydrate (ton), Boric Acid (ton), Carbon Dioxide Gas (CO2) (mcf), Cinders (ton), Clay (ton), Copper Concentrate (ton), Gilsonite (ton), Gold (ton), Gypsum (ton), Helium (bbl), Langbeinite (ton), Lead Concentrate (ton), Leonardite (ton), Limestone (ton), Magnesium Chloride Brine (ton), Manure Salts (ton), Muriate Of Potash-Granular (ton), Muriate Of Potash-Standard (ton), Other (ton), Phosphate Raw Ore (ton), Potash (ton), Purge Liquor (ton), Quartz Crystal (lb), Salt (ton), Sand/Gravel (ton), Sand/Gravel-Cubic Yards (cyd), Silver (oz), Soda Ash (ton), Sodium Bi-Carbonate (ton), Sodium Bisulfite (ton), Sodium Sesquicarbonate (ton), Sulfide (ton), Sulfur (lton), Sylvite-Raw Ore (ton), Trona Ore (ton), Zinc Concentrate (ton).
 
 ## Contact us
-
-{% include contact.html %}

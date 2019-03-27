@@ -1,31 +1,8 @@
 ---
 title: Disbursements | Documentation
 title_display: Disbursements
-layout: content
+layout: downloads
 permalink: /downloads/disbursements/
-nav_items:
-  - name: introduction
-    title: Top
-  - name: scope
-    title: Scope
-  - name: data-publication
-    title: Data publication
-  - name: data-dictionary
-    title: Data dictionary
-    subnav_items:
-      - name: onshore
-        title: Onshore
-      - name: offshore
-        title: Offshore
-  - name: archive
-    title: Archive
-  - name: contact-us
-    title: Contact us
-selector: list
-breadcrumb:
-  - title: Downloads
-    permalink: /downloads/
-description: "The amount of money earned from extraction of natural resources on federal lands that is disbursed to various legislated funds. Our fund overview dataset is from the Office of Natural Resources Revenue, which is part of the Department of the Interior."
 tag:
 - Data
 - Downloads
@@ -33,12 +10,15 @@ tag:
 - Disbursements
 ---
 
-> {{ page.description }}
+<custom-link to="/downloads/" className="breadcrumb link-charlie">Downloads</custom-link> /
+# Disbursements
+
+> The amount of money earned from extraction of natural resources on federal lands that is disbursed to various legislated funds. Our fund overview dataset is from the Office of Natural Resources Revenue, which is part of the Department of the Interior.
 
 Download fiscal year data:
 
 <ul class="downloads-download_links list-unstyled">
-  <li><a href="{{site.baseurl}}/downloads/disbursements_FY2003-2018_by_type.xlsx">{% include svg/icon-download.svg %}Disbursements data by state, county, and type (xlsx, 64 KB)</a></li>
+  <li><download-link to="/downloads/disbursements_FY2003-2018_by_type.xlsx">Disbursements data by state, county, and type (xlsx, 64 KB)</download-link></li>
 </ul>
 
 The documentation that follows is for the funds overview dataset. We also have [notes on this data](https://github.com/onrr/doi-extractives-data/wiki/Data-Catalog#disbursements) from the web development team as they built the interactions on this site.
@@ -77,8 +57,8 @@ _Historic Preservation Fund_ This fund helps preserve U.S. historical and archae
 
 _States_ States receive federal Outer Continental Shelf revenue in two ways:
 
-1. 27% of revenue from leases in the 8(g) Zone (the first three nautical miles of the Outer Continental Shelf) are shared with states.
-2. 37.5% of revenue from certain leases in the Gulf of Mexico are shared with Alabama, Louisiana, Mississippi, and Texas.
+- 27% of revenue from leases in the 8(g) Zone (the first three nautical miles of the Outer Continental Shelf) are shared with states.
+- 37.5% of revenue from certain leases in the Gulf of Mexico are shared with Alabama, Louisiana, Mississippi, and Texas.
 
 _Other_ Certain offshore funds are directed back to the federal agencies that administer these lands (e.g., BOEM and BSEE) to help cover the agencies’ operational costs.
 
@@ -88,24 +68,22 @@ In the past, this site has offered detailed data for disbursements distributed f
 
 ### Land and Water Conservation Fund
 
-{{ "ONRR" | term }} disburses revenue to the [Land and Water Conservation Fund (LWCF)](https://www.nps.gov/subjects/lwcf/index.htm) according to federal law. However, these funds are subject to congressional appropriations. Actual annual appropriations to the fund have met the authorized threshold only twice (1998, 2001), while appropriations have been limited to between $255 million and $450 million since 2008.
+<glossary-term>ONRR</glossary-term> disburses revenue to the [Land and Water Conservation Fund (LWCF)](https://www.nps.gov/subjects/lwcf/index.htm) according to federal law. However, these funds are subject to congressional appropriations. Actual annual appropriations to the fund have met the authorized threshold only twice (1998, 2001), while appropriations have been limited to between $255 million and $450 million since 2008.
 
 To see how much was disbursed to states, sub-funds, and other projects each year, see the following datasets.
 
-* [American Battlefield Protection Program, 2011-2015 data]({{ site.baseurl }}/data/disbursements/lwcf/abpp.tsv) (TSV): Details about the location, acreage, and grant amounts of each battlefield funded through the [American Battlefield Protection Program](https://www.nps.gov/abpp/index.htm), a National Parks Service program that preserves the land where historic American battles were fought.
+* [American Battlefield Protection Program, 2011-2015 data](/data/disbursements/lwcf/abpp.tsv) (TSV): Details about the location, acreage, and grant amounts of each battlefield funded through the [American Battlefield Protection Program](https://www.nps.gov/abpp/index.htm), a National Parks Service program that preserves the land where historic American battles were fought.
 
-* [Cooperative Endangered Species Conservation Fund, 2011-2015 data]({{ site.baseurl }}/data/disbursements/lwcf/cescf.tsv) (TSV): List of individual projects and locations funded through the [Cooperative Endangered Species Conservation Fund](https://www.fws.gov/endangered/grants/), a [Fish and Wildlife Service](https://www.fws.gov/) program for conservation planning and acquisition of vital habitat for threatened and endangered species.
+* [Cooperative Endangered Species Conservation Fund, 2011-2015 data](/data/disbursements/lwcf/cescf.tsv) (TSV): List of individual projects and locations funded through the [Cooperative Endangered Species Conservation Fund](https://www.fws.gov/endangered/grants/), a [Fish and Wildlife Service](https://www.fws.gov/) program for conservation planning and acquisition of vital habitat for threatened and endangered species.
 
-* [State and local grants, 2011-2016 data]({{ site.baseurl }}/data/disbursements/lwcf/grants.tsv) (TSV): Details about the location, amount, and purpose of all Land and Water Conservation Fund grants to state and local governments.
+* [State and local grants, 2011-2016 data](/data/disbursements/lwcf/grants.tsv) (TSV): Details about the location, amount, and purpose of all Land and Water Conservation Fund grants to state and local governments.
 
-* [Land acquisitions, 2011-2016 data]({{ site.baseurl }}/data/disbursements/lwcf/land-acquisition.tsv) (TSV): Details about the location, budget, acreage, and purpose of each federal land acquisition funded by the Land and Water Conservation Fund.
+* [Land acquisitions, 2011-2016 data](/data/disbursements/lwcf/land-acquisition.tsv) (TSV): Details about the location, budget, acreage, and purpose of each federal land acquisition funded by the Land and Water Conservation Fund.
 
 ### Historic Preservation Fund
 
 Like the LWCF, money in the Historic Preservation Fund is subject to congressional appropriations. Some of it is spent on historic preservation projects, but some of it ultimately goes to other expenditures. The fund is authorized to receive and disburse $150 million each year, but annual appropriations have declined from $94 million to less than $60 million since 2001.
 
-To see how much was disbursed to each state for preservation projects, see [Historic Preservation grants, 2011-2016]({{ site.baseurl }}/data/disbursements/historic-preservation.tsv) (TSV).
+To see how much was disbursed to each state for preservation projects, see [Historic Preservation grants, 2011-2016](/data/disbursements/historic-preservation.tsv) (TSV).
 
 ## Contact us
-
-{% include contact.html %}

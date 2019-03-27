@@ -1,8 +1,6 @@
 ---
-title: 'Audits and Assurances | How It Works'
-title_display: Revenue data standards, audits, and assurances
+title: Audits and Assurances | How It Works
 layout: content
-description: Data about revenue from the extractive industries is subject to a number of controls, standards, and regulations in the United States. Companies and governments are accountable to internal and external oversight that ensures correct reporting and publication of payments.
 tag:
 - How it works
 - Audits
@@ -11,22 +9,21 @@ tag:
 - Oversight
 - Regulations
 permalink: /how-it-works/audits-and-assurances/
-breadcrumb:
-  - title: How it works
-    permalink: /how-it-works/
-selector: list
 archive: true
 ---
 
-> {{ page.description }}
+<custom-link to="/how-it-works/" className="breadcrumb link-charlie">How it works</custom-link> /
+# Revenue data standards, audits, and assurances
+
+> Data about revenue from the extractive industries is subject to a number of controls, standards, and regulations in the United States. Companies and governments are accountable to internal and external oversight that ensures correct reporting and publication of payments.
 
 ## Tracking and verifying payments
 
 Companies and government agencies are each legally responsible for reporting accurate, verifiable payment data. Controls and standards help companies report correct data on the first attempt, and reports are verified after submission. Independent audits of financial statements, transactions, and systems also help ensure compliance with internal and external standards.
 
 <ul class="downloads-download_links list-unstyled">
-  <li><a href="{{site.baseurl}}/downloads/USEITI_budget-audit-factsheet_2017-08-09.pdf">{% include svg/icon-download.svg %}Download audit and assurance processes factsheet (pdf, 1.1 MB)</a>
-    <p class="para-sm">{% include svg/icon-archive.svg %} This content was created as part of the {{ "USEITI" | term_end:"EITI Standard" }} and is no longer being updated.</p>
+  <li><a href="/downloads/USEITI_budget-audit-factsheet_2017-08-09.pdf"><icon-download></icon-download>Download audit and assurance processes factsheet (pdf, 1.1 MB)</a>
+    <p class="para-sm"><icon-archive></icon-archive> This content was created as part of the <glossary-term term.key="EITI Standard">USEITI</glossary-term> and is no longer being updated.</p>
   </li>
 </ul>
 
@@ -53,7 +50,7 @@ Companies and government agencies are each legally responsible for reporting acc
 Many federal agencies make their reports on payments received from U.S. extractive industries available publicly online:
 
 - [IRS publications](https://www.irs.gov/publications/)
-- [Treasury: Combined statement of receipts, outlays, and balances](https://www.fiscal.treasury.gov/fsreports/rpt/combStmt/current_rpt.htm)
+- [U.S. Treasury: Combined statement of receipts, outlays, and balances](https://fiscal.treasury.gov/reports-statements/combined-statement/)
 - [Bureau of Land Management (BLM) publications](https://www.blm.gov/learn/blm-library/agency-publications)
 - [Office of Surface Mining Reclamation and Enforcement (OSMRE) resources](http://www.osmre.gov/resources/InformationFor.shtm)
 

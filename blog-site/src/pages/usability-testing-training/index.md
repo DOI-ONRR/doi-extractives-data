@@ -1,5 +1,5 @@
 ---
-title: "Teaching Digital Skills: Learning Usability Testing by Peer Training"
+title: "Teaching digital skills: learning usability testing by peer training"
 authors:
 - Shannon McHarg
 - Maroya Faied

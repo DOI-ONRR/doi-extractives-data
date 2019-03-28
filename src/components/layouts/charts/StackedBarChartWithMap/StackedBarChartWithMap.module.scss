@@ -13,10 +13,24 @@
   width: 31.76157%;
 }
 
-.mapContainer {
+.mapLegendContainer {
 	float: left;
   display: block;
   margin-right:0;
   width: 65.88078%;
+  padding-left: 0.41667em;
+}
+.mapContainer {
+  float: left;
+  display: block;
+  margin-right:0;
+  width: 66%;
+  padding-left: 0.41667em;
+}
+.legendContainer {
+  float: left;
+  display: block;
+  margin-right:0;
+  width: 34%;
   padding-left: 0.41667em;
 }

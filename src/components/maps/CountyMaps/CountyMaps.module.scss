@@ -1,28 +1,28 @@
 @value colors: "../../../css-global/colors.scss";
-@value white, gray-dark, gray-light, gray-pale from colors;
+@value white as _white, grayDark as _grayDark, grayLight as _grayLight, grayPale as _grayPale from colors;
 
 .root {
 
 }
 
 .map {
-  background: gray-light;
+  background: _grayLight;
   box-sizing: border-box;
   display: block;
   height: auto;
   padding: 3.6%;
-  width: 68%;
+  width: 100%;
 }
 
 .states {
-	fill: gray-pale;
+	fill: _grayPale;
 	pointer-events: none;
-	stroke: gray-dark;
+	stroke: _grayDark;
 	stroke-width: 0.5;
 }
 
 .counties {
-	fill: white;
-	stroke: gray-dark;
+	fill: _white;
+	stroke: _grayDark;
 	stroke-width: 0.5;
 }

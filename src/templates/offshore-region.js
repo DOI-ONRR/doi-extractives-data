@@ -24,6 +24,9 @@ import { ChartTitle } from '../components/charts/ChartTitle'
 import { StackedBarChart } from '../components/charts/StackedBarChart'
 import ChartSelectedContentDetails from '../components/charts/ChartSelectedContentDetails'
 import OffshoreCountyMap from '../components/maps/CountyMaps'
+import Legend from '../components/charts/Legend'
+
+import DefaultLayout from '../components/layouts/DefaultLayout'
 
 import styles from '../css-global/base-theme.module.scss'
 
@@ -97,6 +100,8 @@ class OffshoreRegion extends React.Component {
 
     components.map = <OffshoreCountyMap isCaption={true} productKey={title + ' (' + shortUnits + ')'} usStateMarkdown={this.props.pathContext.markdown} units={units} />
 
+    components.legend = <Legend dataSetId={id} render={dataSet => (this.getMapLegendTitle(dataSet))}/>
+
     this.productionComponents.push(components)
   }
 
@@ -116,81 +121,98 @@ class OffshoreRegion extends React.Component {
     )
   }
 
+  getMapLegendTitle(dataSet){
+    let data = dataSet.data.find(item => Object.keys(item)[0] === dataSet.selectedDataKey)
+
+    let commodity = (data) ? Object.keys(data[dataSet.selectedDataKey][0])[0] : undefined
+
+    let commodityVolume = (commodity) ? data[dataSet.selectedDataKey][0][commodity] : undefined
+
+    return (
+      <figcaption className={styles.legendTitle}>
+        {utils.toTitleCase(this.region)} offshore region production of {commodity.toLowerCase()} in {dataSet.selectedDataKey} ({dataSet.units})
+      </figcaption>
+    )
+  }
+
   render () {
     let title = this.props.pathContext.markdown.frontmatter.title || 'Natural Resources Revenue Data'
     let regionId = this.props.pathContext.markdown.frontmatter.unique_id
 
     return (
-      <main id={'offshore-region-' + regionId} className="container-page-wrapper layout-state-pages">
-        <Helmet
-          title={title}
-          meta={[
-            // title
-            { name: 'og:title', content: title + ' | Natural Resources Revenue Data' },
-            { name: 'twitter:title', content: title },
-          ]}
+      <DefaultLayout>
+        <main id={'offshore-region-' + regionId} className="container-page-wrapper layout-state-pages">
+          <Helmet
+            title={title}
+            meta={[
+              // title
+              { name: 'og:title', content: title + ' | Natural Resources Revenue Data' },
+              { name: 'twitter:title', content: title },
+            ]}
 
-        />
-        <section className="container">
-          <Link to="/explore/" className="breadcrumb link-charlie">Explore data</Link> /
-          <h1>{title}</h1>
-          <div className="container-left-9">
+          />
+          <section className="container">
+            <Link to="/explore/" className="breadcrumb link-charlie">Explore data</Link> /
+            <h1>{title}</h1>
+            <div className="container-left-9">
 
-            <section id="overview" className="section-top">
-              <p>
-                  Unlike land (which can be owned by states, local governments, corporations, or private individuals), the waters and submerged lands of the <GlossaryTerm>Outer Continental Shelf</GlossaryTerm> are entirely administered by the federal government. This means that all <Link to="/how-it-works/offshore-oil-gas/">offshore drilling</Link> and <Link to="/how-it-works/offshore-renewables/">renewable energy generation</Link> takes place in federal waters.
-              </p>
-            </section>
-            <section id="production">
-              <h2>Production</h2>
-              {this.productionComponents
-                ? <div>
-                  <StickyWrapper bottomBoundary="#production" innerZ="10000">
-                    <StickyHeader headerText={'Energy production in the entire state of ' + title}>
-                      <YearDropDown dataSetId={this.productionComponents[0].dataSetId} />
-                    </StickyHeader>
-                  </StickyWrapper>
-                  <div className="chart-selector-wrapper">
-                    <div className="chart-description">
-                      <p>
-                          ONRR collects detailed data about natural resources produced in the {title}.
-                      </p>
-                      <p>
-                        <DownloadDataLink to="/downloads/federal-production/">Downloads and documentation</DownloadDataLink>
-                      </p>
+              <section id="overview" className="section-top">
+                <p>
+                    Unlike land (which can be owned by states, local governments, corporations, or private individuals), the waters and submerged lands of the <GlossaryTerm>Outer Continental Shelf</GlossaryTerm> are entirely administered by the federal government. This means that all <Link to="/how-it-works/offshore-oil-gas/">offshore drilling</Link> and <Link to="/how-it-works/offshore-renewables/">renewable energy generation</Link> takes place in federal waters.
+                </p>
+              </section>
+              <section id="production">
+                <h2>Production</h2>
+                {this.productionComponents
+                  ? <div>
+                    <StickyWrapper bottomBoundary="#production" innerZ="10000">
+                      <StickyHeader headerText={'Energy production in the entire state of ' + title}>
+                        <YearDropDown dataSetId={this.productionComponents[0].dataSetId} />
+                      </StickyHeader>
+                    </StickyWrapper>
+                    <div className="chart-selector-wrapper">
+                      <div className="chart-description">
+                        <p>
+                            ONRR collects detailed data about natural resources produced in the {title}.
+                        </p>
+                        <p>
+                          <DownloadDataLink to="/downloads/federal-production/">Downloads and documentation</DownloadDataLink>
+                        </p>
+                      </div>
                     </div>
+                    {
+                      this.productionComponents.map((components, index) => {
+                        return (
+                          <div key={index + '_' + components.dataSetId} style={{ width: '100%', display: 'inline-block' }}>
+                            <StackedBarChartWithMap
+                              chartTitle={components.chartTitle}
+                              chart={components.chart}
+                              chartContentDetails={components.chartContentDetails}
+                              mapTitle={components.mapTitle}
+                              map={components.map}
+                              legend={components.legend}
+                            />
+                          </div>
+                        )
+                      })
+                    }
                   </div>
-                  {
-                    this.productionComponents.map((components, index) => {
-                      return (
-                        <div key={index + '_' + components.dataSetId} style={{ width: '100%', display: 'inline-block' }}>
-                          <StackedBarChartWithMap
-                            chartTitle={components.chartTitle}
-                            chart={components.chart}
-                            chartContentDetails={components.chartContentDetails}
-                            mapTitle={components.mapTitle}
-                            map={components.map}
-                          />
-                        </div>
-                      )
-                    })
-                  }
-                </div>
-                : <p>ONRR collects detailed data about natural resources produced on federal lands and waters. According to that data, there was no natural resource production in the { title }.</p>
-              }
+                  : <p>ONRR collects detailed data about natural resources produced on federal lands and waters. According to that data, there was no natural resource production in the { title }.</p>
+                }
 
-            </section>
-          </div>
-          <MediaQuery minWidth={768}>
-            <div className="container-right-3">
+              </section>
             </div>
-          </MediaQuery>
-          <MediaQuery maxWidth={767}>
-            <div style={{ position: 'absolute', width: '100%', top: '-45px' }}>
-            </div>
-          </MediaQuery>
-        </section>
-      </main>
+            <MediaQuery minWidth={768}>
+              <div className="container-right-3">
+              </div>
+            </MediaQuery>
+            <MediaQuery maxWidth={767}>
+              <div style={{ position: 'absolute', width: '100%', top: '-45px' }}>
+              </div>
+            </MediaQuery>
+          </section>
+        </main>
+      </DefaultLayout>
     )
   }
 }

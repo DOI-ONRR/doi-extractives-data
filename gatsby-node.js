@@ -1,6 +1,24 @@
 const path = require(`path`);
 const GRAPHQL_QUERIES = require('./src/js/graphql-queries');
 
+// Data to import to be added to graphql schema
+// Import data from yml files
+const yaml = require('js-yaml');
+const fs = require('fs');
+const OFFSHORE_PRODUCTION_DATA = './src/data/offshore_federal_production_regions.yml';
+const offshoreProductionTransformer = require('./src/js/data-transformers/offshore-production-transformer');
+exports.sourceNodes = ({ getNodes, boundActionCreators }) => {
+	const { createNode } = boundActionCreators;
+
+	try {
+	    offshoreProductionTransformer(createNode, yaml.safeLoad(fs.readFileSync(OFFSHORE_PRODUCTION_DATA, 'utf8')));
+	} catch (e) {
+	    console.log(e);
+	}
+	
+
+}
+
 
 
 /* @TODO Parse markdown from frontmatter. hopefully we cna fidn a btr solution in future */
@@ -81,7 +99,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
   	createHowItWorksPages(createPage, graphql), 
   	createDownloadsPages(createPage, graphql),
   	createCaseStudiesPages(createPage, graphql),
-  	//createOffshorePages(createPage, graphql),
+  	createOffshorePages(createPage, graphql),
 	]);
 };
 
@@ -286,12 +304,62 @@ const createCaseStudiesPages = (createPage, graphql) => {
 	  });
 };
 
+const createOffshorePages = (createPage, graphql) => {
+
+	const graphQLQueryString = "{"+GRAPHQL_QUERIES.MARKDOWN_OFFSHORE
+																+GRAPHQL_QUERIES.OFFSHORE_PRODUCTION_ALASKA
+																+GRAPHQL_QUERIES.OFFSHORE_PRODUCTION_GULF
+																+GRAPHQL_QUERIES.OFFSHORE_PRODUCTION_PACIFIC+"}";
+	
+	return new Promise((resolve, reject) => {
+	    resolve(
+	      graphql(graphQLQueryString).then(result => {
+	        if (result.errors) {
+	        	console.error(result.errors);
+	          reject(result.errors);
+	        }
+	        else{ 
+	        	// Create pages for each markdown file.
+		        result.data.allMarkdownRemark.pages.forEach(({ page }) => {
+
+		          const path = page.frontmatter.permalink;
+		          const template = getPageTemplate(page.frontmatter.layout);
+		          let dataSet;
+		          switch(page.frontmatter.unique_id) {
+		          	case 'alaska':
+		          		dataSet = result.data.AlaskaOffshoreProduction;
+		          		break;
+		          	case 'gulf':
+		          		dataSet = result.data.GulfOffshoreProduction;
+		          		break;
+		          	case 'pacific':
+		          		dataSet = result.data.PacificOffshoreProduction;
+		          		break;
+
+		          }
+
+		          createPage({
+		            path,
+		            component: template,
+		            context: {
+		              markdown: page,
+		              data: dataSet,
+		            },
+		          });
+		        });
+	        	resolve();
+	        }
+	      })
+	    );
+	  });
+};
+
 /* This is required for Federalist build */
 var copydir = require('copy-dir');
 exports.onPostBuild = () => {
-	console.log("Copying static html pages to _site...");
-	copydir.sync(__dirname+'/static/pages', __dirname+'/_site');
-	console.log("Finished Copying istatic html pages to public.");
+	//console.log("Copying static html pages to _site...");
+	//copydir.sync(__dirname+'/static/pages', __dirname+'/_site');
+	//console.log("Finished Copying istatic html pages to public.");
 
 	console.log("Copying Files from public to _site...");
 	copydir.sync(__dirname+'/public', './_site');

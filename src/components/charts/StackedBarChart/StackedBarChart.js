@@ -59,11 +59,12 @@ class StackedBarChart extends React.Component {
     let dataSet = this.state.dataSet || this.props.data
     let newDataSet = nextProps.dataSet || nextProps.data
 
-    return (
+    return true;
+    /*return (
       ((dataSet.lastUpdated !== newDataSet.lastUpdated)) ||
       ((dataSet.selectedDataKey !== newDataSet.selectedDataKey) ||
       dataSet.lastUpdated === undefined)
-    )
+    )*/
   }
 
   componentWillUnmount () {

@@ -36,7 +36,7 @@ class CountyMaps extends React.Component {
       this.productionAreas = PACIFIC_PRODUCTION_AREAS
       break
     }
-    console.log('OFFSHORE_FEDERAL_PRODUCTION_AREAS:', this.productionAreas)
+    //console.log('OFFSHORE_FEDERAL_PRODUCTION_AREAS:', this.productionAreas)
 
     let localityName = this.frontmatterData.unique_id + ' offshore region'
 
@@ -132,7 +132,7 @@ class CountyMaps extends React.Component {
             {
               (lazy(this.productionAreas).toArray()).map((countyData, index) => {
               	if (countyData[1].products[this.props.productKey]) {
-              		console.log(countyData[1].products[this.props.productKey])
+              		//console.log(countyData[1].products[this.props.productKey])
                   return (
                     <g key={index} style={{ fill: 'blue', cursor: 'pointer' }} >
                       <title>{ countyData[1].name }</title>

@@ -5,7 +5,8 @@ import MediaQuery from 'react-responsive'
 import styles from './StackedBarChartWithMap.module.scss'
 
 const StackedBarChartWithMap = props => {
-  let { chartTitle, chart, chartContentDetails, mapTitle, map } = props
+  let { chartTitle, chart, chartContentDetails, mapTitle, map, legend } = props
+  //console.log(props);
 
   return (
     <div className={styles.root}>
@@ -14,9 +15,14 @@ const StackedBarChartWithMap = props => {
         {chart}
         {chartContentDetails}
       </div>
-      <div className={styles.mapContainer}>
+      <div className={styles.mapLegendContainer}>
         {mapTitle}
-        {map}
+        <div className={styles.mapContainer}>
+          {map}
+        </div>
+        <div className={styles.legendContainer}>
+          {legend}
+        </div>
       </div>
     </div>
   )
@@ -27,12 +33,14 @@ StackedBarChartWithMap.propTypes = {
   chartTitle: PropTypes.element,
   /** React component to use to render the chart */
   chart: PropTypes.element,
-  /** React component to use to render the chart content detials */
+  /** React component to use to render the chart content details */
   chartContentDetails: PropTypes.element,
-  /** React component to use to render the chart content detials */
+  /** React component to use to render the map title */
   mapTitle: PropTypes.element,
-  /** React component to use to render the chart content detials */
+  /** React component to use to render the map */
   map: PropTypes.element,
+  /** React component to use to render the legend */
+  legend: PropTypes.element,
 
 }
 

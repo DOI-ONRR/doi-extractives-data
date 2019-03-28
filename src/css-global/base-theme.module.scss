@@ -1,17 +1,17 @@
-@value colors: "./colors.css";
-@value green, gray-light from colors;
+@value colors: "./colors.scss";
+@value green as _green, grayLight as _grayLight, blackLight as _blackLight from colors;
 
 .chartBar {
 	cursor: pointer;
-	fill: gray-light;
+	fill: _grayLight;
 }
 
 .chartBar[selected=true] {
-	fill: green;
+	fill: _green;
 }
 
 .chartBar:hover{
-	fill: green;
+	fill: _green;
 	opacity: 0.8;
 }
 
@@ -21,6 +21,14 @@
 }
 
 .chartSelectedContentDetailsHighlight {
-	color: green;
+	color: _green;
 	font-weight: 600;
+}
+
+.legendTitle {
+	color: _blackLight;
+	font-size: 0.8125rem;
+	font-weight: 600;
+	line-height: 1.1875rem;
+
 }

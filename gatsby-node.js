@@ -1,3 +1,7 @@
+
+
+
+
 const path = require(`path`);
 const GRAPHQL_QUERIES = require('./src/js/graphql-queries');
 
@@ -92,7 +96,10 @@ const createHtmlAstFromFrontmatterField = (createNodeField, pathPrefix, node, fi
 
 
 exports.createPages = ({ boundActionCreators, graphql }) => {
-  const { createPage } = boundActionCreators;
+  const { createPage, createRedirect } = boundActionCreators;
+
+  createRedirect({ fromPath: '/how-it-works/federal-revenue-by-company', toPath: '/how-it-works/federal-revenue-by-company/2017', redirectInBrowser: true, isPermanent: true });
+  createRedirect({ fromPath: '/how-it-works/federal-revenue-by-company/', toPath: '/how-it-works/federal-revenue-by-company/2017', redirectInBrowser: true, isPermanent: true });
 
   return Promise.all([
   	createStatePages(createPage, graphql), 

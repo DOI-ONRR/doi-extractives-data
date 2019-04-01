@@ -139,8 +139,9 @@ const utils = {
 	      }, 0)
 	    }
   	}
-
-  	window.addEventListener('load', scrollToElement)
+    if(typeof window !== 'undefined') {
+      window.addEventListener('load', scrollToElement)
+    }
   },
   toTitleCase (str) {
     str = str.toLowerCase().split(' ');

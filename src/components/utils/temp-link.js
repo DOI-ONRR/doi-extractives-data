@@ -12,8 +12,6 @@ class TempLink extends React.Component {
       delete rest.xLinkHref
     }
 
-    console.log(href);
-
     if (href) {
       if (href.includes('gatsby-public')) {
         to = href.replace('/gatsby-public', '')

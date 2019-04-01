@@ -18,6 +18,8 @@ const Header = props => {
   let defaultNavClassNames = { 'className': ' header-nav_item ' }
   let homeClassNames = { 'className': ' header-nav_item ' }
   let aboutClassNames = { 'className': ' header-nav_item ' }
+  let howItWorksClassNames = { 'className': ' header-nav_item ' }
+  let caseStudiesClassNames = { 'className': ' header-nav_item ' }
   let exploreClassNames = { 'className': ' header-nav_item ' }
   let downloadClassNames = { 'className': ' header-nav_item_link_top ' }
 
@@ -26,17 +28,24 @@ const Header = props => {
     if (__PATH_PREFIX__ && __PATH_PREFIX__.length > 0) {
       prefix = __PATH_PREFIX__.slice(0, -14)
     }
-    if (location.pathname === prefix + '/') {
-      homeClassNames.className += ' active '
-    }
-    else if (location.pathname === prefix + '/about/') {
+
+    if (location.pathname.includes('/about') ) {
       aboutClassNames.className += ' active '
     }
-    else if (location.pathname === prefix + '/downloads/') {
+    else if (location.pathname.includes('/downloads') ) {
       downloadClassNames.className += ' active '
     }
-    else if (location.pathname === prefix + '/explore/') {
+    else if (location.pathname.includes('/how-it-works')) {
+      howItWorksClassNames.className += ' active '
+    }
+    else if (location.pathname.includes('/case-studies')) {
+      caseStudiesClassNames.className += ' active '
+    }
+    else if (location.pathname.includes('/explore')) {
       exploreClassNames.className += ' active '
+    }
+    else {
+      homeClassNames.className += ' active '
     }
   }
 
@@ -72,11 +81,11 @@ const Header = props => {
               <Link className="header-nav_item_link" to="/"> Home </Link>
             </li> <li {...aboutClassNames}>
               <Link className="header-nav_item_link" to="/about/"> About </Link>
-            </li> <li {...defaultNavClassNames}>
+            </li> <li {...howItWorksClassNames}>
               <Link className="header-nav_item_link" to="/how-it-works/"> How it works </Link>
             </li> <li {...exploreClassNames}>
               <Link className="header-nav_item_link" to="/explore/"> Explore data </Link>
-            </li> <li {...defaultNavClassNames}>
+            </li> <li {...caseStudiesClassNames}>
               <Link className="header-nav_item_link" to="/case-studies/"> Case studies </Link>
             </li>
 

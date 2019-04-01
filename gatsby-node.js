@@ -99,7 +99,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
   	createHowItWorksPages(createPage, graphql), 
   	createDownloadsPages(createPage, graphql),
   	createCaseStudiesPages(createPage, graphql),
-  	createOffshorePages(createPage, graphql),
+  	//createOffshorePages(createPage, graphql),
 	]);
 };
 
@@ -357,9 +357,9 @@ const createOffshorePages = (createPage, graphql) => {
 /* This is required for Federalist build */
 var copydir = require('copy-dir');
 exports.onPostBuild = () => {
-	//console.log("Copying static html pages to _site...");
-	//copydir.sync(__dirname+'/static/pages', __dirname+'/_site');
-	//console.log("Finished Copying istatic html pages to public.");
+	console.log("Copying static html pages to _site...");
+	copydir.sync(__dirname+'/static/pages', __dirname+'/_site');
+	console.log("Finished Copying istatic html pages to public.");
 
 	console.log("Copying Files from public to _site...");
 	copydir.sync(__dirname+'/public', './_site');

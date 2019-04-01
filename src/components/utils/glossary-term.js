@@ -1,6 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { glossaryTermSelected as glossaryTermSelectedAction } from '../../state/reducers/glossary'
+import GlossaryIcon from '-!svg-react-loader!../../img/svg/icon-question-circle.svg'
 
 const GlossaryTerm = ({ termKey, termkey, children, glossaryTermSelected, glossaryTerm }) => {
   const getTerm = () => {
@@ -20,7 +21,7 @@ const GlossaryTerm = ({ termKey, termkey, children, glossaryTermSelected, glossa
     <span className="term term-end" title="Click to define" tabIndex="0"
       onClick={() => glossaryTermSelected(getTerm())}>
       {children}
-      <icon className="icon-book"></icon>
+      <GlossaryIcon />
     </span>
   )
 }

@@ -8,6 +8,7 @@ import { AlertBanner } from '../AlertBanner'
 import { Header } from '../Header'
 import { Footer } from '../Footer'
 import Glossary from '../../utils/Glossary'
+import utils from '../../../js/utils'
 
 import '../../../styles/_main.scss'
 // import "../../../styles/print.scss";
@@ -28,6 +29,9 @@ const DefaultLayout = ({ children }) => {
 	    }
 	  }
   `)
+
+  utils.hashLinkScroll();
+
   return (
     <div>
       <Helmet

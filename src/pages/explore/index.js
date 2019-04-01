@@ -117,8 +117,6 @@ class ExplorePage extends React.Component {
         script2.async = false;
 
         document.body.appendChild(script2);
-        
-        utils.hashLinkScroll();
     }
 
     render () {

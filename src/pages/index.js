@@ -46,10 +46,6 @@ class HomePage extends React.Component {
     ])
   }
 
-  componentDidMount () {
-    utils.hashLinkScroll()
-  }
-
   render () {
     return (
       <DefaultLayout>

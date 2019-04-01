@@ -9,6 +9,7 @@
     "d3": "^5.5.0",
     "gatsby": "^2.1.38",
     "gatsby-plugin-manifest": "^2.0.5",
+    "gatsby-plugin-meta-redirect": "^1.1.1",
     "gatsby-plugin-offline": "^2.0.5",
     "gatsby-plugin-react-helmet": "^3.0.0",
     "gatsby-plugin-sass": "^2.0.11",

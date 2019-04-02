@@ -39,7 +39,7 @@ tag:
 
 <p class="downloads-download_links-intro">Download fiscal year data:
   <ul class="downloads-download_links list-unstyled">
-    <li><download-link to="/downloads/federal_production_FY2009-2018_2019-03-26.xlsx">Full dataset (xlsx, 296 KB)</download-link></li>
+    <li><download-link to="/downloads/federal_production_FY2009-2018_2019-03-26.xlsx">Full dataset (xlsx, 409 KB)</download-link></li>
   </ul>
 </p>
 

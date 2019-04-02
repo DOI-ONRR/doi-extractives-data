@@ -11,7 +11,7 @@ const GOOGLE_ANALYTICS_ID = (process.env.google_analytics) ?
 
 module.exports = {
   // Note: it must *not* have a trailing slash.
-  // This is currently the realtive path in our Jekyl deployment. This path points to our Gatsby Pages.
+  // This is currently the relative path in our Jekyll deployment. This path points to our Gatsby pages.
 
   // This prefix is prepended to load all our related images, code, and pages.
   pathPrefix: `${BASEURL}/gatsby-public`,

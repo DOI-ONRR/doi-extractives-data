@@ -76,8 +76,9 @@
 }
 
 .icon-question {
-  width: 14px;
-  height: 14px;
+  width: 16px;
+  height: 16px;
+  margin-left: .2em;
 }
 
 .glossary-click .icon-question {
@@ -85,8 +86,7 @@
   height: 30px;
 }
 
-p .icon-question {
-  width: 16px;
-  height: 16px;
-  margin-left: .2em;
+.caption-data, .chart-legend .icon-question {
+  width: 13px;
+  height: 13px;
 }

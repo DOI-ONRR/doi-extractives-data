@@ -89,7 +89,7 @@ Then, we can modify the blog post template to loop over the author(s) and includ
                       width: rhythm(2),
                       height: rhythm(2),
                     }}
-                  />
+            />
             <p
               style={{
                 marginRight: rhythm(1 / 2),

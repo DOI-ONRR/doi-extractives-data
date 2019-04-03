@@ -11,7 +11,7 @@ const GOOGLE_ANALYTICS_ID = (process.env.google_analytics) ?
 
 module.exports = {
   // Note: it must *not* have a trailing slash.
-  // This is currently the realtive path in our Jekyl deployment. This path points to our Gatsby Pages.
+  // This is currently the relative path in our Jekyll deployment. This path points to our Gatsby pages.
 
   // This prefix is prepended to load all our related images, code, and pages.
   pathPrefix: `${BASEURL}/gatsby-public`,
@@ -19,7 +19,7 @@ module.exports = {
   siteMetadata: {
     title: 'Natural Resources Revenue Data',
     description: 'This site provides open data about natural resource management on federal lands and waters in the United States, including oil, gas, coal, and other extractive industries.',
-    version: 'v4.3.8',
+    version: 'v4.3.9',
     googleAnalyticsId: GOOGLE_ANALYTICS_ID,
   },
   plugins: [

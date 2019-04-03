@@ -8,6 +8,7 @@
     "currency-formatter": "^1.5.3",
     "d3": "^5.5.0",
     "gatsby": "^2.1.38",
+    "gatsby-cli": "^2.5.4",
     "gatsby-plugin-manifest": "^2.0.5",
     "gatsby-plugin-meta-redirect": "^1.1.1",
     "gatsby-plugin-offline": "^2.0.5",

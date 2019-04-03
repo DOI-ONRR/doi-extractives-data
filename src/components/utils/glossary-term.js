@@ -20,8 +20,7 @@ const GlossaryTerm = ({ termKey, termkey, children, glossaryTermSelected, glossa
   return (
     <span className="term term-end" title="Click to define" tabIndex="0"
       onClick={() => glossaryTermSelected(getTerm())}>
-      {children}
-      <GlossaryIcon />
+      {children}<GlossaryIcon />
     </span>
   )
 }

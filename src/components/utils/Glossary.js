@@ -2,6 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import lazy from 'lazy.js'
 import { glossaryTermSelected as glossaryTermSelectedAction } from '../../state/reducers/glossary'
+import GlossaryIcon from '-!svg-react-loader!../../img/svg/icon-question-circle.svg'
 
 import utils from '../../js/utils'
 
@@ -86,7 +87,7 @@ class Glossary extends React.Component {
           </button>
         </div>
 
-        <h1 className="h2 drawer-header glossary-click"><div className="glossary-click icon-book"></div> Glossary </h1>
+        <h1 className="h2 drawer-header glossary-click"><GlossaryIcon/> Glossary </h1>
         <label htmlFor="drawer-search-bar" className="glossary-click label">Filter glossary terms</label>
         <input id="drawer-search-bar" className="glossary-click js-glossary-search drawer-search" type="search" placeholder="e.g. Fossil fuel"
           value={this.state.glossaryTerm} onChange={this.handleChange.bind(this)} />

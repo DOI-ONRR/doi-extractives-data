@@ -13,77 +13,59 @@ tag:
 <custom-link to="/downloads/" className="breadcrumb link-charlie">Downloads</custom-link> /
 # Disbursements by month
 
-> The amount of money earned from extraction of natural resources on federal lands that is disbursed to various legislated funds. We have disbursements by month
+<section class="explore-subpage container">
+    <section>
+      <div class="explore-subpage-tabs">
+        <ul>
+          <li class="explore-subpage-tab">
+            <a href="/downloads/disbursements/">Disbursements by year</a>
+          </li>
+          <li class="explore-subpage-tab active">
+            <a href="/downloads/federal-disbursements-by-month/">Disbursements by month</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+</section>
+
+> The amount of money earned from extraction of natural resources on federal lands that is disbursed to various legislated funds. We have disbursements data by month from October 2018 through the most recent month.
 
 Download fiscal year data:
 
 <ul class="downloads-download_links list-unstyled">
-  <li><download-link to="/downloads/disbursements_FY2003-2018_by_type.xlsx">Disbursements data by state, county, and type (xlsx, 64 KB)</download-link></li>
+  <li><download-link to="/downloads/monthly-disbursements_02-2019.xlsx">Disbursements data by month (xlsx, 83 KB)</download-link></li>
 </ul>
-
-The documentation that follows is for the funds overview dataset. We also have [notes on this data](https://github.com/onrr/doi-extractives-data/wiki/Data-Catalog#disbursements) from the web development team as they built the interactions on this site.
 
 ## Scope
 
-This dataset includes natural resource disbursements for U.S. federal lands, federal offshore areas, and Indian lands. It does not include privately owned lands or U.S. state lands. The dataset is tracked and managed by the Department of the Interior’s Office of Natural Resources Revenue. It contains disbursement information to funds for fiscal years 2003-2018. Disbursements of revenue from extractive activities on U.S. federal lands occur monthly; this dataset is a sum of those disbursements by fiscal year.
+This dataset includes natural resource disbursements for U.S. federal lands, federal offshore areas, and Indian lands. It does not include privately owned lands or U.S. state lands. The dataset is tracked and managed by the Department of the Interior’s Office of Natural Resources Revenue. Disbursements of revenue from extractive activities on U.S. federal lands occur monthly. The data contains disbursement payments by month to local governments, designated funds, and the U.S. Treasury from October 2018 through the most recently available month.
 
 ## Data publication
 
-The disbursement dataset is updated in November after the end of the federal government fiscal year.
+We publish the monthly file when we receive the data for the most recently available month, which is usually 1–2 months prior to the current month.
 
 ## Data dictionary
 
-Laws treat revenues from offshore natural resources and onshore natural resources differently. There are set percentages and amounts from each that go certain places every year.
+Laws treat revenues from offshore natural resources and onshore natural resources differently. There are set percentages and amounts from each that go certain funds or local governments.
 
-### Onshore
+_Month_ The month the disbursement occurred
 
-_U.S. Treasury_ Funds disbursed to the Treasury go to the General Fund, which is the federal government’s basic operating fund. The General Fund pays for roughly two-thirds of all federal expenditures, including the U.S. military, national parks, and schools.
+_Year_ The year the disbursement occurred
 
-_States_ Funds disbursed to states fall under the jurisdiction of each state, and each state determines how the funds will be used.
+_Fund Type_ The type of recipient receiving the disbursement
 
-_Reclamation_ Established by Congress in 1902 to pay for Bureau of Reclamation projects, this fund supports the establishment of critical infrastructure projects like dams and power plants.
+_Land Category_ Whether the origin of the revenue being disbursed is offshore or onshore
 
-_American Indian Tribes_ ONRR disburses 100% of revenue collected from resource extraction on American Indian lands back to the Indian tribes and individual Indian landowners.
+_Disbursement Type_ Disbursement types are guided by revenue-sharing legislation and agreements. For example, <glossary-term>GOMESA</glossary-term> and <glossary-term>8(g)</glossary-term> direct portions of offshore revenue to states, local governments, and designated funds. Disbursements from the production of geothermal energy is also shared with county governments.
 
-_Other_ Certain onshore funds are directed back to the federal agencies that administer these lands (e.g., BLM, U.S. Fish and Wildlife Service, and U.S. Forest Service) to help cover the agencies’ operational costs. The Ultra-Deepwater Research Program and the Mescal Settlement Agreement also receive $50 million each.
+_State_ The state that received the disbursement in accordance with revenue-sharing legislation
 
-### Offshore
+_County_ The county that received the disbursement in accordance with revenue-sharing legislation
 
-_U.S. Treasury_ The majority of offshore revenue is disbursed to the Treasury, which enters it into the General Fund, the federal government’s basic operating fund. The General Fund pays for roughly two-thirds of all federal expenditures, including the U.S. military, national parks, and schools.
+_Commodity_ The commodity that generated the revenue. For oil and gas, the commodity listed depends on the phase of production. Since it's unknown whether a lease will produce oil, gas, or both, the two commodities are combined in the bonus and rent phases and listed as "Oil & Gas."
 
-_Land and Water Conservation Fund_ This fund provides matching grants to states and local governments to buy and develop public outdoor recreation areas across the 50 states.
+_Category_ Includes phases of lease payments, such as bonuses, rents, and royalties. The column also includes "Other Distributions," which include revenues derived from fees and civil penalties. Finally, the column includes "Sequestration," which represents funds that would have been disbursed, but were instead [sequestered](https://www.cbo.gov/topics/budget/sequestration) in accordance with statutory spending limits.
 
-_Historic Preservation Fund_ This fund helps preserve U.S. historical and archaeological sites and cultural heritage through grants to state and tribal historic preservation offices.
-
-_States_ States receive federal Outer Continental Shelf revenue in two ways:
-
-- 27% of revenue from leases in the 8(g) Zone (the first three nautical miles of the Outer Continental Shelf) are shared with states.
-- 37.5% of revenue from certain leases in the Gulf of Mexico are shared with Alabama, Louisiana, Mississippi, and Texas.
-
-_Other_ Certain offshore funds are directed back to the federal agencies that administer these lands (e.g., BOEM and BSEE) to help cover the agencies’ operational costs.
-
-## Archive
-
-In the past, this site has offered detailed data for disbursements distributed from other funds. For example, the data below details disbursements to sub-funds of the Land and Water Conservation Fund and the Historic Preservation Fund.
-
-### Land and Water Conservation Fund
-
-<glossary-term>ONRR</glossary-term> disburses revenue to the [Land and Water Conservation Fund (LWCF)](https://www.nps.gov/subjects/lwcf/index.htm) according to federal law. However, these funds are subject to congressional appropriations. Actual annual appropriations to the fund have met the authorized threshold only twice (1998, 2001), while appropriations have been limited to between $255 million and $450 million since 2008.
-
-To see how much was disbursed to states, sub-funds, and other projects each year, see the following datasets.
-
-* [American Battlefield Protection Program, 2011-2015 data](/data/disbursements/lwcf/abpp.tsv) (TSV): Details about the location, acreage, and grant amounts of each battlefield funded through the [American Battlefield Protection Program](https://www.nps.gov/abpp/index.htm), a National Parks Service program that preserves the land where historic American battles were fought.
-
-* [Cooperative Endangered Species Conservation Fund, 2011-2015 data](/data/disbursements/lwcf/cescf.tsv) (TSV): List of individual projects and locations funded through the [Cooperative Endangered Species Conservation Fund](https://www.fws.gov/endangered/grants/), a [Fish and Wildlife Service](https://www.fws.gov/) program for conservation planning and acquisition of vital habitat for threatened and endangered species.
-
-* [State and local grants, 2011-2016 data](/data/disbursements/lwcf/grants.tsv) (TSV): Details about the location, amount, and purpose of all Land and Water Conservation Fund grants to state and local governments.
-
-* [Land acquisitions, 2011-2016 data](/data/disbursements/lwcf/land-acquisition.tsv) (TSV): Details about the location, budget, acreage, and purpose of each federal land acquisition funded by the Land and Water Conservation Fund.
-
-### Historic Preservation Fund
-
-Like the LWCF, money in the Historic Preservation Fund is subject to congressional appropriations. Some of it is spent on historic preservation projects, but some of it ultimately goes to other expenditures. The fund is authorized to receive and disburse $150 million each year, but annual appropriations have declined from $94 million to less than $60 million since 2001.
-
-To see how much was disbursed to each state for preservation projects, see [Historic Preservation grants, 2011-2016](/data/disbursements/historic-preservation.tsv) (TSV).
+_Disbursement_ The amount disbursed
 
 ## Contact us

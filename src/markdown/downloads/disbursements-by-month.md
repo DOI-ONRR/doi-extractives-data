@@ -38,7 +38,7 @@ Download fiscal year data:
 
 ## Scope
 
-This dataset includes natural resource disbursements for U.S. federal lands, federal offshore areas, and Indian lands. It does not include privately owned lands or U.S. state lands. The dataset is tracked and managed by the Department of the Interior’s Office of Natural Resources Revenue. Disbursements of revenue from extractive activities on U.S. federal lands occur monthly. The data contains disbursement payments by month to local governments, designated funds, and the U.S. Treasury from October 2018 through the most recently available month.
+This dataset includes natural resource disbursements for U.S. federal lands, federal offshore areas, and Indian lands. It does not include privately owned lands or U.S. state lands. The dataset is tracked and managed by the Department of the Interior’s Office of Natural Resources Revenue. Disbursements of revenue from extractive activities on U.S. federal lands occur monthly. The data contains disbursement payments by month to state and local governments, designated funds, and the U.S. Treasury from October 2018 through the most recently available month.
 
 ## Data publication
 

@@ -144,6 +144,8 @@ class HomePage extends React.Component {
             </Tab>
           </Tabordion>
 
+          <KeyStatsSection/>
+
           <section className={styles.mapSection}>
             <div className={styles.mapSectionContainer + ' container-page-wrapper'}>
               <div className={styles.mapSectionLeft}>
@@ -171,8 +173,6 @@ class HomePage extends React.Component {
               </div>
             </div>
           </section>
-
-          <KeyStatsSection/>
 
           <WhatsNew />
         </main>

@@ -25,7 +25,7 @@ import PRODUCTION_UNITS from '../../../static/data/production_units.yml'
 // @todo: pass in years from data
 const years = [2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010, 2009, 2008]
 const year = '2017'
-const YEAR_RANGE = '[2008, 2017]'
+const YEAR_RANGE = '[2008, 2017]
 
 const NationalFederalProduction = props => {
   let withHeldProducts = []
@@ -76,14 +76,14 @@ const NationalFederalProduction = props => {
     <section id="federal-production" is="year-switcher-section" className="federal production">
 
       <section className="county-map-table" is="year-switcher-section">
-        <StickyHeader headerText='Federal lands and waters'>
+        <StickyHeader headerText='Federal production trends by resources'>
           <YearSelector years={years} classNames="flex-row-icon" />
         </StickyHeader>
 
         <div className="chart-selector-wrapper">
           <div className="chart-description">
             <p>
-                            The Office of Natural Resources Revenue collects detailed data about natural resource <GlossaryTerm>production</GlossaryTerm> on federal lands and waters.
+              The Office of Natural Resources Revenue collects detailed data about natural resource <GlossaryTerm>production</GlossaryTerm> on federal lands and waters.
             </p>
             <p>
               <Link to="/downloads/federal-production" >

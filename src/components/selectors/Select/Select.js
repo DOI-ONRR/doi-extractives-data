@@ -26,7 +26,7 @@ const MenuProps = {
 class Select extends React.Component {
 
   state = {
-    name: [],
+    selectedOption: [],
   };
 
 	componentWillReceiveProps (nextProps) {
@@ -34,13 +34,22 @@ class Select extends React.Component {
 	}
 
   handleChange = event => {
-    this.setState({ name: event.target.value });
+  	let value = event.target.value;
+	  if (typeof value === 'object' && this.props.sortType !== 'none') {
+	    value.sort()
+	    if (this.props.sortType === 'descending') {
+	      value.reverse()
+	    }
+	  }
+  	if(this.props.onChangeHandler){
+  		this.props.onChangeHandler(value)
+  	}
+    this.setState({ selectedOption: value });
   };
 
 	render () {
   	let { options, selectedKey, multiple, sortType } = this.props
 	  if (sortType !== 'none' && options) {
-	  	console.log(options);
 	    options.sort()
 	    if (sortType === 'descending') {
 	      options.reverse()
@@ -54,7 +63,7 @@ class Select extends React.Component {
 		      <FormControl_MU>
 		     		<Select_MU
 		     			multiple={multiple}
-		     			value={this.state.name}
+		     			value={this.state.selectedOption}
 		     			onChange={this.handleChange}
             	renderValue={selected => selected.join(', ')}
 		     			MenuProps={MenuProps}
@@ -73,7 +82,7 @@ class Select extends React.Component {
 
 								  return (
 								    <MenuItem_MU key={index} value={name}>
-								    	<Checkbox_MU checked={this.state.name.indexOf(name) > -1} />
+								    	<Checkbox_MU checked={this.state.selectedOption.indexOf(name) > -1} />
 								    	<ListItemText_MU primary={name} />
 								    </MenuItem_MU>
 								  )
@@ -88,8 +97,4 @@ class Select extends React.Component {
 
 }
 
-export default connect(
-  (state, ownProps) => ({}),
-  dispatch => ({
-  	setSelectedOption: payload => dispatch(setDataSelectedByIdAction(payload)),
-  }))(Select)
+export default Select

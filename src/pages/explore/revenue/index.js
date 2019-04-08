@@ -35,7 +35,7 @@ const TOGGLE_VALUES = {
   Year: 'year',
   Month: 'month'
 }
-const YEARS_OPTIONS = ['2017', '2016', '2015', '2014', '2013'];
+
 const ORGANIZE_BY_OPTIONS = ['Commodity', 'State', 'Source', 'Land owner', 'Revenue type'];
 const ADDITIONAL_COLUMN_OPTIONS = ['State/offshore region', 'Source', 'Land owner', 'Revenue type'];
 const DEFAULT_TABLE_COLUMNS = [
@@ -53,17 +53,31 @@ class FederalRevenue extends React.Component {
 
 	state = {
 		timeframe: TOGGLE_VALUES.Year,
-		years: [2017, 2016],
 		yearOptions: [],
 		filter: {
+			groupBy: ORGANIZE_BY_OPTIONS[0],
 			years: []
 		},
 		tableColumns: DEFAULT_TABLE_COLUMNS
 	}
 
 	componentWillReceiveProps (nextProps) {
-		//console.log(nextProps[REVENUES_FISCAL_YEAR][BY_FISCAL_YEAR])
-	  this.setState({ ...nextProps, yearOptions: Object.keys(nextProps[REVENUES_FISCAL_YEAR][BY_FISCAL_YEAR]).map(year => parseInt(year)) })
+		let yearOptions = Object.keys(nextProps[REVENUES_FISCAL_YEAR][BY_FISCAL_YEAR]);
+
+	  this.setState({ ...nextProps, 
+	  	filter:{...this.state.filter, years:(nextProps.selectedYears || yearOptions.slice(Math.max(yearOptions.length - 3, 1))) }, 
+	  	yearOptions: yearOptions })
+	}
+
+	getTableColumns = () => {
+		let columns = [];
+		let {filter} = this.state;
+
+		columns.push({ id: filter.groupBy, numeric: false, label: filter.groupBy, cellRender: commodityCellRender});
+
+		filter.years.sort().forEach(year => columns.push({ id: 'fy-'+year, numeric: false, label: year }))
+
+		return columns;
 	}
 
 	getTableData = () => {
@@ -79,13 +93,13 @@ class FederalRevenue extends React.Component {
 			dataSet[BY_COMMODITY][name].map((dataId) => {
 				let data = dataSet[BY_ID][dataId];
 				// filter by selected years
-				if( this.state.years.includes(parseInt(data.FiscalYear)) ) {
+				if( this.state.filter.years.includes(data.FiscalYear) ) {
 					sums[data.FiscalYear] = (sums[data.FiscalYear])? sums[data.FiscalYear]+data.Revenue : data.Revenue;
 				}
 				
 			})
 
-			let sumsOrderedByYear = this.state.years.map(year => utils.formatToDollarInt(sums[year]) )
+			let sumsOrderedByYear = this.state.filter.years.map(year => utils.formatToDollarInt(sums[year]) )
 
 			return tableRow.concat(sumsOrderedByYear);
 		});
@@ -95,6 +109,10 @@ class FederalRevenue extends React.Component {
 
 	setTimeframe = () => {
 
+	}
+
+	setYearsFilter(values) {
+ 		this.setState({filter:{...this.state.filter, years:values.sort()} })
 	}
 
   /**
@@ -142,10 +160,8 @@ class FederalRevenue extends React.Component {
   }
 
 	render() {
-		let {timeframe, tableColumns, yearOptions} = this.state;
-		
-		yearOptions.sort()
-		console.log(yearOptions)
+		let {timeframe, yearOptions} = this.state;
+		//console.log(this.state)
 		return (
 			<DefaultLayout>
 	      <Helmet
@@ -195,7 +211,11 @@ class FederalRevenue extends React.Component {
 								<Select
 									multiple
 									dataSetId={REVENUES_FISCAL_YEAR}
-							    options={yearOptions}>
+							    options={yearOptions}
+							    sortType={'descending'}
+							    selectedOption={this.state.filter.years}
+							    onChangeHandler={this.setYearsFilter.bind(this)}
+							  >
 							  </Select>
 							</div>
 						}
@@ -217,7 +237,7 @@ class FederalRevenue extends React.Component {
 					</div>
 					{this.state[REVENUES_FISCAL_YEAR] &&
 						<div>
-							<FilterTable data={this.getTableData()} columns={tableColumns}/>
+							<FilterTable data={this.getTableData()} columns={this.getTableColumns()}/>
 						</div>
 					}
 

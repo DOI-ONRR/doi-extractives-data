@@ -19,7 +19,7 @@ tag:
 
 <ul class="list-sections list-unstyled">
   <li class="downloads-download_links">
-    <h3 id="federal-lands-and-waters">Federal lands and waters</h3>
+    <h3 id="federal-lands-and-waters">Production</h3>
     <p>Commodity volumes of natural resources extracted from federal land and waters. We offer production data by calendar year, fiscal year, and month. These datasets are from the <a href="http://www.onrr.gov/">Office of Natural Resources Revenue</a> (ONRR), which is part of the Department of the Interior.</p>
     <download-data-link to="/downloads/federal-production/">Downloads and documentation</download-data-link>
   </li>
@@ -38,7 +38,7 @@ tag:
 <!-- USEITI archive -->
   <li class="downloads-download_links">
     <h3 id="reconciliation">Reconciliation</h3>
-    <p class="para-sm">This content was created to support <glossary-term term.key="EITI Standard">USEITI</glossary-term> and is no longer being updated.</p>
+    <p class="para-sm">This content was created to support <glossary-term termKey="EITI Standard">USEITI</glossary-term> and is no longer being updated.</p>
     <p>In the reconciliation process, companies report payments to the government (e.g., rents, taxes, royalties) and the government reports what it received. These figures are compiled and reconciled. The 2015 reconciliation data is at the link below.</p>
     <data-archive-link to="/downloads/reconciliation/"></data-archive-link>
   </li>

@@ -26,7 +26,7 @@ Download calendar year data:
 
 ## Background
 
-To implement the <glossary-term>EITI Standard</glossary-term>, government, industry, and civil society collaborate in a disclosure process called reconciliation. The three sectors in a participating country develop a framework for reconciliation. Government and industry share the total amount of revenue the government received and industry paid in the year under review with the <glossary-term term.key="independent administrator (IA)">IA</glossary-term>. The IA reconciles reported revenue and investigates any discrepancies. The public can see the results for their country in an annual EITI report.
+To implement the <glossary-term>EITI Standard</glossary-term>, government, industry, and civil society collaborate in a disclosure process called reconciliation. The three sectors in a participating country develop a framework for reconciliation. Government and industry share the total amount of revenue the government received and industry paid in the year under review with the <glossary-term termKey="independent administrator (IA)">IA</glossary-term>. The IA reconciles reported revenue and investigates any discrepancies. The public can see the results for their country in an annual EITI report.
 
 Through a unilateral disclosure, the Department of the Interior (DOI) has published online all in-scope revenue from extraction on federal lands by revenue stream and company for CY 2013 and CY 2015:
 

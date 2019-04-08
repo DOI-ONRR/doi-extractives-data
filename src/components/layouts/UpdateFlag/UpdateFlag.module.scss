@@ -1,0 +1,13 @@
+@value colors: "../../../css-global/colors.scss";
+@value grayDark as _grayDark, white as _white from colors;
+
+.root {
+	background-color: _grayDark;
+	color: _white;
+	margin: 0 0 1rem 0;
+	font-size: 0.8125rem;
+	font-weight: 600;
+	line-height: 1.1875rem;
+	margin-bottom: 0.625rem;
+	padding: 5px;
+}

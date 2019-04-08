@@ -1,0 +1,148 @@
+@value colors: "../../../css-global/colors.scss";
+@value grayLight as _grayLight, grayLighter as _grayLighter from colors;
+@value blackLight as _blackLight, greenLight as _greenLight, white as _white from colors;
+
+@value variables: "../../../css-global/variables.scss";
+@value basePaddingLite as _basePaddingLite from variables;
+@value portraitTabletBreakpointDown as _portraitTabletBreakpointDown from variables;
+@value portraitTabletBreakpointUp as _portraitTabletBreakpointUp from variables;
+
+.root {
+	background-color: _white;
+	width: 100%;
+}
+
+.tocContainer {
+	padding: 40px 0px 20px 0px;
+	width: 100%;
+}
+
+.displayTitle {
+	border-bottom: 1px solid _grayLight;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 16px;
+	padding-bottom: _basePaddingLite;
+	text-transform: uppercase;
+}
+
+.toc {
+	list-style-type: none;
+	padding: 0px;
+}
+
+.toc a {
+	color: _blackLight;
+	display: block;
+	font-size: 16px;
+	line-height: 19.2px;
+	padding: 8px 8px 8px 0px;
+	text-decoration: none;
+}
+
+
+.toc a:hover {
+	text-decoration: underline;
+}
+
+.tocSub {
+	list-style-type: none;
+	margin-top: _basePaddingLite;
+	padding-left: 14px;
+}
+
+.tocSub a{
+	color: _blackLight;
+	font-size: 0.8125rem;
+	line-height: 1.2;
+	padding: 6.5px;
+	text-decoration: none;
+}
+
+.tocItem {
+	padding: 0px;
+}
+
+.tocItem ul {
+	display: none;
+}
+
+.tocItemActive {
+	font-weight: bold;
+}
+
+.tocItemActive ul {
+	display: block;
+}
+
+.tocSubItemActive {
+	font-weight: bold;
+}
+
+.tocSubItem {
+	border-left: 3px solid _grayLight;
+  padding: 0 0.5em 0.5em 0.5em;
+
+  &:first-of-type {
+    margin-top: _basePaddingLite;
+    padding-top: 0;
+  }
+
+  &:last-of-type {
+    padding-bottom: 0;
+  }
+}
+
+.tocSubItem a{
+  font-size: 0.8125rem;
+  padding: 0px;
+}
+
+.tocButton {
+	background-color: white;
+	border-bottom: 3px solid _greenLight;
+	font-size: 1.125rem;
+	line-height: 1.625rem;
+	margin: 0px;
+	padding: 0.416678rem 0;
+	text-align: left;
+	width: 100%;
+}
+
+.tocButtonIcon {
+	float: right;
+}
+
+.tocButtonIconDown{
+
+}
+.tocButtonIconUp {
+	display: none;
+}
+
+@media screen and (max-width: _portraitTabletBreakpointDown) {
+	.tocContainer {
+		background-color: _white;
+		padding: 0px;
+	}	
+	.toc a {
+		font-weight: 600;
+		font-size: 1.125rem;
+		line-height: 1.625rem;
+		padding: 0.8333em 0.8333em 0.8333em 1.25em;
+	}
+	.tocItem ul {
+		display: block;
+	}
+	.tocItem a {
+		border-bottom: 1px solid _grayLighter;
+	}
+	.tocSubItem a{
+	  font-size: 1rem;
+	  font-weight: 400;
+	}
+	.tocSubItem {
+		border-left: none;
+	}
+
+}

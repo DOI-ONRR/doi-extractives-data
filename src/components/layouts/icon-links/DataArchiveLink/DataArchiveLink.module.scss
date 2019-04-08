@@ -1,0 +1,12 @@
+@value colors: "../../../../css-global/colors.scss";
+@value blue as --blue from colors;
+
+.root svg{
+	fill: --blue;
+	vertical-align: middle;
+	margin-right: 8px;
+}
+
+.root span{
+	vertical-align: baseline;
+}

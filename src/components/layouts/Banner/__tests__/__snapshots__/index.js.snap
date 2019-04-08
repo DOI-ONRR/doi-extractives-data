@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Banner renders correctly 1`] = `
+<section
+  className="root"
+>
+  <span>
+    <img
+      alt="U.S. flag signifying that this is a United States Federal Government website"
+      className="bannerImage"
+      src="test-file-stub"
+    />
+     An official website of the U.S. government
+  </span>
+</section>
+`

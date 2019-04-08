@@ -1,0 +1,72 @@
+@value colors: "../../../css-global/colors.scss";
+@value blue as --blue, white as --white from colors;
+
+@value variables: '../../../css-global/variables.scss';
+@value baseFontFamily as --baseFontFamily from variables;
+
+.root {
+	margin-top: basePadding;
+}
+
+.mobileNav{
+}
+
+.mobileNavMenuIcon {
+	float: right;
+}
+
+.mobileNavDrawer {
+	background-color: --blue;
+	box-sizing: border-box;
+	color: white;
+	padding: 32px;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+	position: absolute;
+	width: 300px;
+	z-index: 5000;
+}
+
+.mobileNavDrawerClose{
+	text-align: right;
+}
+
+
+.mobileNavDrawerLinks {
+	list-style-type: none;
+  margin-bottom: 0;
+  padding: 1.25em;
+  padding-bottom: 0;
+}
+
+.mobileNavDrawerLinkItem {
+  margin: 0 0 1rem 0;
+	color: --white;
+  text-decoration: none;
+  font-family: --baseFontFamily;
+  font-size: 1rem;
+  line-height: 1.375rem;
+  margin-bottom: 0.625rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding-bottom: 1.6em;
+  text-transform: uppercase;
+}
+
+.mobileNavDrawerLinkItemBreak {
+	border-bottom: 1px solid --white;
+  margin-bottom: 2.5em;
+  padding-bottom: 2.5em;
+}
+
+.mobileNavDrawerLinkItem2{
+  margin: 0 0 1rem 0;
+	color: #ffffff;
+  text-decoration: none;
+  font-family: --baseFontFamily;
+  font-size: 1rem;
+  line-height: 1.375rem;
+  margin-bottom: 0.625rem;
+  padding-bottom: 1.6em;
+}

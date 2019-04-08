@@ -1,0 +1,38 @@
+@value colors: "../../../css-global/colors.scss";
+@value grayLight as _grayLight, blackLight as _blackLight from colors;
+
+@value _radius: 8px;
+
+.toggle div{
+	border-color: _grayLight;
+	border-width: 1px;
+	border-left-width: 0px;
+	border-style: solid;
+	color: _blackLight;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 700;
+	padding: 10px;
+	text-align: center;
+	white-space: nowrap;
+}
+
+.toggle div:first-child{
+	border-left-width: 1px;
+	border-top-left-radius: _radius;
+	border-bottom-left-radius: _radius;
+}
+
+.toggle div:last-child{
+	border-top-right-radius: _radius;
+	border-bottom-right-radius: _radius;
+}
+
+.toggle div:active {
+	background-color: _grayLight;
+}
+
+.toggle .selected {
+	background-color: _grayLight;
+}

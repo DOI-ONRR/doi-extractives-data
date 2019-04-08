@@ -1,9 +1,0 @@
-'{state}':
-  products:
-    '{product}':
-      units: '{units}'
-      volume:
-        '{year}':
-          volume: '{volume}'
-          percent: '{percent}'
-          rank: '{rank}'

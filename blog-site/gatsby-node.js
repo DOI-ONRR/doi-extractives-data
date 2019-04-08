@@ -71,8 +71,8 @@ var copydir = require('copy-dir');
 
 exports.onPostBuild = () => {
 
-  console.log("Copying Files from public to blog...");
-  copydir.sync(__dirname+'/public', '../blog');
-  console.log("Finished Copying Files to blog.");
+  console.log("Copying Files from public to _site/blog...");
+  copydir.sync(__dirname+'/public', '../_site/blog');
+  console.log("Finished Copying Files to _site/blog.");
 
 }

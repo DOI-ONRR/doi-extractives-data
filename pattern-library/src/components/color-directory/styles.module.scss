@@ -1,8 +1,0 @@
-.colorDirectory {
-  background-color: #eee;
-  &::after {
-    clear: both;
-    content: '';
-    display: table;
-  }
-}

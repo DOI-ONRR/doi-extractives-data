@@ -1,7 +1,0 @@
-@value colors: "../../../css-global/colors.css";
-@value gray-dark, black-light from colors;
-
-.root {
-	padding-top: 1.25rem;
-	padding-bottom: 2.25rem;
-}

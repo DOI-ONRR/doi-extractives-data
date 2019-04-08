@@ -1,23 +1,10 @@
-
-gatsby-public*.css.map
-*.db
-*.db-journal
-*.log
-.*.sw?
-.DS_Store
-.env
-.jekyll-metadata
-.sass-cache
-patterns
-/public/
-_site
+# Project dependencies
+.cache
 node_modules
-tmp
-yarn*
-styleguide
-.brackets.json
-.clasp.json
-.npmrc
-/.project
-gatsby-public
-blog
+yarn-error.log
+yarn.lock
+
+# Build directory
+/public
+.DS_Store
+_site

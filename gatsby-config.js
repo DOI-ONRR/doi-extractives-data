@@ -14,7 +14,7 @@ let config = {
   siteMetadata: {
     title: 'Natural Resources Revenue Data',
     description: 'This site provides open data about natural resource management on federal lands and waters in the United States, including oil, gas, coal, and other extractive industries.',
-    version: 'v4.3.7',
+    version: 'v4.3.9',
     googleAnalyticsId: GOOGLE_ANALYTICS_ID,
   },
   plugins: [

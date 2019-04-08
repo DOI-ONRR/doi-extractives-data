@@ -36,7 +36,13 @@ const TOGGLE_VALUES = {
   Month: 'month'
 }
 
-const ORGANIZE_BY_OPTIONS = ['Commodity', 'State', 'Source', 'Land owner', 'Revenue type'];
+const GROUP_BY_OPTIONS = {
+	'Commodity': BY_COMMODITY, 
+	'Location': BY_STATE, 
+	'Source': BY_LAND_CATEGORY, 
+	'Land owner': BY_LAND_CLASS, 
+	'Revenue type': BY_REVENUE_TYPE
+};
 const ADDITIONAL_COLUMN_OPTIONS = ['State/offshore region', 'Source', 'Land owner', 'Revenue type'];
 const DEFAULT_TABLE_COLUMNS = [
   { id: 'commodity', numeric: false, label: 'Commodity', cellRender: commodityCellRender},
@@ -55,7 +61,7 @@ class FederalRevenue extends React.Component {
 		timeframe: TOGGLE_VALUES.Year,
 		yearOptions: [],
 		filter: {
-			groupBy: ORGANIZE_BY_OPTIONS[0],
+			groupBy: Object.keys(GROUP_BY_OPTIONS)[0],
 			years: []
 		},
 		tableColumns: DEFAULT_TABLE_COLUMNS
@@ -82,15 +88,16 @@ class FederalRevenue extends React.Component {
 
 	getTableData = () => {
 		let dataSet = this.state[REVENUES_FISCAL_YEAR];
+		let dataSetGroupBy = this.state[REVENUES_FISCAL_YEAR][GROUP_BY_OPTIONS[this.state.filter.groupBy]];
 
-		let byCommodity = Object.keys(dataSet[BY_COMMODITY]).map((name) => {
+		let tableData = Object.keys(dataSetGroupBy).map((name) => {
 
 			let tableRow = [name]
 
 			let sums = {}
 
-			// sum all revenues by commodity
-			dataSet[BY_COMMODITY][name].map((dataId) => {
+			// sum all revenues
+			dataSetGroupBy[name].map((dataId) => {
 				let data = dataSet[BY_ID][dataId];
 				// filter by selected years
 				if( this.state.filter.years.includes(data.FiscalYear) ) {
@@ -104,7 +111,7 @@ class FederalRevenue extends React.Component {
 			return tableRow.concat(sumsOrderedByYear);
 		});
 
-		return byCommodity;
+		return tableData;
 	}
 
 	setTimeframe = () => {
@@ -113,6 +120,10 @@ class FederalRevenue extends React.Component {
 
 	setYearsFilter(values) {
  		this.setState({filter:{...this.state.filter, years:values.sort()} })
+	}
+
+	setGroupByFilter(value) {
+		this.setState({filter:{...this.state.filter, groupBy:value} })
 	}
 
   /**
@@ -224,9 +235,12 @@ class FederalRevenue extends React.Component {
 							<div className={styles.filterLabel}>Organize By:</div>
 							<DropDown
 								sortType={'none'}
-						    options={ORGANIZE_BY_OPTIONS}>
+						    options={Object.keys(GROUP_BY_OPTIONS)}
+						    callback={this.setGroupByFilter.bind(this)}
+						  >
 						  </DropDown>
 						</div>
+
 						<div>
 							<div className={styles.filterLabel}>Additional Column:</div>
 							<Select

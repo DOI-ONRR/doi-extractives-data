@@ -7,22 +7,22 @@ tags:
 - content design
 - content strategy
 - gatsbyjs
-date: "2019-03-28"
+date: "2019-03-27"
 ---
 
-I've been thinking about how our options as content designers can be expanded or limited based on our site architecture (and our understanding of it). And while content strategists often depend on other team members (developers) to scope the desired features and build the supporting architecture, understanding how your architecture is built (or can be built) can spark your content design process. 
+I've been thinking about how our options as content designers can be expanded or limited based on our site architecture (and our understanding of it). And while content strategists often depend on other team members (developers) to scope the desired features and build the supporting architecture, understanding how your architecture is built (or can be built) can spark your content design process.
 
 Your understanding of the architecture is the foundation for thinking creatively about how your content can be arranged, rearranged, combined, or supplemented to support your content strategy. In other words, it informs how your content can be designed.
 
 Although they’re often regarded as separate disciplines, information architecture and content design are inseparably linked. Most content strategists understand how information architecture can expand or limit options for designing and delivering relevant, structured content to users. And while many content strategists think of information architecture in terms of metadata and taxonomy, this post examines the architecture of the content itself (along with its metadata). We might think of this as _content architecture_.
 
-So what do we mean when we talk about content architecture? What variables impact our options for how content is designed and published? 
+So what do we mean when we talk about content architecture? What variables impact our options for how content is designed and published?
 
 In this post, we’ll look at an example of content architecture and how it limits or expands our options as content designers. Doing so will require examining the underlying technology of the site, with the understanding that content designers and content strategists should be involved in scoping technology frameworks and software products. Because software tools impact our content design options, evaluating those tools is unavoidable in any discussion of the intersection of content and architecture.
 
 ## GatsbyJS data mapping
 
-We built this blog with [GatsbyJS](https://www.gatsbyjs.org/). As we transition our [open data site](https://revenuedata.doi.gov/) to Gatsby, I wanted to introduce myself to both Gatsby and [React](https://reactjs.org/) by building a blog. 
+We built this blog with [GatsbyJS](https://www.gatsbyjs.org/). As we transition our [open data site](https://revenuedata.doi.gov/) to Gatsby, I wanted to introduce myself to both Gatsby and [React](https://reactjs.org/) by building a blog.
 
 While building the blog, I noticed [the starter](https://www.gatsbyjs.org/starters/gatsbyjs/gatsby-starter-blog/) only supported one author for each post. I knew we'd have multiple authors for some posts, so I tracked down a configuration feature (mapping) to structure our content to promote flexibility and decrease repetition.
 
@@ -55,7 +55,7 @@ Here’s an example:
 
 ```yaml
 title: Why we're moving to GatsbyJS
-authors: 
+authors:
 - Ryan Johnson
 - Jeff Keene
 excerpt: We're moving from Jekyll to GatsbyJS as the static-site generator for our open-data site. Here's why.
@@ -89,7 +89,7 @@ Then, we can modify the blog post template to loop over the author(s) and includ
                       width: rhythm(2),
                       height: rhythm(2),
                     }}
-                  />
+            />
             <p
               style={{
                 marginRight: rhythm(1 / 2),
@@ -147,7 +147,7 @@ So to do this, we need a data file (in this case, `authors.yml`) with all possib
 pic: /img/jeff-pic.jpg
 ```
 
-Nice! 😎 
+Nice! 😎
 
 Now we need to create the link. Presumably because these fields are mapped from different files across the codebase, the centrality of the `gatsby-config.js` file lends itself to creating the linkage. So we add the following to the config file:
 

@@ -139,7 +139,7 @@
 }
 
 .ribbon {
-  svg {
+  svg:not(.icon) {
     width: 100%;
 
     @include respond-to(large-up) {

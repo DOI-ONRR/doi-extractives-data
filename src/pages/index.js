@@ -63,7 +63,7 @@ class HomePage extends React.Component {
             <Tab id="tab-overview" name="Overview">
               <div className={styles.tabContentContainer} >
                 <div className={styles.tabContent}>
-                  <p>When companies extract natural resources on federal lands and offshore areas, they pay bonuses, rent, and royalties to the federal government. The government distributes these funds for public use in a variety of ways.</p>
+                  <p>When companies extract natural resources on federal lands and offshore areas, they pay bonuses, rent, and royalties to the federal government. The Office of Natural Resources Revenue (ONRR) distributes these funds for public use in a variety of ways.</p>
                   <div className={styles.tabContentBottomContainer}>
                     <div>
                       <ExploreDataButton />
@@ -93,7 +93,6 @@ class HomePage extends React.Component {
                 <div className={styles.tabContentAside}>
                   <h5>Explore production data</h5>
                   <div className={styles.linkContainer}>
-                    <ExploreDataLink to="/explore/#all-production">All lands and waters</ExploreDataLink>
                     <ExploreDataLink to="/explore/#federal-production">Federal lands and waters</ExploreDataLink>
                     <ExploreDataLink to="/how-it-works/native-american-production/#production-on-native-american-land">Native American lands</ExploreDataLink>
                     <DownloadDataLink to="/downloads/#production">Downloads and documentation</DownloadDataLink>
@@ -144,6 +143,8 @@ class HomePage extends React.Component {
             </Tab>
           </Tabordion>
 
+          <KeyStatsSection/>
+
           <section className={styles.mapSection}>
             <div className={styles.mapSectionContainer + ' container-page-wrapper'}>
               <div className={styles.mapSectionLeft}>
@@ -171,8 +172,6 @@ class HomePage extends React.Component {
               </div>
             </div>
           </section>
-
-          <KeyStatsSection/>
 
           <WhatsNew />
         </main>

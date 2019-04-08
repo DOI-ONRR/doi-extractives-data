@@ -74,3 +74,19 @@
 .icons-stack-2x {
   font-size: 2em;
 }
+
+.icon-question {
+  width: 16px;
+  height: 16px;
+  margin-left: .2em;
+}
+
+.glossary-click .icon-question {
+  width: 30px;
+  height: 30px;
+}
+
+.caption-data, .chart-legend .icon-question {
+  width: 13px;
+  height: 13px;
+}

@@ -63,7 +63,7 @@ class HomePage extends React.Component {
             <Tab id="tab-overview" name="Overview">
               <div className={styles.tabContentContainer} >
                 <div className={styles.tabContent}>
-                  <p>When companies extract natural resources on federal lands and offshore areas, they pay bonuses, rent, and royalties to the federal government. The government distributes these funds for public use in a variety of ways.</p>
+                  <p>When companies extract natural resources on federal lands and offshore areas, they pay bonuses, rent, and royalties to the federal government. The Office of Natural Resources Revenue (ONRR) distributes these funds for public use in a variety of ways.</p>
                   <div className={styles.tabContentBottomContainer}>
                     <div>
                       <ExploreDataButton />

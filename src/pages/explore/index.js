@@ -153,6 +153,7 @@ class ExplorePage extends React.Component {
 
                         <section id="production">
                             <h2 className="state-page-overview">Production</h2>
+
                             <NationalFederalProduction allProducts={this.props.data.Federal_Production.byProduct} />
 
                         </section>

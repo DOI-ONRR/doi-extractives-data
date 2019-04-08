@@ -4,7 +4,15 @@ import { connect } from 'react-redux'
 import { graphql } from 'gatsby'
 
 import { normalize as normalizeDataSetAction} from '../../../state/reducers/data-sets'
-import {REVENUES_FISCAL_YEAR, BY_ID, BY_COMMODITY, BY_STATE, BY_COUNTY, BY_LAND_CATEGORY, BY_LAND_CLASS, BY_REVENUE_TYPE} from '../../../state/reducers/data-sets'
+import {
+	REVENUES_FISCAL_YEAR,
+	BY_ID, BY_COMMODITY,
+	BY_STATE, BY_COUNTY,
+	BY_LAND_CATEGORY,
+	BY_LAND_CLASS,
+	BY_REVENUE_TYPE,
+	BY_FISCAL_YEAR
+} from '../../../state/reducers/data-sets'
 
 import * as CONSTANTS from '../../../js/constants'
 
@@ -46,11 +54,16 @@ class FederalRevenue extends React.Component {
 	state = {
 		timeframe: TOGGLE_VALUES.Year,
 		years: [2017, 2016],
+		yearOptions: [],
+		filter: {
+			years: []
+		},
 		tableColumns: DEFAULT_TABLE_COLUMNS
 	}
 
 	componentWillReceiveProps (nextProps) {
-	  this.setState({ ...nextProps })
+		//console.log(nextProps[REVENUES_FISCAL_YEAR][BY_FISCAL_YEAR])
+	  this.setState({ ...nextProps, yearOptions: Object.keys(nextProps[REVENUES_FISCAL_YEAR][BY_FISCAL_YEAR]).map(year => parseInt(year)) })
 	}
 
 	getTableData = () => {
@@ -62,8 +75,10 @@ class FederalRevenue extends React.Component {
 
 			let sums = {}
 
+			// sum all revenues by commodity
 			dataSet[BY_COMMODITY][name].map((dataId) => {
 				let data = dataSet[BY_ID][dataId];
+				// filter by selected years
 				if( this.state.years.includes(parseInt(data.FiscalYear)) ) {
 					sums[data.FiscalYear] = (sums[data.FiscalYear])? sums[data.FiscalYear]+data.Revenue : data.Revenue;
 				}
@@ -116,6 +131,10 @@ class FederalRevenue extends React.Component {
       		{
       			key: BY_REVENUE_TYPE,
       			groups: data.allRevenuesGroupByRevenueType.group,
+      		},
+      		{
+      			key: BY_FISCAL_YEAR,
+      			groups: data.allRevenuesGroupByFiscalYear.group
       		}
       	]
       },
@@ -123,7 +142,10 @@ class FederalRevenue extends React.Component {
   }
 
 	render() {
-		let {timeframe, tableColumns} = this.state;
+		let {timeframe, tableColumns, yearOptions} = this.state;
+		
+		yearOptions.sort()
+		console.log(yearOptions)
 		return (
 			<DefaultLayout>
 	      <Helmet
@@ -167,13 +189,17 @@ class FederalRevenue extends React.Component {
 											  { key: TOGGLE_VALUES.Month, name: 'Monthly', default: (timeframe === TOGGLE_VALUES.Month) }]}>
 							</Toggle>
 						</div>
-						<div>
-							<div className={styles.filterLabel}>Year(s):</div>
-							<Select
-								multiple
-						    options={YEARS_OPTIONS}>
-						  </Select>
-						</div>
+						{yearOptions &&
+							<div>
+								<div className={styles.filterLabel}>Year(s):</div>
+								<Select
+									multiple
+									dataSetId={REVENUES_FISCAL_YEAR}
+							    options={yearOptions}>
+							  </Select>
+							</div>
+						}
+
 						<div>
 							<div className={styles.filterLabel}>Organize By:</div>
 							<DropDown
@@ -204,7 +230,9 @@ class FederalRevenue extends React.Component {
 }
 
 export default connect(
-  state => ({[REVENUES_FISCAL_YEAR]: state[CONSTANTS.DATA_SETS_STATE_KEY][REVENUES_FISCAL_YEAR]}),
+  state => ({
+  	[REVENUES_FISCAL_YEAR]: state[CONSTANTS.DATA_SETS_STATE_KEY][REVENUES_FISCAL_YEAR],
+  }),
   dispatch => ({ normalizeDataSet: dataSets => dispatch(normalizeDataSetAction(dataSets)),
   })
 )(FederalRevenue)
@@ -215,7 +243,7 @@ const commodityCellRender = (data) => {
 
 export const query = graphql`
   query FederalRevenuesPageQuery {
-		allRevenues:allResourceRevenues (filter:{FiscalYear:{ne:null}}) {
+		allRevenues:allResourceRevenues (filter:{FiscalYear:{ne:null}}, sort: {fields: [FiscalYear], order: DESC}) {
 		  data:edges {
 		    node {
 		    	id
@@ -231,7 +259,7 @@ export const query = graphql`
 		    }
 		  }
 		}
-	  allRevenuesGroupByCommodity: allResourceRevenues(filter: {FiscalYear: {ne: null}}) {
+	  allRevenuesGroupByCommodity: allResourceRevenues(filter: {FiscalYear: {ne: null}}, sort: {fields: [FiscalYear], order: DESC}) {
 	    group(field: Commodity) {
 	      id:fieldValue
 	      data:edges {
@@ -241,7 +269,7 @@ export const query = graphql`
 	      }
 	    }
 	  }
-	  allRevenuesGroupByState: allResourceRevenues(filter: {FiscalYear: {ne: null}}) {
+	  allRevenuesGroupByState: allResourceRevenues(filter: {FiscalYear: {ne: null}}, sort: {fields: [FiscalYear], order: DESC}) {
 	    group(field: State) {
 	      id:fieldValue
 	      data:edges {
@@ -251,7 +279,7 @@ export const query = graphql`
 	      }
 	    }
 	  }
-	  allRevenuesGroupByCounty: allResourceRevenues(filter: {FiscalYear: {ne: null}}) {
+	  allRevenuesGroupByCounty: allResourceRevenues(filter: {FiscalYear: {ne: null}}, sort: {fields: [FiscalYear], order: DESC}) {
 	    group(field: County) {
 	      id:fieldValue
 	      data:edges {
@@ -261,7 +289,7 @@ export const query = graphql`
 	      }
 	    }
 	  }
-	  allRevenuesGroupByLandCategory: allResourceRevenues(filter: {FiscalYear: {ne: null}}) {
+	  allRevenuesGroupByLandCategory: allResourceRevenues(filter: {FiscalYear: {ne: null}}, sort: {fields: [FiscalYear], order: DESC}) {
 	    group(field: LandCategory) {
 	      id:fieldValue
 	      data:edges {
@@ -271,7 +299,7 @@ export const query = graphql`
 	      }
 	    }
 	  }
-	  allRevenuesGroupByLandClass: allResourceRevenues(filter: {FiscalYear: {ne: null}}) {
+	  allRevenuesGroupByLandClass: allResourceRevenues(filter: {FiscalYear: {ne: null}}, sort: {fields: [FiscalYear], order: DESC}) {
 	    group(field: LandClass) {
 	      id:fieldValue
 	      data:edges {
@@ -281,8 +309,18 @@ export const query = graphql`
 	      }
 	    }
 	  }
-	  allRevenuesGroupByRevenueType: allResourceRevenues(filter: {FiscalYear: {ne: null}}) {
+	  allRevenuesGroupByRevenueType: allResourceRevenues(filter: {FiscalYear: {ne: null}}, sort: {fields: [FiscalYear], order: DESC}) {
 	    group(field: RevenueType) {
+	      id:fieldValue
+	      data:edges {
+	        node {
+	          id
+	        }
+	      }
+	    }
+	  }
+	  allRevenuesGroupByFiscalYear: allResourceRevenues(filter: {FiscalYear: {ne: null}}, sort: {fields: [FiscalYear], order: DESC}) {
+	    group(field: FiscalYear) {
 	      id:fieldValue
 	      data:edges {
 	        node {

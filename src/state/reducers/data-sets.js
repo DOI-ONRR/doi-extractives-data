@@ -27,6 +27,7 @@ export const BY_COUNTY = 'by_county';
 export const BY_LAND_CATEGORY = 'by_land_category';
 export const BY_LAND_CLASS = 'by_land_class';
 export const BY_REVENUE_TYPE = 'by_revenue_type';
+export const BY_FISCAL_YEAR = 'by_fiscal_year';
 
 // Define Action Types
 const HYDRATE = 'HYDRATE_DATA_SETS'

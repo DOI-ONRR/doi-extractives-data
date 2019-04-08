@@ -22,19 +22,32 @@ const MenuProps = {
     },
   },
 };
+
 class Select extends React.Component {
+
   state = {
     name: [],
   };
+
+	componentWillReceiveProps (nextProps) {
+	  this.setState({ ...nextProps })
+	}
 
   handleChange = event => {
     this.setState({ name: event.target.value });
   };
 
 	render () {
-  	let { options, selectedKey, multiple } = this.props
+  	let { options, selectedKey, multiple, sortType } = this.props
+	  if (sortType !== 'none' && options) {
+	  	console.log(options);
+	    options.sort()
+	    if (sortType === 'descending') {
+	      options.reverse()
+	    }
+	  }
     //let styles = (this.props.theme === 'year')? yearTheme : standardTheme;
-    //console.log(this.state.name);
+    //console.log(this.state);
     return (
       <div>
 				<form autoComplete="off">
@@ -76,9 +89,7 @@ class Select extends React.Component {
 }
 
 export default connect(
-  (state, ownProps) => ({
-  	dataSet: state[CONSTANTS.DATA_SETS_STATE_KEY][ownProps.dataSetId],
-  }),
+  (state, ownProps) => ({}),
   dispatch => ({
   	setSelectedOption: payload => dispatch(setDataSelectedByIdAction(payload)),
   }))(Select)

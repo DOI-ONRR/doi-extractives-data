@@ -33,9 +33,14 @@ const Toggle = props => {
 
 Toggle.propTypes = {
   /** Array of objects for all the buttons. The default selected vlaue should be mark as default: true */
-  buttons: PropTypes.array,
+  buttons: PropTypes.arrayOf(PropTypes.shape({
+        key: PropTypes.string.isRequired,
+        name: PropTypes.string.isRequired,
+        default: PropTypes.bool,
+      })
+    ).isRequired,
   /** This action will be called when a toggle is clicked. */
-  toggleAction: PropTypes.func
+  action: PropTypes.func
 }
 
 export default Toggle

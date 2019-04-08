@@ -17,8 +17,20 @@ const initialState = {
   SelectedYears: {},
 }
 
+// Define standard data set keys
+export const REVENUES_FISCAL_YEAR = 'revenues_fy';
+export const ALL_IDS = 'all_ids';
+export const BY_ID = 'by_id';
+export const BY_COMMODITY = 'by_commodity';
+export const BY_STATE = 'by_state';
+export const BY_COUNTY = 'by_county';
+export const BY_LAND_CATEGORY = 'by_land_category';
+export const BY_LAND_CLASS = 'by_land_class';
+export const BY_REVENUE_TYPE = 'by_revenue_type';
+
 // Define Action Types
 const HYDRATE = 'HYDRATE_DATA_SETS'
+const NORMALIZE = 'NORMALIZE_DATA_SETS'
 const GROUP_BY_YEAR = 'GROUP_DATA_SETS_BY_YEAR'
 const GROUP_BY_MONTH = 'GROUP_DATA_SETS_BY_MONTH'
 const SET_DATA_SELECTED_BY_ID = 'SET_DATA_SELECTED_BY_ID'
@@ -27,6 +39,7 @@ const SET_SELECTED_YEAR_BY_ID = 'SET_SELECTED_YEAR_BY_ID'
 
 // Define Action Creators
 export const hydrate = dataSets => ({ type: HYDRATE, payload: dataSets })
+export const normalize = dataSets => ({ type: NORMALIZE, payload: dataSets })
 export const groupByYear = configs => ({ type: GROUP_BY_YEAR, payload: configs })
 export const groupByMonth = configs => ({ type: GROUP_BY_MONTH, payload: configs })
 export const setDataSelectedById = configs => ({ type: SET_DATA_SELECTED_BY_ID, payload: configs })
@@ -44,6 +57,38 @@ const hydrateHandler = (state, action) => {
   })
 
   return ({ ...state, FiscalYear: FiscalYear, CalendarYear: CalendarYear, SourceData: SourceData })
+}
+
+const normalizeHandler = (state, action) => {
+  const { payload } = action
+
+  const arrayOfNodeIdsToValues = (array) =>
+    array.map((item) => {
+      return item.node.id;
+    })
+
+  const arrayToObject = (array) =>
+    array.reduce((obj, item) => {
+      let id = (item.node)? item.node.id : item.id;
+      obj[id] = item.node || arrayOfNodeIdsToValues(item.data);
+      return obj
+    }, {})
+
+  let normalizedDatasets = {};
+  payload.forEach(dataSet => {
+
+    normalizedDatasets[dataSet.key] = {
+      [BY_ID]: arrayToObject(dataSet.data)
+    };
+
+    normalizedDatasets[dataSet.key][ALL_IDS] = Object.keys(normalizedDatasets[dataSet.key][BY_ID]);
+
+    dataSet.groups.forEach(group => {
+      normalizedDatasets[dataSet.key][group.key] = arrayToObject(group.groups);
+    })
+  })
+
+  return ({ ...state, ...normalizedDatasets  })
 }
 
 const groupByYearHandler = (state, action) => {
@@ -146,6 +191,7 @@ function createReducer (initialState, handlers) {
 // Export reducer
 export default createReducer(initialState, {
   [HYDRATE]: hydrateHandler,
+  [NORMALIZE]: normalizeHandler,
   [GROUP_BY_YEAR]: groupByYearHandler,
   [GROUP_BY_MONTH]: groupByMonthHandler,
   [SET_DATA_SELECTED_BY_ID]: setDataSelectedByIdHandler,

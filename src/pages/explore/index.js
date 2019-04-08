@@ -183,8 +183,6 @@ class ExplorePage extends React.Component {
                             The United States is among the world's top producers of natural gas, oil, and coal. The U.S. is also a global leader in renewable energy production.
                             </p>
 
-                            <NationalAllProduction allProducts={this.props.data.US_Production.byProduct} />
-
                             <NationalFederalProduction allProducts={this.props.data.Federal_Production.byProduct} />
 
                         </section>
@@ -196,17 +194,6 @@ class ExplorePage extends React.Component {
 
                         <NationalDisbursements />
 
-                        <section id="economic-impact">
-
-                            <h2>Economic impact</h2>
-
-                            <p>This data covers <GlossaryTerm termKey="Gross domestic product (GDP)">gross domestic product</GlossaryTerm> and two different types of jobs data.</p>
-
-                            <NationalGDP />
-
-                            <NationalJobs stateId={PAGE_ID} />
-
-                        </section>
 
                     </div>
 

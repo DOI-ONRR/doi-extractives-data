@@ -256,51 +256,7 @@ class KeyStatsSection extends React.Component {
 	    	<div className="container-page-wrapper">
 	        <section id="data-summary" className={styles.root}>
 	          <h2>Data summary</h2>
-	          <p>Summary of production, revenue, and disbursements for resources extracted on federal lands and waters and Native American lands.</p>
-
-	          <section id="key-stats-production" className={styles.production}>
-	            <div className={styles.sectionTitle}>
-	              <h3>Production</h3>
-	              <div>Production data for major commodities</div>
-	              <div><ExploreDataLink to="/explore/#production" >Explore all production data</ExploreDataLink></div>
-	            </div>
-
-	            <div>
-	              <div className={styles.toggle}>
-									Show:
-	                <Toggle action={this.productionToggleClicked.bind(this)} buttons={[{ key: TOGGLE_VALUES.Year, name: 'Yearly', default: true },
-								  { key: TOGGLE_VALUES.Month, name: 'Monthly' }]}></Toggle>
-	              </div>
-
-	              {(this.state.productionToggle === TOGGLE_VALUES.Month) &&
-									<div className={styles.dropdown}>
-										Period:
-									  <DropDown
-									    action={this.productionPeriodSelected.bind(this)}
-									    options={[
-									      { key: DROPDOWN_VALUES.Recent,
-									        name: 'Most recent 12 months',
-									        default: (this.state.productionPeriod === DROPDOWN_VALUES.Recent) },
-									      { key: DROPDOWN_VALUES.Fiscal,
-									        name: 'Fiscal year ' + this.state[PRODUCTION_VOLUMES_FISCAL_YEAR],
-									        default: (this.state.productionPeriod === DROPDOWN_VALUES.Fiscal) },
-									      { key: DROPDOWN_VALUES.Calendar,
-									        name: 'Calendar year ' + this.state[PRODUCTION_VOLUMES_CALENDAR_YEAR],
-									        default: (this.state.productionPeriod === DROPDOWN_VALUES.Calendar) }]}></DropDown>
-									</div>
-	              }
-
-	            </div>
-
-	            <div className={styles.productChartContainer}>
-	              {this.getStackedBarChartLayout(KEY_STATS_OIL_DATA_ID, CONSTANTS.OIL)}
-
-	              {this.getStackedBarChartLayout(KEY_STATS_GAS_DATA_ID, CONSTANTS.GAS)}
-
-	              {this.getStackedBarChartLayout(KEY_STATS_COAL_DATA_ID, CONSTANTS.COAL)}
-	            </div>
-
-	          </section>
+	          <p>Summary of revenue, disbursements, and production data for resources extracted on federal lands and waters and Native American lands.</p>
 	          <section className={styles.revenueDisbursementsSection} >
 	            <div className={styles.itemTitle}><h3>Revenue</h3></div>
 	            <div className={styles.itemDesc}>Federal revenue from bonuses, rent, and royalties paid by companies to extract natural resources</div>
@@ -347,6 +303,50 @@ class KeyStatsSection extends React.Component {
 	            <div className={styles.itemChart + ' ' + styles.itemDisbursements}>
 	              {this.getStackedBarChartLayout(KEY_STATS_DISBURSEMENTS_DATA_ID, CONSTANTS.DISBURSEMENTS, utils.formatToDollarInt)}
 	            </div>
+	          </section>
+						
+						<section id="key-stats-production" className={styles.production}>
+	            <div className={styles.sectionTitle}>
+	              <h3>Production</h3>
+	              <div>Production data for major commodities</div>
+	              <div><ExploreDataLink to="/explore/#production" >Explore all production data</ExploreDataLink></div>
+	            </div>
+
+	            <div>
+	              <div className={styles.toggle}>
+									Show:
+	                <Toggle action={this.productionToggleClicked.bind(this)} buttons={[{ key: TOGGLE_VALUES.Year, name: 'Yearly', default: true },
+								  { key: TOGGLE_VALUES.Month, name: 'Monthly' }]}></Toggle>
+	              </div>
+
+	              {(this.state.productionToggle === TOGGLE_VALUES.Month) &&
+									<div className={styles.dropdown}>
+										Period:
+									  <DropDown
+									    action={this.productionPeriodSelected.bind(this)}
+									    options={[
+									      { key: DROPDOWN_VALUES.Recent,
+									        name: 'Most recent 12 months',
+									        default: (this.state.productionPeriod === DROPDOWN_VALUES.Recent) },
+									      { key: DROPDOWN_VALUES.Fiscal,
+									        name: 'Fiscal year ' + this.state[PRODUCTION_VOLUMES_FISCAL_YEAR],
+									        default: (this.state.productionPeriod === DROPDOWN_VALUES.Fiscal) },
+									      { key: DROPDOWN_VALUES.Calendar,
+									        name: 'Calendar year ' + this.state[PRODUCTION_VOLUMES_CALENDAR_YEAR],
+									        default: (this.state.productionPeriod === DROPDOWN_VALUES.Calendar) }]}></DropDown>
+									</div>
+	              }
+
+	            </div>
+
+	            <div className={styles.productChartContainer}>
+	              {this.getStackedBarChartLayout(KEY_STATS_OIL_DATA_ID, CONSTANTS.OIL)}
+
+	              {this.getStackedBarChartLayout(KEY_STATS_GAS_DATA_ID, CONSTANTS.GAS)}
+
+	              {this.getStackedBarChartLayout(KEY_STATS_COAL_DATA_ID, CONSTANTS.COAL)}
+	            </div>
+
 	          </section>
 
 	        </section>

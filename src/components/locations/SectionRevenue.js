@@ -114,13 +114,6 @@ const SectionRevenue = props => {
           </div>
         }
 
-        <h4>Federal tax revenue</h4>
-
-        <div>
-          <p>Individuals and corporations (specifically C-corporations) pay income taxes to the IRS. The federal corporate income tax rate tops out at 21%. Public policy provisions, such as tax expenditures, can decrease corporate income tax and other revenue payments in order to promote other policy goals.</p>
-          <p>Learn more about <Link to="/how-it-works/revenues/#all-lands-and-waters">revenue from extraction on all lands and waters</Link>.</p>
-        </div>
-
       </section>
 
       <section id="state-revenue" className="state revenue">

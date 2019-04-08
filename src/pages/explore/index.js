@@ -38,10 +38,6 @@ const NAV_ITEMS = [
         title: "Production",
         subNavItems: [
             {
-                name: "all-production",
-                title: "All lands and waters"
-            },
-            {
                 name: "federal-production",
                 title: "Federal lands and waters"
             }
@@ -55,10 +51,6 @@ const NAV_ITEMS = [
                 name: "federal-revenue",
                 title: "Federal land"
             },
-            {
-                name: "federal-tax-revenue",
-                title: "Federal tax revenue"
-            }
         ]
     },
     {
@@ -71,24 +63,6 @@ const NAV_ITEMS = [
             }
         ]
     },
-    {
-        name: "economic-impact",
-        title: "Economic impact",
-        subNavItems: [
-            {
-                name: "gdp",
-                title: "GDP"
-            },
-            {
-                name: "employment",
-                title: " Wage and salary jobs"
-            },
-            {
-                name: "self-employment",
-                title: "Self-employment"
-            }
-        ]
-    }
 ];
 
 class ExplorePage extends React.Component {
@@ -179,9 +153,6 @@ class ExplorePage extends React.Component {
 
                         <section id="production">
                             <h2 className="state-page-overview">Production</h2>
-                            <p>
-                            The United States is among the world's top producers of natural gas, oil, and coal. The U.S. is also a global leader in renewable energy production.
-                            </p>
 
                             <NationalFederalProduction allProducts={this.props.data.Federal_Production.byProduct} />
 
@@ -193,7 +164,6 @@ class ExplorePage extends React.Component {
                             isNationalPage={NATIONAL_PAGE} />
 
                         <NationalDisbursements />
-
 
                     </div>
 

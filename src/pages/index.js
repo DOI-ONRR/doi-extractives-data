@@ -93,7 +93,6 @@ class HomePage extends React.Component {
                 <div className={styles.tabContentAside}>
                   <h5>Explore production data</h5>
                   <div className={styles.linkContainer}>
-                    <ExploreDataLink to="/explore/#all-production">All lands and waters</ExploreDataLink>
                     <ExploreDataLink to="/explore/#federal-production">Federal lands and waters</ExploreDataLink>
                     <ExploreDataLink to="/how-it-works/native-american-production/#production-on-native-american-land">Native American lands</ExploreDataLink>
                     <DownloadDataLink to="/downloads/#production">Downloads and documentation</DownloadDataLink>

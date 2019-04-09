@@ -14,7 +14,6 @@ import { Tabordion, Tab } from '../components/layouts/Tabordion'
 import StateMap from '../components/maps/StateMap'
 import FederalLandOwnershipLegend from '../components/maps/FederalLandOwnershipLegend'
 import LocationSelector from '../components/selectors/LocationSelector'
-import OilRig from '-!svg-react-loader!../img/svg/icon-ribbon-oil-rig.svg'
 import { ExploreDataButton } from '../components/layouts/buttons/ExploreDataButton'
 import { BlueButton } from '../components/layouts/buttons/BlueButton'
 import { ExploreDataLink } from '../components/layouts/icon-links/ExploreDataLink'
@@ -71,11 +70,6 @@ class HomePage extends React.Component {
                     <div>
                       <Link to="/how-it-works">Learn how it works</Link>
                     </div>
-                  </div>
-                </div>
-                <div className={styles.tabContentAside}>
-                  <div className={styles.oilRig}>
-                    <OilRig preserveAspectRatio="xMidYMid meet" viewBox="0 0 300 203" />
                   </div>
                 </div>
               </div>

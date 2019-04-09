@@ -1,5 +1,0 @@
-'{region_id}':
-  commodities:
-    '{commodity}':
-      '{year}':
-        revenue: '{revenue}'

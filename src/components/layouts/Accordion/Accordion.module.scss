@@ -1,0 +1,39 @@
+@value colors: "../../../css-global/colors.scss";
+@value blueDark as --blueDark from colors;
+
+.root {
+	font-size: 13px;
+	margin-bottom: 16px;
+}
+
+.root svg {
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+.toggle {
+
+}
+
+.toggle span {
+	color: --blueDark;
+	cursor: pointer;
+	vertical-align: middle;
+}
+
+.toggle:hover span {
+	text-decoration: underline;
+}
+
+.toggle[aria-expanded="true"] .plus {
+	display: none;
+}
+
+.toggle[aria-expanded="false"] .minus {
+	display: none;
+}
+
+.content {
+	transition-duration: 5s;
+}
+

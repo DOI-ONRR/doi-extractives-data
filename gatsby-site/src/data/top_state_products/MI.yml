@@ -1,8 +1,0 @@
-all_production:
-  '2015':
-    - product: Other biomass
-      name: Other biomass
-      units: Mwh
-      value: 1103110.61
-      rank: 5
-      percent: 5.05

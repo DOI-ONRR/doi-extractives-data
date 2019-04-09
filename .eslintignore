@@ -1,4 +1,10 @@
-js/vendor/*.js
-js/**/*.min.js
-js/**/*.min.js.map
-js/lib/main.js
+/src/img
+/src/styles
+/src/styles/fonts
+*.css
+*.md
+*.scss
+*.svg
+*.xlsx
+*.yml
+**/__tests__/*

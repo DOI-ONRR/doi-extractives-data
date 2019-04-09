@@ -1,0 +1,34 @@
+@value colors: "./colors.scss";
+@value green as _green, grayLight as _grayLight, blackLight as _blackLight from colors;
+
+.chartBar {
+	cursor: pointer;
+	fill: _grayLight;
+}
+
+.chartBar[selected=true] {
+	fill: _green;
+}
+
+.chartBar:hover{
+	fill: _green;
+	opacity: 0.8;
+}
+
+.chartSelectedContentDetails {
+	font-size: 14px;
+	font-weight: 300;
+}
+
+.chartSelectedContentDetailsHighlight {
+	color: _green;
+	font-weight: 600;
+}
+
+.legendTitle {
+	color: _blackLight;
+	font-size: 0.8125rem;
+	font-weight: 600;
+	line-height: 1.1875rem;
+
+}

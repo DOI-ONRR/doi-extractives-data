@@ -1,0 +1,131 @@
+@value colors: "../../../css-global/colors.scss";
+@value variables: "../../../css-global/variables.scss";
+@value blue, white from colors;
+@value base-padding from variables;
+
+.root {
+
+}
+
+.searchForm {
+	height: 60px;
+	width: 100%;
+}
+
+.searchLabel {
+	color: white;
+}
+
+.srOnly{
+	height: 0;
+  left: -10000px;
+  overflow: hidden;
+  position: absolute;
+  top: auto;
+  width: 1px;
+}
+
+.searchBoxMobile {
+  transition: border-color;
+  background-color: #ffffff;
+  border: 1px solid #323c42;
+  border-radius: 5px;
+  box-shadow: none;
+  box-sizing: border-box;
+	font-size: 0.65rem;
+  border-bottom-right-radius: 0;
+  border-color: #d3dfe6;
+  border-right: none;
+  border-top-right-radius: 0;
+  color: #435159;
+  display: inline;
+  float: left;
+  font-family: Lato, "Helvetica Neue", Helvetica, arial, sans-serif;
+  height: 40px;
+  margin: 0;
+  padding: 0.42rem;
+  width: 86%;
+}
+
+.searchBox {
+  transition: border-color;
+  background-color: #ffffff;
+  border: 1px solid #323c42;
+  border-radius: 5px;
+  box-shadow: none;
+  box-sizing: border-box;
+	font-size: 0.65rem;
+  border-bottom-right-radius: 0;
+  border-color: #d3dfe6;
+  border-right: none;
+  border-top-right-radius: 0;
+  color: #435159;
+  display: inline-block;
+  float: left;
+  font-family: Lato, "Helvetica Neue", Helvetica, arial, sans-serif;
+  height: 30px;
+  margin: 0;
+  margin-left: 1.25em;
+  padding: 0.42rem;
+  width: 150px;
+
+}
+
+.searchButtonMobile {
+  background-color: #79bbda;
+  border-radius: 0 5px 5px 0;
+  color: #1478a6;
+  float: right;
+  height: 40px;
+  padding: 0.5em;
+  position: relative;
+  width: 14%;
+}
+.searchButtonMobile::before {
+    background-image: url(../../../img/icons/icon-search.svg);
+    background-repeat: no-repeat;
+    background-size: 1rem 1rem;
+    content: '';
+    display: inline-block;
+    height: 1rem;
+    padding-bottom: 0.1rem;
+    width: 1rem;
+}
+
+.searchButton {
+  background-color: #1478a6;
+  border-radius: 0 5px 5px 0;
+  color: #ffffff;
+  cursor: pointer;
+  float: right;
+  height: 30px;
+  padding: 0.42rem;
+  width: 37px;
+}
+.searchButton::before {
+    background-image: url(../../../img/icons/icon-search.svg);
+    background-repeat: no-repeat;
+    background-size: 1rem 1rem;
+    content: '';
+    display: inline-block;
+    height: 1rem;
+    padding-bottom: 0.1rem;
+    width: 1rem;
+}
+/*
+font-size: 0.65rem;
+    border-bottom-right-radius: 0;
+    border-color: #d3dfe6;
+    border-right: none;
+    border-top-right-radius: 0;
+    color: #435159;
+    display: inline-block;
+    float: left;
+    font-family: Lato, "Helvetica Neue", Helvetica, arial, sans-serif;
+    height: 30px;
+    margin: 0;
+    margin-left: 1.25em;
+    padding: 0.52rem;
+    width: 150px;
+
+    */

@@ -1,3 +1,0 @@
-# A jekyll config that only copies from one directory to another
-source: _stage
-destination: _site

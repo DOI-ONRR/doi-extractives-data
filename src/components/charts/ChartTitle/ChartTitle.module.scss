@@ -1,0 +1,11 @@
+@value colors: "../../../css-global/colors.scss";
+@value grayDark as --grayDark, blackLight as --blackLight from colors;
+
+.chartTitle {
+	border-color: --grayDark;
+	border-bottom-width: 1px;
+	border-style: solid;
+	color: --blackLight;
+	font-size: 13px;
+	margin-bottom: 13px;
+}

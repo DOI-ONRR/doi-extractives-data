@@ -1,0 +1,97 @@
+@value colors: "../../../css-global/colors.scss";
+@value white as _white, grayDarker as _grayDarker, grayLight as _grayLight, blackLight as _blackLight from colors;
+
+@value variables: "../../../css-global/variables.scss";
+@value portraitTabletBreakpointDown as _portraitTabletBreakpointDown from variables;
+@value portraitTabletBreakpointUp as _portraitTabletBreakpointUp from variables;
+
+.root {
+	display: block;
+	float: right;
+	padding-bottom: 6.225em;
+	width: 550.562px;
+}
+
+.processStepContainer {
+	display: table;
+	background-color: _white;
+	margin-bottom: 4px;
+	padding: 1.25em;
+	width: 100%;
+	z-index: 3;
+}
+.processStepContainer:first-of-type {
+	border-radius: 5px 5px 0 0;
+}
+
+.processStepContainer:last-of-type {
+	border-radius: 0px 0px 5px 5px;
+}
+
+.processStepId {
+	border: 2px solid _grayLight;
+	border-radius: 50%;
+	color: black;
+	display: inline-block;
+	font-size: 1.375rem;
+	font-weight: 600;
+	height: 38px;
+	line-height: 2rem;
+	margin: 0 10px 8px 0;
+	padding-left: 11px;
+	padding-right: 10px;
+	padding-top: 1px;
+	width: 38px;
+}
+
+.processStepName {
+	color: _grayDarker;
+	font-size: 1.625rem;
+	font-weight: 600;
+	line-height: 2.25rem;
+	margin: 0;
+	padding-right: 1.25em;
+}
+
+.processStepContent {
+	color: _blackLight;
+	font-size: 1rem;
+	font-weight: 300;
+	line-height: 1.375rem;
+	margin-bottom: 0.625rem;
+	padding-left: 56px;
+	padding-right: 0.41667em;
+}
+
+.processStepContent p {
+	color: _blackLight;
+	font-size: 1rem;
+	font-weight: 300;
+	line-height: 1.375rem;
+}
+
+.processStepContent ul {
+	color: _blackLight;
+	font-size: 1rem;
+	font-weight: 300;
+	line-height: 1.375rem;
+}
+
+.toggleButton {
+	display: inline-block;
+	background-color: white;
+	float: right;
+}
+
+@media screen and (max-width: _portraitTabletBreakpointDown) {
+	.root {
+		padding-bottom: 6.225em;
+		width: 100%;
+	}
+	.processStepName {
+		color: black;
+		font-size: 1.375rem;
+		font-weight: 600;
+		line-height: 2rem;
+	}
+}

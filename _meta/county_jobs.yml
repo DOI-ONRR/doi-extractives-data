@@ -1,8 +1,0 @@
-'{fips}':
-  name: '{county}'
-  employment:
-    '{year}':
-      count: '{jobs}'
-      total: '{total}'
-      percent: '{percent}'
-

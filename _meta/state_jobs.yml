@@ -1,5 +1,0 @@
-'{state}':
-  '{year}':
-    count: '{jobs}'
-    total: '{total}'
-    percent: '{percent}'

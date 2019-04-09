@@ -1,10 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { connect } from 'react-redux'
 
 import CONSTANTS from '../../../js/constants'
 
-import { setDataSelectedById as setDataSelectedByIdAction } from '../../../state/reducers/data-sets'
+import styles from './FilterTable.module.scss'
 
 import Table_MU from '@material-ui/core/Table';
 import TableBody_MU from '@material-ui/core/TableBody';
@@ -37,34 +36,32 @@ class FilterTable extends React.Component {
   	let { options, selectedKey, multiple } = this.props
     //console.log(this.state);
     return (
-			<div>
-				<Paper_MU>
-					<Table_MU>
-						<EnhancedTableHead
-              onRequestSort={this.handleRequestSort}
-              columns={this.state.columns}
-            />
-						<TableBody_MU>
-              {this.props.data &&
+			<div className={styles.root}>
+				<Table_MU className={styles.table}>
+					<EnhancedTableHead
+            onRequestSort={this.handleRequestSort}
+            columns={this.state.columns}
+          />
+					<TableBody_MU className={styles.tableBody}>
+            {this.props.data &&
 
-                this.props.data.map((cells,index) => {
-                  return (
-                    <TableRow_MU key={index}>
-                      { 
-                        cells.map((cell, index) => {
-                          if(this.state.columns[index] && typeof this.state.columns[index].cellRender === 'function') {
-                            return (<TableCell_MU key={index}>{this.state.columns[index].cellRender(cell)}</TableCell_MU>)
-                          }
-                          return (<TableCell_MU key={index}>{cell}</TableCell_MU>)
-                        })
-                      }
-                    </TableRow_MU>
-                  )
-                })
-              }
-						</TableBody_MU>
-					</Table_MU>
-				</Paper_MU>
+              this.props.data.map((cells,index) => {
+                return (
+                  <TableRow_MU key={index}>
+                    { 
+                      cells.map((cell, index) => {
+                        if(this.state.columns[index] && typeof this.state.columns[index].cellRender === 'function') {
+                          return (<TableCell_MU key={index}>{this.state.columns[index].cellRender(cell)}</TableCell_MU>)
+                        }
+                        return (<TableCell_MU key={index}>{cell}</TableCell_MU>)
+                      })
+                    }
+                  </TableRow_MU>
+                )
+              })
+            }
+					</TableBody_MU>
+				</Table_MU>
 			</div>
     )
   }
@@ -84,7 +81,7 @@ class EnhancedTableHead extends React.Component {
     const { columns } = this.props;
 
     return (
-      <TableHead_MU>
+      <TableHead_MU className={styles.tableHeader}>
         <TableRow_MU>
           {columns.map(
             column => (

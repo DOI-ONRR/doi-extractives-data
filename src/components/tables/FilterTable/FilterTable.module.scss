@@ -1,0 +1,38 @@
+@value colors: "../../../css-global/colors.scss";
+@value grayDarkest as _grayDarkest, grayLight as _grayLight, greenLight as _greenLight from colors;
+@value variables: "../../../css-global/variables.scss";
+@value baseFontFamily as _baseFontFamily from variables;
+.root{
+	overflow: auto;
+	width: 100%;
+}
+
+.table {
+
+}
+
+.tableHeader th{
+	border: 1px solid _grayLight;
+	border-bottom: 5px solid _greenLight;
+	color: _grayDarkest;
+	font-family: _baseFontFamily;
+	font-size: 1rem;
+	font-weight: 400;
+	padding-left: 5px;
+	padding-right: 15px;
+	white-space: nowrap;
+	vertical-align: bottom;
+}
+
+.tableHeader svg {
+	opacity: 0;
+}
+
+.tableBody td {
+	color: _grayDarkest;
+	font-family: _baseFontFamily;
+	font-size: 1rem;
+	font-weight: 300;
+	padding-left: 5px;
+	padding-right: 15px;
+}

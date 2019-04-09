@@ -87,6 +87,7 @@ DropDown.propTypes = {
   /** Sorting options in the list */
   sortType: PropTypes.oneOf(['ascending', 'descending', 'none']),
   theme: PropTypes.oneOf(['year', 'standard']),
+  defaultOptionIndex: PropTypes.number
 }
 
 DropDown.defaultProps = {
@@ -104,9 +105,12 @@ export default connect(
 
 const findDefaultKey = props => {
   let defaultKey
-  let { options, dataSet } = props
+  let { options, dataSet, defaultOptionIndex } = props
   if (dataSet) {
     defaultKey = dataSet.selectedDataKey
+  }
+  else if(options && defaultOptionIndex) {
+    defaultKey = options[defaultOptionIndex];
   }
   else if (options) {
     defaultKey = options.find((option, index) => {

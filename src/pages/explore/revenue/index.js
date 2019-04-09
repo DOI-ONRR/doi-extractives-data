@@ -36,6 +36,8 @@ const TOGGLE_VALUES = {
   Month: 'month'
 }
 
+const DEFAULT_GROUP_BY_INDEX = 0;
+
 const GROUP_BY_OPTIONS = {
 	'Commodity': BY_COMMODITY, 
 	'Location': BY_STATE, 
@@ -43,12 +45,13 @@ const GROUP_BY_OPTIONS = {
 	'Land owner': BY_LAND_CLASS, 
 	'Revenue type': BY_REVENUE_TYPE
 };
-const ADDITIONAL_COLUMN_OPTIONS = ['State/offshore region', 'Source', 'Land owner', 'Revenue type'];
-const DEFAULT_TABLE_COLUMNS = [
-  { id: 'commodity', numeric: false, label: 'Commodity', cellRender: commodityCellRender},
-  { id: 'fy-2017', numeric: false, label: '2017' },
-  { id: 'fy-2016', numeric: false, label: '2016' },
-];
+const ADDITIONAL_COLUMN_OPTIONS = {
+	'State/offshore region': 'State', 
+	'Source': 'LandCategory',
+	'Land owner': 'LandClass',
+	'Revenue type': 'RevenueType'
+};
+//const ADDITIONAL_COLUMN_OPTIONS = ['State/offshore region', 'Source', 'Land owner', 'Revenue type'];
 
 class FederalRevenue extends React.Component {
 
@@ -61,10 +64,11 @@ class FederalRevenue extends React.Component {
 		timeframe: TOGGLE_VALUES.Year,
 		yearOptions: [],
 		filter: {
-			groupBy: Object.keys(GROUP_BY_OPTIONS)[0],
+			groupBy: Object.keys(GROUP_BY_OPTIONS)[DEFAULT_GROUP_BY_INDEX],
 			years: []
 		},
-		tableColumns: DEFAULT_TABLE_COLUMNS
+		additionalColumnOptions: [],
+		additionalColumns: []
 	}
 
 	componentWillReceiveProps (nextProps) {
@@ -81,6 +85,8 @@ class FederalRevenue extends React.Component {
 
 		columns.push({ id: filter.groupBy, numeric: false, label: filter.groupBy, cellRender: commodityCellRender});
 
+		this.state.additionalColumns.forEach(column => columns.push({ id: column, numeric: false, label: column }))
+
 		filter.years.sort().forEach(year => columns.push({ id: 'fy-'+year, numeric: false, label: year }))
 
 		return columns;
@@ -96,19 +102,33 @@ class FederalRevenue extends React.Component {
 
 			let sums = {}
 
+			let additionalColumnsRow = {};
+
 			// sum all revenues
 			dataSetGroupBy[name].map((dataId) => {
 				let data = dataSet[BY_ID][dataId];
 				// filter by selected years
 				if( this.state.filter.years.includes(data.FiscalYear) ) {
 					sums[data.FiscalYear] = (sums[data.FiscalYear])? sums[data.FiscalYear]+data.Revenue : data.Revenue;
+
+					this.state.additionalColumns.forEach((column) => {
+						let newValue = data[ADDITIONAL_COLUMN_OPTIONS[column]];
+						if(additionalColumnsRow[column] === undefined) {
+							additionalColumnsRow[column] = [];
+						}
+						if(!additionalColumnsRow[column].includes(newValue)) {
+							additionalColumnsRow[column].push(newValue)
+						}
+					})
 				}
 				
 			})
 
-			let sumsOrderedByYear = this.state.filter.years.map(year => utils.formatToDollarInt(sums[year]) )
+			let sumsToArray = this.state.filter.years.map(year => utils.formatToDollarInt(sums[year]) )
 
-			return tableRow.concat(sumsOrderedByYear);
+			Object.keys(additionalColumnsRow).forEach(column => tableRow.push(additionalColumnsRow[column].join(", ")) )
+
+			return tableRow.concat(sumsToArray);
 		});
 
 		return tableData;
@@ -126,6 +146,9 @@ class FederalRevenue extends React.Component {
 		this.setState({filter:{...this.state.filter, groupBy:value} })
 	}
 
+	setAdditionalColumns(value) {
+		this.setState({additionalColumns:value})
+	}
   /**
    * Add the data to the redux store to enable
    * the components to access filtered data using the
@@ -237,6 +260,7 @@ class FederalRevenue extends React.Component {
 								sortType={'none'}
 						    options={Object.keys(GROUP_BY_OPTIONS)}
 						    callback={this.setGroupByFilter.bind(this)}
+						    defaultOptionIndex={DEFAULT_GROUP_BY_INDEX}
 						  >
 						  </DropDown>
 						</div>
@@ -245,7 +269,9 @@ class FederalRevenue extends React.Component {
 							<div className={styles.filterLabel}>Additional Column:</div>
 							<Select
 								multiple
-						    options={ADDITIONAL_COLUMN_OPTIONS}>
+						    options={Object.keys(ADDITIONAL_COLUMN_OPTIONS)}
+						    onChangeHandler={this.setAdditionalColumns.bind(this)}
+						  >
 						  </Select>
 						</div>
 					</div>

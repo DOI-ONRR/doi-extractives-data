@@ -174,10 +174,10 @@ const AboutPage = () => {
               <h3 id="timeline" className="h4">Timeline</h3>
 
               <ul className="list-bullet">
-                <li><strong>December 2017:</strong> The Natural Resources Revenue Data Annual Report was published as an <Link to="/about/report/">Executive Summary</Link> and interactive data was updated throughout this website.</li>
+                <li><strong>December 2017:</strong> The Natural Resources Revenue Data Annual Report was published as an <Link to="/downloads/report/">Executive Summary</Link> and interactive data was updated throughout this website.</li>
                 <li><strong>November 2017:</strong> The U.S. withdrew as an EITI Implementing Country.</li>
-                <li><strong>November 2016:</strong> USEITI Annual Report was published as an <Link to="/about/report/">Executive Summary</Link> and interactive data.</li>
-                <li><strong>December 2015:</strong> USEITI Annual Report was published as an <Link to="/about/report/">Executive Summary</Link> and interactive data (available throughout this site).</li>
+                <li><strong>November 2016:</strong> USEITI Annual Report was published as an <Link to="/downloads/report/">Executive Summary</Link> and interactive data.</li>
+                <li><strong>December 2015:</strong> USEITI Annual Report was published as an <Link to="/downloads/report/">Executive Summary</Link> and interactive data (available throughout this site).</li>
                 <li><strong>Summer of 2014:</strong> DOI selected Deloitte & Touche LLP as the <GlossaryTerm termKey="Independent Administrator (IA)">Independent Administrator</GlossaryTerm> for USEITI.</li>
                 <li><strong>March 2014:</strong> The EITI International Board accepted the U.S. as a candidate country.</li>
                 <li><strong>December 2013:</strong> The U.S. submitted an application to participate to the EITI International Board, which was developed by the MSG after engaging with stakeholders across the country.</li>

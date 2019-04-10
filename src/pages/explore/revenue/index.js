@@ -107,12 +107,14 @@ class FederalRevenue extends React.Component {
 			// sum all revenues
 			dataSetGroupBy[name].map((dataId) => {
 				let data = dataSet[BY_ID][dataId];
+
 				// filter by selected years
 				if( this.state.filter.years.includes(data.FiscalYear) ) {
 					sums[data.FiscalYear] = (sums[data.FiscalYear])? sums[data.FiscalYear]+data.Revenue : data.Revenue;
 
 					this.state.additionalColumns.forEach((column) => {
-						let newValue = data[ADDITIONAL_COLUMN_OPTIONS[column]];
+						let newValue = data[ADDITIONAL_COLUMN_OPTIONS[column]] || "-";
+
 						if(additionalColumnsRow[column] === undefined) {
 							additionalColumnsRow[column] = [];
 						}
@@ -121,17 +123,23 @@ class FederalRevenue extends React.Component {
 						}
 					})
 				}
-				
 			})
 
-			let sumsToArray = this.state.filter.years.map(year => utils.formatToDollarInt(sums[year]) )
+			// If no revenue data is found then ignore this row
+			if(Object.keys(sums).length > 0) {
 
-			Object.keys(additionalColumnsRow).forEach(column => tableRow.push(additionalColumnsRow[column].join(", ")) )
+				let sumsToArray = this.state.filter.years.map(year => utils.formatToDollarInt(sums[year]) )
 
-			return tableRow.concat(sumsToArray);
+				Object.keys(additionalColumnsRow).forEach(column => tableRow.push(additionalColumnsRow[column].join(", ")) )
+
+				return tableRow.concat(sumsToArray);
+			}
+
+
 		});
 
-		return tableData;
+		// Filter out rows that were undefined due to not having any revenue data for the selected years
+		return tableData.filter(row => row !== undefined);
 	}
 
 	setTimeframe = () => {

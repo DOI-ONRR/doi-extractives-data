@@ -52,7 +52,7 @@ const theme = createMuiTheme({
     },
     MuiList: {
     	root: {
-    		backgroundColor: '#757575'
+    		backgroundColor: '#7C7C7C'
     	}
     },
     MuiListItem:{

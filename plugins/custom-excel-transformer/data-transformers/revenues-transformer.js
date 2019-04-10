@@ -24,6 +24,7 @@ const SOURCE_COLUMNS = {
   State: "state",
   County: "county",
 	FiscalYear: "fiscal year",
+	OffshoreRegion: "offshore region"
 };
 
 const LAND_CATEGORY_TO_DISPLAY_NAME ={
@@ -66,6 +67,7 @@ const createRevenueNode = (revenueData) => {
 	  State: data[SOURCE_COLUMNS.State],
 	  County: data[SOURCE_COLUMNS.County],
 	  FiscalYear: data[SOURCE_COLUMNS.FiscalYear],
+	  OffshoreRegion: data[SOURCE_COLUMNS.OffshoreRegion],
 	  internal: {
 	    type: 'ResourceRevenues',
 	  },

@@ -46,10 +46,10 @@ const GROUP_BY_OPTIONS = {
 	'Revenue type': BY_REVENUE_TYPE
 };
 const ADDITIONAL_COLUMN_OPTIONS = {
-	'State/offshore region': 'State', 
-	'Source': 'LandCategory',
-	'Land owner': 'LandClass',
-	'Revenue type': 'RevenueType'
+	'State/Offshore region': ['State','OffshoreRegion'],
+	'Source': ['LandCategory'],
+	'Land owner': ['LandClass'],
+	'Revenue type': ['RevenueType']
 };
 //const ADDITIONAL_COLUMN_OPTIONS = ['State/offshore region', 'Source', 'Land owner', 'Revenue type'];
 
@@ -112,15 +112,20 @@ class FederalRevenue extends React.Component {
 				if( this.state.filter.years.includes(data.FiscalYear) ) {
 					sums[data.FiscalYear] = (sums[data.FiscalYear])? sums[data.FiscalYear]+data.Revenue : data.Revenue;
 
-					this.state.additionalColumns.forEach((column) => {
-						let newValue = data[ADDITIONAL_COLUMN_OPTIONS[column]] || "-";
+					this.state.additionalColumns.forEach((additionalColumn) => {
+						// Get the data columns related to the column in the table. Could have multiple data source columns mapped to 1 table column
+						let dataColumns = ADDITIONAL_COLUMN_OPTIONS[additionalColumn];
 
-						if(additionalColumnsRow[column] === undefined) {
-							additionalColumnsRow[column] = [];
-						}
-						if(!additionalColumnsRow[column].includes(newValue)) {
-							additionalColumnsRow[column].push(newValue)
-						}
+						dataColumns.map(column => {
+							let newValue = data[column];
+
+							if(additionalColumnsRow[additionalColumn] === undefined) {
+								additionalColumnsRow[additionalColumn] = [];
+							}
+							if(newValue !== null && !additionalColumnsRow[additionalColumn].includes(newValue)) {
+								additionalColumnsRow[additionalColumn].push(newValue)
+							}						
+						})
 					})
 				}
 			})
@@ -130,7 +135,10 @@ class FederalRevenue extends React.Component {
 
 				let sumsToArray = this.state.filter.years.map(year => utils.formatToDollarInt(sums[year]) )
 
-				Object.keys(additionalColumnsRow).forEach(column => tableRow.push(additionalColumnsRow[column].join(", ")) )
+				Object.keys(additionalColumnsRow).forEach(column => {
+					let rowData = (additionalColumnsRow[column].length > 0)? additionalColumnsRow[column].join(", ") : "-"
+					tableRow.push(rowData);
+				})
 
 				return tableRow.concat(sumsToArray);
 			}
@@ -233,14 +241,14 @@ class FederalRevenue extends React.Component {
 					</section>
 
 					<div className={styles.downloadLinkContainer}>
-						<DownloadDataLink to={"/downloads"}>Downloads and documenation</DownloadDataLink>
+						<DownloadDataLink to={"/downloads"}>Downloads and documentation</DownloadDataLink>
 					</div>
 
 					<h2 className={theme.sectionHeaderUnderline}>Revenue data</h2>
 
 					<div className={styles.filterContainer}>
 						<div>
-							<div className={styles.filterLabel}>TimeFrame:</div>
+							<div className={styles.filterLabel}>Timeframe:</div>
 							<Toggle 
 								action={this.setTimeframe}
 								buttons={[{ key: TOGGLE_VALUES.Year, name: 'Yearly', default: (timeframe === TOGGLE_VALUES.Year) },
@@ -324,6 +332,7 @@ export const query = graphql`
 		      County
 		      State
 		      RevenueDate
+		      OffshoreRegion
 		    }
 		  }
 		}

@@ -23,6 +23,7 @@ export const ALL_IDS = 'all_ids';
 export const BY_ID = 'by_id';
 export const BY_COMMODITY = 'by_commodity';
 export const BY_STATE = 'by_state';
+export const BY_OFFSHORE_REGION = 'by_offshore_region';
 export const BY_COUNTY = 'by_county';
 export const BY_LAND_CATEGORY = 'by_land_category';
 export const BY_LAND_CLASS = 'by_land_class';

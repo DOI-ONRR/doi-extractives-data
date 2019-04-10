@@ -8,6 +8,7 @@ import {
 	REVENUES_FISCAL_YEAR,
 	BY_ID, BY_COMMODITY,
 	BY_STATE, BY_COUNTY,
+	BY_OFFSHORE_REGION,
 	BY_LAND_CATEGORY,
 	BY_LAND_CLASS,
 	BY_REVENUE_TYPE,
@@ -39,14 +40,14 @@ const TOGGLE_VALUES = {
 const DEFAULT_GROUP_BY_INDEX = 0;
 
 const GROUP_BY_OPTIONS = {
-	'Commodity': BY_COMMODITY, 
-	'Location': BY_STATE, 
-	'Source': BY_LAND_CATEGORY, 
-	'Land owner': BY_LAND_CLASS, 
-	'Revenue type': BY_REVENUE_TYPE
+	'Commodity': [BY_COMMODITY], 
+	'Location': [BY_STATE, BY_OFFSHORE_REGION], 
+	'Source': [BY_LAND_CATEGORY], 
+	'Land owner': [BY_LAND_CLASS], 
+	'Revenue type': [BY_REVENUE_TYPE]
 };
 const ADDITIONAL_COLUMN_OPTIONS = {
-	'State/Offshore region': ['State','OffshoreRegion'],
+	'Location': ['State','OffshoreRegion'],
 	'Source': ['LandCategory'],
 	'Land owner': ['LandClass'],
 	'Revenue type': ['RevenueType']
@@ -94,56 +95,61 @@ class FederalRevenue extends React.Component {
 
 	getTableData = () => {
 		let dataSet = this.state[REVENUES_FISCAL_YEAR];
-		let dataSetGroupBy = this.state[REVENUES_FISCAL_YEAR][GROUP_BY_OPTIONS[this.state.filter.groupBy]];
+		let dataSetsGroupBy = GROUP_BY_OPTIONS[this.state.filter.groupBy].map( groupBy => this.state[REVENUES_FISCAL_YEAR][groupBy] );
 
-		let tableData = Object.keys(dataSetGroupBy).map((name) => {
+		let tableData = []; 
+		// Iterate over all group by data sets asociated with this filter group by
+		dataSetsGroupBy.forEach( dataSetGroupBy => { 
+			let groupByResult = Object.keys(dataSetGroupBy).map((name) => {
 
-			let tableRow = [name]
+				let tableRow = [name]
 
-			let sums = {}
+				let sums = {}
 
-			let additionalColumnsRow = {};
+				let additionalColumnsRow = {};
 
-			// sum all revenues
-			dataSetGroupBy[name].map((dataId) => {
-				let data = dataSet[BY_ID][dataId];
+				// sum all revenues
+				dataSetGroupBy[name].map((dataId) => {
+					let data = dataSet[BY_ID][dataId];
 
-				// filter by selected years
-				if( this.state.filter.years.includes(data.FiscalYear) ) {
-					sums[data.FiscalYear] = (sums[data.FiscalYear])? sums[data.FiscalYear]+data.Revenue : data.Revenue;
+					// filter by selected years
+					if( this.state.filter.years.includes(data.FiscalYear) ) {
+						sums[data.FiscalYear] = (sums[data.FiscalYear])? sums[data.FiscalYear]+data.Revenue : data.Revenue;
 
-					this.state.additionalColumns.forEach((additionalColumn) => {
-						// Get the data columns related to the column in the table. Could have multiple data source columns mapped to 1 table column
-						let dataColumns = ADDITIONAL_COLUMN_OPTIONS[additionalColumn];
+						this.state.additionalColumns.forEach((additionalColumn) => {
+							// Get the data columns related to the column in the table. Could have multiple data source columns mapped to 1 table column
+							let dataColumns = ADDITIONAL_COLUMN_OPTIONS[additionalColumn];
 
-						dataColumns.map(column => {
-							let newValue = data[column];
+							dataColumns.map(column => {
+								let newValue = data[column];
 
-							if(additionalColumnsRow[additionalColumn] === undefined) {
-								additionalColumnsRow[additionalColumn] = [];
-							}
-							if(newValue !== null && !additionalColumnsRow[additionalColumn].includes(newValue)) {
-								additionalColumnsRow[additionalColumn].push(newValue)
-							}						
+								if(additionalColumnsRow[additionalColumn] === undefined) {
+									additionalColumnsRow[additionalColumn] = [];
+								}
+								if(newValue !== null && !additionalColumnsRow[additionalColumn].includes(newValue)) {
+									additionalColumnsRow[additionalColumn].push(newValue)
+								}						
+							})
 						})
-					})
-				}
-			})
-
-			// If no revenue data is found then ignore this row
-			if(Object.keys(sums).length > 0) {
-
-				let sumsToArray = this.state.filter.years.map(year => utils.formatToDollarInt(sums[year]) )
-
-				Object.keys(additionalColumnsRow).forEach(column => {
-					let rowData = (additionalColumnsRow[column].length > 0)? additionalColumnsRow[column].join(", ") : "-"
-					tableRow.push(rowData);
+					}
 				})
 
-				return tableRow.concat(sumsToArray);
-			}
+				// If no revenue data is found then ignore this row
+				if(Object.keys(sums).length > 0) {
+
+					// Format and create an array for all revenue sum columns
+					let sumsToArray = this.state.filter.years.map(year => utils.formatToDollarInt(sums[year]) )
+
+					let mergedAdditionalColumns = Object.keys(additionalColumnsRow).map(column => additionalColumnsRow[column].join(", ") )
+
+					// Add columns in the order they appear in the table
+					return tableRow.concat(mergedAdditionalColumns, sumsToArray);
+				}
 
 
+			})
+			// Merge each groupBy result into the table data array
+			tableData = tableData.concat(groupByResult)
 		});
 
 		// Filter out rows that were undefined due to not having any revenue data for the selected years
@@ -183,6 +189,10 @@ class FederalRevenue extends React.Component {
       		{
       			key: BY_STATE, 
       			groups: data.allRevenuesGroupByState.group,
+      		},
+      		{
+      			key: BY_OFFSHORE_REGION, 
+      			groups: data.allRevenuesGroupByOffshoreRegion.group,
       		},
       		{
       			key: BY_COUNTY, 
@@ -336,7 +346,12 @@ export const query = graphql`
 		    }
 		  }
 		}
-	  allRevenuesGroupByCommodity: allResourceRevenues(filter: {FiscalYear: {ne: null}}, sort: {fields: [FiscalYear], order: DESC}) {
+	  allRevenuesGroupByCommodity: allResourceRevenues(
+	  	filter: {
+	  		FiscalYear: {ne: null},
+	  		Commodity: {nin: [null,""]},
+	  	}, 
+	  	sort: {fields: [FiscalYear], order: DESC}) {
 	    group(field: Commodity) {
 	      id:fieldValue
 	      data:edges {
@@ -346,7 +361,12 @@ export const query = graphql`
 	      }
 	    }
 	  }
-	  allRevenuesGroupByState: allResourceRevenues(filter: {FiscalYear: {ne: null}}, sort: {fields: [FiscalYear], order: DESC}) {
+	  allRevenuesGroupByState: allResourceRevenues(
+	  	filter: {
+		  	FiscalYear: {ne: null}, 
+	      State: {nin: [null,""]},
+	    },  
+	  	sort: {fields: [FiscalYear], order: DESC}) {
 	    group(field: State) {
 	      id:fieldValue
 	      data:edges {
@@ -356,7 +376,27 @@ export const query = graphql`
 	      }
 	    }
 	  }
-	  allRevenuesGroupByCounty: allResourceRevenues(filter: {FiscalYear: {ne: null}}, sort: {fields: [FiscalYear], order: DESC}) {
+	  allRevenuesGroupByOffshoreRegion: allResourceRevenues(
+	  	filter: {
+		  	FiscalYear: {ne: null}, 
+	      OffshoreRegion: {nin: [null,""]},
+	    }, 
+	  	sort: {fields: [FiscalYear], order: DESC}) {
+	    group(field: OffshoreRegion) {
+	      id:fieldValue
+	      data:edges {
+	        node {
+	          id
+	        }
+	      }
+	    }
+	  }
+	  allRevenuesGroupByCounty: allResourceRevenues(
+	  	filter: {
+	  		FiscalYear: {ne: null}, 
+	      County: {nin: [null,""]},
+	    }, 
+	  	sort: {fields: [FiscalYear], order: DESC}) {
 	    group(field: County) {
 	      id:fieldValue
 	      data:edges {
@@ -366,7 +406,12 @@ export const query = graphql`
 	      }
 	    }
 	  }
-	  allRevenuesGroupByLandCategory: allResourceRevenues(filter: {FiscalYear: {ne: null}}, sort: {fields: [FiscalYear], order: DESC}) {
+	  allRevenuesGroupByLandCategory: allResourceRevenues(
+	  	filter: {
+	  		FiscalYear: {ne: null}, 
+	      LandCategory: {nin: [null,""]},
+	  	}, 
+	  	sort: {fields: [FiscalYear], order: DESC}) {
 	    group(field: LandCategory) {
 	      id:fieldValue
 	      data:edges {
@@ -376,7 +421,12 @@ export const query = graphql`
 	      }
 	    }
 	  }
-	  allRevenuesGroupByLandClass: allResourceRevenues(filter: {FiscalYear: {ne: null}}, sort: {fields: [FiscalYear], order: DESC}) {
+	  allRevenuesGroupByLandClass: allResourceRevenues(
+	  	filter: {
+	  		FiscalYear: {ne: null}, 
+	      LandCategory: {nin: [null,""]},
+	  	}, 
+	  	sort: {fields: [FiscalYear], order: DESC}) {
 	    group(field: LandClass) {
 	      id:fieldValue
 	      data:edges {
@@ -386,7 +436,12 @@ export const query = graphql`
 	      }
 	    }
 	  }
-	  allRevenuesGroupByRevenueType: allResourceRevenues(filter: {FiscalYear: {ne: null}}, sort: {fields: [FiscalYear], order: DESC}) {
+	  allRevenuesGroupByRevenueType: allResourceRevenues(
+	  	filter: {
+	  		FiscalYear: {ne: null}, 
+	      RevenueType: {nin: [null,""]},
+	  	}, 
+	  	sort: {fields: [FiscalYear], order: DESC}) {
 	    group(field: RevenueType) {
 	      id:fieldValue
 	      data:edges {
@@ -396,7 +451,11 @@ export const query = graphql`
 	      }
 	    }
 	  }
-	  allRevenuesGroupByFiscalYear: allResourceRevenues(filter: {FiscalYear: {ne: null}}, sort: {fields: [FiscalYear], order: DESC}) {
+	  allRevenuesGroupByFiscalYear: allResourceRevenues(
+	  	filter: {
+	  		FiscalYear: {ne: null}
+	  	}, 
+	  	sort: {fields: [FiscalYear], order: DESC}) {
 	    group(field: FiscalYear) {
 	      id:fieldValue
 	      data:edges {

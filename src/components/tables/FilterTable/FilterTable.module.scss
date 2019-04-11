@@ -36,3 +36,15 @@
 	padding-left: 8px;
 	padding-right: 15px;
 }
+
+.table tbody{
+	tr:last-of-type {
+		background-color: _grayLight;
+		td {
+			font-weight: 600;
+		}
+		td:first-of-type {
+			text-align: right;
+		}
+	}
+}

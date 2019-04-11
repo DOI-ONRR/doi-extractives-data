@@ -12,8 +12,10 @@ import {
 	BY_LAND_CATEGORY,
 	BY_LAND_CLASS,
 	BY_REVENUE_TYPE,
-	BY_FISCAL_YEAR
+	BY_FISCAL_YEAR,
 } from '../../../state/reducers/data-sets'
+
+import {DATA_SET_KEYS} from '../../../state/reducers/data-sets'
 
 import * as CONSTANTS from '../../../js/constants'
 
@@ -39,6 +41,7 @@ const TOGGLE_VALUES = {
 
 const DEFAULT_GROUP_BY_INDEX = 0;
 
+
 const GROUP_BY_OPTIONS = {
 	'Commodity': [BY_COMMODITY], 
 	'Location': [BY_STATE, BY_OFFSHORE_REGION], 
@@ -47,7 +50,7 @@ const GROUP_BY_OPTIONS = {
 	'Revenue type': [BY_REVENUE_TYPE]
 };
 const ADDITIONAL_COLUMN_OPTIONS = {
-	'Location': ['State','OffshoreRegion'],
+	'Location': ['State', DATA_SET_KEYS.OFFSHORE_REGION],
 	'Source': ['LandCategory'],
 	'Land owner': ['LandClass'],
 	'Revenue type': ['RevenueType']
@@ -95,12 +98,14 @@ class FederalRevenue extends React.Component {
 
 	getTableData = () => {
 		let dataSet = this.state[REVENUES_FISCAL_YEAR];
-		let dataSetsGroupBy = GROUP_BY_OPTIONS[this.state.filter.groupBy].map( groupBy => this.state[REVENUES_FISCAL_YEAR][groupBy] );
+		let allDataSetGroupBy = GROUP_BY_OPTIONS[this.state.filter.groupBy].map( groupBy => this.state[REVENUES_FISCAL_YEAR][groupBy] );
 
 		let tableData = []; 
+
+		let totals = {}
 		// Iterate over all group by data sets asociated with this filter group by
-		dataSetsGroupBy.forEach( dataSetGroupBy => { 
-			let groupByResult = Object.keys(dataSetGroupBy).map((name) => {
+		allDataSetGroupBy.forEach( (dataSetGroupBy, indexGroupBy) => { 
+			let groupByResult = Object.keys(dataSetGroupBy).map(name => {
 
 				let tableRow = [name]
 
@@ -115,6 +120,7 @@ class FederalRevenue extends React.Component {
 					// filter by selected years
 					if( this.state.filter.years.includes(data.FiscalYear) ) {
 						sums[data.FiscalYear] = (sums[data.FiscalYear])? sums[data.FiscalYear]+data.Revenue : data.Revenue;
+						totals[data.FiscalYear] = (totals[data.FiscalYear])? totals[data.FiscalYear]+data.Revenue : data.Revenue;
 
 						this.state.additionalColumns.forEach((additionalColumn) => {
 							// Get the data columns related to the column in the table. Could have multiple data source columns mapped to 1 table column
@@ -148,6 +154,12 @@ class FederalRevenue extends React.Component {
 
 
 			})
+
+			let tableTotalRow = ['Totals'];
+			tableTotalRow = tableTotalRow.concat(this.state.additionalColumns.map(col=>" "), this.state.filter.years.map(year => utils.formatToDollarInt(totals[year]) ))
+
+			groupByResult.push(tableTotalRow)
+			
 			// Merge each groupBy result into the table data array
 			tableData = tableData.concat(groupByResult)
 		});

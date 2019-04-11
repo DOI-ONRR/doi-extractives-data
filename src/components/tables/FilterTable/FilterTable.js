@@ -84,9 +84,9 @@ class EnhancedTableHead extends React.Component {
       <TableHead_MU className={styles.tableHeader}>
         <TableRow_MU>
           {columns.map(
-            column => (
+            (column, index) => (
               <TableCell_MU
-                key={column.id}
+                key={column.id+"_"+index}
                 align={column.numeric ? 'right' : 'left'}
                 padding={column.disablePadding ? 'none' : 'default'}
               >

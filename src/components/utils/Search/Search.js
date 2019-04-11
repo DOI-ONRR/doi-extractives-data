@@ -14,22 +14,24 @@ const Search = props => {
   }
 
   return (
-    <div>
-      { props.isMobile
-        ? <label className={styles.searchLabel} htmlFor="q">Search</label>
-        : <label className={styles.srOnly} htmlFor="q">Search</label>
-      }
-      <form action={searchPath} className={styles.searchForm} >
+    <div style={{height:'60px'}}>
+      <div style={{display:'none'}} aria-hidden={true}>
+        { props.isMobile
+          ? <label className={styles.searchLabel} htmlFor="q">Search</label>
+          : <label className={styles.srOnly} htmlFor="q">Search</label>
+        }
+        <form action={searchPath} className={styles.searchForm} >
 
-        <input type="search"
-          className={props.isMobile ? styles.searchBoxMobile : styles.searchBox}
-          placeholder={props.isMobile ? '' : 'Search'}
-          id="search-input" name="q" role="search"/>
-        <button type="submit"
-          className={props.isMobile ? styles.searchButtonMobile : styles.searchButton}
-          title="search">
-          <label className="sr-only">Search</label></button>
-      </form>
+          <input type="search"
+            className={props.isMobile ? styles.searchBoxMobile : styles.searchBox}
+            placeholder={props.isMobile ? '' : 'Search'}
+            id="search-input" name="q" role="search"/>
+          <button type="submit"
+            className={props.isMobile ? styles.searchButtonMobile : styles.searchButton}
+            title="search">
+            <label className="sr-only">Search</label></button>
+        </form>
+      </div>
     </div>
   )
 }

@@ -8,10 +8,16 @@
 }
 
 .table {
-
+	border: 1px solid _grayLight;
+	th {
+	}
+	td {
+		background-color: white;
+	}
 }
 
 .tableHeader th{
+	background-color: white;
 	border: 1px solid _grayLight;
 	border-bottom: 5px solid _greenLight;
 	color: _grayDarkest;
@@ -22,6 +28,11 @@
 	padding-right: 15px;
 	white-space: nowrap;
 	vertical-align: bottom;
+	z-index: 1;
+	span {
+		background-color: white;
+		z-index: 1;
+	}
 }
 
 .tableHeader svg {
@@ -35,6 +46,50 @@
 	font-weight: 300;
 	padding-left: 8px;
 	padding-right: 15px;
+	
+}
+
+.table {
+	tr {
+		th:first-of-type {
+			position: sticky;
+			left: 0px;
+			z-index: 10;
+			span {
+				position: sticky;
+				left: 0px;
+				background-color: white;
+				z-index: 10;
+			}
+		}
+		th:first-of-type:after {
+	    position: absolute;
+	    background-color: transparent;
+	    left: -1px;
+	    border-left: 1px solid #d3dfe6;
+	    border-right: 2px solid #d3dfe6;
+	    content: '';
+	    width: 100%;
+	    height: 100%;
+	    top: 0px;
+		}
+		td:first-of-type {
+			position: sticky;
+			left: 0px;
+		}
+
+		td:first-of-type:after {
+	    position: absolute;
+	    background-color: transparent;
+	    left: -1px;
+	    border-left: 1px solid #d3dfe6;
+	    border-right: 2px solid #d3dfe6;
+	    content: '';
+	    width: 100%;
+	    height: 100%;
+	    top: 0px;
+		}
+	}
 }
 
 .table tbody{

@@ -159,7 +159,7 @@ class FederalRevenue extends React.Component {
 			tableTotalRow = tableTotalRow.concat(this.state.additionalColumns.map(col=>" "), this.state.filter.years.map(year => utils.formatToDollarInt(totals[year]) ))
 
 			groupByResult.push(tableTotalRow)
-			
+
 			// Merge each groupBy result into the table data array
 			tableData = tableData.concat(groupByResult)
 		});
@@ -269,17 +269,9 @@ class FederalRevenue extends React.Component {
 					<h2 className={theme.sectionHeaderUnderline}>Revenue data</h2>
 
 					<div className={styles.filterContainer}>
-						<div>
-							<div className={styles.filterLabel}>Timeframe:</div>
-							<Toggle 
-								action={this.setTimeframe}
-								buttons={[{ key: TOGGLE_VALUES.Year, name: 'Yearly', default: (timeframe === TOGGLE_VALUES.Year) },
-											  { key: TOGGLE_VALUES.Month, name: 'Monthly', default: (timeframe === TOGGLE_VALUES.Month) }]}>
-							</Toggle>
-						</div>
 						{yearOptions &&
 							<div>
-								<div className={styles.filterLabel}>Year(s):</div>
+								<div className={styles.filterLabel}>Fiscal Year(s):</div>
 								<Select
 									multiple
 									dataSetId={REVENUES_FISCAL_YEAR}

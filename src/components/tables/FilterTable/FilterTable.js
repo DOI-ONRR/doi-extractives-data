@@ -51,9 +51,9 @@ class FilterTable extends React.Component {
                     { 
                       cells.map((cell, index) => {
                         if(this.state.columns[index] && typeof this.state.columns[index].cellRender === 'function') {
-                          return (<TableCell_MU key={index}>{this.state.columns[index].cellRender(cell)}</TableCell_MU>)
+                          return (<TableCell_MU key={index} align={this.state.columns[index].numeric ? 'right' : 'left'}>{this.state.columns[index].cellRender(cell)}</TableCell_MU>)
                         }
-                        return (<TableCell_MU key={index}>{cell}</TableCell_MU>)
+                        return (<TableCell_MU key={index} align={this.state.columns[index].numeric ? 'right' : 'left'}>{cell}</TableCell_MU>)
                       })
                     }
                   </TableRow_MU>

@@ -91,7 +91,7 @@ class FederalRevenue extends React.Component {
 
 		this.state.additionalColumns.forEach(column => columns.push({ id: column, numeric: false, label: column }))
 
-		filter.years.sort().forEach(year => columns.push({ id: 'fy-'+year, numeric: false, label: year }))
+		filter.years.sort().forEach(year => columns.push({ id: 'fy-'+year, numeric: true, label: year }))
 
 		return columns;
 	}

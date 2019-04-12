@@ -50,6 +50,7 @@ const GROUP_BY_OPTIONS = {
 	'Revenue type': [BY_REVENUE_TYPE]
 };
 const ADDITIONAL_COLUMN_OPTIONS = {
+	'Commodity': [DATA_SET_KEYS.COMMODITY],
 	'Location': ['State', DATA_SET_KEYS.OFFSHORE_REGION],
 	'Source': ['LandCategory'],
 	'Land owner': ['LandClass'],
@@ -61,6 +62,7 @@ class FederalRevenue extends React.Component {
 
 	constructor(props) {
 		super(props);
+		this.additionalColumnOptionKeys = Object.keys(ADDITIONAL_COLUMN_OPTIONS);
 		this.hydrateStore();
 	}
 
@@ -71,16 +73,22 @@ class FederalRevenue extends React.Component {
 			groupBy: Object.keys(GROUP_BY_OPTIONS)[DEFAULT_GROUP_BY_INDEX],
 			years: []
 		},
-		additionalColumnOptions: [],
 		additionalColumns: []
 	}
 
 	componentWillReceiveProps (nextProps) {
 		let yearOptions = Object.keys(nextProps[REVENUES_FISCAL_YEAR][BY_FISCAL_YEAR]);
+		let additionalColumns = nextProps.additionalColumns || this.state.additionalColumns;
+		let filter = {...this.state.filter, years:(nextProps.selectedYears || yearOptions.slice(Math.max(yearOptions.length - 3, 1))) }
 
 	  this.setState({ ...nextProps, 
-	  	filter:{...this.state.filter, years:(nextProps.selectedYears || yearOptions.slice(Math.max(yearOptions.length - 3, 1))) }, 
-	  	yearOptions: yearOptions })
+	  	filter: filter, 
+	  	yearOptions: yearOptions,
+	  	additionalColumns: additionalColumns.filter(column => column !== filter.groupBy) })
+	}
+
+	getAdditionalColumnOptions = () => {
+		return this.additionalColumnOptionKeys.filter(column => column !== this.state.filter.groupBy);
 	}
 
 	getTableColumns = () => {
@@ -89,7 +97,9 @@ class FederalRevenue extends React.Component {
 
 		columns.push({ id: filter.groupBy, numeric: false, label: filter.groupBy, cellRender: commodityCellRender});
 
-		this.state.additionalColumns.forEach(column => columns.push({ id: column, numeric: false, label: column }))
+		this.state.additionalColumns.forEach(column => {
+			columns.push({ id: column, numeric: false, label: column })
+		})
 
 		filter.years.sort().forEach(year => columns.push({ id: 'fy-'+year, numeric: true, label: year }))
 
@@ -123,6 +133,7 @@ class FederalRevenue extends React.Component {
 						totals[data.FiscalYear] = (totals[data.FiscalYear])? totals[data.FiscalYear]+data.Revenue : data.Revenue;
 
 						this.state.additionalColumns.forEach((additionalColumn) => {
+
 							// Get the data columns related to the column in the table. Could have multiple data source columns mapped to 1 table column
 							let dataColumns = ADDITIONAL_COLUMN_OPTIONS[additionalColumn];
 
@@ -176,8 +187,12 @@ class FederalRevenue extends React.Component {
  		this.setState({filter:{...this.state.filter, years:values.sort()} })
 	}
 
+	// If group by column is in the additional columns remove it
 	setGroupByFilter(value) {
-		this.setState({filter:{...this.state.filter, groupBy:value} })
+		this.setState({
+			filter:{...this.state.filter, groupBy:value},
+			additionalColumns: this.state.additionalColumns.filter(column => column !== value) 
+		})
 	}
 
 	setAdditionalColumns(value) {
@@ -299,8 +314,9 @@ class FederalRevenue extends React.Component {
 							<div className={styles.filterLabel}>Additional Column:</div>
 							<Select
 								multiple
-						    options={Object.keys(ADDITIONAL_COLUMN_OPTIONS)}
+						    options={this.getAdditionalColumnOptions()}
 						    onChangeHandler={this.setAdditionalColumns.bind(this)}
+						    selectedOption={this.state.additionalColumns}
 						  >
 						  </Select>
 						</div>

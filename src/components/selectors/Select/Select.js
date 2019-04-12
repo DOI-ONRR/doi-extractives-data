@@ -107,7 +107,7 @@ const MenuProps = {
 class Select extends React.Component {
 
   state = {
-    selectedOption: [],
+    selectedOption: this.props.selectedOption || [],
   };
 
 	componentWillReceiveProps (nextProps) {

@@ -31,6 +31,7 @@ export const BY_REVENUE_TYPE = 'by_revenue_type';
 export const BY_FISCAL_YEAR = 'by_fiscal_year';
 
 export const DATA_SET_KEYS = {
+  COMMODITY: 'Commodity',
   OFFSHORE_REGION: 'OffshoreRegion',
 }
 

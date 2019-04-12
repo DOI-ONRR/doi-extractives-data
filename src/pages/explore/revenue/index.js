@@ -278,7 +278,7 @@ class FederalRevenue extends React.Component {
 					</section>
 
 					<div className={styles.downloadLinkContainer}>
-						<DownloadDataLink to={"/downloads"}>Downloads and documentation</DownloadDataLink>
+						<DownloadDataLink to={"/downloads/#revenue"}>Downloads and documentation</DownloadDataLink>
 					</div>
 
 					<h2 className={theme.sectionHeaderUnderline}>Revenue data</h2>

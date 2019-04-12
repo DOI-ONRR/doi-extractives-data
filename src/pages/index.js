@@ -72,6 +72,9 @@ class HomePage extends React.Component {
                       <Link to="/how-it-works">Learn how it works</Link>
                     </div>
                   </div>
+                    <div>
+                      <ExploreDataLink to="/explore/revenue">Revenue data</ExploreDataLink>
+                    </div>
                 </div>
                 <div className={styles.tabContentAside}>
                   <div className={styles.oilRig}>

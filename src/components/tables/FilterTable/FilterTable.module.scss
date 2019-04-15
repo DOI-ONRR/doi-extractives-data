@@ -46,7 +46,7 @@
 	font-weight: 300;
 	padding-left: 8px;
 	padding-right: 15px;
-	
+	vertical-align: bottom;
 }
 
 .table {
@@ -89,6 +89,10 @@
 	    height: 100%;
 	    top: 0px;
 		}
+
+		td:last-of-type {
+		padding-right: 15px;
+		}
 	}
 }
 
@@ -97,9 +101,6 @@
 		background-color: _grayLight;
 		td {
 			font-weight: 600;
-		}
-		td:first-of-type {
-			text-align: right;
 		}
 	}
 }

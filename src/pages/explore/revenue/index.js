@@ -166,15 +166,14 @@ class FederalRevenue extends React.Component {
 
 			})
 
-			let tableTotalRow = ['Totals'];
-			tableTotalRow = tableTotalRow.concat(this.state.additionalColumns.map(col=>" "), this.state.filter.years.map(year => utils.formatToDollarInt(totals[year]) ))
-
-			groupByResult.push(tableTotalRow)
-
 			// Merge each groupBy result into the table data array
 			tableData = tableData.concat(groupByResult)
 		});
 
+		let tableTotalRow = ['Totals'];
+		tableTotalRow = tableTotalRow.concat(this.state.additionalColumns.map(col=>" "), this.state.filter.years.map(year => utils.formatToDollarInt(totals[year]) ))
+
+		tableData.push(tableTotalRow)
 		// Filter out rows that were undefined due to not having any revenue data for the selected years
 		return tableData.filter(row => row !== undefined);
 	}
@@ -444,7 +443,7 @@ export const query = graphql`
 	  allRevenuesGroupByLandClass: allResourceRevenues(
 	  	filter: {
 	  		FiscalYear: {ne: null}, 
-	      LandCategory: {nin: [null,""]},
+	      LandClass: {nin: [null,""]},
 	  	}, 
 	  	sort: {fields: [FiscalYear], order: DESC}) {
 	    group(field: LandClass) {

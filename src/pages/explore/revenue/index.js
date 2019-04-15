@@ -285,7 +285,7 @@ class FederalRevenue extends React.Component {
 					<div className={styles.filterContainer}>
 						{yearOptions &&
 							<div>
-								<div className={styles.filterLabel}>Fiscal Year(s):</div>
+								<div className={styles.filterLabel}>Fiscal year(s):</div>
 								<Select
 									multiple
 									dataSetId={REVENUES_FISCAL_YEAR}
@@ -299,7 +299,7 @@ class FederalRevenue extends React.Component {
 						}
 
 						<div>
-							<div className={styles.filterLabel}>Organize By:</div>
+							<div className={styles.filterLabel}>Organize by:</div>
 							<DropDown
 								sortType={'none'}
 						    options={Object.keys(GROUP_BY_OPTIONS)}
@@ -310,7 +310,7 @@ class FederalRevenue extends React.Component {
 						</div>
 
 						<div>
-							<div className={styles.filterLabel}>Additional Column:</div>
+							<div className={styles.filterLabel}>Add columns:</div>
 							<Select
 								multiple
 						    options={this.getAdditionalColumnOptions()}

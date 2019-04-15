@@ -1,0 +1,13 @@
+@value colors: "../../../css-global/colors.scss";
+@value grayDarkest as _grayDarkest from colors;
+
+
+.root a {
+	color: _grayDarkest;
+	cursor: pointer;
+	font-weight: 300;
+	text-decoration: none;
+}
+.root a:hover{
+	text-decoration: underline;
+}

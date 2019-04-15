@@ -1,0 +1,105 @@
+@value colors: "../../../css-global/colors.scss";
+@value grayDarkest as _grayDarkest, grayLight as _grayLight, greenLight as _greenLight from colors;
+@value variables: "../../../css-global/variables.scss";
+@value baseFontFamily as _baseFontFamily from variables;
+.root{
+	overflow: auto;
+	width: 100%;
+}
+
+.table {
+	border: 1px solid _grayLight;
+	th {
+	}
+	td {
+		background-color: white;
+	}
+}
+
+.tableHeader th{
+	background-color: white;
+	border: 1px solid _grayLight;
+	border-bottom: 5px solid _greenLight;
+	color: _grayDarkest;
+	font-family: _baseFontFamily;
+	font-size: 1rem;
+	font-weight: 400;
+	padding-left: 8px;
+	padding-right: 15px;
+	white-space: nowrap;
+	vertical-align: bottom;
+	z-index: 1;
+	span {
+		background-color: white;
+		z-index: 1;
+	}
+}
+
+.tableHeader svg {
+	opacity: 0;
+}
+
+.tableBody td {
+	color: _grayDarkest;
+	font-family: _baseFontFamily;
+	font-size: 1rem;
+	font-weight: 300;
+	padding-left: 8px;
+	padding-right: 15px;
+	
+}
+
+.table {
+	tr {
+		th:first-of-type {
+			position: sticky;
+			left: 0px;
+			z-index: 10;
+			span {
+				position: sticky;
+				left: 0px;
+				background-color: white;
+				z-index: 10;
+			}
+		}
+		th:first-of-type:after {
+	    position: absolute;
+	    background-color: transparent;
+	    left: -1px;
+	    border-left: 1px solid #d3dfe6;
+	    border-right: 2px solid #d3dfe6;
+	    content: '';
+	    width: 100%;
+	    height: 100%;
+	    top: 0px;
+		}
+		td:first-of-type {
+			position: sticky;
+			left: 0px;
+		}
+
+		td:first-of-type:after {
+	    position: absolute;
+	    background-color: transparent;
+	    left: -1px;
+	    border-left: 1px solid #d3dfe6;
+	    border-right: 2px solid #d3dfe6;
+	    content: '';
+	    width: 100%;
+	    height: 100%;
+	    top: 0px;
+		}
+	}
+}
+
+.table tbody{
+	tr:last-of-type {
+		background-color: _grayLight;
+		td {
+			font-weight: 600;
+		}
+		td:first-of-type {
+			text-align: right;
+		}
+	}
+}

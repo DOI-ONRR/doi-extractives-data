@@ -12,8 +12,8 @@ import CONSTANTS from '../../../js/constants'
 import styles from './KeyStatsSection.module.scss'
 
 import { ExploreDataLink } from '../../layouts/icon-links/ExploreDataLink'
-import { Toggle } from '../../selectors/Toggle'
-import { DropDown } from '../../selectors/DropDown'
+import Toggle from '../../selectors/Toggle'
+import DropDown from '../../selectors/DropDown'
 import { StackedBarChartLayout } from '../../layouts/charts/StackedBarChartLayout'
 
 const TOGGLE_VALUES = {

@@ -65,6 +65,7 @@ const Header = props => {
       <MediaQuery minWidth={769}>
         <nav className="header-nav header-right">
           <ul className="header-nav_top">
+            <li style={{width:'200px'}} className="header-nav_item_top">{" "}</li>
             <li className="header-nav_item_top">
               <a href="#" onClick={() => props.glossaryTermSelected('', true)} className="header-nav_item_link_top js-glossary-toggle" alt="this is the glossary drawer">Glossary</a>
             </li>

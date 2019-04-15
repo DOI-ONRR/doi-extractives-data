@@ -1,0 +1,69 @@
+@value colors: "../../../css-global/colors.scss";
+@value grayDarkest as _grayDarkest, grayPale as _grayPale, grayBlueMid as _grayBlueMid, grayDark as _grayDark, blueMidDark as _blueMidDark, blueMid as _blueMid from colors;
+@value variables: "../../../css-global/variables.scss";
+@value baseFontFamily as _baseFontFamily from variables;
+
+.root {
+	margin-bottom: 16px;
+}
+
+.root > div::before{
+	display: none;
+}
+
+.root > div::after{
+	display: none;
+}
+
+.root svg {
+	color: _grayDarkest;
+	width: 1.5rem;
+	height: 1.5rem;
+}
+/*.root > div{
+	width: 100%;
+}
+
+
+.selectContainer {
+	width: 100%;
+	background-color: _grayPale;
+	border-radius: 5px;
+	color: _grayDarkest;
+
+}
+
+.selectContainer > div{
+	background-color: _grayPale;
+	color: _grayDarkest;
+	font-family: _baseFontFamily;
+	font-size: 1rem;
+	font-weight: 400;	
+	padding-top: 0.5em;
+  padding-right: 14%;
+  padding-bottom: 0.5em;
+  padding-left: 0.8rem;
+  height: 24px;
+	border-radius: 5px;
+}
+
+.selectContainer > div:focus {
+	background-color: _grayPale;
+	border-radius: 5px;
+	color: _grayDarkest;
+  box-shadow: 0 0 0 2px #1c2225;
+  outline: none;
+  height: 24px;
+}
+
+.selectContainer > svg{
+	width: 1.5rem;
+	height: 1.5rem;
+	color: _grayDarkest;
+	opacity: 1;
+	font-weight: 400;	
+}*/
+
+
+
+

@@ -64,7 +64,7 @@ _County_ The county that received the disbursement in accordance with revenue-sh
 
 _Commodity_ The commodity that generated the revenue. For oil and gas, the commodity listed depends on the phase of production. Since it's unknown whether a lease will produce oil, gas, or both, the two commodities are combined in the bonus and rent phases and listed as "Oil & Gas."
 
-_Category_ Includes phases of lease payments, such as bonuses, rents, and royalties. The column also includes "Other Distributions," which include revenues derived from fees and civil penalties. Finally, the column includes "Sequestration," which represents funds that would have been disbursed, but were instead [sequestered](https://www.cbo.gov/topics/budget/sequestration) in accordance with statutory spending limits.
+_Category_ Includes phases of lease payments, such as bonuses, rents, and royalties. The column also includes "Other Distributions," which include revenues derived from fees and civil penalties. Finally, the column includes "Sequestration," which represents [statutory spending limits](https://www.cbo.gov/topics/budget/sequestration) which are withheld from certain government programs. Some program funds are returned in following fiscal year.
 
 _Disbursement_ The amount disbursed
 

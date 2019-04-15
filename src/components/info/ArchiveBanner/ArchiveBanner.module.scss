@@ -16,4 +16,8 @@
   line-height: 1.1875rem;
   margin-bottom: 0.625rem;
   padding: 0px;
+
+  > svg {
+    vertical-align: bottom;
+  }
 }

@@ -262,7 +262,7 @@ class FederalRevenue extends React.Component {
 
 					<h1>Federal Revenue Data</h1>
 
-					<section className={styles.descriptionContainer+" slab-delta "}>
+					<section className={styles.descriptionContainer}>
 						<div className="ribbon-hero-description">
 							When companies lease lands to extract natural resources on federal lands and waters, they pay fees to lease the land and on the resources that are produced. This non-tax revenue is collected and reported by the Office of Natural Resources Revenue (ONRR).
 						</div>

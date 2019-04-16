@@ -9,15 +9,9 @@
 
 .table {
 	border: 1px solid _grayLight;
-	th {
-	}
-	td {
-		background-color: white;
-	}
 }
 
 .tableHeader th{
-	background-color: white;
 	border: 1px solid _grayLight;
 	border-bottom: 5px solid _greenLight;
 	color: _grayDarkest;
@@ -30,7 +24,6 @@
 	vertical-align: bottom;
 	z-index: 1;
 	span {
-		background-color: white;
 		z-index: 1;
 	}
 }
@@ -58,7 +51,6 @@
 			span {
 				position: sticky;
 				left: 0px;
-				background-color: white;
 				z-index: 10;
 			}
 		}
@@ -87,7 +79,7 @@
 	    content: '';
 	    width: 100%;
 	    height: 100%;
-	    top: 0px;
+		top: 0px;
 		}
 
 		td:last-of-type {

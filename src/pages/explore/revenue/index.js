@@ -170,7 +170,7 @@ class FederalRevenue extends React.Component {
 			tableData = tableData.concat(groupByResult)
 		});
 
-		let tableTotalRow = ['Totals'];
+		let tableTotalRow = ['Total'];
 		tableTotalRow = tableTotalRow.concat(this.state.additionalColumns.map(col=>" "), this.state.filter.years.map(year => utils.formatToDollarInt(totals[year]) ))
 
 		tableData.push(tableTotalRow)

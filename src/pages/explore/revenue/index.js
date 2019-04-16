@@ -39,7 +39,7 @@ const TOGGLE_VALUES = {
   Month: 'month'
 }
 
-const DEFAULT_GROUP_BY_INDEX = 0;
+const DEFAULT_GROUP_BY_INDEX = 4;
 
 
 const GROUP_BY_OPTIONS = {

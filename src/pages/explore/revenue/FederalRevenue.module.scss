@@ -3,18 +3,12 @@
 	margin: 2rem 0;
 }
 
-.filterContainer {
-
-}
-
-
 .filterContainer > div {
 	display: inline-block;
+	display: inline-grid;
 	padding: 0rem 1rem;
 	width: 33%;
-
 }
-
 
 .filterLabel {
 	margin-bottom: 0.5rem;

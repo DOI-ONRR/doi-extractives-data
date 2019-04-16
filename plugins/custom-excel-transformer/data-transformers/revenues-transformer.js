@@ -81,6 +81,10 @@ const createRevenueNode = (revenueData) => {
 
   revenueNode.RevenueCategory = LAND_CLASS_CATEGORY_TO_REVENUE_CATEGORY[revenueNode.LandClass] && LAND_CLASS_CATEGORY_TO_REVENUE_CATEGORY[revenueNode.LandClass][revenueNode.LandCategory];
 
+  if(revenueNode.RevenueCategory === undefined) {
+  	revenueNode.RevenueCategory = 'Not tied to a lease';
+  }
+
 	return revenueNode;
 }
 

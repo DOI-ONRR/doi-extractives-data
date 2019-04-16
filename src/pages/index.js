@@ -4,6 +4,18 @@ import { connect } from 'react-redux'
 import Link from '../components/utils/temp-link'
 
 import { hydrate as hydateDataManagerAction } from '../state/reducers/data-sets'
+import { normalize as normalizeDataSetAction } from '../state/reducers/data-sets'
+import {
+  REVENUES_MONTHLY,
+  BY_ID, BY_COMMODITY,
+  BY_STATE, BY_COUNTY,
+  BY_OFFSHORE_REGION,
+  BY_LAND_CATEGORY,
+  BY_LAND_CLASS,
+  BY_REVENUE_TYPE,
+  BY_FISCAL_YEAR,
+  BY_CALENDAR_YEAR
+} from '../state/reducers/data-sets'
 
 import * as CONSTANTS from '../js/constants'
 import utils from '../js/utils'
@@ -37,6 +49,19 @@ class HomePage extends React.Component {
    * reducers
    **/
   hydrateStore () {
+    let data = this.props.data;
+    this.props.normalizeDataSet([
+      { key: REVENUES_MONTHLY, 
+        data: data.allMonthlyRevenues.data, 
+        groups: [
+          {
+            key:BY_CALENDAR_YEAR,
+            groups: data.allMonthlyRevenuesByCalendarYear.group
+          }
+        ]
+      },
+    ]);
+
     this.props.hydateDataManager([
       { key: CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY, data: this.props.data.OilVolumes.volumes },
       { key: CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY, data: this.props.data.GasVolumes.volumes },
@@ -185,7 +210,9 @@ class HomePage extends React.Component {
 
 export default connect(
   state => ({}),
-  dispatch => ({ hydateDataManager: dataSets => dispatch(hydateDataManagerAction(dataSets)),
+  dispatch => ({ 
+    hydateDataManager: dataSets => dispatch(hydateDataManagerAction(dataSets)),
+    normalizeDataSet: dataSets => dispatch(normalizeDataSetAction(dataSets))
   })
 )(HomePage)
 
@@ -290,6 +317,38 @@ export const query = graphql`
           DisplayMonth:RevenueDate(formatString: "MMM")
           Revenue
           RevenueCategory
+        }
+      }
+    }
+    allMonthlyRevenues: allResourceRevenues(
+      filter: {
+        RevenueCategory: {ne: null},
+        Month: {ne: null}
+      }, 
+      sort: {fields: [RevenueDate], order: DESC}) {
+      totalCount
+      data: edges {
+        node {
+          id
+          RevenueDate
+          RevenueMonth: RevenueDate(formatString: "MMMM")
+          RevenueYear: RevenueDate(formatString: "YYYY")
+          DisplayYear: RevenueDate(formatString: "'YY")
+          DisplayMonth: RevenueDate(formatString: "MMM")
+          Revenue
+          RevenueCategory
+        }
+      }
+    }
+    allMonthlyRevenuesByCalendarYear: allResourceRevenues(
+      filter: {RevenueCategory: {ne: null}, Month: {ne: null}}, 
+      sort: {fields: [RevenueDate], order: DESC}) {
+      group(field: CalendarYear) {
+        id: fieldValue
+        data: edges {
+          node {
+            id
+          }
         }
       }
     }

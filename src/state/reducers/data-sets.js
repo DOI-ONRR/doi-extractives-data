@@ -17,8 +17,11 @@ const initialState = {
   SelectedYears: {},
 }
 
-// Define standard data set keys
+// Data set type keys
 export const REVENUES_FISCAL_YEAR = 'revenues_fy';
+export const REVENUES_MONTHLY = 'revenues_monthly';
+
+// Data set group by keys
 export const ALL_IDS = 'all_ids';
 export const BY_ID = 'by_id';
 export const BY_COMMODITY = 'by_commodity';
@@ -29,7 +32,9 @@ export const BY_LAND_CATEGORY = 'by_land_category';
 export const BY_LAND_CLASS = 'by_land_class';
 export const BY_REVENUE_TYPE = 'by_revenue_type';
 export const BY_FISCAL_YEAR = 'by_fiscal_year';
+export const BY_CALENDAR_YEAR = 'by_calendar_year';
 
+// Data set property keys
 export const DATA_SET_KEYS = {
   COMMODITY: 'Commodity',
   OFFSHORE_REGION: 'OffshoreRegion',
@@ -92,9 +97,11 @@ const normalizeHandler = (state, action) => {
 
     normalizedDatasets[dataSet.key][ALL_IDS] = Object.keys(normalizedDatasets[dataSet.key][BY_ID]);
 
-    dataSet.groups.forEach(group => {
-      normalizedDatasets[dataSet.key][group.key] = arrayToObject(group.groups);
-    })
+    if(dataSet.groups) {
+      dataSet.groups.forEach(group => {
+        normalizedDatasets[dataSet.key][group.key] = arrayToObject(group.groups);
+      })
+    }
   })
 
   return ({ ...state, ...normalizedDatasets  })

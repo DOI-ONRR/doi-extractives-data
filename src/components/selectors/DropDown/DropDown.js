@@ -40,8 +40,8 @@ class DropDown extends React.Component {
     	this.props.setSelectedOption([{ id: this.state.dataSet.dataId, dataKey: e.target.value, syncId: this.state.dataSet.syncId }])
     }
 
-    if (this.props.callback) {
-    	this.props.callback(e.target.value)
+    if (this.props.action) {
+    	this.props.action(e.target.value)
     }
   }
 
@@ -61,7 +61,7 @@ class DropDown extends React.Component {
 						  }
 						  else if (typeof option === 'object') {
 						    name = option.name
-						    value = option.value
+						    value = option.key
 						  }
 
 						  return (
@@ -83,7 +83,7 @@ DropDown.propTypes = {
   /** Data set Id to be used for populating and updating selected state. If dataSet is used options is ignored. */
   dataSetId: PropTypes.string,
   /** Function to call on change. */
-  callback: PropTypes.func,
+  action: PropTypes.func,
   /** Sorting options in the list */
   sortType: PropTypes.oneOf(['ascending', 'descending', 'none']),
   theme: PropTypes.oneOf(['year', 'standard']),
@@ -116,7 +116,7 @@ const findDefaultKey = props => {
     defaultKey = options.find((option, index) => {
       return (typeof option === 'string' || typeof option === 'number') ? index === 0 : option.default
     })
-    defaultKey = (typeof defaultKey === 'object') ? defaultKey.value : defaultKey
+    defaultKey = (typeof defaultKey === 'object') ? defaultKey.key : defaultKey
   }
 
   return defaultKey

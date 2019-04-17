@@ -12,3 +12,13 @@
 .filterLabel {
 	margin-bottom: 0.5rem;
 }
+
+// Media queries
+
+@media only screen and (max-width: 600px) {
+	.filterContainer > div {
+		display: block;
+		padding: 0rem 1rem;
+		width: 100%;
+	}
+  }

@@ -47,14 +47,10 @@
 	tr {
 		th:first-of-type {
 			position: sticky;
+			background:white; 
+			background-clip: padding-box;
 			left: 0px;
 			z-index: 10;
-			span {
-				position: sticky;
-				background-color: white;
-				left: 0px;
-				z-index: 10;
-			}
 		}
 		th:first-of-type:after {
 	    position: absolute;

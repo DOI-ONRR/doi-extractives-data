@@ -348,7 +348,7 @@ const commodityCellRender = (data) => {
 
 export const query = graphql`
   query FederalRevenuesPageQuery {
-		allRevenues:allResourceRevenues (filter:{FiscalYear:{ne:null}}, sort: {fields: [FiscalYear], order: DESC}) {
+		allRevenues:allResourceRevenuesFiscalYear (filter:{FiscalYear:{ne:null}}, sort: {fields: [FiscalYear], order: DESC}) {
 		  data:edges {
 		    node {
 		    	id
@@ -365,7 +365,7 @@ export const query = graphql`
 		    }
 		  }
 		}
-	  allRevenuesGroupByCommodity: allResourceRevenues(
+	  allRevenuesGroupByCommodity: allResourceRevenuesFiscalYear(
 	  	filter: {
 	  		FiscalYear: {ne: null},
 	  		Commodity: {nin: [null,""]},
@@ -380,7 +380,7 @@ export const query = graphql`
 	      }
 	    }
 	  }
-	  allRevenuesGroupByState: allResourceRevenues(
+	  allRevenuesGroupByState: allResourceRevenuesFiscalYear(
 	  	filter: {
 		  	FiscalYear: {ne: null}, 
 	      State: {nin: [null,""]},
@@ -395,7 +395,7 @@ export const query = graphql`
 	      }
 	    }
 	  }
-	  allRevenuesGroupByOffshoreRegion: allResourceRevenues(
+	  allRevenuesGroupByOffshoreRegion: allResourceRevenuesFiscalYear(
 	  	filter: {
 		  	FiscalYear: {ne: null}, 
 	      OffshoreRegion: {nin: [null,""]},
@@ -410,7 +410,7 @@ export const query = graphql`
 	      }
 	    }
 	  }
-	  allRevenuesGroupByCounty: allResourceRevenues(
+	  allRevenuesGroupByCounty: allResourceRevenuesFiscalYear(
 	  	filter: {
 	  		FiscalYear: {ne: null}, 
 	      County: {nin: [null,""]},
@@ -425,7 +425,7 @@ export const query = graphql`
 	      }
 	    }
 	  }
-	  allRevenuesGroupByLandCategory: allResourceRevenues(
+	  allRevenuesGroupByLandCategory: allResourceRevenuesFiscalYear(
 	  	filter: {
 	  		FiscalYear: {ne: null}, 
 	      LandCategory: {nin: [null,""]},
@@ -440,7 +440,7 @@ export const query = graphql`
 	      }
 	    }
 	  }
-	  allRevenuesGroupByLandClass: allResourceRevenues(
+	  allRevenuesGroupByLandClass: allResourceRevenuesFiscalYear(
 	  	filter: {
 	  		FiscalYear: {ne: null}, 
 	      LandClass: {nin: [null,""]},
@@ -455,7 +455,7 @@ export const query = graphql`
 	      }
 	    }
 	  }
-	  allRevenuesGroupByRevenueType: allResourceRevenues(
+	  allRevenuesGroupByRevenueType: allResourceRevenuesFiscalYear(
 	  	filter: {
 	  		FiscalYear: {ne: null}, 
 	      RevenueType: {nin: [null,""]},
@@ -470,7 +470,7 @@ export const query = graphql`
 	      }
 	    }
 	  }
-	  allRevenuesGroupByFiscalYear: allResourceRevenues(
+	  allRevenuesGroupByFiscalYear: allResourceRevenuesFiscalYear(
 	  	filter: {
 	  		FiscalYear: {ne: null}
 	  	}, 

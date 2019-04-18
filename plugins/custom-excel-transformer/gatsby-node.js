@@ -49,10 +49,10 @@ async function onCreateNode(
 				newNode = federalDisbursementsTransformer(node);
 				break;
 			case DATA_TRANSFORMER_CONSTANTS.REVENUES_MONTHLY_EXCEL:
-				newNode = revenuesTransformer(node);
+				newNode = revenuesTransformer(node, 'ResourceRevenuesMonthly');
 				break;
 			case DATA_TRANSFORMER_CONSTANTS.FEDERAL_REVENUE_FY:
-				newNode = revenuesTransformer(node);
+				newNode = revenuesTransformer(node, 'ResourceRevenuesFiscalYear');
 				break;
 		}
 

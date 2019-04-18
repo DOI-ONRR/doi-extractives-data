@@ -304,7 +304,7 @@ export const query = graphql`
         } 
       }
     }
-    allRevenues:allResourceRevenues(
+    allRevenues:allResourceRevenuesMonthly(
       filter:{RevenueCategory:{ne: null}}
       sort:{fields:[RevenueDate], order: DESC}
     ) {
@@ -320,7 +320,7 @@ export const query = graphql`
         }
       }
     }
-    allMonthlyRevenues: allResourceRevenues(
+    allMonthlyRevenues: allResourceRevenuesMonthly(
       filter: {
         RevenueCategory: {ne: null},
         Month: {ne: null}
@@ -340,7 +340,7 @@ export const query = graphql`
         }
       }
     }
-    allMonthlyRevenuesByCalendarYear: allResourceRevenues(
+    allMonthlyRevenuesByCalendarYear: allResourceRevenuesMonthly(
       filter: {RevenueCategory: {ne: null}, Month: {ne: null}}, 
       sort: {fields: [RevenueDate], order: DESC}) {
       group(field: CalendarYear) {

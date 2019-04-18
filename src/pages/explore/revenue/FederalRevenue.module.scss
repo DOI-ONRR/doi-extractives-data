@@ -1,25 +1,24 @@
-.descriptionContainer {
-	padding: 1rem;
-}
-
 .downloadLinkContainer {
+	clear: both;
 	margin: 2rem 0;
 }
 
-.filterContainer {
-
-}
-
-
 .filterContainer > div {
-	display: inline-block;
+	float: left;
 	padding: 0rem 1rem;
 	width: 33%;
-
 }
-
 
 .filterLabel {
 	margin-bottom: 0.5rem;
 }
 
+// Media queries
+
+@media only screen and (max-width: 600px) {
+	.filterContainer > div {
+		display: block;
+		padding: 0rem 1rem;
+		width: 100%;
+	}
+  }

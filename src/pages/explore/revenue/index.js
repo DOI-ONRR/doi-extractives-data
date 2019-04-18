@@ -39,7 +39,7 @@ const TOGGLE_VALUES = {
   Month: 'month'
 }
 
-const DEFAULT_GROUP_BY_INDEX = 0;
+const DEFAULT_GROUP_BY_INDEX = 4;
 
 
 const GROUP_BY_OPTIONS = {
@@ -170,7 +170,7 @@ class FederalRevenue extends React.Component {
 			tableData = tableData.concat(groupByResult)
 		});
 
-		let tableTotalRow = ['Totals'];
+		let tableTotalRow = ['Total'];
 		tableTotalRow = tableTotalRow.concat(this.state.additionalColumns.map(col=>" "), this.state.filter.years.map(year => utils.formatToDollarInt(totals[year]) ))
 
 		tableData.push(tableTotalRow)
@@ -262,17 +262,17 @@ class FederalRevenue extends React.Component {
 
 					<h1>Federal Revenue Data</h1>
 
-					<section className={styles.descriptionContainer+" slab-delta "}>
+					<section className={styles.descriptionContainer}>
 						<div className="ribbon-hero-description">
 							When companies lease lands to extract natural resources on federal lands and waters, they pay fees to lease the land and on the resources that are produced. This non-tax revenue is collected and reported by the Office of Natural Resources Revenue (ONRR).
 						</div>
 						<div className="container-left-6">
 							Leasing<br/>
-							Companies bid on and lease lands and waters from the federal government.  They pay a bonus when they win a lease and rent until resource production begins.
+							<span class="para-md">Companies bid on and lease lands and waters from the federal government. They pay a bonus when they win a lease and rent until resource production begins.</span>
 						</div>
 						<div className="container-right-6">
 							Production<br/>
-							Once enough resources are produced to pay royalties, the leaseholder pays royalties and other fees to the federal government.
+							<span class="para-md">Once enough resources are produced to pay royalties, the leaseholder pays royalties and other fees to the federal government.</span>
 						</div>
 					</section>
 
@@ -285,7 +285,7 @@ class FederalRevenue extends React.Component {
 					<div className={styles.filterContainer}>
 						{yearOptions &&
 							<div>
-								<div className={styles.filterLabel}>Fiscal Year(s):</div>
+								<div className={styles.filterLabel}>Fiscal year(s):</div>
 								<Select
 									multiple
 									dataSetId={REVENUES_FISCAL_YEAR}
@@ -299,18 +299,18 @@ class FederalRevenue extends React.Component {
 						}
 
 						<div>
-							<div className={styles.filterLabel}>Organize By:</div>
+							<div className={styles.filterLabel}>Organize by:</div>
 							<DropDown
 								sortType={'none'}
 						    options={Object.keys(GROUP_BY_OPTIONS)}
-						    callback={this.setGroupByFilter.bind(this)}
+						    action={this.setGroupByFilter.bind(this)}
 						    defaultOptionIndex={DEFAULT_GROUP_BY_INDEX}
 						  >
 						  </DropDown>
 						</div>
 
 						<div>
-							<div className={styles.filterLabel}>Additional Column:</div>
+							<div className={styles.filterLabel}>Add columns:</div>
 							<Select
 								multiple
 						    options={this.getAdditionalColumnOptions()}
@@ -348,7 +348,7 @@ const commodityCellRender = (data) => {
 
 export const query = graphql`
   query FederalRevenuesPageQuery {
-		allRevenues:allResourceRevenues (filter:{FiscalYear:{ne:null}}, sort: {fields: [FiscalYear], order: DESC}) {
+		allRevenues:allResourceRevenuesFiscalYear (filter:{FiscalYear:{ne:null}}, sort: {fields: [FiscalYear], order: DESC}) {
 		  data:edges {
 		    node {
 		    	id
@@ -365,7 +365,7 @@ export const query = graphql`
 		    }
 		  }
 		}
-	  allRevenuesGroupByCommodity: allResourceRevenues(
+	  allRevenuesGroupByCommodity: allResourceRevenuesFiscalYear(
 	  	filter: {
 	  		FiscalYear: {ne: null},
 	  		Commodity: {nin: [null,""]},
@@ -380,7 +380,7 @@ export const query = graphql`
 	      }
 	    }
 	  }
-	  allRevenuesGroupByState: allResourceRevenues(
+	  allRevenuesGroupByState: allResourceRevenuesFiscalYear(
 	  	filter: {
 		  	FiscalYear: {ne: null}, 
 	      State: {nin: [null,""]},
@@ -395,7 +395,7 @@ export const query = graphql`
 	      }
 	    }
 	  }
-	  allRevenuesGroupByOffshoreRegion: allResourceRevenues(
+	  allRevenuesGroupByOffshoreRegion: allResourceRevenuesFiscalYear(
 	  	filter: {
 		  	FiscalYear: {ne: null}, 
 	      OffshoreRegion: {nin: [null,""]},
@@ -410,7 +410,7 @@ export const query = graphql`
 	      }
 	    }
 	  }
-	  allRevenuesGroupByCounty: allResourceRevenues(
+	  allRevenuesGroupByCounty: allResourceRevenuesFiscalYear(
 	  	filter: {
 	  		FiscalYear: {ne: null}, 
 	      County: {nin: [null,""]},
@@ -425,7 +425,7 @@ export const query = graphql`
 	      }
 	    }
 	  }
-	  allRevenuesGroupByLandCategory: allResourceRevenues(
+	  allRevenuesGroupByLandCategory: allResourceRevenuesFiscalYear(
 	  	filter: {
 	  		FiscalYear: {ne: null}, 
 	      LandCategory: {nin: [null,""]},
@@ -440,7 +440,7 @@ export const query = graphql`
 	      }
 	    }
 	  }
-	  allRevenuesGroupByLandClass: allResourceRevenues(
+	  allRevenuesGroupByLandClass: allResourceRevenuesFiscalYear(
 	  	filter: {
 	  		FiscalYear: {ne: null}, 
 	      LandClass: {nin: [null,""]},
@@ -455,7 +455,7 @@ export const query = graphql`
 	      }
 	    }
 	  }
-	  allRevenuesGroupByRevenueType: allResourceRevenues(
+	  allRevenuesGroupByRevenueType: allResourceRevenuesFiscalYear(
 	  	filter: {
 	  		FiscalYear: {ne: null}, 
 	      RevenueType: {nin: [null,""]},
@@ -470,7 +470,7 @@ export const query = graphql`
 	      }
 	    }
 	  }
-	  allRevenuesGroupByFiscalYear: allResourceRevenues(
+	  allRevenuesGroupByFiscalYear: allResourceRevenuesFiscalYear(
 	  	filter: {
 	  		FiscalYear: {ne: null}
 	  	}, 

@@ -36,9 +36,8 @@ class BlogPostTemplate extends React.Component {
         <h1
           style={{
             ...scale(1.3),
-            lineHeight: '1.1',
+            lineHeight: '1',
             fontWeight: 800,
-            marginBottom: '1.6rem',
           }}
         >{post.frontmatter.title}</h1>
         <p
@@ -47,7 +46,7 @@ class BlogPostTemplate extends React.Component {
             display: 'block',
             color: '#768d99',
             marginBottom: rhythm(1),
-            marginTop: rhythm(-1),
+            marginTop: rhythm(-.7),
             color: '#768d99',
           }}
         >

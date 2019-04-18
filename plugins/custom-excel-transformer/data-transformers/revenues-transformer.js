@@ -49,11 +49,11 @@ const LAND_CLASS_CATEGORY_TO_REVENUE_CATEGORY ={
 }
 
 /* Use ES5 exports in order to be compatible with version 1.x of gatsby */
-module.exports = (node) => {
-	return createRevenueNode(node);
+module.exports = (node, type) => {
+	return createRevenueNode(node, type);
 }
 
-const createRevenueNode = (revenueData) => {
+const createRevenueNode = (revenueData, type) => {
 	const data = Object.keys(revenueData).reduce((c, k) => (c[k.toLowerCase().trim()] = revenueData[k], c), {});
 
   let revenueNode = {
@@ -70,7 +70,7 @@ const createRevenueNode = (revenueData) => {
 	  OffshoreRegion: (data[SOURCE_COLUMNS.OffshoreRegion] === "" || data[SOURCE_COLUMNS.OffshoreRegion] === undefined) ?
 	  	data[SOURCE_COLUMNS.OffshoreRegion] : "Offshore "+data[SOURCE_COLUMNS.OffshoreRegion],
 	  internal: {
-	    type: 'ResourceRevenues',
+	    type: type || 'ResourceRevenues',
 	  },
   }
 

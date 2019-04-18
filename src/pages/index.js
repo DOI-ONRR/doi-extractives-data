@@ -322,11 +322,9 @@ export const query = graphql`
     }
     allMonthlyRevenues: allResourceRevenuesMonthly(
       filter: {
-        RevenueCategory: {ne: null},
-        Month: {ne: null}
+        RevenueCategory: {ne: null}
       }, 
       sort: {fields: [RevenueDate], order: DESC}) {
-      totalCount
       data: edges {
         node {
           id
@@ -341,13 +339,28 @@ export const query = graphql`
       }
     }
     allMonthlyRevenuesByCalendarYear: allResourceRevenuesMonthly(
-      filter: {RevenueCategory: {ne: null}, Month: {ne: null}}, 
+      filter: {RevenueCategory: {ne: null}}, 
       sort: {fields: [RevenueDate], order: DESC}) {
       group(field: CalendarYear) {
         id: fieldValue
         data: edges {
           node {
             id
+          }
+        }
+      }
+    }
+    allRevenuesByFiscalYear: allResourceRevenuesFiscalYear(
+      filter: {RevenueCategory: {ne: null}}, 
+      sort: {fields: [RevenueDate], order: DESC}) {
+      group(field: FiscalYear) {
+        id: fieldValue
+        data: edges {
+          node {
+            id
+            FiscalYear
+            Revenue
+            RevenueCategory
           }
         }
       }

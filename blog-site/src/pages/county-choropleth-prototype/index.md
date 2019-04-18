@@ -13,7 +13,7 @@ tags:
 date: "2019-04-18"
 ---
 
-Our team has been working on alternative presentations of revenue data from natural resource extraction on federal lands. Understanding much of our data is tied to a location, we'd like to expand the geospatial options for viewing the data and find out what users think about those them.
+Our team has been working on alternative presentations of revenue data from natural resource extraction on federal lands. Understanding much of our data is tied to a location, we'd like to expand the geospatial options for viewing the data and test some prototypes with users.
 
 I wanted to get a sense of the variation in the data, so I would know if it was feasible to present the data geographically by county. Assuming it was feasible to present the data by county, I also wanted to know which scale I would need to use to display the data in such a way as to convey sufficient variation in the data.
 

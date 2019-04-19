@@ -28,6 +28,9 @@ tag:
           <li class="explore-subpage-tab">
             <a href="/downloads/federal-revenue-by-company/">Revenue by company</a>
           </li>
+          <li class="explore-subpage-tab">
+            <a href="/downloads/native-american-revenue/">Native American revenue</a>
+          </li>
         </ul>
       </div>
     </section>

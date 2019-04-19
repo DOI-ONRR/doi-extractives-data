@@ -10,7 +10,7 @@ tag:
 
 # Download Data & Documentation
 
-> You can download data for production volumes, revenue, and disbursements here. All of the data is from the [Office of Natural Resources Revenue](https://www.onrr.gov/). 
+> You can download data for production volumes, revenue, and disbursements here. All data is from the [Office of Natural Resources Revenue](https://www.onrr.gov/). 
 
 
 ## Production

@@ -43,16 +43,16 @@ const DEFAULT_GROUP_BY_INDEX = 0;
 
 
 const GROUP_BY_OPTIONS = {
+	'Revenue type': [BY_REVENUE_TYPE],
 	'Commodity': [BY_COMMODITY], 
 	'Location': [BY_STATE, BY_OFFSHORE_REGION], 
-	'Source': [BY_LAND_CATEGORY], 
-	'Land owner': [BY_LAND_CLASS], 
-	'Revenue type': [BY_REVENUE_TYPE]
+	'Land category': [BY_LAND_CATEGORY], 
+	'Land owner': [BY_LAND_CLASS] 
 };
 const ADDITIONAL_COLUMN_OPTIONS = {
 	'Commodity': [DATA_SET_KEYS.COMMODITY],
 	'Location': ['State', DATA_SET_KEYS.OFFSHORE_REGION],
-	'Source': ['LandCategory'],
+	'Land category': ['LandCategory'],
 	'Land owner': ['LandClass'],
 	'Revenue type': ['RevenueType']
 };

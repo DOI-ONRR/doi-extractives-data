@@ -11,22 +11,7 @@ tag:
 ---
 
 <custom-link to="/downloads/" className="breadcrumb link-charlie">Downloads</custom-link> /
-# Federal Production by Location
-
-<section class="explore-subpage container">
-    <section>
-      <div class="explore-subpage-tabs">
-        <ul>
-          <li class="explore-subpage-tab active">
-            <a href="/downloads/federal-production/">Production by year</a>
-          </li>
-          <li class="explore-subpage-tab">
-            <a href="/downloads/federal-production-by-month/">Production by month</a>
-          </li>
-        </ul>
-      </div>
-    </section>
-</section>
+# Federal Production by Year and Location
 
 > This dataset contains information on production on federal lands and waters. We have versions of these datasets available for calendar years 2008-2017 and for fiscal years 2009-2018.
 

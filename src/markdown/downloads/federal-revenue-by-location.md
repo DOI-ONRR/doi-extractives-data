@@ -13,28 +13,7 @@ tag:
 ---
 
 <custom-link to="/downloads/" className="breadcrumb link-charlie">Downloads</custom-link> /
-# Revenue by Year
-
-<section class="explore-subpage container">
-    <section>
-      <div class="explore-subpage-tabs">
-        <ul>
-          <li class="explore-subpage-tab active">
-            <a href="/downloads/federal-revenue-by-location/">Revenue by year</a>
-          </li>
-          <li class="explore-subpage-tab">
-            <a href="/downloads/federal-revenue-by-month/">Revenue by month</a>
-          </li>
-          <li class="explore-subpage-tab">
-            <a href="/downloads/federal-revenue-by-company/">Revenue by company</a>
-          </li>
-          <li class="explore-subpage-tab">
-            <a href="/downloads/native-american-revenue/">Native American revenue</a>
-          </li>
-        </ul>
-      </div>
-    </section>
-</section>
+# Federal Revenue by Year and Location
 
 > We offer revenue data files for both calendar year and fiscal year. Calendar year revenue data is split into three separate files (onshore, offshore, and revenues not associated with a lease). Calendar year data is available for calendar years 2006–2017. Fiscal year data is available in a single file, for fiscal years 2006–2018. They are all <glossary-term>accounting year</glossary-term> data.
 
@@ -56,7 +35,7 @@ We also have [notes on this data](https://github.com/onrr/doi-extractives-data/w
 
 ## Scope
 
-These datasets include natural resource revenues for U.S. federal lands and offshore areas. It does not include Indian lands, privately-owned lands or U.S. state lands. The datasets currently includes data tracked and managed by the Department of the Interior’s Office of Natural Resources Revenue.
+These datasets include natural resource revenues for U.S. federal lands and offshore areas. It does not include Native American lands, privately-owned lands or U.S. state lands. The datasets include data tracked and managed by the Department of the Interior’s Office of Natural Resources Revenue.
 
 <h3 alt="Negative values">Why are some values negative?</h3>
 

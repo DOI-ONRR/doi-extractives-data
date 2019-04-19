@@ -39,7 +39,7 @@ const TOGGLE_VALUES = {
   Month: 'month'
 }
 
-const DEFAULT_GROUP_BY_INDEX = 4;
+const DEFAULT_GROUP_BY_INDEX = 0;
 
 
 const GROUP_BY_OPTIONS = {
@@ -113,7 +113,7 @@ class FederalRevenue extends React.Component {
 		let tableData = []; 
 
 		let totals = {}
-		// Iterate over all group by data sets asociated with this filter group by
+		// Iterate over all group by data sets associated with this filter group by
 		allDataSetGroupBy.forEach( (dataSetGroupBy, indexGroupBy) => { 
 			let groupByResult = Object.keys(dataSetGroupBy).map(name => {
 

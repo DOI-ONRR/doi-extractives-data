@@ -10,7 +10,7 @@ const WhatsNew = props => (
       <p>In our latest release on April 23, 2019, we made the following changes:</p>
       <ul className="list-bullet ribbon-card-top-list">
         <li>Added fiscal year view to homepage annual revenue and production bar charts</li>
-        <li>Added a download file for <Link to="downloads/native-american-revenue/">Native American revenue data</Link></li>
+        <li>Added download file for <Link to="downloads/native-american-revenue/">Native American revenue data</Link></li>
       </ul>
         <p>In our release on April 18, 2019, we made the following changes:</p>
         <ul className="list-bullet ribbon-card-top-list">

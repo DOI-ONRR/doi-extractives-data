@@ -67,6 +67,8 @@ const createRevenueNode = (revenueData, type) => {
 	  State: data[SOURCE_COLUMNS.State],
 	  County: data[SOURCE_COLUMNS.County],
 	  FiscalYear: data[SOURCE_COLUMNS.FiscalYear],
+	  Units: '$',
+	  LongUnits: 'dollars',
 	  OffshoreRegion: (data[SOURCE_COLUMNS.OffshoreRegion] === "" || data[SOURCE_COLUMNS.OffshoreRegion] === undefined) ?
 	  	data[SOURCE_COLUMNS.OffshoreRegion] : "Offshore "+data[SOURCE_COLUMNS.OffshoreRegion],
 	  internal: {

@@ -17,6 +17,7 @@
  **/
 const DATA_TRANSFORMER_CONSTANTS = {
   PRODUCTION_VOLUMES_EXCEL :'ProductionVolumesXlsx__Sheet1',
+  PRODUCTION_VOLUMES_FY:'FederalProductionFy2009201820190326Xlsx__FyFederalProductionVolumes',
   REVENUES_MONTHLY_EXCEL :'MonthlyRevenue032019Xlsx__MontlyRev',
   FEDERAL_DISBURSEMENTS_EXCEL:'DisbursementsXlsx__Data',
   FEDERAL_REVENUE_FY:'FederalRevenueAcctYearFy061820181213Xlsx__FederalRevenuesFy06Fy18'
@@ -24,6 +25,7 @@ const DATA_TRANSFORMER_CONSTANTS = {
 
 const TRANSFORMER_NODE_TYPES = [
 	DATA_TRANSFORMER_CONSTANTS.PRODUCTION_VOLUMES_EXCEL,
+	DATA_TRANSFORMER_CONSTANTS.PRODUCTION_VOLUMES_FY,
 	DATA_TRANSFORMER_CONSTANTS.FEDERAL_DISBURSEMENTS_EXCEL,
 	DATA_TRANSFORMER_CONSTANTS.REVENUES_MONTHLY_EXCEL,
 	DATA_TRANSFORMER_CONSTANTS.FEDERAL_REVENUE_FY
@@ -43,7 +45,10 @@ async function onCreateNode(
 		let newNode;
 		switch(node.internal.type) {
 			case DATA_TRANSFORMER_CONSTANTS.PRODUCTION_VOLUMES_EXCEL:
-				newNode = productionVolumesTransformer(node);
+				newNode = productionVolumesTransformer(node, 'ProductVolumes');
+				break;
+			case DATA_TRANSFORMER_CONSTANTS.PRODUCTION_VOLUMES_FY:
+				newNode = productionVolumesTransformer(node, 'ProductVolumesFiscalYear');
 				break;
 			case DATA_TRANSFORMER_CONSTANTS.FEDERAL_DISBURSEMENTS_EXCEL:
 				newNode = federalDisbursementsTransformer(node);

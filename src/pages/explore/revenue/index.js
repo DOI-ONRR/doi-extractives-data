@@ -303,7 +303,7 @@ class FederalRevenue extends React.Component {
 							<DropDown
 								sortType={'none'}
 						    options={Object.keys(GROUP_BY_OPTIONS)}
-						    callback={this.setGroupByFilter.bind(this)}
+						    action={this.setGroupByFilter.bind(this)}
 						    defaultOptionIndex={DEFAULT_GROUP_BY_INDEX}
 						  >
 						  </DropDown>

@@ -6,7 +6,9 @@ import Link from '../components/utils/temp-link'
 import { hydrate as hydateDataManagerAction } from '../state/reducers/data-sets'
 import { normalize as normalizeDataSetAction } from '../state/reducers/data-sets'
 import {
+  PRODUCT_VOLUMES_FISCAL_YEAR,
   REVENUES_MONTHLY,
+  REVENUES_FISCAL_YEAR,
   BY_ID, BY_COMMODITY,
   BY_STATE, BY_COUNTY,
   BY_OFFSHORE_REGION,
@@ -50,6 +52,7 @@ class HomePage extends React.Component {
    **/
   hydrateStore () {
     let data = this.props.data;
+
     this.props.normalizeDataSet([
       { key: REVENUES_MONTHLY, 
         data: data.allMonthlyRevenues.data, 
@@ -60,6 +63,33 @@ class HomePage extends React.Component {
           }
         ]
       },
+      { key: REVENUES_FISCAL_YEAR, 
+        data: data.allFiscalYearRevenues.data, 
+        groups: [
+          {
+            key:BY_FISCAL_YEAR,
+            groups: data.allFiscalYearRevenuesByFiscalYear.group
+          }
+        ]
+      },
+      {
+        key: PRODUCT_VOLUMES_FISCAL_YEAR,
+        data: data.allFiscalYearProductVolumes.data,
+        groups: [
+          {
+            key:BY_FISCAL_YEAR+"_Gas",
+            groups: data.allFiscalYearProductVolumesByFiscalYear_Gas.group
+          },
+          {
+            key:BY_FISCAL_YEAR+"_Oil",
+            groups: data.allFiscalYearProductVolumesByFiscalYear_Oil.group
+          },
+          {
+            key:BY_FISCAL_YEAR+"_Coal",
+            groups: data.allFiscalYearProductVolumesByFiscalYear_Coal.group
+          }
+        ]
+      }
     ]);
 
     this.props.hydateDataManager([
@@ -171,7 +201,7 @@ class HomePage extends React.Component {
             </Tab>
           </Tabordion>
 
-          <KeyStatsSection/>
+          <KeyStatsSection />
 
           <section className={styles.mapSection}>
             <div className={styles.mapSectionContainer + ' container-page-wrapper'}>
@@ -350,7 +380,21 @@ export const query = graphql`
         }
       }
     }
-    allRevenuesByFiscalYear: allResourceRevenuesFiscalYear(
+    allFiscalYearRevenues: allResourceRevenuesFiscalYear(
+      filter: {RevenueCategory: {ne: null}}, 
+      sort: {fields: [RevenueDate], order: DESC}) {
+      data: edges {
+        node {
+          id
+          FiscalYear
+          Revenue
+          RevenueCategory
+          Units
+          LongUnits
+        }
+      }
+    }
+    allFiscalYearRevenuesByFiscalYear: allResourceRevenuesFiscalYear(
       filter: {RevenueCategory: {ne: null}}, 
       sort: {fields: [RevenueDate], order: DESC}) {
       group(field: FiscalYear) {
@@ -358,9 +402,57 @@ export const query = graphql`
         data: edges {
           node {
             id
-            FiscalYear
-            Revenue
-            RevenueCategory
+          }
+        }
+      }
+    }
+    allFiscalYearProductVolumes: allProductVolumesFiscalYear (
+      filter: {ProductName: {in: ["Gas","Coal","Oil"]}},
+      sort: {fields: [ProductionDate], order: DESC}){
+      data: edges {
+        node {
+          id
+          FiscalYear
+          LandCategory_OnshoreOffshore
+          Volume
+          ProductName
+          Units
+          LongUnits
+        }
+      }
+    }
+    allFiscalYearProductVolumesByFiscalYear_Gas: allProductVolumesFiscalYear(
+      filter: {ProductName: {eq: "Gas"}}, 
+      sort: {fields: [ProductionDate], order: DESC}) {
+      group(field: FiscalYear) {
+        id: fieldValue
+        data:edges {
+          node {
+            id
+          }
+        }
+      }
+    }
+    allFiscalYearProductVolumesByFiscalYear_Oil: allProductVolumesFiscalYear(
+      filter: {ProductName: {eq: "Oil"}}, 
+      sort: {fields: [ProductionDate], order: DESC}) {
+      group(field: FiscalYear) {
+        id: fieldValue
+        data:edges {
+          node {
+            id
+          }
+        }
+      }
+    }
+    allFiscalYearProductVolumesByFiscalYear_Coal: allProductVolumesFiscalYear(
+      filter: {ProductName: {eq: "Coal"}}, 
+      sort: {fields: [ProductionDate], order: DESC}) {
+      group(field: FiscalYear) {
+        id: fieldValue
+        data:edges {
+          node {
+            id
           }
         }
       }

@@ -118,7 +118,6 @@ const findDefaultKey = props => {
     })
     defaultKey = (typeof defaultKey === 'object') ? defaultKey.key : defaultKey
   }
-
   return defaultKey
 }
 

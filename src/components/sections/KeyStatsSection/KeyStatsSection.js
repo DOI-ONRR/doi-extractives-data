@@ -230,8 +230,10 @@ class KeyStatsSection extends React.Component {
 	  	}
 
 	    this.setState({
+	      ...this.state,
 	      productionToggle: toggleValue,
 	      productionYearlyPeriod: productionYearlyPeriod,
+
 	    })
 	  }
 	  else {
@@ -243,6 +245,7 @@ class KeyStatsSection extends React.Component {
 	    ])
 
 	    this.setState({
+	    	...this.state,
 	      productionToggle: toggleValue,
 	      productionPeriod: productionPeriod
 	    })
@@ -288,7 +291,7 @@ class KeyStatsSection extends React.Component {
 	  }
 	  else {
 	    this.props.groupDataSetsByMonth([
-	      { id: KEY_STATS_REVENUES_DATA_ID, sourceKey: CONSTANTS.REVENUES_ALL_KEY, filter: { ...REVENUES_BY_MONTH_CONFIG.filter, period: dropDownValue }, options: REVENUES_BY_MONTH_CONFIG.options }
+	      { id: KEY_STATS_REVENUES_DATA_ID, sourceKey: CONSTANTS.REVENUES_ALL_KEY, filter: { ...REVENUES_BY_MONTH_CONFIG.filter, period: revenuePeriod }, options: REVENUES_BY_MONTH_CONFIG.options }
 	    ])
 
 	    this.setState({
@@ -355,6 +358,7 @@ class KeyStatsSection extends React.Component {
 									<div className={styles.dropdown}>
 										Period:
 									  <DropDown
+									  	key={'RevenuePeriod'}
 									    action={this.revenuePeriodSelected.bind(this)}
 									    options={[
 									      { key: DROPDOWN_VALUES.Recent,
@@ -371,6 +375,7 @@ class KeyStatsSection extends React.Component {
 									<div className={styles.dropdown}>
 										Period:
 									  <DropDown
+									  	key={'RevenueYearlyPeriod'}
 									    action={this.revenueYearlyPeriodSelected.bind(this)}
 									    options={[
 									      { key: YEARLY_DROPDOWN_VALUES.Fiscal,
@@ -419,6 +424,7 @@ class KeyStatsSection extends React.Component {
 									<div className={styles.dropdown}>
 										Period:
 									  <DropDown
+									  	key={'ProductionPeriod'}
 									    action={this.productionPeriodSelected.bind(this)}
 									    options={[
 									      { key: DROPDOWN_VALUES.Recent,
@@ -435,6 +441,7 @@ class KeyStatsSection extends React.Component {
 									<div className={styles.dropdown}>
 										Period:
 									  <DropDown
+									  	key={'ProductionYearlyPeriod'}
 									    action={this.productionYearlyPeriodSelected.bind(this)}
 									    options={[
 									      { key: YEARLY_DROPDOWN_VALUES.Fiscal,

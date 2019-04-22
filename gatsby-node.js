@@ -165,7 +165,8 @@ const createStatePages = (createPage, graphql) => {
 					            case_study_link
 					            locality_name
 					            state_revenue_year
-					            priority
+											priority
+											gomesa
 					            neighbors
 					          }
 					          fields {

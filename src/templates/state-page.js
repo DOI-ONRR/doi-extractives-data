@@ -19,7 +19,7 @@ import StateDisbursements from '../components/locations/opt_in/StateDisbursement
 import SectionGDP from '../components/locations/SectionGDP'
 import SectionJobs from '../components/locations/SectionJobs'
 import SectionExports from '../components/locations/SectionExports'
-import SectionStateGovernance from '../components/locations/SectionStateGovernance'
+import SectionStateGomesa from '../components/locations/SectionGomesa'
 import MobileNav from '../components/layouts/MobileNav'
 import GlossaryTerm from '../components/utils/glossary-term.js'
 
@@ -79,62 +79,21 @@ const NAV_ITEMS = [
       {
         name: 'state-disbursements',
         title: 'State disbursements'
-      }
+      },
+      {
+        name: 'state-gomesa',
+        title: 'GOMESA disbursements'
+      }  
     ]
   },
-  {
-    name: 'economic-impact',
-    title: 'Economic impact',
-    subNavItems: [
-      {
-        name: 'gdp',
-        title: 'GDP'
-      },
-      {
-        name: 'employment',
-        title: 'Wage and salary jobs'
-      },
-      {
-        name: 'self-employment',
-        title: 'Self-employment'
-      },
-      {
-        name: 'exports',
-        title: 'Exports'
-      }
-    ]
-  },
-  {
-    name: 'state-governance',
-    title: 'State Governance',
-    subNavItems: [
-      {
-        name: 'understanding-land-ownership',
-        title: 'Land ownership'
-      },
-      {
-        name: 'state-agencies',
-        title: 'State agencies'
-      },
-      {
-        name: 'state-laws-and-regulations',
-        title: 'State laws and regulations'
-      },
-      {
-        name: 'fiscal-costs-of-extractive-activity',
-        title: 'Fiscal costs'
-      }
-    ]
-  }
 ]
-
 class StatePages extends React.Component {
   constructor (props) {
     super(props)
 
     this.usStateMarkdown = props.pathContext.stateMarkdown
     this.usStateData = this.usStateMarkdown.frontmatter
-    	this.usStateFields = this.usStateMarkdown.fields || {}
+    this.usStateFields = this.usStateMarkdown.fields || {}
   }
 
   componentDidMount () {
@@ -229,31 +188,8 @@ class StatePages extends React.Component {
                   }
                 </section>
               </section>
-
-              <section id="economic-impact">
-                <h2>Economic impact</h2>
-
-                <p>This data covers <GlossaryTerm termKey="Gross domestic product (GDP)">gross domestic product</GlossaryTerm> and two different types of jobs data.</p>
-
-                <p>To learn more about direct energy employment across all sectors of the U.S. economy, another useful resource is <a href="https://www.energy.gov/jobstrategycouncil/downloads/2017-us-energy-employment-report">2017 U.S. Energy and Employment Report</a> from the Department of Energy. This report has a separate <a href="https://www.energy.gov/sites/prod/files/2017/01/f34/us-energy-jobs-states-2017.pdf">state-by-state analysis of energy employment</a>.</p>
-
-                {this.usStateFields.state_impact &&
-									<div>
-									  { ReactHtmlParser(this.usStateFields.state_impact) }
-									  <p>
-											In addition to generating economic activity, extractive industries can have <a href="#fiscal-costs-of-extractive-activity">fiscal costs</a> for state and local communities.
-									  </p>
-									</div>
-                }
-
-                <SectionGDP usStateMarkdown={this.usStateMarkdown} />
-
-                <SectionExports usStateMarkdown={this.usStateMarkdown} />
-
-              </section>
-
               <section>
-                <SectionStateGovernance usStateMarkdown={this.usStateMarkdown} />
+                <SectionStateGomesa usStateMarkdown={this.usStateMarkdown} />
               </section>
               <svg width="0" height="0">
                 <defs>

@@ -16,6 +16,27 @@ tag:
 # a custom set of viewbox coordinates
 is_cropped: true
 
+gomesa: true
+
 nearby_offshore_region: 'the <a href="/explore/offshore-gulf/">Gulf of Mexico</a>'
 
 ---
+
+In 2018, the Office of Natural Resources Revenue disbursed <glossary-term>GOMESA</glossary-term> revenue to states and counties in Mississippi.
+
+<table class="article_table">
+  <thead>
+    <tr>
+      <th>A table goes here</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+     </td>
+    </tr>
+    <tr>
+      <td>
+      </td>
+    </tr>
+  </tbody>
+</table>

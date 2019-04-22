@@ -7,8 +7,12 @@ const WhatsNew = props => (
   <section className={styles.root + ' slab-delta'}>
   	<div className="container-page-wrapper">
       <h2>What's new</h2>
-      <p>In our latest release on April 18, 2019, we made the following changes:</p>
+      <p>In our latest release on April 22, 2019, we made the following changes:</p>
       <ul className="list-bullet ribbon-card-top-list">
+        <li>Added fiscal year view to homepage annual revenue and production bar charts</li>
+      </ul>
+        <p>In our release on April 18, 2019, we made the following changes:</p>
+        <ul className="list-bullet ribbon-card-top-list">
         <li>Fixed browser bugs and styling issues on <Link to="explore/revenue/">revenue data table</Link></li>
         <li>Fixed bug on homepage revenue bar charts</li>
         <li>Published <Link to="/blog/county-choropleth-prototype/">blog post about mapping revenue data by county</Link></li>

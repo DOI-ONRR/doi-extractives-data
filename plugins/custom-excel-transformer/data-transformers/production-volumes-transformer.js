@@ -15,10 +15,12 @@ const CONSTANTS = require('../../../src/js/constants');
 const SOURCE_COLUMNS = {
 	Month: "Month",
 	CalendarYear: "Calendar Year",
+	FiscalYear: "Fiscal Year",
   ProductionDate: "Production Date",
   LandCategory: "Land Class",
   OnshoreOffshore: "Land Category",
   Commodity: "Commodity",
+  Product: "Product",
   Volume: "Volume",
 };
 
@@ -28,12 +30,21 @@ const SOURCE_COMMODITIES = {
   GasProductionVolume: "Gas Prod Vol (mcf)",
   CoalProductionVolume: "Coal Prod Vol (ton)",
 };
+/* List of all the products in the excel file and the corresponding column name */
+const SOURCE_COMMODITIES_FISCAL_YEAR = {
+  OilProductionVolume: "Oil (bbl)",
+  GasProductionVolume: "Gas (mcf)",
+  CoalProductionVolume: "Coal (tons)",
+};
 
 /* Map the source column name to the display name we want to use for that product */
 const SOURCE_COLUMN_TO_PRODUCT_DISPLAY_NAME = {
 	[SOURCE_COMMODITIES.OilProductionVolume]: "Oil",
 	[SOURCE_COMMODITIES.GasProductionVolume]: "Gas",
 	[SOURCE_COMMODITIES.CoalProductionVolume]: "Coal",
+	[SOURCE_COMMODITIES_FISCAL_YEAR.OilProductionVolume]: "Oil",
+	[SOURCE_COMMODITIES_FISCAL_YEAR.GasProductionVolume]: "Gas",
+	[SOURCE_COMMODITIES_FISCAL_YEAR.CoalProductionVolume]: "Coal",
 };
 
 /* Map the source column name to the units used for that product */
@@ -41,6 +52,9 @@ const SOURCE_COLUMN_TO_PRODUCT_UNITS = {
 	[SOURCE_COMMODITIES.OilProductionVolume]: "bbl",
 	[SOURCE_COMMODITIES.GasProductionVolume]: "mcf",
 	[SOURCE_COMMODITIES.CoalProductionVolume]: "tons",
+	[SOURCE_COMMODITIES_FISCAL_YEAR.OilProductionVolume]: "bbl",
+	[SOURCE_COMMODITIES_FISCAL_YEAR.GasProductionVolume]: "mcf",
+	[SOURCE_COMMODITIES_FISCAL_YEAR.CoalProductionVolume]: "tons",
 };
 
 const PRODUCT_UNITS_TO_LONG_UNITS = {
@@ -67,28 +81,33 @@ const LOCATION_CATEGORY_TYPE_TO_PRODUCTION_CATEGORY ={
 }
 
 /* Use ES5 exports in order to be compatible with version 1.x of gatsby */
-module.exports = (node) => {
-	return createProductVolumeNodeByProduct(node);
+module.exports = (node, type) => {
+	return createProductVolumeNodeByProduct(node, type);
 }
 
-const createProductVolumeNodeByProduct = (productVolumeData) => {
-	if(productVolumeData[SOURCE_COLUMNS.Commodity] === undefined) return;
+const createProductVolumeNodeByProduct = (productVolumeData, type) => {
+	if(productVolumeData[SOURCE_COLUMNS.Commodity] === undefined && productVolumeData[SOURCE_COLUMNS.Product] === undefined) return;
 
   let node = {
 	  ProductionMonth: productVolumeData[SOURCE_COLUMNS.Month],
 	  ProductionYear: productVolumeData[SOURCE_COLUMNS.CalendarYear],
+	  FiscalYear: productVolumeData[SOURCE_COLUMNS.FiscalYear],
+	  LandClass: productVolumeData[SOURCE_COLUMNS.CalendarYear],
 	  LandCategory: productVolumeData[SOURCE_COLUMNS.LandCategory],
 	  OnshoreOffshore: productVolumeData[SOURCE_COLUMNS.OnshoreOffshore],
-	  ProductName: SOURCE_COLUMN_TO_PRODUCT_DISPLAY_NAME[productVolumeData[SOURCE_COLUMNS.Commodity]],
+	  ProductName: SOURCE_COLUMN_TO_PRODUCT_DISPLAY_NAME[productVolumeData[SOURCE_COLUMNS.Commodity]] || SOURCE_COLUMN_TO_PRODUCT_DISPLAY_NAME[productVolumeData[SOURCE_COLUMNS.Product]],
 	  Volume: productVolumeData[SOURCE_COLUMNS.Volume],
 	  internal: {
-	    type: `ProductVolumes`,
+	    type: type,
 	  }
   }
 
-	node.ProductionDate = new Date(node.ProductionYear, getMonthFromString(node.ProductionMonth));
+	node.ProductionDate = (node.ProductionYear) ? 
+		new Date(node.ProductionYear, getMonthFromString(node.ProductionMonth))
+		:
+		new Date(node.FiscalYear, 0);
 
-	node.Units = SOURCE_COLUMN_TO_PRODUCT_UNITS[productVolumeData[SOURCE_COLUMNS.Commodity]];
+	node.Units = SOURCE_COLUMN_TO_PRODUCT_UNITS[productVolumeData[SOURCE_COLUMNS.Commodity]] || SOURCE_COLUMN_TO_PRODUCT_UNITS[productVolumeData[SOURCE_COLUMNS.Product]];
 	node.LongUnits = PRODUCT_UNITS_TO_LONG_UNITS[node.Units];
 	node.LandCategory_OnshoreOffshore = 
 		node.LandCategory+( (node.OnshoreOffshore && node.LandCategory !== "Native American" )? " "+node.OnshoreOffshore.toLowerCase() : "" ) ;

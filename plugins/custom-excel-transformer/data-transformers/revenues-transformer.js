@@ -67,6 +67,8 @@ const createRevenueNode = (revenueData, type) => {
 	  State: data[SOURCE_COLUMNS.State],
 	  County: data[SOURCE_COLUMNS.County],
 	  FiscalYear: data[SOURCE_COLUMNS.FiscalYear],
+	  Units: '$',
+	  LongUnits: 'dollars',
 	  OffshoreRegion: (data[SOURCE_COLUMNS.OffshoreRegion] === "" || data[SOURCE_COLUMNS.OffshoreRegion] === undefined) ?
 	  	data[SOURCE_COLUMNS.OffshoreRegion] : "Offshore "+data[SOURCE_COLUMNS.OffshoreRegion],
 	  internal: {
@@ -78,8 +80,31 @@ const createRevenueNode = (revenueData, type) => {
   let month = (revenueNode.Month)? getMonthFromString(revenueNode.Month) : 0;
 
   revenueNode.RevenueDate = new Date(year, month);
+  
+  if(revenueNode.LandClass === CONSTANTS.NATIVE_AMERICAN) {
+    revenueNode.LandCategory = CONSTANTS.ONSHORE;
+  }
 
   revenueNode.RevenueCategory = LAND_CLASS_CATEGORY_TO_REVENUE_CATEGORY[revenueNode.LandClass] && LAND_CLASS_CATEGORY_TO_REVENUE_CATEGORY[revenueNode.LandClass][revenueNode.LandCategory];
+  
+
+
+
+  if(revenueNode.RevenueCategory === undefined) {
+  	if(revenueNode.LandClass === CONSTANTS.NATIVE_AMERICAN) {
+  		revenueNode.RevenueCategory = CONSTANTS.NATIVE_AMERICAN;
+  	}
+  	else {
+  		revenueNode.RevenueCategory = 'Not tied to a lease';  	
+  	}
+  }
+
+  if(revenueNode.FiscalYear === undefined) {
+  	revenueNode.FiscalYear = (revenueNode.RevenueDate.getMonth() > 9 ) ? 
+  		(revenueNode.RevenueDate.getYear()+1901).toString()
+  		:
+  		(revenueNode.RevenueDate.getYear()+1900).toString();
+  }
 
 	return revenueNode;
 }

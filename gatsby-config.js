@@ -10,11 +10,13 @@ const GOOGLE_ANALYTICS_ID = (process.env.google_analytics) ?
                 :
                 "UA-48605964-8";
 
+
+
 let config = {
   siteMetadata: {
     title: 'Natural Resources Revenue Data',
     description: 'This site provides open data about natural resource management on federal lands and waters in the United States, including oil, gas, coal, and other extractive industries.',
-    version: 'v5.1.1',
+    version: 'v5.1.2',
     googleAnalyticsId: GOOGLE_ANALYTICS_ID,
   },
   plugins: [
@@ -61,8 +63,15 @@ let config = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `downloads`,
+        name: `downloads-revenues`,
         path: `${__dirname}/downloads/revenues`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `downloads-production`,
+        path: `${__dirname}/downloads/production`,
       },
     },
     'gatsby-transformer-excel',
@@ -82,16 +91,7 @@ let config = {
         plugins: [],
       },
     },
-    {
-      resolve: 'custom-excel-transformer',
-      options: {
-        types: [
-          'ProductionVolumesXlsx__Sheet1',
-          'DisbursementsXlsx__Data',
-          'RevenueMonthlyXlsx__MontlyRev',
-          'FederalRevenueAcctYearFy061820181213Xlsx__FederalRevenuesFy06Fy18']
-      }
-    },
+    'custom-excel-transformer',
     `gatsby-plugin-meta-redirect`, // make sure to put last in the array
   ],
 };

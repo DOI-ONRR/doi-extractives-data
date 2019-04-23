@@ -15,24 +15,6 @@ tag:
 <custom-link to="/downloads/" className="breadcrumb link-charlie">Downloads</custom-link> /
 # Revenue by Month
 
-<section class="explore-subpage container">
-    <section>
-      <div class="explore-subpage-tabs">
-        <ul>
-          <li class="explore-subpage-tab">
-            <a href="/downloads/federal-revenue-by-location/">Revenue by year</a>
-          </li>
-          <li class="explore-subpage-tab active">
-            <a href="/downloads/federal-revenue-by-month/">Revenue by month</a>
-          </li>
-          <li class="explore-subpage-tab">
-            <a href="/downloads/federal-revenue-by-company/">Revenue by company</a>
-          </li>
-        </ul>
-      </div>
-    </section>
-</section>
-
 > We offer revenue by month for January 2008 through the most recently completed month of the current year. The data includes federal offshore and onshore revenue, along with revenue from Native American lands. The data is further broken down by revenue type (e.g., bonuses, rents, and royalties) and commodity.
 
 Download revenue by month:

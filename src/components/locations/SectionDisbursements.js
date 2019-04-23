@@ -73,12 +73,12 @@ const SectionDisbursements = props => {
           <StickyWrapper bottomBoundary="#gomesa-disbursements" innerZ="10000">
             <StickyHeader headerText={'GOMESA disbursements'} />
           </StickyWrapper>
-          <p>ONRR disbursed GOMESA revenue to {usStateData.title}.</p>
+          <p>ONRR disbursed GOMESA revenue to {usStateData.title} in FY year.</p>
             <table class="table-basic u-margin-top u-margin-bottom">
               <thead>
                 <tr>
                   <th>Recipient</th>
-                  <th>FY2019</th>
+                  <th>year</th>
                 </tr>
               </thead>
               <tbody>

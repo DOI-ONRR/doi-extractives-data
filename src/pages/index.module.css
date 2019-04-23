@@ -47,6 +47,11 @@
 	margin-right: 20px;
 }
 
+.tabContentBottomContainerLinks {
+	margin-bottom: 0px;
+	width: 100%;
+}
+
 .linkContainer {
 	border-top: 2px solid green-light;
 	padding-top: 7px;

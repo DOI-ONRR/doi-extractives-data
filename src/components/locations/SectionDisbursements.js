@@ -2,6 +2,7 @@ import React from 'react'
 import Link from '../utils/temp-link'
 
 import FEDERAL_DISBURSEMENTS from '../../data/federal_disbursements.yml'
+import * as GOMESA_STATE_DISBURSEMENTS from '../../data/gomesa_state_disbursements'
 
 import StickyHeader from '../layouts/StickyHeader'
 import { StickyWrapper } from '../utils/StickyWrapper'
@@ -20,6 +21,7 @@ const SectionDisbursements = props => {
   const usStateData = props.usStateMarkdown.frontmatter
   const usStateFields = props.usStateMarkdown.fields || {}
   const usStateDisbursements = FEDERAL_DISBURSEMENTS[usStateData.unique_id]
+  const usGomesaStateDisbursements = GOMESA_STATE_DISBURSEMENTS[usStateData.unique_id]
 
   function getDisbursementsContent () {
     	let content
@@ -39,6 +41,11 @@ const SectionDisbursements = props => {
         </ul>
       </div>
     	}
+
+      else if (usGomesaStateDisbursements) {
+        content = <p>ONRR disbursed GOMESA revenue to {usStateData.title}.</p>
+      }
+
     	else if (usStateDisbursements) {
     		content = <p>ONRR also disburses some revenue from natural resource extraction to state governments. <strong>In { year }, ONRR disbursed {utils.formatToDollarInt(usStateDisbursements.All.All[year])} to {usStateData.title}.</strong></p>
     	}

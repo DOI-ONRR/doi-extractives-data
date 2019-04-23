@@ -84,7 +84,12 @@ const createRevenueNode = (revenueData, type) => {
   revenueNode.RevenueCategory = LAND_CLASS_CATEGORY_TO_REVENUE_CATEGORY[revenueNode.LandClass] && LAND_CLASS_CATEGORY_TO_REVENUE_CATEGORY[revenueNode.LandClass][revenueNode.LandCategory];
 
   if(revenueNode.RevenueCategory === undefined) {
-  	revenueNode.RevenueCategory = 'Not tied to a lease';
+  	if(revenueNode.LandClass === CONSTANTS.NATIVE_AMERICAN) {
+  		revenueNode.RevenueCategory = CONSTANTS.NATIVE_AMERICAN;
+  	}
+  	else {
+  		revenueNode.RevenueCategory = 'Not tied to a lease';  	
+  	}
   }
 
   if(revenueNode.FiscalYear === undefined) {

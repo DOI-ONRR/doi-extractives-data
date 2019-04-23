@@ -132,7 +132,7 @@ class HomePage extends React.Component {
                         <ExploreDataLink to="/explore/revenue">Revenue data</ExploreDataLink>
                       </div>
                       <div>
-                        <MapLink to="/explore/revenue" />
+                        <MapLink to="#map-section" />
                       </div>
                     </div>
                   </div>
@@ -209,7 +209,7 @@ class HomePage extends React.Component {
 
           <KeyStatsSection />
 
-          <section className={styles.mapSection}>
+          <section id="map-section" className={styles.mapSection}>
             <div className={styles.mapSectionContainer + ' container-page-wrapper'}>
               <div className={styles.mapSectionLeft}>
                 <h3>Learn about extractive industries in each state</h3>

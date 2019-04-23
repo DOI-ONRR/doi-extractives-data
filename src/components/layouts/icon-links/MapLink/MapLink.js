@@ -4,7 +4,7 @@ import Link from '../../../utils/temp-link';
 
 import styles from "./MapLink.module.scss"
 
-import MapIcon from '-!svg-react-loader!../../../../img/svg/icon-download.svg';
+import MapIcon from '-!svg-react-loader!../../../../img/svg/icon-us-map.svg';
 
 const MapLink = (props) => ( 
     <Link to={props.to} className={styles.root}>

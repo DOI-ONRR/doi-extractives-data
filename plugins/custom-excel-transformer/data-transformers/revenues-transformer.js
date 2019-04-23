@@ -67,6 +67,8 @@ const createRevenueNode = (revenueData, type) => {
 	  State: data[SOURCE_COLUMNS.State],
 	  County: data[SOURCE_COLUMNS.County],
 	  FiscalYear: data[SOURCE_COLUMNS.FiscalYear],
+	  Units: '$',
+	  LongUnits: 'dollars',
 	  OffshoreRegion: (data[SOURCE_COLUMNS.OffshoreRegion] === "" || data[SOURCE_COLUMNS.OffshoreRegion] === undefined) ?
 	  	data[SOURCE_COLUMNS.OffshoreRegion] : "Offshore "+data[SOURCE_COLUMNS.OffshoreRegion],
 	  internal: {
@@ -80,6 +82,17 @@ const createRevenueNode = (revenueData, type) => {
   revenueNode.RevenueDate = new Date(year, month);
 
   revenueNode.RevenueCategory = LAND_CLASS_CATEGORY_TO_REVENUE_CATEGORY[revenueNode.LandClass] && LAND_CLASS_CATEGORY_TO_REVENUE_CATEGORY[revenueNode.LandClass][revenueNode.LandCategory];
+
+  if(revenueNode.RevenueCategory === undefined) {
+  	revenueNode.RevenueCategory = 'Not tied to a lease';
+  }
+
+  if(revenueNode.FiscalYear === undefined) {
+  	revenueNode.FiscalYear = (revenueNode.RevenueDate.getMonth() > 9 ) ? 
+  		(revenueNode.RevenueDate.getYear()+1901).toString()
+  		:
+  		(revenueNode.RevenueDate.getYear()+1900).toString();
+  }
 
 	return revenueNode;
 }

@@ -20,7 +20,8 @@ const DATA_TRANSFORMER_CONSTANTS = {
   PRODUCTION_VOLUMES_FY:'FederalProductionFy2009201820190326Xlsx__FyFederalProductionVolumes',
   REVENUES_MONTHLY_EXCEL :'MonthlyRevenue032019Xlsx__MontlyRev',
   FEDERAL_DISBURSEMENTS_EXCEL:'DisbursementsXlsx__Data',
-  FEDERAL_REVENUE_FY:'FederalRevenueAcctYearFy061820181213Xlsx__FederalRevenuesFy06Fy18'
+  FEDERAL_REVENUE_FY:'FederalRevenueAcctYearFy061820181213Xlsx__FederalRevenuesFy06Fy18',
+  NATIVE_AMERICAN_REVNUE_FY: 'NativeAmericanRevenuesXlsx__NativeAmericanRevenues'
 }
 
 const TRANSFORMER_NODE_TYPES = [
@@ -28,7 +29,8 @@ const TRANSFORMER_NODE_TYPES = [
 	DATA_TRANSFORMER_CONSTANTS.PRODUCTION_VOLUMES_FY,
 	DATA_TRANSFORMER_CONSTANTS.FEDERAL_DISBURSEMENTS_EXCEL,
 	DATA_TRANSFORMER_CONSTANTS.REVENUES_MONTHLY_EXCEL,
-	DATA_TRANSFORMER_CONSTANTS.FEDERAL_REVENUE_FY
+	DATA_TRANSFORMER_CONSTANTS.FEDERAL_REVENUE_FY,
+	DATA_TRANSFORMER_CONSTANTS.NATIVE_AMERICAN_REVNUE_FY
 ];
 
 const productionVolumesTransformer = require('./data-transformers/production-volumes-transformer');
@@ -57,6 +59,9 @@ async function onCreateNode(
 				newNode = revenuesTransformer(node, 'ResourceRevenuesMonthly');
 				break;
 			case DATA_TRANSFORMER_CONSTANTS.FEDERAL_REVENUE_FY:
+				newNode = revenuesTransformer(node, 'ResourceRevenuesFiscalYear');
+				break;
+			case DATA_TRANSFORMER_CONSTANTS.NATIVE_AMERICAN_REVNUE_FY:
 				newNode = revenuesTransformer(node, 'ResourceRevenuesFiscalYear');
 				break;
 		}

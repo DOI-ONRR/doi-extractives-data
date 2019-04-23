@@ -80,11 +80,23 @@ const createRevenueNode = (revenueData, type) => {
   let month = (revenueNode.Month)? getMonthFromString(revenueNode.Month) : 0;
 
   revenueNode.RevenueDate = new Date(year, month);
+  
+  if(revenueNode.LandClass === CONSTANTS.NATIVE_AMERICAN) {
+    revenueNode.LandCategory = CONSTANTS.ONSHORE;
+  }
 
   revenueNode.RevenueCategory = LAND_CLASS_CATEGORY_TO_REVENUE_CATEGORY[revenueNode.LandClass] && LAND_CLASS_CATEGORY_TO_REVENUE_CATEGORY[revenueNode.LandClass][revenueNode.LandCategory];
+  
+
+
 
   if(revenueNode.RevenueCategory === undefined) {
-  	revenueNode.RevenueCategory = 'Not tied to a lease';
+  	if(revenueNode.LandClass === CONSTANTS.NATIVE_AMERICAN) {
+  		revenueNode.RevenueCategory = CONSTANTS.NATIVE_AMERICAN;
+  	}
+  	else {
+  		revenueNode.RevenueCategory = 'Not tied to a lease';  	
+  	}
   }
 
   if(revenueNode.FiscalYear === undefined) {

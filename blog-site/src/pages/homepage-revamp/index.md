@@ -88,7 +88,7 @@ We then [tested 3 concepts](https://github.com/ONRR/doi-extractives-data/blob/re
 
 ### Final design
 
-These three studies led us to the design we built. It better explains the process behind the data to those who are not intimately familiar with the subject matter, while also providing high-demand, summary data to domain learners and question answerers. Based on the findings from these studies, we also plan to simplify the structure and navigation of the Explore Data page and make it easier to understand how to intrepret and use the data.
+These three studies led us to the design we built. It better explains the process behind the data to those who are not intimately familiar with the subject matter, while also providing high-demand, summary data to domain learners and question answerers. Based on the findings from these studies, we also plan to simplify the structure and navigation of the Explore Data page and make it easier to understand how to interpret and use the data.
 
 ![final design with new process at top, map, and new summary information](./FinalHomepage.png)
 

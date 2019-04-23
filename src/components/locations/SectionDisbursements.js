@@ -41,11 +41,6 @@ const SectionDisbursements = props => {
         </ul>
       </div>
     	}
-
-      else if (usGomesaStateDisbursements) {
-        content = <p>ONRR disbursed GOMESA revenue to {usStateData.title}.</p>
-      }
-
     	else if (usStateDisbursements) {
     		content = <p>ONRR also disburses some revenue from natural resource extraction to state governments. <strong>In { year }, ONRR disbursed {utils.formatToDollarInt(usStateDisbursements.All.All[year])} to {usStateData.title}.</strong></p>
     	}
@@ -72,6 +67,26 @@ const SectionDisbursements = props => {
       </p>
 
       {getDisbursementsContent()}
+
+      {usGomesaStateDisbursements &&
+        <section id="gomesa-disbursements" className="disbursements">
+          <StickyWrapper bottomBoundary="#gomesa-disbursements" innerZ="10000">
+            <StickyHeader headerText={'GOMESA disbursements'} />
+          </StickyWrapper>
+          <p>ONRR disbursed GOMESA revenue to {usStateData.title}.</p>
+            <table class="table-basic u-margin-top u-margin-bottom">
+              <thead>
+                <tr>
+                  <th>Recipient</th>
+                  <th>FY2019</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td></td><td></td></tr>
+              </tbody>
+            </table>
+        </section>
+      }
 
       <p>
         <Link to="/downloads/disbursements/" className="data-downloads">

@@ -9,7 +9,6 @@ const WhatsNew = props => (
       <h2>What's new</h2>
       <p>In our latest release on April 25, 2019, we made the following change:</p>
       <ul className="list-bullet ribbon-card-top-list">
-        <li>Added Fiscal Year 2019 GOMESA Disbursement data</li>
         <li>Added <Link to="how-it-works/gomesa/">Fiscal Year 2019 GOMESA disbursement data</Link></li>
       </ul>
       <p>In our release on April 23, 2019, we made the following changes:</p>

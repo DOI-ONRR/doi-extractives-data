@@ -23,7 +23,7 @@ const SectionDisbursements = props => {
   const usStateDisbursements = FEDERAL_DISBURSEMENTS[usStateData.unique_id]
   const usGomesaStateDisbursements = GOMESA_STATE_DISBURSEMENTS[usStateData.unique_id]
   const usGomesaStateDisbursementsYears = usGomesaStateDisbursements && Object.keys(usGomesaStateDisbursements);
-  const usGomesaStateDisbursementsCounties = getCounties();
+  const usGomesaStateDisbursementsCounties = usGomesaStateDisbursements && getCounties();
 
   function getCounties() {
     let countiesData = {};

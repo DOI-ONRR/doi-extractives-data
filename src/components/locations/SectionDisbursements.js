@@ -90,7 +90,7 @@ const SectionDisbursements = props => {
           <StickyWrapper bottomBoundary="#gomesa-disbursements" innerZ="10000">
             <StickyHeader headerText={'GOMESA disbursements'} />
           </StickyWrapper>
-          <p>ONRR disbursed GOMESA revenue to {usStateData.title} in FY year.</p>
+          <p>State and local governments in {usStateData.title} receive a portion of revenue generated from offshore oil and gas production under the <Link to="/how-it-works/gomesa/">Gulf of Mexico Energy Security Act (GOMESA)</Link>.</p>
             <table class="table-basic u-margin-top u-margin-bottom">
               <thead>
                 <tr>

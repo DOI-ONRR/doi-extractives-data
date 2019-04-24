@@ -22,6 +22,23 @@ const SectionDisbursements = props => {
   const usStateFields = props.usStateMarkdown.fields || {}
   const usStateDisbursements = FEDERAL_DISBURSEMENTS[usStateData.unique_id]
   const usGomesaStateDisbursements = GOMESA_STATE_DISBURSEMENTS[usStateData.unique_id]
+  const usGomesaStateDisbursementsYears = usGomesaStateDisbursements && Object.keys(usGomesaStateDisbursements);
+  const usGomesaStateDisbursementsCounties = getCounties();
+
+  function getCounties() {
+    let countiesData = {};
+    usGomesaStateDisbursementsYears.forEach(year => {
+      let counties = Object.keys(usGomesaStateDisbursements[year].Counties);
+      counties.forEach(county => {
+        if(countiesData[county] === undefined){
+          countiesData[county] = {};
+        }
+        countiesData[county][year] = usGomesaStateDisbursements[year].Counties[county]
+      })
+    })
+
+    return countiesData;
+  }
 
   function getDisbursementsContent () {
     	let content
@@ -78,11 +95,23 @@ const SectionDisbursements = props => {
               <thead>
                 <tr>
                   <th>Recipient</th>
-                  <th>year</th>
+                  {usGomesaStateDisbursementsYears.map(year => <th>{"FY"+year}</th>)}
                 </tr>
               </thead>
               <tbody>
-                <tr><td></td><td></td></tr>
+                <tr>
+                  <td>{"State of "+usStateData.title}</td>
+                  {usGomesaStateDisbursementsYears.map(year => <td>{usGomesaStateDisbursements[year].State}</td>)}
+                </tr>
+                {Object.keys(usGomesaStateDisbursementsCounties).map(county => {
+                  return (
+                    <tr>
+                      <td>{utils.toTitleCase(county)}</td>
+                      {usGomesaStateDisbursementsYears.map(year => <td>{usGomesaStateDisbursementsCounties[county][year]}</td>)}
+                    </tr>
+                  )
+                })}
+
               </tbody>
             </table>
         </section>

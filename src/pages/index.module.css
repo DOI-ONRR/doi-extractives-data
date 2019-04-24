@@ -39,12 +39,20 @@
 	padding-top: 20px;
 }
 
-.tabContentBottomContainer > div{
+.tabContentBottomContainer > div:first-child{
+	margin-right: 20px;
 	margin-bottom: 20px;
 }
 
-.tabContentBottomContainer > div:first-child{
-	margin-right: 20px;
+.tabContentBottomContainerLinks {
+	border-top: 2px solid white;
+	width: 100%;
+}
+.tabContentBottomContainerLinks > div {
+	margin-top: 12px;
+}
+.tabContentBottomContainerLinks > div:first-child > a > svg {
+	margin-right: 15px;
 }
 
 .linkContainer {

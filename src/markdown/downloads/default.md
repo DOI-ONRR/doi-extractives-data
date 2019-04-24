@@ -18,9 +18,9 @@ tag:
 
 <ul class="list-sections list-unstyled">
   <li class="downloads-download_links">
-    <h3 id="federal-lands-and-waters">Production by month</h3>
+    <h3 id="production-by-month">Production by month</h3>
     <p>This dataset includes commodity volumes of natural resources extracted from federal lands and waters and Native American lands by month. We offer data from January 2008 through the most recently available month.</p>
-    <download-data-link to="/downloads/federal-production/">Downloads and documentation</download-data-link>
+    <download-data-link to="/downloads/federal-production-by-month/">Downloads and documentation</download-data-link>
   </li>
   <li class="downloads-download_links">
     <h3 id="federal-lands-and-waters">Production from federal land and waters by year</h3>

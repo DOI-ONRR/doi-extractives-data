@@ -101,13 +101,15 @@ const SectionDisbursements = props => {
               <tbody>
                 <tr>
                   <td>{"State of "+usStateData.title}</td>
-                  {usGomesaStateDisbursementsYears.map(year => <td class="numeric">{usGomesaStateDisbursements[year].State}</td>)}
+                  {usGomesaStateDisbursementsYears.map(year => <td class="numeric">
+                  { utils.formatToDollarFloat(usGomesaStateDisbursements[year].State)}</td>)}
                 </tr>
                 {Object.keys(usGomesaStateDisbursementsCounties).map(county => {
                   return (
                     <tr>
                       <td>{utils.toTitleCase(county)}</td>
-                      {usGomesaStateDisbursementsYears.map(year => <td class="numeric">{usGomesaStateDisbursementsCounties[county][year]}</td>)}
+                      {usGomesaStateDisbursementsYears.map(year => <td class="numeric">
+                      { utils.formatToDollarFloat(usGomesaStateDisbursementsCounties[county][year])}</td>)}
                     </tr>
                   )
                 })}

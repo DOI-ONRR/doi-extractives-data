@@ -33,7 +33,7 @@ We have [notes on this data](https://github.com/onrr/doi-extractives-data/wiki/D
 
 ## Scope
 
-This dataset includes natural resource production for U.S. federal lands and offshore areas. It does not include Indian lands, privately owned lands, or U.S. state lands. The dataset currently include data tracked and managed by the Department of the Interior’s Office of Natural Resources Revenue (ONRR). The production data for Oil and Gas is collected on Form ONRR-4054 (Oil and Gas Operations Report). Coal and hardrock production is collected on Form ONRR-4430 (Solid Minerals Production and Royalty Report).
+This dataset includes natural resource production for U.S. federal lands and offshore areas. It does not include Native American lands, privately owned lands, or U.S. state lands. The dataset currently include data tracked and managed by the Department of the Interior’s Office of Natural Resources Revenue (ONRR). The production data for Oil and Gas is collected on Form ONRR-4054 (Oil and Gas Operations Report). Coal and hardrock production is collected on Form ONRR-4430 (Solid Minerals Production and Royalty Report).
 
 ## About the data
 

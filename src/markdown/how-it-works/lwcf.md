@@ -56,7 +56,7 @@ The LWCF was authorized through September 30, 2018. Congress did not reauthorize
 Lawmakers have [introduced bills in both the House and the Senate](https://www.congress.gov/search?q=%7B%22congress%22%3A%22115%22%2C%22source%22%3A%22legislation%22%2C%22search%22%3A%22%5C%22land%20and%20water%20conservation%20fund%5C%22%22%7D&searchResultViewType=expanded) to permanently authorize the fund.
 
 ### Annual funding
-The fund doesn't receive any tax revenue, but is instead funded largely by offshore oil and gas revenue. When authorized, {{ "ONRR" | term }} disburses that revenue to the fund each year.
+The fund doesn't receive any tax revenue, but is instead funded largely by offshore oil and gas revenue. When authorized, <glossary-term>ONRR</glossary-term> disburses that revenue to the fund each year.
 
 The LWCF is authorized to receive and distribute up to $900 million each year, but the fund is subject to congressional budget appropriations. Actual annual appropriations to the fund met the authorized threshold only twice (1998, 2001), while annual appropriations have been limited to between $255 million and $450 million since 2008.
 

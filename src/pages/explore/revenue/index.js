@@ -39,22 +39,22 @@ const TOGGLE_VALUES = {
   Month: 'month'
 }
 
-const DEFAULT_GROUP_BY_INDEX = 4;
+const DEFAULT_GROUP_BY_INDEX = 0;
+const DEFAULT_ADDITIONAL_COLUMN_INDEX = 1;
 
 
 const GROUP_BY_OPTIONS = {
+	'Revenue type': [BY_REVENUE_TYPE],
 	'Commodity': [BY_COMMODITY], 
-	'Location': [BY_STATE, BY_OFFSHORE_REGION], 
-	'Source': [BY_LAND_CATEGORY], 
-	'Land owner': [BY_LAND_CLASS], 
-	'Revenue type': [BY_REVENUE_TYPE]
+	'Land category': [BY_LAND_CLASS, BY_LAND_CATEGORY],
+	'Location': [BY_STATE, BY_OFFSHORE_REGION],  
 };
 const ADDITIONAL_COLUMN_OPTIONS = {
+	'Revenue type': ['RevenueType'],
 	'Commodity': [DATA_SET_KEYS.COMMODITY],
+	'Land category': ['LandClass', 'LandCategory'],
 	'Location': ['State', DATA_SET_KEYS.OFFSHORE_REGION],
-	'Source': ['LandCategory'],
-	'Land owner': ['LandClass'],
-	'Revenue type': ['RevenueType']
+	'No second column': [],
 };
 //const ADDITIONAL_COLUMN_OPTIONS = ['State/offshore region', 'Source', 'Land owner', 'Revenue type'];
 
@@ -73,7 +73,7 @@ class FederalRevenue extends React.Component {
 			groupBy: Object.keys(GROUP_BY_OPTIONS)[DEFAULT_GROUP_BY_INDEX],
 			years: []
 		},
-		additionalColumns: []
+		additionalColumns: [Object.keys(GROUP_BY_OPTIONS)[DEFAULT_ADDITIONAL_COLUMN_INDEX]]
 	}
 
 	componentWillReceiveProps (nextProps) {
@@ -89,6 +89,13 @@ class FederalRevenue extends React.Component {
 
 	getAdditionalColumnOptions = () => {
 		return this.additionalColumnOptionKeys.filter(column => column !== this.state.filter.groupBy);
+	}
+
+	getAdditionalColumnsSelectedIndex = () => {
+		if(this.state.additionalColumns.length === 0){
+			return this.getAdditionalColumnOptions().length - 1;
+		}
+		return this.getAdditionalColumnOptions().findIndex(column => this.state.additionalColumns.includes(column))
 	}
 
 	getTableColumns = () => {
@@ -187,7 +194,7 @@ class FederalRevenue extends React.Component {
 	}
 
 	// If group by column is in the additional columns remove it
-	setGroupByFilter(value) {
+	setGroupByFilter(value) {		
 		this.setState({
 			filter:{...this.state.filter, groupBy:value},
 			additionalColumns: this.state.additionalColumns.filter(column => column !== value) 
@@ -195,7 +202,7 @@ class FederalRevenue extends React.Component {
 	}
 
 	setAdditionalColumns(value) {
-		this.setState({additionalColumns:value})
+		this.setState({additionalColumns:(value === 'No second column')? [] : [value]})
 	}
   /**
    * Add the data to the redux store to enable
@@ -299,25 +306,26 @@ class FederalRevenue extends React.Component {
 						}
 
 						<div>
-							<div className={styles.filterLabel}>Organize by:</div>
+							<div className={styles.filterLabel}>First column:</div>
 							<DropDown
 								sortType={'none'}
 						    options={Object.keys(GROUP_BY_OPTIONS)}
 						    action={this.setGroupByFilter.bind(this)}
 						    defaultOptionIndex={DEFAULT_GROUP_BY_INDEX}
+						    sortType={'none'}
 						  >
 						  </DropDown>
 						</div>
 
 						<div>
-							<div className={styles.filterLabel}>Add columns:</div>
-							<Select
-								multiple
+							<div className={styles.filterLabel}>Second column:</div>
+							<DropDown
 						    options={this.getAdditionalColumnOptions()}
-						    onChangeHandler={this.setAdditionalColumns.bind(this)}
-						    selectedOption={this.state.additionalColumns}
+						    action={this.setAdditionalColumns.bind(this)}
+						    selectedOptionIndex={this.getAdditionalColumnsSelectedIndex()}
+						    sortType={'none'}
 						  >
-						  </Select>
+						  </DropDown>
 						</div>
 					</div>
 					{this.state[REVENUES_FISCAL_YEAR] &&

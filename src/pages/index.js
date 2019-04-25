@@ -33,6 +33,7 @@ import { ExploreDataButton } from '../components/layouts/buttons/ExploreDataButt
 import { BlueButton } from '../components/layouts/buttons/BlueButton'
 import { ExploreDataLink } from '../components/layouts/icon-links/ExploreDataLink'
 import { DownloadDataLink } from '../components/layouts/icon-links/DownloadDataLink'
+import MapLink from '../components/layouts/icon-links/MapLink'
 
 import DefaultLayout from '../components/layouts/DefaultLayout'
 
@@ -126,10 +127,15 @@ class HomePage extends React.Component {
                     <div>
                       <Link to="/how-it-works">Learn how it works</Link>
                     </div>
-                  </div>
-                    <div>
-                      <ExploreDataLink to="/explore/revenue">Revenue data</ExploreDataLink>
+                    <div className={styles.tabContentBottomContainerLinks}>
+                      <div>
+                        <ExploreDataLink to="/explore/revenue">Revenue data</ExploreDataLink>
+                      </div>
+                      <div>
+                        <MapLink to="#map-section" />
+                      </div>
                     </div>
+                  </div>
                 </div>
                 <div className={styles.tabContentAside}>
                   <div className={styles.oilRig}>
@@ -203,7 +209,7 @@ class HomePage extends React.Component {
 
           <KeyStatsSection />
 
-          <section className={styles.mapSection}>
+          <section id="map-section" className={styles.mapSection}>
             <div className={styles.mapSectionContainer + ' container-page-wrapper'}>
               <div className={styles.mapSectionLeft}>
                 <h3>Learn about extractive industries in each state</h3>

@@ -15,7 +15,7 @@ import StateRevenue from '../locations/opt_in/StateRevenue'
 
 import utils from '../../js/utils'
 
-let year = 2017
+let year = 2018
 
 const SectionDisbursements = props => {
   const usStateData = props.usStateMarkdown.frontmatter

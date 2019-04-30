@@ -35,7 +35,7 @@ Our website currently presents data at the national, state, and county levels, b
 
 Before figuring out how users might use the data on the website, I needed to wrap my head around the current state. I initially looked for a diagram of how the process works today, but no one had rendered one. Everybody knows their piece very well, but nobody had documented anything comprehensive. The leasing process and data related to leases touches 5 federal agencies and 14 systems, so it’s no surprise that there wasn’t anything that put all the pieces together.
 
-I started by reaching out to my college, Wendy, on the Data Governance team because I knew she had worked on multiple teams within our agency and had a good idea of the way things worked.  Then I talked with customers of the process and the data in a variety of internal and external roles about how they currently access and use the data and their pain points.
+I started by reaching out to my colleague, Wendy, on the Data Governance team because I knew she had worked on multiple teams within our agency and had a good idea of the way things worked.  Then I talked with customers of the process and the data in a variety of internal and external roles about how they currently access and use the data and their pain points.
 
 I then turned what I learned into a journey map and fleshed it out further with Wendy and other stakeholders. It started as the basic flow diagram from the customer’s perspective at the top, but it grew to include swimlanes for different actors and systems as we received more information and dug further into the weeds. We needed to figure out all the systems that were touched to even understand what data we would have available to include in a design to meet user needs.
 

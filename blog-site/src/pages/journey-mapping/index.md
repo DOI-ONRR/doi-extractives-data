@@ -21,7 +21,7 @@ Our Data Display team is part of a larger team that includes Data Optimization R
 Since the Data Display team publishes the data to the website, some assumed that team had the most impact on external people who need the data, so we also wanted to show how each team impacts both users of the website and customers of the data (who may never touch the website). The customer is represented by yellow boxes, and each team is a different shade of green.
 
 ![Screenshot of Information and Data Management journey map](./IDM_Journey.PNG)
-[View the full journey map (in Mural)](https://app.mural.co/t/onrr3044/m/onrr3044/1539884716338/7ba6fed4d70c669c753c18cb8610b4f6bb831fe7)
+[View the full journey map (PDF)](./IDM_Journey.pdf)
 
 We used an online tool for this journey map because its primary use would be in a large group meeting, and we knew we might want to edit the contents of the map on the fly. It made it easy to update without having to install software. It’s not a perfect tool, but it met the basic needs of our team.
 

@@ -22,55 +22,6 @@ The current Explore Data page is unwieldy.
  | - | - |
  | Split up the Explore Data page. | [Split up Explore Data page](https://github.com/ONRR/doi-extractives-data/issues/3197) <br> [Label tracking all issues in this epic](https://github.com/ONRR/doi-extractives-data/labels/Explore%20Data%20Split)|
  
- ## Home page content
- | Severity | Frequency |
-| - | - |
-| High | 17+ participants |
-
-Studies: Home Page Sept 2018, Key Facts/Explore Data Aug 2018, Inquisitive impala (unknown #)
-
-### Details
-The home page with key facts doesn't do a good job of orienting new users to how the process works.
-- The key facts are disorienting if you don't already know what the site does.
-- Many participants didn't notice the content below the key facts.
- 
- | Solution | Github Issue(s) |
- | - | - |
- | Rework the How it Works content on the homepage to reduce disorientation from key facts. | [Tabbed how it works content](https://github.com/ONRR/doi-extractives-data/issues/3287)|
- 
-## Link visibility
- | Severity | Frequency |
-| - | - |
-| High | 10 participants |
-
-Studies: Home Page Sept 2018, Key Facts/Explore Data Aug 2018, Key Facts June 2018
-
-###Details
-Many participants had issues understanding how the links in page lead down the funnel.
-- Links from summary sections get buried under the charts.
-- Links look too much like regular text.
-- Some of the icons we tested weren't clear.
-- "Data and documentation" link title doesn't convey that you can download data.
-
- | Solution | Github Issue(s) |
- | - | - |
- | Revisit the use of links and buttons and icon usage. | [Revisit link and button usage](https://github.com/ONRR/doi-extractives-data/issues/3278)|
- 
-## Monthly data
- | Severity | Frequency |
-| - | - |
-| Medium | 18 participants |
-
-Studies: October 2018 Interviews, Home Page Sept 2018, Key Facts/Explore Data Aug 2018, Key Facts June 2018, Disbursements Round 2 June 2018, Disbursements Round 1 May 2018, Disbursements Interviews Apr 2018
-
-### Details
-
-Users think monthly data is useful. Mostly to see how the current year is going to far, which requires being able to compare against how it compares to the prior year.
- 
- | Solution | Github Issue(s) |
- | - | - |
- | Add monthly data to the site. | [Home page](https://github.com/ONRR/doi-extractives-data/issues/3293) <br> [Disbursements](https://github.com/ONRR/doi-extractives-data/issues/2890) <br> [Revenue & Production on Explore Data](https://github.com/ONRR/doi-extractives-data/issues/3221) <br> [Downloads](https://github.com/ONRR/doi-extractives-data/issues/3257)|
-
 ## Tables and data manipulation
 ### Slicing and dicing data
  | Severity | Frequency |
@@ -114,21 +65,7 @@ Users want all the funcitonality we had on the stats page.
  | - | - |
  | We'll be adding some of this with the filterable tables. | [Disbursements](https://github.com/ONRR/doi-extractives-data/issues/3187)|
  
- ## Download links
-  | Severity | Frequency |
-| - | - |
-| Medium | 12+ participants |
-
-Studies: October 2018 Interviews, Home Page Sept 2018, Key Facts/Explore Data Aug 2018, Disbursements Round 2 June 2018, Disbursements Round 1 May 2018, Sarcastic Seacow (unknown #)
-
-### Details
-Many users just want to download data and sometimes have difficulty finding that functionality from Explore Data.
-
-| Solution | Github Issue(s) |
- | - | - |
- | Make links to download more prominent. | [Home page](https://github.com/ONRR/doi-extractives-data/issues/3287) <br> [Download icon](https://github.com/ONRR/doi-extractives-data/issues/3288) <br> [Explore Data page](https://github.com/ONRR/doi-extractives-data/issues/3197) |
- 
- ## Getting to data
+## Getting to data
    | Severity | Frequency |
 | - | - |
 | Medium | 12+ participants |
@@ -142,18 +79,7 @@ The narrative gets in the way of finding data.
  | - | - |
  | Make links to download more prominent. | [Home page](https://github.com/ONRR/doi-extractives-data/issues/3287) <br> [Explore Data page](https://github.com/ONRR/doi-extractives-data/issues/3197) <br> [Table view](https://github.com/ONRR/doi-extractives-data/issues/3187) |
 
-## Home page map
-   | Severity | Frequency |
-| - | - |
-| Medium | 11 participants |
-
-Studies: Home Page Sept 2018, Key Facts/Explore Data Aug 2018
-
-| Solution | Github Issue(s) |
- | - | - |
- | Move the map above the Data Summary. | [Home page](https://github.com/ONRR/doi-extractives-data/issues/3293) |
- 
- ## Revenue by company
+## Revenue by company
  | Severity | Frequency |
 | - | - |
 | Medium | 11 participants |
@@ -331,37 +257,7 @@ Users want to be able to click on charts to drill into more details.
  | - | - |
  | Consider this for future chart designs.  We're piloting this with the Revenue by Company graphic. | https://github.com/ONRR/doi-extractives-data/issues/2805 |
  
- ## Glossary icon and links
- | Severity | Frequency |
-| - | - |
-| Medium | 7+ participants |
-
-Studies: Key Facts/Explore Data Aug 2018, Disbursements Round 2 June 2018, Home Page Sept 2018, Mighty Moose B (unknown #), Key Facts June 2018
-
-### Details
-The glossary icon isn't readily understood.
-- When it was initially put in the header without a label, participants didn't understand what it was.  They got it when the word "glossary" was added, but the word isn't there when it appears in contextual links.
-- A few people have had issues understanding the icon in contextual links and thought it was a filter when used in a table column header.
-
-| Solution | Github Issue(s) |
- | - | - |
- | Test out different icons for the glossary. | None |
- 
- ## Production sections order
- | Severity | Frequency |
-| - | - |
-| Medium | 7 participants |
-
-Studies: Home Page Sept 2018
-
-### Details
-Participants had mixed opinions about whether All should come first or last.  
-
-| Solution | Github Issue(s) |
- | - | - |
- | Keeping it with all first, for now, but will watch in future studies. | https://github.com/ONRR/doi-extractives-data/issues/3278 |
- 
- ## Data available
+## Data available
  | Severity | Frequency |
 | - | - |
 | Low | 6 participants |
@@ -591,4 +487,109 @@ Could be using printouts to compare line items in an audit.
  
  # Addressed
  Once we start implementing the planned updates, we'll move those topics down.
+ ## Home page content
+ | Severity | Frequency |
+| - | - |
+| High | 17+ participants |
+
+Studies: Home Page Sept 2018, Key Facts/Explore Data Aug 2018, Inquisitive impala (unknown #)
+
+### Details
+The home page with key facts doesn't do a good job of orienting new users to how the process works.
+- The key facts are disorienting if you don't already know what the site does.
+- Many participants didn't notice the content below the key facts.
+ 
+ | Solution | Github Issue(s) |
+ | - | - |
+ | Rework the How it Works content on the homepage to reduce disorientation from key facts. | [Tabbed how it works content](https://github.com/ONRR/doi-extractives-data/issues/3287)|
+
+## Link visibility
+ | Severity | Frequency |
+| - | - |
+| High | 10 participants |
+
+Studies: Home Page Sept 2018, Key Facts/Explore Data Aug 2018, Key Facts June 2018
+
+###Details
+Many participants had issues understanding how the links in page lead down the funnel.
+- Links from summary sections get buried under the charts.
+- Links look too much like regular text.
+- Some of the icons we tested weren't clear.
+- "Data and documentation" link title doesn't convey that you can download data.
+
+ | Solution | Github Issue(s) |
+ | - | - |
+ | Revisit the use of links and buttons and icon usage. | [Revisit link and button usage](https://github.com/ONRR/doi-extractives-data/issues/3278)|
+ 
+## Monthly data
+ | Severity | Frequency |
+| - | - |
+| Medium | 18 participants |
+
+Studies: October 2018 Interviews, Home Page Sept 2018, Key Facts/Explore Data Aug 2018, Key Facts June 2018, Disbursements Round 2 June 2018, Disbursements Round 1 May 2018, Disbursements Interviews Apr 2018
+
+### Details
+
+Users think monthly data is useful. Mostly to see how the current year is going to far, which requires being able to compare against how it compares to the prior year.
+ 
+ | Solution | Github Issue(s) |
+ | - | - |
+ | Add monthly data to the site. | [Home page](https://github.com/ONRR/doi-extractives-data/issues/3293) <br> [Disbursements](https://github.com/ONRR/doi-extractives-data/issues/2890) <br> [Revenue & Production on Explore Data](https://github.com/ONRR/doi-extractives-data/issues/3221) <br> [Downloads](https://github.com/ONRR/doi-extractives-data/issues/3257)|
+
+ ## Download links
+  | Severity | Frequency |
+| - | - |
+| Medium | 12+ participants |
+
+Studies: October 2018 Interviews, Home Page Sept 2018, Key Facts/Explore Data Aug 2018, Disbursements Round 2 June 2018, Disbursements Round 1 May 2018, Sarcastic Seacow (unknown #)
+
+### Details
+Many users just want to download data and sometimes have difficulty finding that functionality from Explore Data.
+
+| Solution | Github Issue(s) |
+ | - | - |
+ | Make links to download more prominent. | [Home page](https://github.com/ONRR/doi-extractives-data/issues/3287) <br> [Download icon](https://github.com/ONRR/doi-extractives-data/issues/3288) <br> [Explore Data page](https://github.com/ONRR/doi-extractives-data/issues/3197) |
+
+## Home page map
+Note: This has since been reversed at the request of a stakeholder.
+
+   | Severity | Frequency |
+| - | - |
+| Medium | 11 participants |
+
+Studies: Home Page Sept 2018, Key Facts/Explore Data Aug 2018
+
+| Solution | Github Issue(s) |
+ | - | - |
+ | Move the map above the Data Summary. | [Home page](https://github.com/ONRR/doi-extractives-data/issues/3293) |
+ 
+ ## Glossary icon and links
+ | Severity | Frequency |
+| - | - |
+| Medium | 7+ participants |
+
+Studies: Key Facts/Explore Data Aug 2018, Disbursements Round 2 June 2018, Home Page Sept 2018, Mighty Moose B (unknown #), Key Facts June 2018
+
+### Details
+The glossary icon isn't readily understood.
+- When it was initially put in the header without a label, participants didn't understand what it was.  They got it when the word "glossary" was added, but the word isn't there when it appears in contextual links.
+- A few people have had issues understanding the icon in contextual links and thought it was a filter when used in a table column header.
+
+| Solution | Github Issue(s) |
+ | - | - |
+ | Test out different icons for the glossary. | None |
+ 
+ ## Production sections order
+ | Severity | Frequency |
+| - | - |
+| Medium | 7 participants |
+
+Studies: Home Page Sept 2018
+
+### Details
+Participants had mixed opinions about whether All should come first or last.  
+
+| Solution | Github Issue(s) |
+ | - | - |
+ | Keeping it with all first, for now, but will watch in future studies. | https://github.com/ONRR/doi-extractives-data/issues/3278 |
  

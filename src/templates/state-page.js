@@ -63,7 +63,7 @@ const NAV_ITEMS = [
         title: 'Federal revenue'
       },
       {
-        name: 'state-local-revenue',
+        name: 'state-revenue',
         title: 'State revenue'
       }
     ]

@@ -90,6 +90,8 @@ class GroupTable extends React.Component {
   constructor(props) {
     super(props);
 
+    //console.log(props);
+
     this.state = {
       columns: [
         { name: 'rev', title: 'Revenue Type'},
@@ -110,15 +112,7 @@ class GroupTable extends React.Component {
         { columnName: 'FY2018', align: 'right' },
         { columnName: 'FY2017', align: 'right' },
       ],
-      columnBands : [
-        { title: 'Fiscal Year',
-          children: [
-            {columnName: 'FY2019'},
-            {columnName: 'FY2018'},
-            {columnName: 'FY2017'},
-          ]
-        }
-      ],
+      columnBands : [],
       totalSummaryItems: [
         { columnName: 'FY2019', type: 'sum' },
         { columnName: 'FY2018', type: 'sum' },
@@ -137,6 +131,11 @@ class GroupTable extends React.Component {
 
     this.changeGrouping = grouping => this.setState({ grouping });
   }
+
+  componentWillReceiveProps(nextProps) {
+    //console.log(nextProps);
+  }
+
 
 
 	render() {

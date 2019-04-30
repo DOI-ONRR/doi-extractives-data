@@ -240,9 +240,7 @@ export default createReducer(initialState, {
   [SET_SELECTED_YEAR_BY_ID]: setSelectedYearByIdHandler
 })
 
-// Utils
-
-
+// This is used by graph components(charts, legends, selectors) to display all related data set info
 const updateGraphDataSet = (id, source, groupByKey, filter, options) => {
   if (source === undefined) return source
 
@@ -255,7 +253,7 @@ const updateGraphDataSet = (id, source, groupByKey, filter, options) => {
 
   }
   
-  // We add this for now until we update our data to always include units and long units
+  // Defaults
   units = '$'
   longUnits = 'dollars'
 
@@ -329,7 +327,9 @@ const updateGraphDataSet = (id, source, groupByKey, filter, options) => {
 
 
 
+// Utils
 // The following Utils are used to resolve differences in data identifiers
+// Our data will become more consistent so this should go away
 const getDate = data => data.ProductionDate || data.RevenueDate
 const getMonth = data => data.ProductionMonth || data.RevenueMonth
 const getYear = data => data.ProductionYear || data.RevenueYear || data.Year || data.CalendarYear

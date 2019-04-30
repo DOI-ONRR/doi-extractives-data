@@ -32,6 +32,9 @@ import Toggle from '../../../components/selectors/Toggle'
 import DropDown from '../../../components/selectors/DropDown'
 import Select from '../../../components/selectors/Select'
 import FilterTable from '../../../components/tables/FilterTable'
+import GroupTable from '../../../components/tables/GroupTable'
+import TreeTable from '../../../components/tables/TreeTable'
+
 
 const PAGE_TITLE = "Federal Revenue | Natural Resources Revenue Data"
 const TOGGLE_VALUES = {
@@ -329,8 +332,8 @@ class FederalRevenue extends React.Component {
 						</div>
 					</div>
 					{this.state[REVENUES_FISCAL_YEAR] &&
-						<div>
-							<FilterTable data={this.getTableData()} columns={this.getTableColumns()}/>
+						<div className={styles.tableContainer}>
+							<GroupTable />
 						</div>
 					}
 

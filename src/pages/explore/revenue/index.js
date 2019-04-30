@@ -278,11 +278,11 @@ class FederalRevenue extends React.Component {
 						</div>
 						<div className="container-left-6">
 							Leasing<br/>
-							<span class="para-md">Companies bid on and lease lands and waters from the federal government. They pay a bonus when they win a lease and rent until resource production begins.</span>
+							<span className="para-md">Companies bid on and lease lands and waters from the federal government. They pay a bonus when they win a lease and rent until resource production begins.</span>
 						</div>
 						<div className="container-right-6">
 							Production<br/>
-							<span class="para-md">Once enough resources are produced to pay royalties, the leaseholder pays royalties and other fees to the federal government.</span>
+							<span className="para-md">Once enough resources are produced to pay royalties, the leaseholder pays royalties and other fees to the federal government.</span>
 						</div>
 					</section>
 

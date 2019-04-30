@@ -27,6 +27,9 @@ import styles from './GroupTable.module.scss'
 
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles'
 const theme = createMuiTheme({
+  typography: {
+    useNextVariants: true,
+  },
   overrides: {
     MuiTableCell: {
       root: {
@@ -68,7 +71,7 @@ const CustomTableSummaryRow_GroupRow = ({ ...restProps }) => {
   )
 }
 
-const CustomTableSummaryRow_Item = ({ ...restProps }) => {
+const CustomTableSummaryRow_Item = ({getMessage, ...restProps }) => {
   //console.log(restProps);
   return (
     <div {...restProps}  className={styles.summaryCell}>

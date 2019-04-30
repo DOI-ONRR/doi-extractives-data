@@ -17,6 +17,9 @@ import ListItemText_MU from '@material-ui/core/ListItemText'
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles'
 
 const theme = createMuiTheme({
+  typography: {
+    useNextVariants: true,
+  },
   overrides: {
     MuiInputBase: { // Name of the component ⚛️ / style sheet
       root: { // Name of the rule
@@ -26,10 +29,10 @@ const theme = createMuiTheme({
 				borderRadius: '5px',
     		fontFamily: styles._baseFontFamily,
     		fontWeight: 300,
-      },
-      focused: {
-				boxShadow: '0 0 0 2px #1c2225',
-  			outline: 'none',
+        '&?focused': {
+          boxShadow: '0 0 0 2px #1c2225',
+          outline: 'none',
+        },
       },
       input: {
       	lineHeight: '24px',

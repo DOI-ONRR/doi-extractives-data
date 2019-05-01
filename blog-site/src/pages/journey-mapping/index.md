@@ -1,5 +1,5 @@
 ---
-title: "Journey maps as a communication tool"
+title: "Journey maps as communication tools"
 authors:
 - Shannon McHarg
 - Wendy Ranone
@@ -20,7 +20,7 @@ Our Data Display team is part of a larger team that includes Data Optimization R
 
 Since the Data Display team publishes the data to the website, some assumed that team had the most impact on external people who need the data, so we also wanted to show how each team impacts both users of the website and customers of the data (who may never touch the website). The customer is represented by yellow boxes, and each team is a different shade of green.
 
-![Screenshot of Information and Data Management journey map](./IDM_Journey.PNG)
+[![Screenshot of Information and Data Management journey map](./IDM_Journey.PNG)](./IDM_Journey.pdf)
 [View the full journey map (PDF)](./IDM_Journey.pdf)
 
 We used an online tool for this journey map because its primary use would be in a large group meeting, and we knew we might want to edit the contents of the map on the fly. It made it easy to update without having to install software. It’s not a perfect tool, but it met the basic needs of our team.
@@ -39,7 +39,7 @@ I started by reaching out to my colleague, Wendy, on the Data Governance team be
 
 I then turned what I learned into a journey map and fleshed it out further with Wendy and other stakeholders. It started as the basic flow diagram from the customer’s perspective at the top, but it grew to include swimlanes for different actors and systems as we received more information and dug further into the weeds. We needed to figure out all the systems that were touched to even understand what data we would have available to include in a design to meet user needs.
 
-![Screenshot of lease journey map](./Lease_Journey.PNG)
+[![Screenshot of lease journey map](./Lease_Journey.PNG)](./LeaseLevelJourneyMap_040519.pdf))
 
 [View the full journey map (PDF)](./LeaseLevelJourneyMap_040519.pdf)
 

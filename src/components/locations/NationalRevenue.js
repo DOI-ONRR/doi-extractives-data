@@ -60,7 +60,7 @@ const NationalRevenue = props => {
         </p>
 
         <p>
-          <ExploreDataLink to="/explore/revenue">Revenue data</ExploreDataLink> 
+          <ExploreDataLink className="data-downloads" to="/explore/revenue">Revenue data</ExploreDataLink> 
           <Link className="data-downloads" to="/downloads/federal-revenue-by-location/" >
             <DataAndDocs />
           </Link>

@@ -39,7 +39,7 @@ I started by reaching out to my colleague, Wendy, on the Data Governance team be
 
 I then turned what I learned into a journey map and fleshed it out further with Wendy and other stakeholders. It started as the basic flow diagram from the customer’s perspective at the top, but it grew to include swimlanes for different actors and systems as we received more information and dug further into the weeds. We needed to figure out all the systems that were touched to even understand what data we would have available to include in a design to meet user needs.
 
-[![Screenshot of lease journey map](./Lease_Journey.PNG)](./LeaseLevelJourneyMap_040519.pdf))
+[![Screenshot of lease journey map](./Lease_Journey.PNG)](./LeaseLevelJourneyMap_040519.pdf)
 
 [View the full journey map (PDF)](./LeaseLevelJourneyMap_040519.pdf)
 

@@ -102,14 +102,14 @@ class FederalRevenue extends React.Component {
 	}
 
 	getTableColumns = () => {
-		let columns = [], columnExtensions = [], grouping = [], groupColumnExtensions = [];
+		let columns = [], columnExtensions = [], grouping = [], currencyColumns=[], defaultSorting=[];
 		let {filter} = this.state;
 		let groupBySlug = utils.formatToSlug(filter.groupBy);
 
-
 		columns.push({ name: groupBySlug, title: filter.groupBy });
-		grouping.push({columnName: groupBySlug});
-		groupColumnExtensions.push({ columnName: groupBySlug, showWhenGrouped: true })
+		if(this.state.additionalColumns && this.state.additionalColumns.length > 0) {
+			grouping.push({columnName: groupBySlug});
+		}
 
 		this.state.additionalColumns.forEach(column => {
 			columns.push({ name: utils.formatToSlug(column), title: column })
@@ -117,14 +117,20 @@ class FederalRevenue extends React.Component {
 
 		filter.years.sort().forEach(year => {
 			columns.push({ name: 'fy-'+year, title: year })
-			columnExtensions.push({ name: 'fy-'+year, align: 'right' })
+			columnExtensions.push({ columnName: 'fy-'+year, align: 'right' })
+			defaultSorting=[{ columnName: 'fy-'+year, direction: 'desc' }]
 		})
+
+		// Have to add all the data provider types initially or they wont work??
+		this.state.yearOptions.forEach(year => currencyColumns.push('fy-'+year))
+		
 
 		return {
 			columns: columns, 
 			columnExtensions: columnExtensions,
 			grouping: grouping,
-			groupColumnExtensions: groupColumnExtensions 
+			currencyColumns: currencyColumns,
+			defaultSorting: defaultSorting,
 		};
 	}
 
@@ -144,19 +150,20 @@ class FederalRevenue extends React.Component {
 
 	}
 
-	getTableData_2 = () => {
-		if(this.state[REVENUES_FISCAL_YEAR] === undefined) return;
+	getTableData = () => {
+		if(this.state[REVENUES_FISCAL_YEAR] === undefined) return {tableData:undefined, expandedGroups: undefined};
 		let dataSet = this.state[REVENUES_FISCAL_YEAR];
+		let groupBySlug = utils.formatToSlug(this.state.filter.groupBy);
 		let allDataSetGroupBy = GROUP_BY_OPTIONS[this.state.filter.groupBy].map( groupBy => this.state[REVENUES_FISCAL_YEAR][groupBy] );
 
-		console.log(this.state.filter.groupBy, allDataSetGroupBy);
 		let tableData = []; 
+		let expandedGroups = [];
 
 		// Iterate over all group by data sets asociated with this filter group by
 		allDataSetGroupBy.forEach( (dataSetGroupBy, indexGroupBy) => { 
-			let groupByResult = Object.keys(dataSetGroupBy).map(name => {
+			Object.keys(dataSetGroupBy).forEach(name => {
 
-				let tableRow = [name]
+				expandedGroups.push(name);
 
 				let sums = {}
 				let sumsByAdditionalColumns = {}
@@ -164,12 +171,14 @@ class FederalRevenue extends React.Component {
 				let additionalColumnsRow = {};
 
 				// sum all revenues
-				dataSetGroupBy[name].map((dataId) => {
+				dataSetGroupBy[name].forEach((dataId) => {
 					let data = dataSet[BY_ID][dataId];
 
 					// filter by selected years
 					if( this.state.filter.years.includes(data.FiscalYear) ) {
-						sums[data.FiscalYear] = (sums[data.FiscalYear])? sums[data.FiscalYear]+data.Revenue : data.Revenue;
+
+						let fiscalYearSlug = 'fy-'+data.FiscalYear
+						sums[fiscalYearSlug] = (sums[fiscalYearSlug])? sums[fiscalYearSlug]+data.Revenue : data.Revenue;
 
 						this.state.additionalColumns.forEach((additionalColumn) => {
 
@@ -178,7 +187,6 @@ class FederalRevenue extends React.Component {
 
 							dataColumns.map(column => {
 								let newValue = data[column];
-
 
 								if(additionalColumnsRow[additionalColumn] === undefined) {
 									additionalColumnsRow[additionalColumn] = [];
@@ -190,10 +198,16 @@ class FederalRevenue extends React.Component {
 									if(sumsByAdditionalColumns[additionalColumn][newValue] === undefined) {
 										sumsByAdditionalColumns[additionalColumn][newValue] = {};
 									}
-									sumsByAdditionalColumns[additionalColumn][newValue][data.FiscalYear] = (sumsByAdditionalColumns[additionalColumn][newValue][data.FiscalYear])? 
-										sumsByAdditionalColumns[additionalColumn][newValue][data.FiscalYear]+data.Revenue 
+
+
+									let fyRevenue = data.Revenue || 0;
+									//console.log(data.RevenueType, data.FiscalYear, fyRevenue)
+
+									sumsByAdditionalColumns[additionalColumn][newValue][fiscalYearSlug] = (sumsByAdditionalColumns[additionalColumn][newValue][fiscalYearSlug])? 
+										sumsByAdditionalColumns[additionalColumn][newValue][fiscalYearSlug]+fyRevenue 
 										: 
-										data.Revenue;
+										fyRevenue;
+
 									if(!additionalColumnsRow[additionalColumn].includes(newValue)) {
 										additionalColumnsRow[additionalColumn].push(newValue)
 									}	
@@ -203,119 +217,34 @@ class FederalRevenue extends React.Component {
 					}
 				})
 
-				// If no revenue data is found then ignore this row
-				if(Object.keys(sums).length > 0) {
+				if(Object.keys(sumsByAdditionalColumns).length > 0) {
+					Object.keys(sumsByAdditionalColumns).forEach((column) => {
+						let columnSlug = utils.formatToSlug(column);
 
-					console.log(sumsByAdditionalColumns);
-
-					let test = Object.keys(sumsByAdditionalColumns).map((column) => {
-						return Object.keys(sumsByAdditionalColumns[column]).map((columnValue) => {
-							return {'revenue-type': 'test', [column]:  columnValue}
+						Object.keys(sumsByAdditionalColumns[column]).forEach((columnValue) => {
+							// Add all fiscal years to each row
+							this.state.filter.years.forEach((year) => {
+								let fiscalYearSlug = 'fy-'+year;
+								sumsByAdditionalColumns[column][columnValue][fiscalYearSlug] = parseInt(sumsByAdditionalColumns[column][columnValue][fiscalYearSlug]) || 0;
+							})
+							tableData.push(Object.assign({[groupBySlug]: name, [columnSlug]:  columnValue}, sumsByAdditionalColumns[column][columnValue]))
 						}) 
 					})
+				}
+				else {
 
-						console.log(test);
+					this.state.filter.years.forEach((year) => {
+						let fiscalYearSlug = 'fy-'+year;
+						sums[fiscalYearSlug] = parseInt(sums[fiscalYearSlug]) || 0;
+					})
 
-					// Format and create an array for all revenue sum columns
-					let sumsToArray = this.state.filter.years.map(year => utils.formatToDollarInt(sums[year]) )
-
-					let mergedAdditionalColumns = Object.keys(additionalColumnsRow).map(column => additionalColumnsRow[column].join(", ") )
-
-					// Add columns in the order they appear in the table
-					return tableRow.concat(mergedAdditionalColumns, sumsToArray);
+					tableData.push(Object.assign({[groupBySlug]: name}, sums))
 				}
 
-
 			})
-
-			// Merge each groupBy result into the table data array
-			tableData = tableData.concat(groupByResult)
 		});
 
-		//console.log(tableData);
-
-		return tableData;
-	}
-
-	getTableData = () => {
-		if(this.state[REVENUES_FISCAL_YEAR] === undefined) return;
-		let dataSet = this.state[REVENUES_FISCAL_YEAR];
-		let allDataSetGroupBy = GROUP_BY_OPTIONS[this.state.filter.groupBy].map( groupBy => this.state[REVENUES_FISCAL_YEAR][groupBy] );
-
-		let tableData = []; 
-
-		let totals = {}
-		// Iterate over all group by data sets asociated with this filter group by
-		allDataSetGroupBy.forEach( (dataSetGroupBy, indexGroupBy) => { 
-			let groupByResult = Object.keys(dataSetGroupBy).map(name => {
-
-				let tableRow = [name]
-
-				let sums = {}
-				let sumsByAdditionalColumns = {}
-
-				let additionalColumnsRow = {};
-
-				// sum all revenues
-				dataSetGroupBy[name].map((dataId) => {
-					let data = dataSet[BY_ID][dataId];
-
-					// filter by selected years
-					if( this.state.filter.years.includes(data.FiscalYear) ) {
-						sums[data.FiscalYear] = (sums[data.FiscalYear])? sums[data.FiscalYear]+data.Revenue : data.Revenue;
-						totals[data.FiscalYear] = (totals[data.FiscalYear])? totals[data.FiscalYear]+data.Revenue : data.Revenue;
-
-
-
-						this.state.additionalColumns.forEach((additionalColumn) => {
-
-							// Get the data columns related to the column in the table. Could have multiple data source columns mapped to 1 table column
-							let dataColumns = ADDITIONAL_COLUMN_OPTIONS[additionalColumn];
-
-							dataColumns.map(column => {
-								let newValue = data[column];
-
-								if(additionalColumnsRow[additionalColumn] === undefined) {
-									additionalColumnsRow[additionalColumn] = [];
-								}
-								if(newValue !== null && !additionalColumnsRow[additionalColumn].includes(newValue)) {
-									additionalColumnsRow[additionalColumn].push(newValue)
-								}						
-							})
-						})
-					}
-				})
-
-				// If no revenue data is found then ignore this row
-				if(Object.keys(sums).length > 0) {
-
-					// Format and create an array for all revenue sum columns
-					let sumsToArray = this.state.filter.years.map(year => utils.formatToDollarInt(sums[year]) )
-
-					let mergedAdditionalColumns = Object.keys(additionalColumnsRow).map(column => additionalColumnsRow[column].join(", ") )
-
-					// Add columns in the order they appear in the table
-					return tableRow.concat(mergedAdditionalColumns, sumsToArray);
-				}
-
-
-			})
-			console.log(groupByResult);
-
-			// Merge each groupBy result into the table data array
-			tableData = tableData.concat(groupByResult)
-		});
-
-		let tableTotalRow = ['Total'];
-		tableTotalRow = tableTotalRow.concat(this.state.additionalColumns.map(col=>" "), this.state.filter.years.map(year => utils.formatToDollarInt(totals[year]) ))
-
-		tableData.push(tableTotalRow)
-		// Filter out rows that were undefined due to not having any revenue data for the selected years
-		return tableData.filter(row => row !== undefined);
-	}
-
-	setTimeframe = () => {
-
+		return {tableData:tableData, expandedGroups: expandedGroups};
 	}
 
 	setYearsFilter(values) {
@@ -383,10 +312,10 @@ class FederalRevenue extends React.Component {
 
 	render() {
 		let {timeframe, yearOptions} = this.state;
-		let {columns, columnExtensions, grouping, groupColumnExtensions} = this.getTableColumns();
+		let {columns, columnExtensions, grouping, currencyColumns, defaultSorting} = this.getTableColumns();
 		let {totalSummaryItems, groupSummaryItems} = this.getTableSummaries();
-		let tableData = this.getTableData_2();
-		console.log(tableData)
+		let {tableData, expandedGroups} = this.getTableData();
+
 		return (
 			<DefaultLayout>
 	      <Helmet
@@ -463,10 +392,13 @@ class FederalRevenue extends React.Component {
 					{this.state[REVENUES_FISCAL_YEAR] &&
 						<div className={styles.tableContainer}>
 							<GroupTable 
+								rows={tableData}
 								columns={columns} 
-								columnExtensions={columnExtensions}
+								defaultSorting={defaultSorting}
+								tableColumnExtension={columnExtensions}
 								grouping={grouping}
-								tableGroupColumnExtension={groupColumnExtensions}
+								currencyColumns={currencyColumns}
+								expandedGroups={expandedGroups}
 								totalSummaryItems={totalSummaryItems}
 								groupSummaryItems={groupSummaryItems}
 							/>

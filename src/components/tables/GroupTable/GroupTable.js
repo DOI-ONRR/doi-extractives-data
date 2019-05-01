@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import Paper from '@material-ui/core/Paper';
+import { DataTypeProvider } from '@devexpress/dx-react-grid';
 import {
   SummaryState,
   IntegratedSummary,
@@ -22,6 +23,8 @@ import {
   Toolbar,
   TableFixedColumns,
 } from '@devexpress/dx-react-grid-material-ui';
+
+import utils from '../../../js/utils'
 
 import styles from './GroupTable.module.scss'
 
@@ -65,17 +68,19 @@ const CustomTableGroupRow_Content = ({ row, ...restProps }) => (
 );
 
 const CustomTableSummaryRow_GroupRow = ({ ...restProps }) => {
-  //console.log(restProps);
   return (
     <Table.Row {...restProps} className={styles.summaryGroupRow} />
   )
 }
 
 const CustomTableSummaryRow_Item = ({getMessage, ...restProps }) => {
-  //console.log(restProps);
   return (
     <div {...restProps}  className={styles.summaryCell}>
-      {restProps.value}
+      {restProps.children.type ?
+        restProps.children.type(restProps)
+      :
+        restProps.value
+      }
     </div>
   )
 }
@@ -86,60 +91,61 @@ const CustomTableSummaryRow_TotalRow = ({ ...restProps }) => {
   )
 }
 
+const CurrencyFormatter = ({ value }) => (
+  <span>
+    {utils.formatToDollarInt(value)}
+  </span>
+);
+
+const CurrencyTypeProvider = props => {
+  return(
+  <DataTypeProvider
+    formatterComponent={CurrencyFormatter}
+    {...props}
+  />
+);}
+
 class GroupTable extends React.Component {
   constructor(props) {
     super(props);
 
-    //console.log(props);
-
     this.state = {
-      columns: [
-        { name: 'rev', title: 'Revenue Type'},
-        { name: 'commodity', title: 'Commodity' },
-        { name: 'FY2019', title: '2019' },
-        { name: 'FY2018', title: '2018' },
-        { name: 'FY2017', title: '2017' },
-      ],
-      rows: [
-        { rev: 'Offshore', commodity: 'Oil', FY2019: 3,  FY2018: 30, FY2017: 300, },
-        { rev: 'Offshore', commodity: 'Gas', FY2019: 5,  FY2018: 5, FY2017: 50, },
-        { rev: 'Onshore', commodity: 'Coal', FY2019: 2,  FY2018: 20, FY2017: 200, },
-        { rev: 'Onshore', commodity: 'Oil', FY2019: 1,  FY2018: 10, FY2017: 100,},
-        { rev: 'Onshore', commodity: 'Coal', FY2019: 40,  FY2018: 40, FY2017: 400, },
-      ],
-      tableColumnExtension: [
-        { columnName: 'FY2019', align: 'right' },
-        { columnName: 'FY2018', align: 'right' },
-        { columnName: 'FY2017', align: 'right' },
-      ],
+      columns: props.columns,
+      rows: props.rows,
+      currencyColumns: props.currencyColumns,
+      tableColumnExtension: props.tableColumnExtension,
       columnBands : [],
-      totalSummaryItems: [
-        { columnName: 'FY2019', type: 'sum' },
-        { columnName: 'FY2018', type: 'sum' },
-        { columnName: 'FY2017', type: 'sum' },
-      ],
-      groupSummaryItems: [
-        { columnName: 'FY2019', type: 'sum' },
-        { columnName: 'FY2018', type: 'sum' },
-        { columnName: 'FY2017', type: 'sum' },
-      ],
-      tableGroupColumnExtension: [
-        { columnName: 'rev', showWhenGrouped: true },
-      ],
-      grouping: [{ columnName: 'rev'}],
+      totalSummaryItems: props.totalSummaryItems,
+      groupSummaryItems: props.groupSummaryItems,
+      tableGroupColumnExtension: props.tableGroupColumnExtension,
+      grouping: props.grouping,
+      expandedGroups: props.expandedGroups,
+      defaultSorting: props.defaultSorting,
     };
 
-    this.changeGrouping = grouping => this.setState({ grouping });
+    //this.changeGrouping = grouping => this.setState({ grouping });
   }
 
   componentWillReceiveProps(nextProps) {
-    //console.log(nextProps);
+    this.setState({...nextProps})
   }
 
-
+  handleExpandedGroupsChange(expandedGroups) {
+    this.setState({expandedGroups: expandedGroups});
+  }
 
 	render() {
-    const { rows, columns, tableColumnExtension, columnBands, grouping, tableGroupColumnExtension, totalSummaryItems, groupSummaryItems } = this.state;
+    const { 
+      rows, 
+      columns, 
+      currencyColumns,
+      tableColumnExtension, 
+      columnBands, 
+      grouping, 
+      expandedGroups, 
+      totalSummaryItems, 
+      groupSummaryItems,
+      defaultSorting } = this.state;
 
     return (
     	<div>
@@ -147,16 +153,18 @@ class GroupTable extends React.Component {
           <Grid
             rows={rows}
             columns={columns}
-          >
+          >          
+            <CurrencyTypeProvider
+              for={currencyColumns}
+            />
             <SortingState
-              defaultSorting={[
-                { columnName: 'FY2019', direction: 'desc' },
-              ]}
+              defaultSorting={defaultSorting}
             />
             <IntegratedSorting />
             <GroupingState
               grouping={grouping}
-              defaultExpandedGroups={['Onshore','Offshore']}
+              expandedGroups={expandedGroups}
+              onExpandedGroupsChange={this.handleExpandedGroupsChange.bind(this)}
             />
             <IntegratedGrouping />
             <SummaryState
@@ -168,12 +176,10 @@ class GroupTable extends React.Component {
             <TableHeaderRow showSortingControls />
             <TableSummaryRow 
               groupRowComponent={CustomTableSummaryRow_GroupRow}
-              itemComponent={CustomTableSummaryRow_Item}
               totalRowComponent={CustomTableSummaryRow_TotalRow}
+              itemComponent={CustomTableSummaryRow_Item}
             />
-            <TableGroupRow 
-              contentComponent={CustomTableGroupRow_Content}
-              columnExtensions={tableGroupColumnExtension}
+            <TableGroupRow  
             />
             <TableBandHeader
               columnBands={columnBands}
@@ -189,6 +195,13 @@ class GroupTable extends React.Component {
 export default GroupTable
 
 /*
+
+
+            <TableSummaryRow 
+              groupRowComponent={CustomTableSummaryRow_GroupRow}
+              itemComponent={CustomTableSummaryRow_Item}
+              totalRowComponent={CustomTableSummaryRow_TotalRow}
+            />
 	      <Paper>
 	        <Grid
 	          rows={rows}

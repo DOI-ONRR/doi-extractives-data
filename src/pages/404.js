@@ -4,7 +4,7 @@ import Rig404 from '-!svg-react-loader!../img/svg/rig-404.svg'
 
 const NotFoundPage = () => (
   <Layout>
-    <div class="riboon-card-bottom">
+    <div class="ribbon-card-bottom">
       <Rig404 />
       <div>
       <h1>There’s nothing here.</h1>

@@ -123,3 +123,9 @@
 		width: 100%;
 	}
 }
+
+@media screen and (max-width: 480px) {
+	.tabContentBottomContainer > div:first-child{
+		margin-bottom: 20px;
+	}
+}

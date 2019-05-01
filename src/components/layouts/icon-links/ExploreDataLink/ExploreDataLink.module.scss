@@ -7,8 +7,11 @@
 	margin-right: 8px;
 }
 
-.exploreDataLink span{
+.exploreDataLink a {
 	text-decoration: none;
+}
+
+.exploreDataLink span{
 	font-size: 1rem;
 	margin-right: 1rem;
 	vertical-align: baseline;

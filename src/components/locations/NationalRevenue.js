@@ -11,6 +11,7 @@ import GlossaryTerm from '../utils/glossary-term.js'
 import { filterTerms } from '../utils/Glossary'
 import RevenueTypeTable from '../locations/RevenueTypeTable'
 import RevenueProcessTable from '../locations/RevenueProcessTable'
+import { ExploreDataLink } from '../layouts/icon-links/ExploreDataLink'
 
 import ChartTitle from '../charts/ChartTitleCollapsible'
 
@@ -59,6 +60,8 @@ const NationalRevenue = props => {
         </p>
 
         <p>
+          <ExploreDataLink to="/explore/revenue">Revenue data</ExploreDataLink> 
+  
           <Link className="data-downloads" to="/downloads/federal-revenue-by-location/" >
             <DataAndDocs />
           </Link>

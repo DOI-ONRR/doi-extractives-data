@@ -108,6 +108,7 @@ const NationalRevenue = props => {
                         Non-tax revenue collected by <GlossaryTerm>ONRR</GlossaryTerm> often depends on what resources are available on federal lands and waters, as well as the laws and regulations about extraction of each resource.
             </p>
             <p>
+            <ExploreDataLink to="/explore/revenue">Revenue data in detail</ExploreDataLink>
               <Link to="/downloads/federal-revenue-by-location/" className="data-downloads">
                 <DataAndDocs />
               </Link>

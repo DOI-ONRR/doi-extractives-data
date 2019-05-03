@@ -9,7 +9,7 @@ tags:
 - user research
 - user experience
 - process
-date: "2019-05-06"
+date: "2019-05-03"
 ---
 
 Journey maps, service blueprints, process diagrams…whatever you want to call them, they’re all ways of mapping what happens to help a team come to an agreement on the current state and think about how to improve the future state. They’re a communication tool, but only effective when broadly shared and understood.  Here are two recent examples of journey maps we’ve created and how we socialized them to get agreement on process.

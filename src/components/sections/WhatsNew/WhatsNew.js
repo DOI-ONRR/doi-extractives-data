@@ -7,14 +7,12 @@ const WhatsNew = props => (
   <section className={styles.root + ' slab-delta'}>
   	<div className="container-page-wrapper">
       <h2>What's new</h2>
-      <p>In our latest release on April 25, 2019, we made the following change:</p>
+      <p>In our latest release on May 3, 2019, we made the following changes:</p>
       <ul className="list-bullet ribbon-card-top-list">
-        <li>Added <Link to="how-it-works/gomesa/">Fiscal Year 2019 GOMESA disbursement data</Link></li>
-      </ul>
-      <p>In our release on April 23, 2019, we made the following changes:</p>
-      <ul className="list-bullet ribbon-card-top-list">
-        <li>Added fiscal year view to homepage annual revenue and production bar charts</li>
-        <li>Added download file for <Link to="downloads/native-american-revenue/">Native American revenue data</Link></li>
+        <li>Updated state disbursements data to 2018</li>
+        <li>Updated <Link to="/downloads/federal-disbursements-by-month/">monthly disbursements file</Link></li>
+        <li>Added multiple pathways to <Link to="/explore/revenue/">revenue detail table</Link></li>
+        <li>Added <Link to="/blog/journey-mapping/">blog post about journey maps as communication tools</Link></li>
       </ul>
       <p>Review our <a href="https://github.com/ONRR/doi-extractives-data/releases">full release details</a>.</p>
     </div>

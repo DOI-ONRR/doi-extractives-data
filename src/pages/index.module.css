@@ -41,12 +41,12 @@
 
 .tabContentBottomContainer > div:first-child{
 	margin-right: 20px;
-	margin-bottom: 20px;
 }
 
 .tabContentBottomContainerLinks {
 	border-top: 2px solid white;
 	width: 100%;
+	margin-top: 1em;
 }
 .tabContentBottomContainerLinks > div {
 	margin-top: 12px;
@@ -121,5 +121,11 @@
 	.oilRig > svg{
 		display: none;
 		width: 100%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.tabContentBottomContainer > div:first-child{
+		margin-bottom: 20px;
 	}
 }

@@ -7,7 +7,7 @@ const WhatsNew = props => (
   <section className={styles.root + ' slab-delta'}>
   	<div className="container-page-wrapper">
       <h2>What's new</h2>
-      <p>In our latest release on May 3, 2019, we made the following change:</p>
+      <p>In our latest release on May 3, 2019, we made the following changes:</p>
       <ul className="list-bullet ribbon-card-top-list">
         <li>Updates state disbursements data to 2018</li>
         <li>Updates <Link to="/downloads/federal-disbursements-by-month/">monthly disbursements file</Link></li>

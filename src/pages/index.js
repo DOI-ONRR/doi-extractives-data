@@ -147,7 +147,7 @@ class HomePage extends React.Component {
             <Tab id="tab-production" name="Production">
               <div className={styles.tabContentContainer} >
                 <div className={styles.tabContent} >
-                  <p>The United States is among the world's top producers of oil, natural gas, and coal. The U.S. is also a global leader in renewable energy production. We have data for energy and mineral production on federal lands and waters, Native American lands, and nationwide production on all lands and waters.</p>
+                  <p>The United States is among the world's top producers of oil, natural gas, and coal. The U.S. is also a global leader in renewable energy production. We have data for energy and mineral production on federal lands and waters and Native American lands.</p>
                   <div className={styles.tabContentBottomContainer}>
                     <div>
                       <BlueButton to="/how-it-works/#production">How production works</BlueButton>

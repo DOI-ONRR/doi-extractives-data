@@ -11,6 +11,7 @@ import GlossaryTerm from '../utils/glossary-term.js'
 import { filterTerms } from '../utils/Glossary'
 import RevenueTypeTable from '../locations/RevenueTypeTable'
 import RevenueProcessTable from '../locations/RevenueProcessTable'
+import { ExploreDataLink } from '../layouts/icon-links/ExploreDataLink'
 
 import ChartTitle from '../charts/ChartTitleCollapsible'
 
@@ -59,6 +60,7 @@ const NationalRevenue = props => {
         </p>
 
         <p>
+          <ExploreDataLink to="/explore/revenue">Revenue data in detail</ExploreDataLink>
           <Link className="data-downloads" to="/downloads/federal-revenue-by-location/" >
             <DataAndDocs />
           </Link>
@@ -106,6 +108,7 @@ const NationalRevenue = props => {
                         Non-tax revenue collected by <GlossaryTerm>ONRR</GlossaryTerm> often depends on what resources are available on federal lands and waters, as well as the laws and regulations about extraction of each resource.
             </p>
             <p>
+              <ExploreDataLink to="/explore/revenue">Revenue data in detail</ExploreDataLink>
               <Link to="/downloads/federal-revenue-by-location/" className="data-downloads">
                 <DataAndDocs />
               </Link>

@@ -115,14 +115,19 @@ class FederalRevenue extends React.Component {
 			columns.push({ name: utils.formatToSlug(column), title: column })
 		})
 
-		filter.years.sort().forEach(year => {
+		/*filter.years.sort().forEach(year => {
 			columns.push({ name: 'fy-'+year, title: year })
 			columnExtensions.push({ columnName: 'fy-'+year, align: 'right' })
 			defaultSorting=[{ columnName: 'fy-'+year, direction: 'desc' }]
-		})
+		})*/
 
 		// Have to add all the data provider types initially or they wont work??
-		this.state.yearOptions.forEach(year => currencyColumns.push('fy-'+year))
+		this.state.yearOptions.forEach(year => {
+			columns.push({ name: 'fy-'+year, title: year })
+			columnExtensions.push({ columnName: 'fy-'+year, align: 'right' })
+			defaultSorting=[{ columnName: 'fy-'+year, direction: 'desc' }]
+			currencyColumns.push('fy-'+year)
+		})
 		
 
 		return {
@@ -136,9 +141,9 @@ class FederalRevenue extends React.Component {
 
 	getTableSummaries = () => {
 		let totalSummaryItems = [], groupSummaryItems = [];
-		let {filter} = this.state;
+		let {yearOptions} = this.state;
 
-		filter.years.sort().forEach(year => {
+		yearOptions.sort().forEach(year => {
 			totalSummaryItems.push({ columnName: 'fy-'+year, type: 'sum' })
 			groupSummaryItems.push({ columnName: 'fy-'+year, type: 'sum' })
 		})
@@ -175,7 +180,7 @@ class FederalRevenue extends React.Component {
 					let data = dataSet[BY_ID][dataId];
 
 					// filter by selected years
-					if( this.state.filter.years.includes(data.FiscalYear) ) {
+					//if( this.state.filter.years.includes(data.FiscalYear) ) {
 
 						let fiscalYearSlug = 'fy-'+data.FiscalYear
 						sums[fiscalYearSlug] = (sums[fiscalYearSlug])? sums[fiscalYearSlug]+data.Revenue : data.Revenue;
@@ -214,7 +219,7 @@ class FederalRevenue extends React.Component {
 								}				
 							})
 						})
-					}
+					//}
 				})
 
 				if(Object.keys(sumsByAdditionalColumns).length > 0) {

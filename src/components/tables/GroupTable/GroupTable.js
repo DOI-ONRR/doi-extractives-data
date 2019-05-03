@@ -74,6 +74,7 @@ const CustomTableSummaryRow_GroupRow = ({ ...restProps }) => {
 }
 
 const CustomTableSummaryRow_Item = ({getMessage, ...restProps }) => {
+  restProps.value = (isNaN(restProps.value)) ? 0 : restProps.value;
   return (
     <div {...restProps}  className={styles.summaryCell}>
       {restProps.children.type ?
@@ -91,11 +92,13 @@ const CustomTableSummaryRow_TotalRow = ({ ...restProps }) => {
   )
 }
 
-const CurrencyFormatter = ({ value }) => (
-  <span>
-    {utils.formatToDollarInt(value)}
-  </span>
-);
+const CurrencyFormatter = ({ value }) => {
+  return (
+    <span>
+      {utils.formatToDollarInt(value)}
+    </span>
+  );
+}
 
 const CurrencyTypeProvider = props => {
   return(

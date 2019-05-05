@@ -133,7 +133,7 @@ class ExplorePage extends React.Component {
                                 </p>
                                 <p>
                                     Data on this site covers production, revenue, and disbursements for <GlossaryTerm termKey="federal land">federal lands and waters
-                                    </GlossaryTerm>, as well as nationwide production and economic impact.
+                                    </GlossaryTerm>.
                                 </p>
                             </figure>
                             <figcaption className="ribbon-card-bottom state_pages-select">

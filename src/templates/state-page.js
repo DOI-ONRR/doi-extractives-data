@@ -63,7 +63,7 @@ const NAV_ITEMS = [
         title: 'Federal revenue'
       },
       {
-        name: 'state-local-revenue',
+        name: 'state-revenue',
         title: 'State revenue'
       }
     ]
@@ -79,28 +79,6 @@ const NAV_ITEMS = [
       {
         name: 'state-disbursements',
         title: 'State disbursements'
-      }
-    ]
-  },
-  {
-    name: 'economic-impact',
-    title: 'Economic impact',
-    subNavItems: [
-      {
-        name: 'gdp',
-        title: 'GDP'
-      },
-      {
-        name: 'employment',
-        title: 'Wage and salary jobs'
-      },
-      {
-        name: 'self-employment',
-        title: 'Self-employment'
-      },
-      {
-        name: 'exports',
-        title: 'Exports'
       }
     ]
   },
@@ -229,29 +207,6 @@ class StatePages extends React.Component {
                   }
                 </section>
               </section>
-
-              <section id="economic-impact">
-                <h2>Economic impact</h2>
-
-                <p>This data covers <GlossaryTerm termKey="Gross domestic product (GDP)">gross domestic product</GlossaryTerm> and two different types of jobs data.</p>
-
-                <p>To learn more about direct energy employment across all sectors of the U.S. economy, another useful resource is <a href="https://www.energy.gov/jobstrategycouncil/downloads/2017-us-energy-employment-report">2017 U.S. Energy and Employment Report</a> from the Department of Energy. This report has a separate <a href="https://www.energy.gov/sites/prod/files/2017/01/f34/us-energy-jobs-states-2017.pdf">state-by-state analysis of energy employment</a>.</p>
-
-                {this.usStateFields.state_impact &&
-									<div>
-									  { ReactHtmlParser(this.usStateFields.state_impact) }
-									  <p>
-											In addition to generating economic activity, extractive industries can have <a href="#fiscal-costs-of-extractive-activity">fiscal costs</a> for state and local communities.
-									  </p>
-									</div>
-                }
-
-                <SectionGDP usStateMarkdown={this.usStateMarkdown} />
-
-                <SectionExports usStateMarkdown={this.usStateMarkdown} />
-
-              </section>
-
               <section>
                 <SectionStateGovernance usStateMarkdown={this.usStateMarkdown} />
               </section>

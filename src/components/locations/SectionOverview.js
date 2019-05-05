@@ -239,7 +239,7 @@ const OptIn = props => {
   return (
     <div>
       <p>
-          The state of {props.usStateData.title} chose to participate in an extended reporting process, so this page includes additional <a href="#state-local-revenue">state revenue</a> and <a href="#state-disbursements">disbursements</a> data, as well as contextual information about <a href="#state-governance">state governance</a> of natural resources.
+          The state of {props.usStateData.title} chose to participate in an extended reporting process, so this page includes additional <a href="#state-revenue">state revenue</a> and <a href="#state-disbursements">disbursements</a> data, as well as contextual information about <a href="#state-governance">state governance</a> of natural resources.
       </p>
       {props.optInIntroHtml &&
           <div>

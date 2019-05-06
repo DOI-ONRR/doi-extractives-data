@@ -46,6 +46,7 @@ class DropDown extends React.Component {
   render () {
   	let { options, selectedKey, defaultKey } = this.state
     let styles = (this.props.theme === 'year')? yearTheme : standardTheme;
+    defaultKey = (selectedKey !== undefined)? undefined : defaultKey;
 
     return (
       <div className={styles.root}>
@@ -103,12 +104,15 @@ export default connect(
 
 const findDefaultKey = props => {
   let defaultKey
-  let { options, dataSet, defaultOptionIndex } = props
+  let { options, dataSet, defaultOptionIndex, defaultOptionValue } = props
   if (dataSet) {
     defaultKey = dataSet.selectedDataKey
   }
   else if(options && defaultOptionIndex) {
     defaultKey = options[defaultOptionIndex];
+  }
+  else if(options && defaultOptionValue) {
+    defaultKey = defaultOptionValue;
   }
   else if (options) {
     defaultKey = options.find((option, index) => {
@@ -121,9 +125,12 @@ const findDefaultKey = props => {
 
 const findSelectedKey = props => {
   let selectedKey
-  let { options, dataSet, selectedOptionIndex } = props
+  let { options, dataSet, selectedOptionIndex, selectedOptionValue } = props
   if (dataSet) {
     selectedKey = dataSet.selectedDataKey
+  }
+  else if(options && selectedOptionValue) {
+    selectedKey = selectedOptionValue;
   }
   else if(options && selectedOptionIndex) {
     selectedKey = options[selectedOptionIndex];

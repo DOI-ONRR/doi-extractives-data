@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Helmet from 'react-helmet'
 import { connect } from 'react-redux'
 import { graphql } from 'gatsby'
@@ -45,7 +45,14 @@ const TOGGLE_VALUES = {
 const DEFAULT_GROUP_BY_INDEX = 0;
 const DEFAULT_ADDITIONAL_COLUMN_INDEX = 1;
 
-
+const LAND_CATEGORY_OPTIONS = {
+	'All': [BY_REVENUE_TYPE],
+	'All Federal': [BY_COMMODITY], 
+	'Federal onshore': [BY_LAND_CLASS, BY_LAND_CATEGORY],
+	'Federal offshore': [BY_STATE, BY_OFFSHORE_REGION], 
+	'Native American': [BY_STATE, BY_OFFSHORE_REGION],
+	'All onshore': [BY_STATE, BY_OFFSHORE_REGION], 
+};
 const GROUP_BY_OPTIONS = {
 	'Revenue type': [BY_REVENUE_TYPE],
 	'Commodity': [BY_COMMODITY], 
@@ -66,6 +73,14 @@ class FederalRevenue extends React.Component {
 	constructor(props) {
 		super(props);
 		this.additionalColumnOptionKeys = Object.keys(ADDITIONAL_COLUMN_OPTIONS);
+		this.getFiscalYearOptions = () => this.props[REVENUES_FISCAL_YEAR] && Object.keys(this.props[REVENUES_FISCAL_YEAR][BY_FISCAL_YEAR]);
+		this.getLocationOptions = () => {
+			let allOption = ['All']
+			let withheldOption = ['withheld']
+			let offshoreOptions = this.props[REVENUES_FISCAL_YEAR] && Object.keys(this.props[REVENUES_FISCAL_YEAR][BY_OFFSHORE_REGION])
+			let states = this.props[REVENUES_FISCAL_YEAR] && Object.keys(this.props[REVENUES_FISCAL_YEAR][BY_STATE])
+			return allOption.concat(offshoreOptions, states, withheldOption);
+		}
 		this.hydrateStore();
 	}
 
@@ -89,6 +104,7 @@ class FederalRevenue extends React.Component {
 	  	yearOptions: yearOptions,
 	  	additionalColumns: additionalColumns.filter(column => column !== filter.groupBy) })
 	}
+
 
 	getAdditionalColumnOptions = () => {
 		return this.additionalColumnOptionKeys.filter(column => column !== this.state.filter.groupBy);
@@ -267,6 +283,11 @@ class FederalRevenue extends React.Component {
 	setAdditionalColumns(value) {
 		this.setState({additionalColumns:(value === 'No second column')? [] : [value]})
 	}
+
+	handleTableToolbarSubmit(updatedFilters) {
+		console.log(updatedFilters);
+		this.setState({filter:{...this.state.filter, years:updatedFilters.fiscalYears.sort()} })
+	}
   /**
    * Add the data to the redux store to enable
    * the components to access filtered data using the
@@ -355,45 +376,15 @@ class FederalRevenue extends React.Component {
 
 					<h2 className={theme.sectionHeaderUnderline}>Revenue data</h2>
 
-					<div className={styles.filterContainer}>
-						{yearOptions &&
-							<div>
-								<div className={styles.filterLabel}>Fiscal year(s):</div>
-								<Select
-									multiple
-									dataSetId={REVENUES_FISCAL_YEAR}
-							    options={yearOptions}
-							    sortType={'descending'}
-							    selectedOption={this.state.filter.years}
-							    onChangeHandler={this.setYearsFilter.bind(this)}
-							  >
-							  </Select>
-							</div>
-						}
+					{tableData &&
+						<TableToolbar 
+							fiscalYearOptions={this.getFiscalYearOptions()}
+							locationOptions={this.getLocationOptions()}
+							defaultFiscalYearsSelected={this.state.filter.years}
+							onSubmitAction={this.handleTableToolbarSubmit.bind(this)}
+						/>
+					}
 
-						<div>
-							<div className={styles.filterLabel}>First column:</div>
-							<DropDown
-								sortType={'none'}
-						    options={Object.keys(GROUP_BY_OPTIONS)}
-						    action={this.setGroupByFilter.bind(this)}
-						    defaultOptionIndex={DEFAULT_GROUP_BY_INDEX}
-						    sortType={'none'}
-						  >
-						  </DropDown>
-						</div>
-
-						<div>
-							<div className={styles.filterLabel}>Second column:</div>
-							<DropDown
-						    options={this.getAdditionalColumnOptions()}
-						    action={this.setAdditionalColumns.bind(this)}
-						    selectedOptionIndex={this.getAdditionalColumnsSelectedIndex()}
-						    sortType={'none'}
-						  >
-						  </DropDown>
-						</div>
-					</div>
 					{this.state[REVENUES_FISCAL_YEAR] &&
 						<div className={styles.tableContainer}>
 							<GroupTable 
@@ -425,6 +416,112 @@ export default connect(
   dispatch => ({ normalizeDataSet: dataSets => dispatch(normalizeDataSetAction(dataSets)),
   })
 )(FederalRevenue)
+
+
+import Grid from '@material-ui/core/Grid';
+import Button from '@material-ui/core/Button';
+import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles'
+const muiTheme = createMuiTheme({
+  palette: {
+    primary: {
+    	light: '#dcf4fd',
+    	main: '#1478a6',
+    	dark: '#086996'
+    }
+  },
+});
+const TableToolbar = ({ fiscalYearOptions, locationOptions, defaultFiscalYearsSelected, onSubmitAction }) => {
+
+	const [fiscalYearsSelected, setFiscalYearsSelected] = useState(defaultFiscalYearsSelected);
+	const [landCategorySelected, setLandCategorySelected] = useState();
+	const [locationSelected, setLocationSelected] = useState();
+	const [groupBy, setGroupBy] = useState(Object.keys(GROUP_BY_OPTIONS)[DEFAULT_GROUP_BY_INDEX]);
+	const [additionalColumn, setAdditionalColumn] = useState(Object.keys(ADDITIONAL_COLUMN_OPTIONS)[DEFAULT_ADDITIONAL_COLUMN_INDEX]);
+
+	const getAdditionalColumnOptions = () => Object.keys(ADDITIONAL_COLUMN_OPTIONS).filter(column => column !== groupBy);
+	const getLocationOptions = () => {
+		if(landCategorySelected === 'Native American') {
+			return ['withheld'];
+		}
+
+		return locationOptions;
+	}
+
+	useEffect(() => {
+		console.log(additionalColumn,groupBy);
+		if(additionalColumn === groupBy) {
+			setAdditionalColumn('No second column')
+		}
+	})
+
+	const onSubmit = () => {
+		if(onSubmitAction){
+			onSubmitAction({
+				fiscalYears: fiscalYearsSelected
+			});
+		}
+	}
+
+	console.log(additionalColumn);
+
+  return (
+  	<div className={styles.tableToolbarContainer}>
+	  	<MuiThemeProvider theme={muiTheme}>
+		    <Grid container spacing={16}>
+					<Grid item sm xs={12}>
+						<h6>Fiscal year(s):</h6>
+						<Select
+							multiple
+							dataSetId={REVENUES_FISCAL_YEAR}
+					    options={fiscalYearOptions}
+					    sortType={'descending'}
+					    selectedOption={fiscalYearsSelected}
+							onChangeHandler={(values) => setFiscalYearsSelected(values)}
+					  />
+				  </Grid>
+					<Grid item sm xs={12}>
+						<h6>Land category:</h6>
+						<DropDown
+					    options={Object.keys(LAND_CATEGORY_OPTIONS)}
+					    sortType={'none'}
+							action={(value) => setLandCategorySelected(value)}
+					  />
+				  </Grid>
+					<Grid item sm xs={12}>
+						<h6>Location:</h6>
+						<DropDown
+					    options={getLocationOptions()}
+					    sortType={'none'}
+							action={(value) => setLocationSelected(value)}
+					  />
+				  </Grid>
+					<Grid item sm xs={12}>
+						<h6>First column:</h6>
+						<DropDown
+							sortType={'none'}
+					    options={Object.keys(GROUP_BY_OPTIONS)}
+					    action={(value) => setGroupBy(value)}
+					    defaultOptionValue={groupBy}
+					    sortType={'none'}
+					  />
+				  </Grid>
+					<Grid item sm xs={12}>
+						<h6>Second column:</h6>
+						<DropDown
+							sortType={'none'}
+					    options={getAdditionalColumnOptions()}
+					    action={(value) => setAdditionalColumn(value)}
+					    selectedOptionValue={additionalColumn}
+					  />
+				  </Grid>
+					<Grid item xs={12} >
+			 			<Button classes={{root:styles.tableToolbarButton}} variant="contained" color="primary">Apply</Button>
+			 		</Grid>
+		    </Grid>
+	    </MuiThemeProvider>
+	   </div>
+  );
+}
 
 export const query = graphql`
   query FederalRevenuesPageQuery {

@@ -88,6 +88,10 @@ const theme = createMuiTheme({
     	}
     },
     MuiTypography: {
+      body1: {
+        fontFamily: styles._baseFontFamily,
+        color: 'white'
+      },
     	subheading: {
     		fontFamily: styles._baseFontFamily,
     		color: 'white'

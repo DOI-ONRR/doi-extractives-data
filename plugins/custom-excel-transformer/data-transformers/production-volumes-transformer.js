@@ -100,7 +100,7 @@ const createProductVolumeNodeByProduct = (productVolumeData, type) => {
 	  ProductionYear: productVolumeData[SOURCE_COLUMNS.CalendarYear],
 	  FiscalYear: productVolumeData[SOURCE_COLUMNS.FiscalYear],
 	  LandClass: productVolumeData[SOURCE_COLUMNS.CalendarYear],
-	  LandCategory: productVolumeData[SOURCE_COLUMNS.LandCategory],
+	  LandCategory: productVolumeData[SOURCE_COLUMNS.LandCategory].trim(),
 	  OnshoreOffshore: productVolumeData[SOURCE_COLUMNS.OnshoreOffshore],
 	  ProductName: SOURCE_COLUMN_TO_PRODUCT_DISPLAY_NAME[productVolumeData[SOURCE_COLUMNS.Commodity]] || SOURCE_COLUMN_TO_PRODUCT_DISPLAY_NAME[productVolumeData[SOURCE_COLUMNS.Product]],
 	  Volume: productVolumeData[SOURCE_COLUMNS.Volume],

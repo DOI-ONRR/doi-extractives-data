@@ -17,7 +17,6 @@ tag:
 
 > Renewable energy comes from sources that are not depleted when used. These resources include geothermal, solar, wind, water, and biomass. All are growing sources of environmentally sustainable energy to meet the country’s electricity needs. [Explore production data](/explore/#production).
 
-
 ## Geothermal energy
 
 Geothermal energy comes from the earth’s heat, which is captured as steam or hot water and converted into energy. Most geothermal resources are found along the boundaries of tectonic plates and can result in volcanoes, hot springs, or geysers. The U.S. is the largest producer of geothermal energy, and [California](https://revenuedata.doi.gov/explore/CA/#production) produces more than any other state.
@@ -25,8 +24,6 @@ Geothermal energy comes from the earth’s heat, which is captured as steam or h
 Many sites for potential geothermal development are on federal land. The Bureau of Land Management (BLM) has the authority to [manage geothermal leasing on 240 million acres of public land](https://www.blm.gov/programs/energy-and-minerals/renewable-energy/geothermal-energy). Advances in extraction methods and technology could result in new sources of geothermal energy.
 
 See where [geothermal energy production happens](http://www.nrel.gov/gis/geothermal.html).
-
-
 
 ## Solar energy
 
@@ -37,9 +34,7 @@ Solar energy can be generated in two ways:
 
 The solar industry has experienced rapid growth in the past decade due to government programs such as tax credits and state renewable portfolio standards, increased public awareness of its environmental benefits, and decreasing technology costs. Manufacturing costs for solar panels have decreased, and private industry has created better batteries to store solar energy. In the southwestern United States, potential solar energy production is among the highest in the world.
 
-
 See [areas of the U.S. with solar energy potential](http://energy.gov/maps/solar-energy-potential).
-
 
 ## Wind power
 
@@ -56,7 +51,6 @@ Hydroelectric energy is the country’s oldest and largest source of renewable e
 The [Bureau of Reclamation](https://www.usbr.gov/), responsible for managing, developing, and protecting water sources is the second largest producer of hydroelectric power. The Bureau's 53 power plants bring water to more than 31 million people. Today, it's the largest wholesaler of water in the country.
 
 We don’t present hydroelectric data on this site because the Office of Natural Resources Revenue does not have a role in managing revenue and disbursements for hydroelectric projects.
-
 
 <h2 data-toc-offset='230'>Biomass</h2>
 

@@ -33,7 +33,7 @@ See where [geothermal energy production happens](http://www.nrel.gov/gis/geother
 Solar energy can be generated in two ways:
 
 1. by converting solar radiation into heat and electricity using photovoltaic panels
-1. by using the sun’s radiation to heat a fluid and produce steam for a power generator.
+1. by using the sun’s radiation to heat a fluid and produce steam for a power generator
 
 The solar industry has experienced rapid growth in the past decade due to government programs such as tax credits and state renewable portfolio standards, increased public awareness of its environmental benefits, and decreasing technology costs. Manufacturing costs for solar panels have decreased, and private industry has created better batteries to store solar energy. In the southwestern United States, potential solar energy production is among the highest in the world.
 

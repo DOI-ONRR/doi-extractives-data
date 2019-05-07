@@ -83,12 +83,10 @@ const createRevenueNode = (revenueData, type) => {
   
   if(revenueNode.LandClass === CONSTANTS.NATIVE_AMERICAN) {
     revenueNode.LandCategory = CONSTANTS.ONSHORE;
+    revenueNode.State = 'withheld';
   }
 
   revenueNode.RevenueCategory = LAND_CLASS_CATEGORY_TO_REVENUE_CATEGORY[revenueNode.LandClass] && LAND_CLASS_CATEGORY_TO_REVENUE_CATEGORY[revenueNode.LandClass][revenueNode.LandCategory];
-  
-
-
 
   if(revenueNode.RevenueCategory === undefined) {
   	if(revenueNode.LandClass === CONSTANTS.NATIVE_AMERICAN) {
@@ -99,11 +97,26 @@ const createRevenueNode = (revenueData, type) => {
   	}
   }
 
+  if(revenueNode.Commodity === undefined){
+    revenueNode.Commodity = 'Not tied to a commodity';  
+  }
+
   if(revenueNode.FiscalYear === undefined) {
   	revenueNode.FiscalYear = (revenueNode.RevenueDate.getMonth() > 9 ) ? 
   		(revenueNode.RevenueDate.getYear()+1901).toString()
   		:
   		(revenueNode.RevenueDate.getYear()+1900).toString();
+  }
+
+  let landCat = revenueNode.LandCategory && revenueNode.LandCategory.toLowerCase();
+
+  if(landCat === "not tied to a lease" ||
+     revenueNode.RevenueType === 'Civil Penalities' ||
+     revenueNode.RevenueType === 'Other Revenues'){
+    if(revenueNode.LandClass !== CONSTANTS.NATIVE_AMERICAN){
+      revenueNode.State = 'Not tied to a location';
+    }
+    
   }
 
 	return revenueNode;

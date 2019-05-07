@@ -77,10 +77,9 @@ class FederalRevenue extends React.Component {
 		this.getFiscalYearOptions = () => this.props[REVENUES_FISCAL_YEAR] && Object.keys(this.props[REVENUES_FISCAL_YEAR][BY_FISCAL_YEAR]);
 		this.getLocationOptions = () => {
 			let allOption = ['All']
-			let withheldOption = ['withheld']
 			let offshoreOptions = this.props[REVENUES_FISCAL_YEAR] && Object.keys(this.props[REVENUES_FISCAL_YEAR][BY_OFFSHORE_REGION])
 			let states = this.props[REVENUES_FISCAL_YEAR] && Object.keys(this.props[REVENUES_FISCAL_YEAR][BY_STATE])
-			return allOption.concat(offshoreOptions, states, withheldOption);
+			return allOption.concat(offshoreOptions, states);
 		}
 		this.hydrateStore();
 	}

@@ -34,6 +34,7 @@ export const BY_LAND_CLASS = 'by_land_class';
 export const BY_REVENUE_TYPE = 'by_revenue_type';
 export const BY_FISCAL_YEAR = 'by_fiscal_year';
 export const BY_CALENDAR_YEAR = 'by_calendar_year';
+export const BY_REVENUE_CATEGORY = 'by_revenue_category';
 
 // Data set property keys
 export const DATA_SET_KEYS = {

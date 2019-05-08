@@ -1,0 +1,25 @@
+
+.root {
+	font-size: 0.875rem;
+	font-weight: 300;
+	padding-left: 20px;
+}
+
+.title {
+	font-size: 1.125rem;
+	font-weight: 600;
+	margin-bottom: 0px;
+}
+
+.revenueTable, th, td {
+	border: none;
+	padding-left: 0px;
+	white-space: nowrap;
+	width: 100%;
+	margin-top: 1rem;
+	tr {
+		td:last-child,th:last-child {
+		  text-align: right;
+		}
+	}
+}

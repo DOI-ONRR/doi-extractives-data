@@ -33,6 +33,7 @@ import { BlueButton } from '../components/layouts/buttons/BlueButton'
 import { ExploreDataLink } from '../components/layouts/icon-links/ExploreDataLink'
 import { DownloadDataLink } from '../components/layouts/icon-links/DownloadDataLink'
 import MapLink from '../components/layouts/icon-links/MapLink'
+import RevenueTrends from '../components/sections/RevenueTrends'
 
 import DefaultLayout from '../components/layouts/DefaultLayout'
 
@@ -135,6 +136,9 @@ class HomePage extends React.Component {
                       </div>
                     </div>
                   </div>
+                </div>
+                <div className={styles.tabContentAside}>
+                  <RevenueTrends />
                 </div>
               </div>
             </Tab>

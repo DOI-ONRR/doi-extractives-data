@@ -39,12 +39,20 @@
 	padding-top: 20px;
 }
 
-.tabContentBottomContainer > div{
-	margin-bottom: 20px;
-}
-
 .tabContentBottomContainer > div:first-child{
 	margin-right: 20px;
+}
+
+.tabContentBottomContainerLinks {
+	border-top: 2px solid white;
+	width: 100%;
+	margin-top: 1em;
+}
+.tabContentBottomContainerLinks > div {
+	margin-top: 12px;
+}
+.tabContentBottomContainerLinks > div:first-child > a > svg {
+	margin-right: 15px;
 }
 
 .linkContainer {
@@ -113,5 +121,11 @@
 	.oilRig > svg{
 		display: none;
 		width: 100%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.tabContentBottomContainer > div:first-child{
+		margin-bottom: 20px;
 	}
 }

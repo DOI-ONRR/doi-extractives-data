@@ -18,26 +18,11 @@ tag:
 <custom-link to="/downloads/" className="breadcrumb link-charlie">Downloads</custom-link> /
 # Production by Month
 
-<section class="explore-subpage container">
-    <section>
-      <div class="explore-subpage-tabs">
-        <ul>
-          <li class="explore-subpage-tab">
-            <a href="/downloads/federal-production/">Production by year</a>
-          </li>
-          <li class="explore-subpage-tab active">
-            <a href="/downloads/federal-production-by-month/">Production by month</a>
-          </li>
-        </ul>
-      </div>
-    </section>
-</section>
-
 > This dataset contains monthly production volumes on federal lands and waters and Native American lands. We have monthly production data from January 2008 through the most recently available month, which is usually 3-4 months prior to the current month.
 
 <p class="downloads-download_links-intro">Download production data by month:
   <ul class="downloads-download_links list-unstyled">
-    <li><download-link to="/downloads/monthly_production_03-2019.xlsx">Production by month, 1/2008–11/2018 (xlsx, 54 KB)</download-link></li>
+    <li><download-link to="/downloads/monthly_production_04-2019.xlsx">Production by month, 1/2008–12/2018 (xlsx, 47 KB)</download-link></li>
   </ul>
 </p>
 

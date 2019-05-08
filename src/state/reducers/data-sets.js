@@ -17,7 +17,36 @@ const initialState = {
   SelectedYears: {},
 }
 
+// Data set type keys
+export const PRODUCT_VOLUMES_FISCAL_YEAR = 'product_volumes_fy';
+export const REVENUES_FISCAL_YEAR = 'revenues_fy';
+export const REVENUES_MONTHLY = 'revenues_monthly';
+
+// Data set group by keys
+export const ALL_IDS = 'all_ids';
+export const BY_ID = 'by_id';
+export const BY_COMMODITY = 'by_commodity';
+export const BY_STATE = 'by_state';
+export const BY_OFFSHORE_REGION = 'by_offshore_region';
+export const BY_COUNTY = 'by_county';
+export const BY_LAND_CATEGORY = 'by_land_category';
+export const BY_LAND_CLASS = 'by_land_class';
+export const BY_REVENUE_TYPE = 'by_revenue_type';
+export const BY_FISCAL_YEAR = 'by_fiscal_year';
+export const BY_CALENDAR_YEAR = 'by_calendar_year';
+
+// Data set property keys
+export const DATA_SET_KEYS = {
+  COMMODITY: 'Commodity',
+  OFFSHORE_REGION: 'OffshoreRegion',
+}
+
+
+
 // Define Action Types
+const NORMALIZE = 'NORMALIZE_DATA_SETS'
+const UPDATE_GRAPH_DATA_SETS = 'UPDATE_GRAPH_DATA_SETS'
+
 const HYDRATE = 'HYDRATE_DATA_SETS'
 const GROUP_BY_YEAR = 'GROUP_DATA_SETS_BY_YEAR'
 const GROUP_BY_MONTH = 'GROUP_DATA_SETS_BY_MONTH'
@@ -26,6 +55,9 @@ const FILTER_DATA_SETS = 'FILTER_DATA_SETS'
 const SET_SELECTED_YEAR_BY_ID = 'SET_SELECTED_YEAR_BY_ID'
 
 // Define Action Creators
+export const normalize = dataSets => ({ type: NORMALIZE, payload: dataSets })
+export const updateGraphDataSets = dataSets => ({type: UPDATE_GRAPH_DATA_SETS, payload: dataSets})
+
 export const hydrate = dataSets => ({ type: HYDRATE, payload: dataSets })
 export const groupByYear = configs => ({ type: GROUP_BY_YEAR, payload: configs })
 export const groupByMonth = configs => ({ type: GROUP_BY_MONTH, payload: configs })
@@ -34,6 +66,58 @@ export const filterDataSets = configs => ({ type: FILTER_DATA_SETS, payload: con
 export const setSelectedYearById = payload => ({ type: SET_SELECTED_YEAR_BY_ID, payload: payload })
 
 // Define Action Handlers
+const normalizeHandler = (state, action) => {
+  const { payload } = action
+
+  const arrayOfNodeIdsToValues = (array) =>
+    array.map((item) => {
+      return item.node.id;
+    })
+
+  const arrayToObject = (array) =>
+    array.reduce((obj, item) => {
+      let id = (item.node)? item.node.id : item.id;
+      obj[id] = item.node || arrayOfNodeIdsToValues(item.data);
+      return obj
+    }, {})
+
+  let normalizedDatasets = {};
+  payload.forEach(dataSet => {
+
+    normalizedDatasets[dataSet.key] = {
+      [BY_ID]: arrayToObject(dataSet.data)
+    };
+
+    normalizedDatasets[dataSet.key][ALL_IDS] = Object.keys(normalizedDatasets[dataSet.key][BY_ID]);
+
+    if(dataSet.groups) {
+      dataSet.groups.forEach(group => {
+        normalizedDatasets[dataSet.key][group.key] = arrayToObject(group.groups);
+      })
+    }
+  })
+
+  return ({ ...state, ...normalizedDatasets  })
+}
+
+const updateGraphDataSetsHandler = (state, action) => {
+  const { payload } = action
+
+  let results = {}
+  results.SyncIds = { ...state.SyncIds }
+
+  payload.forEach(dataSet => {
+
+    results[dataSet.id] = updateGraphDataSet(dataSet.id, state[dataSet.sourceKey], dataSet.groupByKey, dataSet.filter, dataSet.options )
+
+    addDataSetSync(dataSet.options.syncId, dataSet.id, results)
+  })
+
+  return ({ ...state, ...results })
+}
+
+
+
 const hydrateHandler = (state, action) => {
   const { payload } = action
 
@@ -45,6 +129,7 @@ const hydrateHandler = (state, action) => {
 
   return ({ ...state, FiscalYear: FiscalYear, CalendarYear: CalendarYear, SourceData: SourceData })
 }
+
 
 const groupByYearHandler = (state, action) => {
   const { payload } = action
@@ -145,6 +230,8 @@ function createReducer (initialState, handlers) {
 
 // Export reducer
 export default createReducer(initialState, {
+  [NORMALIZE]: normalizeHandler,
+  [UPDATE_GRAPH_DATA_SETS]: updateGraphDataSetsHandler,
   [HYDRATE]: hydrateHandler,
   [GROUP_BY_YEAR]: groupByYearHandler,
   [GROUP_BY_MONTH]: groupByMonthHandler,
@@ -154,6 +241,93 @@ export default createReducer(initialState, {
 })
 
 // Utils
+
+
+const updateGraphDataSet = (id, source, groupByKey, filter, options) => {
+  if (source === undefined) return source
+
+  let results, xAxisLabels, legendLabels, groupNames, units, longUnits, selectedDataKey
+
+  // Get display names before we filter the data.
+  if (options && options.includeDisplayNames) {
+    xAxisLabels = {}
+    legendLabels = {}
+
+  }
+  
+  // We add this for now until we update our data to always include units and long units
+  units = '$'
+  longUnits = 'dollars'
+
+  results = [];
+  let ignoreLimit = Object.keys(source[groupByKey]).length - filter.limit 
+  let count = 1;
+  for(const groupKey in source[groupByKey]) {
+    if(count > ignoreLimit) {
+      let total = {};
+      source[groupByKey][groupKey].forEach((dataId) => {
+          let sumByName = source[BY_ID][dataId][filter.sumBy];
+          total[sumByName] = (total[sumByName]) ?
+            total[sumByName]+getNumToSum(source[BY_ID][dataId])
+            :
+            getNumToSum(source[BY_ID][dataId])
+
+          units = source[BY_ID][dataId].Units || units;
+          longUnits = source[BY_ID][dataId].LongUnits || longUnits;
+        })
+
+      if(groupByKey.includes(BY_FISCAL_YEAR) && legendLabels) {
+        xAxisLabels[groupKey] = "'"+groupKey.slice(2);
+        legendLabels[groupKey] = groupKey.toString();
+      }
+
+      results.push({[groupKey]:[total]})
+    }
+    else {
+      count++;
+    }
+  }
+
+  // Set sub group name
+  if (options && options.subGroupName) {
+    groupNames = {}
+    results.map(item => {
+      let key = Object.keys(item)[0]
+      if (groupNames[options.subGroupName]) {
+        groupNames[options.subGroupName].push(key)
+      }
+      else {
+        groupNames[options.subGroupName] = [key]
+      }
+    })
+  }
+
+  if (options && options.selectedDataKeyIndex) {
+    switch (options.selectedDataKeyIndex) {
+    case 'last':
+      selectedDataKey = Object.keys(results[results.length - 1])[0]
+      break
+    default:
+      selectedDataKey = Object.keys(results[options.selectedDataKeyIndex])[0]
+    }
+  }
+
+  return {
+    data: results,
+    dataId: id,
+    groupNames: groupNames,
+    lastUpdated: Date.now(),
+    legendLabels: legendLabels,
+    longUnits: longUnits,
+    selectedDataKey: selectedDataKey,
+    syncId: options.syncId,
+    units: units,
+    xAxisLabels: xAxisLabels,
+  }
+
+}
+
+
 
 // The following Utils are used to resolve differences in data identifiers
 const getDate = data => data.ProductionDate || data.RevenueDate
@@ -249,6 +423,8 @@ const filterSourceData = (key, state, filter, options) => {
 
   return filteredSource
 }
+
+
 
 /**
  *

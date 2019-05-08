@@ -13,14 +13,18 @@ const CONSTANTS = require('../../../src/js/constants');
 
 /* Define the column names found in the excel file */
 const SOURCE_COLUMNS = {
-	Month: "Month",
-	CalendarYear: "Calendar Year",
-  RevenueDate: "Date",
-  LandCategory: "Land Category",
-  LandClass: "Land Class",
-  RevenueType: "Revenue Type",
-  Commodity: "Commodity",
-  Revenue: " Revenue ",
+	Month: "month",
+	CalendarYear: "calendar year",
+  RevenueDate: "date",
+  LandCategory: "land category",
+  LandClass: "land class",
+  RevenueType: "revenue type",
+  Commodity: "commodity",
+  Revenue: "revenue",
+  State: "state",
+  County: "county",
+	FiscalYear: "fiscal year",
+	OffshoreRegion: "offshore region"
 };
 
 const LAND_CATEGORY_TO_DISPLAY_NAME ={
@@ -45,27 +49,62 @@ const LAND_CLASS_CATEGORY_TO_REVENUE_CATEGORY ={
 }
 
 /* Use ES5 exports in order to be compatible with version 1.x of gatsby */
-module.exports = (node) => {
-	return createRevenueNode(node);
+module.exports = (node, type) => {
+	return createRevenueNode(node, type);
 }
 
-const createRevenueNode = (revenueData) => {
+const createRevenueNode = (revenueData, type) => {
+	const data = Object.keys(revenueData).reduce((c, k) => (c[k.toLowerCase().trim()] = revenueData[k], c), {});
+
   let revenueNode = {
-  	Month: revenueData[SOURCE_COLUMNS.Month],
-  	CalendarYear: revenueData[SOURCE_COLUMNS.CalendarYear],
-	  LandCategory: LAND_CATEGORY_TO_DISPLAY_NAME[revenueData[SOURCE_COLUMNS.LandCategory]],
-	  LandClass: LAND_CLASS_TO_DISPLAY_NAME[revenueData[SOURCE_COLUMNS.LandClass]],
-	  RevenueType: revenueData[SOURCE_COLUMNS.RevenueType],
-	  Commodity: revenueData[SOURCE_COLUMNS.Commodity],
-	  Revenue: revenueData[SOURCE_COLUMNS.Revenue],
+  	Month: data[SOURCE_COLUMNS.Month],
+  	CalendarYear: data[SOURCE_COLUMNS.CalendarYear],
+	  LandCategory: LAND_CATEGORY_TO_DISPLAY_NAME[data[SOURCE_COLUMNS.LandCategory]],
+	  LandClass: LAND_CLASS_TO_DISPLAY_NAME[data[SOURCE_COLUMNS.LandClass]],
+	  RevenueType: data[SOURCE_COLUMNS.RevenueType],
+	  Commodity: data[SOURCE_COLUMNS.Commodity],
+	  Revenue: data[SOURCE_COLUMNS.Revenue],
+	  State: data[SOURCE_COLUMNS.State],
+	  County: data[SOURCE_COLUMNS.County],
+	  FiscalYear: data[SOURCE_COLUMNS.FiscalYear],
+	  Units: '$',
+	  LongUnits: 'dollars',
+	  OffshoreRegion: (data[SOURCE_COLUMNS.OffshoreRegion] === "" || data[SOURCE_COLUMNS.OffshoreRegion] === undefined) ?
+	  	data[SOURCE_COLUMNS.OffshoreRegion] : "Offshore "+data[SOURCE_COLUMNS.OffshoreRegion],
 	  internal: {
-	    type: 'ResourceRevenues',
+	    type: type || 'ResourceRevenues',
 	  },
   }
 
-  revenueNode.RevenueDate = new Date(revenueNode.CalendarYear, getMonthFromString(revenueNode.Month));
+  let year = revenueNode.CalendarYear || revenueNode.FiscalYear;
+  let month = (revenueNode.Month)? getMonthFromString(revenueNode.Month) : 0;
+
+  revenueNode.RevenueDate = new Date(year, month);
+  
+  if(revenueNode.LandClass === CONSTANTS.NATIVE_AMERICAN) {
+    revenueNode.LandCategory = CONSTANTS.ONSHORE;
+  }
 
   revenueNode.RevenueCategory = LAND_CLASS_CATEGORY_TO_REVENUE_CATEGORY[revenueNode.LandClass] && LAND_CLASS_CATEGORY_TO_REVENUE_CATEGORY[revenueNode.LandClass][revenueNode.LandCategory];
+  
+
+
+
+  if(revenueNode.RevenueCategory === undefined) {
+  	if(revenueNode.LandClass === CONSTANTS.NATIVE_AMERICAN) {
+  		revenueNode.RevenueCategory = CONSTANTS.NATIVE_AMERICAN;
+  	}
+  	else {
+  		revenueNode.RevenueCategory = 'Not tied to a lease';  	
+  	}
+  }
+
+  if(revenueNode.FiscalYear === undefined) {
+  	revenueNode.FiscalYear = (revenueNode.RevenueDate.getMonth() > 9 ) ? 
+  		(revenueNode.RevenueDate.getYear()+1901).toString()
+  		:
+  		(revenueNode.RevenueDate.getYear()+1900).toString();
+  }
 
 	return revenueNode;
 }

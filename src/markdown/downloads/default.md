@@ -10,43 +10,55 @@ tag:
 
 # Download Data & Documentation
 
-> We use many government datasets on this site to power our [interactive visualizations](/explore/). Some of these are available here for download. For those from other government sources, we provide links so you can find fresh data whenever you need it.
+> You can download data for production volumes, revenue, and disbursements here. All data is from the [Office of Natural Resources Revenue](https://www.onrr.gov/). 
 
 
 ## Production
-
 --------------------------------------------------------------------------------
 
 <ul class="list-sections list-unstyled">
   <li class="downloads-download_links">
-    <h3 id="federal-lands-and-waters">Production</h3>
-    <p>Commodity volumes of natural resources extracted from federal land and waters. We offer production data by calendar year, fiscal year, and month. These datasets are from the <a href="http://www.onrr.gov/">Office of Natural Resources Revenue</a> (ONRR), which is part of the Department of the Interior.</p>
+    <h3 id="production-by-month">Production by month</h3>
+    <p>This dataset includes commodity volumes of natural resources extracted from federal lands and waters and Native American lands by month. We offer data from January 2008 through the most recently available month.</p>
+    <download-data-link to="/downloads/federal-production-by-month/">Downloads and documentation</download-data-link>
+  </li>
+  <li class="downloads-download_links">
+    <h3 id="federal-lands-and-waters">Production from federal land and waters by year</h3>
+    <p>These datasets include commodity volumes of natural resources extracted from federal lands and waters. Production volumes are available by state, county, and offshore area. We offer production data for calendar and fiscal years.</p>
     <download-data-link to="/downloads/federal-production/">Downloads and documentation</download-data-link>
   </li>
-
 </ul>
 
 ## Revenue
 --------------------------------------------------------------------------------
 <ul class="list-sections list-unstyled">
-    <li class="downloads-download_links">
-    <h3 id="all-revenue">Revenue</h3>
-    <p>Federal revenue from natural resources extracted from federal land and waters. We offer revenue data by year, by month, and by company. These datasets are from the <a href="http://www.onrr.gov/">Office of Natural Resources Revenue</a>, which is part of the Department of the Interior.</p>
+  <!--Revenue by month-->
+  <li class="downloads-download_links">
+    <h3 id="all-revenue">Revenue by month</h3>
+    <p>This dataset is for revenue by month for January 2008 through the most recently completed month of the current year. The data includes federal offshore and onshore revenue, along with revenue from Native American lands. The data is further broken down by revenue type (i.e., bonuses, rents, and royalties) and commodity.</p>
+    <download-data-link to="/downloads/federal-revenue-by-month/">Downloads and documentation</download-data-link>
+  </li>
+  <!--Federal revenue by location-->
+  <li class="downloads-download_links">
+    <h3 id="all-revenue">Federal revenue by year and location</h3>
+    <p>These datasets include natural resource revenues for U.S. federal lands and offshore areas by calendar and fiscal years. It does not include Native American lands, privately owned lands, or U.S. state lands.</p>
     <download-data-link to="/downloads/federal-revenue-by-location/">Downloads and documentation</download-data-link>
   </li>
-
-<!-- USEITI archive -->
+  <!--Federal revenue by company-->
   <li class="downloads-download_links">
-    <h3 id="reconciliation">Reconciliation</h3>
-    <p class="para-sm">This content was created to support <glossary-term termKey="EITI Standard">USEITI</glossary-term> and is no longer being updated.</p>
-    <p>In the reconciliation process, companies report payments to the government (e.g., rents, taxes, royalties) and the government reports what it received. These figures are compiled and reconciled. The 2015 reconciliation data is at the link below.</p>
-    <data-archive-link to="/downloads/reconciliation/"></data-archive-link>
+    <h3 id="all-revenue">Federal revenue by company</h3>
+    <p>This dataset provides natural resource revenue by company. It includes revenues by production phase and commodity for companies extracting natural resources on federal lands and waters. It does not include company revenue from Native American lands or privately owned lands.</p>
+    <download-data-link to="/downloads/federal-revenue-by-company/">Downloads and documentation</download-data-link>
   </li>
-
+  <!--Native American revenue-->
+  <li class="downloads-download_links">
+    <h3 id="all-revenue">Native American revenue</h3>
+    <p>These datasets include Native American revenue for both calendar and fiscal years. The data includes revenue type, commodity, and product. Native American revenue data is only available at the national level.</p>
+    <download-data-link to="/downloads/native-american-revenue/">Downloads and documentation</download-data-link>
+  </li>
 </ul>
 
 ## Disbursements
-
 --------------------------------------------------------------------------------
 
 <ul class="list-sections list-unstyled">

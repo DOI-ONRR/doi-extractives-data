@@ -20,7 +20,7 @@ tag:
 <custom-link to="/how-it-works/" className="breadcrumb link-charlie">How it works</custom-link> /
 # Gulf of Mexico Energy Security Act (GOMESA)
 
-> The Gulf of Mexico Energy Security Act (GOMESA) of 2006 created a revenue-sharing model for oil- and gas-producing gulf states. Under the act, Alabama, Louisiana, Mississippi, and Texas receive a portion of the revenue generated from oil and gas production offshore in the Gulf of Mexico. The act also directs a portion of revenue to the Land and Water Conservation Fund.
+> The Gulf of Mexico Energy Security Act (GOMESA) of 2006 created a revenue-sharing model for oil- and gas-producing gulf states. Under the act, Alabama, Louisiana, Mississippi, and Texas receive a portion of the revenue generated from oil and gas production offshore in the Gulf of Mexico. The act also directs a portion of revenue to the Land and Water Conservation Fund.   
 
 ## Revenue sharing
 The [Gulf of Mexico Energy Security Act of 2006 (PDF)](https://www.boem.gov/GOMESA/) (GOMESA) created revenue-sharing provisions for four states and their <glossary-term termKey="coastal political subdivision">coastal political subdivisions</glossary-term>:
@@ -30,7 +30,27 @@ The [Gulf of Mexico Energy Security Act of 2006 (PDF)](https://www.boem.gov/GOME
 * [Mississippi](/explore/MS/#disbursements)
 * [Texas](/explore/TX/#disbursements)
 
-The act also directs a portion of gulf revenue to the <glossary-term>Land and Water Conservation Fund</glossary-term> and bans oil and gas leasing within 125 miles of the Florida coastline in the Eastern Planning Area and a portion of the Central Planning Area until 2022.
+### GOMESA disbursements
+
+The Office of Natural Resources Revenue disburses GOMESA revenue to both state and local governments for each of the four GOMESA states. Click on a state for a detailed look at disbursements to state and local governments.
+
+<table class="table-basic u-margin-top u-margin-bottom">
+    <thead>
+    <tr>
+        <th>Recipient</th>
+        <th>FY2019</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr><td><a href="/explore/AL#federal-disbursements">Alabama</a></td><td class="numeric">$30,595,109.50</td></tr>
+        <tr><td><a href="/explore/LA#federal-disbursements">Louisiana</a></td><td class="numeric">$94,728,191.78</td></tr>
+        <tr><td><a href="/explore/MS#federal-disbursements">Mississippi</a></td><td class="numeric">$31,723,855.95</td></tr>
+        <tr><td><a href="/explore/TX#federal-disbursements">Texas</a></td><td class="numeric">$57,891,839.04</td></tr>
+    </tbody>
+</table> 
+
+### Land and Water Conservation Fund
+The act also directs a portion of gulf revenue to the [Land and Water Conservation Fund](/how-it-works/land-and-water-conservation-fund/), which supports preservation, development, and access to outdoor lands for public recreation.
 
 ### Purpose of funds
 GOMESA funds are to be used for coastal conservation, restoration, and hurricane protection.

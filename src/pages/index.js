@@ -4,6 +4,20 @@ import { connect } from 'react-redux'
 import Link from '../components/utils/temp-link'
 
 import { hydrate as hydateDataManagerAction } from '../state/reducers/data-sets'
+import { normalize as normalizeDataSetAction } from '../state/reducers/data-sets'
+import {
+  PRODUCT_VOLUMES_FISCAL_YEAR,
+  REVENUES_MONTHLY,
+  REVENUES_FISCAL_YEAR,
+  BY_ID, BY_COMMODITY,
+  BY_STATE, BY_COUNTY,
+  BY_OFFSHORE_REGION,
+  BY_LAND_CATEGORY,
+  BY_LAND_CLASS,
+  BY_REVENUE_TYPE,
+  BY_FISCAL_YEAR,
+  BY_CALENDAR_YEAR
+} from '../state/reducers/data-sets'
 
 import * as CONSTANTS from '../js/constants'
 import utils from '../js/utils'
@@ -18,6 +32,7 @@ import { ExploreDataButton } from '../components/layouts/buttons/ExploreDataButt
 import { BlueButton } from '../components/layouts/buttons/BlueButton'
 import { ExploreDataLink } from '../components/layouts/icon-links/ExploreDataLink'
 import { DownloadDataLink } from '../components/layouts/icon-links/DownloadDataLink'
+import MapLink from '../components/layouts/icon-links/MapLink'
 
 import DefaultLayout from '../components/layouts/DefaultLayout'
 
@@ -36,6 +51,47 @@ class HomePage extends React.Component {
    * reducers
    **/
   hydrateStore () {
+    let data = this.props.data;
+
+    this.props.normalizeDataSet([
+      { key: REVENUES_MONTHLY, 
+        data: data.allMonthlyRevenues.data, 
+        groups: [
+          {
+            key:BY_CALENDAR_YEAR,
+            groups: data.allMonthlyRevenuesByCalendarYear.group
+          }
+        ]
+      },
+      { key: REVENUES_FISCAL_YEAR, 
+        data: data.allFiscalYearRevenues.data, 
+        groups: [
+          {
+            key:BY_FISCAL_YEAR,
+            groups: data.allFiscalYearRevenuesByFiscalYear.group
+          }
+        ]
+      },
+      {
+        key: PRODUCT_VOLUMES_FISCAL_YEAR,
+        data: data.allFiscalYearProductVolumes.data,
+        groups: [
+          {
+            key:BY_FISCAL_YEAR+"_Gas",
+            groups: data.allFiscalYearProductVolumesByFiscalYear_Gas.group
+          },
+          {
+            key:BY_FISCAL_YEAR+"_Oil",
+            groups: data.allFiscalYearProductVolumesByFiscalYear_Oil.group
+          },
+          {
+            key:BY_FISCAL_YEAR+"_Coal",
+            groups: data.allFiscalYearProductVolumesByFiscalYear_Coal.group
+          }
+        ]
+      }
+    ]);
+
     this.props.hydateDataManager([
       { key: CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY, data: this.props.data.OilVolumes.volumes },
       { key: CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY, data: this.props.data.GasVolumes.volumes },
@@ -70,6 +126,14 @@ class HomePage extends React.Component {
                     <div>
                       <Link to="/how-it-works">Learn how it works</Link>
                     </div>
+                    <div className={styles.tabContentBottomContainerLinks}>
+                      <div>
+                        <ExploreDataLink to="/explore/revenue">Revenue data</ExploreDataLink>
+                      </div>
+                      <div>
+                        <MapLink to="#map-section" />
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -77,7 +141,7 @@ class HomePage extends React.Component {
             <Tab id="tab-production" name="Production">
               <div className={styles.tabContentContainer} >
                 <div className={styles.tabContent} >
-                  <p>The United States is among the world's top producers of oil, natural gas, and coal. The U.S. is also a global leader in renewable energy production. We have data for energy and mineral production on federal lands and waters, Native American lands, and nationwide production on all lands and waters.</p>
+                  <p>The United States is among the world's top producers of oil, natural gas, and coal. The U.S. is also a global leader in renewable energy production. We have data for energy and mineral production on federal lands and waters and Native American lands.</p>
                   <div className={styles.tabContentBottomContainer}>
                     <div>
                       <BlueButton to="/how-it-works/#production">How production works</BlueButton>
@@ -107,10 +171,8 @@ class HomePage extends React.Component {
                 <div className={styles.tabContentAside}>
                   <h5>Explore revenue data</h5>
                   <div className={styles.linkContainer}>
-                    <ExploreDataLink to="/explore/#revenue-phase">By production phase</ExploreDataLink>
-                    <ExploreDataLink to="/explore/#revenue-trends">By commodity</ExploreDataLink>
-                    <ExploreDataLink to="/how-it-works/federal-revenue-by-company/">By company</ExploreDataLink>
-                    <ExploreDataLink to="/how-it-works/native-american-revenue/">Native American revenue</ExploreDataLink>
+                    <ExploreDataLink to="/explore/revenue">Revenue in detail</ExploreDataLink>
+                    <ExploreDataLink to="/how-it-works/federal-revenue-by-company/">Revenue by company</ExploreDataLink>
                     <DownloadDataLink to="/downloads/#revenue">Downloads and documentation</DownloadDataLink>
                   </div>
                 </div>
@@ -137,9 +199,9 @@ class HomePage extends React.Component {
             </Tab>
           </Tabordion>
 
-          <KeyStatsSection/>
+          <KeyStatsSection />
 
-          <section className={styles.mapSection}>
+          <section id="map-section" className={styles.mapSection}>
             <div className={styles.mapSectionContainer + ' container-page-wrapper'}>
               <div className={styles.mapSectionLeft}>
                 <h3>Learn about extractive industries in each state</h3>
@@ -176,7 +238,9 @@ class HomePage extends React.Component {
 
 export default connect(
   state => ({}),
-  dispatch => ({ hydateDataManager: dataSets => dispatch(hydateDataManagerAction(dataSets)),
+  dispatch => ({ 
+    hydateDataManager: dataSets => dispatch(hydateDataManagerAction(dataSets)),
+    normalizeDataSet: dataSets => dispatch(normalizeDataSetAction(dataSets))
   })
 )(HomePage)
 
@@ -268,7 +332,7 @@ export const query = graphql`
         } 
       }
     }
-    allRevenues:allResourceRevenues(
+    allRevenues:allResourceRevenuesMonthly(
       filter:{RevenueCategory:{ne: null}}
       sort:{fields:[RevenueDate], order: DESC}
     ) {
@@ -281,6 +345,113 @@ export const query = graphql`
           DisplayMonth:RevenueDate(formatString: "MMM")
           Revenue
           RevenueCategory
+        }
+      }
+    }
+    allMonthlyRevenues: allResourceRevenuesMonthly(
+      filter: {
+        RevenueCategory: {ne: null}
+      }, 
+      sort: {fields: [RevenueDate], order: DESC}) {
+      data: edges {
+        node {
+          id
+          RevenueDate
+          RevenueMonth: RevenueDate(formatString: "MMMM")
+          RevenueYear: RevenueDate(formatString: "YYYY")
+          DisplayYear: RevenueDate(formatString: "'YY")
+          DisplayMonth: RevenueDate(formatString: "MMM")
+          Revenue
+          RevenueCategory
+        }
+      }
+    }
+    allMonthlyRevenuesByCalendarYear: allResourceRevenuesMonthly(
+      filter: {RevenueCategory: {ne: null}}, 
+      sort: {fields: [RevenueDate], order: DESC}) {
+      group(field: CalendarYear) {
+        id: fieldValue
+        data: edges {
+          node {
+            id
+          }
+        }
+      }
+    }
+    allFiscalYearRevenues: allResourceRevenuesFiscalYear(
+      filter: {RevenueCategory: {ne: null}}, 
+      sort: {fields: [RevenueDate], order: DESC}) {
+      data: edges {
+        node {
+          id
+          FiscalYear
+          Revenue
+          RevenueCategory
+          Units
+          LongUnits
+        }
+      }
+    }
+    allFiscalYearRevenuesByFiscalYear: allResourceRevenuesFiscalYear(
+      filter: {RevenueCategory: {ne: null}}, 
+      sort: {fields: [RevenueDate], order: DESC}) {
+      group(field: FiscalYear) {
+        id: fieldValue
+        data: edges {
+          node {
+            id
+          }
+        }
+      }
+    }
+    allFiscalYearProductVolumes: allProductVolumesFiscalYear (
+      filter: {ProductName: {in: ["Gas","Coal","Oil"]}},
+      sort: {fields: [ProductionDate], order: DESC}){
+      data: edges {
+        node {
+          id
+          FiscalYear
+          LandCategory_OnshoreOffshore
+          Volume
+          ProductName
+          Units
+          LongUnits
+        }
+      }
+    }
+    allFiscalYearProductVolumesByFiscalYear_Gas: allProductVolumesFiscalYear(
+      filter: {ProductName: {eq: "Gas"}}, 
+      sort: {fields: [ProductionDate], order: DESC}) {
+      group(field: FiscalYear) {
+        id: fieldValue
+        data:edges {
+          node {
+            id
+          }
+        }
+      }
+    }
+    allFiscalYearProductVolumesByFiscalYear_Oil: allProductVolumesFiscalYear(
+      filter: {ProductName: {eq: "Oil"}}, 
+      sort: {fields: [ProductionDate], order: DESC}) {
+      group(field: FiscalYear) {
+        id: fieldValue
+        data:edges {
+          node {
+            id
+          }
+        }
+      }
+    }
+    allFiscalYearProductVolumesByFiscalYear_Coal: allProductVolumesFiscalYear(
+      filter: {ProductName: {eq: "Coal"}}, 
+      sort: {fields: [ProductionDate], order: DESC}) {
+      group(field: FiscalYear) {
+        id: fieldValue
+        data:edges {
+          node {
+            id
+          }
         }
       }
     }

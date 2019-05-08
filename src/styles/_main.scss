@@ -7,3 +7,16 @@
 
 // include site specific base styles
 @import 'base';
+
+
+/* Material UI Overrides */
+#___gatsby[aria-hidden=true] {
+	display: block;
+}
+#menu- div[aria-hidden=true]{
+	display: block;
+}
+
+.MuiTableSortLabel-icon-86 {
+	opacity: 1 !important;
+}

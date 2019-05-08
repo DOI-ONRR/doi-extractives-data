@@ -1,0 +1,83 @@
+@value colors: "../../../css-global/colors.scss";
+@value grayDarkest as _grayDarkest, grayLight as _grayLight, greenLight as _greenLight from colors;
+@value variables: "../../../css-global/variables.scss";
+@value baseFontFamily as _baseFontFamily from variables;
+.root{
+	overflow: auto;
+	width: 100%;
+}
+
+.table {
+	border: none;
+}
+
+.tableHeader th {
+	border-bottom: 5px solid _greenLight;
+	color: _grayDarkest;
+	font-family: _baseFontFamily;
+	font-size: 1rem;
+	font-weight: 400;
+	padding-left: 8px;
+	padding-right: 15px;
+	white-space: nowrap;
+	vertical-align: bottom;
+	z-index: 1;
+	span {
+		z-index: 1;
+	}
+}
+
+.tableHeader svg {
+	opacity: 0;
+}
+
+.tableBody td {
+	border-right: none;
+	border-left: none;
+	color: _grayDarkest;
+	font-family: _baseFontFamily;
+	font-size: 1rem;
+	font-weight: 300;
+	padding-left: 8px;
+	padding-right: 15px;
+	vertical-align: bottom;
+}
+
+.table {
+	tr {
+		th:first-of-type {
+			position: sticky;
+			background:white; 
+			background-clip: padding-box;
+			left: 0px;
+			z-index: 10;
+		}
+		th:first-of-type:after {
+	    position: absolute;
+	    background-color: transparent;
+	    left: -1px;
+	    content: '';
+	    width: 100%;
+	    height: 100%;
+	    top: 0px;
+		}
+		td:first-of-type {
+			position: sticky;
+			background:white; 
+			background-clip: padding-box;
+			left: 0px;
+		}
+
+		td:last-of-type {
+		padding-right: 15px;
+		}
+	}
+}
+
+.table tbody{
+	tr:last-of-type {
+		td {
+			font-weight: 600;
+		}
+	}
+}

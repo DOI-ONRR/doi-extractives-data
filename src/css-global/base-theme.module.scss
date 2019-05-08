@@ -1,5 +1,5 @@
 @value colors: "./colors.scss";
-@value green as _green, grayLight as _grayLight, blackLight as _blackLight from colors;
+@value green as _green, grayLight as _grayLight, blackLight as _blackLight, greenLight as _greenLight from colors;
 
 .chartBar {
 	cursor: pointer;
@@ -31,4 +31,9 @@
 	font-weight: 600;
 	line-height: 1.1875rem;
 
+}
+
+.sectionHeaderUnderline {
+  border-bottom: 10px solid _greenLight;
+  padding-bottom: .7rem;
 }

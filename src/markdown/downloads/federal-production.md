@@ -11,22 +11,7 @@ tag:
 ---
 
 <custom-link to="/downloads/" className="breadcrumb link-charlie">Downloads</custom-link> /
-# Federal Production by Location
-
-<section class="explore-subpage container">
-    <section>
-      <div class="explore-subpage-tabs">
-        <ul>
-          <li class="explore-subpage-tab active">
-            <a href="/downloads/federal-production/">Production by year</a>
-          </li>
-          <li class="explore-subpage-tab">
-            <a href="/downloads/federal-production-by-month/">Production by month</a>
-          </li>
-        </ul>
-      </div>
-    </section>
-</section>
+# Federal Production by Year and Location
 
 > This dataset contains information on production on federal lands and waters. We have versions of these datasets available for calendar years 2008-2017 and for fiscal years 2009-2018.
 
@@ -48,7 +33,7 @@ We have [notes on this data](https://github.com/onrr/doi-extractives-data/wiki/D
 
 ## Scope
 
-This dataset includes natural resource production for U.S. federal lands and offshore areas. It does not include Indian lands, privately owned lands, or U.S. state lands. The dataset currently include data tracked and managed by the Department of the Interior’s Office of Natural Resources Revenue (ONRR). The production data for Oil and Gas is collected on Form ONRR-4054 (Oil and Gas Operations Report). Coal and hardrock production is collected on Form ONRR-4430 (Solid Minerals Production and Royalty Report).
+This dataset includes natural resource production for U.S. federal lands and offshore areas. It does not include Native American lands, privately owned lands, or U.S. state lands. The dataset currently include data tracked and managed by the Department of the Interior’s Office of Natural Resources Revenue (ONRR). The production data for Oil and Gas is collected on Form ONRR-4054 (Oil and Gas Operations Report). Coal and hardrock production is collected on Form ONRR-4430 (Solid Minerals Production and Royalty Report).
 
 ## About the data
 

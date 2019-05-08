@@ -11,6 +11,7 @@ import GlossaryTerm from '../utils/glossary-term.js'
 import { filterTerms } from '../utils/Glossary'
 import RevenueTypeTable from '../locations/RevenueTypeTable'
 import RevenueProcessTable from '../locations/RevenueProcessTable'
+import { ExploreDataLink } from '../layouts/icon-links/ExploreDataLink'
 
 import ChartTitle from '../charts/ChartTitleCollapsible'
 
@@ -59,6 +60,7 @@ const NationalRevenue = props => {
         </p>
 
         <p>
+          <ExploreDataLink to="/explore/revenue">Revenue data in detail</ExploreDataLink>
           <Link className="data-downloads" to="/downloads/federal-revenue-by-location/" >
             <DataAndDocs />
           </Link>
@@ -106,6 +108,7 @@ const NationalRevenue = props => {
                         Non-tax revenue collected by <GlossaryTerm>ONRR</GlossaryTerm> often depends on what resources are available on federal lands and waters, as well as the laws and regulations about extraction of each resource.
             </p>
             <p>
+              <ExploreDataLink to="/explore/revenue">Revenue data in detail</ExploreDataLink>
               <Link to="/downloads/federal-revenue-by-location/" className="data-downloads">
                 <DataAndDocs />
               </Link>
@@ -174,14 +177,6 @@ const NationalRevenue = props => {
 
         </section>
 
-      </section>
-
-      <section>
-        <StickyHeader headerId="federal-tax-revenue" headerText='Federal tax revenue' />
-        <div>
-          <p>Individuals and corporations (specifically C-corporations) pay income taxes to the IRS. The federal corporate income tax rate tops out at 21%. Public policy provisions, such as tax expenditures, can decrease corporate income tax and other revenue payments in order to promote other policy goals.</p>
-          <p>Learn more about <Link to="/how-it-works/revenues/#all-lands-and-waters">revenue from extraction on all lands and waters</Link>.</p>
-        </div>
       </section>
 
     </section>

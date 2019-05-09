@@ -67,6 +67,12 @@ const ADDITIONAL_COLUMN_OPTIONS = {
 	'Location': ['State', DATA_SET_KEYS.OFFSHORE_REGION],
 	'No second column': [],
 };
+const PLURAL_COLUMNS_MAP = {
+	'Revenue type': 'revenue types',
+	'Commodity': 'commodities', 
+	'Land category': 'land categories',
+	'Location': 'locations',  
+};
 //const ADDITIONAL_COLUMN_OPTIONS = ['State/offshore region', 'Source', 'Land owner', 'Revenue type'];
 
 class FederalRevenue extends React.Component {
@@ -116,8 +122,10 @@ class FederalRevenue extends React.Component {
 		}
 
 		this.state.additionalColumns.forEach(column => {
-			columns.push({ name: utils.formatToSlug(column), title: column })
+			columns.push({ name: utils.formatToSlug(column), title: column, plural: PLURAL_COLUMNS_MAP[column] })
 		})
+
+		let allColumns = Object.keys(ADDITIONAL_COLUMN_OPTIONS).map(columnName => utils.formatToSlug(columnName))
 
 		filter.years.sort().forEach(year => {
 			columns.push({ name: 'fy-'+year, title: year })
@@ -127,9 +135,6 @@ class FederalRevenue extends React.Component {
 
 		// Have to add all the data provider types initially or they wont work??
 		this.state.yearOptions.forEach(year => {
-			//columns.push({ name: 'fy-'+year, title: year })
-			//columnExtensions.push({ columnName: 'fy-'+year, align: 'right' })
-			//defaultSorting=[{ columnName: 'fy-'+year, direction: 'desc' }]
 			currencyColumns.push('fy-'+year)
 		})
 		
@@ -139,6 +144,7 @@ class FederalRevenue extends React.Component {
 			columnExtensions: columnExtensions,
 			grouping: grouping,
 			currencyColumns: currencyColumns,
+			allColumns: allColumns,
 			defaultSorting: defaultSorting,
 		};
 	}
@@ -151,6 +157,13 @@ class FederalRevenue extends React.Component {
 			totalSummaryItems.push({ columnName: 'fy-'+year, type: 'sum' })
 			groupSummaryItems.push({ columnName: 'fy-'+year, type: 'sum' })
 		})
+
+		// using type avg to attach the custom formatter function
+		this.state.additionalColumns.forEach(column => {
+			totalSummaryItems.push({ columnName: utils.formatToSlug(column), type: 'avg' })
+			groupSummaryItems.push({ columnName: utils.formatToSlug(column), type: 'avg' })
+		})
+
 
 		return {
 			totalSummaryItems: totalSummaryItems, 
@@ -361,7 +374,7 @@ class FederalRevenue extends React.Component {
 
 	render() {
 		let {timeframe, yearOptions} = this.state;
-		let {columns, columnExtensions, grouping, currencyColumns, defaultSorting} = this.getTableColumns();
+		let {columns, columnExtensions, grouping, currencyColumns, allColumns, defaultSorting} = this.getTableColumns();
 		let {totalSummaryItems, groupSummaryItems} = this.getTableSummaries();
 		let {tableData, expandedGroups} = this.getTableData();
 
@@ -417,6 +430,7 @@ class FederalRevenue extends React.Component {
 								tableColumnExtension={columnExtensions}
 								grouping={grouping}
 								currencyColumns={currencyColumns}
+								allColumns={allColumns}
 								expandedGroups={expandedGroups}
 								totalSummaryItems={totalSummaryItems}
 								groupSummaryItems={groupSummaryItems}
@@ -539,7 +553,7 @@ const TableToolbar = ({ fiscalYearOptions, locationOptions, defaultFiscalYearsSe
 					  />
 				  </Grid>
 					<Grid item sm xs={12}>
-						<h6>First column:</h6>
+						<h6>Group by:</h6>
 						<DropDown
 							sortType={'none'}
 					    options={Object.keys(GROUP_BY_OPTIONS)}
@@ -549,7 +563,7 @@ const TableToolbar = ({ fiscalYearOptions, locationOptions, defaultFiscalYearsSe
 					  />
 				  </Grid>
 					<Grid item sm xs={12}>
-						<h6>Second column:</h6>
+						<h6>Additional column:</h6>
 						<DropDown
 							sortType={'none'}
 					    options={getAdditionalColumnOptions()}
@@ -559,6 +573,11 @@ const TableToolbar = ({ fiscalYearOptions, locationOptions, defaultFiscalYearsSe
 				  </Grid>
 					<Grid item xs={12} >
 			 			<Button classes={{root:styles.tableToolbarButton}} variant="contained" color="primary" onClick={() => handleApply()}>Apply</Button>
+			 		</Grid>
+		    </Grid>
+		    <Grid container spacing={0}>
+					<Grid item xs={12} >
+			 			<h5 style={{margin:'0px'}}>Grouped by: {groupBy}</h5>
 			 		</Grid>
 		    </Grid>
 	    </MuiThemeProvider>

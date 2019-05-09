@@ -76,11 +76,11 @@ const CustomTableSummaryRow_GroupRow = ({ ...restProps }) => {
 const CustomTableSummaryRow_Item = ({getMessage, ...restProps }) => {
   restProps.value = (isNaN(restProps.value)) ? 0 : restProps.value;
   return (
-    <div {...restProps}  className={styles.summaryCell}>
+    <div {...restProps} className={styles.summaryCell}>
       {restProps.children.type ?
         restProps.children.type(restProps)
       :
-        restProps.value
+        restProps.value+' sdaas'
       }
     </div>
   )
@@ -108,6 +108,26 @@ const CurrencyTypeProvider = props => {
   />
 );}
 
+const AllFormatter = ({value, children}) => {
+  return (
+    <span>
+      {children ?
+        'All '+children.props.column.plural
+        :
+        value
+      }
+    </span>
+  );
+}
+
+const AllTypeProvider = props => {
+  return(
+  <DataTypeProvider
+    formatterComponent={AllFormatter}
+    {...props}
+  />
+);}
+
 class GroupTable extends React.Component {
   constructor(props) {
     super(props);
@@ -116,6 +136,7 @@ class GroupTable extends React.Component {
       columns: props.columns,
       rows: props.rows,
       currencyColumns: props.currencyColumns,
+      allColumns: props.allColumns,
       tableColumnExtension: props.tableColumnExtension,
       columnBands : [],
       totalSummaryItems: props.totalSummaryItems,
@@ -142,6 +163,7 @@ class GroupTable extends React.Component {
       rows, 
       columns, 
       currencyColumns,
+      allColumns,
       tableColumnExtension, 
       columnBands, 
       grouping, 
@@ -149,6 +171,9 @@ class GroupTable extends React.Component {
       totalSummaryItems, 
       groupSummaryItems,
       defaultSorting } = this.state;
+
+      //console.log(allColumns, currencyColumns)
+      //console.log(totalSummaryItems, groupSummaryItems)
 
     return (
     	<div>
@@ -159,6 +184,9 @@ class GroupTable extends React.Component {
           >          
             <CurrencyTypeProvider
               for={currencyColumns}
+            />         
+            <AllTypeProvider
+              for={allColumns}
             />
             <SortingState
               defaultSorting={defaultSorting}
@@ -183,6 +211,7 @@ class GroupTable extends React.Component {
               itemComponent={CustomTableSummaryRow_Item}
             />
             <TableGroupRow  
+              contentComponent={CustomTableGroupRow_Content}
             />
             <TableBandHeader
               columnBands={columnBands}

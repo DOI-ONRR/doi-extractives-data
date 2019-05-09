@@ -31,9 +31,12 @@ In late 2017, the [U.S. withdrew from EITI](https://revenuedata.doi.gov/about/#h
 
 ![United States Extractive Industries Transparency Initiative with the United States fading away to white](./useiti-fade.gif)
 
-Meanwhile, [18F was transitioning the work to our team](https://18f.gsa.gov/2018/05/01/lessons-from-an-18f-product-transition/). We no longer had a governance structure, outside content creators, the developers who built the site, or the EITI standard.
+Meanwhile, [18F was transitioning the work to our team](https://18f.gsa.gov/2018/05/01/lessons-from-an-18f-product-transition/). We no longer had our governance structure, outside content creators, the developers who built the site, or the EITI standard.
 
 So what now? 😟
 
 ## Making tough content choices
 
+Our problem was a common one: we needed to define our new constraints, and evaluate user needs and our ability to meet them within those constraints.
+
+We started by reframing the product vision.

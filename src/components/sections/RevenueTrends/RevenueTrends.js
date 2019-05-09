@@ -24,6 +24,7 @@ const RevenueTrends = props => (
                 FiscalYear
                 Revenue
                 RevenueCategory
+                RevenueDate
                 RevenueType
               }
             }
@@ -35,11 +36,11 @@ const RevenueTrends = props => (
       let fiscalYearData = JSON.parse(JSON.stringify(data.allMonthlyRevenuesByFiscalYear.group))
       let sorted = fiscalYearData.sort((a, b) => (a.fiscalYear < b.fiscalYear) ? 1 : -1)
 
-      sorted = sorted.splice(0,TREND_LIMIT);
+      sorted = sorted.splice(1,TREND_LIMIT);
       sorted = sorted.sort((a, b) => (a.fiscalYear > b.fiscalYear) ? 1 : -1)
 
-      let currentFiscalYearText = 'FY'+sorted[0].fiscalYear.slice(2)+' so far';
-      let previousFiscalYearText = 'from FY'+sorted[1].fiscalYear.slice(2);
+      let currentFiscalYearText = 'FY'+sorted[(TREND_LIMIT-1)].fiscalYear.slice(2)+' so far';
+      let previousFiscalYearText = 'from FY'+sorted[(TREND_LIMIT-2)].fiscalYear.slice(2);
 
       let revenueTrendData = sorted.map((yearData, index) => {
 
@@ -72,8 +73,6 @@ const RevenueTrends = props => (
           )
         })
       )
-
-      console.log(totalRevenues);
 
       return (
         <section className={styles.root}>
@@ -149,8 +148,8 @@ const SparkLine = ({data}) => {
   const elemRef = useRef(null);
 
   useEffect(() => {
-    var width = 90;
-    var height = 20;
+    var width = 75;
+    var height = 15;
     var x = d3.scaleLinear().range([0, width - 3]);
     var y = d3.scaleLinear().range([height - 4, 0]);
     var line = d3.line()
@@ -164,7 +163,7 @@ const SparkLine = ({data}) => {
                 .append('svg')
                 .attr('width', width)
                 .attr('height', height)
-                .style('height', (height+5))
+                .style('height', (height+2))
                 .append('g')
                 .attr('transform', 'translate(0, 2)');
     svg.append('path')
@@ -173,9 +172,10 @@ const SparkLine = ({data}) => {
        .attr('d', line);
     svg.append('circle')
        .attr('class', 'sparkcircle')
+       .style('fill', 'steelblue')
        .attr('cx', x(data[data.length - 1].year))
        .attr('cy', y(data[data.length - 1].amount))
-       .attr('r', 2.5);  
+       .attr('r', 1);  
   });
 
   return (

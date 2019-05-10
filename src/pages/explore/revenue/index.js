@@ -35,7 +35,7 @@ import Select from '../../../components/selectors/Select'
 import FilterTable from '../../../components/tables/FilterTable'
 import GroupTable from '../../../components/tables/GroupTable'
 import TreeTable from '../../../components/tables/TreeTable'
-
+import GlossaryTerm from '../../../components/utils/glossary-term.js';
 
 const PAGE_TITLE = "Federal Revenue | Natural Resources Revenue Data"
 const TOGGLE_VALUES = {
@@ -454,6 +454,10 @@ export default connect(
   })
 )(FederalRevenue)
 
+const LocationMessage = () => (
+	<div>For privacy reasons, location is <GlossaryTerm>withheld</GlossaryTerm> for Native American data.</div>
+)
+
 
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
@@ -496,6 +500,11 @@ const TableToolbar = ({ fiscalYearOptions, locationOptions, defaultFiscalYearsSe
 			return locationOptions.filter(option => (option.includes('Offshore') ||  option.includes('All')) );
 		}
 		return locationOptions;
+	}
+
+	let showLocationMessage = () => {
+		let validLandCategories = ['All', 'All onshore', 'Native American']
+		return validLandCategories.includes(landCategorySelected)
 	}
 
 	useEffect(() => {
@@ -551,6 +560,9 @@ const TableToolbar = ({ fiscalYearOptions, locationOptions, defaultFiscalYearsSe
 							action={(value) => setLocationSelected(value)}
 					    selectedOptionValue={locationSelected}
 					  />
+					  {showLocationMessage() &&
+					  	<LocationMessage />
+					  }
 				  </Grid>
 					<Grid item sm xs={12}>
 						<h6>Group by:</h6>

@@ -43,6 +43,7 @@ const theme = createMuiTheme({
         fontFamily: styles._baseFontFamily,
         fontSize: '1rem',
         fontWeight: 400,
+        borderBottom: '5px solid #cde3c3;',
       },
       body: { 
         color: styles._textColor, 
@@ -56,7 +57,7 @@ const theme = createMuiTheme({
         fontSize: '1rem',
         fontWeight: 400,
       },
-    }
+    },  
   }
 });
 //import CustomTableGroupRow from './plugins/CustomTableGroupRow'

@@ -113,7 +113,8 @@ const createRevenueNode = (revenueData, type) => {
   if(landCat === "not tied to a lease" ||
      revenueNode.RevenueType === 'Civil Penalities' ||
      revenueNode.RevenueType === 'Other Revenues'){
-    if(revenueNode.LandClass !== CONSTANTS.NATIVE_AMERICAN){
+    if(revenueNode.LandClass !== CONSTANTS.NATIVE_AMERICAN &&
+        !revenueNode.OffshoreRegion){
       revenueNode.State = 'Not tied to a location';
     }
     

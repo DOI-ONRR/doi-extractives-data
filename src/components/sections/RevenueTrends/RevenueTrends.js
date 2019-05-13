@@ -149,10 +149,10 @@ const RevenueTrends = props => (
               </tr>
               <tr>
                 <td><strong>Total revenues</strong></td>
-                <td>{utils.formatToSigFig_Dollar(currentYearTotal, 2)}</td>
+                <td><strong>{utils.formatToSigFig_Dollar(currentYearTotal, 2)}</strong></td>
               </tr>
               <tr>
-                <td><strong><Sparkline data={totalRevenues} /></strong></td>
+                <td><Sparkline data={totalRevenues} /></td>
                 <td>
                   <PercentDifference 
                     currentAmount={currentYearTotal} 

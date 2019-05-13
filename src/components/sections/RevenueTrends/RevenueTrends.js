@@ -5,6 +5,8 @@ import { StaticQuery, graphql } from "gatsby"
 import * as d3 from 'd3'
 import utils from '../../../js/utils'
 
+import Sparkline from '../../data-viz/Sparkline'
+
 import TriangleUpIcon from '-!svg-react-loader!../../../img/svg/triangle-up.svg'
 import TriangleDownIcon from '-!svg-react-loader!../../../img/svg/triangle-down.svg'
 
@@ -98,7 +100,7 @@ const RevenueTrends = props => (
                 <td>{utils.formatToSigFig_Dollar(currentYearData.amountByRevenueType.Royalties, 2)}</td>
               </tr>
               <tr>
-                <td><SparkLine data={royalties} /></td>
+                <td><Sparkline data={royalties} /></td>
                 <td>
                   <PercentDifference 
                     currentAmount={currentYearData.amountByRevenueType.Royalties} 
@@ -111,7 +113,7 @@ const RevenueTrends = props => (
                 <td>{utils.formatToSigFig_Dollar(currentYearData.amountByRevenueType.Bonus, 2)}</td>
               </tr>
               <tr>
-                <td><SparkLine data={bonuses} /></td>
+                <td><Sparkline data={bonuses} /></td>
                 <td>
                   <PercentDifference 
                     currentAmount={currentYearData.amountByRevenueType.Bonus} 
@@ -124,7 +126,7 @@ const RevenueTrends = props => (
                 <td>{utils.formatToSigFig_Dollar(currentYearData.amountByRevenueType.Rents, 2)}</td>
               </tr>
               <tr>
-                <td><SparkLine data={rents} /></td>
+                <td><Sparkline data={rents} /></td>
                 <td>
                   <PercentDifference 
                     currentAmount={currentYearData.amountByRevenueType.Rents} 
@@ -137,7 +139,7 @@ const RevenueTrends = props => (
                 <td>{utils.formatToSigFig_Dollar(currentYearData.amountByRevenueType['Other Revenues'], 2)}</td>
               </tr>
               <tr>
-                <td><SparkLine data={otherRevenues} /></td>
+                <td><Sparkline data={otherRevenues} /></td>
                 <td>
                   <PercentDifference 
                     currentAmount={currentYearData.amountByRevenueType['Other Revenues']} 
@@ -150,7 +152,7 @@ const RevenueTrends = props => (
                 <td>{utils.formatToSigFig_Dollar(currentYearTotal, 2)}</td>
               </tr>
               <tr>
-                <td><SparkLine data={totalRevenues} /></td>
+                <td><Sparkline data={totalRevenues} /></td>
                 <td>
                   <PercentDifference 
                     currentAmount={currentYearTotal} 
@@ -194,52 +196,3 @@ const PercentDifference = ({currentAmount, previousAmount}) => {
     </span>
   );
 }
-
-const SparkLine = ({data}) => {
-
-  const spakeStyles = {
-    stroke: 'steelblue',
-    strokeWidth: 1,
-    fill: 'none',
-  }
-
-  const elemRef = useRef(null);
-
-  useEffect(() => {
-    var width = 75;
-    var height = 15;
-    var x = d3.scaleLinear().range([0, width - 3]);
-    var y = d3.scaleLinear().range([height - 4, 0]);
-    var line = d3.line()
-                 .curve(d3.curveBasis)
-                 .x(function(d) { return x(d.year); })
-                 .y(function(d) { return y(d.amount); });
-
-    x.domain(d3.extent(data, function(d) { return +d.year; }));
-    y.domain(d3.extent(data, function(d) { return +d.amount; }));
-    var svg = d3.select(elemRef.current)
-                .append('svg')
-                .attr('width', width)
-                .attr('height', height)
-                .style('height', (height+2))
-                .append('g')
-                .attr('transform', 'translate(0, 2)');
-    svg.append('path')
-       .datum(data)
-       .attr('class', 'sparkline')
-       .attr('d', line);
-    svg.append('circle')
-       .attr('class', 'sparkcircle')
-       .style('fill', 'steelblue')
-       .attr('cx', x(data[data.length - 1].year))
-       .attr('cy', y(data[data.length - 1].amount))
-       .attr('r', 1);  
-  });
-
-  return (
-    <div style={spakeStyles} ref={elemRef}></div>
-  )
-}
-
-
-/*{utils.formatToSigFig_Dollar(totalRevenues[(TREND_LIMIT-1)], 2)}*/

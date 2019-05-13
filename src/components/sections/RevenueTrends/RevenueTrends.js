@@ -5,6 +5,9 @@ import { StaticQuery, graphql } from "gatsby"
 import * as d3 from 'd3'
 import utils from '../../../js/utils'
 
+import TriangleUpIcon from '-!svg-react-loader!../../../img/svg/triangle-up.svg'
+import TriangleDownIcon from '-!svg-react-loader!../../../img/svg/triangle-down.svg'
+
 import styles from './RevenueTrends.module.scss'
 
 const TREND_LIMIT = 10;
@@ -16,7 +19,7 @@ const RevenueTrends = props => (
         allMonthlyRevenuesByFiscalYear: allResourceRevenuesMonthly(
           filter: {RevenueCategory: {ne: null}}, 
           sort: {fields: [RevenueDate], order: DESC}) {
-          group(field: CalendarYear) {
+          group(field: FiscalYear) {
             fiscalYear: fieldValue
             data: edges {
               node {
@@ -33,36 +36,40 @@ const RevenueTrends = props => (
       }
     `}
     render={data => {
-      let fiscalYearData = JSON.parse(JSON.stringify(data.allMonthlyRevenuesByFiscalYear.group))
-      let sorted = fiscalYearData.sort((a, b) => (a.fiscalYear < b.fiscalYear) ? 1 : -1)
+      let fiscalYearData = JSON.parse(JSON.stringify(data.allMonthlyRevenuesByFiscalYear.group)).sort((a, b) => (a.fiscalYear < b.fiscalYear) ? 1 : -1)
+      
+      // Get the latest date then subtract 1 year to filter previous year data to compare current year data
+      let previousYearMaxDate = new Date(fiscalYearData[0].data[0].node.RevenueDate)
+      previousYearMaxDate.setFullYear(previousYearMaxDate.getFullYear() -1)
 
-      sorted = sorted.splice(1,TREND_LIMIT);
-      sorted = sorted.sort((a, b) => (a.fiscalYear > b.fiscalYear) ? 1 : -1)
+      let currentYearData = (fiscalYearData.splice(0,1)).map(calculateRevenueTypeAmountsByYear)[0]
+      let currentYearTotal = (currentYearData.amountByRevenueType.Royalties+
+            currentYearData.amountByRevenueType.Bonus+
+            currentYearData.amountByRevenueType.Rents+
+            currentYearData.amountByRevenueType['Other Revenues'])
 
-      let currentFiscalYearText = 'FY'+sorted[(TREND_LIMIT-1)].fiscalYear.slice(2)+' so far';
-      let previousFiscalYearText = 'from FY'+sorted[(TREND_LIMIT-2)].fiscalYear.slice(2);
+      let trendData = fiscalYearData.splice(0,TREND_LIMIT)
 
-      let revenueTrendData = sorted.map((yearData, index) => {
+      let previousYearData = trendData[0]
+      previousYearData.data  = previousYearData.data.filter(item => new Date(item.node.RevenueDate) <= previousYearMaxDate)
+      previousYearData = [previousYearData].map(calculateRevenueTypeAmountsByYear)[0];
+      let previousYearTotal = previousYearData.amountByRevenueType.Royalties +
+                              previousYearData.amountByRevenueType.Bonus +
+                              previousYearData.amountByRevenueType.Rents +
+                              previousYearData.amountByRevenueType['Other Revenues'];
 
-        let fiscalYear = yearData.fiscalYear;
-        let sums = yearData.data.reduce((total, item) => {
-          total[item.node.RevenueType] =
-            (total[item.node.RevenueType] !== undefined)
-              ? total[item.node.RevenueType] + item.node.Revenue
-              : item.node.Revenue
+      let currentFiscalYearText = 'FY'+currentYearData.year.slice(2)+' so far';
+      let previousFiscalYearText = 'from FY'+previousYearData.year.slice(2);
 
-          return total
-        }, {})
+      // Sort trend data asc for spark lines
+      trendData.sort((a, b) => (a.fiscalYear > b.fiscalYear) ? 1 : -1)
+      let sparkLineData = trendData.map(calculateRevenueTypeAmountsByYear)
 
-
-        return { 'year': fiscalYear, 'amountByRevenueType': sums};
-      })
-
-      let royalties = revenueTrendData.map(yearData => ({'year':yearData.year, 'amount': yearData.amountByRevenueType.Royalties}) )
-      let bonuses = revenueTrendData.map(yearData => ({'year':yearData.year, 'amount': yearData.amountByRevenueType.Bonus}) )
-      let rents = revenueTrendData.map(yearData => ({'year':yearData.year, 'amount': yearData.amountByRevenueType.Rents}) )
-      let otherRevenues = revenueTrendData.map(yearData => ({'year':yearData.year, 'amount': yearData.amountByRevenueType['Other Revenues']}) )
-      let totalRevenues = revenueTrendData.map(yearData => (
+      let royalties = sparkLineData.map(yearData => ({'year':yearData.year, 'amount': yearData.amountByRevenueType.Royalties}) )
+      let bonuses = sparkLineData.map(yearData => ({'year':yearData.year, 'amount': yearData.amountByRevenueType.Bonus}) )
+      let rents = sparkLineData.map(yearData => ({'year':yearData.year, 'amount': yearData.amountByRevenueType.Rents}) )
+      let otherRevenues = sparkLineData.map(yearData => ({'year':yearData.year, 'amount': yearData.amountByRevenueType['Other Revenues']}) )
+      let totalRevenues = sparkLineData.map(yearData => (
         {
           'year':yearData.year, 
           'amount': (
@@ -88,43 +95,67 @@ const RevenueTrends = props => (
             <tbody>
               <tr>
                 <td>Royalties</td>
-                <td>{utils.formatToSigFig_Dollar(royalties[(TREND_LIMIT-1)].amount, 2)}</td>
+                <td>{utils.formatToSigFig_Dollar(currentYearData.amountByRevenueType.Royalties, 2)}</td>
               </tr>
               <tr>
                 <td><SparkLine data={royalties} /></td>
-                <td>^XX% {previousFiscalYearText}</td>
+                <td>
+                  <PercentDifference 
+                    currentAmount={currentYearData.amountByRevenueType.Royalties} 
+                    previousAmount={previousYearData.amountByRevenueType.Royalties} 
+                  />{' '+previousFiscalYearText}
+                </td>
               </tr>
               <tr>
                 <td>Bonuses</td>
-                <td>{utils.formatToSigFig_Dollar(bonuses[(TREND_LIMIT-1)].amount, 2)}</td>
+                <td>{utils.formatToSigFig_Dollar(currentYearData.amountByRevenueType.Bonus, 2)}</td>
               </tr>
               <tr>
                 <td><SparkLine data={bonuses} /></td>
-                <td>^XX% {previousFiscalYearText}</td>
+                <td>
+                  <PercentDifference 
+                    currentAmount={currentYearData.amountByRevenueType.Bonus} 
+                    previousAmount={previousYearData.amountByRevenueType.Bonus} 
+                  />{' '+previousFiscalYearText}
+                </td>
               </tr>
               <tr>
                 <td>Rents</td>
-                <td>{utils.formatToSigFig_Dollar(rents[(TREND_LIMIT-1)].amount, 2)}</td>
+                <td>{utils.formatToSigFig_Dollar(currentYearData.amountByRevenueType.Rents, 2)}</td>
               </tr>
               <tr>
                 <td><SparkLine data={rents} /></td>
-                <td>^XX% {previousFiscalYearText}</td>
+                <td>
+                  <PercentDifference 
+                    currentAmount={currentYearData.amountByRevenueType.Rents} 
+                    previousAmount={previousYearData.amountByRevenueType.Rents} 
+                  />{' '+previousFiscalYearText}
+                </td>
               </tr>
               <tr>
                 <td>Other revenues</td>
-                <td>{utils.formatToSigFig_Dollar(otherRevenues[(TREND_LIMIT-1)].amount, 2)}</td>
+                <td>{utils.formatToSigFig_Dollar(currentYearData.amountByRevenueType['Other Revenues'], 2)}</td>
               </tr>
               <tr>
                 <td><SparkLine data={otherRevenues} /></td>
-                <td>^XX% {previousFiscalYearText}</td>
+                <td>
+                  <PercentDifference 
+                    currentAmount={currentYearData.amountByRevenueType['Other Revenues']} 
+                    previousAmount={previousYearData.amountByRevenueType['Other Revenues']} 
+                  />{' '+previousFiscalYearText}
+                </td>
               </tr>
               <tr>
                 <td>Total revenues</td>
-                <td>{utils.formatToSigFig_Dollar(totalRevenues[(TREND_LIMIT-1)].amount, 2)}</td>
+                <td>{utils.formatToSigFig_Dollar(currentYearTotal, 2)}</td>
               </tr>
               <tr>
                 <td><SparkLine data={totalRevenues} /></td>
-                <td>^XX% {previousFiscalYearText}</td>
+                <td>
+                  <PercentDifference 
+                    currentAmount={currentYearTotal} 
+                    previousAmount={previousYearTotal} 
+                  />{previousFiscalYearText}</td>
               </tr>
             </tbody>
           </table>
@@ -136,6 +167,33 @@ const RevenueTrends = props => (
 )
 
 export default RevenueTrends
+
+const calculateRevenueTypeAmountsByYear = (yearData, index) => {
+  let fiscalYear = yearData.fiscalYear;
+  let sums = yearData.data.reduce((total, item) => {
+    total[item.node.RevenueType] =
+      (total[item.node.RevenueType] !== undefined)
+        ? total[item.node.RevenueType] + item.node.Revenue
+        : item.node.Revenue
+    return total
+  }, {})
+
+  return { 'year': fiscalYear, 'amountByRevenueType': sums};
+}
+
+const PercentDifference = ({currentAmount, previousAmount}) => {
+  let percentIncrease = ((currentAmount - previousAmount)/previousAmount) * 100;
+  return (
+    <span>
+      {percentIncrease > 0 ?
+          <TriangleUpIcon viewBox="-20 -15 50 40"/>
+        :
+          <TriangleDownIcon viewBox="-20 -10 50 40"/>
+      }
+      {utils.round(percentIncrease, 0)+'%'}
+    </span>
+  );
+}
 
 const SparkLine = ({data}) => {
 

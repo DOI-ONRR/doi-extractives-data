@@ -115,7 +115,7 @@ const createRevenueNode = (revenueData, type) => {
      revenueNode.RevenueType === 'Other Revenues'){
     if(revenueNode.LandClass !== CONSTANTS.NATIVE_AMERICAN &&
         !revenueNode.OffshoreRegion){
-      revenueNode.State = 'Not tied to a location';
+      revenueNode.State = revenueNode.State || 'Not tied to a location';
     }
     
   }

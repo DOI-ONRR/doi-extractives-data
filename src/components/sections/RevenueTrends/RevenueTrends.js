@@ -85,12 +85,12 @@ const RevenueTrends = props => (
 
       return (
         <section className={styles.root}>
-          <h3 className={styles.title+" h3-bar"}>Revenue Trends</h3>
+          <h3 className={styles.title+" h3-bar"}>Revenue trends</h3>
           Includes federal and Native American revenue
           <table className={styles.revenueTable}>
             <thead>
               <tr>
-                <th>10 year trend</th>
+                <th>10-year trend</th>
                 <th>{currentFiscalYearText}</th>
               </tr>
             </thead>

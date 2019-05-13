@@ -33,7 +33,7 @@ class HowItWorksRevenueByCompany extends React.Component {
 
   render () {
     const title = this.props.pathContext.markdown.frontmatter.title || 'Federal Revenue by Company'
-    const reportYear = this.props.pathContext.markdown.frontmatter.report_year || 2017
+    const reportYear = this.props.pathContext.markdown.frontmatter.report_year || 2018
 
     return (
       <DefaultLayout>
@@ -66,6 +66,9 @@ class HowItWorksRevenueByCompany extends React.Component {
                   </li>
                   <li className={(reportYear === 2017) ? 'explore-subpage-tab active' : 'explore-subpage-tab'}>
                     <Link to="/how-it-works/federal-revenue-by-company/2017/">2017</Link>
+                  </li>
+                  <li className={(reportYear === 2018) ? 'explore-subpage-tab active' : 'explore-subpage-tab'}>
+                    <Link to="/how-it-works/federal-revenue-by-company/2018/">2018</Link>
                   </li>
                 </ul>
               </div>

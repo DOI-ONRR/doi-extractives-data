@@ -157,7 +157,7 @@ const RevenueTrends = props => (
                   <PercentDifference 
                     currentAmount={currentYearTotal} 
                     previousAmount={previousYearTotal} 
-                  />{previousFiscalYearText}</td>
+                  />{' '+previousFiscalYearText}</td>
               </tr>
             </tbody>
           </table>

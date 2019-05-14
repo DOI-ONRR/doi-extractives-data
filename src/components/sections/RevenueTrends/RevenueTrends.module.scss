@@ -14,15 +14,14 @@
 .revenueTable {
 		border: none !important;
 		th, td {
-		border: none !important;
-		padding-left: 0px !important;
-		white-space: nowrap !important;
-		width: 100%;
-		margin-top: 0.5rem;
-		tr {
-			td:last-child,th:last-child {
-			  text-align: right;
-			}
-		}
-	} 
+			border: none !important;
+			padding-left: 0px !important;
+			white-space: nowrap !important;
+			width: 100%;
+			margin-top: 0.5rem;
+		} 
+}
+
+.alignRight {
+	text-align: right;
 }

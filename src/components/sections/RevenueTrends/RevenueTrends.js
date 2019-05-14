@@ -91,17 +91,17 @@ const RevenueTrends = props => (
             <thead>
               <tr>
                 <th>10-year trend</th>
-                <th>{currentFiscalYearText}</th>
+                <th className={styles.alignRight}>{currentFiscalYearText}</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>Royalties</td>
-                <td>{utils.formatToSigFig_Dollar(currentYearData.amountByRevenueType.Royalties, 2)}</td>
+                <td className={styles.alignRight}>{utils.formatToSigFig_Dollar(currentYearData.amountByRevenueType.Royalties, 2)}</td>
               </tr>
               <tr>
                 <td><Sparkline data={royalties} /></td>
-                <td>
+                <td className={styles.alignRight}>
                   <PercentDifference 
                     currentAmount={currentYearData.amountByRevenueType.Royalties} 
                     previousAmount={previousYearData.amountByRevenueType.Royalties} 
@@ -110,11 +110,11 @@ const RevenueTrends = props => (
               </tr>
               <tr>
                 <td>Bonuses</td>
-                <td>{utils.formatToSigFig_Dollar(currentYearData.amountByRevenueType.Bonus, 2)}</td>
+                <td className={styles.alignRight}>{utils.formatToSigFig_Dollar(currentYearData.amountByRevenueType.Bonus, 2)}</td>
               </tr>
               <tr>
                 <td><Sparkline data={bonuses} /></td>
-                <td>
+                <td className={styles.alignRight}>
                   <PercentDifference 
                     currentAmount={currentYearData.amountByRevenueType.Bonus} 
                     previousAmount={previousYearData.amountByRevenueType.Bonus} 
@@ -123,11 +123,11 @@ const RevenueTrends = props => (
               </tr>
               <tr>
                 <td>Rents</td>
-                <td>{utils.formatToSigFig_Dollar(currentYearData.amountByRevenueType.Rents, 2)}</td>
+                <td className={styles.alignRight}>{utils.formatToSigFig_Dollar(currentYearData.amountByRevenueType.Rents, 2)}</td>
               </tr>
               <tr>
                 <td><Sparkline data={rents} /></td>
-                <td>
+                <td className={styles.alignRight}>
                   <PercentDifference 
                     currentAmount={currentYearData.amountByRevenueType.Rents} 
                     previousAmount={previousYearData.amountByRevenueType.Rents} 
@@ -136,11 +136,11 @@ const RevenueTrends = props => (
               </tr>
               <tr>
                 <td>Other revenues</td>
-                <td>{utils.formatToSigFig_Dollar(currentYearData.amountByRevenueType['Other Revenues'], 2)}</td>
+                <td className={styles.alignRight}>{utils.formatToSigFig_Dollar(currentYearData.amountByRevenueType['Other Revenues'], 2)}</td>
               </tr>
               <tr>
                 <td><Sparkline data={otherRevenues} /></td>
-                <td>
+                <td className={styles.alignRight}>
                   <PercentDifference 
                     currentAmount={currentYearData.amountByRevenueType['Other Revenues']} 
                     previousAmount={previousYearData.amountByRevenueType['Other Revenues']} 
@@ -149,11 +149,11 @@ const RevenueTrends = props => (
               </tr>
               <tr>
                 <td><strong>Total revenues</strong></td>
-                <td><strong>{utils.formatToSigFig_Dollar(currentYearTotal, 2)}</strong></td>
+                <td className={styles.alignRight}><strong>{utils.formatToSigFig_Dollar(currentYearTotal, 2)}</strong></td>
               </tr>
               <tr>
                 <td><Sparkline data={totalRevenues} /></td>
-                <td>
+                <td className={styles.alignRight}>
                   <PercentDifference 
                     currentAmount={currentYearTotal} 
                     previousAmount={previousYearTotal} 

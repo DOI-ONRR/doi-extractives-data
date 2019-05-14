@@ -11,6 +11,7 @@
 }
 
 .tabContent {
+	min-width: 65%;
 	flex-basis: 65%;
 	order: 0;
 }

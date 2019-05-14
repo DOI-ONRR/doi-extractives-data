@@ -40,3 +40,24 @@ So what now? 😟
 Our problem was a common one: we needed to define our new constraints, and evaluate user needs and our ability to meet them within those constraints.
 
 We started by reframing the product vision.
+
+## Defining our constraints
+
+I didn't fully realize at the time how important our [product framing](https://github.com/ONRR/doi-extractives-data/wiki/Product-framing) would be. It can be difficult to allocate the time to do this important, guiding work when you're trying to onboard a new team and continuing shipping features. But without it, each decision becomes more difficult and subjective, with no North Star to mitigate personal preferences, difficult choices, or pain points.
+
+We took a couple of weeks (a sprint) to redefine our purpose and constraints, which included several elements:
+
+- [Problem statement](https://github.com/ONRR/doi-extractives-data/wiki/Product-framing#problem-statement)
+- [Product vision](https://github.com/ONRR/doi-extractives-data/wiki/Product-framing#our-vision)
+- [What we're _not_ trying to do](https://github.com/ONRR/doi-extractives-data/wiki/Product-framing#what-we-are-not-trying-to-do)
+- [Product risks](https://github.com/ONRR/doi-extractives-data/wiki/Product-framing#risks)
+- [Prioritization scale](https://github.com/ONRR/doi-extractives-data/wiki/Prioritization-Scale)
+
+With our product framing toolkit assembled, we could now audit and evaluate content against our agreed upon constraints and aspirations.
+
+## Content auditing
+
+I'm certain there are people out there for whom auditing content is a dream come true; I am not one of them. I do, however, cherish the role of content auditing in the practice of content strategy. You simply can't move forward with a strategic vision without taking into account the existing disposition of site content.
+
+![Spreadsheet showing content audit with columns for URL, Title, File type, Description, Word count, Reading grade level, Notes, Tags, Maintenace requirements](./screen-content-audit.png)
+

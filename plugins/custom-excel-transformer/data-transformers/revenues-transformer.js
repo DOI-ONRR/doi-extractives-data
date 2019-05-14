@@ -48,6 +48,11 @@ const LAND_CLASS_CATEGORY_TO_REVENUE_CATEGORY ={
 	},
 }
 
+const COMMODITY_MAP = {
+  'Oil & Gas (Non Royalty)' : 'Oil & Gas (Non-Royalty)',
+  'Oil & Gas (Non-Royalty)' : 'Oil & Gas (Non-Royalty)'
+}
+
 /* Use ES5 exports in order to be compatible with version 1.x of gatsby */
 module.exports = (node, type) => {
 	return createRevenueNode(node, type);
@@ -62,7 +67,7 @@ const createRevenueNode = (revenueData, type) => {
 	  LandCategory: LAND_CATEGORY_TO_DISPLAY_NAME[data[SOURCE_COLUMNS.LandCategory]],
 	  LandClass: LAND_CLASS_TO_DISPLAY_NAME[data[SOURCE_COLUMNS.LandClass]],
 	  RevenueType: data[SOURCE_COLUMNS.RevenueType],
-	  Commodity: data[SOURCE_COLUMNS.Commodity],
+	  Commodity: COMMODITY_MAP[data[SOURCE_COLUMNS.Commodity]] || data[SOURCE_COLUMNS.Commodity],
 	  Revenue: data[SOURCE_COLUMNS.Revenue],
 	  State: data[SOURCE_COLUMNS.State],
 	  County: data[SOURCE_COLUMNS.County],

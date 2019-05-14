@@ -97,7 +97,7 @@ const RevenueTrends = props => (
             <tbody>
               <tr>
                 <td>Royalties</td>
-                <td className={styles.alignRight}>{utils.formatToSigFig_Dollar(currentYearData.amountByRevenueType.Royalties, 2)}</td>
+                <td className={styles.alignRight}>{utils.formatToSigFig_Dollar(currentYearData.amountByRevenueType.Royalties, 1)}</td>
               </tr>
               <tr>
                 <td><Sparkline data={royalties} /></td>
@@ -110,7 +110,7 @@ const RevenueTrends = props => (
               </tr>
               <tr>
                 <td>Bonuses</td>
-                <td className={styles.alignRight}>{utils.formatToSigFig_Dollar(currentYearData.amountByRevenueType.Bonus, 2)}</td>
+                <td className={styles.alignRight}>{utils.formatToSigFig_Dollar(currentYearData.amountByRevenueType.Bonus, 1)}</td>
               </tr>
               <tr>
                 <td><Sparkline data={bonuses} /></td>
@@ -123,7 +123,7 @@ const RevenueTrends = props => (
               </tr>
               <tr>
                 <td>Rents</td>
-                <td className={styles.alignRight}>{utils.formatToSigFig_Dollar(currentYearData.amountByRevenueType.Rents, 2)}</td>
+                <td className={styles.alignRight}>{utils.formatToSigFig_Dollar(currentYearData.amountByRevenueType.Rents, 1)}</td>
               </tr>
               <tr>
                 <td><Sparkline data={rents} /></td>
@@ -136,7 +136,7 @@ const RevenueTrends = props => (
               </tr>
               <tr>
                 <td>Other revenues</td>
-                <td className={styles.alignRight}>{utils.formatToSigFig_Dollar(currentYearData.amountByRevenueType['Other Revenues'], 2)}</td>
+                <td className={styles.alignRight}>{utils.formatToSigFig_Dollar(currentYearData.amountByRevenueType['Other Revenues'], 1)}</td>
               </tr>
               <tr>
                 <td><Sparkline data={otherRevenues} /></td>
@@ -149,7 +149,7 @@ const RevenueTrends = props => (
               </tr>
               <tr>
                 <td><strong>Total revenues</strong></td>
-                <td className={styles.alignRight}><strong>{utils.formatToSigFig_Dollar(currentYearTotal, 2)}</strong></td>
+                <td className={styles.alignRight}><strong>{utils.formatToSigFig_Dollar(currentYearTotal, 1)}</strong></td>
               </tr>
               <tr>
                 <td><Sparkline data={totalRevenues} /></td>

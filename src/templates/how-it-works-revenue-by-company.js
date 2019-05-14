@@ -6,6 +6,7 @@ import { withPrefixSVG } from '../components/utils/temp-link'
 import { DownloadDataLink } from '../components/layouts/icon-links/DownloadDataLink'
 
 import DefaultLayout from '../components/layouts/DefaultLayout'
+import GlossaryTerm from '../components/utils/glossary-term.js'
 
 class HowItWorksRevenueByCompany extends React.Component {
   componentDidMount () {
@@ -88,6 +89,8 @@ class HowItWorksRevenueByCompany extends React.Component {
                   <p>This data comes from the Department of the Interior's Office of Natural Resources Revenue and is calendar year data.</p>
 
                   <p>Choose a commodity or revenue type to filter the list of revenues. To search for a specific company, start typing the name of the company.</p>
+
+                  <p>This is <GlossaryTerm>calendar year</GlossaryTerm> data.</p>
 
                   <DownloadDataLink to="/downloads/federal-revenue-by-company/">Downloads and documentation</DownloadDataLink>
                 </div>

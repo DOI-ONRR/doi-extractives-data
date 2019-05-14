@@ -6,6 +6,7 @@ import { withPrefixSVG } from '../components/utils/temp-link'
 import { DownloadDataLink } from '../components/layouts/icon-links/DownloadDataLink'
 
 import DefaultLayout from '../components/layouts/DefaultLayout'
+import GlossaryTerm from '../components/utils/glossary-term.js'
 
 class HowItWorksRevenueByCompany extends React.Component {
   componentDidMount () {
@@ -33,7 +34,7 @@ class HowItWorksRevenueByCompany extends React.Component {
 
   render () {
     const title = this.props.pathContext.markdown.frontmatter.title || 'Federal Revenue by Company'
-    const reportYear = this.props.pathContext.markdown.frontmatter.report_year || 2017
+    const reportYear = this.props.pathContext.markdown.frontmatter.report_year || 2018
 
     return (
       <DefaultLayout>
@@ -67,6 +68,9 @@ class HowItWorksRevenueByCompany extends React.Component {
                   <li className={(reportYear === 2017) ? 'explore-subpage-tab active' : 'explore-subpage-tab'}>
                     <Link to="/how-it-works/federal-revenue-by-company/2017/">2017</Link>
                   </li>
+                  <li className={(reportYear === 2018) ? 'explore-subpage-tab active' : 'explore-subpage-tab'}>
+                    <Link to="/how-it-works/federal-revenue-by-company/2018/">2018</Link>
+                  </li>
                 </ul>
               </div>
             </section>
@@ -85,6 +89,8 @@ class HowItWorksRevenueByCompany extends React.Component {
                   <p>This data comes from the Department of the Interior's Office of Natural Resources Revenue and is calendar year data.</p>
 
                   <p>Choose a commodity or revenue type to filter the list of revenues. To search for a specific company, start typing the name of the company.</p>
+
+                  <p>This is <GlossaryTerm>calendar year</GlossaryTerm> data.</p>
 
                   <DownloadDataLink to="/downloads/federal-revenue-by-company/">Downloads and documentation</DownloadDataLink>
                 </div>

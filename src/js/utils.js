@@ -112,11 +112,13 @@ const utils = {
 	    return parseFloat(number).toFixed(precision)
   },
   formatToSigFig_Dollar (value, precision) {
-    let num = d3.format(setSigFigs(value, value))(value)
+    let num = d3.format(`.${precision}s`)(value)
+    //let num = d3.format(setSigFigs(value, value))(value)
+    
     let suffix = num.substring((num.length - 1))
-    let roundedNum = this.formatToDollarFloat(num, precision)
+    let dollarNum = this.formatToDollarFloat(num, (precision-1))
 
-    return this.getMetricLongUnit(roundedNum + suffix)
+    return this.getMetricLongUnit(dollarNum+suffix)
   },
   getMetricLongUnit (str) {
     let suffix = { k: 'k', M: ' million', G: ' billion' }

@@ -16,21 +16,19 @@ import standardTheme from './StandardDropDown.module.scss'
  ***/
 class DropDown extends React.Component {
   state = {
-    selectedKey: findDefaultKey(this.props),
+    selectedKey: findSelectedKey(this.props),
+    defaultKey: findDefaultKey(this.props),
     options: getOptions(this.props),
     dataSet: this.props.dataSet,
   }
 
   componentWillReceiveProps (nextProps) {
     this.setState({
-    	selectedKey: findDefaultKey(nextProps),
+      selectedKey: findSelectedKey(nextProps),
+    	defaultKey: findDefaultKey(nextProps),
     	options: getOptions(nextProps),
     	dataSet: nextProps.dataSet,
     })
-  }
-
-  shouldComponentUpdate (nextProps, nextState) {
-    return (this.state.selectedKey !== nextState.selectedKey)
   }
 
   onChangeHandler (e, key) {
@@ -46,15 +44,16 @@ class DropDown extends React.Component {
   }
 
   render () {
-  	let { options, selectedKey } = this.state
+  	let { options, selectedKey, defaultKey } = this.state
     let styles = (this.props.theme === 'year')? yearTheme : standardTheme;
+    defaultKey = (selectedKey !== undefined)? undefined : defaultKey;
 
     return (
       <div className={styles.root}>
-        <select onChange={this.onChangeHandler.bind(this)} defaultValue={selectedKey}>
+        <select onChange={this.onChangeHandler.bind(this)} defaultValue={defaultKey} value={selectedKey}>
           {options &&
 						options.map((option, index) => {
-						  let name, value, isDefault
+						  let name, value
 
 						  if (typeof option === 'string' || typeof option === 'number') {
 						    name = value = option
@@ -65,7 +64,7 @@ class DropDown extends React.Component {
 						  }
 
 						  return (
-						    <option className={styles.option} key={index} value={value}>
+						    <option className={styles.option} key={index+"_"+value} value={value}>
 						      {name}
 						    </option>
 						  )
@@ -105,12 +104,15 @@ export default connect(
 
 const findDefaultKey = props => {
   let defaultKey
-  let { options, dataSet, defaultOptionIndex } = props
+  let { options, dataSet, defaultOptionIndex, defaultOptionValue } = props
   if (dataSet) {
     defaultKey = dataSet.selectedDataKey
   }
   else if(options && defaultOptionIndex) {
     defaultKey = options[defaultOptionIndex];
+  }
+  else if(options && defaultOptionValue) {
+    defaultKey = defaultOptionValue;
   }
   else if (options) {
     defaultKey = options.find((option, index) => {
@@ -119,6 +121,21 @@ const findDefaultKey = props => {
     defaultKey = (typeof defaultKey === 'object') ? defaultKey.key : defaultKey
   }
   return defaultKey
+}
+
+const findSelectedKey = props => {
+  let selectedKey
+  let { options, dataSet, selectedOptionIndex, selectedOptionValue } = props
+  if (dataSet) {
+    selectedKey = dataSet.selectedDataKey
+  }
+  else if(options && selectedOptionValue) {
+    selectedKey = selectedOptionValue;
+  }
+  else if(options && selectedOptionIndex) {
+    selectedKey = options[selectedOptionIndex];
+  }
+  return selectedKey
 }
 
 const getOptions = props => {

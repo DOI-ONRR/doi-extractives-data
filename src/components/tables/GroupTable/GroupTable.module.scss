@@ -1,0 +1,21 @@
+@value colors: "../../../css-global/colors.scss";
+@value grayLight as __totalSumBgRow, grayPale as _groupSumBgRow, grayDarkest as _textColor from colors;
+@value variables: "../../../css-global/variables.scss";
+@value baseFontFamily as _baseFontFamily from variables;
+
+
+.summaryGroupRow {
+	background-color: _groupSumBgRow;
+}
+.summaryGroupRow > td {
+	color: _textColor;
+	background-color: _groupSumBgRow;
+}
+
+.summaryTotalRow {
+	background-color: __totalSumBgRow;
+}
+.summaryTotalRow > td {
+	color: _textColor;
+	background-color: __totalSumBgRow;
+}

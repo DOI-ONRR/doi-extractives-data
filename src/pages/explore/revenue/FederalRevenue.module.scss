@@ -3,6 +3,16 @@
 	margin: 2rem 0;
 }
 
+.tableToolbarContainer {
+	padding: 0rem 1rem;
+	margin-bottom: 10px;
+}
+
+.tableToolbarButton {
+	float: right;
+}
+
+
 .filterContainer > div {
 	float: left;
 	padding: 0rem 1rem;
@@ -13,12 +23,19 @@
 	margin-bottom: 0.5rem;
 }
 
+.tableContainer {
+	display: inline-block;
+	width: 100%;
+}
+
 // Media queries
 
 @media only screen and (max-width: 600px) {
+
+
 	.filterContainer > div {
 		display: block;
 		padding: 0rem 1rem;
 		width: 100%;
 	}
-  }
+}

@@ -45,6 +45,7 @@ const RevenueTrends = props => (
       previousYearMaxDate.setFullYear(previousYearMaxDate.getFullYear() -1)
 
       let currentYearData = (fiscalYearData.splice(0,1)).map(calculateRevenueTypeAmountsByYear)[0]
+      calculateOtherRevenues(currentYearData);
       let currentYearTotal = (currentYearData.amountByRevenueType.Royalties+
             currentYearData.amountByRevenueType.Bonus+
             currentYearData.amountByRevenueType.Rents+
@@ -54,7 +55,9 @@ const RevenueTrends = props => (
 
       let previousYearData = JSON.parse(JSON.stringify(trendData))[0]
       previousYearData.data  = previousYearData.data.filter(item => new Date(item.node.RevenueDate) <= previousYearMaxDate)
+
       previousYearData = [previousYearData].map(calculateRevenueTypeAmountsByYear)[0];
+      calculateOtherRevenues(previousYearData);
       let previousYearTotal = previousYearData.amountByRevenueType.Royalties +
                               previousYearData.amountByRevenueType.Bonus +
                               previousYearData.amountByRevenueType.Rents +
@@ -66,11 +69,14 @@ const RevenueTrends = props => (
       // Sort trend data asc for spark lines
       trendData.sort((a, b) => (a.fiscalYear > b.fiscalYear) ? 1 : -1)
       let sparkLineData = trendData.map(calculateRevenueTypeAmountsByYear)
-
+  
       let royalties = sparkLineData.map(yearData => ({'year':yearData.year, 'amount': yearData.amountByRevenueType.Royalties}) )
       let bonuses = sparkLineData.map(yearData => ({'year':yearData.year, 'amount': yearData.amountByRevenueType.Bonus}) )
       let rents = sparkLineData.map(yearData => ({'year':yearData.year, 'amount': yearData.amountByRevenueType.Rents}) )
-      let otherRevenues = sparkLineData.map(yearData => ({'year':yearData.year, 'amount': yearData.amountByRevenueType['Other Revenues']}) )
+      let otherRevenues = sparkLineData.map(yearData => {
+        calculateOtherRevenues(yearData);
+        return ({'year':yearData.year, 'amount': yearData.amountByRevenueType['Other Revenues']}); 
+      })
       let totalRevenues = sparkLineData.map(yearData => (
         {
           'year':yearData.year, 
@@ -169,6 +175,15 @@ const RevenueTrends = props => (
 )
 
 export default RevenueTrends
+
+const calculateOtherRevenues = (data) => {
+
+  let otherRevenuesAmount = (data.amountByRevenueType['Other Revenues'])? data.amountByRevenueType['Other Revenues'] : 0;
+  let inspectionFeesAmount = (data.amountByRevenueType['Inspection Fees'])? data.amountByRevenueType['Inspection Fees'] : 0;
+  let civilPenaltiesAmount = (data.amountByRevenueType['Civil Penalties'])? data.amountByRevenueType['Civil Penalties'] : 0;
+  
+  data.amountByRevenueType['Other Revenues'] = otherRevenuesAmount+inspectionFeesAmount+civilPenaltiesAmount;
+}
 
 const calculateRevenueTypeAmountsByYear = (yearData, index) => {
   let fiscalYear = yearData.fiscalYear;

@@ -82,4 +82,36 @@ In the EITI era, our site contained data and supporting content for domains outs
 - Case studies for counties with significant economic reliance on extractive industries
 - National extractive industries production from all land categories (private, state, and federal)
 
-We could tell from our analytics that this data was useful to some 
+While this data was available elsewhere (we pulled it in from other government agencies), our analytics showed some users were accessing it. It no longer aligned with our product vision, but it had at least some value to some users.
+
+Since it didn't align with our product vision, but still had demonstrable user value, I wanted to evaluate it further.
+
+I developed a simple content evaluation formula to help guide these tricky content decisions, balancing three variables:
+
+- anticipated or observed user benefit
+- alignment with product vision
+- anticipated or observed creation and maintenance burden
+
+
+| Score range | Priority        | Description                                                                                                                |
+|-------------|-----------------|----------------------------------------------------------------------------------------------------------------------------|
+| 0–10        | low priority    | Content isn’t worth the time and effort to produce or will incur too high a maintenance burden relative to its user value. |
+| 10–20       | medium priority | Content might be worth the time and effort but should not be first priority.                                               |
+| 20–30       | high priority   | Content is clearly worth creating and should be first priority.  
+
+Given some of these categories could be largely subjective, I tried to attach specific, quantitative indicators for each range. For instance, for "Anticipated or observed user benefit," I created three indicators for the 0–10 range:
+
+- We have conducted research that demonstrates at least 80% of sampled current and/or target users would receive no benefit from the content.
+
+- The content is available elsewhere, where it is more likely to be sought and discovered by users.
+
+- If content already exists on the site, our analytics show zero referrals and fewer than 5% total pageviews per month.
+
+While these indicators aren't perfect, they do give us some parameters to evaluate the content against. And even if we don't evaluate every piece of content against this formula, it frames the way we think about our content choices.
+
+## The limits of user-centered design
+
+There's no question that a user-centered approach to product design is the way to go, and its introduction to the development of digital government services is a major win for public. But it isn't the only factor to consider.
+
+Your ability to deliver user value is always constrained by, well, your ability to deliver user value. There are always trade-offs and edge cases. And as the composition of your team changes or your users' needs evolve, you have to be ready to adapt.
+

@@ -34,6 +34,7 @@ export const BY_LAND_CLASS = 'by_land_class';
 export const BY_REVENUE_TYPE = 'by_revenue_type';
 export const BY_FISCAL_YEAR = 'by_fiscal_year';
 export const BY_CALENDAR_YEAR = 'by_calendar_year';
+export const BY_REVENUE_CATEGORY = 'by_revenue_category';
 
 // Data set property keys
 export const DATA_SET_KEYS = {
@@ -240,9 +241,7 @@ export default createReducer(initialState, {
   [SET_SELECTED_YEAR_BY_ID]: setSelectedYearByIdHandler
 })
 
-// Utils
-
-
+// This is used by graph components(charts, legends, selectors) to display all related data set info
 const updateGraphDataSet = (id, source, groupByKey, filter, options) => {
   if (source === undefined) return source
 
@@ -255,7 +254,7 @@ const updateGraphDataSet = (id, source, groupByKey, filter, options) => {
 
   }
   
-  // We add this for now until we update our data to always include units and long units
+  // Defaults
   units = '$'
   longUnits = 'dollars'
 
@@ -329,7 +328,9 @@ const updateGraphDataSet = (id, source, groupByKey, filter, options) => {
 
 
 
+// Utils
 // The following Utils are used to resolve differences in data identifiers
+// Our data will become more consistent so this should go away
 const getDate = data => data.ProductionDate || data.RevenueDate
 const getMonth = data => data.ProductionMonth || data.RevenueMonth
 const getYear = data => data.ProductionYear || data.RevenueYear || data.Year || data.CalendarYear

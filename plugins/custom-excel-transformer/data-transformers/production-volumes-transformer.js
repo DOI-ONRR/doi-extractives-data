@@ -35,6 +35,7 @@ const SOURCE_COMMODITIES_FISCAL_YEAR = {
   OilProductionVolume: "Oil (bbl)",
   GasProductionVolume: "Gas (mcf)",
   CoalProductionVolume: "Coal (tons)",
+  CoalTonProductionVolume: "Coal (ton)",
 };
 
 /* Map the source column name to the display name we want to use for that product */
@@ -45,6 +46,7 @@ const SOURCE_COLUMN_TO_PRODUCT_DISPLAY_NAME = {
 	[SOURCE_COMMODITIES_FISCAL_YEAR.OilProductionVolume]: "Oil",
 	[SOURCE_COMMODITIES_FISCAL_YEAR.GasProductionVolume]: "Gas",
 	[SOURCE_COMMODITIES_FISCAL_YEAR.CoalProductionVolume]: "Coal",
+	[SOURCE_COMMODITIES_FISCAL_YEAR.CoalTonProductionVolume]: "Coal",
 };
 
 /* Map the source column name to the units used for that product */
@@ -55,6 +57,7 @@ const SOURCE_COLUMN_TO_PRODUCT_UNITS = {
 	[SOURCE_COMMODITIES_FISCAL_YEAR.OilProductionVolume]: "bbl",
 	[SOURCE_COMMODITIES_FISCAL_YEAR.GasProductionVolume]: "mcf",
 	[SOURCE_COMMODITIES_FISCAL_YEAR.CoalProductionVolume]: "tons",
+	[SOURCE_COMMODITIES_FISCAL_YEAR.CoalTonProductionVolume]: "tons",
 };
 
 const PRODUCT_UNITS_TO_LONG_UNITS = {
@@ -78,6 +81,10 @@ const LOCATION_CATEGORY_TYPE_TO_PRODUCTION_CATEGORY ={
 		"Offshore": CONSTANTS.NATIVE_AMERICAN,
 		"Onshore": CONSTANTS.NATIVE_AMERICAN,
 	},
+	"Native American":  {
+		"Offshore": CONSTANTS.NATIVE_AMERICAN,
+		"Onshore": CONSTANTS.NATIVE_AMERICAN,
+	},
 }
 
 /* Use ES5 exports in order to be compatible with version 1.x of gatsby */
@@ -93,7 +100,7 @@ const createProductVolumeNodeByProduct = (productVolumeData, type) => {
 	  ProductionYear: productVolumeData[SOURCE_COLUMNS.CalendarYear],
 	  FiscalYear: productVolumeData[SOURCE_COLUMNS.FiscalYear],
 	  LandClass: productVolumeData[SOURCE_COLUMNS.CalendarYear],
-	  LandCategory: productVolumeData[SOURCE_COLUMNS.LandCategory],
+	  LandCategory: productVolumeData[SOURCE_COLUMNS.LandCategory].trim(),
 	  OnshoreOffshore: productVolumeData[SOURCE_COLUMNS.OnshoreOffshore],
 	  ProductName: SOURCE_COLUMN_TO_PRODUCT_DISPLAY_NAME[productVolumeData[SOURCE_COLUMNS.Commodity]] || SOURCE_COLUMN_TO_PRODUCT_DISPLAY_NAME[productVolumeData[SOURCE_COLUMNS.Product]],
 	  Volume: productVolumeData[SOURCE_COLUMNS.Volume],

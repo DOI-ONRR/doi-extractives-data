@@ -32,7 +32,7 @@ permalink: /how-it-works/offshore-oil-gas/
         /
       </div>
       <h1>Offshore Oil &amp; Gas</h1>
-      <p class="revenues_subpage-intro_text">The Outer Continental Shelf Lands Act (OCSLA) of 1953 grants the Secretary of the Department of the Interior (DOI) the authority to manage offshore energy resources and to develop regulations to carry out that authority. Three agencies within DOI — BOEM, BSEE, and ONRR — work together to manage, regulate, and collect revenue from 33 million leased acres across the <glossary-term>Outer Continental Shelf</glossary-term>.</p>
+      <p class="revenues_subpage-intro_text">The Outer Continental Shelf Lands Act (OCSLA) of 1953 grants the Secretary of the Department of the Interior (DOI) the authority to manage offshore energy resources and to develop regulations to carry out that authority. Three agencies within DOI — BOEM, BSEE, and ONRR — work together to manage, regulate, and collect revenue from 13 million active leased acres across the <glossary-term>Outer Continental Shelf</glossary-term>.</p>
     </div>
     <div class="revenues_subpage-office_container revenues_subpage-office_container_layout">
       <div class="revenues_subpage-office container">

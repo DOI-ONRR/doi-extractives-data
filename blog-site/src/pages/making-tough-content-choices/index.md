@@ -59,5 +59,27 @@ With our product framing toolkit assembled, we could now audit and evaluate cont
 
 I'm certain there are people out there for whom auditing content is a dream come true; I am not one of them. I do, however, cherish the role of content auditing in the practice of content strategy. You simply can't move forward with a strategic vision without taking into account the existing disposition of site content.
 
-![Spreadsheet showing content audit with columns for URL, Title, File type, Description, Word count, Reading grade level, Notes, Tags, Maintenace requirements](./screen-content-audit.png)
+![Spreadsheet showing content audit with columns for URL, Title, File type, Description, Word count, Reading grade level, Notes, Tags, Maintenance requirements](./screen-content-audit.png)
 
+The content audit isn't simply an inventory of existing content; it endeavors to capture characteristics of the content that impact our decision making. That is, we're not only evaluating content according to alignment with our revised product vision, but also trying to understand the previous and current governance of the content, its relative maintenance requirements, and its value to users. In doing so, we reveal the limits of user-centered content design: your team has to be capable of delivering on the user needs you've identified. So that's where we head next...
+
+## User needs are just part of the equation
+
+Our team tries to take a holistic approach to identifying user needs. We examine analytics, we interview users, we iterate and conduct more research...our process starts and ends with users in mind.
+
+But here's the truth often suppressed when discussing user-centered design: user needs are part of the equation, albeit an integral part. Your team's ability to deliver on user needs is an avoidable constraint.
+
+So how do we go about weighing user needs relative our team's capacity to deliver on them?
+
+### Content evaluation and prioritization
+
+Excuse the use of the word "prioritization" here. It's an overly artful term for which I've struggled to find a sufficient alternative. The point is, you can't do everything. You have to make tough choices. Here's an example.
+
+In the EITI era, our site contained data and supporting content for domains outside the scope of our revised product vision. Our data included:
+
+- National and state GDP for the overall extractive industries sector
+- Wage and salary data for the overall extractive industries sector
+- Case studies for counties with significant economic reliance on extractive industries
+- National extractive industries production from all land categories (private, state, and federal)
+
+We could tell from our analytics that this data was useful to some 

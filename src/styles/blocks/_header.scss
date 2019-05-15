@@ -37,7 +37,7 @@
 }
 
 .header-image {
-  max-width: 350px;
+  max-width: 400px;
   width: $nrrd-logo-width;
 
   @include respond-to(tiny-down) {

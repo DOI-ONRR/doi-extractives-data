@@ -37,11 +37,11 @@
 }
 
 .header-image {
-  max-width: 316px;
+  max-width: 350px;
   width: $nrrd-logo-width;
 
-  @include respond-to(medium-up) {
-    width: auto;
+  @include respond-to(tiny-down) {
+    width: 220px;
   }
 }
 

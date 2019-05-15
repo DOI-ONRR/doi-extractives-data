@@ -148,7 +148,7 @@ redirect_from: /how-it-works/production/
           </div>
           <div>
             <h4 class="h3 landing-heading"><custom-link to="/how-it-works/federal-revenue-by-company">Federal revenue by company</custom-link></h4>
-            <p>See federal non-tax revenues from natural resource extraction on federal land in 2017 by commodity, revenue type, and company.</p>
+            <p>See federal non-tax revenues from natural resource extraction on federal land by commodity, revenue type, and company.</p>
             <p><custom-link to="/how-it-works/federal-revenue-by-company">See revenue by company</custom-link></p>
           </div>
           <div>

@@ -17,7 +17,7 @@ const Sparkline = ({data}) => {
 
   useEffect(() => {
     var width = 75;
-    var height = 15;
+    var height = 20;
     var x = d3.scaleLinear().range([0, width - 3]);
     var y = d3.scaleLinear().range([height - 4, 0]);
     var line = d3.line()

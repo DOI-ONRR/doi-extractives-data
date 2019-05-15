@@ -100,7 +100,7 @@ const createRevenueNode = (revenueData, type) => {
   }
 
   if(revenueNode.FiscalYear === undefined) {
-  	revenueNode.FiscalYear = (revenueNode.RevenueDate.getMonth() > 9 ) ? 
+  	revenueNode.FiscalYear = (revenueNode.RevenueDate.getMonth() >= 9 ) ? 
   		(revenueNode.RevenueDate.getYear()+1901).toString()
   		:
   		(revenueNode.RevenueDate.getYear()+1900).toString();

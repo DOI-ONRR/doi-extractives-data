@@ -109,7 +109,7 @@ Given some of these categories are wildly subjective, I tried to attach specific
 
 - If content already exists on the site, our analytics show zero referrals and fewer than 5% total pageviews per month.
 
-While these indicators aren't perfect, they do give us some parameters to evaluate the content against. And even if we don't use the formula to evaluate every single piece of content, it still frames the way we think about our content choices. Simply documenting our a process for evaluating content can impact the way a team approaches those tough content choices.
+While these indicators aren't perfect, they do give us some parameters to evaluate the content against. And even if we don't use the formula to evaluate every single piece of content, it still frames the way we think about our content choices. Simply documenting a process for evaluating content can impact the way a team approaches those tough content choices.
 
 ## The limits of user-centered design
 

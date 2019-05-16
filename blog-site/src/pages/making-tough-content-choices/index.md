@@ -111,7 +111,7 @@ Given some of these categories are wildly subjective, I tried to attach specific
 
 While these indicators aren't perfect, they do give us some parameters to evaluate the content against. And even if we don't use the formula to evaluate every single piece of content, it still frames the way we think about our content choices. Simply documenting a process for evaluating content can impact the way a team approaches those tough content choices.
 
-## The limits of user-centered design
+## Understanding your constraints _is_ user-centered design
 
 There's no question that a user-centered approach to product design is the way to go, and its introduction to the development of government digital services is a major win for the public. But it isn't the only factor to consider.
 

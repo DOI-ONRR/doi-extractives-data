@@ -61,7 +61,7 @@ I'm certain there are people out there for whom auditing content is a dream come
 
 ![Spreadsheet showing content audit with columns for URL, Title, File type, Description, Word count, Reading grade level, Notes, Tags, Maintenance requirements](./screen-content-audit.png)
 
-The content audit isn't simply an inventory of existing content; it endeavors to capture characteristics of the content that impact our decision making. That is, we're not only evaluating content according to alignment with our revised product vision, but also trying to understand the previous and current governance of the content, its relative maintenance requirements, its complexity, its structure, its value to users, and so on. 
+The content audit isn't just an inventory of existing content; it endeavors to capture characteristics of the content that impact our decision making. That is, we're not only evaluating content according to alignment with our revised product vision, but also trying to understand the previous and current governance of the content, its relative maintenance requirements, its complexity, its structure, its value to users, and so on. 
 
 A content audit will often reveal the limits of user-centered content design: your team has to be capable of delivering on the user needs you've identified. So that's where we head next...
 

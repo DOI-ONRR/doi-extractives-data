@@ -143,9 +143,9 @@ class HowItWorksRevenueByCompany extends React.Component {
                 <div className="filter-description_wrapper">
                   <h1 data-filter-description="" className="filter-description filter-description_open">
                     <span href="#type-selector" className="filter-part" data-key="type">All revenue</span>
-                    from
+                    {' '}from{' '}
                     <span href="#commodity-selector" className="filter-part" data-key="commodity">all commodities</span>
-                    extraction on federal lands and waters ({reportYear})
+                    {' '}extraction on federal lands and waters ({reportYear})
                   </h1>
                 </div>
 

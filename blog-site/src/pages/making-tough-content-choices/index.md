@@ -113,7 +113,7 @@ While these indicators aren't perfect, they do give us some parameters to evalua
 
 ## The limits of user-centered design
 
-There's no question that a user-centered approach to product design is the way to go, and its introduction to the development of digital government services is a major win for public. But it isn't the only factor to consider.
+There's no question that a user-centered approach to product design is the way to go, and its introduction to the development of government digital services is a major win for public. But it isn't the only factor to consider.
 
 Your ability to deliver user value is always constrained by, well, _your ability to deliver user value_. There are always trade-offs and edge cases. And as the composition of your team changes or your users' needs evolve, you have to be ready to adapt.
 

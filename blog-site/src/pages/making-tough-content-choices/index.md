@@ -19,7 +19,7 @@ Common to every content strategy I've developed is an unavoidable reality: we mu
 
 In practice, here's what that meant for the site's content strategy:
 
-- The [EITI standard](https://eiti.org/about/how-we-work#implementing-the-standard-nationally) mandates the formation of a multi-stakeholder group to define how EITI will work in the respective country. For the U.S., that meant, in part, that the multi-stakeholder performed the content governance role for the site.
+- The [EITI standard](https://eiti.org/about/how-we-work#implementing-the-standard-nationally) mandates the formation of a multi-stakeholder group to define how EITI will work in the respective country. For the U.S., that meant, in part, that the multi-stakeholder group performed the content governance role for the site.
 - The standard requires that each member country supply an independent administrator, a non-governmental entity to help coordinate the implementation of the standard. In our case, it was an outside contractor, the staff for which also developed much of the site's content.
 - The scope of data and content under EITI went beyond the federal government's management and regulatory authority over extractive industries and included data and content related to the economic impact of the extractives sector on local economies and Gross Domestic Product.
 

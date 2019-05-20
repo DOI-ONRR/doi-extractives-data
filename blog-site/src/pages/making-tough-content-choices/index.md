@@ -71,7 +71,7 @@ Our team tries to take a holistic approach to identifying user needs. We examine
 
 But here's a truth that often goes unmentioned in discussions about user-centered design: user needs are only _part_ of the equation, albeit an integral part. Your team's ability to deliver on user needs is an unavoidable constraint.
 
-So how do we go about weighing user needs relative our team's capacity to deliver on them?
+So how do we go about weighing user needs relative to our team's capacity to deliver on them?
 
 ### Content evaluation and prioritization
 

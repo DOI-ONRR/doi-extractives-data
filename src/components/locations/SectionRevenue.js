@@ -158,7 +158,7 @@ const SectionRevenue = props => {
           </div>
           :						
           <div className="chart-description">
-							No natural resources were produced on federal land in {usStateData.title} in { year }, so ONRR did not collect any non-tax revenues.
+							No natural resources were produced on federal land in {usStateData.title} in { allYears[0] }, so ONRR did not collect any non-tax revenues.
           </div>
         }
         <h4>Federal tax revenue</h4>

@@ -11,14 +11,24 @@ import GlossaryTerm from '../utils/glossary-term.js'
 import RevenueTypeTable from '../locations/RevenueTypeTable'
 import RevenueProcessTable from '../locations/RevenueProcessTable'
 import StateRevenue from '../locations/opt_in/StateRevenue'
-
-let year = 2017
+import utils from '../../js/utils'
+import ChartTitle from '../charts/ChartTitleCollapsible'
 
 const SectionRevenue = props => {
   const usStateData = props.usStateMarkdown.frontmatter
   const usStateFields = props.usStateMarkdown.fields || {}
 
   const usStateRevenueCommodities = ALL_US_STATES_REVENUES[usStateData.unique_id] && ALL_US_STATES_REVENUES[usStateData.unique_id].commodities
+
+  const allYears = Object.keys(usStateRevenueCommodities.All).map(year => parseInt(year));
+  allYears.sort((a,b) => b-a)
+  const allCommoditiesChartName = 'All commodities';
+  let allCommoditiesSlug = utils.formatToSlug(allCommoditiesChartName, { lower: true })
+  const allCommoditiesChartToggle = 'federal-revenue-county-figures-chart-'+allCommoditiesSlug;
+  let allCommoditiesValues = {}
+  allYears.map(year => allCommoditiesValues[year] = usStateRevenueCommodities.All[year].revenue)
+
+  console.log(usStateRevenueCommodities.All, allYears, allCommoditiesValues);
 
   return (
     <section id="revenue" is="year-switcher-section" className="federal revenue">
@@ -50,12 +60,12 @@ const SectionRevenue = props => {
 
             <p>For details about the laws and policies that govern how rights are awarded to companies and what they pay to extract natural resources on federal land: <Link to="/how-it-works/coal/">coal</Link>, <Link to="/how-it-works/onshore-oil-gas/">oil and gas</Link>, <Link to="/how-it-works/onshore-renewables/">renewable resources</Link>, and <Link to="/how-it-works/minerals/">hardrock minerals</Link>.</p>
 
-            <p>The federal government collects different kinds of fees at each phase of natural resource extraction. This chart shows how much federal revenue was collected in <GlossaryTerm>Calendar year (CY)</GlossaryTerm> { year } for production or potential production of natural resources on federal land in { usStateData.title }, broken down by phase of production.</p>
+            <p>The federal government collects different kinds of fees at each phase of natural resource extraction. This chart shows how much federal revenue was collected in <GlossaryTerm>Calendar year (CY)</GlossaryTerm> { allYears[0] } for production or potential production of natural resources on federal land in { usStateData.title }, broken down by phase of production.</p>
 
 		                <div id="fee-summaries" className="tab-interface">
 		                    <ul className="eiti-tabs info-tabs" role="tablist">
 		                        <li role="presentation">
-		                            <a href="#revenues" tabIndex="0" role="tab" aria-controls="revenues" aria-selected="true">Federal revenue by phase (CY {year})</a>
+		                            <a href="#revenues" tabIndex="0" role="tab" aria-controls="revenues" aria-selected="true">Federal revenue by phase (CY {allYears[0]})</a>
 		                        </li>
 		                        <li role="presentation">
 		                            <a href="#story" tabIndex="-1" role="tab" aria-controls="story" className="link-charlie">Revenue details by phase</a>
@@ -67,7 +77,7 @@ const SectionRevenue = props => {
 		                        id='revenue-types'
 		                        locationId={usStateData.unique_id}
 		                        locationName={usStateData.title}
-		                        year={year}
+		                        year={allYears[0]}
 		                    />
 		                  </article>
 
@@ -76,7 +86,7 @@ const SectionRevenue = props => {
 		                        id='revenue-process'
 		                        locationId={usStateData.unique_id}
 		                        locationName={usStateData.title}
-		                        year={year}
+		                        year={allYears[0]}
 		                    />
 		                  </article>
 
@@ -84,7 +94,7 @@ const SectionRevenue = props => {
 
 		              <StickyWrapper bottomBoundary="#federal-revenue-county-table" innerZ="10000">
 				            <StickyHeader headerSize="h4" headerText={'Revenue from production on federal land by county'}>
-				                <YearSelector years={[2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010, 2009, 2008]} classNames="flex-row-icon" />
+				                <YearSelector years={allYears} classNames="flex-row-icon" />
 				            </StickyHeader>
 				           </StickyWrapper>
 
@@ -104,16 +114,54 @@ const SectionRevenue = props => {
                 </div>
               </div>
 
-              <section id="federal-revenue-county-table" className="county-map-table">
+              <section id={"federal-revenue-county-table"} className="county-map-table">
+                <div className="row-container">
 
+                  <div className="chart-container">
+                    <ChartTitle
+                      isIcon={true}
+                      units={'dollars'}
+                      chartValues={allCommoditiesValues}
+                      chartToggle={'federal-revenue-county-figures-'+allCommoditiesSlug} >{allCommoditiesChartName}</ChartTitle>
+
+                    <figure className="chart" id={'federal-revenue-county-figures-chart-'+allCommoditiesSlug}>
+                      <eiti-bar-chart
+                        aria-controls={'federal-revenue-county-figures-'+allCommoditiesSlug}
+                        data={JSON.stringify(allCommoditiesValues)}
+                        x-range={"["+allYears[allYears.length-1]+","+allYears[0]+"]"}
+                        x-value={allYears[0]}
+                        data-units={'dollars'}>
+                      </eiti-bar-chart>
+                      <figcaption id={'federal-revenue-county-figures-'+allCommoditiesSlug}>
+                        <span className="caption-data">
+                          <span className="eiti-bar-chart-y-value" data-format=",">
+                            {(allCommoditiesValues[allYears[0]]) ? (allCommoditiesValues[allYears[0]]).toLocaleString() : ('0').toLocaleString() }{' '}
+                            </span>
+                          {'dollars'}{' '}of {allCommoditiesChartName.toLowerCase()} were produced on federal land in {' ' + usStateData.title + ' in '}
+                          <span className="eiti-bar-chart-x-value">{ allYears[0] }</span>.
+                        </span>
+                        <span className="caption-no-data" aria-hidden="true">
+                                                    There is no data about production of {allCommoditiesChartName.toLowerCase()} in{' '}
+                          <span className="eiti-bar-chart-x-value">{ allYears[0] }</span>.
+                        </span>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
               </section>
             </section>
           </div>
-          :						<div className="chart-description">
+          :						
+          <div className="chart-description">
 							No natural resources were produced on federal land in {usStateData.title} in { year }, so ONRR did not collect any non-tax revenues.
           </div>
         }
+        <h4>Federal tax revenue</h4>
 
+        <div>
+          <p>Individuals and corporations (specifically C-corporations) pay income taxes to the IRS. The federal corporate income tax rate tops out at 21%. Public policy provisions, such as tax expenditures, can decrease corporate income tax and other revenue payments in order to promote other policy goals.</p>
+          <p>Learn more about <Link to="/how-it-works/revenues/#all-lands-and-waters">revenue from extraction on all lands and waters</Link>.</p>
+        </div>
       </section>
 
       <section id="state-revenue" className="state revenue">

@@ -87,6 +87,8 @@ const SectionFederalProduction = props => {
             /* Start County Map Variables */
             let mapToggle = 'federal-production-' + productSlug + '-counties'
 
+            console.log(productVolumes, chartToggle, productName);
+
             return (
               <section key={index} id={'federal-production-' + productSlug } className="product full-width">
                 <div className="row-container">

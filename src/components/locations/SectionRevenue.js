@@ -19,16 +19,21 @@ const SectionRevenue = props => {
   const usStateFields = props.usStateMarkdown.fields || {}
 
   const usStateRevenueCommodities = ALL_US_STATES_REVENUES[usStateData.unique_id] && ALL_US_STATES_REVENUES[usStateData.unique_id].commodities
-
-  const allYears = Object.keys(usStateRevenueCommodities.All).map(year => parseInt(year));
-  allYears.sort((a,b) => b-a)
-  const allCommoditiesChartName = 'All commodities';
-  let allCommoditiesSlug = utils.formatToSlug(allCommoditiesChartName, { lower: true })
-  const allCommoditiesChartToggle = 'federal-revenue-county-figures-chart-'+allCommoditiesSlug;
+  let allYears = []
   let allCommoditiesValues = {}
-  allYears.map(year => allCommoditiesValues[year] = usStateRevenueCommodities.All[year].revenue)
+  let allCommoditiesSlug, allCommoditiesChartName, allCommoditiesChartToggle = ""
+  if(usStateRevenueCommodities) {
+    allYears = Object.keys(usStateRevenueCommodities.All).map(year => parseInt(year));
+    allYears.sort((a,b) => b-a)
+    allCommoditiesChartName = 'All commodities';
+    allCommoditiesSlug = utils.formatToSlug(allCommoditiesChartName, { lower: true })
+    allCommoditiesChartToggle = 'federal-revenue-county-figures-chart-'+allCommoditiesSlug;
+    
+    allYears.map(year => allCommoditiesValues[year] = usStateRevenueCommodities.All[year].revenue)
 
-  console.log(usStateRevenueCommodities.All, allYears, allCommoditiesValues);
+    console.log(usStateRevenueCommodities.All, allYears, allCommoditiesValues);
+  }
+
 
   return (
     <section id="revenue" is="year-switcher-section" className="federal revenue">

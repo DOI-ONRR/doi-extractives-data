@@ -12,7 +12,7 @@ import RevenueTypeTable from '../locations/RevenueTypeTable'
 import RevenueProcessTable from '../locations/RevenueProcessTable'
 import StateRevenue from '../locations/opt_in/StateRevenue'
 
-let year = 2017
+let year = 2018
 
 const SectionRevenue = props => {
   const usStateData = props.usStateMarkdown.frontmatter

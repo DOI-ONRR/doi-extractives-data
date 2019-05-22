@@ -44,6 +44,10 @@ const DefaultLayout = ({ children }) => {
           // type
           { name: 'og:type', content: 'website' },
 
+          // language
+
+          { name: 'lang', content: 'en' },
+
           // title
           { name: 'og:title', content: 'Home | Natural Resources Revenue Data' },
           { name: 'twitter:title', content: 'Home | Natural Resources Revenue Data' },

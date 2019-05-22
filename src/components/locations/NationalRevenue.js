@@ -26,9 +26,9 @@ import FEDERAL_PRODUCTION_DATA from '../../../static/data/national_federal_produ
 import PRODUCTION_UNITS from '../../../static/data/production_units.yml'
 
 // @todo: pass in years from data
-const years = [2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010, 2009, 2008]
-const year = '2017'
-const YEAR_RANGE = '[2008, 2017]'
+const years = [2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010, 2009]
+const year = '2018'
+const YEAR_RANGE = '[2009, 2018]'
 
 const NationalRevenue = props => {
   const REVENUE_COMMODITIES = NATIONAL_REVENUES[props.stateId].commodities

@@ -35,6 +35,7 @@ const DefaultLayout = ({ children }) => {
   return (
     <div>
       <Helmet
+        htmlAttributes={{ lang: 'en' }}
         meta={[
           { name: 'google-site-verification', content: 'OxyG3U-Vtui-uK6wHUeOw83OgdfcfxvsWWZcb5x7aZ0' },
           // Mobile Specific Metas
@@ -43,10 +44,6 @@ const DefaultLayout = ({ children }) => {
 
           // type
           { name: 'og:type', content: 'website' },
-
-          // language
-
-          { name: 'lang', content: 'en' },
 
           // title
           { name: 'og:title', content: 'Home | Natural Resources Revenue Data' },

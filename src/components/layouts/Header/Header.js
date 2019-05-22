@@ -67,9 +67,8 @@ const Header = props => {
           <ul className="header-nav_top">
             <li style={{width:'200px'}} className="header-nav_item_top">{" "}</li>
             <li className="header-nav_item_top">
-              <a href="#" onClick={() => props.glossaryTermSelected('', true)} className="header-nav_item_link_top js-glossary-toggle" alt="this is the glossary drawer">Glossary</a>
+              <a href="#" onClick={() => props.glossaryTermSelected('', true)} className="header-nav_item_link_top js-glossary-toggle" alt="this is the glossary drawer">Glossary</a> |
             </li>
-            <span className="header-nav_item_link_spacer"> | </span>
             <li className="header-nav_item_top">
               <Link {...downloadClassNames} to="/downloads/">Download data </Link>
             </li> <li className="header-nav_item_top">

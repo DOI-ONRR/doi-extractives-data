@@ -145,9 +145,9 @@ all_production:
     - product: Wind
       name: Wind
       units: Mwh
-      value: 20069089.05
+      value: 19912946.57
       rank: 3
-      percent: 8.84
+      percent: 8.78
     - product: Natural Gas
       name: Natural Gas
       units: Mcf
@@ -157,22 +157,9 @@ all_production:
     - product: Crude Oil
       name: Crude Oil
       units: bbl
-      value: 155679000
+      value: 153653000
       rank: 5
-      percent: 4.81
-  '2017':
-    - product: Wind
-      name: Wind
-      units: Mwh
-      value: 24403931.64
-      rank: 2
-      percent: 9.6
-    - product: Natural Gas
-      name: Natural Gas
-      units: Mcf
-      value: 2513897000
-      rank: 4
-      percent: 7.58
+      percent: 4.74
 federal_production:
   '2008':
     - product: Coal (tons)
@@ -250,3 +237,10 @@ revenue:
       value: 12556.2
       rank: 1
       percent: 100
+  '2018':
+    - product: Oil & Gas (Non-Royalty)
+      name: null
+      units: null
+      value: 9818632.55
+      rank: 4
+      percent: 0.5

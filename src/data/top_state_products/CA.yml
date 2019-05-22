@@ -433,88 +433,45 @@ all_production:
     - product: Geothermal
       name: Geothermal
       units: Mwh
-      value: 11457299
+      value: 12468848.11
       rank: 1
-      percent: 72.4
+      percent: 71.59
     - product: Solar
       name: Solar
       units: Mwh
-      value: 18806711.13
+      value: 19030396.63
       rank: 1
-      percent: 52.16
+      percent: 51.78
     - product: Other biomass
       name: Other biomass
       units: Mwh
-      value: 2909930.16
+      value: 2889527.15
       rank: 1
-      percent: 13.34
+      percent: 13.09
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
       units: Mwh
-      value: 28942121.49
+      value: 28944514.75
       rank: 3
-      percent: 10.81
+      percent: 10.89
     - product: Wood and wood-derived fuels
       name: Wood and wood-derived fuels
       units: Mwh
-      value: 3029285.08
+      value: 3176397.8
       rank: 3
-      percent: 7.4
+      percent: 7.84
     - product: Crude Oil
       name: Crude Oil
       units: bbl
       value: 186079000
       rank: 3
-      percent: 5.75
+      percent: 5.74
     - product: Wind
       name: Wind
       units: Mwh
-      value: 13509038.69
+      value: 13698108.27
       rank: 5
-      percent: 5.95
-  '2017':
-    - product: Geothermal
-      name: Geothermal
-      units: Mwh
-      value: 11623579.91
-      rank: 1
-      percent: 72.76
-    - product: Solar
-      name: Solar
-      units: Mwh
-      value: 23100168.68
-      rank: 1
-      percent: 43.62
-    - product: Conventional Hydroelectric
-      name: Conventional Hydroelectric
-      units: Mwh
-      value: 42693083.01
-      rank: 2
-      percent: 14.23
-    - product: Other biomass
-      name: Other biomass
-      units: Mwh
-      value: 2572817.92
-      rank: 2
-      percent: 12.39
-    - product: Wood and wood-derived fuels
-      name: Wood and wood-derived fuels
-      units: Mwh
-      value: 3338264.79
-      rank: 3
-      percent: 7.71
-    - product: Crude Oil
-      name: Crude Oil
-      units: bbl
-      value: 174107000
-      rank: 4
-      percent: 5.09
-    - product: Wind
-      name: Wind
-      units: Mwh
-      value: 13970724.65
-      rank: 5
-      percent: 5.49
+      percent: 6.04
 federal_production:
   '2008':
     - product: 'Geothermal - Direct Utilization, Millions of BTUs'
@@ -1241,3 +1198,28 @@ revenue:
       value: -5
       rank: 1
       percent: null
+  '2018':
+    - product: Oil
+      name: null
+      units: null
+      value: 77147641.53
+      rank: 4
+      percent: 1.3
+    - product: Other Products
+      name: null
+      units: null
+      value: 18157035.13
+      rank: 3
+      percent: 13.5
+    - product: Geothermal
+      name: null
+      units: null
+      value: 71836.28
+      rank: 4
+      percent: 4.4
+    - product: Sodium
+      name: null
+      units: null
+      value: 5191.43
+      rank: 3
+      percent: 3

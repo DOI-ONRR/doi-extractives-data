@@ -73,13 +73,6 @@ all_production:
     - product: Wind
       name: Wind
       units: Mwh
-      value: 20071999
+      value: 20049262.03
       rank: 2
       percent: 8.84
-  '2017':
-    - product: Wind
-      name: Wind
-      units: Mwh
-      value: 20815750.01
-      rank: 3
-      percent: 8.19

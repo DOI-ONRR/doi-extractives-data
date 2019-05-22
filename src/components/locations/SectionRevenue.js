@@ -41,7 +41,7 @@ const SectionRevenue = props => {
   return (
     <section id="revenue" is="year-switcher-section" className="federal revenue">
 
-      <h2>Revenue Test build stuff</h2>
+      <h2>Revenue</h2>
 
       <p>Companies pay a wide range of fees, rates, and taxes to extract natural resources in the United States. What companies pay to federal, state, and local governments often depends on <Link to="/how-it-works/ownership/">who owns the natural resources</Link>.</p>
 

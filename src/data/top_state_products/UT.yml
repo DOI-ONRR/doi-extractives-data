@@ -73,22 +73,9 @@ all_production:
     - product: Geothermal
       name: Geothermal
       units: Mwh
-      value: 485094
+      value: 530058.13
       rank: 3
-      percent: 3.07
-    - product: Solar
-      name: Solar
-      units: Mwh
-      value: 1053661
-      rank: 5
-      percent: 2.92
-  '2017':
-    - product: Geothermal
-      name: Geothermal
-      units: Mwh
-      value: 462658.23
-      rank: 3
-      percent: 2.9
+      percent: 3.04
 federal_production:
   '2008':
     - product: Gilsonite (tons)
@@ -1361,3 +1348,82 @@ revenue:
       value: 320
       rank: 1
       percent: 50
+  '2018':
+    - product: All
+      name: null
+      units: null
+      value: 160480220.63
+      rank: 5
+      percent: 1.6
+    - product: Oil
+      name: null
+      units: null
+      value: 63063295.55
+      rank: 5
+      percent: 1
+    - product: Coal
+      name: null
+      units: null
+      value: 37024714.48
+      rank: 2
+      percent: 7.2
+    - product: Gas
+      name: null
+      units: null
+      value: 32529377.21
+      rank: 4
+      percent: 3.5
+    - product: Oil & Gas (Non-Royalty)
+      name: null
+      units: null
+      value: 13318701.76
+      rank: 3
+      percent: 0.7
+    - product: NGL
+      name: null
+      units: null
+      value: 11539090.21
+      rank: 4
+      percent: 2.9
+    - product: Potassium
+      name: null
+      units: null
+      value: 356051.4
+      rank: 2
+      percent: 30.6
+    - product: Geothermal
+      name: null
+      units: null
+      value: 102485
+      rank: 3
+      percent: 6.3
+    - product: Phosphate
+      name: null
+      units: null
+      value: 24360
+      rank: 2
+      percent: 13.7
+    - product: Gilsonite
+      name: null
+      units: null
+      value: 11207
+      rank: 1
+      percent: 100
+    - product: Clay
+      name: null
+      units: null
+      value: 10025.98
+      rank: 1
+      percent: 100
+    - product: Gold
+      name: null
+      units: null
+      value: 2604
+      rank: 1
+      percent: 100
+    - product: Oil Shale
+      name: null
+      units: null
+      value: 320
+      rank: 2
+      percent: 25.9

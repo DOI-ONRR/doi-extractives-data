@@ -14,6 +14,9 @@ import StateRevenue from '../locations/opt_in/StateRevenue'
 import utils from '../../js/utils'
 import ChartTitle from '../charts/ChartTitleCollapsible'
 
+let year = 2018
+
+
 const SectionRevenue = props => {
   const usStateData = props.usStateMarkdown.frontmatter
   const usStateFields = props.usStateMarkdown.fields || {}

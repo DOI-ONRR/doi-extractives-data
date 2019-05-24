@@ -7,8 +7,8 @@ import utils from '../../../js/utils'
 
 import Sparkline from '../../data-viz/Sparkline'
 
-import TriangleUpIcon from '-!svg-react-loader!../../../img/svg/triangle-up.svg'
-import TriangleDownIcon from '-!svg-react-loader!../../../img/svg/triangle-down.svg'
+import TriangleUpIcon from '-!svg-react-loader!../../../img/svg/arrow-up.svg'
+import TriangleDownIcon from '-!svg-react-loader!../../../img/svg/arrow-down.svg'
 
 import styles from './RevenueTrends.module.scss'
 

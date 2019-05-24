@@ -12,7 +12,12 @@ import RevenueTypeTable from '../locations/RevenueTypeTable'
 import RevenueProcessTable from '../locations/RevenueProcessTable'
 import StateRevenue from '../locations/opt_in/StateRevenue'
 import utils from '../../js/utils'
+import lazy from 'lazy.js'
 import ChartTitle from '../charts/ChartTitleCollapsible'
+import CountyMap from '../maps/CountyMap'
+
+
+import * as COUNTY_REVENUE from '../../data/county_revenue'
 
 let year = 2018
 
@@ -20,21 +25,22 @@ let year = 2018
 const SectionRevenue = props => {
   const usStateData = props.usStateMarkdown.frontmatter
   const usStateFields = props.usStateMarkdown.fields || {}
-
+  const usStateCountyRevenue = COUNTY_REVENUE[usStateData.unique_id];
   const usStateRevenueCommodities = ALL_US_STATES_REVENUES[usStateData.unique_id] && ALL_US_STATES_REVENUES[usStateData.unique_id].commodities
+
   let allYears = []
   let allCommoditiesValues = {}
   let allCommoditiesSlug, allCommoditiesChartName, allCommoditiesChartToggle = ""
   if(usStateRevenueCommodities) {
     allYears = Object.keys(usStateRevenueCommodities.All).map(year => parseInt(year));
     allYears.sort((a,b) => b-a)
+    if(allYears.length > 10) {
+      allYears = allYears.slice(0,10);
+    }
     allCommoditiesChartName = 'All commodities';
     allCommoditiesSlug = utils.formatToSlug(allCommoditiesChartName, { lower: true })
     allCommoditiesChartToggle = 'federal-revenue-county-figures-chart-'+allCommoditiesSlug;
-    
     allYears.map(year => allCommoditiesValues[year] = usStateRevenueCommodities.All[year].revenue)
-
-    console.log(usStateRevenueCommodities.All, allYears, allCommoditiesValues);
   }
 
 
@@ -155,6 +161,91 @@ const SectionRevenue = props => {
                       </figcaption>
                     </figure>
                   </div>
+                  {usStateCountyRevenue &&
+                    <div className="map-container">
+
+                      <h4 className="chart-title">
+                        { usStateData.locality_name || 'County' } production
+                      </h4>
+
+                      <figure is="eiti-data-map-table">
+                        <eiti-data-map color-scheme="Blues" steps="4" units={'$'}>
+                          <CountyMap
+                            usStateMarkdown={props.usStateMarkdown}
+                            countyProductionData={usStateCountyRevenue}
+                            productKey={'revenue'}
+                            year={allYears[0]}
+                            isCaption={true}
+                            mapToggle={'federal-revenue-counties'}
+                            productName={'revenue'}
+                            units={'$'}
+                            shortUnits={'$'}/>
+
+                        </eiti-data-map>
+
+                        <div className="eiti-data-map-table" id={'federal-revenue-counties'} aria-hidden="true">
+                          <table is='bar-chart-table'
+                            data-percent-max='100'
+                            class='county-table'
+                            year={allYears[0]}>
+                            <thead>
+                              <tr>
+                                <th>{usStateData.locality_name || 'County'}</th>
+                                <th colSpan='2' className='numeric' data-series='volume'>'Revenue'</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr className="inner-table-row">
+                                <td colSpan="3" className="inner-table-cell">
+                                  <div className="inner-table-wrapper">
+                                    <table>
+                                      {(lazy(usStateCountyRevenue).toArray()).map((countyData, index) => {
+                                        if (countyData[1].revenue[year] > 0) {
+                                          let yearsValue = countyData[1].revenue
+                                          let productVolume = countyData[1].revenue[year]
+
+                                          return (
+                                            <tbody key={index}>
+                                              <tr data-fips={countyData[0]} data-year-values={JSON.stringify(yearsValue)}>
+                                                <td><div className='swatch'
+                                                  data-value-swatch={productVolume}
+                                                  data-year-values={JSON.stringify(yearsValue)}></div>{ countyData[1].name }</td>
+                                                <td data-value-text={productVolume}
+                                                  data-year-values={JSON.stringify(yearsValue)}>{utils.formatToCommaInt(productVolume)}</td>
+                                                <td className='numberless'
+                                                  data-series='volume'
+                                                  data-value={productVolume}
+                                                  data-year-values={JSON.stringify(yearsValue)}>{utils.formatToCommaInt(productVolume)}</td>
+                                              </tr>
+                                              <tr data-fips={countyData[0]}>
+                                                <td colSpan='3'
+                                                  data-year-values={JSON.stringify(yearsValue)}
+                                                  data-sentence={productVolume}
+                                                  aria-hidden='true'
+                                                  data-withheld="false">
+                                                  <span className="withheld" aria-hidden="true">
+                                                                                                  Data about revenue on federal land in { countyData[1].name } in <span data-year={ year }>{ year }</span> is withheld.
+                                                  </span>
+                                                  <span className="has-data">
+                                                    <span data-value={productVolume}>{utils.formatToDollarInt(productVolume)}</span> of revenue were produced in { countyData[1].name } in <span data-year={ year }>{year}</span>.
+                                                  </span>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          )
+                                        }
+                                      })}
+                                    </table>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+
+                      </figure>
+                    </div>
+                  }
                 </div>
               </section>
             </section>

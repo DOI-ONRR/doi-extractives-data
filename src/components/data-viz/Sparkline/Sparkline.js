@@ -27,7 +27,10 @@ const Sparkline = ({data}) => {
 
     x.domain(d3.extent(data, function(d) { return +d.year; }));
     y.domain(d3.extent(data, function(d) { return +d.amount; }));
-    var svg = d3.select(elemRef.current)
+    
+    d3.select(elemRef.current).selectAll('*').remove();
+
+    let svg = d3.select(elemRef.current)
                 .append('svg')
                 .attr('width', width)
                 .attr('height', height)

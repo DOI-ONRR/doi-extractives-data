@@ -144,14 +144,14 @@ const SectionRevenue = props => {
                         data={JSON.stringify(allCommoditiesValues)}
                         x-range={"["+allYears[allYears.length-1]+","+allYears[0]+"]"}
                         x-value={allYears[0]}
-                        data-units={'$,'}>
+                        data-units={'dollars'}>
                       </eiti-bar-chart>
                       <figcaption id={'federal-revenue-county-figures-'+allCommoditiesSlug}>
                         <span className="caption-data">
-                          <span className="eiti-bar-chart-y-value" data-format='$,' >
+                          <span className="eiti-bar-chart-y-value" data-format=",">
                             {(allCommoditiesValues[allYears[0]]) ? (allCommoditiesValues[allYears[0]]).toLocaleString() : ('0').toLocaleString() }{' '}
                             </span>
-                          {' '}of {allCommoditiesChartName.toLowerCase()} were produced on federal land in {' ' + usStateData.title + ' in '}
+                          {'dollars'}{' '}of {allCommoditiesChartName.toLowerCase()} were produced on federal land in {' ' + usStateData.title + ' in '}
                           <span className="eiti-bar-chart-x-value">{ allYears[0] }</span>.
                         </span>
                         <span className="caption-no-data" aria-hidden="true">
@@ -169,7 +169,7 @@ const SectionRevenue = props => {
                       </h4>
 
                       <figure is="eiti-data-map-table">
-                        <eiti-data-map color-scheme="Blues" steps="4" units={'$'}>
+                        <eiti-data-map color-scheme="Blues" steps="4" format={'$'}>
                           <CountyMap
                             usStateMarkdown={props.usStateMarkdown}
                             countyProductionData={usStateCountyRevenue}
@@ -202,9 +202,7 @@ const SectionRevenue = props => {
                                       {(lazy(usStateCountyRevenue).toArray()).map((countyData, index) => {
                                         if (countyData[1].revenue[year] > 0) {
                                           let yearsValue = countyData[1].revenue
-                                          
-                                          
-                                          let productVolume = utils.formatToDollarInt(countyData[1].revenue[year])
+                                          let productVolume = countyData[1].revenue[year]
 
                                           return (
                                             <tbody key={index}>

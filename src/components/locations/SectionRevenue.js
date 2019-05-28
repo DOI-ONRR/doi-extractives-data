@@ -144,11 +144,11 @@ const SectionRevenue = props => {
                         data={JSON.stringify(allCommoditiesValues)}
                         x-range={"["+allYears[allYears.length-1]+","+allYears[0]+"]"}
                         x-value={allYears[0]}
-                        data-units={'$'}>
+                        data-units={'$,'}>
                       </eiti-bar-chart>
                       <figcaption id={'federal-revenue-county-figures-'+allCommoditiesSlug}>
                         <span className="caption-data">
-                          <span className="eiti-bar-chart-y-value" data-units='$' data-format=',' >
+                          <span className="eiti-bar-chart-y-value" data-format='$,' >
                             {(allCommoditiesValues[allYears[0]]) ? (allCommoditiesValues[allYears[0]]).toLocaleString() : ('0').toLocaleString() }{' '}
                             </span>
                           {' '}of {allCommoditiesChartName.toLowerCase()} were produced on federal land in {' ' + usStateData.title + ' in '}

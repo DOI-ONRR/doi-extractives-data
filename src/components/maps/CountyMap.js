@@ -173,7 +173,7 @@ const CountyMap = props => {
 					  <figcaption className="legend-data">
               {props.productName.toLowerCase() === 'revenue' ?
                 <React.Fragment>
-                  {localityName } {props.productName.toLowerCase()} in <span data-year={ props.year }>{ props.year }</span>
+                  Revenue by county in <span data-year={ props.year }>{ props.year }</span>
                 </React.Fragment>
               :
                 <React.Fragment>

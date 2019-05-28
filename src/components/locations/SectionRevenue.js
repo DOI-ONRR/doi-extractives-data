@@ -165,7 +165,7 @@ const SectionRevenue = props => {
                     <div className="map-container">
 
                       <h4 className="chart-title">
-                        { usStateData.locality_name || 'County' } production
+                        Revenue collected by county
                       </h4>
 
                       <figure is="eiti-data-map-table">
@@ -191,7 +191,7 @@ const SectionRevenue = props => {
                             <thead>
                               <tr>
                                 <th>{usStateData.locality_name || 'County'}</th>
-                                <th colSpan='2' className='numeric' data-series='volume'>'Revenue'</th>
+                                <th colSpan='2' className='numeric' data-series='volume'>Revenue</th>
                               </tr>
                             </thead>
                             <tbody>
@@ -207,15 +207,18 @@ const SectionRevenue = props => {
                                           return (
                                             <tbody key={index}>
                                               <tr data-fips={countyData[0]} data-year-values={JSON.stringify(yearsValue)}>
-                                                <td><div className='swatch'
-                                                  data-value-swatch={productVolume}
-                                                  data-year-values={JSON.stringify(yearsValue)}></div>{ countyData[1].name }</td>
+                                                <td>
+                                                  <div className='swatch'
+                                                    data-value-swatch={productVolume}
+                                                    data-year-values={JSON.stringify(yearsValue)}>
+                                                  </div>{ countyData[1].name+" County" }
+                                                </td>
                                                 <td data-value-text={productVolume}
-                                                  data-year-values={JSON.stringify(yearsValue)}>{utils.formatToCommaInt(productVolume)}</td>
+                                                  data-year-values={JSON.stringify(yearsValue)}>{utils.formatToDollarInt(productVolume)}</td>
                                                 <td className='numberless'
                                                   data-series='volume'
                                                   data-value={productVolume}
-                                                  data-year-values={JSON.stringify(yearsValue)}>{utils.formatToCommaInt(productVolume)}</td>
+                                                  data-year-values={JSON.stringify(yearsValue)}>{utils.formatToDollarInt(productVolume)}</td>
                                               </tr>
                                               <tr data-fips={countyData[0]}>
                                                 <td colSpan='3'
@@ -227,7 +230,7 @@ const SectionRevenue = props => {
                                                                                                   Data about revenue on federal land in { countyData[1].name } in <span data-year={ year }>{ year }</span> is withheld.
                                                   </span>
                                                   <span className="has-data">
-                                                    <span data-value={productVolume}>{utils.formatToDollarInt(productVolume)}</span> of revenue were produced in { countyData[1].name } in <span data-year={ year }>{year}</span>.
+                                                    <span data-value={productVolume}>Companies paid {utils.formatToDollarInt(productVolume)}</span> to extract natural resources on federal land in { countyData[1].name } in <span data-year={ year }>{year}</span>.
                                                   </span>
                                                 </td>
                                               </tr>

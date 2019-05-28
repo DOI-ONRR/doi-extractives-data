@@ -56,7 +56,7 @@ const RevenueTrends = props => (
       let trendData = fiscalYearData.splice(0,TREND_LIMIT)
 
       let previousYearData = JSON.parse(JSON.stringify(trendData))[1]
-      previousYearData.data  = previousYearData.data.filter(item => new Date(item.node.RevenueDate).toLocaleString("en-US", {timeZone: "America/New_York"}) <= previousYearMaxDate)
+      previousYearData.data  = previousYearData.data.filter(item => new Date(item.node.RevenueDate) <= previousYearMaxDate)
 
       previousYearData = [previousYearData].map(calculateRevenueTypeAmountsByYear)[0];
       calculateOtherRevenues(previousYearData);

@@ -84,7 +84,7 @@ const createRevenueNode = (revenueData, type) => {
   let year = revenueNode.CalendarYear || revenueNode.FiscalYear;
   let month = (revenueNode.Month)? getMonthFromString(revenueNode.Month) : 0;
 
-  revenueNode.RevenueDate = new Date(year, month).toLocaleString("en-US", {timeZone: "America/New_York"});
+  revenueNode.RevenueDate = new Date(year, month);
   
   if(revenueNode.LandClass === CONSTANTS.NATIVE_AMERICAN) {
     revenueNode.LandCategory = CONSTANTS.ONSHORE;
@@ -132,8 +132,7 @@ function getMonthFromString(month){
 
    var d = Date.parse(month + "1, 2012");
    if(!isNaN(d)){
-      let date = new Date(d).toLocaleString("en-US", {timeZone: "America/New_York"})
-      return date.getMonth();
+      return new Date(d).getMonth();
    }
    return -1;
  }

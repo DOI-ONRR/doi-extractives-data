@@ -132,7 +132,7 @@ function getMonthFromString(month){
 
    var d = Date.parse(month + "1, 2012");
    if(!isNaN(d)){
-      return new Date(d).toLocaleString("en-US", {timeZone: "America/New_York"}).getMonth();
+      return (new Date(d).toLocaleString("en-US", {timeZone: "America/New_York"})).getMonth();
    }
    return -1;
  }

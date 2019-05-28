@@ -7,8 +7,8 @@ import utils from '../../../js/utils'
 
 import Sparkline from '../../data-viz/Sparkline'
 
-import TriangleUpIcon from '-!svg-react-loader!../../../img/svg/triangle-up.svg'
-import TriangleDownIcon from '-!svg-react-loader!../../../img/svg/triangle-down.svg'
+import TriangleUpIcon from '-!svg-react-loader!../../../img/svg/arrow-up.svg'
+import TriangleDownIcon from '-!svg-react-loader!../../../img/svg/arrow-down.svg'
 
 import styles from './RevenueTrends.module.scss'
 
@@ -41,10 +41,12 @@ const RevenueTrends = props => (
       let fiscalYearData = JSON.parse(JSON.stringify(data.allMonthlyRevenuesByFiscalYear.group)).sort((a, b) => (a.fiscalYear < b.fiscalYear) ? 1 : -1)
       
       // Get the latest date then subtract 1 year to filter previous year data to compare current year data
+      let currentYearDate = new Date(fiscalYearData[0].data[0].node.RevenueDate);
       let previousYearMaxDate = new Date(fiscalYearData[0].data[0].node.RevenueDate)
-      previousYearMaxDate.setFullYear(previousYearMaxDate.getFullYear() -1)
 
-      let currentYearData = (fiscalYearData.splice(0,1)).map(calculateRevenueTypeAmountsByYear)[0]
+      previousYearMaxDate.setFullYear(previousYearMaxDate.getUTCFullYear() -1)
+
+      let currentYearData = (JSON.parse(JSON.stringify(fiscalYearData)).splice(0,1)).map(calculateRevenueTypeAmountsByYear)[0]
       calculateOtherRevenues(currentYearData);
       let currentYearTotal = (currentYearData.amountByRevenueType.Royalties+
             currentYearData.amountByRevenueType.Bonus+
@@ -53,7 +55,7 @@ const RevenueTrends = props => (
 
       let trendData = fiscalYearData.splice(0,TREND_LIMIT)
 
-      let previousYearData = JSON.parse(JSON.stringify(trendData))[0]
+      let previousYearData = JSON.parse(JSON.stringify(trendData))[1]
       previousYearData.data  = previousYearData.data.filter(item => new Date(item.node.RevenueDate) <= previousYearMaxDate)
 
       previousYearData = [previousYearData].map(calculateRevenueTypeAmountsByYear)[0];
@@ -92,7 +94,7 @@ const RevenueTrends = props => (
       return (
         <section className={styles.root}>
           <h3 className={styles.title+" h3-bar"}>Revenue trends</h3>
-          Includes federal and Native American revenue
+          Includes federal and Native American revenue through {currentYearDate.toLocaleString('en-us', { timeZone: 'UTC', month: 'long' })} {currentYearDate.getUTCFullYear()}
           <table className={styles.revenueTable}>
             <thead>
               <tr>

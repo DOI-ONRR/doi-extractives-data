@@ -13,18 +13,18 @@ tag:
 <custom-link to="/downloads/" className="breadcrumb link-charlie">Downloads</custom-link> /
 # Native American Revenue
 
-> We offer Native American revenue data files for both calendar year and fiscal year. Both datasets are for years 2006–2018. They are all <glossary-term>accounting year</glossary-term> data. Native American revenue data is only available at the national level to protect personally identifiable and proprietary information.
+> We offer Native American revenue data files for both calendar year and fiscal year. Both datasets are for years 2003–2018. They are all <glossary-term>accounting year</glossary-term> data. Native American revenue data is only available at the national level to protect personally identifiable and proprietary information.
 
 Download calendar year data:
 
 <ul class="downloads-download_links list-unstyled">
-  <li><download-link to="/downloads/native_american_revenue_CY06-18.xlsx">Native American revenue, CY 2006–2018 (xlsx, 31 KB)</download-link></li>
+  <li><download-link to="/downloads/Native American Revenues CY03-18.xlsx">Native American revenue, CY 2003–2018 (xlsx, 35 KB)</download-link></li>
 </ul>
 
 Download fiscal year data:
 
 <ul class="downloads-download_links list-unstyled">
-  <li><download-link to="/downloads/native_american_revenue_FY06-18.xlsx">Native American revenue, FY 2006–2018 (xlsx, 30 KB)</download-link></li>
+  <li><download-link to="/downloads/Native American Revs FY03-18.xlsx">Native American revenue, FY 2003–2018 (xlsx, 34 KB)</download-link></li>
 </ul>
 
 ## Scope

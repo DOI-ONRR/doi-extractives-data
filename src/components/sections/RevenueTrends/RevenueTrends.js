@@ -41,8 +41,8 @@ const RevenueTrends = props => (
       let fiscalYearData = JSON.parse(JSON.stringify(data.allMonthlyRevenuesByFiscalYear.group)).sort((a, b) => (a.fiscalYear < b.fiscalYear) ? 1 : -1)
       
       // Get the latest date then subtract 1 year to filter previous year data to compare current year data
-      let currentYearDate = new Date(fiscalYearData[0].data[0].node.RevenueDate);
-      let previousYearMaxDate = new Date(fiscalYearData[0].data[0].node.RevenueDate)
+      let currentYearDate = new Date(fiscalYearData[0].data[0].node.RevenueDate).toLocaleString("en-US", {timeZone: "America/New_York"});
+      let previousYearMaxDate = new Date(fiscalYearData[0].data[0].node.RevenueDate).toLocaleString("en-US", {timeZone: "America/New_York"})
       previousYearMaxDate.setFullYear(previousYearMaxDate.getFullYear() -1)
 
       let currentYearData = (JSON.parse(JSON.stringify(fiscalYearData)).splice(0,1)).map(calculateRevenueTypeAmountsByYear)[0]
@@ -55,7 +55,7 @@ const RevenueTrends = props => (
       let trendData = fiscalYearData.splice(0,TREND_LIMIT)
 
       let previousYearData = JSON.parse(JSON.stringify(trendData))[1]
-      previousYearData.data  = previousYearData.data.filter(item => new Date(item.node.RevenueDate) <= previousYearMaxDate)
+      previousYearData.data  = previousYearData.data.filter(item => new Date(item.node.RevenueDate).toLocaleString("en-US", {timeZone: "America/New_York"}) <= previousYearMaxDate)
 
       previousYearData = [previousYearData].map(calculateRevenueTypeAmountsByYear)[0];
       calculateOtherRevenues(previousYearData);

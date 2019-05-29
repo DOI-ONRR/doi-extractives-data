@@ -151,7 +151,7 @@ const SectionRevenue = props => {
                           <span className="eiti-bar-chart-y-value" data-format="$,">
                             {(allCommoditiesValues[allYears[0]]) ? (allCommoditiesValues[allYears[0]]).toLocaleString() : ('0').toLocaleString() }{' '}
                             </span>
-                          {'dollars'}{' '}of {allCommoditiesChartName.toLowerCase()} were produced on federal land in {' ' + usStateData.title + ' in '}
+                          {' '}of {allCommoditiesChartName.toLowerCase()} were produced on federal land in {' ' + usStateData.title + ' in '}
                           <span className="eiti-bar-chart-x-value">{ allYears[0] }</span>.
                         </span>
                         <span className="caption-no-data" aria-hidden="true">
@@ -203,10 +203,11 @@ const SectionRevenue = props => {
                                         if (countyData[1].revenue[year] > 0) {
                                           let yearsValue = countyData[1].revenue
                                           let productVolume = countyData[1].revenue[year]
+                                          let dataSentence = utils.formatToDollarInt(productVolume)
 
                                           return (
                                             <tbody key={index}>
-                                              <tr data-fips={countyData[0]} data-year-values={JSON.stringify(yearsValue)}>
+                                              <tr data-fips={countyData[0]} data-units={'$,'} data-year-values={JSON.stringify(yearsValue)}>
                                                 <td>
                                                   <div className='swatch'
                                                     data-value-swatch={productVolume}
@@ -214,23 +215,23 @@ const SectionRevenue = props => {
                                                   </div>{ countyData[1].name+" County" }
                                                 </td>
                                                 <td data-value-text={productVolume}
-                                                  data-year-values={JSON.stringify(yearsValue)}>{utils.formatToDollarInt(productVolume)}</td>
+                                                  data-year-values={JSON.stringify(yearsValue)}>{productVolume}</td>
                                                 <td className='numberless'
                                                   data-series='volume'
                                                   data-value={productVolume}
-                                                  data-year-values={JSON.stringify(yearsValue)}>{utils.formatToDollarInt(productVolume)}</td>
+                                                  data-year-values={JSON.stringify(yearsValue)}>{productVolume}</td>
                                               </tr>
                                               <tr data-fips={countyData[0]}>
                                                 <td colSpan='3'
                                                   data-year-values={JSON.stringify(yearsValue)}
-                                                  data-sentence={productVolume}
+                                                  data-sentence={dataSentence}
                                                   aria-hidden='true'
                                                   data-withheld="false">
                                                   <span className="withheld" aria-hidden="true">
                                                                                                   Data about revenue on federal land in { countyData[1].name } in <span data-year={ year }>{ year }</span> is withheld.
                                                   </span>
                                                   <span className="has-data">
-                                                    <span data-value={productVolume}>Companies paid {utils.formatToDollarInt(productVolume)}</span> to extract natural resources on federal land in { countyData[1].name } in <span data-year={ year }>{year}</span>.
+                                                    Companies paid <span data-value={productVolume}>{productVolume}</span> to extract natural resources on federal land in { countyData[1].name } in <span data-year={ year }>{year}</span>.
                                                   </span>
                                                 </td>
                                               </tr>

@@ -1,13 +1,15 @@
 ---
-title: Download Link
-componentName: DownloadLink
+title: Download Excel Link
+componentName: DownloadExcelLink
 patternCategory: Layouts
 ---
 
 ```
-<DownloadLink to="/explore/#production" >Download production data</DownloadLink>
+<DownloadExcelLink to="/explore/#production" >Download production data</DownloadExcelLink>
 ```
 
 ## How to use
-The Chart Title is used as just a custom html element with no properties to pass. Just wrap the text you want to display between the ChartTitle tags.
+The Download Excel Link component includes a custom icon and produces a link style for downloading `xlsx` versions of our data files.
+
+In markdown files, use the `<excel-link>` variant.
 

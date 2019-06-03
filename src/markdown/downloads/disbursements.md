@@ -33,7 +33,8 @@ tag:
 Download fiscal year data:
 
 <ul class="downloads-download_links list-unstyled">
-  <li><download-link to="/downloads/disbursements_FY2003-2018_by_type.xlsx">Disbursements data by state, county, and type (xlsx, 64 KB)</download-link></li>
+  <li><excel-link to="/downloads/disbursements_FY2003-2018_by_type.xlsx">Disbursements data by state, county, and type (Excel, 64 KB)</excel-link></li>
+  <li><csv-link to="/downloads/disbursements_FY2003-2018_by_type.csv">Disbursements data by state, county, and type (csv, 89 KB)</csv-link></li>
 </ul>
 
 The documentation that follows is for the funds overview dataset. We also have [notes on this data](https://github.com/onrr/doi-extractives-data/wiki/Data-Catalog#disbursements) from the web development team as they built the interactions on this site.

@@ -20,7 +20,8 @@ tag:
 Download revenue by month:
 
 <ul class="downloads-download_links list-unstyled">
-  <li><download-link to="/downloads/monthly_revenue_04-2019.xlsx">Revenue by month, 1/2008–4/2019 (xlsx, 298 KB)</download-link></li>
+  <li><excel-link to="/downloads/monthly_revenue_04-2019.xlsx">Revenue by month, 1/2008–4/2019 (Excel, 298 KB)</excel-link></li>
+  <li><csv-link to="/downloads/monthly_revenue_04-2019.csv">Revenue by month, 1/2008–4/2019 (csv, 476 KB)</csv-link></li>
 </ul>
 
 ## Scope

@@ -18,7 +18,8 @@ tag:
 Download calendar year data:
 
 <ul class="downloads-download_links list-unstyled">
-  <li><download-link to="/downloads/Native American Revenues CY03-18.xlsx">Native American revenue, CY 2003–2018 (xlsx, 35 KB)</download-link></li>
+  <li><excel-link to="/downloads/Native-American-Revenues-CY03-18.xlsx">Native American revenue, CY 2003–2018 (xlsx, 35 KB)</excel-link></li>
+  <li><csv-link to="/downloads/Native-American-Revenues-CY03-18.csv">Native American revenue, CY 2003–2018 (csv, 51 KB)</csv-link></li>
 </ul>
 
 Download fiscal year data:

@@ -20,13 +20,15 @@ tag:
 Download calendar year data:
 
 <ul class="downloads-download_links list-unstyled">
-  <li><download-link to="/downloads/CY 03-18 Federal Revenues.xlsx">Onshore and offshore revenue dataset, CY 2003-2018 (xlsx, 2.8 MB)</download-link></li>
+  <li><excel-link to="/downloads/CY 03-18 Federal Revenues.xlsx">Onshore and offshore revenue dataset, CY 2003-2018 (Excel, 2.8 MB)</excel-link></li>
+  <li><csv-link to="/downloads/CY 03-18 Federal Revenues.xlsx">Onshore and offshore revenue dataset, CY 2003-2018 (csv, 5.4 MB)</csv-link></li>
 </ul>
 
 Download fiscal year data:
 
 <ul class="downloads-download_links list-unstyled">
-  <li><download-link to="/downloads/FY 03-18 Federal Revenues.xlsx">Onshore and offshore revenue dataset, FY 2003–2018 (xlsx, 2.5 MB)</download-link></li>
+  <li><excel-link to="/downloads/FY 03-18 Federal Revenues.xlsx">Onshore and offshore revenue dataset, FY 2003–2018 (Excel, 2.5 MB)</excel-link></li>
+  <li><csv-link to="/downloads/FY 03-18 Federal Revenues.csv">Onshore and offshore revenue dataset, FY 2003–2018 (csv, 5.2 MB)</csv-link></li>
 </ul>
 
 We also have [notes on this data](https://github.com/onrr/doi-extractives-data/wiki/Data-Catalog#federal-revenue) from the web development team as they built the interactions on this site.

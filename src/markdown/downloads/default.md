@@ -23,7 +23,7 @@ tag:
     <download-data-link to="/downloads/federal-production-by-month/">Downloads and documentation</download-data-link>
   </li>
   <li class="downloads-download_links">
-    <h3 id="federal-lands-and-waters">Production from federal land and waters by year</h3>
+    <h3 id="federal-lands-and-waters">Production by year</h3>
     <p>These datasets include commodity volumes of natural resources extracted from federal lands and waters. Production volumes are available by state, county, and offshore area. We offer production data for calendar and fiscal years.</p>
     <download-data-link to="/downloads/federal-production/">Downloads and documentation</download-data-link>
   </li>

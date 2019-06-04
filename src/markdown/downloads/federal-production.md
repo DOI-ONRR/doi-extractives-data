@@ -11,7 +11,7 @@ tag:
 ---
 
 <custom-link to="/downloads/" className="breadcrumb link-charlie">Downloads</custom-link> /
-# Federal Production by Year and Location
+# Production by Year
 
 > This dataset contains information on natural resource production volumes on federal lands and waters.
 
@@ -28,8 +28,6 @@ tag:
     <li><csv-link to="/downloads/federal_production_FY2009-2018_2019-03-26.csv">Fiscal year production (csv, 528 KB)</csv-link></li>
   </ul>
 </p>
-
-This dataset also includes county-level data about coal production on federal land.
 
 We have [notes on this data](https://github.com/onrr/doi-extractives-data/wiki/Data-Catalog#federal-production) from the web development team as they built the interactions on this site.
 

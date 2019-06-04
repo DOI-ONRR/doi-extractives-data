@@ -40,7 +40,7 @@ tag:
   </li>
   <!--Federal revenue by location-->
   <li class="downloads-download_links">
-    <h3 id="all-revenue">Federal revenue by year and location</h3>
+    <h3 id="all-revenue">Revenue by year</h3>
     <p>These datasets include natural resource revenues for U.S. federal lands and offshore areas by calendar and fiscal years. It does not include Native American lands, privately owned lands, or U.S. state lands.</p>
     <download-data-link to="/downloads/federal-revenue-by-location/">Downloads and documentation</download-data-link>
   </li>

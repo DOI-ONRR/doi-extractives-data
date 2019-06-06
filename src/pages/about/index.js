@@ -78,7 +78,7 @@ const AboutPage = () => {
                 </div>
                 <div className="bureau-right">
                   <h4>Department of the Interior (DOI)</h4>
-                  <p><a href="https://www.doi.gov/">DOI</a> protects and manages the nation’s natural resources and cultural heritage; provides scientific and other information about those resources; and honors its trust responsibilities or special commitments to American Indians, Alaska Natives, and affiliated island communities.</p>
+                  <p><a href="https://www.doi.gov/">DOI</a> protects and manages the nation’s natural resources and cultural heritage; provides scientific and other information about those resources; and honors its trust responsibilities or special commitments to Native Americans, Alaska Natives, and affiliated island communities.</p>
                 </div>
               </article>
 
@@ -128,7 +128,7 @@ const AboutPage = () => {
                 </div>
                 <div className="bureau-right">
                   <h4>Office of Natural Resources Revenue (ONRR)</h4>
-                  <p><a href="http://www.onrr.gov/">ONRR</a> collects, accounts for, and verifies revenues from natural resource extraction on federal and Indian land for the benefit of all Americans. ONRR collects revenue from energy and mineral leases for both onshore and offshore federal and Indian lands and disburses revenues to states, American Indians, and the U.S. Treasury.</p>
+                  <p><a href="http://www.onrr.gov/">ONRR</a> collects, accounts for, and verifies revenues from natural resource extraction on federal and Native American land for the benefit of all Americans. ONRR collects revenue from energy and mineral leases for both onshore and offshore federal and Native American lands and disburses revenues to states, Native Americans, and the U.S. Treasury.</p>
                 </div>
               </article>
 

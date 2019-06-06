@@ -31,7 +31,7 @@ const AboutPage = () => {
           <div className="container-page-wrapper ribbon ribbon-column landing-section_top">
             <div className="container-left-8 ribbon-hero ribbon-hero-column">
               <h1 id="introduction">About this site</h1>
-              <p className="ribbon-hero-description">The United States is a major developer of natural resources. The Department of the Interior (DOI) collects billions of dollars in annual revenue from companies that lease <GlossaryTerm termKey="federal land">federal lands and waters</GlossaryTerm> in order to develop oil, gas, or mineral resources. These revenues are <Link to="/explore/#federal-disbursements">disbursed</Link> to the U.S. Treasury, other federal agencies, states, American Indian tribes, and individual Indian mineral owners.</p>
+              <p className="ribbon-hero-description">The United States is a major developer of natural resources. The Department of the Interior (DOI) collects billions of dollars in annual revenue from companies that lease <GlossaryTerm termKey="federal land">federal lands and waters</GlossaryTerm> in order to develop oil, gas, or mineral resources. These revenues are <Link to="/explore/#federal-disbursements">disbursed</Link> to the U.S. Treasury, other federal agencies, states, Native American tribes, and individual Native American mineral owners.</p>
 
               <p className="ribbon-hero-description">This site provides data and contextual information about how natural resources and their revenues are managed in the U.S.</p>
             </div>

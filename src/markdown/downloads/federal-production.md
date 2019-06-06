@@ -13,11 +13,11 @@ tag:
 <custom-link to="/downloads/" className="breadcrumb link-charlie">Downloads</custom-link> /
 # Federal Production by Year and Location
 
-> This dataset contains information on production on federal lands and waters. We have versions of these datasets available for calendar years 2008-2017 and for fiscal years 2009-2018.
+> This dataset contains information on production on federal lands and waters. We have versions of these datasets available for calendar years 2003-2018 and for fiscal years 2009-2018.
 
 <p class="downloads-download_links-intro">Download calendar year data:
   <ul class="downloads-download_links list-unstyled">
-    <li><download-link to="/downloads/federal_production_CY08-17.xlsx">Full dataset (xlsx, 391 KB)</download-link></li>
+    <li><download-link to="/downloads/federal_production_CY03-18.xlsx">Full dataset (xlsx, 631 KB)</download-link></li>
   </ul>
 </p>
 

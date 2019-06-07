@@ -11,23 +11,23 @@ tag:
 ---
 
 <custom-link to="/downloads/" className="breadcrumb link-charlie">Downloads</custom-link> /
-# Federal Production by Year and Location
+# Production by Year
 
-> This dataset contains information on production on federal lands and waters. We have versions of these datasets available for calendar years 2008-2017 and for fiscal years 2009-2018.
+> This dataset contains information on natural resource production volumes on federal lands and waters.
 
-<p class="downloads-download_links-intro">Download calendar year data:
+<p class="downloads-download_links-intro">Download calendar year data (2008-2017):
   <ul class="downloads-download_links list-unstyled">
-    <li><download-link to="/downloads/federal_production_CY08-17.xlsx">Full dataset (xlsx, 391 KB)</download-link></li>
+    <li><excel-link to="/downloads/federal_production_CY08-17.xlsx">Calendar year production (Excel, 372 KB)</excel-link></li>
+    <li><csv-link to="/downloads/federal_production_CY08-17.csv">Calendar year production (csv, 516 KB)</csv-link></li>
   </ul>
 </p>
 
-<p class="downloads-download_links-intro">Download fiscal year data:
+<p class="downloads-download_links-intro">Download fiscal year data (2009-2018):
   <ul class="downloads-download_links list-unstyled">
-    <li><download-link to="/downloads/federal_production_FY2009-2018_2019-03-26.xlsx">Full dataset (xlsx, 409 KB)</download-link></li>
+    <li><excel-link to="/downloads/federal_production_FY2009-2018_2019-03-26.xlsx">Fiscal year production (Excel, 409 KB)</excel-link></li>
+    <li><csv-link to="/downloads/federal_production_FY2009-2018_2019-03-26.csv">Fiscal year production (csv, 528 KB)</csv-link></li>
   </ul>
 </p>
-
-This dataset also includes county-level data about coal production on federal land.
 
 We have [notes on this data](https://github.com/onrr/doi-extractives-data/wiki/Data-Catalog#federal-production) from the web development team as they built the interactions on this site.
 

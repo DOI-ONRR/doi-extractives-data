@@ -205,7 +205,7 @@ export const query = graphql`
     }
     states_data:allMarkdownRemark (filter:{fileAbsolutePath: {regex: "/states/"}}) {
       sort: {
-        fields: [frontmatter__title]
+        fields: [frontmatter___title]
         order: ASC
       }
       states:edges {

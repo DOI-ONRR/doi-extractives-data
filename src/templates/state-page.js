@@ -41,10 +41,6 @@ const NAV_ITEMS = [
     title: 'Production',
     subNavItems: [
       {
-        name: 'all-production',
-        title: 'Entire state'
-      },
-      {
         name: 'federal-production',
         title: 'Federal land'
       },
@@ -160,22 +156,6 @@ class StatePages extends React.Component {
 
             <section id="production">
               <h2>Production</h2>
-
-              <p>
-                <strong>Energy production:</strong> The U.S. Energy Information Administration publishes a profile of <a href={'http://www.eia.gov/state_ref/?sid=' + this.usStateData.unique_id}>energy production and usage in {this.usStateData.title}</a>.
-              </p>
-
-              <KeyAllProductionSummary usStateData={this.usStateData} />
-
-              {ReactHtmlParser(this.usStateFields.state_production)}
-
-              {(this.usStateFields.state_production === undefined && this.usStateData.unique_id !== 'DC') &&
-								<p>
-								  <strong>Nonenergy minerals:</strong> The U.S. Geological Survey publishes information about nonenergy mineral extraction in the <a href={'http://minerals.usgs.gov/minerals/pubs/state/' + this.usStateData.unique_id.toLowerCase() + '.html'}>USGS Minerals Yearbook for {this.usStateData.title}</a>.
-								</p>
-              }
-
-              <SectionAllProduction usStateMarkdown={this.usStateMarkdown} />
 
               <SectionFederalProduction usStateMarkdown={this.usStateMarkdown} />
 

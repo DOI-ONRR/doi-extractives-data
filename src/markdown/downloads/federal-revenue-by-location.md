@@ -13,22 +13,22 @@ tag:
 ---
 
 <custom-link to="/downloads/" className="breadcrumb link-charlie">Downloads</custom-link> /
-# Federal Revenue by Year and Location
+# Revenue
 
-> We offer revenue data files for both calendar year and fiscal year. Calendar year revenue data is split into three separate files (onshore, offshore, and revenues not associated with a lease). Calendar year data is available for calendar years 2006–2017. Fiscal year data is available in a single file, for fiscal years 2006–2018. They are all <glossary-term>accounting year</glossary-term> data.
+> We offer revenue data files for both calendar year and fiscal year. Both datasets are for years 2003-2018. They are all <glossary-term>accounting year</glossary-term> data.
 
-Download calendar year data:
+Download calendar year data (2003-2018):
 
 <ul class="downloads-download_links list-unstyled">
-  <li><download-link to="/downloads/federal_revenue_offshore_acct-year_CY06-17_2018_03_02.xlsx">Offshore dataset (xlsx, 484 KB)</download-link></li>
-  <li><download-link to="/downloads/federal_revenue_onshore_acct-year_CY06-17_2018_03_02.xlsx">Onshore dataset (xlsx, 2.4 MB)</download-link></li>
-  <li><download-link to="/downloads/federal_revenue_civil-penalties_other-rev_not-tied-to-lease_acct-year_CY06-17_2018_03_02.xlsx">Civil penalties and other revenues not associated with a lease (xlsx, 11 KB)</download-link></li>
+  <li><excel-link to="/downloads/CY 03-18 Federal Revenues.xlsx">Calendar year revenue (Excel, 2.8 MB)</excel-link></li>
+  <li><csv-link to="/downloads/CY 03-18 Federal Revenues.csv">Calendar year revenue (csv, 5.4 MB)</csv-link></li>
 </ul>
 
-Download fiscal year data:
+Download fiscal year data (2003–2018):
 
 <ul class="downloads-download_links list-unstyled">
-  <li><download-link to="/downloads/federal_revenue_acct-year_FY06-18_2018-12-13.xlsx">Onshore and offshore revenue dataset, FY 2006–2018 (xlsx, 2.0 MB)</download-link></li>
+  <li><excel-link to="/downloads/FY 03-18 Federal Revenues.xlsx">Fiscal year revenue (Excel, 2.5 MB)</excel-link></li>
+  <li><csv-link to="/downloads/FY 03-18 Federal Revenues.csv">Fiscal year revenue (csv, 5.2 MB)</csv-link></li>
 </ul>
 
 We also have [notes on this data](https://github.com/onrr/doi-extractives-data/wiki/Data-Catalog#federal-revenue) from the web development team as they built the interactions on this site.
@@ -62,7 +62,7 @@ The Bureau of Land Management has [more information about geothermal energy on f
 
 ## Offshore data dictionary
 
-The offshore dataset is organized by offshore planning areas. There are more offshore planning areas than are represented in our data. Those not represented had no revenues for the years in the data. For more information on offshore planning areas, including spatial boundaries, see the Bureau of Ocean Energy Management's [maps and GIS data](http://www.boem.gov/Maps-and-GIS-Data/).
+The offshore data is organized by offshore planning areas. There are more offshore planning areas than are represented in our data. Those not represented had no revenues for the years in the data. For more information on offshore planning areas, including spatial boundaries, see the Bureau of Ocean Energy Management's [maps and GIS data](http://www.boem.gov/Maps-and-GIS-Data/).
 
 ### Fields and definitions
 

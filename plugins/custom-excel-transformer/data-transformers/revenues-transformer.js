@@ -48,6 +48,11 @@ const LAND_CLASS_CATEGORY_TO_REVENUE_CATEGORY ={
 	},
 }
 
+const COMMODITY_MAP = {
+  'Oil & Gas (Non Royalty)' : 'Oil & Gas (Non-Royalty)',
+  'Oil & Gas (Non-Royalty)' : 'Oil & Gas (Non-Royalty)'
+}
+
 /* Use ES5 exports in order to be compatible with version 1.x of gatsby */
 module.exports = (node, type) => {
 	return createRevenueNode(node, type);
@@ -62,7 +67,7 @@ const createRevenueNode = (revenueData, type) => {
 	  LandCategory: LAND_CATEGORY_TO_DISPLAY_NAME[data[SOURCE_COLUMNS.LandCategory]],
 	  LandClass: LAND_CLASS_TO_DISPLAY_NAME[data[SOURCE_COLUMNS.LandClass]],
 	  RevenueType: data[SOURCE_COLUMNS.RevenueType],
-	  Commodity: data[SOURCE_COLUMNS.Commodity],
+	  Commodity: COMMODITY_MAP[data[SOURCE_COLUMNS.Commodity]] || data[SOURCE_COLUMNS.Commodity],
 	  Revenue: data[SOURCE_COLUMNS.Revenue],
 	  State: data[SOURCE_COLUMNS.State],
 	  County: data[SOURCE_COLUMNS.County],
@@ -83,12 +88,10 @@ const createRevenueNode = (revenueData, type) => {
   
   if(revenueNode.LandClass === CONSTANTS.NATIVE_AMERICAN) {
     revenueNode.LandCategory = CONSTANTS.ONSHORE;
+    revenueNode.State = 'withheld';
   }
 
   revenueNode.RevenueCategory = LAND_CLASS_CATEGORY_TO_REVENUE_CATEGORY[revenueNode.LandClass] && LAND_CLASS_CATEGORY_TO_REVENUE_CATEGORY[revenueNode.LandClass][revenueNode.LandCategory];
-  
-
-
 
   if(revenueNode.RevenueCategory === undefined) {
   	if(revenueNode.LandClass === CONSTANTS.NATIVE_AMERICAN) {
@@ -99,11 +102,27 @@ const createRevenueNode = (revenueData, type) => {
   	}
   }
 
+  if(revenueNode.Commodity === undefined){
+    revenueNode.Commodity = 'Not tied to a commodity';  
+  }
+
   if(revenueNode.FiscalYear === undefined) {
-  	revenueNode.FiscalYear = (revenueNode.RevenueDate.getMonth() > 9 ) ? 
+  	revenueNode.FiscalYear = (revenueNode.RevenueDate.getMonth() >= 9 ) ? 
   		(revenueNode.RevenueDate.getYear()+1901).toString()
   		:
   		(revenueNode.RevenueDate.getYear()+1900).toString();
+  }
+
+  let landCat = revenueNode.LandCategory && revenueNode.LandCategory.toLowerCase();
+
+  if(landCat === "not tied to a lease" ||
+     revenueNode.RevenueType === 'Civil Penalities' ||
+     revenueNode.RevenueType === 'Other Revenues'){
+    if(revenueNode.LandClass !== CONSTANTS.NATIVE_AMERICAN &&
+        !revenueNode.OffshoreRegion){
+      revenueNode.State = revenueNode.State || 'Not tied to a location';
+    }
+    
   }
 
 	return revenueNode;

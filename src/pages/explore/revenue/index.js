@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Helmet from 'react-helmet'
 import { connect } from 'react-redux'
 import { graphql } from 'gatsby'
@@ -13,6 +13,7 @@ import {
 	BY_LAND_CLASS,
 	BY_REVENUE_TYPE,
 	BY_FISCAL_YEAR,
+	BY_REVENUE_CATEGORY
 } from '../../../state/reducers/data-sets'
 
 import {DATA_SET_KEYS} from '../../../state/reducers/data-sets'
@@ -32,6 +33,9 @@ import Toggle from '../../../components/selectors/Toggle'
 import DropDown from '../../../components/selectors/DropDown'
 import Select from '../../../components/selectors/Select'
 import FilterTable from '../../../components/tables/FilterTable'
+import GroupTable from '../../../components/tables/GroupTable'
+import TreeTable from '../../../components/tables/TreeTable'
+import GlossaryTerm from '../../../components/utils/glossary-term.js';
 
 const PAGE_TITLE = "Federal Revenue | Natural Resources Revenue Data"
 const TOGGLE_VALUES = {
@@ -39,22 +43,35 @@ const TOGGLE_VALUES = {
   Month: 'month'
 }
 
-const DEFAULT_GROUP_BY_INDEX = 4;
+const DEFAULT_GROUP_BY_INDEX = 0;
+const DEFAULT_ADDITIONAL_COLUMN_INDEX = 1;
 
-
+const LAND_CATEGORY_OPTIONS = {
+	'All': [BY_REVENUE_TYPE],
+	'All federal': [BY_COMMODITY], 
+	'Federal onshore': [BY_LAND_CLASS, BY_LAND_CATEGORY],
+	'Federal offshore': [BY_STATE, BY_OFFSHORE_REGION], 
+	'Native American': [BY_STATE, BY_OFFSHORE_REGION],
+	'All onshore': [BY_STATE, BY_OFFSHORE_REGION], 
+};
 const GROUP_BY_OPTIONS = {
+	'Revenue type': [BY_REVENUE_TYPE],
 	'Commodity': [BY_COMMODITY], 
-	'Location': [BY_STATE, BY_OFFSHORE_REGION], 
-	'Source': [BY_LAND_CATEGORY], 
-	'Land owner': [BY_LAND_CLASS], 
-	'Revenue type': [BY_REVENUE_TYPE]
+	'Land category': [BY_REVENUE_CATEGORY],
+	'Location': [BY_STATE, BY_OFFSHORE_REGION],  
 };
 const ADDITIONAL_COLUMN_OPTIONS = {
+	'Revenue type': ['RevenueType'],
 	'Commodity': [DATA_SET_KEYS.COMMODITY],
+	'Land category': ['RevenueCategory'],
 	'Location': ['State', DATA_SET_KEYS.OFFSHORE_REGION],
-	'Source': ['LandCategory'],
-	'Land owner': ['LandClass'],
-	'Revenue type': ['RevenueType']
+	'No second column': [],
+};
+const PLURAL_COLUMNS_MAP = {
+	'Revenue type': 'revenue types',
+	'Commodity': 'commodities', 
+	'Land category': 'land categories',
+	'Location': 'locations',  
 };
 //const ADDITIONAL_COLUMN_OPTIONS = ['State/offshore region', 'Source', 'Land owner', 'Revenue type'];
 
@@ -63,6 +80,13 @@ class FederalRevenue extends React.Component {
 	constructor(props) {
 		super(props);
 		this.additionalColumnOptionKeys = Object.keys(ADDITIONAL_COLUMN_OPTIONS);
+		this.getFiscalYearOptions = () => this.props[REVENUES_FISCAL_YEAR] && Object.keys(this.props[REVENUES_FISCAL_YEAR][BY_FISCAL_YEAR]);
+		this.getLocationOptions = () => {
+			let allOption = ['All']
+			let offshoreOptions = this.props[REVENUES_FISCAL_YEAR] && Object.keys(this.props[REVENUES_FISCAL_YEAR][BY_OFFSHORE_REGION])
+			let states = this.props[REVENUES_FISCAL_YEAR] && Object.keys(this.props[REVENUES_FISCAL_YEAR][BY_STATE])
+			return allOption.concat(offshoreOptions, states);
+		}
 		this.hydrateStore();
 	}
 
@@ -73,7 +97,7 @@ class FederalRevenue extends React.Component {
 			groupBy: Object.keys(GROUP_BY_OPTIONS)[DEFAULT_GROUP_BY_INDEX],
 			years: []
 		},
-		additionalColumns: []
+		additionalColumns: [Object.keys(GROUP_BY_OPTIONS)[DEFAULT_ADDITIONAL_COLUMN_INDEX]]
 	}
 
 	componentWillReceiveProps (nextProps) {
@@ -87,50 +111,99 @@ class FederalRevenue extends React.Component {
 	  	additionalColumns: additionalColumns.filter(column => column !== filter.groupBy) })
 	}
 
-	getAdditionalColumnOptions = () => {
-		return this.additionalColumnOptionKeys.filter(column => column !== this.state.filter.groupBy);
-	}
-
 	getTableColumns = () => {
-		let columns = [];
+		let columns = [], columnExtensions = [], grouping = [], currencyColumns=[], defaultSorting=[];
 		let {filter} = this.state;
+		let groupBySlug = utils.formatToSlug(filter.groupBy);
 
-		columns.push({ id: filter.groupBy, numeric: false, label: filter.groupBy, cellRender: commodityCellRender});
+		columns.push({ name: groupBySlug, title: filter.groupBy });
+		if(this.state.additionalColumns && this.state.additionalColumns.length > 0) {
+			grouping.push({columnName: groupBySlug});
+		}
 
 		this.state.additionalColumns.forEach(column => {
-			columns.push({ id: column, numeric: false, label: column })
+			columns.push({ name: utils.formatToSlug(column), title: column, plural: PLURAL_COLUMNS_MAP[column] })
 		})
 
-		filter.years.sort().forEach(year => columns.push({ id: 'fy-'+year, numeric: true, label: year }))
+		let allColumns = Object.keys(ADDITIONAL_COLUMN_OPTIONS).map(columnName => utils.formatToSlug(columnName))
 
-		return columns;
+		filter.years.sort().forEach(year => {
+			columns.push({ name: 'fy-'+year, title: year })
+			columnExtensions.push({ columnName: 'fy-'+year, align: 'right' })
+			defaultSorting=[{ columnName: 'fy-'+year, direction: 'desc' }]
+		})
+
+		// Have to add all the data provider types initially or they wont work??
+		this.state.yearOptions.forEach(year => {
+			currencyColumns.push('fy-'+year)
+		})
+		
+
+		return {
+			columns: columns, 
+			columnExtensions: columnExtensions,
+			grouping: grouping,
+			currencyColumns: currencyColumns,
+			allColumns: allColumns,
+			defaultSorting: defaultSorting,
+		};
+	}
+
+	getTableSummaries = () => {
+		let totalSummaryItems = [], groupSummaryItems = [];
+		let {yearOptions} = this.state;
+
+		yearOptions.sort().forEach(year => {
+			totalSummaryItems.push({ columnName: 'fy-'+year, type: 'sum' })
+			groupSummaryItems.push({ columnName: 'fy-'+year, type: 'sum' })
+		})
+
+		// using type avg to attach the custom formatter function
+		this.state.additionalColumns.forEach(column => {
+			totalSummaryItems.push({ columnName: utils.formatToSlug(column), type: 'avg' })
+			groupSummaryItems.push({ columnName: utils.formatToSlug(column), type: 'avg' })
+		})
+
+
+		return {
+			totalSummaryItems: totalSummaryItems, 
+			groupSummaryItems: groupSummaryItems,
+		};
+
 	}
 
 	getTableData = () => {
+		if(this.state[REVENUES_FISCAL_YEAR] === undefined) return {tableData:undefined, expandedGroups: undefined};
 		let dataSet = this.state[REVENUES_FISCAL_YEAR];
+		let groupBySlug = utils.formatToSlug(this.state.filter.groupBy);
 		let allDataSetGroupBy = GROUP_BY_OPTIONS[this.state.filter.groupBy].map( groupBy => this.state[REVENUES_FISCAL_YEAR][groupBy] );
-
 		let tableData = []; 
+		let expandedGroups = [];
 
-		let totals = {}
 		// Iterate over all group by data sets asociated with this filter group by
 		allDataSetGroupBy.forEach( (dataSetGroupBy, indexGroupBy) => { 
-			let groupByResult = Object.keys(dataSetGroupBy).map(name => {
-
-				let tableRow = [name]
+			Object.keys(dataSetGroupBy).forEach(name => {
 
 				let sums = {}
+				let sumsByAdditionalColumns = {}
 
 				let additionalColumnsRow = {};
 
 				// sum all revenues
-				dataSetGroupBy[name].map((dataId) => {
+				dataSetGroupBy[name].forEach((dataId) => {
 					let data = dataSet[BY_ID][dataId];
 
-					// filter by selected years
-					if( this.state.filter.years.includes(data.FiscalYear) ) {
-						sums[data.FiscalYear] = (sums[data.FiscalYear])? sums[data.FiscalYear]+data.Revenue : data.Revenue;
-						totals[data.FiscalYear] = (totals[data.FiscalYear])? totals[data.FiscalYear]+data.Revenue : data.Revenue;
+					// Apply filters
+					if(this.state.filter.years.includes(data.FiscalYear) &&
+						this.hasLandCategory(data) &&
+						this.hasLocation(data)) {
+
+						if(!expandedGroups.includes(name)) {
+							expandedGroups.push(name);
+						}
+
+						let fiscalYearSlug = 'fy-'+data.FiscalYear
+						sums[fiscalYearSlug] = (sums[fiscalYearSlug])? sums[fiscalYearSlug]+data.Revenue : data.Revenue;
 
 						this.state.additionalColumns.forEach((additionalColumn) => {
 
@@ -142,44 +215,63 @@ class FederalRevenue extends React.Component {
 
 								if(additionalColumnsRow[additionalColumn] === undefined) {
 									additionalColumnsRow[additionalColumn] = [];
+									sumsByAdditionalColumns[additionalColumn] = {};
 								}
-								if(newValue !== null && !additionalColumnsRow[additionalColumn].includes(newValue)) {
-									additionalColumnsRow[additionalColumn].push(newValue)
-								}						
+
+								if(newValue) {
+									// Add the fiscal year revenue for the additional column, only works when there is 1 additional column
+									if(sumsByAdditionalColumns[additionalColumn][newValue] === undefined) {
+										sumsByAdditionalColumns[additionalColumn][newValue] = {};
+									}
+
+									let fyRevenue = data.Revenue || 0;
+
+									sumsByAdditionalColumns[additionalColumn][newValue][fiscalYearSlug] = (sumsByAdditionalColumns[additionalColumn][newValue][fiscalYearSlug])? 
+										sumsByAdditionalColumns[additionalColumn][newValue][fiscalYearSlug]+fyRevenue 
+										: 
+										fyRevenue;
+
+									if(!additionalColumnsRow[additionalColumn].includes(newValue)) {
+										additionalColumnsRow[additionalColumn].push(newValue)
+									}	
+								}				
 							})
 						})
 					}
 				})
 
-				// If no revenue data is found then ignore this row
-				if(Object.keys(sums).length > 0) {
+				// Easy way to check if we need to exclude a grouping due to filters
+				if(expandedGroups.includes(name)) {
+					if(Object.keys(sumsByAdditionalColumns).length > 0) {
+						Object.keys(sumsByAdditionalColumns).forEach((column) => {
+							let columnSlug = utils.formatToSlug(column);
 
-					// Format and create an array for all revenue sum columns
-					let sumsToArray = this.state.filter.years.map(year => utils.formatToDollarInt(sums[year]) )
+							Object.keys(sumsByAdditionalColumns[column]).forEach((columnValue) => {
 
-					let mergedAdditionalColumns = Object.keys(additionalColumnsRow).map(column => additionalColumnsRow[column].join(", ") )
+								// Add all fiscal years to each row
+								this.state.filter.years.forEach((year) => {
+									let fiscalYearSlug = 'fy-'+year;
+									sumsByAdditionalColumns[column][columnValue][fiscalYearSlug] = parseInt(sumsByAdditionalColumns[column][columnValue][fiscalYearSlug]) || 0;
+								})
+								tableData.push(Object.assign({[groupBySlug]: name, [columnSlug]:  columnValue}, sumsByAdditionalColumns[column][columnValue]))
+							}) 
+						})
+					}
+					else {
 
-					// Add columns in the order they appear in the table
-					return tableRow.concat(mergedAdditionalColumns, sumsToArray);
+						this.state.filter.years.forEach((year) => {
+							let fiscalYearSlug = 'fy-'+year;
+							sums[fiscalYearSlug] = parseInt(sums[fiscalYearSlug]) || 0;
+						})
+
+						tableData.push(Object.assign({[groupBySlug]: name}, sums))
+					}
 				}
 
-
 			})
-
-			// Merge each groupBy result into the table data array
-			tableData = tableData.concat(groupByResult)
 		});
 
-		let tableTotalRow = ['Total'];
-		tableTotalRow = tableTotalRow.concat(this.state.additionalColumns.map(col=>" "), this.state.filter.years.map(year => utils.formatToDollarInt(totals[year]) ))
-
-		tableData.push(tableTotalRow)
-		// Filter out rows that were undefined due to not having any revenue data for the selected years
-		return tableData.filter(row => row !== undefined);
-	}
-
-	setTimeframe = () => {
-
+		return {tableData:tableData, expandedGroups: expandedGroups};
 	}
 
 	setYearsFilter(values) {
@@ -187,7 +279,7 @@ class FederalRevenue extends React.Component {
 	}
 
 	// If group by column is in the additional columns remove it
-	setGroupByFilter(value) {
+	setGroupByFilter(value) {		
 		this.setState({
 			filter:{...this.state.filter, groupBy:value},
 			additionalColumns: this.state.additionalColumns.filter(column => column !== value) 
@@ -195,7 +287,46 @@ class FederalRevenue extends React.Component {
 	}
 
 	setAdditionalColumns(value) {
-		this.setState({additionalColumns:value})
+		this.setState({additionalColumns:(value === 'No second column')? [] : [value]})
+	}
+
+	hasLandCategory(data) {
+		switch(this.state.filter.landCategory){
+			case 'All federal':
+				return (data.LandClass === 'Federal')
+			case 'Federal onshore':
+				return (data.RevenueCategory === 'Federal onshore')
+			case 'Federal offshore':
+				return (data.RevenueCategory === 'Federal offshore')
+			case 'Native American':
+				return (data.RevenueCategory === 'Native American')
+			case 'All onshore':
+				return (data.LandCategory === 'Onshore')
+		}
+		return true;
+	}
+
+	hasLocation(data) {
+		if(this.state.filter.location === 'All' || this.state.filter.location === undefined) {
+			return true;
+		}
+		else if(this.state.filter.location.includes('Offshore')) {
+			return (data.OffshoreRegion === this.state.filter.location);
+		}
+		return (data.State === this.state.filter.location);
+	}
+
+	handleTableToolbarSubmit(updatedFilters) {
+		let secondColumn = (updatedFilters.additionalColumn === 'No second column')? [] : [updatedFilters.additionalColumn];
+		this.setState({
+			filter:{...this.state.filter, 
+				years:updatedFilters.fiscalYearsSelected.sort(),
+				groupBy: updatedFilters.groupBy,
+				landCategory: updatedFilters.landCategorySelected,
+				location: updatedFilters.locationSelected,
+			}, 
+			additionalColumns: secondColumn,
+		})
 	}
   /**
    * Add the data to the redux store to enable
@@ -225,12 +356,8 @@ class FederalRevenue extends React.Component {
       			groups: data.allRevenuesGroupByCounty.group,
       		},
       		{
-      			key: BY_LAND_CATEGORY, 
-      			groups: data.allRevenuesGroupByLandCategory.group,
-      		},
-      		{
-      			key: BY_LAND_CLASS, 
-      			groups: data.allRevenuesGroupByLandClass.group,
+      			key: BY_REVENUE_CATEGORY, 
+      			groups: data.allRevenuesGroupByRevenueCategory.group,
       		},
       		{
       			key: BY_REVENUE_TYPE,
@@ -247,7 +374,10 @@ class FederalRevenue extends React.Component {
 
 	render() {
 		let {timeframe, yearOptions} = this.state;
-		//console.log(this.state)
+		let {columns, columnExtensions, grouping, currencyColumns, allColumns, defaultSorting} = this.getTableColumns();
+		let {totalSummaryItems, groupSummaryItems} = this.getTableSummaries();
+		let {tableData, expandedGroups} = this.getTableData();
+
 		return (
 			<DefaultLayout>
 	      <Helmet
@@ -267,12 +397,12 @@ class FederalRevenue extends React.Component {
 							When companies lease lands to extract natural resources on federal lands and waters, they pay fees to lease the land and on the resources that are produced. This non-tax revenue is collected and reported by the Office of Natural Resources Revenue (ONRR).
 						</div>
 						<div className="container-left-6">
-							Leasing<br/>
-							<span class="para-md">Companies bid on and lease lands and waters from the federal government. They pay a bonus when they win a lease and rent until resource production begins.</span>
+							<strong>Leasing</strong><br/>
+							<span className="para-md">Companies bid on and lease lands and waters from the federal government. They pay a bonus when they win a lease and rent until resource production begins.</span>
 						</div>
 						<div className="container-right-6">
-							Production<br/>
-							<span class="para-md">Once enough resources are produced to pay royalties, the leaseholder pays royalties and other fees to the federal government.</span>
+							<strong>Production</strong><br/>
+							<span className="para-md">Once enough resources are produced to pay royalties, the leaseholder pays royalties and other fees to the federal government.</span>
 						</div>
 					</section>
 
@@ -282,47 +412,29 @@ class FederalRevenue extends React.Component {
 
 					<h2 className={theme.sectionHeaderUnderline}>Revenue data</h2>
 
-					<div className={styles.filterContainer}>
-						{yearOptions &&
-							<div>
-								<div className={styles.filterLabel}>Fiscal year(s):</div>
-								<Select
-									multiple
-									dataSetId={REVENUES_FISCAL_YEAR}
-							    options={yearOptions}
-							    sortType={'descending'}
-							    selectedOption={this.state.filter.years}
-							    onChangeHandler={this.setYearsFilter.bind(this)}
-							  >
-							  </Select>
-							</div>
-						}
+					{tableData &&
+						<TableToolbar 
+							fiscalYearOptions={this.getFiscalYearOptions()}
+							locationOptions={this.getLocationOptions()}
+							defaultFiscalYearsSelected={this.state.filter.years}
+							onSubmitAction={this.handleTableToolbarSubmit.bind(this)}
+						/>
+					}
 
-						<div>
-							<div className={styles.filterLabel}>Organize by:</div>
-							<DropDown
-								sortType={'none'}
-						    options={Object.keys(GROUP_BY_OPTIONS)}
-						    action={this.setGroupByFilter.bind(this)}
-						    defaultOptionIndex={DEFAULT_GROUP_BY_INDEX}
-						  >
-						  </DropDown>
-						</div>
-
-						<div>
-							<div className={styles.filterLabel}>Add columns:</div>
-							<Select
-								multiple
-						    options={this.getAdditionalColumnOptions()}
-						    onChangeHandler={this.setAdditionalColumns.bind(this)}
-						    selectedOption={this.state.additionalColumns}
-						  >
-						  </Select>
-						</div>
-					</div>
 					{this.state[REVENUES_FISCAL_YEAR] &&
-						<div>
-							<FilterTable data={this.getTableData()} columns={this.getTableColumns()}/>
+						<div className={styles.tableContainer}>
+							<GroupTable 
+								rows={tableData}
+								columns={columns} 
+								defaultSorting={defaultSorting}
+								tableColumnExtension={columnExtensions}
+								grouping={grouping}
+								currencyColumns={currencyColumns}
+								allColumns={allColumns}
+								expandedGroups={expandedGroups}
+								totalSummaryItems={totalSummaryItems}
+								groupSummaryItems={groupSummaryItems}
+							/>
 						</div>
 					}
 
@@ -342,8 +454,147 @@ export default connect(
   })
 )(FederalRevenue)
 
-const commodityCellRender = (data) => {
-	return data;
+const LocationMessage = () => (
+	<div>For privacy reasons, location is <GlossaryTerm>withheld</GlossaryTerm> for Native American data.</div>
+)
+
+
+import Grid from '@material-ui/core/Grid';
+import Button from '@material-ui/core/Button';
+import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles'
+const muiTheme = createMuiTheme({
+	root: {
+    flexGrow: 0,
+  },
+  palette: {
+    primary: {
+    	light: '#dcf4fd',
+    	main: '#1478a6',
+    	dark: '#086996'
+    }
+  },
+});
+const TableToolbar = ({ fiscalYearOptions, locationOptions, defaultFiscalYearsSelected, onSubmitAction }) => {
+
+	const [fiscalYearsSelected, setFiscalYearsSelected] = useState(defaultFiscalYearsSelected);
+	const [landCategorySelected, setLandCategorySelected] = useState('All');
+	const [locationSelected, setLocationSelected] = useState('All');
+	const [groupBy, setGroupBy] = useState(Object.keys(GROUP_BY_OPTIONS)[DEFAULT_GROUP_BY_INDEX]);
+	const [additionalColumn, setAdditionalColumn] = useState(Object.keys(ADDITIONAL_COLUMN_OPTIONS)[DEFAULT_ADDITIONAL_COLUMN_INDEX]);
+
+	const getAdditionalColumnOptions = () => Object.keys(ADDITIONAL_COLUMN_OPTIONS).filter(column => column !== groupBy);
+	const getLocationOptions = () => {
+		if(landCategorySelected === 'Native American') {
+			return ['withheld'];
+		}
+		if(landCategorySelected === 'All onshore'){
+			return locationOptions.filter(option => !option.includes('Offshore'));
+		}
+		if(landCategorySelected === 'All federal'){
+			return locationOptions.filter(option => !option.includes('withheld'));
+		}
+		if(landCategorySelected === 'Federal onshore'){
+			return locationOptions.filter(option => (!option.includes('withheld') && !option.includes('Offshore')) );
+		}
+		if(landCategorySelected === 'Federal offshore'){
+			return locationOptions.filter(option => (option.includes('Offshore') ||  option.includes('All')) );
+		}
+		return locationOptions;
+	}
+
+	let showLocationMessage = () => {
+		let validLandCategories = ['All', 'All onshore', 'Native American']
+		return validLandCategories.includes(landCategorySelected)
+	}
+
+	useEffect(() => {
+		if(additionalColumn === groupBy) {
+			setAdditionalColumn('No second column')
+		}
+
+		if(!getLocationOptions().includes(locationSelected)){
+			setLocationSelected( ((landCategorySelected === 'Native American')? 'withheld': 'All') )
+		}
+	})
+
+	const handleApply = () => {
+		if(onSubmitAction){
+			onSubmitAction({
+				fiscalYearsSelected: fiscalYearsSelected,
+				landCategorySelected: landCategorySelected,
+				locationSelected: locationSelected,
+				groupBy: groupBy,
+				additionalColumn: additionalColumn,
+			});
+		}
+	}
+
+  return (
+  	<div className={styles.tableToolbarContainer}>
+	  	<MuiThemeProvider theme={muiTheme}>
+		    <Grid container spacing={16}>
+					<Grid item sm={3} xs={12}>
+						<h6>Fiscal year(s):</h6>
+						<Select
+							multiple
+							dataSetId={REVENUES_FISCAL_YEAR}
+					    options={fiscalYearOptions}
+					    sortType={'descending'}
+					    selectedOption={fiscalYearsSelected}
+							onChangeHandler={(values) => setFiscalYearsSelected(values)}
+					  />
+				  </Grid>
+					<Grid item sm xs={12}>
+						<h6>Land category:</h6>
+						<DropDown
+					    options={Object.keys(LAND_CATEGORY_OPTIONS)}
+					    sortType={'none'}
+							action={(value) => setLandCategorySelected(value)}
+					  />
+				  </Grid>
+					<Grid item sm xs={12}>
+						<h6>Location:</h6>
+						<DropDown
+					    options={getLocationOptions()}
+					    sortType={'none'}
+							action={(value) => setLocationSelected(value)}
+					    selectedOptionValue={locationSelected}
+					  />
+					  {showLocationMessage() &&
+					  	<LocationMessage />
+					  }
+				  </Grid>
+					<Grid item sm xs={12}>
+						<h6>Group by:</h6>
+						<DropDown
+							sortType={'none'}
+					    options={Object.keys(GROUP_BY_OPTIONS)}
+					    action={(value) => setGroupBy(value)}
+					    defaultOptionValue={groupBy}
+					    sortType={'none'}
+					  />
+				  </Grid>
+					<Grid item sm xs={12}>
+						<h6>Additional column:</h6>
+						<DropDown
+							sortType={'none'}
+					    options={getAdditionalColumnOptions()}
+					    action={(value) => setAdditionalColumn(value)}
+					    selectedOptionValue={additionalColumn}
+					  />
+				  </Grid>
+					<Grid item xs={12} >
+			 			<Button classes={{root:styles.tableToolbarButton}} variant="contained" color="primary" onClick={() => handleApply()}>Apply</Button>
+			 		</Grid>
+		    </Grid>
+		    <Grid container spacing={0}>
+					<Grid item xs={12} >
+			 			<h5 style={{margin:'0px'}}>Grouped by: {groupBy}</h5>
+			 		</Grid>
+		    </Grid>
+	    </MuiThemeProvider>
+	   </div>
+  );
 }
 
 export const query = graphql`
@@ -362,6 +613,7 @@ export const query = graphql`
 		      State
 		      RevenueDate
 		      OffshoreRegion
+		      RevenueCategory
 		    }
 		  }
 		}
@@ -425,28 +677,13 @@ export const query = graphql`
 	      }
 	    }
 	  }
-	  allRevenuesGroupByLandCategory: allResourceRevenuesFiscalYear(
+	  allRevenuesGroupByRevenueCategory: allResourceRevenuesFiscalYear(
 	  	filter: {
 	  		FiscalYear: {ne: null}, 
-	      LandCategory: {nin: [null,""]},
+	      RevenueCategory: {nin: [null,""]},
 	  	}, 
 	  	sort: {fields: [FiscalYear], order: DESC}) {
-	    group(field: LandCategory) {
-	      id:fieldValue
-	      data:edges {
-	        node {
-	          id
-	        }
-	      }
-	    }
-	  }
-	  allRevenuesGroupByLandClass: allResourceRevenuesFiscalYear(
-	  	filter: {
-	  		FiscalYear: {ne: null}, 
-	      LandClass: {nin: [null,""]},
-	  	}, 
-	  	sort: {fields: [FiscalYear], order: DESC}) {
-	    group(field: LandClass) {
+	    group(field: RevenueCategory) {
 	      id:fieldValue
 	      data:edges {
 	        node {

@@ -1,10 +1,10 @@
 @import 'lib/font-awesome/font-awesome/variables';
 
 // Logos
-$nrrd-logo-width: 220px;
+$nrrd-logo-width: 400px;
 
 // Typography
-$weight-light: 300; // (Lato Light) use
+$weight-light: 400; // (Lato Regular) use
 $weight-book: 400; // (Lato Regular) use
 $weight-bold: 600; // (Lato Semibold) use
 $line-height-caps: 1.2;
@@ -47,7 +47,7 @@ $gray-dark: #768d99;
 $gray-darker: #5c737f;
 $gray-darkest: #435159;
 $black-light: #323c42;
-$black: #1c2326;
+$black: black;
 
 // Blues
 $blue-lighter: #f2fdff;
@@ -71,7 +71,7 @@ $green-dark: #2f4d26;
 $red: #c5403c;
 
 // Font Colors
-$base-font-color: $black-light;
+$base-font-color: $black;
 
 // Padding
 $base-padding: 1.25em; //20px

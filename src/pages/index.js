@@ -28,12 +28,12 @@ import { Tabordion, Tab } from '../components/layouts/Tabordion'
 import StateMap from '../components/maps/StateMap'
 import FederalLandOwnershipLegend from '../components/maps/FederalLandOwnershipLegend'
 import LocationSelector from '../components/selectors/LocationSelector'
-import OilRig from '-!svg-react-loader!../img/svg/icon-ribbon-oil-rig.svg'
 import { ExploreDataButton } from '../components/layouts/buttons/ExploreDataButton'
 import { BlueButton } from '../components/layouts/buttons/BlueButton'
 import { ExploreDataLink } from '../components/layouts/icon-links/ExploreDataLink'
 import { DownloadDataLink } from '../components/layouts/icon-links/DownloadDataLink'
 import MapLink from '../components/layouts/icon-links/MapLink'
+import RevenueTrends from '../components/sections/RevenueTrends'
 
 import DefaultLayout from '../components/layouts/DefaultLayout'
 
@@ -138,9 +138,7 @@ class HomePage extends React.Component {
                   </div>
                 </div>
                 <div className={styles.tabContentAside}>
-                  <div className={styles.oilRig}>
-                    <OilRig preserveAspectRatio="xMidYMid meet" viewBox="0 0 300 203" />
-                  </div>
+                  <RevenueTrends />
                 </div>
               </div>
             </Tab>

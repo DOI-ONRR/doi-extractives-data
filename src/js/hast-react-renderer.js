@@ -36,6 +36,8 @@ import RenewablesIcon from '-!svg-react-loader!../img/svg/icon-renewables.svg';
 import GeothermalIcon from '-!svg-react-loader!../img/svg/icon-geothermal.svg';
 import ChevronIcon from '-!svg-react-loader!../img/svg/chevron-lt.svg';
 import DownloadLink from '../components/layouts/icon-links/DownloadLink';
+import DownloadCsvLink from '../components/layouts/icon-links/DownloadCsvLink';
+import DownloadExcelLink from '../components/layouts/icon-links/DownloadExcelLink';
 
 const SelectWrapper = (props) => {
   let { onchange, ...mutableProps } = props;
@@ -123,10 +125,11 @@ const hastReactRenderer = new rehypeReact({
                 'geothermal-icon': GeothermalIcon,
                 'chevron-icon': ChevronIcon,
                 'select': SelectWrapper,
-                'download-link': DownloadLink,
                 'use': UseWrapper,
                 'svg': SvgWrapper,
                 'download-link': DownloadLink,
+                'excel-link': DownloadExcelLink,
+                'csv-link': DownloadCsvLink,
               },
 
 }).Compiler; 

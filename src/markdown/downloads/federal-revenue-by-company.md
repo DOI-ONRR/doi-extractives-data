@@ -19,7 +19,8 @@ tag:
 
 <p class="downloads-download_links-intro">Download calendar year data:
   <ul class="downloads-download_links list-unstyled">
-    <li><download-link to="/downloads/federal_revenue_by_company_CY2013-CY2018.xlsx">Full dataset (xlsx, 409 KB)</download-link></li>
+    <li><excel-link to="/downloads/federal_revenue_by_company_CY2013-CY2018.xlsx">Revenue by company (Excel, 409 KB)</excel-link></li>
+    <li><csv-link to="/downloads/federal_revenue_by_company_CY2013-CY2018.csv">Revenue by company (csv, 1 MB)</csv-link></li>
   </ul>
 </p>
 

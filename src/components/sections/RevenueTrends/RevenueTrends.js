@@ -11,6 +11,7 @@ import TriangleUpIcon from '-!svg-react-loader!../../../img/svg/arrow-up.svg'
 import TriangleDownIcon from '-!svg-react-loader!../../../img/svg/arrow-down.svg'
 
 import styles from './RevenueTrends.module.scss'
+import { applyMiddleware } from 'redux';
 
 const TREND_LIMIT = 10;
 
@@ -209,9 +210,9 @@ const PercentDifference = ({currentAmount, previousAmount}) => {
         :
           <TriangleDownIcon viewBox="-20 -10 50 40"/>
       }
-    </span>
-    <span>
-      {utils.round(percentIncrease, 0)+'%'}
+      <span>
+        {utils.round(percentIncrease, 0)+'%'}
+      </span>  
     </span>
   );
 }

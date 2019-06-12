@@ -183,25 +183,25 @@ const RevenueProcessTable = props => {
 			  	}
 			  	{ valuesRoyalties.Oil > 0 &&
 				  	<span className="text table-arrow_box-subheader-value">
-				  		<strong className="text-header text-header-first">Oil</strong>
+				  		<strong className="text-header text-header-first">Oil </strong>
 				  		{ utils.formatToDollarInt(valuesRoyalties.Oil)}
 				  	</span>
 			  	}
 			  	{ valuesRoyalties.Gas > 0 &&
 				  	<span className="text table-arrow_box-subheader-value">
-				  		<strong className="text-header text-header-first">Gas</strong>
+				  		<strong className="text-header text-header-first">Gas </strong>
 				  		{ utils.formatToDollarInt(valuesRoyalties.Gas)}
 				  	</span>
 			  	}
 			  	{ valuesRoyalties.NGL > 0 &&
 				  	<span className="text table-arrow_box-subheader-value">
-				  		<strong className="text-header text-header-first">NGL</strong>
+				  		<strong className="text-header text-header-first">NGL </strong>
 				  		{ utils.formatToDollarInt(valuesRoyalties.NGL)}
 				  	</span>
 			  	}
 			  	{ valuesRoyalties.OilShale > 0 &&
 				  	<span className="text table-arrow_box-subheader-value">
-				  		<strong className="text-header text-header-first">OilShale</strong>
+				  		<strong className="text-header text-header-first">OilShale </strong>
 				  		{ Ututilsils.formatToDollarInt(valuesRoyalties.OilShale)}
 				  	</span>
 			  	}

@@ -41,7 +41,7 @@ const RevenueTypeTableRow = props => {
     <tr>
 		    <th scope="row" data-value={props.commodityData.All[props.year]} name={'#revenue-' + utils.formatToSlug(props.commodityName)} className="table-arrow_box-subheader">
 		      <strong>{ props.commodityName }</strong><br/>
-		      <strong className="table-arrow_box-subheader-value">{ utils.formatToDollarInt(props.commodityData.All[props.year]) }</strong>
+		      <strong className="table-arrow_box-subheader-value"> { utils.formatToDollarInt(props.commodityData.All[props.year]) }</strong>
 		    </th>
 		  	{
 		  		revenueTypeNames.map((revenueTypeName, index) => {

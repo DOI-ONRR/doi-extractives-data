@@ -40,7 +40,7 @@ const RevenueTypeTableRow = props => {
     <tr>
 		    <th scope="row" data-value={props.commodityData.All[props.year]} name={'#revenue-' + utils.formatToSlug(props.commodityName)} className="table-arrow_box-subheader">
 		      <strong>{ props.commodityName }</strong><br/>
-		      <strong className="table-arrow_box-subheader-value">{ utils.formatToDollarInt(props.commodityData.All[props.year]) }</strong>
+		      <strong className="table-arrow_box-subheader-value"> { utils.formatToDollarInt(props.commodityData.All[props.year]) }</strong>
 		    </th>
 		  	{
 		  		revenueTypeNames.map((revenueTypeName, index) => {
@@ -56,7 +56,7 @@ const RevenueTypeTableRow = props => {
 		  								<br/>
 			  							<span className="table-arrow_box-asterisk">
 			  								* Includes revenues not tied to specific commo&shy;dities
-			  								({ utils.formatToDollarInt(NATIONAL_REVENUES_INSPECTION_FEES[props.year]) } in inspection fees,
+			  								({ utils.formatToDollarInt(NATIONAL_REVENUES_INSPECTION_FEES[props.year]) } in inspection fees, 
 			  								{ utils.formatToDollarInt(NATIONAL_REVENUES_CIVIL_PENALTIES[props.year]) } in civil penalties,
 			  								and { utils.formatToDollarInt(NATIONAL_REVENUES_OTHER_REVENUES[props.year]) } in other revenue).
 			  							</span>

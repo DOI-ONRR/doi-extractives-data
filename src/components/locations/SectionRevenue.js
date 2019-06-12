@@ -232,7 +232,7 @@ const SectionRevenue = props => {
                                                                                                   Data about revenue on federal land in { countyData[1].name } in <span data-year={ year }>{ year }</span> is withheld.
                                                   </span>
                                                   <span className="has-data">
-                                                    Companies paid <span data-format={'$,'} data-value={productVolume}>{productVolume}</span> to extract natural resources on federal land in { countyData[1].name } in <span data-year={ year }>{year}</span>.
+                                                    Companies paid <span data-format={'$,'} data-value={productVolume}>{productVolume}</span> to extract natural resources on federal land in { countyData[1].name } County in <span data-year={ year }>{year}</span>.
                                                   </span>
                                                 </td>
                                               </tr>

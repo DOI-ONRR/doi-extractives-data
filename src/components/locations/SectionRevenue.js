@@ -207,15 +207,15 @@ const SectionRevenue = props => {
 
                                           return (
                                             <tbody key={index}>
-                                              <tr data-fips={countyData[0]} data-units={'$,'} data-year-values={JSON.stringify(yearsValue)}>
+                                              <tr data-fips={countyData[0]} data-format={'$,'} data-year-values={JSON.stringify(yearsValue)}>
                                                 <td>
                                                   <div className='swatch'
                                                     data-value-swatch={productVolume}
                                                     data-year-values={JSON.stringify(yearsValue)}>
                                                   </div>{ countyData[1].name+" County" }
                                                 </td>
-                                                <td data-value-text={productVolume}
-                                                  data-year-values={JSON.stringify(yearsValue)}>${productVolume}</td>
+                                                <td data-format={'$,'} data-value-text={productVolume}
+                                                  data-year-values={JSON.stringify(yearsValue)}>{productVolume}</td>
                                                 <td className='numberless'
                                                   data-series='volume'
                                                   data-value={productVolume}
@@ -223,6 +223,7 @@ const SectionRevenue = props => {
                                               </tr>
                                               <tr data-fips={countyData[0]}>
                                                 <td colSpan='3'
+                                                  data-format={'$,'}
                                                   data-year-values={JSON.stringify(yearsValue)}
                                                   data-sentence={dataSentence}
                                                   aria-hidden='true'
@@ -231,7 +232,7 @@ const SectionRevenue = props => {
                                                                                                   Data about revenue on federal land in { countyData[1].name } in <span data-year={ year }>{ year }</span> is withheld.
                                                   </span>
                                                   <span className="has-data">
-                                                    Companies paid <span data-value={productVolume}>{productVolume}</span> to extract natural resources on federal land in { countyData[1].name } in <span data-year={ year }>{year}</span>.
+                                                    Companies paid <span data-format={'$,'} data-value={productVolume}>{productVolume}</span> to extract natural resources on federal land in { countyData[1].name } in <span data-year={ year }>{year}</span>.
                                                   </span>
                                                 </td>
                                               </tr>

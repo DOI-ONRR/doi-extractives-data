@@ -22,7 +22,7 @@ tag:
 
 <p class="downloads-download_links-intro">Download production data by month:
   <ul class="downloads-download_links list-unstyled">
-    <li><download-link to="/downloads/monthly_production_05-2019.xlsx">Production by month, 1/2008–1/2019 (xlsx, 54 KB)</download-link></li>
+    <li><download-link to="/downloads/monthly_production_06-2019.xlsx">Production by month, 1/2008–2/2019 (xlsx, 52 KB)</download-link></li>
   </ul>
 </p>
 

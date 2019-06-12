@@ -215,7 +215,7 @@ const SectionRevenue = props => {
                                                   </div>{ countyData[1].name+" County" }
                                                 </td>
                                                 <td data-value-text={productVolume}
-                                                  data-year-values={JSON.stringify(yearsValue)}>{productVolume}</td>
+                                                  data-year-values={JSON.stringify(yearsValue)}>${productVolume}</td>
                                                 <td className='numberless'
                                                   data-series='volume'
                                                   data-value={productVolume}

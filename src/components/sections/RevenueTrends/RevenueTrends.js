@@ -11,7 +11,6 @@ import TriangleUpIcon from '-!svg-react-loader!../../../img/svg/arrow-up.svg'
 import TriangleDownIcon from '-!svg-react-loader!../../../img/svg/arrow-down.svg'
 
 import styles from './RevenueTrends.module.scss'
-import { applyMiddleware } from 'redux';
 
 const TREND_LIMIT = 10;
 

@@ -13,21 +13,6 @@ tag:
 <custom-link to="/downloads/" className="breadcrumb link-charlie">Downloads</custom-link> /
 # Disbursements by month
 
-<section class="explore-subpage container">
-    <section>
-      <div class="explore-subpage-tabs">
-        <ul>
-          <li class="explore-subpage-tab">
-            <a href="/downloads/disbursements/">Disbursements by year</a>
-          </li>
-          <li class="explore-subpage-tab active">
-            <a href="/downloads/federal-disbursements-by-month/">Disbursements by month</a>
-          </li>
-        </ul>
-      </div>
-    </section>
-</section>
-
 > The amount of money earned from extraction of natural resources on federal lands that is disbursed to various legislated funds. We have disbursements data by month from October 2018 through the most recent month.
 
 Download fiscal year data:

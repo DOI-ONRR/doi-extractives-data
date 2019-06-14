@@ -1,10 +1,10 @@
 # User Types
 ## Who we've interviewed
-These are the types of users we've interviewed over the course of all studies since April 2018. (12 question answerers, 7 agenda supporters, 4 storytellers, 15 domain learners, 2 question answerer/storytellers, 1 domain learner/storyteller)
+These are the types of users we've interviewed over the course of all studies since April 2018. (15 question answerers, 9 agenda supporters, 6 storytellers, 18 domain learners, 2 question answerer/storytellers, 2 domain learner/storytellers)
 ![All users interviewed for disburemensts on a matrix](https://github.com/ONRR/doi-extractives-data/blob/research/research/00_UserTypes/AllUsers.PNG)
 
 ## User Type 1: Question Answerer
-We've interviewed 12 question answerers. And two users who were question answerers for how they find data, but storytellers for how they uses it.
+We've interviewed 15 question answerers. And two users who were question answerers for how they find data, but storytellers for how they uses it.
 ![Question answerer users on a matrix](https://github.com/ONRR/doi-extractives-data/blob/research/research/00_UserTypes/QuestionAnswerers.PNG)
 ### Goals 
 * Inform people about natural resource revenue data that they know is available.
@@ -25,7 +25,7 @@ We've interviewed 12 question answerers. And two users who were question answere
 * Joe is an **external liaison for ONRR**.  He frequently fields questions from the public and congress for questions that could be answered on the site.  He looks in his databases for the answer to question first, but uses the site to verify the answer or for things he knows he can find more quickly on the site.
 
 ## User Type 2: Agenda Supporter
-We've interviewed 7 agenda supporters.
+We've interviewed 9 agenda supporters.
 ![Agenda supporter users on a matrix](https://github.com/ONRR/doi-extractives-data/blob/research/research/00_UserTypes/AgendaSupporters.PNG)
 ### Goals 
 * Find supporting data for his or her agenda.
@@ -52,7 +52,7 @@ We've interviewed 7 agenda supporters.
 * Laura works for an **NGO**. She’s concerned about increasing volumes of oil being transported by train through her state following a recent derailment. She wants to determine if oil production on federal lands has recently increased to help her interpret transportation-related risks to her state. She can easily find data that she trusts for oil production on federal lands. She can use that along with state production and export volumes, from other sources, to complete her analysis.
 
 ## User Type 3: Storyteller
-We've interviewed 4 storytellers. And 3 users who are storytellers for how they use the data, but find the data as question answerers or domain learners.
+We've interviewed 6 storytellers and 4 users who are storytellers for how they use the data, but find the data as question answerers or domain learners. 
 ![Storyteller users on a matrix](https://github.com/ONRR/doi-extractives-data/blob/research/research/00_UserTypes/Storytellers.PNG)
 ### Goals 
 * Understand what is happening with natural resources.
@@ -80,7 +80,7 @@ We've interviewed 4 storytellers. And 3 users who are storytellers for how they 
 * A **journalist** at a major regional news outlet is writing a story about policy claims about energy production on public land. They’re able to find data about production trends both at the national and regional/state level, which helps them back up their story with accurate numbers that haven’t been influenced by personal or political objectives.
 
 ## User Type 4: Domain Learner
-We've interviewed 15 domain learners and 1 who finds data as a domain learner, but uses the data like a storyteller.
+We've interviewed 18 domain learners and 2 who find data as a domain learner, but uses the data like a storyteller.
 ![Domain learner users on a matrix](https://github.com/ONRR/doi-extractives-data/blob/research/research/00_UserTypes/DomainLearners.PNG)
 ### Goals 
 * Understand how the revenue collection and disbursement process works.

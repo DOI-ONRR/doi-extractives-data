@@ -63,7 +63,7 @@ tag:
 
 <ul class="list-sections list-unstyled">
   <li class="downloads-download_links">
-    <h3 id="disbursements-by year">Disbursements by year</h3>
+    <h3 id="disbursements-by-year">Disbursements by year</h3>
     <p>The amount of money earned from extraction of natural resources on federal lands that is disbursed to various legislated funds by fiscal year. This dataset is from the <a href="http://www.onrr.gov/">Office of Natural Resources Revenue</a>, which is part of the Department of the Interior.</p>
     <download-data-link to="/downloads/disbursements/">Downloads and documentation</download-data-link>
   </li>

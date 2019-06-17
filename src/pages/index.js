@@ -55,8 +55,8 @@ class HomePage extends React.Component {
     let data = this.props.data;
 
     this.props.normalizeDataSet([
-      { key: REVENUES_MONTHLY, 
-        data: data.allMonthlyRevenues.data, 
+      { key: REVENUES_MONTHLY,
+        data: data.allMonthlyRevenues.data,
         groups: [
           {
             key:BY_CALENDAR_YEAR,
@@ -64,8 +64,8 @@ class HomePage extends React.Component {
           }
         ]
       },
-      { key: REVENUES_FISCAL_YEAR, 
-        data: data.allFiscalYearRevenues.data, 
+      { key: REVENUES_FISCAL_YEAR,
+        data: data.allFiscalYearRevenues.data,
         groups: [
           {
             key:BY_FISCAL_YEAR,
@@ -242,7 +242,7 @@ class HomePage extends React.Component {
 
 export default connect(
   state => ({}),
-  dispatch => ({ 
+  dispatch => ({
     hydateDataManager: dataSets => dispatch(hydateDataManagerAction(dataSets)),
     normalizeDataSet: dataSets => dispatch(normalizeDataSetAction(dataSets))
   })
@@ -250,7 +250,7 @@ export default connect(
 
 export const query = graphql`
   query HomePageQuery {
-    offshore_data:allMarkdownRemark (filter:{fileAbsolutePath: {regex: "/offshore_regions/"}}) {
+    offshore_data:allMarkdownRemark (filter:{fileAbsolutePath: {regex: "/offshore_regions/"}} sort:{fields: [frontmatter___title], order: ASC) {
       offshore_regions:edges {
         offshore_region:node {
           frontmatter {
@@ -262,7 +262,7 @@ export const query = graphql`
         }
       }
     }
-    states_data:allMarkdownRemark (filter:{fileAbsolutePath: {regex: "/states/"}}) {
+    states_data:allMarkdownRemark (filter:{fileAbsolutePath: {regex: "/states/"}} sort:{fields: [frontmatter___title], order: ASC) {
       states:edges {
         state:node {
           frontmatter {
@@ -291,7 +291,7 @@ export const query = graphql`
           LongUnits
           ProductName
           LandCategory_OnshoreOffshore
-        } 
+        }
       }
     }
     GasVolumes:allProductVolumes (
@@ -312,7 +312,7 @@ export const query = graphql`
           LongUnits
           ProductName
           LandCategory_OnshoreOffshore
-        } 
+        }
       }
     }
     CoalVolumes:allProductVolumes (
@@ -333,7 +333,7 @@ export const query = graphql`
           LongUnits
           ProductName
           LandCategory_OnshoreOffshore
-        } 
+        }
       }
     }
     allRevenues:allResourceRevenuesMonthly(
@@ -355,7 +355,7 @@ export const query = graphql`
     allMonthlyRevenues: allResourceRevenuesMonthly(
       filter: {
         RevenueCategory: {ne: null}
-      }, 
+      },
       sort: {fields: [RevenueDate], order: DESC}) {
       data: edges {
         node {
@@ -371,7 +371,7 @@ export const query = graphql`
       }
     }
     allMonthlyRevenuesByCalendarYear: allResourceRevenuesMonthly(
-      filter: {RevenueCategory: {ne: null}}, 
+      filter: {RevenueCategory: {ne: null}},
       sort: {fields: [RevenueDate], order: DESC}) {
       group(field: CalendarYear) {
         id: fieldValue
@@ -383,7 +383,7 @@ export const query = graphql`
       }
     }
     allFiscalYearRevenues: allResourceRevenuesFiscalYear(
-      filter: {RevenueCategory: {ne: null}}, 
+      filter: {RevenueCategory: {ne: null}},
       sort: {fields: [RevenueDate], order: DESC}) {
       data: edges {
         node {
@@ -397,7 +397,7 @@ export const query = graphql`
       }
     }
     allFiscalYearRevenuesByFiscalYear: allResourceRevenuesFiscalYear(
-      filter: {RevenueCategory: {ne: null}}, 
+      filter: {RevenueCategory: {ne: null}},
       sort: {fields: [RevenueDate], order: DESC}) {
       group(field: FiscalYear) {
         id: fieldValue
@@ -424,7 +424,7 @@ export const query = graphql`
       }
     }
     allFiscalYearProductVolumesByFiscalYear_Gas: allProductVolumesFiscalYear(
-      filter: {ProductName: {eq: "Gas"}}, 
+      filter: {ProductName: {eq: "Gas"}},
       sort: {fields: [ProductionDate], order: DESC}) {
       group(field: FiscalYear) {
         id: fieldValue
@@ -436,7 +436,7 @@ export const query = graphql`
       }
     }
     allFiscalYearProductVolumesByFiscalYear_Oil: allProductVolumesFiscalYear(
-      filter: {ProductName: {eq: "Oil"}}, 
+      filter: {ProductName: {eq: "Oil"}},
       sort: {fields: [ProductionDate], order: DESC}) {
       group(field: FiscalYear) {
         id: fieldValue
@@ -448,7 +448,7 @@ export const query = graphql`
       }
     }
     allFiscalYearProductVolumesByFiscalYear_Coal: allProductVolumesFiscalYear(
-      filter: {ProductName: {eq: "Coal"}}, 
+      filter: {ProductName: {eq: "Coal"}},
       sort: {fields: [ProductionDate], order: DESC}) {
       group(field: FiscalYear) {
         id: fieldValue

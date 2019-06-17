@@ -15,10 +15,10 @@ tag:
 
 > This dataset contains information on natural resource production volumes on federal lands and waters.
 
-<p class="downloads-download_links-intro">Download calendar year data (2008-2017):
+<p class="downloads-download_links-intro">Download calendar year data (2003-2018):
   <ul class="downloads-download_links list-unstyled">
-    <li><excel-link to="/downloads/federal_production_CY08-17.xlsx">Calendar year production (Excel, 372 KB)</excel-link></li>
-    <li><csv-link to="/downloads/federal_production_CY08-17.csv">Calendar year production (csv, 516 KB)</csv-link></li>
+    <li><excel-link to="/downloads/federal_production_CY03-18.xlsx">Calendar year production (Excel, 631 KB)</excel-link></li>
+    <li><csv-link to="/downloads/federal_production_CY03-18.csv">Calendar year production (csv, 835 KB)</csv-link></li>
   </ul>
 </p>
 

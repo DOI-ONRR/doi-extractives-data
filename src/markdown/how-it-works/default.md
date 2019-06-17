@@ -143,7 +143,7 @@ redirect_from: /how-it-works/production/
         <div class="container landing-section">
           <div>
             <h4 class="h3 landing-heading"><custom-link to="/how-it-works/revenues">How revenue works</custom-link></h4>
-            <p>Companies pay the federal government to extract natural resources on federal lands and waters. This revenue is collected by the Office of Natural Resources Revenue.</p>
+            <p>Companies pay the federal government to extract natural resources on federal lands and waters. This revenue is collected by the Office of Natural Resources Revenue, mostly as <glossary-term termKey="bonus">bonuses</glossary-term>, <glossary-term termKey="rent">rent</glossary-term>, and <glossary-term termKey="royalty">royalties</glossary-term>.</p>
             <p><custom-link to="/how-it-works/revenues">Learn about how revenue works</custom-link></p>
           </div>
           <div>

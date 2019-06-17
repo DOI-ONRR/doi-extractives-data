@@ -203,11 +203,7 @@ export const query = graphql`
         }
       }
     }
-    states_data:allMarkdownRemark (filter:{fileAbsolutePath: {regex: "/states/"}}) {
-      sort: {
-        fields: [frontmatter___title]
-        order: ASC
-      }
+    states_data:allMarkdownRemark (filter:{fileAbsolutePath: {regex: "/states/"}} sort:{fields: [frontmatter___title], order: ASC}) {
       states:edges {
         state:node {
           frontmatter {

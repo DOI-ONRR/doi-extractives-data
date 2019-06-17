@@ -85,6 +85,4 @@ This is a summary of the open research findings, by topic, so we can get a sense
 | Production Order | Participants had mixed opinions about whether All should come first or last. | 2 - Medium | 7 | Home Page Sept 2018 | Keeping it with all first, for now, but will watch in future studies. | 4 - Addressed | <https://github.com/ONRR/doi-extractives-data/issues/3278> |
 | EIA Data | People don't think we should have EIA data on our site. | 3 - Low | 1 | October 2018 Interviews |  | 4 - Addressed |  |
 | Voice | Nobody we talked with wanted voice. | 3 - Low | 12 | Revenue Filterable Table June 2019 | Don't implement voice. | 4 - Tabled |  |
-| Home Page Map | Users like the map more than data highlights. People still like using the map and had a hard time finding it at the bottom of the homepage.\
- | 2 - Medium | 18 | Home Page Sept 2018, Key Facts/Explore Data Aug 2018, Revenue Filterable Table June 2019 | Revisit moving the map back up. | 5 - Reopened | [https://github.com/ONRR/doi-extractives-data/issues/3293\
-](https://github.com/ONRR/doi-extractives-data/issues/3293) |
+| Home Page Map | Users like the map more than data highlights. People still like using the map and had a hard time finding it at the bottom of the homepage. | 2 - Medium | 18 | Home Page Sept 2018, Key Facts/Explore Data Aug 2018, Revenue Filterable Table June 2019 | Revisit moving the map back up. | 5 - Reopened | [https://github.com/ONRR/doi-extractives-data/issues/3293](https://github.com/ONRR/doi-extractives-data/issues/3293) |

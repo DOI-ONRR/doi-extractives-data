@@ -8,20 +8,7 @@ permalink: /case-studies/boone-logan-and-mingo/
   <article class="container-left-9">
     <h3 class="case_studies_content-icon"><i class="icon-coal"></i>Coal</h3>
     <h1 id="intro">Boone, Logan, and Mingo Counties, West Virginia</h1>
-    <div class="notice">
-      <p class="para-sm">
-        <svg class="icon icon-bottom" version="1.1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 35 35">
-          <title>icon-archive</title>
-          <path d="M19.429 14.857q0-0.464-0.339-0.804t-0.804-0.339h-4.571q-0.464 0-0.804 0.339t-0.339 0.804 0.339 0.804 0.804 0.339h4.571q0.464 0 0.804-0.339t0.339-0.804zM29.714 11.429v17.143q0 0.464-0.339 0.804t-0.804 0.339h-25.143q-0.464 0-0.804-0.339t-0.339-0.804v-17.143q0-0.464 0.339-0.804t0.804-0.339h25.143q0.464 0 0.804 0.339t0.339 0.804zM30.857 3.429v4.571q0 0.464-0.339 0.804t-0.804 0.339h-27.429q-0.464 0-0.804-0.339t-0.339-0.804v-4.571q0-0.464 0.339-0.804t0.804-0.339h27.429q0.464 0 0.804 0.339t0.339 0.804z"></path>
-        </svg>
-        This content was created as part of the 
-        <span class="term term-end" data-term="EITI Standard" title="Click to define" tabindex="0">
-          USEITI
-          <icon class="icon-book"></icon>
-        </span>
-        and is no longer being updated. <a href="/about/#history">Learn more about USEITI.</a>
-      </p>
-    </div>
+    <archive-banner></archive-banner>
     <div class="case_studies-map-container ">
       <!--?xml version="1.0" standalone="no"?-->
       <svg class="case_studies-map case_studies-map-wide" viewBox="692.2332514474759 235.8153270518701 86.44327547836781 86.25505679566993" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="text-align:center;perspective-origin:206.281px 206px;transform-origin:206.281px 206px;fill:rgba(0, 0, 0, 0);stroke:rgb(211, 223, 230);stroke-width:0.5px;">

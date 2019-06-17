@@ -570,20 +570,7 @@ permalink: /case-studies/
 <section class="layout-content container-page-wrapper container-margin">
   <article class="container-left-7 container-shift-reverse-2">
     <!-- Assigns variables to be used in the opening paragraph to keep the data up to date -->
-    <div class="notice">
-      <p class="para-sm">
-        <svg class="icon icon-bottom" version="1.1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 35 35">
-          <title>icon-archive</title>
-          <path d="M19.429 14.857q0-0.464-0.339-0.804t-0.804-0.339h-4.571q-0.464 0-0.804 0.339t-0.339 0.804 0.339 0.804 0.804 0.339h4.571q0.464 0 0.804-0.339t0.339-0.804zM29.714 11.429v17.143q0 0.464-0.339 0.804t-0.804 0.339h-25.143q-0.464 0-0.804-0.339t-0.339-0.804v-17.143q0-0.464 0.339-0.804t0.804-0.339h25.143q0.464 0 0.804 0.339t0.339 0.804zM30.857 3.429v4.571q0 0.464-0.339 0.804t-0.804 0.339h-27.429q-0.464 0-0.804-0.339t-0.339-0.804v-4.571q0-0.464 0.339-0.804t0.804-0.339h27.429q0.464 0 0.804 0.339t0.339 0.804z"></path>
-        </svg>
-        This content was created as part of the 
-        <span class="term term-end" data-term="EITI Standard" title="Click to define" tabindex="0">
-          USEITI
-          <icon class="icon-book"></icon>
-        </span>
-        and is no longer being updated. <a href="/about/#history">Learn more about USEITI.</a>
-      </p>
-    </div>
+    <archive-banner></archive-banner>
     <blockquote>
       <p>While extractive industries made up 1.4% of the U.S. GDP in 2016, they play a much larger role in some local communities. For example, extractive industries made up 20.3% of Wyoming’s GDP in 2016. At the county level, certain communities may be even more economically dependent on extractive industries.</p>
     </blockquote>

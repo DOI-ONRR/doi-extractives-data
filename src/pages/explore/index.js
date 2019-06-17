@@ -191,7 +191,7 @@ export default connect(
 
 export const query = graphql`
   query StateMapsQuery {
-    offshore_data:allMarkdownRemark (filter:{fileAbsolutePath: {regex: "/offshore_regions/"}}) {
+    offshore_data:allMarkdownRemark (filter:{fileAbsolutePath: {regex: "/offshore_regions/"}} sort:{fields: [frontmatter___title], order: ASC}) {
       offshore_regions:edges {
         offshore_region:node {
           frontmatter {

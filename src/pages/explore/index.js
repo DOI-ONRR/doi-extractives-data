@@ -94,7 +94,7 @@ class ExplorePage extends React.Component {
     }
 
     render () {
-        
+
         return (
             <DefaultLayout>
             <main id="national" className="layout-state-pages national-page">
@@ -113,10 +113,10 @@ class ExplorePage extends React.Component {
                         <div className="container-left-8 ribbon-hero ribbon-hero-column">
                             <h1>Explore data</h1>
                             <figure>
-                                <StateMap 
-                                    ownership={true} 
-                                    no_outline={true} 
-                                    offshore_regions={this.props.data.offshore_data.offshore_regions} 
+                                <StateMap
+                                    ownership={true}
+                                    no_outline={true}
+                                    offshore_regions={this.props.data.offshore_data.offshore_regions}
                                     states={this.props.data.states_data.states}/>
                             </figure>
                             <aside className="wide">
@@ -127,7 +127,7 @@ class ExplorePage extends React.Component {
                             <figure className="ribbon-card-top">
                                 <h2 className="ribbon-card-top-text-header">Land ownership</h2>
                                 <p>
-                                    Natural resource ownership, governance, and revenues are closely tied to land ownership. 
+                                    Natural resource ownership, governance, and revenues are closely tied to land ownership.
                                     Federal land represents {this.props.data.land_stats_data.states[0].state_data.federal_percent}%
                                     of all U.S. land, mostly concentrated in western states.
                                 </p>
@@ -138,8 +138,8 @@ class ExplorePage extends React.Component {
                             </figure>
                             <figcaption className="ribbon-card-bottom state_pages-select">
                                 <label htmlFor="location-selector" className="ribbon-card-top-text-header">Explore state or offshore data:</label>
-                                <LocationSelector 
-                                    default='Choose location' 
+                                <LocationSelector
+                                    default='Choose location'
                                     states={this.props.data.states_data.states}
                                     offshore_regions={this.props.data.offshore_data.offshore_regions}/>
                             </figcaption>
@@ -158,8 +158,8 @@ class ExplorePage extends React.Component {
 
                         </section>
 
-                        <NationalRevenue 
-                            stateId={PAGE_ID} 
+                        <NationalRevenue
+                            stateId={PAGE_ID}
                             stateName={PAGE_TITLE}
                             isNationalPage={NATIONAL_PAGE} />
 
@@ -191,7 +191,7 @@ export default connect(
 
 export const query = graphql`
   query StateMapsQuery {
-    offshore_data:allMarkdownRemark (filter:{fileAbsolutePath: {regex: "/offshore_regions/"}}) {
+    offshore_data:allMarkdownRemark (filter:{fileAbsolutePath: {regex: "/offshore_regions/"}} sort:{fields: [frontmatter___title], order: ASC}) {
       offshore_regions:edges {
         offshore_region:node {
           frontmatter {
@@ -203,7 +203,7 @@ export const query = graphql`
         }
       }
     }
-    states_data:allMarkdownRemark (filter:{fileAbsolutePath: {regex: "/states/"}}) {
+    states_data:allMarkdownRemark (filter:{fileAbsolutePath: {regex: "/states/"}} sort:{fields: [frontmatter___title], order: ASC}) {
       states:edges {
         state:node {
           frontmatter {

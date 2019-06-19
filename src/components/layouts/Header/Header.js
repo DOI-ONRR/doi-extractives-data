@@ -7,7 +7,9 @@ import Link from '../../utils/temp-link'
 import styles from './Header.module.scss'
 
 import { Search } from '../../utils/Search'
+import { isIE } from 'react-device-detect';
 
+import { BrowserBanner } from '../BrowserBanner'
 import NRRDLogo from '../../../img/NRRD-logo.svg'
 import MobileNavMenuIcon from '-!svg-react-loader!../../../img/icons/icon-menu.svg'
 import IconCloseX from '-!svg-react-loader!../../../img/icons/icon-close-x.svg'
@@ -51,6 +53,7 @@ const Header = props => {
 
   return (
     <header className={styles.root + ' container-page-wrapper'}>
+      { isIE && <BrowserBanner /> }
       <div className="header-left">
         <Link className="header-image_link" to="/">
           <h1 className="sr-only">

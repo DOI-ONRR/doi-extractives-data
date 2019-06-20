@@ -76,7 +76,7 @@ const NationalFederalProduction = props => {
     <section id="federal-production" is="year-switcher-section" className="federal production">
 
       <section className="county-map-table" is="year-switcher-section">
-        <StickyHeader headerText='Federal production trends by resources'>
+        <StickyHeader alt='Federal lands and waters' headerText='Federal production trends by resources'>
           <YearSelector years={years} classNames="flex-row-icon" />
         </StickyHeader>
 

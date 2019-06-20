@@ -112,13 +112,13 @@ const utils = {
 	    return parseFloat(number).toFixed(precision)
   },
   formatToSigFig_Dollar (value, precision) {
-    let num = d3.format(`.${precision}s`)(value)
-    //let num = d3.format(setSigFigs(value, value))(value)
-    
-    let suffix = num.substring((num.length - 1))
-    let dollarNum = this.formatToDollarFloat(num, (precision-1))
+    let num = d3.format(`.${ precision }s`)(value)
+    // let num = d3.format(setSigFigs(value, value))(value)
 
-    return this.getMetricLongUnit(dollarNum+suffix)
+    let suffix = num.substring((num.length - 1))
+    let dollarNum = this.formatToDollarFloat(num, (precision - 1))
+
+    return this.getMetricLongUnit(dollarNum + suffix)
   },
   getMetricLongUnit (str) {
     let suffix = { k: 'k', M: ' million', G: ' billion' }
@@ -141,17 +141,42 @@ const utils = {
 	      }, 0)
 	    }
   	}
-    if(typeof window !== 'undefined') {
+    if (typeof window !== 'undefined') {
       window.addEventListener('load', scrollToElement)
     }
   },
   toTitleCase (str) {
-    str = str.toLowerCase().split(' ');
-    for (var i = 0; i < str.length; i++) {
-      str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
+    str = str.toLowerCase().split(' ')
+    for (let i = 0; i < str.length; i++) {
+      str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1)
     }
-    return str.join(' ');
+    return str.join(' ')
   },
+  compareValues (key, order = 'asc') {
+    return function (a, b) {
+      if (!a.hasOwnProperty(key) ||
+         !b.hasOwnProperty(key)) {
+        return 0
+      }
+
+      const varA = (typeof a[key] === 'string')
+        ? a[key].toUpperCase() : a[key]
+      const varB = (typeof b[key] === 'string')
+        ? b[key].toUpperCase() : b[key]
+
+      let comparison = 0
+      if (varA > varB) {
+        comparison = 1
+      }
+      else if (varA < varB) {
+        comparison = -1
+      }
+      return (
+        (order === 'desc')
+          ? (comparison * -1) : comparison
+      )
+    }
+  }
 }
 
 export default utils
@@ -211,7 +236,7 @@ let crawlCeil = function (ymax, ceilMax, i) {
  * @param {Number} ymax
  * @param {Number} ceilMax ymax + extent of the data set
  */
-var setSigFigs = function (ymax, ceilMax) {
+let setSigFigs = function (ymax, ceilMax) {
   let sigFigs = ''
   let SF = 0
   while (sigFigs.length < 3) {

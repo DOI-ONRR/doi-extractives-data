@@ -21,7 +21,8 @@ const DATA_TRANSFORMER_CONSTANTS = {
   REVENUES_MONTHLY_EXCEL: 'monthlyrevenuexlsx__data',
   FEDERAL_DISBURSEMENTS_EXCEL: 'disbursementsxlsx__data',
   FEDERAL_REVENUE_FY: 'federalrevenueacctyearfy061820181213xlsx__federalrevenuesfy06fy18',
-  NATIVE_AMERICAN_REVNUE_FY: 'nativeamericanrevenuesxlsx__nativeamericanrevenues'
+  NATIVE_AMERICAN_REVNUE_FY: 'nativeamericanrevenuesxlsx__nativeamericanrevenues',
+  CALENDAR_YEAR_REVENUE: 'calendaryearrevenuexlsx__data'
 }
 
 const TRANSFORMER_NODE_TYPES = [
@@ -30,7 +31,8 @@ const TRANSFORMER_NODE_TYPES = [
   DATA_TRANSFORMER_CONSTANTS.FEDERAL_DISBURSEMENTS_EXCEL,
   DATA_TRANSFORMER_CONSTANTS.REVENUES_MONTHLY_EXCEL,
   DATA_TRANSFORMER_CONSTANTS.FEDERAL_REVENUE_FY,
-  DATA_TRANSFORMER_CONSTANTS.NATIVE_AMERICAN_REVNUE_FY
+  DATA_TRANSFORMER_CONSTANTS.NATIVE_AMERICAN_REVNUE_FY,
+  DATA_TRANSFORMER_CONSTANTS.CALENDAR_YEAR_REVENUE
 ]
 
 const productionVolumesTransformer = require('./data-transformers/production-volumes-transformer')
@@ -57,7 +59,6 @@ async function onCreateNode (
       newNode = federalDisbursementsTransformer(node)
       break
     case DATA_TRANSFORMER_CONSTANTS.REVENUES_MONTHLY_EXCEL:
-      console.log("Monthly revenue")
       newNode = revenuesTransformer(node, 'ResourceRevenuesMonthly')
       break
     case DATA_TRANSFORMER_CONSTANTS.FEDERAL_REVENUE_FY:
@@ -65,6 +66,9 @@ async function onCreateNode (
       break
     case DATA_TRANSFORMER_CONSTANTS.NATIVE_AMERICAN_REVNUE_FY:
       newNode = revenuesTransformer(node, 'ResourceRevenuesFiscalYear')
+      break
+    case DATA_TRANSFORMER_CONSTANTS.CALENDAR_YEAR_REVENUE:
+      newNode = revenuesTransformer(node, 'ResourceRevenuesCalendarYear')
       break
     }
 

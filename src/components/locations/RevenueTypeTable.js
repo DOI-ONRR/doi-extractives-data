@@ -17,6 +17,55 @@ import CoalIcon from '-!svg-react-loader!../../img/svg/icon-coal.svg'
 import GeothermalIcon from '-!svg-react-loader!../../img/svg/icon-geothermal.svg'
 import RenewablesIcon from '-!svg-react-loader!../../img/svg/icon-renewables.svg'
 
+const createRevenueTypeCommoditiesData = (groupByCommodity, groupByYear) => {
+  let data = groupByCommodity
+  let commodityYears = groupByYear.sort(utils.compareValues('id'))
+  if (commodityYears.length > 10) {
+	  commodityYears = commodityYears.slice(commodityYears.length - 10)
+  }
+  commodityYears = commodityYears.map(item => parseInt(item.id))
+
+  let commodities = data.reduce((total, item) => {
+	  item.edges.forEach(element => {
+      let node = element.node
+      if (commodityYears.includes(node.CalendarYear)) {
+        total[item.id] = total[item.id] || {}
+        total[item.id][node.RevenueType] = total[item.id][node.RevenueType] || {}
+        total[item.id]['All'] = total[item.id]['All'] || {}
+		    total[item.id][node.RevenueType][node.CalendarYear] = (total[item.id][node.RevenueType][node.CalendarYear])
+          ? total[item.id][node.RevenueType][node.CalendarYear] + node.Revenue
+          : node.Revenue
+
+        total[item.id]['All'][node.CalendarYear] = (total[item.id]['All'][node.CalendarYear])
+          ? total[item.id]['All'][node.CalendarYear] + node.Revenue
+          : node.Revenue
+
+        if (!total['All']['All'][node.CalendarYear]) {
+          total['All']['All'][node.CalendarYear] = 0
+        }
+        total['All'][node.RevenueType] = total['All'][node.RevenueType] || {}
+        if (!total['All'][node.RevenueType][node.CalendarYear]) {
+          total['All'][node.RevenueType][node.CalendarYear] = 0
+        }
+        total['All']['All'][node.CalendarYear] += node.Revenue
+        total['All'][node.RevenueType][node.CalendarYear] += node.Revenue
+      }
+	  })
+
+	  return total
+  }, { 'All': { 'All': {} } })
+
+  Object.keys(commodities).forEach(commodity => {
+	  Object.keys(commodities[commodity]).forEach(revenueType => {
+      Object.keys(commodities[commodity][revenueType]).forEach(year => {
+        commodities[commodity][revenueType][year] = parseInt(commodities[commodity][revenueType][year])
+      })
+	  })
+  })
+
+  return { commodities, commodityYears }
+}
+
 const getYearValueForCommodityRevenueType = (commodityRevenueType, year) => {
   return (commodityRevenueType && commodityRevenueType[year] ? commodityRevenueType[year] : 0)
 }
@@ -82,10 +131,11 @@ const RevenueTypeTableRow = props => {
 }
 
 const RevenueTypeTable = props => {
+  let { commodities, commodityYears } = createRevenueTypeCommoditiesData(props.revenueGroupByCommodity, props.revenueGroupByCalendarYear)
   let revenueTypes = ALL_STATE_REVENUES_BY_TYPE[props.locationId]
-
+  
   if (props.isNationalPage) {
-    revenueTypes = ALL_NATIONAL_REVENUES_BY_TYPE.US
+    revenueTypes = commodities //ALL_NATIONAL_REVENUES_BY_TYPE.US
   }
 
   if (props.isOffshorePage) {
@@ -103,17 +153,17 @@ const RevenueTypeTable = props => {
   let otherProductExists = false
   let allExists = false
 
-  	let commodityName
-  	let commodityValues
+  let commodityName
+  let commodityValues
 
-  	let oilGasRevenueTypeRowHtml
-  	let otherProductsRevenueTypeRowHtml = ''
+  let oilGasRevenueTypeRowHtml
+  let otherProductsRevenueTypeRowHtml = ''
 
   for (let commodity in revenueTypes) {
-  		let commodityName = commodity
-  		let commodityValues = revenueTypes[commodity]
+  	let commodityName = commodity
+  	let commodityValues = revenueTypes[commodity]
 
-	  	let commodityValueExistsForYear = false
+	  let commodityValueExistsForYear = false
 
     for (let type in commodityValues) {
       if (commodityValues[type][props.year] !== undefined) {
@@ -123,7 +173,7 @@ const RevenueTypeTable = props => {
     }
 
     if (Lazy(oilGasCommodities).contains(commodityName)) {
-      oilGasExists = commodityValueExistsForYear
+      oilGasExists = oilGasExists || commodityValueExistsForYear
       if (commodityName.toLowerCase() === 'oil & gas' ||
 				commodityName.toLowerCase() === 'oil & gas (non-royalty)') {
         let commodityNameSlug = utils.formatToSlug(commodityName)
@@ -136,6 +186,7 @@ const RevenueTypeTable = props => {
           commodityNameSlug)
       }
     }
+
 
     if (Lazy(otherProductCommodities).contains(commodityName) && commodityValueExistsForYear) {
       otherProductExists = commodityValueExistsForYear
@@ -299,7 +350,8 @@ const RevenueTypeTable = props => {
 				    {
 				    	Lazy(revenueTypes).toArray().map((commodity, index) => {
 				    		let commodityName = utils.getDisplayName_CommodityName(commodity[0])
-				    		let commodityValues = commodity[1]
+                let commodityValues = commodity[1]
+
 				    		if (Lazy(otherProductCommodities).contains(commodity[0]) && commodityValues.All[props.year]) {
 				    			return (<RevenueTypeTableRow key={index} commodityName={commodityName} commodityData={commodityValues} year={props.year} />)
 				    		}

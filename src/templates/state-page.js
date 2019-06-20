@@ -105,7 +105,7 @@ const NAV_ITEMS = [
 class StatePages extends React.Component {
   constructor (props) {
     super(props)
-
+    console.log(props);
     this.usStateMarkdown = props.pathContext.stateMarkdown
     this.usStateData = this.usStateMarkdown.frontmatter
     	this.usStateFields = this.usStateMarkdown.fields || {}

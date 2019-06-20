@@ -113,7 +113,7 @@ const CountyMap = props => {
 			                            data-value={countyData[1].products[props.productKey].volume[props.year]}
 			                            data-year-values={JSON.stringify(countyData[1].products[props.productKey].volume)}
 			                            >
-			                            <title>{ countyData[1].name }</title>
+			                            <data>{ countyData[1].name }</data>
 			                            <use xlinkHref={usStateSVG + '#county-' + countyData[0]}></use>
 			                        </g>
 			                    )

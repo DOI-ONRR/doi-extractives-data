@@ -25,6 +25,7 @@
     "lazy.js": "^0.5.1",
     "node-sass": "^4.12.0",
     "react": "^16.8.4",
+    "react-device-detect": "^1.6.2",
     "react-dom": "^16.8.4",
     "react-helmet": "^5.2.0",
     "react-html-parser": "^2.0.2",

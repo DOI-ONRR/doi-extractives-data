@@ -15,7 +15,6 @@ const Search = props => {
 
   return (
     <div style={{height:'60px'}}>
-      <div style={{display:'none'}} aria-hidden={true}>
         { props.isMobile
           ? <label className={styles.searchLabel} htmlFor="q">Search</label>
           : <label className={styles.srOnly} htmlFor="q">Search</label>
@@ -31,7 +30,6 @@ const Search = props => {
             title="search">
             <label className="sr-only">Search</label></button>
         </form>
-      </div>
     </div>
   )
 }

@@ -7,6 +7,9 @@ import Link from '../../utils/temp-link'
 import styles from './Header.module.scss'
 
 import { Search } from '../../utils/Search'
+import { StaticQuery } from "gatsby"
+import { graphql } from "gatsby"
+
 import { isIE } from 'react-device-detect';
 
 import { BrowserBanner } from '../BrowserBanner'
@@ -24,7 +27,7 @@ const Header = props => {
   let caseStudiesClassNames = { 'className': ' header-nav_item ' }
   let exploreClassNames = { 'className': ' header-nav_item ' }
   let downloadClassNames = { 'className': ' header-nav_item_link_top ' }
-
+  
   if (typeof location !== 'undefined' && location) {
     let prefix = __PATH_PREFIX__
     if (__PATH_PREFIX__ && __PATH_PREFIX__.length > 0) {
@@ -50,7 +53,6 @@ const Header = props => {
       homeClassNames.className += ' active '
     }
   }
-
   return (
     <header className={styles.root + ' container-page-wrapper'}>
       { isIE && <BrowserBanner /> }
@@ -95,7 +97,6 @@ const Header = props => {
           </ul>
         </nav>
       </MediaQuery>
-
     </header>
   )
 }

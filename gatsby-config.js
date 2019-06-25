@@ -104,6 +104,7 @@ let config = {
           MarkdownRemark: {
             title: node => node.frontmatter.title,
             tags: node => node.frontmatter.tags,
+            html: node => node.internal.content,
             path: node => node.frontmatter.path,
           },
         },

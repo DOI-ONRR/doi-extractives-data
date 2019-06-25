@@ -2,7 +2,7 @@
 title: "Making open data useful"
 authors:
 - Shannon McHarg
-excerpt: "How we're making open data useful to our users."
+excerpt: "We design our open data site with users. It's not enough to publish the data; our goal is publish the right data, in the right way, to make it as useful as possible."
 tags:
 - user research
 - user experience

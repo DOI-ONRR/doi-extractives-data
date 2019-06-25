@@ -131,10 +131,10 @@ const getPageTemplate = templateId => {
 
 const compareValues = (key, order = 'asc') => {
   return function (a, b) {
-    if (!a.hasOwnProperty(key) ||
+    /*if (!a.hasOwnProperty(key) ||
        !b.hasOwnProperty(key)) {
       return 0
-    }
+    } */
 
     const varA = (typeof a[key] === 'string')
       ? a[key].toUpperCase() : a[key]
@@ -154,9 +154,10 @@ const compareValues = (key, order = 'asc') => {
     )
   }
 }
-const createRevenueTypeCommoditiesData = (groupByCommodity, groupByYear) => {
+const createRevenueTypeCommoditiesData = (groupByCommodity, groupByYear, stateId) => {
   if (!groupByCommodity) return { commodities: undefined, commodityYears: undefined }
   let data = groupByCommodity
+
   let commodityYears = groupByYear.sort(compareValues('id'))
   if (commodityYears.length > 10) {
 	  commodityYears = commodityYears.slice(commodityYears.length - 10)
@@ -166,7 +167,7 @@ const createRevenueTypeCommoditiesData = (groupByCommodity, groupByYear) => {
   let commodities = data.reduce((total, item) => {
 	  item.edges.forEach(element => {
       let node = element.node
-      if (commodityYears.includes(node.CalendarYear)) {
+      if (commodityYears.includes(node.CalendarYear) && node.State === stateId) {
         total[item.id] = total[item.id] || {}
         total[item.id][node.RevenueType] = total[item.id][node.RevenueType] || {}
         total[item.id]['All'] = total[item.id]['All'] || {}
@@ -248,8 +249,7 @@ const createStatePages = (createPage, graphql) => {
 					}
 					}
         }
-        RevenueGroupByCalendarYear: allResourceRevenuesCalendarYear(filter: {Commodity: {ne: "Not tied to a commodity"},
-        State: {eq: "TX"}}) {
+        RevenueGroupByCalendarYear: allResourceRevenuesCalendarYear(filter: {Commodity: {ne: "Not tied to a commodity"}}) {
           group(field: CalendarYear) {
             id: fieldValue
             edges {
@@ -259,8 +259,7 @@ const createStatePages = (createPage, graphql) => {
             }
           }
         }
-        RevenueGroupByCommodity: allResourceRevenuesCalendarYear(filter: {Commodity: {ne: "Not tied to a commodity"},
-        State: {eq: "TX"}}) {
+        RevenueGroupByCommodity: allResourceRevenuesCalendarYear(filter: {Commodity: {ne: "Not tied to a commodity"}}) {
           group(field: Commodity) {
             id: fieldValue
             edges {
@@ -283,19 +282,24 @@ const createStatePages = (createPage, graphql) => {
 	          reject(result.errors)
 	        }
 	        else {
+            // console.log(result.data.RevenueGroupByCalendarYear.group)
           // Create pages for each markdown file.
 		        // eslint-disable-next-line camelcase
 		        result.data.allMarkdownRemark.us_states.forEach(({ us_state }) => {
-              console.log(us_state)
 		          const path = createStatePageSlug(us_state)
-
-		          createPage({
+              let { commodities, commodityYears } = createRevenueTypeCommoditiesData(result.data.RevenueGroupByCommodity.group,
+                result.data.RevenueGroupByCalendarYear.group,
+                us_state.frontmatter.unique_id)
+              
+              createPage({
 		            path,
 		            component: statePageTemplate,
 		            // In your blog post template's graphql query, you can use path
 		            // as a GraphQL variable to query for data from the markdown file.
 		            context: {
-                stateMarkdown: us_state
+                stateMarkdown: us_state,
+                commodities: commodities,
+                commodityYears: commodityYears
 		            },
 		          })
 		        })

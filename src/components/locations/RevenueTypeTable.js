@@ -18,7 +18,7 @@ import GeothermalIcon from '-!svg-react-loader!../../img/svg/icon-geothermal.svg
 import RenewablesIcon from '-!svg-react-loader!../../img/svg/icon-renewables.svg'
 
 const createRevenueTypeCommoditiesData = (groupByCommodity, groupByYear) => {
-  if (!groupByCommodity) return { commodities: undefined, commodityYears: undefined }
+  if (!groupByCommodity) return undefined
   let data = groupByCommodity
   let commodityYears = groupByYear.sort(utils.compareValues('id'))
   if (commodityYears.length > 10) {
@@ -64,7 +64,7 @@ const createRevenueTypeCommoditiesData = (groupByCommodity, groupByYear) => {
 	  })
   })
 
-  return { commodities, commodityYears }
+  return commodities
 }
 
 const getYearValueForCommodityRevenueType = (commodityRevenueType, year) => {
@@ -132,8 +132,13 @@ const RevenueTypeTableRow = props => {
 }
 
 const RevenueTypeTable = props => {
-  let { commodities, commodityYears } = createRevenueTypeCommoditiesData(props.revenueGroupByCommodity, props.revenueGroupByCalendarYear)
-  let revenueTypes = ALL_STATE_REVENUES_BY_TYPE[props.locationId]
+  let { commodities } = props
+
+  if (props.revenueGroupByCommodity) {
+    commodities = createRevenueTypeCommoditiesData(props.revenueGroupByCommodity, props.revenueGroupByCalendarYear)
+  }
+
+  let revenueTypes = commodities || ALL_STATE_REVENUES_BY_TYPE[props.locationId]
 
   if (props.isNationalPage) {
     revenueTypes = commodities || ALL_NATIONAL_REVENUES_BY_TYPE.US

@@ -107,6 +107,8 @@ class StatePages extends React.Component {
     super(props)
     console.log(props);
     this.usStateMarkdown = props.pathContext.stateMarkdown
+    this.commodities = props.pathContext.commodities
+    this.commodityYears = props.pathContext.commodityYears
     this.usStateData = this.usStateMarkdown.frontmatter
     	this.usStateFields = this.usStateMarkdown.fields || {}
   }
@@ -170,7 +172,7 @@ class StatePages extends React.Component {
 
               { ReactHtmlParser(this.usStateFields.state_land_production) }
 
-              <SectionRevenue usStateMarkdown={this.usStateMarkdown} />
+              <SectionRevenue usStateMarkdown={this.usStateMarkdown} commodities={this.commodities} commodityYears={this.commodityYears} />
 
               <section id="disbursements" className="disbursements">
                 <h2>Disbursements</h2>

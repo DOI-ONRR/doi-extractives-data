@@ -1,8 +1,6 @@
 import React from 'react'
 import Link from '../utils/temp-link'
 
-import ALL_US_STATES_REVENUES from '../../data/state_revenues.yml'
-
 import StickyHeader from '../layouts/StickyHeader'
 import { StickyWrapper } from '../utils/StickyWrapper'
 import YearSelector from '../selectors/YearSelector'
@@ -18,7 +16,11 @@ const SectionRevenue = props => {
   const usStateData = props.usStateMarkdown.frontmatter
   const usStateFields = props.usStateMarkdown.fields || {}
 
-  const usStateRevenueCommodities = ALL_US_STATES_REVENUES[usStateData.unique_id] && ALL_US_STATES_REVENUES[usStateData.unique_id].commodities
+  const commodities = props.commodities
+  const commodityYears = props.commodityYears
+  let commodityYearsSortDesc = commodityYears.slice(0)
+  commodityYearsSortDesc.sort((a, b) => b - a)
+  year = commodityYears[props.commodityYears.length - 1]
 
   return (
     <section id="revenue" is="year-switcher-section" className="federal revenue">
@@ -44,7 +46,7 @@ const SectionRevenue = props => {
 
         <h4>Revenue from production on federal land by resource</h4>
 
-        {usStateRevenueCommodities
+        {commodities
           ? <div>
             <p>When companies extract natural resources on federal lands and waters, they pay royalties, rents, bonuses, and other fees, much like they would to any landowner. This non-tax revenue is collected and reported by the Office of Natural Resources Revenue (ONRR).</p>
 
@@ -67,7 +69,9 @@ const SectionRevenue = props => {
 		                        id='revenue-types'
 		                        locationId={usStateData.unique_id}
 		                        locationName={usStateData.title}
-		                        year={year}
+                  year={year}
+                  commodities={commodities}
+                  commodityYears={commodityYears}
 		                    />
 		                  </article>
 
@@ -77,6 +81,8 @@ const SectionRevenue = props => {
 		                        locationId={usStateData.unique_id}
 		                        locationName={usStateData.title}
 		                        year={year}
+                  commodities={commodities}
+                  commodityYears={commodityYears}
 		                    />
 		                  </article>
 
@@ -84,7 +90,7 @@ const SectionRevenue = props => {
 
 		              <StickyWrapper bottomBoundary="#federal-revenue-county-table" innerZ="10000">
 				            <StickyHeader headerSize="h4" headerText={'Revenue from production on federal land by county'}>
-				                <YearSelector years={[2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010, 2009, 2008]} classNames="flex-row-icon" />
+				                <YearSelector years={commodityYearsSortDesc} classNames="flex-row-icon" />
 				            </StickyHeader>
 				           </StickyWrapper>
 

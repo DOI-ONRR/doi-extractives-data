@@ -20,6 +20,7 @@ import RenewablesIcon from '-!svg-react-loader!../../img/svg/icon-renewables.svg
 
 // @TODO Copied from revenuetypetable, need to fix this duplication
 const createRevenueTypeCommoditiesData = (groupByCommodity, groupByYear) => {
+  if (!groupByCommodity) return { commodities: undefined, commodityYears: undefined }
   let data = groupByCommodity
   let commodityYears = groupByYear.sort(utils.compareValues('id'))
   if (commodityYears.length > 10) {
@@ -133,8 +134,8 @@ const RevenueTypeTableRow = props => {
 }
 
 const RevenueProcessTable = props => {
-	let { commodities, commodityYears } = createRevenueTypeCommoditiesData(props.revenueGroupByCommodity, props.revenueGroupByCalendarYear)
-  
+  let { commodities, commodityYears } = createRevenueTypeCommoditiesData(props.revenueGroupByCommodity, props.revenueGroupByCalendarYear)
+
   let revenueTypes = ALL_STATE_REVENUES_BY_TYPE[props.locationId]
 
   if (props.isNationalPage) {

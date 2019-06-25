@@ -129,6 +129,80 @@ const getPageTemplate = templateId => {
   return CONTENT_DEFAULT_TEMPLATE
 }
 
+const compareValues = (key, order = 'asc') => {
+  return function (a, b) {
+    if (!a.hasOwnProperty(key) ||
+       !b.hasOwnProperty(key)) {
+      return 0
+    }
+
+    const varA = (typeof a[key] === 'string')
+      ? a[key].toUpperCase() : a[key]
+    const varB = (typeof b[key] === 'string')
+      ? b[key].toUpperCase() : b[key]
+
+    let comparison = 0
+    if (varA > varB) {
+      comparison = 1
+    }
+    else if (varA < varB) {
+      comparison = -1
+    }
+    return (
+      (order === 'desc')
+        ? (comparison * -1) : comparison
+    )
+  }
+}
+const createRevenueTypeCommoditiesData = (groupByCommodity, groupByYear) => {
+  if (!groupByCommodity) return { commodities: undefined, commodityYears: undefined }
+  let data = groupByCommodity
+  let commodityYears = groupByYear.sort(compareValues('id'))
+  if (commodityYears.length > 10) {
+	  commodityYears = commodityYears.slice(commodityYears.length - 10)
+  }
+  commodityYears = commodityYears.map(item => parseInt(item.id))
+
+  let commodities = data.reduce((total, item) => {
+	  item.edges.forEach(element => {
+      let node = element.node
+      if (commodityYears.includes(node.CalendarYear)) {
+        total[item.id] = total[item.id] || {}
+        total[item.id][node.RevenueType] = total[item.id][node.RevenueType] || {}
+        total[item.id]['All'] = total[item.id]['All'] || {}
+		    total[item.id][node.RevenueType][node.CalendarYear] = (total[item.id][node.RevenueType][node.CalendarYear])
+          ? total[item.id][node.RevenueType][node.CalendarYear] + node.Revenue
+          : node.Revenue
+
+        total[item.id]['All'][node.CalendarYear] = (total[item.id]['All'][node.CalendarYear])
+          ? total[item.id]['All'][node.CalendarYear] + node.Revenue
+          : node.Revenue
+
+        if (!total['All']['All'][node.CalendarYear]) {
+          total['All']['All'][node.CalendarYear] = 0
+        }
+        total['All'][node.RevenueType] = total['All'][node.RevenueType] || {}
+        if (!total['All'][node.RevenueType][node.CalendarYear]) {
+          total['All'][node.RevenueType][node.CalendarYear] = 0
+        }
+        total['All']['All'][node.CalendarYear] += node.Revenue
+        total['All'][node.RevenueType][node.CalendarYear] += node.Revenue
+      }
+	  })
+
+	  return total
+  }, { 'All': { 'All': {} } })
+
+  Object.keys(commodities).forEach(commodity => {
+	  Object.keys(commodities[commodity]).forEach(revenueType => {
+      Object.keys(commodities[commodity][revenueType]).forEach(year => {
+        commodities[commodity][revenueType][year] = parseInt(commodities[commodity][revenueType][year])
+      })
+	  })
+  })
+
+  return { commodities, commodityYears }
+}
 const createStatePages = (createPage, graphql) => {
   const createStatePageSlug = state => {
     return '/explore/' + state.frontmatter.unique_id + '/'
@@ -212,6 +286,7 @@ const createStatePages = (createPage, graphql) => {
           // Create pages for each markdown file.
 		        // eslint-disable-next-line camelcase
 		        result.data.allMarkdownRemark.us_states.forEach(({ us_state }) => {
+              console.log(us_state)
 		          const path = createStatePageSlug(us_state)
 
 		          createPage({
@@ -220,8 +295,7 @@ const createStatePages = (createPage, graphql) => {
 		            // In your blog post template's graphql query, you can use path
 		            // as a GraphQL variable to query for data from the markdown file.
 		            context: {
-                stateMarkdown: us_state,
-                revenueGroupByCommodity: result.data.RevenueGroupByCommodity
+                stateMarkdown: us_state
 		            },
 		          })
 		        })

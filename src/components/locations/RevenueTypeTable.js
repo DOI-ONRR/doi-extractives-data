@@ -18,6 +18,7 @@ import GeothermalIcon from '-!svg-react-loader!../../img/svg/icon-geothermal.svg
 import RenewablesIcon from '-!svg-react-loader!../../img/svg/icon-renewables.svg'
 
 const createRevenueTypeCommoditiesData = (groupByCommodity, groupByYear) => {
+  if (!groupByCommodity) return { commodities: undefined, commodityYears: undefined }
   let data = groupByCommodity
   let commodityYears = groupByYear.sort(utils.compareValues('id'))
   if (commodityYears.length > 10) {
@@ -133,9 +134,9 @@ const RevenueTypeTableRow = props => {
 const RevenueTypeTable = props => {
   let { commodities, commodityYears } = createRevenueTypeCommoditiesData(props.revenueGroupByCommodity, props.revenueGroupByCalendarYear)
   let revenueTypes = ALL_STATE_REVENUES_BY_TYPE[props.locationId]
-  
+
   if (props.isNationalPage) {
-    revenueTypes = commodities //ALL_NATIONAL_REVENUES_BY_TYPE.US
+    revenueTypes = commodities || ALL_NATIONAL_REVENUES_BY_TYPE.US
   }
 
   if (props.isOffshorePage) {
@@ -186,7 +187,6 @@ const RevenueTypeTable = props => {
           commodityNameSlug)
       }
     }
-
 
     if (Lazy(otherProductCommodities).contains(commodityName) && commodityValueExistsForYear) {
       otherProductExists = commodityValueExistsForYear
@@ -350,7 +350,7 @@ const RevenueTypeTable = props => {
 				    {
 				    	Lazy(revenueTypes).toArray().map((commodity, index) => {
 				    		let commodityName = utils.getDisplayName_CommodityName(commodity[0])
-                let commodityValues = commodity[1]
+				      let commodityValues = commodity[1]
 
 				    		if (Lazy(otherProductCommodities).contains(commodity[0]) && commodityValues.All[props.year]) {
 				    			return (<RevenueTypeTableRow key={index} commodityName={commodityName} commodityData={commodityValues} year={props.year} />)

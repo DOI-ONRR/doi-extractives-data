@@ -7,6 +7,7 @@
     "@devexpress/dx-react-core": "^1.10.5",
     "@devexpress/dx-react-grid": "^1.10.5",
     "@devexpress/dx-react-grid-material-ui": "^1.10.5",
+    "@gatsby-contrib/gatsby-plugin-elasticlunr-search": "^2.3.0",
     "@material-ui/core": "^3.9.3",
     "@material-ui/icons": "^3.0.2",
     "copy-dir": "^0.4.0",

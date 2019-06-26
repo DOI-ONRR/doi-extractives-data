@@ -91,13 +91,11 @@ let config = {
         plugins: [],
       },
     },
-    'custom-excel-transformer',
-    `gatsby-plugin-meta-redirect`, // make sure to put last in the array
     {
       resolve: `@gatsby-contrib/gatsby-plugin-elasticlunr-search`,
       options: {
         // Fields to index
-        fields: [`title`, `tags`],
+        fields: [`title`, `tags`, `html`],
         // How to resolve each field`s value for a supported node type
         resolvers: {
           // For any node of type MarkdownRemark, list how to resolve the fields` values
@@ -113,6 +111,8 @@ let config = {
           node.frontmatter.tags !== 'exempt',
       },
     },
+    'custom-excel-transformer',
+    `gatsby-plugin-meta-redirect`, // make sure to put last in the array
   ],
 };
 

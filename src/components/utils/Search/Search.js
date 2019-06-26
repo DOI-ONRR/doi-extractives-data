@@ -13,7 +13,6 @@ const Search = props => {
     }
   `
 ) 
-  console.log(data)  
   let searchPath = '/search-results/'
 
   if (typeof location !== 'undefined' && location) {

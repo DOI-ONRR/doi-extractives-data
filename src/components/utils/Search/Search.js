@@ -1,9 +1,19 @@
 import React from 'react'
 import { withPrefix } from '../../utils/temp-link'
+import { useStaticQuery, graphql } from "gatsby"
 
 import styles from './Search.module.css'
 
 const Search = props => {
+  const data = useStaticQuery(graphql`
+    query SearchIndexQuery {
+      siteSearchIndex {
+        index
+      }
+    }
+  `
+) 
+  console.log(data)  
   let searchPath = '/search-results/'
 
   if (typeof location !== 'undefined' && location) {

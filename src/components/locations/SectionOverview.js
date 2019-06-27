@@ -159,7 +159,7 @@ const KeyGDPJobs = props => {
                     In {props.usStateData.title}, extractive industries accounted for { utils.round(usStateGDP[year].percent, 1) }% of gross domestic product (GDP) in {year}
           { usStateJobs[year] && (usStateJobs[year].percent > 2) &&
                         <span>
-                            , and jobs in the extractive industries made up <a href="#employment">{utils.round(usStateJobs[year].percent, 1)}% of statewide employment</a>
+                            , and jobs in the extractive industries made up {utils.round(usStateJobs[year].percent, 1)}% of statewide employment
                         </span>
           }
                     .

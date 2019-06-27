@@ -167,11 +167,7 @@ var render = function(objects, done) {
               return 'county-' + zerofill(d.id, 5);
             })
             .attr('class', 'county feature')
-            .attr('d', path)
-            .append('title')
-              .text(function(d) {
-                return d.properties.name;
-              });
+            .attr('d', path);
     }
 
     // TODO: land ownership

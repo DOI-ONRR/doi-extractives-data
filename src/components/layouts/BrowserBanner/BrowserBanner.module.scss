@@ -1,0 +1,11 @@
+@value colors: "../../../css-global/colors.scss";
+@value green as _green from colors;
+
+.root {
+	border: 1px solid _green;
+	margin: 0 0 1rem 0;
+	line-height: 1.1875rem;
+	margin-bottom: 0.8rem;
+	padding: 0.8em 1.875em;
+	text-align: center;
+}

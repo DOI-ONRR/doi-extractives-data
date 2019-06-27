@@ -13,28 +13,13 @@ tag:
 <custom-link to="/downloads/" className="breadcrumb link-charlie">Downloads</custom-link> /
 # Disbursements by month
 
-<section class="explore-subpage container">
-    <section>
-      <div class="explore-subpage-tabs">
-        <ul>
-          <li class="explore-subpage-tab">
-            <a href="/downloads/disbursements/">Disbursements by year</a>
-          </li>
-          <li class="explore-subpage-tab active">
-            <a href="/downloads/federal-disbursements-by-month/">Disbursements by month</a>
-          </li>
-        </ul>
-      </div>
-    </section>
-</section>
-
 > The amount of money earned from extraction of natural resources on federal lands that is disbursed to various legislated funds. We have disbursements data by month from October 2018 through the most recent month.
 
 Download fiscal year data:
 
 <ul class="downloads-download_links list-unstyled">
-  <li><excel-link to="/downloads/monthly-disbursements_04-2019.xlsx">Disbursements by month (Excel, 146 KB)</excel-link></li>
-    <li><csv-link to="/downloads/monthly-disbursements_04-2019.csv">Disbursements by month (csv, 205 KB)</csv-link></li>
+  <li><excel-link to="/downloads/monthly-disbursements_05-2019.xlsx">Disbursements by month (Excel, 166 KB)</excel-link></li>
+    <li><csv-link to="/downloads/monthly-disbursements_05-2019.csv">Disbursements by month (csv, 233 KB)</csv-link></li>
 </ul>
 
 ## Scope

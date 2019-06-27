@@ -7,7 +7,7 @@ tags:
 - user research
 - user experience
 - open data
-date: "2019-06-25"
+date: "2019-06-27"
 ---
 
 “We are informing policy debates and raising public awareness by building the definitive source of timely and useful data about how the government manages federal energy and mineral resources, revenue, and disbursements.”

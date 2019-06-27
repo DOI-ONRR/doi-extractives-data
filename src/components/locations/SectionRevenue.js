@@ -9,8 +9,17 @@ import GlossaryTerm from '../utils/glossary-term.js'
 import RevenueTypeTable from '../locations/RevenueTypeTable'
 import RevenueProcessTable from '../locations/RevenueProcessTable'
 import StateRevenue from '../locations/opt_in/StateRevenue'
+import utils from '../../js/utils'
+import lazy from 'lazy.js'
+import ChartTitle from '../charts/ChartTitleCollapsible'
+import CountyMap from '../maps/CountyMap'
 
-let year = 2017
+
+import * as COUNTY_REVENUE from '../../data/county_revenue'
+import * as ALL_US_STATES_REVENUES from '../../data/state_revenues.yml'
+
+let year = 2018
+
 
 const SectionRevenue = props => {
   const usStateData = props.usStateMarkdown.frontmatter
@@ -21,6 +30,28 @@ const SectionRevenue = props => {
   let commodityYearsSortDesc = commodityYears.slice(0)
   commodityYearsSortDesc.sort((a, b) => b - a)
   year = commodityYears[props.commodityYears.length - 1]
+
+  
+
+  const usStateCountyRevenue = COUNTY_REVENUE[usStateData.unique_id];
+  const usStateRevenueCommodities = ALL_US_STATES_REVENUES[usStateData.unique_id] && ALL_US_STATES_REVENUES[usStateData.unique_id].commodities
+
+  console.log(usStateRevenueCommodities, commodities)
+  let allYears = []
+  let allCommoditiesValues = {}
+  let allCommoditiesSlug, allCommoditiesChartName, allCommoditiesChartToggle = ""
+  if(usStateRevenueCommodities) {
+    allYears = Object.keys(usStateRevenueCommodities.All).map(year => parseInt(year));
+    allYears.sort((a,b) => b-a)
+    if(allYears.length > 10) {
+      allYears = allYears.slice(0,10);
+    }
+    allCommoditiesChartName = 'All commodities';
+    allCommoditiesSlug = utils.formatToSlug(allCommoditiesChartName, { lower: true })
+    allCommoditiesChartToggle = 'federal-revenue-county-figures-chart-'+allCommoditiesSlug;
+    allYears.map(year => allCommoditiesValues[year] = usStateRevenueCommodities.All[year].revenue)
+  }
+
 
   return (
     <section id="revenue" is="year-switcher-section" className="federal revenue">
@@ -52,12 +83,12 @@ const SectionRevenue = props => {
 
             <p>For details about the laws and policies that govern how rights are awarded to companies and what they pay to extract natural resources on federal land: <Link to="/how-it-works/coal/">coal</Link>, <Link to="/how-it-works/onshore-oil-gas/">oil and gas</Link>, <Link to="/how-it-works/onshore-renewables/">renewable resources</Link>, and <Link to="/how-it-works/minerals/">hardrock minerals</Link>.</p>
 
-            <p>The federal government collects different kinds of fees at each phase of natural resource extraction. This chart shows how much federal revenue was collected in <GlossaryTerm>Calendar year (CY)</GlossaryTerm> { year } for production or potential production of natural resources on federal land in { usStateData.title }, broken down by phase of production.</p>
+            <p>The federal government collects different kinds of fees at each phase of natural resource extraction. This chart shows how much federal revenue was collected in <GlossaryTerm>Calendar year (CY)</GlossaryTerm> { allYears[0] } for production or potential production of natural resources on federal land in { usStateData.title }, broken down by phase of production.</p>
 
 		                <div id="fee-summaries" className="tab-interface">
 		                    <ul className="eiti-tabs info-tabs" role="tablist">
 		                        <li role="presentation">
-		                            <a href="#revenues" tabIndex="0" role="tab" aria-controls="revenues" aria-selected="true">Federal revenue by phase (CY {year})</a>
+		                            <a href="#revenues" tabIndex="0" role="tab" aria-controls="revenues" aria-selected="true">Federal revenue by phase (CY {allYears[0]})</a>
 		                        </li>
 		                        <li role="presentation">
 		                            <a href="#story" tabIndex="-1" role="tab" aria-controls="story" className="link-charlie">Revenue details by phase</a>
@@ -110,16 +141,144 @@ const SectionRevenue = props => {
                 </div>
               </div>
 
-              <section id="federal-revenue-county-table" className="county-map-table">
+              <section id={"federal-revenue-county-table"} className="county-map-table">
+                <div className="row-container">
 
+                  <div className="chart-container">
+                    <ChartTitle
+                      isIcon={true}
+                      units={'dollars'}
+                      chartValues={allCommoditiesValues}
+                      chartToggle={'federal-revenue-county-figures-'+allCommoditiesSlug} >{allCommoditiesChartName}</ChartTitle>
+
+                    <figure className="chart" id={'federal-revenue-county-figures-chart-'+allCommoditiesSlug}>
+                      <eiti-bar-chart
+                        aria-controls={'federal-revenue-county-figures-'+allCommoditiesSlug}
+                        data={JSON.stringify(allCommoditiesValues)}
+                        x-range={"["+allYears[allYears.length-1]+","+allYears[0]+"]"}
+                        x-value={allYears[0]}
+                        data-units={'$,'}>
+                      </eiti-bar-chart>
+                      <figcaption id={'federal-revenue-county-figures-'+allCommoditiesSlug} aria-hidden='false'>
+                        <span className="caption-data">
+                          <span className="eiti-bar-chart-y-value" data-format="$,">
+                            {(allCommoditiesValues[allYears[0]]) ? (allCommoditiesValues[allYears[0]]).toLocaleString() : ('0').toLocaleString() }{' '}
+                            </span>
+                          {' '}of {allCommoditiesChartName.toLowerCase()} were produced on federal land in {' ' + usStateData.title + ' in '}
+                          <span className="eiti-bar-chart-x-value">{ allYears[0] }</span>.
+                        </span>
+                        <span className="caption-no-data" aria-hidden="true">
+                                                    There is no data about production of {allCommoditiesChartName.toLowerCase()} in{' '}
+                          <span className="eiti-bar-chart-x-value">{ allYears[0] }</span>.
+                        </span>
+                      </figcaption>
+                    </figure>
+                  </div>
+                  {usStateCountyRevenue &&
+                    <div className="map-container">
+
+                      <h4 className="chart-title">
+                        Revenue collected by county
+                      </h4>
+
+                      <figure is="eiti-data-map-table">
+                        <eiti-data-map color-scheme="Blues" steps="4" format={'$'}>
+                          <CountyMap
+                            usStateMarkdown={props.usStateMarkdown}
+                            countyProductionData={usStateCountyRevenue}
+                            productKey={'revenue'}
+                            year={allYears[0]}
+                            isCaption={true}
+                            mapToggle={'federal-revenue-counties'}
+                            productName={'revenue'}
+                            units={'$'}
+                            shortUnits={'$'}/>
+
+                        </eiti-data-map>
+
+                        <div className="eiti-data-map-table" id={'federal-revenue-counties'} aria-hidden="true">
+                          <table is='bar-chart-table'
+                            data-percent-max='100'
+                            class='county-table'
+                            year={allYears[0]}>
+                            <thead>
+                              <tr>
+                                <th>{usStateData.locality_name || 'County'}</th>
+                                <th colSpan='2' className='numeric' data-series='volume'>Revenue</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr className="inner-table-row">
+                                <td colSpan="3" className="inner-table-cell">
+                                  <div className="inner-table-wrapper">
+                                    <table>
+                                      {(lazy(usStateCountyRevenue).toArray()).map((countyData, index) => {
+                                        if (countyData[1].revenue[year] > 0) {
+                                          let yearsValue = countyData[1].revenue
+                                          let productVolume = countyData[1].revenue[year]
+                                          let dataSentence = utils.formatToDollarInt(productVolume)
+
+                                          return (
+                                            <tbody key={index}>
+                                              <tr data-fips={countyData[0]} data-format={'$,'} data-year-values={JSON.stringify(yearsValue)}>
+                                                <td>
+                                                  <div className='swatch'
+                                                    data-value-swatch={productVolume}
+                                                    data-year-values={JSON.stringify(yearsValue)}>
+                                                  </div>{ countyData[1].name+" County" }
+                                                </td>
+                                                <td data-format={'$,'} data-value-text={productVolume}
+                                                  data-year-values={JSON.stringify(yearsValue)}>{productVolume}</td>
+                                                <td className='numberless'
+                                                  data-series='volume'
+                                                  data-value={productVolume}
+                                                  data-year-values={JSON.stringify(yearsValue)}>{productVolume}</td>
+                                              </tr>
+                                              <tr data-fips={countyData[0]}>
+                                                <td colSpan='3'
+                                                  data-format={'$,'}
+                                                  data-year-values={JSON.stringify(yearsValue)}
+                                                  data-sentence={dataSentence}
+                                                  aria-hidden='true'
+                                                  data-withheld="false">
+                                                  <span className="withheld" aria-hidden="true">
+                                                                                                  Data about revenue on federal land in { countyData[1].name } in <span data-year={ year }>{ year }</span> is withheld.
+                                                  </span>
+                                                  <span className="has-data">
+                                                    Companies paid <span data-format={'$,'} data-value={productVolume}>{productVolume}</span> to extract natural resources on federal land in { countyData[1].name } County in <span data-year={ year }>{year}</span>.
+                                                  </span>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          )
+                                        }
+                                      })}
+                                    </table>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+
+                      </figure>
+                    </div>
+                  }
+                </div>
               </section>
             </section>
           </div>
-          :						<div className="chart-description">
-							No natural resources were produced on federal land in {usStateData.title} in { year }, so ONRR did not collect any non-tax revenues.
+          :						
+          <div className="chart-description">
+							No natural resources were produced on federal land in {usStateData.title} in { allYears[0] }, so ONRR did not collect any non-tax revenues.
           </div>
         }
+        <h4>Federal tax revenue</h4>
 
+        <div>
+          <p>Individuals and corporations (specifically C-corporations) pay income taxes to the IRS. The federal corporate income tax rate tops out at 21%. Public policy provisions, such as tax expenditures, can decrease corporate income tax and other revenue payments in order to promote other policy goals.</p>
+          <p>Learn more about <Link to="/how-it-works/revenues/#all-lands-and-waters">revenue from extraction on all lands and waters</Link>.</p>
+        </div>
       </section>
 
       <section id="state-revenue" className="state revenue">

@@ -454,15 +454,15 @@ const createOffshorePages = (createPage, graphql) => {
 /* This is required for Federalist build */
 let copydir = require('copy-dir')
 exports.onPostBuild = () => {
-  console.log('Copying static html pages to _site...')
-  copydir.sync(__dirname + '/static/pages', __dirname + '/_site')
-  console.log('Finished Copying istatic html pages to public.')
+	console.log("Copying static html pages to _site...");
+	copydir.sync(__dirname+'/static/pages', __dirname+'/_site');
+	console.log("Finished Copying static html pages to _site.");
 
-  console.log('Copying Files from public to _site...')
-  copydir.sync(__dirname + '/public', './_site')
-  console.log('Finished Copying Files to _site.')
-
-  console.log('Copying Files from downloads to _site...')
-  copydir.sync(__dirname + '/downloads', './_site/downloads')
-  console.log('Finished Copying Files to _site.')
+	console.log("Copying Files from public to _site...");
+	copydir.sync(__dirname+'/public', './_site');
+	console.log("Finished Copying Files to _site.");
+	
+	console.log("Copying Files from downloads to _site...");
+	copydir.sync(__dirname+'/downloads', './_site/downloads');
+	console.log("Finished Copying Files to _site.");
 }

@@ -29,22 +29,15 @@ all_production:
     - product: Wood and wood-derived fuels
       name: Wood and wood-derived fuels
       units: Mwh
-      value: 2985940.83
+      value: 3005053.09
       rank: 4
-      percent: 7.29
+      percent: 7.42
     - product: Other biomass
       name: Other biomass
       units: Mwh
-      value: 1105805.03
+      value: 1119192.59
       rank: 5
       percent: 5.07
-  '2017':
-    - product: Wood and wood-derived fuels
-      name: Wood and wood-derived fuels
-      units: Mwh
-      value: 3186773.27
-      rank: 4
-      percent: 7.36
 revenue:
   '2006':
     - product: Hardrock
@@ -123,3 +116,10 @@ revenue:
       value: 1420
       rank: 5
       percent: 0
+  '2018':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 1420
+      rank: 4
+      percent: 1.6

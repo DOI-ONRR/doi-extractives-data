@@ -49,6 +49,10 @@ AK:
         revenue: 45090545
         rank: 8
         percent: 0.7
+      '2018':
+        revenue: 35739245
+        rank: 8
+        percent: 0.4
     Coal:
       '2006':
         revenue: 5120
@@ -111,6 +115,10 @@ AK:
         revenue: 8158219
         rank: 6
         percent: 0.8
+      '2018':
+        revenue: 6610982
+        rank: 7
+        percent: 0.7
     Geothermal:
       '2013':
         revenue: 7680
@@ -132,6 +140,10 @@ AK:
         revenue: 7680
         rank: 9
         percent: 0.1
+      '2018':
+        revenue: 7680
+        rank: 9
+        percent: 0.5
     NGL:
       '2006':
         revenue: 139228
@@ -167,6 +179,10 @@ AK:
         percent: 0
       '2017':
         revenue: 85174
+        rank: 11
+        percent: 0
+      '2018':
+        revenue: 122445
         rank: 11
         percent: 0
     Oil:
@@ -218,6 +234,10 @@ AK:
         revenue: 12913145
         rank: 8
         percent: 0.3
+      '2018':
+        revenue: 22471996
+        rank: 7
+        percent: 0.4
     Oil & Gas (Non-Royalty):
       '2006':
         revenue: 9019503
@@ -267,6 +287,10 @@ AK:
         revenue: 23926326
         rank: 3
         percent: 2.5
+      '2018':
+        revenue: 6526142
+        rank: 6
+        percent: 0.4
 AL:
   commodities:
     All:
@@ -317,6 +341,10 @@ AL:
       '2017':
         revenue: 957014
         rank: 21
+        percent: 0
+      '2018':
+        revenue: 3155672
+        rank: 16
         percent: 0
     Clay:
       '2006':
@@ -376,6 +404,10 @@ AL:
         revenue: 522574
         rank: 9
         percent: 0.1
+      '2018':
+        revenue: 2817226
+        rank: 6
+        percent: 0.5
     Gas:
       '2006':
         revenue: 780638
@@ -424,6 +456,10 @@ AL:
       '2017':
         revenue: 133855
         rank: 15
+        percent: 0
+      '2018':
+        revenue: 98812
+        rank: 16
         percent: 0
     Hardrock:
       '2006':
@@ -503,6 +539,10 @@ AL:
         revenue: 1384
         rank: 16
         percent: 0
+      '2018':
+        revenue: 2582
+        rank: 15
+        percent: 0
     Oil:
       '2006':
         revenue: 648228
@@ -550,6 +590,10 @@ AL:
         percent: 0
       '2017':
         revenue: 180486
+        rank: 16
+        percent: 0
+      '2018':
+        revenue: 162698
         rank: 16
         percent: 0
     Oil & Gas (Non-Royalty):
@@ -600,6 +644,15 @@ AL:
       '2017':
         revenue: 117908
         rank: 20
+        percent: 0
+      '2018':
+        revenue: 72871
+        rank: 20
+        percent: 0
+    Other Products:
+      '2018':
+        revenue: 1484
+        rank: 14
         percent: 0
     Sulfur:
       '2006':
@@ -701,6 +754,10 @@ AR:
         revenue: 3622644
         rank: 16
         percent: 0.1
+      '2018':
+        revenue: 2811998
+        rank: 19
+        percent: 0
     Gas:
       '2006':
         revenue: 8274401
@@ -749,6 +806,10 @@ AR:
       '2017':
         revenue: 3404645
         rank: 8
+        percent: 0.3
+      '2018':
+        revenue: 2677115
+        rank: 12
         percent: 0.3
     Hardrock:
       '2006':
@@ -799,6 +860,10 @@ AR:
         revenue: 1574
         rank: 4
         percent: 0
+      '2018':
+        revenue: 1317
+        rank: 5
+        percent: 1.5
     NGL:
       '2016':
         revenue: 9
@@ -806,6 +871,10 @@ AR:
         percent: 0
       '2017':
         revenue: 50
+        rank: 18
+        percent: 0
+      '2018':
+        revenue: 59
         rank: 18
         percent: 0
     Oil:
@@ -857,6 +926,10 @@ AR:
         revenue: 11
         rank: 24
         percent: 0
+      '2018':
+        revenue: 14
+        rank: 24
+        percent: 0
     Oil & Gas (Non-Royalty):
       '2006':
         revenue: 8420719
@@ -905,6 +978,15 @@ AR:
       '2017':
         revenue: 216364
         rank: 17
+        percent: 0
+      '2018':
+        revenue: 133236
+        rank: 17
+        percent: 0
+    Other Products:
+      '2018':
+        revenue: 257
+        rank: 16
         percent: 0
 AZ:
   commodities:
@@ -956,6 +1038,10 @@ AZ:
       '2017':
         revenue: 13384
         rank: 35
+        percent: 0
+      '2018':
+        revenue: 31214
+        rank: 31
         percent: 0
     Geothermal:
       '2006':
@@ -1034,6 +1120,15 @@ AZ:
       '2017':
         revenue: 13332
         rank: 27
+        percent: 0
+      '2018':
+        revenue: 30159
+        rank: 24
+        percent: 0
+    Other Products:
+      '2018':
+        revenue: 1055
+        rank: 15
         percent: 0
     Potassium:
       '2009':
@@ -1148,6 +1243,10 @@ CA:
         revenue: 75450273
         rank: 6
         percent: 1.1
+      '2018':
+        revenue: 102385748
+        rank: 6
+        percent: 1
     Gas:
       '2006':
         revenue: 5228801
@@ -1197,6 +1296,10 @@ CA:
         revenue: 3164244
         rank: 9
         percent: 0.3
+      '2018':
+        revenue: 3684273
+        rank: 10
+        percent: 0.4
     Geothermal:
       '2006':
         revenue: 11530130
@@ -1246,6 +1349,10 @@ CA:
         revenue: 7850205
         rank: 1
         percent: 56
+      '2018':
+        revenue: 71836
+        rank: 4
+        percent: 4.4
     Hardrock:
       '2008':
         revenue: 21
@@ -1275,6 +1382,10 @@ CA:
         revenue: 42
         rank: 6
         percent: 0
+      '2018':
+        revenue: 126
+        rank: 8
+        percent: 0.1
     Hot Springs:
       '2017':
         revenue: -5
@@ -1329,6 +1440,10 @@ CA:
         revenue: 935356
         rank: 8
         percent: 0.4
+      '2018':
+        revenue: 2908841
+        rank: 7
+        percent: 0.7
     Oil:
       '2006':
         revenue: 93078520
@@ -1376,6 +1491,10 @@ CA:
         percent: 1.5
       '2017':
         revenue: 53117746
+        rank: 4
+        percent: 1.3
+      '2018':
+        revenue: 77147642
         rank: 4
         percent: 1.3
     Oil & Gas (Non-Royalty):
@@ -1427,6 +1546,15 @@ CA:
         revenue: 582209
         rank: 11
         percent: 0.1
+      '2018':
+        revenue: 410803
+        rank: 14
+        percent: 0
+    Other Products:
+      '2018':
+        revenue: 18157035
+        rank: 3
+        percent: 13.5
     Potassium:
       '2007':
         revenue: 3460
@@ -1489,6 +1617,10 @@ CA:
         revenue: 9800353
         rank: 2
         percent: 21.4
+      '2018':
+        revenue: 5191
+        rank: 3
+        percent: 3
     Sulfur:
       '2012':
         revenue: 515
@@ -1565,6 +1697,10 @@ CO:
         revenue: 204009740
         rank: 3
         percent: 2.9
+      '2018':
+        revenue: 233260705
+        rank: 4
+        percent: 2.3
     CO2:
       '2006':
         revenue: 24279649
@@ -1663,6 +1799,10 @@ CO:
         revenue: 33405552
         rank: 3
         percent: 6
+      '2018':
+        revenue: 23268252
+        rank: 4
+        percent: 4.5
     Gas:
       '2006':
         revenue: 162935102
@@ -1712,6 +1852,10 @@ CO:
         revenue: 66158190
         rank: 3
         percent: 6.7
+      '2018':
+        revenue: 68005606
+        rank: 3
+        percent: 7.2
     Geothermal:
       '2011':
         revenue: 32800
@@ -1741,6 +1885,10 @@ CO:
         revenue: 27462
         rank: 7
         percent: 0.2
+      '2018':
+        revenue: 27462
+        rank: 7
+        percent: 1.7
     Helium:
       '2011':
         revenue: 58
@@ -1819,6 +1967,10 @@ CO:
         revenue: 23295019
         rank: 3
         percent: 10.2
+      '2018':
+        revenue: 28895191
+        rank: 3
+        percent: 7.3
     Oil:
       '2006':
         revenue: 33987998
@@ -1868,6 +2020,10 @@ CO:
         revenue: 26770326
         rank: 6
         percent: 0.7
+      '2018':
+        revenue: 53846469
+        rank: 6
+        percent: 0.9
     Oil & Gas (Non-Royalty):
       '2006':
         revenue: 33961391
@@ -1917,6 +2073,10 @@ CO:
         revenue: 5192350
         rank: 6
         percent: 0.5
+      '2018':
+        revenue: 8425669
+        rank: 5
+        percent: 0.5
     Oil Shale:
       '2016':
         revenue: 932
@@ -1926,6 +2086,15 @@ CO:
         revenue: 320
         rank: 1
         percent: 50
+      '2018':
+        revenue: 914
+        rank: 1
+        percent: 74.1
+    Other Products:
+      '2018':
+        revenue: 50765755
+        rank: 1
+        percent: 37.6
     Potassium:
       '2013':
         revenue: 8720
@@ -1988,6 +2157,10 @@ CO:
         revenue: 2140274
         rank: 3
         percent: 4.7
+      '2018':
+        revenue: 25386
+        rank: 2
+        percent: 14.9
 FL:
   commodities:
     All:
@@ -2039,6 +2212,10 @@ FL:
         revenue: 424096
         rank: 25
         percent: 0
+      '2018':
+        revenue: 1276901
+        rank: 21
+        percent: 0
     Oil & Gas (Non-Royalty):
       '2006':
         revenue: 18187
@@ -2068,6 +2245,11 @@ FL:
         revenue: 3200
         rank: 32
         percent: 0
+    Other Products:
+      '2018':
+        revenue: 1265973
+        rank: 9
+        percent: 0.9
     Phosphate:
       '2006':
         revenue: 1398
@@ -2117,6 +2299,10 @@ FL:
         revenue: 424096
         rank: 2
         percent: 4.1
+      '2018':
+        revenue: 10928
+        rank: 3
+        percent: 6.2
 ID:
   commodities:
     All:
@@ -2168,6 +2354,10 @@ ID:
         revenue: 10193954
         rank: 11
         percent: 0.1
+      '2018':
+        revenue: 8593735
+        rank: 14
+        percent: 0.1
     Gas:
       '2016':
         revenue: 50762
@@ -2176,6 +2366,10 @@ ID:
       '2017':
         revenue: 105695
         rank: 16
+        percent: 0
+      '2018':
+        revenue: 7847
+        rank: 23
         percent: 0
     Gemstones:
       '2016':
@@ -2231,6 +2425,10 @@ ID:
         revenue: 139398
         rank: 4
         percent: 1
+      '2018':
+        revenue: 149712
+        rank: 2
+        percent: 9.2
     Hardrock:
       '2006':
         revenue: 4294
@@ -2280,6 +2478,10 @@ ID:
         revenue: 126
         rank: 5
         percent: 0
+      '2018':
+        revenue: 260
+        rank: 7
+        percent: 0.3
     NGL:
       '2016':
         revenue: 13724
@@ -2289,6 +2491,10 @@ ID:
         revenue: 40583
         rank: 13
         percent: 0
+      '2018':
+        revenue: 4705
+        rank: 14
+        percent: 0
     Oil:
       '2016':
         revenue: 45387
@@ -2297,6 +2503,10 @@ ID:
       '2017':
         revenue: 55079
         rank: 20
+        percent: 0
+      '2018':
+        revenue: 7217
+        rank: 23
         percent: 0
     Oil & Gas (Non-Royalty):
       '2006':
@@ -2347,6 +2557,15 @@ ID:
         revenue: 55790
         rank: 22
         percent: 0
+      '2018':
+        revenue: 20891
+        rank: 25
+        percent: 0
+    Other Products:
+      '2018':
+        revenue: 8265212
+        rank: 6
+        percent: 6.1
     Phosphate:
       '2006':
         revenue: 2172503
@@ -2396,6 +2615,10 @@ ID:
         revenue: 9797043
         rank: 1
         percent: 95.6
+      '2018':
+        revenue: 137891
+        rank: 1
+        percent: 77.7
 IL:
   commodities:
     All:
@@ -2446,6 +2669,10 @@ IL:
       '2017':
         revenue: 89924
         rank: 29
+        percent: 0
+      '2018':
+        revenue: 118426
+        rank: 27
         percent: 0
     Hardrock:
       '2008':
@@ -2509,6 +2736,10 @@ IL:
         revenue: 89784
         rank: 19
         percent: 0
+      '2018':
+        revenue: 117806
+        rank: 18
+        percent: 0
     Oil & Gas (Non-Royalty):
       '2006':
         revenue: 175
@@ -2536,6 +2767,10 @@ IL:
         percent: 0
       '2017':
         revenue: 141
+        rank: 29
+        percent: 0
+      '2018':
+        revenue: 621
         rank: 29
         percent: 0
 IN:
@@ -2576,6 +2811,10 @@ IN:
       '2017':
         revenue: 25501
         rank: 32
+        percent: 0
+      '2018':
+        revenue: 16855
+        rank: 34
         percent: 0
     Oil:
       '2009':
@@ -2635,6 +2874,10 @@ IN:
         revenue: 25501
         rank: 25
         percent: 0
+      '2018':
+        revenue: 16855
+        rank: 27
+        percent: 0
 KS:
   commodities:
     All:
@@ -2686,6 +2929,10 @@ KS:
         revenue: 2316580
         rank: 19
         percent: 0
+      '2018':
+        revenue: 2751719
+        rank: 20
+        percent: 0
     Gas:
       '2006':
         revenue: 4935612
@@ -2734,6 +2981,10 @@ KS:
       '2017':
         revenue: 937375
         rank: 12
+        percent: 0.1
+      '2018':
+        revenue: 602861
+        rank: 14
         percent: 0.1
     Helium:
       '2006':
@@ -2821,6 +3072,10 @@ KS:
         revenue: 574867
         rank: 9
         percent: 0.3
+      '2018':
+        revenue: 618815
+        rank: 9
+        percent: 0.2
     Oil:
       '2006':
         revenue: 3940101
@@ -2868,6 +3123,10 @@ KS:
         percent: 0
       '2017':
         revenue: 811962
+        rank: 14
+        percent: 0
+      '2018':
+        revenue: 1402787
         rank: 14
         percent: 0
     Oil & Gas (Non-Royalty):
@@ -2918,6 +3177,15 @@ KS:
       '2017':
         revenue: -6807
         rank: 30
+        percent: null
+      '2018':
+        revenue: 127265
+        rank: 18
+        percent: 0
+    Other Products:
+      '2018':
+        revenue: -9
+        rank: 17
         percent: null
 KY:
   commodities:
@@ -2970,6 +3238,10 @@ KY:
         revenue: 838227
         rank: 22
         percent: 0
+      '2018':
+        revenue: 363388
+        rank: 25
+        percent: 0
     Coal:
       '2006':
         revenue: 1972097
@@ -3019,6 +3291,10 @@ KY:
         revenue: 638210
         rank: 7
         percent: 0.1
+      '2018':
+        revenue: 199603
+        rank: 10
+        percent: 0
     Gas:
       '2006':
         revenue: 181436
@@ -3067,6 +3343,10 @@ KY:
       '2017':
         revenue: 27930
         rank: 19
+        percent: 0
+      '2018':
+        revenue: 27717
+        rank: 20
         percent: 0
     NGL:
       '2009':
@@ -3138,6 +3418,10 @@ KY:
         revenue: 41868
         rank: 22
         percent: 0
+      '2018':
+        revenue: 44035
+        rank: 21
+        percent: 0
     Oil & Gas (Non-Royalty):
       '2006':
         revenue: 86375
@@ -3186,6 +3470,10 @@ KY:
       '2017':
         revenue: 130219
         rank: 18
+        percent: 0
+      '2018':
+        revenue: 92033
+        rank: 19
         percent: 0
 LA:
   commodities:
@@ -3238,6 +3526,10 @@ LA:
         revenue: 6510622
         rank: 15
         percent: 0.1
+      '2018':
+        revenue: 9491872
+        rank: 11
+        percent: 0.1
     Gas:
       '2006':
         revenue: 34130980
@@ -3287,6 +3579,10 @@ LA:
         revenue: 3001749
         rank: 10
         percent: 0.3
+      '2018':
+        revenue: 4162283
+        rank: 9
+        percent: 0.4
     NGL:
       '2006':
         revenue: 1229701
@@ -3334,6 +3630,10 @@ LA:
         percent: 0.1
       '2017':
         revenue: 313948
+        rank: 10
+        percent: 0.1
+      '2018':
+        revenue: 434526
         rank: 10
         percent: 0.1
     Oil:
@@ -3385,6 +3685,10 @@ LA:
         revenue: 2431154
         rank: 10
         percent: 0.1
+      '2018':
+        revenue: 4102143
+        rank: 9
+        percent: 0.1
     Oil & Gas (Non-Royalty):
       '2006':
         revenue: -29171
@@ -3434,6 +3738,10 @@ LA:
         revenue: 763771
         rank: 10
         percent: 0.1
+      '2018':
+        revenue: 792920
+        rank: 12
+        percent: 0
     Sulfur:
       '2014':
         revenue: 203
@@ -3490,6 +3798,10 @@ MD:
         revenue: 18858
         rank: 33
         percent: 0
+      '2018':
+        revenue: 20124
+        rank: 33
+        percent: 0
     Oil & Gas (Non-Royalty):
       '2006':
         revenue: 12295
@@ -3537,6 +3849,10 @@ MD:
         percent: 0
       '2017':
         revenue: 18858
+        rank: 26
+        percent: 0
+      '2018':
+        revenue: 20124
         rank: 26
         percent: 0
 MI:
@@ -3590,6 +3906,10 @@ MI:
         revenue: 659453
         rank: 23
         percent: 0
+      '2018':
+        revenue: 570462
+        rank: 24
+        percent: 0
     Gas:
       '2006':
         revenue: 2124035
@@ -3638,6 +3958,10 @@ MI:
       '2017':
         revenue: 420400
         rank: 13
+        percent: 0
+      '2018':
+        revenue: 362555
+        rank: 15
         percent: 0
     Hardrock:
       '2011':
@@ -3697,6 +4021,10 @@ MI:
         revenue: 24040
         rank: 14
         percent: 0
+      '2018':
+        revenue: 30905
+        rank: 13
+        percent: 0
     Oil:
       '2006':
         revenue: 214632
@@ -3746,6 +4074,10 @@ MI:
         revenue: 90531
         rank: 18
         percent: 0
+      '2018':
+        revenue: 111400
+        rank: 19
+        percent: 0
     Oil & Gas (Non-Royalty):
       '2006':
         revenue: 56867
@@ -3794,6 +4126,10 @@ MI:
       '2017':
         revenue: 124481
         rank: 19
+        percent: 0
+      '2018':
+        revenue: 65602
+        rank: 21
         percent: 0
 MN:
   commodities:
@@ -3846,6 +4182,10 @@ MN:
         revenue: 49221
         rank: 31
         percent: 0
+      '2018':
+        revenue: 49524
+        rank: 30
+        percent: 0
     Copper:
       '2016':
         revenue: 28721
@@ -3853,6 +4193,10 @@ MN:
         percent: 100
       '2017':
         revenue: 26110
+        rank: 1
+        percent: 100
+      '2018':
+        revenue: 20
         rank: 1
         percent: 100
     Hardrock:
@@ -3904,6 +4248,10 @@ MN:
         revenue: 23111
         rank: 2
         percent: 0.2
+      '2018':
+        revenue: 49504
+        rank: 1
+        percent: 57.1
 MO:
   commodities:
     All:
@@ -3955,6 +4303,10 @@ MO:
         revenue: 9547157
         rank: 12
         percent: 0.1
+      '2018':
+        revenue: 9125091
+        rank: 13
+        percent: 0.1
     Hardrock:
       '2006':
         revenue: 10497305
@@ -4004,6 +4356,10 @@ MO:
         revenue: 9547157
         rank: 1
         percent: 99.7
+      '2018':
+        revenue: 29654
+        rank: 2
+        percent: 34.2
     Oil & Gas (Non-Royalty):
       '2007':
         revenue: 1680
@@ -4033,6 +4389,11 @@ MO:
         revenue: 14074
         rank: 27
         percent: 0
+    Other Products:
+      '2018':
+        revenue: 9095437
+        rank: 5
+        percent: 6.7
 MS:
   commodities:
     All:
@@ -4084,6 +4445,10 @@ MS:
         revenue: 2777707
         rank: 18
         percent: 0
+      '2018':
+        revenue: 2817323
+        rank: 18
+        percent: 0
     Gas:
       '2006':
         revenue: 425134
@@ -4133,10 +4498,18 @@ MS:
         revenue: 204882
         rank: 14
         percent: 0
+      '2018':
+        revenue: 60254
+        rank: 17
+        percent: 0
     NGL:
       '2017':
         revenue: 1573
         rank: 15
+        percent: 0
+      '2018':
+        revenue: 1835
+        rank: 16
         percent: 0
     Oil:
       '2006':
@@ -4187,6 +4560,10 @@ MS:
         revenue: 2066401
         rank: 12
         percent: 0.1
+      '2018':
+        revenue: 2343277
+        rank: 11
+        percent: 0
     Oil & Gas (Non-Royalty):
       '2006':
         revenue: 1482800
@@ -4236,6 +4613,10 @@ MS:
         revenue: 504852
         rank: 12
         percent: 0.1
+      '2018':
+        revenue: 411958
+        rank: 13
+        percent: 0
 MT:
   commodities:
     All:
@@ -4287,6 +4668,10 @@ MT:
         revenue: 51116474
         rank: 7
         percent: 0.7
+      '2018':
+        revenue: 60166185
+        rank: 7
+        percent: 0.6
     Coal:
       '2006':
         revenue: 30401780
@@ -4336,6 +4721,10 @@ MT:
         revenue: 32773202
         rank: 4
         percent: 5.9
+      '2018':
+        revenue: 36477876
+        rank: 3
+        percent: 7.1
     Gas:
       '2006':
         revenue: 18469950
@@ -4385,6 +4774,10 @@ MT:
         revenue: 2034156
         rank: 11
         percent: 0.2
+      '2018':
+        revenue: 2940527
+        rank: 11
+        percent: 0.3
     Hardrock:
       '2006':
         revenue: 2211
@@ -4430,6 +4823,10 @@ MT:
         revenue: 97
         rank: 7
         percent: 0
+      '2018':
+        revenue: 57
+        rank: 9
+        percent: 0.1
     NGL:
       '2006':
         revenue: 422626
@@ -4477,6 +4874,10 @@ MT:
         percent: 0
       '2017':
         revenue: 70245
+        rank: 12
+        percent: 0
+      '2018':
+        revenue: 89666
         rank: 12
         percent: 0
     Oil:
@@ -4528,6 +4929,10 @@ MT:
         revenue: 13883802
         rank: 7
         percent: 0.3
+      '2018':
+        revenue: 18095268
+        rank: 8
+        percent: 0.3
     Oil & Gas (Non-Royalty):
       '2006':
         revenue: 4968945
@@ -4577,6 +4982,15 @@ MT:
         revenue: 2350603
         rank: 8
         percent: 0.2
+      '2018':
+        revenue: 2556853
+        rank: 8
+        percent: 0.1
+    Other Products:
+      '2018':
+        revenue: 1710
+        rank: 13
+        percent: 0
     Phosphate:
       '2006':
         revenue: 12681
@@ -4626,6 +5040,10 @@ MT:
         revenue: 4227
         rank: 4
         percent: 0
+      '2018':
+        revenue: 4227
+        rank: 4
+        percent: 2.4
     Sulfur:
       '2006':
         revenue: 2321
@@ -4778,6 +5196,10 @@ ND:
         revenue: 178598355
         rank: 4
         percent: 2.6
+      '2018':
+        revenue: 289595601
+        rank: 3
+        percent: 2.9
     Coal:
       '2006':
         revenue: 918119
@@ -4827,6 +5249,10 @@ ND:
         revenue: 2284701
         rank: 6
         percent: 0.4
+      '2018':
+        revenue: 1753946
+        rank: 7
+        percent: 0.3
     Gas:
       '2006':
         revenue: 5457309
@@ -4876,6 +5302,10 @@ ND:
         revenue: 14500448
         rank: 5
         percent: 1.5
+      '2018':
+        revenue: 23749181
+        rank: 5
+        percent: 2.5
     Hardrock:
       '2009':
         revenue: 16815
@@ -4938,6 +5368,10 @@ ND:
         revenue: 4675990
         rank: 6
         percent: 2
+      '2018':
+        revenue: 7350341
+        rank: 5
+        percent: 1.8
     Oil:
       '2006':
         revenue: 43951094
@@ -4987,6 +5421,10 @@ ND:
         revenue: 150116724
         rank: 3
         percent: 3.8
+      '2018':
+        revenue: 253860925
+        rank: 3
+        percent: 4.2
     Oil & Gas (Non-Royalty):
       '2006':
         revenue: 16425256
@@ -5036,6 +5474,15 @@ ND:
         revenue: 7020493
         rank: 4
         percent: 0.7
+      '2018':
+        revenue: 2748391
+        rank: 7
+        percent: 0.2
+    Other Products:
+      '2018':
+        revenue: 132817
+        rank: 10
+        percent: 0.1
     Sulfur:
       '2006':
         revenue: 92
@@ -5098,6 +5545,10 @@ NE:
         percent: 0
       '2017':
         revenue: 165490
+        rank: 26
+        percent: 0
+      '2018':
+        revenue: 197379
         rank: 26
         percent: 0
     Gas:
@@ -5191,6 +5642,10 @@ NE:
         revenue: 119441
         rank: 17
         percent: 0
+      '2018':
+        revenue: 149329
+        rank: 17
+        percent: 0
     Oil & Gas (Non-Royalty):
       '2006':
         revenue: 166312
@@ -5238,6 +5693,10 @@ NE:
         percent: 0
       '2017':
         revenue: 46049
+        rank: 23
+        percent: 0
+      '2018':
+        revenue: 48050
         rank: 23
         percent: 0
 NM:
@@ -5291,6 +5750,10 @@ NM:
         revenue: 1008127153
         rank: 2
         percent: 14.6
+      '2018':
+        revenue: 2447493889
+        rank: 1
+        percent: 24.6
     CO2:
       '2006':
         revenue: 661305
@@ -5389,6 +5852,10 @@ NM:
         revenue: 12095265
         rank: 5
         percent: 2.2
+      '2018':
+        revenue: 7423882
+        rank: 5
+        percent: 1.4
     Gas:
       '2006':
         revenue: 680611624
@@ -5438,6 +5905,10 @@ NM:
         revenue: 250505175
         rank: 2
         percent: 25.3
+      '2018':
+        revenue: 247883533
+        rank: 2
+        percent: 26.4
     Geothermal:
       '2006':
         revenue: -2794
@@ -5487,6 +5958,10 @@ NM:
         revenue: 102273
         rank: 6
         percent: 0.7
+      '2018':
+        revenue: 43867
+        rank: 6
+        percent: 2.7
     NGL:
       '2006':
         revenue: 109336369
@@ -5536,6 +6011,10 @@ NM:
         revenue: 73050099
         rank: 1
         percent: 32
+      '2018':
+        revenue: 121462099
+        rank: 1
+        percent: 30.5
     Oil:
       '2006':
         revenue: 174693713
@@ -5585,6 +6064,10 @@ NM:
         revenue: 489233858
         rank: 1
         percent: 12.3
+      '2018':
+        revenue: 884214639
+        rank: 1
+        percent: 14.5
     Oil & Gas (Non-Royalty):
       '2006':
         revenue: 119888753
@@ -5634,6 +6117,15 @@ NM:
         revenue: 174919343
         rank: 2
         percent: 18.3
+      '2018':
+        revenue: 1176160287
+        rank: 1
+        percent: 64.6
+    Other Products:
+      '2018':
+        revenue: 9507297
+        rank: 4
+        percent: 7
     Potassium:
       '2006':
         revenue: 6455455
@@ -5683,6 +6175,10 @@ NM:
         revenue: 6739499
         rank: 1
         percent: 91.9
+      '2018':
+        revenue: 798284
+        rank: 1
+        percent: 68.7
     Sodium:
       '2006':
         revenue: 245710
@@ -5792,9 +6288,13 @@ NV:
         revenue: 7860634
         rank: 13
         percent: 0.1
+      '2018':
+        revenue: 9412584
+        rank: 12
+        percent: 0.1
     Geothermal:
       '2006':
-        revenue: 1752026
+        revenue: 1752025
         rank: 2
         percent: 13
       '2007':
@@ -5841,6 +6341,10 @@ NV:
         revenue: 5052611
         rank: 2
         percent: 36
+      '2018':
+        revenue: 1162145
+        rank: 1
+        percent: 71.5
     Oil:
       '2006':
         revenue: 2732321
@@ -5888,6 +6392,10 @@ NV:
         percent: 0
       '2017':
         revenue: 1347202
+        rank: 13
+        percent: 0
+      '2018':
+        revenue: 1748643
         rank: 13
         percent: 0
     Oil & Gas (Non-Royalty):
@@ -5939,6 +6447,15 @@ NV:
         revenue: 1454976
         rank: 9
         percent: 0.2
+      '2018':
+        revenue: 1684667
+        rank: 10
+        percent: 0.1
+    Other Products:
+      '2018':
+        revenue: 4809627
+        rank: 7
+        percent: 3.6
     Potassium:
       '2006':
         revenue: 11619
@@ -5984,6 +6501,10 @@ NV:
         revenue: 5845
         rank: 3
         percent: 0.1
+      '2018':
+        revenue: 7503
+        rank: 3
+        percent: 0.6
     Sand & Gravel:
       '2006':
         revenue: 2
@@ -6044,6 +6565,10 @@ NY:
         revenue: 14388
         rank: 34
         percent: 0
+      '2018':
+        revenue: 1458
+        rank: 37
+        percent: 0
     Gas:
       '2006':
         revenue: 13365
@@ -6092,6 +6617,10 @@ NY:
       '2017':
         revenue: 12123
         rank: 23
+        percent: 0
+      '2018':
+        revenue: 916
+        rank: 24
         percent: 0
     Oil & Gas (Non-Royalty):
       '2006':
@@ -6142,6 +6671,10 @@ NY:
         revenue: 2265
         rank: 28
         percent: 0
+      '2018':
+        revenue: 542
+        rank: 30
+        percent: 0
 None:
   commodities:
     All:
@@ -6191,6 +6724,10 @@ None:
         percent: 0.1
       '2017':
         revenue: 3258291
+        rank: 17
+        percent: 0
+      '2018':
+        revenue: 2820635
         rank: 17
         percent: 0
 OH:
@@ -6244,6 +6781,10 @@ OH:
         revenue: 6859889
         rank: 14
         percent: 0.1
+      '2018':
+        revenue: 3478125
+        rank: 15
+        percent: 0
     Coal:
       '2010':
         revenue: 3373
@@ -6298,6 +6839,10 @@ OH:
         revenue: 103415
         rank: 17
         percent: 0
+      '2018':
+        revenue: 2183897
+        rank: 13
+        percent: 0.2
     NGL:
       '2014':
         revenue: 1892
@@ -6352,6 +6897,10 @@ OH:
         revenue: 52686
         rank: 21
         percent: 0
+      '2018':
+        revenue: 97146
+        rank: 20
+        percent: 0
     Oil & Gas (Non-Royalty):
       '2006':
         revenue: 44037
@@ -6401,6 +6950,10 @@ OH:
         revenue: 6703788
         rank: 5
         percent: 0.7
+      '2018':
+        revenue: 1197083
+        rank: 11
+        percent: 0.1
 OK:
   commodities:
     All:
@@ -6452,6 +7005,10 @@ OK:
         revenue: 10217837
         rank: 10
         percent: 0.1
+      '2018':
+        revenue: 17617607
+        rank: 10
+        percent: 0.2
     Asphalt:
       '2006':
         revenue: 959
@@ -6522,6 +7079,10 @@ OK:
         revenue: 543149
         rank: 8
         percent: 0.1
+      '2018':
+        revenue: 488884
+        rank: 8
+        percent: 0.1
     Gas:
       '2006':
         revenue: 10897537
@@ -6571,6 +7132,10 @@ OK:
         revenue: 4938998
         rank: 7
         percent: 0.5
+      '2018':
+        revenue: 4199578
+        rank: 8
+        percent: 0.4
     Helium:
       '2013':
         revenue: 1
@@ -6629,6 +7194,10 @@ OK:
         revenue: 1261889
         rank: 7
         percent: 0.6
+      '2018':
+        revenue: 1267445
+        rank: 8
+        percent: 0.3
     Oil:
       '2006':
         revenue: 982614
@@ -6678,6 +7247,10 @@ OK:
         revenue: 3216908
         rank: 9
         percent: 0.1
+      '2018':
+        revenue: 1843068
+        rank: 12
+        percent: 0
     Oil & Gas (Non-Royalty):
       '2006':
         revenue: 3103290
@@ -6727,6 +7300,10 @@ OK:
         revenue: 244338
         rank: 16
         percent: 0
+      '2018':
+        revenue: 9818633
+        rank: 4
+        percent: 0.5
 OR:
   commodities:
     All:
@@ -6778,6 +7355,10 @@ OR:
         revenue: 134306
         rank: 28
         percent: 0
+      '2018':
+        revenue: 22922
+        rank: 32
+        percent: 0
     Geothermal:
       '2006':
         revenue: 3111
@@ -6827,6 +7408,10 @@ OR:
         revenue: 134306
         rank: 5
         percent: 1
+      '2018':
+        revenue: 51638
+        rank: 5
+        percent: 3.2
     Oil & Gas (Non-Royalty):
       '2006':
         revenue: 1314905
@@ -6864,6 +7449,10 @@ OR:
         revenue: 367384
         rank: 18
         percent: 0
+      '2018':
+        revenue: -28716
+        rank: 31
+        percent: null
 PA:
   commodities:
     All:
@@ -6915,6 +7504,10 @@ PA:
         revenue: 88110
         rank: 30
         percent: 0
+      '2018':
+        revenue: 94158
+        rank: 28
+        percent: 0
     Gas:
       '2006':
         revenue: 67242
@@ -6964,6 +7557,10 @@ PA:
         revenue: 20628
         rank: 21
         percent: 0
+      '2018':
+        revenue: 33282
+        rank: 19
+        percent: 0
     NGL:
       '2012':
         revenue: 323
@@ -6987,6 +7584,10 @@ PA:
         percent: 0
       '2017':
         revenue: 126
+        rank: 17
+        percent: 0
+      '2018':
+        revenue: 1312
         rank: 17
         percent: 0
     Oil:
@@ -7033,6 +7634,10 @@ PA:
       '2017':
         revenue: 1006
         rank: 23
+        percent: 0
+      '2018':
+        revenue: 7830
+        rank: 22
         percent: 0
     Oil & Gas (Non-Royalty):
       '2006':
@@ -7083,6 +7688,10 @@ PA:
         revenue: 66350
         rank: 21
         percent: 0
+      '2018':
+        revenue: 51733
+        rank: 22
+        percent: 0
 SC:
   commodities:
     All:
@@ -7126,6 +7735,10 @@ SC:
         revenue: 2220
         rank: 37
         percent: 0
+      '2018':
+        revenue: 3330
+        rank: 36
+        percent: 0
     Hardrock:
       '2006':
         revenue: 1110
@@ -7167,6 +7780,10 @@ SC:
         revenue: 2220
         rank: 3
         percent: 0
+      '2018':
+        revenue: 3330
+        rank: 3
+        percent: 3.8
 SD:
   commodities:
     All:
@@ -7218,6 +7835,10 @@ SD:
         revenue: 1248200
         rank: 20
         percent: 0
+      '2018':
+        revenue: 1057891
+        rank: 22
+        percent: 0
     Gas:
       '2006':
         revenue: 130031
@@ -7265,6 +7886,10 @@ SD:
         percent: 0
       '2017':
         revenue: 15492
+        rank: 22
+        percent: 0
+      '2018':
+        revenue: 11118
         rank: 22
         percent: 0
     Oil:
@@ -7316,6 +7941,10 @@ SD:
         revenue: 751967
         rank: 15
         percent: 0
+      '2018':
+        revenue: 817774
+        rank: 15
+        percent: 0
     Oil & Gas (Non-Royalty):
       '2006':
         revenue: 221904
@@ -7365,6 +7994,10 @@ SD:
         revenue: 480742
         rank: 13
         percent: 0.1
+      '2018':
+        revenue: 228999
+        rank: 16
+        percent: 0
 TN:
   commodities:
     All:
@@ -7444,6 +8077,10 @@ TX:
         revenue: 13522426
         rank: 9
         percent: 0.2
+      '2018':
+        revenue: 17681055
+        rank: 9
+        percent: 0.2
     CO2:
       '2016':
         revenue: 1315
@@ -7502,6 +8139,10 @@ TX:
         revenue: -1256948
         rank: 24
         percent: null
+      '2018':
+        revenue: 7706436
+        rank: 6
+        percent: 0.8
     NGL:
       '2006':
         revenue: 143345
@@ -7551,6 +8192,10 @@ TX:
         revenue: 11977466
         rank: 4
         percent: 5.3
+      '2018':
+        revenue: 5572616
+        rank: 6
+        percent: 1.4
     Oil:
       '2006':
         revenue: 2591405
@@ -7600,6 +8245,10 @@ TX:
         revenue: 2335952
         rank: 11
         percent: 0.1
+      '2018':
+        revenue: 2651203
+        rank: 10
+        percent: 0
     Oil & Gas (Non-Royalty):
       '2006':
         revenue: 3040473
@@ -7648,6 +8297,15 @@ TX:
       '2017':
         revenue: 460459
         rank: 14
+        percent: 0
+      '2018':
+        revenue: 1744190
+        rank: 9
+        percent: 0.1
+    Other Products:
+      '2018':
+        revenue: 6608
+        rank: 12
         percent: 0
 UT:
   commodities:
@@ -7700,6 +8358,10 @@ UT:
         revenue: 152991585
         rank: 5
         percent: 2.2
+      '2018':
+        revenue: 160480221
+        rank: 5
+        percent: 1.6
     CO2:
       '2008':
         revenue: 65886
@@ -7790,6 +8452,10 @@ UT:
         revenue: 462
         rank: 1
         percent: 100
+      '2018':
+        revenue: 10026
+        rank: 1
+        percent: 100
     Coal:
       '2006':
         revenue: 31192411
@@ -7839,6 +8505,10 @@ UT:
         revenue: 43264726
         rank: 2
         percent: 7.8
+      '2018':
+        revenue: 37024714
+        rank: 2
+        percent: 7.2
     Gas:
       '2006':
         revenue: 153622021
@@ -7888,6 +8558,10 @@ UT:
         revenue: 46692121
         rank: 4
         percent: 4.7
+      '2018':
+        revenue: 32529377
+        rank: 4
+        percent: 3.5
     Geothermal:
       '2006':
         revenue: 228842
@@ -7937,6 +8611,10 @@ UT:
         revenue: 705253
         rank: 3
         percent: 5
+      '2018':
+        revenue: 102485
+        rank: 3
+        percent: 6.3
     Gilsonite:
       '2006':
         revenue: 511875
@@ -7986,6 +8664,10 @@ UT:
         revenue: 1068399
         rank: 1
         percent: 100
+      '2018':
+        revenue: 11207
+        rank: 1
+        percent: 100
     Gold:
       '2015':
         revenue: 2604
@@ -7996,6 +8678,10 @@ UT:
         rank: 1
         percent: 100
       '2017':
+        revenue: 2604
+        rank: 1
+        percent: 100
+      '2018':
         revenue: 2604
         rank: 1
         percent: 100
@@ -8070,6 +8756,10 @@ UT:
         revenue: 8250658
         rank: 5
         percent: 3.6
+      '2018':
+        revenue: 11539090
+        rank: 4
+        percent: 2.9
     Oil:
       '2006':
         revenue: 52604568
@@ -8119,6 +8809,10 @@ UT:
         revenue: 49885607
         rank: 5
         percent: 1.3
+      '2018':
+        revenue: 63063296
+        rank: 5
+        percent: 1
     Oil & Gas (Non-Royalty):
       '2006':
         revenue: 103022390
@@ -8168,6 +8862,10 @@ UT:
         revenue: 2450921
         rank: 7
         percent: 0.3
+      '2018':
+        revenue: 13318702
+        rank: 3
+        percent: 0.7
     Oil Shale:
       '2016':
         revenue: 320
@@ -8177,6 +8875,15 @@ UT:
         revenue: 320
         rank: 1
         percent: 50
+      '2018':
+        revenue: 320
+        rank: 2
+        percent: 25.9
+    Other Products:
+      '2018':
+        revenue: 2497988
+        rank: 8
+        percent: 1.9
     Phosphate:
       '2006':
         revenue: 11318
@@ -8226,6 +8933,10 @@ UT:
         revenue: 24360
         rank: 3
         percent: 0.2
+      '2018':
+        revenue: 24360
+        rank: 2
+        percent: 13.7
     Potassium:
       '2006':
         revenue: 141595
@@ -8275,6 +8986,10 @@ UT:
         revenue: 584234
         rank: 2
         percent: 8
+      '2018':
+        revenue: 356051
+        rank: 2
+        percent: 30.6
     Sodium:
       '2006':
         revenue: 1344
@@ -8392,6 +9107,10 @@ VA:
         revenue: 144475
         rank: 27
         percent: 0
+      '2018':
+        revenue: 59442
+        rank: 29
+        percent: 0
     Gas:
       '2006':
         revenue: 342675
@@ -8441,6 +9160,10 @@ VA:
         revenue: 99241
         rank: 18
         percent: 0
+      '2018':
+        revenue: 35475
+        rank: 18
+        percent: 0
     Hardrock:
       '2006':
         revenue: 32359
@@ -8486,6 +9209,10 @@ VA:
         revenue: 1420
         rank: 5
         percent: 0
+      '2018':
+        revenue: 1420
+        rank: 4
+        percent: 1.6
     Oil:
       '2013':
         revenue: 92
@@ -8540,6 +9267,15 @@ VA:
         revenue: 45235
         rank: 24
         percent: 0
+      '2018':
+        revenue: 14264
+        rank: 28
+        percent: 0
+    Other Products:
+      '2018':
+        revenue: 8282
+        rank: 11
+        percent: 0
 WA:
   commodities:
     All:
@@ -8591,6 +9327,10 @@ WA:
         revenue: 11181
         rank: 36
         percent: 0
+      '2018':
+        revenue: 16270
+        rank: 35
+        percent: 0
     Coal:
       '2006':
         revenue: 12235
@@ -8636,6 +9376,10 @@ WA:
         revenue: 2744
         rank: 11
         percent: 0
+      '2018':
+        revenue: 7833
+        rank: 11
+        percent: 0
     Geothermal:
       '2011':
         revenue: 16874
@@ -8661,6 +9405,10 @@ WA:
         revenue: 8437
         rank: 8
         percent: 0.1
+      '2018':
+        revenue: 8437
+        rank: 8
+        percent: 0.5
     Oil & Gas (Non-Royalty):
       '2006':
         revenue: 5612250
@@ -8690,6 +9438,18 @@ WA:
         revenue: 9556
         rank: 29
         percent: 0
+WI:
+  commodities:
+    All:
+      '2018':
+        revenue: 1000
+        rank: 38
+        percent: 0
+    Hardrock:
+      '2018':
+        revenue: 1000
+        rank: 6
+        percent: 1.2
 WV:
   commodities:
     All:
@@ -8741,6 +9501,10 @@ WV:
         revenue: 641694
         rank: 24
         percent: 0
+      '2018':
+        revenue: 611839
+        rank: 23
+        percent: 0
     Coal:
       '2015':
         revenue: 177920
@@ -8750,6 +9514,10 @@ WV:
         revenue: 179183
         rank: 10
         percent: 0
+      '2018':
+        revenue: 357279
+        rank: 9
+        percent: 0.1
     Gas:
       '2006':
         revenue: 702256
@@ -8798,6 +9566,10 @@ WV:
       '2017':
         revenue: 26463
         rank: 20
+        percent: 0
+      '2018':
+        revenue: 20174
+        rank: 21
         percent: 0
     Oil:
       '2006':
@@ -8869,6 +9641,10 @@ WV:
         revenue: 436048
         rank: 15
         percent: 0
+      '2018':
+        revenue: 234385
+        rank: 15
+        percent: 0
 WY:
   commodities:
     All:
@@ -8920,6 +9696,10 @@ WY:
         revenue: 1228424371
         rank: 1
         percent: 17.7
+      '2018':
+        revenue: 1246326179
+        rank: 2
+        percent: 12.5
     CO2:
       '2006':
         revenue: 60734
@@ -9018,6 +9798,10 @@ WY:
         revenue: 432107367
         rank: 1
         percent: 77.5
+      '2018':
+        revenue: 404201159
+        rank: 1
+        percent: 78.6
     Gas:
       '2006':
         revenue: 934471458
@@ -9067,6 +9851,10 @@ WY:
         revenue: 329586658
         rank: 1
         percent: 33.2
+      '2018':
+        revenue: 288666265
+        rank: 1
+        percent: 30.7
     Helium:
       '2006':
         revenue: -234
@@ -9121,6 +9909,10 @@ WY:
         revenue: 25999550
         rank: 2
         percent: 11.4
+      '2018':
+        revenue: 74152114
+        rank: 2
+        percent: 18.6
     Oil:
       '2006':
         revenue: 197127988
@@ -9168,6 +9960,10 @@ WY:
         percent: 5.6
       '2017':
         revenue: 207383962
+        rank: 2
+        percent: 5.2
+      '2018':
+        revenue: 317947353
         rank: 2
         percent: 5.2
     Oil & Gas (Non-Royalty):
@@ -9219,6 +10015,15 @@ WY:
         revenue: 199240499
         rank: 1
         percent: 20.8
+      '2018':
+        revenue: 130761433
+        rank: 2
+        percent: 7.2
+    Other Products:
+      '2018':
+        revenue: 30457808
+        rank: 2
+        percent: 22.6
     Sodium:
       '2006':
         revenue: 25229074
@@ -9268,6 +10073,10 @@ WY:
         revenue: 33258975
         rank: 1
         percent: 72.6
+      '2018':
+        revenue: 140046
+        rank: 1
+        percent: 82.1
     Sulfur:
       '2006':
         revenue: 15500

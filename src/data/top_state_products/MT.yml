@@ -70,16 +70,9 @@ all_production:
     - product: Conventional Hydroelectric
       name: Conventional Hydroelectric
       units: Mwh
-      value: 10082529
+      value: 10183480.58
       rank: 5
-      percent: 3.76
-  '2017':
-    - product: Conventional Hydroelectric
-      name: Conventional Hydroelectric
-      units: Mwh
-      value: 10560808.67
-      rank: 5
-      percent: 3.52
+      percent: 3.83
 federal_production:
   '2008':
     - product: Coal (tons)
@@ -404,3 +397,16 @@ revenue:
       value: 238.57
       rank: 3
       percent: 0.4
+  '2018':
+    - product: Coal
+      name: null
+      units: null
+      value: 36477876.29
+      rank: 3
+      percent: 7.1
+    - product: Phosphate
+      name: null
+      units: null
+      value: 4227
+      rank: 4
+      percent: 2.4

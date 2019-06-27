@@ -156,7 +156,7 @@ const KeyGDPJobs = props => {
             Natural resource extraction varies widely from state to state.{' '}
       {(usStateGDP && usStateGDP[year] && usStateGDP[year].dollars > 0)
         ? <span>
-                    In {props.usStateData.title}, extractive industries accounted for <a href="#gdp">{ utils.round(usStateGDP[year].percent, 1) }% of gross domestic product</a> (GDP) in {year}
+                    In {props.usStateData.title}, extractive industries accounted for { utils.round(usStateGDP[year].percent, 1) }% of gross domestic product (GDP) in {year}
           { usStateJobs[year] && (usStateJobs[year].percent > 2) &&
                         <span>
                             , and jobs in the extractive industries made up <a href="#employment">{utils.round(usStateJobs[year].percent, 1)}% of statewide employment</a>

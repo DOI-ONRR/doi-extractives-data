@@ -9,7 +9,7 @@ const WhatsNew = props => (
       <h2>What's new</h2>
       <p>In our latest release on June 27, 2019, we made the following changes:</p>
       <ul className="list-bullet ribbon-card-top-list">
-        <li>Added <Link to="downloads/disbursements/">file with monthly disbursements through May 2019</Link></li>
+        <li>Added <Link to="downloads/federal-disbursements-by-month/">file with monthly disbursements through May 2019</Link></li>
         <li>Published <Link to="blog/open-data-useful/">blog post on making open data useful</Link></li>
       </ul>
 

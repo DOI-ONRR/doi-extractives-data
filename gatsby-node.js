@@ -91,10 +91,10 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 
   return Promise.all([
     createStatePages(createPage, graphql),
-    // createHowItWorksPages(createPage, graphql),
-    // createDownloadsPages(createPage, graphql),
-    // createCaseStudiesPages(createPage, graphql),
-    // createOffshorePages(createPage, graphql),
+    createHowItWorksPages(createPage, graphql),
+    createDownloadsPages(createPage, graphql),
+    createCaseStudiesPages(createPage, graphql),
+    //createOffshorePages(createPage, graphql),
   ])
 }
 

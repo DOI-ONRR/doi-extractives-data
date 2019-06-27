@@ -20,8 +20,8 @@ const DATA_TRANSFORMER_CONSTANTS = {
   PRODUCTION_VOLUMES_FY: 'federalproductionfy2009201820190326xlsx__fyfederalproductionvolumes',
   REVENUES_MONTHLY_EXCEL: 'monthlyrevenuexlsx__data',
   FEDERAL_DISBURSEMENTS_EXCEL: 'disbursementsxlsx__data',
-  FEDERAL_REVENUE_FY: 'federalrevenueacctyearfy061820181213xlsx__federalrevenuesfy06fy18',
-  NATIVE_AMERICAN_REVNUE_FY: 'nativeamericanrevenuesxlsx__nativeamericanrevenues',
+  FEDERAL_REVENUE_FY: 'fiscalyearrevenuexlsx__data',
+  NATIVE_AMERICAN_REVNUE_FY: 'nativeamericanrevenuesxlsx__data',
   CALENDAR_YEAR_REVENUE: 'calendaryearrevenuexlsx__data'
 }
 
@@ -48,6 +48,8 @@ async function onCreateNode (
   if (TRANSFORMER_NODE_TYPES.includes(node.internal.type.toLowerCase())) {
     let newNode
 
+    
+
     switch (node.internal.type.toLowerCase()) {
     case DATA_TRANSFORMER_CONSTANTS.PRODUCTION_VOLUMES_EXCEL:
       newNode = productionVolumesTransformer(node, 'ProductVolumes')
@@ -62,9 +64,11 @@ async function onCreateNode (
       newNode = revenuesTransformer(node, 'ResourceRevenuesMonthly')
       break
     case DATA_TRANSFORMER_CONSTANTS.FEDERAL_REVENUE_FY:
+      console.log("FISCAL YEAR");
       newNode = revenuesTransformer(node, 'ResourceRevenuesFiscalYear')
       break
     case DATA_TRANSFORMER_CONSTANTS.NATIVE_AMERICAN_REVNUE_FY:
+        console.log("NATIVE AaMERICAN FISCAL YEAR");
       newNode = revenuesTransformer(node, 'ResourceRevenuesFiscalYear')
       break
     case DATA_TRANSFORMER_CONSTANTS.CALENDAR_YEAR_REVENUE:

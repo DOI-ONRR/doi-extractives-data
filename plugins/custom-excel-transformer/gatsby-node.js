@@ -64,11 +64,9 @@ async function onCreateNode (
       newNode = revenuesTransformer(node, 'ResourceRevenuesMonthly')
       break
     case DATA_TRANSFORMER_CONSTANTS.FEDERAL_REVENUE_FY:
-      console.log("FISCAL YEAR");
       newNode = revenuesTransformer(node, 'ResourceRevenuesFiscalYear')
       break
     case DATA_TRANSFORMER_CONSTANTS.NATIVE_AMERICAN_REVNUE_FY:
-        console.log("NATIVE AaMERICAN FISCAL YEAR");
       newNode = revenuesTransformer(node, 'ResourceRevenuesFiscalYear')
       break
     case DATA_TRANSFORMER_CONSTANTS.CALENDAR_YEAR_REVENUE:

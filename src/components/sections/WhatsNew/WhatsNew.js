@@ -7,12 +7,10 @@ const WhatsNew = props => (
   <section className={styles.root + ' slab-delta'}>
   	<div className="container-page-wrapper">
       <h2>What's new</h2>
-      <p>In our latest release on June 13, 2019, we made the following changes:</p>
+      <p>In our latest release on June 27, 2019, we made the following changes:</p>
       <ul className="list-bullet ribbon-card-top-list">
-        <li>Added csv option for all <Link to="downloads/">downloads</Link></li>
-        <li>Updated <Link to="downloads/federal-production/">calendar year production file to include 2003-2018 data</Link></li>
-        <li>Updated homepage graphs with monthly revenue through May 2019 and production through February 2019 </li>
-        <li>Updated <Link to="downloads/federal-disbursements-by-month/"> monthly disbursements file through April 2019</Link></li>
+        <li>Added <Link to="downloads/federal-disbursements-by-month/">file with monthly disbursements through May 2019</Link></li>
+        <li>Published <Link to="blog/open-data-useful/">blog post on making open data useful</Link></li>
       </ul>
 
       <p>Review our <a href="https://github.com/ONRR/doi-extractives-data/releases">full release details</a>.</p>

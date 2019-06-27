@@ -101,8 +101,8 @@ let config = {
           // For any node of type MarkdownRemark, list how to resolve the fields' values
           MarkdownRemark: {
             title: node => node.frontmatter.title,
-            tags: node => node.frontmatter.tags,
-            path: node => node.frontmatter.path,
+            tags: node => node.frontmatter.tag || node.frontmatter.tags,
+            path: node => node.frontmatter.unique_id ? '/explore/'+state.frontmatter.unique_id+"/" : node.frontmatter.permalink,
           },
         },
         // Optional filter to limit indexed nodes

@@ -21,7 +21,7 @@ const SearchResults = () => {
 
   const index = Index.load (data.siteSearchIndex.index)
 
-  let urlParams = new URLSearchParams(window.location.search)
+  let urlParams = new URLSearchParams(typeof window !== 'undefined' && window.location.search)
 
   const queryString = urlParams.get('q')
   const [results, setSearchResults] = useState (index
@@ -49,7 +49,7 @@ const SearchResults = () => {
              </div>
                 {results && 
                     results.map((item, index) => {
-                      return <div key={ index }>{ item.title }</div>
+                      return <ul><li key={ index }>{ item.title }</li></ul>
                     } 
                   )
                 }

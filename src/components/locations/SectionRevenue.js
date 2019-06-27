@@ -51,6 +51,17 @@ const SectionRevenue = props => {
     allCommoditiesChartToggle = 'federal-revenue-county-figures-chart-'+allCommoditiesSlug;
     allYears.map(year => allCommoditiesValues[year] = usStateRevenueCommodities.All[year].revenue)
   }
+  let localityName = 'County'
+  if(usStateData.unique_id === 'AK'){
+    localityName = 'Borough'
+  }
+
+  if(usStateData.unique_id === 'LA'){
+    localityName = 'Parish'
+  }
+
+  let chartMapTitle = 'Revenue collected by ' + localityName.toLocaleLowerCase()
+
 
 
   return (
@@ -77,7 +88,7 @@ const SectionRevenue = props => {
 
         <h4>Revenue from production on federal land by resource</h4>
 
-        {commodities
+        {usStateRevenueCommodities
           ? <div>
             <p>When companies extract natural resources on federal lands and waters, they pay royalties, rents, bonuses, and other fees, much like they would to any landowner. This non-tax revenue is collected and reported by the Office of Natural Resources Revenue (ONRR).</p>
 
@@ -178,7 +189,7 @@ const SectionRevenue = props => {
                     <div className="map-container">
 
                       <h4 className="chart-title">
-                        Revenue collected by county
+                        {chartMapTitle}
                       </h4>
 
                       <figure is="eiti-data-map-table">
@@ -217,7 +228,6 @@ const SectionRevenue = props => {
                                           let yearsValue = countyData[1].revenue
                                           let productVolume = countyData[1].revenue[year]
                                           let dataSentence = utils.formatToDollarInt(productVolume)
-
                                           return (
                                             <tbody key={index}>
                                               <tr data-fips={countyData[0]} data-format={'$,'} data-year-values={JSON.stringify(yearsValue)}>
@@ -225,7 +235,7 @@ const SectionRevenue = props => {
                                                   <div className='swatch'
                                                     data-value-swatch={productVolume}
                                                     data-year-values={JSON.stringify(yearsValue)}>
-                                                  </div>{ countyData[1].name+" County" }
+                                                  </div>{ countyData[1].name+' '+localityName }
                                                 </td>
                                                 <td data-format={'$,'} data-value-text={productVolume}
                                                   data-year-values={JSON.stringify(yearsValue)}>{productVolume}</td>

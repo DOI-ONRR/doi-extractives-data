@@ -17,6 +17,14 @@ const CountyMap = props => {
 
   let localityName = usStateData.locality_name || 'County'
 
+  if(usStateData.unique_id === 'AK'){
+    localityName = 'Borough'
+  }
+
+  if(usStateData.unique_id === 'LA'){
+    localityName = 'Parish'
+  }
+
   let legendUnits = props.shortUnits || props.units
 
   let viewBox = (usStateData.is_cropped) ? VIEWBOXES_CROPPED[usStateData.unique_id] : VIEWBOXES[usStateData.unique_id]
@@ -172,7 +180,7 @@ const CountyMap = props => {
 					  <figcaption className="legend-data">
               {props.productName.toLowerCase() === 'revenue' ?
                 <React.Fragment>
-                  Revenue by county in <span data-year={ props.year }>{ props.year }</span>
+                  Revenue by {localityName.toLowerCase()} in <span data-year={ props.year }>{ props.year }</span>
                 </React.Fragment>
               :
                 <React.Fragment>

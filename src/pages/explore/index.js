@@ -93,62 +93,66 @@ class ExplorePage extends React.Component {
     document.body.appendChild(script2)
   }
 
-  render () {
-    return (
-      <DefaultLayout>
-        <main id="national" className="layout-state-pages national-page">
-          <Helmet
-            title="Explore data | Natural Resources Revenue Data"
-            meta={[
-              // title
-              { name: 'og:title', content: 'Explore data | Natural Resources Revenue Data' },
-              { name: 'twitter:title', content: 'Explore data | Natural Resources Revenue Data' },
-            ]}
+    render () {
+
+        return (
+            <DefaultLayout>
+            <main id="national" className="layout-state-pages national-page">
+                <Helmet
+                    title="Explore data | Natural Resources Revenue Data"
+                    meta={[
+                        // title
+                        { name: "og:title", content: "Explore data | Natural Resources Revenue Data"},
+                        { name: "twitter:title", content: "Explore data | Natural Resources Revenue Data"},
+                    ]}
 
           />
 
-          <section id="title" className="slab-delta">
-            <div className="container-page-wrapper landing-section_top ribbon ribbon-column">
-              <div className="container-left-8 ribbon-hero ribbon-hero-column">
-                <h1>Explore data</h1>
-                <figure>
-                  <StateMap
-                    ownership={true}
-                    no_outline={true}
-                    offshore_regions={this.props.data.offshore_data.offshore_regions}
-                    states={this.props.data.states_data.states}/>
-                </figure>
-                <aside className="wide">
-                  <FederalLandOwnershipLegend land={true} />
-                </aside>
-              </div>
-              <div className="container-right-4 ribbon-card-column ribbon-card state_pages-ribbon-card">
-                <figure className="ribbon-card-top">
-                  <h2 className="ribbon-card-top-text-header">Land ownership</h2>
-                  <p>
+                <section  id="title" className="slab-delta">
+                    <div className="container-page-wrapper landing-section_top ribbon ribbon-column">
+                        <div className="container-left-8 ribbon-hero ribbon-hero-column">
+                            <h1>Explore data</h1>
+                            <figure>
+                                <StateMap
+                                    ownership={true}
+                                    no_outline={true}
+                                    offshore_regions={this.props.data.offshore_data.offshore_regions}
+                                    states={this.props.data.states_data.states}/>
+                            </figure>
+                            <aside className="wide">
+                                <FederalLandOwnershipLegend land={true} />
+                            </aside>
+                        </div>
+                        <div className="container-right-4 ribbon-card-column ribbon-card state_pages-ribbon-card">
+                            <figure className="ribbon-card-top">
+                                <h2 className="ribbon-card-top-text-header">Land ownership</h2>
+                                <p>
                                     Natural resource ownership, governance, and revenues are closely tied to land ownership.
                                     Federal land represents {this.props.data.land_stats_data.states[0].state_data.federal_percent}%
                                     of all U.S. land, mostly concentrated in western states.
                   </p>
                   <p>
                                     Data on this site covers production, revenue, and disbursements for <GlossaryTerm termKey="federal land">federal lands and waters
-                    </GlossaryTerm>.
-                  </p>
-                </figure>
-                <figcaption className="ribbon-card-bottom state_pages-select">
-                  <label htmlFor="location-selector" className="ribbon-card-top-text-header">Explore state or offshore data:</label>
-                  <LocationSelector
-                    default='Choose location'
-                    states={this.props.data.states_data.states}
-                    offshore_regions={this.props.data.offshore_data.offshore_regions}/>
-                </figcaption>
-              </div>
-            </div>
-          </section>
-          <section id="main-body" className="container-page-wrapper">
-            <div className="container-left-9">
-              <section id="production">
-                <h2 className="state-page-overview">Production</h2>
+                                    </GlossaryTerm>.
+                                </p>
+                            </figure>
+                            <figcaption className="ribbon-card-bottom state_pages-select">
+                                <label htmlFor="location-selector" className="ribbon-card-top-text-header">Explore state or offshore data:</label>
+                                <LocationSelector
+                                    default='Choose location'
+                                    states={this.props.data.states_data.states}
+                                    offshore_regions={this.props.data.offshore_data.offshore_regions}/>
+                            </figcaption>
+                        </div>
+                    </div>
+                </section>
+                <section className="container-page-wrapper">
+                    <div className="container-left-9">
+
+                        <MobileNav navItems={NAV_ITEMS} navTitle={NAV_TITLE} />
+
+                        <section id="production">
+                            <h2 className="state-page-overview">Production</h2>
 
                 <NationalFederalProduction allProducts={this.props.data.Federal_Production.byProduct} />
 
@@ -184,7 +188,7 @@ export default connect(
 // eslint-disable-next-line no-undef
 export const query = graphql`
   query StateMapsQuery {
-    offshore_data:allMarkdownRemark (filter:{fileAbsolutePath: {regex: "/offshore_regions/"}}) {
+    offshore_data:allMarkdownRemark (filter:{fileAbsolutePath: {regex: "/offshore_regions/"}} sort:{fields: [frontmatter___title], order: ASC}) {
       offshore_regions:edges {
         offshore_region:node {
           frontmatter {
@@ -196,7 +200,7 @@ export const query = graphql`
         }
       }
     }
-    states_data:allMarkdownRemark (filter:{fileAbsolutePath: {regex: "/states/"}}) {
+    states_data:allMarkdownRemark (filter:{fileAbsolutePath: {regex: "/states/"}} sort:{fields: [frontmatter___title], order: ASC}) {
       states:edges {
         state:node {
           frontmatter {

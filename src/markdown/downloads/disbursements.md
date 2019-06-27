@@ -11,22 +11,7 @@ tag:
 ---
 
 <custom-link to="/downloads/" className="breadcrumb link-charlie">Downloads</custom-link> /
-# Disbursements
-
-<section class="explore-subpage container">
-    <section>
-      <div class="explore-subpage-tabs">
-        <ul>
-          <li class="explore-subpage-tab active">
-            <a href="/downloads/disbursements/">Disbursements by year</a>
-          </li>
-          <li class="explore-subpage-tab">
-            <a href="/downloads/federal-disbursements-by-month/">Disbursements by month</a>
-          </li>
-        </ul>
-      </div>
-    </section>
-</section>
+# Disbursements by Year
 
 > The amount of money earned from extraction of natural resources on federal lands that is disbursed to various legislated funds. Our fund overview dataset is from the Office of Natural Resources Revenue, which is part of the Department of the Interior.
 

@@ -209,7 +209,9 @@ const PercentDifference = ({currentAmount, previousAmount}) => {
         :
           <TriangleDownIcon viewBox="-20 -10 50 40"/>
       }
-      {utils.round(percentIncrease, 0)+'%'}
+      <span>
+        {utils.round(percentIncrease, 0)+'%'}
+      </span>  
     </span>
   );
 }

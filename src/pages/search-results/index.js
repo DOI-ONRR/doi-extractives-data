@@ -21,7 +21,7 @@ const SearchResults = () => {
 
   const index = Index.load (data.siteSearchIndex.index)
 
-  let urlParams = new URLSearchParams(typeof window !== 'undefined' && window.location.search)
+  let urlParams = new URLSearchParams(window.location.search)
 
   const queryString = urlParams.get('q')
   const [results, setSearchResults] = useState (index

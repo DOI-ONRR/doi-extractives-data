@@ -48,12 +48,14 @@ const SearchResults = () => {
             <div className="container-left-8 ribbon-hero ribbon-hero-column">
               <h1 id="introduction">Search Results</h1>
              </div>
-                {results && 
-                    results.map((item, index) => {
-                      return <ul><li key={ index }>{ item.title }</li></ul>
-                    } 
-                  )
-                }
+                <ul>
+                  {results && 
+                      results.map((item, index) => {
+                        return <li key={ index }>{ item.title }</li>
+                      } 
+                    )
+                  }
+                </ul>
             </div>
         </section>
       </div>

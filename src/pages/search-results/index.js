@@ -21,7 +21,9 @@ const SearchResults = () => {
 
   const index = Index.load (data.siteSearchIndex.index)
 
-  let urlParams = new URLSearchParams(window.location.search)
+  if (typeof window !== 'undefined' && window) {
+    urlParams = new URLSearchParams(window.location.search)
+  }
 
   const queryString = urlParams.get('q')
   const [results, setSearchResults] = useState (index
@@ -29,7 +31,6 @@ const SearchResults = () => {
     // Map over each ID and return the full document
     .map(({ ref }) => index.documentStore.getDoc(ref))
     )
-
 
   return (
     <DefaultLayout>

@@ -16,7 +16,7 @@ jobs:
             - node_modules
       - run:
           name: Build gatsby
-          command: npm run build NODE_OPTIONS=--max_old_space_size=8192
+          command: npm run build NODE_OPTIONS=--max_old_space_size=16384
       - run:
           name: Run tests
           command: npm test

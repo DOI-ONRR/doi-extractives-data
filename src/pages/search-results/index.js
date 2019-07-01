@@ -52,10 +52,10 @@ const SearchResults = () => {
               <article class="search-results-container">
                 <ul>
                   {results &&
-                          results.map((item, index) => {
-                            return <li key={ index }><Link to={ item.path }>{ item.title }</Link></li>
-                          }
-                          )
+                    results.map((item, index) => {
+                      return <li key={ index }><Link to={ item.path }>{ item.title }</Link></li>
+                    }
+                    )
                   }
                 </ul>
               </article>  

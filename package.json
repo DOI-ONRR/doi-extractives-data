@@ -51,7 +51,7 @@
     "test": "jest",
     "test-update-snapshots": "jest -u",
     "setup-gatsby": "npm install",
-    "build-gatsby": "npm run build -- --max-old-space-size=8192",
+    "build-gatsby": "npm run build NODE_OPTIONS=--max_old_space_size=8192",
     "release-gatsby": "npm run setup-gatsby && npm run build-gatsby",
     "setup-blog": "cd blog-site && npm install",
     "build-blog": "cd blog-site && npm run build",

@@ -43,19 +43,23 @@ const SearchResults = () => {
             { name: 'twitter:title', content: 'Search Results | Natural Resources Revenue Data' },
           ]} />
 
-        <section className="slab-delta">
-          <div className="container-page-wrapper ribbon ribbon-column landing-section_top">
-            <div className="container-left-8 ribbon-hero ribbon-hero-column">
+        <section>
+          <div className="container-page-wrapper container-margin">
+            <div className="container-left-8">
               <h1 id="introduction">Search Results</h1>
             </div>
-            <ul>
-              {results &&
-                      results.map((item, index) => {
-                        return <li key={ index }>{ item.title }</li>
-                      }
-                      )
-              }
-            </ul>
+            <div class="search-results-container">
+              <article class="search-results-container">
+                <ul>
+                  {results &&
+                          results.map((item, index) => {
+                            return <li key={ index }><Link to={ item.path }>{ item.title }</Link></li>
+                          }
+                          )
+                  }
+                </ul>
+              </article>  
+            </div>
           </div>
         </section>
       </div>

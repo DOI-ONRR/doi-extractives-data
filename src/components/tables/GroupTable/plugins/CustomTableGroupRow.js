@@ -13,7 +13,7 @@ const pluginDependencies = [
 
 class CustomTableGroupRow extends React.PureComponent {
   render() {
-  	console.log(this.props)
+  	//console.log(this.props)
     return (
       <Plugin
         name="CustomTableGroupRow"

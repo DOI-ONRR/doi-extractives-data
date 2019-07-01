@@ -105,7 +105,7 @@ const NAV_ITEMS = [
 class StatePages extends React.Component {
   constructor (props) {
     super(props)
-    console.log(props);
+    //console.log(props);
     this.usStateMarkdown = props.pathContext.stateMarkdown
     this.commodities = props.pathContext.commodities
     this.commodityYears = props.pathContext.commodityYears

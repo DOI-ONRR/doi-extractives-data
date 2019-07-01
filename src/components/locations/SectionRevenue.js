@@ -36,7 +36,6 @@ const SectionRevenue = props => {
   const usStateCountyRevenue = COUNTY_REVENUE[usStateData.unique_id];
   const usStateRevenueCommodities = ALL_US_STATES_REVENUES[usStateData.unique_id] && ALL_US_STATES_REVENUES[usStateData.unique_id].commodities
 
-  console.log(usStateRevenueCommodities, commodities)
   let allYears = []
   let allCommoditiesValues = {}
   let allCommoditiesSlug, allCommoditiesChartName, allCommoditiesChartToggle = ""

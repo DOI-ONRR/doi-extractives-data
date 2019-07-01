@@ -102,7 +102,7 @@ let config = {
           MarkdownRemark: {
             title: node => node.frontmatter.title,
             tags: node => node.frontmatter.tag || node.frontmatter.tags,
-            path: node => node.frontmatter.unique_id ? '/explore/'+state.frontmatter.unique_id+"/" : node.frontmatter.permalink,
+            path: node => node.frontmatter.unique_id ? '/explore/'+node.frontmatter.unique_id+"/" : node.frontmatter.permalink,
           },
         },
         // Optional filter to limit indexed nodes

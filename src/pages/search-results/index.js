@@ -1,11 +1,10 @@
-import React, {useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import Helmet from 'react-helmet'
-import { useStaticQuery, graphql } from "gatsby"
-import { Index } from "elasticlunr"
+import { useStaticQuery, graphql } from 'gatsby'
+import { Index } from 'elasticlunr'
 
 import Link from '../../components/utils/temp-link'
 import GlossaryTerm from '../../components/utils/glossary-term.js'
-
 
 import DefaultLayout from '../../components/layouts/DefaultLayout'
 
@@ -17,20 +16,21 @@ const SearchResults = () => {
       }
     }
   `
-)
+  )
 
-  const index = Index.load (data.siteSearchIndex.index)
+  const index = Index.load(data.siteSearchIndex.index)
+  let urlParams = new URLSearchParams()
 
   if (typeof window !== 'undefined' && window) {
     urlParams = new URLSearchParams(window.location.search)
   }
 
   const queryString = urlParams.get('q')
-  const [results, setSearchResults] = useState (index
+  const [results, setSearchResults] = useState(index
     .search(queryString, {})
     // Map over each ID and return the full document
     .map(({ ref }) => index.documentStore.getDoc(ref))
-    )
+  )
 
   return (
     <DefaultLayout>
@@ -47,16 +47,16 @@ const SearchResults = () => {
           <div className="container-page-wrapper ribbon ribbon-column landing-section_top">
             <div className="container-left-8 ribbon-hero ribbon-hero-column">
               <h1 id="introduction">Search Results</h1>
-             </div>
-                <ul>
-                  {results && 
+            </div>
+            <ul>
+              {results &&
                       results.map((item, index) => {
                         return <li key={ index }>{ item.title }</li>
-                      } 
-                    )
-                  }
-                </ul>
-            </div>
+                      }
+                      )
+              }
+            </ul>
+          </div>
         </section>
       </div>
     </DefaultLayout>

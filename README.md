@@ -41,11 +41,6 @@ Data and content is read into a graphql schema. This graphql schema is then used
 
 
 
-
-
-
-
-
 ### Getting Started
 Prerequisites:
 - node

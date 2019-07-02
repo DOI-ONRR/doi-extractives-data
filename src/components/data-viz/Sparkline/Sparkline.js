@@ -8,7 +8,7 @@ import utils from '../../../js/utils'
 const Sparkline = ({data}) => {
 
   const spakeStyles = {
-    stroke: 'steelblue',
+    stroke: '#5c737f',
     strokeWidth: 1,
     fill: 'none',
   }

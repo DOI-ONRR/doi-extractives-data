@@ -18,6 +18,22 @@ const SearchResults = () => {
   `
   )
 
+  //Set listener threshold higher to solve memory leaks
+  const EventEmitter = require('events');
+
+  class MyEmitter extends EventEmitter {}
+  
+  const myEmitter = new MyEmitter();
+  // increase the limit
+  myEmitter.setMaxListeners(15);
+  
+  for(let i = 0; i < 15; i++) {
+    myEmitter.on('event', _ => console.log(i));
+  }
+  
+  myEmitter.emit('event');
+  //End higher listener
+
   const index = Index.load(data.siteSearchIndex.index)
   let urlParams = new URLSearchParams()
 

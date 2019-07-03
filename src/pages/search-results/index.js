@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Helmet from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
 import { Index } from 'elasticlunr'
+import 'url-search-params-polyfill'; //Temporary polyfill for EdgeHTML 14-16
 
 import Link from '../../components/utils/temp-link'
 import GlossaryTerm from '../../components/utils/glossary-term.js'

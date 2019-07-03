@@ -43,8 +43,8 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build --prefix-paths",
-    "develop": "gatsby develop",
+    "build": "gatsby build --prefix-paths --max-old-space-size=8192",
+    "develop": "gatsby develop --max-old-space-size=8192",
     "clean": "gatsby clean",
     "serve": "gatsby serve",
     "format": "eslint --fix 'src/**'",

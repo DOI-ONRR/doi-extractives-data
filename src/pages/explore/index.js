@@ -242,6 +242,7 @@ export const query = graphql`
           item:node {
             volume:Production_Volume
             product_units:Product
+            Calendar_Year
           }
         }
       }

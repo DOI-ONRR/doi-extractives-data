@@ -28,6 +28,9 @@ const year = '2017'
 const YEAR_RANGE = '[2008, 2017]'
 
 const NationalFederalProduction = props => {
+
+  console.log(FEDERAL_PRODUCTION_DATA);
+  console.log(props);
   let withHeldProducts = []
 
   function verifyWithheldData (product) {

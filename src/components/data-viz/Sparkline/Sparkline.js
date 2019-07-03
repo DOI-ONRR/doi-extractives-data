@@ -17,7 +17,7 @@ const Sparkline = ({data}) => {
   const elemRef = useRef(null);
 
   useEffect(() => {
-    var width = 75;
+    var width = 85;
     var height = 20;
     var x = d3.scaleLinear().range([0, width - 3]);
     var y = d3.scaleLinear().range([height - 4, 0]);
@@ -47,7 +47,7 @@ const Sparkline = ({data}) => {
        .attr('class', styles.sparkcircle)
        .attr('cx', x(data[data.length - 1].year))
        .attr('cy', y(data[data.length - 1].amount))
-       .attr('r', 2);  
+       .attr('r', 2.3);  
   });
 
   return (

@@ -1,7 +1,7 @@
 
 import React from 'react'
 import renderer from 'react-test-renderer'
-import {StaticQuery, graphql} from 'gatsby'
+import {StaticQuery,useStaticQuery, graphql} from 'gatsby'
 import RevenueTrends from '../RevenueTrends'
 
 
@@ -11,8 +11,12 @@ let {data} = require('./graphql.json');
 beforeEach(() => {
   StaticQuery.mockImplementationOnce(({ render }) =>
     render(data)
-  )
+				    )
+    useStaticQuery.mockImplementationOnce(() => {
+	return data
+    })
 })
+
 
 describe('RevenueTrends', () => {
   it('renders correctly', () => {

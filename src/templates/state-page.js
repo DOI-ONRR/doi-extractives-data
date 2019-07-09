@@ -207,7 +207,7 @@ class StatePages extends React.Component {
               <figure is="data-map">
                 <svg className = "states map icon" viewBox="22 60 936 525">
                   <g className ="states features">
-                    <use xlinkHref={withPrefixSVG('/maps/states/all.svg#states')}>
+                    <use xlinkHref={withPrefixSVG('/maps/states/all.svg#states')}></use>
                   </g>
                   <g className="offshore states features">
                     <use xlinkHref='/maps/offshore/all.svg#alaska'></use>

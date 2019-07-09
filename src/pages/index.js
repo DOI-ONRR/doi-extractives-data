@@ -23,6 +23,7 @@ import * as CONSTANTS from '../js/constants'
 import utils from '../js/utils'
 
 import { KeyStatsSection } from '../components/sections/KeyStatsSection'
+import { MapSection } from '../components/sections/MapSection'
 import { WhatsNew } from '../components/sections/WhatsNew'
 import { Tabordion, Tab } from '../components/layouts/Tabordion'
 import StateMap from '../components/maps/StateMap'
@@ -102,7 +103,8 @@ class HomePage extends React.Component {
     ])
   }
 
-  render () {
+    render () {
+	console.log(this.props.data.states_data.states);
     return (
       <DefaultLayout>
         <main>
@@ -204,7 +206,7 @@ class HomePage extends React.Component {
           </Tabordion>
 
           <KeyStatsSection />
-
+          <MapSection props={this.props} />
           <section id="map-section" className={styles.mapSection}>
             <div className={styles.mapSectionContainer + ' container-page-wrapper'}>
               <div className={styles.mapSectionLeft}>
@@ -248,7 +250,7 @@ export default connect(
   })
 )(HomePage)
 
-export const query = graphql`
+export const query = graphql `
   query HomePageQuery {
     offshore_data:allMarkdownRemark (filter:{fileAbsolutePath: {regex: "/offshore_regions/"}} sort:{fields: [frontmatter___title], order: ASC}) {
       offshore_regions:edges {

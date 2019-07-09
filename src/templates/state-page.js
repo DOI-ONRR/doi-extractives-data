@@ -30,7 +30,6 @@ import utils from '../js/utils'
 
 import DefaultLayout from '../components/layouts/DefaultLayout'
 
-import StateMap from '../../builds/maps/bin/state-map.js'
 
 const NAV_ITEMS = [
   {
@@ -206,7 +205,7 @@ class StatePages extends React.Component {
             <h3 className="state-page-nav-title container">
               <div className="nav-title">{this.usStateData.title}</div>
               <figure is="data-map">
-                <StateMap />
+                <img src="../img/icons/map.png" alt= "">
               </figure>
             </h3>
             <nav>

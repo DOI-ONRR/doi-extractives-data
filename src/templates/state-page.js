@@ -210,10 +210,10 @@ class StatePages extends React.Component {
                     <use xlinkHref={withPrefixSVG('/maps/states/all.svg#states')}>
                   </g>
                   <g className="offshore states features">
-                    <use xlinkHref='/preview/18f/doi-extractives-data/ab-chart-display-ie-fixes/maps/offshore/all.svg#alaska'></use>
+                    <use xlinkHref='/maps/offshore/all.svg#alaska'></use>
                   </g>
                   <g class="offshore states features">
-                    <use xlinkHref='/preview/18f/doi-extractives-data/ab-chart-display-ie-fixes/maps/offshore/all.svg#atlantic'></use>
+                    <use xlinkHref='/maps/offshore/all.svg#atlantic'></use>
                   </g>
                   <g class="offshore states features">
                     <use xlinkHref='/maps/offshore/all.svg#gulf'></use>

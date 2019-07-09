@@ -203,6 +203,7 @@ class StatePages extends React.Component {
           <div className="container-right-3 sticky sticky_nav sticky_nav-padded">
             <h3 className="state-page-nav-title container">
               <div className="nav-title">{this.usStateData.title}</div>
+              <figure is="data-map"/>
             </h3>
             <nav>
               <NavList navItems={NAV_ITEMS} />

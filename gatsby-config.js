@@ -91,6 +91,25 @@ let config = {
         plugins: [],
       },
     },
+    {
+      resolve: `@gatsby-contrib/gatsby-plugin-elasticlunr-search`,
+      options: {
+        // Fields to index
+        fields: [`title`, `tags`],
+        // How to resolve each field's value for a supported node type
+        resolvers: {
+          // For any node of type MarkdownRemark, list how to resolve the fields' values
+          MarkdownRemark: {
+            title: node => node.frontmatter.title,
+            tags: node => node.frontmatter.tag || node.frontmatter.tags,
+            path: node => node.frontmatter.unique_id ? '/explore/'+node.frontmatter.unique_id+"/" : node.frontmatter.permalink,
+          },
+        },
+        // Optional filter to limit indexed nodes
+        filter: (node, getNode) =>
+          node.frontmatter.tags !== 'exempt',
+      },
+    },
     'custom-excel-transformer',
     `gatsby-plugin-meta-redirect`, // make sure to put last in the array
   ],

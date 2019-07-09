@@ -205,7 +205,26 @@ class StatePages extends React.Component {
             <h3 className="state-page-nav-title container">
               <div className="nav-title">{this.usStateData.title}</div>
               <figure is="data-map">
-                <img src="../img/icons/map.png" alt= "">
+                <svg className = "states map icon" viewBox="22 60 936 525">
+                  <g className ="states features">
+                    <use xlinkHref={withPrefixSVG('/maps/states/all.svg#states')}>
+                  </g>
+                  <g className="offshore states features">
+                    <use xlinkHref='/preview/18f/doi-extractives-data/ab-chart-display-ie-fixes/maps/offshore/all.svg#alaska'></use>
+                  </g>
+                  <g class="offshore states features">
+                    <use xlinkHref='/preview/18f/doi-extractives-data/ab-chart-display-ie-fixes/maps/offshore/all.svg#atlantic'></use>
+                  </g>
+                  <g class="offshore states features">
+                    <use xlinkHref='/maps/offshore/all.svg#gulf'></use>
+                  </g>
+                  <g class="offshore states features">
+                    <use xlinkHref='/maps/offshore/all.svg#pacific'></use>
+                  </g>
+                  <g className="state features">
+                    <use xlinkHref={withPrefixSVG('/maps/states/all.svg#state-' + this.usStateData.unique_id)}></use>
+                  </g>
+                </svg>
               </figure>
             </h3>
             <nav>

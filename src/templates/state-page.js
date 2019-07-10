@@ -205,30 +205,28 @@ class StatePages extends React.Component {
             <h3 className="state-page-nav-title container">
               <div className="nav-title">{this.usStateData.title}</div>
               <figure is="data-map">
-                <div className="state svg-container map-container">
-                  <Link to="../explore">
-                    <svg className = "states map icon" viewBox="22 60 936 525">
-                      <g className ="states features">
-                        <use xlinkHref={withPrefixSVG('/maps/states/all.svg#states')}></use>
-                      </g>
-                      <g className="offshore states features">
-                        <use xlinkHref={withPrefixSVG('/maps/offshore/all.svg#alaska')}></use>
-                      </g>
-                      <g class="offshore states features">
-                        <use xlinkHref={withPrefixSVG('/maps/offshore/all.svg#atlantic')}></use>
-                      </g>
-                      <g class="offshore states features">
-                        <use xlinkHref={withPrefixSVG('/maps/offshore/all.svg#gulf')}></use>
-                      </g>
-                      <g class="offshore states features">
-                        <use xlinkHref={withPrefixSVG('/maps/offshore/all.svg#pacific')}></use>
-                      </g>
-                      <g className="state features">
-                        <use xlinkHref={withPrefixSVG('/maps/states/all.svg#state-' + this.usStateData.unique_id)}></use>
-                      </g>
-                    </svg>
-                  </Link>
-                </div>
+                <Link to="../explore/" title="Explore Data Main Page">
+                  <svg className = "states map icon" viewBox="22 60 936 525">
+                    <g className ="states features">
+                      <use xlinkHref={withPrefixSVG('/maps/states/all.svg#states')}></use>
+                    </g>
+                    <g className="offshore states features">
+                      <use xlinkHref={withPrefixSVG('/maps/offshore/all.svg#alaska')}></use>
+                    </g>
+                    <g class="offshore states features">
+                      <use xlinkHref={withPrefixSVG('/maps/offshore/all.svg#atlantic')}></use>
+                    </g>
+                    <g class="offshore states features">
+                      <use xlinkHref={withPrefixSVG('/maps/offshore/all.svg#gulf')}></use>
+                    </g>
+                    <g class="offshore states features">
+                      <use xlinkHref={withPrefixSVG('/maps/offshore/all.svg#pacific')}></use>
+                    </g>
+                    <g className="state features">
+                      <use xlinkHref={withPrefixSVG('/maps/states/all.svg#state-' + this.usStateData.unique_id)}></use>
+                    </g>
+                  </svg>
+                </Link>
               </figure>
             </h3>
             <nav>

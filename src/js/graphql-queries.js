@@ -78,6 +78,7 @@ module.exports = Object.freeze({
             redirect_from
             unique_id
             neighbors
+            is_cropped
           }
           htmlAst
         }

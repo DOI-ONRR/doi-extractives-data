@@ -7,10 +7,9 @@ const WhatsNew = props => (
   <section className={styles.root + ' slab-delta'}>
   	<div className="container-page-wrapper">
       <h2>What's new</h2>
-      <p>In our latest release on June 27, 2019, we made the following changes:</p>
+      <p>In our latest release on July 10, 2019, we made the following changes:</p>
       <ul className="list-bullet ribbon-card-top-list">
-        <li>Added <Link to="downloads/federal-disbursements-by-month/">file with monthly disbursements through May 2019</Link></li>
-        <li>Published <Link to="blog/open-data-useful/">blog post on making open data useful</Link></li>
+        <li>Reimplemented search</li>
       </ul>
 
       <p>Review our <a href="https://github.com/ONRR/doi-extractives-data/releases">full release details</a>.</p>

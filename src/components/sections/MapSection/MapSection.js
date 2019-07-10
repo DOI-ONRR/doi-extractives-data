@@ -7,12 +7,12 @@ import * as d3 from 'd3'
 import LocationSelector from '../../selectors/LocationSelector'
 import Select from '../../selectors/Select'
 import styles from './MapSection.module.scss'
- 
+import Map from '../../data-viz/Map' 
 
 
 
 
-const MapSection = ({props}) => {
+const MapSection = (props) => {
 
 /*
     const data=useStaticQuery(graphql`
@@ -42,30 +42,38 @@ const MapSection = ({props}) => {
 */
     
     console.debug(props)
-    let states=props.data.states_data.states
+    let states=props.states
     console.debug(states);
     let options=states.map((value)=>{ return {value:value.state.frontmatter.unique_id,
 					      name:value.state.frontmatter.title}})
     console.debug(options);
     
-    let offshore_regions =props.data.offshore_data.offshore_regions
+    let offshore_regions =props.offshore_regions
 return (
         <section className={styles.root}>
 	<div className={styles.container +' container-page-wrapper'}>
 	<div className={styles.containerLeft}>
-	<h3>Learn about extractive industries in each state</h3>
-	<p>Explore production, revenue, and disbursements data for each state.</p>
+	<h3>{props.title}</h3>
+	<p>{props.info}</p>
 	<LocationSelector
     default='Choose location'
     states={states}
     offshore_regions={offshore_regions}
 	/>
-	<Select options={states} multiple={false} />
+	{/*
+	  *     Eventually use more generalized MUI based combonent for now LocationSelector more plug and play here
+	  *
+	  *	<Select options={states} multiple={false} />
+	  *
+	  */}
+	   
+
     </div>
-	<div className={styles.containerRight}>right </div>
+	<div className={styles.containerRight}><Map /> </div>
 
     </div>
     </section>
 )
 }
 export default MapSection
+

@@ -206,7 +206,12 @@ class HomePage extends React.Component {
           </Tabordion>
 
           <KeyStatsSection />
-          <MapSection props={this.props} />
+          <MapSection 
+               title="Learn about extractive industries in each state"
+               info="Explore production, revenue, and disbursements data for each state."
+               states={this.props.data.states_data.states}
+               offshore_regions={this.props.data.offshore_data.offshore_regions}/>
+               
           <section id="map-section" className={styles.mapSection}>
             <div className={styles.mapSectionContainer + ' container-page-wrapper'}>
               <div className={styles.mapSectionLeft}>

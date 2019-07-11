@@ -14,7 +14,7 @@ This repository contains the code for revenuedata.doi.gov, which is a website th
 
 For more information about the history of the site, see [about this site](https://revenuedata.doi.gov/about/).
 
-## Contributing
+## Contributing 
 Content and feature suggestions are welcome via [GitHub Issues](https://github.com/18F/doi-extractives-data/issues). Code contributions are welcome via [pull request](https://help.github.com/articles/using-pull-requests/), although of course we cannot guarantee your changes will be included in the site. Take a look at the issues we've tagged [help wanted](https://github.com/onrr/doi-extractives-data/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)!
 
 See [CONTRIBUTING](CONTRIBUTING.md) for more information about how to pitch in.

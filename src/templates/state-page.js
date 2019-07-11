@@ -227,8 +227,8 @@ class StatePages extends React.Component {
                     </g>
                   </svg>
                 </Link>
-                <label className="nav-prompt">Explore data main page</label>
               </figure>
+              <label className="nav-prompt">Explore data main page</label>
             </h3>
             <nav>
               <NavList navItems={NAV_ITEMS} />

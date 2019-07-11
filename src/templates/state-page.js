@@ -222,7 +222,7 @@ class StatePages extends React.Component {
                     <g className="offshore states features">
                       <use xlinkHref={withPrefixSVG('/maps/offshore/all.svg#pacific')}></use>
                     </g>
-                    <g className="state features">
+                    <g className="state feature">
                       <use xlinkHref={withPrefixSVG('/maps/states/all.svg#state-' + this.usStateData.unique_id)}></use>
                     </g>
                   </svg>

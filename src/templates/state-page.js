@@ -205,7 +205,7 @@ class StatePages extends React.Component {
             <h3 className="state-page-nav-title container">
               <div className="nav-title">{this.usStateData.title}</div>
               <figure is="data-map">
-                <Link to="../explore/" title="Explore Data Main Page">
+                <Link to="/explore/" title="Explore data main page">
                   <svg className = "states map icon" viewBox="22 60 936 525">
                     <g className ="states features">
                       <use xlinkHref={withPrefixSVG('/maps/states/all.svg#states')}></use>
@@ -213,13 +213,13 @@ class StatePages extends React.Component {
                     <g className="offshore states features">
                       <use xlinkHref={withPrefixSVG('/maps/offshore/all.svg#alaska')}></use>
                     </g>
-                    <g class="offshore states features">
+                    <g className="offshore states features">
                       <use xlinkHref={withPrefixSVG('/maps/offshore/all.svg#atlantic')}></use>
                     </g>
-                    <g class="offshore states features">
+                    <g className="offshore states features">
                       <use xlinkHref={withPrefixSVG('/maps/offshore/all.svg#gulf')}></use>
                     </g>
-                    <g class="offshore states features">
+                    <g className="offshore states features">
                       <use xlinkHref={withPrefixSVG('/maps/offshore/all.svg#pacific')}></use>
                     </g>
                     <g className="state features">
@@ -227,6 +227,7 @@ class StatePages extends React.Component {
                     </g>
                   </svg>
                 </Link>
+                <label className="nav-prompt">Explore data main page</label>
               </figure>
             </h3>
             <nav>

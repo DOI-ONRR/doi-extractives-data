@@ -204,6 +204,65 @@ const createRevenueTypeCommoditiesData = (groupByCommodity, groupByYear, stateId
 
   return { commodities, commodityYears }
 }
+const createProductionCommoditiesData = (groupByCommodity, groupByYear, stateId) => {
+  let data = groupByCommodity
+  let commodityProductionYears = groupByYear.sort(compareValues('id'))
+  if (commodityProductionYears.length > 10) {
+    commodityProductionYears = commodityProductionYears.slice(commodityProductionYears.length - 10)
+  }
+  commodityProductionYears = commodityProductionYears.map(item => parseInt(item.id))
+
+  let commoditiesFipsCode = data.reduce((total, item) => {
+    let productName = (item.id.includes('~'))? item.id.split('~')[0] : item.id
+    item.edges.forEach(element => {
+      let node = element.node
+      let year = parseInt(node.ProductionYear)
+      if (commodityProductionYears.includes(year) && node.State === stateId) {
+
+        total[node.FipsCode] = total[node.FipsCode] || { name: node.County, products: {} }
+        total[node.FipsCode].products[item.id] = total[node.FipsCode].products[item.id] || { name: productName, units: node.Units, withheld: node.Withheld, volume: {} }
+        total[node.FipsCode].products[item.id].volume[year] = (total[node.FipsCode].products[item.id].volume[year])
+          ? total[node.FipsCode].products[item.id].volume[year] + node.Volume
+          : node.Volume
+      }
+    })
+
+    return total
+  }, {})
+
+  let commoditiesProduction = data.reduce((total, item) => {
+    let name = (item.id.includes('~'))? item.id.split('~')[0] : item.id
+    item.edges.forEach(element => {
+      let node = element.node
+      let year = parseInt(node.ProductionYear)
+      if (commodityProductionYears.includes(year) && node.State === stateId) {
+        total[item.id] = total[item.id] || { name: name, units: node.Units, withheld: node.Withheld, volume: {} }
+        total[item.id].volume[year] = (total[item.id].volume[year])
+          ? total[item.id].volume[year] + node.Volume
+          : node.Volume
+
+      }
+    })
+
+    return total
+  }, {})
+
+  Object.keys(commoditiesFipsCode).forEach(code => {
+    Object.keys(commoditiesFipsCode[code].products).forEach(product => {
+      Object.keys(commoditiesFipsCode[code].products[product].volume).forEach(year => {
+        commoditiesFipsCode[code].products[product].volume[year] = parseInt(commoditiesFipsCode[code].products[product].volume[year])
+      })
+    })
+  })
+  Object.keys(commoditiesProduction).forEach(commodity => {
+    Object.keys(commoditiesProduction[commodity].volume).forEach(year => {
+      commoditiesProduction[commodity].volume[year] = parseInt(commoditiesProduction[commodity].volume[year])
+    })
+  })
+
+  return { commoditiesProduction, commoditiesFipsCode, commodityProductionYears }
+}
+
 const createStatePages = (createPage, graphql) => {
   const createStatePageSlug = state => {
     return '/explore/' + state.frontmatter.unique_id + '/'
@@ -274,9 +333,41 @@ const createStatePages = (createPage, graphql) => {
             }
           }
         }
-
-	          }
-	        `
+        FederalProductionByProduct:  allProductVolumesCalendarYear (filter:{LandCategory:{eq:"Federal"}}){
+          group(field: ProductName) {
+            id: fieldValue
+            edges {
+              node {
+                id
+                ProductName
+                ProductionDate
+                ProductionYear
+                Units
+                LongUnits
+                Volume
+                Withheld
+                LandCategory
+                County
+                FipsCode
+                State
+              }
+            }
+          }
+        }
+        FederalProductionByYear:  allProductVolumesCalendarYear 
+          (filter:{
+            LandCategory:{eq:"Federal"}
+          }){
+          group(field: ProductionYear) {
+            id: fieldValue
+            edges {
+              node {
+                id
+              }
+            }
+          }
+        }
+      }`
 	      ).then(result => {
 	        if (result.errors) {
 	          reject(result.errors)
@@ -291,6 +382,11 @@ const createStatePages = (createPage, graphql) => {
                 result.data.RevenueGroupByCalendarYear.group,
                 us_state.frontmatter.unique_id)
               
+              let { commoditiesProduction, commoditiesFipsCode, commodityProductionYears } = createProductionCommoditiesData(result.data.FederalProductionByProduct.group,
+                result.data.FederalProductionByYear.group,
+                us_state.frontmatter.unique_id)
+
+
               createPage({
 		            path,
 		            component: statePageTemplate,
@@ -299,7 +395,10 @@ const createStatePages = (createPage, graphql) => {
 		            context: {
                 stateMarkdown: us_state,
                 commodities: commodities,
-                commodityYears: commodityYears
+                commodityYears: commodityYears,
+                commoditiesProduction: commoditiesProduction,
+                commoditiesFipsCode: commoditiesFipsCode,
+                commodityProductionYears: commodityProductionYears,
 		            },
 		          })
 		        })

@@ -74,7 +74,9 @@ let config = {
         path: `${__dirname}/downloads/production`,
       },
     },
-    'gatsby-transformer-excel',
+    {
+      resolve: `gatsby-transformer-excel`,
+    },
     'gatsby-transformer-yaml',
     {
       resolve: `gatsby-transformer-remark`,

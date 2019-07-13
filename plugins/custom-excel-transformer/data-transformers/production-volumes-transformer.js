@@ -1,10 +1,10 @@
 'use strict'
 /**
  *
- * This takes the input of the production volume spreadsheet and transforms the data to 
+ * This takes the input of the production volume spreadsheet and transforms the data to
  * application friendly graphql node. This will allow the app to easily filter, sort and
  * group the data using graphql queries and have it ready to be displayed on our site.
- * 
+ *
  **/
 
 /* Use ES5 require in order to be compatible with version 1.x of gatsby */
@@ -13,15 +13,19 @@ const CONSTANTS = require('../../../src/js/constants')
 
 /* Define the column names found in the excel file */
 const SOURCE_COLUMNS = {
-  Month: 'Month',
-  CalendarYear: 'Calendar Year',
-  FiscalYear: 'Fiscal Year',
-  ProductionDate: 'Production Date',
-  LandCategory: 'Land Class',
-  OnshoreOffshore: 'Land Category',
-  Commodity: 'Commodity',
-  Product: 'Product',
-  Volume: 'Volume',
+  Month: 'month',
+  CalendarYear: 'calendar year',
+  FiscalYear: 'fiscal year',
+  ProductionDate: 'production date',
+  LandCategory: 'land class',
+  OnshoreOffshore: 'land category',
+  Commodity: 'commodity',
+  Product: 'product',
+  Volume: 'volume',
+  Withheld: 'withheld',
+  County: 'county',
+  FipsCode: 'fips code',
+  State: 'state'
 }
 
 /* List of all the products in the excel file and the corresponding column name */
@@ -92,34 +96,45 @@ module.exports = (node, type) => {
 }
 
 const createProductVolumeNodeByProduct = (productVolumeData, type) => {
-  if (productVolumeData[SOURCE_COLUMNS.Commodity] === undefined && productVolumeData[SOURCE_COLUMNS.Product] === undefined) return
-  let product = productVolumeData[SOURCE_COLUMNS.Commodity] || productVolumeData[SOURCE_COLUMNS.Product]
-  let matchProductName_RE = /([^(*)]+)/
-  let result = product.split(matchProductName_RE)
-  let productName = result[1]
-  let units = result[3]
+  // convert all keys to lower case and trim the spaces, this is done due to ongoing issues with the excel files being formatted differently
+  // eslint-disable-next-line
+  const data = Object.keys(productVolumeData).reduce((c, k) => (c[k.toLowerCase().trim()] = productVolumeData[k], c), {})
+
+  if (data[SOURCE_COLUMNS.Commodity] === undefined && data[SOURCE_COLUMNS.Product] === undefined) return
+  let product = data[SOURCE_COLUMNS.Commodity] || data[SOURCE_COLUMNS.Product]
+  let matchProductNameRE = (product.includes('Geothermal')) ? /([^-]+)/ :  /([^(*)]+)/
+  let result = product.split(matchProductNameRE)
+
+  let units = result[3].trim()
+  // @TODO - Geothermal has multiple sources/units need to use this to get unique product names for all geothermal, this should be refactored
+  let productName = (product.includes('Geothermal')) ? result[1].trim()+'~'+units : result[1].trim()
+
   let node = {
-	  ProductionMonth: productVolumeData[SOURCE_COLUMNS.Month],
-	  ProductionYear: productVolumeData[SOURCE_COLUMNS.CalendarYear],
-	  FiscalYear: productVolumeData[SOURCE_COLUMNS.FiscalYear],
-	  LandClass: productVolumeData[SOURCE_COLUMNS.CalendarYear],
-	  LandCategory: productVolumeData[SOURCE_COLUMNS.LandCategory].trim(),
-	  OnshoreOffshore: productVolumeData[SOURCE_COLUMNS.OnshoreOffshore],
+	  ProductionMonth: data[SOURCE_COLUMNS.Month],
+	  ProductionYear: data[SOURCE_COLUMNS.CalendarYear],
+	  FiscalYear: data[SOURCE_COLUMNS.FiscalYear],
+	  LandClass: data[SOURCE_COLUMNS.CalendarYear],
+	  LandCategory: data[SOURCE_COLUMNS.LandCategory].trim(),
+	  OnshoreOffshore: data[SOURCE_COLUMNS.OnshoreOffshore],
 	  ProductName: SOURCE_COLUMN_TO_PRODUCT_DISPLAY_NAME[product] || productName,
-	  Volume: productVolumeData[SOURCE_COLUMNS.Volume],
+	  Volume: data[SOURCE_COLUMNS.Volume],
+    Withheld: data[SOURCE_COLUMNS.Withheld],
+    County: data[SOURCE_COLUMNS.County],
+    FipsCode: data[SOURCE_COLUMNS.FipsCode],
+    State: data[SOURCE_COLUMNS.State],
 	  internal: {
 	    type: type,
 	  }
   }
 
-  node.ProductionDate = (node.ProductionYear) 
+  node.ProductionDate = (node.ProductionYear)
     ? new Date(node.ProductionYear, getMonthFromString(node.ProductionMonth))
     : new Date(node.FiscalYear, 0)
 
   node.Units = SOURCE_COLUMN_TO_PRODUCT_UNITS[product] || units
   node.LongUnits = PRODUCT_UNITS_TO_LONG_UNITS[node.Units]
   node.LandCategory_OnshoreOffshore =
-		node.LandCategory + ((node.OnshoreOffshore && node.LandCategory !== 'Native American') ? ' ' + node.OnshoreOffshore.toLowerCase() : '') 
+		node.LandCategory + ((node.OnshoreOffshore && node.LandCategory !== 'Native American') ? ' ' + node.OnshoreOffshore.toLowerCase() : '')
   node.DisplayMonth = node.ProductionMonth && node.ProductionMonth.substring(0, 3)
   node.DisplayYear = node.ProductionYear && ("'" + node.ProductionYear.toString().substring(2))
 

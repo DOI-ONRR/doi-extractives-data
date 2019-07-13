@@ -23,24 +23,55 @@ import FEDERAL_PRODUCTION_DATA from '../../../static/data/national_federal_produ
 import PRODUCTION_UNITS from '../../../static/data/production_units.yml'
 
 // @todo: pass in years from data
-const years = [2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010, 2009, 2008]
-const year = '2017'
-const YEAR_RANGE = '[2008, 2017]'
+// const years = [2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010, 2009, 2008]
+// const year = '2017'
+// const YEAR_RANGE = '[2008, 2017]'
+
+const createProductionData = (groupByCommodity, groupByYear) => {
+  let data = groupByCommodity
+  let commodityYears = groupByYear.sort(utils.compareValues('id'))
+  if (commodityYears.length > 10) {
+    commodityYears = commodityYears.slice(commodityYears.length - 10)
+  }
+  commodityYears = commodityYears.map(item => parseInt(item.id))
+
+  let commodities = data.reduce((total, item) => {
+    let name = (item.id.includes('~'))? item.id.split('~')[0] : item.id
+    item.edges.forEach(element => {
+      let node = element.node
+      let year = parseInt(node.ProductionYear)
+      // console.log(node)
+      if (commodityYears.includes(year)) {
+        // console.log(node)
+        total[item.id] = total[item.id] || { name: name, units: node.Units, withheld: node.Withheld, volume: {} }
+        total[item.id].volume[year] = (total[item.id].volume[year])
+          ? total[item.id].volume[year] + node.Volume
+          : node.Volume
+
+        total[item.id].volume[year] = total[item.id].volume[year]
+      }
+    })
+
+    return total
+  }, {})
+
+  Object.keys(commodities).forEach(commodity => {
+    Object.keys(commodities[commodity].volume).forEach(year => {
+      commodities[commodity].volume[year] = parseInt(commodities[commodity].volume[year])
+    })
+  })
+
+  return { commodities, commodityYears }
+}
 
 const NationalFederalProduction = props => {
+  let { commodities, commodityYears } = createProductionData(props.allProducts, props.allYears)
+  let commodityYearsSortDesc = commodityYears.slice(0)
+  commodityYearsSortDesc.sort((a, b) => b - a)
+  let year = commodityYears[commodityYears.length - 1]
+  let year_range = [commodityYears[0], commodityYears[commodityYears.length - 1]]
 
-  console.log(FEDERAL_PRODUCTION_DATA);
-  console.log(props);
   let withHeldProducts = []
-
-  function verifyWithheldData (product) {
-    for (let i in years) {
-      if (product[1].volume[years[i]] !== null && product[1].volume[years[i]] !== undefined) {
-        return false
-      }
-    }
-    return true
-  }
 
   function getWithheldProductsHtml () {
     let withheldProductItems = []
@@ -48,7 +79,7 @@ const NationalFederalProduction = props => {
     for (let index in withHeldProducts) {
       let yearString = '('
 
-      let yearsArray = lazy(withHeldProducts[index][1].volume).keys().toArray()
+      let yearsArray = lazy(withHeldProducts[index].volume).keys().toArray()
 
       let numbersAreConsecutive = true
       for (let i = 1; i < yearsArray.length; i++) {
@@ -68,7 +99,7 @@ const NationalFederalProduction = props => {
         yearString = yearString.substring(0, yearString.length - 1) + ')'
       }
 
-      withheldProductItems.push(<li key={index}>{withHeldProducts[index][1].name || withHeldProducts[index][0]}{' ' + yearString }</li>)
+      withheldProductItems.push(<li key={index}>{withHeldProducts[index].name}{' ' + yearString }</li>)
     }
 
     return withheldProductItems
@@ -80,7 +111,7 @@ const NationalFederalProduction = props => {
 
       <section className="county-map-table" is="year-switcher-section">
         <StickyHeader alt='Federal lands and waters' headerText='Federal production trends by resources'>
-          <YearSelector years={years} classNames="flex-row-icon" />
+          <YearSelector years={commodityYearsSortDesc} classNames="flex-row-icon" />
         </StickyHeader>
 
         <div className="chart-selector-wrapper">
@@ -97,20 +128,23 @@ const NationalFederalProduction = props => {
         </div>
 
         <div className="chart-list">
-          {lazy(FEDERAL_PRODUCTION_DATA.US.products).toArray().map((product, index) => {
+          {Object.keys(commodities).map((key, index) => {
             // Checks to verify if we have no data for a product for all years
-            let allYearsWithheld = verifyWithheldData(product)
-            if (allYearsWithheld) {
+
+            let product = commodities[key]
+  
+            if (product.withheld) {
+              let volumes = product.volumes
               withHeldProducts.push(product)
               return // return nothing if there is no data to display for this product
             }
 
-            let productName = product[1].name || product[0]
-            let productSlug = slugify(product[0], { lower: true, remove: /[$*_+~.()'"!\-:@,]/g })
-            productSlug = productSlug.replace('/', '-')
-            let productionValues = product[1].volume
+            let productName = product.name || key
+            let productSlug = slugify(key, { lower: true, remove: /[$*_+~.()'"!\-:@,]/g })
+            productSlug = productSlug.replace('/', '')
+            let productionValues = product.volume
             let volume = productionValues[year]
-            let units = product[1].units.toLowerCase()
+            let units = product.units ? product.units.toLowerCase() : product.name
             let shortUnits = PRODUCTION_UNITS[units] ? PRODUCTION_UNITS[units].short : units
             let longUnits = PRODUCTION_UNITS[units] ? PRODUCTION_UNITS[units].long : units
             let termUnits = PRODUCTION_UNITS[units] && PRODUCTION_UNITS[units].term
@@ -132,8 +166,8 @@ const NationalFederalProduction = props => {
                   <eiti-bar-chart
                     aria-controls={'national-federal-production-figures-' + productSlug + ' national-federal-production-withheld' }
                     data={JSON.stringify(productionValues)}
-                    x-range={YEAR_RANGE}
-                    x-value={2017}
+                    x-range={JSON.stringify(year_range)}
+                    x-value={year}
                     data-units={longUnits}>
                   </eiti-bar-chart>
                   <figcaption id={'national-federal-production-figures-' + productSlug }>

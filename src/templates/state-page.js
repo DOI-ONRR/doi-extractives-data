@@ -11,7 +11,6 @@ import NavList from '../components/layouts/NavList'
 import StickyHeader from '../components/layouts/StickyHeader'
 import { StickyWrapper } from '../components/utils/StickyWrapper'
 import SectionOverview from '../components/locations/SectionOverview'
-import SectionAllProduction from '../components/locations/SectionAllProduction'
 import SectionFederalProduction from '../components/locations/SectionFederalProduction'
 import SectionRevenue from '../components/locations/SectionRevenue'
 import SectionDisbursements from '../components/locations/SectionDisbursements'
@@ -105,7 +104,7 @@ const NAV_ITEMS = [
 class StatePages extends React.Component {
   constructor (props) {
     super(props)
-    //console.log(props);
+    //console.log(props)
     this.usStateMarkdown = props.pathContext.stateMarkdown
     this.commodities = props.pathContext.commodities
     this.commodityYears = props.pathContext.commodityYears
@@ -132,7 +131,7 @@ class StatePages extends React.Component {
   render () {
 	    return (
       <DefaultLayout>
-      <main id={'state-' + this.usStateData.unique_id} className="container-page-wrapper layout-state-pages">
+        <main id={'state-' + this.usStateData.unique_id} className="container-page-wrapper layout-state-pages">
 	            <Helmet
 	                title={this.usStateData.title + ' | Natural Resources Revenue Data'}
 	                meta={[
@@ -142,76 +141,79 @@ class StatePages extends React.Component {
 	                ]}
 
 	                />
-        <section className="container">
-          <div>
-            <Link className="breadcrumb" to="/explore/">Explore data</Link> /
-          </div>
-          <h1 id="title">{this.usStateData.title}</h1>
-          <div className="container-left-9">
-            <section id="overview" className="section-top">
+          <section className="container">
+            <div>
+              <Link className="breadcrumb" to="/explore/">Explore data</Link> /
+            </div>
+            <h1 id="title">{this.usStateData.title}</h1>
+            <div className="container-left-9">
+              <section id="overview" className="section-top">
 
-              <SectionOverview usStateMarkdown={this.usStateMarkdown} />
+                <SectionOverview usStateMarkdown={this.usStateMarkdown} />
 
-            </section>
+              </section>
 
-            <MobileNav navItems={NAV_ITEMS} navTitle={this.usStateData.title} />
+              <MobileNav navItems={NAV_ITEMS} navTitle={this.usStateData.title} />
 
-            <section id="production">
-              <h2>Production</h2>
+              <section id="production">
+                <h2>Production</h2>
 
-              <SectionFederalProduction usStateMarkdown={this.usStateMarkdown} />
+                <SectionFederalProduction usStateMarkdown={this.usStateMarkdown}
+                  production={this.props.pageContext.commoditiesProduction}
+                  countyProduction={this.props.pageContext.commoditiesFipsCode}
+                  productionYears={this.props.pageContext.commodityProductionYears}/>
 
-              {this.usStateFields.state_land &&
+                {this.usStateFields.state_land &&
 								<div id="production-state-land">
 								  <StickyWrapper bottomBoundary="#production-state-land" innerZ="10000">
 									   <StickyHeader headerText={'Production on state land in ' + this.usStateData.title} />
 								  </StickyWrapper>
 								  { ReactHtmlParser(this.usStateFields.state_land) }
 								</div>
-              }
+                }
 
-              { ReactHtmlParser(this.usStateFields.state_land_production) }
+                { ReactHtmlParser(this.usStateFields.state_land_production) }
 
-              <SectionRevenue usStateMarkdown={this.usStateMarkdown} commodities={this.commodities} commodityYears={this.commodityYears} />
+                <SectionRevenue usStateMarkdown={this.usStateMarkdown} commodities={this.commodities} commodityYears={this.commodityYears} />
 
-              <section id="disbursements" className="disbursements">
-                <h2>Disbursements</h2>
+                <section id="disbursements" className="disbursements">
+                  <h2>Disbursements</h2>
 
-                <SectionDisbursements usStateMarkdown={this.usStateMarkdown} />
+                  <SectionDisbursements usStateMarkdown={this.usStateMarkdown} />
 
-                <section id="state-disbursements" className="disbursements">
-                  <StickyWrapper bottomBoundary="#state-disbursements" innerZ="10000">
+                  <section id="state-disbursements" className="disbursements">
+                    <StickyWrapper bottomBoundary="#state-disbursements" innerZ="10000">
 									   <StickyHeader headerText='State disbursements' />
-                  </StickyWrapper>
-                  {this.usStateData.opt_in
-                    ? <StateDisbursements usStateData={this.usStateData} usStateFields={this.usStateFields} />
-                    :										<p>We don’t have detailed data about how states or local governments distribute revenue from natural resource extraction.</p>
-                  }
+                    </StickyWrapper>
+                    {this.usStateData.opt_in
+                      ? <StateDisbursements usStateData={this.usStateData} usStateFields={this.usStateFields} />
+                      :										<p>We don’t have detailed data about how states or local governments distribute revenue from natural resource extraction.</p>
+                    }
+                  </section>
                 </section>
+                <section>
+                  <SectionStateGovernance usStateMarkdown={this.usStateMarkdown} />
+                </section>
+                <svg width="0" height="0">
+                  <defs>
+                    <clipPath id="state-outline">
+                      <use xlinkHref={withPrefixSVG('/maps/states/all.svg#state-' + this.usStateData.unique_id)}></use>
+                    </clipPath>
+                  </defs>
+                </svg>
               </section>
-              <section>
-                <SectionStateGovernance usStateMarkdown={this.usStateMarkdown} />
-              </section>
-              <svg width="0" height="0">
-                <defs>
-                  <clipPath id="state-outline">
-                    <use xlinkHref={withPrefixSVG('/maps/states/all.svg#state-' + this.usStateData.unique_id)}></use>
-                  </clipPath>
-                </defs>
-              </svg>
-            </section>
-          </div>
+            </div>
 
-          <div className="container-right-3 sticky sticky_nav sticky_nav-padded">
-            <h3 className="state-page-nav-title container">
-              <div className="nav-title">{this.usStateData.title}</div>
-            </h3>
-            <nav>
-              <NavList navItems={NAV_ITEMS} />
-            </nav>
-          </div>
-        </section>
-      </main>
+            <div className="container-right-3 sticky sticky_nav sticky_nav-padded">
+              <h3 className="state-page-nav-title container">
+                <div className="nav-title">{this.usStateData.title}</div>
+              </h3>
+              <nav>
+                <NavList navItems={NAV_ITEMS} />
+              </nav>
+            </div>
+          </section>
+        </main>
       </DefaultLayout>
 	    )
   }

@@ -154,7 +154,7 @@ class ExplorePage extends React.Component {
                         <section id="production">
                             <h2 className="state-page-overview">Production</h2>
 
-                <NationalFederalProduction allProducts={this.props.data.Federal_Production.byProduct} />
+                <NationalFederalProduction allProducts={this.props.data.FederalProductionByProduct.group} allYears={this.props.data.FederalProductionByYear.group}/>
 
               </section>
 
@@ -221,20 +221,34 @@ export const query = graphql`
         }
       }
     }
-	US_Production:allAllProductionXlsxProducts(filter:{region:{eq:"US"}}) {
-      byProduct:group(field:product){
-        productName:fieldValue
-        productData:edges{
-          item:node {
-            year
-            region
-            volume
-            units
-            name:product
-          }
+	FederalProductionByProduct:  allProductVolumesCalendarYear (filter:{LandCategory:{eq:"Federal"}}){
+    group(field: ProductName) {
+      id: fieldValue
+      edges {
+        node {
+          id
+          ProductName
+          ProductionDate
+          ProductionYear
+          Units
+          LongUnits
+          Volume
+          Withheld
+          LandCategory
         }
       }
-	}
+    }
+  }
+  FederalProductionByYear:allProductVolumesCalendarYear (filter:{LandCategory:{eq:"Federal"}}){
+    group(field: ProductionYear) {
+      id: fieldValue
+      edges {
+        node {
+          id
+        }
+      }
+    }
+  }
     Federal_Production:allFederalProductionXlsxCyFederalProductionVolumes {
       byProduct:group(field: Product) {
         product_units:fieldValue

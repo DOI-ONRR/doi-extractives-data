@@ -54,7 +54,8 @@
   border-radius: 5px;
   box-shadow: none;
   box-sizing: border-box;
-	font-size: 0.65rem;
+  font-size: 1rem;
+  font-weight: 300;
   border-bottom-right-radius: 0;
   border-color: #d3dfe6;
   border-right: none;

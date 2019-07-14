@@ -8,23 +8,10 @@ import StickyHeader from '../layouts/StickyHeader'
 import YearSelector from '../selectors/YearSelector'
 import DataAndDocs from '../layouts/DataAndDocs'
 import GlossaryTerm from '../utils/glossary-term.js'
-import { filterTerms } from '../utils/Glossary'
 import RevenueTypeTable from '../locations/RevenueTypeTable'
 import RevenueProcessTable from '../locations/RevenueProcessTable'
 import { ExploreDataLink } from '../layouts/icon-links/ExploreDataLink'
-
 import ChartTitle from '../charts/ChartTitleCollapsible'
-
-import iconCirclePlus from '../../img/icons/icon-circled-plus.svg'
-import iconCircleMinus from '../../img/icons/icon-circled-minus.svg'
-
-import NATIONAL_REVENUES from '../../../static/data/national_revenues.yml'
-
-// @todo: use graphql to import data
-import FEDERAL_PRODUCTION_DATA from '../../../static/data/national_federal_production.yml'
-
-import PRODUCTION_UNITS from '../../../static/data/production_units.yml'
-
 
 const createRevenueCommoditiesData = (groupByCommodity, groupByYear) => {
   let data = groupByCommodity

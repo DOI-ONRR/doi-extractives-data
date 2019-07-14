@@ -1,10 +1,7 @@
 import React from 'react'
-import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from 'react-html-parser'
 import Link from '../utils/temp-link'
 
-import ALL_US_STATES_FEDERAL_PRODUCTION from '../../data/state_federal_production.yml'
 import PRODUCTION_UNITS from '../../../static/data/production_units.yml'
-import * as FEDERAL_COUNTY_PRODUCTION from '../../data/federal_county_production'
 
 import ChartTitle from '../charts/ChartTitleCollapsible'
 import StickyHeader from '../layouts/StickyHeader'
@@ -21,7 +18,6 @@ let year = 2018
 
 const SectionFederalProduction = props => {
   const usStateData = props.usStateMarkdown.frontmatter
-  const usStateFields = props.usStateMarkdown.fields || {}
 
   const countyProductionForState = props.countyProduction
 
@@ -45,7 +41,8 @@ const SectionFederalProduction = props => {
         { usStateFederalProducts === undefined
           ? <div>
             <p>
-                          The Office of Natural Resources Revenue collects detailed data about natural resources produced on federal land. According to that data, there was no natural resource <GlossaryTerm>production</GlossaryTerm> on federal land in {usStateData.title} in { year }.
+              The Office of Natural Resources Revenue collects detailed data about natural resources produced on federal land. According to that data
+              , there was no natural resource <GlossaryTerm>production</GlossaryTerm> on federal land in {usStateData.title} in { year }.
             </p>
             <p>
               <Link to="/downloads/federal-production/">
@@ -56,7 +53,8 @@ const SectionFederalProduction = props => {
           : <div className="chart-selector-wrapper">
             <div className="chart-description">
               <p>
-                                The Office of Natural Resources Revenue collects detailed data about natural resource <GlossaryTerm>production</GlossaryTerm> on federal land in {usStateData.title}.
+                The Office of Natural Resources Revenue collects detailed data about natural resource <GlossaryTerm>
+                  production</GlossaryTerm> on federal land in {usStateData.title}.
               </p>
               <p>
                 <Link to="/downloads/federal-production/">

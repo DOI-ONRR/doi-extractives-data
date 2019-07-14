@@ -17,15 +17,7 @@ import ChartTitle from '../charts/ChartTitleCollapsible'
 import iconCirclePlus from '../../img/icons/icon-circled-plus.svg'
 import iconCircleMinus from '../../img/icons/icon-circled-minus.svg'
 
-// @todo: use graphql to import data
-import FEDERAL_PRODUCTION_DATA from '../../../static/data/national_federal_production.yml'
-
 import PRODUCTION_UNITS from '../../../static/data/production_units.yml'
-
-// @todo: pass in years from data
-// const years = [2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010, 2009, 2008]
-// const year = '2017'
-// const YEAR_RANGE = '[2008, 2017]'
 
 const createProductionData = (groupByCommodity, groupByYear) => {
   let data = groupByCommodity
@@ -40,9 +32,7 @@ const createProductionData = (groupByCommodity, groupByYear) => {
     item.edges.forEach(element => {
       let node = element.node
       let year = parseInt(node.ProductionYear)
-      // console.log(node)
       if (commodityYears.includes(year)) {
-        // console.log(node)
         total[item.id] = total[item.id] || { name: name, units: node.Units, withheld: node.Withheld, volume: {} }
         total[item.id].volume[year] = (total[item.id].volume[year])
           ? total[item.id].volume[year] + node.Volume
@@ -69,7 +59,7 @@ const NationalFederalProduction = props => {
   let commodityYearsSortDesc = commodityYears.slice(0)
   commodityYearsSortDesc.sort((a, b) => b - a)
   let year = commodityYears[commodityYears.length - 1]
-  let year_range = [commodityYears[0], commodityYears[commodityYears.length - 1]]
+  let yearRange = [commodityYears[0], commodityYears[commodityYears.length - 1]]
 
   let withHeldProducts = []
 
@@ -129,12 +119,10 @@ const NationalFederalProduction = props => {
 
         <div className="chart-list">
           {Object.keys(commodities).map((key, index) => {
-            // Checks to verify if we have no data for a product for all years
-
             let product = commodities[key]
-  
+
+            // Checks to verify if we have no data for a product for all years
             if (product.withheld) {
-              let volumes = product.volumes
               withHeldProducts.push(product)
               return // return nothing if there is no data to display for this product
             }
@@ -143,9 +131,7 @@ const NationalFederalProduction = props => {
             let productSlug = slugify(key, { lower: true, remove: /[$*_+~.()'"!\-:@,]/g })
             productSlug = productSlug.replace('/', '')
             let productionValues = product.volume
-            let volume = productionValues[year]
             let units = product.units ? product.units.toLowerCase() : product.name
-            let shortUnits = PRODUCTION_UNITS[units] ? PRODUCTION_UNITS[units].short : units
             let longUnits = PRODUCTION_UNITS[units] ? PRODUCTION_UNITS[units].long : units
             let termUnits = PRODUCTION_UNITS[units] && PRODUCTION_UNITS[units].term
             let suffixUnits = PRODUCTION_UNITS[units] ? PRODUCTION_UNITS[units].suffix : ''
@@ -166,7 +152,7 @@ const NationalFederalProduction = props => {
                   <eiti-bar-chart
                     aria-controls={'national-federal-production-figures-' + productSlug + ' national-federal-production-withheld' }
                     data={JSON.stringify(productionValues)}
-                    x-range={JSON.stringify(year_range)}
+                    x-range={JSON.stringify(yearRange)}
                     x-value={year}
                     data-units={longUnits}>
                   </eiti-bar-chart>

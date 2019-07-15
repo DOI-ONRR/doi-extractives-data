@@ -214,58 +214,46 @@ export const query = graphql`
         }
       }
     }
-	FederalProductionByProduct:  allProductVolumesCalendarYear (filter:{LandCategory:{eq:"Federal"}}){
-    group(field: ProductName) {
-      id: fieldValue
-      edges {
-        node {
-          id
-          ProductName
-          ProductionDate
-          ProductionYear
-          Units
-          LongUnits
-          Volume
-          Withheld
-          LandCategory
-        }
-      }
-    }
-  }
-  FederalProductionByYear:allProductVolumesCalendarYear (filter:{LandCategory:{eq:"Federal"}}){
-    group(field: ProductionYear) {
-      id: fieldValue
-      edges {
-        node {
-          id
-        }
-      }
-    }
-  }
-    Federal_Production:allFederalProductionXlsxCyFederalProductionVolumes {
-      byProduct:group(field: Product) {
-        product_units:fieldValue
-        productData:edges {
-          item:node {
-            volume:Production_Volume
-            product_units:Product
-            Calendar_Year
+    FederalProductionByProduct:  allProductVolumesCalendarYear (filter:{LandCategory:{eq:"Federal"}}){
+      group(field: ProductName) {
+        id: fieldValue
+        edges {
+          node {
+            id
+            ProductName
+            ProductionDate
+            ProductionYear
+            Units
+            LongUnits
+            Volume
+            Withheld
+            LandCategory
           }
         }
       }
     }
-    Federal_Disbursements:allFederalDisbursementsXlsxSheet1 {
-         byYear:group(field:Year){
-            Year:fieldValue
-                disbursements:edges {
-                    disbursement:node {
-                        Year
-                        Fund
-                        Source
-                        Disbursement
-                    }
-                }
+    FederalProductionByYear:allProductVolumesCalendarYear (filter:{LandCategory:{eq:"Federal"}}){
+      group(field: ProductionYear) {
+        id: fieldValue
+        edges {
+          node {
+            id
+          }
         }
+      }
+    }
+    Federal_Disbursements:allFederalDisbursements {
+      byYear:group(field:Year){
+        Year:fieldValue
+        disbursements:edges {
+          disbursement:node {
+            Year
+            Fund
+            Source
+            Disbursement
+          }
+        }
+      }
     }
     RevenueGroupByCalendarYear:allResourceRevenuesCalendarYear (filter:{Commodity:{ne:"Not tied to a commodity"}}){
       group(field: CalendarYear) {

@@ -94,7 +94,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     createHowItWorksPages(createPage, graphql),
     createDownloadsPages(createPage, graphql),
     createCaseStudiesPages(createPage, graphql),
-    //createOffshorePages(createPage, graphql),
+    // createOffshorePages(createPage, graphql),
   ])
 }
 
@@ -131,7 +131,7 @@ const getPageTemplate = templateId => {
 
 const compareValues = (key, order = 'asc') => {
   return function (a, b) {
-    /*if (!a.hasOwnProperty(key) ||
+    /* if (!a.hasOwnProperty(key) ||
        !b.hasOwnProperty(key)) {
       return 0
     } */
@@ -164,6 +164,21 @@ const createRevenueTypeCommoditiesData = (groupByCommodity, groupByYear, stateId
   }
   commodityYears = commodityYears.map(item => parseInt(item.id))
 
+  let commoditiesCounty = data.reduce((total, item) => {
+    item.edges.forEach(element => {
+      let node = element.node
+      let year = parseInt(node.CalendarYear)
+      if (commodityYears.includes(year) && node.State === stateId) {
+        total[node.FipsCode] = total[node.FipsCode] || { name: node.County, revenue: {} }
+        total[node.FipsCode].revenue[year] = (total[node.FipsCode].revenue[year])
+          ? total[node.FipsCode].revenue[year] + node.Revenue
+          : node.Revenue
+      }
+    })
+
+    return total
+  }, {})
+
   let commodities = data.reduce((total, item) => {
 	  item.edges.forEach(element => {
       let node = element.node
@@ -194,6 +209,11 @@ const createRevenueTypeCommoditiesData = (groupByCommodity, groupByYear, stateId
 	  return total
   }, { 'All': { 'All': {} } })
 
+  Object.keys(commoditiesCounty).forEach(code => {
+    Object.keys(commoditiesCounty[code].revenue).forEach(year => {
+      commoditiesCounty[code].revenue[year] = parseInt(commoditiesCounty[code].revenue[year])
+    })
+  })
   Object.keys(commodities).forEach(commodity => {
 	  Object.keys(commodities[commodity]).forEach(revenueType => {
       Object.keys(commodities[commodity][revenueType]).forEach(year => {
@@ -202,7 +222,7 @@ const createRevenueTypeCommoditiesData = (groupByCommodity, groupByYear, stateId
 	  })
   })
 
-  return { commodities, commodityYears }
+  return { commodities, commoditiesCounty, commodityYears }
 }
 const createProductionCommoditiesData = (groupByCommodity, groupByYear, stateId) => {
   let data = groupByCommodity
@@ -213,12 +233,11 @@ const createProductionCommoditiesData = (groupByCommodity, groupByYear, stateId)
   commodityProductionYears = commodityProductionYears.map(item => parseInt(item.id))
 
   let commoditiesFipsCode = data.reduce((total, item) => {
-    let productName = (item.id.includes('~'))? item.id.split('~')[0] : item.id
+    let productName = (item.id.includes('~')) ? item.id.split('~')[0] : item.id
     item.edges.forEach(element => {
       let node = element.node
       let year = parseInt(node.ProductionYear)
       if (commodityProductionYears.includes(year) && node.State === stateId) {
-
         total[node.FipsCode] = total[node.FipsCode] || { name: node.County, products: {} }
         total[node.FipsCode].products[item.id] = total[node.FipsCode].products[item.id] || { name: productName, units: node.Units, withheld: node.Withheld, volume: {} }
         total[node.FipsCode].products[item.id].volume[year] = (total[node.FipsCode].products[item.id].volume[year])
@@ -231,7 +250,7 @@ const createProductionCommoditiesData = (groupByCommodity, groupByYear, stateId)
   }, {})
 
   let commoditiesProduction = data.reduce((total, item) => {
-    let name = (item.id.includes('~'))? item.id.split('~')[0] : item.id
+    let name = (item.id.includes('~')) ? item.id.split('~')[0] : item.id
     item.edges.forEach(element => {
       let node = element.node
       let year = parseInt(node.ProductionYear)
@@ -240,7 +259,6 @@ const createProductionCommoditiesData = (groupByCommodity, groupByYear, stateId)
         total[item.id].volume[year] = (total[item.id].volume[year])
           ? total[item.id].volume[year] + node.Volume
           : node.Volume
-
       }
     })
 
@@ -329,6 +347,7 @@ const createStatePages = (createPage, graphql) => {
                 CalendarYear
                 RevenueType
                 State
+                FipsCode
               }
             }
           }
@@ -378,14 +397,13 @@ const createStatePages = (createPage, graphql) => {
 		        // eslint-disable-next-line camelcase
 		        result.data.allMarkdownRemark.us_states.forEach(({ us_state }) => {
 		          const path = createStatePageSlug(us_state)
-              let { commodities, commodityYears } = createRevenueTypeCommoditiesData(result.data.RevenueGroupByCommodity.group,
+              let { commodities, commoditiesCounty, commodityYears } = createRevenueTypeCommoditiesData(result.data.RevenueGroupByCommodity.group,
                 result.data.RevenueGroupByCalendarYear.group,
                 us_state.frontmatter.unique_id)
-              
+
               let { commoditiesProduction, commoditiesFipsCode, commodityProductionYears } = createProductionCommoditiesData(result.data.FederalProductionByProduct.group,
                 result.data.FederalProductionByYear.group,
                 us_state.frontmatter.unique_id)
-
 
               createPage({
 		            path,
@@ -395,6 +413,7 @@ const createStatePages = (createPage, graphql) => {
 		            context: {
                 stateMarkdown: us_state,
                 commodities: commodities,
+                commoditiesCounty: commoditiesCounty,
                 commodityYears: commodityYears,
                 commoditiesProduction: commoditiesProduction,
                 commoditiesFipsCode: commoditiesFipsCode,
@@ -553,15 +572,15 @@ const createOffshorePages = (createPage, graphql) => {
 /* This is required for Federalist build */
 let copydir = require('copy-dir')
 exports.onPostBuild = () => {
-	console.log("Copying static html pages to _site...");
-	copydir.sync(__dirname+'/static/pages', __dirname+'/_site');
-	console.log("Finished Copying static html pages to _site.");
+	console.log('Copying static html pages to _site...')
+	copydir.sync(__dirname + '/static/pages', __dirname + '/_site')
+	console.log('Finished Copying static html pages to _site.')
 
-	console.log("Copying Files from public to _site...");
-	copydir.sync(__dirname+'/public', './_site');
-	console.log("Finished Copying Files to _site.");
+	console.log('Copying Files from public to _site...')
+	copydir.sync(__dirname + '/public', './_site')
+	console.log('Finished Copying Files to _site.')
 	
-	console.log("Copying Files from downloads to _site...");
-	copydir.sync(__dirname+'/downloads', './_site/downloads');
-	console.log("Finished Copying Files to _site.");
+	console.log('Copying Files from downloads to _site...')
+	copydir.sync(__dirname + '/downloads', './_site/downloads')
+	console.log('Finished Copying Files to _site.')
 }

@@ -9,19 +9,11 @@ import {
   PRODUCT_VOLUMES_FISCAL_YEAR,
   REVENUES_MONTHLY,
   REVENUES_FISCAL_YEAR,
-  BY_ID, BY_COMMODITY,
-  BY_STATE, BY_COUNTY,
-  BY_OFFSHORE_REGION,
-  BY_LAND_CATEGORY,
-  BY_LAND_CLASS,
-  BY_REVENUE_TYPE,
   BY_FISCAL_YEAR,
   BY_CALENDAR_YEAR
 } from '../state/reducers/data-sets'
 
 import * as CONSTANTS from '../js/constants'
-import utils from '../js/utils'
-
 import { KeyStatsSection } from '../components/sections/KeyStatsSection'
 import { WhatsNew } from '../components/sections/WhatsNew'
 import { Tabordion, Tab } from '../components/layouts/Tabordion'
@@ -273,7 +265,7 @@ export const query = graphql`
         }
       }
     }
-    OilVolumes:allProductVolumes (
+    OilVolumes:allProductVolumesMonthly (
       filter:{ProductName:{eq: "Oil"}}
       sort:{fields:[ProductionDate], order: DESC}
     ) {
@@ -294,7 +286,7 @@ export const query = graphql`
         }
       }
     }
-    GasVolumes:allProductVolumes (
+    GasVolumes:allProductVolumesMonthly (
       filter:{ProductName:{eq: "Gas"}}
       sort:{fields:[ProductionDate], order: DESC}
     ) {
@@ -315,7 +307,7 @@ export const query = graphql`
         }
       }
     }
-    CoalVolumes:allProductVolumes (
+    CoalVolumes:allProductVolumesMonthly (
       filter:{ProductName:{eq: "Coal"}}
       sort:{fields:[ProductionDate], order: DESC}
     ) {

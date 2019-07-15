@@ -14,10 +14,10 @@ const MobileNav = props => (
 			      <div className="flex-row">
 			        <h3 className="mobile-nav-header flex-row-flex">{props.navTitle}</h3>
 			        <span className="hide-expanded flex-row-icon">
-			          <icon className="icon icon-chevron-sm-down"></icon>
+			          <div className="icon icon-chevron-sm-down"></div>
 			        </span>
 			        <span className="show-expanded flex-row-icon">
-			          <icon className="icon icon-chevron-sm-up"></icon>
+			          <div className="icon icon-chevron-sm-up"></div>
 			        </span>
 			      </div>
 			  </button>

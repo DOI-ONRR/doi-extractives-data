@@ -5,8 +5,6 @@ import Lazy from 'lazy.js'
 
 import utils from '../../js/utils'
 
-import ALL_NATIONAL_REVENUES_BY_TYPE from '../../../static/data/national_revenues_by_type.yml'
-import ALL_STATE_REVENUES_BY_TYPE from '../../../static/data/state_revenues_by_type.yml'
 import ALL_OFFSHORE_REVENUES_BY_TYPE from '../../../static/data/offshore_revenues_by_type.yml'
 import COMMODITIES from '../../../static/data/commodities.yml'
 import NATIONAL_REVENUES_INSPECTION_FEES from '../../../static/data/national_revenues_inspection_fees.yml'
@@ -140,10 +138,10 @@ const RevenueProcessTable = props => {
 	  commodities = createRevenueTypeCommoditiesData(props.revenueGroupByCommodity, props.revenueGroupByCalendarYear)
   }
   
-  let revenueTypes = commodities || ALL_STATE_REVENUES_BY_TYPE[props.locationId]
+  let revenueTypes = commodities
 
   if (props.isNationalPage) {
-    revenueTypes = commodities || ALL_NATIONAL_REVENUES_BY_TYPE.US
+    revenueTypes = commodities
   }
 
   if (props.isOffshorePage) {
@@ -161,11 +159,8 @@ const RevenueProcessTable = props => {
   let otherProductExists = false
   let allExists = false
 
-  	let commodityName
-  	let commodityValues
 
   	let oilGasRevenueTypeRowHtml
-  	let otherProductsRevenueTypeRowHtml = ''
 
   for (let commodity in revenueTypes) {
   		let commodityName = commodity

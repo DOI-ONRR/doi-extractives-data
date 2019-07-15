@@ -4,7 +4,7 @@ import { withPrefix } from '../components/utils/temp-link'
 import { withPrefixSVG } from '../components/utils/temp-link'
 
 import Helmet from 'react-helmet'
-import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from 'react-html-parser'
+import ReactHtmlParser from 'react-html-parser'
 import { connect } from 'react-redux'
 
 import NavList from '../components/layouts/NavList'
@@ -15,17 +15,8 @@ import SectionFederalProduction from '../components/locations/SectionFederalProd
 import SectionRevenue from '../components/locations/SectionRevenue'
 import SectionDisbursements from '../components/locations/SectionDisbursements'
 import StateDisbursements from '../components/locations/opt_in/StateDisbursements'
-import SectionGDP from '../components/locations/SectionGDP'
-import SectionJobs from '../components/locations/SectionJobs'
-import SectionExports from '../components/locations/SectionExports'
 import SectionStateGovernance from '../components/locations/SectionStateGovernance'
 import MobileNav from '../components/layouts/MobileNav'
-import GlossaryTerm from '../components/utils/glossary-term.js'
-
-import ALL_US_STATES_PRODUCTION from '../data/state_all_production.yml'
-import * as TOP_STATE_PRODUCTS from '../data/top_state_products'
-
-import utils from '../js/utils'
 
 import DefaultLayout from '../components/layouts/DefaultLayout'
 
@@ -104,10 +95,11 @@ const NAV_ITEMS = [
 class StatePages extends React.Component {
   constructor (props) {
     super(props)
-    //console.log(props)
-    this.usStateMarkdown = props.pathContext.stateMarkdown
-    this.commodities = props.pathContext.commodities
-    this.commodityYears = props.pathContext.commodityYears
+    console.log(props)
+    this.usStateMarkdown = props.pageContext.stateMarkdown
+    this.commodities = props.pageContext.commodities
+    this.commoditiesCounty = props.pageContext.commoditiesCounty
+    this.commodityYears = props.pageContext.commodityYears
     this.usStateData = this.usStateMarkdown.frontmatter
     	this.usStateFields = this.usStateMarkdown.fields || {}
   }
@@ -174,7 +166,7 @@ class StatePages extends React.Component {
 
                 { ReactHtmlParser(this.usStateFields.state_land_production) }
 
-                <SectionRevenue usStateMarkdown={this.usStateMarkdown} commodities={this.commodities} commodityYears={this.commodityYears} />
+                <SectionRevenue usStateMarkdown={this.usStateMarkdown} commodities={this.commodities} commoditiesCounty={this.commoditiesCounty} commodityYears={this.commodityYears} />
 
                 <section id="disbursements" className="disbursements">
                   <h2>Disbursements</h2>
@@ -223,34 +215,3 @@ export default connect(
   state => ({}),
   dispatch => ({})
 )(StatePages)
-
-/* @TODO: replace hardcoded year value */
-const KeyAllProductionSummary = props => {
-  const usStateProducts = ALL_US_STATES_PRODUCTION[props.usStateData.unique_id].products
-  const usStateTopProducts =
-        (TOP_STATE_PRODUCTS[props.usStateData.unique_id] && TOP_STATE_PRODUCTS[props.usStateData.unique_id]['all_production'])
-          ? TOP_STATE_PRODUCTS[props.usStateData.unique_id]['all_production'][2016] : undefined
-
-  let getProductListItems = () => {
-    return (
-      <ul>
-        {usStateTopProducts &&
-                    usStateTopProducts.map((product, index) => {
-                      return (<li key={index}>{utils.getDisplayName_CommodityName(product.name)}: #{product.rank} in the nation ({Math.floor(product.percent)}% of U.S. production)</li>)
-                    })
-        }
-      </ul>
-    )
-  }
-
-  return (
-    <div>
-      {usStateTopProducts &&
-                <div>
-                  <p>{props.usStateData.title} ranks among the top five states in the U.S. for production of:</p>
-                  {getProductListItems()}
-                </div>
-      }
-    </div>
-  )
-}

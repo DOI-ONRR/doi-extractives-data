@@ -6,7 +6,6 @@ import { withPrefixSVG } from '../utils/temp-link'
 
 import ALL_US_STATES_GDP from '../../data/state_gdp.yml'
 import ALL_US_STATES_JOBS from '../../data/state_jobs.yml'
-import ALL_US_STATES_PRODUCTION from '../../data/state_all_production.yml'
 import * as TOP_STATE_PRODUCTS from '../../data/top_state_products'
 import LAND_STATS from '../../data/land_stats.yml'
 import VIEWBOXES_CROPPED from '../../data/viewboxes_cropped.yml'
@@ -175,7 +174,6 @@ const KeyGDPJobs = props => {
 
 /* If the state leads U.S. production for any commodities, those commodities are listed along with percentage of US production. */
 const KeyAllProduction = props => {
-  const usStateProducts = ALL_US_STATES_PRODUCTION[props.usStateData.unique_id].products
   const usStateTopProducts =
       (TOP_STATE_PRODUCTS[props.usStateData.unique_id] && TOP_STATE_PRODUCTS[props.usStateData.unique_id]['all_production'])
         ? TOP_STATE_PRODUCTS[props.usStateData.unique_id]['all_production'][year] : undefined

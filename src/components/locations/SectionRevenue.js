@@ -14,13 +14,6 @@ import lazy from 'lazy.js'
 import ChartTitle from '../charts/ChartTitleCollapsible'
 import CountyMap from '../maps/CountyMap'
 
-
-import * as COUNTY_REVENUE from '../../data/county_revenue'
-import * as ALL_US_STATES_REVENUES from '../../data/state_revenues.yml'
-
-let year = 2018
-
-
 const SectionRevenue = props => {
   const usStateData = props.usStateMarkdown.frontmatter
   const usStateFields = props.usStateMarkdown.fields || {}
@@ -29,39 +22,29 @@ const SectionRevenue = props => {
   const commodityYears = props.commodityYears
   let commodityYearsSortDesc = commodityYears.slice(0)
   commodityYearsSortDesc.sort((a, b) => b - a)
-  year = commodityYears[props.commodityYears.length - 1]
+  let year = commodityYears[props.commodityYears.length - 1]
 
-  
+  const usStateCountyRevenue = props.commoditiesCounty 
 
-  const usStateCountyRevenue = COUNTY_REVENUE[usStateData.unique_id];
-  const usStateRevenueCommodities = ALL_US_STATES_REVENUES[usStateData.unique_id] && ALL_US_STATES_REVENUES[usStateData.unique_id].commodities
 
-  let allYears = []
   let allCommoditiesValues = {}
-  let allCommoditiesSlug, allCommoditiesChartName, allCommoditiesChartToggle = ""
-  if(usStateRevenueCommodities) {
-    allYears = Object.keys(usStateRevenueCommodities.All).map(year => parseInt(year));
-    allYears.sort((a,b) => b-a)
-    if(allYears.length > 10) {
-      allYears = allYears.slice(0,10);
-    }
-    allCommoditiesChartName = 'All commodities';
+  let allCommoditiesSlug, allCommoditiesChartName
+  if (commodities) {
+    allCommoditiesChartName = 'All commodities'
     allCommoditiesSlug = utils.formatToSlug(allCommoditiesChartName, { lower: true })
-    allCommoditiesChartToggle = 'federal-revenue-county-figures-chart-'+allCommoditiesSlug;
-    allYears.map(year => allCommoditiesValues[year] = usStateRevenueCommodities.All[year].revenue)
+    // eslint-disable-next-line no-return-assign
+    commodityYearsSortDesc.map(year => allCommoditiesValues[year] = commodities.All.All[year])
   }
   let localityName = 'County'
-  if(usStateData.unique_id === 'AK'){
+  if (usStateData.unique_id === 'AK') {
     localityName = 'Borough'
   }
 
-  if(usStateData.unique_id === 'LA'){
+  if (usStateData.unique_id === 'LA') {
     localityName = 'Parish'
   }
 
   let chartMapTitle = 'Revenue collected by ' + localityName.toLocaleLowerCase()
-
-
 
   return (
     <section id="revenue" is="year-switcher-section" className="federal revenue">
@@ -87,18 +70,24 @@ const SectionRevenue = props => {
 
         <h4>Revenue from production on federal land by resource</h4>
 
-        {usStateRevenueCommodities
+        {commodities
           ? <div>
-            <p>When companies extract natural resources on federal lands and waters, they pay royalties, rents, bonuses, and other fees, much like they would to any landowner. This non-tax revenue is collected and reported by the Office of Natural Resources Revenue (ONRR).</p>
+            <p>When companies extract natural resources on federal lands and waters
+              , they pay royalties, rents, bonuses, and other fees, much like they would to any landowner
+              . This non-tax revenue is collected and reported by the Office of Natural Resources Revenue (ONRR).</p>
 
-            <p>For details about the laws and policies that govern how rights are awarded to companies and what they pay to extract natural resources on federal land: <Link to="/how-it-works/coal/">coal</Link>, <Link to="/how-it-works/onshore-oil-gas/">oil and gas</Link>, <Link to="/how-it-works/onshore-renewables/">renewable resources</Link>, and <Link to="/how-it-works/minerals/">hardrock minerals</Link>.</p>
+            <p>For details about the laws and policies that govern how rights are awarded to companies and what they pay to extract natural resources on federal land
+              : <Link to="/how-it-works/coal/">coal</Link>, <Link to="/how-it-works/onshore-oil-gas/">oil and gas</Link>
+              , <Link to="/how-it-works/onshore-renewables/">renewable resources</Link>, and <Link to="/how-it-works/minerals/">hardrock minerals</Link>.</p>
 
-            <p>The federal government collects different kinds of fees at each phase of natural resource extraction. This chart shows how much federal revenue was collected in <GlossaryTerm>Calendar year (CY)</GlossaryTerm> { allYears[0] } for production or potential production of natural resources on federal land in { usStateData.title }, broken down by phase of production.</p>
+            <p>The federal government collects different kinds of fees at each phase of natural resource extraction
+              . This chart shows how much federal revenue was collected in <GlossaryTerm>Calendar year (CY)</GlossaryTerm> { commodityYearsSortDesc[0] }
+               for production or potential production of natural resources on federal land in { usStateData.title }, broken down by phase of production.</p>
 
 		                <div id="fee-summaries" className="tab-interface">
 		                    <ul className="eiti-tabs info-tabs" role="tablist">
 		                        <li role="presentation">
-		                            <a href="#revenues" tabIndex="0" role="tab" aria-controls="revenues" aria-selected="true">Federal revenue by phase (CY {allYears[0]})</a>
+		                            <a href="#revenues" tabIndex="0" role="tab" aria-controls="revenues" aria-selected="true">Federal revenue by phase (CY {commodityYearsSortDesc[0]})</a>
 		                        </li>
 		                        <li role="presentation">
 		                            <a href="#story" tabIndex="-1" role="tab" aria-controls="story" className="link-charlie">Revenue details by phase</a>
@@ -151,7 +140,7 @@ const SectionRevenue = props => {
                 </div>
               </div>
 
-              <section id={"federal-revenue-county-table"} className="county-map-table">
+              <section id={'federal-revenue-county-table'} className="county-map-table">
                 <div className="row-container">
 
                   <div className="chart-container">
@@ -159,27 +148,27 @@ const SectionRevenue = props => {
                       isIcon={true}
                       units={'dollars'}
                       chartValues={allCommoditiesValues}
-                      chartToggle={'federal-revenue-county-figures-'+allCommoditiesSlug} >{allCommoditiesChartName}</ChartTitle>
+                      chartToggle={'federal-revenue-county-figures-' + allCommoditiesSlug} >{allCommoditiesChartName}</ChartTitle>
 
-                    <figure className="chart" id={'federal-revenue-county-figures-chart-'+allCommoditiesSlug}>
+                    <figure className="chart" id={'federal-revenue-county-figures-chart-' + allCommoditiesSlug}>
                       <eiti-bar-chart
-                        aria-controls={'federal-revenue-county-figures-'+allCommoditiesSlug}
+                        aria-controls={'federal-revenue-county-figures-' + allCommoditiesSlug}
                         data={JSON.stringify(allCommoditiesValues)}
-                        x-range={"["+allYears[allYears.length-1]+","+allYears[0]+"]"}
-                        x-value={allYears[0]}
+                        x-range={'[' + commodityYearsSortDesc[commodityYearsSortDesc.length - 1] + ',' + commodityYearsSortDesc[0] + ']'}
+                        x-value={commodityYearsSortDesc[0]}
                         data-units={'$,'}>
                       </eiti-bar-chart>
-                      <figcaption id={'federal-revenue-county-figures-'+allCommoditiesSlug} aria-hidden='false'>
+                      <figcaption id={'federal-revenue-county-figures-' + allCommoditiesSlug} aria-hidden='false'>
                         <span className="caption-data">
                           <span className="eiti-bar-chart-y-value" data-format="$,">
-                            {(allCommoditiesValues[allYears[0]]) ? (allCommoditiesValues[allYears[0]]).toLocaleString() : ('0').toLocaleString() }{' '}
-                            </span>
+                            {(allCommoditiesValues[commodityYearsSortDesc[0]]) ? (allCommoditiesValues[commodityYearsSortDesc[0]]).toLocaleString() : ('0').toLocaleString() }{' '}
+                          </span>
                           {' '}of {allCommoditiesChartName.toLowerCase()} were produced on federal land in {' ' + usStateData.title + ' in '}
-                          <span className="eiti-bar-chart-x-value">{ allYears[0] }</span>.
+                          <span className="eiti-bar-chart-x-value">{ commodityYearsSortDesc[0] }</span>.
                         </span>
                         <span className="caption-no-data" aria-hidden="true">
                                                     There is no data about production of {allCommoditiesChartName.toLowerCase()} in{' '}
-                          <span className="eiti-bar-chart-x-value">{ allYears[0] }</span>.
+                          <span className="eiti-bar-chart-x-value">{ commodityYearsSortDesc[0] }</span>.
                         </span>
                       </figcaption>
                     </figure>
@@ -197,7 +186,7 @@ const SectionRevenue = props => {
                             usStateMarkdown={props.usStateMarkdown}
                             countyProductionData={usStateCountyRevenue}
                             productKey={'revenue'}
-                            year={allYears[0]}
+                            year={commodityYearsSortDesc[0]}
                             isCaption={true}
                             mapToggle={'federal-revenue-counties'}
                             productName={'revenue'}
@@ -210,7 +199,7 @@ const SectionRevenue = props => {
                           <table is='bar-chart-table'
                             data-percent-max='100'
                             class='county-table'
-                            year={allYears[0]}>
+                            year={commodityYearsSortDesc[0]}>
                             <thead>
                               <tr>
                                 <th>{usStateData.locality_name || 'County'}</th>
@@ -234,7 +223,7 @@ const SectionRevenue = props => {
                                                   <div className='swatch'
                                                     data-value-swatch={productVolume}
                                                     data-year-values={JSON.stringify(yearsValue)}>
-                                                  </div>{ countyData[1].name+' '+localityName }
+                                                  </div>{ countyData[1].name + ' ' + localityName }
                                                 </td>
                                                 <td data-format={'$,'} data-value-text={productVolume}
                                                   data-year-values={JSON.stringify(yearsValue)}>{productVolume}</td>
@@ -277,9 +266,8 @@ const SectionRevenue = props => {
               </section>
             </section>
           </div>
-          :						
-          <div className="chart-description">
-							No natural resources were produced on federal land in {usStateData.title} in { allYears[0] }, so ONRR did not collect any non-tax revenues.
+          :						          <div className="chart-description">
+							No natural resources were produced on federal land in {usStateData.title} in { commodityYearsSortDesc[0] }, so ONRR did not collect any non-tax revenues.
           </div>
         }
         <h4>Federal tax revenue</h4>

@@ -26,7 +26,8 @@ const SOURCE_COLUMNS = {
   State: 'state',
   County: 'county',
   FiscalYear: 'fiscal year',
-  OffshoreRegion: 'offshore region'
+  OffshoreRegion: 'offshore region',
+  FipsCode: 'fips code',
 }
 
 const LAND_CATEGORY_TO_DISPLAY_NAME = {
@@ -78,6 +79,7 @@ const createRevenueNode = (revenueData, type) => {
     FiscalYear: data[SOURCE_COLUMNS.FiscalYear],
     Units: '$',
     LongUnits: 'dollars',
+    FipsCode: data[SOURCE_COLUMNS.FipsCode] && data[SOURCE_COLUMNS.FipsCode].toString(),
     OffshoreRegion: (data[SOURCE_COLUMNS.OffshoreRegion] === '' || data[SOURCE_COLUMNS.OffshoreRegion] === undefined)
       ? data[SOURCE_COLUMNS.OffshoreRegion] : 'Offshore ' + data[SOURCE_COLUMNS.OffshoreRegion],
     internal: {

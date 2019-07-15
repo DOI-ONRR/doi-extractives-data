@@ -2,6 +2,7 @@ import React, { useEffect, useRef }  from 'react'
 import ReactDOM from 'react-dom'
 
 import * as d3 from 'd3'
+import * as topojson from 'topojson-client'
 import utils from '../../../js/utils'
 import { withPrefixSVG, withPrefix } from '../../utils/temp-link'
 
@@ -27,24 +28,35 @@ const Map = (props) => {
             .attr("d", path)
     }); 
 */
+    let p1= get_data().then((data) => {
+		 console.debug('DWGH');
+		 console.debug(data);
+		 
+    });
+    
+
     const elemRef = useRef(null);
+
     
  useEffect(() => {
      var width = 900;
-      var height = 600;
+     var height = 600;
+     let us= new Object
+     let promise = d3.json("https://cdn.jsdelivr.net/npm/us-atlas@2/us/10m.json")
+	 .then( us => {
+	     console.log(us);
+	     
+	     
+		 //chart(elemRef.current, us);
+	 });
+ 
+ 
 
-     console.debug(withPrefixSVG());
+	   
      
-     d3.select(elemRef.current)
-	 .append('h5')
-	 .append('text')
-	 .text(`D3 version: ${d3.version}`)
- })
+ })  //use effect
   return (
 	  <div ref={elemRef} >
-	  <svg viewBox="22 60 936 525"> 
-	  <use xlinkHref={withPrefixSVG('/maps/states/all.svg') + '#states'}></use>
-	  </svg>
 	  </div>
   )
 }
@@ -66,3 +78,95 @@ const ramp = (color, n = 512) => {
     return canvas;
     
 }
+
+
+
+const chart = (node,us) => {
+    const width = 960;
+    const height = 600;
+    const path = d3.geoPath();
+    const color = d3.scaleSequentialQuantile([...data.values()], t => d3.interpolateBlues(t));
+
+
+
+    let format = d => { return "$" + d3.format(",.0f")(d); } 
+  
+    const svg = d3.select(node).append('svg')
+      .style("width", "100%")
+      .style("height", "auto")
+      .attr("fill", "#E0E2E3");
+
+  svg.append("g")
+      .attr("transform", "translate(600,40)")
+      .call(legend);
+
+
+    console.log(us);
+    
+  svg.append("g")
+    .selectAll("path")
+    .data(topojson.feature(us, us.objects.counties).features)
+    .join("path")
+      .attr("fill", d => color(data.get(d.id)))
+      .attr("d", path)
+      .attr("stroke", "#CACBCC")
+    .append("title")
+      .text(d => `${d.properties.name} County, ${states.get(d.id.slice(0, 2)).name}
+${format(data.get(d.id))}`);
+/*
+  svg.append("path")
+      .datum(topojson.mesh(us, us.objects.states, (a, b) => a !== b))
+      .attr("fill", "none")
+      .attr("stroke", "#9FA0A1")
+      .attr("stroke-linejoin", "round")
+      .attr("d", path);
+
+  return svg.node();
+
+*/
+
+
+}
+
+
+
+
+const legend = g => {
+  
+  const width = 240;
+  
+  g.append("image")
+      .attr("width", width)
+      .attr("height", 8)
+      .attr("preserveAspectRatio", "none")
+	.attr("xlink:href", "www.google.com");
+  
+   g.append("text")
+      .attr("class", "caption")
+      .attr("y", -6)
+      .attr("fill", "#000")
+      .attr("text-anchor", "start")
+	.attr("font-weight", "bold")
+	.text("foo");
+
+  /*
+      .text(data.title);
+
+
+
+  g.call(d3.axisBottom(d3.scalePoint(["lowest", "median", "highest"], [0, width]))
+      .tickSize(13))
+    .select(".domain")
+      .remove();
+*/ 
+}
+
+
+
+const get_data = async ()=> {
+    let data=Object.assign(new Map(await d3.csv("https://raw.githubusercontent.com/rentry/rentry.github.io/master/data/revenue-test.csv", ({id, rate}) => [id, +rate])), {title: "Revenue from natural resources on federal land"});
+    console.debug(data);
+    return data;
+}
+
+

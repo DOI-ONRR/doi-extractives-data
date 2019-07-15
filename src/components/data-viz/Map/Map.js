@@ -28,26 +28,25 @@ const Map = (props) => {
             .attr("d", path)
     }); 
 */
-    let p1= get_data().then((data) => {
-		 console.debug('DWGH');
-		 console.debug(data);
-		 
-    });
     
 
     const elemRef = useRef(null);
 
     
- useEffect(() => {
+    useEffect( () => {
      var width = 900;
      var height = 600;
      let us= new Object
      let promise = d3.json("https://cdn.jsdelivr.net/npm/us-atlas@2/us/10m.json")
 	 .then( us => {
 	     console.log(us);
+	     let data;
+	     let p= get_data().then((data)=>{
+		 console.debug(data)
+		 chart(elemRef.current, us,data);
+	     });
 	     
-	     
-		 //chart(elemRef.current, us);
+	     //
 	 });
  
  
@@ -81,13 +80,13 @@ const ramp = (color, n = 512) => {
 
 
 
-const chart = (node,us) => {
+const chart = (node,us,data) => {
     const width = 960;
     const height = 600;
     const path = d3.geoPath();
-    const color = d3.scaleSequentialQuantile([...data.values()], t => d3.interpolateBlues(t));
+    const color = d3.scaleSequentialQuantile(data.values, t => d3.interpolateBlues(t));
 
-
+    console.debug(color);
 
     let format = d => { return "$" + d3.format(",.0f")(d); } 
   
@@ -107,12 +106,13 @@ const chart = (node,us) => {
     .selectAll("path")
     .data(topojson.feature(us, us.objects.counties).features)
     .join("path")
-      .attr("fill", d => color(data.get(d.id)))
+	.attr("fill", d => color(data.get(d.id)))
       .attr("d", path)
       .attr("stroke", "#CACBCC")
     .append("title")
-      .text(d => `${d.properties.name} County, ${states.get(d.id.slice(0, 2)).name}
-${format(data.get(d.id))}`);
+	.text( d=>`${d.properties.name} County` );
+    //      .text(d => `${d.properties.name} County, ${states.get(d.id.slice(0, 2)).name}
+// ${format(data.get(d.id))}`);
 /*
   svg.append("path")
       .datum(topojson.mesh(us, us.objects.states, (a, b) => a !== b))
@@ -131,7 +131,7 @@ ${format(data.get(d.id))}`);
 
 
 
-const legend = g => {
+const legend = (g,title) => {
   
   const width = 240;
   
@@ -147,10 +147,8 @@ const legend = g => {
       .attr("fill", "#000")
       .attr("text-anchor", "start")
 	.attr("font-weight", "bold")
-	.text("foo");
 
-  /*
-      .text(data.title);
+	.text(title);
 
 
 
@@ -158,13 +156,22 @@ const legend = g => {
       .tickSize(13))
     .select(".domain")
       .remove();
-*/ 
+
 }
 
 
 
 const get_data = async ()=> {
-    let data=Object.assign(new Map(await d3.csv("https://raw.githubusercontent.com/rentry/rentry.github.io/master/data/revenue-test.csv", ({id, rate}) => [id, +rate])), {title: "Revenue from natural resources on federal land"});
+    let data= await d3.csv("https://raw.githubusercontent.com/rentry/rentry.github.io/master/data/revenue-test.csv", ({id, rate}) => [id, +rate]).then( (d) => {
+	console.debug(d);
+	let r={values:[],title:"Title", keyValues: {} }
+	for(let ii=0; ii< d.length; ii++) {
+	    r.values.push(d[ii][1]);
+	    r.keyValues[d[ii][0]]=d[ii][1];
+	}
+	r.get = (id) => {return r.keyValues[id]};
+	return r;
+    });
     console.debug(data);
     return data;
 }

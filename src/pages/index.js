@@ -210,7 +210,16 @@ class HomePage extends React.Component {
                title="Learn about extractive industries in each state"
                info="Explore production, revenue, and disbursements data for each state."
                states={this.props.data.states_data.states}
-               offshore_regions={this.props.data.offshore_data.offshore_regions}/>
+               offshore_regions={this.props.data.offshore_data.offshore_regions}
+               mapFeatures="states"
+/>
+          <MapSection 
+               title="Learn about extractive industries in each state"
+               info="Explore production, revenue, and disbursements data for each state at county level."
+               states={this.props.data.states_data.states}
+               offshore_regions={this.props.data.offshore_data.offshore_regions}
+               mapFeatures="counties"
+/>
                
           <section id="map-section" className={styles.mapSection}>
             <div className={styles.mapSectionContainer + ' container-page-wrapper'}>

@@ -25,5 +25,8 @@
 }
 
 .containerRight {
-     width: 70%;
+    width: 70%;
+    min-height: 400px;/* bunt on proper height*/
+    //height: 600px;/* bunt on proper height*/
+    border: 1px solid;
 }

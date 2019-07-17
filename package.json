@@ -13,7 +13,7 @@
     "copy-dir": "^0.4.0",
     "currency-formatter": "^1.5.3",
     "d3": "^5.5.0",
-    "gatsby": "^2.3.34",
+    "gatsby": "^2.13.25",
     "gatsby-plugin-manifest": "^2.0.5",
     "gatsby-plugin-meta-redirect": "^1.1.1",
     "gatsby-plugin-offline": "^2.0.5",

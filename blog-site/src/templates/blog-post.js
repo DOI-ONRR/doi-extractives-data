@@ -33,13 +33,7 @@ class BlogPostTemplate extends React.Component {
           }
         </Helmet>
 
-        <h1
-          style={{
-            ...scale(1.3),
-            lineHeight: '1',
-            fontWeight: 800,
-          }}
-        >{post.frontmatter.title}</h1>
+        <h1 className="post-heading">{post.frontmatter.title}</h1>
         <p
           style={{
             ...scale(-1 / 5),

@@ -95,7 +95,7 @@ const NAV_ITEMS = [
 class StatePages extends React.Component {
   constructor (props) {
     super(props)
-    console.log(props)
+
     this.usStateMarkdown = props.pageContext.stateMarkdown
     this.commodities = props.pageContext.commodities
     this.commoditiesCounty = props.pageContext.commoditiesCounty

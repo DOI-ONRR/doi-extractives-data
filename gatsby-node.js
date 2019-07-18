@@ -255,10 +255,12 @@ const createProductionCommoditiesData = (groupByCommodity, groupByYear, stateId)
       let node = element.node
       let year = parseInt(node.ProductionYear)
       if (commodityProductionYears.includes(year) && node.State === stateId) {
-        total[item.id] = total[item.id] || { name: name, units: node.Units, withheld: node.Withheld, volume: {} }
+        total[item.id] = total[item.id] || { name: name, units: node.Units, withheld: node.Withheld, total: 0, volume: {} }
         total[item.id].volume[year] = (total[item.id].volume[year])
           ? total[item.id].volume[year] + node.Volume
           : node.Volume
+
+          total[item.id].total += total[item.id].volume[year];
       }
     })
 
@@ -273,6 +275,7 @@ const createProductionCommoditiesData = (groupByCommodity, groupByYear, stateId)
     })
   })
   Object.keys(commoditiesProduction).forEach(commodity => {
+    commoditiesProduction[commodity].total = parseInt(commoditiesProduction[commodity].total)
     Object.keys(commoditiesProduction[commodity].volume).forEach(year => {
       commoditiesProduction[commodity].volume[year] = parseInt(commoditiesProduction[commodity].volume[year])
     })

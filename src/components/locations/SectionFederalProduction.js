@@ -23,6 +23,8 @@ const SectionFederalProduction = props => {
 
   const usStateFederalProducts = props.production
 
+  console.log(usStateFederalProducts)
+
   let commodityYearsSortDesc = props.productionYears.slice(0)
   commodityYearsSortDesc.sort((a, b) => b - a)
   let year = props.productionYears[props.productionYears.length - 1]
@@ -67,6 +69,7 @@ const SectionFederalProduction = props => {
 
         <div className="chart-list">
           {Object.keys(usStateFederalProducts).map((productKey, index) => {
+            if(usStateFederalProducts[productKey].total === 0) return;
             let product = usStateFederalProducts[productKey]
             let productName = product.name
             let productSlug = utils.formatToSlug(productName, { lower: true })

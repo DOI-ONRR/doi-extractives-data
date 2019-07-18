@@ -35,6 +35,12 @@
   text-align: center;
 }
 
+.post-heading {
+  font-size: 2.5rem;
+  line-height: 1;
+  font-weight: 800;
+}
+
 p + h2 {
   margin-bottom: .7rem;
 }
@@ -146,5 +152,8 @@ a:hover {
   .masthead {
     font-size: 1.7rem;
     line-height: 1.9rem;
+  }
+  .post-heading {
+    font-size: 1.7rem;
   }
 }

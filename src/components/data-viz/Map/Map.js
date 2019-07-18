@@ -34,8 +34,8 @@ const Map = (props) => {
     const mapFeatures=props.mapFeatures || "counties";
     const mapData=props.mapData || [];  
     const elemRef = useRef(null);
-
-    
+    const colorScheme=props.colorScheme || "green" ;
+    const onClick=props.onClick || function (d,i) {console.debug("Default on click", d,i)};
     useEffect( () => {
      let us= new Object
 	let promise = d3.json(mapJson)
@@ -43,10 +43,10 @@ const Map = (props) => {
 	     let states = get_states(us);
 	     console.log(states);
 	     let data=observable_data(mapData);
-//	     let p= get_data().then((data)=>{
+//	     let p= get_data().then((data)=>{3
 //		 chart(elemRef.current, us,mapFeatures,data);
 //	     });
-	     chart(elemRef.current, us,mapFeatures,data);
+	     chart(elemRef.current, us,mapFeatures,data, colorScheme,onClick);
 	     //
 	 });
  
@@ -83,13 +83,29 @@ const ramp = (node, color, n = 512) => {
 
 
 
-const chart = (node,us,mapFeatures,data) => {
+const chart = (node,us,mapFeatures,data, colorScheme,onClick) => {
+    
     const width = node.scrollWidth;
     const height = node.scrollHeight;
     const path = d3.geoPath();
-    const color = d3.scaleSequentialQuantile(data.values, t => d3.interpolateBlues(t));
-
-
+    let color = ()=>{};
+    // switch quick and dirty to let users change color beter to use d3.interpolateRGB??
+    switch(colorScheme) {
+    case 'blue':
+	color=d3.scaleSequentialQuantile(data.values, t => d3.interpolateBlues(t));
+	break;
+    case 'green':
+	color=d3.scaleSequentialQuantile(data.values, t => d3.interpolateGreens(t));
+	break;
+    case 'red':
+	color=d3.scaleSequentialQuantile(data.values, t => d3.interpolateReds(t));
+	break;
+    case 'grey':
+	color=d3.scaleSequentialQuantile(data.values, t => d3.interpolateGreys(t));
+	break;
+    default:
+	color=d3.scaleSequentialQuantile(data.values, t => d3.interpolateGreens(t));
+    }
     let format = d => { if(isNaN(d)) {return "" } else {return "$" + d3.format(",.0f")(d);} } 
   
     const svg = d3.select(node).append('svg')
@@ -105,15 +121,26 @@ const chart = (node,us,mapFeatures,data) => {
 
     let states = get_states(us);
     console.debug(states);
-  svg.append("g")
-    .selectAll("path")
-    .data(topojson.feature(us, us.objects[mapFeatures]).features)
-    .join("path")
+    svg.append("g")
+	.selectAll("path")
+	.data(topojson.feature(us, us.objects[mapFeatures]).features)
+	.join("path")
 	.attr("fill", d => color(data.get(d.id)))
-      .attr("d", path)
-      .attr("stroke", "#CACBCC")
-    .append("title")
-	.text(d => `${d.properties.name} County, ${states.get(d.id.slice(0, 2)).name} ${format(data.get(d.id))}`);
+    	.attr("d", path)
+	.attr("stroke", "#CACBCC")
+	.on("click", (d,i) => {onClick(d,i)} )
+	.on("mouseover", (d,i) => {console.debug(d,i),
+				   d3.select(this).style('fill-opacity', 1); 
+				  })
+    	.on("mouseout", (d,i) => {console.debug(d,i),
+				   d3.selectAll('path')
+				   .style({
+                                       'fill-opacity':.7
+				   });
+
+				  })
+	.append("title")
+	.text(d => `${d.properties.name}  ${format(data.get(d.id))}`);
     /*
   svg.append("path")
       .datum(topojson.mesh(us, us.objects.states, (a, b) => a !== b))
@@ -125,6 +152,7 @@ const chart = (node,us,mapFeatures,data) => {
   return svg.node();
 
 */
+
 
 
 }
@@ -142,6 +170,7 @@ const legend = (g,title,data) => {
 	.attr("preserveAspectRatio", "none")
 	.attr("xlink:href", "");
   
+
 
   
    g.append("text")

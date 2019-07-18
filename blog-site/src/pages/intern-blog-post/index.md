@@ -1,5 +1,5 @@
 ---
-title: "Summer Internship Q&A"
+title: "A Q&A with our summer intern"
 authors:
 - Edward Chang
 - Ryan Johnson

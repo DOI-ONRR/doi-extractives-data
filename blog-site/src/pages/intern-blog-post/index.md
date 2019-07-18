@@ -27,7 +27,7 @@ Computers have always interested me since childhood. I always enjoyed the comput
 
 ## What did you expect to work on during this internship before it started?
 
-I wasn’t completely sure what I was going to be working on. I knew that I was going to help transfer the website to [GatsbyJS](https://www.gatsbyjs.org/) and maybe some do some work with [Python](https://www.python.org/). Maybe design an algorithm for data or something.
+I wasn’t completely sure what I was going to be working on. I knew that I was going to help transfer the website to [GatsbyJS](https://www.gatsbyjs.org/) and maybe do some work with [Python](https://www.python.org/). Maybe design an algorithm for data or something.
 
 ## What have you been working on during your internship?
 

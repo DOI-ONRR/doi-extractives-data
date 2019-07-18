@@ -348,6 +348,7 @@ const createStatePages = (createPage, graphql) => {
                 RevenueType
                 State
                 FipsCode
+                County
               }
             }
           }

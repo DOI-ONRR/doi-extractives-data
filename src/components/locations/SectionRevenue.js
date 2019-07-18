@@ -26,6 +26,8 @@ const SectionRevenue = props => {
 
   const usStateCountyRevenue = props.commoditiesCounty 
 
+  console.log(props)
+
 
   let allCommoditiesValues = {}
   let allCommoditiesSlug, allCommoditiesChartName
@@ -212,6 +214,7 @@ const SectionRevenue = props => {
                                   <div className="inner-table-wrapper">
                                     <table>
                                       {(lazy(usStateCountyRevenue).toArray()).map((countyData, index) => {
+                                        console.log(countyData)
                                         if (countyData[1].revenue[year] > 0) {
                                           let yearsValue = countyData[1].revenue
                                           let productVolume = countyData[1].revenue[year]

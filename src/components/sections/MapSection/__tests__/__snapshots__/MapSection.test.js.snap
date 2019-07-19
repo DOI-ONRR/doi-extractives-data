@@ -4,6 +4,42 @@ exports[`MapSection renders correctly 1`] = `
 <section
   className="root"
 >
-  YAY!!!!!!!!!!
+  <div
+    className="container container-page-wrapper"
+  >
+    <div
+      className="containerLeft"
+    >
+      <h3 />
+      <p />
+      <select
+        className="select-dark-gray"
+        defaultValue="Choose location"
+        id="location-selector"
+        onChange={[Function]}
+      >
+        <option
+          disabled={true}
+          value="Choose location"
+        >
+          Choose location
+        </option>
+        <optgroup
+          label="States"
+        />
+        <optgroup
+          label="Offshore Regions"
+        />
+      </select>
+    </div>
+    <div
+      className="containerRight"
+    >
+      <div
+        className="map"
+      />
+       
+    </div>
+  </div>
 </section>
 `;

@@ -34,15 +34,13 @@ query MyQuery {
     } else if (props.mapFeatures == 'counties') {
 	data=county_summary(results.allResourceRevenuesFiscalYear.nodes);
     }
-    console.debug(data);    
 //    console.debug(props)
-    let states=props.states
-    console.debug(states);
+    let states=props.states || [];
     let options=states.map((value)=>{ return {value:value.state.frontmatter.unique_id,
 					      name:value.state.frontmatter.title}})
 //    console.debug(options);
     
-    let offshore_regions =props.offshore_regions
+    let offshore_regions =props.offshore_regions || []
 return (
         <section className={styles.root}>
 	<div className={styles.container +' container-page-wrapper'}>

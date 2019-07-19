@@ -122,7 +122,6 @@ const RevenueTrends = () => {
 `) 
 
 
-    console.debug(data);
     
       let fiscalYearData = JSON.parse(JSON.stringify(data.allMonthlyRevenuesByFiscalYear.group)).sort((a, b) => (a.fiscalYear < b.fiscalYear) ? 1 : -1)
       

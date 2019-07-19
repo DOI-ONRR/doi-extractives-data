@@ -104,7 +104,6 @@ class HomePage extends React.Component {
   }
 
     render () {
-	console.log(this.props.data.states_data.states);
     return (
       <DefaultLayout>
         <main>
@@ -213,7 +212,6 @@ class HomePage extends React.Component {
                offshore_regions={this.props.data.offshore_data.offshore_regions}
                mapFeatures="states"
                onClick={ (d,i) => { 
-                   console.debug("inline anonymous", d,i);
                    let state=fipsAbbrev[d.id];
                    let url="/explore/"+state+"#revenue" 
                    window.location.href = url;
@@ -228,7 +226,6 @@ class HomePage extends React.Component {
                mapFeatures="counties"
                mapColor="blue"
                onClick={ (d,i) => { 
-                   console.debug("inline anonymous", d,i);
                    let state=fipsAbbrev[d.id.substring(0,2)];
                    
                    let url="/explore/"+state 

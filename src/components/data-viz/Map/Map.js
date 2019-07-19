@@ -35,13 +35,12 @@ const Map = (props) => {
     const mapData=props.mapData || [];  
     const elemRef = useRef(null);
     const colorScheme=props.colorScheme || "green" ;
-    const onClick=props.onClick || function (d,i) {console.debug("Default on click", d,i)};
+    const onClick=props.onClick || function (d,i) {console.debug("Default onClick function", d,i)};
     useEffect( () => {
      let us= new Object
 	let promise = d3.json(mapJson)
 	 .then( us => {
 	     let states = get_states(us);
-	     console.log(states);
 	     let data=observable_data(mapData);
 //	     let p= get_data().then((data)=>{3
 //		 chart(elemRef.current, us,mapFeatures,data);
@@ -64,22 +63,6 @@ const Map = (props) => {
 export default Map
 
 
-
-
-const ramp = (node, color, n = 512) => {
-/*    const canvas = node.canvas(n, 1);
-    const context = canvas.getContext("2d");
-    canvas.style.margin = "0 -14px";
-    canvas.style.width = "calc(100% + 28px)";
-    canvas.style.height = "40px";
-    canvas.style.imageRendering = "pixelated";
-    for (let i = 0; i < n; ++i) {
-	context.fillStyle = color(i / (n - 1));
-	context.fillRect(i, 0, 1, 1);
-    }
-    return canvas;
-  */  
-}
 
 
 
@@ -116,42 +99,42 @@ const chart = (node,us,mapFeatures,data, colorScheme,onClick) => {
 
   svg.append("g")
       .attr("transform", "translate(600,40)")
-	.call(legend,data.title, color);
+	.call(legend,data.title, data, color);
 
 
     let states = get_states(us);
-    console.debug(states);
+
     svg.append("g")
 	.selectAll("path")
 	.data(topojson.feature(us, us.objects[mapFeatures]).features)
 	.join("path")
 	.attr("fill", d => color(data.get(d.id)))
+    	.attr("fill-opacity", .9)
     	.attr("d", path)
 	.attr("stroke", "#CACBCC")
 	.on("click", (d,i) => {onClick(d,i)} )
-	.on("mouseover", (d,i) => {console.debug(d,i),
-				   d3.select(this).style('fill-opacity', 1); 
-				  })
-    	.on("mouseout", (d,i) => {console.debug(d,i),
-				   d3.selectAll('path')
-				   .style({
-                                       'fill-opacity':.7
-				   });
+	.on("mouseover", function(d,i) {   // ES6 function find the this node is alluding me
 
-				  })
+	    d3.select(this).style('fill-opacity', .7); 
+	})
+    	.on("mouseout", (d,i) => {
+	    d3.selectAll('path')
+		.style('fill-opacity',.9)
+	}
+	)
 	.append("title")
 	.text(d => `${d.properties.name}  ${format(data.get(d.id))}`);
-    /*
-  svg.append("path")
-      .datum(topojson.mesh(us, us.objects.states, (a, b) => a !== b))
-      .attr("fill", "none")
-      .attr("stroke", "#9FA0A1")
-      .attr("stroke-linejoin", "round")
-      .attr("d", path);
+   
+    svg.append("path")
+	.datum(topojson.mesh(us, us.objects.states, (a, b) => a !== b))
+	.attr("fill", "none")
+	.attr("stroke", "#9FA0A1")
+	.attr("stroke-linejoin", "round")
+	.attr("d", path);
+    
+    return svg.node();
+    
 
-  return svg.node();
-
-*/
 
 
 
@@ -160,19 +143,33 @@ const chart = (node,us,mapFeatures,data, colorScheme,onClick) => {
 
 
 
-const legend = (g,title,data) => {
-  
-  const width = 240;
+const legend = (g,title,data,color) => {
+/*
 
-  g.append("image")
-      .attr("width", width)
-      .attr("height", 8)
-	.attr("preserveAspectRatio", "none")
-	.attr("xlink:href", "");
-  
+    g.append("rect")
+	.attr("x", 200)
+	.attr("y", 300)
+	.attr("width", ls_w)
+	.attr("height", ls_h)
+	.style("fill", '#FF00FF')
+	.style("opacity", 1);
 
-
-  
+    g.append("text")
+	.attr("x", 50)
+	.attr("y", function(d, i){ return height - (i*ls_h) - ls_h - 4;})
+	.text(function(d, i){ return "label "+i });
+*/
+    const width = 240;
+    const height= 15;
+    let sorted=data.values.sort((a,b)=>a-b);
+    for(let ii=0;ii<sorted.length; ii++) {
+	g.append("rect")
+	    .attr("x",ii*width/sorted.length)
+	    .attr("width",width/sorted.length)
+ 	    .attr("height",height)
+	    .style("fill", color(sorted[ii]))
+    }
+  	
    g.append("text")
       .attr("class", "caption")
       .attr("y", -6)
@@ -207,12 +204,10 @@ const observable_data = (d)=> {
 
 const get_states = (us)=> {
     let r={values: [] , keys: [], keyValues: {}};
-    console.debug(us);
     for(let key in  us.objects.states.geometries) {
 	let state= us.objects.states.geometries[key];
 	let id=state.id;
-//	console.debug(strKey.padStart(2,'0'));
-//	state=strKey.padStart(2,'0');
+
 
 	let value=state.properties.name;
 
@@ -224,8 +219,7 @@ const get_states = (us)=> {
 
 	
     }
-    r.get = (id) => {console.debug(id); console.debug('DWGH'); console.debug(r); return r.keyValues[id]};
-	console.debug( r );
+    r.get = (id) => { return r.keyValues[id]};
     return r;
 
 }

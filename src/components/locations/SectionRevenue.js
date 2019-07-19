@@ -26,9 +26,6 @@ const SectionRevenue = props => {
 
   const usStateCountyRevenue = props.commoditiesCounty 
 
-  console.log(props)
-
-
   let allCommoditiesValues = {}
   let allCommoditiesSlug, allCommoditiesChartName
   if (commodities) {

@@ -7,29 +7,17 @@ import utils from '../../../js/utils'
 import { withPrefixSVG, withPrefix } from '../../utils/temp-link'
 import styles from './Map.module.scss'
 
-const Map = (props) => {
-/*   var width = 900;
-      var height = 600;
-
-      var projection = d3.geo.mercator();
-      
-      var svg = d3.select("#map-d3").append("svg")
-          .attr("width", width)
-          .attr("height", height);
-    var path = d3.geo.path()
-        .projection(projection);
-    var g = svg.append("g");
-    
-    d3.json("world-110m2.json", function(error, topology) {
-        g.selectAll("path")
-            .data(topojson.object(topology, topology.objects.countries)
-                  .geometries)
-            .enter()
-            .append("path")
-            .attr("d", path)
-    }); 
+/**
+*  Map  a component for rendering maps dynamically from  data
+*
+*  @param {string} [mapJson="https://cdn.jsdelivr.net/npm/us-atlas@2/us/10m.json"]  mapJson - url to get the topojson used in map. 
+*  @param {string} [mapFeatures=counties] mapFeatures - A switch to view county data or state data
+*  @param {string[][]} mapData - a two dimenstional arrray of fips and data, maybe county or state fips
+*  @param {string} [colorScheme=green] colorScheme current lets you modify color from red to blue green or gray ;
+*  @param {*} onClick function that determines what to do if area is clicked
+*
 */
-
+const Map = (props) => {
     const mapJson=props.mapJson || "https://cdn.jsdelivr.net/npm/us-atlas@2/us/10m.json";
     const mapFeatures=props.mapFeatures || "counties";
     const mapData=props.mapData || [];  
@@ -64,7 +52,17 @@ export default Map
 
 
 
-
+/**
+*  The function that does the building of the svg with d3
+*
+*  @param {*}  node - the node we are going to build the svg in
+*  @param {*} us - the topojson json object to be used
+*  @param {string} [mapFeatures=counties] mapFeatures - A switch to view county data or state data
+*  @param {string[][]} data - a two dimenstional arrray of fips and data, maybe county or state fips
+*  @param {string} [colorScheme=green] colorScheme current lets you modify color from red to blue green or gray ;
+*  @param {*} onClick function that determines what to do if area is clicked
+*
+*/
 
 const chart = (node,us,mapFeatures,data, colorScheme,onClick) => {
     
@@ -140,6 +138,15 @@ const chart = (node,us,mapFeatures,data, colorScheme,onClick) => {
 
 }
 
+/**
+*  The function that does the building of the svg with d3
+*
+*  @param {*}  g - the group node we are going to build the legend in
+*  @param {string} title - the title of the map
+*  @param {string[][]} data - a two dimenstional arrray of fips and data, maybe county or state fips used to generate legend colors
+*  @param {string} [colorScheme=green] colorScheme current lets you modify color from red to blue green or gray ;
+*
+*/
 
 
 
@@ -188,6 +195,13 @@ const legend = (g,title,data,color) => {
 
 }
 
+/**
+*  The function that mimics Observable Map() funtcion to allow minimal change to prototype. 
+*
+*  @param {array[][]}  d - two diminational array of data
+*  @return {object} returns an object with values as an array keys as an array and a get accessor for getting the data
+*
+*/
 
 
 const observable_data = (d)=> {
@@ -201,6 +215,15 @@ const observable_data = (d)=> {
 	return r;
 
 }
+
+/**
+*  The function that mimics Observable Map() funtcion for topojson data
+*
+*  @param {object}  us - topojson data object
+*  @return {object} returns an object with values as an array keys as an array and a get accessor for getting the data
+*
+*/
+
 
 const get_states = (us)=> {
     let r={values: [] , keys: [], keyValues: {}};

@@ -9,7 +9,19 @@ import Select from '../../selectors/Select'
 import styles from './MapSection.module.scss'
 import Map from '../../data-viz/Map' 
 
-
+/**
+*  MapSection  a section component that renders data with location navigation.  
+*  Caveat either MapSection should be generalized so graphql can be provided or this component should renamed RevenueMapSection 
+*
+*  @param {string}  title - A string that is the bold large text in section
+*  @param {string}  info - A string that is the smaller info text in section
+*  @param {array[]} states - a list of states for building drop down.  With location table we could encapsulate that here or even in Location
+*  @param {array[]} offshore_regions - a list of regions  for building drop down.  With location table we could encapsulate that here or even in Location
+*  @param {string} [mapFeatures=counties] mapFeatures - A switch to view county data or state data
+*  @param {string} [colorScheme=green] colorScheme current lets you modify color from red to blue green or gray ;
+*  @param {*} onClick function that determines what to do if area is clicked
+*
+*/
 
 
 const MapSection = (props) => {
@@ -72,6 +84,13 @@ return (
 }
 export default MapSection
 
+/**
+*  state_summary - helper function to summarize data to state level. 
+*
+*  @param {*}  graphql result set with revenue, county and state for current fiscal year
+*  @return  array[][] returns two diminsional array of fips, revenue for use in map
+*/
+
 
 const state_summary = (data)=> {
     let sumData={};
@@ -94,6 +113,13 @@ const state_summary = (data)=> {
     return r;
 }
 
+/**
+*  county_summary - helper function to summarize data to county level. 
+*
+*  @param {*}  graphql result set with revenue, county and state for current fiscal year
+*  @return  array[][] returns two diminsional array of fips, revenue for use in map
+*/
+
 const county_summary = (data)=> {
     let sumData={};
     for(let ii=0; ii<data.length; ii++) {
@@ -114,6 +140,13 @@ const county_summary = (data)=> {
     }
     return r;
 }
+
+
+/**
+*  state_fips object for looking up fips from abbrev
+*
+*
+*/
 
 const state_fips={
   "AK": "02",

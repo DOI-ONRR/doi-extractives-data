@@ -22,8 +22,8 @@ tag:
 
 <p class="downloads-download_links-intro">Download production data by month:
   <ul class="downloads-download_links list-unstyled">
-    <li><excel-link to="/downloads/monthly_production_07-2019.xlsx">Production by month, 1/2008–3/2019 (Excel, 52 KB)</excel-link></li>
-    <li><csv-link to="/downloads/monthly_production_07-2019.csv">Production by month, 1/2008–3/2019 (csv, 71 KB)</csv-link></li>
+    <li><excel-link to="/downloads/production/monthly_production.xlsx">Production by month, 1/2008–3/2019 (Excel, 52 KB)</excel-link></li>
+    <li><csv-link to="/downloads/csv/production/monthly_production.csv">Production by month, 1/2008–3/2019 (csv, 71 KB)</csv-link></li>
   </ul>
 </p>
 

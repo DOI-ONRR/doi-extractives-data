@@ -24,7 +24,7 @@ const SectionRevenue = props => {
   commodityYearsSortDesc.sort((a, b) => b - a)
   let year = commodityYears[props.commodityYears.length - 1]
 
-  const usStateCountyRevenue = props.commoditiesCounty 
+  const usStateCountyRevenue = props.commoditiesCounty
 
   let allCommoditiesValues = {}
   let allCommoditiesSlug, allCommoditiesChartName
@@ -265,7 +265,7 @@ const SectionRevenue = props => {
               </section>
             </section>
           </div>
-          :						          <div className="chart-description">
+          : <div className="chart-description">
 							No natural resources were produced on federal land in {usStateData.title} in { commodityYearsSortDesc[0] }, so ONRR did not collect any non-tax revenues.
           </div>
         }

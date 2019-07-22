@@ -62,8 +62,13 @@ class BlogPostTemplate extends React.Component {
           >
             <img
                     src={author.pic}
-                    alt={author.id + ` profile image`}
-                    className="author-image"
+                    alt={`Author profile image`}
+                    style={{
+                      marginRight: rhythm(1 / 2),
+                      marginBottom: 0,
+                      width: rhythm(2),
+                      height: rhythm(2),
+                    }}
                   />
             <p
               style={{

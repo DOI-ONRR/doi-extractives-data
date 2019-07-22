@@ -10,7 +10,7 @@ tags:
 - python
 - open data
 - gatsby
-date: "2019-07-18"
+date: "2019-07-23"
 ---
 
 Edward Chang joined our team this summer for a 2-month internship. Our team tries to involve interns in our core work, and Edward has made a number of meaningful contributions during his time with us.

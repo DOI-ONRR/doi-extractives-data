@@ -1,6 +1,6 @@
 ---
 title: Archive
-layout: howitworks-default
+layout: archive-default
 permalink: /archive/
 ---
 
@@ -17,7 +17,7 @@ permalink: /archive/
         <a href="https://eiti.org/"><img src="../public/img/logo-USEITI-color.svg" style="width: 90%;" alt="USEITI, United States Extractive Industries Transparency Initiative" /></a>
       </div>
       <div class="ribbon-card-bottom">
-        <p class="para-md"><archive-banner></archive-banner> We no longer update or maintain the content in this archive.</p>
+        <p class="para-md"><icon-archive></icon-archive>We no longer update or maintain the content in this archive.</p>
       </div>
     </div>
   </div>
@@ -118,8 +118,4 @@ permalink: /archive/
       </div>
     </section>
   </article>
-
-  <div class="container-right-3 how-it-works-page-toc">     
-    <page-toc scroll.offset='-50' exclude.class.names='h3'></page-toc>
-  </div>
 </div>

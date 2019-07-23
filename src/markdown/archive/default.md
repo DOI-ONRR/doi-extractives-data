@@ -90,11 +90,6 @@ permalink: /archive/
           <p>State agencies create regulations and rules about natural resource extraction. Local government agencies also play a role.</p>
           <p><a href="/how-it-works/state-laws-and-regulations/">Review state laws and regulations</a></p>
         </div>
-        <div>
-        <!--add links to opt-in archive pages when complete-->
-          <h3 class="h3 landing-heading">"Opt-in" states</h3>
-          <p>During USEITI, four states participated in a higher level of reporting on extractive revenue and disbursements. See the opt-in archives for Alaska, Colorado, Montana, and Wyoming.</p>
-        </div>
       </div>
     </section>
     <!--fill in the links and details-->

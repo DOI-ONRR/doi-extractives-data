@@ -104,7 +104,8 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
   return Promise.all([
   	createStatePages(createPage, graphql), 
   	createHowItWorksPages(createPage, graphql), 
-  	createDownloadsPages(createPage, graphql),
+	createDownloadsPages(createPage, graphql),
+	createArchivePages(createPage, graphql),
   	createCaseStudiesPages(createPage, graphql),
   	//createOffshorePages(createPage, graphql),
 	]);
@@ -245,6 +246,38 @@ const createHowItWorksPages = (createPage, graphql) => {
       })
     );
   });
+};
+
+const createArchivePages = (createPage, graphql) => {
+
+	const graphQLQueryString = "{"+GRAPHQL_QUERIES.MARKDOWN_ARCHIVE+"}";
+	
+	return new Promise((resolve, reject) => {
+	    resolve(
+	      graphql(graphQLQueryString).then(result => {
+	        if (result.errors) {
+	        	console.error(result.errors);
+	          reject(result.errors);
+	        }
+	        else{ 
+	        	// Create pages for each markdown file.
+		        result.data.allMarkdownRemark.pages.forEach(({ page }) => {
+		          const path = page.frontmatter.permalink;
+		          const template = getPageTemplate(page.frontmatter.layout);
+
+		          createPage({
+		            path,
+		            component: template,
+		            context: {
+		              markdown: page,
+		            },
+		          });
+		        });
+	        	resolve();
+	        }
+	      })
+	    );
+	  });
 };
 
 const createDownloadsPages = (createPage, graphql) => {

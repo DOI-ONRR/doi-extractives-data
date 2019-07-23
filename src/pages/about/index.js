@@ -160,31 +160,13 @@ const AboutPage = () => {
 
             <div className="container-left-7">
               <h2 id="history">History</h2>
+                <p>This site was originally built to support the United States' participation in the <a href="https://eiti.org/">Extractive Industries Transparency Initiative (EITI)</a>, which the U.S. joined in 2011.</p>
 
-              <p>The U.S. announced its intention to join the <a href="https://eiti.org/">Extractive Industries Transparency Initiative (EITI)</a> in 2011 as part of its <a href="https://www.opengovpartnership.org/">Open Government Partnership National Action Plans</a>. EITI is a voluntary, international standard that promotes open and accountable management of natural resources.</p>
+                <p>In November 2017, the U.S. decided to no longer formally implement the <GlossaryTerm>EITI Standard</GlossaryTerm>, but remains a strong supporter of good governance and the principles of transparency represented by the EITI.</p>
 
-              <p>The USEITI Annual Reports for 2015 and 2016 were published on this site as <Link to="/explore/">interactive data</Link>, along with <Link to="/downloads/report">Executive Summaries</Link>. Participation in the EITI helped the U.S. initiate a comprehensive open data effort around natural resource production and revenue generation on public lands.</p>
+                <p><Link to="/archive">Learn more about the history of the site and review the archive.</Link></p>
 
-              <p>In November 2017, the U.S. decided to no longer formally implement the <GlossaryTerm>EITI Standard</GlossaryTerm>, but remains a strong supporter of good governance and the principles of transparency represented by the EITI.</p>
-
-              <p>DOI is fully committed to institutionalizing the EITI principles of transparency and accountability, supported by the robust <Link to="/how-it-works/audits-and-assurances/">controls and assurances</Link> already in place in the U.S. This site is now a DOI resource for extractive industry data. We will continue to disclose revenue payments received for extractive operations on federal land, offer production data, report annual disbursements, and improve reporting by including additional states and tribes.</p>
             </div>
-
-            <div className="container-left-7">
-              <h3 id="timeline" className="h4">Timeline</h3>
-
-              <ul className="list-bullet">
-                <li><strong>December 2017:</strong> The Natural Resources Revenue Data Annual Report was published as an <Link to="/downloads/report/">Executive Summary</Link> and interactive data was updated throughout this website.</li>
-                <li><strong>November 2017:</strong> The U.S. withdrew as an EITI Implementing Country.</li>
-                <li><strong>November 2016:</strong> USEITI Annual Report was published as an <Link to="/downloads/report/">Executive Summary</Link> and interactive data.</li>
-                <li><strong>December 2015:</strong> USEITI Annual Report was published as an <Link to="/downloads/report/">Executive Summary</Link> and interactive data (available throughout this site).</li>
-                <li><strong>Summer of 2014:</strong> DOI selected Deloitte & Touche LLP as the <GlossaryTerm termKey="Independent Administrator (IA)">Independent Administrator</GlossaryTerm> for USEITI.</li>
-                <li><strong>March 2014:</strong> The EITI International Board accepted the U.S. as a candidate country.</li>
-                <li><strong>December 2013:</strong> The U.S. submitted an application to participate to the EITI International Board, which was developed by the MSG after engaging with stakeholders across the country.</li>
-                <li><strong>December 2012:</strong> The Secretary of the Interior formed a <a href="https://www.doi.gov/eiti/faca">multi-stakeholder group (MSG)</a>, which included representatives from government, industry, and <GlossaryTerm>civil society</GlossaryTerm>.</li>
-              </ul>
-            </div>
-
           </section>
 
         </div>

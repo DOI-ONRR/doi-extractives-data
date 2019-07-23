@@ -17,7 +17,8 @@ permalink: /archive/
         <a href="https://eiti.org/"><img src="../public/img/logo-USEITI-color.svg" style="width: 90%;" alt="USEITI, United States Extractive Industries Transparency Initiative" /></a>
       </div>
       <div class="ribbon-card-bottom">
-        <p class="para-md"><icon-archive></icon-archive>We no longer update or maintain the content in this archive.</p>
+      <icon-archive></icon-archive>
+        <p class="para-md">We no longer update or maintain the content in this archive.</p>
       </div>
     </div>
   </div>

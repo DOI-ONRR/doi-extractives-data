@@ -34,7 +34,7 @@ permalink: /archive/
   </div>
 
   <div class="container-left-7">
-    <h3 id="timeline">Timeline</h3>
+    <h3 id="timeline" class="h4">Timeline</h3>
     <p>
       <ul class="list-bullet">
         <li><strong>December 2017:</strong> The Natural Resources Revenue Data Annual Report was published as an <a href="about/report/">Executive Summary</a> and interactive data was updated throughout this website.</li>

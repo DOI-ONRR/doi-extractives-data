@@ -18,7 +18,10 @@ import styles from './Map.module.scss'
 *
 */
 const Map = (props) => {
-    const mapJson=props.mapJson || "https://cdn.jsdelivr.net/npm/us-atlas@2/us/10m.json";
+//    const mapJson=props.mapJson || "https://cdn.jsdelivr.net/npm/us-atlas@2/us/10m.json";
+    //use ONRR topojson file for land
+    const mapJson=props.mapJson || "/maps/land/us-topology.json";
+
     const mapFeatures=props.mapFeatures || "counties";
     const mapData=props.mapData || [];  
     const elemRef = useRef(null);
@@ -44,7 +47,8 @@ const Map = (props) => {
  })  //use effect
   return (
 	  <div className={styles.map} ref={elemRef} >
-	  </div>
+          </div>
+	  
   )
 }
 

@@ -38,14 +38,14 @@ permalink: /archive/
     <h3 id="timeline" class="h4">Timeline</h3>
     <p>
       <ul class="list-bullet">
-        <li><strong>December 2017:</strong> The Natural Resources Revenue Data Annual Report was published as an <a href="about/report/">Executive Summary</a> and interactive data was updated throughout this website.</li>
+        <li><strong>December 2017:</strong> The Natural Resources Revenue Data Annual Report was published as an <a href="downloads/report/">Executive Summary</a> and interactive data was updated throughout this website.</li>
         <li><strong>November 2017:</strong> The U.S. withdrew as an EITI Implementing Country.</li>
         <li><strong>November 2016:</strong> USEITI Annual Report was published as an <a href="downloads/report/">Executive Summary</a> and interactive data.</li>
         <li><strong>December 2015:</strong> USEITI Annual Report was published as an <a href="downloads/report/">Executive Summary</a> and interactive data (available throughout this site).</li>
         <li><strong>Summer of 2014:</strong> DOI selected Deloitte & Touche LLP as the <glossary-term termKey="Independent Administrator (IA)">Independent Administrator</glossary-term> for USEITI.</li>
         <li><strong>March 2014:</strong> The EITI International Board accepted the U.S. as a candidate country.</li>
         <li><strong>December 2013:</strong> The U.S. submitted an application to participate to the EITI International Board, which was developed by the MSG after engaging with stakeholders across the country.</li>
-        <li><strong>December 2012:</strong> The Secretary of the Interior formed a <a href="https://www.doi.gov/eiti/faca">multi-stakeholder group (MSG)</a>, which included representatives from government, industry, and <glossary-term>civil society</glossary-term>.</li>
+        <li><strong>December 2012:</strong> The Secretary of the Interior formed a multi-stakeholder group (MSG), which included representatives from government, industry, and <glossary-term>civil society</glossary-term>.</li>
       </ul>
     </p>
   </div>
@@ -56,9 +56,9 @@ permalink: /archive/
       <h2 id="executive-summaries" class="h2-bar">Executive summaries</h2>
       <div class="container landing-section">
         <div>
-          <h3 class="h3 landing-heading"><a href="/about/report/">Executive summaries</a></h3>
+          <h3 class="h3 landing-heading"><a href="/downloads/report/">Executive summaries</a></h3>
           <p>These reports outline progress made by the Department of the Interior and the Office of Natural Resources Revenue (ONRR) to enact the Extractive Industries Transparency Initiative (EITI). Reports are available for the years 2015, 2016, and 2017.</p>
-          <p><a href="/about/report/">Review the executive summaries</a></p>
+          <p><a href="/downloads/report/">Review the executive summaries</a></p>
         </div>
       </div>
     </section>

@@ -34,27 +34,27 @@ permalink: /how-it-works/onshore-oil-gas/
       <h1>Onshore Oil &amp; Gas</h1>
       <p class="revenues_subpage-intro_text">The Federal Land Policy and Management Act of 1976 and the Mineral Leasing Act of 1920 grant BLM the authority to manage federal lands, including leasing certain lands for oil and gas development. The Oil and Gas Management Program includes over 63,000 onshore oil and gas wells on federal lands.</p>
     </div>
+   <!-- start aside-->   
     <div class="revenues_subpage-office_container revenues_subpage-office_container_layout">
       <div class="revenues_subpage-office container">
         <div class="revenues_subpage-office_text">
-          <p>Managed and regulated by the <span><a href="http://www.boem.gov/">Bureau of Ocean Energy Management</a> (BOEM)</span> and the
-          <span><a href="http://www.bsee.gov/">Bureau of Safety and Environmental Enforcement</a> (BSEE)</span>.</p>
+          <p>Managed and regulated by the <span><a href="http://www.blm.gov/">Bureau of Land Management</a> (BLM)</span>.</p>
         </div>
         <div class="revenues_subpage-office_logos">
-          <img class="revenues_subpage-office_logo" src="/public/img/logos/BOEM-mark.png" alt="Bureau of Ocean Energy Management">
-          <img class="revenues_subpage-office_logo" src="/public/img/logos/BSEE-mark.png" alt="Bureau of Safety and Environmental Enforcement">
+          <img class="revenues_subpage-office_logo" src="/public/img/logos/BLM-mark.png" alt="Bureau of Land Management">
         </div>
       </div>
       <div class="revenues_subpage-office container">
         <div class="revenues_subpage-office_text">
-          <p>The <span><a href="http://www.onrr.gov/">Office of Natural Resources Revenue</a> (ONRR)</span> manages monetary transactions.</p>
+          <p>The <span><a href="http://www.onrr.gov/">Office of Natural Resources Revenue</a> (ONRR)</span> manages some monetary transactions.</p>
         </div>
         <div class="revenues_subpage-office_logos">
           <img class="revenues_subpage-office_logo" src="/public/img/logos/ONRR-mark.svg" alt="Office of Natural Resources Revenue">
         </div>
       </div>
     </div>
-  </div>
+ <!-- end aside-->   
+  </div>  
   <div class="revenues_subpage-steps onshore-oil">
     <section class="container-outer">
       <did-you-know color='blue' intro='Exploration for oil and gas changed significantly in the early 2000s, with new applications of extraction methods, known as horizontal drilling and hydraulic fracturing, commonly called “fracking.”'><span>These methods made extracting oil and gas deep below the surface of the earth in shale rock formations profitable.</span></p>

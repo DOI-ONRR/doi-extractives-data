@@ -2,21 +2,22 @@ import React, { useEffect, useRef }  from 'react'
 import ReactDOM from 'react-dom'
 
 import * as d3 from 'd3'
+import styles from './Sparkline.module.scss'
 import utils from '../../../js/utils'
 
 
 const Sparkline = ({data}) => {
 
   const spakeStyles = {
-    stroke: '#5c737f',
-    strokeWidth: 1,
-    fill: 'none',
+    //stroke: '#5c737f',
+    //strokeWidth: 1,
+    //fill: 'none',
   }
 
   const elemRef = useRef(null);
 
   useEffect(() => {
-    var width = 75;
+    var width = 85;
     var height = 20;
     var x = d3.scaleLinear().range([0, width - 3]);
     var y = d3.scaleLinear().range([height - 4, 0]);
@@ -39,14 +40,14 @@ const Sparkline = ({data}) => {
                 .attr('transform', 'translate(0, 2)');
     svg.append('path')
        .datum(data)
-       .attr('class', 'sparkline')
-       .attr('d', line);
+       .attr('class', styles.sparkline)
+       .attr('d', line)
+
     svg.append('circle')
-       .attr('class', 'sparkcircle')
-       .style('fill', 'steelblue')
+       .attr('class', styles.sparkcircle)
        .attr('cx', x(data[data.length - 1].year))
        .attr('cy', y(data[data.length - 1].amount))
-       .attr('r', 1);  
+       .attr('r', 2.3);  
   });
 
   return (

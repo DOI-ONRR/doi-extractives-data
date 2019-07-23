@@ -49,14 +49,14 @@ const SearchResults = () => {
             <div className="container-left-8">
               <h1 id="introduction">Search Results</h1>
             </div>
-            <div class="search-results-container">
-              <article class="search-results-container">
+            <div className="search-results-container">
+              <article className="search-results-container">
                 <ul>
-                  {results &&
+                  {results.length > 0 ?
                     results.map((item, index) => {
                       return <li key={ index }><Link to={ item.path }>{ item.title }</Link></li>
                     }
-                    )
+                    ) : <p><strong>We didn't find any results for your search.</strong> You might want to try searching for <GlossaryTerm termKey={queryString}>{queryString}</GlossaryTerm> in our glossary.</p>
                   }
                 </ul>
               </article>  

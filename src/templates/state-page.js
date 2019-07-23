@@ -20,6 +20,7 @@ import MobileNav from '../components/layouts/MobileNav'
 
 import DefaultLayout from '../components/layouts/DefaultLayout'
 
+
 const NAV_ITEMS = [
   {
     name: 'title',

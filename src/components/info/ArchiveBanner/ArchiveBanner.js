@@ -10,7 +10,7 @@ const ArchiveBanner = () => (
   <div className={styles.root}>
     <p className={styles.content}>
       <DataArchiveIcon/> This content was created as part of <GlossaryTerm termKey="EITI Standard">USEITI</GlossaryTerm> and is no longer being updated.
-      <Link to="/about/#history"> Learn more about USEITI.</Link>
+      <Link to="/archive"> Learn more about USEITI.</Link>
     </p>
   </div>
 )

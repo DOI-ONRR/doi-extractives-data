@@ -164,7 +164,7 @@ const AboutPage = () => {
 
                 <p>In November 2017, the U.S. decided to no longer formally implement the <GlossaryTerm>EITI Standard</GlossaryTerm>, but remains a strong supporter of good governance and the principles of transparency represented by the EITI.</p>
 
-                <p><Link to="/archive">Learn more about the history of the site and review the archive.</Link></p>
+                <p><Link to="/archive">Learn more about the history of this site and review the archive.</Link></p>
 
             </div>
           </section>

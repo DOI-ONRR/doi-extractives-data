@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import Helmet from 'react-helmet'
 
 import * as CONSTANTS from '../js/constants'
+import { PageToc } from '../components/navigation/PageToc'
 
 import hastReactRenderer from '../js/hast-react-renderer'
 

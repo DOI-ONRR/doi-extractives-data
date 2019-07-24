@@ -114,4 +114,7 @@ permalink: /archive/
       </div>
     </section>
   </article>
+      <div class="container-right-3 how-it-works-page-toc">     
+      <page-toc scroll.offset='-50' exclude.class.names='h3'></page-toc>
+    </div>
 </div>

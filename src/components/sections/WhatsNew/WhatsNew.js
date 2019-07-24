@@ -9,8 +9,8 @@ const WhatsNew = props => (
       <h2>What's new</h2>
       <p>In our latest release on July 24, 2019, we made the following changes:</p>
       <ul className="list-bullet ribbon-card-top-list">
-        <li>Published <Link to=blog/intern-blog-post/>blog post on our summer intern's experiences and contributions</Link></li>
-        <li>Added <Link to=archive-page/archive/>an archive page</Link> for content we no longer maintain</li>
+        <li>Published <Link to="blog/intern-blog-post/">blog post on our summer intern's experiences and contributions</Link></li>
+        <li>Added <Link to="archive-page/archive/">an archive page</Link> for content we no longer maintain</li>
       </ul>
 
       <p>Review our <a href="https://github.com/ONRR/doi-extractives-data/releases">full release details</a>.</p>

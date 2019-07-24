@@ -44,7 +44,7 @@ permalink: /archive/
           <li><strong>December 2012:</strong> The Secretary of the Interior formed a multi-stakeholder group (MSG), which included representatives from government, industry, and <glossary-term>civil society</glossary-term>.</li>
         </ul>
   <!-- Archive sections start here -->
-    <article class="container-left-8 container-shift-reverse-1">
+    <article class="container-left-12 container-shift-reverse-1">
       <section class="container">
         <h2 id="executive-summaries" class="h2-bar">Executive summaries</h2>
         <div class="container landing-section">

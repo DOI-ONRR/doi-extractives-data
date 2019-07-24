@@ -43,6 +43,9 @@ const Header = props => {
     else if (location.pathname.includes('/explore')) {
       exploreClassNames.className += ' active '
     }
+    else if (location.pathname.includes('/archive') ) {
+      aboutClassNames.className
+    }
     else {
       homeClassNames.className += ' active '
     }

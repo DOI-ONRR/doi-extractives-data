@@ -25,6 +25,7 @@ redirect_from: /how-it-works/production/
 </section>
 <div class="container-page-wrapper landing-wrapper">
   <main class="container-page-wrapper landing-wrapper">
+    <div class="nav-wrap">
     <article class="container-left-8 container-shift-reverse-1">
       <section class="container">
         <h2 id="ownership" alt="Land ownership" class="h2-bar">Who owns natural resources in the U.S.?</h2>
@@ -202,8 +203,8 @@ redirect_from: /how-it-works/production/
         </div>
       </section>
     </article>
+   </div> 
     <div class="container-right-3 how-it-works-page-toc">     
       <page-toc scroll.offset='-50' exclude.class.names='h3'></page-toc>
     </div>
   </main>
-</div>

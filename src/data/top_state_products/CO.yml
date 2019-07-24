@@ -736,3 +736,52 @@ revenue:
       value: 33.68
       rank: 1
       percent: null
+  '2018':
+    - product: All
+      name: null
+      units: null
+      value: 233260704.73
+      rank: 4
+      percent: 2.3
+    - product: Gas
+      name: null
+      units: null
+      value: 68005605.85
+      rank: 3
+      percent: 7.2
+    - product: Other Products
+      name: null
+      units: null
+      value: 50765754.87
+      rank: 1
+      percent: 37.6
+    - product: NGL
+      name: null
+      units: null
+      value: 28895191.3
+      rank: 3
+      percent: 7.3
+    - product: Coal
+      name: null
+      units: null
+      value: 23268252.22
+      rank: 4
+      percent: 4.5
+    - product: Oil & Gas (Non-Royalty)
+      name: null
+      units: null
+      value: 8425669.25
+      rank: 5
+      percent: 0.5
+    - product: Sodium
+      name: null
+      units: null
+      value: 25386.08
+      rank: 2
+      percent: 14.9
+    - product: Oil Shale
+      name: null
+      units: null
+      value: 914
+      rank: 1
+      percent: 74.1

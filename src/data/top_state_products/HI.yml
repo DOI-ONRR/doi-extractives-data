@@ -75,11 +75,4 @@ all_production:
       units: Mwh
       value: 260102
       rank: 4
-      percent: 1.64
-  '2017':
-    - product: Geothermal
-      name: Geothermal
-      units: Mwh
-      value: 251821.86
-      rank: 4
-      percent: 1.58
+      percent: 1.49

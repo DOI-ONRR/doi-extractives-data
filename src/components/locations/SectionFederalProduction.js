@@ -1,10 +1,7 @@
 import React from 'react'
-import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from 'react-html-parser'
 import Link from '../utils/temp-link'
 
-import ALL_US_STATES_FEDERAL_PRODUCTION from '../../data/state_federal_production.yml'
 import PRODUCTION_UNITS from '../../../static/data/production_units.yml'
-import * as FEDERAL_COUNTY_PRODUCTION from '../../data/federal_county_production'
 
 import ChartTitle from '../charts/ChartTitleCollapsible'
 import StickyHeader from '../layouts/StickyHeader'
@@ -16,18 +13,20 @@ import { filterTerms } from '../utils/Glossary'
 import CountyMap from '../maps/CountyMap'
 
 import utils from '../../js/utils'
-import slugify from 'slugify'
-import lazy from 'lazy.js'
 
-let year = 2017
+let year = 2018
 
 const SectionFederalProduction = props => {
   const usStateData = props.usStateMarkdown.frontmatter
-  const usStateFields = props.usStateMarkdown.fields || {}
 
-  const countyProductionForState = FEDERAL_COUNTY_PRODUCTION[usStateData.unique_id]
+  const countyProductionForState = props.countyProduction
 
-  const usStateFederalProducts = ALL_US_STATES_FEDERAL_PRODUCTION[usStateData.unique_id] && ALL_US_STATES_FEDERAL_PRODUCTION[usStateData.unique_id].products
+  const usStateFederalProducts = props.production
+
+  let commodityYearsSortDesc = props.productionYears.slice(0)
+  commodityYearsSortDesc.sort((a, b) => b - a)
+  let year = props.productionYears[props.productionYears.length - 1]
+  let yearRange = [props.productionYears[0], props.productionYears[props.productionYears.length - 1]]
 
   return (
     <section id="federal-production" className="federal production">
@@ -35,14 +34,15 @@ const SectionFederalProduction = props => {
       <section className="county-map-table" is="year-switcher-section">
         <StickyWrapper bottomBoundary="#federal-production" innerZ="10000">
           <StickyHeader headerText={'Production on federal land in ' + usStateData.title}>
-            <YearSelector years={[2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010, 2009, 2008]} classNames="flex-row-icon" />
+            <YearSelector years={commodityYearsSortDesc} classNames="flex-row-icon" />
           </StickyHeader>
         </StickyWrapper>
 
         { usStateFederalProducts === undefined
           ? <div>
             <p>
-                          The Office of Natural Resources Revenue collects detailed data about natural resources produced on federal land. According to that data, there was no natural resource <GlossaryTerm>production</GlossaryTerm> on federal land in {usStateData.title} in { year }.
+              The Office of Natural Resources Revenue collects detailed data about natural resources produced on federal land. According to that data
+              , there was no natural resource <GlossaryTerm>production</GlossaryTerm> on federal land in {usStateData.title} in { year }.
             </p>
             <p>
               <Link to="/downloads/federal-production/">
@@ -53,7 +53,8 @@ const SectionFederalProduction = props => {
           : <div className="chart-selector-wrapper">
             <div className="chart-description">
               <p>
-                                The Office of Natural Resources Revenue collects detailed data about natural resource <GlossaryTerm>production</GlossaryTerm> on federal land in {usStateData.title}.
+                The Office of Natural Resources Revenue collects detailed data about natural resource <GlossaryTerm>
+                  production</GlossaryTerm> on federal land in {usStateData.title}.
               </p>
               <p>
                 <Link to="/downloads/federal-production/">
@@ -65,15 +66,16 @@ const SectionFederalProduction = props => {
         }
 
         <div className="chart-list">
-          {(lazy(usStateFederalProducts).toArray()).map((product, index) => {
-            let year = '2017'
-            let productName = product[1].name || product[0]
+          {Object.keys(usStateFederalProducts).map((productKey, index) => {
+            if (usStateFederalProducts[productKey].total === 0) return
+            let product = usStateFederalProducts[productKey]
+            let productName = product.name
             let productSlug = utils.formatToSlug(productName, { lower: true })
             let productVolumes = {}
-            let units = product[1].units;
+            let units = product.units
 
-            (lazy(product[1].volume).toArray()).map((yearData, index) => {
-              productVolumes[yearData[0]] = yearData[1].volume
+            Object.keys(product.volume).map((volumeKey, index) => {
+              productVolumes[volumeKey] = product.volume[volumeKey]
             })
 
             let shortUnits = PRODUCTION_UNITS[units] ? PRODUCTION_UNITS[units].short : units
@@ -102,8 +104,8 @@ const SectionFederalProduction = props => {
                       <eiti-bar-chart
                         aria-controls={'federal-production-figures-' + productSlug }
                         data={JSON.stringify(productVolumes)}
-                        x-range="[2008, 2017]"
-                        x-value={2017}
+                        x-range={JSON.stringify(yearRange)}
+                        x-value={year}
                         data-units={longUnits}>
                       </eiti-bar-chart>
                       <figcaption id={'federal-production-figures-' + productSlug }>
@@ -135,7 +137,7 @@ const SectionFederalProduction = props => {
                         <CountyMap
                           usStateMarkdown={props.usStateMarkdown}
                           countyProductionData={countyProductionForState}
-                          productKey={product[0]}
+                          productKey={productKey}
                           year={year}
                           isCaption={true}
                           mapToggle={mapToggle}
@@ -161,17 +163,18 @@ const SectionFederalProduction = props => {
                               <td colSpan="3" className="inner-table-cell">
                                 <div className="inner-table-wrapper">
                                   <table>
-                                    {(lazy(countyProductionForState).toArray()).map((countyData, index) => {
-                                      if (countyData[1].products[product[0]] && countyData[1].products[product[0]].volume[year] > 0) {
-                                        let yearsValue = countyData[1].products[product[0]].volume
-                                        let productVolume = countyData[1].products[product[0]].volume[year]
+                                    {Object.keys(countyProductionForState).map((countyKey, index) => {
+                                      let countyData = countyProductionForState[countyKey]
+                                      if (countyData.products[productKey] && countyData.products[productKey].volume[year] > 0) {
+                                        let yearsValue = countyData.products[productKey].volume
+                                        let productVolume = countyData.products[productKey].volume[year]
 
                                         return (
                                           <tbody key={index}>
-                                            <tr data-fips={countyData[0]} data-year-values={JSON.stringify(yearsValue)}>
+                                            <tr data-fips={countyData} data-year-values={JSON.stringify(yearsValue)}>
                                               <td><div className='swatch'
                                                 data-value-swatch={productVolume}
-                                                data-year-values={JSON.stringify(yearsValue)}></div>{ countyData[1].name }</td>
+                                                data-year-values={JSON.stringify(yearsValue)}></div>{ countyData.name }</td>
                                               <td data-value-text={productVolume}
                                                 data-year-values={JSON.stringify(yearsValue)}>{utils.formatToCommaInt(productVolume)}</td>
                                               <td className='numberless'
@@ -186,10 +189,10 @@ const SectionFederalProduction = props => {
                                                 aria-hidden='true'
                                                 data-withheld="false">
                                                 <span className="withheld" aria-hidden="true">
-                                                                                                Data about { productName.toLowerCase() } extraction on federal land in { countyData[1].name } in <span data-year={ year }>{ year }</span> is withheld.
+                                                                                                Data about { productName.toLowerCase() } extraction on federal land in { countyData.name } in <span data-year={ year }>{ year }</span> is withheld.
                                                 </span>
                                                 <span className="has-data">
-                                                  <span data-value={productVolume}>{utils.formatToCommaInt(productVolume)}</span> {longUnits} of {productName.toLowerCase()} were produced in { countyData[1].name } in <span data-year={ year }>{year}</span>.
+                                                  <span data-value={productVolume}>{utils.formatToCommaInt(productVolume)}</span> {longUnits} of {productName.toLowerCase()} were produced in { countyData.name } in <span data-year={ year }>{year}</span>.
                                                 </span>
                                               </td>
                                             </tr>

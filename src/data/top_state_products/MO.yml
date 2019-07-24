@@ -274,3 +274,16 @@ revenue:
       value: 9547156.91
       rank: 1
       percent: 99.7
+  '2018':
+    - product: Other Products
+      name: null
+      units: null
+      value: 9095436.85
+      rank: 5
+      percent: 6.7
+    - product: Hardrock
+      name: null
+      units: null
+      value: 29653.82
+      rank: 2
+      percent: 34.2

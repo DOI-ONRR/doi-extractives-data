@@ -84,6 +84,42 @@ module.exports = Object.freeze({
         }
       }
     }`,
+  OFFSHORE_PRODUCTION:
+    `OffshoreProductionByProduct: allProductVolumesCalendarYear(filter: {
+      OnshoreOffshore: {eq: "Offshore"}}) {
+      group(field: ProductName) {
+        id: fieldValue
+        edges {
+          node {
+            id
+            ProductName
+            ProductionDate
+            ProductionYear
+            Units
+            LongUnits
+            Volume
+            Withheld
+            LandCategory
+            County
+            FipsCode
+            State
+            OnshoreOffshore
+            OffshoreRegion
+          }
+        }
+      }
+    }
+    OffshoreProductionByYear: allProductVolumesCalendarYear(filter: {
+      OnshoreOffshore: {eq: "Offshore"}}) {
+      group(field: ProductionYear) {
+        id: fieldValue
+        edges {
+          node {
+            id
+          }
+        }
+      }
+    }`,
   OFFSHORE_PRODUCTION_ALASKA:
     `AlaskaOffshoreProduction: allOffshoreProduction(filter: {RegionId: {eq: "Alaska"}}) {
       commodities: group(field: Commodity) {

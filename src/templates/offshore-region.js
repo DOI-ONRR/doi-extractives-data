@@ -55,6 +55,8 @@ const OffshoreRegion = ({ pageContext }) => {
     let dataSetsToHydrate = []
     let dataSetsToGroupByYear = []
 
+    console.log(pageContext)
+
     pageContext.data.commodities.map(commodity => {
       let dataSetId = PRODUCTION_SYNC_ID + '_' + commodity.name
       let units = commodity.volumes[0].data.Units
@@ -167,22 +169,6 @@ const OffshoreRegion = ({ pageContext }) => {
                       </p>
                     </div>
                   </div>
-                  {
-                    productionComponents.map((components, index) => {
-                      return (
-                        <div key={index + '_' + components.dataSetId} style={{ width: '100%', display: 'inline-block' }}>
-                          <StackedBarChartWithMap
-                            chartTitle={components.chartTitle}
-                            chart={components.chart}
-                            chartContentDetails={components.chartContentDetails}
-                            mapTitle={components.mapTitle}
-                            map={components.map}
-                            legend={components.legend}
-                          />
-                        </div>
-                      )
-                    })
-                  }
                 </div>
                 : <p>ONRR collects detailed data about natural resources produced on federal lands and waters. According to that data, there was no natural resource production in the { title }.</p>
               }

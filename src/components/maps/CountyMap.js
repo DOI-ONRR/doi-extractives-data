@@ -17,6 +17,14 @@ const CountyMap = props => {
 
   let localityName = usStateData.locality_name || 'County'
 
+  if(usStateData.unique_id === 'AK'){
+    localityName = 'Borough'
+  }
+
+  if(usStateData.unique_id === 'LA'){
+    localityName = 'Parish'
+  }
+
   let legendUnits = props.shortUnits || props.units
 
   let viewBox = (usStateData.is_cropped) ? VIEWBOXES_CROPPED[usStateData.unique_id] : VIEWBOXES[usStateData.unique_id]
@@ -105,13 +113,22 @@ const CountyMap = props => {
 
 		            {
 		                (lazy(props.countyProductionData).toArray()).map((countyData, index) => {
-		                	if (countyData[1].products[props.productKey]) {
+                      let data = (countyData[1].products)? countyData[1].products[props.productKey] : countyData[1].revenue;
+                      let dataValue = (countyData[1].products)? 
+                        (countyData[1].products[props.productKey] && countyData[1].products[props.productKey].volume[props.year]) 
+                        :
+                        countyData[1].revenue[props.year];
+                      let dataValues = (countyData[1].products)? 
+                        (countyData[1].products[props.productKey] && JSON.stringify(countyData[1].products[props.productKey].volume))
+                        :
+                        JSON.stringify(countyData[1].revenue);
+		                	if (data && dataValues) {
 			                    return (
 			                        <g key={index}
 			                            className="county feature"
 			                            data-fips={countyData[0]}
-			                            data-value={countyData[1].products[props.productKey].volume[props.year]}
-			                            data-year-values={JSON.stringify(countyData[1].products[props.productKey].volume)}
+			                            data-value={dataValue }
+			                            data-year-values={dataValues}
 			                            >
 			                            <data>{ countyData[1].name }</data>
 			                            <use xlinkHref={usStateSVG + '#county-' + countyData[0]}></use>
@@ -127,13 +144,22 @@ const CountyMap = props => {
 
             {
 		                (lazy(props.countyProductionData).toArray()).map((countyData, index) => {
-		                	if (countyData[1].products[props.productKey]) {
+                      let data = (countyData[1].products)? countyData[1].products[props.productKey] : countyData[1].revenue;
+                      let dataValue = (countyData[1].products)? 
+                        (countyData[1].products[props.productKey] && countyData[1].products[props.productKey].volume[props.year])
+                        :
+                        countyData[1].revenue[props.year];
+                      let dataValues = (countyData[1].products)? 
+                        (countyData[1].products[props.productKey] && JSON.stringify(countyData[1].products[props.productKey].volume)) 
+                        :
+                        JSON.stringify(countyData[1].revenue);
+		                	if (data && dataValues) {
 			                    return (
 			                        <g key={index}
 			                            className="county feature only-stroke"
 			                            data-fips={countyData[0]}
-			                            data-value={countyData[1].products[props.productKey].volume[props.year]}
-			                            data-year-values={JSON.stringify(countyData[1].products[props.productKey].volume)}
+			                            data-value={dataValue}
+			                            data-year-values={dataValues}
 			                            >
 			                            <use xlinkHref={usStateSVG + '#county-' + countyData[0]}></use>
 			                        </g>
@@ -152,10 +178,16 @@ const CountyMap = props => {
           {props.isCaption &&
 					<div>
 					  <figcaption className="legend-data">
-					    {localityName } production of {props.productName.toLowerCase()} in <span data-year={ props.year }>{ props.year }</span>
-					    {legendUnits &&
-									<span className="legend-units"> ({legendUnits})</span>
-					    }
+              {props.productName.toLowerCase() === 'revenue' ?
+                <React.Fragment>
+                  Revenue by {localityName.toLowerCase()} in <span data-year={ props.year }>{ props.year }</span>
+                </React.Fragment>
+              :
+                <React.Fragment>
+                  {localityName } production of {props.productName.toLowerCase()} in <span data-year={ props.year }>{ props.year }</span>
+                  {legendUnits && <span className="legend-units"> ({legendUnits})</span>}
+                </React.Fragment>
+              }
 					  </figcaption>
 					  <figcaption className="legend-no-data" aria-hidden="true">
 							There is no county-level data for {usStateData.title} in <span data-year={props.year}>{props.year}</span>.

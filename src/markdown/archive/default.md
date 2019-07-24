@@ -97,9 +97,9 @@ permalink: /archive/
       <h2 id="economic-impact" class="h2-bar">Economic impact</h2>
       <div class="container landing-section">
         <div>
-          <h3 class="h3 landing-heading"><a href="#">Gross domestic product (GDP)</a></h3>
+          <h3 class="h3 landing-heading"><a href="https://www.bea.gov/data">Gross domestic product (GDP)</a></h3>
           <p>The Bureau of Economic Analysis publishes data about the role of extractive industries on gross domestic product.</p>
-          <p><a href="#">Go to the Bureau of Economic Analysis →</a></p>
+          <p><a href="https://www.bea.gov/data">Go to the Bureau of Economic Analysis →</a></p>
         </div>
         <div>
           <h3 class="h3 landing-heading"><a href="#">Wage and salary jobs</a></h3>

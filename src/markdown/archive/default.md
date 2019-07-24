@@ -102,14 +102,14 @@ permalink: /archive/
           <p><a href="https://www.bea.gov/data">Go to the Bureau of Economic Analysis →</a></p>
         </div>
         <div>
-          <h3 class="h3 landing-heading"><a href="#">Wage and salary jobs</a></h3>
+          <h3 class="h3 landing-heading"><a href="https://www.bls.gov/cew/datatoc.htm">Wage and salary jobs</a></h3>
           <p>Wage and salary data, from the Bureau of Labor Statistics, describes the number of people employed in natural resource extraction that receive wages or salaries from companies.</p>
-          <p><a href="#">Go to the Bureau of Labor Statistics →</a></p>
+          <p><a href="https://www.bls.gov/cew/datatoc.htm">Go to the Bureau of Labor Statistics →</a></p>
         </div>
         <div>
-          <h3 class="h3 landing-heading"><a href="#">Self-employment</a></h3>
+          <h3 class="h3 landing-heading"><a href="https://www.bea.gov/">Self-employment</a></h3>
           <p>Self-employment data, from the Bureau of Economic Analysis, describes people who work in natural resource extraction, but don't receive wages or salaries because they own their own companies.</p>
-          <p><a href="#">Go to the Bureau of Labor Statistics →</a></p>
+          <p><a href="https://www.bea.gov/">Go to the Bureau of Economic Analysis →</a></p>
         </div>
       </div>
     </section>

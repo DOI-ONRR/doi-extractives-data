@@ -25,6 +25,7 @@ permalink: /archive/
 </section>
 
 <section class="container-page-wrapper landing-wrapper">
+<main class="container-page-wrapper landing-wrapper">
 <section class="container">
   <div class="container-left-7">
     <h2 id="history">History</h2>
@@ -115,6 +116,7 @@ permalink: /archive/
     </section>
   </article>
       <div class="container-right-3 how-it-works-page-toc">     
-      <page-toc scroll.offset='-50' exclude.class.names='h3'></page-toc>
-    </div>
+        <page-toc scroll.offset='-50' exclude.class.names='h3'></page-toc>
+      </div>
 </div>
+</main>

@@ -37,6 +37,19 @@ module.exports = Object.freeze({
 	        htmlAst
 	      }
 	    }
+    }`,
+    MARKDOWN_ARCHIVE:
+		`allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/archive/"}}) {
+	    pages: edges {
+	      page: node {
+	        frontmatter {
+	          title
+	          permalink
+	          layout
+	        }
+	        htmlAst
+	      }
+	    }
 	  }`,
   MARKDOWN_DOWNLOADS:
     `allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/downloads/"}}) {

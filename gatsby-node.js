@@ -104,7 +104,8 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
   return Promise.all([
   	createStatePages(createPage, graphql), 
   	createHowItWorksPages(createPage, graphql), 
-  	createDownloadsPages(createPage, graphql),
+	createDownloadsPages(createPage, graphql),
+	createArchivePages(createPage, graphql),
   	createCaseStudiesPages(createPage, graphql),
   	//createOffshorePages(createPage, graphql),
 	]);
@@ -114,6 +115,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 const CONTENT_DEFAULT_TEMPLATE = path.resolve(`src/templates/content-default.js`);
 const HOWITWORKS_DEFAULT_TEMPLATE = path.resolve(`src/templates/how-it-works-default.js`);
 const HOWITWORKS_PROCESS_TEMPLATE = path.resolve(`src/templates/how-it-works-process.js`);
+const ARCHIVE_DEFAULT_TEMPLATE = path.resolve(`src/templates/archive-default.js`)
 const DOWNLOADS_TEMPLATE = path.resolve(`src/templates/downloads-default.js`);
 const HOWITWORKS_RECONCILIATION_TEMPLATE = path.resolve(`src/templates/how-it-works-reconciliation.js`);
 const HOWITWORKS_REVENUE_BY_COMPANY_TEMPLATE = path.resolve(`src/templates/how-it-works-revenue-by-company.js`);
@@ -126,6 +128,8 @@ const getPageTemplate = (templateId) => {
 			return HOWITWORKS_DEFAULT_TEMPLATE;
 		case 'howitworks-process':
 			return HOWITWORKS_PROCESS_TEMPLATE;
+		case 'archive-default':
+			return ARCHIVE_DEFAULT_TEMPLATE;
 		case 'downloads':
 			return DOWNLOADS_TEMPLATE;
 		case 'how-it-works-reconciliation':
@@ -245,6 +249,38 @@ const createHowItWorksPages = (createPage, graphql) => {
       })
     );
   });
+};
+
+const createArchivePages = (createPage, graphql) => {
+
+	const graphQLQueryString = "{"+GRAPHQL_QUERIES.MARKDOWN_ARCHIVE+"}";
+	
+	return new Promise((resolve, reject) => {
+	    resolve(
+	      graphql(graphQLQueryString).then(result => {
+	        if (result.errors) {
+	        	console.error(result.errors);
+	          reject(result.errors);
+	        }
+	        else{ 
+	        	// Create pages for each markdown file.
+		        result.data.allMarkdownRemark.pages.forEach(({ page }) => {
+		          const path = page.frontmatter.permalink;
+		          const template = getPageTemplate(page.frontmatter.layout);
+
+		          createPage({
+		            path,
+		            component: template,
+		            context: {
+		              markdown: page,
+		            },
+		          });
+		        });
+	        	resolve();
+	        }
+	      })
+	    );
+	  });
 };
 
 const createDownloadsPages = (createPage, graphql) => {

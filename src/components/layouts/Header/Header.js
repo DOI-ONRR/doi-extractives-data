@@ -22,7 +22,6 @@ const Header = props => {
   let homeClassNames = { 'className': ' header-nav_item ' }
   let aboutClassNames = { 'className': ' header-nav_item ' }
   let howItWorksClassNames = { 'className': ' header-nav_item ' }
-  let caseStudiesClassNames = { 'className': ' header-nav_item ' }
   let exploreClassNames = { 'className': ' header-nav_item ' }
   let downloadClassNames = { 'className': ' header-nav_item_link_top ' }
   
@@ -41,11 +40,11 @@ const Header = props => {
     else if (location.pathname.includes('/how-it-works')) {
       howItWorksClassNames.className += ' active '
     }
-    else if (location.pathname.includes('/case-studies')) {
-      caseStudiesClassNames.className += ' active '
-    }
     else if (location.pathname.includes('/explore')) {
       exploreClassNames.className += ' active '
+    }
+    else if (location.pathname.includes('/archive') ) {
+      aboutClassNames.className
     }
     else {
       homeClassNames.className += ' active '
@@ -82,16 +81,13 @@ const Header = props => {
           <ul className="header-nav_bottom">
             <li {...homeClassNames}>
               <Link className="header-nav_item_link" to="/"> Home </Link>
-            </li> <li {...aboutClassNames}>
-              <Link className="header-nav_item_link" to="/about/"> About </Link>
             </li> <li {...howItWorksClassNames}>
               <Link className="header-nav_item_link" to="/how-it-works/"> How it works </Link>
             </li> <li {...exploreClassNames}>
               <Link className="header-nav_item_link" to="/explore/"> Explore data </Link>
-            </li> <li {...caseStudiesClassNames}>
-              <Link className="header-nav_item_link" to="/case-studies/"> Case studies </Link>
-            </li>
-
+            </li> <li {...aboutClassNames}>
+              <Link className="header-nav_item_link" to="/about/"> About </Link>
+            </li> 
           </ul>
         </nav>
       </MediaQuery>
@@ -128,16 +124,13 @@ class MobileNav extends React.Component {
                 <Link className={styles.mobileNavDrawerLinkItem} to="/"> Home </Link>
               </li>
               <li className={styles.mobileNavDrawerLinkItem}>
-                <Link className={styles.mobileNavDrawerLinkItem} to="/about/"> About </Link>
-              </li>
-              <li className={styles.mobileNavDrawerLinkItem}>
                 <Link className={styles.mobileNavDrawerLinkItem} to="/how-it-works/"> How it works </Link>
               </li>
               <li className={styles.mobileNavDrawerLinkItem}>
                 <Link className={styles.mobileNavDrawerLinkItem} to="/explore/"> Explore data </Link>
               </li>
-              <li className={styles.mobileNavDrawerLinkItem + ' ' + styles.mobileNavDrawerLinkItemBreak}>
-                <Link className={styles.mobileNavDrawerLinkItem} to="/case-studies/"> Case studies </Link>
+              <li className={styles.mobileNavDrawerLinkItem}>
+                <Link className={styles.mobileNavDrawerLinkItem} to="/about/"> About </Link>
               </li>
               <li className={styles.mobileNavDrawerLinkItem2}>
                 <Link className={styles.mobileNavDrawerLinkItem2} to="/downloads/"> Download data </Link>

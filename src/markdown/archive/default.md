@@ -35,10 +35,10 @@ permalink: /archive/
       <p>DOI is fully committed to institutionalizing the EITI principles of transparency and accountability, supported by the robust <a href="/how-it-works/audits-and-assurances/">controls and assurances</a> already in place in the U.S. This site is now a DOI resource for extractive industry data. We will continue to disclose revenue payments received for extractive operations on federal land, offer production data, report annual disbursements, and improve reporting by including additional states and tribes.</p>
       <h3 id="timeline" class="h4">Timeline</h3>
         <ul class="list-bullet">
-          <li><strong>December 2017:</strong> The Natural Resources Revenue Data Annual Report was published as an <a href="/downloads/report/">Executive Summary</a> and interactive data was updated throughout this website.</li>
+          <li><strong>December 2017:</strong> The Natural Resources Revenue Data Annual Report was published as an <a href="/downloads/report/#executive-summary-2017">Executive Summary</a> and interactive data was updated throughout this website.</li>
           <li><strong>November 2017:</strong> The U.S. withdrew as an EITI Implementing Country.</li>
-          <li><strong>November 2016:</strong> USEITI Annual Report was published as an <a href="/downloads/report/">Executive Summary</a> and interactive data.</li>
-          <li><strong>December 2015:</strong> USEITI Annual Report was published as an <a href="/downloads/report/">Executive Summary</a> and interactive data (available throughout this site).</li>
+          <li><strong>November 2016:</strong> USEITI Annual Report was published as an <a href="/downloads/report/#executive-summary-2016">Executive Summary</a> and interactive data.</li>
+          <li><strong>December 2015:</strong> USEITI Annual Report was published as an <a href="/downloads/report/#executive-summary-2015">Executive Summary</a> and interactive data (available throughout this site).</li>
           <li><strong>Summer of 2014:</strong> DOI selected Deloitte & Touche LLP as the <glossary-term termKey="Independent Administrator (IA)">Independent Administrator</glossary-term> for USEITI.</li>
           <li><strong>March 2014:</strong> The EITI International Board accepted the U.S. as a candidate country.</li>
           <li><strong>December 2013:</strong> The U.S. submitted an application to participate to the EITI International Board, which was developed by the MSG after engaging with stakeholders across the country.</li>

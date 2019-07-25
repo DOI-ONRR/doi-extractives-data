@@ -2,6 +2,16 @@
 title: Archive
 layout: archive-default
 permalink: /archive/
+tag:
+- EITI
+- Extractive Industries Transparency Initiative
+- USEITI
+- archive
+- reconciliation
+- Independent Administrator
+- case studies
+- jobs
+- GDP
 ---
 
 <section class="slab-delta">

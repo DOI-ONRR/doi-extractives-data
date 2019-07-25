@@ -24,9 +24,10 @@ permalink: /archive/
   </div>
 </section>
 
-<div class="container-page-wrapper landing-wrapper">
-  <main class="container-page-wrapper landing-wrapper">
-    <div class="container-left-8 container-shift-reverse-1">
+<div class="container-page-wrapper">
+  <main class="container-page-wrapper">
+   <div class="container-left-8 container-shift-reverse-1"> 
+    <section class="container-outer">
       <h2 id="history">History</h2>
       <p>The U.S. announced its intention to join the <a href="https://eiti.org/">Extractive Industries Transparency Initiative (EITI)</a> in 2011 as part of its <a href="https://www.opengovpartnership.org/">Open Government Partnership National Action Plans</a>. EITI is a voluntary, international standard that promotes open and accountable management of natural resources.</p>
       <p>The USEITI Annual Reports for 2015 and 2016 were published on this site as <a href="/explore/">interactive data</a>, along with <a href="/downloads/report">Executive Summaries</a>. Participation in the EITI helped the U.S. initiate a comprehensive open data effort around natural resource production and revenue generation on public lands.</p>
@@ -43,8 +44,9 @@ permalink: /archive/
           <li><strong>December 2013:</strong> The U.S. submitted an application to participate to the EITI International Board, which was developed by the MSG after engaging with stakeholders across the country.</li>
           <li><strong>December 2012:</strong> The Secretary of the Interior formed a multi-stakeholder group (MSG), which included representatives from government, industry, and <glossary-term>civil society</glossary-term>.</li>
         </ul>
+    </section>
   <!-- Archive sections start here -->
-    <article class="container-left-12 container-shift-reverse-1">
+    <article class="container landing-wrapper">
       <section class="container">
         <h2 id="executive-summaries" class="h2-bar">Executive summaries</h2>
         <div class="container landing-section">
@@ -107,7 +109,7 @@ permalink: /archive/
         </div>
       </section>
     </article>
-   </div> 
+   </div>  
     <div class="container-right-3 how-it-works-page-toc">     
       <page-toc scroll.offset='-50' exclude.class.names='h3'></page-toc>
     </div>

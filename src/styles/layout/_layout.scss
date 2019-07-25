@@ -6,7 +6,8 @@
 // .container-left-8 - 8/12 width container that floats left
 // .container-right-4 - 4/12 width container that floats left
 // .container-half - 6/12 width container that floats left
-// .container-padded - full width container with padding
+// .container-padded - full width container with padding on top and bottom
+// .containter-padded-top - full width container with padding only on top
 //
 // Styleguide layout.container
 .container {
@@ -261,6 +262,10 @@
 
 .container-padded {
   padding-bottom: $base-padding-extra;
+  padding-top: $base-padding-extra;
+}
+
+.container-padded-top {
   padding-top: $base-padding-extra;
 }
 

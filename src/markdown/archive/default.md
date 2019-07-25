@@ -27,7 +27,7 @@ permalink: /archive/
 <div class="container-page-wrapper">
   <main class="container-page-wrapper">
    <div class="container-left-8 container-shift-reverse-1"> 
-    <section class="container-outer">
+    <section class="container-padded-top">
       <h2 id="history">History</h2>
       <p>The U.S. announced its intention to join the <a href="https://eiti.org/">Extractive Industries Transparency Initiative (EITI)</a> in 2011 as part of its <a href="https://www.opengovpartnership.org/">Open Government Partnership National Action Plans</a>. EITI is a voluntary, international standard that promotes open and accountable management of natural resources.</p>
       <p>The USEITI Annual Reports for 2015 and 2016 were published on this site as <a href="/explore/">interactive data</a>, along with <a href="/downloads/report">Executive Summaries</a>. Participation in the EITI helped the U.S. initiate a comprehensive open data effort around natural resource production and revenue generation on public lands.</p>

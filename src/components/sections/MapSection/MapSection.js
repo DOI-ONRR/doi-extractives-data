@@ -18,11 +18,11 @@ import Map from '../../data-viz/Map'
 *  @param {array[]} states - a list of states for building drop down.  With location table we could encapsulate that here or even in Location
 *  @param {array[]} offshore_regions - a list of regions  for building drop down.  With location table we could encapsulate that here or even in Location
 *  @param {string} [mapFeatures=counties] mapFeatures - A switch to view county data or state data
+*  @param {string} [mapOffshoreJson=/maps/offshore/offshore.json] mapOffshoreJson - url for topojson data for offshore if left blank offshore is not painted
 *  @param {string} [colorScheme=green] colorScheme current lets you modify color from red to blue green or gray ;
 *  @param {*} onClick function that determines what to do if area is clicked
 *
 */
-
 
 const MapSection = (props) => {
 
@@ -74,7 +74,7 @@ return (
 	   
 
     </div>
-	<div className={styles.containerRight}><Map mapFeatures={props.mapFeatures} mapData={data} colorScheme={props.mapColor}  onClick={onClick}/> </div>
+	<div className={styles.containerRight}><Map mapFeatures={props.mapFeatures} mapData={data} mapOffshoreJson={props.mapOffshoreJson} colorScheme={props.mapColor}  onClick={onClick} /> </div>
 
 	
 
@@ -97,7 +97,8 @@ const state_summary = (data)=> {
     for(let ii=0; ii<data.length; ii++) {
 	let n=data[ii];
 	
-	let fips=state_fips[n.State]
+	//	let fips=state_fips[n.State]
+	let fips=n.State
 	let value=n.Revenue
 	
 	if(sumData[fips]) {
@@ -124,7 +125,6 @@ const county_summary = (data)=> {
     let sumData={};
     for(let ii=0; ii<data.length; ii++) {
 	let n=data[ii];
-	console.debug(n);
 	let fips=county_fips[n.County]
 	let value=n.Revenue
 	

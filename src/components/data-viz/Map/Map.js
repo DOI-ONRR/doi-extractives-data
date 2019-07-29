@@ -18,7 +18,7 @@ import styles from './Map.module.scss'
 *
 */
 const Map = (props) => {
-//    const mapJson=props.mapJson || "https://cdn.jsdelivr.net/npm/us-atlas@2/us/10m.json";
+    // const mapJson=props.mapJson || "https://cdn.jsdelivr.net/npm/us-atlas@2/us/10m.json";
     //use ONRR topojson file for land
     const mapJson=props.mapJson || "/maps/land/us-topology.json";
 
@@ -36,7 +36,27 @@ const Map = (props) => {
 //	     let p= get_data().then((data)=>{3
 //		 chart(elemRef.current, us,mapFeatures,data);
 //	     });
-	     chart(elemRef.current, us,mapFeatures,data, colorScheme,onClick);
+
+	     let propmise2=d3.json("maps/offshore/offshore.json")
+		 .then( offshore => {
+
+		     let max=data.values.sort((a,b)=>a-b)[data.values.length-1];
+
+		     let fake_data=mapData;
+		     let real_data={};
+		     for(let region in  offshore.objects ) {
+			 for(let ii =0; ii< offshore.objects[region].geometries.length; ii++) {
+			     let value=Math.random() * 10000000 + max;
+			     fake_data.push([ offshore.objects[region].geometries[ii].id,value]);
+			 }
+			 real_data=observable_data(fake_data);
+		     }
+		     let svg=chart(elemRef.current, us,mapFeatures,real_data, colorScheme,onClick);
+		     for(let region in  offshore.objects ) {
+		     offshore_chart(svg,offshore,region,real_data, colorScheme,onClick);
+		     }
+			     
+		 })
 	     //
 	 });
  
@@ -67,7 +87,6 @@ export default Map
 *  @param {*} onClick function that determines what to do if area is clicked
 *
 */
-
 const chart = (node,us,mapFeatures,data, colorScheme,onClick) => {
     
     const width = node.scrollWidth;
@@ -97,16 +116,20 @@ const chart = (node,us,mapFeatures,data, colorScheme,onClick) => {
       .style("width", width)
       .style("height", height)
 	  .attr("fill", "#E0E2E3")
-	  .attr("viewBox", '-40 0 '+width*1.8+' '+height*1.8);
+	  //.attr("viewBox", '-40 0 '+width*1.8+' '+height*1.8);
 
   svg.append("g")
-      .attr("transform", "translate(600,40)")
+      .attr("transform", "translate(400,40)")
 	.call(legend,data.title, data, color);
 
 
     let states = get_states(us);
-
-    svg.append("g")
+    console.debug(states);
+    console.debug(us);
+    console.debug(us.objects[mapFeatures]);
+    console.debug(topojson.feature(us, us.objects[mapFeatures]));
+    svg.append("g").attr("transform", "translate(900,400) scale(5,-5)")
+    
 	.selectAll("path")
 	.data(topojson.feature(us, us.objects[mapFeatures]).features)
 	.join("path")
@@ -114,6 +137,7 @@ const chart = (node,us,mapFeatures,data, colorScheme,onClick) => {
     	.attr("fill-opacity", .9)
     	.attr("d", path)
 	.attr("stroke", "#CACBCC")
+        .attr('vector-effect', 'non-scaling-stroke')
 	.on("click", (d,i) => {onClick(d,i)} )
 	.on("mouseover", function(d,i) {   // ES6 function find the this node is alluding me
 
@@ -141,6 +165,75 @@ const chart = (node,us,mapFeatures,data, colorScheme,onClick) => {
 
 
 }
+
+
+
+const offshore_chart = (node,offshore, region ,data, colorScheme,onClick) => {
+    
+    const path = d3.geoPath();
+    let color = ()=>{};
+    // switch quick and dirty to let users change color beter to use d3.interpolateRGB??
+    switch(colorScheme) {
+    case 'blue':
+	color=d3.scaleSequentialQuantile(data.values, t => d3.interpolateBlues(t));
+	break;
+    case 'green':
+	color=d3.scaleSequentialQuantile(data.values, t => d3.interpolateGreens(t));
+	break;
+    case 'red':
+	color=d3.scaleSequentialQuantile(data.values, t => d3.interpolateReds(t));
+	break;
+    case 'grey':
+	color=d3.scaleSequentialQuantile(data.values, t => d3.interpolateGreys(t));
+	break;
+    default:
+	color=d3.scaleSequentialQuantile(data.values, t => d3.interpolateGreens(t));
+    }
+    let format = d => { if(isNaN(d)) {return "" } else {return "$" + d3.format(",.0f")(d);} } 
+  
+
+    let svg=d3.select(node);
+
+    svg.append("g").attr("transform", "translate(900,400) scale(5,-5)")
+    
+	.selectAll("path")
+	.data(topojson.feature(offshore, offshore.objects[region]).features)
+	.join("path")
+	.attr("fill", d => color(data.get(d.id)))
+    	.attr("fill-opacity", .9)
+    	.attr("d", path)
+	.attr("stroke", "#CACBCC")
+        .attr('vector-effect', 'non-scaling-stroke')
+	.on("click", (d,i) => {onClick(d,i)} )
+	.on("mouseover", function(d,i) {   // ES6 function find the this node is alluding me
+
+	    d3.select(this).style('fill-opacity', .7); 
+	})
+    	.on("mouseout", (d,i) => {
+	    d3.selectAll('path')
+		.style('fill-opacity',.9)
+	}
+	)
+	.append("title")
+	.text(d => `${d.properties.name}  ${format(data.get(d.id))}`);
+   
+    svg.append("path")
+	.datum(topojson.mesh(offshore, offshore.objects[region], (a, b) => a !== b))
+	.attr("fill", "none")
+	.attr("stroke", "#9FA0A1")
+	.attr("stroke-linejoin", "round")
+	.attr("d", path);
+    
+    return svg.node();
+    
+
+
+
+
+}
+
+
+
 
 /**
 *  The function that does the building of the svg with d3
@@ -173,10 +266,13 @@ const legend = (g,title,data,color) => {
     const width = 240;
     const height= 15;
     let sorted=data.values.sort((a,b)=>a-b);
+    let lowest=Math.floor(sorted[0]);
+    let median=Math.floor(sorted[Math.floor(sorted.length/2)]);
+    let highest=Math.floor(sorted[sorted.length-1]);
     for(let ii=0;ii<sorted.length; ii++) {
 	g.append("rect")
 	    .attr("x",ii*width/sorted.length)
-	    .attr("width",width/sorted.length)
+	    .attr("width",width/sorted.length+1)
  	    .attr("height",height)
 	    .style("fill", color(sorted[ii]))
     }
@@ -192,7 +288,7 @@ const legend = (g,title,data,color) => {
 
 
 
-  g.call(d3.axisBottom(d3.scalePoint(["lowest", "median", "highest"], [0, width]))
+  g.call(d3.axisBottom(d3.scalePoint([lowest, median, highest], [0, width]))
       .tickSize(13))
     .select(".domain")
       .remove();

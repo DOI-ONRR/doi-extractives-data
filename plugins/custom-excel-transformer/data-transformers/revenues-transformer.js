@@ -24,7 +24,8 @@ const SOURCE_COLUMNS = {
   State: "state",
   County: "county",
 	FiscalYear: "fiscal year",
-	OffshoreRegion: "offshore region"
+    OffshoreRegion: "offshore region",
+    	OffshorePlanningArea: "offshore planning area"
 };
 
 const LAND_CATEGORY_TO_DISPLAY_NAME ={
@@ -72,10 +73,12 @@ const createRevenueNode = (revenueData, type) => {
 	  State: data[SOURCE_COLUMNS.State],
 	  County: data[SOURCE_COLUMNS.County],
 	  FiscalYear: data[SOURCE_COLUMNS.FiscalYear],
-	  Units: '$',
+          Units: '$',
 	  LongUnits: 'dollars',
 	  OffshoreRegion: (data[SOURCE_COLUMNS.OffshoreRegion] === "" || data[SOURCE_COLUMNS.OffshoreRegion] === undefined) ?
 	  	data[SOURCE_COLUMNS.OffshoreRegion] : "Offshore "+data[SOURCE_COLUMNS.OffshoreRegion],
+	  OffshorePlanningArea: (data[SOURCE_COLUMNS.OffshorePlanningArea] === "" || data[SOURCE_COLUMNS.OffshorePlanningArea] === undefined) ?
+	  	data[SOURCE_COLUMNS.OffshorePlanningArea] : "Offshore "+data[SOURCE_COLUMNS.OffshorePlanningArea],
 	  internal: {
 	    type: type || 'ResourceRevenues',
 	  },

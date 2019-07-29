@@ -211,6 +211,7 @@ class HomePage extends React.Component {
                states={this.props.data.states_data.states}
                offshore_regions={this.props.data.offshore_data.offshore_regions}
                mapFeatures="states"
+               mapOffshoreJson="/maps/offshore/offshore.json"
                onClick={ (d,i) => { 
                    let state=fipsAbbrev[d.id];
                    let url="/explore/"+state+"#revenue" 

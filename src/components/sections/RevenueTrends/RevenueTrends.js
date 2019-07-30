@@ -1,6 +1,6 @@
 import React, { useEffect, useRef }  from 'react'
 import ReactDOM from 'react-dom'
-import { StaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 
 import * as d3 from 'd3'
 import utils from '../../../js/utils'
@@ -14,8 +14,15 @@ import styles from './RevenueTrends.module.scss'
 
 const TREND_LIMIT = 10;
 
-const RevenueTrends = props => (
-  <StaticQuery
+/**
+* RevenueTrends - react functional component that generates revenue trends graph
+*
+* uses hook useStaticQuery and graphl to get revenu data then 
+* summarizes data for graphical representation
+*/
+
+const RevenueTrends = () => {
+ /*  <StaticQuery
     query={graphql`
       query RevenueTrendsQuery {
         allMonthlyRevenuesByFiscalYear: allResourceRevenuesMonthly(
@@ -90,7 +97,84 @@ const RevenueTrends = props => (
           )
         })
       )
+ */
 
+    const data=useStaticQuery(graphql`
+          query RevenueTrendsQuery {
+        allMonthlyRevenuesByFiscalYear: allResourceRevenuesMonthly(
+          filter: {RevenueCategory: {ne: null}}, 
+          sort: {fields: [RevenueDate], order: DESC}) {
+          group(field: FiscalYear) {
+            fiscalYear: fieldValue
+            data: edges {
+              node {
+                id
+                FiscalYear
+                Revenue
+                RevenueCategory
+                RevenueDate
+                RevenueType
+              }
+            }
+          }
+        }
+      }
+`) 
+
+      let fiscalYearData = JSON.parse(JSON.stringify(data.allMonthlyRevenuesByFiscalYear.group)).sort((a, b) => (a.fiscalYear < b.fiscalYear) ? 1 : -1)
+      
+      // Get the latest date then subtract 1 year to filter previous year data to compare current year data
+      let currentYearDate = new Date(fiscalYearData[0].data[0].node.RevenueDate);
+      let previousYearMaxDate = new Date(fiscalYearData[0].data[0].node.RevenueDate)
+
+      previousYearMaxDate.setFullYear(previousYearMaxDate.getUTCFullYear() -1)
+
+      let currentYearData = (JSON.parse(JSON.stringify(fiscalYearData)).splice(0,1)).map(calculateRevenueTypeAmountsByYear)[0]
+      calculateOtherRevenues(currentYearData);
+      let currentYearTotal = (currentYearData.amountByRevenueType.Royalties+
+            currentYearData.amountByRevenueType.Bonus+
+            currentYearData.amountByRevenueType.Rents+
+            currentYearData.amountByRevenueType['Other Revenues'])
+
+      let trendData = fiscalYearData.splice(0,TREND_LIMIT)
+
+      let previousYearData = JSON.parse(JSON.stringify(trendData))[1]
+      previousYearData.data  = previousYearData.data.filter(item => new Date(item.node.RevenueDate) <= previousYearMaxDate)
+
+      previousYearData = [previousYearData].map(calculateRevenueTypeAmountsByYear)[0];
+      calculateOtherRevenues(previousYearData);
+      let previousYearTotal = previousYearData.amountByRevenueType.Royalties +
+                              previousYearData.amountByRevenueType.Bonus +
+                              previousYearData.amountByRevenueType.Rents +
+                              previousYearData.amountByRevenueType['Other Revenues'];
+
+      let currentFiscalYearText = 'FY'+currentYearData.year.slice(2)+' so far';
+      let previousFiscalYearText = 'from FY'+previousYearData.year.slice(2);
+
+      // Sort trend data asc for spark lines
+      trendData.sort((a, b) => (a.fiscalYear > b.fiscalYear) ? 1 : -1)
+      let sparkLineData = trendData.map(calculateRevenueTypeAmountsByYear)
+  
+      let royalties = sparkLineData.map(yearData => ({'year':yearData.year, 'amount': yearData.amountByRevenueType.Royalties}) )
+      let bonuses = sparkLineData.map(yearData => ({'year':yearData.year, 'amount': yearData.amountByRevenueType.Bonus}) )
+      let rents = sparkLineData.map(yearData => ({'year':yearData.year, 'amount': yearData.amountByRevenueType.Rents}) )
+      let otherRevenues = sparkLineData.map(yearData => {
+        calculateOtherRevenues(yearData);
+        return ({'year':yearData.year, 'amount': yearData.amountByRevenueType['Other Revenues']}); 
+      })
+      let totalRevenues = sparkLineData.map(yearData => (
+        {
+          'year':yearData.year, 
+          'amount': (
+            yearData.amountByRevenueType.Royalties+
+            yearData.amountByRevenueType.Bonus+
+            yearData.amountByRevenueType.Rents+
+            yearData.amountByRevenueType['Other Revenues']
+          )
+        })
+      )
+    
+    
       return (
         <section className={styles.root}>
           <h3 className={styles.title+" h3-bar"}>Revenue trends</h3>
@@ -170,13 +254,23 @@ const RevenueTrends = props => (
             </tbody>
           </table>
         </section>
-      )}
-    }
-  />
+      )
+}
 
-)
 
 export default RevenueTrends
+
+
+
+/**
+* calculateOtherRevenues(data) - calculates other revenus from other revenues, inspections fees and civil penalties.
+*
+*  @param {object} data item
+*
+*  @example
+*            calculateOtherRevenues(yearData);
+*  
+**/
 
 const calculateOtherRevenues = (data) => {
 
@@ -186,6 +280,13 @@ const calculateOtherRevenues = (data) => {
   
   data.amountByRevenueType['Other Revenues'] = otherRevenuesAmount+inspectionFeesAmount+civilPenaltiesAmount;
 }
+
+/**
+* calculateRevenueTypeAmountsByYear(data,index) - calculates other revenus from other revenues, inspections fees and civil penalties.
+*
+*  
+**/
+
 
 const calculateRevenueTypeAmountsByYear = (yearData, index) => {
   let fiscalYear = yearData.fiscalYear;
@@ -199,6 +300,14 @@ const calculateRevenueTypeAmountsByYear = (yearData, index) => {
 
   return { 'year': fiscalYear, 'amountByRevenueType': sums};
 }
+
+/**
+* PercentDifference({currentAmount,previousAmount}) - calculates other revenus from other revenues, inspections fees and civil penalties.
+*
+*  @return TriangleUpIcon || TriangleDownIcon
+**/
+
+
 
 const PercentDifference = ({currentAmount, previousAmount}) => {
   let percentIncrease = ((currentAmount - previousAmount)/previousAmount) * 100;

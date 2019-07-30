@@ -261,7 +261,7 @@ const createProductionCommoditiesData = (groupByCommodity, groupByYear, stateId)
           ? total[item.id].volume[year] + node.Volume
           : node.Volume
 
-          total[item.id].total += total[item.id].volume[year];
+          total[item.id].total += total[item.id].volume[year]
       }
     })
 
@@ -465,6 +465,37 @@ const createHowItWorksPages = (createPage, graphql) => {
   })
 }
 
+const createArchivePages = (createPage, graphql) => {
+	const graphQLQueryString = '{' + GRAPHQL_QUERIES.MARKDOWN_ARCHIVE + '}';
+
+	return new Promise((resolve, reject) => {
+	    resolve(
+	      graphql(graphQLQueryString).then(result => {
+	        if (result.errors) {
+	        	console.error(result.errors)
+	          reject(result.errors)
+	        }
+	        else {
+	        	// Create pages for each markdown file.
+		        result.data.allMarkdownRemark.pages.forEach(({ page }) => {
+		          const path = page.frontmatter.permalink
+		          const template = getPageTemplate(page.frontmatter.layout)
+
+		          createPage({
+		            path,
+		            component: template,
+		            context: {
+		              markdown: page,
+		            },
+		          })
+		        })
+	        	resolve()
+	        }
+	      })
+	    )
+	  })
+};
+
 const createDownloadsPages = (createPage, graphql) => {
   const graphQLQueryString = '{' + GRAPHQL_QUERIES.MARKDOWN_DOWNLOADS + '}'
 
@@ -598,7 +629,7 @@ const createOffshoreRevenueTypeCommoditiesData = (groupByCommodity, groupByYear,
 }
 
 const createOffshoreProductionCommoditiesData = (groupByCommodity, groupByYear, offshoreId) => {
-  //console.log(offshoreId)
+  // console.log(offshoreId)
   let data = groupByCommodity
   let commodityProductionYears = groupByYear.sort(compareValues('id'))
   if (commodityProductionYears.length > 10) {
@@ -608,7 +639,7 @@ const createOffshoreProductionCommoditiesData = (groupByCommodity, groupByYear, 
 
   let commoditiesOffshoreCode = data.reduce((total, item) => {
     let productName = (item.id.includes('~')) ? item.id.split('~')[0] : item.id
-    
+
     item.edges.forEach(element => {
       let node = element.node
       let id = node.FipsCode
@@ -626,7 +657,6 @@ const createOffshoreProductionCommoditiesData = (groupByCommodity, groupByYear, 
   }, {})
 
   let commoditiesProduction = data.reduce((total, item) => {
-    
     item.edges.forEach(element => {
       let node = element.node
       let name = node.ProductName
@@ -637,7 +667,7 @@ const createOffshoreProductionCommoditiesData = (groupByCommodity, groupByYear, 
           ? total[item.id].volume[year] + node.Volume
           : node.Volume
 
-          total[item.id].total += total[item.id].volume[year];
+          total[item.id].total += total[item.id].volume[year]
       }
     })
 

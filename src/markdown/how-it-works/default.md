@@ -206,4 +206,3 @@ redirect_from: /how-it-works/production/
       <page-toc scroll.offset='-50' exclude.class.names='h3'></page-toc>
     </div>
   </main>
-</div>

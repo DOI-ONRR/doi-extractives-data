@@ -16,10 +16,11 @@
 .tab {
     background-color: --grayPale;
     margin-left: 10px;
+    margin-bottom: 1px;
     border-top: 0px solid --grayLight;
     	border-right: 0px solid --grayLight;
 	border-left: 0px solid --grayLight;
-	border-bottom: 1px solid --gray;
+	border-bottom: 0px solid --grayLight;
 	color: --grayDarkest;
 	cursor: pointer;
 	font-size: 16px;

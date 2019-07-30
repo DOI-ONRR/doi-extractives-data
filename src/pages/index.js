@@ -213,7 +213,7 @@ class HomePage extends React.Component {
                mapFeatures="states"
                mapOffshoreJson="/maps/offshore/offshore.json"
                onClick={ (d,i) => { 
-                   let state=fipsAbbrev[d.id];
+                   let state=fipsAbbrev[d.id] || d.id;
                    let url="/explore/"+state+"#revenue" 
                    window.location.href = url;
 

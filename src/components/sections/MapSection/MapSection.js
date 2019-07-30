@@ -29,11 +29,12 @@ const MapSection = (props) => {
 
     const results=useStaticQuery(graphql`
 query MyQuery {
-  allResourceRevenuesFiscalYear(filter: {FiscalYear: {eq: "2018"}, State: {nin: ["withheld", "Not tied to a location", null]}}) {
+  allResourceRevenuesFiscalYear(filter: {FiscalYear: {eq: "2018"}, State: {nin: ["withheld", "Not tied to a location"]}}) {
     nodes {
       Revenue
       State
       County
+      OffshorePlanningArea
     }
   }
 }
@@ -46,7 +47,9 @@ query MyQuery {
     } else if (props.mapFeatures == 'counties') {
 	data=county_summary(results.allResourceRevenuesFiscalYear.nodes);
     }
-//    console.debug(props)
+
+    let offshore_data=offshore_summary(results.allResourceRevenuesFiscalYear.nodes);
+    console.debug(offshore_data)
     let states=props.states || [];
     let options=states.map((value)=>{ return {value:value.state.frontmatter.unique_id,
 					      name:value.state.frontmatter.title}})
@@ -74,7 +77,7 @@ return (
 	   
 
     </div>
-	<div className={styles.containerRight}><Map mapFeatures={props.mapFeatures} mapData={data} mapOffshoreJson={props.mapOffshoreJson} colorScheme={props.mapColor}  onClick={onClick} /> </div>
+	<div className={styles.containerRight}><Map mapFeatures={props.mapFeatures} mapData={data} offshoreData={offshore_data} mapOffshoreJson={props.mapOffshoreJson} colorScheme={props.mapColor}  onClick={onClick} /> </div>
 
 	
 
@@ -98,13 +101,15 @@ const state_summary = (data)=> {
 	let n=data[ii];
 	
 	//	let fips=state_fips[n.State]
-	let fips=n.State
-	let value=n.Revenue
-	
-	if(sumData[fips]) {
-	    sumData[fips]+=value;
-	} else {
-	    sumData[fips]=value;
+	if(n.State) {
+	    let fips=n.State
+	    let value=n.Revenue
+	    
+	    if(sumData[fips]) {
+		sumData[fips]+=value;
+	    } else {
+		sumData[fips]=value;
+	    }
 	}
     }
     let r=[];
@@ -141,6 +146,62 @@ const county_summary = (data)=> {
     return r;
 }
 
+/**
+*  offshore_summary - helper function to summarize data to offshore planning area level. 
+*
+*  @param {*}  graphql result set with revenue, county and state for current fiscal year
+*  @return  array[][] returns two diminsional array of fips, revenue for use in map
+*/
+
+const offshore_summary = (data)=> {
+    let sumData={};
+    for(let ii=0; ii<data.length; ii++) {
+	let n=data[ii];
+	if(n.OffshorePlanningArea) {
+	    let fips=offshore_planning_area[n.OffshorePlanningArea] || n.OffshorePlanningArea;
+	    let value=n.Revenue
+	    
+	    if(sumData[fips]) {
+		sumData[fips]+=value;
+	    } else {
+		sumData[fips]=value;
+	    }
+	}
+    }
+    let r=[];
+    for(let fips in sumData) {
+	r.push([fips,sumData[fips]]);
+    }
+    return r;
+}
+const offshore_planning_area={
+    "Offshore Aleutian Arc":"ALA",
+    "Offshore Aleutian Basin":"ALB",
+    "Offshore Beaufort Sea":"BFT",
+    "Offshore Bowers Basin":"BOW",
+    "Offshore Chukchi Sea":"CHU",
+    "Offshore Cook Inlet":"COK",
+    "Offshore St. George Basin":"GEO",
+    "Offshore Gulf of Alaska":"GOA",
+    "Offshore Hope Basin":"HOP",
+    "Offshore Kodiak":"KOD",
+    "Offshore St. Matthew-Hall":"MAT",
+    "Offshore North Aleutian Basin":"NAL",
+    "Offshore Navarin Basin":"NAV",
+    "Offshore Norton Basin":"NOR",
+    "Offshore Shumagin":"SHU",
+    "Offshore Florida Straits":"FLS",
+    "Offshore Mid Atlantic":"MDA",
+    "Offshore North Atlantic":"NOA",
+    "Offshore South Atlantic":"SOA",
+    "Offshore Western Gulf of Mexico":"WGM",
+    "Offshore Central Gulf of Mexico":"CGM",
+    "Offshore Eastern Gulf of Mexico":"EGM",
+    "Offshore Central California":"CEC",
+    "Offshore Northern California":"NOC",
+    "Offshore Southern California":"SOC",
+    "Offshore Washington-Oregon":"WAO"
+}
 
 /**
 *  state_fips object for looking up fips from abbrev

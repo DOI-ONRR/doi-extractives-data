@@ -23,7 +23,7 @@ const Map = (props) => {
     const mapJson=props.mapJson || "/maps/land/us-topology.json";
 
     const mapFeatures=props.mapFeatures || "counties";
-    const mapData=props.mapData || [];  
+    const mapData=props.mapData.concat(props.offshoreData) || [];  
     const elemRef = useRef(null);
     const colorScheme=props.colorScheme || "green" ;
     const onClick=props.onClick || function (d,i) {console.debug("Default onClick function", d,i)};
@@ -33,6 +33,7 @@ const Map = (props) => {
 	 .then( us => {
 	     let states = get_states(us);
 	     let data=observable_data(mapData);
+
 //	     let p= get_data().then((data)=>{3
 //		 chart(elemRef.current, us,mapFeatures,data);
 //	     });
@@ -42,18 +43,10 @@ const Map = (props) => {
 
 		     let max=data.values.sort((a,b)=>a-b)[data.values.length-1];
 
-		     let fake_data=mapData;
-		     let real_data={};
+
+		     let svg=chart(elemRef.current, us,mapFeatures,data, colorScheme,onClick);
 		     for(let region in  offshore.objects ) {
-			 for(let ii =0; ii< offshore.objects[region].geometries.length; ii++) {
-			     let value=Math.random() * 10000000 + max;
-			     fake_data.push([ offshore.objects[region].geometries[ii].id,value]);
-			 }
-			 real_data=observable_data(fake_data);
-		     }
-		     let svg=chart(elemRef.current, us,mapFeatures,real_data, colorScheme,onClick);
-		     for(let region in  offshore.objects ) {
-		     offshore_chart(svg,offshore,region,real_data, colorScheme,onClick);
+		     offshore_chart(svg,offshore,region,data, colorScheme,onClick);
 		     }
 			     
 		 })
@@ -91,7 +84,13 @@ const chart = (node,us,mapFeatures,data, colorScheme,onClick) => {
     
     const width = node.scrollWidth;
     const height = node.scrollHeight;
-    const path = d3.geoPath();
+    const projection=d3.geoAlbersUsa()
+	  .translate([width/2, height/2])    // translate to center of screen
+	  .scale([400]);          // scale things down so see entire US
+    const path = d3.geoPath(projection);
+    //const path = d3.geoPath();
+
+		
     let color = ()=>{};
     // switch quick and dirty to let users change color beter to use d3.interpolateRGB??
     switch(colorScheme) {
@@ -128,8 +127,7 @@ const chart = (node,us,mapFeatures,data, colorScheme,onClick) => {
     console.debug(us);
     console.debug(us.objects[mapFeatures]);
     console.debug(topojson.feature(us, us.objects[mapFeatures]));
-    svg.append("g").attr("transform", "translate(900,400) scale(5,-5)")
-    
+    svg.append("g")    
 	.selectAll("path")
 	.data(topojson.feature(us, us.objects[mapFeatures]).features)
 	.join("path")
@@ -157,7 +155,7 @@ const chart = (node,us,mapFeatures,data, colorScheme,onClick) => {
 	.attr("stroke", "#9FA0A1")
 	.attr("stroke-linejoin", "round")
 	.attr("d", path);
-    
+
     return svg.node();
     
 
@@ -169,8 +167,21 @@ const chart = (node,us,mapFeatures,data, colorScheme,onClick) => {
 
 
 const offshore_chart = (node,offshore, region ,data, colorScheme,onClick) => {
-    
-    const path = d3.geoPath();
+    const width = node.scrollWidth;
+    const height = node.scrollHeight;
+    const margin = { top: 0, bottom: 0, right: 0, left: 0};
+
+    //    const path = d3.geoPath();
+    const projection=d3.geoAlbersUsa()
+
+	  /*.fitExtent([[margin.left, margin.top], [width - margin.right, height - margin.bottom]],
+                     topojson.feature(offshore, offshore.objects[region]))
+	  */
+	 .translate([width/2, height/2])    // translate to center of screen
+	 .scale([400]);          // scale things down so see entire US
+	 
+    //const path = d3.geoPath(projection);
+        const path = d3.geoPath();
     let color = ()=>{};
     // switch quick and dirty to let users change color beter to use d3.interpolateRGB??
     switch(colorScheme) {

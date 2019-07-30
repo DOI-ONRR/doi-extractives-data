@@ -42,13 +42,7 @@ exports[`RevenueTrends renders correctly 1`] = `
       <tr>
         <td>
           <div
-            style={
-              Object {
-                "fill": "none",
-                "stroke": "#5c737f",
-                "strokeWidth": 1,
-              }
-            }
+            style={Object {}}
           />
         </td>
         <td
@@ -78,13 +72,7 @@ exports[`RevenueTrends renders correctly 1`] = `
       <tr>
         <td>
           <div
-            style={
-              Object {
-                "fill": "none",
-                "stroke": "#5c737f",
-                "strokeWidth": 1,
-              }
-            }
+            style={Object {}}
           />
         </td>
         <td
@@ -114,13 +102,7 @@ exports[`RevenueTrends renders correctly 1`] = `
       <tr>
         <td>
           <div
-            style={
-              Object {
-                "fill": "none",
-                "stroke": "#5c737f",
-                "strokeWidth": 1,
-              }
-            }
+            style={Object {}}
           />
         </td>
         <td
@@ -150,13 +132,7 @@ exports[`RevenueTrends renders correctly 1`] = `
       <tr>
         <td>
           <div
-            style={
-              Object {
-                "fill": "none",
-                "stroke": "#5c737f",
-                "strokeWidth": 1,
-              }
-            }
+            style={Object {}}
           />
         </td>
         <td
@@ -190,13 +166,7 @@ exports[`RevenueTrends renders correctly 1`] = `
       <tr>
         <td>
           <div
-            style={
-              Object {
-                "fill": "none",
-                "stroke": "#5c737f",
-                "strokeWidth": 1,
-              }
-            }
+            style={Object {}}
           />
         </td>
         <td

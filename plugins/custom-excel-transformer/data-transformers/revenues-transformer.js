@@ -144,17 +144,25 @@ function getMonthFromString (month) {
 }
 
 function getFipsCode (offshorePlanningArea) {
-  switch (offshorePlanningArea) {
-  case 'Southern California':
+  switch (offshorePlanningArea && offshorePlanningArea.toLowerCase()) {
+  case 'southern california':
     return 'SOC'
-  case 'Central Gulf of Mexico':
+  case 'central gulf of mexico':
     return 'CGM'
-  case 'Eastern Gulf of Mexico':
+  case 'eastern gulf of mexico':
     return 'EGM'
-  case 'Western Gulf of Mexico':
+  case 'western gulf of mexico':
     return 'WGM'
-  case 'Beaufort Sea':
+  case 'beaufort sea':
     return 'BFT'
+  case 'north atlantic':
+    return 'NOA'
+  case 'mid atlantic':
+    return 'MDA'
+  case 'cook inlet':
+    return 'COK'
+  case 'chukchi sea':
+    return 'CHU'
   }
 
   return undefined

@@ -84,6 +84,36 @@ module.exports = Object.freeze({
         }
       }
     }`,
+  OFFSHORE_REVENUE:
+    `RevenueGroupByCommodity: allResourceRevenuesCalendarYear(filter: {Commodity: {ne: "Not tied to a commodity"}, LandCategory: {eq: "Offshore"}}) {
+      group(field: Commodity) {
+        id: fieldValue
+        edges {
+          node {
+            id
+            Commodity
+            Revenue
+            CalendarYear
+            RevenueType
+            FipsCode
+            LandCategory
+            OffshoreRegion
+            OffshorePlanningArea
+          }
+        }
+      }
+    }`,
+  OFFSHORE_REVENUE_BY_CY:
+    `RevenueGroupByCY: allResourceRevenuesCalendarYear(filter: {Commodity: {ne: "Not tied to a commodity"}, LandCategory: {eq: "Offshore"}}) {
+      group(field: CalendarYear) {
+        id: fieldValue
+        edges {
+          node {
+            id
+          }
+        }
+      }
+    }`,
   OFFSHORE_PRODUCTION:
     `OffshoreProductionByProduct: allProductVolumesCalendarYear(filter: {
       OnshoreOffshore: {eq: "Offshore"}}) {
@@ -105,6 +135,7 @@ module.exports = Object.freeze({
             State
             OnshoreOffshore
             OffshoreRegion
+            OffshorePlanningArea
           }
         }
       }

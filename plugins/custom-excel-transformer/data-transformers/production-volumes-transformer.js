@@ -26,7 +26,8 @@ const SOURCE_COLUMNS = {
   County: 'county',
   FipsCode: 'fips code',
   State: 'state',
-  OffshoreRegion: 'offshore region'
+  OffshoreRegion: 'offshore region',
+  OffshorePlanningArea: 'offshore planning area',
 }
 
 /* List of all the products in the excel file and the corresponding column name */
@@ -103,12 +104,12 @@ const createProductVolumeNodeByProduct = (productVolumeData, type) => {
 
   if (data[SOURCE_COLUMNS.Commodity] === undefined && data[SOURCE_COLUMNS.Product] === undefined) return
   let product = data[SOURCE_COLUMNS.Commodity] || data[SOURCE_COLUMNS.Product]
-  let matchProductNameRE = (product.includes('Geothermal')) ? /([^-]+)/ :  /([^(*)]+)/
+  let matchProductNameRE = (product.includes('Geothermal')) ? /([^-]+)/ : /([^(*)]+)/
   let result = product.split(matchProductNameRE)
 
   let units = result[3].trim()
   // @TODO - Geothermal has multiple sources/units need to use this to get unique product names for all geothermal, this should be refactored
-  let productName = (product.includes('Geothermal')) ? result[1].trim()+'~'+units : result[1].trim()
+  let productName = (product.includes('Geothermal')) ? result[1].trim() + '~' + units : result[1].trim()
 
   let node = {
 	  ProductionMonth: data[SOURCE_COLUMNS.Month],
@@ -121,9 +122,10 @@ const createProductVolumeNodeByProduct = (productVolumeData, type) => {
 	  Volume: data[SOURCE_COLUMNS.Volume],
     Withheld: data[SOURCE_COLUMNS.Withheld],
     County: data[SOURCE_COLUMNS.County],
-    FipsCode: data[SOURCE_COLUMNS.FipsCode],
+    FipsCode: data[SOURCE_COLUMNS.FipsCode] || getFipsCode(data[SOURCE_COLUMNS.OffshorePlanningArea]),
     State: data[SOURCE_COLUMNS.State],
     OffshoreRegion: data[SOURCE_COLUMNS.OffshoreRegion],
+    OffshorePlanningArea: data[SOURCE_COLUMNS.OffshorePlanningArea],
 	  internal: {
 	    type: type,
 	  }
@@ -149,4 +151,21 @@ function getMonthFromString (month) {
     return new Date(d).getMonth() + 1
   }
   return -1
+}
+
+function getFipsCode (offshorePlanningArea) {
+  switch (offshorePlanningArea) {
+  case 'Southern California':
+    return 'SOC'
+  case 'Central Gulf of Mexico':
+    return 'CGM'
+  case 'Eastern Gulf of Mexico':
+    return 'EGM'
+  case 'Western Gulf of Mexico':
+    return 'WGM'
+  case 'Beaufort Sea':
+    return 'BFT'
+  }
+
+  return undefined
 }

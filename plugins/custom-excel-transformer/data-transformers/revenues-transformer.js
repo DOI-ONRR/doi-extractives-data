@@ -28,6 +28,7 @@ const SOURCE_COLUMNS = {
   FiscalYear: 'fiscal year',
   OffshoreRegion: 'offshore region',
   FipsCode: 'fips code',
+  OffshorePlanningArea: 'offshore planning area',
 }
 
 const LAND_CATEGORY_TO_DISPLAY_NAME = {
@@ -79,7 +80,8 @@ const createRevenueNode = (revenueData, type) => {
     FiscalYear: data[SOURCE_COLUMNS.FiscalYear],
     Units: '$',
     LongUnits: 'dollars',
-    FipsCode: data[SOURCE_COLUMNS.FipsCode] && data[SOURCE_COLUMNS.FipsCode].toString(),
+    FipsCode: (data[SOURCE_COLUMNS.FipsCode]) ? data[SOURCE_COLUMNS.FipsCode].toString() : getFipsCode(data[SOURCE_COLUMNS.OffshorePlanningArea]),
+    OffshorePlanningArea: data[SOURCE_COLUMNS.OffshorePlanningArea],
     OffshoreRegion: (data[SOURCE_COLUMNS.OffshoreRegion] === '' || data[SOURCE_COLUMNS.OffshoreRegion] === undefined)
       ? data[SOURCE_COLUMNS.OffshoreRegion] : 'Offshore ' + data[SOURCE_COLUMNS.OffshoreRegion],
     internal: {
@@ -139,4 +141,21 @@ function getMonthFromString (month) {
     return new Date(d).getMonth()
   }
   return -1
+}
+
+function getFipsCode (offshorePlanningArea) {
+  switch (offshorePlanningArea) {
+  case 'Southern California':
+    return 'SOC'
+  case 'Central Gulf of Mexico':
+    return 'CGM'
+  case 'Eastern Gulf of Mexico':
+    return 'EGM'
+  case 'Western Gulf of Mexico':
+    return 'WGM'
+  case 'Beaufort Sea':
+    return 'BFT'
+  }
+
+  return undefined
 }

@@ -526,6 +526,76 @@ const createCaseStudiesPages = (createPage, graphql) => {
 	    )
 	  })
 }
+const createOffshoreRevenueTypeCommoditiesData = (groupByCommodity, groupByYear, offshoreId) => {
+  if (!groupByCommodity) return { commodities: undefined, commodityYears: undefined }
+  let data = groupByCommodity
+
+  let commodityYears = groupByYear.sort(compareValues('id'))
+  if (commodityYears.length > 10) {
+	  commodityYears = commodityYears.slice(commodityYears.length - 10)
+  }
+  commodityYears = commodityYears.map(item => parseInt(item.id))
+
+  let commoditiesCounty = data.reduce((total, item) => {
+    item.edges.forEach(element => {
+      let node = element.node
+      let year = parseInt(node.CalendarYear)
+      if (commodityYears.includes(year) && node.OffshoreRegion.toLowerCase().includes(offshoreId)) {
+        total[node.FipsCode] = total[node.FipsCode] || { name: node.OffshorePlanningArea, revenue: {} }
+        total[node.FipsCode].revenue[year] = (total[node.FipsCode].revenue[year])
+          ? total[node.FipsCode].revenue[year] + node.Revenue
+          : node.Revenue
+      }
+    })
+
+    return total
+  }, {})
+
+  let commodities = data.reduce((total, item) => {
+	  item.edges.forEach(element => {
+      let node = element.node
+      if (commodityYears.includes(node.CalendarYear) && node.OffshoreRegion.toLowerCase().includes(offshoreId)) {
+        total[item.id] = total[item.id] || {}
+        total[item.id][node.RevenueType] = total[item.id][node.RevenueType] || {}
+        total[item.id]['All'] = total[item.id]['All'] || {}
+		    total[item.id][node.RevenueType][node.CalendarYear] = (total[item.id][node.RevenueType][node.CalendarYear])
+          ? total[item.id][node.RevenueType][node.CalendarYear] + node.Revenue
+          : node.Revenue
+
+        total[item.id]['All'][node.CalendarYear] = (total[item.id]['All'][node.CalendarYear])
+          ? total[item.id]['All'][node.CalendarYear] + node.Revenue
+          : node.Revenue
+
+        if (!total['All']['All'][node.CalendarYear]) {
+          total['All']['All'][node.CalendarYear] = 0
+        }
+        total['All'][node.RevenueType] = total['All'][node.RevenueType] || {}
+        if (!total['All'][node.RevenueType][node.CalendarYear]) {
+          total['All'][node.RevenueType][node.CalendarYear] = 0
+        }
+        total['All']['All'][node.CalendarYear] += node.Revenue
+        total['All'][node.RevenueType][node.CalendarYear] += node.Revenue
+      }
+	  })
+
+	  return total
+  }, { 'All': { 'All': {} } })
+
+  Object.keys(commoditiesCounty).forEach(code => {
+    Object.keys(commoditiesCounty[code].revenue).forEach(year => {
+      commoditiesCounty[code].revenue[year] = parseInt(commoditiesCounty[code].revenue[year])
+    })
+  })
+  Object.keys(commodities).forEach(commodity => {
+	  Object.keys(commodities[commodity]).forEach(revenueType => {
+      Object.keys(commodities[commodity][revenueType]).forEach(year => {
+        commodities[commodity][revenueType][year] = parseInt(commodities[commodity][revenueType][year])
+      })
+	  })
+  })
+
+  return { commodities, commoditiesCounty, commodityYears }
+}
 
 const createOffshoreProductionCommoditiesData = (groupByCommodity, groupByYear, offshoreId) => {
   //console.log(offshoreId)
@@ -536,20 +606,18 @@ const createOffshoreProductionCommoditiesData = (groupByCommodity, groupByYear, 
   }
   commodityProductionYears = commodityProductionYears.map(item => parseInt(item.id))
 
-  console.log(commodityProductionYears)
-
   let commoditiesOffshoreCode = data.reduce((total, item) => {
     let productName = (item.id.includes('~')) ? item.id.split('~')[0] : item.id
+    
     item.edges.forEach(element => {
       let node = element.node
+      let id = node.FipsCode
       let year = parseInt(node.ProductionYear)
-      console.log(node.OffshoreRegion, offshoreId, node.OffshoreRegion.toLowerCase().includes(offshoreId))
       if (commodityProductionYears.includes(year) && node.OffshoreRegion.toLowerCase().includes(offshoreId)) {
-        console.log(offshoreId, year)
-        total[offshoreId] = total[offshoreId] || { name: node.OffshoreRegion, products: {} }
-        total[offshoreId].products[item.id] = total[offshoreId].products[item.id] || { name: productName, units: node.Units, withheld: node.Withheld, volume: {} }
-        total[offshoreId].products[item.id].volume[year] = (total[offshoreId].products[item.id].volume[year])
-          ? total[offshoreId].products[item.id].volume[year] + node.Volume
+        total[id] = total[id] || { name: node.OffshorePlanningArea, products: {} }
+        total[id].products[item.id] = total[id].products[item.id] || { name: productName, units: node.Units, withheld: node.Withheld, volume: {} }
+        total[id].products[item.id].volume[year] = (total[id].products[item.id].volume[year])
+          ? total[id].products[item.id].volume[year] + node.Volume
           : node.Volume
       }
     })
@@ -558,9 +626,10 @@ const createOffshoreProductionCommoditiesData = (groupByCommodity, groupByYear, 
   }, {})
 
   let commoditiesProduction = data.reduce((total, item) => {
-    let name = (item.id.includes('~')) ? item.id.split('~')[0] : item.id
+    
     item.edges.forEach(element => {
       let node = element.node
+      let name = node.ProductName
       let year = parseInt(node.ProductionYear)
       if (commodityProductionYears.includes(year) && node.OffshoreRegion.toLowerCase().includes(offshoreId)) {
         total[item.id] = total[item.id] || { name: name, units: node.Units, withheld: node.Withheld, total: 0, volume: {} }
@@ -595,6 +664,8 @@ const createOffshoreProductionCommoditiesData = (groupByCommodity, groupByYear, 
 const createOffshorePages = (createPage, graphql) => {
   const graphQLQueryString = '{' + GRAPHQL_QUERIES.MARKDOWN_OFFSHORE +
                                 GRAPHQL_QUERIES.OFFSHORE_PRODUCTION +
+                                GRAPHQL_QUERIES.OFFSHORE_REVENUE +
+                                GRAPHQL_QUERIES.OFFSHORE_REVENUE_BY_CY +
 																GRAPHQL_QUERIES.OFFSHORE_PRODUCTION_ALASKA +
 																GRAPHQL_QUERIES.OFFSHORE_PRODUCTION_GULF +
 																GRAPHQL_QUERIES.OFFSHORE_PRODUCTION_PACIFIC + '}'
@@ -603,11 +674,11 @@ const createOffshorePages = (createPage, graphql) => {
 	    resolve(
 	      graphql(graphQLQueryString).then(result => {
 	        if (result.errors) {
-	        	console.error(result.errors)
-	          reject(result.errors)
+            console.error(result.errors)
+            reject(result.errors)
 	        }
 	        else {
-	        	// Create pages for each markdown file.
+            // Create pages for each markdown file.
 		        result.data.allMarkdownRemark.pages.forEach(({ page }) => {
 		          const path = page.frontmatter.permalink
 		          const template = getPageTemplate(page.frontmatter.layout)
@@ -624,6 +695,10 @@ const createOffshorePages = (createPage, graphql) => {
                 break
               }
 
+              let { commodities, commoditiesCounty, commodityYears } = createOffshoreRevenueTypeCommoditiesData(result.data.RevenueGroupByCommodity.group,
+                result.data.RevenueGroupByCY.group,
+                page.frontmatter.unique_id)
+
               let { commoditiesProduction, commoditiesOffshoreCode, commodityProductionYears } =
               createOffshoreProductionCommoditiesData(result.data.OffshoreProductionByProduct.group,
                   result.data.OffshoreProductionByYear.group,
@@ -638,6 +713,9 @@ const createOffshorePages = (createPage, graphql) => {
                   commoditiesProduction: commoditiesProduction,
                   commoditiesOffshoreCode: commoditiesOffshoreCode,
                   commodityProductionYears: commodityProductionYears,
+                  commodities: commodities,
+                  commoditiesCounty: commoditiesCounty,
+                  commodityYears: commodityYears,
 		            },
 		          })
 		        })
@@ -658,7 +736,7 @@ exports.onPostBuild = () => {
 	console.log('Copying Files from public to _site...')
 	copydir.sync(__dirname + '/public', './_site')
 	console.log('Finished Copying Files to _site.')
-	
+
 	console.log('Copying Files from downloads to _site...')
 	copydir.sync(__dirname + '/downloads', './_site/downloads')
 	console.log('Finished Copying Files to _site.')

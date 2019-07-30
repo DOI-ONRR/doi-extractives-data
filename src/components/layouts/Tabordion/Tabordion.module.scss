@@ -37,9 +37,11 @@
 .tabSelected {
     
     background-color: white;
-    box-shadow: 0px 5px 0px 0px inset;
-    border: 1px solid --gray;
+    border-top: 5px solid --grayDarkest;
+	border-left: 1px solid --gray;
+	border-right: 1px solid --gray;
 	border-bottom: none;
+	padding-top: 6px;
 	font-weight: bold;
 	z-index: 20;
 

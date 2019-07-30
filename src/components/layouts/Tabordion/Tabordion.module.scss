@@ -6,7 +6,7 @@
 }
 
 .tabContainer {
-	margin-top: 5rem;
+margin-top: 5rem;
   display: flex;
   justify-content: flex-start;
   flex-wrap: nowrap;
@@ -52,7 +52,6 @@
 
 .tabPanelContainer {
     background-color: white;
-/*	border: 1px solid --grayLight; goes away */
     border-top: 1px solid --gray;
 
     overflow: hidden;
@@ -78,24 +77,35 @@
 }
 
 @media screen and (max-width: 481px) {
+	
 	.tabContainer {
-		flex-wrap: wrap;
+	flex-wrap: wrap;
   	padding-right: 0;
 	width: 100%;
 	margin-left: 0px;
 	}
+
 	.tab {
+		border: 1px solid --gray;
 		float: none;
-		border: 1px solid --grayLight;
 		text-align: left;
 		width: 100%;
 		margin-left: 0px;
 	}
-	.tab:last-of-type {
-	    border-right: 1px solid --grayLight;
+
+	.tab:not(:last-of-type) {
+		border-bottom: 0px;
+	}
+
+	.tabSelected {
+		border-top: 5px solid --grayDarkest;
+		border-left: none;
+		border-right: none;
+		border-bottom: none;
 	}
 	
 	.tabPanelContainer {
+		border-top: none;
 		top: 0px;
 	}
 

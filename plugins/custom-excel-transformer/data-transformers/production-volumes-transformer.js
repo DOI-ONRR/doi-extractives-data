@@ -110,6 +110,13 @@ const createProductVolumeNodeByProduct = (productVolumeData, type) => {
   let units = result[3].trim()
   // @TODO - Geothermal has multiple sources/units need to use this to get unique product names for all geothermal, this should be refactored
   let productName = (product.includes('Geothermal')) ? result[1].trim() + '~' + units : result[1].trim()
+  let productionVolume = data[SOURCE_COLUMNS.Volume] || 0
+  let isWithheld = false
+
+  if (typeof productionVolume === 'string') {
+    isWithheld = (productionVolume.toLowerCase() === 'w' || productionVolume.toLowerCase() === 'withheld')
+    productionVolume = 0
+  }
 
   let node = {
 	  ProductionMonth: data[SOURCE_COLUMNS.Month],
@@ -119,8 +126,8 @@ const createProductVolumeNodeByProduct = (productVolumeData, type) => {
 	  LandCategory: data[SOURCE_COLUMNS.LandCategory].trim(),
 	  OnshoreOffshore: data[SOURCE_COLUMNS.OnshoreOffshore],
 	  ProductName: SOURCE_COLUMN_TO_PRODUCT_DISPLAY_NAME[product] || productName,
-	  Volume: (data[SOURCE_COLUMNS.Volume] === 'W') ? 0 : data[SOURCE_COLUMNS.Volume],
-    Withheld: data[SOURCE_COLUMNS.Volume] === 'W',
+	  Volume: productionVolume,
+    Withheld: isWithheld,
     County: data[SOURCE_COLUMNS.County],
     FipsCode: data[SOURCE_COLUMNS.FipsCode] || getFipsCode(data[SOURCE_COLUMNS.OffshorePlanningArea]),
     State: data[SOURCE_COLUMNS.State],

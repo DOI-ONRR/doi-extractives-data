@@ -34,7 +34,7 @@ const SearchResults = () => {
     .map(({ ref }) => index.documentStore.getDoc(ref))
   )
 
-  const [glossaryResults, setGlossaryResults] = useState(
+  const [glossaryResults] = useState(
     filterTerms (queryString)
   )
 
@@ -63,7 +63,7 @@ const SearchResults = () => {
                     results.map((item, index) => {
                       return <li key={ index }><Link to={ item.path }>{ item.title }</Link></li>
                     }
-                    ) : <p><strong>We didn't find any results for your search.</strong> {(glossaryResults.length > 0) && <React.Fragment>You might want to try searching for <GlossaryTerm termKey={queryString}>{queryString}</GlossaryTerm> in our glossary.</React.Fragment>}</p>
+                    ) : <p><strong>We didn't find any search results for {queryString}.</strong> {(glossaryResults.length > 0) && <React.Fragment>You might try a searching for <GlossaryTerm termKey={queryString}>{queryString}</GlossaryTerm> in our glossary.</React.Fragment>}</p>
                   }
                 </ul>
               </article>  

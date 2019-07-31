@@ -255,7 +255,7 @@ export const query = graphql`
         }
       }
     }
-    RevenueGroupByCalendarYear:allResourceRevenuesCalendarYear (filter:{Commodity:{ne:"Not tied to a commodity"}
+    RevenueGroupByCalendarYear:allResourceRevenuesCalendarYear (filter:{
     LandClass: {ne: "Native American"}}){
       group(field: CalendarYear) {
         id:fieldValue
@@ -266,7 +266,7 @@ export const query = graphql`
         }
       }
     }
-    RevenueGroupByCommodity:allResourceRevenuesCalendarYear (filter:{Commodity:{ne:"Not tied to a commodity"}
+    RevenueGroupByCommodity:allResourceRevenuesCalendarYear (filter:{
     LandClass: {ne: "Native American"}}){
       group(field: Commodity) {
         id:fieldValue

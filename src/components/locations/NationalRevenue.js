@@ -146,6 +146,7 @@ const NationalRevenue = props => {
         <section className="chart-list">
 
           {lazy(commodities).toArray().map((commodity, index) => {
+            if (commodity[0] === 'Not tied to a commodity') return
             let annualRevenue = commodity[1]
             let revenue = annualRevenue[year] || 0
             let commodityName = utils.getDisplayName_CommodityName(commodity[0])

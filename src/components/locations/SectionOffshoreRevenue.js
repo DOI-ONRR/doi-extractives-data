@@ -17,7 +17,6 @@ import CountyMap from '../maps/CountyMap'
 import OffshoreMap from '../maps/OffshoreMap'
 
 const SectionOffshoreRevenue = props => {
-  console.log(props)
   const usStateData = props.usStateMarkdown.frontmatter
   const usStateFields = props.usStateMarkdown.fields || {}
 

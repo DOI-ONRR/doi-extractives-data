@@ -90,6 +90,9 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
   createRedirect({ fromPath: '/how-it-works/federal-revenue-by-company', toPath: '/how-it-works/federal-revenue-by-company/2018', redirectInBrowser: true })
   createRedirect({ fromPath: '/how-it-works/federal-revenue-by-company/', toPath: '/how-it-works/federal-revenue-by-company/2018', redirectInBrowser: true })
 
+  //const used = process.memoryUsage().heapUsed / 1024 / 1024
+  //console.log(`#Create Pages: ${ Math.round(used * 100) / 100 } MB`)
+
   return Promise.all([
     createStatePages(createPage, graphql),
     createHowItWorksPages(createPage, graphql),
@@ -466,7 +469,7 @@ const createHowItWorksPages = (createPage, graphql) => {
 }
 
 const createArchivePages = (createPage, graphql) => {
-	const graphQLQueryString = '{' + GRAPHQL_QUERIES.MARKDOWN_ARCHIVE + '}';
+	const graphQLQueryString = '{' + GRAPHQL_QUERIES.MARKDOWN_ARCHIVE + '}'
 
 	return new Promise((resolve, reject) => {
 	    resolve(
@@ -494,7 +497,7 @@ const createArchivePages = (createPage, graphql) => {
 	      })
 	    )
 	  })
-};
+}
 
 const createDownloadsPages = (createPage, graphql) => {
   const graphQLQueryString = '{' + GRAPHQL_QUERIES.MARKDOWN_DOWNLOADS + '}'

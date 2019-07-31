@@ -54,7 +54,6 @@ class OffshoreRegion extends React.Component {
   }
 
   render () {
-    console.log(this.props)
     let title = this.props.pathContext.markdown.frontmatter.title || 'Natural Resources Revenue Data'
     let regionId = this.props.pathContext.markdown.frontmatter.unique_id
 

@@ -44,7 +44,6 @@ class OffshoreCountyMap extends React.Component {
 
 	  let legendUnits = props.shortUnits || props.units
 
-    console.log(this.frontmatterData)
 	  this.viewBox = (this.frontmatterData.is_cropped) ? VIEWBOXES_CROPPED[this.frontmatterData.unique_id] : VIEWBOXES[this.frontmatterData.unique_id]
 	  let viewBoxList
 	  let breakpointWidth
@@ -122,7 +121,7 @@ class OffshoreCountyMap extends React.Component {
   }
 
   mapAreaClickHandler (e, areaId) {
-    console.log('mapAreaClickHandler', e, areaId)
+    //console.log('mapAreaClickHandler', e, areaId)
   }
 
   render () {

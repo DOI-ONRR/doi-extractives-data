@@ -25,7 +25,7 @@ class FilterTable extends React.Component {
   };
 
   handleRequestSort = (event, property) => {
-  	console.log("Sort", event, property);
+  	//console.log("Sort", event, property);
   }
 
   componentWillReceiveProps (nextProps) {

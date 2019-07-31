@@ -61,12 +61,9 @@ const CountyMap = props => {
   let additionalPadding = dataDimensions * 1.8
   let paddingBottom = (mediaWidth * dataDimensions) + additionalPadding
 
-  console.log(usStateData.unique_id);
   let usStatesSVG = withPrefixSVG('/maps/states/all.svg')
   let usStateSVG = (usStateData.unique_id === 'pacific')? withPrefixSVG('/maps/offshore/all.svg') : withPrefixSVG('/maps/states/' + usStateData.unique_id + '.svg')
-
-  console.log(usStateSVG)
-
+  
   function getNeighbors_Features () {
     let content = ''
 

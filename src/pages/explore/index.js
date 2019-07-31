@@ -255,7 +255,8 @@ export const query = graphql`
         }
       }
     }
-    RevenueGroupByCalendarYear:allResourceRevenuesCalendarYear (filter:{Commodity:{ne:"Not tied to a commodity"}}){
+    RevenueGroupByCalendarYear:allResourceRevenuesCalendarYear (filter:{Commodity:{ne:"Not tied to a commodity"}
+    LandClass: {ne: "Native American"}}){
       group(field: CalendarYear) {
         id:fieldValue
         edges {
@@ -265,7 +266,8 @@ export const query = graphql`
         }
       }
     }
-    RevenueGroupByCommodity:allResourceRevenuesCalendarYear (filter:{Commodity:{ne:"Not tied to a commodity"}}){
+    RevenueGroupByCommodity:allResourceRevenuesCalendarYear (filter:{Commodity:{ne:"Not tied to a commodity"}
+    LandClass: {ne: "Native American"}}){
       group(field: Commodity) {
         id:fieldValue
         edges {

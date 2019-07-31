@@ -333,7 +333,10 @@ const createStatePages = (createPage, graphql) => {
 					}
 					}
         }
-        RevenueGroupByCalendarYear: allResourceRevenuesCalendarYear(filter: {Commodity: {ne: "Not tied to a commodity"}}) {
+        RevenueGroupByCalendarYear: allResourceRevenuesCalendarYear(
+          filter: {
+            Commodity: {ne: "Not tied to a commodity"}
+            LandClass: {ne: "Native American"}}) {
           group(field: CalendarYear) {
             id: fieldValue
             edges {
@@ -343,7 +346,10 @@ const createStatePages = (createPage, graphql) => {
             }
           }
         }
-        RevenueGroupByCommodity: allResourceRevenuesCalendarYear(filter: {Commodity: {ne: "Not tied to a commodity"}}) {
+        RevenueGroupByCommodity: allResourceRevenuesCalendarYear(
+          filter: {
+            Commodity: {ne: "Not tied to a commodity"}
+            LandClass: {ne: "Native American"}}) {
           group(field: Commodity) {
             id: fieldValue
             edges {

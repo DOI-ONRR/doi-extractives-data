@@ -26,6 +26,8 @@ const Map = (props) => {
     const mapData=props.mapData.concat(props.offshoreData) || [];  
     const elemRef = useRef(null);
     const colorScheme=props.colorScheme || "green" ;
+    const offshoreColorScheme=props.offshoreColorScheme || colorScheme;
+    const mapTitle=props.mapTitle;
     const onClick=props.onClick || function (d,i) {console.debug("Default onClick function", d,i)};
     useEffect( () => {
      let us= new Object
@@ -33,8 +35,8 @@ const Map = (props) => {
 	 .then( us => {
 	     let states = get_states(us);
 	     let data=observable_data(mapData);
-
-//	     let p= get_data().then((data)=>{3
+	     data.title=mapTitle;
+	     //	     let p= get_data().then((data)=>{3
 //		 chart(elemRef.current, us,mapFeatures,data);
 //	     });
 
@@ -45,8 +47,12 @@ const Map = (props) => {
 
 
 		     let svg=chart(elemRef.current, us,mapFeatures,data, colorScheme,onClick);
+		     let ii=0;
 		     for(let region in  offshore.objects ) {
-		     offshore_chart(svg,offshore,region,data, colorScheme,onClick);
+			 if(ii<1) {
+			     offshore_chart(svg,offshore,region,data, offshoreColorScheme ,onClick);
+			     //ii++;
+			 }
 		     }
 			     
 		 })
@@ -62,6 +68,7 @@ const Map = (props) => {
 	  <div className={styles.map} ref={elemRef} >
           </div>
 	  
+
   )
 }
 
@@ -84,13 +91,25 @@ const chart = (node,us,mapFeatures,data, colorScheme,onClick) => {
     
     const width = node.scrollWidth;
     const height = node.scrollHeight;
-    const projection=d3.geoAlbersUsa()
-	  .translate([width/2, height/2])    // translate to center of screen
-	  .scale([400]);          // scale things down so see entire US
-    const path = d3.geoPath(projection);
-    //const path = d3.geoPath();
+    const margin = { top: 0, bottom: 0, right: 0, left: 0};
+    d3.geoAlbersUsa.scale = function(_) {
+	if (!arguments.length) return lower48.scale();
+	lower48.scale(_), alaska.scale(_ * 0.70), hawaii.scale(_);
+	return albersUsa.translate(lower48.translate());
+    };
 
-		
+    const projection=d3.geoAlbersUsa()
+  	  .translate([width/2, height/2])    // translate to center of screen
+	  .scale([800]);          // scale things down so see entire US
+    //const path = d3.geoPath();
+    projection.scale=function(_) {
+	if (!arguments.length) return lower48.scale();
+	lower48.scale(_), alaska.scale(_ * 0.70), hawaii.scale(_);
+	return albersUsa.translate(lower48.translate());
+    };
+    const path = d3.geoPath(projection);
+
+    console.debug(projection.scale);
     let color = ()=>{};
     // switch quick and dirty to let users change color beter to use d3.interpolateRGB??
     switch(colorScheme) {
@@ -118,15 +137,12 @@ const chart = (node,us,mapFeatures,data, colorScheme,onClick) => {
 	  //.attr("viewBox", '-40 0 '+width*1.8+' '+height*1.8);
 
   svg.append("g")
-      .attr("transform", "translate(400,40)")
-	.call(legend,data.title, data, color);
-
+      .attr("transform", "translate(400,25)")
+	.call(legend,data.title, data, color,true);
+//return svg.node();
 
     let states = get_states(us);
-    console.debug(states);
-    console.debug(us);
-    console.debug(us.objects[mapFeatures]);
-    console.debug(topojson.feature(us, us.objects[mapFeatures]));
+
     svg.append("g")    
 	.selectAll("path")
 	.data(topojson.feature(us, us.objects[mapFeatures]).features)
@@ -170,18 +186,16 @@ const offshore_chart = (node,offshore, region ,data, colorScheme,onClick) => {
     const width = node.scrollWidth;
     const height = node.scrollHeight;
     const margin = { top: 0, bottom: 0, right: 0, left: 0};
-
+    let scale=800
     //    const path = d3.geoPath();
     const projection=d3.geoAlbersUsa()
+//	  .fitExtent([[margin.left, margin.top], [width - margin.right, height - margin.bottom]],
+//                     topojson.feature(offshore, offshore.objects[region]))
+    	  .translate([width/2, height/2])    // translate to center of screen
+	 .scale([scale]);          // scale things down so see entire US
 
-	  /*.fitExtent([[margin.left, margin.top], [width - margin.right, height - margin.bottom]],
-                     topojson.feature(offshore, offshore.objects[region]))
-	  */
-	 .translate([width/2, height/2])    // translate to center of screen
-	 .scale([400]);          // scale things down so see entire US
-	 
-    //const path = d3.geoPath(projection);
-        const path = d3.geoPath();
+    const path = d3.geoPath(projection);
+     //   const path = d3.geoPath();
     let color = ()=>{};
     // switch quick and dirty to let users change color beter to use d3.interpolateRGB??
     switch(colorScheme) {
@@ -205,7 +219,7 @@ const offshore_chart = (node,offshore, region ,data, colorScheme,onClick) => {
 
     let svg=d3.select(node);
 
-    svg.append("g").attr("transform", "translate(900,400) scale(5,-5)")
+    svg.append("g")
     
 	.selectAll("path")
 	.data(topojson.feature(offshore, offshore.objects[region]).features)
@@ -258,7 +272,7 @@ const offshore_chart = (node,offshore, region ,data, colorScheme,onClick) => {
 
 
 
-const legend = (g,title,data,color) => {
+const legend = (g,title,data,color,labels) => {
 /*
 
     g.append("rect")
@@ -277,9 +291,9 @@ const legend = (g,title,data,color) => {
     const width = 240;
     const height= 15;
     let sorted=data.values.sort((a,b)=>a-b);
-    let lowest=Math.floor(sorted[0]);
-    let median=Math.floor(sorted[Math.floor(sorted.length/2)]);
-    let highest=Math.floor(sorted[sorted.length-1]);
+    let lowest=utils.formatToSigFig_Dollar(Math.floor(sorted[0]),3);
+    let median=utils.formatToSigFig_Dollar(Math.floor(sorted[Math.floor(sorted.length/2)]),3);
+    let highest=utils.formatToSigFig_Dollar(Math.floor(sorted[sorted.length-1]),3);
     for(let ii=0;ii<sorted.length; ii++) {
 	g.append("rect")
 	    .attr("x",ii*width/sorted.length)
@@ -287,23 +301,23 @@ const legend = (g,title,data,color) => {
  	    .attr("height",height)
 	    .style("fill", color(sorted[ii]))
     }
-  	
-   g.append("text")
-      .attr("class", "caption")
-      .attr("y", -6)
-      .attr("fill", "#000")
-      .attr("text-anchor", "start")
+    
+    g.append("text")
+	.attr("class", "caption")
+	.attr("y", -6)
+	.attr("fill", "#000")
+	.attr("text-anchor", "start")
 	.attr("font-weight", "bold")
-
+    
 	.text(title);
-
-
-
-  g.call(d3.axisBottom(d3.scalePoint([lowest, median, highest], [0, width]))
-      .tickSize(13))
-    .select(".domain")
-      .remove();
-
+    
+    
+    if(labels) {	
+	g.call(d3.axisBottom(d3.scalePoint([lowest, median, highest], [0, width]))
+	       .tickSize(13))
+	    .select(".domain")
+	    .remove();
+    }
 }
 
 /**
@@ -317,7 +331,7 @@ const legend = (g,title,data,color) => {
 
 const observable_data = (d)=> {
 //    let data= await d3.csv("https://raw.githubusercontent.com/rentry/rentry.github.io/master/data/revenue-test.csv", ({id, rate}) => [id, +rate]).then( (d) => {
-	let r={values:[],title:"Title", keyValues: {} }
+	let r={values:[],title:"", keyValues: {} }
 	for(let ii=0; ii< d.length; ii++) {
 	    r.values.push(d[ii][1]);
 	    r.keyValues[d[ii][0]]=d[ii][1];

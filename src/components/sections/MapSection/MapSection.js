@@ -49,7 +49,7 @@ query MyQuery {
     }
 
     let offshore_data=offshore_summary(results.allResourceRevenuesFiscalYear.nodes);
-    console.debug(offshore_data)
+
     let states=props.states || [];
     let options=states.map((value)=>{ return {value:value.state.frontmatter.unique_id,
 					      name:value.state.frontmatter.title}})
@@ -77,7 +77,7 @@ return (
 	   
 
     </div>
-	<div className={styles.containerRight}><Map mapFeatures={props.mapFeatures} mapData={data} offshoreData={offshore_data} mapOffshoreJson={props.mapOffshoreJson} colorScheme={props.mapColor}  onClick={onClick} /> </div>
+	<div className={styles.containerRight}><Map mapFeatures={props.mapFeatures} mapData={data} offshoreData={offshore_data} mapOffshoreJson={props.mapOffshoreJson} colorScheme={props.mapColor} offshoreColorScheme={props.offshoreMapColor} mapTitle={props.mapTitle} onClick={onClick} /> </div>
 
 	
 

@@ -211,6 +211,7 @@ class HomePage extends React.Component {
                states={this.props.data.states_data.states}
                offshore_regions={this.props.data.offshore_data.offshore_regions}
                mapFeatures="states"
+               mapTitle="Revenue"
                mapOffshoreJson="/maps/offshore/offshore.json"
                onClick={ (d,i) => { 
                    let state=fipsAbbrev[d.id] || d.id;
@@ -219,49 +220,7 @@ class HomePage extends React.Component {
 
  } }
 />
-          <MapSection 
-               title="Learn about extractive industries in each state"
-               info="Explore production, revenue, and disbursements data for each state at county level."
-               states={this.props.data.states_data.states}
-               offshore_regions={this.props.data.offshore_data.offshore_regions}
-               mapFeatures="counties"
-               mapColor="blue"
-               onClick={ (d,i) => { 
-                   let state=fipsAbbrev[d.id.substring(0,2)];
-                   
-                   let url="/explore/"+state 
-                   window.location.href=url
 
- } }
-/>
-               
-          <section id="map-section" className={styles.mapSection}>
-            <div className={styles.mapSectionContainer + ' container-page-wrapper'}>
-              <div className={styles.mapSectionLeft}>
-                <h3>Learn about extractive industries in each state</h3>
-                <p>Explore production, revenue, and disbursements data for each state.</p>
-                <div className={styles.mapSectionLocationSelector}>
-                  <label htmlFor="location-selector">State or offshore region:</label>
-                  <LocationSelector
-                    default='Choose location'
-                    states={this.props.data.states_data.states}
-                    offshore_regions={this.props.data.offshore_data.offshore_regions}/>
-                </div>
-              </div>
-              <div className={styles.mapSectionRight}>
-                <figure>
-                  <StateMap
-                    ownership={true}
-                    no_outline={true}
-                    offshore_regions={this.props.data.offshore_data.offshore_regions}
-                    states={this.props.data.states_data.states}/>
-                </figure>
-                <aside>
-                  <FederalLandOwnershipLegend land={true} />
-                </aside>
-              </div>
-            </div>
-          </section>
 
           <WhatsNew />
         </main>

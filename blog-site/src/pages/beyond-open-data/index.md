@@ -70,7 +70,7 @@ Agencies must facilitate collaboration with non-Government entities (including b
 
 ### User-centered design/outreach
 
-Agencies must engage the public in using public data assets of the agency and encourage collaboration. In addition to being able to collaborate via [Github](https://github.com/ONRR/doi-extractives-data/issues), we also maintain an email address and social media accounts as avenues for public interaction. We conduct extensive user testing as we iterate our product and include this feedback in our final product. We also participate in outreach via public forums such as conferences and workshops.
+Agencies must engage the public in using public data assets of the agency and encourage collaboration. In addition to being able to collaborate via [GitHub](https://github.com/ONRR/doi-extractives-data/issues), we also maintain an email address and social media accounts as avenues for public interaction. We conduct extensive user testing as we iterate our product and include this feedback in our final product. We also participate in outreach via public forums such as conferences and workshops.
 
 ### Analytics
 

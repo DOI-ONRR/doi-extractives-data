@@ -7,7 +7,7 @@ describe('Map', () => {
     it('renders correctly', () =>
        {
 	   const tree = renderer
-		 .create(<Map />)
+		 .create(<Map mapData={[['AK',1243],['AZ',12341],['NM',1212434]]} />)
 		 .toJSON()
 	   expect(tree).toMatchSnapshot()
   })

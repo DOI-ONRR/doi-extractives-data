@@ -12,7 +12,7 @@ tags:
 - user experience
 - user research
 date: "2019-01-08"
---
+---
 
 ## Background
 
@@ -79,7 +79,6 @@ Agencies must identify and implement methods for collecting and analyzing digita
 ### Metrics
 
 Agencies must develop and implement a process to evaluate and improve the timeliness, completeness, consistency, accuracy, usefulness, and availability of open Government data assets. We have instituted [metrics](https://github.com/ONRR/doi-extractives-data/wiki/Goals-and-metrics) that address the above requirements and track them on a regular basis.  
-
 
 ### Conclusion
 

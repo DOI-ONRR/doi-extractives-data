@@ -1,0 +1,48 @@
+
+.root {
+	font-size: 0.875rem;
+	font-weight: 300;
+	padding-left: 20px;
+}
+
+.title {
+	font-size: 1.125rem;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+
+.dispersementTable {
+    border: none !important;
+    margin: 1rem 0 0 0;
+    th, td {
+	border: none !important;
+	font-size: 0.875rem;
+	padding: 0px !important;
+	white-space: nowrap !important;
+	width: 100%;
+	margin-top: 0.5rem;
+    }
+    th {
+	font-weight: bold;
+    }
+    tr:first-of-type td {
+	padding-top: 5px !important;
+    }
+    tr:nth-of-type(2n) td {
+	padding-bottom: 7px !important;
+	font-weight: 300;
+    }
+
+}
+
+.strong {
+	font-weight: 700;
+	border-top : 2px solid #d3dfe6 !important;
+	color: rgb(67, 81, 89);
+	
+}
+
+
+.alignRight {
+	text-align: right;
+}

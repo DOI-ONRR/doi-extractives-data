@@ -1,20 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`RevenueTrends renders correctly 1`] = `
+exports[`DisbursementTrends renders correctly 1`] = `
 <section
   className="root"
 >
   <h3
     className="title h3-bar"
   >
-    Revenue trends
+    Distributions trends
   </h3>
-  Includes federal and Native American revenue through 
-  May
-   
-  2019
+  Includes dispursments through 
+  FY18 so far
   <table
-    className="revenueTable"
+    className="dispersementTable"
   >
     <thead>
       <tr>
@@ -24,19 +22,181 @@ exports[`RevenueTrends renders correctly 1`] = `
         <th
           className="alignRight"
         >
-          FY19 so far
+          FY18 so far
         </th>
       </tr>
     </thead>
     <tbody>
-      <tr>
+      <tr
+        className="undefined"
+      >
         <td>
-          Royalties
+          U.S. Treasury
         </td>
         <td
           className="alignRight"
         >
-          $6.62 billion
+          $3.51 billion
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div
+            style={Object {}}
+          />
+        </td>
+        <td
+          className="alignRight"
+        >
+          <span>
+            <test-file-stub
+              viewBox="-20 -15 50 40"
+            />
+            <span>
+              40%
+            </span>
+          </span>
+           from FY17
+        </td>
+      </tr>
+      <tr
+        className="undefined"
+      >
+        <td>
+          States & counties
+        </td>
+        <td
+          className="alignRight"
+        >
+          $1.78 billion
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div
+            style={Object {}}
+          />
+        </td>
+        <td
+          className="alignRight"
+        >
+          <span>
+            <test-file-stub
+              viewBox="-20 -15 50 40"
+            />
+            <span>
+              24%
+            </span>
+          </span>
+           from FY17
+        </td>
+      </tr>
+      <tr
+        className="undefined"
+      >
+        <td>
+          Reclamation fund
+        </td>
+        <td
+          className="alignRight"
+        >
+          $1.22 billion
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div
+            style={Object {}}
+          />
+        </td>
+        <td
+          className="alignRight"
+        >
+          <span>
+            <test-file-stub
+              viewBox="-20 -15 50 40"
+            />
+            <span>
+              7%
+            </span>
+          </span>
+           from FY17
+        </td>
+      </tr>
+      <tr
+        className="undefined"
+      >
+        <td>
+          Native Americans
+        </td>
+        <td
+          className="alignRight"
+        >
+          $1.02 billion
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div
+            style={Object {}}
+          />
+        </td>
+        <td
+          className="alignRight"
+        >
+          <span>
+            <test-file-stub
+              viewBox="-20 -15 50 40"
+            />
+            <span>
+              51%
+            </span>
+          </span>
+           from FY17
+        </td>
+      </tr>
+      <tr
+        className="undefined"
+      >
+        <td>
+          Other Funds
+        </td>
+        <td
+          className="alignRight"
+        >
+          $1.40 billion
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div
+            style={Object {}}
+          />
+        </td>
+        <td
+          className="alignRight"
+        >
+          <span>
+            <test-file-stub
+              viewBox="-20 -15 50 40"
+            />
+            <span>
+              4%
+            </span>
+          </span>
+           from FY17
+        </td>
+      </tr>
+      <tr
+        className="strong"
+      >
+        <td>
+          Total
+        </td>
+        <td
+          className="alignRight"
+        >
+          $8.94 billion
         </td>
       </tr>
       <tr>
@@ -56,131 +216,7 @@ exports[`RevenueTrends renders correctly 1`] = `
               26%
             </span>
           </span>
-           from FY18
-        </td>
-      </tr>
-      <tr>
-        <td>
-          Bonuses
-        </td>
-        <td
-          className="alignRight"
-        >
-          $1.64 billion
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div
-            style={Object {}}
-          />
-        </td>
-        <td
-          className="alignRight"
-        >
-          <span>
-            <test-file-stub
-              viewBox="-20 -15 50 40"
-            />
-            <span>
-              413%
-            </span>
-          </span>
-           from FY18
-        </td>
-      </tr>
-      <tr>
-        <td>
-          Rents
-        </td>
-        <td
-          className="alignRight"
-        >
-          $73.80 million
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div
-            style={Object {}}
-          />
-        </td>
-        <td
-          className="alignRight"
-        >
-          <span>
-            <test-file-stub
-              viewBox="-20 -15 50 40"
-            />
-            <span>
-              2%
-            </span>
-          </span>
-           from FY18
-        </td>
-      </tr>
-      <tr>
-        <td>
-          Other revenues
-        </td>
-        <td
-          className="alignRight"
-        >
-          $103.00 million
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div
-            style={Object {}}
-          />
-        </td>
-        <td
-          className="alignRight"
-        >
-          <span>
-            <test-file-stub
-              viewBox="-20 -10 50 40"
-            />
-            <span>
-              -20%
-            </span>
-          </span>
-           from FY18
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <strong>
-            Total revenues
-          </strong>
-        </td>
-        <td
-          className="alignRight"
-        >
-          <strong>
-            $8.44 billion
-          </strong>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div
-            style={Object {}}
-          />
-        </td>
-        <td
-          className="alignRight"
-        >
-          <span>
-            <test-file-stub
-              viewBox="-20 -15 50 40"
-            />
-            <span>
-              46%
-            </span>
-          </span>
-           from FY18
+           from FY17
         </td>
       </tr>
     </tbody>

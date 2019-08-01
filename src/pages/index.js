@@ -34,6 +34,7 @@ import { ExploreDataLink } from '../components/layouts/icon-links/ExploreDataLin
 import { DownloadDataLink } from '../components/layouts/icon-links/DownloadDataLink'
 import MapLink from '../components/layouts/icon-links/MapLink'
 import RevenueTrends from '../components/sections/RevenueTrends'
+import DisbursementTrends from '../components/sections/DisbursmentTrends'
 
 import DefaultLayout from '../components/layouts/DefaultLayout'
 
@@ -189,15 +190,18 @@ class HomePage extends React.Component {
                   <div className={styles.tabContentBottomContainer}>
                     <div>
                       <BlueButton to="/how-it-works/#disbursements">How disbursements work</BlueButton>
+		      <div className={styles.tabContentBottomContainerLinks}>
+			<h5>Explore disbursements data</h5>
+			<div className={styles.linkContainer}>
+			  <ExploreDataLink to="/explore/#by-fund">By recipient</ExploreDataLink>
+			  <DownloadDataLink to="/downloads/disbursements">Downloads and documentation</DownloadDataLink>
+			</div>
+		      </div>
                     </div>
                   </div>
                 </div>
                 <div className={styles.tabContentAside}>
-                  <h5>Explore disbursements data</h5>
-                  <div className={styles.linkContainer}>
-                    <ExploreDataLink to="/explore/#by-fund">By recipient</ExploreDataLink>
-                    <DownloadDataLink to="/downloads/disbursements">Downloads and documentation</DownloadDataLink>
-                  </div>
+                  <DisbursementTrends />
                 </div>
               </div>
             </Tab>

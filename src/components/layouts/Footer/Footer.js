@@ -22,7 +22,7 @@ const Footer = ({ version }) => (
         <div className="footer-bottom-left">
           <p className="footer-para_callout footer-para_callout-bigger">Built in the open</p>
           <p className="footer-para">This site (<a href={'https://github.com/onrr/doi-extractives-data/releases/' + version } className="link-active-beta">{ version }</a>)
-        is powered by <a className="link-active-beta" href="/downloads">open data</a> and <a className="link-active-beta" href="https://github.com/ONRR/doi-extractives-data/">source code</a>.
+        is powered by <Link to="/downloads" className="link-active-beta">open data</Link> and <a className="link-active-beta" href="https://github.com/ONRR/doi-extractives-data/">source code</a>.
         We welcome contributions and comments on <a className="link-active-beta" href="https://github.com/ONRR/doi-extractives-data/issues/new">GitHub</a>. We write about how we work on this site on <Link to="/blog" className="link-active-beta">our team's blog</Link>.</p>
 
           <p className="footer-para-small footer-para_last"><a href="https://www.doi.gov/" className="link-beta">Department of the Interior</a> | <a href="https://www.doi.gov/privacy" className="link-beta">Privacy Policy</a> | <a href="https://www.doi.gov/foia" className="link-beta">FOIA</a> | <a href="https://www.usa.gov/" className="link-beta">USA.gov</a></p>
@@ -31,7 +31,7 @@ const Footer = ({ version }) => (
 
         <div className="footer-bottom-right">
           <p className="footer-para_callout">
-            <a className="link-beta" href="/downloads/">Download data <DownloadIcon /></a>
+            <Link to="/downloads/" className="link-beta">Download data <DownloadIcon /></Link>
           </p>
         </div>
 

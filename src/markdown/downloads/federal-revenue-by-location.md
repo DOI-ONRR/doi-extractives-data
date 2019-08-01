@@ -21,7 +21,7 @@ Download calendar year data (2003-2018):
 
 <ul class="downloads-download_links list-unstyled">
   <li><excel-link to="/downloads/revenue/calendar_year_revenue.xlsx">Calendar year revenue (Excel, 2.8 MB)</excel-link></li>
-  <li><csv-link to="/downloads/csv/evenue/calendar_year_revenue.csv">Calendar year revenue (csv, 5.4 MB)</csv-link></li>
+  <li><csv-link to="/downloads/csv/revenue/calendar_year_revenue.csv">Calendar year revenue (csv, 5.4 MB)</csv-link></li>
 </ul>
 
 Download fiscal year data (2003–2018):

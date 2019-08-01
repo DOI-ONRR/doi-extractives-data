@@ -22,7 +22,7 @@ We published the first natural resources revenue website in 2015. Although the U
 
 As a unique steward of U.S. natural resource revenue data, we are informing policy debates and raising public awareness by building the definitive source of timely and useful data about how the government manages federal energy and mineral resources, revenue, and disbursements.
 
-Because we are internally driven to maintain high standards, we stay current with international trends in open data and are constantly searching for ways for our data to go beyond what is expected. We are happy to report that we have already implemented many of the guidelines mandated by recently passed federal regulations.
+Because we are internally driven to maintain high standards, we stay current with international trends in open data and are constantly searching for ways for our data to go beyond what is expected. We are happy to report that we have already implemented many of the guidelines mandated by recently passed federal laws.
 
 ## 21<sup>st</sup> Century Integrated Digital Experience Act (IDEA)
 

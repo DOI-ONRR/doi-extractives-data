@@ -43,12 +43,12 @@ allYearlyDispursements :  allDisbursementsXlsxData(sort: {fields: [Fiscal_Year],
     let previousYear=currentYear - 1;
     let trends=aggregateData(data);
 
-    let currentFiscalYearText = 'FY'+currentYear.toString().substr(2,2)+'year to date so far';
+    let currentFiscalYearText = 'FY'+currentYear.toString().substr(2,2)+' year to date so far';
     let previousFiscalYearText = 'from FY'+previousYear.toString().substr(2,2);
     
       return (
         <section className={styles.root}>
-          <h3 className={styles.title+" h3-bar"}>Distributions trends</h3>
+          <h3 className={styles.title+" h3-bar"}>Dispersement trends</h3>
               Includes dispursments through {currentFiscalYearText} 
           <table className={styles.dispersementTable}>
             <thead>
@@ -57,9 +57,10 @@ allYearlyDispursements :  allDisbursementsXlsxData(sort: {fields: [Fiscal_Year],
                 <th className={styles.alignRight}>{currentFiscalYearText}</th>
               </tr>
             </thead>
-            <tbody>
+
 	      {trends.map( (trend, index) => (
-	      <><tr className={styles[trend.className]}>
+		      <tbody>
+		      <tr className={styles[trend.className]}>
                       <td>{trend.fund}</td>
                 <td className={styles.alignRight}>{utils.formatToSigFig_Dollar(trend.current, 3)}</td>
               </tr>
@@ -71,9 +72,10 @@ allYearlyDispursements :  allDisbursementsXlsxData(sort: {fields: [Fiscal_Year],
                     previousAmount={trend.previous} 
                   />{' '+previousFiscalYearText}
                 </td>
-		      </tr></>
+		      </tr>
+		      </tbody>
 	      ))}
-            </tbody>
+
           </table>
         </section>
       )

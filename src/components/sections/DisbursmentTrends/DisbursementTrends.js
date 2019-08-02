@@ -43,7 +43,7 @@ allYearlyDispursements :  allDisbursementsXlsxData(sort: {fields: [Fiscal_Year],
     let previousYear=currentYear - 1;
     let trends=aggregateData(data);
 
-    let currentFiscalYearText = 'FY'+currentYear.toString().substr(2,2)+' so far';
+    let currentFiscalYearText = 'FY'+currentYear.toString().substr(2,2)+'year to date so far';
     let previousFiscalYearText = 'from FY'+previousYear.toString().substr(2,2);
     
       return (

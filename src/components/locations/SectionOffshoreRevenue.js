@@ -36,14 +36,6 @@ const SectionOffshoreRevenue = props => {
     // eslint-disable-next-line no-return-assign
     commodityYearsSortDesc.map(year => allCommoditiesValues[year] = commodities.All.All[year])
   }
-  let localityName = 'County'
-  if (usStateData.unique_id === 'AK') {
-    localityName = 'Borough'
-  }
-
-  if (usStateData.unique_id === 'LA') {
-    localityName = 'Parish'
-  }
 
   let chartMapTitle = 'Revenue collected by offshore area'
 
@@ -148,10 +140,10 @@ const SectionOffshoreRevenue = props => {
                       </eiti-bar-chart>
                       <figcaption id={'federal-revenue-county-figures-' + allCommoditiesSlug} aria-hidden='false'>
                         <span className="caption-data">
-                          <span className="eiti-bar-chart-y-value" data-format="$,">
+                          Companies paid <span className="eiti-bar-chart-y-value" data-format="$,">
                             {(allCommoditiesValues[commodityYearsSortDesc[0]]) ? (allCommoditiesValues[commodityYearsSortDesc[0]]).toLocaleString() : ('0').toLocaleString() }{' '}
                           </span>
-                          {' '}of {allCommoditiesChartName.toLowerCase()} were produced on federal land in {' ' + usStateData.title + ' in '}
+                          {' '}to produce natural resources in the{' ' + usStateData.title + ' in '}
                           <span className="eiti-bar-chart-x-value">{ commodityYearsSortDesc[0] }</span>.
                         </span>
                         <span className="caption-no-data" aria-hidden="true">
@@ -169,7 +161,7 @@ const SectionOffshoreRevenue = props => {
                       </h4>
 
                       <figure is="eiti-data-map-table">
-                        <eiti-data-map color-scheme="Blues" steps="4" units={'S'}>
+                        <eiti-data-map color-scheme="Blues" steps="4" units={'$'}>
                           <OffshoreMap
                             usStateMarkdown={props.usStateMarkdown}
                             countyProductionData={usStateCountyRevenue}
@@ -190,7 +182,7 @@ const SectionOffshoreRevenue = props => {
                             year={commodityYearsSortDesc[0]}>
                             <thead>
                               <tr>
-                                <th>{usStateData.locality_name || 'County'}</th>
+                                <th>{utils.toTitleCase(usStateData.unique_id)}</th>
                                 <th colSpan='2' className='numeric' data-series='volume'>Revenue</th>
                               </tr>
                             </thead>
@@ -211,7 +203,7 @@ const SectionOffshoreRevenue = props => {
                                                   <div className='swatch'
                                                     data-value-swatch={productVolume}
                                                     data-year-values={JSON.stringify(yearsValue)}>
-                                                  </div>{ countyData[1].name + ' ' + localityName }
+                                                  </div>{ countyData[1].name }
                                                 </td>
                                                 <td data-format={'$,'} data-value-text={productVolume}
                                                   data-year-values={JSON.stringify(yearsValue)}>{productVolume}</td>
@@ -228,7 +220,7 @@ const SectionOffshoreRevenue = props => {
                                                   aria-hidden='true'
                                                   data-withheld="false">
                                                   <span className="withheld" aria-hidden="true">
-                                                                                                  Data about revenue on federal land in { countyData[1].name } in <span data-year={ year }>{ year }</span> is withheld.
+                                                    Data about revenue on federal land in { countyData[1].name } in <span data-year={ year }>{ year }</span> is withheld.
                                                   </span>
                                                   <span className="has-data">
                                                     Companies paid <span data-format={'$,'} data-value={productVolume}>{productVolume}</span> to extract natural resources on federal land in { countyData[1].name } County in <span data-year={ year }>{year}</span>.

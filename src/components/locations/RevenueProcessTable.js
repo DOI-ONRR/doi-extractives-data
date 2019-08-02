@@ -132,12 +132,12 @@ const RevenueTypeTableRow = props => {
 }
 
 const RevenueProcessTable = props => {
-	let { commodities } = props
+  let { commodities } = props
 
-	if (props.revenueGroupByCommodity) {
+  if (props.revenueGroupByCommodity) {
 	  commodities = createRevenueTypeCommoditiesData(props.revenueGroupByCommodity, props.revenueGroupByCalendarYear)
   }
-  
+
   let revenueTypes = commodities
 
   if (props.isNationalPage) {
@@ -158,7 +158,6 @@ const RevenueProcessTable = props => {
   let windExists = false
   let otherProductExists = false
   let allExists = false
-
 
   	let oilGasRevenueTypeRowHtml
 

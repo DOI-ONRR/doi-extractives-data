@@ -26,7 +26,7 @@ class Legend extends React.Component {
     }
   }
 
-  /*delay () {
+  /* delay () {
     if (this.state.dataSet) {
       let { data, selectedDataKey, units, xAxisLabels } = this.state.dataSet
       let { styleMap, sortOrder, maxBarSize } = { ...this.props }
@@ -38,7 +38,7 @@ class Legend extends React.Component {
       let { data, ...rest } = { ...this.props }
       stackedBarChart.create(ReactDOM.findDOMNode(this), ...rest, data)
     }
-  }*/
+  } */
 
   componentDidUpdate () {
     if (this.state.dataSet) {
@@ -59,7 +59,7 @@ class Legend extends React.Component {
   shouldComponentUpdate (nextProps, nextState) {
     let dataSet = this.state.dataSet || this.props.data
     let newDataSet = nextProps.dataSet || nextProps.data
-  
+
     return (
       (dataSet === undefined && newDataSet !== undefined) ||
       (dataSet.lastUpdated !== newDataSet.lastUpdated ||
@@ -72,9 +72,8 @@ class Legend extends React.Component {
 
   }
 
-
   render () {
-    //console.log(this.props, this.state)
+    // console.log(this.props, this.state)
 
     return (
       <span className={styles.root}>
@@ -86,7 +85,7 @@ class Legend extends React.Component {
 
 Legend.propTypes = {
   /** Data set id to be used for populating and updating state. This is the preferred method. */
-  dataSetId: PropTypes.string, 
+  dataSetId: PropTypes.string,
 }
 
 export default connect(

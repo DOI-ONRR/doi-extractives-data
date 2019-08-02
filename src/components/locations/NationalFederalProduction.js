@@ -28,7 +28,7 @@ const createProductionData = (groupByCommodity, groupByYear) => {
   commodityYears = commodityYears.map(item => parseInt(item.id))
 
   let commodities = data.reduce((total, item) => {
-    let name = (item.id.includes('~'))? item.id.split('~')[0] : item.id
+    let name = (item.id.includes('~')) ? item.id.split('~')[0] : item.id
     item.edges.forEach(element => {
       let node = element.node
       let year = parseInt(node.ProductionYear)
@@ -73,7 +73,7 @@ const NationalFederalProduction = props => {
 
       let numbersAreConsecutive = true
       for (let i = 1; i < yearsArray.length; i++) {
-        if (parseInt(yearsArray[i]) - parseInt(yearsArray[i - 1]) != 1) {
+        if (parseInt(yearsArray[i]) - parseInt(yearsArray[i - 1]) !== 1) {
           numbersAreConsecutive = false
           break
         }
@@ -166,10 +166,12 @@ const NationalFederalProduction = props => {
                       {' '}of {productName.toLowerCase()} {suffixUnits} were produced on federal land in <span className="eiti-bar-chart-x-value">{ year }</span>.
                     </span>
                     <span className="caption-no-data" aria-hidden="true">
-                                            There is no data about production of {productName.toLowerCase()} {suffixUnits} on federal land in <span className="eiti-bar-chart-x-value">{ year }</span>.
+                      There is no data about production of {productName.toLowerCase()} {suffixUnits} on federal land in <span className="eiti-bar-chart-x-value">
+                        { year }</span>.
                     </span>
                     <span className="caption-withheld" aria-hidden="true">
-                                            Data about {productName.toLowerCase()} {suffixUnits} production on federal land in <span className="eiti-bar-chart-x-value">{ year }</span> is withheld.
+                      Data about {productName.toLowerCase()} {suffixUnits} production on federal land in <span className="eiti-bar-chart-x-value">
+                        { year }</span> is withheld.
                     </span>
                   </figcaption>
                 </figure>

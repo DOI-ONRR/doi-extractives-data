@@ -1,16 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import Paper from '@material-ui/core/Paper';
-import { DataTypeProvider } from '@devexpress/dx-react-grid';
-import {
+import Paper from '@material-ui/core/Paper'
+import { DataTypeProvider,
   SummaryState,
   IntegratedSummary,
   GroupingState,
   IntegratedGrouping,
   SortingState,
   IntegratedSorting
-} from '@devexpress/dx-react-grid';
+} from '@devexpress/dx-react-grid'
+
 import {
   Grid,
   Table,
@@ -21,8 +21,8 @@ import {
   GroupingPanel,
   DragDropProvider,
   Toolbar,
-  TableFixedColumns,
-} from '@devexpress/dx-react-grid-material-ui';
+  TableFixedColumns
+} from '@devexpress/dx-react-grid-material-ui'
 
 import utils from '../../../js/utils'
 
@@ -38,35 +38,35 @@ const theme = createMuiTheme({
       root: {
         padding: '0px',
       },
-      head: { 
-        color: styles._textColor, 
+      head: {
+        color: styles._textColor,
         fontFamily: styles._baseFontFamily,
         fontSize: '1rem',
         fontWeight: 400,
         borderBottom: '5px solid #cde3c3;',
       },
-      body: { 
-        color: styles._textColor, 
+      body: {
+        color: styles._textColor,
         fontFamily: styles._baseFontFamily,
         fontSize: '1rem',
         fontWeight: 300,
       },
-      footer: { 
-        color: styles._textColor, 
+      footer: {
+        color: styles._textColor,
         fontFamily: styles._baseFontFamily,
         fontSize: '1rem',
         fontWeight: 400,
       },
-    },  
+    },
   }
-});
-//import CustomTableGroupRow from './plugins/CustomTableGroupRow'
+})
+// import CustomTableGroupRow from './plugins/CustomTableGroupRow'
 
 const CustomTableGroupRow_Content = ({ row, ...restProps }) => (
   <span>
     {row.value}
   </span>
-);
+)
 
 const CustomTableSummaryRow_GroupRow = ({ ...restProps }) => {
   return (
@@ -74,14 +74,13 @@ const CustomTableSummaryRow_GroupRow = ({ ...restProps }) => {
   )
 }
 
-const CustomTableSummaryRow_Item = ({getMessage, ...restProps }) => {
-  restProps.value = (isNaN(restProps.value)) ? 0 : restProps.value;
+const CustomTableSummaryRow_Item = ({ getMessage, ...restProps }) => {
+  restProps.value = (isNaN(restProps.value)) ? 0 : restProps.value
   return (
     <div {...restProps} className={styles.summaryCell}>
-      {restProps.children.type ?
-        restProps.children.type(restProps)
-      :
-        restProps.value+' sdaas'
+      {restProps.children.type
+        ? restProps.children.type(restProps)
+        : restProps.value + ' sdaas'
       }
     </div>
   )
@@ -98,40 +97,41 @@ const CurrencyFormatter = ({ value }) => {
     <span>
       {utils.formatToDollarInt(value)}
     </span>
-  );
+  )
 }
 
 const CurrencyTypeProvider = props => {
-  return(
-  <DataTypeProvider
-    formatterComponent={CurrencyFormatter}
-    {...props}
-  />
-);}
+  return (
+    <DataTypeProvider
+      formatterComponent={CurrencyFormatter}
+      {...props}
+    />
+  )
+}
 
-const AllFormatter = ({value, children}) => {
+const AllFormatter = ({ value, children }) => {
   return (
     <span>
-      {children ?
-        'All '+children.props.column.plural
-        :
-        value
+      {children
+        ? 'All ' + children.props.column.plural
+        : value
       }
     </span>
-  );
+  )
 }
 
 const AllTypeProvider = props => {
-  return(
-  <DataTypeProvider
-    formatterComponent={AllFormatter}
-    {...props}
-  />
-);}
+  return (
+    <DataTypeProvider
+      formatterComponent={AllFormatter}
+      {...props}
+    />
+  )
+}
 
 class GroupTable extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor (props) {
+    super(props)
 
     this.state = {
       columns: props.columns,
@@ -139,42 +139,42 @@ class GroupTable extends React.Component {
       currencyColumns: props.currencyColumns,
       allColumns: props.allColumns,
       tableColumnExtension: props.tableColumnExtension,
-      columnBands : [],
+      columnBands: [],
       totalSummaryItems: props.totalSummaryItems,
       groupSummaryItems: props.groupSummaryItems,
       tableGroupColumnExtension: props.tableGroupColumnExtension,
       grouping: props.grouping,
       expandedGroups: props.expandedGroups,
       defaultSorting: props.defaultSorting,
-    };
+    }
 
-    //this.changeGrouping = grouping => this.setState({ grouping });
+    // this.changeGrouping = grouping => this.setState({ grouping });
   }
 
-  componentWillReceiveProps(nextProps) {
-    this.setState({...nextProps})
+  componentWillReceiveProps (nextProps) {
+    this.setState({ ...nextProps })
   }
 
-  handleExpandedGroupsChange(expandedGroups) {
-    this.setState({expandedGroups: expandedGroups});
+  handleExpandedGroupsChange (expandedGroups) {
+    this.setState({ expandedGroups: expandedGroups })
   }
 
-	render() {
-    const { 
-      rows, 
-      columns, 
+  render () {
+    const {
+      rows,
+      columns,
       currencyColumns,
       allColumns,
-      tableColumnExtension, 
-      columnBands, 
-      grouping, 
-      expandedGroups, 
-      totalSummaryItems, 
+      tableColumnExtension,
+      columnBands,
+      grouping,
+      expandedGroups,
+      totalSummaryItems,
       groupSummaryItems,
-      defaultSorting } = this.state;
+      defaultSorting } = this.state
 
-      //console.log(allColumns, currencyColumns)
-      //console.log(totalSummaryItems, groupSummaryItems)
+    // console.log(allColumns, currencyColumns)
+    // console.log(totalSummaryItems, groupSummaryItems)
 
     return (
     	<div>
@@ -182,10 +182,10 @@ class GroupTable extends React.Component {
           <Grid
             rows={rows}
             columns={columns}
-          >          
+          >
             <CurrencyTypeProvider
               for={currencyColumns}
-            />         
+            />
             <AllTypeProvider
               for={allColumns}
             />
@@ -206,12 +206,12 @@ class GroupTable extends React.Component {
             <IntegratedSummary />
             <Table columnExtensions={tableColumnExtension} />
             <TableHeaderRow showSortingControls />
-            <TableSummaryRow 
+            <TableSummaryRow
               groupRowComponent={CustomTableSummaryRow_GroupRow}
               totalRowComponent={CustomTableSummaryRow_TotalRow}
               itemComponent={CustomTableSummaryRow_Item}
             />
-            <TableGroupRow  
+            <TableGroupRow
               contentComponent={CustomTableGroupRow_Content}
             />
             <TableBandHeader
@@ -221,16 +221,15 @@ class GroupTable extends React.Component {
           </Grid>
         </MuiThemeProvider>
 	    </div>
-    );
-	}
+    )
+  }
 }
 
 export default GroupTable
 
 /*
 
-
-            <TableSummaryRow 
+            <TableSummaryRow
               groupRowComponent={CustomTableSummaryRow_GroupRow}
               itemComponent={CustomTableSummaryRow_Item}
               totalRowComponent={CustomTableSummaryRow_TotalRow}

@@ -1,28 +1,15 @@
 import React from 'react'
 import hastReactRenderer from '../../js/hast-react-renderer'
-import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from 'react-html-parser'
-import Link from '../utils/temp-link'
+import ReactHtmlParser from 'react-html-parser'
 import { withPrefixSVG } from '../utils/temp-link'
-
 import ALL_US_STATES_GDP from '../../data/state_gdp.yml'
 import ALL_US_STATES_JOBS from '../../data/state_jobs.yml'
 import * as TOP_STATE_PRODUCTS from '../../data/top_state_products'
 import LAND_STATS from '../../data/land_stats.yml'
 import VIEWBOXES_CROPPED from '../../data/viewboxes_cropped.yml'
-
 import FederalLandOwnershipLegend from '../maps/FederalLandOwnershipLegend'
 import FederalLandOwnershipSvg from '../maps/FederalLandOwnershipSvg'
-import GlossaryTerm from '../utils/glossary-term.js'
-
 import utils from '../../js/utils'
-
-import rehypeReact from 'rehype-react'
-
-const renderAst = new rehypeReact({
-  createElement: React.createElement,
-  components: { 'glossary-term': GlossaryTerm },
-
-}).Compiler
 
 let year
 
@@ -75,7 +62,7 @@ const SectionOwnership = props => {
     viewBox = viewBox['ownership']
   }
 
-  function getNeighbors_Features () {
+  function getNeighborsFeatures () {
     let content = ''
 
     if (props.usStateData.neighbors) {
@@ -90,7 +77,7 @@ const SectionOwnership = props => {
     return content
   }
 
-  function getNeighbors_Mesh () {
+  function getNeighborsMesh () {
     let content = ''
 
     if (props.usStateData.neighbors) {
@@ -115,10 +102,10 @@ const SectionOwnership = props => {
             style={{ 'paddingBottom': '235.85px' }}>
             <svg className="county ownership map state-page" viewBox={viewBox}>
               <g className="states features">
-                {getNeighbors_Features()}
+                {getNeighborsFeatures()}
               </g>
               <g className="states mesh">
-                {getNeighbors_Mesh()}
+                {getNeighborsMesh()}
               </g>
               <g className="counties features">
                 <use xlinkHref={usStateSVG + '#counties'}></use>
@@ -153,18 +140,18 @@ const KeyGDPJobs = props => {
   return (
     <p>
             Natural resource extraction varies widely from state to state.{' '}
-      {(usStateGDP && usStateGDP[year] && usStateGDP[year].dollars > 0)
+      {(usStateGDP && usStateGDP[year] && usStateGDP[year].dollars > 0) 
         ? <span>
-                    In {props.usStateData.title}, extractive industries accounted for { utils.round(usStateGDP[year].percent, 1) }% of gross domestic product (GDP) in {year}
+          In {props.usStateData.title}, extractive industries accounted for { utils.round(usStateGDP[year].percent, 1) }% of gross domestic product (GDP) in {year}
           { usStateJobs[year] && (usStateJobs[year].percent > 2) &&
-                        <span>
-                            , and jobs in the extractive industries made up {utils.round(usStateJobs[year].percent, 1)}% of statewide employment
-                        </span>
+            <span>
+              , and jobs in the extractive industries made up {utils.round(usStateJobs[year].percent, 1)}% of statewide employment
+            </span>
           }
-                    .
+          .
         </span>
-        : <span>
-                    Extractive industries did not have any effect on gross domestic product (GDP) in
+        :         <span>
+          Extractive industries did not have any effect on gross domestic product (GDP) in
           {props.usStateData.title} in {year}.
         </span>
       }
@@ -191,9 +178,9 @@ const KeyAllProduction = props => {
     return (
       <ul>
         {productsRankedOne &&
-                    productsRankedOne.map((product, index) => {
-                      return (<li key={index}>{utils.getDisplayName_CommodityName(product.name)}: {utils.round(product.percent, 1)}% of U.S. Production</li>)
-                    })
+          productsRankedOne.map((product, index) => {
+            return (<li key={index}>{utils.getDisplayName_CommodityName(product.name)}: {utils.round(product.percent, 1)}% of U.S. Production</li>)
+          })
         }
       </ul>
     )
@@ -202,10 +189,10 @@ const KeyAllProduction = props => {
   return (
     <div>
       {productsRankedOne &&
-                <div>
-                  <p>{props.usStateData.title} leads the nation in production of:</p>
-                  {getProductListItems()}
-                </div>
+        <div>
+          <p>{props.usStateData.title} leads the nation in production of:</p>
+          {getProductListItems()}
+        </div>
       }
     </div>
   )
@@ -216,7 +203,10 @@ const KeyAllProduction = props => {
 const FederalLandInfo = props => {
   return (
     <p>
-      Natural resource ownership in the U.S. is closely tied to land ownership. Land can be owned by citizens, corporations, Native American tribes or individuals, or governments (for instance, federal, state, or local governments). Much of the data on this site is limited to natural resource extraction on federal land, which represents {utils.round(LAND_STATS[props.usStateData.unique_id].federal_percent, 1)}%
+      Natural resource ownership in the U.S. is closely tied to land ownership. Land can be owned by citizens, corporations
+      , Native American tribes or individuals, or governments (for instance, federal, state, or local governments)
+      . Much of the data on this site is limited to natural resource extraction on federal land
+      , which represents {utils.round(LAND_STATS[props.usStateData.unique_id].federal_percent, 1)}%
       of all land in {props.usStateData.title}.
     </p>
   )
@@ -227,7 +217,8 @@ const OffshoreRegion = props => {
   /// console.log(props.usStateData.nearby_offshore_region);
   return (
     <p>
-      {props.usStateData.title} also borders an offshore area with significant natural resource extraction, which may contribute to the state’s economy. For production and revenue data about offshore extraction near {props.usStateData.title}, see {ReactHtmlParser(props.usStateData.nearby_offshore_region)}.
+      {props.usStateData.title} also borders an offshore area with significant natural resource extraction, which may contribute to the state’s economy
+      . For production and revenue data about offshore extraction near {props.usStateData.title}, see {ReactHtmlParser(props.usStateData.nearby_offshore_region)}.
     </p>
   )
 }
@@ -237,7 +228,9 @@ const OptIn = props => {
   return (
     <div>
       <p>
-          The state of {props.usStateData.title} chose to participate in an extended reporting process, so this page includes additional <a href="#state-revenue">state revenue</a> and <a href="#state-disbursements">disbursements</a> data, as well as contextual information about <a href="#state-governance">state governance</a> of natural resources.
+        The state of {props.usStateData.title} chose to participate in an extended reporting process, so this page includes additional
+        <a href="#state-revenue">state revenue</a> and <a href="#state-disbursements">disbursements</a> data, as well as contextual information about
+        <a href="#state-governance">state governance</a> of natural resources.
       </p>
       {props.optInIntroHtml &&
           <div>

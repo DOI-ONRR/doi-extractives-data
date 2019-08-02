@@ -107,7 +107,7 @@ class PageToc extends React.Component {
 
 	  let excludeClassNames = (typeof this.props.excludeClassNames === 'string') ? this.props.excludeClassNames.split(',') : this.props.excludeClassNames
 	  excludeClassNames = excludeClassNames || []
-	  excludeClassNames.push(styles.displayTitle);
+	  excludeClassNames.push(styles.displayTitle)
 
 	  tocState.tocItems = elementArrayToTocArray(allTocElems, excludeClassNames, this.state.scrollOffset)
 
@@ -127,7 +127,7 @@ class PageToc extends React.Component {
 	        <div className={styles.tocContainer}>
 	          <MediaQuery minWidth={styles._portraitTabletBreakpointUp}>
 	            {this.state.displayTitle
-	              ? <h3 className={styles.displayTitle+" state-page-nav-title"}>{this.state.displayTitle}</h3>
+	              ? <h3 className={styles.displayTitle + ' state-page-nav-title'}>{this.state.displayTitle}</h3>
 	              :								<div />
 	            }
 	          </MediaQuery>
@@ -225,7 +225,7 @@ const elemCalcPos = (elem, offset) => {
 
 const elementArrayToTocArray = (elems, excludeClassNames, offset) => {
   const createTocItem = elem => {
-	elem.id = elem.id || utils.formatToSlug(elem.innerText)
+    elem.id = elem.id || utils.formatToSlug(elem.innerText)
   }
 
   const addChild = (elem, parent) => {

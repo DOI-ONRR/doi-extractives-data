@@ -1,19 +1,19 @@
 import React from 'react'
 
 import {
-	Plugin,
-	Template,
-	TemplatePlaceholder,
-	TemplateConnector
-} from '@devexpress/dx-react-core';
+  Plugin,
+  Template,
+  TemplatePlaceholder,
+  TemplateConnector
+} from '@devexpress/dx-react-core'
 
 const pluginDependencies = [
   { name: 'TableGroupRow' }
-];
+]
 
 class CustomTableGroupRow extends React.PureComponent {
-  render() {
-  	//console.log(this.props)
+  render () {
+  	// console.log(this.props)
     return (
       <Plugin
         name="CustomTableGroupRow"
@@ -24,7 +24,7 @@ class CustomTableGroupRow extends React.PureComponent {
 
       	</Template>
       </Plugin>
-    );
+    )
   }
 }
 

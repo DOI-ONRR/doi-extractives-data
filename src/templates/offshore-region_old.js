@@ -4,8 +4,7 @@ import MediaQuery from 'react-responsive'
 import Helmet from 'react-helmet'
 import Link, { withPrefix } from '../components/utils/temp-link'
 
-import { hydrate as hydateDataManagerAction } from '../state/reducers/data-sets'
-import { groupByYear as groupDataSetsByYearAction } from '../state/reducers/data-sets'
+import { hydrate as hydateDataManagerAction, groupByYear as groupDataSetsByYearAction } from '../state/reducers/data-sets'
 
 import * as CONSTANTS from '../js/constants'
 

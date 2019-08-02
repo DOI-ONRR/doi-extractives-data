@@ -176,7 +176,7 @@ const OffshoreMap = props => {
 					  <figcaption className="legend-data">
 					    {props.productName.toLowerCase() === 'revenue'
 					      ? <React.Fragment>
-                  {utils.toTitleCase(localityName)} revenue in <span data-year={ props.year }>{ props.year }</span>
+					        {utils.toTitleCase(localityName)} revenue in <span data-year={ props.year }>{ props.year }</span>
 					      </React.Fragment>
 					      : <React.Fragment>
 					        {localityName } production of {props.productName.toLowerCase()} in <span data-year={ props.year }>{ props.year }</span>

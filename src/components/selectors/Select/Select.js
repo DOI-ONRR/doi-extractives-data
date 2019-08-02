@@ -13,7 +13,6 @@ import FormControl_MU from '@material-ui/core/FormControl'
 import Checkbox_MU from '@material-ui/core/Checkbox'
 import ListItemText_MU from '@material-ui/core/ListItemText'
 
-
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles'
 
 const theme = createMuiTheme({
@@ -25,8 +24,8 @@ const theme = createMuiTheme({
       root: { // Name of the rule
         color: styles._grayDarkest, // Some CSS
         width: '100%',
-				backgroundColor: styles._grayPale,
-				borderRadius: '5px',
+        backgroundColor: styles._grayPale,
+        borderRadius: '5px',
     		fontFamily: styles._baseFontFamily,
     		fontWeight: 300,
         '&?focused': {
@@ -36,15 +35,15 @@ const theme = createMuiTheme({
       },
       input: {
       	lineHeight: '24px',
-				paddingTop: '0.5em',
+        paddingTop: '0.5em',
 			  paddingRight: '14%',
 			  paddingBottom: '0.5em',
 			  paddingLeft: '0.8rem',
       }
     },
-    MuiCheckbox:{
+    MuiCheckbox: {
     	colorSecondary: {
-    		'&$checked' : {
+    		'&$checked': {
     			color: styles._blueMid
     		}
     	},
@@ -58,19 +57,19 @@ const theme = createMuiTheme({
     		backgroundColor: '#7C7C7C'
     	}
     },
-    MuiListItem:{
+    MuiListItem: {
     	root: {
     		paddingTop: '5px',
     		paddingBottom: '5px',
-    		'&$selected' : {
+    		'&$selected': {
     			backgroundColor: styles._grayDarkest
     		},
-    		'&$selected:hover' : {
+    		'&$selected:hover': {
     			backgroundColor: styles._blueMidDark
     		}
     	},
     	button: {
-    		'&:hover':{
+    		'&:hover': {
     			backgroundColor: styles._blueMidDark
     		}
     	}
@@ -98,10 +97,10 @@ const theme = createMuiTheme({
     	}
     }
   },
-});
+})
 
-const ITEM_HEIGHT = 48;
-const ITEM_PADDING_TOP = 8;
+const ITEM_HEIGHT = 48
+const ITEM_PADDING_TOP = 8
 const MenuProps = {
   PaperProps: {
     style: {
@@ -109,33 +108,32 @@ const MenuProps = {
       width: 100,
     },
   },
-};
+}
 
 class Select extends React.Component {
-
   state = {
     selectedOption: this.props.selectedOption || [],
   };
 
-	componentWillReceiveProps (nextProps) {
+  componentWillReceiveProps (nextProps) {
 	  this.setState({ ...nextProps })
-	}
+  }
 
   handleChange = event => {
-  	let value = event.target.value;
+  	let value = event.target.value
 	  if (typeof value === 'object' && this.props.sortType !== 'none') {
 	    value.sort()
 	    if (this.props.sortType === 'descending') {
 	      value.reverse()
 	    }
 	  }
-  	if(this.props.onChangeHandler){
+  	if (this.props.onChangeHandler) {
   		this.props.onChangeHandler(value)
   	}
-    this.setState({ selectedOption: value });
+    this.setState({ selectedOption: value })
   };
 
-	render () {
+  render () {
   	let { options, selectedKey, multiple, sortType } = this.props
 	  if (sortType !== 'none' && options) {
 	    options.sort()
@@ -143,8 +141,8 @@ class Select extends React.Component {
 	      options.reverse()
 	    }
 	  }
-    //let styles = (this.props.theme === 'year')? yearTheme : standardTheme;
-    //console.log(this.state);
+    // let styles = (this.props.theme === 'year')? yearTheme : standardTheme;
+    // console.log(this.state);
     return (
       <div className={styles.root}>
       	<MuiThemeProvider theme={theme}>
@@ -180,9 +178,6 @@ class Select extends React.Component {
       </div>
     )
   }
-
 }
 
 export default Select
-
-

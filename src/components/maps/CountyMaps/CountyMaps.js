@@ -121,7 +121,7 @@ class OffshoreCountyMap extends React.Component {
   }
 
   mapAreaClickHandler (e, areaId) {
-    //console.log('mapAreaClickHandler', e, areaId)
+    // console.log('mapAreaClickHandler', e, areaId)
   }
 
   render () {

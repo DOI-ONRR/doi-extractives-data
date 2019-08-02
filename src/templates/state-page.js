@@ -1,8 +1,5 @@
 import React from 'react'
-import Link from '../components/utils/temp-link'
-import { withPrefix } from '../components/utils/temp-link'
-import { withPrefixSVG } from '../components/utils/temp-link'
-
+import Link, { withPrefix, withPrefixSVG } from '../components/utils/temp-link'
 import Helmet from 'react-helmet'
 import ReactHtmlParser from 'react-html-parser'
 import { connect } from 'react-redux'
@@ -19,7 +16,6 @@ import SectionStateGovernance from '../components/locations/SectionStateGovernan
 import MobileNav from '../components/layouts/MobileNav'
 
 import DefaultLayout from '../components/layouts/DefaultLayout'
-
 
 const NAV_ITEMS = [
   {

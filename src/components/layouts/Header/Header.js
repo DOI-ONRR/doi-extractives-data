@@ -24,17 +24,17 @@ const Header = props => {
   let howItWorksClassNames = { 'className': ' header-nav_item ' }
   let exploreClassNames = { 'className': ' header-nav_item ' }
   let downloadClassNames = { 'className': ' header-nav_item_link_top ' }
-  
+
   if (typeof location !== 'undefined' && location) {
     let prefix = __PATH_PREFIX__
     if (__PATH_PREFIX__ && __PATH_PREFIX__.length > 0) {
       prefix = __PATH_PREFIX__.slice(0, -14)
     }
 
-    if (location.pathname.includes('/about') ) {
+    if (location.pathname.includes('/about')) {
       aboutClassNames.className += ' active '
     }
-    else if (location.pathname.includes('/downloads') ) {
+    else if (location.pathname.includes('/downloads')) {
       downloadClassNames.className += ' active '
     }
     else if (location.pathname.includes('/how-it-works')) {
@@ -43,7 +43,7 @@ const Header = props => {
     else if (location.pathname.includes('/explore')) {
       exploreClassNames.className += ' active '
     }
-    else if (location.pathname.includes('/archive') ) {
+    else if (location.pathname.includes('/archive')) {
       aboutClassNames.className
     }
     else {
@@ -67,7 +67,7 @@ const Header = props => {
       <MediaQuery minWidth={769}>
         <nav className="header-nav header-right">
           <ul className="header-nav_top">
-            <li style={{width:'200px'}} className="header-nav_item_top">{" "}</li>
+            <li style={{ width: '200px' }} className="header-nav_item_top">{' '}</li>
             <li className="header-nav_item_top">
               <a href="#" onClick={() => props.glossaryTermSelected('', true)} className="header-nav_item_link_top js-glossary-toggle" alt="this is the glossary drawer">Glossary</a>
             </li>
@@ -87,7 +87,7 @@ const Header = props => {
               <Link className="header-nav_item_link" to="/explore/"> Explore data </Link>
             </li> <li {...aboutClassNames}>
               <Link className="header-nav_item_link" to="/about/"> About </Link>
-            </li> 
+            </li>
           </ul>
         </nav>
       </MediaQuery>

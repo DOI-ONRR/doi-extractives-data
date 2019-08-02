@@ -38,7 +38,7 @@ module.exports = Object.freeze({
 	      }
 	    }
     }`,
-    MARKDOWN_ARCHIVE:
+  MARKDOWN_ARCHIVE:
 		`allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/archive/"}}) {
 	    pages: edges {
 	      page: node {

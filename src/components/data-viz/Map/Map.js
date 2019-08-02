@@ -21,6 +21,7 @@ const Map = (props) => {
     // const mapJson=props.mapJson || "https://cdn.jsdelivr.net/npm/us-atlas@2/us/10m.json";
     //use ONRR topojson file for land
     const mapJson=props.mapJson || "/maps/land/us-topology.json";
+    const mapOffshoreJson=props.mapOffshoreJson || "/maps/offshore/offshore.json";
 
     const mapFeatures=props.mapFeatures || "counties";
     const mapData=props.mapData.concat(props.offshoreData) || [];  
@@ -40,7 +41,7 @@ const Map = (props) => {
 //		 chart(elemRef.current, us,mapFeatures,data);
 //	     });
 
-	     let propmise2=d3.json("maps/offshore/offshore.json")
+	     let propmise2=d3.json(mapOffshoreJson)
 		 .then( offshore => {
 
 		     let max=data.values.sort((a,b)=>a-b)[data.values.length-1];

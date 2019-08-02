@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import { useStaticQuery, graphql } from "gatsby"
 
 import * as d3 from 'd3'
-
+import Link, { withPrefix as withPrefixGatsby } from 'gatsby-link'
 import LocationSelector from '../../selectors/LocationSelector'
 import Select from '../../selectors/Select'
 import styles from './MapSection.module.scss'
@@ -54,7 +54,8 @@ query MyQuery {
     let options=states.map((value)=>{ return {value:value.state.frontmatter.unique_id,
 					      name:value.state.frontmatter.title}})
 //    console.debug(options);
-    
+    let offshoreJson=withPrefixGatsby(props.mapOffshoreJson);
+    let mapJson=withPrefixGatsby(props.mapJson);
     let offshore_regions =props.offshore_regions || []
 return (
         <section className={styles.root}>
@@ -77,7 +78,7 @@ return (
 	   
 
     </div>
-	<div className={styles.containerRight}><Map mapFeatures={props.mapFeatures} mapData={data} offshoreData={offshore_data} mapOffshoreJson={props.mapOffshoreJson} colorScheme={props.mapColor} offshoreColorScheme={props.offshoreMapColor} mapTitle={props.mapTitle} onClick={onClick} /> </div>
+	<div className={styles.containerRight}><Map mapFeatures={props.mapFeatures} mapData={data} offshoreData={offshore_data} mapJson={mapJson} mapOffshoreJson={offshoreJson} colorScheme={props.mapColor} offshoreColorScheme={props.offshoreMapColor} mapTitle={props.mapTitle} onClick={onClick} /> </div>
 
 	
 

@@ -216,7 +216,7 @@ const KeyAllProduction = props => {
 const FederalLandInfo = props => {
   return (
     <p>
-      Natural resource ownership in the U.S. is closely tied to land ownership. Land can be owned by citizens, corporations, Indian tribes or individuals, or governments (for instance, federal, state, or local governments). Much of the data on this site is limited to natural resource extraction on federal land, which represents {utils.round(LAND_STATS[props.usStateData.unique_id].federal_percent, 1)}%
+      Natural resource ownership in the U.S. is closely tied to land ownership. Land can be owned by citizens, corporations, Native American tribes or individuals, or governments (for instance, federal, state, or local governments). Much of the data on this site is limited to natural resource extraction on federal land, which represents {utils.round(LAND_STATS[props.usStateData.unique_id].federal_percent, 1)}%
       of all land in {props.usStateData.title}.
     </p>
   )

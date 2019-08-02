@@ -27,6 +27,17 @@ const SectionOffshoreRevenue = props => {
   let year = commodityYears[props.commodityYears.length - 1]
 
   const usStateCountyRevenue = props.commoditiesCounty
+  const usStateCountyRevenueSorted = Object.keys(usStateCountyRevenue).map(key => {
+    return ({ [key]: usStateCountyRevenue[key] })
+  })
+
+  usStateCountyRevenueSorted.sort((a, b) => {
+    let nameA = a[Object.keys(a)[0]].name.toLowerCase()
+    let nameB = b[Object.keys(b)[0]].name.toLowerCase()
+    if (nameA < nameB) return -1
+    if (nameB < nameA) return 1
+    return 0
+  })
 
   let allCommoditiesValues = {}
   let allCommoditiesSlug, allCommoditiesChartName
@@ -191,7 +202,9 @@ const SectionOffshoreRevenue = props => {
                                 <td colSpan="3" className="inner-table-cell">
                                   <div className="inner-table-wrapper">
                                     <table>
-                                      {(lazy(usStateCountyRevenue).toArray()).map((countyData, index) => {
+                                      {usStateCountyRevenueSorted.map((data, index) => {
+                                        let key = Object.keys(data)[0]
+                                        let countyData = [key, data[key]]
                                         if (countyData[1].revenue[year] > 0) {
                                           let yearsValue = countyData[1].revenue
                                           let productVolume = countyData[1].revenue[year]

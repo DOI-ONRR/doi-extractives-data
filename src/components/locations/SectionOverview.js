@@ -16,6 +16,7 @@ import FederalLandOwnershipSvg from '../maps/FederalLandOwnershipSvg'
 import GlossaryTerm from '../utils/glossary-term.js'
 
 import utils from '../../js/utils'
+import styles from './SectionOverview.module.scss'
 
 import rehypeReact from 'rehype-react'
 
@@ -215,8 +216,8 @@ const KeyAllProduction = props => {
 
 const FederalLandInfo = props => {
   return (
-    <div style={{ backgroundColor: '#f0f6fa', margin: '0 0 8px 0', padding: '10px 10px' }}>
-      <span>
+    <div className={styles.landOwnershipSummary}>
+      <span className="para-md">
         Federal land represents <strong>{utils.round(LAND_STATS[props.usStateData.unique_id].federal_percent, 1)}%</strong> of all land in {props.usStateData.title}.
       </span>
     </div>

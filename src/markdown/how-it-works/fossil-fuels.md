@@ -14,6 +14,8 @@ tag:
 <custom-link to="/how-it-works/" className="breadcrumb link-charlie">How it works</custom-link> /
 # Fossil fuels
 
+<archive-banner></archive-banner>
+
 > Fossil fuels are our main source of electricity and the primary fuel for powering motor vehicles and heating homes. Fossil fuels are used to make many products. Through natural processes over hundreds of millions of years, plant and animal matter becomes energy resources in the form of oil, gas, and coal. While fossil fuels are abundant, they are not renewable. [Explore production data.](/explore/#production)
 
 ### Oil

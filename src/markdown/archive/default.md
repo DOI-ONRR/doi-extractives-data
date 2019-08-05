@@ -68,6 +68,26 @@ tag:
         </div>
       </section>
       <section class="container">
+        <h2 id="resources" alt="Natural resources" class="h2-bar">About natural resources</h2>
+        <div class="container landing-section">
+          <div>
+            <h3 class="h3 landing-heading"><custom-link to="/how-it-works/fossil-fuels">Fossil fuels</custom-link></h3>
+            <p>Fossil fuels are our main source of electricity, and the primary fuel for powering motor vehicles and heating homes.</p>
+            <p><custom-link to="/how-it-works/fossil-fuels">Learn about oil, gas, and coal</custom-link></p>
+          </div>
+          <div>
+            <h3 class="h3 landing-heading"><custom-link to="/how-it-works/nonenergy-minerals">Nonenergy minerals</custom-link></h3>
+            <p>Nonenergy minerals include base and precious metals, industrial metals, and gemstones, among others.</p>
+            <p><custom-link to="/how-it-works/nonenergy-minerals">Learn about nonenergy minerals</custom-link></p>
+          </div>
+          <div>
+            <h3 class="h3 landing-heading"><custom-link to="/how-it-works/renewables">Renewables</custom-link></h3>
+            <p>Renewable energy comes from sources that are not depleted when used. These resources include geothermal, solar, wind, water, and biomass.</p>
+            <p><custom-link to="/how-it-works/renewables">Learn about renewable energy</custom-link></p>
+          </div>
+        </div>
+      </section>
+      <section class="container">
         <h2 id="audits-reconciliation" class="h2-bar">Audits and reconciliation</h2>
         <div class="container landing-section">
           <div>

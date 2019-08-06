@@ -203,7 +203,7 @@ const KeyAllProduction = props => {
 
   return (
     <div>
-      {productsRankedOne &&
+      {productsRankedOne.length > 0 &&
                 <div>
                   <p>{props.usStateData.title} leads the nation in production of:</p>
                   {getProductListItems()}

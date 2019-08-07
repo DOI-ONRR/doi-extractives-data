@@ -33,12 +33,12 @@ const createProductionData = (groupByCommodity, groupByYear) => {
       let node = element.node
       let year = parseInt(node.ProductionYear)
       if (commodityYears.includes(year)) {
-        total[item.id] = total[item.id] || { name: name, units: node.Units, withheld: node.Withheld, volume: {} }
+        total[item.id] = total[item.id] || { name: name, units: node.Units, withheld: node.Withheld, total: 0, volume: {} }
         total[item.id].volume[year] = (total[item.id].volume[year])
           ? total[item.id].volume[year] + node.Volume
           : node.Volume
-
-        total[item.id].volume[year] = total[item.id].volume[year]
+        
+        total[item.id].total += node.Volume
       }
     })
 
@@ -46,6 +46,7 @@ const createProductionData = (groupByCommodity, groupByYear) => {
   }, {})
 
   Object.keys(commodities).forEach(commodity => {
+    commodities[commodity].total = parseInt(commodities[commodity].total)
     Object.keys(commodities[commodity].volume).forEach(year => {
       commodities[commodity].volume[year] = parseInt(commodities[commodity].volume[year])
     })
@@ -122,7 +123,7 @@ const NationalFederalProduction = props => {
             let product = commodities[key]
 
             // Checks to verify if we have no data for a product for all years
-            if (product.withheld) {
+            if (product.total === 0) {
               withHeldProducts.push(product)
               return // return nothing if there is no data to display for this product
             }

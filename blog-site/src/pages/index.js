@@ -14,7 +14,6 @@ class BlogIndex extends React.Component {
       this,
       'props.data.site.siteMetadata.description'
     )
-    const siteAnalytics = get(this, 'props.data.site.siteMetadata.googleAnalyticsId')
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
 
     return (
@@ -27,17 +26,12 @@ class BlogIndex extends React.Component {
         >
           {/* Digital Analytics Program roll-up, see the data at https://analytics.usa.gov */}
           <script src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js" id="_fed_an_ua_tag"></script>
-          {siteAnalytics &&
-            <script>
-              {"(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create', '"+siteAnalytics+"', 'auto');ga('set', 'anonymizeIp', true);ga('set', 'forceSSL', true);ga('send', 'pageview');"}
-            </script>
-          }
-        </Helmet>  
+        </Helmet>
 
         {posts.map(({ node }) => {
           const title = get(node, 'frontmatter.title') || node.fields.slug
           return (
-            <div 
+            <div
               style={{
                 marginBottom: rhythm(1.2),
               }}
@@ -47,11 +41,11 @@ class BlogIndex extends React.Component {
                   marginBottom: rhythm(-0.1),
                 }}
               >
-                <Link 
-                  style={{ 
+                <Link
+                  style={{
                     boxShadow: 'none',
                     textDecoration: 'none',
-                  }} 
+                  }}
                   to={node.fields.slug}>
                   {title}
                 </Link>

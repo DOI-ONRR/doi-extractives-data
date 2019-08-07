@@ -1,0 +1,32 @@
+
+.root {
+	margin:80px 0px;
+}
+
+.title {
+
+}
+
+.revenueTable {
+}
+
+.alignRight {
+
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.containerLeft {
+    max-width: 27%;
+}
+
+.containerRight {
+    width: 70%;
+    min-height: 400px;/* bunt on proper height*/
+    //height: 600px;/* bunt on proper height*/
+    //    border: 1px solid;
+}

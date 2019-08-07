@@ -121,6 +121,8 @@ const RevenueTrends = () => {
       }
 `) 
 
+
+    
       let fiscalYearData = JSON.parse(JSON.stringify(data.allMonthlyRevenuesByFiscalYear.group)).sort((a, b) => (a.fiscalYear < b.fiscalYear) ? 1 : -1)
       
       // Get the latest date then subtract 1 year to filter previous year data to compare current year data

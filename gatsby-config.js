@@ -110,6 +110,12 @@ let config = {
           node.frontmatter.tags !== 'exempt',
       },
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: GOOGLE_ANALYTICS_ID,
+      },
+    },
     'custom-excel-transformer',
     `gatsby-plugin-meta-redirect`, // make sure to put last in the array
   ],

@@ -37,7 +37,7 @@ allYearlyDispursements :  allDisbursementsXlsxData(sort: {fields: [Fiscal_Year],
 }
 
 `) 
-    console.debug(results);
+//    console.debug(results);
     let data=results.allYearlyDispursements.nodes;
     let currentYear=data[0].Fiscal_Year
     let previousYear=currentYear - 1;

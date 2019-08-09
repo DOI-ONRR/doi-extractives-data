@@ -338,48 +338,50 @@ class TotalProductionDeprecated extends React.Component {
 
 	render () {
 	  return (
-	      <section className={styles.revenueDisbursementsSection} >
-	        <div className={styles.itemToggle}>
+		  <section className={styles.production} >
+	          <div className={styles.itemToggle}>
 		  
 		  <div className={styles.toggle}>
-		    Show:
-	            <Toggle action={this.revenueToggleClicked.bind(this)} buttons={[{ key: TOGGLE_VALUES.Year, name: CONSTANTS.YEARLY, default: true },
-			    { key: TOGGLE_VALUES.Month, name: CONSTANTS.MONTHLY }]}></Toggle>
-		  </div>
-		  {(this.state.revenueToggle === TOGGLE_VALUES.Month) ?
-		      <div className={styles.dropdown}>
-			    Period:
-				<DropDown
-				      key={'RevenuePeriod'}
-				      action={this.revenuePeriodSelected.bind(this)}
-				      options={[
-					  { key: DROPDOWN_VALUES.Recent,
-					    name: 'Most recent 12 months',
-					    default: (this.state.revenuePeriod === DROPDOWN_VALUES.Recent) },
-					  { key: DROPDOWN_VALUES.Fiscal,
-					    name: 'Fiscal year ' + this.state[REVENUES_FISCAL_YEAR_OLD],
-					    default: (this.state.revenuePeriod === DROPDOWN_VALUES.Fiscal) },
-					  { key: DROPDOWN_VALUES.Calendar,
-					    name: 'Calendar year ' + this.state[REVENUES_CALENDAR_YEAR],
-					    default: (this.state.revenuePeriod === DROPDOWN_VALUES.Calendar) }]}></DropDown>
-			  </div>
-			  :
-			  <div className={styles.dropdown}>
-				Period:
-				    <DropDown
-					  key={'RevenueYearlyPeriod'}
-					  action={this.revenueYearlyPeriodSelected.bind(this)}
-					  options={[
-					      { key: YEARLY_DROPDOWN_VALUES.Fiscal,
-						name: 'Fiscal year',
-						default: (this.state.revenueYearlyPeriod === YEARLY_DROPDOWN_VALUES.Fiscal) },
-					      { key: YEARLY_DROPDOWN_VALUES.Calendar,
-						name: 'Calendar year',
-						default: (this.state.revenueYearlyPeriod === YEARLY_DROPDOWN_VALUES.Calendar) }]}></DropDown>
-			      </div>
-			  }                    
-		
-		
+									Show:
+	                <Toggle action={this.productionToggleClicked.bind(this)} buttons={[{ key: TOGGLE_VALUES.Year, name: 'Yearly', default: true },
+								  { key: TOGGLE_VALUES.Month, name: 'Monthly' }]}></Toggle>
+	              </div>
+
+	              {(this.state.productionToggle === TOGGLE_VALUES.Month) ?
+									<div className={styles.dropdown}>
+										Period:
+									  <DropDown
+									  	key={'ProductionPeriod'}
+									    action={this.productionPeriodSelected.bind(this)}
+									    options={[
+									      { key: DROPDOWN_VALUES.Recent,
+									        name: 'Most recent 12 months',
+									        default: (this.state.productionPeriod === DROPDOWN_VALUES.Recent) },
+									      { key: DROPDOWN_VALUES.Fiscal,
+									        name: 'Fiscal year ' + this.state[PRODUCTION_VOLUMES_FISCAL_YEAR],
+									        default: (this.state.productionPeriod === DROPDOWN_VALUES.Fiscal) },
+									      { key: DROPDOWN_VALUES.Calendar,
+									        name: 'Calendar year ' + this.state[PRODUCTION_VOLUMES_CALENDAR_YEAR],
+									        default: (this.state.productionPeriod === DROPDOWN_VALUES.Calendar) }]}></DropDown>
+									</div>
+									:
+									<div className={styles.dropdown}>
+										Period:
+									  <DropDown
+									  	key={'ProductionYearlyPeriod'}
+									    action={this.productionYearlyPeriodSelected.bind(this)}
+									    options={[
+									      { key: YEARLY_DROPDOWN_VALUES.Fiscal,
+									        name: 'Fiscal year',
+									        default: (this.state.productionYearlyPeriod === YEARLY_DROPDOWN_VALUES.Fiscal) },
+									      { key: YEARLY_DROPDOWN_VALUES.Calendar,
+									        name: 'Calendar year',
+									        default: (this.state.productionYearlyPeriod === YEARLY_DROPDOWN_VALUES.Calendar) }]}></DropDown>
+									</div>
+	              }
+
+	      		</div>
+	      
 	        <div className={styles.productChartContainer}>
 	          {this.getStackedBarChartLayout(KEY_STATS_OIL_DATA_ID, CONSTANTS.OIL)}
 		  
@@ -387,7 +389,7 @@ class TotalProductionDeprecated extends React.Component {
 		  
 		  {this.getStackedBarChartLayout(KEY_STATS_COAL_DATA_ID, CONSTANTS.COAL)}
 	        </div>
-		</div>
+
 		
 	      </section>
 

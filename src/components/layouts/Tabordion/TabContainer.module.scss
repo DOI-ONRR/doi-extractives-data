@@ -6,7 +6,7 @@
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-
+  margin-top: 25px;
 
 }
 
@@ -18,11 +18,24 @@ margin-top: 5rem;
   z-index: 10;
 }
 
+.title {
+    font-family: 'Lato Bold', 'Lato Regular', 'Lato';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 34px;
+    color: #1C2326;
+    text-align: left;
+    line-height: 46px;
+}
+    
+
+
 .contentTop {
     //border: 1px solid purple;
         min-width: 100%;
 	flex-basis: 100%;
 	order: 0;
+	margin-bottom: 50px;
 }
 
 .contentLeft {

@@ -96,12 +96,13 @@
 }
 
 .revenueDisbursementsSection {
-	display: inline-grid;
+/*	display: inline-grid;
 	-ms-grid-columns: 48.5% 3% 48.5%;
 	grid-template-columns: repeat(2, [col-start] 1fr);
 	grid-gap: 0 3%;
 	width: 100%;
 	margin-bottom: 3rem;
+*/
 }
 
 /* added for ie 11 compatatibility */
@@ -124,7 +125,8 @@
 }
 
 .itemToggle {
-	grid-row: 4;
+    display: flex;
+    grid-row: 4;
 	margin-bottom: 0.5rem;
 }
 
@@ -161,9 +163,9 @@
 }
 
 .itemToggle .dropdown {
-	display: block;
-	margin-left: 0px;
-	margin-top: 10px;
+//	display: block;
+//	margin-left: 0px;
+//	margin-top: 10px;
 }
 
 

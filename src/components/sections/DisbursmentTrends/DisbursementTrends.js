@@ -57,9 +57,8 @@ allYearlyDispursements :  allDisbursementsXlsxData(sort: {fields: [Fiscal_Year],
                 <th className={styles.alignRight}>{currentFiscalYearText}</th>
               </tr>
             </thead>
-
 	      {trends.map( (trend, index) => (
-		      <tbody>
+		      <tbody key={'tbody'+index} >
 		      <tr className={styles[trend.className]}>
                       <td>{trend.fund}</td>
                 <td className={styles.alignRight}>{utils.formatToSigFig_Dollar(trend.current, 3)}</td>
@@ -75,6 +74,7 @@ allYearlyDispursements :  allDisbursementsXlsxData(sort: {fields: [Fiscal_Year],
 		      </tr>
 		      </tbody>
 	      ))}
+
 
           </table>
         </section>

@@ -1,0 +1,232 @@
+@value colors: "../../../css-global/colors.scss";
+@value grayBlueDark as _grayBlueDark, grayBlueMid as _grayBlueMid, grayMidLight as _grayMidLight, grayBlueMidLight as _grayBlueMidLight from colors;
+@value blueMidLight as _blueMidLight, blueMid as _blueMid, blueDark as _blueDark from colors;
+@value greenLight as _greenLight, blueMid as _blueMid, blueDark as _blueDark from colors;
+
+@value federalOffshoreColor: _grayBlueMid;
+@value federalOnshoreColor: _grayBlueDark;
+@value nativeAmericanColor: _grayBlueMidLight;
+@value federalOffshoreColor_selected: _blueMid;
+@value federalOnshoreColor_selected: _blueDark;
+@value nativeAmericanColor_selected: _blueMidLight;
+
+.root{}
+
+.chartBar {
+	cursor: pointer;
+}
+
+.federalOnshore {
+	background-color: federalOnshoreColor_selected;
+	fill: federalOnshoreColor;
+}
+.federalOffshore {
+	background-color: federalOffshoreColor_selected;
+	fill: federalOffshoreColor;
+}
+.nativeAmerican {
+	background-color: nativeAmericanColor_selected;
+	fill: nativeAmericanColor;
+}
+
+
+
+.chartBar[selected=true] .federalOnshore{
+	fill: federalOnshoreColor_selected;
+}
+.chartBar[selected=true] .federalOffshore{
+	fill: federalOffshoreColor_selected;
+}
+.chartBar[selected=true] .nativeAmerican{
+	fill: nativeAmericanColor_selected;
+}
+
+.chartBar:hover .federalOnshore{
+	fill: federalOnshoreColor_selected;
+	opacity: 0.8;
+}
+
+.chartBar:hover .federalOffshore{
+	fill: federalOffshoreColor_selected;
+	opacity: 0.8;
+}
+.chartBar:hover .nativeAmerican{
+	fill: nativeAmericanColor_selected;
+	opacity: 0.8;
+}
+
+.federalOnshoreHover {
+	background-color: federalOnshoreColor_selected;
+	opacity: 0.8;
+}
+.federalOffshoreHover {
+	background-color: federalOffshoreColor_selected;
+	opacity: 0.8;
+}
+.nativeAmericanHover {
+	background-color: nativeAmericanColor_selected;
+	opacity: 0.8;
+}
+
+.root h2 {
+	border-bottom: 10px solid _greenLight;
+	padding-bottom: 0.7rem;
+}
+
+.production {
+	width: 100%;
+	margin-bottom: 3rem;
+}
+
+.productChartContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.production [is="chart"]{
+	display: inline-block;
+	width: 32%;
+	min-width: 300px;
+}
+
+
+.production .sectionTitle div:last-child{
+	float: right;
+}
+
+.revenueDisbursementsSection {
+	display: inline-grid;
+	-ms-grid-columns: 48.5% 3% 48.5%;
+	grid-template-columns: repeat(2, [col-start] 1fr);
+	grid-gap: 0 3%;
+	width: 100%;
+	margin-bottom: 3rem;
+}
+
+/* added for ie 11 compatatibility */
+.itemDisbursements{
+	-ms-grid-column: 3;
+}
+
+.itemTitle {
+	grid-row: 1;
+}
+
+.itemDesc {
+	grid-row: 2;
+	margin-bottom: 0.7rem;
+}
+
+.itemLink {
+	grid-row: 3;
+	margin-bottom: 0.7rem;
+}
+
+.itemToggle {
+	grid-row: 4;
+	margin-bottom: 0.5rem;
+}
+
+.itemChart {
+	grid-row: 5;
+}
+
+.sectionTitle {
+	margin-bottom: 10px;
+}
+
+.sectionTitle div{
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+.toggle {
+	display: inline-block;
+	margin-bottom: 16px;
+}
+.toggle div:first-child{
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.dropdown {
+	display: inline-block;
+	margin-left: 20px;
+}
+.dropdown div:first-child{
+	display: inline-block;
+	margin-left: 10px;
+	width: 260px;
+}
+
+.itemToggle .dropdown {
+	display: block;
+	margin-left: 0px;
+	margin-top: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+	.productChartContainer {
+	  flex-wrap: wrap;
+	}
+	.production [is="chart"]{
+		width: 47%;
+		min-width: 100px;
+	}
+	
+	.revenueDisbursementsSection {
+		-ms-grid-columns: 47% 6% 47%;
+		grid-gap: 0 6%;
+	}
+}
+
+@media screen and (max-width: 601px) {
+	.production [is="chart"]{
+		width: 100%;
+		min-width: 100px;
+	}
+	.revenueDisbursementsSection {
+		display: flow-root;
+		-ms-grid-columns: 100%;
+		grid-template-columns: repeat(1, [col-start] 1fr);
+	}
+	.production .sectionTitle div:last-child{
+		display: block;
+		float: none;
+	}
+	.itemDisbursements{
+		-ms-grid-column: 1;
+	}
+
+	.itemTitle.itemDisbursements {
+		grid-row: 6;
+		margin-top: 4rem;
+	}
+
+	.itemDesc.itemDisbursements {
+		grid-row: 7;
+		margin-bottom: 0.7rem;
+	}
+
+	.itemLink.itemDisbursements {
+		grid-row: 8;
+		margin-bottom: 0.7rem;
+	}
+
+	.itemToggle.itemDisbursements {
+		grid-row: 9;
+		margin-bottom: 0.5rem;
+	}
+
+	.itemChart.itemDisbursements {
+		grid-row: 10;
+	}
+	.dropdown {
+		margin-left: 0px;
+	}
+	.dropdown div:first-child{
+		width: 212px;
+	}
+}

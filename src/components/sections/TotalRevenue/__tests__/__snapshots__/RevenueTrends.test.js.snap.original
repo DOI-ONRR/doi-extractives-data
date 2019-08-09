@@ -1,0 +1,219 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RevenueTrends renders correctly 1`] = `
+<section
+  className="root"
+>
+  <h3
+    className="title h3-bar"
+  >
+    Revenue trends
+  </h3>
+  Includes federal and Native American revenue through 
+  May
+   
+  2019
+  <table
+    className="revenueTable"
+  >
+    <thead>
+      <tr>
+        <th>
+          10-year trend
+        </th>
+        <th
+          className="alignRight"
+        >
+          FY19 so far
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          Royalties
+        </td>
+        <td
+          className="alignRight"
+        >
+          $6.62 billion
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div
+            style={
+              Object {
+                "fill": "none",
+                "stroke": "#5c737f",
+                "strokeWidth": 1,
+              }
+            }
+          />
+        </td>
+        <td
+          className="alignRight"
+        >
+          <span>
+            <test-file-stub
+              viewBox="-20 -15 50 40"
+            />
+            <span>
+              26%
+            </span>
+          </span>
+           from FY18
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Bonuses
+        </td>
+        <td
+          className="alignRight"
+        >
+          $1.64 billion
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div
+            style={
+              Object {
+                "fill": "none",
+                "stroke": "#5c737f",
+                "strokeWidth": 1,
+              }
+            }
+          />
+        </td>
+        <td
+          className="alignRight"
+        >
+          <span>
+            <test-file-stub
+              viewBox="-20 -15 50 40"
+            />
+            <span>
+              413%
+            </span>
+          </span>
+           from FY18
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Rents
+        </td>
+        <td
+          className="alignRight"
+        >
+          $73.80 million
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div
+            style={
+              Object {
+                "fill": "none",
+                "stroke": "#5c737f",
+                "strokeWidth": 1,
+              }
+            }
+          />
+        </td>
+        <td
+          className="alignRight"
+        >
+          <span>
+            <test-file-stub
+              viewBox="-20 -15 50 40"
+            />
+            <span>
+              2%
+            </span>
+          </span>
+           from FY18
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Other revenues
+        </td>
+        <td
+          className="alignRight"
+        >
+          $103.00 million
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div
+            style={
+              Object {
+                "fill": "none",
+                "stroke": "#5c737f",
+                "strokeWidth": 1,
+              }
+            }
+          />
+        </td>
+        <td
+          className="alignRight"
+        >
+          <span>
+            <test-file-stub
+              viewBox="-20 -10 50 40"
+            />
+            <span>
+              -20%
+            </span>
+          </span>
+           from FY18
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <strong>
+            Total revenues
+          </strong>
+        </td>
+        <td
+          className="alignRight"
+        >
+          <strong>
+            $8.44 billion
+          </strong>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div
+            style={
+              Object {
+                "fill": "none",
+                "stroke": "#5c737f",
+                "strokeWidth": 1,
+              }
+            }
+          />
+        </td>
+        <td
+          className="alignRight"
+        >
+          <span>
+            <test-file-stub
+              viewBox="-20 -15 50 40"
+            />
+            <span>
+              46%
+            </span>
+          </span>
+           from FY18
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+`;

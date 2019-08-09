@@ -209,7 +209,7 @@ class HomePage extends React.Component {
           </Tabordion>
 
           <KeyStatsSection />
-          <MapSection 
+          <MapSection b
                title="Learn about extractive industries in each state"
                info="Explore production, revenue, and disbursements data for each state."
                states={this.props.data.states_data.states}

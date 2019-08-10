@@ -48,8 +48,8 @@ allYearlyDispursements :  allDisbursementsXlsxData(sort: {fields: [Fiscal_Year],
     
       return (
         <section className={styles.root}>
-          <h3 className={styles.title+" h3-bar"}>Dispersement trends</h3>
-              Includes dispursments through {currentFiscalYearText} 
+          <h3 className={styles.title+" h3-bar"}>Disbursement trends</h3>
+              Includes disbursements through {currentFiscalYearText} 
           <table className={styles.dispersementTable}>
             <thead>
               <tr>

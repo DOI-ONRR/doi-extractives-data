@@ -7,9 +7,9 @@ exports[`DisbursementTrends renders correctly 1`] = `
   <h3
     className="title h3-bar"
   >
-    Dispersement trends
+    Disbursement trends
   </h3>
-  Includes dispursments through 
+  Includes disbursements through 
   FY18 year to date so far
   <table
     className="dispersementTable"

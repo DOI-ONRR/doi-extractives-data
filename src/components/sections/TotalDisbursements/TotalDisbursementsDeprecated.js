@@ -339,7 +339,9 @@ class TotalDisbursementsDeprecated extends React.Component {
 	render () {
 	  return (
 	      <section className={styles.revenueDisbursementsSection} >
-		{/*
+		  <h3 className={styles.title+" h3-bar"}>Total disbursments</h3>
+		  <div className={styles.content}>
+	      {/*
 	        <div className={styles.itemToggle}>
 
 		  <div className={styles.toggle}>
@@ -383,7 +385,8 @@ class TotalDisbursementsDeprecated extends React.Component {
 		*/}
 	        <div className={styles.itemChart + ' ' + styles.itemDisbursements}>
 	          {this.getStackedBarChartLayout(KEY_STATS_DISBURSEMENTS_DATA_ID, CONSTANTS.DISBURSEMENTS, utils.formatToDollarInt)}
-		</div>
+	      </div>
+		  </div>
 	      </section>
 	      
 	      

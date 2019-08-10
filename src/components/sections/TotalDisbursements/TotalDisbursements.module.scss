@@ -11,6 +11,19 @@
 @value nativeAmericanColor_selected: _blueMidLight;
 
 .root{}
+.title {
+
+    font-family: 'Lato Bold', 'Lato Regular', 'Lato';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    color: #435159;
+}
+
+.content {
+    padding-left: 100px;
+    padding-right: 100px;
+}
 
 .chartBar {
 	cursor: pointer;

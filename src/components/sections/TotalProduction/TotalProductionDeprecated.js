@@ -339,6 +339,8 @@ class TotalProductionDeprecated extends React.Component {
 	render () {
 	  return (
 		  <section className={styles.production} >
+		  <h3 className={styles.title+" h3-bar"}>Total production</h3>
+		  <div className={styles.content}>
 	          <div className={styles.itemToggle}>
 		  
 		  <div className={styles.toggle}>
@@ -389,7 +391,7 @@ class TotalProductionDeprecated extends React.Component {
 		  
 		  {this.getStackedBarChartLayout(KEY_STATS_COAL_DATA_ID, CONSTANTS.COAL)}
 	        </div>
-
+		  </div>
 		
 	      </section>
 

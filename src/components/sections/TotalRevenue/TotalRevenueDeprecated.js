@@ -338,11 +338,16 @@ class TotalRevenueDeprecated extends React.Component {
 
 	render () {
 	  return (
-	      <section className={styles.revenueDisbursementsSection} >
-	        <div className={styles.itemToggle}>
+		  <section className={styles.revenueDisbursementsSection} >
+		  
+		  <h3 className={styles.title+" h3-bar"}>Total revenue<span className={styles.leftTitle}>	<ExploreDataLink to="https://revenuedata.doi.gov/explore/#revenue"
+					     >Filter revenue data
+			    </ExploreDataLink></span> </h3>
+		  <div className={styles.content}>
+		  <div className={styles.itemToggle}>
 		  
 		  <div className={styles.toggle}>
-		    Show:
+		  Show:
 	            <Toggle action={this.revenueToggleClicked.bind(this)} buttons={[{ key: TOGGLE_VALUES.Year, name: CONSTANTS.YEARLY, default: true },
 			    { key: TOGGLE_VALUES.Month, name: CONSTANTS.MONTHLY }]}></Toggle>
 		  </div>
@@ -383,7 +388,7 @@ class TotalRevenueDeprecated extends React.Component {
 		  <div className={styles.itemChart}>
 		    {this.getStackedBarChartLayout(KEY_STATS_REVENUES_DATA_ID, CONSTANTS.REVENUE, utils.formatToDollarInt)}
 	          </div>
-		  
+		  </div>
 	      </section>
 	
 	  )

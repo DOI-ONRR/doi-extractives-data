@@ -139,7 +139,7 @@ const chart = (node,us,mapFeatures,data, colorScheme,onClick) => {
 	  //.attr("viewBox", '-40 0 '+width*1.8+' '+height*1.8);
 
   svg.append("g")
-      .attr("transform", "translate(400,25)")
+      .attr("transform", "translate(60,60)")
 	.call(legend,data.title, data, color,true);
 //return svg.node();
 
@@ -289,8 +289,8 @@ const legend = (g,title,data,color,labels) => {
 	.attr("y", function(d, i){ return height - (i*ls_h) - ls_h - 4;})
 	.text(function(d, i){ return "label "+i });
 */
-    const width = 240;
-    const height= 15;
+    const width = 340;
+    const height= 20;
     let sorted=data.values.sort((a,b)=>a-b);
     let lowest=utils.formatToSigFig_Dollar(Math.floor(sorted[0]),3);
     let median=utils.formatToSigFig_Dollar(Math.floor(sorted[Math.floor(sorted.length/2)]),3);
@@ -315,7 +315,7 @@ const legend = (g,title,data,color,labels) => {
     
     if(labels) {	
 	g.call(d3.axisBottom(d3.scalePoint([lowest, median, highest], [0, width]))
-	       .tickSize(13))
+	       .tickSize(20))
 	    .select(".domain")
 	    .remove();
     }

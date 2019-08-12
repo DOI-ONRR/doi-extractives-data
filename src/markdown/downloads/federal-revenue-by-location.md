@@ -33,8 +33,6 @@ Download fiscal year data (2003–2018):
   <li><csv-link to="/downloads/FY 03-18 Federal Revenues.csv">Fiscal year revenue (csv, 5.2 MB)</csv-link></li>
 </ul>
 
-We also have [notes on this data](https://github.com/onrr/doi-extractives-data/wiki/Data-Catalog#federal-revenue) from the web development team as they built the interactions on this site.
-
 ## Scope
 
 These datasets include natural resource revenues for U.S. federal lands and offshore areas, along with Native American lands. It does not include privately-owned lands or U.S. state lands. 

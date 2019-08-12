@@ -50,12 +50,6 @@ tag:
     <p>This dataset provides natural resource revenue by company. It includes revenues by production phase and commodity for companies extracting natural resources on federal lands and waters. It does not include company revenue from Native American lands or privately owned lands.</p>
     <download-data-link to="/downloads/federal-revenue-by-company/">Downloads and documentation</download-data-link>
   </li>
-  <!--Native American revenue-->
-  <li class="downloads-download_links">
-    <h3 id="all-revenue">Native American revenue</h3>
-    <p>These datasets include Native American revenue for both calendar and fiscal years. The data includes revenue type, commodity, and product. Native American revenue data is only available at the national level.</p>
-    <download-data-link to="/downloads/native-american-revenue/">Downloads and documentation</download-data-link>
-  </li>
 </ul>
 
 ## Disbursements

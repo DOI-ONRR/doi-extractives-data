@@ -111,9 +111,14 @@ class Beta extends React.Component {
 		      // title
 		      { name: 'og:title', content: 'Beta | Natural Resources Revenue Data' },
 		      { name: 'twitter:title', content: 'Beta | Natural Resources Revenue Data' },
-		  ]} />
+		  ]} >
+		</Helmet>
+	        <section className="container-page-wrapper">
+		<h3 className="h3-bar"></h3>
+		<p> When companies extract energy and mineral resources on property leased from the federal government and Native Americans, they pay bonuses, rent, and royalties to the federal government. The Office of Natural Resources Revenue (ONRR) distributes these funds to different agencies, funds, and local governments for public use.</p>
+		</section>
 		<Tabordion>
-		  <Tab id="tab-revenue" name="Revenue">
+		<Tab id="tab-revenue" name="Revenue">
 		    <TabContainer id="tab-container-revenue" name="Revenue"
 				  title="Revenue"
 				  info="How much money do energy and mineral resources bring into federal government?"

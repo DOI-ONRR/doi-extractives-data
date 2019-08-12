@@ -105,7 +105,7 @@ class Glossary extends React.Component {
 
 function filterGlossaryTerms (glossaryTerm) {
   let numOfTermsToShow = 0
-  if (glossaryTerm !== undefined && glossaryTerm !== '') {
+  if (glossaryTerm !== undefined && glossaryTerm !== null && glossaryTerm !== '') {
     GLOSSARY_TERMS.forEach(term => {
       term.show = false
       if (term.name.toLowerCase().includes(glossaryTerm.toLowerCase())) {
@@ -121,7 +121,7 @@ function filterGlossaryTerms (glossaryTerm) {
 }
 
 export function filterTerms (glossaryTerm) {
-  if (glossaryTerm !== undefined && glossaryTerm !== '') {
+  if (glossaryTerm !== undefined && glossaryTerm !== null && glossaryTerm !== '') {
     return (lazy(GLOSSARY_TERMS)
       .filter(function (term) {
         return (term.name.toLowerCase() === glossaryTerm.toLowerCase())

@@ -34,7 +34,7 @@ Here are some of the requirements of 21<sup>st</sup> Century IDEA:
 
 Our content strategist is well versed in accessibility compliance and works with our team to make sure our content is accessible. He documented simple procedures in the [accessibility section](https://github.com/ONRR/doi-extractives-data/wiki/Content-guide#accessibility) of our [content guide](https://github.com/ONRR/doi-extractives-data/wiki/Content-guide) to help team members create content on their own. Our content strategist then performs quarterly accessibility audits, and we set out to fix the errors. In addition to the work we are doing on our own website, our content strategist is creating a workshop to share how to comply with accessibility requirements with other groups within ONRR.
 
-### Duplication
+### Avoid duplication
 
 This provision states that a website “does not overlap with or duplicate any legacy websites, and, if applicable, ensures legacy websites are reviewed, eliminated, and consolidated.” Natural Resources Revenue Data ([revenuedata.doi.gov](https://revenuedata.doi.gov/)) has fully replaced both the EITI website and a public statistics website by combining the data from both websites in one location.
 

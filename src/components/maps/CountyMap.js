@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from 'react-html-parser'
-import Link, { withPrefixSVG } from  '../utils/temp-link'
-
+import Link, { withPrefixSVG } from '../utils/temp-link'
 
 import lazy from 'lazy.js'
 
@@ -62,8 +61,8 @@ const CountyMap = props => {
   let paddingBottom = (mediaWidth * dataDimensions) + additionalPadding
 
   let usStatesSVG = withPrefixSVG('/maps/states/all.svg')
-  let usStateSVG = (usStateData.unique_id === 'pacific')? withPrefixSVG('/maps/offshore/all.svg') : withPrefixSVG('/maps/states/' + usStateData.unique_id + '.svg')
-  
+  let usStateSVG = (usStateData.unique_id === 'pacific') ? withPrefixSVG('/maps/offshore/all.svg') : withPrefixSVG('/maps/states/' + usStateData.unique_id + '.svg')
+
   function getNeighbors_Features () {
     let content = ''
 
@@ -120,13 +119,12 @@ const CountyMap = props => {
 		            {
 		                (lazy(props.countyProductionData).toArray()).map((countyData, index) => {
                 let data = (countyData[1].products) ? countyData[1].products[props.productKey] : countyData[1].revenue
-                      let dataValue = (countyData[1].products) ?
-                  (countyData[1].products[props.productKey] && countyData[1].products[props.productKey].volume[props.year])
-                  :
-                  countyData[1].revenue[props.year]
-                      let dataValues = (countyData[1].products) ?
-                  (countyData[1].products[props.productKey] && JSON.stringify(countyData[1].products[props.productKey].volume))
-                        :                        JSON.stringify(countyData[1].revenue)
+                let dataValue = (countyData[1].products)
+                  ? (countyData[1].products[props.productKey] && countyData[1].products[props.productKey].volume[props.year])
+                  : countyData[1].revenue[props.year]
+                let dataValues = (countyData[1].products)
+                  ? (countyData[1].products[props.productKey] && JSON.stringify(countyData[1].products[props.productKey].volume))
+                  : JSON.stringify(countyData[1].revenue)
 		                	if (data && dataValues) {
 			                    return (
 			                        <g key={index}
@@ -150,13 +148,12 @@ const CountyMap = props => {
             {
 		                (lazy(props.countyProductionData).toArray()).map((countyData, index) => {
                 let data = (countyData[1].products) ? countyData[1].products[props.productKey] : countyData[1].revenue
-                      let dataValue = (countyData[1].products) ?
-                  (countyData[1].products[props.productKey] && countyData[1].products[props.productKey].volume[props.year])
-                        :                        countyData[1].revenue[props.year]
-                      let dataValues = (countyData[1].products) ?
-                  (countyData[1].products[props.productKey] && JSON.stringify(countyData[1].products[props.productKey].volume))
-                  :
-                  JSON.stringify(countyData[1].revenue)
+                let dataValue = (countyData[1].products)
+                  ? (countyData[1].products[props.productKey] && countyData[1].products[props.productKey].volume[props.year])
+                  : countyData[1].revenue[props.year]
+                let dataValues = (countyData[1].products)
+                  ? (countyData[1].products[props.productKey] && JSON.stringify(countyData[1].products[props.productKey].volume))
+                  : JSON.stringify(countyData[1].revenue)
 		                	if (data && dataValues) {
 			                    return (
 			                        <g key={index}
@@ -183,10 +180,10 @@ const CountyMap = props => {
 					<div>
 					  <figcaption className="legend-data">
 					    {props.productName.toLowerCase() === 'revenue'
-                ? <React.Fragment>
+					      ? <React.Fragment>
                   Revenue by {localityName.toLowerCase()} in <span data-year={ props.year }>{ props.year }</span>
 					      </React.Fragment>
-              :                <React.Fragment>
+					      : <React.Fragment>
 					        {localityName } production of {props.productName.toLowerCase()} in <span data-year={ props.year }>{ props.year }</span>
 					        {legendUnits && <span className="legend-units"> ({legendUnits})</span>}
 					      </React.Fragment>

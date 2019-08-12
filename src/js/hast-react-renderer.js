@@ -1,5 +1,5 @@
 import React from 'react'
-import rehypeReact from 'rehype-react';
+import rehypeReact from 'rehype-react'
 
 /* @TODO Could we use gatsby to get a list of all components and svgs to add to the renderer automatically?
 We could then prepend the imports to this file as well as the mapping object. Just a thought. */
@@ -20,8 +20,8 @@ import { PageToc } from '../components/navigation/PageToc'
 import Link, { withPrefix } from '../components/utils/temp-link'
 import { Accordion } from '../components/layouts/Accordion'
 import { DidYouKnow } from '../components/layouts/DidYouKnow'
-import { ProcessGroup } from '../components/layouts/ProcessGroup'
-import { ProcessStep } from '../components/layouts/ProcessGroup'
+import { ProcessGroup, ProcessStep } from '../components/layouts/ProcessGroup'
+
 import { MsgPrioritizedStatesSvg } from '../components/maps/MsgPrioritizedStatesSvg'
 import ImgWrapper from '../components/utils/img-wrapper'
 import { UpdateFlag } from '../components/layouts/UpdateFlag'

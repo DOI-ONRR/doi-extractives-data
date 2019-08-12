@@ -28,17 +28,17 @@ const createProductionData = (groupByCommodity, groupByYear) => {
   commodityYears = commodityYears.map(item => parseInt(item.id))
 
   let commodities = data.reduce((total, item) => {
-    let name = (item.id.includes('~'))? item.id.split('~')[0] : item.id
+    let name = (item.id.includes('~')) ? item.id.split('~')[0] : item.id
     item.edges.forEach(element => {
       let node = element.node
       let year = parseInt(node.ProductionYear)
       if (commodityYears.includes(year)) {
-        total[item.id] = total[item.id] || { name: name, units: node.Units, withheld: node.Withheld, volume: {} }
+        total[item.id] = total[item.id] || { name: name, units: node.Units, withheld: node.Withheld, total: 0, volume: {} }
         total[item.id].volume[year] = (total[item.id].volume[year])
           ? total[item.id].volume[year] + node.Volume
           : node.Volume
-
-        total[item.id].volume[year] = total[item.id].volume[year]
+        
+        total[item.id].total += node.Volume
       }
     })
 
@@ -46,6 +46,7 @@ const createProductionData = (groupByCommodity, groupByYear) => {
   }, {})
 
   Object.keys(commodities).forEach(commodity => {
+    commodities[commodity].total = parseInt(commodities[commodity].total)
     Object.keys(commodities[commodity].volume).forEach(year => {
       commodities[commodity].volume[year] = parseInt(commodities[commodity].volume[year])
     })
@@ -73,7 +74,7 @@ const NationalFederalProduction = props => {
 
       let numbersAreConsecutive = true
       for (let i = 1; i < yearsArray.length; i++) {
-        if (parseInt(yearsArray[i]) - parseInt(yearsArray[i - 1]) != 1) {
+        if (parseInt(yearsArray[i]) - parseInt(yearsArray[i - 1]) !== 1) {
           numbersAreConsecutive = false
           break
         }
@@ -122,7 +123,7 @@ const NationalFederalProduction = props => {
             let product = commodities[key]
 
             // Checks to verify if we have no data for a product for all years
-            if (product.withheld) {
+            if (product.total === 0) {
               withHeldProducts.push(product)
               return // return nothing if there is no data to display for this product
             }
@@ -166,10 +167,12 @@ const NationalFederalProduction = props => {
                       {' '}of {productName.toLowerCase()} {suffixUnits} were produced on federal land in <span className="eiti-bar-chart-x-value">{ year }</span>.
                     </span>
                     <span className="caption-no-data" aria-hidden="true">
-                                            There is no data about production of {productName.toLowerCase()} {suffixUnits} on federal land in <span className="eiti-bar-chart-x-value">{ year }</span>.
+                      There is no data about production of {productName.toLowerCase()} {suffixUnits} on federal land in <span className="eiti-bar-chart-x-value">
+                        { year }</span>.
                     </span>
                     <span className="caption-withheld" aria-hidden="true">
-                                            Data about {productName.toLowerCase()} {suffixUnits} production on federal land in <span className="eiti-bar-chart-x-value">{ year }</span> is withheld.
+                      Data about {productName.toLowerCase()} {suffixUnits} production on federal land in <span className="eiti-bar-chart-x-value">
+                        { year }</span> is withheld.
                     </span>
                   </figcaption>
                 </figure>

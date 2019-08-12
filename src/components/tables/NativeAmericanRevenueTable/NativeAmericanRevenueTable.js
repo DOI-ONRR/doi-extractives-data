@@ -96,45 +96,44 @@ const NativeAmericanRevenueTable = props => {
 
   return (
     <div>
-        {commodityYearsSortDesc &&
+      {commodityYearsSortDesc &&
             commodityYearsSortDesc.map((year, index) => {
-                return (
+              return (
                 <div key={index}>
-                    <h3>Revenue from natural resources on Native American land (FY {year})</h3>
-                    <table className="table-basic u-margin-top u-margin-bottom">
+                  <h3>Revenue from natural resources on Native American land (FY {year})</h3>
+                  <table className="table-basic u-margin-top u-margin-bottom">
                     <thead>
-                        <tr>
+                      <tr>
                         <th>Commodity</th>
                         <th>Bonus</th>
                         <th>Rents</th>
                         <th>Royalties</th>
                         <th>Other Revenue</th>
-                        </tr>
+                      </tr>
                     </thead>
                     <tbody>
-                        {
+                      {
                         Object.keys(commodities).map(commodity => (
-                            Object.keys(commodities[commodity]).map((commodityYear, index) => (
+                          Object.keys(commodities[commodity]).map((commodityYear, index) => (
                             parseInt(commodityYear) === year &&
                                 <tr key={index}><td>{commodity}</td>
-                                    {
+                                  {
                                     Object.keys(commodities[commodity][commodityYear]).map(revenueType => (
-                                        <td className="numeric">{
+                                      <td className="numeric">{
                                         (commodities[commodity][commodityYear][revenueType] === 0)
-                                            ? '-'
-                                            :                                                
-                                            utils.formatToDollarInt(commodities[commodity][commodityYear][revenueType])
-                                        }</td>
+                                          ? '-'
+                                          : utils.formatToDollarInt(commodities[commodity][commodityYear][revenueType])
+                                      }</td>
                                     ))
-                                    }
+                                  }
                                 </tr>
-                            ))
+                          ))
                         ))
-                        }
+                      }
                     </tbody>
-                    </table>
+                  </table>
                 </div>
-                )
+              )
             })
 
       }

@@ -12,6 +12,8 @@ import VIEWBOXES_OFFSHORE_CROPPED from '../../data/viewboxes_offshore_cropped.ym
 import iconPlus from '../../img/icons/icon-circled-plus.svg'
 import iconMinus from '../../img/icons/icon-circled-minus.svg'
 
+import utils from '../../js/utils'
+
 const OffshoreMap = props => {
   const usStateData = props.usStateMarkdown.frontmatter
   const usStateFields = props.usStateMarkdown.fields || {}
@@ -174,7 +176,7 @@ const OffshoreMap = props => {
 					  <figcaption className="legend-data">
 					    {props.productName.toLowerCase() === 'revenue'
 					      ? <React.Fragment>
-                  Revenue by {localityName.toLowerCase()} in <span data-year={ props.year }>{ props.year }</span>
+					        {utils.toTitleCase(localityName)} revenue in <span data-year={ props.year }>{ props.year }</span>
 					      </React.Fragment>
 					      : <React.Fragment>
 					        {localityName } production of {props.productName.toLowerCase()} in <span data-year={ props.year }>{ props.year }</span>

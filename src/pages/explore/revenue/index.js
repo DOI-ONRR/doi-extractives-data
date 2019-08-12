@@ -3,8 +3,7 @@ import Helmet from 'react-helmet'
 import { connect } from 'react-redux'
 import { graphql } from 'gatsby'
 
-import { normalize as normalizeDataSetAction } from '../../../state/reducers/data-sets'
-import {
+import { normalize as normalizeDataSetAction,
   REVENUES_FISCAL_YEAR,
   BY_ID, BY_COMMODITY,
   BY_STATE, BY_COUNTY,
@@ -14,29 +13,23 @@ import {
   BY_REVENUE_TYPE,
   BY_FISCAL_YEAR,
   BY_REVENUE_CATEGORY
-} from '../../../state/reducers/data-sets'
-
-import { DATA_SET_KEYS } from '../../../state/reducers/data-sets'
+  , DATA_SET_KEYS } from '../../../state/reducers/data-sets'
 
 import * as CONSTANTS from '../../../js/constants'
 
-import Link from '../../../components/utils/temp-link'
 import utils from '../../../js/utils'
 
 import styles from './FederalRevenue.module.scss'
+// eslint-disable-next-line css-modules/no-unused-class
 import theme from '../../../css-global/base-theme.module.scss'
 
 import DefaultLayout from '../../../components/layouts/DefaultLayout'
 import Breadcrumb from '../../../components/navigation/Breadcrumb'
 import { DownloadDataLink } from '../../../components/layouts/icon-links/DownloadDataLink'
-import Toggle from '../../../components/selectors/Toggle'
 import DropDown from '../../../components/selectors/DropDown'
 import Select from '../../../components/selectors/Select'
-import FilterTable from '../../../components/tables/FilterTable'
 import GroupTable from '../../../components/tables/GroupTable'
-import TreeTable from '../../../components/tables/TreeTable'
 import GlossaryTerm from '../../../components/utils/glossary-term.js'
-
 
 import Grid from '@material-ui/core/Grid'
 import Button from '@material-ui/core/Button'
@@ -78,21 +71,21 @@ const PLURAL_COLUMNS_MAP = {
   'Land category': 'land categories',
   'Location': 'locations',
 }
-//const ADDITIONAL_COLUMN_OPTIONS = ['State/offshore region', 'Source', 'Land owner', 'Revenue type'];
+// const ADDITIONAL_COLUMN_OPTIONS = ['State/offshore region', 'Source', 'Land owner', 'Revenue type'];
 
 class FederalRevenue extends React.Component {
   constructor (props) {
     super(props)
-		this.additionalColumnOptionKeys = Object.keys(ADDITIONAL_COLUMN_OPTIONS)
-		this.getFiscalYearOptions = () => this.props[REVENUES_FISCAL_YEAR] && Object.keys(this.props[REVENUES_FISCAL_YEAR][BY_FISCAL_YEAR])
-		this.getLocationOptions = () => {
+    this.additionalColumnOptionKeys = Object.keys(ADDITIONAL_COLUMN_OPTIONS)
+    this.getFiscalYearOptions = () => this.props[REVENUES_FISCAL_YEAR] && Object.keys(this.props[REVENUES_FISCAL_YEAR][BY_FISCAL_YEAR])
+    this.getLocationOptions = () => {
       let allOption = ['All']
       let offshoreOptions = this.props[REVENUES_FISCAL_YEAR] && Object.keys(this.props[REVENUES_FISCAL_YEAR][BY_OFFSHORE_REGION])
       let states = this.props[REVENUES_FISCAL_YEAR] && Object.keys(this.props[REVENUES_FISCAL_YEAR][BY_STATE])
       return allOption.concat(offshoreOptions, states)
-		}
+    }
     this.hydrateStore()
-	}
+  }
 
 	state = {
 	  timeframe: TOGGLE_VALUES.Year,
@@ -106,24 +99,24 @@ class FederalRevenue extends React.Component {
 
 	componentWillReceiveProps (nextProps) {
 	  let yearOptions = Object.keys(nextProps[REVENUES_FISCAL_YEAR][BY_FISCAL_YEAR])
-		let additionalColumns = nextProps.additionalColumns || this.state.additionalColumns
-		let filter = { ...this.state.filter, years: (nextProps.selectedYears || yearOptions.slice(Math.max(yearOptions.length - 3, 1))) }
+	  let additionalColumns = nextProps.additionalColumns || this.state.additionalColumns
+	  let filter = { ...this.state.filter, years: (nextProps.selectedYears || yearOptions.slice(Math.max(yearOptions.length - 3, 1))) }
 
 	  this.setState({ ...nextProps,
-	  	filter: filter,
-	  	yearOptions: yearOptions,
-	  	additionalColumns: additionalColumns.filter(column => column !== filter.groupBy) })
+	    filter: filter,
+	    yearOptions: yearOptions,
+	    additionalColumns: additionalColumns.filter(column => column !== filter.groupBy) })
 	}
 
 	getTableColumns = () => {
-	  let columns = []; let columnExtensions = []; let grouping = []; let currencyColumns=[]; let defaultSorting = []
-		let { filter } = this.state
-		let groupBySlug = utils.formatToSlug(filter.groupBy)
+	  let columns = []; let columnExtensions = []; let grouping = []; let currencyColumns = []; let defaultSorting = []
+	  let { filter } = this.state
+	  let groupBySlug = utils.formatToSlug(filter.groupBy)
 
-		columns.push({ name: groupBySlug, title: filter.groupBy })
-		if (this.state.additionalColumns && this.state.additionalColumns.length > 0) {
+	  columns.push({ name: groupBySlug, title: filter.groupBy })
+	  if (this.state.additionalColumns && this.state.additionalColumns.length > 0) {
 	    grouping.push({ columnName: groupBySlug })
-		}
+	  }
 
 	  this.state.additionalColumns.forEach(column => {
 	    columns.push({ name: utils.formatToSlug(column), title: column, plural: PLURAL_COLUMNS_MAP[column] })
@@ -142,7 +135,6 @@ class FederalRevenue extends React.Component {
 	    currencyColumns.push('fy-' + year)
 	  })
 
-
 	  return {
 	    columns: columns,
 	    columnExtensions: columnExtensions,
@@ -155,9 +147,9 @@ class FederalRevenue extends React.Component {
 
 	getTableSummaries = () => {
 	  let totalSummaryItems = []; let groupSummaryItems = []
-		let { yearOptions } = this.state
+	  let { yearOptions } = this.state
 
-		yearOptions.sort().forEach(year => {
+	  yearOptions.sort().forEach(year => {
 	    totalSummaryItems.push({ columnName: 'fy-' + year, type: 'sum' })
 	    groupSummaryItems.push({ columnName: 'fy-' + year, type: 'sum' })
 	  })
@@ -172,66 +164,64 @@ class FederalRevenue extends React.Component {
 	    totalSummaryItems: totalSummaryItems,
 	    groupSummaryItems: groupSummaryItems,
 	  }
-
 	}
 
 	getTableData = () => {
 	  if (this.state[REVENUES_FISCAL_YEAR] === undefined) return { tableData: undefined, expandedGroups: undefined }
-		let dataSet = this.state[REVENUES_FISCAL_YEAR]
-		let groupBySlug = utils.formatToSlug(this.state.filter.groupBy)
-		let allDataSetGroupBy = GROUP_BY_OPTIONS[this.state.filter.groupBy].map(groupBy => this.state[REVENUES_FISCAL_YEAR][groupBy])
-		let tableData = [] 
-		let expandedGroups = []
+	  let dataSet = this.state[REVENUES_FISCAL_YEAR]
+	  let groupBySlug = utils.formatToSlug(this.state.filter.groupBy)
+	  let allDataSetGroupBy = GROUP_BY_OPTIONS[this.state.filter.groupBy].map(groupBy => this.state[REVENUES_FISCAL_YEAR][groupBy])
+	  let tableData = []
+	  let expandedGroups = []
 
-		// Iterate over all group by data sets asociated with this filter group by
-		allDataSetGroupBy.forEach((dataSetGroupBy, indexGroupBy) => {
+	  // Iterate over all group by data sets asociated with this filter group by
+	  allDataSetGroupBy.forEach((dataSetGroupBy, indexGroupBy) => {
 	    Object.keys(dataSetGroupBy).forEach(name => {
 	      let sums = {}
 	      let sumsByAdditionalColumns = {}
 
 	      let additionalColumnsRow = {}
 
-				// sum all revenues
-				dataSetGroupBy[name].forEach(dataId => {
+	      // sum all revenues
+	      dataSetGroupBy[name].forEach(dataId => {
 	        let data = dataSet[BY_ID][dataId]
 
-					// Apply filters
-					if (this.state.filter.years.includes(data.FiscalYear) &&
+	        // Apply filters
+	        if (this.state.filter.years.includes(data.FiscalYear) &&
 						this.hasLandCategory(data) &&
 						this.hasLocation(data)) {
 	          if (!expandedGroups.includes(name)) {
 	            expandedGroups.push(name)
-						}
+	          }
 
 	          let fiscalYearSlug = 'fy-' + data.FiscalYear
 	          sums[fiscalYearSlug] = (sums[fiscalYearSlug]) ? sums[fiscalYearSlug] + data.Revenue : data.Revenue
 
-						this.state.additionalColumns.forEach(additionalColumn => {
+	          this.state.additionalColumns.forEach(additionalColumn => {
 	            // Get the data columns related to the column in the table. Could have multiple data source columns mapped to 1 table column
 	            let dataColumns = ADDITIONAL_COLUMN_OPTIONS[additionalColumn]
 
-							dataColumns.map(column => {
+	            dataColumns.map(column => {
 	              let newValue = data[column]
 
-								if (additionalColumnsRow[additionalColumn] === undefined) {
+	              if (additionalColumnsRow[additionalColumn] === undefined) {
 	                additionalColumnsRow[additionalColumn] = []
-									sumsByAdditionalColumns[additionalColumn] = {}
-								}
+	                sumsByAdditionalColumns[additionalColumn] = {}
+	              }
 
 	              if (newValue) {
 	                // Add the fiscal year revenue for the additional column, only works when there is 1 additional column
 	                if (sumsByAdditionalColumns[additionalColumn][newValue] === undefined) {
 	                  sumsByAdditionalColumns[additionalColumn][newValue] = {}
-									}
+	                }
 
 	                let fyRevenue = data.Revenue || 0
 
-									sumsByAdditionalColumns[additionalColumn][newValue][fiscalYearSlug] = (sumsByAdditionalColumns[additionalColumn][newValue][fiscalYearSlug]) ?
-	                  sumsByAdditionalColumns[additionalColumn][newValue][fiscalYearSlug] + fyRevenue
-	                  :
-	                  fyRevenue
+	                sumsByAdditionalColumns[additionalColumn][newValue][fiscalYearSlug] = (sumsByAdditionalColumns[additionalColumn][newValue][fiscalYearSlug])
+	                  ? sumsByAdditionalColumns[additionalColumn][newValue][fiscalYearSlug] + fyRevenue
+	                  : fyRevenue
 
-									if (!additionalColumnsRow[additionalColumn].includes(newValue)) {
+	                if (!additionalColumnsRow[additionalColumn].includes(newValue)) {
 	                  additionalColumnsRow[additionalColumn].push(newValue)
 	                }
 	              }
@@ -246,12 +236,12 @@ class FederalRevenue extends React.Component {
 	          Object.keys(sumsByAdditionalColumns).forEach(column => {
 	            let columnSlug = utils.formatToSlug(column)
 
-							Object.keys(sumsByAdditionalColumns[column]).forEach(columnValue => {
+	            Object.keys(sumsByAdditionalColumns[column]).forEach(columnValue => {
 	              // Add all fiscal years to each row
 	              this.state.filter.years.forEach(year => {
 	                let fiscalYearSlug = 'fy-' + year
-									sumsByAdditionalColumns[column][columnValue][fiscalYearSlug] = parseInt(sumsByAdditionalColumns[column][columnValue][fiscalYearSlug]) || 0
-								})
+	                sumsByAdditionalColumns[column][columnValue][fiscalYearSlug] = parseInt(sumsByAdditionalColumns[column][columnValue][fiscalYearSlug]) || 0
+	              })
 	              tableData.push(Object.assign({ [groupBySlug]: name, [columnSlug]: columnValue }, sumsByAdditionalColumns[column][columnValue]))
 	            })
 	          })
@@ -259,8 +249,8 @@ class FederalRevenue extends React.Component {
 	        else {
 	          this.state.filter.years.forEach(year => {
 	            let fiscalYearSlug = 'fy-' + year
-							sums[fiscalYearSlug] = parseInt(sums[fiscalYearSlug]) || 0
-						})
+	            sums[fiscalYearSlug] = parseInt(sums[fiscalYearSlug]) || 0
+	          })
 
 	          tableData.push(Object.assign({ [groupBySlug]: name }, sums))
 	        }
@@ -268,11 +258,11 @@ class FederalRevenue extends React.Component {
 	    })
 	  })
 
-		return { tableData: tableData, expandedGroups: expandedGroups }
+	  return { tableData: tableData, expandedGroups: expandedGroups }
 	}
 
 	setYearsFilter (values) {
- 		this.setState({ filter: { ...this.state.filter, years: values.sort() } })
+	  this.setState({ filter: { ...this.state.filter, years: values.sort() } })
 	}
 
 	// If group by column is in the additional columns remove it
@@ -306,16 +296,16 @@ class FederalRevenue extends React.Component {
 	hasLocation (data) {
 	  if (this.state.filter.location === 'All' || this.state.filter.location === undefined) {
 	    return true
-		}
+	  }
 	  else if (this.state.filter.location.includes('Offshore')) {
 	    return (data.OffshoreRegion === this.state.filter.location)
-		}
+	  }
 	  return (data.State === this.state.filter.location)
 	}
 
 	handleTableToolbarSubmit (updatedFilters) {
 	  let secondColumn = (updatedFilters.additionalColumn === 'No second column') ? [] : [updatedFilters.additionalColumn]
-		this.setState({
+	  this.setState({
 	    filter: { ...this.state.filter,
 	      years: updatedFilters.fiscalYearsSelected.sort(),
 	      groupBy: updatedFilters.groupBy,
@@ -331,51 +321,50 @@ class FederalRevenue extends React.Component {
    * reducers
    **/
   hydrateStore = () => {
-  	let data = this.props.data
+    let data = this.props.data
     this.props.normalizeDataSet([
       { key: REVENUES_FISCAL_YEAR,
-      	data: data.allRevenues.data,
-      	groups: [
-      		{
-      			key: BY_COMMODITY,
-      			groups: data.allRevenuesGroupByCommodity.group,
-      		},
-      		{
-      			key: BY_STATE,
-      			groups: data.allRevenuesGroupByState.group,
-      		},
-      		{
-      			key: BY_OFFSHORE_REGION,
-      			groups: data.allRevenuesGroupByOffshoreRegion.group,
-      		},
-      		{
-      			key: BY_COUNTY,
-      			groups: data.allRevenuesGroupByCounty.group,
-      		},
-      		{
-      			key: BY_REVENUE_CATEGORY,
-      			groups: data.allRevenuesGroupByRevenueCategory.group,
-      		},
-      		{
-      			key: BY_REVENUE_TYPE,
-      			groups: data.allRevenuesGroupByRevenueType.group,
-      		},
-      		{
-      			key: BY_FISCAL_YEAR,
-      			groups: data.allRevenuesGroupByFiscalYear.group
-      		}
-      	]
+        data: data.allRevenues.data,
+        groups: [
+          {
+            key: BY_COMMODITY,
+            groups: data.allRevenuesGroupByCommodity.group,
+          },
+          {
+            key: BY_STATE,
+            groups: data.allRevenuesGroupByState.group,
+          },
+          {
+            key: BY_OFFSHORE_REGION,
+            groups: data.allRevenuesGroupByOffshoreRegion.group,
+          },
+          {
+            key: BY_COUNTY,
+            groups: data.allRevenuesGroupByCounty.group,
+          },
+          {
+            key: BY_REVENUE_CATEGORY,
+            groups: data.allRevenuesGroupByRevenueCategory.group,
+          },
+          {
+            key: BY_REVENUE_TYPE,
+            groups: data.allRevenuesGroupByRevenueType.group,
+          },
+          {
+            key: BY_FISCAL_YEAR,
+            groups: data.allRevenuesGroupByFiscalYear.group
+          }
+        ]
       },
     ])
   }
 
   render () {
-    let { timeframe, yearOptions } = this.state
-		let { columns, columnExtensions, grouping, currencyColumns, allColumns, defaultSorting } = this.getTableColumns()
-		let { totalSummaryItems, groupSummaryItems } = this.getTableSummaries()
-		let { tableData, expandedGroups } = this.getTableData()
+    let { columns, columnExtensions, grouping, currencyColumns, allColumns, defaultSorting } = this.getTableColumns()
+    let { totalSummaryItems, groupSummaryItems } = this.getTableSummaries()
+    let { tableData, expandedGroups } = this.getTableData()
 
-		return (
+    return (
       <DefaultLayout>
 	      <Helmet
 	        title={PAGE_TITLE}
@@ -389,17 +378,21 @@ class FederalRevenue extends React.Component {
 
           <h1>Federal Revenue Data</h1>
 
-          <section className={styles.descriptionContainer}>
+          <section>
             <div className="ribbon-hero-description">
-							When companies lease lands to extract natural resources on federal lands and waters, they pay fees to lease the land and on the resources that are produced. This non-tax revenue is collected and reported by the Office of Natural Resources Revenue (ONRR).
+							When companies lease lands to extract natural resources on federal lands and waters
+							, they pay fees to lease the land and on the resources that are produced
+							. This non-tax revenue is collected and reported by the Office of Natural Resources Revenue (ONRR).
             </div>
             <div className="container-left-6">
               <strong>Leasing</strong><br/>
-              <span className="para-md">Companies bid on and lease lands and waters from the federal government. They pay a bonus when they win a lease and rent until resource production begins.</span>
+              <span className="para-md">Companies bid on and lease lands and waters from the federal government
+							. They pay a bonus when they win a lease and rent until resource production begins.</span>
             </div>
             <div className="container-right-6">
               <strong>Production</strong><br/>
-              <span className="para-md">Once enough resources are produced to pay royalties, the leaseholder pays royalties and other fees to the federal government.</span>
+              <span className="para-md">Once enough resources are produced to pay royalties
+							, the leaseholder pays royalties and other fees to the federal government.</span>
             </div>
           </section>
 
@@ -443,7 +436,7 @@ class FederalRevenue extends React.Component {
 
 export default connect(
   state => ({
-  	[REVENUES_FISCAL_YEAR]: state[CONSTANTS.DATA_SETS_STATE_KEY][REVENUES_FISCAL_YEAR],
+    [REVENUES_FISCAL_YEAR]: state[CONSTANTS.DATA_SETS_STATE_KEY][REVENUES_FISCAL_YEAR],
   }),
   dispatch => ({ normalizeDataSet: dataSets => dispatch(normalizeDataSetAction(dataSets)),
   })
@@ -458,9 +451,9 @@ const muiTheme = createMuiTheme({
   },
   palette: {
     primary: {
-    	light: '#dcf4fd',
-    	main: '#1478a6',
-    	dark: '#086996'
+      light: '#dcf4fd',
+      main: '#1478a6',
+      dark: '#086996'
     }
   },
 })
@@ -519,68 +512,68 @@ const TableToolbar = ({ fiscalYearOptions, locationOptions, defaultFiscalYearsSe
   }
 
   return (
-  	<div className={styles.tableToolbarContainer}>
-	  	<MuiThemeProvider theme={muiTheme}>
-		    <Grid container spacing={16}>
+    <div className={styles.tableToolbarContainer}>
+      <MuiThemeProvider theme={muiTheme}>
+        <Grid container spacing={16}>
           <Grid item sm={3} xs={12}>
             <h6>Fiscal year(s):</h6>
             <Select
               multiple
               dataSetId={REVENUES_FISCAL_YEAR}
-					    options={fiscalYearOptions}
-					    sortType={'descending'}
-					    selectedOption={fiscalYearsSelected}
+              options={fiscalYearOptions}
+              sortType={'descending'}
+              selectedOption={fiscalYearsSelected}
               onChangeHandler={values => setFiscalYearsSelected(values)}
-					  />
-				  </Grid>
+            />
+          </Grid>
           <Grid item sm xs={12}>
             <h6>Land category:</h6>
             <DropDown
-					    options={Object.keys(LAND_CATEGORY_OPTIONS)}
-					    sortType={'none'}
+              options={Object.keys(LAND_CATEGORY_OPTIONS)}
+              sortType={'none'}
               action={value => setLandCategorySelected(value)}
-					  />
-				  </Grid>
+            />
+          </Grid>
           <Grid item sm xs={12}>
             <h6>Location:</h6>
             <DropDown
-					    options={getLocationOptions()}
-					    sortType={'none'}
+              options={getLocationOptions()}
+              sortType={'none'}
               action={value => setLocationSelected(value)}
-					    selectedOptionValue={locationSelected}
-					  />
-					  {showLocationMessage() &&
-					  	<LocationMessage />
-					  }
-				  </Grid>
+              selectedOptionValue={locationSelected}
+            />
+            {showLocationMessage() &&
+						<LocationMessage />
+            }
+          </Grid>
           <Grid item sm xs={12}>
             <h6>Group by:</h6>
             <DropDown
               sortType={'none'}
-					    options={Object.keys(GROUP_BY_OPTIONS)}
-					    action={value => setGroupBy(value)}
-					    defaultOptionValue={groupBy}
-					    sortType={'none'}
-					  />
-				  </Grid>
+              options={Object.keys(GROUP_BY_OPTIONS)}
+              action={value => setGroupBy(value)}
+              defaultOptionValue={groupBy}
+              sortType={'none'}
+            />
+          </Grid>
           <Grid item sm xs={12}>
             <h6>Additional column:</h6>
             <DropDown
               sortType={'none'}
-					    options={getAdditionalColumnOptions()}
-					    action={value => setAdditionalColumn(value)}
-					    selectedOptionValue={additionalColumn}
-					  />
-				  </Grid>
+              options={getAdditionalColumnOptions()}
+              action={value => setAdditionalColumn(value)}
+              selectedOptionValue={additionalColumn}
+            />
+          </Grid>
           <Grid item xs={12} >
-			 			<Button classes={{ root: styles.tableToolbarButton }} variant="contained" color="primary" onClick={() => handleApply()}>Apply</Button>
-			 		</Grid>
-		    </Grid>
-		    <Grid container spacing={0}>
+            <Button classes={{ root: styles.tableToolbarButton }} variant="contained" color="primary" onClick={() => handleApply()}>Apply</Button>
+          </Grid>
+        </Grid>
+        <Grid container spacing={0}>
           <Grid item xs={12} >
-			 			<h5 style={{ margin: '0px' }}>Grouped by: {groupBy}</h5>
-			 		</Grid>
-		    </Grid>
+            <h5 style={{ margin: '0px' }}>Grouped by: {groupBy}</h5>
+          </Grid>
+        </Grid>
 	    </MuiThemeProvider>
 	   </div>
   )

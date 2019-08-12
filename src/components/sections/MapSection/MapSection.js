@@ -99,6 +99,7 @@ export default MapSection
 
 
 const state_summary = (data)=> {
+ //   return [[]]
     let sumData={};
     for(let ii=0; ii<data.length; ii++) {
 	let n=data[ii];
@@ -157,6 +158,7 @@ const county_summary = (data)=> {
 */
 
 const offshore_summary = (data)=> {
+    //    return [[]]
     let sumData={};
     for(let ii=0; ii<data.length; ii++) {
 	let n=data[ii];

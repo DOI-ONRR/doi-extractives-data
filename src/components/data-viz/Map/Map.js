@@ -41,13 +41,14 @@ const Map = (props) => {
 //		 chart(elemRef.current, us,mapFeatures,data);
 //	     });
 
+	     let svg=chart(elemRef.current, us,mapFeatures,data, colorScheme,onClick);
 	     let propmise2=d3.json(mapOffshoreJson)
 		 .then( offshore => {
 
 		     let max=data.values.sort((a,b)=>a-b)[data.values.length-1];
 
 
-		     let svg=chart(elemRef.current, us,mapFeatures,data, colorScheme,onClick);
+
 		     let ii=0;
 		     for(let region in  offshore.objects ) {
 			 if(ii<1) {
@@ -219,7 +220,6 @@ const offshore_chart = (node,offshore, region ,data, colorScheme,onClick) => {
   
 
     let svg=d3.select(node);
-
     svg.append("g")
     
 	.selectAll("path")

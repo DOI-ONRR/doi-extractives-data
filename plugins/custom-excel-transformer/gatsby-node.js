@@ -17,6 +17,7 @@
  **/
 const DATA_TRANSFORMER_CONSTANTS = {
   DISBURSEMENTS: 'disbursementsxlsx__data',
+  MONTHLY_DISBURSEMENTS: 'monthlydisbursementsxlsx__data',
   MONTHLY_REVENUE: 'monthlyrevenuexlsx__data',
   CALENDAR_YEAR_REVENUE: 'calendaryearrevenuexlsx__data',
   FISCAL_YEAR_REVENUE: 'fiscalyearrevenuexlsx__data',
@@ -28,6 +29,7 @@ const DATA_TRANSFORMER_CONSTANTS = {
 
 const TRANSFORMER_NODE_TYPES = [
   DATA_TRANSFORMER_CONSTANTS.DISBURSEMENTS,
+  DATA_TRANSFORMER_CONSTANTS.MONTHLY_DISBURSEMENTS,
   DATA_TRANSFORMER_CONSTANTS.MONTHLY_REVENUE,
   DATA_TRANSFORMER_CONSTANTS.CALENDAR_YEAR_REVENUE,
   DATA_TRANSFORMER_CONSTANTS.FISCAL_YEAR_REVENUE,
@@ -52,7 +54,10 @@ async function onCreateNode (
 
     switch (node.internal.type.toLowerCase()) {
     case DATA_TRANSFORMER_CONSTANTS.DISBURSEMENTS:
-      newNode = federalDisbursementsTransformer(node)
+      newNode = federalDisbursementsTransformer(node, 'FederalDisbursements')
+      break
+    case DATA_TRANSFORMER_CONSTANTS.MONTHLY_DISBURSEMENTS:
+      newNode = federalDisbursementsTransformer(node, 'DisbursementsMonthly')
       break
     case DATA_TRANSFORMER_CONSTANTS.MONTHLY_REVENUE:
       newNode = revenuesTransformer(node, 'ResourceRevenuesMonthly')

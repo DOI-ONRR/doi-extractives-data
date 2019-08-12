@@ -144,14 +144,14 @@ class Beta extends React.Component {
 		    
 		    
 		  </Tab>  
-		  <Tab id="tab-by-state" name="Data by State" >
+		  <Tab id="tab-by-state" name="Data by state" >
 		    <TabContainer id="tab-container-by-state" 
 				  title="Data by state"
+				  
 				  >
 		      
 		      <MapSection 
-			title="Learn about extractive industries in each state"
-			info="Explore production, revenue, and disbursements data for each state."
+			info="FY 2018 revenue by state and offshore"
 			states={this.props.data.states_data.states}
 			offshore_regions={this.props.data.offshore_data.offshore_regions}
 			mapFeatures="states"

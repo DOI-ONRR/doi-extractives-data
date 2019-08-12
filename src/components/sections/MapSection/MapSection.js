@@ -58,31 +58,33 @@ query MyQuery {
     let mapJson=withPrefixGatsby(props.mapJson);
     let offshore_regions =props.offshore_regions || []
 return (
-        <section className={styles.root}>
-	<div className={styles.container +' container-page-wrapper'}>
+    <section className={styles.root}>
+      <div className={styles.container +' container-page-wrapper'}>
 	<div className={styles.containerLeft}>
-	<h3>{props.title}</h3>
-	<p>{props.info}</p>
-	<LocationSelector
-    default='Choose location'
-    states={states}
-    offshore_regions={offshore_regions}
-   
+	  <h3>{props.title}</h3>
+	  <p>{props.info}</p>
+	</div>
+	<div className={styles.containerRight}>
+	  <LocationSelector
+	    default='Choose location'
+	    states={states}
+	    offshore_regions={offshore_regions}
+	    
 	/>
-	{/*
-	  *     Eventually use more generalized MUI based combonent for now LocationSelector more plug and play here
+	  {/*
+	      *     Eventually use more generalized MUI based combonent for now LocationSelector more plug and play here
 	  *
-	  *	<Select options={states} multiple={false} />
-	  *
+	      *	<Select options={states} multiple={false} />
+	      *
 	  */}
 	   
-
-    </div>
-	<div className={styles.containerRight}><Map mapFeatures={props.mapFeatures} mapData={data} offshoreData={offshore_data} mapJson={mapJson} mapOffshoreJson={offshoreJson} colorScheme={props.mapColor} offshoreColorScheme={props.offshoreMapColor} mapTitle={props.mapTitle} onClick={onClick} /> </div>
-
+	  
+	</div>
+	<div className={styles.containerBottom}><Map mapFeatures={props.mapFeatures} mapData={data} offshoreData={offshore_data} mapJson={mapJson} mapOffshoreJson={offshoreJson} colorScheme={props.mapColor} offshoreColorScheme={props.offshoreMapColor} mapTitle={props.mapTitle} onClick={onClick} /> </div>
 	
-
-    </div>
+	
+	
+      </div>
     </section>
 )
 }

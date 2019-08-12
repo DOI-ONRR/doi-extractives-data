@@ -12,24 +12,25 @@ const Revenue = (props) => {
 	  title="revenue"
 	  contentLeft={
 		  <>
-			<ExploreDataLink to="https://revenuedata.doi.gov/explore/#revenue"
+			<ExploreDataLink to="/explore/#revenue" icon="data"
 					     >Explore revenue trends
 			    </ExploreDataLink>
 			    <ExploreDataLink
 				  to="https://revenuedata.doi.gov/explore/#revenue"
-				  
-				  >Filter revenue data
+				  icon="filter"
+				  >Filter revenue data 
 				</ExploreDataLink>
 				<ExploreDataLink
 				      to="https://revenuedata.doi.gov/explore/#revenue"
-				      
-				      >Explore revenue by data
+				      icon="data"
+				      >Explore revenue by company
 				    </ExploreDataLink>
 		      </>
 		  }
 		  contentCenter={
 			  <ExploreDataLink
 				to="https://revenuedata.doi.gov/explore/#revenue"
+				icon="works"
 				>Understand how revenue works
 			      </ExploreDataLink>
 			  }
@@ -37,6 +38,7 @@ const Revenue = (props) => {
 			  contentRight={
 				  <ExploreDataLink
 					to="https://revenuedata.doi.gov/explore/#revenue"
+					icon="download"
 					>Download files and review scope
 				      </ExploreDataLink>
 				  }

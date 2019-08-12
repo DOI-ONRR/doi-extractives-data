@@ -5,13 +5,16 @@ import { ExploreDataLink } from '../../layouts/icon-links/ExploreDataLink'
 
 
 
-const Revenue = (props) => {
+const Disbursements = (props) => {
 
     return (
 	<Explore
 	title="disbursements"
 	  contentLeft={
-		  <ExploreDataLink to="/explore/#revenue">
+		  <ExploreDataLink
+			to="/explore/#revenue"
+			icon="data"
+			>
 			Explore disbursments trends
 		      </ExploreDataLink>
 		      
@@ -19,6 +22,7 @@ const Revenue = (props) => {
 		  contentCenter={
 			  <ExploreDataLink
 				to="/explore/#revenue"
+				icon="works"
 				>Understand how revenue works
 			      </ExploreDataLink>
 			  }
@@ -26,6 +30,7 @@ const Revenue = (props) => {
 			  contentRight={
 				  <ExploreDataLink
 					to="/explore/#revenue"
+					icon="download"
 					>Download files and review scope
 				      </ExploreDataLink>
 				  }
@@ -35,6 +40,6 @@ const Revenue = (props) => {
     
 }
 
-export default Revenue
+export default Disbursements
 
 

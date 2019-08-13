@@ -68,9 +68,10 @@ const SectionFederalProduction = props => {
         <div className="chart-list">
           {Object.keys(usStateFederalProducts).map((productKey, index) => {
             if (usStateFederalProducts[productKey].total === 0) return
+            console.log(productKey)
             let product = usStateFederalProducts[productKey]
             let productName = product.name
-            let productSlug = utils.formatToSlug(productName, { lower: true })
+            let productSlug = utils.formatToSlug(productKey, { lower: true })
             let productVolumes = {}
             let units = product.units
 
@@ -131,7 +132,7 @@ const SectionFederalProduction = props => {
                     <h4 className="chart-title">
                       { usStateData.locality_name || 'County' } production
                     </h4>
-
+                    
                     <figure is="eiti-data-map-table">
                       <eiti-data-map color-scheme="Blues" steps="4" units={units}>
                         <CountyMap

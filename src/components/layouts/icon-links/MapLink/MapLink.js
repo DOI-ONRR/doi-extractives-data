@@ -10,7 +10,7 @@ const MapLink = props => (
   <Link to={props.to} className={styles.root}>
     <MapIcon />
     <span>
-      ß{props.children === undefined
+      {props.children === undefined
         ? 'Data by state'
         : props.children}
     </span>

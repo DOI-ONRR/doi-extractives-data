@@ -5,20 +5,15 @@ import StickyHeader from '../layouts/StickyHeader'
 import { StickyWrapper } from '../utils/StickyWrapper'
 import YearSelector from '../selectors/YearSelector'
 import DataAndDocs from '../layouts/DataAndDocs'
-import GlossaryTerm from '../utils/glossary-term.js'
 import RevenueTypeTable from '../locations/RevenueTypeTable'
 import RevenueProcessTable from '../locations/RevenueProcessTable'
-import StateRevenue from '../locations/opt_in/StateRevenue'
 import utils from '../../js/utils'
-import lazy from 'lazy.js'
 import ChartTitle from '../charts/ChartTitleCollapsible'
-import CountyMap from '../maps/CountyMap'
 
 import OffshoreMap from '../maps/OffshoreMap'
 
 const SectionOffshoreRevenue = props => {
   const usStateData = props.usStateMarkdown.frontmatter
-  const usStateFields = props.usStateMarkdown.fields || {}
 
   const commodities = props.commodities
   const commodityYears = props.commodityYears
@@ -72,13 +67,14 @@ const SectionOffshoreRevenue = props => {
             </p>
             <p>
           The federal government collects different kinds of fees at each phase of resource extraction. This chart shows
-          how much federal revenue was collected in 2017 for production or potential production of natural resources on federal waters
+          how much federal revenue was collected in {commodityYearsSortDesc[0]} for production or potential production of natural resources on federal waters
           , broken down by phase of production.
             </p>
 		                <div id="fee-summaries" className="tab-interface">
 		                    <ul className="eiti-tabs info-tabs" role="tablist">
 		                        <li role="presentation">
-		                            <a href="#revenues" tabIndex="0" role="tab" aria-controls="revenues" aria-selected="true">Federal revenue by phase (CY {commodityYearsSortDesc[0]})</a>
+		                            <a href="#revenues" tabIndex="0" role="tab" aria-controls="revenues" aria-selected="true">
+                                  Federal revenue by phase (CY {commodityYearsSortDesc[0]})</a>
 		                        </li>
 		                        <li role="presentation">
 		                            <a href="#story" tabIndex="-1" role="tab" aria-controls="story" className="link-charlie">Revenue details by phase</a>
@@ -121,7 +117,8 @@ const SectionOffshoreRevenue = props => {
 
                 <div className="chart-description">
                   <p>
-                        Non-tax revenue collected by ONRR often depends on what resources are available, as well as the laws and regulations about extraction of each resource.
+                    Non-tax revenue collected by ONRR often depends on what resources are available
+                    , as well as the laws and regulations about extraction of each resource.
                   </p>
                   <p>
                     <Link to="/downloads/federal-revenue-by-location">
@@ -152,13 +149,14 @@ const SectionOffshoreRevenue = props => {
                       <figcaption id={'federal-revenue-county-figures-' + allCommoditiesSlug} aria-hidden='false'>
                         <span className="caption-data">
                           Companies paid <span className="eiti-bar-chart-y-value" data-format="$,">
-                            {(allCommoditiesValues[commodityYearsSortDesc[0]]) ? (allCommoditiesValues[commodityYearsSortDesc[0]]).toLocaleString() : ('0').toLocaleString() }{' '}
+                            {(allCommoditiesValues[commodityYearsSortDesc[0]])
+                              ? (allCommoditiesValues[commodityYearsSortDesc[0]]).toLocaleString() : ('0').toLocaleString() }{' '}
                           </span>
                           {' '}to produce natural resources in the{' ' + usStateData.title + ' in '}
                           <span className="eiti-bar-chart-x-value">{ commodityYearsSortDesc[0] }</span>.
                         </span>
                         <span className="caption-no-data" aria-hidden="true">
-                                                    There is no data about production of {allCommoditiesChartName.toLowerCase()} in{' '}
+                          There is no data about production of {allCommoditiesChartName.toLowerCase()} in{' '}
                           <span className="eiti-bar-chart-x-value">{ commodityYearsSortDesc[0] }</span>.
                         </span>
                       </figcaption>
@@ -236,7 +234,10 @@ const SectionOffshoreRevenue = props => {
                                                     Data about revenue on federal land in { countyData[1].name } in <span data-year={ year }>{ year }</span> is withheld.
                                                   </span>
                                                   <span className="has-data">
-                                                    Companies paid <span data-format={'$,'} data-value={productVolume}>{productVolume}</span> to extract natural resources on federal land in { countyData[1].name } County in <span data-year={ year }>{year}</span>.
+                                                    Companies paid <span data-format={'$,'} data-value={productVolume}>
+                                                      {productVolume}
+                                                    </span> to extract natural resources on federal land in { countyData[1].name } County in
+                                                    <span data-year={ year }>{year}</span>.
                                                   </span>
                                                 </td>
                                               </tr>
@@ -260,7 +261,8 @@ const SectionOffshoreRevenue = props => {
             </section>
           </div>
           : <div className="chart-description">
-							No natural resources were produced on federal land in {usStateData.title} in { commodityYearsSortDesc[0] }, so ONRR did not collect any non-tax revenues.
+							No natural resources were produced on federal land in {usStateData.title} in { commodityYearsSortDesc[0] }
+              , so ONRR did not collect any non-tax revenues.
           </div>
         }
       </section>

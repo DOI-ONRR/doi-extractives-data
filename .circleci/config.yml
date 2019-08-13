@@ -28,17 +28,12 @@ jobs:
           name: Run tests
           command: npm test
   test:
-    post:
-      - cf login -a https://api.fr.cloud.gov -u DEPLOYER_SERVICE_ACCOUNT_USERNAME -p $CF_PASS -o ORG -s SPACE
-  deployment:
-    production:
-      branch: cloudgov-poc
-      commands:
-        - cf push
+    steps:
+      - run
+        - cf login -a https://api.fr.cloud.gov -u jeff.keene@onrr.gov -p $CF_PASS -o sandbox-onrr -s jeff.keene
 workflows:
   version: 2
   commit:
     jobs:
       - build
       - test
-      - deployment

@@ -15,7 +15,7 @@ const Disbursements = (props) => {
 			to="/explore/#federal-disbursements"
 			icon="data"
 			>
-			Explore disbursments trends
+			Explore disbursements trends
 		      </ExploreDataLink>
 		      
 		  }

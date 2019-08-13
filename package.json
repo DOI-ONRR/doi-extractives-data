@@ -56,8 +56,7 @@
     "release-gatsby": "npm run setup-gatsby && npm run build-gatsby",
     "setup-blog": "cd blog-site && npm install",
     "build-blog": "cd blog-site && npm run build",
-    "release-blog": "npm run setup-blog && npm run build-blog",
-    "federalist": "npm run release-blog && npm run release-gatsby"
+    "release-blog": "npm run setup-blog && npm run build-blog"
   },
   "devDependencies": {
     "@babel/plugin-proposal-export-default-from": "^7.2.0",

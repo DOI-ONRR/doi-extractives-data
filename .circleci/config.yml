@@ -1,5 +1,4 @@
 version: 2
-
 jobs:
   build:
     docker:
@@ -8,12 +7,6 @@ jobs:
       - checkout
       - restore_cache:
           key: v2-node-modules-{{ checksum "package-lock.json" }}
-      - run:
-          name: Setup CF CLI
-          command: |
-            curl -v -L -o cf-cli_amd64.deb 'https://cli.run.pivotal.io/stable?release=debian64&source=github'
-            sudo dpkg -i cf-cli_amd64.deb
-            cf -v
       - run:
           name: Install node dependencies
           command: npm install
@@ -27,9 +20,6 @@ jobs:
       - run:
           name: Run tests
           command: npm test
-      - run:
-          name: Run CF login
-          command: - cf login -a https://api.fr.cloud.gov -u jeff.keene@onrr.gov -p $CF_PASS -o sandbox-onrr -s jeff.keene
 workflows:
   version: 2
   commit:

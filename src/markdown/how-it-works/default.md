@@ -50,11 +50,6 @@ redirect_from: /how-it-works/production/
             <p><custom-link to="/how-it-works/federal-reforms">Learn about reforms</custom-link></p>
           </div>
           <div>
-            <h3 class="h3 landing-heading"><custom-link to="/how-it-works/state-laws-and-regulations/" id="state-laws-and-regulations">State laws and regulations</custom-link></h3>
-            <p>State agencies create regulations and rules about natural resource extraction. Local government agencies also play a role.</p>
-            <p><custom-link to="/how-it-works/state-laws-and-regulations">Learn about state laws</custom-link></p>
-          </div>
-          <div>
             <h3 class="h3 landing-heading"><custom-link to="/how-it-works/#native-american-overview">Native American laws and regulations</custom-link></h3>
             <p>Extracting natural resources on Native American land and distributing the associated revenue involves a unique set of processes and stakeholders.</p>
             <p><custom-link to="/how-it-works/#native-american-overview">Learn about Native American laws</custom-link></p>

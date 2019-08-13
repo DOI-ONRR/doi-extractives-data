@@ -7,6 +7,12 @@ jobs:
       - checkout
       - restore_cache:
           key: v2-node-modules-{{ checksum "package-lock.json" }}
+      - run: 
+          name: Setup CF CLI
+          command: |
+            curl -v -L -o cf-cli_amd64.deb 'https://cli.run.pivotal.io/stable?release=debian64&source=github'
+            sudo dpkg -i cf-cli_amd64.deb
+            cf -v
       - run:
           name: Install node dependencies
           command: npm install

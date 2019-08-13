@@ -12,6 +12,15 @@ exports[`MapSection renders correctly 1`] = `
     >
       <h3 />
       <p />
+    </div>
+    <div
+      className="containerRight"
+    >
+      <label
+        for="location-selector"
+      >
+        Explore a state or offshore region:
+      </label>
       <select
         className="select-dark-gray"
         defaultValue="Choose location"
@@ -33,7 +42,7 @@ exports[`MapSection renders correctly 1`] = `
       </select>
     </div>
     <div
-      className="containerRight"
+      className="containerBottom"
     >
       <div
         className="map"

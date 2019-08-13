@@ -187,11 +187,11 @@ const KeyAllProduction = props => {
 
   return (
     <div>
-      {productsRankedOne &&
-        <div>
-          <p>{props.usStateData.title} leads the nation in production of:</p>
-          {getProductListItems()}
-        </div>
+      {productsRankedOne.length > 0 &&
+                <div>
+                  <p>{props.usStateData.title} leads the nation in production of:</p>
+                  {getProductListItems()}
+                </div>
       }
     </div>
   )

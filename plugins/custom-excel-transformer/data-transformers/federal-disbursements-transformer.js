@@ -44,7 +44,8 @@ module.exports = (node, type) => {
 const createDisbursementsNode = (disbursementsData, type) => {
   let disbursementNode = {
 	  Year: disbursementsData[SOURCE_COLUMNS.Year],
-	  DisplayYear: (disbursementsData[SOURCE_COLUMNS.Year]) ? "'" + disbursementsData[SOURCE_COLUMNS.Year].toString().substr(2) : "'" + disbursementsData[SOURCE_COLUMNS.CalendarYear].toString().substr(2),
+    DisplayYear: (disbursementsData[SOURCE_COLUMNS.Year])
+      ? "'" + disbursementsData[SOURCE_COLUMNS.Year].toString().substr(2) : "'" + disbursementsData[SOURCE_COLUMNS.CalendarYear].toString().substr(2),
 	  Fund: disbursementsData[SOURCE_COLUMNS.Fund],
 	  Source: disbursementsData[SOURCE_COLUMNS.OnshoreOffshore],
 	  Disbursement: disbursementsData[SOURCE_COLUMNS.Total] || disbursementsData[SOURCE_COLUMNS.Disbursement],
@@ -61,7 +62,9 @@ const createDisbursementsNode = (disbursementsData, type) => {
   }
 
   disbursementNode.DisbursementCategory = FUND_TO_DISBURSEMENTS_CATEGORY[disbursementNode.Fund]
-  disbursementNode.DisbursementCategory = disbursementNode.Source && ONSHOREOFFSHORE_TO_DISBURSEMENTS_CATEGORY[disbursementNode.Source.toLowerCase()]
+  if (!disbursementNode.DisbursementCategory) {
+    disbursementNode.DisbursementCategory = disbursementNode.Source && ONSHOREOFFSHORE_TO_DISBURSEMENTS_CATEGORY[disbursementNode.Source.toLowerCase()]
+  }
 
   return disbursementNode
 }

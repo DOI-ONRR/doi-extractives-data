@@ -36,6 +36,9 @@ import ExploreProduction from '../../components/sections/Explore/Production'
 import { MapSection } from '../../components/sections/MapSection'
 
 import { WhatsNew } from '../../components/sections/WhatsNew'
+let mapJson = require("../../../static/maps/land/us-topology.json")
+let  mapOffshoreJson =require("../../../static/maps/offshore/offshore.json")
+
 
 class Beta extends React.Component {
   constructor (props) {
@@ -44,6 +47,8 @@ class Beta extends React.Component {
     this.hydrateStore()
   }
 
+
+    
   /**
    * Add the data to the redux store to enable
    * the components to access filtered data using the
@@ -102,6 +107,7 @@ class Beta extends React.Component {
 
 //const Beta = (props) => {
     render () {
+	console.debug(mapJson);
 	return(
 	    <DefaultLayout>
 	      <main>
@@ -113,7 +119,7 @@ class Beta extends React.Component {
 		      { name: 'twitter:title', content: 'Beta | Natural Resources Revenue Data' },
 		  ]} >
 		</Helmet>
-	        <section className="container-page-wrapper">
+	        <section className="container-page-wrapper" >
 		<h3 className="h3-bar"></h3>
 		<p> When companies extract energy and mineral resources on property leased from the federal government and Native Americans, they pay bonuses, rent, and royalties to the federal government. The Office of Natural Resources Revenue (ONRR) distributes these funds to different agencies, funds, and local governments for public use.</p>
 		</section>
@@ -156,16 +162,20 @@ class Beta extends React.Component {
 				  >
 		      
 		      <MapSection 
-			info="FY 2018 revenue by state and offshore"
+			info="FY 2018 revenue by state and offshore region"
 			states={this.props.data.states_data.states}
 			offshore_regions={this.props.data.offshore_data.offshore_regions}
 			mapFeatures="states"
 			mapTitle="Revenue"
 			mapJson="/maps/land/us-topology.json"
 			mapOffshoreJson="/maps/offshore/offshore.json"
-			onClick={ (d,i) => { 
+			mapJsonObject={{us:mapJson, offshore:mapOffshoreJson}}
+			onClick={ (d,i) => {
 			    let state=fipsAbbrev[d.id] || d.id;
 			    let url="/explore/"+state+"#revenue" 
+			    if(state.match(/offshore/)) {
+				url="/explore/"+state;
+			    }
 			    window.location.href = url;
 			    
 			} }
@@ -442,3 +452,92 @@ export const query = graphql`
     }
   }
 `
+
+
+const fipsAbbrev={
+ "02":  "AK",
+ "01":  "AL",
+ "05":  "AR",
+ "60":  "AS",
+ "04":  "AZ",
+ "06":  "CA",
+ "08":  "CO",
+ "09":  "CT",
+ "11":  "DC",
+ "10":  "DE",
+ "12":  "FL",
+ "13":  "GA",
+ "66":  "GU",
+ "15":  "HI",
+ "19":  "IA",
+ "16":  "ID",
+ "17":  "IL",
+ "18":  "IN",
+ "20":  "KS",
+ "21":  "KY",
+ "22":  "LA",
+ "25":  "MA",
+ "24":  "MD",
+ "23":  "ME",
+ "26":  "MI",
+ "27":  "MN",
+ "29":  "MO",
+ "28":  "MS",
+ "30":  "MT",
+ "37":  "NC",
+ "38":  "ND",
+ "31":  "NE",
+ "33":  "NH",
+ "34":  "NJ",
+ "35":  "NM",
+ "32":  "NV",
+ "36":  "NY",
+ "39":  "OH",
+ "40":  "OK",
+ "41":  "OR",
+ "42":  "PA",
+ "72":  "PR",
+ "44":  "RI",
+ "45":  "SC",
+ "46":  "SD",
+ "47":  "TN",
+ "48":  "TX",
+ "49":  "UT",
+ "51":  "VA",
+ "78":  "VI",
+ "50":  "VT",
+ "53":  "WA",
+ "55":  "WI",
+ "54":  "WV",
+ "56":  "WY",
+    "ALA":"offshore-alaska",
+    "ALB":"offshore-alaska",
+    "BFT":"offshore-alaska",
+    "BOW":"offshore-alaska",
+    "CHU":"offshore-alaska",
+    "COK":"offshore-alaska",
+    "GEO":"offshore-alaska",
+    "GOA":"offshore-alaska",
+    "HOP":"offshore-alaska",
+    "KOD":"offshore-alaska",
+    "MAT":"offshore-alaska",
+    "NAL":"offshore-alaska",
+    "NAV":"offshore-alaska",
+    "NOR":"offshore-alaska",
+    "SHU":"offshore-alaska",
+
+    "FLS":"offshore-atlantic",
+    "MDA":"offshore-atlantic",
+    "NOA":"offshore-atlantic",
+    "SOA":"offshore-atlantic",
+
+    "WGM":"offshore-gulf",
+    "CGM":"offshore-gulf",
+    "EGM":"offshore-gulf",
+
+    "CEC":"offshore-pacific",
+    "NOC":"offshore-pacific", 
+    "SOC":"offshore-pacific",
+    "WAO":"offshore-pacific"
+
+}

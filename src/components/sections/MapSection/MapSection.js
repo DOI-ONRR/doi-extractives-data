@@ -56,6 +56,7 @@ query MyQuery {
 //    console.debug(options);
     let offshoreJson=withPrefixGatsby(props.mapOffshoreJson);
     let mapJson=withPrefixGatsby(props.mapJson);
+    let mapJsonObject=props.mapJsonObject;
     let offshore_regions =props.offshore_regions || []
 return (
     <section className={styles.root}>
@@ -67,6 +68,7 @@ return (
 	<div className={styles.containerRight}>
 	  <LocationSelector
 	    default='Choose location'
+            label="Explore a state or offshore region:" 
 	    states={states}
 	    offshore_regions={offshore_regions}
 	    
@@ -80,7 +82,7 @@ return (
 	   
 	  
 	</div>
-	<div className={styles.containerBottom}><Map mapFeatures={props.mapFeatures} mapData={data} offshoreData={offshore_data} mapJson={mapJson} mapOffshoreJson={offshoreJson} colorScheme={props.mapColor} offshoreColorScheme={props.offshoreMapColor} mapTitle={props.mapTitle} onClick={onClick} /> </div>
+	<div className={styles.containerBottom}><Map mapFeatures={props.mapFeatures} mapData={data} offshoreData={offshore_data} mapJson={mapJson} mapOffshoreJson={offshoreJson} mapJsonObject={mapJsonObject} colorScheme={props.mapColor} offshoreColorScheme={props.offshoreMapColor} mapTitle={props.mapTitle} onClick={onClick} /> </div>
 	
 	
 	

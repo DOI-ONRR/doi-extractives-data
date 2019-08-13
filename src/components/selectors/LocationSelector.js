@@ -7,8 +7,9 @@ const LocationSelector = props => {
     window.location = withPrefix('/explore/' + e.target.value)
   }
 
-  return (
-    <select id="location-selector" className="select-dark-gray" onChange={onChangeHandler.bind(this)} defaultValue={(props.default || props.nationwide.url)}>
+  return (<>
+	  <label for="location-selector">{props.label}</label>
+	  <select id="location-selector" className="select-dark-gray" onChange={onChangeHandler.bind(this)} defaultValue={(props.default || props.nationwide.url)}>
       {props.default &&
                 <option value={props.default} disabled>{props.default}</option>
       }
@@ -25,7 +26,8 @@ const LocationSelector = props => {
           <option key={index} value={'offshore-' + item.offshore_region.frontmatter.unique_id}>{ item.offshore_region.frontmatter.title }</option>
         ))}
       </optgroup>
-    </select>
+	  </select>
+	  </>
   )
 }
 

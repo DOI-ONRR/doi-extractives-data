@@ -22,6 +22,7 @@ const Map = (props) => {
     //use ONRR topojson file for land
     const mapJson=props.mapJson || "/maps/land/us-topology.json";
     const mapOffshoreJson=props.mapOffshoreJson || "/maps/offshore/offshore.json";
+    const mapJsonObject=props.mapJsonObject;
 
     const mapFeatures=props.mapFeatures || "counties";
     const mapData=props.mapData.concat(props.offshoreData) || [];  
@@ -31,38 +32,56 @@ const Map = (props) => {
     const mapTitle=props.mapTitle;
     const onClick=props.onClick || function (d,i) {console.debug("Default onClick function", d,i)};
     useEffect( () => {
-     let us= new Object
-	let promise = d3.json(mapJson)
-	 .then( us => {
-	     let states = get_states(us);
-	     let data=observable_data(mapData);
-	     data.title=mapTitle;
-	     //	     let p= get_data().then((data)=>{3
-//		 chart(elemRef.current, us,mapFeatures,data);
-//	     });
+	console.debug("DWGHE1 SDFSDFSDFSDFSDFSDF");
+	console.debug(mapJsonObject);
 
-	     let svg=chart(elemRef.current, us,mapFeatures,data, colorScheme,onClick);
-	     let propmise2=d3.json(mapOffshoreJson)
-		 .then( offshore => {
+	if(typeof(mapJsonObject) != "object") {
+	    console.debug("DWGH string  SDFSDFSDFSDFSDFSDF");
+	    console.debug(mapJson);
+	    let promise = d3.json(mapJson)
+		.then( us => {
+		    let states = get_states(us);
+		    let data=observable_data(mapData);
+		    data.title=mapTitle;
+		    //	     let p= get_data().then((data)=>{3
+		    //		 chart(elemRef.current, us,mapFeatures,data);
+		    //	     });
 
-		     let max=data.values.sort((a,b)=>a-b)[data.values.length-1];
-
-
-
+		    let svg=chart(elemRef.current, us,mapFeatures,data, colorScheme,onClick);
+		    let propmise2=d3.json(mapOffshoreJson)
+			.then( offshore => {
+			    
+			    let max=data.values.sort((a,b)=>a-b)[data.values.length-1];
+			    
+			    
+			    
 		     let ii=0;
-		     for(let region in  offshore.objects ) {
-			 if(ii<1) {
-			     offshore_chart(svg,offshore,region,data, offshoreColorScheme ,onClick);
-			     //ii++;
-			 }
-		     }
+			    for(let region in  offshore.objects ) {
+				if(ii<1) {
+				    offshore_chart(svg,offshore,region,data, offshoreColorScheme ,onClick);
+				    //ii++;
+				}
+			    }
 			     
-		 })
-	     //
-	 });
- 
- 
-
+			})
+		    //
+		});
+	    
+	} else {
+	    let us=mapJsonObject.us;
+	    let offshore=mapJsonObject.offshore;
+	    let states = get_states(us);
+	    let data=observable_data(mapData);
+	    data.title=mapTitle;
+	    console.debug("DWGH SDFSDFSDFSDFSDFSDF");
+	    console.debug(mapJsonObject);
+	    let svg=chart(elemRef.current, us,mapFeatures,data, colorScheme,onClick);
+	    for(let region in  offshore.objects ) {
+		offshore_chart(svg,offshore,region,data, offshoreColorScheme ,onClick);
+	    }
+	}
+    
+	       
 	   
      
  })  //use effect
@@ -300,6 +319,7 @@ const legend = (g,title,data,color,labels) => {
 	    .attr("x",ii*width/sorted.length)
 	    .attr("width",width/sorted.length+1)
  	    .attr("height",height)
+	    .attr("fill-opacity", .9)
 	    .style("fill", color(sorted[ii]))
     }
     

@@ -21,15 +21,15 @@ const Disbursements = (props) => {
 		  }
 		  contentCenter={
 			  <ExploreDataLink
-				to="/how-it-works/#disbursments"
+				to="/how-it-works/#disbursements"
 				icon="works"
-				>Understand how revenue works
+				>Understand how disbursements works
 			      </ExploreDataLink>
 			  }
 			  
 			  contentRight={
 				  <ExploreDataLink
-					to="/downloads/#disbursments"
+					to="/downloads/#disbursements"
 					icon="download"
 					>Download files and review scope
 				      </ExploreDataLink>

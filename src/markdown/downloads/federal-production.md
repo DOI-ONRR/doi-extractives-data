@@ -17,15 +17,15 @@ tag:
 
 <p class="downloads-download_links-intro">Download calendar year data (2003-2018):
   <ul class="downloads-download_links list-unstyled">
-    <li><excel-link to="/downloads/federal_production_CY03-18.xlsx">Calendar year production (Excel, 631 KB)</excel-link></li>
-    <li><csv-link to="/downloads/federal_production_CY03-18.csv">Calendar year production (csv, 835 KB)</csv-link></li>
+    <li><excel-link to="/downloads/production/calendar_year_production.xlsx">Calendar year production (Excel, 631 KB)</excel-link></li>
+    <li><csv-link to="/downloads/csv/production/calendar_year_production.csv">Calendar year production (csv, 835 KB)</csv-link></li>
   </ul>
 </p>
 
 <p class="downloads-download_links-intro">Download fiscal year data (2009-2018):
   <ul class="downloads-download_links list-unstyled">
-    <li><excel-link to="/downloads/federal_production_FY2009-2018_2019-03-26.xlsx">Fiscal year production (Excel, 409 KB)</excel-link></li>
-    <li><csv-link to="/downloads/federal_production_FY2009-2018_2019-03-26.csv">Fiscal year production (csv, 528 KB)</csv-link></li>
+    <li><excel-link to="/downloads/production/fiscal_year_production.xlsx">Fiscal year production (Excel, 409 KB)</excel-link></li>
+    <li><csv-link to="/downloads/csv/production/fiscal_year_production.csv">Fiscal year production (csv, 528 KB)</csv-link></li>
   </ul>
 </p>
 

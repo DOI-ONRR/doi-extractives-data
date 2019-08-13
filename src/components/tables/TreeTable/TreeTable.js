@@ -1,52 +1,52 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import Paper from '@material-ui/core/Paper';
+import Paper from '@material-ui/core/Paper'
 import {
   SummaryState,
   IntegratedSummary,
   TreeDataState,
-  CustomTreeData,
-} from '@devexpress/dx-react-grid';
+  CustomTreeData
+} from '@devexpress/dx-react-grid'
 import {
   Grid,
   Table,
   TableHeaderRow,
   TableTreeColumn,
   TableSummaryRow,
-  TableFixedColumns,
-} from '@devexpress/dx-react-grid-material-ui';
+  TableFixedColumns
+} from '@devexpress/dx-react-grid-material-ui'
 
 const getChildRows = (row, rootRows) => {
-  const childRows = rootRows.filter(r => r.parentId === (row ? row.id : undefined));
-  return childRows.length ? childRows : null;
-};
-const getDefaultExpandedRowIds = (rows) => {
-	let rowIds = [];
+  const childRows = rootRows.filter(r => r.parentId === (row ? row.id : undefined))
+  return childRows.length ? childRows : null
+}
+const getDefaultExpandedRowIds = rows => {
+  let rowIds = []
 
-	rows.forEach((r,i) => (r.parentId === undefined) && rowIds.push(i) )
+  rows.forEach((r, i) => (r.parentId === undefined) && rowIds.push(i))
 
-	return rowIds;
+  return rowIds
 }
 
 const summaryCalculator = (type, rows, getValue) => {
   if (type === 'sum') {
     if (!rows.length) {
-      return null;
+      return null
     }
-    const filteredRows = rows.filter(r  => r.parentId !== undefined);
+    const filteredRows = rows.filter(r => r.parentId !== undefined)
     return IntegratedSummary.defaultCalculator(type, filteredRows, getValue)
   }
-  return IntegratedSummary.defaultCalculator(type, rows, getValue);
-};
+  return IntegratedSummary.defaultCalculator(type, rows, getValue)
+}
 
 class TreeTable extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor (props) {
+    super(props)
 
     this.state = {
       columns: [
-        { name: 'rev', title: 'Revenue Type'},
+        { name: 'rev', title: 'Revenue Type' },
         { name: 'name', title: 'Name' },
         { name: 'sex', title: 'Sex' },
         { name: 'FY2019', title: 'FY 2019' },
@@ -54,12 +54,12 @@ class TreeTable extends React.Component {
         { name: 'car2', title: 'Car' },
         { name: 'car3', title: 'Car' },
       ],
-      rows: [ 
+      rows: [
 	        { id: 1, rev: 'Onshore', name: 'All', sex: 'male', FY2019: 12111 },
 	        { id: 2, parentId: 1, rev: 'Onshore', name: 'name', sex: 'male', FY2019: 1212 },
-	        { id: 3, parentId: 1,  rev: 'Onshore', name: 'name', sex: 'female', FY2019: 12 },
+	        { id: 3, parentId: 1, rev: 'Onshore', name: 'name', sex: 'female', FY2019: 12 },
 	        { id: 4, rev: 'Offshore', name: 'All', sex: 'both', FY2019: 33333 },
-	        { id: 5, parentId: 4,  rev: 'Offshore', name: 'name', sex: 'none', FY2019: 333 },
+	        { id: 5, parentId: 4, rev: 'Offshore', name: 'name', sex: 'none', FY2019: 333 },
 	      ],
       totalSummaryItems: [
         { columnName: 'FY2019', type: 'sum' },
@@ -72,22 +72,21 @@ class TreeTable extends React.Component {
         { columnName: 'rev', width: 300 },
       ],
       tableFixedColumns: ['rev'],
-    };  
-
+    }
   }
 
-  render() {
+  render () {
     const {
-      rows, columns,tableColumnExtensions, treeSummaryItems, totalSummaryItems, tableFixedColumns
-    } = this.state;
+      rows, columns, tableColumnExtensions, treeSummaryItems, totalSummaryItems, tableFixedColumns
+    } = this.state
 
   	return (
-  		<div style={{color:'white'}}>
+  		<div style={{ color: 'white' }}>
         <Grid
           rows={rows}
           columns={columns}
         >
-          <TreeDataState 
+          <TreeDataState
             defaultExpandedRowIds={getDefaultExpandedRowIds(rows)}
           />
           <SummaryState
@@ -97,7 +96,7 @@ class TreeTable extends React.Component {
           <CustomTreeData
             getChildRows={getChildRows}
           />
-          <IntegratedSummary 
+          <IntegratedSummary
           	calculator={summaryCalculator}
           />
           <Table
@@ -107,7 +106,7 @@ class TreeTable extends React.Component {
           <TableTreeColumn
             for="rev"
           />
-          <TableSummaryRow style={{color:'white'}} />
+          <TableSummaryRow style={{ color: 'white' }} />
           <TableFixedColumns leftColumns={tableFixedColumns}/>
         </Grid>
   		</div>

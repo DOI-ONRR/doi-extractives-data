@@ -7,11 +7,9 @@ import { PageToc } from '../components/navigation/PageToc'
 
 import hastReactRenderer from '../js/hast-react-renderer'
 
-
 import DefaultLayout from '../components/layouts/DefaultLayout'
 
 class ArchiveDefault extends React.Component {
-
   render () {
     let title = this.props.pathContext.markdown.frontmatter.title || 'Natural Resources Revenue Data'
     return (

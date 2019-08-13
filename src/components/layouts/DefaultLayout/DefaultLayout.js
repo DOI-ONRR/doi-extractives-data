@@ -30,7 +30,7 @@ const DefaultLayout = ({ children }) => {
 	  }
   `)
 
-  utils.hashLinkScroll();
+  utils.hashLinkScroll()
 
   return (
     <div>

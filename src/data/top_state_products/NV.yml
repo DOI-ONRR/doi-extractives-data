@@ -127,28 +127,15 @@ all_production:
     - product: Geothermal
       name: Geothermal
       units: Mwh
-      value: 3353399
+      value: 3848199.92
       rank: 2
-      percent: 21.19
+      percent: 22.09
     - product: Solar
       name: Solar
       units: Mwh
-      value: 3124060
+      value: 2545982.6
       rank: 4
-      percent: 8.66
-  '2017':
-    - product: Geothermal
-      name: Geothermal
-      units: Mwh
-      value: 3364690.89
-      rank: 2
-      percent: 21.06
-    - product: Solar
-      name: Solar
-      units: Mwh
-      value: 3834979.45
-      rank: 4
-      percent: 7.24
+      percent: 6.93
 federal_production:
   '2008':
     - product: 'Geothermal - Direct Utilization, Hundreds of Gallons'
@@ -455,3 +442,16 @@ revenue:
       value: 5845.17
       rank: 3
       percent: 0.1
+  '2018':
+    - product: Geothermal
+      name: null
+      units: null
+      value: 1162144.92
+      rank: 1
+      percent: 71.5
+    - product: Potassium
+      name: null
+      units: null
+      value: 7503
+      rank: 3
+      percent: 0.6

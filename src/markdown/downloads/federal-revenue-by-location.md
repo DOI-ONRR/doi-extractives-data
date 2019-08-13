@@ -20,15 +20,15 @@ tag:
 Download calendar year data (2003-2018):
 
 <ul class="downloads-download_links list-unstyled">
-  <li><excel-link to="/downloads/CY 03-18 Federal Revenues.xlsx">Calendar year revenue (Excel, 2.8 MB)</excel-link></li>
-  <li><csv-link to="/downloads/CY 03-18 Federal Revenues.csv">Calendar year revenue (csv, 5.4 MB)</csv-link></li>
+  <li><excel-link to="/downloads/revenue/calendar_year_revenue.xlsx">Calendar year revenue (Excel, 2.8 MB)</excel-link></li>
+  <li><csv-link to="/downloads/csv/revenue/calendar_year_revenue.csv">Calendar year revenue (csv, 5.4 MB)</csv-link></li>
 </ul>
 
 Download fiscal year data (2003–2018):
 
 <ul class="downloads-download_links list-unstyled">
-  <li><excel-link to="/downloads/FY 03-18 Federal Revenues.xlsx">Fiscal year revenue (Excel, 2.5 MB)</excel-link></li>
-  <li><csv-link to="/downloads/FY 03-18 Federal Revenues.csv">Fiscal year revenue (csv, 5.2 MB)</csv-link></li>
+  <li><excel-link to="/downloads/revenue/fiscal_year_revenue.xlsx">Fiscal year revenue (Excel, 2.5 MB)</excel-link></li>
+  <li><csv-link to="/downloads/csv/revenue/fiscal_year_revenue.csv">Fiscal year revenue (csv, 5.2 MB)</csv-link></li>
 </ul>
 
 We also have [notes on this data](https://github.com/onrr/doi-extractives-data/wiki/Data-Catalog#federal-revenue) from the web development team as they built the interactions on this site.

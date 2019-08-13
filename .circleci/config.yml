@@ -29,7 +29,7 @@ jobs:
           command: npm test
       - run:
           name: Run CF login
-            - cf login -a https://api.fr.cloud.gov -u jeff.keene@onrr.gov -p $CF_PASS -o sandbox-onrr -s jeff.keene
+          command: - cf login -a https://api.fr.cloud.gov -u jeff.keene@onrr.gov -p $CF_PASS -o sandbox-onrr -s jeff.keene
 workflows:
   version: 2
   commit:

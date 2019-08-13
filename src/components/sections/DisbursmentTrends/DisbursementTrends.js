@@ -87,7 +87,7 @@ allYearlyDispursements :  allDisbursementsXlsxData(sort: {fields: [Fiscal_Year],
                 <td className={styles.alignRight}><strong>{utils.formatToSigFig_Dollar(123212, 3)}</strong></td>
               </tr>
               <tr>
-                <td><Sparkline data={totalDisbursments} /></td>
+                <td><Sparkline data={totalDisbursements} /></td>
                 <td className={styles.alignRight}>
                   <PercentDifference 
                     currentAmount={currentYearTotal} 

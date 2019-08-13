@@ -32,7 +32,7 @@ const Revenue = (props) => {
 			  <ExploreDataLink
 				to="/how-it-works/#revenues"
 				icon="works"
-				>Understand how revenue works
+				>Learn how revenue works
 			      </ExploreDataLink>
 			  }
 			  

@@ -148,7 +148,7 @@ class Beta extends React.Component {
 		  <Tab id="tab-production" name="Production" >
 		    <TabContainer id="tab-container-production" 
 			      title="Production"
-				  info="What volume of enegy and mineral resources are extracted on property owned by the federal government and Native Americans?"
+				  info="What volume of energy and mineral resources are extracted on property owned by the federal government and Native Americans?"
 				  contentBottom={<ExploreProduction/>}
 				  >
 				  <TotalProduction />

@@ -1,0 +1,4 @@
+---
+applications:
+- name: NRRD-WEBSITE
+buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git

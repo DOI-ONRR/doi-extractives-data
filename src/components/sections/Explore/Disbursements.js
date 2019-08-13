@@ -23,7 +23,7 @@ const Disbursements = (props) => {
 			  <ExploreDataLink
 				to="/how-it-works/#disbursements"
 				icon="works"
-				>Understand how disbursements works
+				>Learn how disbursements works
 			      </ExploreDataLink>
 			  }
 			  

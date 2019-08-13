@@ -25,7 +25,7 @@ const Revenue = (props) => {
 			  <ExploreDataLink
 				to="/how-it-works/#production"
 				icon="works"
-				>Understand how production works
+				>Learn how production works
 			      </ExploreDataLink>
 			  }
 			  

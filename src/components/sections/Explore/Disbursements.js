@@ -12,7 +12,7 @@ const Disbursements = (props) => {
 	title="disbursements"
 	  contentLeft={
 		  <ExploreDataLink
-			to="/explore/#revenue"
+			to="/explore/#federal-disbursements"
 			icon="data"
 			>
 			Explore disbursments trends
@@ -21,7 +21,7 @@ const Disbursements = (props) => {
 		  }
 		  contentCenter={
 			  <ExploreDataLink
-				to="/explore/#revenue"
+				to="/how-it-works/#disbursments"
 				icon="works"
 				>Understand how revenue works
 			      </ExploreDataLink>
@@ -29,7 +29,7 @@ const Disbursements = (props) => {
 			  
 			  contentRight={
 				  <ExploreDataLink
-					to="/explore/#revenue"
+					to="/downloads/#disbursments"
 					icon="download"
 					>Download files and review scope
 				      </ExploreDataLink>

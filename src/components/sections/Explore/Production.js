@@ -12,10 +12,10 @@ const Revenue = (props) => {
 	  title="Production"
 	  contentLeft={
 		  <>
-			<ExploreDataLink to="https://revenuedata.doi.gov/explore/#revenue" icon="data">
+		  <ExploreDataLink to="/explore/#federal-production" icon="data">
 			      Explore trends on federal lands and waters
 			    </ExploreDataLink>
-			    <ExploreDataLink to="https://revenuedata.doi.gov/explore/#revenue" icon="data">
+			    <ExploreDataLink to="/how-it-works/native-american-production/#production-on-native-american-land" icon="data">
 				  Explore trends on Native American lands
 				</ExploreDataLink>
 				
@@ -23,7 +23,7 @@ const Revenue = (props) => {
 		  }
 		  contentCenter={
 			  <ExploreDataLink
-				to="https://revenuedata.doi.gov/explore/#revenue"
+				to="/how-it-works/#production"
 				icon="works"
 				>Understand how production works
 			      </ExploreDataLink>
@@ -31,8 +31,8 @@ const Revenue = (props) => {
 			  
 			  contentRight={
 				  <ExploreDataLink
-					to="https://revenuedata.doi.gov/explore/#revenue"
-					icon="works"
+					to="/downloads/#production"
+					icon="download"
 					>Download files and review scope
 				      </ExploreDataLink>
 				  }

@@ -6,8 +6,8 @@ import styles from './ExploreDataLink.module.scss'
 
 import ExploreDataIcon from '-!svg-react-loader!../../../../img/icons/explore-data.svg'
 import FilterTableIcon from '-!svg-react-loader!../../../../img/icons/filter-table.svg'
-import DownloadDataIcon from '-!svg-react-loader!../../../../img/icons/download-data.svg'
 import HowWorksIcon from '-!svg-react-loader!../../../../img/icons/how-works.svg'
+import DownloadDataIcon from '-!svg-react-loader!../../../../img/svg/icon-download-buttonup.svg'
 
 
 const ExploreDataLink = (props) => {

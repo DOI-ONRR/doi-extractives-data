@@ -1,5 +1,5 @@
 @value colors: "../../../css-global/colors.scss";
-@value grayLight as _grayLight, blackLight as _blackLight from colors;
+@value  grayDarker as _grayDarker, grayLight as _grayLight, blackLight as _blackLight from colors;
 
 @value _radius: 8px;
 
@@ -30,9 +30,11 @@
 }
 
 .toggle div:active {
-	background-color: _grayLight;
+	background-color: _grayDarker;
+	color: white;
 }
 
 .toggle .selected {
-	background-color: _grayLight;
+    background-color: _grayDarker;
+    color: white;
 }

@@ -340,8 +340,11 @@ class TotalRevenueDeprecated extends React.Component {
 	  return (
 		  <section className={styles.revenueDisbursementsSection} >
 		  
-		  <h3 className={styles.title+" h3-bar"}>Total revenue<span className={styles.leftTitle}>	<ExploreDataLink to="https://revenuedata.doi.gov/explore/#revenue"
-					     >Filter revenue data
+		  <h3 className={styles.title+" h3-bar"}>Total revenue<span className={styles.titleRight}>
+		  <ExploreDataLink
+		    to="/explore/revenue"
+	            icon="filter"      
+		    >Filter revenue data
 			    </ExploreDataLink></span> </h3>
 		  <div className={styles.content}>
 		  <div className={styles.itemToggle}>

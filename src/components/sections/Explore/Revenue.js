@@ -5,6 +5,7 @@ import { ExploreDataLink } from '../../layouts/icon-links/ExploreDataLink'
 
 
 
+
 const Revenue = (props) => {
 
     return (
@@ -16,12 +17,12 @@ const Revenue = (props) => {
 					     >Explore revenue trends
 			    </ExploreDataLink>
 			    <ExploreDataLink
-				  to="https://revenuedata.doi.gov/explore/#revenue"
+				  to="/explore/revenue"
 				  icon="filter"
 				  >Filter revenue data 
 				</ExploreDataLink>
 				<ExploreDataLink
-				      to="https://revenuedata.doi.gov/explore/#revenue"
+				      to="/how-it-works/federal-revenue-by-company/2018/"
 				      icon="data"
 				      >Explore revenue by company
 				    </ExploreDataLink>
@@ -29,7 +30,7 @@ const Revenue = (props) => {
 		  }
 		  contentCenter={
 			  <ExploreDataLink
-				to="https://revenuedata.doi.gov/explore/#revenue"
+				to="/how-it-works/#revenues"
 				icon="works"
 				>Understand how revenue works
 			      </ExploreDataLink>
@@ -37,7 +38,7 @@ const Revenue = (props) => {
 			  
 			  contentRight={
 				  <ExploreDataLink
-					to="https://revenuedata.doi.gov/explore/#revenue"
+					to="/downloads/#revenue"
 					icon="download"
 					>Download files and review scope
 				      </ExploreDataLink>

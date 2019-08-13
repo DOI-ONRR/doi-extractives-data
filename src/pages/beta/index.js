@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { connect } from 'react-redux'
 import Link from '../../components/utils/temp-link'
+import { withPrefix as withPrefixGatsby } from 'gatsby-link'
 import { hydrate as hydateDataManagerAction } from '../../state/reducers/data-sets'
 import { normalize as normalizeDataSetAction } from '../../state/reducers/data-sets'
 import {
@@ -176,6 +177,7 @@ class Beta extends React.Component {
 			    if(state.match(/offshore/)) {
 				url="/explore/"+state;
 			    }
+			    url=withPrefixGatsby(url);
 			    window.location.href = url;
 			    
 			} }

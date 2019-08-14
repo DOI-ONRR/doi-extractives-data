@@ -122,13 +122,13 @@ class Beta extends React.Component {
 		</Helmet>
 	        <section className="container-page-wrapper" >
 		<h3 className="h3-bar"></h3>
-		<p> When companies extract energy and mineral resources on property leased from the federal government and Native Americans, they pay bonuses, rent, and royalties to the federal government. The Office of Natural Resources Revenue (ONRR) distributes these funds to different agencies, funds, and local governments for public use.</p>
+		<p> When companies extract energy and mineral resources on property leased from the federal government and Native Americans, they pay <GlossaryTerm termKey="Bonus">bonuses</GlossaryTerm>, <GlossaryTerm>rent</GlossaryTerm>, and <GlossaryTerm termKey="Royalty">royalties</GlossaryTerm>. The Office of Natural Resources Revenue (ONRR) collects and distributes this revenue to different agencies, funds, and local governments for public use. All revenue collected from extraction on Native American lands is <GlossaryTerm termKey="disbursement">disbursed</GlossaryTerm> to Native American tribes, nations, or individuals.</p>
 		</section>
 		<Tabordion>
 		<Tab id="tab-revenue" name="Revenue">
 		    <TabContainer id="tab-container-revenue" name="Revenue"
 				  title="Revenue"
-				  info="How much money do energy and mineral resources bring into federal government?"
+				  info="The amount of money collected by the federal government from energy and mineral extraction on federal lands and waters and Native American lands"
 				  contentLeft={<TotalRevenue/>}
 				  contentRight={<RevenueTrends/>}
 				  contentBottom={<ExploreRevenue />}
@@ -137,7 +137,7 @@ class Beta extends React.Component {
 		  <Tab id="tab-disbursements" name="Disbursements" >
 		    <TabContainer id="tab-container-disbursements" 
 				  title="Disbursements"
-				  info="Where does the money that is brought in go?"
+				  info="The amount of money the federal government distributes to various funds, agencies, local governments, and Native Americans"
 				  contentRight={<DisbursementTrends/>}
          			  contentLeft={<TotalDisbursements/>}
 				  contentBottom={<ExploreDisbursements/>}
@@ -148,7 +148,7 @@ class Beta extends React.Component {
 		  <Tab id="tab-production" name="Production" >
 		    <TabContainer id="tab-container-production" 
 			      title="Production"
-				  info="What volume of energy and mineral resources are extracted on property owned by the federal government and Native Americans?"
+				  info="The volume of major commodities extracted on federal lands and waters and Native American lands"
 				  contentBottom={<ExploreProduction/>}
 				  >
 				  <TotalProduction />
@@ -163,7 +163,7 @@ class Beta extends React.Component {
 				  >
 		      
 		      <MapSection 
-			info="FY 2018 revenue by state and offshore region"
+			info="Revenue by state and offshore region for fiscal year 2018"
 			states={this.props.data.states_data.states}
 			offshore_regions={this.props.data.offshore_data.offshore_regions}
 			mapFeatures="states"
@@ -182,7 +182,7 @@ class Beta extends React.Component {
 			    
 			} }
 			/>
-			
+			<p><em>Select a state for detailed production, revenue, and disbursements data.</em></p>
 		    </TabContainer>
 		  </Tab>  
 		</Tabordion>	

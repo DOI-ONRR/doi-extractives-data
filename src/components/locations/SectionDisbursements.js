@@ -43,8 +43,7 @@ const SectionDisbursements = props => {
     if (usStateDisbursements && offshoreDisbursements > 0) {
       content = <div>
         <p>
-            ONRR also disburses some revenue from natural resource extraction to state governments
-            . <strong>In { year }, ONRR disbursed {utils.formatToDollarInt(allDisbursements)} to {usStateData.title}. </strong>
+            ONRR also disburses some revenue from natural resource extraction to state governments. <strong>In { year }, ONRR disbursed {utils.formatToDollarInt(allDisbursements)} to {usStateData.title}. </strong>
             This included revenues from both onshore and offshore extraction in or near {usStateData.title}:
         </p>
         <ul>
@@ -54,8 +53,7 @@ const SectionDisbursements = props => {
       </div>
     }
     else if (usStateDisbursements) {
-      content = <p>ONRR also disburses some revenue from natural resource extraction to state governments
-        . <strong>In { year }, ONRR disbursed {utils.formatToDollarInt(usStateDisbursements.All.All[year])} to {usStateData.title}.</strong></p>
+      content = <p>ONRR also disburses some revenue from natural resource extraction to state governments. <strong>In { year }, ONRR disbursed {utils.formatToDollarInt(usStateDisbursements.All.All[year])} to {usStateData.title}.</strong></p>
     }
     else {
       content = <p>

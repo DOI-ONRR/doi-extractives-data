@@ -36,12 +36,12 @@ const Footer = ({ version }) => (
         </div>
 
         <div className="footer-bottom footer-bottom-right">
-          <p className="footer-para footer-para-small">
+          <address><p className="footer-para footer-para-small">
           Office of Natural Resources Revenue, { CONTACT_INFO.information_data_management.name }<br/>
             { CONTACT_INFO.information_data_management.street }<br/>
             { CONTACT_INFO.information_data_management.city } { CONTACT_INFO.information_data_management.zip }<br/>
             <a className="link-active-beta" href={'mailto:' + CONTACT_INFO.information_data_management.email}>{ CONTACT_INFO.information_data_management.email }</a>
-          </p>
+          </p></address>
         </div>
 
       </div>

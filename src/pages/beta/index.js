@@ -138,7 +138,7 @@ class Beta extends React.Component {
 		  <Tab id="tab-disbursements" name="Disbursements" >
 		    <TabContainer id="tab-container-disbursements" 
 				  title="Disbursements"
-				  info="The amount of money the federal government distributes to various funds, agencies, local governments, and Native Americans."
+				  info="The amount of money the federal government distributed to various funds, agencies, local governments, and Native Americans."
 				  contentRight={<DisbursementTrends/>}
          			  contentLeft={<TotalDisbursements/>}
 				  contentBottom={<ExploreDisbursements/>}

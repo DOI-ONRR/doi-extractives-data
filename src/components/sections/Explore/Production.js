@@ -9,7 +9,7 @@ const Revenue = (props) => {
 
     return (
 	<Explore
-	  title="Production"
+	  title="production"
 	  contentLeft={
 		  <>
 		  <ExploreDataLink to="/explore/#federal-production" icon="data">

@@ -21,6 +21,7 @@ import {
 
 import * as CONSTANTS from '../../js/constants'
 import utils from '../../js/utils'
+import GlossaryTerm from '../../components/utils/glossary-term.js';
 
 
 import DefaultLayout from '../../components/layouts/DefaultLayout'
@@ -122,13 +123,13 @@ class Beta extends React.Component {
 		</Helmet>
 	        <section className="container-page-wrapper" >
 		<h3 className="h3-bar"></h3>
-		<p> When companies extract energy and mineral resources on property leased from the federal government and Native Americans, they pay <GlossaryTerm termKey="Bonus">bonuses</GlossaryTerm>, <GlossaryTerm>rent</GlossaryTerm>, and <GlossaryTerm termKey="Royalty">royalties</GlossaryTerm>. The Office of Natural Resources Revenue (ONRR) collects and distributes this revenue to different agencies, funds, and local governments for public use. All revenue collected from extraction on Native American lands is <GlossaryTerm termKey="disbursement">disbursed</GlossaryTerm> to Native American tribes, nations, or individuals.</p>
+		<p> When companies extract energy and mineral resources on property leased from the federal government and Native Americans, they pay <GlossaryTerm termKey="Bonus">bonuses</GlossaryTerm>, <GlossaryTerm>rent</GlossaryTerm>, and <GlossaryTerm termKey="Royalty">royalties</GlossaryTerm>. The Office of Natural Resources Revenue (ONRR) collects and <GlossaryTerm termKey="disbursement">disburses</GlossaryTerm> revenue from federal lands and waters to different agencies, funds, and local governments for public use. All revenue collected from extraction on Native American lands is disbursed to Native American tribes, nations, or individuals.</p>
 		</section>
 		<Tabordion>
 		<Tab id="tab-revenue" name="Revenue">
 		    <TabContainer id="tab-container-revenue" name="Revenue"
 				  title="Revenue"
-				  info="The amount of money collected by the federal government from energy and mineral extraction on federal lands and waters and Native American lands"
+				  info="The amount of money collected by the federal government from energy and mineral extraction on federal lands and waters and Native American lands."
 				  contentLeft={<TotalRevenue/>}
 				  contentRight={<RevenueTrends/>}
 				  contentBottom={<ExploreRevenue />}
@@ -137,7 +138,7 @@ class Beta extends React.Component {
 		  <Tab id="tab-disbursements" name="Disbursements" >
 		    <TabContainer id="tab-container-disbursements" 
 				  title="Disbursements"
-				  info="The amount of money the federal government distributes to various funds, agencies, local governments, and Native Americans"
+				  info="The amount of money the federal government distributes to various funds, agencies, local governments, and Native Americans."
 				  contentRight={<DisbursementTrends/>}
          			  contentLeft={<TotalDisbursements/>}
 				  contentBottom={<ExploreDisbursements/>}
@@ -148,7 +149,7 @@ class Beta extends React.Component {
 		  <Tab id="tab-production" name="Production" >
 		    <TabContainer id="tab-container-production" 
 			      title="Production"
-				  info="The volume of major commodities extracted on federal lands and waters and Native American lands"
+				  info="The volume of major commodities extracted on federal lands and waters and Native American lands."
 				  contentBottom={<ExploreProduction/>}
 				  >
 				  <TotalProduction />
@@ -161,7 +162,7 @@ class Beta extends React.Component {
 				  title="Data by state"
 				  
 				  >
-		      
+      <p><em>Select a state for detailed production, revenue, and disbursements data.</em></p>
 		      <MapSection 
 			info="Revenue by state and offshore region for fiscal year 2018"
 			states={this.props.data.states_data.states}
@@ -182,7 +183,6 @@ class Beta extends React.Component {
 			    
 			} }
 			/>
-			<p><em>Select a state for detailed production, revenue, and disbursements data.</em></p>
 		    </TabContainer>
 		  </Tab>  
 		</Tabordion>	

@@ -7,6 +7,8 @@ tag:
 - Downloads
 - Documentation
 - Federal
+- Native American
+- Indian
 - Revenue
 - Location
 - By location
@@ -31,11 +33,13 @@ Download fiscal year data (2003–2018):
   <li><csv-link to="/downloads/csv/revenue/fiscal_year_revenue.csv">Fiscal year revenue (csv, 5.2 MB)</csv-link></li>
 </ul>
 
-We also have [notes on this data](https://github.com/onrr/doi-extractives-data/wiki/Data-Catalog#federal-revenue) from the web development team as they built the interactions on this site.
-
 ## Scope
 
-These datasets include natural resource revenues for U.S. federal lands and offshore areas. It does not include Native American lands, privately-owned lands or U.S. state lands. The datasets include data tracked and managed by the Department of the Interior’s Office of Natural Resources Revenue.
+These datasets include natural resource revenues for U.S. federal lands and offshore areas, along with Native American lands. It does not include privately-owned lands or U.S. state lands. 
+
+Federal revenue data is available by location, but Native American data is only available at the national level to protect private and personally identifiable information.
+
+The datasets include data tracked and managed by the Department of the Interior’s Office of Natural Resources Revenue.
 
 <h3 alt="Negative values">Why are some values negative?</h3>
 

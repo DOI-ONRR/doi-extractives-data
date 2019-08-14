@@ -24,8 +24,6 @@ tag:
   </ul>
 </p>
 
-We also have [notes on this data](https://github.com/onrr/doi-extractives-data/wiki/Data-Catalog#company-revenue) from the web development team as they built the interactions on this site.
-
 ## Scope
 
 This dataset includes revenues for U.S. federal lands and offshore areas. It does not include Indian lands, privately owned lands, or U.S. state lands. The datasets currently include data tracked and managed by the Department of the Interior’s (DOI) Office of Natural Resources Revenue (ONRR), Bureau of Land Management (BLM), and Office of Surface Mining, Reclamation, and Enforcement.

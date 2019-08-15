@@ -469,7 +469,7 @@ const RevenueProcessTable = props => {
 				    <td>
 				    </td>
 				    <td>
-				      <strong>$40</strong> location fee, <strong>$20</strong> processing fee, <strong>$165</strong> maintenance fee
+				      <strong>$40</strong> location fee <strong>$20</strong> processing fee <strong>$165</strong> maintenance fee
 				    </td>
 				    <td>
 						Royalty rates are determined by leasing officers on an individual case basis (no minimums apply)

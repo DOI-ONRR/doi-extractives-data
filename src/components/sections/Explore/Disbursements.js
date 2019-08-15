@@ -15,7 +15,7 @@ const Disbursements = (props) => {
 			to="/explore/#federal-disbursements"
 			icon="data"
 			>
-			Explore disbursements trends
+			Disbursements trends
 		      </ExploreDataLink>
 		      
 		  }
@@ -23,7 +23,7 @@ const Disbursements = (props) => {
 			  <ExploreDataLink
 				to="/how-it-works/#disbursements"
 				icon="works"
-				>Learn how disbursements works
+				>How disbursements work
 			      </ExploreDataLink>
 			  }
 			  
@@ -31,7 +31,7 @@ const Disbursements = (props) => {
 				  <ExploreDataLink
 					to="/downloads/#disbursements"
 					icon="download"
-					>Download files and review scope
+					>Downloads and documentation
 				      </ExploreDataLink>
 				  }
 				  />

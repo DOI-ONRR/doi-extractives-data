@@ -84,18 +84,18 @@ permalink: /how-it-works/coal/
 </section>
 <div class="slab-beta revenues_page-forms">
 	<section class="container-outer">
-	  <h1>Revenue collected by the Department of the Interior</h1>
+	  <h2>Revenue collected by the Department of the Interior</h2>
 	  <div class="revenues_page-forms_options">
 	    <div>
-	      <h2>Bonus</h2>
+	      <h3 class="h2">Bonus</h3>
 	      <p>The amount the highest bidder paid for a natural resource lease.</p>
 	    </div>
 	    <div>
-	      <h2>Rent</h2>
+	      <h3 class="h2">Rent</h3>
 	      <p class="revenues_page-forms_numbers"><span>$3.00</span> per acre or a fraction thereof</p>
 	    </div>
 	    <div>
-	      <h2>Royalty</h2>
+	      <h3 class="h2">Royalty</h3>
 	      <p class="revenues_page-forms_numbers_first">
 	        <span>12.5%</span>
 	        <br>surface
@@ -104,7 +104,7 @@ permalink: /how-it-works/coal/
 	      <p>The rate depends on whether the coal was extracted by surface or subsurface mining.</p>
 	    </div>
 	    <div>
-	      <h2>Fees</h2>
+	      <h3 class="h2">Fees</h3>
 	      <p class="revenues_page-forms_numbers_first"><span>$0.28</span> per ton
 	      <br>surface mining
 	      <br><span>$0.12</span> per ton

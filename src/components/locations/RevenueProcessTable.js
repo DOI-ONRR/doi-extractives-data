@@ -299,7 +299,7 @@ const RevenueProcessTable = props => {
           <strong>$7</strong> or <strong>$11</strong> annual rent per acre, increasing over time up to <strong>$44</strong> per acre in some cases
         </td>
         <td>
-          <strong>12.5%</strong>, <strong>16.67%</strong>, or
+          <strong>12.5%</strong>, <strong>16.67%</strong>, or 
           <strong>18.75%</strong> of production value
         </td>
         <td></td>

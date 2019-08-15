@@ -70,7 +70,6 @@ permalink: /how-it-works/onshore-renewables/
           </process-step>
           <process-step stepId="5" stepName="Decommission and reclaim">
             <p>At the close of a solar or wind project, developers must remove all facilities and return the land to a sound environmental state. Under the proposed rule, when an applicant gains a solar or wind energy lease or grant, they must provide BLM a bond. BLM holds the bond through the life of the project to ensure compliance with terms and conditions, including site <glossary-term>reclamation</glossary-term>.</p>
-            <p>Bonding requirements differ based on whether the project is in a designed leasing area or not. Inside designated leasing areas, the standard bond amounts would be $10,000 per acre for solar energy projects and $20,000 per turbine for wind energy projects. These same amounts would be the minimum requirements for bonds outside designated leasing areas, subject to adjustment by BLM.</p>
             <p>If the developer appropriately decommissions solar and wind projects and meets terms and conditions, BLM returns the bond at the close of the project.</p>
           </process-step>
           <process-step stepName="Learn more">
@@ -146,7 +145,7 @@ permalink: /how-it-works/onshore-renewables/
         </div>
         <div class="revenues_subpage-involved_option">
           <a class="link-no_under" href="https://www.flickr.com/photos/mypubliclands/">
-            <img src="}/public/img/icons/flickr.svg" class="u-padding-right icon-medium"/>
+            <img src="/public/img/icons/flickr.svg" class="u-padding-right icon-medium"/>
             <h3>Flickr</h3>
           </a>
           <p>See breathtaking photos on BLM’s Flickr.</p>

@@ -95,19 +95,19 @@ permalink: /how-it-works/onshore-oil-gas/
 </section>
 <div class="slab-beta revenues_page-forms">
   <section class="container-outer">
-    <h1>Revenue collected by BLM and ONRR</h2>
+    <h2>Revenue collected by BLM and ONRR</h2>
     <div class="revenues_page-forms_options">
       <div>
-        <h2>Bonus</h2>
+        <h3 class="h2">Bonus</h3>
         <p>The amount the highest bidder paid for a natural resource lease.</p>
       </div>
       <div>
-        <h2>Rent</h2>
+        <h3 class="h2">Rent</h3>
         <p class="revenues_page-forms_numbers"><span>$1.50</span> per acre for five years
           <br> <span>$2.00</span> per acre thereafter</p>
       </div>
       <div>
-        <h2>Royalty</h2>
+        <h3 class="h2">Royalty</h3>
         <p class="revenues_page-forms_numbers"><span>12.5%</span></p>
       </div>
       <div>

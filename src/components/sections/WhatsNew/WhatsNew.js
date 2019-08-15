@@ -12,6 +12,7 @@ const WhatsNew = props => (
         <li>Published <Link to="blog/beyond-open-data/">blog post on how we're going beyond recent government mandates to provide open data </Link></li>
         <li>Updated monthly revenue and production data</li>
         <li>Updated calendar year <Link to="explore/#production">production</Link> and <Link to="explore/#revenue">revenue</Link> data through 2018</li>
+        <li>Updated <Link to="downloads/federal-disbursements-by-month/">disbursements data through June 2019 </Link></li>
       </ul>
 
       <p>Review our <a href="https://github.com/ONRR/doi-extractives-data/releases">full release details</a>.</p>

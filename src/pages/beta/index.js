@@ -164,7 +164,7 @@ class Beta extends React.Component {
 				  >
       <p><em>Select a state for detailed production, revenue, and disbursements data.</em></p>
 		      <MapSection 
-			info="Revenue by state and offshore region for fiscal year 2018"
+			info="Federal revenue by state and offshore region for fiscal year 2018"
 			states={this.props.data.states_data.states}
 			offshore_regions={this.props.data.offshore_data.offshore_regions}
 			mapFeatures="states"

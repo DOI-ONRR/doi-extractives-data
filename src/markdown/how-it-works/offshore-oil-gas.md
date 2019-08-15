@@ -101,22 +101,22 @@ permalink: /how-it-works/offshore-oil-gas/
 </section>
 <div class="slab-beta revenues_page-forms">
   <section class="container-outer">
-    <h1>Revenue collected by ONRR</h1>
+    <h2>Revenue collected by ONRR</h2>
     <div class="revenues_page-forms_options">
       <div>
-        <h2>Bonus</h2>
+        <h3 class="h2">Bonus</h3>
         <p>The amount the highest bidder paid for a natural resource lease.</p>
       </div>
       <div>
-        <h2>Rent</h2>
+        <h3 class="h2">Rent</h3>
         <p class="revenues_page-forms_numbers_first">Starts at
           <br><span>$7</span> or <span>$11</span> per acre, can increase to
           <br><span>$44</span> per acre</p>
         <p>The starting amount depends on depth, and it increases throughout the term of the lease up to <span>$44.00</span> per acre in some cases.</p>
       </div>
       <div>
-        <h2>Royalty</h2>
-        <p class="revenues_page-forms_numbers"><span>12.5%, 16.67%,</span> or <span>18.75%</span></p>
+        <h3 class="h2">Royalty</h3>
+        <p class="revenues_page-forms_numbers"><span>12.5%</span> or <span>18.75%</span></p>
       </div>
       <div>
       </div>

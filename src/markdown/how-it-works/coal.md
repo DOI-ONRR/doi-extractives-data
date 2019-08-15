@@ -21,7 +21,6 @@ permalink: /how-it-works/coal/
 		  </div>
 		  <h1>Coal</h1>
 		  <p class="revenues_subpage-intro_text">The Department of the Interior is responsible for 570 million acres of federal land with coal resources. This responsibility comes from the Mineral Leasing Act of 1920 and the Mineral Leasing Act for Acquired Lands of 1947, as amended.</p>
-		  <p class="revenues_subpage-intro_text">In 2013, the United States was the world’s second largest coal producer after China. The U.S. has significant available coal reserves: There are 19.7 billion <glossary-term termKey="tons">short tons</glossary-term> of recoverable reserves in active mines, and another 479.9 billion short tons that could be mined with current technologies.</p>
 		</div>
 		<div class="revenues_subpage-office_container revenues_subpage-office_container_layout">
 		  <div class="revenues_subpage-office container">

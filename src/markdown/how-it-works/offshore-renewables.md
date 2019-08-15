@@ -76,6 +76,11 @@ permalink: /how-it-works/offshore-renewables/
             <p>During this period, ONRR collects annual rent from the lease holder. Once the wind facility produces energy, ONRR also collects an <glossary-term termKey="operating fee">Operating Fee</glossary-term>.</p>
             <p>Prior to the end of the lease term, the developer must submit a plan to decommission the facilities.</p>
           </process-step>
+          <process-step stepName="Rates and fees">
+            <ul class="list-bullet">
+              <li><a href="/how-it-works/revenues/#solar-wind-rates">Oil and gas rates and fees</a></li>
+            </ul>
+          </process-step>
           <process-step stepName="Learn more">
             <ul class="list-bullet">
               <li><a href="http://www.boem.gov/Renewable-Energy/">Renewable Energy</a></li>

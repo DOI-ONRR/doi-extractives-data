@@ -75,7 +75,7 @@ permalink: /how-it-works/onshore-renewables/
           </process-step>
           <process-step stepName="Rates and fees">
             <ul class="list-bullet">
-              <li><a href="/how-it-works/revenues/#oil-gas-rates">Oil and gas rates and fees</a></li>
+              <li><a href="/how-it-works/revenues/#solar-wind-rates">Renewables rates and fees</a></li>
             </ul>
           </process-step>
           <process-step stepName="Learn more">

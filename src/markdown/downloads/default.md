@@ -24,7 +24,7 @@ tag:
   </li>
   <li class="downloads-download_links">
     <h3 id="federal-lands-and-waters">Production by year</h3>
-    <p>This dataset includes commodity volumes of natural resources extracted from federal lands and waters. Production volumes are available by state, county, and offshore area. We offer federal production data for calendar and fiscal years. We offer Native American production at the national level for fiscal year as well. </p>
+    <p>This dataset includes commodity volumes of natural resources extracted from Native American lands and federal lands and waters. Production volumes are available by state, county, and offshore area for federal production data. Location data is <glossary-term>withheld</glossary-term> for Native American data. We offer federal production data for calendar and fiscal years. We offer Native American production for fiscal year only. </p>
     <download-data-link to="/downloads/federal-production/">Downloads and documentation</download-data-link>
   </li>
 </ul>

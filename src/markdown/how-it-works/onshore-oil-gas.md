@@ -118,8 +118,8 @@ permalink: /how-it-works/onshore-oil-gas/
 <div class="slab-alpha revenues_subpage-involved">
   <section class="container-outer">
     <div class="container-left-4">
-      <h1>Get involved</h1>
-      <h2 class="h4">Participate in the onshore oil and gas leasing process.</h2>
+      <h2>Get involved</h2>
+      <h3 class="h4">Participate in the onshore oil and gas leasing process.</h3>
     </div>
     <div class="container-right-8">
       <div class="revenues_subpage-involved_participate">

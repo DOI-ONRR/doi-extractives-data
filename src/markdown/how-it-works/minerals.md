@@ -87,14 +87,14 @@ permalink: /how-it-works/minerals/
         <p class="revenues_page-forms_numbers_first">Claim-staking Fees</p>
         <p class="revenues_page-forms_numbers"><span>$20</span>
           <br>Processing Fee
-          <br><span>$37</span>
+          <br><span>$40</span>
           <br>Location Fee
-          <br><span>$155</span> Initial
+          <br><span>$165</span> Initial
           <br>Maintenance Fee
         </p>
         <p class="revenues_page-forms_numbers">On acquired lands, one-time <span>$6,500</span> Prospecting Permit Fee</p>
         <p class="revenues_page-forms_numbers_first">Annual Fees</p>
-        <p class="revenues_page-forms_numbers"><span>$155</span>
+        <p class="revenues_page-forms_numbers"><span>$165</span>
         <br>Annual Maintenance Fee
         </p>
       </div>

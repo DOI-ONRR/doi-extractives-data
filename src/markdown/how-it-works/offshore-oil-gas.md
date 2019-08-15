@@ -131,17 +131,6 @@ permalink: /how-it-works/offshore-oil-gas/
     </div>
     <div class="container-right-8">
       <div class="revenues_subpage-involved_participate">
-        <div class="container-half container-half-space">
-          <a class="link-no_under" href="https://www.youtube.com/channel/UCXL807nkJMCuxNj5kF09LLQ">
-            <img src="/public/img/icons/youtube-play.svg" class="u-padding-right icon-medium"/>
-          <h3>YouTube</h3>
-          </a>
-          <p><strong>Comment on the leasing program.</strong> Planning for the 2019–2024 Five Year Program is underway. BOEM wants input from anyone that may be affected, positively or negatively, by Outer Continental Shelf oil and gas development activity. Watch the video and <a href="https://www.boem.gov/National-Program/">visit BOEM’s website</a> for more details.</p>
-        </div>
-        <div class="container-half container-half-space_top revenues_subpage-involved_video">
-          <iframe title="get involved video" src="https://www.youtube.com/embed/M_u_1TeaefI" frameborder="0" allowfullscreen></iframe>
-        </div>
-      </div>
       <div>
         <div class="revenues_subpage-involved_option">
           <a class="link-no_under" href="https://www.facebook.com/BureauOfOceanEnergyManagement">

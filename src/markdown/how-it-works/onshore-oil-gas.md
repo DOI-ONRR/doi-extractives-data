@@ -32,7 +32,7 @@ permalink: /how-it-works/onshore-oil-gas/
         /
       </div>
       <h1>Onshore Oil &amp; Gas</h1>
-      <p class="revenues_subpage-intro_text">The Federal Land Policy and Management Act of 1976 and the Mineral Leasing Act of 1920 grant BLM the authority to manage federal lands, including leasing certain lands for oil and gas development. The Oil and Gas Management Program includes over 63,000 onshore oil and gas wells on federal lands.</p>
+      <p class="revenues_subpage-intro_text">The Federal Land Policy and Management Act of 1976 and the Mineral Leasing Act of 1920 grant BLM the authority to manage federal lands, including leasing certain lands for oil and gas development. The Oil and Gas Management Program oversees onshore oil and gas wells on federal lands.</p>
     </div>
    <!-- start aside-->   
     <div class="revenues_subpage-office_container revenues_subpage-office_container_layout">

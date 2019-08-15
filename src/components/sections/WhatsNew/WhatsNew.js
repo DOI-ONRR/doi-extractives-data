@@ -7,7 +7,7 @@ const WhatsNew = props => (
   <section className={styles.root + ' slab-delta'}>
   	<div className="container-page-wrapper">
       <h2>What's new</h2>
-      <p>In our latest release on August 2, 2019, we made the following changes:</p>
+      <p>In our latest release on August 19, 2019, we made the following changes:</p>
       <ul className="list-bullet ribbon-card-top-list">
         <li>Published <Link to="blog/beyond-open-data/">blog post on how we're going beyond recent government mandates to provide open data </Link></li>
         <li>Updated monthly revenue and production data</li>

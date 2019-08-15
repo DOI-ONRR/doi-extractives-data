@@ -88,7 +88,7 @@ permalink: /how-it-works/offshore-oil-gas/
             <p>BOEM requires that companies remove retired offshore drilling platforms from the marine environment within one year after the end of an operation. The lease holder is required to remove the platform from its foundation by severing all bottom-founded components at least 15 feet below the mudline and disposing of the structures in a scrap or fabrication yard. Alternatively, the platform can be used to create an artificial reef underwater.</p>
             <p>Lease holders post bonds held by the government to ensure compliance with lease terms, including decommissioning the site. If the lease holder fails to decommission the site, the government may use the bonds to cover the cost of decommissioning. If the lease holder complies, the government returns the bonds to the lease holder at the end of the operation.</p>
           </process-step>
-          <process-step stepId="6" stepName="Rates and fees">
+          <process-step stepName="Rates and fees">
             <ul class="list-bullet">
               <li><a href="/how-it-works/revenues/#oil-gas-rates">Oil and gas rates and fees</a></li>
             </ul>

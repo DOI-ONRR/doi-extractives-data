@@ -52,16 +52,9 @@ all_production:
     - product: Crude Oil
       name: Crude Oil
       units: bbl
-      value: 377803000
+      value: 377968000
       rank: 2
-      percent: 11.68
-  '2017':
-    - product: Crude Oil
-      name: Crude Oil
-      units: bbl
-      value: 392127000
-      rank: 2
-      percent: 11.47
+      percent: 11.66
 federal_production:
   '2008':
     - product: Oil (bbl)
@@ -440,3 +433,28 @@ revenue:
       value: 7020492.63
       rank: 4
       percent: 0.7
+  '2018':
+    - product: All
+      name: null
+      units: null
+      value: 289595600.79
+      rank: 3
+      percent: 2.9
+    - product: Oil
+      name: null
+      units: null
+      value: 253860925.16
+      rank: 3
+      percent: 4.2
+    - product: Gas
+      name: null
+      units: null
+      value: 23749180.7
+      rank: 5
+      percent: 2.5
+    - product: NGL
+      name: null
+      units: null
+      value: 7350341.48
+      rank: 5
+      percent: 1.8

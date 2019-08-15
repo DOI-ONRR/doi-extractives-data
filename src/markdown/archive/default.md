@@ -2,6 +2,16 @@
 title: Archive
 layout: archive-default
 permalink: /archive/
+tag:
+- EITI
+- Extractive Industries Transparency Initiative
+- USEITI
+- archive
+- reconciliation
+- Independent Administrator
+- case studies
+- jobs
+- GDP
 ---
 
 <section class="slab-delta">
@@ -54,6 +64,26 @@ permalink: /archive/
             <h3 class="h3 landing-heading"><a href="/downloads/report/">Executive summaries</a></h3>
             <p>These reports outline progress made by the Department of the Interior and the Office of Natural Resources Revenue (ONRR) to enact the Extractive Industries Transparency Initiative (EITI). Reports are available for the years 2015, 2016, and 2017.</p>
             <p><a href="/downloads/report/">Review the executive summaries</a></p>
+          </div>
+        </div>
+      </section>
+      <section class="container">
+        <h2 id="resources" alt="Natural resources" class="h2-bar">About natural resources</h2>
+        <div class="container landing-section">
+          <div>
+            <h3 class="h3 landing-heading"><custom-link to="/how-it-works/fossil-fuels">Fossil fuels</custom-link></h3>
+            <p>Fossil fuels are our main source of electricity, and the primary fuel for powering motor vehicles and heating homes.</p>
+            <p><custom-link to="/how-it-works/fossil-fuels">Learn about oil, gas, and coal</custom-link></p>
+          </div>
+          <div>
+            <h3 class="h3 landing-heading"><custom-link to="/how-it-works/nonenergy-minerals">Nonenergy minerals</custom-link></h3>
+            <p>Nonenergy minerals include base and precious metals, industrial metals, and gemstones, among others.</p>
+            <p><custom-link to="/how-it-works/nonenergy-minerals">Learn about nonenergy minerals</custom-link></p>
+          </div>
+          <div>
+            <h3 class="h3 landing-heading"><custom-link to="/how-it-works/renewables">Renewables</custom-link></h3>
+            <p>Renewable energy comes from sources that are not depleted when used. These resources include geothermal, solar, wind, water, and biomass.</p>
+            <p><custom-link to="/how-it-works/renewables">Learn about renewable energy</custom-link></p>
           </div>
         </div>
       </section>

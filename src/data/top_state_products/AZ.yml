@@ -59,16 +59,9 @@ all_production:
     - product: Solar
       name: Solar
       units: Mwh
-      value: 3765824.88
-      rank: 2
-      percent: 10.44
-  '2017':
-    - product: Solar
-      name: Solar
-      units: Mwh
-      value: 4737097.26
+      value: 3752925.32
       rank: 3
-      percent: 8.95
+      percent: 10.21
 revenue:
   '2006':
     - product: Geothermal

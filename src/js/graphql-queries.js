@@ -38,7 +38,7 @@ module.exports = Object.freeze({
 	      }
 	    }
     }`,
-    MARKDOWN_ARCHIVE:
+  MARKDOWN_ARCHIVE:
 		`allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/archive/"}}) {
 	    pages: edges {
 	      page: node {
@@ -91,8 +91,76 @@ module.exports = Object.freeze({
             redirect_from
             unique_id
             neighbors
+            is_cropped
           }
           htmlAst
+        }
+      }
+    }`,
+  OFFSHORE_REVENUE:
+    `RevenueGroupByCommodity: allResourceRevenuesCalendarYear(filter: {Commodity: {ne: "Not tied to a commodity"}, LandCategory: {eq: "Offshore"}}) {
+      group(field: Commodity) {
+        id: fieldValue
+        edges {
+          node {
+            id
+            Commodity
+            Revenue
+            CalendarYear
+            RevenueType
+            FipsCode
+            LandCategory
+            OffshoreRegion
+            OffshorePlanningArea
+          }
+        }
+      }
+    }`,
+  OFFSHORE_REVENUE_BY_CY:
+    `RevenueGroupByCY: allResourceRevenuesCalendarYear(filter: {Commodity: {ne: "Not tied to a commodity"}, LandCategory: {eq: "Offshore"}}) {
+      group(field: CalendarYear) {
+        id: fieldValue
+        edges {
+          node {
+            id
+          }
+        }
+      }
+    }`,
+  OFFSHORE_PRODUCTION:
+    `OffshoreProductionByProduct: allProductVolumesCalendarYear(filter: {
+      OnshoreOffshore: {eq: "Offshore"}}) {
+      group(field: ProductName) {
+        id: fieldValue
+        edges {
+          node {
+            id
+            ProductName
+            ProductionDate
+            ProductionYear
+            Units
+            LongUnits
+            Volume
+            Withheld
+            LandCategory
+            County
+            FipsCode
+            State
+            OnshoreOffshore
+            OffshoreRegion
+            OffshorePlanningArea
+          }
+        }
+      }
+    }
+    OffshoreProductionByYear: allProductVolumesCalendarYear(filter: {
+      OnshoreOffshore: {eq: "Offshore"}}) {
+      group(field: ProductionYear) {
+        id: fieldValue
+        edges {
+          node {
+            id
+          }
         }
       }
     }`,

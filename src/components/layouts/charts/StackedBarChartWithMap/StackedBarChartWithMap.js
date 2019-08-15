@@ -1,12 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import MediaQuery from 'react-responsive'
 
 import styles from './StackedBarChartWithMap.module.scss'
 
 const StackedBarChartWithMap = props => {
   let { chartTitle, chart, chartContentDetails, mapTitle, map, legend } = props
-  //console.log(props);
+  // console.log(props);
 
   return (
     <div className={styles.root}>

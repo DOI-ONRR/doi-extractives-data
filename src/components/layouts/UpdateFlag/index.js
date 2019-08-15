@@ -1,1 +1,1 @@
-export {default as UpdateFlag} from './UpdateFlag';
+export { default as UpdateFlag } from './UpdateFlag'

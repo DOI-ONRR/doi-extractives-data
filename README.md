@@ -30,3 +30,32 @@ This project is in the worldwide [public domain](LICENSE.md). As stated in [CONT
 [Ruby]: https://www.ruby-lang.org/en/
 [Jekyll]: http://jekyllrb.com/
 [Node]: https://nodejs.org/en/
+
+## Development Environment
+
+### How it works
+This project uses the [GatsbyJS](https://www.gatsbyjs.org/) open source framework. This framework builds static web pages that then are published to our production environment. You can read more about Gatsby on their website.
+
+#### High Level Overview
+Data and content is read into a graphql schema. This graphql schema is then used to create queries to get the data and content needed to create the pages in the site. Pages are generated either by a template or a React component in the pages directory. Once the page is built it is copied to the public directory into the appropriate subdirectory. All javascript, css and data are embedded into the page. At runtime the react components are initialzed and the page is rendered.
+
+
+
+### Getting Started
+Prerequisites:
+- node
+- npm
+
+Once you have cloned the repository run:
+> `npm install`
+
+Local dev commands:
+- `npm run develop` - This will start a local server running on port 8000 by default
+- `npm run build` - This will create the static html pages that are used in the production environment
+- `npm run server` - If you have run the local build command this wil start a web server so you can view the static html files on port 9000 by default
+- `npm run clean` - This wil clean the cache created by the gatsby build process. Use this when you need a refresh the data the site uses.
+- `npm run format` - This site uses eslint for fomratting and syntax checking
+- `npm run test` - We current use Jest to create unit tests. This command will run all the tests locally.
+
+
+

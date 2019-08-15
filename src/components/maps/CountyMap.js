@@ -1,12 +1,13 @@
 import React from 'react'
 import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from 'react-html-parser'
-import Link from '../utils/temp-link'
-import { withPrefixSVG } from '../utils/temp-link'
+import Link, { withPrefixSVG } from '../utils/temp-link'
 
 import lazy from 'lazy.js'
 
 import VIEWBOXES from '../../data/viewboxes.yml'
 import VIEWBOXES_CROPPED from '../../data/viewboxes_cropped.yml'
+import VIEWBOXES_OFFSHORE from '../../data/viewboxes_offshore.yml'
+import VIEWBOXES_OFFSHORE_CROPPED from '../../data/viewboxes_offshore_cropped.yml'
 
 import iconPlus from '../../img/icons/icon-circled-plus.svg'
 import iconMinus from '../../img/icons/icon-circled-minus.svg'
@@ -17,9 +18,21 @@ const CountyMap = props => {
 
   let localityName = usStateData.locality_name || 'County'
 
+  if (usStateData.unique_id === 'AK') {
+    localityName = 'Borough'
+  }
+
+  if (usStateData.unique_id === 'LA') {
+    localityName = 'Parish'
+  }
+
   let legendUnits = props.shortUnits || props.units
 
   let viewBox = (usStateData.is_cropped) ? VIEWBOXES_CROPPED[usStateData.unique_id] : VIEWBOXES[usStateData.unique_id]
+  if (viewBox === undefined) {
+    viewBox = (usStateData.is_cropped) ? VIEWBOXES_OFFSHORE_CROPPED[usStateData.unique_id] : VIEWBOXES_OFFSHORE[usStateData.unique_id]
+  }
+
   let viewBoxList
   let breakpointWidth
   let breakpointHeight
@@ -48,7 +61,7 @@ const CountyMap = props => {
   let paddingBottom = (mediaWidth * dataDimensions) + additionalPadding
 
   let usStatesSVG = withPrefixSVG('/maps/states/all.svg')
-  let usStateSVG = withPrefixSVG('/maps/states/' + usStateData.unique_id + '.svg')
+  let usStateSVG = (usStateData.unique_id === 'pacific') ? withPrefixSVG('/maps/offshore/all.svg') : withPrefixSVG('/maps/states/' + usStateData.unique_id + '.svg')
 
   function getNeighbors_Features () {
     let content = ''
@@ -105,13 +118,20 @@ const CountyMap = props => {
 
 		            {
 		                (lazy(props.countyProductionData).toArray()).map((countyData, index) => {
-		                	if (countyData[1].products[props.productKey]) {
+                let data = (countyData[1].products) ? countyData[1].products[props.productKey] : countyData[1].revenue
+                let dataValue = (countyData[1].products)
+                  ? (countyData[1].products[props.productKey] && countyData[1].products[props.productKey].volume[props.year])
+                  : countyData[1].revenue[props.year]
+                let dataValues = (countyData[1].products)
+                  ? (countyData[1].products[props.productKey] && JSON.stringify(countyData[1].products[props.productKey].volume))
+                  : JSON.stringify(countyData[1].revenue)
+		                	if (data && dataValues) {
 			                    return (
 			                        <g key={index}
 			                            className="county feature"
 			                            data-fips={countyData[0]}
-			                            data-value={countyData[1].products[props.productKey].volume[props.year]}
-			                            data-year-values={JSON.stringify(countyData[1].products[props.productKey].volume)}
+			                            data-value={dataValue }
+			                            data-year-values={dataValues}
 			                            >
 			                            <data>{ countyData[1].name }</data>
 			                            <use xlinkHref={usStateSVG + '#county-' + countyData[0]}></use>
@@ -127,13 +147,20 @@ const CountyMap = props => {
 
             {
 		                (lazy(props.countyProductionData).toArray()).map((countyData, index) => {
-		                	if (countyData[1].products[props.productKey]) {
+                let data = (countyData[1].products) ? countyData[1].products[props.productKey] : countyData[1].revenue
+                let dataValue = (countyData[1].products)
+                  ? (countyData[1].products[props.productKey] && countyData[1].products[props.productKey].volume[props.year])
+                  : countyData[1].revenue[props.year]
+                let dataValues = (countyData[1].products)
+                  ? (countyData[1].products[props.productKey] && JSON.stringify(countyData[1].products[props.productKey].volume))
+                  : JSON.stringify(countyData[1].revenue)
+		                	if (data && dataValues) {
 			                    return (
 			                        <g key={index}
 			                            className="county feature only-stroke"
 			                            data-fips={countyData[0]}
-			                            data-value={countyData[1].products[props.productKey].volume[props.year]}
-			                            data-year-values={JSON.stringify(countyData[1].products[props.productKey].volume)}
+			                            data-value={dataValue}
+			                            data-year-values={dataValues}
 			                            >
 			                            <use xlinkHref={usStateSVG + '#county-' + countyData[0]}></use>
 			                        </g>
@@ -152,9 +179,14 @@ const CountyMap = props => {
           {props.isCaption &&
 					<div>
 					  <figcaption className="legend-data">
-					    {localityName } production of {props.productName.toLowerCase()} in <span data-year={ props.year }>{ props.year }</span>
-					    {legendUnits &&
-									<span className="legend-units"> ({legendUnits})</span>
+					    {props.productName.toLowerCase() === 'revenue'
+					      ? <React.Fragment>
+                  Revenue by {localityName.toLowerCase()} in <span data-year={ props.year }>{ props.year }</span>
+					      </React.Fragment>
+					      : <React.Fragment>
+					        {localityName } production of {props.productName.toLowerCase()} in <span data-year={ props.year }>{ props.year }</span>
+					        {legendUnits && <span className="legend-units"> ({legendUnits})</span>}
+					      </React.Fragment>
 					    }
 					  </figcaption>
 					  <figcaption className="legend-no-data" aria-hidden="true">

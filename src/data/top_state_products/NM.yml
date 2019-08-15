@@ -48,13 +48,6 @@ all_production:
       value: 515054.21
       rank: 5
       percent: 2.91
-  '2017':
-    - product: Crude Oil
-      name: Crude Oil
-      units: bbl
-      value: 171440000
-      rank: 5
-      percent: 5.01
 federal_production:
   '2008':
     - product: Langbeinite (tons)
@@ -1135,3 +1128,52 @@ revenue:
       value: 608236.1
       rank: 4
       percent: 1.3
+  '2018':
+    - product: All
+      name: null
+      units: null
+      value: 2447493889.24
+      rank: 1
+      percent: 24.6
+    - product: Oil & Gas (Non-Royalty)
+      name: null
+      units: null
+      value: 1176160287.38
+      rank: 1
+      percent: 64.6
+    - product: Oil
+      name: null
+      units: null
+      value: 884214639.07
+      rank: 1
+      percent: 14.5
+    - product: Gas
+      name: null
+      units: null
+      value: 247883533.31
+      rank: 2
+      percent: 26.4
+    - product: NGL
+      name: null
+      units: null
+      value: 121462098.98
+      rank: 1
+      percent: 30.5
+    - product: Other Products
+      name: null
+      units: null
+      value: 9507297.3
+      rank: 4
+      percent: 7
+    - product: Coal
+      name: null
+      units: null
+      value: 7423882.25
+      rank: 5
+      percent: 1.4
+    - product: Potassium
+      name: null
+      units: null
+      value: 798284.1
+      rank: 1
+      percent: 68.7

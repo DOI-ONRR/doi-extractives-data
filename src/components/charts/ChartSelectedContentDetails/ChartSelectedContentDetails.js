@@ -19,7 +19,7 @@ class ChartSelectedContentDetails extends React.Component {
 
   shouldComponentUpdate (nextProps, nextState) {
     return (
-      (this.state.dataSet !== undefined) && 
+      (this.state.dataSet !== undefined) &&
       (this.state.dataSet.lastUpdated !== nextProps.dataSet.lastUpdated ||
       this.state.dataSet.selectedDataKey !== nextProps.dataSet.selectedDataKey)
     )

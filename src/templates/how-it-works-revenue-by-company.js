@@ -1,10 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import Link from '../components/utils/temp-link'
-import { withPrefixSVG } from '../components/utils/temp-link'
-
+import Link, { withPrefixSVG } from '../components/utils/temp-link'
 import { DownloadDataLink } from '../components/layouts/icon-links/DownloadDataLink'
-
 import DefaultLayout from '../components/layouts/DefaultLayout'
 import GlossaryTerm from '../components/utils/glossary-term.js'
 
@@ -38,11 +35,11 @@ class HowItWorksRevenueByCompany extends React.Component {
 
     return (
       <DefaultLayout>
-  			<div>
+        <div>
           <Helmet
             title={title}
             meta={[
-              // title
+            // title
               { name: 'og:title', content: title },
               { name: 'twitter:title', content: title },
             ]}
@@ -79,7 +76,7 @@ class HowItWorksRevenueByCompany extends React.Component {
                 <div>
                   <div>
                     <Link className="breadcrumb" to="/how-it-works/">How it works</Link>
-                    /
+                  /
                   </div>
 
                   <h1>Federal Revenue by Company</h1>
@@ -99,7 +96,13 @@ class HowItWorksRevenueByCompany extends React.Component {
               <div className="container-right-8">
 
                 <div className="sticky sticky_nav sticky_nav-show_mobile filters-wrapper container" data-toggler="filters" aria-expanded="false">
-                  <button class="toggle-filters toggle-desktop" is="eiti-toggle" aria-controls="filters" data-expanded-text="Hide filters" data-collapsed-text="Show filters" data-toggler="filters">Show filters</button>
+                  <button
+                    class="toggle-filters toggle-desktop"
+                    is="eiti-toggle"
+                    aria-controls="filters"
+                    data-expanded-text="Hide filters"
+                    data-collapsed-text="Show filters"
+                    data-toggler="filters">Show filters</button>
 
                   <form id="filters" aria-hidden="true" className="filters">
 
@@ -135,7 +138,12 @@ class HowItWorksRevenueByCompany extends React.Component {
                   </h1>
 
                   <div className="container">
-                    <button class="toggle-filters toggle" is="eiti-toggle" aria-controls="filters" data-expanded-text="Hide filters" data-toggler="filters" data-collapsed-text="Show filters">Show filters</button>
+                    <button
+                      class="toggle-filters toggle"
+                      is="eiti-toggle" aria-controls="filters"
+                      data-expanded-text="Hide filters"
+                      data-toggler="filters"
+                      data-collapsed-text="Show filters">Show filters</button>
                   </div>
 
                 </div>

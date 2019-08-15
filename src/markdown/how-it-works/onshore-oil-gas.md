@@ -62,7 +62,7 @@ permalink: /how-it-works/onshore-oil-gas/
       <div class="container">
         <process-group>
           <process-step stepId="1" stepName="Plan" expanded="true">
-            <p>BLM field offices prepare comprehensive Resource Management Plans (RMPs) to guide leasing decisions on federal lands, including which lands are open to oil and gas leasing, and which lands are closed. Currently 8% of all oil and 11% of all natural gas on federal lands are available for extraction through leasing. BLM field offices develop RMPs in line with multiple-use and sustained-yield principles, and by engaging the public and various levels of government.</p>
+            <p>BLM field offices prepare comprehensive Resource Management Plans (RMPs) to guide leasing decisions on federal lands, including which lands are open to oil and gas leasing, and which lands are closed. BLM field offices develop RMPs in line with multiple-use and sustained-yield principles, and by engaging the public and various levels of government.</p>
           </process-step>
           <process-step stepId="2" stepName="Lease">
             <p>BLM field offices award leases for oil and gas resources on lands designated within RMPs during frequent (often quarterly) live lease auctions open to the public. Before the live auction, the BLM field office estimates the <glossary-term>fair market value</glossary-term> for the natural resources in question.</p>

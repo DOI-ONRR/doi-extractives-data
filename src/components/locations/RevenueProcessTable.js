@@ -467,7 +467,6 @@ const RevenueProcessTable = props => {
 				  <tr>
 				    <th className="table-arrow_box-subcategory">Hardrock Acquired lands</th>
 				    <td>
-				      <strong>$6,500</strong> prospecting permit fee
 				    </td>
 				    <td>
 				      <strong>$37</strong> annual rent per acre + <strong>$0.50</strong> annual prospecting fee per acre

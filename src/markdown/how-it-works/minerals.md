@@ -80,10 +80,10 @@ permalink: /how-it-works/minerals/
 </section>
 <div class="slab-beta revenues_page-forms">
 	<section class="container-outer">
-    <h1>Revenue collected by BLM and ONRR</h1>
+    <h2>Revenue collected by BLM and ONRR</h2>
     <div class="revenues_page-forms_options">
       <div>
-        <h2>Fees</h2>
+        <h3 class="h2">Fees</h3>
         <p class="revenues_page-forms_numbers_first">Claim-staking Fees</p>
         <p class="revenues_page-forms_numbers"><span>$20</span>
           <br>Processing Fee
@@ -99,11 +99,11 @@ permalink: /how-it-works/minerals/
         </p>
       </div>
       <div>
-        <h2>Bonus</h2>
+        <h3>Bonus</h3>
         <p>No bonuses are paid for locatable hardrock mining</p>
       </div>
       <div>
-        <h2>Rent</h2>
+        <h3>Rent</h3>
         <p>Miners only pay annual fees and rent on acquired lands.</p>
         <p class="revenues_page-forms_numbers_last"><span>$0.50</span> per acre
         <br>Prospecting Fee
@@ -111,7 +111,7 @@ permalink: /how-it-works/minerals/
         <br>Rent</p>
       </div>
       <div>
-        <h2>Royalty</h2>
+        <h3>Royalty</h3>
         <p>No royalties are paid for locatable hardrock mining. Mining hardrock minerals on acquired land is exempt from minimum production and royalty requirements under <a href="http://www.gpo.gov/fdsys/pkg/CFR-2011-title43-vol2/xml/CFR-2011-title43-vol2-part3500-subpart3504.xml">Title 43 in the Code of Federal Regulations.</a></p>
       </div>
     </div>

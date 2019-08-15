@@ -48,7 +48,7 @@ permalink: /how-it-works/minerals/
 		  <div class="container">
 		  	<process-group>
 		  		<process-step stepId="1" stepName="Plan" expanded="true">
-            <p>Hardrock mining on federal public domain lands takes place in 19 states, primarily in the western U.S. (Alaska, Alabama, Arizona, Arkansas, California, Colorado, Florida, Idaho, Mississippi, Montana, Nebraska, Nevada, New Mexico, North Dakota, Oregon, South Dakota, Utah, Washington, and Wyoming). Within these states certain federal lands, such as wildlife refuges, are not open for mining.</p>
+            <p>Hardrock mining on federal public domain lands takes place primarily in the western U.S. Certain federal lands – such as wildlife refuges – are not open for mining.</p>
             <p>While some hardrock mineral leasing occurs on federal acquired lands, the vast majority of hardrock mining on federal lands occurs on public domain lands through the claim-staking process, which was originally outlined in the 1872 General Mining Act to encourage settlement in the West.</p> 
           </process-step>
 		  		<process-step stepId="2" stepName="Claim">

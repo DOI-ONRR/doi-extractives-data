@@ -86,18 +86,18 @@ permalink: /how-it-works/onshore-renewables/
 </section>
 <div class="slab-beta revenues_page-forms">
   <section class="container-outer">
-    <h1>Revenue collected by BLM</h1>
+    <h2>Revenue collected by BLM</h2>
     <div class="revenues_page-forms_options">
       <div>
-        <h2>Bonus</h2>
+        <h3 class="h2">Bonus</h3>
         <p>The amount the highest bidder will pay for a natural resource lease.</p>
       </div>
       <div>
-        <h2>Rent</h2>
+        <h3 class="h2">Rent</h3>
         <p>Rent is determined by the acre and based on land values.</p>
       </div>
       <div>
-        <h2>Fees</h2>
+        <h3 class="h2">Fees</h3>
         <p class="revenues_page-forms_numbers_first">
           <span>$5,010</span> per MW
           <br>annual wind fee

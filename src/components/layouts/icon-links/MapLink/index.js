@@ -1,1 +1,1 @@
-export default from './MapLink';
+export default from './MapLink'

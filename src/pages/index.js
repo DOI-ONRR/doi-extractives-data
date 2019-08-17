@@ -3,25 +3,17 @@ import Helmet from 'react-helmet'
 import { connect } from 'react-redux'
 import Link from '../components/utils/temp-link'
 
-import { hydrate as hydateDataManagerAction } from '../state/reducers/data-sets'
-import { normalize as normalizeDataSetAction } from '../state/reducers/data-sets'
 import {
+  hydrate as hydateDataManagerAction,
+  normalize as normalizeDataSetAction,
   PRODUCT_VOLUMES_FISCAL_YEAR,
   REVENUES_MONTHLY,
   REVENUES_FISCAL_YEAR,
-  BY_ID, BY_COMMODITY,
-  BY_STATE, BY_COUNTY,
-  BY_OFFSHORE_REGION,
-  BY_LAND_CATEGORY,
-  BY_LAND_CLASS,
-  BY_REVENUE_TYPE,
   BY_FISCAL_YEAR,
   BY_CALENDAR_YEAR
 } from '../state/reducers/data-sets'
 
 import * as CONSTANTS from '../js/constants'
-import utils from '../js/utils'
-
 import { KeyStatsSection } from '../components/sections/KeyStatsSection'
 import { MapSection } from '../components/sections/MapSection'
 import { WhatsNew } from '../components/sections/WhatsNew'
@@ -54,14 +46,14 @@ class HomePage extends React.Component {
    * reducers
    **/
   hydrateStore () {
-    let data = this.props.data;
+    let data = this.props.data
 
     this.props.normalizeDataSet([
       { key: REVENUES_MONTHLY,
         data: data.allMonthlyRevenues.data,
         groups: [
           {
-            key:BY_CALENDAR_YEAR,
+            key: BY_CALENDAR_YEAR,
             groups: data.allMonthlyRevenuesByCalendarYear.group
           }
         ]
@@ -70,7 +62,7 @@ class HomePage extends React.Component {
         data: data.allFiscalYearRevenues.data,
         groups: [
           {
-            key:BY_FISCAL_YEAR,
+            key: BY_FISCAL_YEAR,
             groups: data.allFiscalYearRevenuesByFiscalYear.group
           }
         ]
@@ -80,20 +72,20 @@ class HomePage extends React.Component {
         data: data.allFiscalYearProductVolumes.data,
         groups: [
           {
-            key:BY_FISCAL_YEAR+"_Gas",
+            key: BY_FISCAL_YEAR + '_Gas',
             groups: data.allFiscalYearProductVolumesByFiscalYear_Gas.group
           },
           {
-            key:BY_FISCAL_YEAR+"_Oil",
+            key: BY_FISCAL_YEAR + '_Oil',
             groups: data.allFiscalYearProductVolumesByFiscalYear_Oil.group
           },
           {
-            key:BY_FISCAL_YEAR+"_Coal",
+            key: BY_FISCAL_YEAR + '_Coal',
             groups: data.allFiscalYearProductVolumesByFiscalYear_Coal.group
           }
         ]
       }
-    ]);
+    ])
 
     this.props.hydateDataManager([
       { key: CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY, data: this.props.data.OilVolumes.volumes },
@@ -267,7 +259,7 @@ export const query = graphql `
         }
       }
     }
-    OilVolumes:allProductVolumes (
+    OilVolumes:allProductVolumesMonthly (
       filter:{ProductName:{eq: "Oil"}}
       sort:{fields:[ProductionDate], order: DESC}
     ) {
@@ -288,7 +280,7 @@ export const query = graphql `
         }
       }
     }
-    GasVolumes:allProductVolumes (
+    GasVolumes:allProductVolumesMonthly (
       filter:{ProductName:{eq: "Gas"}}
       sort:{fields:[ProductionDate], order: DESC}
     ) {
@@ -309,7 +301,7 @@ export const query = graphql `
         }
       }
     }
-    CoalVolumes:allProductVolumes (
+    CoalVolumes:allProductVolumesMonthly (
       filter:{ProductName:{eq: "Coal"}}
       sort:{fields:[ProductionDate], order: DESC}
     ) {

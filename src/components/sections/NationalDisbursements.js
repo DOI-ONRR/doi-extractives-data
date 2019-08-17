@@ -90,7 +90,7 @@ class NationalDisbursements extends React.Component {
 	        </Link>
 	      </p>
 
-	            <StickyHeader headerId="by-fund" headerText='Disbursements by recipient'>
+	            <StickyHeader headerId="by-fund" headerText='Disbursements by recipient' alt="Disbursements">
 	                <YearSelector years={this.state.years} classNames="flex-row-icon" selectYearAction={selectYear} />
 	            </StickyHeader>
 

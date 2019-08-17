@@ -7,7 +7,7 @@ import styles from './BlueButton.module.scss'
 const BlueButton = props => (
   <Link to={props.to} className={styles.root}>
     <div>
-        	{props.children === undefined
+      {props.children === undefined
         ? 'Explore the data'
         : props.children}
     </div>

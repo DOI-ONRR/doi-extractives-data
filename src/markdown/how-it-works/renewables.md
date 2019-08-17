@@ -15,6 +15,8 @@ tag:
 <custom-link to="/how-it-works/" className="breadcrumb link-charlie">How it works</custom-link> /
 # Renewables
 
+<archive-banner></archive-banner>
+
 > Renewable energy comes from sources that are not depleted when used. These resources include geothermal, solar, wind, water, and biomass. All are growing sources of environmentally sustainable energy to meet the country’s electricity needs. [Explore production data](/explore/#production).
 
 ## Geothermal energy

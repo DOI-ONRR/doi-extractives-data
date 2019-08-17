@@ -5,8 +5,6 @@ import Lazy from 'lazy.js'
 
 import utils from '../../js/utils'
 
-import ALL_NATIONAL_REVENUES_BY_TYPE from '../../../static/data/national_revenues_by_type.yml'
-import ALL_STATE_REVENUES_BY_TYPE from '../../../static/data/state_revenues_by_type.yml'
 import ALL_OFFSHORE_REVENUES_BY_TYPE from '../../../static/data/offshore_revenues_by_type.yml'
 import COMMODITIES from '../../../static/data/commodities.yml'
 import NATIONAL_REVENUES_INSPECTION_FEES from '../../../static/data/national_revenues_inspection_fees.yml'
@@ -17,6 +15,57 @@ import OilGasIcon from '-!svg-react-loader!../../img/svg/icon-oil.svg'
 import CoalIcon from '-!svg-react-loader!../../img/svg/icon-coal.svg'
 import GeothermalIcon from '-!svg-react-loader!../../img/svg/icon-geothermal.svg'
 import RenewablesIcon from '-!svg-react-loader!../../img/svg/icon-renewables.svg'
+
+// @TODO Copied from revenuetypetable, need to fix this duplication
+const createRevenueTypeCommoditiesData = (groupByCommodity, groupByYear) => {
+  if (!groupByCommodity) return undefined
+  let data = groupByCommodity
+  let commodityYears = groupByYear.sort(utils.compareValues('id'))
+  if (commodityYears.length > 10) {
+    commodityYears = commodityYears.slice(commodityYears.length - 10)
+  }
+  commodityYears = commodityYears.map(item => parseInt(item.id))
+
+  let commodities = data.reduce((total, item) => {
+    item.edges.forEach(element => {
+      let node = element.node
+      if (commodityYears.includes(node.CalendarYear)) {
+		  total[item.id] = total[item.id] || {}
+		  total[item.id][node.RevenueType] = total[item.id][node.RevenueType] || {}
+		  total[item.id]['All'] = total[item.id]['All'] || {}
+			  total[item.id][node.RevenueType][node.CalendarYear] = (total[item.id][node.RevenueType][node.CalendarYear])
+          ? total[item.id][node.RevenueType][node.CalendarYear] + node.Revenue
+          : node.Revenue
+
+		  total[item.id]['All'][node.CalendarYear] = (total[item.id]['All'][node.CalendarYear])
+          ? total[item.id]['All'][node.CalendarYear] + node.Revenue
+          : node.Revenue
+
+		  if (!total['All']['All'][node.CalendarYear]) {
+          total['All']['All'][node.CalendarYear] = 0
+		  }
+		  total['All'][node.RevenueType] = total['All'][node.RevenueType] || {}
+		  if (!total['All'][node.RevenueType][node.CalendarYear]) {
+          total['All'][node.RevenueType][node.CalendarYear] = 0
+		  }
+		  total['All']['All'][node.CalendarYear] += node.Revenue
+		  total['All'][node.RevenueType][node.CalendarYear] += node.Revenue
+      }
+    })
+
+    return total
+  }, { 'All': { 'All': {} } })
+
+  Object.keys(commodities).forEach(commodity => {
+    Object.keys(commodities[commodity]).forEach(revenueType => {
+      Object.keys(commodities[commodity][revenueType]).forEach(year => {
+		  commodities[commodity][revenueType][year] = parseInt(commodities[commodity][revenueType][year])
+      })
+    })
+  })
+
+  return commodities
+}
 
 const getYearValueForCommodityRevenueType = (commodityRevenueType, year) => {
   return (commodityRevenueType && commodityRevenueType[year] ? commodityRevenueType[year] : 0)
@@ -83,10 +132,16 @@ const RevenueTypeTableRow = props => {
 }
 
 const RevenueProcessTable = props => {
-  let revenueTypes = ALL_STATE_REVENUES_BY_TYPE[props.locationId]
+  let { commodities } = props
+
+  if (props.revenueGroupByCommodity) {
+	  commodities = createRevenueTypeCommoditiesData(props.revenueGroupByCommodity, props.revenueGroupByCalendarYear)
+  }
+
+  let revenueTypes = commodities
 
   if (props.isNationalPage) {
-    revenueTypes = ALL_NATIONAL_REVENUES_BY_TYPE.US
+    revenueTypes = commodities
   }
 
   if (props.isOffshorePage) {
@@ -104,11 +159,7 @@ const RevenueProcessTable = props => {
   let otherProductExists = false
   let allExists = false
 
-  	let commodityName
-  	let commodityValues
-
   	let oilGasRevenueTypeRowHtml
-  	let otherProductsRevenueTypeRowHtml = ''
 
   for (let commodity in revenueTypes) {
   		let commodityName = commodity
@@ -124,7 +175,7 @@ const RevenueProcessTable = props => {
     }
 
     if (Lazy(oilGasCommodities).contains(commodityName)) {
-      oilGasExists = commodityValueExistsForYear
+      oilGasExists = oilGasExists || commodityValueExistsForYear
       if (commodityName.toLowerCase() === 'oil & gas' ||
 				commodityName.toLowerCase() === 'oil & gas (non-royalty)') {
         let commodityNameSlug = utils.formatToSlug(commodityName)

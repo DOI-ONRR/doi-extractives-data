@@ -1,5 +1,4 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
 import MediaQuery from 'react-responsive'
 
@@ -27,8 +26,8 @@ export class ProcessStep extends React.Component {
 	}
 
 	render () {
-		let stepId = this.props.stepId || this.props.stepid;
-		let stepName = this.props.stepName || this.props.stepname;
+	  let stepId = this.props.stepId || this.props.stepid
+	  let stepName = this.props.stepName || this.props.stepname
 	  return (
 	    <div className={styles.processStepContainer}>
 	      {stepId &&
@@ -46,7 +45,7 @@ export class ProcessStep extends React.Component {
 	          onClick={this.handleClick.bind(this)}>
 	          {this.state.expanded
 	            ? <icon className="icon icon-chevron-sm-down"></icon>
-	            :							<icon className="icon icon-chevron-sm-up"></icon>
+	            : <icon className="icon icon-chevron-sm-up"></icon>
 	          }
 	        </button>
 	      </MediaQuery>
@@ -66,8 +65,8 @@ export class ProcessStep extends React.Component {
 }
 
 ProcessStep.propTypes = {
-	stepId: PropTypes.string,
-	stepName: PropTypes.string,
+  stepId: PropTypes.string,
+  stepName: PropTypes.string,
   expanded: PropTypes.oneOfType([
 						  PropTypes.string,
 						  PropTypes.bool

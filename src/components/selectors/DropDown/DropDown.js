@@ -45,8 +45,8 @@ class DropDown extends React.Component {
 
   render () {
   	let { options, selectedKey, defaultKey } = this.state
-    let styles = (this.props.theme === 'year')? yearTheme : standardTheme;
-    defaultKey = (selectedKey !== undefined)? undefined : defaultKey;
+    let styles = (this.props.theme === 'year') ? yearTheme : standardTheme
+    defaultKey = (selectedKey !== undefined) ? undefined : defaultKey
 
     return (
       <div className={styles.root}>
@@ -64,7 +64,7 @@ class DropDown extends React.Component {
 						  }
 
 						  return (
-						    <option className={styles.option} key={index+"_"+value} value={value}>
+						    <option className={styles.option} key={index + '_' + value} value={value}>
 						      {name}
 						    </option>
 						  )
@@ -108,11 +108,11 @@ const findDefaultKey = props => {
   if (dataSet) {
     defaultKey = dataSet.selectedDataKey
   }
-  else if(options && defaultOptionIndex) {
-    defaultKey = options[defaultOptionIndex];
+  else if (options && defaultOptionIndex) {
+    defaultKey = options[defaultOptionIndex]
   }
-  else if(options && defaultOptionValue) {
-    defaultKey = defaultOptionValue;
+  else if (options && defaultOptionValue) {
+    defaultKey = defaultOptionValue
   }
   else if (options) {
     defaultKey = options.find((option, index) => {
@@ -129,11 +129,11 @@ const findSelectedKey = props => {
   if (dataSet) {
     selectedKey = dataSet.selectedDataKey
   }
-  else if(options && selectedOptionValue) {
-    selectedKey = selectedOptionValue;
+  else if (options && selectedOptionValue) {
+    selectedKey = selectedOptionValue
   }
-  else if(options && selectedOptionIndex) {
-    selectedKey = options[selectedOptionIndex];
+  else if (options && selectedOptionIndex) {
+    selectedKey = options[selectedOptionIndex]
   }
   return selectedKey
 }

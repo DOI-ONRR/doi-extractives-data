@@ -1,1 +1,1 @@
-export default from './DownloadExcelLink';
+export default from './DownloadExcelLink'

@@ -10,6 +10,7 @@ import HowWorksIcon from '-!svg-react-loader!../../../../img/icons/how-works.svg
 import DownloadDataIcon from '-!svg-react-loader!../../../../img/svg/icon-download-buttonup.svg'
 
 
+
 const ExploreDataLink = (props) => {
     const getIcon = (icon)=> {
 	switch(icon) {

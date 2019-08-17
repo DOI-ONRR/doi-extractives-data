@@ -145,3 +145,16 @@ revenue:
       value: 23110.5
       rank: 2
       percent: 0.2
+  '2018':
+    - product: Hardrock
+      name: null
+      units: null
+      value: 49503.5
+      rank: 1
+      percent: 57.1
+    - product: Copper
+      name: null
+      units: null
+      value: 20
+      rank: 1
+      percent: 100

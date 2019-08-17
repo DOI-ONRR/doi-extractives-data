@@ -1,9 +1,6 @@
 import React from 'react'
-import { connect } from 'react-redux'
 import Helmet from 'react-helmet'
-import Link from '../components/utils/temp-link'
 import { withPrefixSVG } from '../components/utils/temp-link'
-
 import hastReactRenderer from '../js/hast-react-renderer'
 
 import DefaultLayout from '../components/layouts/DefaultLayout'
@@ -29,11 +26,11 @@ class HowItWorksReconciliation extends React.Component {
     let title = this.props.pathContext.markdown.frontmatter.title || 'Natural Resources Revenue Data'
     return (
       <DefaultLayout>
-  			<div>
+        <div>
           <Helmet
             title={title}
             meta={[
-              // title
+            // title
               { name: 'og:title', content: title },
               { name: 'twitter:title', content: title },
             ]}

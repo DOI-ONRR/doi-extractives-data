@@ -1,12 +1,10 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
+import PropTypes from 'prop-types'
+import styles from './UpdateFlag.module.scss'
 
-import styles from "./UpdateFlag.module.scss";
-import logo from "../../../img/us-flag-small.png";
-
-const UpdateFlag = ({date}) => (
+const UpdateFlag = ({ date }) => (
   <span className={styles.root}>Updated {date}</span>
-);
+)
 
 UpdateFlag.propTypes = {
 	 /** The date to display */
@@ -14,7 +12,7 @@ UpdateFlag.propTypes = {
 }
 
 UpdateFlag.defaultProps = {
-	date: 'recently',
+  date: 'recently',
 }
 
-export default UpdateFlag;
+export default UpdateFlag

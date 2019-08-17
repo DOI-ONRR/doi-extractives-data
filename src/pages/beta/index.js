@@ -223,7 +223,7 @@ export default connect(
 
 export const query = graphql`
   query BetaQuery {
-    offshore_data:allMarkdownRemark (filter:{fileAbsolutePath: {regex: "/offshore_regions/"}} sort:{fields: [frontmatter___title], order: ASC}) {
+   offshore_data:allMarkdownRemark (filter:{fileAbsolutePath: {regex: "/offshore_regions/"}} sort:{fields: [frontmatter___title], order: ASC}) {
       offshore_regions:edges {
         offshore_region:node {
           frontmatter {
@@ -246,7 +246,7 @@ export const query = graphql`
         }
       }
     }
-    OilVolumes:allProductVolumes (
+    OilVolumes:allProductVolumesMonthly (
       filter:{ProductName:{eq: "Oil"}}
       sort:{fields:[ProductionDate], order: DESC}
     ) {
@@ -267,7 +267,7 @@ export const query = graphql`
         }
       }
     }
-    GasVolumes:allProductVolumes (
+    GasVolumes:allProductVolumesMonthly (
       filter:{ProductName:{eq: "Gas"}}
       sort:{fields:[ProductionDate], order: DESC}
     ) {
@@ -288,7 +288,7 @@ export const query = graphql`
         }
       }
     }
-    CoalVolumes:allProductVolumes (
+    CoalVolumes:allProductVolumesMonthly (
       filter:{ProductName:{eq: "Coal"}}
       sort:{fields:[ProductionDate], order: DESC}
     ) {

@@ -29,7 +29,7 @@ const MapSection = (props) => {
 
     const results=useStaticQuery(graphql`
 query MyQuery {
-  allResourceRevenuesFiscalYear(filter: {FiscalYear: {eq: "2018"}, State: {nin: ["withheld", "Not tied to a location"]}}) {
+  allResourceRevenuesFiscalYear(filter: {FiscalYear: {eq: 2018}, State: {nin: ["withheld", "Not tied to a location"]}}) {
     nodes {
       Revenue
       State
@@ -182,32 +182,32 @@ const offshore_summary = (data)=> {
     return r;
 }
 const offshore_planning_area={
-    "Offshore Aleutian Arc":"ALA",
-    "Offshore Aleutian Basin":"ALB",
-    "Offshore Beaufort Sea":"BFT",
-    "Offshore Bowers Basin":"BOW",
-    "Offshore Chukchi Sea":"CHU",
-    "Offshore Cook Inlet":"COK",
-    "Offshore St. George Basin":"GEO",
-    "Offshore Gulf of Alaska":"GOA",
-    "Offshore Hope Basin":"HOP",
-    "Offshore Kodiak":"KOD",
-    "Offshore St. Matthew-Hall":"MAT",
-    "Offshore North Aleutian Basin":"NAL",
-    "Offshore Navarin Basin":"NAV",
-    "Offshore Norton Basin":"NOR",
-    "Offshore Shumagin":"SHU",
-    "Offshore Florida Straits":"FLS",
-    "Offshore Mid Atlantic":"MDA",
-    "Offshore North Atlantic":"NOA",
-    "Offshore South Atlantic":"SOA",
-    "Offshore Western Gulf of Mexico":"WGM",
-    "Offshore Central Gulf of Mexico":"CGM",
-    "Offshore Eastern Gulf of Mexico":"EGM",
-    "Offshore Central California":"CEC",
-    "Offshore Northern California":"NOC",
-    "Offshore Southern California":"SOC",
-    "Offshore Washington-Oregon":"WAO"
+    "Aleutian Arc":"ALA",
+    "Aleutian Basin":"ALB",
+    "Beaufort Sea":"BFT",
+    "Bowers Basin":"BOW",
+    "Chukchi Sea":"CHU",
+    "Cook Inlet":"COK",
+    "St. George Basin":"GEO",
+    "Gulf of Alaska":"GOA",
+    "Hope Basin":"HOP",
+    "Kodiak":"KOD",
+    "St. Matthew-Hall":"MAT",
+    "North Aleutian Basin":"NAL",
+    "Navarin Basin":"NAV",
+    "Norton Basin":"NOR",
+    "Shumagin":"SHU",
+    "Florida Straits":"FLS",
+    "Mid Atlantic":"MDA",
+    "North Atlantic":"NOA",
+    "South Atlantic":"SOA",
+    "Western Gulf of Mexico":"WGM",
+    "Central Gulf of Mexico":"CGM",
+    "Eastern Gulf of Mexico":"EGM",
+    "Central California":"CEC",
+    "Northern California":"NOC",
+    "Southern California":"SOC",
+    "Washington-Oregon":"WAO"
 }
 
 /**

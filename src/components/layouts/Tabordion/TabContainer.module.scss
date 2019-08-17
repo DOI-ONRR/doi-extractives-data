@@ -32,7 +32,7 @@ margin-top: 2rem;
 
 .contentTop {
     //border: 1px solid purple;
-        min-width: 100%;
+    //    min-width: 100%;
 	flex-basis: 100%;
 	order: 0;
 	margin-bottom: 30px;
@@ -40,7 +40,7 @@ margin-top: 2rem;
 
 .contentLeft {
    // border: 1px solid green;
-     min-width: 65%;
+  //   min-width: 65%;
     flex-basis: 65%;
     order: 1;
 }
@@ -49,7 +49,7 @@ margin-top: 2rem;
 
 .contentRight {
     // border: 1px solid blue;
-    min-width: 35%;
+   // min-width: 35%;
     flex-basis: 35%;
     order: 2;
 
@@ -57,13 +57,13 @@ margin-top: 2rem;
 
 .contentChildren{
     // border: 1px solid yellow;
-    min-width: 100%;
+   // min-width: 100%;
     flex-basis: 100%;
     order: 3;
 }
 .contentBottom{
     //  border: 1px solid red;
-    min-width: 100%;
+    //   min-width: 100%;
     flex-basis: 100%;
     order: 4;
 }

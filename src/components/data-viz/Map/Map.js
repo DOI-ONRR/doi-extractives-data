@@ -112,6 +112,7 @@ const chart = (node,us,mapFeatures,data, colorScheme,onClick) => {
     
     const width = node.scrollWidth;
     const height = node.scrollHeight;
+
     const margin = { top: 0, bottom: 0, right: 0, left: 0};
     d3.geoAlbersUsa.scale = function(_) {
 	if (!arguments.length) return lower48.scale();
@@ -121,7 +122,7 @@ const chart = (node,us,mapFeatures,data, colorScheme,onClick) => {
 
     const projection=d3.geoAlbersUsa()
   	  .translate([width/2, height/2])    // translate to center of screen
-	  .scale([800]);          // scale things down so see entire US
+	  .scale([width]);          // scale things down so see entire US
     //const path = d3.geoPath();
     projection.scale=function(_) {
 	if (!arguments.length) return lower48.scale();
@@ -152,8 +153,8 @@ const chart = (node,us,mapFeatures,data, colorScheme,onClick) => {
     let format = d => { if(isNaN(d)) {return "" } else {return "$" + d3.format(",.0f")(d);} } 
   
     const svg = d3.select(node).append('svg')
-      .style("width", width)
-      .style("height", height)
+      .style("width", "100%")
+	  .style("height", "100%")
 	  .attr("fill", "#E0E2E3")
 	  //.attr("viewBox", '-40 0 '+width*1.8+' '+height*1.8);
 
@@ -207,7 +208,7 @@ const offshore_chart = (node,offshore, region ,data, colorScheme,onClick) => {
     const width = node.scrollWidth;
     const height = node.scrollHeight;
     const margin = { top: 0, bottom: 0, right: 0, left: 0};
-    let scale=800
+    let scale=width;
     //    const path = d3.geoPath();
     const projection=d3.geoAlbersUsa()
 //	  .fitExtent([[margin.left, margin.top], [width - margin.right, height - margin.bottom]],

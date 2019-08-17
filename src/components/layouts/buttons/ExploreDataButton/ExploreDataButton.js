@@ -10,7 +10,7 @@ const ExploreDataButton = props => (
   <Link to={props.to} className={styles.root}>
     <div><ExploreDataIcon /></div>
     <div>
-        	{props.children === undefined
+      {props.children === undefined
         ? 'Explore the data'
         : props.children}
     </div>

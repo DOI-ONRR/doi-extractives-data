@@ -9,14 +9,14 @@ const Revenue = (props) => {
 
     return (
 	<Explore
-	  title="Production"
+	  title="production"
 	  contentLeft={
 		  <>
 		  <ExploreDataLink to="/explore/#federal-production" icon="data">
-			      Explore trends on federal lands and waters
+			      Production trends on federal lands and waters
 			    </ExploreDataLink>
 			    <ExploreDataLink to="/how-it-works/native-american-production/#production-on-native-american-land" icon="data">
-				  Explore trends on Native American lands
+				  Production trends on Native American lands
 				</ExploreDataLink>
 				
 		      </>
@@ -25,7 +25,7 @@ const Revenue = (props) => {
 			  <ExploreDataLink
 				to="/how-it-works/#production"
 				icon="works"
-				>Learn how production works
+				>How production works
 			      </ExploreDataLink>
 			  }
 			  
@@ -33,7 +33,7 @@ const Revenue = (props) => {
 				  <ExploreDataLink
 					to="/downloads/#production"
 					icon="download"
-					>Download files and review scope
+					>Downloads and documentation
 				      </ExploreDataLink>
 				  }
 				  />

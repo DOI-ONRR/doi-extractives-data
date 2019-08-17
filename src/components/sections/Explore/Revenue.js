@@ -14,17 +14,17 @@ const Revenue = (props) => {
 	  contentLeft={
 		  <>
 			<ExploreDataLink to="/explore/#revenue" icon="data"
-					     >Explore revenue trends
+					     >Revenue trends
 			    </ExploreDataLink>
 			    <ExploreDataLink
 				  to="/explore/revenue"
 				  icon="filter"
-				  >Filter revenue data 
+				  >Revenue in detail
 				</ExploreDataLink>
 				<ExploreDataLink
 				      to="/how-it-works/federal-revenue-by-company/2018/"
 				      icon="data"
-				      >Explore revenue by company
+				      >Revenue by company
 				    </ExploreDataLink>
 		      </>
 		  }
@@ -32,7 +32,7 @@ const Revenue = (props) => {
 			  <ExploreDataLink
 				to="/how-it-works/#revenues"
 				icon="works"
-				>Learn how revenue works
+				>How revenue works
 			      </ExploreDataLink>
 			  }
 			  
@@ -40,7 +40,7 @@ const Revenue = (props) => {
 				  <ExploreDataLink
 					to="/downloads/#revenue"
 					icon="download"
-					>Download files and review scope
+					>Downloads and documentation
 				      </ExploreDataLink>
 				  }
 				  />

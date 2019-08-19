@@ -12,6 +12,7 @@
 .title {
     font-size: 1.125rem;
     font-weight: 600;
+    min-width: 300px;
 }
 .contentHeader {
     min-width: 100%;
@@ -22,7 +23,7 @@
 .contentLeft {
     display: block;
     // border: 1px dashed green;
-     min-width: 33%;
+    min-width: 300px;
      flex-basis: 33%;
      display: flex;
      flex-wrap: wrap;
@@ -31,7 +32,7 @@
 
 .contentRight {
    //  border: 1px dashed green;
-     min-width: 33%;
+        min-width: 300px;
     flex-basis: 33%;
     order: 3;
      display: flex;
@@ -41,7 +42,7 @@
 
 .contentCenter {
    //  border: 1px dashed green;
-     min-width: 34%;
+    min-width: 300px;
     flex-basis: 34%;
     order: 2;
     display: flex;

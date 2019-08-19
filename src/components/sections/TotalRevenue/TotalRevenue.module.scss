@@ -18,6 +18,7 @@
     font-style: normal;
     font-size: 18px;
     color: #435159;
+    min-width: 300px;
 }
 .titleRight {
     float:right;
@@ -25,8 +26,10 @@
 }
 
 .content {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width:100%;
+    
 }
 
 .chartBar {
@@ -143,6 +146,7 @@
 
 .itemToggle {
     display: flex;
+    flex-wrap:wrap;
     grid-row: 4;
 	margin-bottom: 0.5rem;
 }
@@ -161,11 +165,13 @@
 }
 
 .toggle {
-	display: inline-block;
+    display:flex;
+    flex-wrap: nowrap;
 	margin-bottom: 16px;
 }
 .toggle div:first-child{
-	display: inline-block;
+    display:flex;
+    flex-wrap: nowrap;
 	margin-left: 10px;
 }
 

@@ -19,6 +19,7 @@
     font-style: normal;
     font-size: 18px;
     color: #435159;
+    min-width: 300px;
 }
 
 .content {
@@ -140,6 +141,7 @@
 
 .itemToggle {
     display: flex;
+    flex-wrap: wrap;
     grid-row: 4;
 	margin-bottom: 0.5rem;
 }
@@ -158,12 +160,15 @@
 }
 
 .toggle {
-	display: inline-block;
-	margin-bottom: 16px;
+    display:flex;
+    flex-wrap: nowrap;
+    
+    margin-bottom: 16px;
 }
 .toggle div:first-child{
-	display: inline-block;
-	margin-left: 10px;
+    display:flex;
+    flex-wrap: nowrap;
+    margin-left: 10px;
 }
 
 .dropdown {

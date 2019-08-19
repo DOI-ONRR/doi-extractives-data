@@ -8,31 +8,54 @@ import StickyHeader from '../layouts/StickyHeader'
 import YearSelector from '../selectors/YearSelector'
 import DataAndDocs from '../layouts/DataAndDocs'
 import GlossaryTerm from '../utils/glossary-term.js'
-import { filterTerms } from '../utils/Glossary'
 import RevenueTypeTable from '../locations/RevenueTypeTable'
 import RevenueProcessTable from '../locations/RevenueProcessTable'
 import { ExploreDataLink } from '../layouts/icon-links/ExploreDataLink'
-
 import ChartTitle from '../charts/ChartTitleCollapsible'
 
-import iconCirclePlus from '../../img/icons/icon-circled-plus.svg'
-import iconCircleMinus from '../../img/icons/icon-circled-minus.svg'
+const createRevenueCommoditiesData = (groupByCommodity, groupByYear) => {
+  let data = groupByCommodity
+  let commodityYears = groupByYear.sort(utils.compareValues('id'))
+  if (commodityYears.length > 10) {
+    commodityYears = commodityYears.slice(commodityYears.length - 10)
+  }
+  commodityYears = commodityYears.map(item => parseInt(item.id))
 
-import NATIONAL_REVENUES from '../../../static/data/national_revenues.yml'
+  let commodities = data.reduce((total, item) => {
+    item.edges.forEach(element => {
+      let node = element.node
+      if (commodityYears.includes(node.CalendarYear)) {
+        total[item.id] = total[item.id] || {}
+        total[item.id][node.CalendarYear] = (total[item.id][node.CalendarYear])
+          ? total[item.id][node.CalendarYear] + node.Revenue
+          : node.Revenue
 
-// @todo: use graphql to import data
-import FEDERAL_PRODUCTION_DATA from '../../../static/data/national_federal_production.yml'
+        total[item.id][node.CalendarYear] = total[item.id][node.CalendarYear]
+        if (!total['All'][node.CalendarYear]) {
+          total['All'][node.CalendarYear] = 0
+        }
+        total['All'][node.CalendarYear] += node.Revenue
+      }
+    })
 
-import PRODUCTION_UNITS from '../../../static/data/production_units.yml'
+    return total
+  }, { 'All': {} })
 
-// @todo: pass in years from data
-const years = [2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010, 2009, 2008]
-const year = '2017'
-const YEAR_RANGE = '[2008, 2017]'
+  Object.keys(commodities).forEach(commodity => {
+    Object.keys(commodities[commodity]).forEach(year => {
+      commodities[commodity][year] = parseInt(commodities[commodity][year])
+    })
+  })
+
+  return { commodities, commodityYears }
+}
 
 const NationalRevenue = props => {
-  const REVENUE_COMMODITIES = NATIONAL_REVENUES[props.stateId].commodities
-  let annualTotalRevenue = REVENUE_COMMODITIES && REVENUE_COMMODITIES.All && REVENUE_COMMODITIES.All[year]
+  let { commodities, commodityYears } = createRevenueCommoditiesData(props.revenueGroupByCommodity, props.revenueGroupByCalendarYear)
+  let commodityYearsSortDesc = commodityYears.slice(0)
+  commodityYearsSortDesc.sort((a, b) => b - a)
+  let year = commodityYears[commodityYears.length - 1]
+  let annualTotalRevenue = commodities && commodities.All && commodities.All[year]
 
   return (
     <section id="revenue" is="year-switcher-section" className="federal revenue">
@@ -50,7 +73,7 @@ const NationalRevenue = props => {
       </p>
 
       <section>
-        <StickyHeader headerId="federal-revenue" headerText='Revenue from extraction on federal lands and waters' />
+        <StickyHeader headerId="federal-revenue" headerText='Revenue from extraction on federal lands and waters' alt="Federal land"/>
 
         <p>When companies extract natural resources on federal lands and waters, they pay royalties, rents, bonuses, and other fees, much like they would to any landowner. This non-tax revenue is collected and reported by the Office of Natural Resources Revenue (ONRR).</p>
 
@@ -83,6 +106,8 @@ const NationalRevenue = props => {
               locationName={props.stateName}
               year={year}
               isNationalPage = {props.isNationalPage}
+              revenueGroupByCommodity = {props.revenueGroupByCommodity}
+              revenueGroupByCalendarYear = {props.revenueGroupByCalendarYear}
             />
           </article>
 
@@ -93,13 +118,15 @@ const NationalRevenue = props => {
               locationName={props.stateName}
               year={year}
               isNationalPage = {props.isNationalPage}
+              revenueGroupByCommodity = {props.revenueGroupByCommodity}
+              revenueGroupByCalendarYear = {props.revenueGroupByCalendarYear}
             />
           </article>
 
         </div>
 
         <StickyHeader headerId="revenue-trends" headerSize="h4" headerText='Federal revenue trends by resource'>
-          <YearSelector years={years} classNames="flex-row-icon" />
+          <YearSelector years={commodityYearsSortDesc} classNames="flex-row-icon" />
         </StickyHeader>
 
         <div className="chart-selector-wrapper">
@@ -118,12 +145,14 @@ const NationalRevenue = props => {
 
         <section className="chart-list">
 
-          {lazy(REVENUE_COMMODITIES).toArray().map((commodity, index) => {
+          {lazy(commodities).toArray().map((commodity, index) => {
+            if (commodity[0] === 'Not tied to a commodity') return
             let annualRevenue = commodity[1]
             let revenue = annualRevenue[year] || 0
             let commodityName = utils.getDisplayName_CommodityName(commodity[0])
             let commoditySlug = utils.formatToSlug(commodity[0])
             let chartToggle = 'revenue-figures-chart-' + commoditySlug
+            let yearRange = '[' + commodityYears[0] + ', ' + commodityYears[commodityYears.length - 1] + ']'
 
             return (
               <section key={index} id={'revenue-' + commoditySlug} className="chart-item">
@@ -137,7 +166,7 @@ const NationalRevenue = props => {
                   <eiti-bar-chart
                     data={JSON.stringify(annualRevenue)}
                     aria-controls={'revenue-figures-' + commoditySlug}
-                    x-range={YEAR_RANGE}
+                    x-range={yearRange}
                     x-value={year}
                     data-units="$,">
                   </eiti-bar-chart>

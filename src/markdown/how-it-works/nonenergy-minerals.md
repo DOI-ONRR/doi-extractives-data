@@ -19,6 +19,8 @@ tag:
 <custom-link to="/how-it-works/" className="breadcrumb link-charlie">How it works</custom-link> /
 # Nonenergy minerals
 
+<archive-banner></archive-banner>
+
 > Nonenergy minerals include base and precious metals, industrial metals, and gemstones, among others. Gold, copper, iron, and zinc are the principal contributors to metal mine production.
 
 ### Gold

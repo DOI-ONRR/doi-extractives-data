@@ -8,5 +8,8 @@ yarn.lock
 /public
 .DS_Store
 _site
+
+# vscode
+/.vscode
 launch.json
 .vscode

@@ -1,5 +1,5 @@
 @value colors: "../../../css-global/colors.scss";
-@value white as _white, grayDark as _grayDark, grayLight as _grayLight, grayPale as _grayPale from colors;
+@value green as _green, greenMid as _greenMid, white as _white, grayDark as _grayDark, grayLight as _grayLight, grayPale as _grayPale from colors;
 
 .root {
 
@@ -26,3 +26,12 @@
 	stroke: _grayDark;
 	stroke-width: 0.5;
 }
+
+.countyWithData {
+		cursor: pointer;
+		:hover {
+			stroke: _greenMid;
+			stroke-width: 3px;
+			stroke-linejoin: round;
+		}
+} 

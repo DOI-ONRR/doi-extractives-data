@@ -10,7 +10,7 @@ const DownloadDataLink = props => (
   <Link to={props.to} className={styles.root}>
     <DownloadDataIcon />
     <span>
-        	{props.children === undefined
+      {props.children === undefined
         ? 'Download data'
         : props.children}
     </span>

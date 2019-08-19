@@ -24,7 +24,7 @@ tag:
   </li>
   <li class="downloads-download_links">
     <h3 id="federal-lands-and-waters">Production by year</h3>
-    <p>These datasets include commodity volumes of natural resources extracted from federal lands and waters. Production volumes are available by state, county, and offshore area. We offer production data for calendar and fiscal years.</p>
+    <p>This dataset includes commodity volumes of natural resources extracted from federal lands and waters. Production volumes are available by state, county, and offshore area. We offer production data for calendar and fiscal years.</p>
     <download-data-link to="/downloads/federal-production/">Downloads and documentation</download-data-link>
   </li>
 </ul>
@@ -41,7 +41,7 @@ tag:
   <!--Federal revenue by location-->
   <li class="downloads-download_links">
     <h3 id="all-revenue">Revenue by year</h3>
-    <p>These datasets include natural resource revenues for U.S. federal lands and offshore areas by calendar and fiscal years. It does not include Native American lands, privately owned lands, or U.S. state lands.</p>
+    <p>This dataset includes natural resource revenue for Native American lands and U.S. federal lands and offshore areas by calendar and fiscal years. It does not include privately owned lands or state-owned lands.</p>
     <download-data-link to="/downloads/federal-revenue-by-location/">Downloads and documentation</download-data-link>
   </li>
   <!--Federal revenue by company-->
@@ -49,12 +49,6 @@ tag:
     <h3 id="all-revenue">Federal revenue by company</h3>
     <p>This dataset provides natural resource revenue by company. It includes revenues by production phase and commodity for companies extracting natural resources on federal lands and waters. It does not include company revenue from Native American lands or privately owned lands.</p>
     <download-data-link to="/downloads/federal-revenue-by-company/">Downloads and documentation</download-data-link>
-  </li>
-  <!--Native American revenue-->
-  <li class="downloads-download_links">
-    <h3 id="all-revenue">Native American revenue</h3>
-    <p>These datasets include Native American revenue for both calendar and fiscal years. The data includes revenue type, commodity, and product. Native American revenue data is only available at the national level.</p>
-    <download-data-link to="/downloads/native-american-revenue/">Downloads and documentation</download-data-link>
   </li>
 </ul>
 

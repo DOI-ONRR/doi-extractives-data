@@ -16,7 +16,9 @@ import PACIFIC_PRODUCTION_AREAS from '../../../data/offshore_federal_production_
 import iconPlus from '../../../img/icons/icon-circled-plus.svg'
 import iconMinus from '../../../img/icons/icon-circled-minus.svg'
 
-class CountyMaps extends React.Component {
+const MAP_COLORS = ['#e1f4fa', '#a1d4ed', '#3d95bd', '#005078']
+
+class OffshoreCountyMap extends React.Component {
   constructor (props) {
     super(props)
 
@@ -36,7 +38,7 @@ class CountyMaps extends React.Component {
       this.productionAreas = PACIFIC_PRODUCTION_AREAS
       break
     }
-    //console.log('OFFSHORE_FEDERAL_PRODUCTION_AREAS:', this.productionAreas)
+    // console.log('OFFSHORE_FEDERAL_PRODUCTION_AREAS:', this.productionAreas)
 
     let localityName = this.frontmatterData.unique_id + ' offshore region'
 
@@ -118,6 +120,10 @@ class CountyMaps extends React.Component {
     return content
   }
 
+  mapAreaClickHandler (e, areaId) {
+    // console.log('mapAreaClickHandler', e, areaId)
+  }
+
   render () {
     return (
       <div className={styles.root}>
@@ -132,10 +138,9 @@ class CountyMaps extends React.Component {
             {
               (lazy(this.productionAreas).toArray()).map((countyData, index) => {
               	if (countyData[1].products[this.props.productKey]) {
-              		//console.log(countyData[1].products[this.props.productKey])
                   return (
-                    <g key={index} style={{ fill: 'blue', cursor: 'pointer' }} >
-                      <title>{ countyData[1].name }</title>
+                    <g key={index} className={ styles.countyWithData } style={{ fill: MAP_COLORS[3] }} onClick={e => this.mapAreaClickHandler(e, countyData[0])}>
+                      <title alt={countyData[1].name}>{ countyData[1].name }</title>
                       <use xlinkHref={this.offshoreAllSvg + '#' + countyData[0]}></use>
                     </g>
                   )
@@ -152,7 +157,7 @@ class CountyMaps extends React.Component {
   }
 };
 
-export default CountyMaps
+export default OffshoreCountyMap
 
 /*
 			                    <g className="states features">

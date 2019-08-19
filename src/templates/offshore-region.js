@@ -4,8 +4,7 @@ import MediaQuery from 'react-responsive'
 import Helmet from 'react-helmet'
 import Link, { withPrefix } from '../components/utils/temp-link'
 
-import { hydrate as hydateDataManagerAction } from '../state/reducers/data-sets'
-import { groupByYear as groupDataSetsByYearAction } from '../state/reducers/data-sets'
+import { hydrate as hydateDataManagerAction, groupByYear as groupDataSetsByYearAction } from '../state/reducers/data-sets'
 
 import * as CONSTANTS from '../js/constants'
 
@@ -13,11 +12,16 @@ import hastReactRenderer from '../js/hast-react-renderer'
 
 import utils from '../js/utils'
 
+import SectionOffshoreProduction from '../components/locations/SectionOffshoreProduction'
+import SectionOffshoreRevenue from '../components/locations/SectionOffshoreRevenue'
+
 import { PageToc } from '../components/navigation/PageToc'
 import GlossaryTerm from '../components/utils/glossary-term'
+import RevenueTypeTable from '../components/locations/RevenueTypeTable'
+import RevenueProcessTable from '../components/locations/RevenueProcessTable'
 import StickyHeader from '../components/layouts/StickyHeader'
 import { StickyWrapper } from '../components/utils/StickyWrapper'
-import YearDropDown from '../components/selectors/YearDropDown'
+import YearDropDown from '../components/selectors/DropDown'
 import { DownloadDataLink } from '../components/layouts/icon-links/DownloadDataLink'
 import StackedBarChartWithMap from '../components/layouts/charts/StackedBarChartWithMap'
 import { ChartTitle } from '../components/charts/ChartTitle'
@@ -32,107 +36,21 @@ import styles from '../css-global/base-theme.module.scss'
 
 const PRODUCTION_SYNC_ID = 'offshoreProduction'
 
-const PRODUCTION_BY_YEAR_CONFIG = {
-  options: {
-    includeDisplayNames: true,
-    selectedDataKeyIndex: 'last',
-    syncId: PRODUCTION_SYNC_ID,
-  },
-  filter: {
-    sumBy: 'Commodity',
-  }
-}
-
-const CHART_STYLE_MAP = {
-  'bar': styles.chartBar,
-}
-
-const MAX_CHART_BAR_SIZE = 29.6
-
 class OffshoreRegion extends React.Component {
-  constructor (props) {
-    super(props)
-    this.region = this.props.pathContext.markdown.frontmatter.unique_id
-    this.dataSetsProduction = []
-    this.productionComponents = []
-    this.hydrate()
-  }
+  componentDidMount () {
+    const script1 = document.createElement('script')
 
-  hydrate () {
-    let dataSetsToHydrate = []
-    let dataSetsToGroupByYear = []
+    script1.src = withPrefix('/public/js/main.min.js')
+    script1.async = false
 
-    this.props.pathContext.data.commodities.map(commodity => {
-      let dataSetId = PRODUCTION_SYNC_ID + '_' + commodity.name
-      let units = commodity.volumes[0].data.Units
-      this.addProductionComponents(dataSetId, commodity.name, units)
+    document.body.appendChild(script1)
 
-      this.dataSetsProduction.push({ id: dataSetId, title: commodity.name })
+    const script2 = document.createElement('script')
 
-      dataSetsToHydrate.push({ key: dataSetId, data: commodity.volumes })
+    script2.src = withPrefix('/public/js/state-pages.min.js')
+    script2.async = false
 
-      dataSetsToGroupByYear.push({ id: dataSetId, sourceKey: dataSetId, ...PRODUCTION_BY_YEAR_CONFIG })
-    })
-
-    this.props.hydateDataManager(dataSetsToHydrate)
-
-    this.props.groupDataSetsByYear(dataSetsToGroupByYear)
-  }
-
-  addProductionComponents (id, title, units) {
-    let components = {}
-
-    components.dataSetId = id
-    components.chartTitle = <ChartTitle>{title && title.toUpperCase()}</ChartTitle>
-    components.chart = <StackedBarChart
-      dataSetId={id}
-      styleMap={CHART_STYLE_MAP}
-      maxBarSize={MAX_CHART_BAR_SIZE}
-    />
-    components.chartContentDetails = <ChartSelectedContentDetails
-      dataSetId={id}
-      render={dataSet => (this.getChartContentDetailsHtml(dataSet))}
-    />
-
-    components.mapTitle = <ChartTitle>{this.region && this.region.toUpperCase()} OFFSHORE REGION PRODUCTION</ChartTitle>
-
-    let shortUnits = (units === 'barrels') ? 'bbl' : units
-
-    components.map = <OffshoreCountyMap isCaption={true} productKey={title + ' (' + shortUnits + ')'} usStateMarkdown={this.props.pathContext.markdown} units={units} />
-
-    components.legend = <Legend dataSetId={id} render={dataSet => (this.getMapLegendTitle(dataSet))}/>
-
-    this.productionComponents.push(components)
-  }
-
-  getChartContentDetailsHtml (dataSet) {
-    let data = dataSet.data.find(item => Object.keys(item)[0] === dataSet.selectedDataKey)
-
-    let commodity = (data) ? Object.keys(data[dataSet.selectedDataKey][0])[0] : undefined
-
-    let commodityVolume = (commodity) ? data[dataSet.selectedDataKey][0][commodity] : undefined
-
-    return (
-      <span className={styles.chartSelectedContentDetails}>
-        <span className={styles.chartSelectedContentDetailsHighlight}>{utils.formatToCommaInt(commodityVolume)}</span>
-        {' ' + dataSet.units} of {commodity.toLowerCase()} were produced in the {this.region} offshore region in
-        <span className={styles.chartSelectedContentDetailsHighlight}>{' ' + dataSet.selectedDataKey}</span>.
-      </span>
-    )
-  }
-
-  getMapLegendTitle(dataSet){
-    let data = dataSet.data.find(item => Object.keys(item)[0] === dataSet.selectedDataKey)
-
-    let commodity = (data) ? Object.keys(data[dataSet.selectedDataKey][0])[0] : undefined
-
-    let commodityVolume = (commodity) ? data[dataSet.selectedDataKey][0][commodity] : undefined
-
-    return (
-      <figcaption className={styles.legendTitle}>
-        {utils.toTitleCase(this.region)} offshore region production of {commodity.toLowerCase()} in {dataSet.selectedDataKey} ({dataSet.units})
-      </figcaption>
-    )
+    document.body.appendChild(script2)
   }
 
   render () {
@@ -163,51 +81,28 @@ class OffshoreRegion extends React.Component {
               </section>
               <section id="production">
                 <h2>Production</h2>
-                {this.productionComponents
-                  ? <div>
-                    <StickyWrapper bottomBoundary="#production" innerZ="10000">
-                      <StickyHeader headerText={'Energy production in the entire state of ' + title}>
-                        <YearDropDown dataSetId={this.productionComponents[0].dataSetId} />
-                      </StickyHeader>
-                    </StickyWrapper>
-                    <div className="chart-selector-wrapper">
-                      <div className="chart-description">
-                        <p>
-                            ONRR collects detailed data about natural resources produced in the {title}.
-                        </p>
-                        <p>
-                          <DownloadDataLink to="/downloads/federal-production/">Downloads and documentation</DownloadDataLink>
-                        </p>
-                      </div>
-                    </div>
-                    {
-                      this.productionComponents.map((components, index) => {
-                        return (
-                          <div key={index + '_' + components.dataSetId} style={{ width: '100%', display: 'inline-block' }}>
-                            <StackedBarChartWithMap
-                              chartTitle={components.chartTitle}
-                              chart={components.chart}
-                              chartContentDetails={components.chartContentDetails}
-                              mapTitle={components.mapTitle}
-                              map={components.map}
-                              legend={components.legend}
-                            />
-                          </div>
-                        )
-                      })
-                    }
-                  </div>
-                  : <p>ONRR collects detailed data about natural resources produced on federal lands and waters. According to that data, there was no natural resource production in the { title }.</p>
-                }
+                <SectionOffshoreProduction usStateMarkdown={this.props.pageContext.markdown}
+                  production={this.props.pageContext.commoditiesProduction}
+                  countyProduction={this.props.pageContext.commoditiesOffshoreCode}
+                  productionYears={this.props.pageContext.commodityProductionYears}/>
+
+              </section>
+              <section id="federal-revenue" is="year-switcher-section" class="federal revenue">
+                <SectionOffshoreRevenue usStateMarkdown={this.props.pageContext.markdown}
+                  commodities={this.props.pageContext.commodities}
+                  commoditiesCounty={this.props.pageContext.commoditiesCounty}
+                  commodityYears={this.props.pageContext.commodityYears}/>
 
               </section>
             </div>
             <MediaQuery minWidth={768}>
               <div className="container-right-3">
+                <PageToc displayTitle={this.props.pathContext.markdown.frontmatter.title } excludeClassNames={['sticky-header-wrapper', 'chart-title']} scrollOffset={190}/>
               </div>
             </MediaQuery>
             <MediaQuery maxWidth={767}>
               <div style={{ position: 'absolute', width: '100%', top: '-45px' }}>
+                <PageToc displayTitle={this.props.pathContext.markdown.frontmatter.title } excludeClassNames={['sticky-header-wrapper', 'chart-title']} scrollOffset={190}/>
               </div>
             </MediaQuery>
           </section>

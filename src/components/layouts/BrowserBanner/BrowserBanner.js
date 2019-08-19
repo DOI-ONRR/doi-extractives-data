@@ -5,7 +5,7 @@ import styles from './BrowserBanner.module.scss'
 const BrowserBanner = () => (
   <section className={styles.root}>
     <span>
-      <p class="para-md">We try to make this website work for everyone, but some older web browsers don’t display every feature on this site.</p> 
+      <p class="para-md">We try to make this website work for everyone, but some older web browsers don’t display every feature on this site.</p>
 
       <p class="para-md">If it looks like something isn't working as it should, try using a different browser, such as Chrome, Edge, or Firefox.</p>
     </span>

@@ -160,11 +160,11 @@ const AboutPage = () => {
 
             <div className="container-left-7">
               <h2 id="history">History</h2>
-                <p>This site was originally built to support the United States' participation in the <a href="https://eiti.org/">Extractive Industries Transparency Initiative (EITI)</a>, which the U.S. joined in 2011.</p>
+              <p>This site was originally built to support the United States' participation in the <a href="https://eiti.org/">Extractive Industries Transparency Initiative (EITI)</a>, which the U.S. joined in 2011.</p>
 
-                <p>In November 2017, the U.S. decided to no longer formally implement the <GlossaryTerm>EITI Standard</GlossaryTerm>, but remains a strong supporter of good governance and the principles of transparency represented by the EITI.</p>
+              <p>In November 2017, the U.S. decided to no longer formally implement the <GlossaryTerm>EITI Standard</GlossaryTerm>, but remains a strong supporter of good governance and the principles of transparency represented by the EITI.</p>
 
-                <p><Link to="/archive">Learn more about the history of this site and review the archive.</Link></p>
+              <p><Link to="/archive">Learn more about the history of this site and review the archive.</Link></p>
 
             </div>
           </section>

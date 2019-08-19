@@ -1,1 +1,1 @@
-export default from './DownloadCsvLink';
+export default from './DownloadCsvLink'

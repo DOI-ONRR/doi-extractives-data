@@ -1,1 +1,1 @@
-export default from './DownloadLink';
+export default from './DownloadLink'

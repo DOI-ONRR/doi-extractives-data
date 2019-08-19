@@ -8,7 +8,7 @@ const LocationSelector = props => {
   }
 
   return (<>
-	  <label for="location-selector">{props.label}</label>
+	  <label htmlFor="location-selector">{props.label}</label>
 	  <select id="location-selector" className="select-dark-gray" onChange={onChangeHandler.bind(this)} defaultValue={(props.default || props.nationwide.url)}>
       {props.default &&
                 <option value={props.default} disabled>{props.default}</option>

@@ -18,8 +18,9 @@ import DefaultLayout from '../components/layouts/DefaultLayout'
 class DefaultTemplate extends React.Component {
   constructor (props) {
     super(props)
-
-    this.hydrateStore()
+    if (this.props.pathContext.disbursements) {
+      this.hydrateStore()
+    }
   }
 
   /**

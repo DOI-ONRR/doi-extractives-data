@@ -114,12 +114,6 @@ const chart = (node,us,mapFeatures,data, colorScheme,onClick) => {
     const height = node.scrollHeight;
 
     const margin = { top: 0, bottom: 0, right: 0, left: 0};
-    d3.geoAlbersUsa.scale = function(_) {
-	if (!arguments.length) return lower48.scale();
-	lower48.scale(_), alaska.scale(_ * 0.70), hawaii.scale(_);
-	return albersUsa.translate(lower48.translate());
-    };
-
     const projection=d3.geoAlbersUsa()
   	  .translate([width/2, height/2])    // translate to center of screen
 	  .scale([width]);          // scale things down so see entire US
@@ -159,7 +153,7 @@ const chart = (node,us,mapFeatures,data, colorScheme,onClick) => {
 	  //.attr("viewBox", '-40 0 '+width*1.8+' '+height*1.8);
 
   svg.append("g")
-	.attr("transform", "translate(60,30)")
+	.attr("transform", "translate(30,30)")
 	.call(legend,data.title, data, color,true);
 //return svg.node();
 
@@ -309,7 +303,7 @@ const legend = (g,title,data,color,labels) => {
 	.attr("y", function(d, i){ return height - (i*ls_h) - ls_h - 4;})
 	.text(function(d, i){ return "label "+i });
 */
-    const width = 340;
+    const width = 200;
     const height= 20;
     let sorted=data.values.sort((a,b)=>a-b);
     let lowest=utils.formatToSigFig_Dollar(Math.floor(sorted[0]),3);

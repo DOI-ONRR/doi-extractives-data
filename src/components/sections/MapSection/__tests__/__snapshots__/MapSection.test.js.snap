@@ -17,7 +17,7 @@ exports[`MapSection renders correctly 1`] = `
       className="containerRight"
     >
       <label
-        for="location-selector"
+        htmlFor="location-selector"
       >
         Explore a state or offshore region:
       </label>

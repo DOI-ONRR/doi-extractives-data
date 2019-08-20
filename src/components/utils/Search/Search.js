@@ -21,13 +21,13 @@ const Search = props => {
       }
       <form action={searchPath} className={styles.searchForm} >
 
-        <input type="search"
+        <input title="search input" type="search"
           className={props.isMobile ? styles.searchBoxMobile : styles.searchBox}
           placeholder={props.isMobile ? '' : 'Search'}
           id="search-input" name="q" role="search"/>
         <button type="submit"
           className={props.isMobile ? styles.searchButtonMobile : styles.searchButton}
-          title="search">
+          title="submit search">
           <label className="sr-only">Search</label></button>
       </form>
     </div>

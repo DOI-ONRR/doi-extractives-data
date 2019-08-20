@@ -27,7 +27,7 @@ redirect_from: /how-it-works/production/
   <main class="container-page-wrapper landing-wrapper">
     <article class="container-left-8 container-shift-reverse-1">
       <section class="container">
-        <h2 id="ownership" alt="Land ownership" class="h2-bar">Who owns natural resources in the U.S.?</h2>
+        <h2 id="land_ownership" alt="Land ownership" class="h2-bar">Who owns natural resources in the U.S.?</h2>
         <div class="container landing-section">
           <div>
             <h3 class="h3 landing-heading"><custom-link to="/how-it-works/ownership">Ownership</custom-link></h3>

@@ -16,12 +16,13 @@
 
 .container {
     display: flex;
-    justify-content: space-between;
+ //   justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .containerLeft {
     min-width: 300px;
+    padding-right:30px;
      flex-basis: 70%;
      order:1;
 }

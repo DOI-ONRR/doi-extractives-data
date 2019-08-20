@@ -1,12 +1,15 @@
 import React from 'react'
 import { withPrefix } from '../../utils/temp-link'
 
+// eslint-disable-next-line css-modules/no-unused-class
 import styles from './Search.module.css'
 
 const Search = props => {
   let searchPath = '/search-results/'
 
+  // eslint-disable-next-line no-undef
   if (typeof location !== 'undefined' && location) {
+    // eslint-disable-next-line no-undef
     searchPath = location.origin + withPrefix(searchPath)
   }
   else {

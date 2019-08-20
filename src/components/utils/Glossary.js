@@ -4,8 +4,6 @@ import lazy from 'lazy.js'
 import { glossaryTermSelected as glossaryTermSelectedAction } from '../../state/reducers/glossary'
 import GlossaryIcon from '-!svg-react-loader!../../img/svg/icon-question-circle.svg'
 
-import utils from '../../js/utils'
-
 import GLOSSARY_TERMS from '../../data/terms.yml'
 
 class GlossaryItem extends React.Component {
@@ -134,6 +132,7 @@ function filterGlossaryTerms (glossaryTerm) {
     })
   }
   else {
+    // eslint-disable-next-line no-return-assign
     GLOSSARY_TERMS.forEach(term => term.show = true)
   }
   return { terms: GLOSSARY_TERMS, toggle: (numOfTermsToShow === 1) }

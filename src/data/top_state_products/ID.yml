@@ -311,3 +311,16 @@ revenue:
       value: 126
       rank: 5
       percent: 0
+  '2018':
+    - product: Geothermal
+      name: null
+      units: null
+      value: 149712.42
+      rank: 2
+      percent: 9.2
+    - product: Phosphate
+      name: null
+      units: null
+      value: 137890.8
+      rank: 1
+      percent: 77.7

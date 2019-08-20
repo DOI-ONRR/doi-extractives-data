@@ -85,16 +85,9 @@ all_production:
     - product: Other biomass
       name: Other biomass
       units: Mwh
-      value: 2671281.53
+      value: 2598841.33
       rank: 2
-      percent: 12.25
-  '2017':
-    - product: Other biomass
-      name: Other biomass
-      units: Mwh
-      value: 2627178.89
-      rank: 1
-      percent: 12.65
+      percent: 11.78
 revenue:
   '2006':
     - product: Phosphate
@@ -180,3 +173,10 @@ revenue:
       value: 424095.72
       rank: 2
       percent: 4.1
+  '2018':
+    - product: Phosphate
+      name: null
+      units: null
+      value: 10928
+      rank: 3
+      percent: 6.2

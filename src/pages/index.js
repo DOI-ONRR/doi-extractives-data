@@ -3,26 +3,19 @@ import Helmet from 'react-helmet'
 import { connect } from 'react-redux'
 import Link from '../components/utils/temp-link'
 
-import { hydrate as hydateDataManagerAction } from '../state/reducers/data-sets'
-import { normalize as normalizeDataSetAction } from '../state/reducers/data-sets'
 import {
+  hydrate as hydateDataManagerAction,
+  normalize as normalizeDataSetAction,
   PRODUCT_VOLUMES_FISCAL_YEAR,
   REVENUES_MONTHLY,
   REVENUES_FISCAL_YEAR,
-  BY_ID, BY_COMMODITY,
-  BY_STATE, BY_COUNTY,
-  BY_OFFSHORE_REGION,
-  BY_LAND_CATEGORY,
-  BY_LAND_CLASS,
-  BY_REVENUE_TYPE,
   BY_FISCAL_YEAR,
   BY_CALENDAR_YEAR
 } from '../state/reducers/data-sets'
 
 import * as CONSTANTS from '../js/constants'
-import utils from '../js/utils'
-
 import { KeyStatsSection } from '../components/sections/KeyStatsSection'
+import { MapSection } from '../components/sections/MapSection'
 import { WhatsNew } from '../components/sections/WhatsNew'
 import { Tabordion, Tab } from '../components/layouts/Tabordion'
 import StateMap from '../components/maps/StateMap'
@@ -34,6 +27,7 @@ import { ExploreDataLink } from '../components/layouts/icon-links/ExploreDataLin
 import { DownloadDataLink } from '../components/layouts/icon-links/DownloadDataLink'
 import MapLink from '../components/layouts/icon-links/MapLink'
 import RevenueTrends from '../components/sections/RevenueTrends'
+import DisbursementTrends from '../components/sections/DisbursmentTrends'
 
 import DefaultLayout from '../components/layouts/DefaultLayout'
 
@@ -52,14 +46,14 @@ class HomePage extends React.Component {
    * reducers
    **/
   hydrateStore () {
-    let data = this.props.data;
+    let data = this.props.data
 
     this.props.normalizeDataSet([
       { key: REVENUES_MONTHLY,
         data: data.allMonthlyRevenues.data,
         groups: [
           {
-            key:BY_CALENDAR_YEAR,
+            key: BY_CALENDAR_YEAR,
             groups: data.allMonthlyRevenuesByCalendarYear.group
           }
         ]
@@ -68,7 +62,7 @@ class HomePage extends React.Component {
         data: data.allFiscalYearRevenues.data,
         groups: [
           {
-            key:BY_FISCAL_YEAR,
+            key: BY_FISCAL_YEAR,
             groups: data.allFiscalYearRevenuesByFiscalYear.group
           }
         ]
@@ -78,20 +72,20 @@ class HomePage extends React.Component {
         data: data.allFiscalYearProductVolumes.data,
         groups: [
           {
-            key:BY_FISCAL_YEAR+"_Gas",
+            key: BY_FISCAL_YEAR + '_Gas',
             groups: data.allFiscalYearProductVolumesByFiscalYear_Gas.group
           },
           {
-            key:BY_FISCAL_YEAR+"_Oil",
+            key: BY_FISCAL_YEAR + '_Oil',
             groups: data.allFiscalYearProductVolumesByFiscalYear_Oil.group
           },
           {
-            key:BY_FISCAL_YEAR+"_Coal",
+            key: BY_FISCAL_YEAR + '_Coal',
             groups: data.allFiscalYearProductVolumesByFiscalYear_Coal.group
           }
         ]
       }
-    ]);
+    ])
 
     this.props.hydateDataManager([
       { key: CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY, data: this.props.data.OilVolumes.volumes },
@@ -102,7 +96,7 @@ class HomePage extends React.Component {
     ])
   }
 
-  render () {
+    render () {
     return (
       <DefaultLayout>
         <main>
@@ -189,49 +183,41 @@ class HomePage extends React.Component {
                   <div className={styles.tabContentBottomContainer}>
                     <div>
                       <BlueButton to="/how-it-works/#disbursements">How disbursements work</BlueButton>
+		      <div className={styles.tabContentBottomContainerLinks}>
+			<h5>Explore disbursements data</h5>
+			<div className={styles.linkContainer}>
+			  <ExploreDataLink to="/explore/#by-fund">By recipient</ExploreDataLink>
+			  <DownloadDataLink to="/downloads/disbursements">Downloads and documentation</DownloadDataLink>
+			</div>
+		      </div>
                     </div>
                   </div>
                 </div>
                 <div className={styles.tabContentAside}>
-                  <h5>Explore disbursements data</h5>
-                  <div className={styles.linkContainer}>
-                    <ExploreDataLink to="/explore/#by-fund">By recipient</ExploreDataLink>
-                    <DownloadDataLink to="/downloads/disbursements">Downloads and documentation</DownloadDataLink>
-                  </div>
+                  <DisbursementTrends />
                 </div>
               </div>
             </Tab>
           </Tabordion>
 
           <KeyStatsSection />
+          <MapSection b
+               title="Learn about extractive industries in each state"
+               info="Explore production, revenue, and disbursements data for each state."
+               states={this.props.data.states_data.states}
+               offshore_regions={this.props.data.offshore_data.offshore_regions}
+               mapFeatures="states"
+               mapTitle="Revenue"
+               mapJson="/maps/land/us-topology.json"
+               mapOffshoreJson="/maps/offshore/offshore.json"
+               onClick={ (d,i) => { 
+                   let state=fipsAbbrev[d.id] || d.id;
+                   let url="/explore/"+state+"#revenue" 
+                   window.location.href = url;
 
-          <section id="map-section" className={styles.mapSection}>
-            <div className={styles.mapSectionContainer + ' container-page-wrapper'}>
-              <div className={styles.mapSectionLeft}>
-                <h3>Learn about extractive industries in each state</h3>
-                <p>Explore production, revenue, and disbursements data for each state.</p>
-                <div className={styles.mapSectionLocationSelector}>
-                  <label htmlFor="location-selector">State or offshore region:</label>
-                  <LocationSelector
-                    default='Choose location'
-                    states={this.props.data.states_data.states}
-                    offshore_regions={this.props.data.offshore_data.offshore_regions}/>
-                </div>
-              </div>
-              <div className={styles.mapSectionRight}>
-                <figure>
-                  <StateMap
-                    ownership={true}
-                    no_outline={true}
-                    offshore_regions={this.props.data.offshore_data.offshore_regions}
-                    states={this.props.data.states_data.states}/>
-                </figure>
-                <aside>
-                  <FederalLandOwnershipLegend land={true} />
-                </aside>
-              </div>
-            </div>
-          </section>
+ } }
+/>
+
 
           <WhatsNew />
         </main>
@@ -248,7 +234,7 @@ export default connect(
   })
 )(HomePage)
 
-export const query = graphql`
+export const query = graphql `
   query HomePageQuery {
     offshore_data:allMarkdownRemark (filter:{fileAbsolutePath: {regex: "/offshore_regions/"}} sort:{fields: [frontmatter___title], order: ASC}) {
       offshore_regions:edges {
@@ -273,7 +259,7 @@ export const query = graphql`
         }
       }
     }
-    OilVolumes:allProductVolumes (
+    OilVolumes:allProductVolumesMonthly (
       filter:{ProductName:{eq: "Oil"}}
       sort:{fields:[ProductionDate], order: DESC}
     ) {
@@ -294,7 +280,7 @@ export const query = graphql`
         }
       }
     }
-    GasVolumes:allProductVolumes (
+    GasVolumes:allProductVolumesMonthly (
       filter:{ProductName:{eq: "Gas"}}
       sort:{fields:[ProductionDate], order: DESC}
     ) {
@@ -315,7 +301,7 @@ export const query = graphql`
         }
       }
     }
-    CoalVolumes:allProductVolumes (
+    CoalVolumes:allProductVolumesMonthly (
       filter:{ProductName:{eq: "Coal"}}
       sort:{fields:[ProductionDate], order: DESC}
     ) {
@@ -481,3 +467,61 @@ export const query = graphql`
     }
   }
 `
+
+const fipsAbbrev={
+ "02":  "AK",
+ "01":  "AL",
+ "05":  "AR",
+ "60":  "AS",
+ "04":  "AZ",
+ "06":  "CA",
+ "08":  "CO",
+ "09":  "CT",
+ "11":  "DC",
+ "10":  "DE",
+ "12":  "FL",
+ "13":  "GA",
+ "66":  "GU",
+ "15":  "HI",
+ "19":  "IA",
+ "16":  "ID",
+ "17":  "IL",
+ "18":  "IN",
+ "20":  "KS",
+ "21":  "KY",
+ "22":  "LA",
+ "25":  "MA",
+ "24":  "MD",
+ "23":  "ME",
+ "26":  "MI",
+ "27":  "MN",
+ "29":  "MO",
+ "28":  "MS",
+ "30":  "MT",
+ "37":  "NC",
+ "38":  "ND",
+ "31":  "NE",
+ "33":  "NH",
+ "34":  "NJ",
+ "35":  "NM",
+ "32":  "NV",
+ "36":  "NY",
+ "39":  "OH",
+ "40":  "OK",
+ "41":  "OR",
+ "42":  "PA",
+ "72":  "PR",
+ "44":  "RI",
+ "45":  "SC",
+ "46":  "SD",
+ "47":  "TN",
+ "48":  "TX",
+ "49":  "UT",
+ "51":  "VA",
+ "78":  "VI",
+ "50":  "VT",
+ "53":  "WA",
+ "55":  "WI",
+ "54":  "WV",
+ "56":  "WY",
+}

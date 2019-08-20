@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Explore renders correctly 1`] = `
+<section
+  className="root"
+>
+  <div
+    className="contentHeader"
+  >
+    <h3
+      className="title h3-bar"
+    >
+      Explore 
+    </h3>
+    <span
+      className="info"
+    />
+  </div>
+  <div
+    className="contentLeft"
+  />
+  <div
+    className="contentCenter"
+  />
+  <div
+    className="contentRight"
+  />
+  <div
+    className="contentChildren"
+  />
+</section>
+`;

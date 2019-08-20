@@ -32,7 +32,6 @@ class GlossaryItem extends React.Component {
         <button
           className="glossary-click"
           data-accordion-button role="button"
-          aria-controls="glossary-accordion--content--2"
           tabIndex={this.state.show && -1}><span className="glossary-click sr-only">Toggle for {this.props.term.name}</span></button>
         <p data-accordion-content className="glossary-click glossary-definition accordion-content" aria-hidden={!this.state.toggle}>{this.props.term.definition}</p>
       </li>

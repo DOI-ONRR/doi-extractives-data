@@ -16,6 +16,7 @@ import FederalLandOwnershipSvg from '../maps/FederalLandOwnershipSvg'
 import GlossaryTerm from '../utils/glossary-term.js'
 
 import utils from '../../js/utils'
+import styles from './SectionOverview.module.scss'
 
 import rehypeReact from 'rehype-react'
 
@@ -37,14 +38,14 @@ const SectionOverview = props => {
       <section className="container">
 
         <div className="state-pages-ownership container-right-5">
+          <h3 className="title-land-ownership">Land ownership</h3>
+          <FederalLandInfo usStateData={usStateData} />
           <SectionOwnership usStateData={usStateData}/>
         </div>
 
         <KeyGDPJobs usStateData={usStateData}/>
 
         <KeyAllProduction usStateData={usStateData} />
-
-        <FederalLandInfo usStateData={usStateData} />
 
         {usStateData.nearby_offshore_region &&
                   <OffshoreRegion usStateData={usStateData} />
@@ -108,8 +109,6 @@ const SectionOwnership = props => {
 
   return (
     <section className="container land-ownership">
-
-      <h3 className="title-land-ownership">Land ownership</h3>
       <aside className="map-container" style={{ 'width': '100%' }}>
         <figure is="ownership-map">
           <div className="svg-container county map-container wide"
@@ -217,10 +216,11 @@ const KeyAllProduction = props => {
 
 const FederalLandInfo = props => {
   return (
-    <p>
-      Natural resource ownership in the U.S. is closely tied to land ownership. Land can be owned by citizens, corporations, Native American tribes or individuals, or governments (for instance, federal, state, or local governments). Much of the data on this site is limited to natural resource extraction on federal land, which represents {utils.round(LAND_STATS[props.usStateData.unique_id].federal_percent, 1)}%
-      of all land in {props.usStateData.title}.
-    </p>
+    <div className={styles.landOwnershipSummary}>
+      <span className="para-md">
+        Federal land represents <strong>{utils.round(LAND_STATS[props.usStateData.unique_id].federal_percent, 1)}%</strong> of all land in {props.usStateData.title}.
+      </span>
+    </div>
   )
 }
 

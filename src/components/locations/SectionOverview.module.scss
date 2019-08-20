@@ -1,0 +1,8 @@
+@value colors: "../../css-global/colors.scss";
+@value white as _white, grayDark as _grayDark, grayLight as _grayLight, grayPale as _grayPale from colors;
+
+.landOwnershipSummary {
+	background-color: _grayPale;
+    margin: 0 0 8px 0;
+    padding: 10px 10px;
+}

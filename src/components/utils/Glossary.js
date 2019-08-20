@@ -6,6 +6,8 @@ import GlossaryIcon from '-!svg-react-loader!../../img/svg/icon-question-circle.
 
 import GLOSSARY_TERMS from '../../data/terms.yml'
 
+import utils from '../../js/utils'
+
 class GlossaryItem extends React.Component {
   state = {
     toggle: this.props.toggle || false,
@@ -22,6 +24,7 @@ class GlossaryItem extends React.Component {
   }
 
   render () {
+    let termId = utils.formatToSlug(this.props.term.name)+"_glossary_term"
     return (
       <li
         className="glossary-click glossary-item"
@@ -32,8 +35,16 @@ class GlossaryItem extends React.Component {
         <button
           className="glossary-click"
           data-accordion-button role="button"
+          aria-controls={termId}
           tabIndex={this.state.show && -1}><span className="glossary-click sr-only">Toggle for {this.props.term.name}</span></button>
-        <p data-accordion-content className="glossary-click glossary-definition accordion-content" aria-hidden={!this.state.toggle}>{this.props.term.definition}</p>
+        <p
+          id={termId}
+          data-accordion-content
+          className="glossary-click glossary-definition accordion-content"
+          aria-hidden={!this.state.toggle}
+        >
+          {this.props.term.definition}
+        </p>
       </li>
     )
   }
@@ -107,7 +118,7 @@ class Glossary extends React.Component {
           value={this.state.glossaryTerm}
           onChange={this.handleChange.bind(this)}
           tabIndex={this.state.toggleHidden && -1} />
-        <div id="glossary-click glossary-result">
+        <div id="glossary-result">
           <ul className="glossary-click js-glossary-list list-unstyled" data-accordion="glossary-accordion">
             {(filteredTerms.terms).map((term, index) => (
               <GlossaryItem key={index} term={term} toggle={(filteredTerms.toggle)}/>

@@ -25,7 +25,7 @@
     "gatsby-transformer-remark": "^2.1.17",
     "gatsby-transformer-sharp": "^2.1.9",
     "gatsby-transformer-yaml": "^2.1.11",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.15",
     "pngquant-bin": "^5.0.1",
     "prismjs": "^1.15.0",
     "react": "^16.6.3",

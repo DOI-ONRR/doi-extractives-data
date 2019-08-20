@@ -2,16 +2,17 @@
 .root {
 	font-size: 0.875rem;
 	font-weight: 300;
-	padding-left: 20px;
 	display: flex;
 	justify-content: flex-start;
 	flex-wrap: wrap;
+
 	margin-bottom: 50px;
 }
 
 .title {
+    color: #435159;	
     font-size: 1.125rem;
-    font-weight: 600;
+    font-weight: 700;
     min-width: 300px;
 }
 .contentHeader {

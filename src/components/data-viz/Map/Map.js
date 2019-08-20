@@ -112,7 +112,6 @@ const chart = (node,us,mapFeatures,data, colorScheme,onClick) => {
     
     const width = node.scrollWidth;
     const height = node.scrollHeight;
-
     const margin = { top: 0, bottom: 0, right: 0, left: 0};
     const projection=d3.geoAlbersUsa()
   	  .translate([width/2, height/2])    // translate to center of screen

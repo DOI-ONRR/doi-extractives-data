@@ -127,7 +127,7 @@ On January 1, 2019, the tax rate changed from $1.10 per ton for coal from subsur
 ## Notes
 
 [^1]: A producer is any person or entity that owns the coal after it’s mined from the ground.
-[^2]: Department of Labor, [FY2016 Black Lung Disability Trust Fund Budget Justification (PDF)](https://www.dol.gov/sites/default/files/documents/general/budget/2016/CBJ-2016-V2-08.pdf), 2016: p. 8
-[^3]: Department of Labor, [FY2015 Agency Financial Report (PDF)](https://www.dol.gov/_sec/media/reports/annual2015/2015annualreport.pdf), Fiscal Year 2015
+[^2]: Department of Labor, [FY2019 Black Lung Disability Trust Fund Budget Justification (PDF)](https://www.dol.gov/sites/dolgov/files/general/budget/2019/CBJ-2019-V2-08.pdf), 2019: p. 9
+[^3]: Department of Labor, [FY2018 Agency Financial Report (PDF)](https://www.dol.gov/sites/dolgov/files/OPA/reports/2018annualreport.pdf), Fiscal Year 2018
 [^4]: Internal Revenue Service, Federal Excise Taxes Reported to or Collected by the Internal Revenue Service, Alcohol and Tobacco Tax and Trade Bureau, and Customs Service, 2013: [Historical Table 20](https://www.irs.gov/uac/SOI-Tax-Stats-Historical-Table-20)
-[^5]: Department of Labor, [FY2016 Black Lung Disability Trust Fund Budget Justification (PDF)](https://www.dol.gov/sites/default/files/documents/general/budget/2016/CBJ-2016-V2-08.pdf), 2016: p. 8
+[^5]: Department of Labor, [CY2019 Black Lung Disability Trust Fund Budget Justification (PDF)](https://fas.org/sgp/crs/misc/R45261.pdf), FY2019: p. 9

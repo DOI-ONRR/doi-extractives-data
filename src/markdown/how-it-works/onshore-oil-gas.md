@@ -85,8 +85,6 @@ permalink: /how-it-works/onshore-oil-gas/
           <process-step stepName="Learn more">
             <ul class="list-bullet">
             <li><a href="https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing">Leasing of Onshore Oil and Gas Resources</a></li>
-            <li><a href="https://www.blm.gov/or/news/files/BLM-SoundInvestmentforAmerica.pdf">The BLM: A Sound Investment for America (PDF)</a></li>
-            </ul>  
           </process-step>
         </process-group>
       </div>

@@ -48,7 +48,7 @@ In a series of Supreme Court decisions known as the Marshall Trilogy, former Sup
 
 One was the federal Native American trust responsibility, whereby the government charged itself with “[moral obligations of the highest responsibility and trust](http://www.bia.gov/FAQs/index.htm)” toward Native American tribes. In this capacity, the U.S. Government maintains fiduciary responsibility to protect Native American assets and resources and serves as a trustee for Native American lands. Another was the principle that tribes are sovereign, which is inherent to them as the original governing bodies of what is now the United States, and that sovereignty can only be diminished by Congress.
 
-For an overview of the foundational laws, regulations, and court cases governing federal Native American law, read Felix S. Cohen’s [Handbook of Federal Indian Law](https://eric.ed.gov/?id=ED061008) originally published by the Department of the Interior in 1942.
+For an overview of the foundational laws, regulations, and court cases governing federal Native American law, read Felix S. Cohen’s [Handbook of Federal Indian Law](https://archive.org/details/ERIC_ED061008/page/n1) originally published by the Department of the Interior in 1942.
 
 ### General Allotment Act of 1887 (The Dawes Act)
 

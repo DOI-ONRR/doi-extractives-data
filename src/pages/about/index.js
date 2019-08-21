@@ -148,7 +148,7 @@ const AboutPage = () => {
                 </div>
                 <div className="bureau-right">
                   <h4>Internal Revenue Service (IRS)</h4>
-                  <p><a href="https://www.irs.gov/">The IRS</a> collects corporate income taxes from corporations in the extractive industries, as well as income taxes from all other companies operating in these industries. 
+                  <p><a href="https://www.irs.gov/">The IRS</a> collects corporate income taxes from corporations in the extractive industries, as well as income taxes from all other companies operating in these industries.</p>
                 </div>
               </article>
 

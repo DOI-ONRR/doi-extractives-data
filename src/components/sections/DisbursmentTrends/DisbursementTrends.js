@@ -50,7 +50,7 @@ allYearlyDispursements :  allDisbursementsXlsxData(sort: {fields: [Fiscal_Year],
     let currentMonthly=results.currentMonthlyDispursements.nodes.map(obj=> ({...obj, month:monthLookup(obj.Month), FiscalMonth: fiscalMonthLookup(obj.Month), date: monthlyDate(obj),fiscalYear:2019}));
     let currentTrends=aggregateMonthlyData(currentMonthly);
 
-    let maxMonth=getMaxMonth(currentMonthly).toLocaleString('default', { month: 'long' });
+    let maxMonth=getMaxMonth(currentMonthly).toLocaleString(undefined, { month: 'long' });
 
     let currentYear=getCurrentYear(currentMonthly);
    

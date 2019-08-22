@@ -149,7 +149,7 @@ const chart = (node,us,mapFeatures,data, colorScheme,onClick) => {
       .style("width", width)
 	  .style("height", height)
 	  .attr("fill", "#E0E2E3")
-	  //.attr("viewBox", '-40 0 '+width*1.8+' '+height*1.8);
+	  .attr("viewBox", '0 0 '+width+' '+height);
 
   svg.append("g")
 	.attr("transform", "translate(30,30)")

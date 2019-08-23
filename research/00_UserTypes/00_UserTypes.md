@@ -6,23 +6,24 @@ These are the types of users we've interviewed over the course of all studies si
 ## User Type 1: Question Answerer
 We've interviewed 15 question answerers. And two users who were question answerers for how they find data, but storytellers for how they uses it.
 ![Question answerer users on a matrix](https://github.com/ONRR/doi-extractives-data/blob/research/research/00_UserTypes/QuestionAnswerers.PNG)
+
 ### Goals 
-* Inform people about natural resource revenue data that they know is available.
-* Be a source of knowledge about natural resources revenue.
 * Answer a question that either someone else is asking or they know they have.
 * Provide the answer to the question in whatever format makes sense, whether it’s providing a number over the phone or creating their own charts.
+* Be a source of knowledge about natural resources revenue.
+* Inform people about natural resource revenue data that they know is available.
 
 ### Pain Points
-* Knowing the site exists
-* Knowing where to go next if they can’t find the answer they’re looking for
 * Getting to a specific number
 * Being able to easily share the found answer with the question asker
 * Understanding terminology used on the site
 * Understanding the context for a number (i.e. is it fiscal, calendar or sales year)
 
 ### Scenarios
-* A **congressional staffer** needs specific, accurate data on energy production and disbursements because they need to provide support for a proposed bill. They’re able to quickly and easily find data about how much energy was produced in their state and how much revenue their state got from energy production on federal land.
-* Joe is an **external liaison for ONRR**.  He frequently fields questions from the public and congress for questions that could be answered on the site.  He looks in his databases for the answer to question first, but uses the site to verify the answer or for things he knows he can find more quickly on the site.
+* A **congressional staffer** needs specific, accurate data on oil royalties and disbursements because they need to provide support for a proposed bill. They’re able to quickly and easily find data about how much oil was produced on federal land in their state, how much royalty revenue was generated, and how much their state got.
+* An **external liaison for ONRR** frequently fields questions from the public and congress for things that could be answered on the site, such as how much money the Gulf of Mexico generated from GOMESA. They look in databases for the answer to the question first, but use the site to verify the answer or for things they can point the question asker directly to on the site.
+* A **BLM economist** uses our site to look up how much revenue and production companies had to verify whether North Dakota got the right amount of money (royalties) and who to audit. Looks at calendar year typically because every level they work with has a different fiscal year.
+
 
 ## User Type 2: Agenda Supporter
 We've interviewed 9 agenda supporters.
@@ -34,26 +35,19 @@ We've interviewed 9 agenda supporters.
 * Take action based on the agenda.
 
 ### Pain Points
-* Knowing the site exists
-* Knowing they can trust the validity of the site
-* Knowing they can trust that the information is unbiased
-* Knowing where to go next to find information that’s not on the site
-* Getting to a specific number
-* Getting overwhelmed by all the information
-* Being able to follow a thread to related data
 * Understanding both the detail and how it lives within the context of the bigger picture
-* Being able to see trends in the data over time
+* Knowing they can trust the validity of the site and that the information is unbiased
+* Knowing where to go next to find information that’s not on the site to follow a thread to related data
 * Having to pull separate numbers in a spreadsheet to understand the whole picture
 * Determining what to do when there is a discrepancy between multiple sources of information
-* Understanding how the data ties to legislation
-* Understanding terminology used on the site
 
 ### Scenarios
-* Laura works for an **NGO**. She’s concerned about increasing volumes of oil being transported by train through her state following a recent derailment. She wants to determine if oil production on federal lands has recently increased to help her interpret transportation-related risks to her state. She can easily find data that she trusts for oil production on federal lands. She can use that along with state production and export volumes, from other sources, to complete her analysis.
+* A analyst for an **NGO** is concerned about increasing volumes of oil being transported by train through their state following a recent derailment. They want to determine if oil production on federal lands has recently increased to help interpret transportation-related risks to their state. The analyst can easily find data that they trust for oil production on federal lands to use that along with state production and export volumes, from other sources, to complete the analysis. They also want to be able to pinpoint specific companies that have production in the area around the derailment, so they can be held accountable.
 
 ## User Type 3: Storyteller
 We've interviewed 6 storytellers and 4 users who are storytellers for how they use the data, but find the data as question answerers or domain learners. 
 ![Storyteller users on a matrix](https://github.com/ONRR/doi-extractives-data/blob/research/research/00_UserTypes/Storytellers.PNG)
+
 ### Goals 
 * Understand what is happening with natural resources.
 * Learn from the data whether there’s a story to tell and uncover any stories found.
@@ -61,46 +55,39 @@ We've interviewed 6 storytellers and 4 users who are storytellers for how they u
 * Tell the story to people in a compelling way.
 
 ### Pain Points
-* Knowing the site exists
-* Knowing they can trust the validity of the site
-* Knowing they can trust that the information is unbiased
-* Knowing where to go next to find information that’s not on the site
-* Knowing where to start
-* Getting overwhelmed by all the information
-* Being able to follow a thread to related data
 * Understanding both the detail and how it lives within the context of the bigger picture
-* Being able to see trends in the data over time
-* Having to pull separate numbers in a spreadsheet to understand the whole picture
-* Determining what to do when there is a discrepancy between multiple sources of information
+* Knowing they can trust the validity of the site and that the information is unbiased
+* Knowing where to go next to find information that’s not on the site to follow a thread to related data
 * Understanding how the data ties to legislation
-* Understanding terminology used on the site
+* Understanding how our data fits with other sources of data
 
 ### Scenarios
-* Sidney is a **professor** of public policy at a major university, and is writing an academic article focusing on how public land management balances recreation, energy production, and conservation priorities. Sidney is able to locate federal production volumes and locations on the NRRD site, and is able to use that data to inform their points in the article about federal government land-use policy.
-* A **journalist** at a major regional news outlet is writing a story about policy claims about energy production on public land. They’re able to find data about production trends both at the national and regional/state level, which helps them back up their story with accurate numbers that haven’t been influenced by personal or political objectives.
+* A **professor of public policy** at a major university is writing an academic article focusing on how public land management balances recreation, energy production, and conservation priorities. They are able to locate federal production volumes and locations on the NRRD site and are able to use that data to inform their points in the article about federal government land-use policy.
+* A **journalist** at a major regional news outlet is writing a story about policy claims about energy production on public land. They’re able to find data about production trends both at the national and regional/state level and how those numbers tie to policy, which helps them back up their story with accurate numbers that haven’t been influenced by personal or political objectives.
 
 ## User Type 4: Domain Learner
 We've interviewed 18 domain learners and 2 who find data as a domain learner, but uses the data like a storyteller.
 ![Domain learner users on a matrix](https://github.com/ONRR/doi-extractives-data/blob/research/research/00_UserTypes/DomainLearners.PNG)
+
 ### Goals 
-* Understand how the revenue collection and disbursement process works.
 * Keep tabs on how well the process is working for the domain or locality he/she is interested in.
 * Make decisions based on what he/she sees in the data.
-* Answer questions pertaining to his or her domain.
+* Answer questions pertaining to his or her domain and the process.
 
 ### Pain Points
-* Knowing the site exists
-* Understanding the purpose of each piece of the process
-* Getting overwhelmed by all the information
+* Seeing the information for the domain or locality that they’re interested in all in one place
 * Understanding both the detail and how it lives within the context of the bigger picture
 * Being able to see trends in the data over time
-* Seeing the information for the domain or locality that they’re interested in all in one place
-* Understanding terminology on the site
+* Seeing information on the website without having to download the data
+* Understanding where the data comes from
 
 ### Scenarios
-* Martha is a new **county commissioner** in a western state with significant oil and gas production on federal land. Martha ran for county commission largely on a platform of government transparency and accountability, and she wants to know how extractive revenues from federal land are disbursed at the state and county level. Using the site, she’s able to find out how much was disbursed to her county and state each month, which allows her to hold the state accountable, advocate for her constituents, and inform public debate about extractive industry in her county.
-* Henry is among the leadership of a **tribal nation**. He is concerned about the layers of bureaucracy involved in tribal land governance and is working with the federal government to simplify the process for land-use authorization. Henry is able to find information on the tribal leasing process to inform his efforts.
-* Bob from **Intergovernmental Affairs** in the Office of the Secretary routinely pulls data to inform his interactions with Interior Stakeholders. He only has one week to generate a GoMESA disbursements data trend analysis to present to Gulf state elected officials. He’s able to find detailed, up-to-date GoMESA raw data to use as the basis of his analysis.
+* A new **county commissioner** in a western state with significant oil and gas production on federal land ran for office largely on a platform of government transparency and accountability and wants to know how extractive revenues from federal land are disbursed at the state and county level. Using the site, they are able to find out how much was disbursed to their county and state each month, which allows them to hold the state accountable, advocate for their constituents, and inform public debate about extractive industry in her county.
+* A **leader of a tribal nation** is concerned about the layers of bureaucracy involved in tribal land governance and is working with the federal government to simplify the process for land-use authorization. They are able to find information on the tribal leasing process to inform their efforts.
+* An analyst from **Intergovernmental Affairs in the Office of the Secretary** routinely pulls data to inform their interactions with Interior stakeholders. They have only one week to generate a GOMESA disbursements data trend analysis to present to Gulf state elected officials. They are able to find detailed, up-to-date GOMESA raw data to use as the basis of the analysis.
+* A public affairs officer from an **oil company** uses our website to get numbers to use in press releases about their company’s extractive activities and to do comparisons against other companies.  They know the numbers are good to use because they come from a government site.
+
+
 
 
 

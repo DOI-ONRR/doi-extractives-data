@@ -1,10 +1,9 @@
 # User Types
 ## Who we've interviewed
-These are the types of users we've interviewed over the course of all studies since April 2018. (15 question answerers, 9 agenda supporters, 6 storytellers, 18 domain learners, 2 question answerer/storytellers, 2 domain learner/storytellers)
+These are the types of users we've interviewed over the course of all studies since April 2018. 
 ![All users interviewed for disburemensts on a matrix](https://github.com/ONRR/doi-extractives-data/blob/research/research/00_UserTypes/AllUsers.PNG)
 
 ## User Type 1: Question Answerer
-We've interviewed 15 question answerers. And two users who were question answerers for how they find data, but storytellers for how they uses it.
 ![Question answerer users on a matrix](https://github.com/ONRR/doi-extractives-data/blob/research/research/00_UserTypes/QuestionAnswerers.PNG)
 
 ### Goals 
@@ -26,7 +25,6 @@ We've interviewed 15 question answerers. And two users who were question answere
 
 
 ## User Type 2: Agenda Supporter
-We've interviewed 9 agenda supporters.
 ![Agenda supporter users on a matrix](https://github.com/ONRR/doi-extractives-data/blob/research/research/00_UserTypes/AgendaSupporters.PNG)
 ### Goals 
 * Find supporting data for his or her agenda.
@@ -45,7 +43,6 @@ We've interviewed 9 agenda supporters.
 * A analyst for an **NGO** is concerned about increasing volumes of oil being transported by train through their state following a recent derailment. They want to determine if oil production on federal lands has recently increased to help interpret transportation-related risks to their state. The analyst can easily find data that they trust for oil production on federal lands to use that along with state production and export volumes, from other sources, to complete the analysis. They also want to be able to pinpoint specific companies that have production in the area around the derailment, so they can be held accountable.
 
 ## User Type 3: Storyteller
-We've interviewed 6 storytellers and 4 users who are storytellers for how they use the data, but find the data as question answerers or domain learners. 
 ![Storyteller users on a matrix](https://github.com/ONRR/doi-extractives-data/blob/research/research/00_UserTypes/Storytellers.PNG)
 
 ### Goals 

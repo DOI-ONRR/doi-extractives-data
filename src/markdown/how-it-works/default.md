@@ -176,7 +176,7 @@ redirect_from: /how-it-works/production/
         </div>
       </section>
     </article>
+   </main> 
     <div class="container-right-3 how-it-works-page-toc">     
       <page-toc scroll.offset='-50' exclude.class.names='h3'></page-toc>
     </div>
-</main>

@@ -1,10 +1,10 @@
 # User Types
 ## Who we've interviewed
 These are the types of users we've interviewed over the course of all studies since April 2018. 
-![All users interviewed for disburemensts on a matrix](https://github.com/ONRR/doi-extractives-data/blob/research/research/00_UserTypes/AllUsers.PNG)
+![user types mapped on one triangle representing known questions, system understanding, and exploration and another triangle representing providing an answer, presenting data, and making a decision](https://github.com/ONRR/doi-extractives-data/blob/research/research/00_UserTypes/AllUsers.PNG)
 
 ## User Type 1: Question Answerer
-![Question answerer users on a matrix](https://github.com/ONRR/doi-extractives-data/blob/research/research/00_UserTypes/QuestionAnswerers.PNG)
+![Visual summary of question answerer participants, with the majority located close to known question for finding data on the site and close to provide an answer for usage of the data, defined as someone else is asking them for information or they have a specific question or number they need](https://github.com/ONRR/doi-extractives-data/blob/research/research/00_UserTypes/QuestionAnswerers.PNG)
 
 ### Goals 
 * Answer a question that either someone else is asking or they know they have.
@@ -25,7 +25,7 @@ These are the types of users we've interviewed over the course of all studies si
 
 
 ## User Type 2: Agenda Supporter
-![Agenda supporter users on a matrix](https://github.com/ONRR/doi-extractives-data/blob/research/research/00_UserTypes/AgendaSupporters.PNG)
+![Visual summary of agenda supporter participants, with the majority of participants located between known question and exploration for finding data on the site, closer to known question and between find an answer and present data, closer to present data, for usage of the data, defined as someone who is committed to a cause and looking for data to support that cause](https://github.com/ONRR/doi-extractives-data/blob/research/research/00_UserTypes/AgendaSupporters.PNG)
 ### Goals 
 * Find supporting data for his or her agenda.
 * Work with the data and use it to inform people about how natural resource revenue data supports their agenda.
@@ -43,7 +43,7 @@ These are the types of users we've interviewed over the course of all studies si
 * A analyst for an **NGO** is concerned about increasing volumes of oil being transported by train through their state following a recent derailment. They want to determine if oil production on federal lands has recently increased to help interpret transportation-related risks to their state. The analyst can easily find data that they trust for oil production on federal lands to use that along with state production and export volumes, from other sources, to complete the analysis. They also want to be able to pinpoint specific companies that have production in the area around the derailment, so they can be held accountable.
 
 ## User Type 3: Storyteller
-![Storyteller users on a matrix](https://github.com/ONRR/doi-extractives-data/blob/research/research/00_UserTypes/Storytellers.PNG)
+![Visual summary of storyteller participants, with the majority of participants located close to exploration for finding data on the site and close to present data for usage of the data, defined as someone who is looking for the data to tell them a story that they can then share with others](https://github.com/ONRR/doi-extractives-data/blob/research/research/00_UserTypes/Storytellers.PNG)
 
 ### Goals 
 * Understand what is happening with natural resources.
@@ -64,7 +64,7 @@ These are the types of users we've interviewed over the course of all studies si
 
 ## User Type 4: Domain Learner
 We've interviewed 18 domain learners and 2 who find data as a domain learner, but uses the data like a storyteller.
-![Domain learner users on a matrix](https://github.com/ONRR/doi-extractives-data/blob/research/research/00_UserTypes/DomainLearners.PNG)
+![Visual summary of domain learner participants, with the majority of participants located between system understanding and known question, closer to system understanding, for finding data on the site and closest to make a decision, but also close to provide an answer and present data, for usage of the data, defined as someone who seeks to understand the whole picture for the domain they oversee](https://github.com/ONRR/doi-extractives-data/blob/research/research/00_UserTypes/DomainLearners.PNG)
 
 ### Goals 
 * Keep tabs on how well the process is working for the domain or locality he/she is interested in.

@@ -4,8 +4,8 @@ layout: howitworks-default
 permalink: /how-it-works/
 redirect_from: /how-it-works/production/
 ---
-<main class="container-page-wrapper landing-wrapper" id="main-content">
-<section class="slab-delta">
+
+<section class="slab-delta" id="main-content">
   <div class="container-page-wrapper landing-section_top ribbon ribbon-column">
     <div class="container-left-8 ribbon-hero ribbon-hero-column">
       <h1 id="introduction">How It Works</h1>
@@ -24,6 +24,7 @@ redirect_from: /how-it-works/production/
   </div>
 </section>
 <div class="container-page-wrapper landing-wrapper">
+  <main class="container-page-wrapper landing-wrapper">
     <article class="container-left-8 container-shift-reverse-1">
       <section class="container">
         <h2 id="ownership" alt="Land ownership" class="h2-bar">Who owns natural resources in the U.S.?</h2>
@@ -176,7 +177,7 @@ redirect_from: /how-it-works/production/
         </div>
       </section>
     </article>
-   </main> 
     <div class="container-right-3 how-it-works-page-toc">     
       <page-toc scroll.offset='-50' exclude.class.names='h3'></page-toc>
     </div>
+  </main>

@@ -52,6 +52,7 @@ const Header = props => {
   }
   return (
     <header className={styles.root + ' container-page-wrapper'}>
+      <a class="skipnav" href="#main-content">Skip to main content</a>
       { isIE && <BrowserBanner /> }
       <div className="header-left">
         <Link className="header-image_link" to="/">

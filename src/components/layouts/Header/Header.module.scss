@@ -1,5 +1,5 @@
 @value colors: "../../../css-global/colors.scss";
-@value blue as --blue, white as --white from colors;
+@value blue as --blue, white as --white, grayDarkest as _grayDarkest from colors;
 
 @value variables: '../../../css-global/variables.scss';
 @value baseFontFamily as --baseFontFamily from variables;
@@ -69,4 +69,15 @@
   line-height: 1.375rem;
   margin-bottom: 0.625rem;
   padding-bottom: 1.6em;
+}
+
+.skipnav {
+  background: transparent;
+  color: _grayDarkest;
+  left: 0;
+  padding: 1rem 1.5rem;
+  position: absolute;
+  top: -4.2rem;
+  transition: all 0.2s ease-in-out;
+  z-index: 100;
 }

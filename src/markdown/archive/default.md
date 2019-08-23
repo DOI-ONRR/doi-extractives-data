@@ -35,7 +35,7 @@ tag:
 </section>
 
 <div class="container-page-wrapper">
-  <main class="container-page-wrapper">
+  <main class="container-page-wrapper" id="main-content">
    <div class="container-left-8 container-shift-reverse-1"> 
     <section class="container-padded-top">
       <h2 id="history">History</h2>

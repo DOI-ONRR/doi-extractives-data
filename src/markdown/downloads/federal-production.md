@@ -15,7 +15,7 @@ tag:
 <custom-link to="/downloads/" className="breadcrumb link-charlie">Downloads</custom-link> /
 # Production by Year
 
-> This dataset contains information on natural resource production volumes on Native American lands and federal lands and waters.
+> This dataset contains information on natural resource production volumes on Native American lands and federal lands and waters. We only provide production volumes for Native American lands by fiscal year.
 
 <p class="downloads-download_links-intro">Download calendar year data (2003-2018):
   <ul class="downloads-download_links list-unstyled">

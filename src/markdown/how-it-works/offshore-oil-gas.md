@@ -88,6 +88,11 @@ permalink: /how-it-works/offshore-oil-gas/
             <p>BOEM requires that companies remove retired offshore drilling platforms from the marine environment within one year after the end of an operation. The lease holder is required to remove the platform from its foundation by severing all bottom-founded components at least 15 feet below the mudline and disposing of the structures in a scrap or fabrication yard. Alternatively, the platform can be used to create an artificial reef underwater.</p>
             <p>Lease holders post bonds held by the government to ensure compliance with lease terms, including decommissioning the site. If the lease holder fails to decommission the site, the government may use the bonds to cover the cost of decommissioning. If the lease holder complies, the government returns the bonds to the lease holder at the end of the operation.</p>
           </process-step>
+          <process-step stepName="Rates and fees">
+            <ul class="list-bullet">
+              <li><a href="/how-it-works/revenues/#oil-gas-rates">Oil and gas rates and fees</a></li>
+            </ul>
+          </process-step>
           <process-step stepName="Learn more">
             <ul class="list-bullet">
               <li><a href="http://www.boem.gov/uploadedFiles/BOEM/Oil_and_Gas_Energy_Program/Leasing/5BOEMRE_Leasing101.pdf">Oil and Gas Leasing on the Outer Continental Shelf (PDF)</a></li>
@@ -99,30 +104,6 @@ permalink: /how-it-works/offshore-oil-gas/
     </section>
   </div>
 </section>
-<div class="slab-beta revenues_page-forms">
-  <section class="container-outer">
-    <h1>Revenue collected by ONRR</h1>
-    <div class="revenues_page-forms_options">
-      <div>
-        <h2>Bonus</h2>
-        <p>The amount the highest bidder paid for a natural resource lease.</p>
-      </div>
-      <div>
-        <h2>Rent</h2>
-        <p class="revenues_page-forms_numbers_first">Starts at
-          <br><span>$7</span> or <span>$11</span> per acre, can increase to
-          <br><span>$44</span> per acre</p>
-        <p>The starting amount depends on depth, and it increases throughout the term of the lease up to <span>$44.00</span> per acre in some cases.</p>
-      </div>
-      <div>
-        <h2>Royalty</h2>
-        <p class="revenues_page-forms_numbers"><span>12.5%, 16.67%,</span> or <span>18.75%</span></p>
-      </div>
-      <div>
-      </div>
-    </div>
-  </section>
-</div>
 <div class="slab-alpha revenues_subpage-involved">
   <section class="container-outer">
     <div class="container-left-4">

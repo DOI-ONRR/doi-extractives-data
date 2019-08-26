@@ -82,6 +82,11 @@ permalink: /how-it-works/onshore-oil-gas/
             <p>The lease holder also posts a bond of at least $10,000 that BLM holds during the operation to enforce lease terms and reclamation. The operator must conduct interim reclamation throughout the life of the operation, concluding with appropriately plugging wells and restoring the ecosystem.</p>
             <p>The BLM field office performs inspections throughout the operation to ensure that interim reclamation takes place, wells are appropriately plugged, and the ecosystem returns.</p>
           </process-step>
+          <process-step stepName="Rates and fees">
+            <ul class="list-bullet">
+              <li><a href="/how-it-works/revenues/#oil-gas-rates">Oil and gas rates and fees</a></li>
+            </ul>
+          </process-step>
           <process-step stepName="Learn more">
             <ul class="list-bullet">
             <li><a href="https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing">Leasing of Onshore Oil and Gas Resources</a></li>
@@ -93,28 +98,6 @@ permalink: /how-it-works/onshore-oil-gas/
     </section>
   </div>
 </section>
-<div class="slab-beta revenues_page-forms">
-  <section class="container-outer">
-    <h1>Revenue collected by BLM and ONRR</h2>
-    <div class="revenues_page-forms_options">
-      <div>
-        <h2>Bonus</h2>
-        <p>The amount the highest bidder paid for a natural resource lease.</p>
-      </div>
-      <div>
-        <h2>Rent</h2>
-        <p class="revenues_page-forms_numbers"><span>$1.50</span> per acre for five years
-          <br> <span>$2.00</span> per acre thereafter</p>
-      </div>
-      <div>
-        <h2>Royalty</h2>
-        <p class="revenues_page-forms_numbers"><span>12.5%</span></p>
-      </div>
-      <div>
-      </div>
-    </div>
-  </section>
-</div>
 <div class="slab-alpha revenues_subpage-involved">
   <section class="container-outer">
     <div class="container-left-4">

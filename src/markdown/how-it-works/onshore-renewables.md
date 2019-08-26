@@ -73,6 +73,11 @@ permalink: /how-it-works/onshore-renewables/
             <p>Bonding requirements differ based on whether the project is in a designed leasing area or not. Inside designated leasing areas, the standard bond amounts would be $10,000 per acre for solar energy projects and $20,000 per turbine for wind energy projects. These same amounts would be the minimum requirements for bonds outside designated leasing areas, subject to adjustment by BLM.</p>
             <p>If the developer appropriately decommissions solar and wind projects and meets terms and conditions, BLM returns the bond at the close of the project.</p>
           </process-step>
+          <process-step stepName="Rates and fees">
+            <ul class="list-bullet">
+              <li><a href="/how-it-works/revenues/#solar-wind-rates">Renewables rates and fees</a></li>
+            </ul>
+          </process-step>
           <process-step stepName="Learn more">
             <ul class="list-bullet">
               <li><a href="https://www.blm.gov/programs/energy-and-minerals/renewable-energy/solar-energy">Solar Energy</a></li>
@@ -84,34 +89,6 @@ permalink: /how-it-works/onshore-renewables/
     </section>
   </div>
 </section>
-<div class="slab-beta revenues_page-forms">
-  <section class="container-outer">
-    <h1>Revenue collected by BLM</h1>
-    <div class="revenues_page-forms_options">
-      <div>
-        <h2>Bonus</h2>
-        <p>The amount the highest bidder will pay for a natural resource lease.</p>
-      </div>
-      <div>
-        <h2>Rent</h2>
-        <p>Rent is determined by the acre and based on land values.</p>
-      </div>
-      <div>
-        <h2>Fees</h2>
-        <p class="revenues_page-forms_numbers_first">
-          <span>$5,010</span> per MW
-          <br>annual wind fee
-          <br><br><span>$2,863–$4,294</span> per MW
-          <br>annual solar fee
-        </p>
-        <p>Solar fees are based on solar type and storage capacity.</p>
-      </div>
-      <div>
-        <em>Note: wind and solar fees are expressed as <glossary-term termKey="Megawatt Capacity (MC) fee">Megawatt Capacity fees</glossary-term>.</em>
-      </div>
-    </div>
-  </section>
-</div>
 <div class="slab-alpha revenues_subpage-involved">
   <section class="container-outer">
     <div class="container-left-4">

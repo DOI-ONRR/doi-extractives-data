@@ -171,4 +171,4 @@
 - name: "Wet gas"
   definition: "Natural gas that hasn’t been treated to remove liquid hydrocarbons or other nonhydrocarbons that make the gas unmarketable."
 - name: "Withheld"
-  definition: "Data may be withheld for several reasons. In some cases, usually where only one company is extracting a resource in a county, the specific amount produced in that state or county is withheld to protect trade secrets."
+  definition: "We refer to data as “withheld” when publishing that data could violate federal laws and regulations. Most commonly, we withhold data if it can be used to personally identify individuals, or if the data is protected by the Trade Secrets Act. In the latter case, data is often withheld when there is only one company producing a specific commodity within a specific region. We withhold all location data for Native American production, revenue, and disbursements."

@@ -33,7 +33,7 @@ tag:
 
 ## Scope
 
-The calendar year dataset includes natural resource production for U.S. federal lands and offshore areas. The fiscal year dataset also includes Native American lands (2009-2018). Neither dataset includes privately owned lands, or U.S. state lands.
+The calendar year dataset includes natural resource production for U.S. federal lands and offshore areas. The fiscal year dataset also includes Native American lands (2009-2018). Neither dataset includes privately owned lands or state-owned lands.
 
 Federal revenue data is available by location, but Native American data is only available at the national level to protect private and personally identifiable information.
 

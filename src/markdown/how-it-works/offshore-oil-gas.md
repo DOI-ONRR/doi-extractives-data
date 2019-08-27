@@ -32,7 +32,7 @@ permalink: /how-it-works/offshore-oil-gas/
         /
       </div>
       <h1>Offshore Oil &amp; Gas</h1>
-      <p class="revenues_subpage-intro_text">The Outer Continental Shelf Lands Act (OCSLA) of 1953 grants the Secretary of the Department of the Interior (DOI) the authority to manage offshore energy resources and to develop regulations to carry out that authority. Three agencies within DOI — BOEM, BSEE, and ONRR — work together to manage, regulate, and collect revenue from 13 million active leased acres across the <glossary-term>Outer Continental Shelf</glossary-term>.</p>
+      <p class="revenues_subpage-intro_text">The Outer Continental Shelf Lands Act (OCSLA) of 1953 grants the Secretary of the Department of the Interior (DOI) the authority to manage offshore energy resources and to develop regulations to carry out that authority. Three agencies within DOI — BOEM, BSEE, and ONRR — work together to manage, regulate, and collect revenue from leased acres across the <glossary-term>Outer Continental Shelf</glossary-term>.</p>
     </div>
     <div class="revenues_subpage-office_container revenues_subpage-office_container_layout">
       <div class="revenues_subpage-office container">
@@ -60,7 +60,7 @@ permalink: /how-it-works/offshore-oil-gas/
       <did-you-know color='blue' intro='The Gulf of Mexico Energy Security Act of 2006 (GOMESA) changed the leasing program for extracting oil and gas on the Outer Continental Shelf.'>
         <span>GOMESA:</span><ul class="revenues_subpage-dyk_text list-bullet">
           <li>Opens 8.6 million acres in the Gulf of Mexico for oil and gas leasing</li>
-          <li>Stipulates that 37.5% of all qualified Outer Continental Shelf revenue will be shared among the states of Alabama, Louisiana, Mississippi, and Texas, and that 12.5% of revenue will be allocated to the Land and Water Conservation Fund (revenue from a more substantial set of leases will be shared beginning in 2017)</li>
+          <li>Stipulates that 37.5% of all qualified Outer Continental Shelf revenue will be shared among the states of Alabama, Louisiana, Mississippi, and Texas, and that 12.5% of revenue will be allocated to the Land and Water Conservation Fund (revenue from a more substantial set of leases was added in 2017)</li>
           <li>Bans oil and gas leasing within 125 miles of the Florida coastline in the Eastern Planning Area, and within a portion of the Central Planning Area, until 2022</li>
           <li>Allows companies to exchange certain existing leases in moratorium areas for bonus and royalty credits to be used on other Gulf of Mexico leases</li>
         </ul></did-you-know>
@@ -107,22 +107,11 @@ permalink: /how-it-works/offshore-oil-gas/
 <div class="slab-alpha revenues_subpage-involved">
   <section class="container-outer">
     <div class="container-left-4">
-      <h1>Get involved</h1>
-      <h2 class="h4">Participate in the offshore oil and gas leasing process.</h2>
+      <h2>Get involved</h2>
+      <h3 class="h4">Participate in the offshore oil and gas leasing process.</h3>
     </div>
     <div class="container-right-8">
       <div class="revenues_subpage-involved_participate">
-        <div class="container-half container-half-space">
-          <a class="link-no_under" href="https://www.youtube.com/channel/UCXL807nkJMCuxNj5kF09LLQ">
-            <img src="/public/img/icons/youtube-play.svg" class="u-padding-right icon-medium"/>
-          <h3>YouTube</h3>
-          </a>
-          <p><strong>Comment on the leasing program.</strong> Planning for the 2019–2024 Five Year Program is underway. BOEM wants input from anyone that may be affected, positively or negatively, by Outer Continental Shelf oil and gas development activity. Watch the video and <a href="https://www.boem.gov/National-Program/">visit BOEM’s website</a> for more details.</p>
-        </div>
-        <div class="container-half container-half-space_top revenues_subpage-involved_video">
-          <iframe title="get involved video" src="https://www.youtube.com/embed/M_u_1TeaefI" frameborder="0" allowfullscreen></iframe>
-        </div>
-      </div>
       <div>
         <div class="revenues_subpage-involved_option">
           <a class="link-no_under" href="https://www.facebook.com/BureauOfOceanEnergyManagement">

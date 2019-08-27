@@ -71,6 +71,11 @@ permalink: /how-it-works/coal/
             <p>At the close of a coal mining operation, the lease holder must decommission the mine and restore the land. State governments, with oversight from OSMRE, regulate and oversee this process. Even before gaining a lease, the lease holder must submit a bond to OSMRE or a state regulatory agency as insurance for complying with the lease and covering the cost of <glossary-term termKey="reclamation">reclaiming</glossary-term> the land.</p>
             <p>Within coal mining, federal and local governments partner to regulate reclamation. OSMRE is responsible for establishing a nationwide program to protect society and the environment from the adverse effects of surface coal mining operations. To do so, OSMRE works with states and tribes to ensure that citizens and the environment are protected during coal mining, and that the land is restored to beneficial use when mining is finished. OSMRE and its partners are also responsible for reclaiming and restoring lands and waters degraded by mining operations before 1977.</p>
           </process-step>
+          <process-step stepName="Rates and fees">
+            <ul class="list-bullet">
+              <li><a href="/how-it-works/revenues/#coal-rates">Coal rates and fees</a></li>
+            </ul>
+          </process-step>
 		  		<process-step stepName="Learn more">
             <ul class="list-bullet">
               <li><a href="https://www.blm.gov/programs/energy-and-minerals/coal">Coal leasing</a></li>

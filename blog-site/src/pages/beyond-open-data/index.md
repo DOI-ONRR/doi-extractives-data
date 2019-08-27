@@ -11,7 +11,7 @@ tags:
 - accessibility
 - user experience
 - user research
-date: "2019-08-01"
+date: "2019-08-19"
 ---
 
 ## Background
@@ -44,7 +44,7 @@ This provision states that a website “does not overlap with or duplicate any l
 
 ### User-driven design
 
-This provision states that the website must be “designed around user needs with data-driven analysis influencing management and development decisions, using qualitative and quantitative data to determine user goals, needs, and behaviors” and that we should “continually test the website...to ensure that user needs are addressed.” We follow a user-centered development practice to design our site led by our user experience expert. As such, our user experience designer guides our [hypothesis-driven design and development cycle](http://www.slideshare.net/jseiden/2012-feb-25-agile-ux-nyc-seiden-requirements-to-hypotheses).
+This provision states that the website must be “designed around user needs with data-driven analysis influencing management and development decisions, using qualitative and quantitative data to determine user goals, needs, and behaviors” and that we should “continually test the website...to ensure that user needs are addressed.” We follow a user-centered development practice to design our site led by our user experience expert. As such, our user experience designer guides our [user-centered design and development cycle](https://github.com/ONRR/doi-extractives-data/wiki/User-Centered-Design-Process).
 
 ### Mobile Devices
 

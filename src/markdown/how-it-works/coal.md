@@ -21,7 +21,6 @@ permalink: /how-it-works/coal/
 		  </div>
 		  <h1>Coal</h1>
 		  <p class="revenues_subpage-intro_text">The Department of the Interior is responsible for 570 million acres of federal land with coal resources. This responsibility comes from the Mineral Leasing Act of 1920 and the Mineral Leasing Act for Acquired Lands of 1947, as amended.</p>
-		  <p class="revenues_subpage-intro_text">In 2013, the United States was the world’s second largest coal producer after China. The U.S. has significant available coal reserves: There are 19.7 billion <glossary-term termKey="tons">short tons</glossary-term> of recoverable reserves in active mines, and another 479.9 billion short tons that could be mined with current technologies.</p>
 		</div>
 		<div class="revenues_subpage-office_container revenues_subpage-office_container_layout">
 		  <div class="revenues_subpage-office container">
@@ -72,6 +71,11 @@ permalink: /how-it-works/coal/
             <p>At the close of a coal mining operation, the lease holder must decommission the mine and restore the land. State governments, with oversight from OSMRE, regulate and oversee this process. Even before gaining a lease, the lease holder must submit a bond to OSMRE or a state regulatory agency as insurance for complying with the lease and covering the cost of <glossary-term termKey="reclamation">reclaiming</glossary-term> the land.</p>
             <p>Within coal mining, federal and local governments partner to regulate reclamation. OSMRE is responsible for establishing a nationwide program to protect society and the environment from the adverse effects of surface coal mining operations. To do so, OSMRE works with states and tribes to ensure that citizens and the environment are protected during coal mining, and that the land is restored to beneficial use when mining is finished. OSMRE and its partners are also responsible for reclaiming and restoring lands and waters degraded by mining operations before 1977.</p>
           </process-step>
+          <process-step stepName="Rates and fees">
+            <ul class="list-bullet">
+              <li><a href="/how-it-works/revenues/#coal-rates">Coal rates and fees</a></li>
+            </ul>
+          </process-step>
 		  		<process-step stepName="Learn more">
             <ul class="list-bullet">
               <li><a href="https://www.blm.gov/programs/energy-and-minerals/coal">Coal leasing</a></li>
@@ -85,18 +89,18 @@ permalink: /how-it-works/coal/
 </section>
 <div class="slab-beta revenues_page-forms">
 	<section class="container-outer">
-	  <h1>Revenue collected by the Department of the Interior</h1>
+	  <h2>Revenue collected by the Department of the Interior</h2>
 	  <div class="revenues_page-forms_options">
 	    <div>
-	      <h2>Bonus</h2>
+	      <h3 class="h2">Bonus</h3>
 	      <p>The amount the highest bidder paid for a natural resource lease.</p>
 	    </div>
 	    <div>
-	      <h2>Rent</h2>
+	      <h3 class="h2">Rent</h3>
 	      <p class="revenues_page-forms_numbers"><span>$3.00</span> per acre or a fraction thereof</p>
 	    </div>
 	    <div>
-	      <h2>Royalty</h2>
+	      <h3 class="h2">Royalty</h3>
 	      <p class="revenues_page-forms_numbers_first">
 	        <span>12.5%</span>
 	        <br>surface
@@ -105,7 +109,7 @@ permalink: /how-it-works/coal/
 	      <p>The rate depends on whether the coal was extracted by surface or subsurface mining.</p>
 	    </div>
 	    <div>
-	      <h2>Fees</h2>
+	      <h3 class="h2">Fees</h3>
 	      <p class="revenues_page-forms_numbers_first"><span>$0.28</span> per ton
 	      <br>surface mining
 	      <br><span>$0.12</span> per ton

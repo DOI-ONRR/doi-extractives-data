@@ -18,6 +18,8 @@ const SectionOverview = props => {
   const usStateData = props.usStateMarkdown.frontmatter
   const usStateFields = props.usStateMarkdown.fields || {}
 
+  console.log(props);
+
   return (
     <section className="state-pages-top">
 
@@ -29,9 +31,9 @@ const SectionOverview = props => {
           <SectionOwnership usStateData={usStateData}/>
         </div>
 
-        <KeyGDPJobs usStateData={usStateData}/>
-
-        <KeyAllProduction usStateData={usStateData} />
+        <StateProductionSummary production={props.production}/>
+        <StateRevenueSummary />
+        <StateDisbursementsSummary />
 
         {usStateData.nearby_offshore_region &&
                   <OffshoreRegion usStateData={usStateData} />
@@ -129,6 +131,42 @@ const SectionOwnership = props => {
     </section>
   )
 }
+
+const StateProductionSummary = props => {
+const commodityCount = Object.keys(props.production).length
+console.log(commodityCount)
+  return (
+    <div>
+      <p>Production</p>
+
+    </div>
+  )
+
+}
+
+
+const StateRevenueSummary = props => {
+
+  return (
+    <div>
+      <p>Revenue</p>
+    </div>
+  )
+
+}
+
+
+const StateDisbursementsSummary = props => {
+
+  return (
+    <div>
+      <p>Disbursements</p>
+    </div>
+  )
+
+}
+
+
 
 /* Includes the GDP percentage, then outputs employment percentage if it’s over 2%. */
 const KeyGDPJobs = props => {

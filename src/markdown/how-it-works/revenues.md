@@ -124,9 +124,9 @@ Lease holders also pay different fees to the Bureau of Land Management, Bureau o
       <td></td>
       <td><strong>$1</strong> per acre</td>
       <td><strong>$20</strong> processing fee<br>
-          <strong>$37</strong> location fee<br>
-          <strong>$155</strong> initial maintenance fee<br>
-          <strong>$155</strong> annual maintenance fee for the assessment year in which the claim/site was located
+          <strong>$40</strong> location fee<br>
+          <strong>$165</strong> initial maintenance fee<br>
+          <strong>$165</strong> annual maintenance fee for the assessment year in which the claim/site was located
       </td>
       <td></td>
     </tr>

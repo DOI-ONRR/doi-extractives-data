@@ -299,7 +299,7 @@ const RevenueProcessTable = props => {
           <strong>$7</strong> or <strong>$11</strong> annual rent per acre, increasing over time up to <strong>$44</strong> per acre in some cases
         </td>
         <td>
-          <strong>12.5%</strong>, <strong>16.67%</strong>, or
+          <strong>12.5%</strong>, <strong>16.67%</strong>, or 
           <strong>18.75%</strong> of production value
         </td>
         <td></td>
@@ -465,12 +465,11 @@ const RevenueProcessTable = props => {
 				      	</td>
 				    </tr>
 				  <tr>
-				    <th className="table-arrow_box-subcategory">Hardrock Acquired lands</th>
+				    <th className="table-arrow_box-subcategory">Mining claim fees</th>
 				    <td>
-				      <strong>$6,500</strong> prospecting permit fee
 				    </td>
 				    <td>
-				      <strong>$37</strong> annual rent per acre + <strong>$0.50</strong> annual prospecting fee per acre
+				      <strong>$40</strong> location fee <strong>$20</strong> processing fee <strong>$165</strong> maintenance fee
 				    </td>
 				    <td>
 						Royalty rates are determined by leasing officers on an individual case basis (no minimums apply)

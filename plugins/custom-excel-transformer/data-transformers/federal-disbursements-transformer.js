@@ -16,7 +16,7 @@ const SOURCE_COLUMNS = {
   Year: 'Fiscal Year',
   Fund: 'Fund Type',
   OnshoreOffshore: 'Onshore/Offshore',
-  Total: ' Total ',
+  Total: 'Total',
   USState: 'State',
   County: 'County',
   CalendarYear: 'Calendar Year',

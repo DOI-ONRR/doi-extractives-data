@@ -10,6 +10,7 @@ import { Footer } from '../Footer'
 import Glossary from '../../utils/Glossary'
 import utils from '../../../js/utils'
 
+import styles from '../../../css-global/base-theme.module.scss'
 import '../../../styles/_main.scss'
 // import "../../../styles/print.scss";
 
@@ -80,6 +81,8 @@ const DefaultLayout = ({ children }) => {
           {'<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NCRF98R" height="0" width="0" style="display:none;visibility:hidden"></iframe>'}
         </noscript>
       </Helmet>
+
+      <a href="#main-content" className={styles.skipNav}>Skip to main content</a>  
 
       <Banner />
 

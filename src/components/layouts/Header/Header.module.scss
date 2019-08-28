@@ -1,5 +1,5 @@
 @value colors: "../../../css-global/colors.scss";
-@value blue as --blue, white as --white from colors;
+@value blue as --blue, white as --white, grayDarkest as _grayDarkest from colors;
 
 @value variables: '../../../css-global/variables.scss';
 @value baseFontFamily as --baseFontFamily from variables;

@@ -5,7 +5,7 @@ permalink: /how-it-works/
 redirect_from: /how-it-works/production/
 ---
 
-<section class="slab-delta">
+<section class="slab-delta" id="main-content">
   <div class="container-page-wrapper landing-section_top ribbon ribbon-column">
     <div class="container-left-8 ribbon-hero ribbon-hero-column">
       <h1 id="introduction">How It Works</h1>

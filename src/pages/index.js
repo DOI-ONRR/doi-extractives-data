@@ -99,7 +99,7 @@ class HomePage extends React.Component {
     render () {
     return (
       <DefaultLayout>
-        <main>
+        <main id="main-content">
           <Helmet
             title="Home | Natural Resources Revenue Data"
             meta={[

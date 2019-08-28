@@ -32,7 +32,7 @@ permalink: /how-it-works/offshore-oil-gas/
         /
       </div>
       <h1>Offshore Oil &amp; Gas</h1>
-      <p class="revenues_subpage-intro_text">The Outer Continental Shelf Lands Act (OCSLA) of 1953 grants the Secretary of the Department of the Interior (DOI) the authority to manage offshore energy resources and to develop regulations to carry out that authority. Three agencies within DOI — BOEM, BSEE, and ONRR — work together to manage, regulate, and collect revenue from 13 million active leased acres across the <glossary-term>Outer Continental Shelf</glossary-term>.</p>
+      <p class="revenues_subpage-intro_text">The Outer Continental Shelf Lands Act (OCSLA) of 1953 grants the Secretary of the Department of the Interior (DOI) the authority to manage offshore energy resources and to develop regulations to carry out that authority. Three agencies within DOI — BOEM, BSEE, and ONRR — work together to manage, regulate, and collect revenue from leased acres across the <glossary-term>Outer Continental Shelf</glossary-term>.</p>
     </div>
     <div class="revenues_subpage-office_container revenues_subpage-office_container_layout">
       <div class="revenues_subpage-office container">
@@ -60,7 +60,7 @@ permalink: /how-it-works/offshore-oil-gas/
       <did-you-know color='blue' intro='The Gulf of Mexico Energy Security Act of 2006 (GOMESA) changed the leasing program for extracting oil and gas on the Outer Continental Shelf.'>
         <span>GOMESA:</span><ul class="revenues_subpage-dyk_text list-bullet">
           <li>Opens 8.6 million acres in the Gulf of Mexico for oil and gas leasing</li>
-          <li>Stipulates that 37.5% of all qualified Outer Continental Shelf revenue will be shared among the states of Alabama, Louisiana, Mississippi, and Texas, and that 12.5% of revenue will be allocated to the Land and Water Conservation Fund (revenue from a more substantial set of leases will be shared beginning in 2017)</li>
+          <li>Stipulates that 37.5% of all qualified Outer Continental Shelf revenue will be shared among the states of Alabama, Louisiana, Mississippi, and Texas, and that 12.5% of revenue will be allocated to the Land and Water Conservation Fund (revenue from a more substantial set of leases was added in 2017)</li>
           <li>Bans oil and gas leasing within 125 miles of the Florida coastline in the Eastern Planning Area, and within a portion of the Central Planning Area, until 2022</li>
           <li>Allows companies to exchange certain existing leases in moratorium areas for bonus and royalty credits to be used on other Gulf of Mexico leases</li>
         </ul></did-you-know>
@@ -88,6 +88,11 @@ permalink: /how-it-works/offshore-oil-gas/
             <p>BOEM requires that companies remove retired offshore drilling platforms from the marine environment within one year after the end of an operation. The lease holder is required to remove the platform from its foundation by severing all bottom-founded components at least 15 feet below the mudline and disposing of the structures in a scrap or fabrication yard. Alternatively, the platform can be used to create an artificial reef underwater.</p>
             <p>Lease holders post bonds held by the government to ensure compliance with lease terms, including decommissioning the site. If the lease holder fails to decommission the site, the government may use the bonds to cover the cost of decommissioning. If the lease holder complies, the government returns the bonds to the lease holder at the end of the operation.</p>
           </process-step>
+          <process-step stepName="Rates and fees">
+            <ul class="list-bullet">
+              <li><a href="/how-it-works/revenues/#oil-gas-rates">Oil and gas rates and fees</a></li>
+            </ul>
+          </process-step>
           <process-step stepName="Learn more">
             <ul class="list-bullet">
               <li><a href="http://www.boem.gov/uploadedFiles/BOEM/Oil_and_Gas_Energy_Program/Leasing/5BOEMRE_Leasing101.pdf">Oil and Gas Leasing on the Outer Continental Shelf (PDF)</a></li>
@@ -99,49 +104,14 @@ permalink: /how-it-works/offshore-oil-gas/
     </section>
   </div>
 </section>
-<div class="slab-beta revenues_page-forms">
-  <section class="container-outer">
-    <h1>Revenue collected by ONRR</h1>
-    <div class="revenues_page-forms_options">
-      <div>
-        <h2>Bonus</h2>
-        <p>The amount the highest bidder paid for a natural resource lease.</p>
-      </div>
-      <div>
-        <h2>Rent</h2>
-        <p class="revenues_page-forms_numbers_first">Starts at
-          <br><span>$7</span> or <span>$11</span> per acre, can increase to
-          <br><span>$44</span> per acre</p>
-        <p>The starting amount depends on depth, and it increases throughout the term of the lease up to <span>$44.00</span> per acre in some cases.</p>
-      </div>
-      <div>
-        <h2>Royalty</h2>
-        <p class="revenues_page-forms_numbers"><span>12.5%, 16.67%,</span> or <span>18.75%</span></p>
-      </div>
-      <div>
-      </div>
-    </div>
-  </section>
-</div>
 <div class="slab-alpha revenues_subpage-involved">
   <section class="container-outer">
     <div class="container-left-4">
-      <h1>Get involved</h1>
-      <h2 class="h4">Participate in the offshore oil and gas leasing process.</h2>
+      <h2>Get involved</h2>
+      <h3 class="h4">Participate in the offshore oil and gas leasing process.</h3>
     </div>
     <div class="container-right-8">
       <div class="revenues_subpage-involved_participate">
-        <div class="container-half container-half-space">
-          <a class="link-no_under" href="https://www.youtube.com/channel/UCXL807nkJMCuxNj5kF09LLQ">
-            <img src="/public/img/icons/youtube-play.svg" class="u-padding-right icon-medium"/>
-          <h3>YouTube</h3>
-          </a>
-          <p><strong>Comment on the leasing program.</strong> Planning for the 2019–2024 Five Year Program is underway. BOEM wants input from anyone that may be affected, positively or negatively, by Outer Continental Shelf oil and gas development activity. Watch the video and <a href="https://www.boem.gov/National-Program/">visit BOEM’s website</a> for more details.</p>
-        </div>
-        <div class="container-half container-half-space_top revenues_subpage-involved_video">
-          <iframe title="get involved video" src="https://www.youtube.com/embed/M_u_1TeaefI" frameborder="0" allowfullscreen></iframe>
-        </div>
-      </div>
       <div>
         <div class="revenues_subpage-involved_option">
           <a class="link-no_under" href="https://www.facebook.com/BureauOfOceanEnergyManagement">

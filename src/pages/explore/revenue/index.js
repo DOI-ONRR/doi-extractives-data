@@ -187,7 +187,7 @@ class FederalRevenue extends React.Component {
 	        let data = dataSet[BY_ID][dataId]
 
 	        // Apply filters
-	        if (this.state.filter.years.includes(data.FiscalYear) &&
+	        if (this.state.filter.years.includes(data.FiscalYear.toString()) &&
 						this.hasLandCategory(data) &&
 						this.hasLocation(data)) {
 	          if (!expandedGroups.includes(name)) {

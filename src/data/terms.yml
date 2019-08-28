@@ -40,6 +40,8 @@
   definition: "Oil is that is not treated or refined."
 - name: "Direct use"
   definition: "Geothermal energy (hot water near the surface of the earth) can be used directly for heating buildings, drying crops, heating water, and other industrial processes."
+- name: "Disbursement"
+  definition: "After collecting revenue from natural resource extraction, the Office of Natural Resources Revenue (ONRR) distributes that money to different agencies, funds, and local governments for public use. This process is called “disbursement.”"
 - name: "Dry natural gas"
   definition: "Natural gas that remains after removing the liquefiable hydrocarbon portion from the gas stream (i.e., gas after lease, field, or plant separation) and after removing any quantities of nonhydrocarbon gases that render the gas unmarketable."
 - name: "DOI"

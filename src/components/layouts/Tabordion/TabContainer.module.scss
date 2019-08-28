@@ -1,0 +1,74 @@
+@value colors: "../../../css-global/colors.scss";
+@value gray as --gray, grayDarkest as --grayDarkest, grayLight as --grayLight , grayPale as --grayPale from colors;
+
+.root {
+    display: flex;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 25px;
+
+}
+
+.tabContainer {
+margin-top: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  z-index: 10;
+}
+
+.title {
+    font-family: 'Lato Bold', 'Lato Regular', 'Lato';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 34px;
+    color: #1C2326;
+    text-align: left;
+    line-height: 46px;
+}
+    
+
+
+.contentTop {
+    //border: 1px solid purple;
+    //    min-width: 100%;
+	flex-basis: 100%;
+	order: 0;
+	min-width: 280px;
+	margin-bottom: 30px;
+}
+
+.contentLeft {
+   // border: 1px solid green;
+  //   min-width: 65%;
+    flex-basis: 65%;
+    min-width: 280px;
+    order: 1;
+}
+
+
+
+.contentRight {
+    // border: 1px solid blue;
+   // min-width: 35%;
+    flex-basis: 35%;
+    order: 2;
+    min-width: 280px;
+    
+}
+
+.contentChildren{
+    // border: 1px solid yellow;
+    // min-width: 100%;
+    flex-basis: 100%;
+    min-width: 280px;
+    order: 3;
+}
+.contentBottom{
+    //  border: 1px solid red;
+    //   min-width: 100%;
+    flex-basis: 100%;
+    min-width: 280px;
+    order: 4;
+}

@@ -134,7 +134,9 @@ const SectionOwnership = props => {
 
 const StateProductionSummary = props => {
 const commodityCount = Object.keys(props.production).length
+const commodityYears = props.production.year
 console.log(commodityCount)
+console.log(commodityYears)
   return (
     <div>
       <p>Production</p>

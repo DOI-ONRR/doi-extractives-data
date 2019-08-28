@@ -25,7 +25,7 @@ const DisbursementTrends = () => {
 
     const results=useStaticQuery(graphql`
        query DisbursementTrendsQuery {
-allYearlyDispursements :  allDisbursementsXlsxData(sort: {fields: [Fiscal_Year], order: DESC}) {
+allYearlyDisbursements :  allDisbursementsXlsxData(sort: {fields: [Fiscal_Year], order: DESC}) {
     nodes {
       Fiscal_Year
       Fund_Type
@@ -34,7 +34,7 @@ allYearlyDispursements :  allDisbursementsXlsxData(sort: {fields: [Fiscal_Year],
       _Total_
     }
   }
-    currentMonthlyDispursements : allDisbursementsMonthly {
+    currentMonthlyDisbursements : allDisbursementsMonthly {
     nodes {
       Month
       DisplayYear
@@ -46,8 +46,8 @@ allYearlyDispursements :  allDisbursementsXlsxData(sort: {fields: [Fiscal_Year],
 
 `) 
 
-    let dataYearly=results.allYearlyDispursements.nodes;
-    let currentMonthly=results.currentMonthlyDispursements.nodes.map(obj=> ({...obj, month:monthLookup(obj.Month), FiscalMonth: fiscalMonthLookup(obj.Month), date: monthlyDate(obj),fiscalYear:2019}));
+    let dataYearly=results.allYearlyDisbursements.nodes;
+    let currentMonthly=results.currentMonthlyDisbursements.nodes.map(obj=> ({...obj, month:monthLookup(obj.Month), FiscalMonth: fiscalMonthLookup(obj.Month), date: monthlyDate(obj),fiscalYear:2019}));
     let currentTrends=aggregateMonthlyData(currentMonthly);
 
     let maxMonth=getMaxMonth(currentMonthly).toLocaleString(undefined, { month: 'long' });

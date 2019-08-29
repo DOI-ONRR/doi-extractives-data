@@ -7,8 +7,10 @@
 
 .title {
 	font-size: 1.125rem;
-	font-weight: 600;
+	font-weight: 700;
 	margin-bottom: 5px;
+	color: #435159;
+	min-width: 300px;
 }
 
 .revenueTable {
@@ -36,4 +38,16 @@
 
 .alignRight {
 	text-align: right;
+}
+
+@media screen and (max-width: 481px) {
+	.root {
+		padding-left: 0;
+		margin-top: 2rem;
+	}
+}
+
+.stackedBarChart {
+    padding-right:100px;
+    padding-left:100px;
 }

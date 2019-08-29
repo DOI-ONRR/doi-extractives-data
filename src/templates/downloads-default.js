@@ -20,7 +20,7 @@ class DownloadsTemplate extends React.Component {
 
     return (
       <DefaultLayout>
-        <main>
+        <main id="main-content">
           <Helmet
             title={title}
             meta={[

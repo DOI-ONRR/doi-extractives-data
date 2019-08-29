@@ -27,6 +27,7 @@ const StateAreasMap = props => {
       <g className="states mesh">
         <use xlinkHref={withPrefixSVG('/maps/states/all.svg#states-mesh')}></use>
       </g>
+
     </g>
   )
 }

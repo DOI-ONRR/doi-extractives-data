@@ -22,82 +22,6 @@ const TREND_LIMIT = 10
 */
 
 const RevenueTrends = () => {
-  /*  <StaticQuery
-    query={graphql`
-      query RevenueTrendsQuery {
-        allMonthlyRevenuesByFiscalYear: allResourceRevenuesMonthly(
-          filter: {RevenueCategory: {ne: null}},
-          sort: {fields: [RevenueDate], order: DESC}) {
-          group(field: FiscalYear) {
-            fiscalYear: fieldValue
-            data: edges {
-              node {
-                id
-                FiscalYear
-                Revenue
-                RevenueCategory
-                RevenueDate
-                RevenueType
-              }
-            }
-          }
-        }
-      }
-    `}
-    render={data => {
-      let fiscalYearData = JSON.parse(JSON.stringify(data.allMonthlyRevenuesByFiscalYear.group)).sort((a, b) => (a.fiscalYear < b.fiscalYear) ? 1 : -1)
-
-      // Get the latest date then subtract 1 year to filter previous year data to compare current year data
-      let currentYearDate = new Date(fiscalYearData[0].data[0].node.RevenueDate);
-      let previousYearMaxDate = new Date(fiscalYearData[0].data[0].node.RevenueDate)
-
-      previousYearMaxDate.setFullYear(previousYearMaxDate.getUTCFullYear() -1)
-
-      let currentYearData = (JSON.parse(JSON.stringify(fiscalYearData)).splice(0,1)).map(calculateRevenueTypeAmountsByYear)[0]
-      calculateOtherRevenues(currentYearData);
-      let currentYearTotal = (currentYearData.amountByRevenueType.Royalties+
-            currentYearData.amountByRevenueType.Bonus+
-            currentYearData.amountByRevenueType.Rents+
-            currentYearData.amountByRevenueType['Other Revenues'])
-
-      let trendData = fiscalYearData.splice(1,TREND_LIMIT)
-
-      let previousYearData = JSON.parse(JSON.stringify(trendData))[1]
-      previousYearData.data  = previousYearData.data.filter(item => new Date(item.node.RevenueDate) <= previousYearMaxDate)
-
-      previousYearData = [previousYearData].map(calculateRevenueTypeAmountsByYear)[0];
-      calculateOtherRevenues(previousYearData);
-      let previousYearTotal = previousYearData.amountByRevenueType.Royalties +
-                              previousYearData.amountByRevenueType.Bonus +
-                              previousYearData.amountByRevenueType.Rents +
-                              previousYearData.amountByRevenueType['Other Revenues'];
-
-      let currentFiscalYearText = 'FY'+currentYearData.year.slice(2)+' so far';
-      let previousFiscalYearText = 'from FY'+previousYearData.year.slice(2);
-
-      // Sort trend data asc for spark lines
-      trendData.sort((a, b) => (a.fiscalYear > b.fiscalYear) ? 1 : -1)
-      let sparkLineData = trendData.map(calculateRevenueTypeAmountsByYear)
-
-      let royalties = sparkLineData.map(yearData => ({'year':yearData.year, 'amount': yearData.amountByRevenueType.Royalties}) )
-      let bonuses = sparkLineData.map(yearData => ({'year':yearData.year, 'amount': yearData.amountByRevenueType.Bonus}) )
-      let rents = sparkLineData.map(yearData => ({'year':yearData.year, 'amount': yearData.amountByRevenueType.Rents}) )
-      let otherRevenues = sparkLineData.map(yearData => {
-        calculateOtherRevenues(yearData);
-        return ({'year':yearData.year, 'amount': yearData.amountByRevenueType['Other Revenues']});
-      })
-      let totalRevenues = sparkLineData.map(yearData => (
-        {
-          'year':yearData.year,
-          'amount': (
-            yearData.amountByRevenueType.Royalties+
-            yearData.amountByRevenueType.Bonus+
-            yearData.amountByRevenueType.Rents+
-            yearData.amountByRevenueType['Other Revenues']
-          )
-        })
-      )
- */
 
   const data = useStaticQuery(graphql`
           query RevenueTrendsQuery {
@@ -121,6 +45,7 @@ const RevenueTrends = () => {
       }
 `)
 
+
   let fiscalYearData = JSON.parse(JSON.stringify(data.allMonthlyRevenuesByFiscalYear.group)).sort((a, b) => (a.fiscalYear < b.fiscalYear) ? 1 : -1)
 
   // Get the latest date then subtract 1 year to filter previous year data to compare current year data
@@ -141,12 +66,14 @@ const RevenueTrends = () => {
   let previousYearData = JSON.parse(JSON.stringify(trendData))[1]
   previousYearData.data = previousYearData.data.filter(item => new Date(item.node.RevenueDate) <= previousYearMaxDate)
 
+
   previousYearData = [previousYearData].map(calculateRevenueTypeAmountsByYear)[0]
   calculateOtherRevenues(previousYearData)
   let previousYearTotal = previousYearData.amountByRevenueType.Royalties +
                               previousYearData.amountByRevenueType.Bonus +
                               previousYearData.amountByRevenueType.Rents +
                               previousYearData.amountByRevenueType['Other Revenues']
+
 
   let currentFiscalYearText = 'FY' + currentYearData.year.slice(2) + ' so far'
   let previousFiscalYearText = 'from FY' + previousYearData.year.slice(2)
@@ -283,14 +210,17 @@ const calculateOtherRevenues = data => {
 **/
 
 const calculateRevenueTypeAmountsByYear = (yearData, index) => {
+
   let fiscalYear = yearData.fiscalYear
   let sums = yearData.data.reduce((total, item) => {
     total[item.node.RevenueType] =
       (total[item.node.RevenueType] !== undefined)
         ? total[item.node.RevenueType] + item.node.Revenue
-        : item.node.Revenue
+          : item.node.Revenue
+
     return total
   }, {})
+
 
   return { 'year': fiscalYear, 'amountByRevenueType': sums }
 }

@@ -43,7 +43,7 @@ Agenda Supporters are people who work for organizations, such as non-governmenta
 * Determining what to do when there is a discrepancy between multiple sources of information
 
 ### Scenarios
-* A analyst for an **NGO** is concerned about  how public energy resources are used. They want to determine how much federal gas is vented and flared and whether the government is collecting revenues for that production. The analyst can easily find data that they trust for gas production on federal lands and how the gas produced was used. They also want to be able to pinpoint specific companies that have high flaring and venting volumes, so they can be held accountable.
+* An analyst for an **NGO** is concerned about  how public energy resources are used. They want to determine how much federal gas is vented and flared and whether the government is collecting revenues for that production. The analyst can easily find data that they trust for gas production on federal lands and how the gas produced was used. They also want to be able to pinpoint specific companies that have high flaring and venting volumes, so they can be held accountable.
 
 ## User Type 3: Storyteller
 Storytellers are often journalists and academics who want to understand what is happening and learn from the data whether there’s a story to tell. They also come to the site when they already have a story in mind and need a number or want to flesh it out with information from multiple sources. Their primary goal is to tell the story in a compelling and factual way.

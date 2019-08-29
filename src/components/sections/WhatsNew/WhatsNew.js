@@ -7,12 +7,13 @@ const WhatsNew = props => (
   <section className={styles.root + ' slab-delta'}>
   	<div className="container-page-wrapper">
       <h2>What's new</h2>
-      <p>In our latest release on August 19, 2019, we made the following changes:</p>
+      <p>In our latest release on August 29, 2019, we made the following changes:</p>
       <ul className="list-bullet ribbon-card-top-list">
-        <li>Published <Link to="blog/beyond-open-data/">blog post on how we're going beyond recent government mandates to provide open data </Link></li>
-        <li>Updated monthly revenue and production data</li>
-        <li>Updated calendar year <Link to="explore/#production">production</Link> and <Link to="explore/#revenue">revenue</Link> data through 2018</li>
-        <li>Updated <Link to="downloads/federal-disbursements-by-month/">disbursements data through June 2019 </Link></li>
+        <li>Redesigned homepage tab layout, based on user input</li>
+        <li>Added disbursements trends summary on homepage</li>
+        <li>Changed U.S. map from land ownership to data map showing revenue by state</li>
+        <li>Updated revenue rates and links</li>
+        <li>Fixed disbursements bug on explore data</li>
       </ul>
 
       <p>Review our <a href="https://github.com/ONRR/doi-extractives-data/releases">full release details</a>.</p>

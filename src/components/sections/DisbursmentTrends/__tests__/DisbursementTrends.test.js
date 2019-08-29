@@ -18,7 +18,7 @@ beforeEach(() => {
 })
 
 
-describe('DisbursementTrends', () => {
+describe.skip('DisbursementTrends', () => {
   it('renders correctly', () => {
     const tree = renderer
       .create(<DisbursementTrends />)
@@ -26,5 +26,6 @@ describe('DisbursementTrends', () => {
     expect(tree).toMatchSnapshot()
   })
 })
+
 
 

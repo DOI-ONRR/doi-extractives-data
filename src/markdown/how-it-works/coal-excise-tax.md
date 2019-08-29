@@ -93,7 +93,7 @@ Coal Excise Tax payments are collected by the Internal Revenue Service and trans
   </tbody>
 </table>
 
-This data is from federal excise taxes reported to or collected by the Internal Revenue Service, Alcohol and Tobacco Tax and Trade Bureau, and the U.S. Customs Service. For more information, see [excise tax statistcs](https://www.irs.gov/statistics/soi-tax-stats-historical-table-20).
+This data is from federal excise taxes reported to or collected by the Internal Revenue Service, Alcohol and Tobacco Tax and Trade Bureau, and the U.S. Customs Service. For more information, see [excise tax statistics](https://www.irs.gov/statistics/soi-tax-stats-historical-table-20).
 
 ## Rates
 

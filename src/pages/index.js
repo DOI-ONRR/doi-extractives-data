@@ -114,11 +114,11 @@ class Beta extends React.Component {
 	    <DefaultLayout>
 	      <main>
 		<Helmet
-		  title="Beta | Natural Resources Revenue Data"
+		  title="Home | Natural Resources Revenue Data"
 		  meta={[
 		      // title
-		      { name: 'og:title', content: 'Beta | Natural Resources Revenue Data' },
-		      { name: 'twitter:title', content: 'Beta | Natural Resources Revenue Data' },
+		      { name: 'og:title', content: 'Home | Natural Resources Revenue Data' },
+		      { name: 'twitter:title', content: 'Home | Natural Resources Revenue Data' },
 		  ]} >
 		</Helmet>
 	        <section className="container-page-wrapper" >

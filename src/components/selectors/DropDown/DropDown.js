@@ -53,7 +53,7 @@ class DropDown extends React.Component {
         <select onChange={this.onChangeHandler.bind(this)} defaultValue={defaultKey} value={selectedKey}>
           {options &&
 						options.map((option, index) => {
-						  let name, value
+						  let name, value, placeholder
 
 						  if (typeof option === 'string' || typeof option === 'number') {
 						    name = value = option
@@ -61,12 +61,20 @@ class DropDown extends React.Component {
 						  else if (typeof option === 'object') {
 						    name = option.name
 						    value = option.key
+						    placeholder = option.placeholder
 						  }
 
 						  return (
-						    <option className={styles.option} key={index + '_' + value} value={value}>
-						      {name}
-						    </option>
+						    <React.Fragment>
+						      {placeholder
+						        ? <option className={styles.option} key={index + '_' + value} value={value} disabled selected hidden>
+						          {name}
+						        </option>
+						        : <option className={styles.option} key={index + '_' + value} value={value} >
+						          {name}
+						        </option>
+						      }
+						    </React.Fragment>
 						  )
 						})
           }

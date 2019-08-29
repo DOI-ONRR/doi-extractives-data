@@ -26,6 +26,7 @@ const DATA_KEYS = {
   GOMESA: 'GOMESA',
   EIGHT_G: '8(g)',
   OFFSHORE: 'Offshore',
+  ONSHORE_OFFSHORE: 'Onshore & Offshore',
 }
 // Also sets the default order to display in the legend based on order below
 const LEGEND_NAMES = {
@@ -49,6 +50,11 @@ const LEGEND_NAMES = {
 		  displayName: 'Other offshore',
 		  sortOrderNum: 3
 		},
+  [DATA_KEYS.ONSHORE_OFFSHORE]:
+    {
+      displayName: 'Onshore & Offshore',
+      sortOrderNum: 4
+    },
 }
 
 class NationalDisbursements extends React.Component {

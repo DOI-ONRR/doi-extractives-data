@@ -80,7 +80,7 @@ class NationalDisbursements extends React.Component {
 
 	  return (
 	    <section>
-	      <h2 id="federal-disbursements">Federal disbursements</h2>
+	      <h2 id="federal-disbursements" alt="Disbursements">Federal disbursements</h2>
 
 	      <p>After collecting revenue from natural resource extraction, the Office of Natural Resources Revenue (ONRR) distributes that money to different agencies, funds, and local governments for public use. This process is called “disbursement.”
 

@@ -45,10 +45,8 @@ const createDisbursementsNode = (disbursementsData, type) => {
   let fund = disbursementsData[SOURCE_COLUMNS.Fund]
   let source = disbursementsData[SOURCE_COLUMNS.OnshoreOffshore]
   if (fund.includes('GoMESA')) {
-    let matchProductNameRE = /([^-]+)/
-    let result = fund.split(matchProductNameRE)
-    fund = result[1].trim()
-    source = 'GoMESA'
+    fund = 'State'
+    source = 'GOMESA'
   }
   else if (fund.includes('8(g)')) {
     fund = 'State'

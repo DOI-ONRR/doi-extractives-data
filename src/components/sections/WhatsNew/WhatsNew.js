@@ -13,7 +13,7 @@ const WhatsNew = props => (
         <li>Added disbursements trends summary on homepage</li>
         <li>Changed U.S. map from land ownership to data map showing revenue by state</li>
         <li>Updated revenue rates and links</li>
-        <li>Updated <a href="/downloads/federal-disbursements-by-month/">disbursements data through July 2019 </a> </li>
+        <li>Updated <Link to="/downloads/federal-disbursements-by-month">disbursements data through July 2019 </Link></li>
         <li>Fixed disbursements bug on explore data</li>
       </ul>
 

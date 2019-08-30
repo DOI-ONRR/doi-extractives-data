@@ -44,7 +44,7 @@ module.exports = (node, type) => {
 const createDisbursementsNode = (disbursementsData, type) => {
   let fund = disbursementsData[SOURCE_COLUMNS.Fund]
   let source = disbursementsData[SOURCE_COLUMNS.OnshoreOffshore]
-  if (fund.includes('GoMESA')) {
+  if (fund.toLowerCase().includes('gomesa')) {
     let result = fund.split(/([^-]+)/)
     fund = result[1].trim()
     source = 'GOMESA'

@@ -5,7 +5,7 @@ exports[`MapSection renders correctly 1`] = `
   className="root"
 >
   <div
-    className="container container-page-wrapper"
+    className="container"
   >
     <div
       className="containerLeft"

@@ -7,16 +7,20 @@
 	margin-right: 8px;
 }
 
+
+
 a.exploreDataLink {
 	text-decoration: none;
 	&:hover,
 	&:active {
 	  text-decoration: underline;
 	}
+	margin-bottom: 1rem;
 }
 
 .exploreDataLink span{
 	font-size: 1rem;
 	margin-right: 1rem;
 	vertical-align: baseline;
+
 }

@@ -42,12 +42,24 @@ module.exports = (node, type) => {
   return createDisbursementsNode(node, type)
 }
 const createDisbursementsNode = (disbursementsData, type) => {
+  let fund = disbursementsData[SOURCE_COLUMNS.Fund]
+  let source = disbursementsData[SOURCE_COLUMNS.OnshoreOffshore]
+  if (fund.toLowerCase().includes('gomesa')) {
+    let result = fund.split(/([^-]+)/)
+    fund = result[1].trim()
+    source = 'GOMESA'
+  }
+  else if (fund.includes('8(g)')) {
+    fund = 'State'
+    source = '8(g)'
+  }
+
   let disbursementNode = {
 	  Year: disbursementsData[SOURCE_COLUMNS.Year],
     DisplayYear: (disbursementsData[SOURCE_COLUMNS.Year])
       ? "'" + disbursementsData[SOURCE_COLUMNS.Year].toString().substr(2) : "'" + disbursementsData[SOURCE_COLUMNS.CalendarYear].toString().substr(2),
-	  Fund: disbursementsData[SOURCE_COLUMNS.Fund],
-	  Source: disbursementsData[SOURCE_COLUMNS.OnshoreOffshore],
+	  Fund: fund,
+	  Source: source,
 	  Disbursement: disbursementsData[SOURCE_COLUMNS.Total] || disbursementsData[SOURCE_COLUMNS.Disbursement],
 	  USState: disbursementsData[SOURCE_COLUMNS.USState],
 	  County: disbursementsData[SOURCE_COLUMNS.County],

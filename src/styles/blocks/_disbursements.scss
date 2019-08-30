@@ -18,6 +18,7 @@ $onshore-color: $green-dark;
 $offshore-color: $green-light;
 $eight-g-color: $green-light;
 $gomesa-color: $green-land;
+$onshore-offshore-color: $green;
 
 
 .disbursement-stacked-bar {
@@ -40,6 +41,9 @@ $gomesa-color: $green-land;
 	.chart-legend-offshore {
 		background-color: $offshore-color;
 	}
+	.chart-legend-onshore-offshore {
+		background-color: $onshore-offshore-color;
+	}
 
 	.stacked-bar-onshore {
 		fill: $onshore-color;
@@ -52,6 +56,9 @@ $gomesa-color: $green-land;
 	}
 	.stacked-bar-offshore {
 		fill: $offshore-color;
+	}
+	.stacked-bar-onshore-offshore {
+		fill: $onshore-offshore-color;
 	}
 }
 

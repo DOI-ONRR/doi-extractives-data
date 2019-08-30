@@ -31,8 +31,8 @@ permalink: /how-it-works/onshore-oil-gas/
         <a class="revenues_subpage-breadcrumb" href="/how-it-works/">How it works</a>
         /
       </div>
-      <h1>Onshore Oil &amp; Gas</h1>
-      <p class="revenues_subpage-intro_text">The Federal Land Policy and Management Act of 1976 and the Mineral Leasing Act of 1920 grant BLM the authority to manage federal lands, including leasing certain lands for oil and gas development. The Oil and Gas Management Program includes over 63,000 onshore oil and gas wells on federal lands.</p>
+      <h1>Onshore Oil & Gas</h1>
+      <p class="revenues_subpage-intro_text">The Federal Land Policy and Management Act of 1976 and the Mineral Leasing Act of 1920 grant BLM the authority to manage federal lands, including leasing certain lands for oil and gas development. The Oil and Gas Management Program oversees onshore oil and gas wells on federal lands.</p>
     </div>
    <!-- start aside-->   
     <div class="revenues_subpage-office_container revenues_subpage-office_container_layout">
@@ -62,7 +62,7 @@ permalink: /how-it-works/onshore-oil-gas/
       <div class="container">
         <process-group>
           <process-step stepId="1" stepName="Plan" expanded="true">
-            <p>BLM field offices prepare comprehensive Resource Management Plans (RMPs) to guide leasing decisions on federal lands, including which lands are open to oil and gas leasing, and which lands are closed. Currently 8% of all oil and 11% of all natural gas on federal lands are available for extraction through leasing. BLM field offices develop RMPs in line with multiple-use and sustained-yield principles, and by engaging the public and various levels of government.</p>
+            <p>BLM field offices prepare comprehensive Resource Management Plans (RMPs) to guide leasing decisions on federal lands, including which lands are open to oil and gas leasing, and which lands are closed. BLM field offices develop RMPs in line with multiple-use and sustained-yield principles, and by engaging the public and various levels of government.</p>
           </process-step>
           <process-step stepId="2" stepName="Lease">
             <p>BLM field offices award leases for oil and gas resources on lands designated within RMPs during frequent (often quarterly) live lease auctions open to the public. Before the live auction, the BLM field office estimates the <glossary-term>fair market value</glossary-term> for the natural resources in question.</p>
@@ -82,10 +82,14 @@ permalink: /how-it-works/onshore-oil-gas/
             <p>The lease holder also posts a bond of at least $10,000 that BLM holds during the operation to enforce lease terms and reclamation. The operator must conduct interim reclamation throughout the life of the operation, concluding with appropriately plugging wells and restoring the ecosystem.</p>
             <p>The BLM field office performs inspections throughout the operation to ensure that interim reclamation takes place, wells are appropriately plugged, and the ecosystem returns.</p>
           </process-step>
+          <process-step stepName="Rates and fees">
+            <ul class="list-bullet">
+              <li><a href="/how-it-works/revenues/#oil-gas-rates">Oil and gas rates and fees</a></li>
+            </ul>
+          </process-step>
           <process-step stepName="Learn more">
             <ul class="list-bullet">
-            <li><a href="https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing">Leasing of Onshore Oil and Gas Resources</a></li>
-            <li><a href="https://www.blm.gov/or/news/files/BLM-SoundInvestmentforAmerica.pdf">The BLM: A Sound Investment for America (PDF)</a></li>
+              <li><a href="https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing">Leasing of Onshore Oil and Gas Resources</a></li>
             </ul>  
           </process-step>
         </process-group>
@@ -93,33 +97,11 @@ permalink: /how-it-works/onshore-oil-gas/
     </section>
   </div>
 </section>
-<div class="slab-beta revenues_page-forms">
-  <section class="container-outer">
-    <h1>Revenue collected by BLM and ONRR</h2>
-    <div class="revenues_page-forms_options">
-      <div>
-        <h2>Bonus</h2>
-        <p>The amount the highest bidder paid for a natural resource lease.</p>
-      </div>
-      <div>
-        <h2>Rent</h2>
-        <p class="revenues_page-forms_numbers"><span>$1.50</span> per acre for five years
-          <br> <span>$2.00</span> per acre thereafter</p>
-      </div>
-      <div>
-        <h2>Royalty</h2>
-        <p class="revenues_page-forms_numbers"><span>12.5%</span></p>
-      </div>
-      <div>
-      </div>
-    </div>
-  </section>
-</div>
 <div class="slab-alpha revenues_subpage-involved">
   <section class="container-outer">
     <div class="container-left-4">
-      <h1>Get involved</h1>
-      <h2 class="h4">Participate in the onshore oil and gas leasing process.</h2>
+      <h2>Get involved</h2>
+      <h3 class="h4">Participate in the onshore oil and gas leasing process.</h3>
     </div>
     <div class="container-right-8">
       <div class="revenues_subpage-involved_participate">

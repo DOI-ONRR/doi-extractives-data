@@ -19,6 +19,8 @@
     "currency-formatter": "^1.5.3",
     "d3": "^5.5.0",
     "elasticlunr": "^0.9.5",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "enzyme-to-json": "^3.4.0",
     "eslint-config-react-app": "^4.0.1",
     "eslint-plugin-react-hooks": "^1.6.1",
     "gatsby": "^2.13.42",

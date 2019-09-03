@@ -7,7 +7,11 @@ const WhatsNew = props => (
   <section className={styles.root + ' slab-delta'}>
   	<div className="container-page-wrapper">
       <h2>What's new</h2>
-      <p>In our latest release on August 30, 2019, we made the following changes:</p>
+      <p>In our latest release on September 4, 2019, we made the following changes:</p>
+      <ul className="list-bullet ribbon-card-top-list">
+        <li>Fixed disbursements bug on homepage bar chart</li>
+        </ul>
+        <p>In our release on August 30, 2019, we made the following changes:</p>
       <ul className="list-bullet ribbon-card-top-list">
         <li>Redesigned homepage tab layout, based on user input</li>
         <li>Added disbursements trends summary on homepage</li>

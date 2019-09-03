@@ -28,7 +28,8 @@ import DefaultLayout from '../../components/layouts/DefaultLayout'
 import { Tabordion, Tab } from '../../components/layouts/Tabordion'
 import TabContainer from '../../components/layouts/Tabordion/TabContainer.js'
 import RevenueTrends from '../../components/sections/RevenueTrends'
-import TotalRevenue from '../../components/sections/TotalRevenue/TotalRevenueDeprecated'
+import TotalRevenueDeprecated from '../../components/sections/TotalRevenue/TotalRevenueDeprecated'
+import TotalRevenue from '../../components/sections/TotalRevenue/TotalRevenue'
 import TotalDisbursements from '../../components/sections/TotalDisbursements/TotalDisbursementsDeprecated'
 import TotalProduction from '../../components/sections/TotalProduction/TotalProductionDeprecated'
 import DisbursementTrends from '../../components/sections/DisbursmentTrends'
@@ -130,10 +131,10 @@ class Beta extends React.Component {
 		    <TabContainer id="tab-container-revenue" name="Revenue"
 				  title="Revenue"
 				  info="The amount of money collected by the federal government from energy and mineral extraction on federal lands and waters and Native American lands."
-				  contentLeft={<TotalRevenue/>}
-				  contentRight={<RevenueTrends/>}
-				  contentBottom={<ExploreRevenue />}
-				  />
+	                          contentLeft={<TotalRevenue/>}
+	                          contentRight={<RevenueTrends/>}
+	                          contentBottom={<ExploreDisbursements/>}
+		/>
 		  </Tab>
 		  <Tab id="tab-disbursements" name="Disbursements" >
 		    <TabContainer id="tab-container-disbursements" 

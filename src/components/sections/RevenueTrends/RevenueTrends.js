@@ -42,11 +42,29 @@ const RevenueTrends = () => {
             }
           }
         }
-      }
-`)
+	allRevenueTrends(sort: {fields: fiscal_year, order: DESC}) {
+	group(field: fiscal_year) {
+      	fiscal_year: fieldValue
+	data: nodes {
+        total_ytd
+        total
+        trend_type
+        fiscal_year
+        current_month
+
+	}
+    
+	}
+	}
+
+	}
+	
+	`)
 
 
   let fiscalYearData = JSON.parse(JSON.stringify(data.allMonthlyRevenuesByFiscalYear.group)).sort((a, b) => (a.fiscalYear < b.fiscalYear) ? 1 : -1)
+
+    console.debug(fiscalYearData)
 
   // Get the latest date then subtract 1 year to filter previous year data to compare current year data
   let currentYearDate = new Date(fiscalYearData[0].data[0].node.RevenueDate)
@@ -61,15 +79,22 @@ const RevenueTrends = () => {
             currentYearData.amountByRevenueType.Rents +
             currentYearData.amountByRevenueType['Other Revenues'])
 
-  let trendData = fiscalYearData.splice(0, TREND_LIMIT)
+    let trendData = fiscalYearData.splice(0, TREND_LIMIT)
+    console.debug(trendData);
 
-  let previousYearData = JSON.parse(JSON.stringify(trendData))[1]
-  previousYearData.data = previousYearData.data.filter(item => new Date(item.node.RevenueDate) <= previousYearMaxDate)
+    let previousYearData = JSON.parse(JSON.stringify(trendData))[1]
+
+    previousYearData.data = previousYearData.data.filter(item => new Date(item.node.RevenueDate) <= previousYearMaxDate)
+    
+   // console.debug(previousYearData);
 
 
   previousYearData = [previousYearData].map(calculateRevenueTypeAmountsByYear)[0]
-  calculateOtherRevenues(previousYearData)
-  let previousYearTotal = previousYearData.amountByRevenueType.Royalties +
+   /// console.debug(previousYearData);
+
+    calculateOtherRevenues(previousYearData)
+    
+    let previousYearTotal = previousYearData.amountByRevenueType.Royalties +
                               previousYearData.amountByRevenueType.Bonus +
                               previousYearData.amountByRevenueType.Rents +
                               previousYearData.amountByRevenueType['Other Revenues']
@@ -81,8 +106,11 @@ const RevenueTrends = () => {
   // Sort trend data asc for spark lines
   trendData.sort((a, b) => (a.fiscalYear > b.fiscalYear) ? 1 : -1)
   let sparkLineData = trendData.map(calculateRevenueTypeAmountsByYear)
+        
+    let royalties = sparkLineData.map(yearData => ({ 'year': yearData.year, 'amount': yearData.amountByRevenueType.Royalties }))
 
-  let royalties = sparkLineData.map(yearData => ({ 'year': yearData.year, 'amount': yearData.amountByRevenueType.Royalties }))
+    console.debug(royalties);
+
   let bonuses = sparkLineData.map(yearData => ({ 'year': yearData.year, 'amount': yearData.amountByRevenueType.Bonus }))
   let rents = sparkLineData.map(yearData => ({ 'year': yearData.year, 'amount': yearData.amountByRevenueType.Rents }))
   let otherRevenues = sparkLineData.map(yearData => {
@@ -101,11 +129,50 @@ const RevenueTrends = () => {
     })
   )
 
-  return (
-    <section className={styles.root}>
+/*
+
+    
+    const data = useStaticQuery(
+	graphql `
+query RevenueTrendsQuery {
+  allRevenueTrends(sort: {fields: fiscal_year, order: DESC}) {
+    group(field: fiscal_year) {
+      	fiscal_year: fieldValue
+      data: nodes {
+        total_ytd
+        total
+        trend_type
+        fiscal_year
+      }
+    
+    }
+  }
+}
+`
+    );
+    
+*/
+   
+    let allData=data.allRevenueTrends.group.sort((a, b) => (a.fiscal_year < b.fiscal_year) ? 1 : -1)
+    allData=allData.map(obj =>({...obj,
+				ytd: (type)=>getYtd(obj.data,type),
+				total: (type)=>getFiscalTotal(obj.data, type),
+			       }
+			      ));
+    fiscalYearData=allData.slice(0,TREND_LIMIT);
+    console.debug(fiscalYearData);
+    previousYearData=allData[1];
+    currentYearData=allData[0];
+    console.debug("===============================================>");
+    console.debug(currentYearData);
+    currentFiscalYearText = 'FY' + currentYearData.fiscal_year.slice(2) + ' so far'
+    previousFiscalYearText = 'from FY' + previousYearData.fiscal_year.slice(2)
+
+      
+    return (<>    <section className={styles.root}>
       <h3 className={styles.title + ' h3-bar'}>Revenue trends</h3>
-          Includes federal and Native American revenue through {currentYearDate.toLocaleString('en-us', { timeZone: 'UTC', month: 'long' })} {currentYearDate.getUTCFullYear()}
-      <table className={styles.revenueTable}>
+            Includes federal and Native American revenue through {currentYearData.data[0].current_month} {currentYearData.fiscal_year}
+	    <table className={styles.revenueTable}>
         <thead>
           <tr>
             <th>10-year trend</th>
@@ -115,75 +182,249 @@ const RevenueTrends = () => {
         <tbody>
           <tr>
             <td>Royalties</td>
-            <td className={styles.alignRight}>{utils.formatToSigFig_Dollar(currentYearData.amountByRevenueType.Royalties, 3)}</td>
+            <td className={styles.alignRight}>{utils.formatToSigFig_Dollar(currentYearData.ytd('Royalties'), 3)}</td>
           </tr>
           <tr>
-            <td><Sparkline data={royalties} /></td>
+            <td><Sparkline data={fiscalYearData.map((data,i)=>({year: data.fiscal_year, amount: data.total('Royalties')})).sort((a, b) => (a.year > b.year) ? 1 : -1)} /></td>
             <td className={styles.alignRight}>
               <PercentDifference
-                currentAmount={currentYearData.amountByRevenueType.Royalties}
-                previousAmount={previousYearData.amountByRevenueType.Royalties}
-              />{' ' + previousFiscalYearText}
+		currentAmount={currentYearData.ytd('Royalties')}
+		previousAmount={previousYearData.ytd('Royalties')}
+		/>{' ' + previousFiscalYearText}
             </td>
           </tr>
           <tr>
             <td>Bonuses</td>
-            <td className={styles.alignRight}>{utils.formatToSigFig_Dollar(currentYearData.amountByRevenueType.Bonus, 3)}</td>
-          </tr>
+	    <td className={styles.alignRight}>{utils.formatToSigFig_Dollar(currentYearData.ytd('Bonus'), 3)}</td>
+	  </tr>
           <tr>
-            <td><Sparkline data={bonuses} /></td>
-            <td className={styles.alignRight}>
-              <PercentDifference
-                currentAmount={currentYearData.amountByRevenueType.Bonus}
-                previousAmount={previousYearData.amountByRevenueType.Bonus}
-              />{' ' + previousFiscalYearText}
+            <td><Sparkline data={fiscalYearData.map((data,i)=>({year: data.fiscal_year, amount: data.total('Bonus')})).sort((a, b) => (a.year > b.year) ? 1 : -1)} /></td>
+	    <td className={styles.alignRight}>
+	      <PercentDifference
+		currentAmount={currentYearData.ytd('Bonus')}
+		previousAmount={previousYearData.ytd('Bonus')}
+	    />{' ' + previousFiscalYearText}
             </td>
-          </tr>
+            </tr>
           <tr>
             <td>Rents</td>
-            <td className={styles.alignRight}>{utils.formatToSigFig_Dollar(currentYearData.amountByRevenueType.Rents, 3)}</td>
-          </tr>
-          <tr>
-            <td><Sparkline data={rents} /></td>
-            <td className={styles.alignRight}>
-              <PercentDifference
-                currentAmount={currentYearData.amountByRevenueType.Rents}
-                previousAmount={previousYearData.amountByRevenueType.Rents}
+            <td className={styles.alignRight}>{utils.formatToSigFig_Dollar(currentYearData.ytd('Rents'), 3)}</td>
+	  </tr>
+	  <tr>
+	    <td><Sparkline data={fiscalYearData.map((data,i)=>({year: data.fiscal_year, amount: data.total('Rents')})).sort((a, b) => (a.year > b.year) ? 1 : -1)} /></td>
+	    <td className={styles.alignRight}>
+	      <PercentDifference
+		currentAmount={currentYearData.ytd('Rents')}
+                previousAmount={previousYearData.ytd('Rents')}
               />{' ' + previousFiscalYearText}
             </td>
           </tr>
           <tr>
             <td>Other revenues</td>
-            <td className={styles.alignRight}>{utils.formatToSigFig_Dollar(currentYearData.amountByRevenueType['Other Revenues'], 3)}</td>
+            <td className={styles.alignRight}>{utils.formatToSigFig_Dollar(currentYearData.ytd('Other Revenues'), 3)}</td>
           </tr>
           <tr>
-            <td><Sparkline data={otherRevenues} /></td>
-            <td className={styles.alignRight}>
+            <td><Sparkline data={fiscalYearData.map((data,i)=>({year: data.fiscal_year, amount: data.total('Other Revenues')})).sort((a, b) => (a.year > b.year) ? 1 : -1)} /></td>
+
+	            <td className={styles.alignRight}>
               <PercentDifference
-                currentAmount={currentYearData.amountByRevenueType['Other Revenues']}
-                previousAmount={previousYearData.amountByRevenueType['Other Revenues']}
-              />{' ' + previousFiscalYearText}
+                currentAmount={currentYearData.ytd('Other Revenues')}
+                previousAmount={previousYearData.ytd('Other Revenues')}
+		/>{' ' + previousFiscalYearText}
             </td>
           </tr>
           <tr>
             <td><strong>Total revenues</strong></td>
-            <td className={styles.alignRight}><strong>{utils.formatToSigFig_Dollar(currentYearTotal, 3)}</strong></td>
+            <td className={styles.alignRight}><strong>{utils.formatToSigFig_Dollar(currentYearData.ytd('All Revenue'), 3)}</strong></td>
           </tr>
           <tr>
-            <td><Sparkline data={totalRevenues} /></td>
+	    <td><Sparkline data={fiscalYearData.map((data,i)=>({year: data.fiscal_year, amount: data.total('All Revenue')})).sort((a, b) => (a.year > b.year) ? 1 : -1)} /></td>
+	    
             <td className={styles.alignRight}>
               <PercentDifference
-                currentAmount={currentYearTotal}
-                previousAmount={previousYearTotal}
-              />{' ' + previousFiscalYearText}</td>
+                currentAmount={currentYearData.ytd('All Revenue')}
+                previousAmount={previousYearData.ytd('All Revenue')}
+		/>{' ' + previousFiscalYearText}</td>
           </tr>
         </tbody>
-      </table>
+	    </table>
     </section>
+    <section className={styles.root}>
+      <h3 className={styles.title + ' h3-bar'}>Revenue year to date trends</h3>
+            Includes federal and Native American revenue through {currentYearData.data[0].current_month} {currentYearData.fiscal_year}
+	    <table className={styles.revenueTable}>
+        <thead>
+          <tr>
+            <th>10-year ytd trend</th>
+            <th className={styles.alignRight}>{currentFiscalYearText}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Royalties</td>
+            <td className={styles.alignRight}>{utils.formatToSigFig_Dollar(currentYearData.ytd('Royalties'), 3)}</td>
+          </tr>
+          <tr>
+            <td><Sparkline data={fiscalYearData.map((data,i)=>({year: data.fiscal_year, amount: data.ytd('Royalties')})).sort((a, b) => (a.year > b.year) ? 1 : -1)} /></td>
+            <td className={styles.alignRight}>
+              <PercentDifference
+		currentAmount={currentYearData.ytd('Royalties')}
+		previousAmount={previousYearData.ytd('Royalties')}
+		/>{' ' + previousFiscalYearText}
+            </td>
+          </tr>
+          <tr>
+            <td>Bonuses</td>
+	    <td className={styles.alignRight}>{utils.formatToSigFig_Dollar(currentYearData.ytd('Bonus'), 3)}</td>
+	  </tr>
+          <tr>
+            <td><Sparkline data={fiscalYearData.map((data,i)=>({year: data.fiscal_year, amount: data.ytd('Bonus')})).sort((a, b) => (a.year > b.year) ? 1 : -1)} /></td>
+	    <td className={styles.alignRight}>
+	      <PercentDifference
+		currentAmount={currentYearData.ytd('Bonus')}
+		previousAmount={previousYearData.ytd('Bonus')}
+	    />{' ' + previousFiscalYearText}
+            </td>
+            </tr>
+          <tr>
+            <td>Rents</td>
+            <td className={styles.alignRight}>{utils.formatToSigFig_Dollar(currentYearData.ytd('Rents'), 3)}</td>
+	  </tr>
+	  <tr>
+	    <td><Sparkline data={fiscalYearData.map((data,i)=>({year: data.fiscal_year, amount: data.ytd('Rents')})).sort((a, b) => (a.year > b.year) ? 1 : -1)} /></td>
+	    <td className={styles.alignRight}>
+	      <PercentDifference
+		currentAmount={currentYearData.ytd('Rents')}
+                previousAmount={previousYearData.ytd('Rents')}
+              />{' ' + previousFiscalYearText}
+            </td>
+          </tr>
+          <tr>
+            <td>Other revenues</td>
+            <td className={styles.alignRight}>{utils.formatToSigFig_Dollar(currentYearData.ytd('Other Revenues'), 3)}</td>
+          </tr>
+          <tr>
+            <td><Sparkline data={fiscalYearData.map((data,i)=>({year: data.fiscal_year, amount: data.ytd('Other Revenues')})).sort((a, b) => (a.year > b.year) ? 1 : -1)} /></td>
+
+	            <td className={styles.alignRight}>
+              <PercentDifference
+                currentAmount={currentYearData.ytd('Other Revenues')}
+                previousAmount={previousYearData.ytd('Other Revenues')}
+		/>{' ' + previousFiscalYearText}
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Total revenues</strong></td>
+            <td className={styles.alignRight}><strong>{utils.formatToSigFig_Dollar(currentYearData.ytd('All Revenue'), 3)}</strong></td>
+          </tr>
+          <tr>
+	    <td><Sparkline data={fiscalYearData.map((data,i)=>({year: data.fiscal_year, amount: data.ytd('All Revenue')})).sort((a, b) => (a.year > b.year) ? 1 : -1)} /></td>
+	    
+            <td className={styles.alignRight}>
+              <PercentDifference
+                currentAmount={currentYearData.ytd('All Revenue')}
+                previousAmount={previousYearData.ytd('All Revenue')}
+		/>{' ' + previousFiscalYearText}</td>
+          </tr>
+        </tbody>
+	    </table>
+	    </section>
+	        <section className={styles.root}>
+      <h3 className={styles.title + ' h3-bar'}>Revenue fiscal trends</h3>
+            Includes federal and Native American revenue through {currentYearData.data[0].current_month} {currentYearData.fiscal_year}
+	    <table className={styles.revenueTable}>
+        <thead>
+          <tr>
+            <th>10-year trend</th>
+            <th className={styles.alignRight}>{currentFiscalYearText}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Royalties</td>
+            <td className={styles.alignRight}>{utils.formatToSigFig_Dollar(currentYearData.total('Royalties'), 3)}</td>
+          </tr>
+          <tr>
+            <td><Sparkline data={fiscalYearData.map((data,i)=>({year: data.fiscal_year, amount: data.total('Royalties')})).sort((a, b) => (a.year > b.year) ? 1 : -1)} /></td>
+            <td className={styles.alignRight}>
+              <PercentDifference
+		currentAmount={currentYearData.total('Royalties')}
+		previousAmount={previousYearData.total('Royalties')}
+		/>{' ' + previousFiscalYearText}
+            </td>
+          </tr>
+          <tr>
+            <td>Bonuses</td>
+	    <td className={styles.alignRight}>{utils.formatToSigFig_Dollar(currentYearData.total('Bonus'), 3)}</td>
+	  </tr>
+          <tr>
+            <td><Sparkline data={fiscalYearData.map((data,i)=>({year: data.fiscal_year, amount: data.total('Bonus')})).sort((a, b) => (a.year > b.year) ? 1 : -1)} /></td>
+	    <td className={styles.alignRight}>
+	      <PercentDifference
+		currentAmount={currentYearData.total('Bonus')}
+		previousAmount={previousYearData.total('Bonus')}
+	    />{' ' + previousFiscalYearText}
+            </td>
+            </tr>
+          <tr>
+            <td>Rents</td>
+            <td className={styles.alignRight}>{utils.formatToSigFig_Dollar(currentYearData.total('Rents'), 3)}</td>
+	  </tr>
+	  <tr>
+	    <td><Sparkline data={fiscalYearData.map((data,i)=>({year: data.fiscal_year, amount: data.total('Rents')})).sort((a, b) => (a.year > b.year) ? 1 : -1)} /></td>
+	    <td className={styles.alignRight}>
+	      <PercentDifference
+		currentAmount={currentYearData.total('Rents')}
+                previousAmount={previousYearData.total('Rents')}
+              />{' ' + previousFiscalYearText}
+            </td>
+          </tr>
+          <tr>
+            <td>Other revenues</td>
+            <td className={styles.alignRight}>{utils.formatToSigFig_Dollar(currentYearData.total('Other Revenues'), 3)}</td>
+          </tr>
+          <tr>
+            <td><Sparkline data={fiscalYearData.map((data,i)=>({year: data.fiscal_year, amount: data.total('Other Revenues')})).sort((a, b) => (a.year > b.year) ? 1 : -1)} /></td>
+
+	            <td className={styles.alignRight}>
+              <PercentDifference
+                currentAmount={currentYearData.total('Other Revenues')}
+                previousAmount={previousYearData.total('Other Revenues')}
+		/>{' ' + previousFiscalYearText}
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Total revenues</strong></td>
+            <td className={styles.alignRight}><strong>{utils.formatToSigFig_Dollar(currentYearData.total('All Revenue'), 3)}</strong></td>
+          </tr>
+          <tr>
+	    <td><Sparkline data={fiscalYearData.map((data,i)=>({year: data.fiscal_year, amount: data.total('All Revenue')})).sort((a, b) => (a.year > b.year) ? 1 : -1)} /></td>
+	    
+            <td className={styles.alignRight}>
+              <PercentDifference
+                currentAmount={currentYearData.total('All Revenue')}
+                previousAmount={previousYearData.total('All Revenue')}
+		/>{' ' + previousFiscalYearText}</td>
+          </tr>
+        </tbody>
+	    </table>
+	    </section>
+	    </>
   )
+
 }
 
 export default RevenueTrends
+
+const getYtd = (data, type) => {
+    return data.filter(revenue=>revenue.trend_type === type ).reduce((sum,obj)=> sum + obj.total_ytd,0);
+}
+
+const getFiscalTotal = (data, type) => {
+	      return data.filter(revenue=>revenue.trend_type === type ).reduce((sum,obj)=> sum + obj.total,0);
+    
+}
+
 
 /**
 * calculateOtherRevenues(data) - calculates other revenus from other revenues, inspections fees and civil penalties.
@@ -208,6 +449,8 @@ const calculateOtherRevenues = data => {
 *
 *
 **/
+
+
 
 const calculateRevenueTypeAmountsByYear = (yearData, index) => {
 

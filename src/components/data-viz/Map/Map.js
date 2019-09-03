@@ -147,9 +147,10 @@ const chart = (node,us,mapFeatures,data, colorScheme,onClick) => {
     let format = d => { if(isNaN(d)) {return "" } else {return "$" + d3.format(",.0f")(d);} } 
   
     const svg = d3.select(node).append('svg')
-      .style("width", width)
+	  .style("width", width)
 	  .style("height", height)
 	  .attr("fill", "#E0E2E3")
+	  .attr("viewBox", "0 0 "+width+" "+height)    
 	  //.attr("viewBox", '-40 0 '+width*1.8+' '+height*1.8);
 
   svg.append("g")

@@ -114,7 +114,85 @@ let config = {
           node.frontmatter.tags !== 'exempt',
       },
     },
-    'custom-excel-transformer',
+      'custom-excel-transformer',
+
+      {
+	  resolve: `gatsby-source-sql`,
+	  options: {
+	      typeName: 'RevenueTrends',
+	      fieldName: 'sqllite', 
+	      dbEngine : {
+		  client: 'sqlite3',
+		  connection: {
+		      filename: './ONRR.db',
+		  },
+		  useNullAsDefault: true
+	      },
+	      queryChain: function(x) {
+		  return x
+		      .select().from("revenue_trends");
+	      }
+	  }
+      },		 
+      {
+	  resolve: `gatsby-source-sql`,
+	  options: {
+	      typeName: 'YearlyCalendarRevenue',
+	      fieldName: 'sqllite', 
+	      dbEngine : {
+		  client: 'sqlite3',
+		  connection: {
+		      filename: './ONRR.db',
+		  },
+		  useNullAsDefault: true
+	      },
+	      queryChain: function(x) {
+		  return x
+		      .select().from("yearly_calendar_revenue");
+	      }
+	  }
+      },		 
+      {
+	  resolve: `gatsby-source-sql`,
+	  options: {
+	      typeName: 'YearlyFiscalRevenue',
+	      fieldName: 'sqllite', 
+	      dbEngine : {
+		  client: 'sqlite3',
+		  connection: {
+		      filename: './ONRR.db',
+		  },
+		  useNullAsDefault: true
+	      },
+	      queryChain: function(x) {
+		  return x
+		      .select().from("yearly_fiscal_revenue");
+	      }
+	  }
+      },		 
+      {
+	  resolve: `gatsby-source-sql`,
+	  options: {
+	      typeName: 'Revenue',
+	      fieldName: 'sqllite', 
+	      dbEngine : {
+		  client: 'sqlite3',
+		  connection: {
+		      filename: './ONRR.db',
+		  },
+		  useNullAsDefault: true
+	      },
+	      queryChain: function(x) {
+		  return x
+		      .select().from("revenue")
+		      .innerJoin("period", "period.period_id", "revenue.period_id")
+		      .innerJoin("commodity", "commodity.commodity_id", "revenue.commodity_id")
+		      .innerJoin("location", "location.location_id", "revenue.location_id")
+		  ;
+	      }
+	  }
+      },		      
+      
     `gatsby-plugin-meta-redirect`, // make sure to put last in the array
   ],
 }

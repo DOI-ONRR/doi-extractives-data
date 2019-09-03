@@ -1,39 +1,42 @@
 import React, { useEffect, useRef, useState }  from 'react'
+import { connect } from 'react-redux'
+
 import ReactDOM from 'react-dom'
 import { useStaticQuery, graphql } from "gatsby"
 import styles from './TotalRevenue.module.scss'
+import utils from '../../../js/utils'
+
 import CONSTANTS from '../../../js/constants'
 //import ToggleButton from '@material-ui/lab/ToggleButton';
 //import ToggleButtonGroup from '@material-ui/lab/ToggleButtonGroup';
 import Toggle from '../../selectors/Toggle'
 import DropDown from '../../selectors/DropDown'
 import { StackedBarChartLayout } from '../../layouts/charts/StackedBarChartLayout'
+const KEY_STATS_REVENUES_DATA_ID = 'KEY_STATS_REVENUES_DATA_ID'
+
 
 const TotalRevenue = (props) => {
     
     const [revenueToggle, setRevenueToggle]=useState("year");
-    const [revenuePeriod, setRevenuePeriod]=useState("year");
+    const [revenuePeriod, setRevenuePeriod]=useState("fiscal");
     const [revenueYearlyPeriod, setRevenueYearlyPeriod]=useState('fiscal_year');
+
+    
     const results=useStaticQuery(graphql`
-          query TotalRevenueQuery {
-        allMonthlyRevenuesByFiscalYear: allResourceRevenuesMonthly(
-          filter: {RevenueCategory: {ne: null}}, 
-          sort: {fields: [RevenueDate], order: DESC}) {
-          group(field: FiscalYear) {
-            fiscalYear: fieldValue
-            data: edges {
-              node {
-                id
-                FiscalYear
-                Revenue
-                RevenueCategory
-                RevenueDate
-                RevenueType
-              }
-            }
-          }
-        }
+query TotalRevenueQuery {
+  yearlyFiscal: allYearlyFiscalRevenue {
+    group(field: year) {
+      year: fieldValue
+      nodes {
+        Federal_offshore
+        Federal_onshore
+        Native_American
+        Not_tied_to_a_lease
       }
+    }
+  }
+}
+
 `)
 
 
@@ -53,15 +56,19 @@ const TotalRevenue = (props) => {
 	Month: 'month'
     }
     const toggleValue= (newValue) => {
-
-	console.debug("TOGGGGGGGGGGGGLED",newValue);
 	setRevenueToggle(newValue);
+	console.debug("toggle",revenueToggle, newValue);
+	getChart();
     }
-    const revenuePeriodSelected = (e,v) => {
-		console.debug("period", v);
+    const revenuePeriodSelected = (newValue) => {
+	setRevenuePeriod(newValue);
+	console.debug("period",revenuePeriod, newValue );
+	getChart();
     }
-    const revenueYearlyPeriodSelected = (e,v) => {
-		console.debug("period", v);
+    const revenueYearlyPeriodSelected = (newValue) => {
+	setRevenueYearlyPeriod(newValue);
+	console.debug("yearly period", revenueYearlyPeriod, newValue);
+	getChart();
     }
 
     const getDropdown = () => {
@@ -99,8 +106,84 @@ const TotalRevenue = (props) => {
 	    )
 	}
     }
+
+    const getDataSet = () => {
+	//let { data, selectedDataKey, groupNames, longUnits, xAxisLabels } = this.state.dataSet
+	let data_set={data:[], lastUpdated: 0, groupNames: {}, longUnits: "dollars", units: "$", xAxisLabels: {}, legendLabels:{}  };
+	console.debug ('build fiscal year dataset');
+	console.debug(results.yearlyFiscal);
+	data_set.data=results.yearlyFiscal.group.map( (g,ii) =>{ let label=g.year;
+								 let t={};
+								 t[label]=g.nodes;
+								 return t;
+							       });
+	
+	data_set.lastUpdated=new Date().getTime();
+	data_set.groupNames['Fiscal year']=results.yearlyFiscal.group.map( (g,ii) =>{ return g.year});
+	data_set.legendLabels=data_set.groupNames['Fiscal year'].reduce( (obj,item)  => { console.debug("Item:",item); console.debug(obj); obj[item]=item; return obj }, {});
+	data_set.xAxisLabels=data_set.groupNames['Fiscal year'].reduce( (obj,item)  => { console.debug("Item:",item); console.debug(obj); obj[item]=item.substr(2); return obj }, {});
+	data_set.selectedDataKey="2019";
+	data_set.dataId=KEY_STATS_REVENUES_DATA_ID;
+	
+	console.debug("DATA_SET");
+	console.debug(data_set);
+
+/*	switch (revenueToggle) {
+	case 'year':
+	    switch (revenueYearlyPeriod) {
+	    case 'fiscal_year':
+
+	    case 'calendar_year':
+
+	    default:
+	    }
+	    
+	    break;
+	case 'month':
+	    switch (revenuePeriod) {
+	    case 'fiscal':
+		console.debug ('build monthly fiscal year dataset', revenuePeriod);
+		
+		break;
+	    case 'calendar':
+		console.debug ('build monthly calendar year dataset', revenuePeriod);
+		
+		break;
+	    default:
+		console.debug ('default', revenuePeriod);
+	    }
+	    
+	    break;
+	}*/
+	return data_set;
+    }
     
+    const dataKeySelectedHandler = (dataSetId, syncId, data) => {
+	console.debug({ id: dataSetId, dataKey: Object.keys(data)[0], syncId: syncId })
+    }
     
+    const getChart = (id,title, format) => {
+	console.debug(id,title, format);
+	let dataSet=getDataSet();
+	console.debug(dataSet);
+	return (
+		<div is="chart">
+		<StackedBarChartLayout
+	    dataSet= {dataSet}
+	    
+	    title= {title}
+	    styleMap= {CHART_STYLE_MAP}
+	    sortOrder= {CHART_SORT_ORDER}
+	    legendTitle= 'Source'
+	    legendDataFormatFunc= {format || utils.formatToCommaInt}
+	    //barSelectedCallback= {dataKeySelectedHandler(id, dataSet.syncId)}
+
+	      >
+	      </StackedBarChartLayout>
+	    </div>
+	)
+    }
+
 
     
     const CHART_STYLE_MAP = {
@@ -114,11 +197,13 @@ const TotalRevenue = (props) => {
 	    [CONSTANTS.NATIVE_AMERICAN]: styles.nativeAmericanHover,
 	}
     }
+
     const CHART_SORT_ORDER = [CONSTANTS.FEDERAL_ONSHORE, CONSTANTS.FEDERAL_OFFSHORE, CONSTANTS.NATIVE_AMERICAN]
     
     return (
 	<section className={styles.root}>
-	  <div className={styles.contentHeader}>
+
+	    <div className={styles.contentHeader}>
 	    <h3 className={styles.title+" h3-bar"}>Total revenue</h3>
 	    <span className={styles.info}>
 	      {props.info}
@@ -140,9 +225,12 @@ const TotalRevenue = (props) => {
 			Period:
 			{getDropdown()}
 		      </div>
-	     </div>
-	  </div>
-	</section>
+	    </div>
+	    <div className={styles.itemChart}>
+	    {getChart(KEY_STATS_REVENUES_DATA_ID, CONSTANTS.REVENUE, utils.formatToDollarInt)}
+	</div>
+	    </div>
+	    </section>
     )
 
 

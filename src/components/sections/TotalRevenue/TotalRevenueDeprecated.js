@@ -177,7 +177,7 @@ class TotalRevenueDeprecated extends React.Component {
   		{id: KEY_STATS_REVENUES_DATA_ID, sourceKey: REVENUES_FISCAL_YEAR, groupByKey: BY_FISCAL_YEAR, ...REVENUES_BY_FISCALYEAR_CONFIG },
   		...ALL_PRODUCTION_VOLUMES_BY_FISCAL_YEAR_CONFIGS
   	])
-    //console.log(this.props)
+    console.log(this.props)
 
     // Filter Data Sets by Year initially
     props.groupDataSetsByYear([
@@ -306,7 +306,8 @@ class TotalRevenueDeprecated extends React.Component {
 	  if (this.state[dataSetId] === undefined) {
 	    return
 	  }
-
+	    console.debug(dataSetId);
+	    console.debug(this.state[dataSetId]);
 	  return (
 	    <div is="chart">
 	      <StackedBarChartLayout
@@ -332,9 +333,13 @@ class TotalRevenueDeprecated extends React.Component {
 	}
 
 	// Callback for charts. Used to sync production volume charts
-	dataKeySelectedHandler (dataSetId, syncId, data) {
-	  this.props.setDataSelectedById([{ id: dataSetId, dataKey: Object.keys(data)[0], syncId: syncId }])
-	}
+    dataKeySelectedHandler (dataSetId, syncId, data) {
+	console.debug({ id: dataSetId, dataKey: Object.keys(data)[0], syncId: syncId });
+	console.debug("==asd=fas=df=asd=f=asdf=as");
+	console.debug(this.props.setDataSelectedById);
+	
+	this.props.setDataSelectedById([{ id: dataSetId, dataKey: Object.keys(data)[0], syncId: syncId }])
+    }
 
 	render () {
 	  return (

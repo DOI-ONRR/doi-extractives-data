@@ -30,8 +30,8 @@ class HowItWorksRevenueByCompany extends React.Component {
   }
 
   render () {
-    const title = this.props.pathContext.markdown.frontmatter.title || 'Federal Revenue by Company'
-    const reportYear = this.props.pathContext.markdown.frontmatter.report_year || 2018
+    const title = this.props.pageContext.markdown.frontmatter.title || 'Federal Revenue by Company'
+    const reportYear = this.props.pageContext.markdown.frontmatter.report_year || 2018
 
     return (
       <DefaultLayout>

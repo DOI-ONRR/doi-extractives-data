@@ -45,14 +45,19 @@ class BlogIndex extends React.Component {
                   marginBottom: rhythm(-0.1),
                 }}
               >
-                <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
+                <Link style={{ boxShadow: 'none', textDecoration: 'none' }} to={node.fields.slug}>
                   {title}
                 </Link>
               </h2>
-              <small>{node.frontmatter.date}</small>
+              <small
+                style={{
+                  color: '#627884',
+                }}
+              >{node.frontmatter.date}</small>
               <p
                 style={{
-                  marginTop: rhythm(.3),
+                  marginTop: rhythm(.2),
+                  marginBottom: rhythm(1.5)
                 }}
               >{node.frontmatter.excerpt}</p>
             </div>
@@ -65,12 +70,14 @@ class BlogIndex extends React.Component {
             justifyContent: 'space-between',
             alignItems: 'center',
             listStyle: 'none',
+            marginTop: '3rem',
+            marginLeft: '0',
             padding: 0,
           }}
         >
           {!isFirst && (
             <Link to={prevPage} rel="prev">
-              ← Previous Page
+              ← Newer
             </Link>
           )}
           {Array.from({ length: numPages }, (_, i) => (
@@ -85,8 +92,8 @@ class BlogIndex extends React.Component {
                 style={{
                   padding: rhythm(1 / 4),
                   textDecoration: 'none',
-                  color: i + 1 === currentPage ? '#ffffff' : '',
-                  background: i + 1 === currentPage ? '#007acc' : '',
+                  color: i + 1 === currentPage ? '#1478a6' : '',
+                  borderBottom: i + 1 === currentPage ? '4px solid #1478a6' : '',
                 }}
               >
                 {i + 1}
@@ -95,7 +102,7 @@ class BlogIndex extends React.Component {
           ))}
           {!isLast && (
             <Link to={nextPage} rel="next">
-              Next Page →
+              Older →
             </Link>
           )}
         </ul>
@@ -125,7 +132,7 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "DD MMMM, YYYY")
+            date(formatString: "MMMM D, YYYY")
             title
             excerpt
           }

@@ -31,7 +31,7 @@ const SectionOverview = props => {
           <SectionOwnership usStateData={usStateData}/>
         </div>
 
-        <StateProductionSummary production={props.production}/>
+        <StateProductionSummary production={props.production} productionYears={props.productionYears} usState={usStateData.title} />
         <StateRevenueSummary />
         <StateDisbursementsSummary />
 
@@ -134,16 +134,21 @@ const SectionOwnership = props => {
 
 const StateProductionSummary = props => {
 const commodityCount = Object.keys(props.production).length
-const commodityYears = props.production.year
-console.log(commodityCount)
-console.log(commodityYears)
+const currentYear = props.productionYears.pop()
+console.log(props.production)
+console.log(currentYear)
   return (
     <div>
       <p>Production</p>
+      <ul>
+        {commodityCount === 1 && <li><strong>{commodityCount}</strong> energy or mineral commodity was produced on federal land in {props.usState} in {currentYear}.</li>}
+        
+        {commodityCount > 1 && <li><strong>{commodityCount}</strong> energy or mineral commodities were produced on federal land in {props.usState} in {currentYear}.</li>}
 
+        {commodityCount === undefined && <li>There was no energy or mineral production on federal land in {props.usState} in {currentYear}.</li>}
+      </ul>
     </div>
   )
-
 }
 
 

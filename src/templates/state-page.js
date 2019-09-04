@@ -138,7 +138,7 @@ class StatePages extends React.Component {
             <div className="container-left-9">
               <section id="overview" className="section-top">
 
-                <SectionOverview usStateMarkdown={this.usStateMarkdown} production={this.props.pageContext.commoditiesProduction} productionYears={this.props.pageContext.commodityProductionYears} />
+                <SectionOverview usStateMarkdown={this.usStateMarkdown} production={this.props.pageContext.commoditiesProduction} productionYears={this.props.pageContext.commodityProductionYears} revenueYears={this.props.pageContext.commodityYears} revenue={this.props.pageContext.commodities} />
 
               </section>
 

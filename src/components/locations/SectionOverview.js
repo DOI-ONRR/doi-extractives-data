@@ -11,6 +11,7 @@ import FederalLandOwnershipLegend from '../maps/FederalLandOwnershipLegend'
 import FederalLandOwnershipSvg from '../maps/FederalLandOwnershipSvg'
 import utils from '../../js/utils'
 import styles from './SectionOverview.module.scss'
+import GlossaryTerm from '../utils/glossary-term.js'
 
 let year
 
@@ -32,7 +33,8 @@ const SectionOverview = props => {
         </div>
 
         <StateProductionSummary production={props.production} productionYears={props.productionYears} usState={usStateData.title} />
-        <StateRevenueSummary />
+        <StateRevenueSummary revenueYears={props.revenueYears} revenue={props.revenue}/>
+
         <StateDisbursementsSummary />
 
         {usStateData.nearby_offshore_region &&
@@ -134,7 +136,8 @@ const SectionOwnership = props => {
 
 const StateProductionSummary = props => {
 const commodityCount = Object.keys(props.production).length
-const currentYear = props.productionYears.pop()
+const currentYear = props.productionYears[props.productionYears.length - 1]
+const withhelds = Object.keys(props.production).filter(commodity => props.production[commodity].volume[currentYear] === 0)
 
   return (
     <div>
@@ -146,16 +149,24 @@ const currentYear = props.productionYears.pop()
 
         {commodityCount === 0 && <li>There was no energy or mineral production on federal land in {props.usState} in {currentYear}.</li>}
       </ul>
+        {withhelds.length > 0 && <p><em><strong>{withhelds.length}</strong> commodities were <GlossaryTerm>withheld</GlossaryTerm> in {currentYear}.</em></p>}
     </div>
   )
 }
 
 
 const StateRevenueSummary = props => {
+const revenueYear = props.revenueYears[props.revenueYears.length - 1]
+const revenue = props.revenue.All.All[revenueYear]
+console.log(revenue)
 
   return (
     <div>
       <p>Revenue</p>
+      
+      <p>Production on federal land in {props.usState} resulted in:</p>
+
+      <ul><li><strong>{utils.formatToDollarInt(revenue)}</strong> in {revenueYear} revenue.</li></ul>
     </div>
   )
 }

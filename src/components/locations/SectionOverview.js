@@ -135,8 +135,7 @@ const SectionOwnership = props => {
 const StateProductionSummary = props => {
 const commodityCount = Object.keys(props.production).length
 const currentYear = props.productionYears.pop()
-console.log(props.production)
-console.log(currentYear)
+
   return (
     <div>
       <p>Production</p>
@@ -145,7 +144,7 @@ console.log(currentYear)
         
         {commodityCount > 1 && <li><strong>{commodityCount}</strong> energy or mineral commodities were produced on federal land in {props.usState} in {currentYear}.</li>}
 
-        {commodityCount === undefined && <li>There was no energy or mineral production on federal land in {props.usState} in {currentYear}.</li>}
+        {commodityCount === 0 && <li>There was no energy or mineral production on federal land in {props.usState} in {currentYear}.</li>}
       </ul>
     </div>
   )

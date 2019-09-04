@@ -158,7 +158,6 @@ const StateRevenueSummary = props => {
       <p>Revenue</p>
     </div>
   )
-
 }
 
 
@@ -169,10 +168,7 @@ const StateDisbursementsSummary = props => {
       <p>Disbursements</p>
     </div>
   )
-
 }
-
-
 
 /* Includes the GDP percentage, then outputs employment percentage if it’s over 2%. */
 const KeyGDPJobs = props => {

@@ -11,7 +11,7 @@ import DefaultLayout from '../components/layouts/DefaultLayout'
 
 class ArchiveDefault extends React.Component {
   render () {
-    let title = this.props.pathContext.markdown.frontmatter.title || 'Natural Resources Revenue Data'
+    let title = this.props.pageContext.markdown.frontmatter.title || 'Natural Resources Revenue Data'
     return (
       <DefaultLayout>
   			<div>
@@ -24,7 +24,7 @@ class ArchiveDefault extends React.Component {
             ]}
 
           />
-          {hastReactRenderer(this.props.pathContext.markdown.htmlAst)}
+          {hastReactRenderer(this.props.pageContext.markdown.htmlAst)}
         </div>
       </DefaultLayout>
     )

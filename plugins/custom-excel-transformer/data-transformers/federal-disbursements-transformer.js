@@ -35,6 +35,8 @@ const ONSHOREOFFSHORE_TO_DISBURSEMENTS_CATEGORY = {
   'onshore & offshore': CONSTANTS.FEDERAL_ONSHORE,
   'offshore': CONSTANTS.FEDERAL_OFFSHORE,
   'onshore': CONSTANTS.FEDERAL_ONSHORE,
+  'gomesa': CONSTANTS.FEDERAL_OFFSHORE,
+  '8(g)': CONSTANTS.FEDERAL_OFFSHORE,
 }
 
 /* Use ES5 exports in order to be compatible with version 1.x of gatsby */

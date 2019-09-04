@@ -100,6 +100,16 @@ a:hover {
   z-index: 100000;
 }
 
+/* Author profile */
+
+.author-image {
+  margin-right: 0.725rem;
+  margin-bottom: 0;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
 /* footer */
 
 .footer-content {

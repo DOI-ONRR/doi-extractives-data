@@ -22,7 +22,9 @@ class StackedBarChart extends React.Component {
   }
 
   delay () {
-    if (this.state.dataSet) {
+      if (this.state.dataSet) {
+	  console.debug("===========================================", this.state.dataSet);
+	  
       let { data, selectedDataKey, units, xAxisLabels } = this.state.dataSet
       let { styleMap, sortOrder, maxBarSize } = { ...this.props }
       stackedBarChart.create(ReactDOM.findDOMNode(this),
@@ -30,13 +32,15 @@ class StackedBarChart extends React.Component {
         data)
     }
     else {
-      let { data, ...rest } = { ...this.props }
-      stackedBarChart.create(ReactDOM.findDOMNode(this), ...rest, data)
+	let { data, ...rest } = { ...this.props }
+	console.debug("++++++++++++++++++++++++++++++++++++++++++++++++",...rest, data);
+	stackedBarChart.create(ReactDOM.findDOMNode(this), ...rest, data)
     }
   }
 
   componentDidUpdate () {
-    if (this.state.dataSet) {
+      if (this.state.dataSet) {
+	  console.debug("=====================================2======", this.state.dataSet);
       let { data, selectedDataKey, units, xAxisLabels } = this.state.dataSet
       let { styleMap, sortOrder, maxBarSize } = { ...this.props }
       stackedBarChart.update(ReactDOM.findDOMNode(this),
@@ -45,7 +49,8 @@ class StackedBarChart extends React.Component {
     }
     else {
       let { data, ...rest } = { ...this.props }
-      stackedBarChart.update(ReactDOM.findDOMNode(this), ...rest, data)
+	console.debug("++++++++++++++++++++++++++++++++++++++++++++2++++",...rest, data);
+	stackedBarChart.update(ReactDOM.findDOMNode(this), ...rest, data)
     }
   }
 

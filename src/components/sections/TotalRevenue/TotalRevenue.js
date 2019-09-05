@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState }  from 'react'
+import React, { useEffect, useRef, useState, useCallBack }  from 'react'
 import { connect } from 'react-redux'
 
 import ReactDOM from 'react-dom'
@@ -6,14 +6,31 @@ import { useStaticQuery, graphql } from "gatsby"
 import styles from './TotalRevenue.module.scss'
 import utils from '../../../js/utils'
 
+import { setDataSelectedById as setDataSelectedByIdAction } from '../../../state/reducers/data-sets'
 import CONSTANTS from '../../../js/constants'
 //import ToggleButton from '@material-ui/lab/ToggleButton';
 //import ToggleButtonGroup from '@material-ui/lab/ToggleButtonGroup';
 import Toggle from '../../selectors/Toggle'
 import DropDown from '../../selectors/DropDown'
 import { StackedBarChartLayout } from '../../layouts/charts/StackedBarChartLayout'
-const KEY_STATS_REVENUES_DATA_ID = 'KEY_STATS_REVENUES_DATA_ID'
+import {
+	PRODUCT_VOLUMES_FISCAL_YEAR,
+  REVENUES_MONTHLY,
+  REVENUES_FISCAL_YEAR,
+  BY_ID, BY_COMMODITY,
+  BY_STATE, BY_COUNTY,
+  BY_OFFSHORE_REGION,
+  BY_LAND_CATEGORY,
+  BY_LAND_CLASS,
+  BY_REVENUE_TYPE,
+  BY_FISCAL_YEAR,
+  BY_CALENDAR_YEAR
+} from '../../../state/reducers/data-sets'
 
+
+const KEY_STATS_REVENUES_DATA_ID = 'KEY_STATS_REVENUES_DATA_ID'
+const REVENUES_FISCAL_YEAR_OLD = 'RevenuesFiscalYear'
+const REVENUES_CALENDAR_YEAR = 'RevenuesCalendarYear'
 
 const TotalRevenue = (props) => {
     
@@ -114,7 +131,9 @@ query TotalRevenueQuery {
 	console.debug(results.yearlyFiscal);
 	data_set.data=results.yearlyFiscal.group.map( (g,ii) =>{ let label=g.year;
 								 let t={};
-								 t[label]=g.nodes;
+								 //t[label]=g.nodes;
+								 //t[label]=g.nodes;
+								 t[label]=g.nodes.map((n,ii)=>{console.debug(n); let o={}; for(let okey in n) { let newkey=okey.replace('_', ' '); o[newkey]=n[okey]}; return o; });
 								 return t;
 							       });
 	
@@ -155,11 +174,13 @@ query TotalRevenueQuery {
 	    
 	    break;
 	}*/
-	return data_set;
+	    return data_set;
     }
+
     
-    const dataKeySelectedHandler = (dataSetId, syncId, data) => {
+    const dataKeySelectedHandler = (dataSetId, data, syncId) => {
 	console.debug({ id: dataSetId, dataKey: Object.keys(data)[0], syncId: syncId })
+	props.setDataSelectedById([{ id: dataSetId, dataKey: Object.keys(data)[0], syncId: syncId }])
     }
     
     const getChart = (id,title, format) => {
@@ -176,7 +197,7 @@ query TotalRevenueQuery {
 	    sortOrder= {CHART_SORT_ORDER}
 	    legendTitle= 'Source'
 	    legendDataFormatFunc= {format || utils.formatToCommaInt}
-	    //barSelectedCallback= {dataKeySelectedHandler(id, dataSet.syncId)}
+//	    barSelectedCallback= {dataKeySelectedHandler(id, dataSet.data, dataSet.syncId)}
 
 	      >
 	      </StackedBarChartLayout>
@@ -199,6 +220,8 @@ query TotalRevenueQuery {
     }
 
     const CHART_SORT_ORDER = [CONSTANTS.FEDERAL_ONSHORE, CONSTANTS.FEDERAL_OFFSHORE, CONSTANTS.NATIVE_AMERICAN]
+
+
     
     return (
 	<section className={styles.root}>
@@ -238,6 +261,22 @@ query TotalRevenueQuery {
 }
 
 
-export default TotalRevenue
+export default  connect(
+  state => ({
+    [KEY_STATS_REVENUES_DATA_ID]: state[CONSTANTS.DATA_SETS_STATE_KEY][KEY_STATS_REVENUES_DATA_ID],
+    [REVENUES_FISCAL_YEAR_OLD]: state[CONSTANTS.DATA_SETS_STATE_KEY][CONSTANTS.FISCAL_YEAR_KEY][CONSTANTS.REVENUES_ALL_KEY],
+    [REVENUES_CALENDAR_YEAR]: state[CONSTANTS.DATA_SETS_STATE_KEY][CONSTANTS.CALENDAR_YEAR_KEY][CONSTANTS.REVENUES_ALL_KEY],
+    [REVENUES_FISCAL_YEAR]: state[CONSTANTS.DATA_SETS_STATE_KEY][REVENUES_FISCAL_YEAR]
+  }),
+  dispatch => ({
+  	updateBarChartDataSets: dataSets => dispatch(updateGraphDataSetsAction(dataSets)),
+  	groupDataSetsByMonth: configs => dispatch(groupDataSetsByMonthAction(configs)),
+  	groupDataSetsByMonth: configs => dispatch(groupDataSetsByMonthAction(configs)),
+    groupDataSetsByYear: configs => dispatch(groupDataSetsByYearAction(configs)),
+    setDataSelectedById: configs => dispatch(setDataSelectedByIdAction(configs)),
+
+  })
+    
+)(TotalRevenue)
 
 

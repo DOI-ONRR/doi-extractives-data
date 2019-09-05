@@ -131,7 +131,7 @@ class Beta extends React.Component {
 		    <TabContainer id="tab-container-revenue" name="Revenue"
 				  title="Revenue"
 				  info="The amount of money collected by the federal government from energy and mineral extraction on federal lands and waters and Native American lands."
-	                          contentLeft={<TotalRevenue/>}
+	    contentLeft={<><TotalRevenue/><TotalRevenueDeprecated/></>}
 	                          contentRight={<RevenueTrends/>}
 	                          contentBottom={<ExploreDisbursements/>}
 		/>

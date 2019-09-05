@@ -23,7 +23,7 @@ const Revenue = (props) => {
 		  }
 		  contentCenter={
 			  <ExploreDataLink
-				to="/how-it-works/#production"
+				to="/how-it-works/#production_process"
 				icon="works"
 				>How production works
 			      </ExploreDataLink>

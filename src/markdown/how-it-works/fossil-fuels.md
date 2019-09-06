@@ -9,6 +9,7 @@ tag:
 - oil
 - gas
 - coal
+- archive
 ---
 
 <custom-link to="/how-it-works/" className="breadcrumb link-charlie">How it works</custom-link> /

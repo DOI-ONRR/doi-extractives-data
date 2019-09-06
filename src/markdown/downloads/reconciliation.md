@@ -8,6 +8,7 @@ tag:
 - Documentation
 - USEITI data
 - Reconciliation
+- archive
 archive: true
 ---
 <custom-link to="/downloads/" className="breadcrumb link-charlie">Downloads</custom-link> /

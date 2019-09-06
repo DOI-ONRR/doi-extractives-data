@@ -1,0 +1,30 @@
+version: '3.6'
+services:
+  postgres:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_DB: 'onrr_db'
+      POSTGRES_USER: 'postgres'
+      POSTGRES_PASSWORD: 'secret'
+    ports:
+    - "5433:5432"
+    volumes:
+    - ./scripts:/docker-entrypoint-initdb.d
+    - db_data:/var/lib/postgresql/data
+  graphql-engine:
+    image: hasura/graphql-engine:v1.0.0-beta.6
+    ports:
+    - "8080:8080"
+    depends_on:
+    - "postgres"
+    restart: always
+    environment:
+      # HASURA_GRAPHQL_DATABASE_URL: postgres://onrr_user:Oui4aP@postgres:5432/onrr_db
+      HASURA_GRAPHQL_DATABASE_URL: postgres://postgres:secret@postgres:5432/onrr_db
+      HASURA_GRAPHQL_ENABLE_CONSOLE: "true" # set to "false" to disable console
+      HASURA_GRAPHQL_ENABLED_LOG_TYPES: startup, http-log, webhook-log, websocket-log, query-log
+      ## uncomment next line to set an admin secret
+      # HASURA_GRAPHQL_ADMIN_SECRET: myadminsecretkey
+volumes:
+  db_data:

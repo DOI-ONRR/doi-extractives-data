@@ -1,0 +1,41 @@
+version: '3.7'
+
+services:
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_DB: '${DB_DATABASE}'
+      POSTGRES_USER: '${DB_USERNAME}'
+      POSTGRES_PASSWORD: '${DB_PASSWORD}'
+    # "ports" setting is not required to let hasura connent to db. 
+    # Whether to expose it or not is optional. 
+    # But it's required if your application needs direct access(not through hasura) to db.
+    ports: 
+      - target: 5434
+        published: ${DB_PORT}
+        protocol: tcp
+        mode: host
+    volumes:
+      # Uncomment the below if you want to execute .sh or .sql files on bootstrapping. 
+      # Visit official postgress docker page for more detail.
+      - ./scripts:/docker-entrypoint-initdb.d 
+      - db_data:/var/lib/postgresql/data
+  graphql-engine:
+    image: hasura/graphql-engine
+    ports:
+      - target: 8080
+        published: ${HASURA_PORT}
+        protocol: tcp
+        mode: host
+    depends_on:
+      - 'db'
+    restart: always
+    environment:
+      HASURA_GRAPHQL_DATABASE_URL: 'postgres://${DB_USERNAME}:${DB_PASSWORD}@db:${DB_PORT}/${DB_DATABASE}'
+      HASURA_GRAPHQL_ENABLE_CONSOLE: 'true' # set to "false" to disable console
+      HASURA_GRAPHQL_ENABLED_LOG_TYPES: startup, http-log, webhook-log, websocket-log, query-log
+      ## uncomment next line to set an admin secret
+      # HASURA_GRAPHQL_ADMIN_SECRET: myadminsecretkey
+volumes:
+  db_data:

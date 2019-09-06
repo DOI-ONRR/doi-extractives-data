@@ -2,6 +2,8 @@
 title: Executive Summaries
 layout: downloads
 permalink: /downloads/report/
+tag:
+- archive
 ---
 
 <custom-link to="/downloads/" className="breadcrumb link-charlie">Downloads</custom-link> /

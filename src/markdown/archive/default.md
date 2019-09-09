@@ -42,13 +42,13 @@ tag:
       <p>The U.S. announced its intention to join the <a href="https://eiti.org/">Extractive Industries Transparency Initiative (EITI)</a> in 2011 as part of its <a href="https://www.opengovpartnership.org/">Open Government Partnership National Action Plans</a>. EITI is a voluntary, international standard that promotes open and accountable management of natural resources.</p>
       <p>The USEITI Annual Reports for 2015 and 2016 were published on this site as <a href="/explore/">interactive data</a>, along with <a href="/downloads/report">Executive Summaries</a>. Participation in the EITI helped the U.S. initiate a comprehensive open data effort around natural resource production and revenue generation on public lands.</p>
       <p>In November 2017, the U.S. decided to no longer formally implement the <glossary-term>EITI Standard</glossary-term>.</p>
-      <p>DOI is fully committed to institutionalizing the EITI principles of transparency and accountability, supported by the robust <a href="/how-it-works/audits-and-assurances/">controls and assurances</a> already in place in the U.S. This site is now a DOI resource for extractive industry data. We will continue to disclose revenue payments received for extractive operations on federal land, offer production data, report annual disbursements, and improve reporting by including additional states and tribes.</p>
+      <p>DOI is fully committed to institutionalizing the EITI principles of transparency and accountability, supported by the robust <a href="/archive/audits-and-assurances/">controls and assurances</a> already in place in the U.S. This site is now a DOI resource for extractive industry data. We will continue to disclose revenue payments received for extractive operations on federal land, offer production data, report annual disbursements, and improve reporting by including additional states and tribes.</p>
       <h3 id="timeline" class="h4">Timeline</h3>
         <ul class="list-bullet">
           <li><strong>December 2017:</strong> The Natural Resources Revenue Data Annual Report was published as an <a href="/downloads/report/#executive-summary-2017">Executive Summary</a> and interactive data was updated throughout this website.</li>
           <li><strong>November 2017:</strong> The U.S. withdrew as an EITI Implementing Country.</li>
-          <li><strong>November 2016:</strong> USEITI Annual Report was published as an <a href="/downloads/report/#executive-summary-2016">Executive Summary</a> and interactive data.</li>
-          <li><strong>December 2015:</strong> USEITI Annual Report was published as an <a href="/downloads/report/#executive-summary-2015">Executive Summary</a> and interactive data (available throughout this site).</li>
+          <li><strong>November 2016:</strong> USEITI Annual Report was published as an <a href="/archive/report/#executive-summary-2016">Executive Summary</a> and interactive data.</li>
+          <li><strong>December 2015:</strong> USEITI Annual Report was published as an <a href="/archive/report/#executive-summary-2015">Executive Summary</a> and interactive data (available throughout this site).</li>
           <li><strong>Summer of 2014:</strong> DOI selected Deloitte & Touche LLP as the <glossary-term termKey="Independent Administrator (IA)">Independent Administrator</glossary-term> for USEITI.</li>
           <li><strong>March 2014:</strong> The EITI International Board accepted the U.S. as a candidate country.</li>
           <li><strong>December 2013:</strong> The U.S. submitted an application to participate to the EITI International Board, which was developed by the MSG after engaging with stakeholders across the country.</li>
@@ -61,9 +61,9 @@ tag:
         <h2 id="executive-summaries" class="h2-bar">Executive summaries</h2>
         <div class="container landing-section">
           <div>
-            <h3 class="h3 landing-heading"><a href="/downloads/report/">Executive summaries</a></h3>
+            <h3 class="h3 landing-heading"><a href="/archive/report/">Executive summaries</a></h3>
             <p>These reports outline progress made by the Department of the Interior and the Office of Natural Resources Revenue (ONRR) to enact the Extractive Industries Transparency Initiative (EITI). Reports are available for the years 2015, 2016, and 2017.</p>
-            <p><a href="/downloads/report/">Review the executive summaries</a></p>
+            <p><a href="/archive/report/">Review the executive summaries</a></p>
           </div>
         </div>
       </section>
@@ -71,19 +71,19 @@ tag:
         <h2 id="resources" alt="Natural resources" class="h2-bar">About natural resources</h2>
         <div class="container landing-section">
           <div>
-            <h3 class="h3 landing-heading"><custom-link to="/how-it-works/fossil-fuels">Fossil fuels</custom-link></h3>
+            <h3 class="h3 landing-heading"><custom-link to="/archive/fossil-fuels">Fossil fuels</custom-link></h3>
             <p>Fossil fuels are our main source of electricity, and the primary fuel for powering motor vehicles and heating homes.</p>
-            <p><custom-link to="/how-it-works/fossil-fuels">Learn about oil, gas, and coal</custom-link></p>
+            <p><custom-link to="/archive/fossil-fuels">Learn about oil, gas, and coal</custom-link></p>
           </div>
           <div>
-            <h3 class="h3 landing-heading"><custom-link to="/how-it-works/nonenergy-minerals">Nonenergy minerals</custom-link></h3>
+            <h3 class="h3 landing-heading"><custom-link to="/archive/nonenergy-minerals">Nonenergy minerals</custom-link></h3>
             <p>Nonenergy minerals include base and precious metals, industrial metals, and gemstones, among others.</p>
-            <p><custom-link to="/how-it-works/nonenergy-minerals">Learn about nonenergy minerals</custom-link></p>
+            <p><custom-link to="/archive/nonenergy-minerals">Learn about nonenergy minerals</custom-link></p>
           </div>
           <div>
-            <h3 class="h3 landing-heading"><custom-link to="/how-it-works/renewables">Renewables</custom-link></h3>
+            <h3 class="h3 landing-heading"><custom-link to="/archive/renewables">Renewables</custom-link></h3>
             <p>Renewable energy comes from sources that are not depleted when used. These resources include geothermal, solar, wind, water, and biomass.</p>
-            <p><custom-link to="/how-it-works/renewables">Learn about renewable energy</custom-link></p>
+            <p><custom-link to="/archive/renewables">Learn about renewable energy</custom-link></p>
           </div>
         </div>
       </section>
@@ -91,14 +91,14 @@ tag:
         <h2 id="audits-reconciliation" class="h2-bar">Audits and reconciliation</h2>
         <div class="container landing-section">
           <div>
-            <h3 class="h3 landing-heading"><a href="/downloads/USEITI_budget-audit-factsheet_2017-08-09.pdf">Budget audit factsheet</a></h3>
+            <h3 class="h3 landing-heading"><a href="/downloads/archive/USEITI_budget-audit-factsheet_2017-08-09.pdf">Budget audit factsheet</a></h3>
             <p>This PDF document shows how payments from companies to U.S. government agencies were tracked during USEITI.</p>
-            <p><a href="/downloads/USEITI_budget-audit-factsheet_2017-08-09.pdf">Review the factsheet (PDF)</a></p>
+            <p><a href="/downloads/archive/USEITI_budget-audit-factsheet_2017-08-09.pdf">Review the factsheet (PDF)</a></p>
           </div>
           <div>
-            <h3 class="h3 landing-heading"><a href="/how-it-works/reconciliation/2016/">Reconciliation</a></h3>
+            <h3 class="h3 landing-heading"><a href="/archive/reconciliation/2016/">Reconciliation</a></h3>
             <p>In the context of EITI, an Independent Administrator compares company reports of payments to government records of revenue received. We have reconciliation data for 2015 and 2016.</p>
-            <p><a href="/how-it-works/reconciliation/2016/">Review reconciliation data</a></p>
+            <p><a href="/archive/reconciliation/2016/">Review reconciliation data</a></p>
           </div>
         </div>
       </section>
@@ -106,14 +106,14 @@ tag:
         <h2 id="states-and-counties" class="h2-bar">States and counties</h2>
         <div class="container landing-section">
           <div>
-            <h3 class="h3 landing-heading"><a href="/case-studies">Case studies</a></h3>
+            <h3 class="h3 landing-heading"><a href="/archive/case-studies">Case studies</a></h3>
             <p>Twelve county case studies demonstrate the impact of extractive industries on local economies, governments, and infrastructure across the U.S.</p>
-            <p><a href="/how-it-works/federal-laws/">Review the case studies</a></p>
+            <p><a href="/archive/federal-laws/">Review the case studies</a></p>
           </div>
           <div>
-            <h3 class="h3 landing-heading"><a href="/how-it-works/state-laws-and-regulations/">State laws and regulations</a></h3>
+            <h3 class="h3 landing-heading"><a href="/archive/state-laws-and-regulations/">State laws and regulations</a></h3>
             <p>State agencies create regulations and rules about natural resource extraction. Local government agencies also play a role.</p>
-            <p><a href="/how-it-works/state-laws-and-regulations/">Review state laws and regulations</a></p>
+            <p><a href="/archive/state-laws-and-regulations/">Review state laws and regulations</a></p>
           </div>
         </div>
       </section>

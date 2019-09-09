@@ -1,13 +1,14 @@
 ---
-title: Reconciliation | Documentation
+title: Reconciliation | Archive
 layout: downloads
-permalink: /downloads/reconciliation/
+permalink: /archive/reconciliation/
 tag:
 - Data
 - Downloads
 - Documentation
 - USEITI data
 - Reconciliation
+- archive
 archive: true
 ---
 <custom-link to="/downloads/" className="breadcrumb link-charlie">Downloads</custom-link> /
@@ -51,7 +52,7 @@ Several companies also allowed for corporate income tax reconciliation. Of the c
 
 Requirement 4 of the EITI Standard outlines the responsibility of the MSG to determine the scope of EITI reporting in the United States. In carrying out this responsibility, the MSG considered information from a variety of sources before coming to a consensus on the scope for each USEITI Report.
 
-The MSG publishes meeting minutes and materials for all subcommittee and full MSG meetings on the [MSG website](https://www.doi.gov/eiti/FACA/meetings). These minutes and materials document the MSG’s historical considerations and decisions around scoping. Please refer to *Appendix A: Revenue Reporting Considerations* within the [Extractive Revenue Appendix (PDF)](/downloads/USEITI_extractive-revenue-appendix_2015-12-10.pdf) for additional background on the scoping process for USEITI.
+The MSG publishes meeting minutes and materials for all subcommittee and full MSG meetings on the [MSG website](https://www.doi.gov/eiti/FACA/meetings). These minutes and materials document the MSG’s historical considerations and decisions around scoping. Please refer to *Appendix A: Revenue Reporting Considerations* within the [Extractive Revenue Appendix (PDF)](/downloads/archive/USEITI_extractive-revenue-appendix_2015-12-10.pdf) for additional background on the scoping process for USEITI.
 
 ### In-scope government entities and revenue streams
 

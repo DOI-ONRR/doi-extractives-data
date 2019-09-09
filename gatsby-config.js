@@ -77,6 +77,13 @@ let config = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `downloads-archive`,
+        path: `${ __dirname }/downloads/archive`,
+      },
+    },
+    {
       resolve: `gatsby-transformer-excel`,
     },
     'gatsby-transformer-yaml',

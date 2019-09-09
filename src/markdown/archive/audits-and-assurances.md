@@ -1,5 +1,5 @@
 ---
-title: Audits and Assurances | How It Works
+title: Audits and Assurances | Archive
 layout: content
 tag:
 - How it works
@@ -8,8 +8,8 @@ tag:
 - Standards
 - Oversight
 - Regulations
-permalink: /how-it-works/audits-and-assurances/
-archive: true
+- archive
+permalink: /archive/audits-and-assurances/
 ---
 
 <custom-link to="/how-it-works/" className="breadcrumb link-charlie">How it works</custom-link> /
@@ -22,7 +22,7 @@ archive: true
 Companies and government agencies are each legally responsible for reporting accurate, verifiable payment data. Controls and standards help companies report correct data on the first attempt, and reports are verified after submission. Independent audits of financial statements, transactions, and systems also help ensure compliance with internal and external standards.
 
 <ul class="downloads-download_links list-unstyled">
-  <li><a href="/downloads/USEITI_budget-audit-factsheet_2017-08-09.pdf"><icon-download></icon-download>Download audit and assurance processes factsheet (pdf, 1.1 MB)</a>
+  <li><a href="/downloads/archive/USEITI_budget-audit-factsheet_2017-08-09.pdf"><icon-download></icon-download>Download audit and assurance processes factsheet (pdf, 1.1 MB)</a>
     <p class="para-sm"><icon-archive></icon-archive> This content was created as part of the <glossary-term termKey="EITI Standard">USEITI</glossary-term> and is no longer being updated.</p>
   </li>
 </ul>

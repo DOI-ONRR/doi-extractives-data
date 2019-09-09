@@ -66,7 +66,7 @@ module.exports = Object.freeze({
       }
     }`,
   MARKDOWN_CASE_STUDIES:
-    `allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/case-studies/"}}) {
+    `allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/archive/case-studies/"}}) {
       pages: edges {
         page: node {
           frontmatter {

@@ -165,5 +165,7 @@ function getFipsCode (offshorePlanningArea) {
     return 'CHU'
   }
 
+
   return undefined
 }
+

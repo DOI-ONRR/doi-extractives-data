@@ -24,7 +24,7 @@ class Tabordion extends React.Component {
   render () {
     return (
       <div>
-        <MediaQuery minWidth={481}>
+        <MediaQuery minWidth={81}>
           <div className={styles.root + ' container-page-wrapper'}>
             <div className={styles.tabContainer}>
               {this.props.children &&
@@ -38,7 +38,7 @@ class Tabordion extends React.Component {
             </div>
           </div>
         </MediaQuery>
-        <MediaQuery maxWidth={480}>
+        <MediaQuery maxWidth={80}>
           <div className={styles.root + ' container-page-wrapper'}>
             <div className={styles.tabContainer}>
               {this.props.children &&

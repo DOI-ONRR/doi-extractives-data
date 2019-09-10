@@ -51,7 +51,7 @@ const MAX_CHART_BAR_SIZE = 29.6
 class OffshoreRegion extends React.Component {
   constructor (props) {
     super(props)
-    this.region = this.props.pathContext.markdown.frontmatter.unique_id
+    this.region = this.props.pageContext.markdown.frontmatter.unique_id
     this.dataSetsProduction = []
     this.productionComponents = []
     this.hydrate()
@@ -61,7 +61,7 @@ class OffshoreRegion extends React.Component {
     let dataSetsToHydrate = []
     let dataSetsToGroupByYear = []
 
-    this.props.pathContext.data.commodities.map(commodity => {
+    this.props.pageContext.data.commodities.map(commodity => {
       let dataSetId = PRODUCTION_SYNC_ID + '_' + commodity.name
       let units = commodity.volumes[0].data.Units
       this.addProductionComponents(dataSetId, commodity.name, units)
@@ -97,7 +97,7 @@ class OffshoreRegion extends React.Component {
 
     let shortUnits = (units === 'barrels') ? 'bbl' : units
 
-    components.map = <OffshoreCountyMap isCaption={true} productKey={title + ' (' + shortUnits + ')'} usStateMarkdown={this.props.pathContext.markdown} units={units} />
+    components.map = <OffshoreCountyMap isCaption={true} productKey={title + ' (' + shortUnits + ')'} usStateMarkdown={this.props.pageContext.markdown} units={units} />
 
     components.legend = <Legend dataSetId={id} render={dataSet => (this.getMapLegendTitle(dataSet))}/>
 
@@ -135,8 +135,8 @@ class OffshoreRegion extends React.Component {
   }
 
   render () {
-    let title = this.props.pathContext.markdown.frontmatter.title || 'Natural Resources Revenue Data'
-    let regionId = this.props.pathContext.markdown.frontmatter.unique_id
+    let title = this.props.pageContext.markdown.frontmatter.title || 'Natural Resources Revenue Data'
+    let regionId = this.props.pageContext.markdown.frontmatter.unique_id
 
     return (
       <DefaultLayout>

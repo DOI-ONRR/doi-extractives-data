@@ -26,7 +26,7 @@ const AboutPage = () => {
             { name: 'og:title', content: 'About | Natural Resources Revenue Data' },
             { name: 'twitter:title', content: 'About | Natural Resources Revenue Data' },
           ]} />
-
+        <main id="main-content">
         <section className="slab-delta">
           <div className="container-page-wrapper ribbon ribbon-column landing-section_top">
             <div className="container-left-8 ribbon-hero ribbon-hero-column">
@@ -170,7 +170,7 @@ const AboutPage = () => {
           </section>
 
         </div>
-
+        </main>  
       </div>
     </DefaultLayout>
   )

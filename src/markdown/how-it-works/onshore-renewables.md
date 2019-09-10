@@ -52,7 +52,7 @@ permalink: /how-it-works/onshore-renewables/
         <process-group>
           <process-step stepId="1" stepName="Plan" expanded="true">
             <p>Over the past decade, the federal government has taken steps to update regulations to clarify and encourage planning for renewable energy development on federal lands, particularly for wind and solar energy.</p>
-            <p>In 2005, BLM published a programmatic <glossary-term termKey="Environmental Impact Statement (EIS)">Environmental Impact Statement</glossary-term> to create a framework for developing wind energy on federal lands in the West. At the same time, BLM amended 53 land-use plans to allow for wind energy development. BLM field offices can amend additional land-use plans any time to support wind energy development.</p>
+            <p>In 2005, BLM published an <glossary-term termKey="Environmental Impact Statement (EIS)">Environmental Impact Statement</glossary-term> to create a framework for developing wind energy on federal lands in the West. At the same time, BLM amended 53 land-use plans to allow for wind energy development. BLM field offices can amend additional land-use plans any time to support wind energy development.</p>
             <p>In 2012, BLM released the final solar Environmental Impact Statement. This statement furthered a proposal to create a competitive leasing program on federal lands for commercial scale solar development in 17 new <a href="https://www.blm.gov/programs/energy-and-minerals/renewable-energy/solar-energy/permitting-and-development/land-use-planning">Solar Energy Zones</a>.</p>
             <p>BLM finalized <a href="https://www.blm.gov/sites/blm.gov/files/Energyandminerals_Renewable_Wind_solar_finalrule.pdf">a new rule (PDF)</a> that promotes competitively offering designated leasing areas for solar and wind energy development. Designated leasing areas have fewer environmental and cultural resource conflicts compared to others, making them better candidates for development.</p>
           </process-step>
@@ -70,8 +70,12 @@ permalink: /how-it-works/onshore-renewables/
           </process-step>
           <process-step stepId="5" stepName="Decommission and reclaim">
             <p>At the close of a solar or wind project, developers must remove all facilities and return the land to a sound environmental state. Under the proposed rule, when an applicant gains a solar or wind energy lease or grant, they must provide BLM a bond. BLM holds the bond through the life of the project to ensure compliance with terms and conditions, including site <glossary-term>reclamation</glossary-term>.</p>
-            <p>Bonding requirements differ based on whether the project is in a designed leasing area or not. Inside designated leasing areas, the standard bond amounts would be $10,000 per acre for solar energy projects and $20,000 per turbine for wind energy projects. These same amounts would be the minimum requirements for bonds outside designated leasing areas, subject to adjustment by BLM.</p>
             <p>If the developer appropriately decommissions solar and wind projects and meets terms and conditions, BLM returns the bond at the close of the project.</p>
+          </process-step>
+          <process-step stepName="Rates and fees">
+            <ul class="list-bullet">
+              <li><a href="/how-it-works/revenues/#solar-wind-rates">Renewables rates and fees</a></li>
+            </ul>
           </process-step>
           <process-step stepName="Learn more">
             <ul class="list-bullet">
@@ -84,34 +88,6 @@ permalink: /how-it-works/onshore-renewables/
     </section>
   </div>
 </section>
-<div class="slab-beta revenues_page-forms">
-  <section class="container-outer">
-    <h1>Revenue collected by BLM</h1>
-    <div class="revenues_page-forms_options">
-      <div>
-        <h2>Bonus</h2>
-        <p>The amount the highest bidder will pay for a natural resource lease.</p>
-      </div>
-      <div>
-        <h2>Rent</h2>
-        <p>Rent is determined by the acre and based on land values.</p>
-      </div>
-      <div>
-        <h2>Fees</h2>
-        <p class="revenues_page-forms_numbers_first">
-          <span>$5,010</span> per MW
-          <br>annual wind fee
-          <br><br><span>$2,863–$4,294</span> per MW
-          <br>annual solar fee
-        </p>
-        <p>Solar fees are based on solar type and storage capacity.</p>
-      </div>
-      <div>
-        <em>Note: wind and solar fees are expressed as <glossary-term termKey="Megawatt Capacity (MC) fee">Megawatt Capacity fees</glossary-term>.</em>
-      </div>
-    </div>
-  </section>
-</div>
 <div class="slab-alpha revenues_subpage-involved">
   <section class="container-outer">
     <div class="container-left-4">
@@ -146,7 +122,7 @@ permalink: /how-it-works/onshore-renewables/
         </div>
         <div class="revenues_subpage-involved_option">
           <a class="link-no_under" href="https://www.flickr.com/photos/mypubliclands/">
-            <img src="}/public/img/icons/flickr.svg" class="u-padding-right icon-medium"/>
+            <img src="/public/img/icons/flickr.svg" class="u-padding-right icon-medium"/>
             <h3>Flickr</h3>
           </a>
           <p>See breathtaking photos on BLM’s Flickr.</p>

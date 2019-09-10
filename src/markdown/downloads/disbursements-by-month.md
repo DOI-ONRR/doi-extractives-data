@@ -18,8 +18,8 @@ tag:
 Download fiscal year data:
 
 <ul class="downloads-download_links list-unstyled">
-  <li><excel-link to="/downloads/disbursements/monthly_disbursements.xlsx">Disbursements by month (Excel, 166 KB)</excel-link></li>
-    <li><csv-link to="/downloads/csv/disbursements/monthly_disbursements.csv">Disbursements by month (csv, 233 KB)</csv-link></li>
+  <li><excel-link to="/downloads/disbursements/monthly_disbursements.xlsx">Disbursements by month (Excel, 196 KB)</excel-link></li>
+    <li><csv-link to="/downloads/csv/disbursements/monthly_disbursements.csv">Disbursements by month (csv, 280 KB)</csv-link></li>
 </ul>
 
 ## Scope

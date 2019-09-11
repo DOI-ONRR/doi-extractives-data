@@ -178,7 +178,7 @@ There are other laws governing natural resources and extractive companies’ ope
   <td>All natural resources, except when oil and gas are exempted</td>
   </tr>
   <tr>
-    <td><a href="http://www.nmfs.noaa.gov/pr/pdfs/laws/esa.pdf">Endangered Species Act (ESA) of 1973</a> (16 USC § 1531 et seq.)</td>
+    <td><a href="https://www.fisheries.noaa.gov/topic/laws-policies#endangered-species-act">Endangered Species Act (ESA) of 1973</a> (16 USC § 1531 et seq.)</td>
     <td>Protects and recovers imperiled species and the ecosystems upon which they depend.</td>
     <td>All lands</td>
   <td>All natural resources</td>

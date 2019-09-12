@@ -22,7 +22,7 @@ Question Answerers generally come to the site with a known question and need to 
 
 ### Scenarios
 * A **congressional staffer** needs specific, accurate data on oil royalties and disbursements because they need to provide support for a proposed bill. They’re able to quickly and easily find data about how much oil was produced on federal land in their state, how much royalty revenue was generated, and how much their state got.
-* An **external liaison for ONRR** frequently fields questions from the public and congress for things that could be answered on the site, such as how much money the Gulf of Mexico generated from GOMESA. They look in databases for the answer to the question first, but use the site to verify the answer or for things they can point the question asker directly to on the site.
+* An **external liaison for ONRR** frequently fields questions from the public and congress for things that could be answered on the site, such as how much money the Gulf of Mexico generated from GOMESA. They look in databases for the answer to the question first, but use the site to verify the answer or for things to which they can point the question asker on the site.
 * A **BLM economist** uses our site to look up how much calendar year and monthly royalties and sales volume companies had to project future revenues and determine fair market values. 
 
 ## User Type 2: Agenda Supporter

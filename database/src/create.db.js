@@ -107,7 +107,7 @@ location (
     
 }
 
-const revenue_trends = () => {
+const revenue_trends = async () => {
     let view=`
 CREATE view revenue_trends as
 select fiscal_year, 
@@ -133,8 +133,11 @@ where commodity is not null and  period_date <= '2019-07-01'
 group by fiscal_year;
 
 `
-    db.query(view);
-
+    try {
+	db.query(view);
+    } catch (err) {console.debug("revenue_trends ERROR ", err.stack);}
+    
+    
 }
 
 

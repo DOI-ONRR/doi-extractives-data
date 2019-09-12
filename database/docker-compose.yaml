@@ -28,3 +28,8 @@ services:
       # HASURA_GRAPHQL_ADMIN_SECRET: myadminsecretkey
 volumes:
   db_data:
+   driver: local
+   driver_opts:
+     type: bind
+     device: $PWD/volumes
+     o: bind

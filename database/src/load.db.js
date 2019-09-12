@@ -8,34 +8,40 @@ const db =  new Pool({user: 'postgres',
 			 password: 'secret',
 			 port: 5433,
 		     });
-const CSV="../../downloads/csv/revenue/monthly_revenue.csv"
+//const CSV="../../downloads/csv/revenue/monthly_revenue.csv"
 const CONSTANTS = require('../../src/js/constants')
+const CSV=process.argv[2
+
+		      ];
 
 
 
 const main =async () => {
     let period_lookup=await  initPeriod({});
-    console.debug("PL", period_lookup);
+//    console.debug("PL", period_lookup);
     let commodity_lookup=await initCommodity({});
     let location_lookup=await initLocation({});
     etl.file(CSV)
 	.pipe(etl.csv()).pipe(etl.collect(BATCH)).promise().then(async  (data) => {
 	    data.map(async  (rows,index) => {
 		rows.map( async (row, ii) => {
-		   let location= await addLocation(row,location_lookup);
+		/*   let location= await addLocation(row,location_lookup);
 		    let location_id=location[0]
-		    let commodity=await addCommodity(row,commodity_lookup);
-		    let commodity_id=commodity[0];; 
+		   let commodity=await addCommodity(row,commodity_lookup);
+		    let commodity_id=commodity[0];
+		*/
+		    console.debug(row);
 		    let period= await addPeriod(row,period_lookup);
 		    let period_id=period[0];
-		    let raw_revenue=getRevenue(row);
+		  /*  let raw_revenue=getRevenue(row);
 		    let revenue=cleanRevenue(raw_revenue);
 		    try {
 			
 			const insert = await db.query('insert into revenue( location_id, period_id, commodity_id, revenue , raw_revenue) values ($1 , $2 , $3 , $4 , $5 )',[location_id, period_id, commodity_id, revenue , raw_revenue]);
-		    } catch(err)  { console.debug("Fact", err)};
-
+		    } catch(err)  { console.debug("Fact", err), process.exit()};
+		  */
 		});
+		
 	    });
 	});
     
@@ -52,7 +58,7 @@ const initLocation = (lookup) => {
 	
 	    });
 	    return lookup
-	}).catch( err => console.debug(err));
+	}).catch( err =>{ console.debug(err); 	    process.exit();});
 	return r
     
 
@@ -114,14 +120,15 @@ const addLocation= async (row, lookup) => {
 	    const insert = await  db.query('insert into location(fips_code, state,county,land_class,land_category, offshore_region, offshore_planning_area, offshore_planning_area_code, offshore_block,offshore_protraction) values ( $1, $2, $3, $4, $5, $6, $7, $8, $9, $10) ON CONFLICT DO NOTHING  returning location_id', [fips_code,state,county,land_class,land_category,offshore_region,offshore_planning_area,offshore_planning_area_code,offshore_block,offshore_protraction]); 
 	    
 	    if(insert.rows.length > 0 ) {
-		console.debug("INSERT ----------------------", insert);
 		lookup[key]=[insert.rows[0].location_id, fips_code,state,county,land_class,land_category, offshore_region,offshore_planning_area,offshore_planning_area_code,offshore_block,offshore_protraction];
 		
 	    } else {
 	    	//console.debug("IGNORE ----------------------");
 	    }
 	} catch  (err) {
-	    console.log("ERROR: ", err.stack);
+	    console.log("location ERROR: ", err.stack);
+	    console.log("ROW: ", row);
+	    process.exit();
 	}
 	console.debug("addLocation", lookup[key])
 	return lookup[key];
@@ -139,7 +146,7 @@ const initCommodity = (lookup) => {
 		lookup[key]=[row.commodity_id, row.product, row.commodity, row.revenue_type,row.revenue_category, row.mineral_lease_type]
 	    })
 	    return lookup
-	}).catch( err => console.debug(err));
+	}).catch( err => {console.debug(err); process.exit();});
     return r;
     
     
@@ -189,16 +196,16 @@ const addCommodity= async (row, lookup) => {
 	try {
 	    const insert = await db.query('insert into commodity(  product,commodity, revenue_type, revenue_category,  mineral_lease_type) values ($1 , $2 , $3 , $4 , $5   ) ON CONFLICT DO NOTHING returning commodity_id', [ product, commodity, revenue_type, revenue_category, mineral_lease_type]);
 	    if(insert.rows.length > 0 ) {
-		console.debug("INSERT ----------------------", insert);
 		lookup[key]=[insert.rows[0].commodity_id, product, commodity, revenue_type, revenue_category, mineral_lease_type];
 	    } else {
 		//console.debug("IGNORE ----------------------")
 	    }
 	} catch  (err) {
-	    console.log("ERROR: ", err.stack);
+	    console.log("commodity ERROR: ", err.stack);
+	    process.exit();
 	}
     }
-    console.debug("addCommodity", key, lookup);
+    console.debug("addCommodity", lookup[key]);
     
     return lookup[key]
 }
@@ -221,7 +228,7 @@ const initPeriod = (lookup) => {
 	    });
 	    
 	    return lookup
-	}).catch( err => console.debug(err));
+	}).catch( err =>{ console.debug(err);	    process.exit();});
     return r;
     
 
@@ -237,9 +244,23 @@ const addPeriod=async (row, lookup) => {
     let period_date='';
 
     for( let field in row) {
-	switch (field) {
-	case 'Fiscal Year':
-	    period='Fiscal Year';	    fiscal_year=row[field];
+	//
+
+	//field=field.replace(/ /g,'');
+	field = String(field);
+	if(field == "Fiscal Year") {
+            console.debug(">>"+field+"<<");
+	}
+	switch (String(field)) {
+	case "Fiscal Year":
+	    period='Fiscal Year';
+	    fiscal_year=row[field];
+	    console.debug("fiscal_Year", period, fiscal_year);
+	    month=0;
+	    fiscal_month=0;
+	    calendar_year=0;
+	    period_date=fiscal_year+'-01-01 00:00:00';
+
 	    break;
 	case 'Month':
 	    period='Monthly';
@@ -249,7 +270,21 @@ const addPeriod=async (row, lookup) => {
 	    break;
 	case 'Calendar Year':
 	    calendar_year=row[field];
-	    
+	    period_date=calendar_year+'-01-01 00:00:00';
+	    break;
+	case "FiscalYear":
+	    period='Fiscal Year';
+	    fiscal_year=row[field];
+	    console.debug("fiscal_Year", period, fiscal_year);
+	    month=0;
+	    fiscal_month=0;
+	    calendar_year=0;
+	    period_date=fiscal_year+'-01-01 00:00:00';
+
+	    break;
+	default:
+	     console.debug("DEFALT>>"+field+"<<");
+	    //process.exit();
 	    
 	}
     }
@@ -259,12 +294,9 @@ const addPeriod=async (row, lookup) => {
 	fiscal_year=getFiscalYear(period_date)
 	
 
-    } else if (calendar_year) {
-	period_date=calendar_year+'-01-01 00:00:00';
-    }
+    } 
 
     let key=period+'-'+calendar_year+'-'+fiscal_year+'-'+month+'-'+month_long+'-'+fiscal_month
-    console.debug("key", key, lookup)
     if(lookup[key]) {
 	return lookup[key];
     } else {
@@ -272,26 +304,23 @@ const addPeriod=async (row, lookup) => {
 	try {
 	    const insert =await db.query('insert into period( period, calendar_year,fiscal_year, month, month_long,fiscal_month, period_date) values ($1 , $2 , $3 , $4 , $5 , $6 , $7 ) ON CONFLICT DO NOTHING returning period_id', [ period, calendar_year,fiscal_year, month, month_long, fiscal_month, period_date] )
 	    if(insert.rows.length > 0 ) {
-		console.debug("INSERT ----------------------", insert);
 		lookup[key]=[insert.rows[0].period_id, period, calendar_year, fiscal_year, month, month_long, fiscal_month,  period_date];
 	    }else {
 
 
 
-		console.debug("key", key    );
-		console.debug("lookup", lookup    );
-		console.debug("row", row    );
-
-	//	console.debug("IGNORE----------------------");
 	//	process.exit();
 	    }
 	   
 	} catch (err) {
-	    console.log("ERROR: ", err.stack);
+	    console.log("peroid ERROR: ", err.stack);
+	    console.log("ROW: ", row);
+	    console.log("ROW: ", key);
+	    process.exit();
 	}
 	//	rowid=insert.run([null, period, calendar_year,fiscal_year, month, month_long, fiscal_month, period_date]);
 	//lookup[key]=[rowid.lastInsertRowid, period, calendar_year, fiscal_year, month, month_long, fiscal_month,  period_date];
-
+	console.debug("AddPeriod: ", lookup[key]);
 	return lookup[key]; 
 
     }

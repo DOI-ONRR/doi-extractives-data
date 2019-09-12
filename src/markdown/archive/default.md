@@ -108,7 +108,7 @@ tag:
           <div>
             <h3 class="h3 landing-heading"><a href="/archive/case-studies">Case studies</a></h3>
             <p>Twelve county case studies demonstrate the impact of extractive industries on local economies, governments, and infrastructure across the U.S.</p>
-            <p><a href="/archive/federal-laws/">Review the case studies</a></p>
+            <p><a href="/archive/case-studies/">Review the case studies</a></p>
           </div>
           <div>
             <h3 class="h3 landing-heading"><a href="/archive/state-laws-and-regulations/">State laws and regulations</a></h3>

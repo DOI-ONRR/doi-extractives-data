@@ -3,6 +3,7 @@
 import FUND_INFO from '../../data/fund_names.yml'
 import utils from '../../js/utils'
 import lazy from 'lazy.js'
+import { object } from 'prop-types'
 
 // Initial state is used for the pattern library and seeding any additional data
 const initialState = {
@@ -114,17 +115,17 @@ const hydrateDisbursementsForYear = (disbursementsForYear, fundInfo, fundSortOrd
       if (disbursementsByFund[fundKey]) {
         sourceData = {}
         disbursementsByFund[fundKey].map((fundData, index) => {
-          sourceData[fundData.disbursement.Source] = Math.round(fundData.disbursement.Disbursement)
+          sourceData[fundData.disbursement.Source] = sourceData[fundData.disbursement.Source]
+            ? sourceData[fundData.disbursement.Source] + fundData.disbursement.Disbursement
+            : fundData.disbursement.Disbursement
 
           fundToAdd[fundKey].total += fundData.disbursement.Disbursement
           newState.total += fundData.disbursement.Disbursement
         })
       }
+
       if (sourceData) {
         fundToAdd[fundKey].disbursements.push(sourceData)
-      }
-      else {
-        fundToAdd[fundKey].disbursements = undefined
       }
 
       if (newState.highestFundValue < fundToAdd[fundKey].total) {

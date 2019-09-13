@@ -35,6 +35,7 @@ margin-top: 2rem;
     //    min-width: 100%;
 	flex-basis: 100%;
 	order: 0;
+	min-width: 280px;
 	margin-bottom: 30px;
 }
 
@@ -42,6 +43,7 @@ margin-top: 2rem;
    // border: 1px solid green;
   //   min-width: 65%;
     flex-basis: 65%;
+    min-width: 280px;
     order: 1;
 }
 
@@ -52,18 +54,21 @@ margin-top: 2rem;
    // min-width: 35%;
     flex-basis: 35%;
     order: 2;
-
+    min-width: 280px;
+    
 }
 
 .contentChildren{
     // border: 1px solid yellow;
-   // min-width: 100%;
+    // min-width: 100%;
     flex-basis: 100%;
+    min-width: 280px;
     order: 3;
 }
 .contentBottom{
     //  border: 1px solid red;
     //   min-width: 100%;
     flex-basis: 100%;
+    min-width: 280px;
     order: 4;
 }

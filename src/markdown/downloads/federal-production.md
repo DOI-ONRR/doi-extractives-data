@@ -8,12 +8,14 @@ tag:
 - Documentation
 - Federal
 - Production
+- Indian
+- Native American
 ---
 
 <custom-link to="/downloads/" className="breadcrumb link-charlie">Downloads</custom-link> /
 # Production by Year
 
-> This dataset contains information on natural resource production volumes on federal lands and waters.
+> This dataset contains information on natural resource production volumes on Native American lands and federal lands and waters. We only provide production volumes for Native American lands by fiscal year.
 
 <p class="downloads-download_links-intro">Download calendar year data (2003-2018):
   <ul class="downloads-download_links list-unstyled">
@@ -22,7 +24,7 @@ tag:
   </ul>
 </p>
 
-<p class="downloads-download_links-intro">Download fiscal year data (2009-2018):
+<p class="downloads-download_links-intro">Download fiscal year data (2003-2018):
   <ul class="downloads-download_links list-unstyled">
     <li><excel-link to="/downloads/production/fiscal_year_production.xlsx">Fiscal year production (Excel, 409 KB)</excel-link></li>
     <li><csv-link to="/downloads/csv/production/fiscal_year_production.csv">Fiscal year production (csv, 528 KB)</csv-link></li>
@@ -31,7 +33,11 @@ tag:
 
 ## Scope
 
-This dataset includes natural resource production for U.S. federal lands and offshore areas. It does not include Native American lands, privately owned lands, or U.S. state lands. The dataset currently include data tracked and managed by the Department of the Interior’s Office of Natural Resources Revenue (ONRR). The production data for Oil and Gas is collected on Form ONRR-4054 (Oil and Gas Operations Report). Coal and hardrock production is collected on Form ONRR-4430 (Solid Minerals Production and Royalty Report).
+The calendar year dataset includes natural resource production for U.S. federal lands and offshore areas. The fiscal year dataset also includes Native American lands (2009-2018). Neither dataset includes privately owned lands or state-owned lands.
+
+Federal revenue data is available by location, but Native American data is only available at the national level to protect private and personally identifiable information.
+
+The dataset currently include data tracked and managed by the Department of the Interior’s Office of Natural Resources Revenue (ONRR). The production data for Oil and Gas is collected on Form ONRR-4054 (Oil and Gas Operations Report). Coal and hardrock production is collected on Form ONRR-4430 (Solid Minerals Production and Royalty Report).
 
 ## About the data
 

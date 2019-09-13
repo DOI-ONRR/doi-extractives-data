@@ -60,7 +60,7 @@ query MyQuery {
     let offshore_regions =props.offshore_regions || []
 return (
     <section className={styles.root}>
-      <div className={styles.container +' container-page-wrapper'}>
+      <div className={styles.container }>
 	<div className={styles.containerLeft}>
 	  <h3>{props.title}</h3>
 	  <p>{props.info}</p>

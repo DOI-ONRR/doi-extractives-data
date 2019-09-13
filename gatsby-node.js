@@ -97,6 +97,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     createStatePages(createPage, graphql),
     createHowItWorksPages(createPage, graphql),
     createDownloadsPages(createPage, graphql),
+    createArchivePages(createPage, graphql),
     createCaseStudiesPages(createPage, graphql),
     createOffshorePages(createPage, graphql),
   ])
@@ -104,6 +105,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 
 // Page Templates
 const CONTENT_DEFAULT_TEMPLATE = path.resolve(`src/templates/content-default.js`)
+const ARCHIVE_DEFAULT_TEMPLATE = path.resolve(`src/templates/archive-default.js`)
 const HOWITWORKS_DEFAULT_TEMPLATE = path.resolve(`src/templates/how-it-works-default.js`)
 const HOWITWORKS_PROCESS_TEMPLATE = path.resolve(`src/templates/how-it-works-process.js`)
 const DOWNLOADS_TEMPLATE = path.resolve(`src/templates/downloads-default.js`)
@@ -116,6 +118,8 @@ const getPageTemplate = templateId => {
   switch (templateId) {
   case 'howitworks-default':
     return HOWITWORKS_DEFAULT_TEMPLATE
+  case 'archive-default':
+    return ARCHIVE_DEFAULT_TEMPLATE
   case 'howitworks-process':
     return HOWITWORKS_PROCESS_TEMPLATE
   case 'downloads':

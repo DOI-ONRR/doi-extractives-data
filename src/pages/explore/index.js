@@ -90,7 +90,7 @@ class ExplorePage extends React.Component {
   render () {
     return (
       <DefaultLayout>
-        <main id="national" className="layout-state-pages national-page">
+        <main id="main-content" className="layout-state-pages national-page">
           <Helmet
             title="Explore data | Natural Resources Revenue Data"
             meta={[

@@ -26,7 +26,7 @@ const AboutPage = () => {
             { name: 'og:title', content: 'About | Natural Resources Revenue Data' },
             { name: 'twitter:title', content: 'About | Natural Resources Revenue Data' },
           ]} />
-
+        <main id="main-content">
         <section className="slab-delta">
           <div className="container-page-wrapper ribbon ribbon-column landing-section_top">
             <div className="container-left-8 ribbon-hero ribbon-hero-column">
@@ -148,7 +148,7 @@ const AboutPage = () => {
                 </div>
                 <div className="bureau-right">
                   <h4>Internal Revenue Service (IRS)</h4>
-                  <p><a href="https://www.irs.gov/">The IRS</a> collects corporate income taxes from corporations in the extractive industries, as well as income taxes from all other companies operating in these industries. In the 2013 tax year, the IRS calculated <a href="https://www.irs.gov/uac/SOI-Tax-Stats-Table-7-Corporation-Returns-With-Net-Income">$11.8 billion in corporate income tax receipts</a> from mining and petroleum and coal products manufacturing industries.</p>
+                  <p><a href="https://www.irs.gov/">The IRS</a> collects corporate income taxes from corporations in the extractive industries, as well as income taxes from all other companies operating in these industries.</p>
                 </div>
               </article>
 
@@ -170,7 +170,7 @@ const AboutPage = () => {
           </section>
 
         </div>
-
+        </main>  
       </div>
     </DefaultLayout>
   )

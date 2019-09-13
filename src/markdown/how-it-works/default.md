@@ -5,12 +5,12 @@ permalink: /how-it-works/
 redirect_from: /how-it-works/production/
 ---
 
-<section class="slab-delta">
+<section class="slab-delta" id="main-content">
   <div class="container-page-wrapper landing-section_top ribbon ribbon-column">
     <div class="container-left-8 ribbon-hero ribbon-hero-column">
       <h1 id="introduction">How It Works</h1>
       <p class="ribbon-hero-description">In the U.S., land and the resources beneath it can be owned by private individuals and corporations or by federal, state, local, and Native American governments. This makes the U.S. different from nearly every other country; in many places oil, gas, coal, and other minerals simply belong to the government, but in the U.S. there is widespread private ownership of these resources.</p>
-      <p class="ribbon-hero-description">Learn what <a href="#laws">governs natural resource extraction</a> in the U.S., how <a href="#process">resources result in federal revenue</a>, and what <a href="#accounting">processes ensure accuracy and accountability</a> in this industry.</p>
+      <p class="ribbon-hero-description">Learn what <a href="#laws">governs natural resource extraction</a> in the U.S., how <a href="#resources_process">resources result in federal revenue</a>, and what <a href="#accounting">processes ensure accuracy and accountability</a> in this industry.</p>
     </div>
     <div class="container-right-4 ribbon-card-column ribbon-card">
       <div class="ribbon-card-top ribbon-card-top-text">
@@ -27,7 +27,7 @@ redirect_from: /how-it-works/production/
   <main class="container-page-wrapper landing-wrapper">
     <article class="container-left-8 container-shift-reverse-1">
       <section class="container">
-        <h2 id="ownership" alt="Land ownership" class="h2-bar">Who owns natural resources in the U.S.?</h2>
+        <h2 id="land_ownership" alt="Land ownership" class="h2-bar">Who owns natural resources in the U.S.?</h2>
         <div class="container landing-section">
           <div>
             <h3 class="h3 landing-heading"><custom-link to="/how-it-works/ownership">Ownership</custom-link></h3>
@@ -82,8 +82,8 @@ redirect_from: /how-it-works/production/
         </div>
       </section>
       <section class="container">
-        <h2 id="process" alt="Resources to revenue" class="h2-bar">How do natural resources result in federal revenue?</h2>
-        <h3 id="production" alt="Production" class="h3-bar">The production process</h3>
+        <h2 id="resources_process" alt="Resources to revenue" class="h2-bar">How do natural resources result in federal revenue?</h2>
+        <h3 id="production_process" alt="Production" class="h3-bar">The production process</h3>
         <div class="container landing-section landing-section-with-graphics">
           <div class="landing-oil_gas">
             <h4 class="h3 landing-heading"><custom-link to="/how-it-works/offshore-oil-gas">Oil and gas</custom-link><how-main-icon-oil></how-main-icon-oil></h4>

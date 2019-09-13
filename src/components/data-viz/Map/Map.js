@@ -112,7 +112,6 @@ const chart = (node,us,mapFeatures,data, colorScheme,onClick) => {
     
     const width = node.scrollWidth;
     const height = node.scrollHeight;
-
     const margin = { top: 0, bottom: 0, right: 0, left: 0};
     const projection=d3.geoAlbersUsa()
   	  .translate([width/2, height/2])    // translate to center of screen
@@ -150,8 +149,8 @@ const chart = (node,us,mapFeatures,data, colorScheme,onClick) => {
 	  .style("width", width)
 	  .style("height", height)
 	  .attr("fill", "#E0E2E3")
-	  .attr("viewBox", "0 0 "+width+" "+height)    
-	  //.attr("viewBox", '-40 0 '+width*1.8+' '+height*1.8);
+	  .attr("viewBox", '0 0 '+width+' '+height);
+
 
   svg.append("g")
 	.attr("transform", "translate(30,30)")

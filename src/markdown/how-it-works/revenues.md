@@ -29,7 +29,7 @@ Lease holders also pay different fees to the Bureau of Land Management, Bureau o
 <h3 data-toc-exclude="true">Revenue streams and rates</h3>
 
 <!--Oil and gas-->
-<p style="margin: 2em 0 0 0;"><oil-gas-icon></oil-gas-icon> <strong>Oil and gas</strong></p>
+<h4 id="oil-gas-rates" style="margin: 2em 0 0 0;"><oil-gas-icon></oil-gas-icon> Oil and gas</h4>
 
 <table class="article_table">
   <thead>
@@ -66,7 +66,7 @@ Lease holders also pay different fees to the Bureau of Land Management, Bureau o
 </table>
 
 <!--Coal-->
-<p style="margin: 2em 0 0 0;"><coal-icon></coal-icon> <strong>Coal</strong></p>
+<h4 id="coal-rates" style="margin: 2em 0 0 0;"><coal-icon></coal-icon> Coal</h4>
 
 <table class="article_table">
   <thead>
@@ -102,7 +102,7 @@ Lease holders also pay different fees to the Bureau of Land Management, Bureau o
 </table>
 
 <!--Hardrock minerals-->
-<p style="margin: 2em 0 0 0;"><hardrock-icon></hardrock-icon> <strong>Hardrock minerals</strong></p>
+<h4 id="minerals-rates" style="margin: 2em 0 0 0;"><hardrock-icon></hardrock-icon> <strong>Hardrock minerals</strong></h4>
 
 <table class="article_table">
   <thead>
@@ -124,9 +124,9 @@ Lease holders also pay different fees to the Bureau of Land Management, Bureau o
       <td></td>
       <td><strong>$1</strong> per acre</td>
       <td><strong>$20</strong> processing fee<br>
-          <strong>$37</strong> location fee<br>
-          <strong>$155</strong> initial maintenance fee<br>
-          <strong>$155</strong> annual maintenance fee for the assessment year in which the claim/site was located
+          <strong>$40</strong> location fee<br>
+          <strong>$165</strong> initial maintenance fee<br>
+          <strong>$165</strong> annual maintenance fee for the assessment year in which the claim/site was located
       </td>
       <td></td>
     </tr>
@@ -142,7 +142,7 @@ Lease holders also pay different fees to the Bureau of Land Management, Bureau o
 </table>
 
 <!--Solar and wind energy-->
-<p style="margin: 2em 0 0 0;"><renewables-icon></renewables-icon> <strong>Solar and wind energy</strong></p>
+<h4 id="solar-wind-rates" style="margin: 2em 0 0 0;"><renewables-icon></renewables-icon> <strong>Solar and wind energy</strong></h4>
 
 <table class="article_table">
   <thead>
@@ -186,7 +186,7 @@ Lease holders also pay different fees to the Bureau of Land Management, Bureau o
 <p class="para-sm">* Unless waived or otherwise specified</p>
 
 <!--Geothermal-->
-<p style="margin: 2em 0 0 0;"><geothermal-icon></geothermal-icon> <strong>Geothermal</strong></p>
+<h4 id="geothermal-rates" style="margin: 2em 0 0 0;"><geothermal-icon></geothermal-icon> <strong>Geothermal</strong></h4>
 
 <table class="article_table">
   <thead>

@@ -38,7 +38,7 @@ const REVENUE_TRENDS_GQL= gql`
 
 const RevenueTrends = () => {
 
-    const { loading, error, trends } = useQuery(REVENUE_TRENDS_GQL);
+    //const { loading, error, trends } = useQuery(REVENUE_TRENDS_GQL);
     
     const data = useStaticQuery(graphql`
           query RevenueTrendsQuery {
@@ -173,7 +173,7 @@ query RevenueTrendsQuery {
     
 */
 
-    console.debug("TRENDS =============", trends);
+
     let allData=data.allRevenueTrends.group.sort((a, b) => (a.fiscal_year < b.fiscal_year) ? 1 : -1)
     allData=allData.map(obj =>({...obj,
 				ytd: (type)=>getYtd(obj.data,type),
@@ -190,6 +190,7 @@ query RevenueTrendsQuery {
     currentFiscalYearText = 'FY' + currentYearData.fiscal_year.slice(2) + ' so far'
     previousFiscalYearText = 'from FY' + previousYearData.fiscal_year.slice(2)
 
+    /*console.debug("TRENDS =============", trends);
     if (loading) return <p>Loading...</p>;
     if (error) return <p>Error </p>;
 				 
@@ -200,7 +201,7 @@ query RevenueTrendsQuery {
 	</p>
 	    </div>
     ));				 
-    /*
+    */
 				 
   return (<>    <section className={styles.root}>
       <h3 className={styles.title + ' h3-bar'}>Revenue trends</h3>
@@ -444,7 +445,6 @@ query RevenueTrendsQuery {
 	    </section>
 	    </>
   )
-*/
 }
 
 export default RevenueTrends

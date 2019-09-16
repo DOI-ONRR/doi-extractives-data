@@ -1,6 +1,10 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { connect } from 'react-redux'
+import { ApolloProvider } from '@apollo/react-hooks';
+import ApolloClient from 'apollo-boost';
+import { gql } from "apollo-boost";
+
 import Link from '../components/utils/temp-link'
 import { withPrefix as withPrefixGatsby } from 'gatsby-link'
 import { hydrate as hydateDataManagerAction } from '../state/reducers/data-sets'
@@ -27,7 +31,7 @@ import GlossaryTerm from '../components/utils/glossary-term.js';
 import DefaultLayout from '../components/layouts/DefaultLayout'
 import { Tabordion, Tab } from '../components/layouts/Tabordion'
 import TabContainer from '../components/layouts/Tabordion/TabContainer.js'
-import RevenueTrends from '../components/sections/RevenueTrends'
+import RevenueTrends from '../components/sections/RevenueTrends/RevenueTrendsApollo'
 import TotalRevenue from '../components/sections/TotalRevenue/TotalRevenue'
 import TotalDisbursements from '../components/sections/TotalDisbursements/TotalDisbursementsDeprecated'
 import TotalProduction from '../components/sections/TotalProduction/TotalProductionDeprecated'
@@ -41,6 +45,9 @@ import { WhatsNew } from '../components/sections/WhatsNew'
 let mapJson = require("../../static/maps/land/us-topology.json")
 let  mapOffshoreJson =require("../../static/maps/offshore/offshore.json")
 
+const client = new ApolloClient({
+    uri: 'http://localhost:8080/v1/graphql'
+});
 
 class Home extends React.Component {
   constructor (props) {
@@ -111,6 +118,7 @@ class Home extends React.Component {
     render () {
 	console.debug(mapJson);
 	return(
+	    	<ApolloProvider client={client}> 
 	    <DefaultLayout>
 	      <main>
 		<Helmet
@@ -191,7 +199,8 @@ class Home extends React.Component {
 		
 		<WhatsNew />
 	      </main>
-	    </DefaultLayout>
+		</DefaultLayout>
+		</ApolloProvider>
 	)
     }
 }

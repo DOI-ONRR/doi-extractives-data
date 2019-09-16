@@ -43,9 +43,9 @@ const RevenueTrendsApollo = () => {
     if (error) return <p>Error </p>;
 				 
     return data.revenue_trends.map((row, index) => (
-	    <div key={row.current_month}>
+	    <div key={row.fiscal_year}>
 	    <p>
-            {row.total_ytd}: {row.current_month}
+            {row.total_ytd}: {row.fiscal_year}
 	</p>
 	    </div>
     ));				 

@@ -2,6 +2,9 @@ import React, { useEffect, useRef } from 'react'
 import ReactDOM from 'react-dom'
 import { useStaticQuery, graphql } from 'gatsby'
 
+import { useQuery } from '@apollo/react-hooks';
+import { gql } from 'apollo-boost';
+
 import * as d3 from 'd3'
 import utils from '../../../js/utils'
 
@@ -20,10 +23,24 @@ const TREND_LIMIT = 10
 * uses hook useStaticQuery and graphl to get revenu data then
 * summarizes data for graphical representation
 */
+const REVENUE_TRENDS_GQL= gql`
+{
+  revenue_trends {
+    current_month
+    fiscal_year
+    total
+    total_ytd
+    trend_type
+  }
+}
+`
+
 
 const RevenueTrends = () => {
 
-  const data = useStaticQuery(graphql`
+    const { loading, error, trends } = useQuery(REVENUE_TRENDS_GQL);
+    
+    const data = useStaticQuery(graphql`
           query RevenueTrendsQuery {
         allMonthlyRevenuesByFiscalYear: allResourceRevenuesMonthly(
           filter: {RevenueCategory: {ne: null}}, 
@@ -62,6 +79,9 @@ const RevenueTrends = () => {
 	`)
 
 
+
+    
+    
   let fiscalYearData = JSON.parse(JSON.stringify(data.allMonthlyRevenuesByFiscalYear.group)).sort((a, b) => (a.fiscalYear < b.fiscalYear) ? 1 : -1)
 
     console.debug(fiscalYearData)
@@ -152,7 +172,8 @@ query RevenueTrendsQuery {
     );
     
 */
-   
+
+    console.debug("TRENDS =============", trends);
     let allData=data.allRevenueTrends.group.sort((a, b) => (a.fiscal_year < b.fiscal_year) ? 1 : -1)
     allData=allData.map(obj =>({...obj,
 				ytd: (type)=>getYtd(obj.data,type),
@@ -163,13 +184,25 @@ query RevenueTrendsQuery {
     console.debug(fiscalYearData);
     previousYearData=allData[1];
     currentYearData=allData[0];
-    console.debug("===============================================>");
+   // console.debug("===============================================>");
+    //
     console.debug(currentYearData);
     currentFiscalYearText = 'FY' + currentYearData.fiscal_year.slice(2) + ' so far'
     previousFiscalYearText = 'from FY' + previousYearData.fiscal_year.slice(2)
 
-      
-    return (<>    <section className={styles.root}>
+    if (loading) return <p>Loading...</p>;
+    if (error) return <p>Error </p>;
+				 
+    return trends.revenue_trends.map((row, index) => (
+	    <div key={row.current_month}>
+	    <p>
+            {row.total_ytd}: {row.current_month}
+	</p>
+	    </div>
+    ));				 
+    /*
+				 
+  return (<>    <section className={styles.root}>
       <h3 className={styles.title + ' h3-bar'}>Revenue trends</h3>
             Includes federal and Native American revenue through {currentYearData.data[0].current_month} {currentYearData.fiscal_year}
 	    <table className={styles.revenueTable}>
@@ -411,7 +444,7 @@ query RevenueTrendsQuery {
 	    </section>
 	    </>
   )
-
+*/
 }
 
 export default RevenueTrends

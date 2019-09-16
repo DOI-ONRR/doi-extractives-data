@@ -25,21 +25,34 @@ const main =async () => {
 	.pipe(etl.csv()).pipe(etl.collect(BATCH)).promise().then(async  (data) => {
 	    data.map(async  (rows,index) => {
 		rows.map( async (row, ii) => {
-		/*   let location= await addLocation(row,location_lookup);
+
+
+		    let N=false;
+		    for(let f in row) {
+			if(row.Month != '' ) {
+			    console.debug(row);
+			    console.debug("field",f)
+			    N=true
+			}
+		    }
+		    if(N) {
+			 console.debug(row);
+		  let location= await addLocation(row,location_lookup);
 		    let location_id=location[0]
 		   let commodity=await addCommodity(row,commodity_lookup);
 		    let commodity_id=commodity[0];
-		*/
-		    console.debug(row);
+		 
+		 
 		    let period= await addPeriod(row,period_lookup);
-		    let period_id=period[0];
-		  /*  let raw_revenue=getRevenue(row);
+		   let period_id=period[0];
+		  let raw_revenue=getRevenue(row);
 		    let revenue=cleanRevenue(raw_revenue);
 		    try {
 			
 			const insert = await db.query('insert into revenue( location_id, period_id, commodity_id, revenue , raw_revenue) values ($1 , $2 , $3 , $4 , $5 )',[location_id, period_id, commodity_id, revenue , raw_revenue]);
 		    } catch(err)  { console.debug("Fact", err), process.exit()};
-		  */
+		 
+		    }
 		});
 		
 	    });
@@ -244,14 +257,7 @@ const addPeriod=async (row, lookup) => {
     let period_date='';
 
     for( let field in row) {
-	//
-
-	//field=field.replace(/ /g,'');
-	field = String(field);
-	if(field == "Fiscal Year") {
-            console.debug(">>"+field+"<<");
-	}
-	switch (String(field)) {
+	switch (field) {
 	case "Fiscal Year":
 	    period='Fiscal Year';
 	    fiscal_year=row[field];
@@ -271,16 +277,6 @@ const addPeriod=async (row, lookup) => {
 	case 'Calendar Year':
 	    calendar_year=row[field];
 	    period_date=calendar_year+'-01-01 00:00:00';
-	    break;
-	case "FiscalYear":
-	    period='Fiscal Year';
-	    fiscal_year=row[field];
-	    console.debug("fiscal_Year", period, fiscal_year);
-	    month=0;
-	    fiscal_month=0;
-	    calendar_year=0;
-	    period_date=fiscal_year+'-01-01 00:00:00';
-
 	    break;
 	default:
 	     console.debug("DEFALT>>"+field+"<<");

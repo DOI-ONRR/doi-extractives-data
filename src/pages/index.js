@@ -28,7 +28,7 @@ import DefaultLayout from '../components/layouts/DefaultLayout'
 import { Tabordion, Tab } from '../components/layouts/Tabordion'
 import TabContainer from '../components/layouts/Tabordion/TabContainer.js'
 import RevenueTrends from '../components/sections/RevenueTrends'
-import TotalRevenue from '../components/sections/TotalRevenue/TotalRevenueDeprecated'
+import TotalRevenue from '../components/sections/TotalRevenue/TotalRevenue'
 import TotalDisbursements from '../components/sections/TotalDisbursements/TotalDisbursementsDeprecated'
 import TotalProduction from '../components/sections/TotalProduction/TotalProductionDeprecated'
 import DisbursementTrends from '../components/sections/DisbursmentTrends'
@@ -42,7 +42,7 @@ let mapJson = require("../../static/maps/land/us-topology.json")
 let  mapOffshoreJson =require("../../static/maps/offshore/offshore.json")
 
 
-class Beta extends React.Component {
+class Home extends React.Component {
   constructor (props) {
     super(props)
 
@@ -107,7 +107,7 @@ class Beta extends React.Component {
     ])
   }
 
-//const Beta = (props) => {
+//const Home = (props) => {
     render () {
 	console.debug(mapJson);
 	return(
@@ -202,7 +202,7 @@ export default connect(
     hydateDataManager: dataSets => dispatch(hydateDataManagerAction(dataSets)),
     normalizeDataSet: dataSets => dispatch(normalizeDataSetAction(dataSets))
   })
-)(Beta)
+)(Home)
 
 /*
 		<TabContainer id="tab-container-revenue" name="Revenue"
@@ -222,7 +222,7 @@ export default connect(
 
 
 export const query = graphql`
-  query BetaQuery {
+  query HomeQuery {
    offshore_data:allMarkdownRemark (filter:{fileAbsolutePath: {regex: "/offshore_regions/"}} sort:{fields: [frontmatter___title], order: ASC}) {
       offshore_regions:edges {
         offshore_region:node {

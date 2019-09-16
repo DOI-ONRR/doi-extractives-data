@@ -36,7 +36,7 @@
     "gatsby-transformer-excel": "^2.2.2",
     "gatsby-transformer-remark": "^2.6.10",
     "gatsby-transformer-yaml": "^2.2.4",
-    "graphql": "^14.5.4",
+    "graphql": "^14.5.5",
     "lazy.js": "^0.5.1",
     "node-sass": "^4.12.0",
     "pg": "^7.12.1",

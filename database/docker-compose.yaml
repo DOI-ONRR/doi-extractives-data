@@ -31,5 +31,5 @@ volumes:
    driver: local
    driver_opts:
      type: bind
-     device: $PWD/volumes
+     device: $PWD/../../volumes
      o: bind

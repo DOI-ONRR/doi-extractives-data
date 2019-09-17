@@ -29,7 +29,7 @@ class CaseStudiesTemplate extends React.Component {
   }
 
   render () {
-    let title = this.props.pathContext.markdown.frontmatter.title || 'Natural Resources Revenue Data'
+    let title = this.props.pageContext.markdown.frontmatter.title || 'Natural Resources Revenue Data'
 
     return (
       <DefaultLayout>
@@ -43,7 +43,7 @@ class CaseStudiesTemplate extends React.Component {
             ]}
 
           />
-          {hastReactRenderer(this.props.pathContext.markdown.htmlAst)}
+          {hastReactRenderer(this.props.pageContext.markdown.htmlAst)}
         </main>
       </DefaultLayout>
     )

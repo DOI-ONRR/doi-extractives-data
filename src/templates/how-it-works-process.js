@@ -32,12 +32,12 @@ class HowItWorksProcess extends React.Component {
    **/
   hydrateStore () {
     this.props.hydateDataManager([
-      { key: CONSTANTS.DISBURSEMENTS_ALL_KEY, data: this.props.pathContext.disbursements },
+      { key: CONSTANTS.DISBURSEMENTS_ALL_KEY, data: this.props.pageContext.disbursements },
     ])
   }
 
   render () {
-    let title = this.props.pathContext.markdown.frontmatter.title || 'Natural Resources Revenue Data'
+    let title = this.props.pageContext.markdown.frontmatter.title || 'Natural Resources Revenue Data'
     return (
       <DefaultLayout>
   			<div>
@@ -50,7 +50,7 @@ class HowItWorksProcess extends React.Component {
             ]}
 
           />
-          {hastReactRenderer(this.props.pathContext.markdown.htmlAst)}
+          {hastReactRenderer(this.props.pageContext.markdown.htmlAst)}
           <div className='pre-footer'>
             <section className="container-page-wrapper">
               <ul>

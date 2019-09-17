@@ -80,7 +80,7 @@ const CustomTableSummaryRow_Item = ({ getMessage, ...restProps }) => {
     <div {...restProps} className={styles.summaryCell}>
       {restProps.children.type
         ? restProps.children.type(restProps)
-        : restProps.value + ' sdaas'
+        : restProps.value + '-'
       }
     </div>
   )

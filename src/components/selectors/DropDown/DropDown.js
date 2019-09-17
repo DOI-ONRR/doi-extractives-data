@@ -65,12 +65,12 @@ class DropDown extends React.Component {
 						  }
 
 						  return (
-						    <React.Fragment>
+						    <React.Fragment key={index + '_' + value}>
 						      {placeholder
-						        ? <option className={styles.option} key={index + '_' + value} value={value} disabled selected hidden>
+						        ? <option className={styles.option} value={value} disabled hidden>
 						          {name}
 						        </option>
-						        : <option className={styles.option} key={index + '_' + value} value={value} >
+						        : <option className={styles.option} value={value} >
 						          {name}
 						        </option>
 						      }

@@ -80,7 +80,7 @@ const normalizeHandler = (state, action) => {
       return obj
     }, {})
 
-  let normalizedDatasets = {}
+  let normalizedDatasets = { lastUpdated: Date.now() }
   payload.forEach(dataSet => {
     normalizedDatasets[dataSet.key] = {
       [BY_ID]: arrayToObject(dataSet.data)

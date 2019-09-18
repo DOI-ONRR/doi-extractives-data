@@ -65,32 +65,49 @@ _County_ The county, parish, or borough that received the disbursement in accord
 
 _Commodity_ The commodity that generated the revenue. For oil and gas, the commodity listed depends on the phase of production. Since it's unknown whether a lease will produce oil, gas, or both, the two commodities are combined in the bonus and rent phases and listed as "Oil & Gas."
 
-*_Clay_
-*_Coal_
-*_Copper_
-*_Gas_
-*_Geothermal_
-*_Gilsonite
-*_Gold_
-*_Hardrock_
-*_Lead/Zinc_
-*_Limestone_
-*_Oil_
-*_Oil & Gas_
-*_Oil Shale_
-*_Phosphate_
-*_Potassium_
-*_Quartz_
-*_Sodium_
-*_Wind_
+* _Clay_ 
 
-_Categpry (dollar)_ Includes, but not limited to, phases of lease payments, such as bonuses, rents, and royalties.
+* _Coal_
 
-*_Bonuses_ The amount paid by the highest bidder for a natural resource lease.
-*_Rents_ The annual payment for leasing lands or waters before production starts.
-*_Royalties_ Payments for extracted natural resources, determined by a percentage of the resources’ production value.
-*_Other Distributions_ Revenues from fees and civil penalties.
-*_Sequestration_ represents [statutory spending limits](https://www.cbo.gov/topics/budget/sequestration) which are withheld from certain government programs. Some program funds are returned in following fiscal year.
+* _Copper_
+
+* _Gas_
+
+* _Geothermal_
+
+* _Gilsonite_
+
+* _Gold_
+
+* _Hardrock_
+
+* _Lead/Zinc_ 
+
+* _Limestone_
+
+* _Oil_
+
+* _Oil & Gas_
+
+* _Oil Shale_
+
+* _Phosphate_
+
+* _Potassium_
+
+* _Quartz_
+
+* _Sodium_
+
+* _Wind_
+
+_Category (dollar)_ Includes, but not limited to, phases of lease payments, such as bonuses, rents, and royalties.
+
+* _Bonuses_ The amount paid by the highest bidder for a natural resource lease.
+* _Rents_ The annual payment for leasing lands or waters before production starts.
+* _Royalties_ Payments for extracted natural resources, determined by a percentage of the resources’ production value.
+* _Other Distributions_ Revenues from fees and civil penalties.
+* _Sequestration_ represents [statutory spending limits](https://www.cbo.gov/topics/budget/sequestration) which are withheld from certain government programs. Some program funds are returned in following fiscal year.
 
 _Disbursement (dollar)_ The amount disbursed.
 

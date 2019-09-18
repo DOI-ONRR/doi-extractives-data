@@ -41,8 +41,8 @@ _Calendar Year_ The period between January 1 and December 31 for a given year.
 
 _Fund Type_ The type of recipient receiving the disbursement
 
-* _BLM-Nat Petrol Reserve-2_  Funds from oil and gas leases directed to the National Petroleum Reserve in Alaska.
-* _Bureau of Land Management_  Certain funds are directed back to the federal agencies that administer these lands and waters to help cover the agencies’ operational costs.
+* _BLM-Nat Petrol Reserve-2_ Funds from oil and gas leases directed to the National Petroleum Reserve in Alaska.
+* _Bureau of Land Management_ Certain funds are directed back to the federal agencies that administer these lands and waters to help cover the agencies’ operational costs.
 * _Bureau of Ocean Energy Management_ Certain funds are directed back to the federal agencies that administer these lands and waters to help cover the agencies’ operational costs.
 * _Bureau of Safety & Environmental Enforcement_ Certain funds are directed back to the federal agencies that administer these lands and waters to help cover the agencies’ operational costs.
 * _Fish & Wildlife_ Certain funds are directed back to the federal agencies that administer these lands and waters to help cover the agencies’ operational costs.
@@ -52,8 +52,8 @@ _Fund Type_ The type of recipient receiving the disbursement
 * _Native American Tribes & Allottees_ ONRR disburses 100% of revenue collected from resource extraction on Native American lands back to Native American  tribes, nations, and individual Indian landowners.
 * _Reclamation Fund_ Established by Congress in 1902, funds the development of irrigation projects on arid and semiarid lands of the 17 western states.
 * _State Fund_ disbursed to states fall under the jurisdiction of each state, and each state determines how the funds will be used.
-* _U.S Treasury Fund_ disbursed to the Treasury go to the General Fund, which is the federal government’s basic operating fund. The General Fund pays for roughly two-thirds of all federal expenditures, including the U.S. military, national parks, and schools.
-* _U.S. TreasuryAI Funds_ disbursed to Native American deposit accounts within the U.S. Treasury Deposit accounts are funds that are collected by the U.S. Treasury but do not belong to the federal government.
+* _U.S Treasury_ Funds disbursed to the Treasury go to the General Fund, which is the federal government’s basic operating fund. The General Fund pays for roughly two-thirds of all federal expenditures, including the U.S. military, national parks, and schools.
+* _U.S. TreasuryAI_ Funds disbursed to Native American deposit accounts within the U.S. Treasury Deposit accounts are funds that are collected by the U.S. Treasury but do not belong to the federal government.
 
 _Land Category_ Whether the origin of the revenue being disbursed is offshore or onshore
 
@@ -81,7 +81,7 @@ _Commodity_ The commodity that generated the revenue. For oil and gas, the commo
 
 * _Hardrock_
 
-* _Lead/Zinc_ 
+* _Lead/Zinc_
 
 * _Limestone_
 

@@ -45,7 +45,7 @@ _Fund Type_ The type of recipient receiving the disbursement.
 * _Land and Water Conservation_ Fund This fund provides matching grants to states and local governments to buy and develop public outdoor recreation areas across the 50 states.
 * _Land and Water Conservation Fund GoMESA_ The Gulf of Mexico Energy Security Act (GOMESA) of 2006 specifies that 12.5% of revenues from certain gulf leases be directed to the LWCF stateside program. States can receive up to $125 million a year in funding. This portion of LWCF funds is not subject to the congressional appropriation process, but are otherwise treated similarly to regular LWCF funds.
 * _Historic Preservation Fund_ This fund helps preserve U.S. historical and archaeological sites and cultural heritage through grants to state and tribal historic preservation offices.
-* _Reclamation_ Established by Congress in 1902 to pay for Bureau of Reclamation projects, this fund supports the establishment of critical infrastructure projects like dams and power plants.
+* _Reclamation Fund_ Established by Congress in 1902 to pay for Bureau of Reclamation projects, this fund supports the establishment of critical infrastructure projects like dams and power plants.
 * _State_ Funds disbursed to states fall under the jurisdiction of each state, and each state determines how the funds will be used.
 * _State 8(g)_ 27% of revenue from leases in the 8(g) Zone (the first three nautical miles of the Outer Continental Shelf) are shared with states.
 * _State GoMESA_ 37.5% of revenue from certain leases in the Gulf of Mexico are shared with Alabama, Louisiana, Mississippi, and Texas.

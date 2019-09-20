@@ -112,4 +112,3 @@ _Category (dollar)_ Includes, but not limited to, phases of lease payments, such
 _Disbursement (dollar)_ The amount disbursed.
 
 ## Contact us
-Do you have questions about the data or need data that isn't here? Contact our data specialists at onrrdatarequests@onrr.gov.

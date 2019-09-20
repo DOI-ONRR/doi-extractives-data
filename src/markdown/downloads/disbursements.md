@@ -60,4 +60,3 @@ _County_ The county that received the disbursement in accordance with revenue-sh
 _Total_ The total amount disbursed.
 
 ## Contact us
-Do you have questions about the data or need data that isn't here? Contact our data specialists at onrrdatarequests@onrr.gov.

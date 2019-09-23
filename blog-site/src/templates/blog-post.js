@@ -60,7 +60,9 @@ class BlogPostTemplate extends React.Component {
               display: 'flex',
             }}
           >
-           <div><img
+           <div style={{
+               marginRight: "0.725rem",
+           }}><img
                     src={author.pic}
                     alt={author.id + ` profile image`}
                     className="author-image"

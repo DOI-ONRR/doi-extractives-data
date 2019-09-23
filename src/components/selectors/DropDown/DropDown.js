@@ -44,7 +44,7 @@ class DropDown extends React.Component {
   }
 
   render () {
-  	let { options, selectedKey, defaultKey } = this.state
+    let { options, selectedKey, defaultKey } = this.state
     let styles = (this.props.theme === 'year') ? yearTheme : standardTheme
     defaultKey = (selectedKey !== undefined) ? undefined : defaultKey
 
@@ -67,7 +67,7 @@ class DropDown extends React.Component {
 						  return (
 						    <React.Fragment key={index + '_' + value}>
 						      {placeholder
-						        ? <option className={styles.option} value={value} disabled hidden>
+						        ? <option className={styles.option} value={value} hidden>
 						          {name}
 						        </option>
 						        : <option className={styles.option} value={value} >

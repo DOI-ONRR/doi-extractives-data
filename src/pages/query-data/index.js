@@ -84,6 +84,11 @@ class QueryData extends React.Component {
       let states = this.props[REVENUES_FISCAL_YEAR] && Object.keys(this.props[REVENUES_FISCAL_YEAR][BY_STATE])
       return allOption.concat(offshoreOptions, states)
     }
+    this.getCommodityOptions = () => {
+      let allOption = ['All']
+      let commodityOptions = this.props[REVENUES_FISCAL_YEAR] && Object.keys(this.props[REVENUES_FISCAL_YEAR][BY_COMMODITY])
+      return allOption.concat(commodityOptions)
+    }
     this.hydrateStore()
   }
 
@@ -304,6 +309,7 @@ class QueryData extends React.Component {
 	}
 
 	handleTableToolbarSubmit (updatedFilters) {
+	  console.log(updatedFilters)
 	  let secondColumn = (updatedFilters.additionalColumn === 'No second column') ? [] : [updatedFilters.additionalColumn]
 	  this.setState({
 	    filter: { ...this.state.filter,
@@ -363,7 +369,7 @@ class QueryData extends React.Component {
     let { columns, columnExtensions, grouping, currencyColumns, allColumns, defaultSorting } = this.getTableColumns()
     let { totalSummaryItems, groupSummaryItems } = this.getTableSummaries()
     let { tableData, expandedGroups } = this.getTableData()
-
+    console.log(this.state)
     return (
       <DefaultLayout>
 	      <Helmet
@@ -381,6 +387,7 @@ class QueryData extends React.Component {
 						<TableToolbar
 						  fiscalYearOptions={this.getFiscalYearOptions()}
 						  locationOptions={this.getLocationOptions()}
+						  commodityOptions={this.getCommodityOptions()}
 						  defaultFiscalYearsSelected={this.state.filter.years}
 						  onSubmitAction={this.handleTableToolbarSubmit.bind(this)}
 						/>
@@ -417,8 +424,8 @@ export default connect(
   })
 )(QueryData)
 
-const LocationMessage = () => (
-  <div>For privacy reasons, location is <GlossaryTerm>withheld</GlossaryTerm> for Native American data.</div>
+const LocationMessage = ({ styles }) => (
+  <div className={styles.locationMessage}>For privacy reasons, location is <GlossaryTerm>withheld</GlossaryTerm> for Native American data.</div>
 )
 const muiTheme = createMuiTheme({
   root: {
@@ -432,28 +439,33 @@ const muiTheme = createMuiTheme({
     }
   },
 })
-const TableToolbar = ({ fiscalYearOptions, locationOptions, defaultFiscalYearsSelected, onSubmitAction }) => {
-  const [fiscalYearsSelected, setFiscalYearsSelected] = useState(defaultFiscalYearsSelected)
-  const [landCategorySelected, setLandCategorySelected] = useState('All')
-  const [locationSelected, setLocationSelected] = useState('All')
+const TableToolbar = ({ fiscalYearOptions, locationOptions, commodityOptions, defaultFiscalYearsSelected, onSubmitAction }) => {
+  console.log(commodityOptions)
+  const [dataType, setDataType] = useState()
+  const [landCategory, setLandCategory] = useState()
+  const [locations, setLocations] = useState()
+  const [commodities, setCommodities] = useState()
+  const [revenueType, setRevenueType] = useState()
+  const [fiscalYearStart, setFiscalYearStart] = useState()
+  const [fiscalYearEnd, setFiscalYearEnd] = useState()
   const [groupBy, setGroupBy] = useState(Object.keys(GROUP_BY_OPTIONS)[DEFAULT_GROUP_BY_INDEX])
   const [additionalColumn, setAdditionalColumn] = useState(Object.keys(ADDITIONAL_COLUMN_OPTIONS)[DEFAULT_ADDITIONAL_COLUMN_INDEX])
 
   const getAdditionalColumnOptions = () => Object.keys(ADDITIONAL_COLUMN_OPTIONS).filter(column => column !== groupBy)
   const getLocationOptions = () => {
-    if (landCategorySelected === 'Native American') {
+    if (landCategory === 'Native American') {
       return ['withheld']
     }
-    if (landCategorySelected === 'All onshore') {
+    if (landCategory === 'All onshore') {
       return locationOptions.filter(option => !option.includes('Offshore'))
     }
-    if (landCategorySelected === 'All federal') {
+    if (landCategory === 'All federal') {
       return locationOptions.filter(option => !option.includes('withheld'))
     }
-    if (landCategorySelected === 'Federal onshore') {
+    if (landCategory === 'Federal onshore') {
       return locationOptions.filter(option => (!option.includes('withheld') && !option.includes('Offshore')))
     }
-    if (landCategorySelected === 'Federal offshore') {
+    if (landCategory === 'Federal offshore') {
       return locationOptions.filter(option => (option.includes('Offshore') || option.includes('All')))
     }
     return locationOptions
@@ -461,27 +473,23 @@ const TableToolbar = ({ fiscalYearOptions, locationOptions, defaultFiscalYearsSe
 
   let showLocationMessage = () => {
     let validLandCategories = ['All', 'All onshore', 'Native American']
-    return validLandCategories.includes(landCategorySelected)
+    return validLandCategories.includes(landCategory)
   }
 
   useEffect(() => {
-    if (additionalColumn === groupBy) {
-      setAdditionalColumn('No second column')
-    }
 
-    if (!getLocationOptions().includes(locationSelected)) {
-      setLocationSelected(((landCategorySelected === 'Native American') ? 'withheld' : 'All'))
-    }
   })
 
   const handleApply = () => {
     if (onSubmitAction) {
       onSubmitAction({
-        fiscalYearsSelected: fiscalYearsSelected,
-        landCategorySelected: landCategorySelected,
-        locationSelected: locationSelected,
+        dataType,
+        landCategory,
+        locations,
+        commodities,
         groupBy: groupBy,
         additionalColumn: additionalColumn,
+        fiscalYearsSelected: [2017, 2018],
       })
     }
   }
@@ -489,65 +497,130 @@ const TableToolbar = ({ fiscalYearOptions, locationOptions, defaultFiscalYearsSe
   return (
     <div className={styles.tableToolbarContainer}>
       <MuiThemeProvider theme={muiTheme}>
-        <Grid container spacing={16}>
-          <Grid item sm={3} xs={12}>
-            <h6>Fiscal year(s):</h6>
-            <Select
-              multiple
-              dataSetId={REVENUES_FISCAL_YEAR}
-              options={fiscalYearOptions}
-              sortType={'descending'}
-              selectedOption={fiscalYearsSelected}
-              onChangeHandler={values => setFiscalYearsSelected(values)}
-            />
+        <Grid container spacing={1}>
+          <Grid item sm={2} xs={12}>
+            <h6>Data type:</h6>
           </Grid>
-          <Grid item sm xs={12}>
-            <h6>Land category:</h6>
+          <Grid item sm={5} xs={12}>
             <DropDown
-              options={Object.keys(LAND_CATEGORY_OPTIONS)}
+              options={[{ name: '-Select-', placeholder: true }, 'Revenue']}
               sortType={'none'}
-              action={value => setLandCategorySelected(value)}
+              action={value => setDataType(value)}
             />
           </Grid>
-          <Grid item sm xs={12}>
-            <h6>Location:</h6>
-            <DropDown
-              options={getLocationOptions()}
-              sortType={'none'}
-              action={value => setLocationSelected(value)}
-              selectedOptionValue={locationSelected}
-            />
-            {showLocationMessage() &&
-						<LocationMessage />
-            }
+          <Grid item sm={5}>
           </Grid>
-          <Grid item sm xs={12}>
-            <h6>Group by:</h6>
-            <DropDown
-              sortType={'none'}
-              options={Object.keys(GROUP_BY_OPTIONS)}
-              action={value => setGroupBy(value)}
-              defaultOptionValue={groupBy}
-              sortType={'none'}
-            />
-          </Grid>
-          <Grid item sm xs={12}>
-            <h6>Additional column:</h6>
-            <DropDown
-              sortType={'none'}
-              options={getAdditionalColumnOptions()}
-              action={value => setAdditionalColumn(value)}
-              selectedOptionValue={additionalColumn}
-            />
-          </Grid>
-          <Grid item xs={12} >
-            <Button classes={{ root: styles.tableToolbarButton }} variant="contained" color="primary" onClick={() => handleApply()}>Apply</Button>
-          </Grid>
-        </Grid>
-        <Grid container spacing={0}>
-          <Grid item xs={12} >
-            <h5 style={{ margin: '0px' }}>Grouped by: {groupBy}</h5>
-          </Grid>
+          {dataType &&
+            <React.Fragment>
+              <Grid item sm={2} xs={12}>
+                <h6>Land category:</h6>
+              </Grid>
+              <Grid item sm={5} xs={12}>
+                <DropDown
+                  options={[{ name: '-Select-', placeholder: true }].concat(Object.keys(LAND_CATEGORY_OPTIONS))}
+                  sortType={'none'}
+                  action={value => setLandCategory(value)}
+                />
+              </Grid>
+              <Grid item sm={5}>
+              </Grid>
+            </React.Fragment>
+          }
+          {landCategory &&
+            <React.Fragment>
+              <Grid item sm={2} xs={12}>
+                <h6>Location:</h6>
+              </Grid>
+              <Grid item sm={5} xs={12}>
+                <Select
+                  multiple
+                  sortType={'none'}
+                  options={getLocationOptions()}
+                  selectedOption={locations}
+                  onChangeHandler={values => setLocations(values)}
+                />
+              </Grid>
+              <Grid item sm={5}>
+              </Grid>
+              <Grid item sm={2} xs={12}>
+              </Grid>
+              <Grid item sm={10}>
+                {showLocationMessage() &&
+                  <LocationMessage styles={styles}/>
+                }
+              </Grid>
+            </React.Fragment>
+          }
+          {locations &&
+            <React.Fragment>
+              <Grid item sm={2} xs={12}>
+                <h6>Commodity:</h6>
+              </Grid>
+              <Grid item sm={5} xs={12}>
+                <Select
+                  multiple
+                  sortType={'none'}
+                  options={['All', 'Coal']}
+                  onChangeHandler={values => setCommodities(values)}
+                />
+              </Grid>
+              <Grid item sm={5}>
+              </Grid>
+            </React.Fragment>
+          }
+          {commodities &&
+            <React.Fragment>
+              <Grid item sm={2} xs={12}>
+                <h6>Revenue type:</h6>
+              </Grid>
+              <Grid item sm={5} xs={12}>
+                <DropDown
+                  options={[{ name: '-Select-', placeholder: true }, 'All', 'Rents', 'Royalties', 'Bonuses']}
+                  sortType={'none'}
+                  action={value => setRevenueType(value)}
+                />
+              </Grid>
+              <Grid item sm={5}>
+              </Grid>
+            </React.Fragment>
+          }
+          {revenueType &&
+            <React.Fragment>
+              <Grid item sm={2} xs={12}>
+                <h6>Fiscal year start:</h6>
+              </Grid>
+              <Grid item sm={5} xs={12}>
+                <DropDown
+                  options={[{ name: '-Select-', placeholder: true }].concat(fiscalYearOptions)}
+                  sortType={'descending'}
+                  action={value => setFiscalYearStart(value)}
+                />
+              </Grid>
+              <Grid item sm={5}>
+              </Grid>
+            </React.Fragment>
+          }
+          {fiscalYearStart &&
+            <React.Fragment>
+              <Grid item sm={2} xs={12}>
+                <h6>Fiscal year end:</h6>
+              </Grid>
+              <Grid item sm={5} xs={12}>
+                <DropDown
+                  options={[{ name: '-Select-', placeholder: true }].concat(fiscalYearOptions)}
+                  sortType={'descending'}
+                  action={value => setFiscalYearEnd(value)}
+                />
+              </Grid>
+              <Grid item sm={5}>
+              </Grid>
+            </React.Fragment>
+          }
+          {fiscalYearEnd &&
+            <Grid item sm={7} xs={12} >
+              <Button classes={{ root: styles.tableToolbarButton }} variant="contained" color="primary" onClick={() => handleApply()}>Submit</Button>
+            </Grid>
+          }
         </Grid>
 	    </MuiThemeProvider>
 	   </div>
@@ -680,3 +753,24 @@ export const query = graphql`
 	  }
   }
 `
+/*
+          <Grid item sm xs={12}>
+            <h6>Group by:</h6>
+            <DropDown
+              sortType={'none'}
+              options={Object.keys(GROUP_BY_OPTIONS)}
+              action={value => setGroupBy(value)}
+              defaultOptionValue={groupBy}
+              sortType={'none'}
+            />
+          </Grid>
+          <Grid item sm xs={12}>
+            <h6>Additional column:</h6>
+            <DropDown
+              sortType={'none'}
+              options={getAdditionalColumnOptions()}
+              action={value => setAdditionalColumn(value)}
+              selectedOptionValue={additionalColumn}
+            />
+          </Grid>
+*/

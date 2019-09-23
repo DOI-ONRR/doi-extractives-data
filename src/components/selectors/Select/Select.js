@@ -142,7 +142,7 @@ class Select extends React.Component {
 	    }
 	  }
     // let styles = (this.props.theme === 'year')? yearTheme : standardTheme;
-    // console.log(this.state);
+
     return (
       <div className={styles.root}>
       	<MuiThemeProvider theme={theme}>
@@ -150,7 +150,7 @@ class Select extends React.Component {
 	     			multiple={multiple}
 	     			value={this.state.selectedOption}
 	     			onChange={this.handleChange}
-          	renderValue={selected => selected.join(', ')}
+          	renderValue={ selected => (selected.join) ? selected.join(',') : selected }
 	     			IconComponent={DownArrowIcon}
 	     			>
 	          {options &&

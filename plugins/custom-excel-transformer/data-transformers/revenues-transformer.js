@@ -111,7 +111,7 @@ const createRevenueNode = (revenueData, type) => {
     }
   }
 
-  if (revenueNode.Commodity === undefined) {
+  if (revenueNode.Commodity === undefined || revenueNode.Commodity === '') {
     revenueNode.Commodity = 'Not tied to a commodity'
   }
 

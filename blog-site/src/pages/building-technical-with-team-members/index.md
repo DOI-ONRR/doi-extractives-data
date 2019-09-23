@@ -8,7 +8,7 @@ tags:
 - content management
 - gatsby
 - transition
-date: "2019-09-13"
+date: "2019-09-26"
 ---
 
 Two years ago, I was sitting in a conference room with members of [18F](https://18f.gsa.gov/). We had just spent the day strategizing and planning, coming up with long-term goals for the [Natural Resources Revenue Data (NRRD) website](https://revenuedata.doi.gov).

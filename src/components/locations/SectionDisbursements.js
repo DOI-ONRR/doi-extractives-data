@@ -1,7 +1,8 @@
 import React from 'react'
 import Link from '../utils/temp-link'
+import { useStaticQuery, graphql } from "gatsby"
 
-import FEDERAL_DISBURSEMENTS from '../../data/federal_disbursements.yml'
+//import FEDERAL_DISBURSEMENTS from '../../data/federal_disbursements.yml'
 import * as GOMESA_STATE_DISBURSEMENTS from '../../data/gomesa_state_disbursements'
 
 import StickyHeader from '../layouts/StickyHeader'
@@ -12,9 +13,46 @@ import utils from '../../js/utils'
 
 let year = 2018
 
+
+
+const FederalDisbursements=(id,data) => {
+   // console.debug("id:", id,data);
+    let max_year=data[0].Fiscal_Year;
+    let nodes=data.filter( node => node.State==id && node.Fiscal_Year==max_year);
+    let All=nodes.map(item => item._Total_).reduce((prev, next) => prev + next);
+    let Onshore=nodes.filter(node=>node.Onshore_Offshore=="Onshore")
+	.map(item => item._Total_).reduce((prev, next) => prev + next, 0);
+    let Offshore=nodes.filter(node=>node.Onshore_Offshore=="Offshore")
+	.map(item => item._Total_).reduce((prev, next) => prev + next, 0);
+    let r={All: {All: {}, Onshore: {}, Offshore: {} }};
+
+    r.All.All[max_year]=All;
+    r.All.Onshore[max_year]=Onshore;
+    r.All.Offshore[max_year]=Offshore;
+	   
+    //console.debug("results:", r);
+    return r;
+}
+
 const SectionDisbursements = props => {
-  const usStateData = props.usStateMarkdown.frontmatter
-  const usStateDisbursements = FEDERAL_DISBURSEMENTS[usStateData.unique_id]
+    
+    const results=useStaticQuery(graphql`
+       query DisbursementTotalQuery {
+       StateDisbursements :   allDisbursementsXlsxData(sort: {fields: Fiscal_Year, order: DESC})  {
+    nodes {
+      State
+      Fiscal_Year
+      Onshore_Offshore
+      _Total_
+    }
+  }
+}
+`)
+
+    const usStateData = props.usStateMarkdown.frontmatter
+//    const usStateDisbursements = FEDERAL_DISBURSEMENTS[usStateData.unique_id]
+ //   console.debug("Federal", usStateDisbursements)
+    const usStateDisbursements = FederalDisbursements(usStateData.unique_id,results.StateDisbursements.nodes);
   const usGomesaStateDisbursements = GOMESA_STATE_DISBURSEMENTS[usStateData.unique_id]
   const usGomesaStateDisbursementsYears = usGomesaStateDisbursements && Object.keys(usGomesaStateDisbursements)
   const usGomesaStateDisbursementsCounties = usGomesaStateDisbursements && getCounties()
@@ -41,7 +79,7 @@ const SectionDisbursements = props => {
     const allDisbursements = (usStateDisbursements && usStateDisbursements.All.All) ? usStateDisbursements.All.All[year] : 0
 
     if (usStateDisbursements && offshoreDisbursements > 0) {
-      content = <div>
+     content = <div>
         <p>
             ONRR also disburses some revenue from natural resource extraction to state governments. <strong>In { year }, ONRR disbursed {utils.formatToDollarInt(allDisbursements)} to {usStateData.title}. </strong>
             This included revenues from both onshore and offshore extraction in or near {usStateData.title}:

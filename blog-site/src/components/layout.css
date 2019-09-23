@@ -106,12 +106,15 @@ a:hover {
   margin-right: 0.725rem;
 }
 
+.author-bio {
+  display: flex;
+}
+
 .author-image {
   margin-bottom: 0;
-  margin-right: 0.725rem;
-  float: left;
   width: 3rem;
   height: 3rem;
+  max-width: none;
   border-radius: 50%;
 }
 
@@ -175,9 +178,4 @@ a:hover {
   .author-bio {
     display: flex;
   }
-
-  .author-image {
-    max-width: none;
-  }
-
 }

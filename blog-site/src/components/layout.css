@@ -102,6 +102,10 @@ a:hover {
 
 /* Author profile */
 
+.author-profile-container {
+  margin-right: 0.725rem;
+}
+
 .author-image {
   margin-bottom: 0;
   margin-right: 0.725rem;
@@ -168,8 +172,12 @@ a:hover {
     font-size: 1.7rem;
   }
 
-  .author-image {
+  .author-bio {
     display: flex;
-    float: none;
   }
+
+  .author-image {
+    max-width: none;
+  }
+
 }

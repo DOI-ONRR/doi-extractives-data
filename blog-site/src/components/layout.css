@@ -104,6 +104,8 @@ a:hover {
 
 .author-image {
   margin-bottom: 0;
+  margin-right: 0.725rem;
+  float: left;
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
@@ -164,5 +166,10 @@ a:hover {
   }
   .post-heading {
     font-size: 1.7rem;
+  }
+
+  .author-image {
+    display: flex;
+    float: none;
   }
 }

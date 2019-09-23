@@ -60,11 +60,12 @@ class BlogPostTemplate extends React.Component {
               display: 'flex',
             }}
           >
-            <img
+           <div><img
                     src={author.pic}
                     alt={author.id + ` profile image`}
                     className="author-image"
               />
+            </div>  
             <p
               style={{
                 marginRight: rhythm(1 / 2),

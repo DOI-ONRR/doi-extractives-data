@@ -2,7 +2,7 @@
 title: "Building technical capacity with team members"
 authors:
 - Chris Mentasti
-excerpt: "How we built technical capacity with existing government employees after our open-data site transition" 
+excerpt: "How we built technical capacity with existing government employees after our open-data site transition." 
 tags:
 - training
 - content management

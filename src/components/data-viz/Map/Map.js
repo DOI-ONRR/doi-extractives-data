@@ -248,7 +248,9 @@ const offshore_chart = (node,offshore, region ,data, colorScheme,onClick) => {
 	.on("click", (d,i) => {onClick(d,i)} )
 	.on("mouseover", function(d,i) {   // ES6 function find the this node is alluding me
 
-	    d3.select(this).style('fill-opacity', .7); 
+		d3.select(this)
+		.style('fill-opacity', .7)
+		.style("cursor", "pointer");
 	})
     	.on("mouseout", (d,i) => {
 	    d3.selectAll('path')

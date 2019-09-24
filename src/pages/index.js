@@ -174,7 +174,7 @@ class Beta extends React.Component {
 			mapJsonObject={{us:mapJson, offshore:mapOffshoreJson}}
 			onClick={ (d,i) => {
 			    let state=fipsAbbrev[d.id] || d.id;
-			    let url="/explore/"+state+"#revenue" 
+			    let url="/explore/"+state
 			    if(state.match(/offshore/)) {
 				url="/explore/"+state;
 			    }

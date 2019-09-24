@@ -66,6 +66,7 @@ const createRevenueNode = (revenueData, type) => {
   // convert all keys to lower case and trim the spaces, this is done due to ongoing issues with the excel files being formatted differently
   // eslint-disable-next-line no-return-assign
   const data = Object.keys(revenueData).reduce((c, k) => (c[k.toLowerCase().trim()] = revenueData[k], c), {})
+  const county = data[SOURCE_COLUMNS.County] && data[SOURCE_COLUMNS.County].trim()
 
   let revenueNode = {
     Month: data[SOURCE_COLUMNS.Month],
@@ -76,7 +77,7 @@ const createRevenueNode = (revenueData, type) => {
     Commodity: COMMODITY_MAP[data[SOURCE_COLUMNS.Commodity]] || data[SOURCE_COLUMNS.Commodity],
     Revenue: data[SOURCE_COLUMNS.Revenue],
     State: data[SOURCE_COLUMNS.State],
-    County: data[SOURCE_COLUMNS.County],
+    County: county,
     FiscalYear: data[SOURCE_COLUMNS.FiscalYear],
     Units: '$',
     LongUnits: 'dollars',

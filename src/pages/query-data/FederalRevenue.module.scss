@@ -1,6 +1,6 @@
 .downloadLinkContainer {
-	clear: both;
-	margin: 2rem 0;
+  text-align: right;
+  width: 100%;
 }
 
 .tableToolbarContainer {
@@ -9,6 +9,10 @@
 
 .tableToolbarButton {
 	float: right;
+}
+
+.editGroupingButton {
+  float: none;
 }
 
 .tableContainer {

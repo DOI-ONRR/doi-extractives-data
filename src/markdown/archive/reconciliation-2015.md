@@ -1,13 +1,14 @@
 ---
-title: Reconciliation | How it works
+title: Reconciliation | Archive
 layout: how-it-works-reconciliation
-permalink: /how-it-works/reconciliation/2015/
+permalink: /archive/reconciliation/2015/
 tag:
 - How it works
 - Reconciliation
 - Companies
 - Government
 - Accountability
+- archive
 ---
 
 <section id="reconciliation" class="explore-subpage container">

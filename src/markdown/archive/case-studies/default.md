@@ -1,7 +1,9 @@
 ---
-title: Case Studies | Natural Resources Revenue
+title: Archive | Case Studies
 layout: case-studies
-permalink: /case-studies/
+permalink: /archive/case-studies/
+tags:
+- archive
 ---
 
 <section class="slab-delta case_studies-frame">
@@ -61,7 +63,7 @@ permalink: /case-studies/
             <g class="case-studies-points">
               <g class="case-studies-circle-group">
                 <g class="case-studies-caption ">
-                  <a href="/case-studies/north-slope/" xlink:href="/case-studies/north-slope/">
+                  <a href="/archive/case-studies/north-slope/" xlink:href="/archive/case-studies/north-slope/">
                     <rect x="164" y="444" width="205" height="87"></rect>
                     <text x="164" y="449">
                       Oil in Alaska
@@ -98,7 +100,7 @@ permalink: /case-studies/
               </g>
               <g class="case-studies-circle-group">
                 <g class="case-studies-caption ">
-                  <a href="/case-studies/pima/" xlink:href="/case-studies/pima/">
+                  <a href="/archive/case-studies/pima/" xlink:href="/archive/case-studies/pima/">
                     <rect x="239" y="384" width="205" height="87"></rect>
                     <text x="239" y="389">
                       Copper in Arizona
@@ -136,7 +138,7 @@ permalink: /case-studies/
               </g>
               <g class="case-studies-circle-group">
                 <g class="case-studies-caption ">
-                  <a href="/case-studies/kern/" xlink:href="/case-studies/kern/">
+                  <a href="/archive/case-studies/kern/" xlink:href="/archive/case-studies/kern/">
                     <rect x="149" y="289" width="205" height="87"></rect>
                     <text x="149" y="294">
                       Oil in California
@@ -173,7 +175,7 @@ permalink: /case-studies/
               </g>
               <g class="case-studies-circle-group">
                 <g class="case-studies-caption ">
-                  <a href="/case-studies/greenlee/" xlink:href="/case-studies/greenlee/">
+                  <a href="/archive/case-studies/greenlee/" xlink:href="/archive/case-studies/greenlee/">
                     <rect x="279" y="344" width="205" height="87"></rect>
                     <text x="279" y="349">
                       Copper in Arizona
@@ -211,7 +213,7 @@ permalink: /case-studies/
               </g>
               <g class="case-studies-circle-group">
                 <g class="case-studies-caption ">
-                  <a href="/case-studies/desoto/" xlink:href="/case-studies/desoto/">
+                  <a href="/archive/case-studies/desoto/" xlink:href="/archive/case-studies/desoto/">
                     <rect x="529" y="414" width="205" height="87"></rect>
                     <text x="529" y="419">
                       Gas in Louisiana
@@ -247,7 +249,7 @@ permalink: /case-studies/
               </g>
               <g class="case-studies-circle-group">
                 <g class="case-studies-caption  long">
-                  <a href="/case-studies/tarrant-and-johnson/" xlink:href="/case-studies/tarrant-and-johnson/">
+                  <a href="/archive/case-studies/tarrant-and-johnson/" xlink:href="/archive/case-studies/tarrant-and-johnson/">
                     <rect x="469" y="394" width="205" height="87"></rect>
                     <text x="469" y="399">
                       Gas in Texas
@@ -286,7 +288,7 @@ permalink: /case-studies/
               </g>
               <g class="case-studies-circle-group">
                 <g class="case-studies-caption ">
-                  <a href="/case-studies/marquette/" xlink:href="/case-studies/marquette/">
+                  <a href="/archive/case-studies/marquette/" xlink:href="/archive/case-studies/marquette/">
                     <rect x="589" y="149" width="205" height="87"></rect>
                     <text x="589" y="154">
                       Iron in Michigan
@@ -322,7 +324,7 @@ permalink: /case-studies/
               </g>
               <g class="case-studies-circle-group">
                 <g class="case-studies-caption ">
-                  <a href="/case-studies/st-louis/" xlink:href="/case-studies/st-louis/">
+                  <a href="/archive/case-studies/st-louis/" xlink:href="/archive/case-studies/st-louis/">
                     <rect x="529" y="119" width="205" height="87"></rect>
                     <text x="529" y="124">
                       Iron in Minnesota
@@ -358,7 +360,7 @@ permalink: /case-studies/
               </g>
               <g class="case-studies-circle-group">
                 <g class="case-studies-caption  long">
-                  <a href="/case-studies/elko-and-eureka/" xlink:href="/case-studies/elko-and-eureka/">
+                  <a href="/archive/case-studies/elko-and-eureka/" xlink:href="/archive/case-studies/elko-and-eureka/">
                     <rect x="229" y="214" width="205" height="87"></rect>
                     <text x="229" y="219">
                       Gold in Nevada
@@ -400,7 +402,7 @@ permalink: /case-studies/
               </g>
               <g class="case-studies-circle-group">
                 <g class="case-studies-caption  long">
-                  <a href="/case-studies/humboldt-and-lander/" xlink:href="/case-studies/humboldt-and-lander/">
+                  <a href="/archive/case-studies/humboldt-and-lander/" xlink:href="/archive/archive/case-studies/humboldt-and-lander/">
                     <rect x="169" y="184" width="205" height="87"></rect>
                     <text x="169" y="189">
                       Gold in Nevada
@@ -442,7 +444,7 @@ permalink: /case-studies/
               </g>
               <g class="case-studies-circle-group">
                 <g class="case-studies-caption  wide long">
-                  <a href="/case-studies/boone-logan-and-mingo/" xlink:href="/case-studies/boone-logan-and-mingo/">
+                  <a href="/archive/case-studies/boone-logan-and-mingo/" xlink:href="/archive/case-studies/boone-logan-and-mingo/">
                     <rect x="719" y="259" width="256.25" height="108.75"></rect>
                     <text x="719" y="264">
                       Coal in West Virginia
@@ -484,7 +486,7 @@ permalink: /case-studies/
               </g>
               <g class="case-studies-circle-group">
                 <g class="case-studies-caption ">
-                  <a href="/case-studies/campbell/" xlink:href="/case-studies/campbell/">
+                  <a href="/archive/case-studies/campbell/" xlink:href="/archive/case-studies/campbell/">
                     <rect x="354" y="164" width="205" height="87"></rect>
                     <text x="354" y="169">
                       Coal in Wyoming
@@ -535,7 +537,7 @@ permalink: /case-studies/
       <figcaption class="ribbon-card-bottom state_pages-select">
         <label for="case_studies-selector">Browse this section:</label>
         <div class="case_studies_intro-select ">
-          <select class="select-dark-gray" id="case_studies-selector" onchange="window.location = '/case-studies/' + this.value + '/'">
+          <select class="select-dark-gray" id="case_studies-selector" onchange="window.location = '/archive/case-studies/' + this.value + '/'">
             <option selected="" value="#">Choose a case study</option>
             <optgroup label="Coal">
               <option value="boone-logan-and-mingo">Boone, Logan, and Mingo Counties, West Virginia</option>
@@ -636,7 +638,7 @@ permalink: /case-studies/
   <section class="container-page-wrapper">
     <h3>Browse this section:</h3>
     <div class="case_studies_intro-select ">
-      <select class="select-dark-gray" id="case_studies-selector" onchange="window.location = '/case-studies/' + this.value + '/'">
+      <select class="select-dark-gray" id="case_studies-selector" onchange="window.location = '/archive/case-studies/' + this.value + '/'">
         <option selected="" value="#">Choose a case study</option>
         <optgroup label="Coal">
           <option value="boone-logan-and-mingo">Boone, Logan, and Mingo Counties, West Virginia</option>

@@ -1,7 +1,7 @@
 ---
-title: State laws and regulations | How It Works
+title: State laws and regulations | Archive
 layout: content
-permalink: /how-it-works/state-laws-and-regulations/
+permalink: /archive/state-laws-and-regulations/
 redirect_from: /how-it-works/state-legal-fiscal-info/
 tag:
 - How it works
@@ -10,6 +10,7 @@ tag:
 - State leasing programs
 - Extractive industries revenue
 - Natural resource trust funds
+- archive
 ---
 
 <custom-link to="/how-it-works/" className="breadcrumb link-charlie">How it works</custom-link> /

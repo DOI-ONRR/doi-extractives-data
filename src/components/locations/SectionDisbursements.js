@@ -19,7 +19,7 @@ const FederalDisbursements=(id,data) => {
    // console.debug("id:", id,data);
     let max_year=data[0].Fiscal_Year;
     let nodes=data.filter( node => node.State==id && node.Fiscal_Year==max_year);
-    let All=nodes.map(item => item._Total_).reduce((prev, next) => prev + next);
+    let All=nodes.map(item => item._Total_).reduce((prev, next) => prev + next,null);
     let Onshore=nodes.filter(node=>node.Onshore_Offshore=="Onshore")
 	.map(item => item._Total_).reduce((prev, next) => prev + next, 0);
     let Offshore=nodes.filter(node=>node.Onshore_Offshore=="Offshore")
@@ -90,7 +90,7 @@ const SectionDisbursements = props => {
         </ul>
       </div>
     }
-    else if (usStateDisbursements) {
+    else if (usStateDisbursements && allDisbursements > 0) {
       content = <p>ONRR also disburses some revenue from natural resource extraction to state governments. <strong>In { year }, ONRR disbursed {utils.formatToDollarInt(usStateDisbursements.All.All[year])} to {usStateData.title}.</strong></p>
     }
     else {

@@ -116,7 +116,7 @@ class Select extends React.Component {
   };
 
   componentWillReceiveProps (nextProps) {
-	  this.setState({ ...nextProps })
+	  this.setState({ ...nextProps, selectedOption: (nextProps.selectedOption || []) })
   }
 
   handleChange = event => {

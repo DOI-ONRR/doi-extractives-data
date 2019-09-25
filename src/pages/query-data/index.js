@@ -645,11 +645,6 @@ const TableToolbar = ({ fiscalYearOptions, locationOptions, commodityOptions, co
   }, [commodities])
 
   useEffect(() => {
-    setFiscalYearStart(undefined)
-    setFiscalYearEnd(undefined)
-  }, [revenueType])
-
-  useEffect(() => {
     if (fiscalYearStart && fiscalYearEnd) {
       if (fiscalYearStart <= fiscalYearEnd) {
         setFiscalYearSelected(utils.range(parseInt(fiscalYearStart), parseInt(fiscalYearEnd)))

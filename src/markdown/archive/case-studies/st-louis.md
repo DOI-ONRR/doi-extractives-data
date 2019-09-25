@@ -1,7 +1,9 @@
 ---
-title: St. Louis County, Minnesota | Case Studies | Natural Resources Revenue Data
+title: St. Louis County, Minnesota | Archive | Case Studies
 layout: case-studies
-permalink: /case-studies/st-louis/
+permalink: archive/case-studies/st-louis/
+tags:
+- archive
 ---
 
 <section class="layout-content container-page-wrapper container-margin">
@@ -443,7 +445,7 @@ permalink: /case-studies/st-louis/
   </article>
   <div class="  sticky-sibling container-right-3">
     <div class="case_studies_intro-select desktop">
-      <select class="select-dark-gray" id="case_studies-selector" onchange="window.location = '/case-studies/' + this.value + '/'">
+      <select class="select-dark-gray" id="case_studies-selector" onchange="window.location = '/archive/case-studies/' + this.value + '/'">
         <option value="#">Choose a case study</option>
         <optgroup label="Coal">
           <option value="boone-logan-and-mingo">Boone, Logan, and Mingo Counties, West Virginia</option>

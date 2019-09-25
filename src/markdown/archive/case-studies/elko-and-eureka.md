@@ -1,7 +1,9 @@
 ---
-title: Greenlee County, Arizona | Case Studies | Natural Resources Revenue Data
+title: Greenlee County, Arizona | Archive | Case Studies
 layout: case-studies
-permalink: /case-studies/elko-and-eureka/
+permalink: archive/case-studies/elko-and-eureka/
+tags:
+- archive
 ---
 
 <section class="layout-content container-page-wrapper container-margin">
@@ -229,7 +231,7 @@ permalink: /case-studies/elko-and-eureka/
   </article>
   <div class="  sticky-sibling container-right-3">
     <div class="case_studies_intro-select desktop">
-      <select class="select-dark-gray" id="case_studies-selector" onchange="window.location = '/case-studies/' + this.value + '/'">
+      <select class="select-dark-gray" id="case_studies-selector" onchange="window.location = '/archive/case-studies/' + this.value + '/'">
         <option value="#">Choose a case study</option>
         <optgroup label="Coal">
           <option value="boone-logan-and-mingo">Boone, Logan, and Mingo Counties, West Virginia</option>

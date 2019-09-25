@@ -1,7 +1,7 @@
 ---
-title: Renewables | How It Works
+title: Renewables | Archive
 layout: content
-permalink: /how-it-works/renewables/
+permalink: /archive/renewables/
 tag:
 - how it works
 - production
@@ -10,6 +10,7 @@ tag:
 - wind
 - water power
 - biomass
+- archive
 ---
 
 <custom-link to="/how-it-works/" className="breadcrumb link-charlie">How it works</custom-link> /

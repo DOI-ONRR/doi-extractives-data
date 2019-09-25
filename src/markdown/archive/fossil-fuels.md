@@ -1,7 +1,7 @@
 ---
-title: Fossil Fuels | How It Works
+title: Fossil Fuels | Archive
 layout: content
-permalink: /how-it-works/fossil-fuels/
+permalink: /archive/fossil-fuels/
 tag:
 - how it works
 - production
@@ -9,6 +9,7 @@ tag:
 - oil
 - gas
 - coal
+- archive
 ---
 
 <custom-link to="/how-it-works/" className="breadcrumb link-charlie">How it works</custom-link> /

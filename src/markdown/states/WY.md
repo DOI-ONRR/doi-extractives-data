@@ -19,7 +19,7 @@ state_revenue_year: 2016
 is_cropped: true
 
 case_study_link: |
-    For a detailed view of how coal mining affects communities in Wyoming, read more about [Campbell County](/case-studies/campbell/).
+    For a detailed view of how coal mining affects communities in Wyoming, read more about [Campbell County](/archive/case-studies/campbell/).
 state_production: |
     Most of Wyoming's natural resource extraction takes place on federal land, including a majority of coal production and two thirds of natural gas production. Much of this federal land is managed by the Bureau of Land Management.
 
@@ -115,7 +115,7 @@ In addition to generating [revenue](#revenue) and [economic activity](#economic-
 
 In Wyoming, analysis of those costs has centered on **Campbell County** (coal production) and **Sublette County** (oil & gas production):
 
-* The [Campbell County case study](/case-studies/campbell/) provides a holistic look at the impact of extractive industries in the northeastern part of the state.
+* The [Campbell County case study](/archive/case-studies/campbell/) provides a holistic look at the impact of extractive industries in the northeastern part of the state.
 * Most information about socioeconomic impacts in Sublette County and its municipalities comes from the [2009 Sublette County Socioeconomic Impact Study (PDF)](http://www.sublettewyo.com/DocumentCenter/Home/View/392). This report, which was commissioned by Sublette County Commissioners, focuses on whether revenues returned to and retained by Sublette County are sufficient, rather than whether enough state or local taxes are paid by the companies participating in extraction.
 
 #### Transportation costs

@@ -48,10 +48,10 @@ _Fund Type_ The type of recipient receiving the disbursement
 * _Fish & Wildlife_ Certain funds are directed back to the federal agencies that administer these lands and waters to help cover the agencies’ operational costs.
 * _Forest Service_ Certain funds are directed back to the federal agencies that administer these lands and waters to help cover the agencies’ operational costs.
 * _Land & Water Conservation Fund_ This fund provides matching grants to states and local governments to buy and develop public outdoor recreation areas across the 50 states. The Gulf of Mexico Energy Security Act (GOMESA) of 2006 specifies that 12.5% of revenues from certain gulf leases be directed to the LWCF stateside program. States can receive up to $125 million a year in funding. This portion of LWCF funds is not subject to the congressional appropriation process, but are otherwise treated similarly to regular LWCF funds.
-* _Lease Process Improvement (BLM)_ Permit Processing Fund, Bureau of Land Management (BLM), was established by the Department of the Interior as authorized by 119 Stats. 725, 671, and 695, for the deposit of mineral lease rentals. The Department of the Interior is authorized to use funds for the coordination and processing of oil and gas use authorizations on Federal land onshore, under the jurisdiction of the Pilot Project offices.
+* _Lease Process Improvement (BLM)_ This fund was established to support the coordination and processing of oil and gas leases on federal onshore land.
 * _Native American Tribes & Allottees_ ONRR disburses 100% of revenue collected from resource extraction on Native American lands back to Native American  tribes, nations, and individual Indian landowners.
 * _Reclamation Fund_ Established by Congress in 1902, funds the development of irrigation projects on arid and semiarid lands of the 17 western states.
-* _State Fund_ disbursed to states fall under the jurisdiction of each state, and each state determines how the funds will be used.
+* _State Fund_ Funds disbursed to states fall under the jurisdiction of each state, and each state determines how the funds will be used.
 * _U.S Treasury_ Funds disbursed to the Treasury go to the General Fund, which is the federal government’s basic operating fund. The General Fund pays for roughly two-thirds of all federal expenditures, including the U.S. military, national parks, and schools.
 * _U.S. TreasuryAI_ Funds disbursed to Native American deposit accounts within the U.S. Treasury Deposit accounts are funds that are collected by the U.S. Treasury but do not belong to the federal government.
 
@@ -101,7 +101,7 @@ _Commodity_ The commodity that generated the revenue. For oil and gas, the commo
 
 * _Wind_
 
-_Category (dollar)_ Includes, but not limited to, phases of lease payments, such as bonuses, rents, and royalties.
+_Category (dollar)_ Includes the phases of lease payments.
 
 * _Bonuses_ The amount paid by the highest bidder for a natural resource lease.
 * _Rents_ The annual payment for leasing lands or waters before production starts.

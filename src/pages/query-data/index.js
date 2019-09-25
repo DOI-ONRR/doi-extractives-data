@@ -382,11 +382,10 @@ class QueryData extends React.Component {
 	      additionalColumns = ['Land category']
 	    }
 	  }
-	  if (updatedFilters.landCategory === 'Federal onshore' && updatedFilters.revenueType !== 'All') {
-	    if (updatedFilters.counties.length > 1 &&
-        (updatedFilters.commodities.length === 1 && updatedFilters.commodities[0] !== 'All')) {
+	  if ((updatedFilters.landCategory === 'Federal onshore' || updatedFilters.landCategory === 'Federal offshore') && updatedFilters.revenueType !== 'All') {
+	    if (updatedFilters.commodities.length === 1 && updatedFilters.commodities[0] !== 'All') {
 	      groupBy = 'Land category'
-	      additionalColumns = ['County']
+	      additionalColumns = (updatedFilters.counties.length > 1) ? ['County'] : []
 	    }
 	    else {
 	      groupBy = 'Commodity'

@@ -27,7 +27,7 @@ class DropDown extends React.Component {
     if (nextSelectedKey === undefined && this.state.selectedKey !== undefined) {
       nextSelectedKey = '' // clears the selected state on the drop down
     }
-    console.log(this.state.selectedKey)
+
     this.setState({
       selectedKey: nextSelectedKey,
     	defaultKey: findDefaultKey(nextProps),

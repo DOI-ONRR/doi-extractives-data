@@ -650,7 +650,6 @@ const TableToolbar = ({ fiscalYearOptions, locationOptions, commodityOptions, co
   }, [revenueType])
 
   useEffect(() => {
-    console.log(fiscalYearStart, fiscalYearEnd)
     if (fiscalYearStart && fiscalYearEnd) {
       if (fiscalYearStart <= fiscalYearEnd) {
         setFiscalYearSelected(utils.range(parseInt(fiscalYearStart), parseInt(fiscalYearEnd)))
@@ -690,8 +689,6 @@ const TableToolbar = ({ fiscalYearOptions, locationOptions, commodityOptions, co
     return ((showCountyOptions() && counties) || (!showCountyOptions() && locations))
   }
 
-
-  console.log(fiscalYearEnd)
   return (
     <div className={styles.tableToolbarContainer}>
       <MuiThemeProvider theme={muiTheme}>
@@ -701,7 +698,7 @@ const TableToolbar = ({ fiscalYearOptions, locationOptions, commodityOptions, co
           </Grid>
           <Grid item sm={5} xs={12}>
             <DropDown
-              options={[{ name: '-Select-', placeholder: true }, 'Revenue', 'Production']}
+              options={[{ name: '-Select-', placeholder: true }, 'Revenue']}
               sortType={'none'}
               action={value => setDataType(value)}
             />

@@ -66,7 +66,8 @@ const ADDITIONAL_COLUMN_OPTIONS = {
   'Revenue type': ['RevenueType'],
   'Commodity': [DATA_SET_KEYS.COMMODITY],
   'Land category': ['RevenueCategory'],
-  'Location': ['State', DATA_SET_KEYS.OFFSHORE_REGION],
+  'Location': [DATA_SET_KEYS.LOCATION],
+  'County': [DATA_SET_KEYS.COUNTY],
   'No second column': [],
 }
 const PLURAL_COLUMNS_MAP = {
@@ -74,6 +75,7 @@ const PLURAL_COLUMNS_MAP = {
   'Commodity': 'commodities',
   'Land category': 'land categories',
   'Location': 'locations',
+  'County': 'counties',
 }
 // const ADDITIONAL_COLUMN_OPTIONS = ['State/offshore region', 'Source', 'Land owner', 'Revenue type'];
 
@@ -368,7 +370,30 @@ class QueryData extends React.Component {
 	}
 
 	handleTableToolbarSubmit (updatedFilters) {
-	  // let secondColumn = (updatedFilters.additionalColumn === 'No second column') ? [] : [updatedFilters.additionalColumn]
+	  let additionalColumns = ['Land category']
+	  let groupBy = 'Revenue type'
+	  if (updatedFilters.revenueType !== 'All') {
+	    if (updatedFilters.commodities.length === 1 && updatedFilters.commodities[0] !== 'All') {
+	      groupBy = 'Land category'
+	      additionalColumns = []
+	    }
+	    else {
+	      groupBy = 'Commodity'
+	      additionalColumns = ['Land category']
+	    }
+	  }
+	  if (updatedFilters.landCategory === 'Federal onshore' && updatedFilters.revenueType !== 'All') {
+	    if (updatedFilters.counties.length > 1 &&
+        (updatedFilters.commodities.length === 1 && updatedFilters.commodities[0] !== 'All')) {
+	      groupBy = 'Land category'
+	      additionalColumns = ['County']
+	    }
+	    else {
+	      groupBy = 'Commodity'
+	      additionalColumns = ['Land category']
+	    }
+	  }
+
 	  this.setState({
 	    filter: { ...this.state.filter,
 	      years: updatedFilters.fiscalYearsSelected.sort(),
@@ -377,8 +402,10 @@ class QueryData extends React.Component {
 	      counties: updatedFilters.counties,
 	      landCategory: updatedFilters.landCategory,
 	      revenueType: updatedFilters.revenueType,
+	      groupBy: groupBy,
 	    },
-	    dataType: updatedFilters.dataType
+	    dataType: updatedFilters.dataType,
+	    additionalColumns: additionalColumns,
 	  })
 	}
   /**
@@ -507,7 +534,7 @@ class QueryData extends React.Component {
 						                <Grid item sm={6} xs={12}>
                               Breakout by:
 						                  <DropDown
-						                    options={[{ name: '-Select-', placeholder: true }, 'Commodity', 'Land category', 'Location', 'No second column']}
+						                    options={[{ name: '-Select-', placeholder: true }].concat(this.additionalColumnOptionKeys)}
 						                    sortType={'none'}
 						                    selectedOptionValue={this.state.additionalColumns && this.state.additionalColumns[0]}
 						                    action={value => this.setAdditionalColumns(value)}

@@ -40,6 +40,8 @@ export const BY_REVENUE_CATEGORY = 'by_revenue_category'
 export const DATA_SET_KEYS = {
   COMMODITY: 'Commodity',
   OFFSHORE_REGION: 'OffshoreRegion',
+  LOCATION: 'State',
+  COUNTY: 'County',
 }
 
 // Define Action Types

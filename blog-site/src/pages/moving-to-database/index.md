@@ -67,11 +67,15 @@ There are multiple advantages to using Hasura as a real-time GraphQL service:
 
 Hasura allows us to store and customize our business logic in views, instead of hard-coding it in our app. This makes for a much more flexible developer experience, and we can test alternative presentations of the data without rewriting our code. With Hasura, we can also access multiple outside services and stitch them together seamlessly for users.
 
+[Screenshot of Hasura interface with GraphiQL query, including fields for commodity, disbursement category, disbursement type, fund type, minderal lease type, product, revenue category, revenue type, and source, also shows output for query with Oil and Gas and Bonus listed as output of query](./database-graphql.jpg)
+
 ## Storing and structuring the data
 
 Since Hasura provides seamless integration to make a database available to Gatsby via GraphQL, it made sense to provide all the structured data through this interface. To accomplish this, we structured the data as a [star schema](https://en.wikipedia.org/wiki/Star_schema) within a database from the existing spreadsheets. This allows for flexible, simplified queries that match evolving business logic. We also realized performance gains through our data structure.
 
 Our star schema consists of three fact tables: one each for revenue, disbursements, and production. From those, we have three dimension tables: period (when), location (where) and commodity (what). With this schema, we can easily and efficiently access or aggregate the data at the level we want.
+
+[Diagram of database relationships, listing fields for query root, commodity, commodity aggregate, commodity aggregate fields, commodity average fields, commodity max fields, commodity min fields, commodity stddev fields, commodity stddev pop fileds, commodity stddev samp fields, powered by graphql voyager](./database-voyager.jpg)
 
 ## Federalist to cloud.gov
 

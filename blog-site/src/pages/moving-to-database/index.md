@@ -67,7 +67,9 @@ There are multiple advantages to using Hasura as a real-time GraphQL service:
 
 Hasura allows us to store and customize our business logic in views, instead of hard-coding it in our app. This makes for a much more flexible developer experience, and we can test alternative presentations of the data without rewriting our code. With Hasura, we can also access multiple outside services and stitch them together seamlessly for users.
 
-![Screenshot of Hasura interface with GraphiQL query, including fields for commodity, disbursement category, disbursement type, fund type, minderal lease type, product, revenue category, revenue type, and source, also shows output for query with Oil and Gas and Bonus listed as output of query](./database-graphql.jpg)
+![Screenshot of Hasura interface with GraphiQL query, including fields for commodity, disbursement category, disbursement type, fund type, mineral lease type, product, revenue category, revenue type, and source, also shows output for query with Oil and Gas and Bonus listed as output of query](./database-graphql.jpg)
+
+<span class="caption">The GraphiQL IDE, where we can query our data with GraphQL</span>
 
 ## Storing and structuring the data
 
@@ -77,12 +79,14 @@ Our star schema consists of three fact tables: one each for revenue, disbursemen
 
 ![Diagram of database relationships, listing fields for query root, commodity, commodity aggregate, commodity aggregate fields, commodity average fields, commodity max fields, commodity min fields, commodity stddev fields, commodity stddev pop fields, commodity stddev samp fields, powered by graphql voyager](./database-voyager.jpg)
 
+<span class="caption">With <a href="https://github.com/APIs-guru/graphql-voyager">GraphQL Voyager</a>, you can visualize your data model</span>
+
 ## Federalist to cloud.gov
 
 Moving to a database means migrating away from our excellent static-site hosting service, [Federalist](https://federalist.18f.gov/). We were one of Federalist’s first customers, and it has been a reliable service that allows us to [focus on our content instead of worrying about compliance and servers](https://federalist.18f.gov/assets/documents/doi-success.pdf).
 
-Thankfully, we have a database-friendly alternative in the form of [cloud.gov](https://cloud.gov/). We realize the same compliance benefits, but we’ll now have the ability to host our Hasura and database services using [Docker containers](https://www.docker.com/) in the cloud.
+Thankfully, we have a database-friendly alternative in the form of [cloud.gov](https://cloud.gov/). We get the same compliance benefits, but we’ll have the ability to host our Hasura and database services using [Docker containers](https://www.docker.com/) in the cloud.
 
 ## Conclusion
 
-We’re in the middle of all of this right now. We’ve configured our data within Hasura, but we have yet to migrate to cloud.gov and deploy the site using these services. We’ll share more about our progress as we go along, but you can track our developments at [our GitHub repository](https://github.com/ONRR/doi-extractives-data).
+We’re in the middle of all of this right now. We’ve configured our data within Hasura, but we have yet to migrate to cloud.gov and deploy the site using these services. We’ll share more as we go along, but you can track our progress at [our GitHub repository](https://github.com/ONRR/doi-extractives-data).

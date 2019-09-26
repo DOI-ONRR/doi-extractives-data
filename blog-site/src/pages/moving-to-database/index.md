@@ -53,6 +53,56 @@ And while we're still managing mostly static assets, that doesn't mean we're res
 
 We’re already using GraphQL in the context of Gatsby to query site data at build time, and the fact that we can use it to also query dynamic data is one of the reasons we chose Gatsby in the first place.
 
+```graphql
+export const query = graphql`
+  query BetaQuery {
+   offshore_data:allMarkdownRemark (filter:{fileAbsolutePath: {regex: "/offshore_regions/"}} sort:{fields: [frontmatter___title], order: ASC}) {
+      offshore_regions:edges {
+        offshore_region:node {
+          frontmatter {
+            title
+            unique_id
+            permalink
+            is_cropped
+          }
+        }
+      }
+    }
+    states_data:allMarkdownRemark (filter:{fileAbsolutePath: {regex: "/states/"}} sort:{fields: [frontmatter___title], order: ASC}) {
+      states:edges {
+        state:node {
+          frontmatter {
+            title
+            unique_id
+            is_cropped
+          }
+        }
+      }
+    }
+    OilVolumes:allProductVolumesMonthly (
+      filter:{ProductName:{eq: "Oil"}}
+      sort:{fields:[ProductionDate], order: DESC}
+    ) {
+      volumes:edges {
+        data:node {
+          LandCategory
+          OnshoreOffshore
+          Volume
+          ProductionMonth
+          DisplayMonth
+          ProductionYear
+          DisplayYear
+          ProductionDate
+          Units
+          LongUnits
+          ProductName
+          LandCategory_OnshoreOffshore
+        }
+      }
+    }
+```    
+<span class="caption">A portion of our homepage GraphQL query</span>
+
 We selected [Hasura](https://hasura.io/) for real-time GraphQL queries, which can render either server-side or client-side. Hasura provides a robust API for any schema, provided it can be migrated to a [Postgres](https://www.postgresql.org) database. In addition, this model allows us to have one GraphQL schema that can serve and cache multiple data sources. It becomes the source of truth for all of our data queries.
 
 There are multiple advantages to using Hasura as a real-time GraphQL service:

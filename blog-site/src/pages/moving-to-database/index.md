@@ -79,7 +79,7 @@ Our star schema consists of three fact tables: one each for revenue, disbursemen
 
 ![Diagram of database relationships, listing fields for query root, commodity, commodity aggregate, commodity aggregate fields, commodity average fields, commodity max fields, commodity min fields, commodity stddev fields, commodity stddev pop fields, commodity stddev samp fields, powered by graphql voyager](./database-voyager.jpg)
 
-<span class="caption">With <a href="https://github.com/APIs-guru/graphql-voyager">GraphQL Voyager</a>, you can visualize your data model</span>
+<span class="caption">Part of our data model, as visualized with <a href="https://github.com/APIs-guru/graphql-voyager">GraphQL Voyager</a></span>
 
 ## Federalist to cloud.gov
 

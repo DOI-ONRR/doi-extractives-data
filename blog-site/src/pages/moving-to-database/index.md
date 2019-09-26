@@ -75,7 +75,7 @@ Since Hasura provides seamless integration to make a database available to Gatsb
 
 Our star schema consists of three fact tables: one each for revenue, disbursements, and production. From those, we have three dimension tables: period (when), location (where) and commodity (what). With this schema, we can easily and efficiently access or aggregate the data at the level we want.
 
-[Diagram of database relationships, listing fields for query root, commodity, commodity aggregate, commodity aggregate fields, commodity average fields, commodity max fields, commodity min fields, commodity stddev fields, commodity stddev pop fileds, commodity stddev samp fields, powered by graphql voyager](./database-voyager.jpg)
+[Diagram of database relationships, listing fields for query root, commodity, commodity aggregate, commodity aggregate fields, commodity average fields, commodity max fields, commodity min fields, commodity stddev fields, commodity stddev pop fields, commodity stddev samp fields, powered by graphql voyager](./database-voyager.jpg)
 
 ## Federalist to cloud.gov
 

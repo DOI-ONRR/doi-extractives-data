@@ -35,7 +35,7 @@ Download fiscal year data (2003–2018):
 
 ## Scope
 
-These datasets include natural resource revenues for U.S. federal lands and offshore areas, along with Native American lands. It does not include privately-owned lands or U.S. state lands.
+These datasets include natural resource revenues for U.S. federal lands and offshore areas, along with Native American lands. It does not include privately-owned lands or U.S. state lands. 
 
 Federal revenue data is available by location, but Native American data is only available at the national level to protect private and personally identifiable information.
 
@@ -64,208 +64,54 @@ Also, different fee rates apply to pre-2005 leases and to direct use facilities:
 
 The Bureau of Land Management has [more information about geothermal energy on federal lands](https://www.blm.gov/programs/energy-and-minerals/renewable-energy/geothermal-energy).
 
-## Data dictionary
+## Offshore data dictionary
+
+The offshore data is organized by offshore planning areas. There are more offshore planning areas than are represented in our data. Those not represented had no revenues for the years in the data. For more information on offshore planning areas, including spatial boundaries, see the Bureau of Ocean Energy Management's [maps and GIS data](http://www.boem.gov/Maps-and-GIS-Data/).
 
 ### Fields and definitions
 
-_Year_
-* _Calendar year_ is the period between January 1 and December 31 for a given year.
-* _Fiscal year_ The year the revenue was generated. The federal fiscal year runs from October 1 of the prior year through September 30 of the year being described. For example, Fiscal Year 2018 is between October 1, 2017,  and September 30, 2018.
-_Land Class_
-* _Federal_ [Federal lands](https://fas.org/sgp/crs/misc/R42346.pdf) are owned by or under the jurisdiction of the federal government, including: Public domain lands, acquired lands, military acquired lands, and [Outer Continental Shelf](https://www.boem.gov/OCS-Lands-Act-History/)
-_Native American_ Includes Tribal lands held in trust by the federal government for a tribe’s use, and allotments held in trust by the federal government for individual Native American use
-_Land Category_
-* _Onshore_ situated or occurring on land.
-* _Offshore_ submerged lands located farther than three miles off a state’s coastline, or three marine leagues into the Gulf of Mexico off of Texas and Western Florida
-_State_ Contains the name of the state
-_County_ Contains county, parish, and borough names
-_FIPS Code_ Federal Information Processing Standards (FIPS), now known as Federal Information Processing Series, are numeric codes assigned by the National Institute of Standards and Technology (NIST). Typically, FIPS codes deal with US states and counties. US states are identified by a 2-digit number, while US counties are identified by a 3-digit number.
-_Offshore Region_ The Bureau of Ocean Energy Management separates offshore area into four regions: Gulf of Mexico, Atlantic, Pacific and Alaska. For more information on offshore regions, including spatial boundaries, see the Bureau of Ocean Energy Management's maps and GIS data.
-_Offshore Planning Area_ Offshore regions are broken out into planning areas. For more information on offshore planning areas, including spatial boundaries, see the Bureau of Ocean Energy Management's maps and GIS data.
-_Offshore Block or offshore area_ is a geographic bound area found inside offshore planning areas.
-Offshore Protraction is a geographic bound area found inside offshore areas.
 _Revenue Type_ Revenues from U.S. natural resources fall into one of several types:
-* _Royalties_ A natural resource lease holder pays royalties after the lease starts producing a commodity in paying quantities. The amount is based on a percentage of the revenue from the commodity sold. The exact percentage is set in the original lease document that went along with the lease sale.
+
+* _Royalties_ A natural resource lease holder pays royalties after the lease starts producing a commodity in <glossary-term>paying quantities</glossary-term>. The amount is based on a percentage of the revenue from the commodity sold. The exact percentage is set in the original lease document that went along with the lease sale.
 * _Bonus_ The amount paid by the highest successful bidder for a natural resource lease. The winning bid.
 * _Other Revenues_ This category includes revenues that are not included in the royalty, rent, or bonus categories, such as minimum royalties, estimated royalties, settlement agreements, and interest.
 * _Rents_ A natural resource lease might not produce anything in paying quantities for some time after it is sold. Until it does, periodic payments are made for the right to continue exploration and development of the land for future natural resource production. These payments are called rent.
-_Mineral Lease Type_ Is the type of lease revenue is being generated from. An oil and gas mineral lease type can generate revenue not only from oil & gas but also, CO2, helium, NGL, and sulfur.
-* _Asphalt_
-* _Chat_
-* _Cinders_
-* _Clay_
-* _Coal_
-* _Copper_
-* _Garnet_
-* _Gemstones_
-* _Geothermal_
-* _Gilsonite_
-* _Gold_
-* _Gypsum_
-* _Hardrock_
-* _Hot Springs_
-* _Limestone
-* _Mining - unspecified_
-* _Oil & Gas_
-* _Oil Shale_
-* _Phosphate_
-* _Potassium_
-* _Quartz_
-* _Sand & Gravel_
-* _Silica Sand_
-* _Sodium_
-* _Sulfur_
-* _Tar Sands_
-* _Wind_
+
 
 _Commodity Type_ The Department of the Interior collects revenues on over 60 different products. The majority of revenues come from Oil & Gas, Coal, and Renewables (Geothermal and Wind), but you will find many other product categories in these datasets.
-* _Asphalt_
-* _Chat_
-* _Cinders_
-* _Clay_
-* _CO2_
-* _Coal_
-* _Copper_
-* _Gas_
-* _Gemstones_
-* _Geothermal_
-* _Gilsonite_
-* _Gold_
-* _Gypsum_
-* _Hardrock_
-* _Helium_
-* _Hot Springs_
-* _Limestone
-* _Mining - unspecified_
-* _NGL_
-* _Oil_
-* _Oil & Gas_
-* _Oil Shale_
-* _Phosphate_
-* _Potassium_
-* _Quartz_
-* _Sand & Gravel_
-* _Silica Sand_
-* _Sodium_
-* _Sulfur_
-* _Tar Sands_
-* _Wind_
 
-_Product_ Commodity type is often further broken down into product.
-* _Anhydrous Sodium Sulfate
-* _Borax-Anhydrous
-* _Borax-Decahydrate
-* _Borax-Pentahydrate
-* _Boric Acid
-* _Boric Oxide
-* _Borrow Sand & Gravel
-* _Brine Barrels
-* _Calcium Chloride
-* _Carbon Dioxide
-* _Carbon Dioxide Gas (CO2)
-* _Caustic
-* _Cinders
-* _Clay
-* _Coal
-* _Coal Bed Methane
-* _Coal Waste (Sub-Econ)
-* _Coal-Bituminous-Processed
-* _Coal-Bituminous-Raw
-* _Coal-Fines Circuit
-* _Coal-Lignite-Raw
-* _Coal-Subbituminous-Processed
-* _Coal-Subbituminous-Raw
-* _Cobalt Concentrate
-* _Condensate
-* _Copper
-* _Copper Concentrate
-* _Drip or Scrubber Condensate
-* _Ferro Phosphorous Slag
-* _Flash Gas
-* _Fuel Gas
-* _Fuel Oil
-* _Gas Hydrate
-* _Gas Lost - Flared or Vented
-* _Gas Plant Products
-* _Geothermal - Commercially Demineralized H2O
-* _Geothermal - Direct Use, Millions of Gallons
-* _Geothermal - Direct Utilization, Hundreds of Gallons
-* _Geothermal - Direct Utilization, Millions of BTUs
-* _Geothermal - Direct Utilization, Other
-* _Geothermal - Electrical Generation, Kilowatt Hours
-* _Geothermal - Electrical Generation, Other
-* _Geothermal - Electrical Generation, Thousands of Pounds
-* _Geothermal - sulfur
-* _Gilsonite
-* _Gold
-* _Gold Ore
-* _Gold Placer
-* _Granulated Langbeinite
-* _Gypsum
-* _Hardrock
-* _Helium
-* _Hydrogen - Hydrogen
-* _Indian Oil- Asphaltic
-* _Indian Oil- Black Wax
-* _Indian Oil- Sour
-* _Indian Oil- Sweet
-* _Indian Oil- Yellow Wax
-* _Inlet Scrubber
-* _Langbeinite
-* _Langbeinite-Coarse
-* _Langbeinite-Granular
-* _Langbeinite-Special Std
-* _Langbeinite-Standard
-* _Lead Concentrate
-* _Leonardite
-* _Limestone
-* _Magnesium Chloride Brine
-* _Manure Salts
-* _Molybdenum Concentrate
-* _Muriate Of Potash-Coarse
-* _Muriate Of Potash-Granular
-* _Muriate Of Potash-Standard
-* _Nitrogen
-* _Oil
-* _Oil- Black Wax
-* _Oil Lost
-* _Oil- Sour
-* _Oil- Sweet
-* _Oil- Yellow Wax
-* _Other Liquid Hydrocarbons
-* _Phosphate Concentrate
-* _Phosphate Raw Ore
-* _Potash
-* _Potassium
-* _Potassium Sulphate Special Std
-* _Potassium Sulphate-Granular
-* _Potassium Sulphate-Standard
-* _Processed (Residue) Gas
-* _Purge Liquor
-* _Quartz Crystal
-* _Salt
-* _Salt-Waste
-* _Sand/Gravel
-* _Sand/Gravel-Cubic Yards
-* _Silver
-* _Soda Ash
-* _Soda Ash-Coarse
-* _Soda Ash-Granular
-* _Sodium Bi-Carbonate
-* _Sodium Bicarbonate Animal Feed
-* _Sodium Bisulfite
-* _Sodium Decahydrate
-* _Sodium Metabisulfite
-* _Sodium Sesquicarbonate
-* _Sulfide
-* _Sulfur
-* _Sylvite-Raw Ore
-* _Trona Ore
-* _Unprocessed (Wet) Gas
-* _Wavellite
-* _Zinc Concentrate_
+
+_Region_ The Bureau of Ocean Energy Management separates offshore area into four regions: Gulf of Mexico, Atlantic, Pacific and Alaska. For more information on offshore regions, including spatial boundaries, see the Bureau of Ocean Energy Management's [maps and GIS data](http://www.boem.gov/Maps-and-GIS-Data/).
+
+_Planning Area_ Offshore regions are broken out into planning areas. For more information on offshore planning areas, including spatial boundaries, see the Bureau of Ocean Energy Management's [maps and GIS data](http://www.boem.gov/Maps-and-GIS-Data/).
 
 _Revenue_ Total revenue.
 
+
+## Onshore data dictionary
+
+The onshore dataset is organized by state. There are more states than are listed in this dataset. Those states without natural resource revenues in the data are not included.
+
+### Fields and definitions
+
+_Row Labels_ This field contains either a state name, or a commodity name. The state name always comes first with its commodity breakdowns below it.
+
+_Sum of Royalty/Revenue_ This field provides the total royalty or revenue for the listed state (total) or commodity in that state.
+
+## Advanced offshore and onshore information
+
+Commodities can be further broken down into products. These are the products that could fall into the commodity categories found in these datasets.
+
+_Coal_ Coal (ton), Coal-Bituminous-Raw (ton).
+
+_Gas_ Coal Bed Methane (mcf), Flash Gas (mcf), Fuel Gas (mcf), Gas Hydrate (mcf), Gas Lost - Flared or Vented (mcf), Nitrogen (mcf), Processed (Residue) Gas (mcf), Unprocessed (Wet) Gas (mcf), NGL (Gas Plant Products).
+
+_Oil_ Asphaltic Crude (bbl), Black Wax Crude (bbl), Condensate (bbl), Drip or Scrubber Condensate (bbl),  Drip or Scrubber Condensate (bbl), Fuel Oil (bbl), Inlet Scrubber (bbl), Oil (bbl), Oil Lost (bbl), Other Liquid Hydrocarbons (bbl), Sour Crude (bbl), Sweet Crude (bbl), Yellow Wax Crude (bbl).
+
+_Geothermal_ Geothermal - Direct Utilization, Hundreds of Gallons (cgal), Geothermal - Direct Utilization, Millions of BTUs (mmbtu), Geothermal - Electrical Generation, Kilowatt Hours (kwh), Geothermal - Electrical Generation, Thousands of Pounds (klb), Geothermal - sulfur (lton).
+
+_Wind_ Wind.
+
+_Other Commodities_ Anhydrous Sodium Sulfate (ton), Borax-Decahydrate (ton), Borax-Pentahydrate (ton), Boric Acid (ton), Carbon Dioxide Gas (CO2) (mcf), Cinders (ton), Clay (ton), Copper Concentrate (ton), Gilsonite (ton), Gold (ton), Gypsum (ton), Helium (bbl), Langbeinite (ton), Lead Concentrate (ton), Leonardite (ton), Limestone (ton), Magnesium Chloride Brine (ton), Manure Salts (ton), Muriate Of Potash-Granular (ton), Muriate Of Potash-Standard (ton), Other (ton), Phosphate Raw Ore (ton), Potash (ton), Purge Liquor (ton), Quartz Crystal (lb), Salt (ton), Sand/Gravel (ton), Sand/Gravel-Cubic Yards (cyd), Silver (oz), Soda Ash (ton), Sodium Bi-Carbonate (ton), Sodium Bisulfite (ton), Sodium Sesquicarbonate (ton), Sulfide (ton), Sulfur (lton), Sylvite-Raw Ore (ton), Trona Ore (ton), Zinc Concentrate (ton).
 
 ## Contact us

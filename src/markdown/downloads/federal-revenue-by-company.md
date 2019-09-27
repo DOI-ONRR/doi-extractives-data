@@ -52,11 +52,10 @@ Our site has two federal revenue datasets. The one on this page is organized by 
 
 ### Fields and definitions
 
-_Calendar Year_ is the period between January 1 and December 31 for a given year.
-
 _Company Name_ Name of company.
 
 _Revenue Type_ Revenues from U.S. natural resources fall into one of several types:
+
 * _Royalties_ A natural resource lease owner pays royalties after the lease starts producing a commodity in <glossary-term>paying quantities</glossary-term>. The amount is based on a percentage of the revenue from the commodity sold. This royalty rate is set in the original lease document that went along with the lease sale. The onshore royalty rate is 12.5%. Offshore leases can have a royalty rates of 12.5%, 16.67%, 18.75%.
 * _Bonus_ The amount paid by the highest successful bidder for a natural resource lease. The winning bid. Collected by BLM (Onshore) and ONRR (Offshore).
 * _Rents_ A natural resource lease might not produce a commodity in paying quantities for some time after it is sold. Until it does, periodic payments are made for the right to continue exploration and development of the land for future natural resource production. These payments are called rent. The first year rental is collected by BLM and the remaining rental payments are collected by ONRR.
@@ -68,38 +67,27 @@ _Revenue Type_ Revenues from U.S. natural resources fall into one of several ty
 
 
 _Commodity Type_ The DOI collects revenues on over 60 different products. The majority of revenues come from Oil, Gas, Coal, and Renewables (Geothermal and Wind), but you will find many other product categories in these datasets.
-* _Asphalt
-* _Clay
-* _Coal
-* _Copper
-* _Gas
-* _Gemstones
-* _Geothermal
-* _Gilsonite
-* _Gold
-* _Hardrock
-* _Hot Springs
-* _Locatable Minerals (see below)
-* _Mineral Materials (see below)
-* _N/A
-* _Oil
-* _Oil & Gas
-* _Oil Shale
-* _Other Commodities (see below)
-* _Other Leasable Minerals
-* _Phosphate
-* _Potash
-* _Potassium
-* _Quartz
-* _Sodium
-* _Sulfur
-* _Wind
 
 _Revenue_ Total revenue.
 
-### Detailed commodity definitions
-_Locatable Minerals_  The federal law governing locatable minerals is the General Mining Law of 1872 (May 10, 1872), which declared all valuable mineral deposits belonging to the United States ... to be free and open to citizens of the United States to explore for, discover, and purchase.  Mineral deposits subject to acquisition in this manner are generally referred to as “locatable minerals.” Locatable minerals include metallic minerals (gold, silver, lead, copper, zinc, nickel, etc.), nonmetallic minerals (fluorspar, mica, certain limestones and gypsum, tantalum, heavy minerals in placer form and gemstones) and certain uncommon variety minerals. It is very difficult to prepare a complete list of locatable minerals because the history of the law has resulted in a definition of minerals that includes economics.
+### Advanced information
 
-_Mineral Materials_  The BLM makes mineral materials located on public lands, such as sand, gravel, crushed stone, decorative stone, clay, and pumice available for sale under the authority of the Materials Act of 1947.  This law authorizes the BLM to sell these mineral materials at fair market value and to grant free-use permits to government agencies and nonprofit organizations, so long as public land resources, the environment, and the public are protected.  Mineral materials are among our most basic natural resources. In particular, sand, gravel, and crushed stone, also known as construction aggregate, extracted on BLM administered public lands are necessary for making ready-mixed concrete, asphalt, and many other building materials.  By making locally available aggregate supplies available on public lands, BLM can help reduce consumer costs (fuel and energy costs), and reduce environmental impacts (air quality emissions and greenhouse gases). 
+Commodities can be further broken down into products. These are the products that could fall into the commodity categories found in these datasets.
+
+_Coal_ Coal (ton), Coal-Bituminous-Raw (ton).
+
+_Gas_ Coal Bed Methane (mcf), Flash Gas (mcf), Fuel Gas (mcf), Gas Hydrate (mcf), Gas Lost - Flared or Vented (mcf), Nitrogen (mcf), Processed (Residue) Gas (mcf), Unprocessed (Wet) Gas (mcf), NGL (Gas Plant Products).
+
+_Oil_ Asphaltic Crude (bbl), Black Wax Crude (bbl), Condensate (bbl), Drip or Scrubber Condensate (bbl), Drip or Scrubber Condensate (bbl), Fuel Oil (bbl), Inlet Scrubber (bbl), Oil (bbl), Oil Lost (bbl), Other Liquid Hydrocarbons (bbl), Sour Crude (bbl), Sweet Crude (bbl), Yellow Wax Crude (bbl).
+
+_Geothermal_ Geothermal - Direct Utilization, Hundreds of Gallons (cgal), Geothermal - Direct Utilization, Millions of BTUs (mmbtu), Geothermal - Electrical Generation, Kilowatt Hours (kwh), Geothermal - Electrical Generation, Thousands of Pounds (klb), Geothermal - sulfur (lton).
+
+_Wind_ Wind.
+
+_Locatable Minerals_  The federal law governing locatable minerals is the General Mining Law of 1872 (May 10, 1872), which declared all valuable mineral deposits belonging to the United States ... to be free and open to citizens of the United States to explore for, discover, and purchase.  Mineral deposits subject to acquisition in this manner are generally referred to as “locatable minerals.” Locatable minerals include metallic minerals (gold, silver, lead, copper, zinc, nickel, etc.), nonmetallic minerals (fluorspar, mica, certain limestones and gypsum, tantalum, heavy minerals in placer form and gemstones) and certain uncommon variety minerals. It is very difficult to prepare a complete list of locatable minerals because the history of the law has resulted in a definition of minerals that includes economics.
+
+_Mineral Materials_  The BLM makes mineral materials located on public lands, such as sand, gravel, crushed stone, decorative stone, clay, and pumice available for sale under the authority of the Materials Act of 1947.  This law authorizes the BLM to sell these mineral materials at fair market value and to grant free-use permits to government agencies and nonprofit organizations, so long as public land resources, the environment, and the public are protected.  Mineral materials are among our most basic natural resources. In particular, sand, gravel, and crushed stone, also known as construction aggregate, extracted on BLM administered public lands are necessary for making ready-mixed concrete, asphalt, and many other building materials.  By making locally available aggregate supplies available on public lands, BLM can help reduce consumer costs (fuel and energy costs), and reduce environmental impacts (air quality emissions and greenhouse gases). 
+
+_Other Commodities_ Anhydrous Sodium Sulfate (ton), Borax-Decahydrate (ton), Borax-Pentahydrate (ton), Boric Acid (ton), Carbon Dioxide Gas (CO2) (mcf), Cinders (ton), Clay (ton), Copper Concentrate (ton), Gilsonite (ton), Gold (ton), Gypsum (ton), Helium (bbl), Langbeinite (ton), Lead Concentrate (ton), Leonardite (ton), Limestone (ton), Magnesium Chloride Brine (ton), Manure Salts (ton), Muriate Of Potash-Granular (ton), Muriate Of Potash-Standard (ton), Other (ton), Phosphate Raw Ore (ton), Potash (ton), Purge Liquor (ton), Quartz Crystal (lb), Salt (ton), Sand/Gravel (ton), Sand/Gravel-Cubic Yards (cyd), Silver (oz), Soda Ash (ton), Sodium Bi-Carbonate (ton), Sodium Bisulfite (ton), Sodium Sesquicarbonate (ton), Sulfide (ton), Sulfur (lton), Sylvite-Raw Ore (ton), Trona Ore (ton), Zinc Concentrate (ton).
 
 ## Contact us

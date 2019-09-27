@@ -353,7 +353,8 @@ class TotalProductionDeprecated extends React.Component {
 									<div className={styles.dropdown}>
 										Period:
 									  <DropDown
-									  	key={'ProductionPeriod'}
+										key={'ProductionPeriod'}
+       										label={'Period'}
 									    action={this.productionPeriodSelected.bind(this)}
 									    options={[
 									      { key: DROPDOWN_VALUES.Recent,
@@ -369,7 +370,8 @@ class TotalProductionDeprecated extends React.Component {
 									:
 									<div className={styles.dropdown}>
 										Period:
-									  <DropDown
+									    <DropDown
+										label={'Period'}	  
 									  	key={'ProductionYearlyPeriod'}
 									    action={this.productionYearlyPeriodSelected.bind(this)}
 									    options={[

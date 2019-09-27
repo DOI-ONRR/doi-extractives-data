@@ -357,7 +357,8 @@ class TotalRevenueDeprecated extends React.Component {
 		  {(this.state.revenueToggle === TOGGLE_VALUES.Month) ?
 		      <div className={styles.dropdown}>
 			    Period:
-				<DropDown
+		            <DropDown
+		                      label={'Period'}
 				      key={'RevenuePeriod'}
 				      action={this.revenuePeriodSelected.bind(this)}
 				      options={[
@@ -373,9 +374,10 @@ class TotalRevenueDeprecated extends React.Component {
 			  </div>
 			  :
 			  <div className={styles.dropdown}>
-				Period:
+		                    Period:
 				    <DropDown
-					  key={'RevenueYearlyPeriod'}
+		                          key={'RevenueYearlyPeriod'}
+		                          label={'Period'}
 					  action={this.revenueYearlyPeriodSelected.bind(this)}
 					  options={[
 					      { key: YEARLY_DROPDOWN_VALUES.Fiscal,

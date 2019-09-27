@@ -57,24 +57,38 @@ _Revenue Type_ Revenues from U.S. natural resources fall into one of several typ
 * _Inspection Fees_ The Department of the Interior inspects offshore oil and gas drilling rigs at least once a year. Inspection fees help recover some of the costs associated with these inspections.
 * _Other Revenues_ This category includes revenues that are not included in the royalty, rent, or bonus categories, such as minimum royalties, estimated royalties, settlement agreements, and interest.
 
-_Commodity_ The Department of the Interior collects revenue on over 60 different products. The majority of revenue come from Oil & Gas, Coal, and Renewables (Geothermal and Wind), but you will find many other product categories in these datasets.
+_Commodity_ The Department of the Interior collects revenue on over 60 different products. The majority of revenue come from Oil & Gas, Coal, and Renewables (Geothermal and Wind).
+* _Asphalt_
+* _Clay_
+* _Coal_
+* _Copper_
+* _Garnet_
+* _Gas_
+* _Gemstones_
+* _Geothermal_
+* _Gilsonite_
+* _Gold_
+* _Gypsum_
+* _Hardrock_
+* _Hot Springs_
+* _Limestone
+* _Mining - unspecified_
+* _NGL_
+* _Oil_
+* _Oil & Gas_
+* _Oil Shale_
+* _Other Products_
+* _Phosphate_
+* _Potassium_
+* _Quartz_
+* _Sand & Gravel_
+* _Silica Sand_
+* _Sodium_
+* _Sulfur_
+* _Tar Sands_
+* _Wind_
 
 _Revenue_ Total revenue
 
-## Commodities and products
-
-Commodities can be further broken down into products. These are the products that could fall into the commodity categories found in these datasets.
-
-_Coal_ Coal (ton), Coal-Bituminous-Raw (ton).
-
-_Gas_ Coal Bed Methane (mcf), Flash Gas (mcf), Fuel Gas (mcf), Gas Hydrate (mcf), Gas Lost - Flared or Vented (mcf), Nitrogen (mcf), Processed (Residue) Gas (mcf), Unprocessed (Wet) Gas (mcf), NGL (Gas Plant Products).
-
-_Oil_ Asphaltic Crude (bbl), Black Wax Crude (bbl), Condensate (bbl), Drip or Scrubber Condensate (bbl),  Drip or Scrubber Condensate (bbl), Fuel Oil (bbl), Inlet Scrubber (bbl), Oil (bbl), Oil Lost (bbl), Other Liquid Hydrocarbons (bbl), Sour Crude (bbl), Sweet Crude (bbl), Yellow Wax Crude (bbl).
-
-_Geothermal_ Geothermal - Direct Utilization, Hundreds of Gallons (cgal), Geothermal - Direct Utilization, Millions of BTUs (mmbtu), Geothermal - Electrical Generation, Kilowatt Hours (kwh), Geothermal - Electrical Generation, Thousands of Pounds (klb), Geothermal - sulfur (lton).
-
-_Wind_ Wind.
-
-_Other Commodities_ Anhydrous Sodium Sulfate (ton), Borax-Decahydrate (ton), Borax-Pentahydrate (ton), Boric Acid (ton), Carbon Dioxide Gas (CO2) (mcf), Cinders (ton), Clay (ton), Copper Concentrate (ton), Gilsonite (ton), Gold (ton), Gypsum (ton), Helium (bbl), Langbeinite (ton), Lead Concentrate (ton), Leonardite (ton), Limestone (ton), Magnesium Chloride Brine (ton), Manure Salts (ton), Muriate Of Potash-Granular (ton), Muriate Of Potash-Standard (ton), Other (ton), Phosphate Raw Ore (ton), Potash (ton), Purge Liquor (ton), Quartz Crystal (lb), Salt (ton), Sand/Gravel (ton), Sand/Gravel-Cubic Yards (cyd), Silver (oz), Soda Ash (ton), Sodium Bi-Carbonate (ton), Sodium Bisulfite (ton), Sodium Sesquicarbonate (ton), Sulfide (ton), Sulfur (lton), Sylvite-Raw Ore (ton), Trona Ore (ton), Zinc Concentrate (ton).
 
 ## Contact us

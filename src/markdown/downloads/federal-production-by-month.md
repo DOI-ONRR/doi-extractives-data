@@ -47,13 +47,13 @@ The sum of 12-month production totals for a given calendar or fiscal year may no
 
 ### Fields and definitions
 
-_Month_ The month for which the production was reported.
+_Month_ The month for which the production occurred.
 
-_Calendar Year_ The calendar year for the month in which the production was reported.
+_Calendar Year_ The calendar year for the month in which the production occurred.
 
 _Land Class_ This field distinguishes federal lands and waters from Native American lands.
 
-_Land Category_ This field distinguishes between onshore and offshore revenue. Some revenues – such as civil penalties – are not tied to either onshore or offshore.
+_Land Category_ This field distinguishes between onshore and offshore production.
 
 _Commodity_ We have monthly data for oil, gas, and coal, since these are high-volume commodities that result in the most revenue. This field includes the units for each commodity in parentheses.
 

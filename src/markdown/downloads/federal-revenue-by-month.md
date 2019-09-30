@@ -71,7 +71,7 @@ _Commodity_ The Department of the Interior collects revenue on over 60 different
 * _Gypsum_
 * _Hardrock_
 * _Hot Springs_
-* _Limestone
+* _Limestone_
 * _Mining - unspecified_
 * _NGL_
 * _Oil_

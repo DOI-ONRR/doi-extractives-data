@@ -103,7 +103,7 @@ _Year_
   * _Other Coal Products_ (tons) include Leonardite and Coal Waste (Sub-Econ)
   * _Copper_ (lbs)
   * _Copper Concentrate_ (tons)
-  * _Drip or Scrubber Condensate
+  * _Drip or Scrubber Condensate_
   * _Gas_ (mcf)
   * _Geothermal - Direct Utilization_, (gal hundreds)
   * _Geothermal - Direct Utilization_, (MMBtu)

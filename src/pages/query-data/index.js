@@ -100,6 +100,7 @@ const muiTheme = createMuiTheme({
 class QueryData extends React.Component {
   constructor (props) {
     super(props)
+    console.log(props)
     this.additionalColumnOptionKeys = Object.keys(ADDITIONAL_COLUMN_OPTIONS)
     this.getFiscalYearOptions = () => this.props[REVENUES_FISCAL_YEAR] && Object.keys(this.props[REVENUES_FISCAL_YEAR][BY_FISCAL_YEAR])
     this.getLocationOptions = () => {
@@ -866,6 +867,38 @@ const TableToolbar = ({ fiscalYearOptions, locationOptions, commodityOptions, co
 
 export const query = graphql`
   query QueryDataPageQuery {
+		allProduction:allProductVolumesFiscalYear (filter:{FiscalYear:{ne:null}}, sort: {fields: [FiscalYear], order: DESC}) {
+		  data:edges {
+		    node {
+		    	id
+		      Volume
+		      FiscalYear
+		      Commodity
+		      LandClass:LandCategory
+		      County
+		      State
+		      ProductionDate
+          OffshoreRegion
+          LandCategory:OnshoreOffshore
+		      RevenueCategory:LandCategory_OnshoreOffshore
+		    }
+		  }
+		}
+	  allProductionGroupByCommodity: allProductVolumesFiscalYear(
+	  	filter: {
+	  		FiscalYear: {ne: null},
+	  		Commodity: {nin: [null,""]},
+	  	}, 
+	  	sort: {fields: [FiscalYear], order: DESC}) {
+	    group(field: Commodity) {
+	      id:fieldValue
+	      data:edges {
+	        node {
+	          id
+	        }
+	      }
+	    }
+	  }
 		allRevenues:allResourceRevenuesFiscalYear (filter:{FiscalYear:{ne:null}}, sort: {fields: [FiscalYear], order: DESC}) {
 		  data:edges {
 		    node {

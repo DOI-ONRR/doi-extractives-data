@@ -7,8 +7,6 @@
  *
  **/
 
-/* Use ES5 require in order to be compatible with version 1.x of gatsby */
-
 const CONSTANTS = require('../../../src/js/constants')
 
 /* Define the column names found in the excel file */
@@ -92,7 +90,11 @@ const LOCATION_CATEGORY_TYPE_TO_PRODUCTION_CATEGORY = {
   },
 }
 
-/* Use ES5 exports in order to be compatible with version 1.x of gatsby */
+const LAND_CLASS_TO_DISPLAY_NAME = {
+  'Federal': CONSTANTS.FEDERAL,
+  'Native American': CONSTANTS.NATIVE_AMERICAN,
+}
+
 module.exports = (node, type) => {
   return createProductVolumeNodeByProduct(node, type)
 }
@@ -118,17 +120,19 @@ const createProductVolumeNodeByProduct = (productVolumeData, type) => {
     productionVolume = 0
   }
 
+  // Adding Commodity vs ProductName to be consistent with revenue data. Should remove ProductName but leaving for backward capability
   let node = {
 	  ProductionMonth: data[SOURCE_COLUMNS.Month],
 	  ProductionYear: data[SOURCE_COLUMNS.CalendarYear],
 	  FiscalYear: data[SOURCE_COLUMNS.FiscalYear],
-	  LandClass: data[SOURCE_COLUMNS.CalendarYear],
+	  LandClass: LAND_CLASS_TO_DISPLAY_NAME[data[SOURCE_COLUMNS.LandClass]],
 	  LandCategory: data[SOURCE_COLUMNS.LandCategory].trim(),
 	  OnshoreOffshore: data[SOURCE_COLUMNS.OnshoreOffshore],
 	  ProductName: SOURCE_COLUMN_TO_PRODUCT_DISPLAY_NAME[product] || productName,
+	  Commodity: SOURCE_COLUMN_TO_PRODUCT_DISPLAY_NAME[product] || productName,
 	  Volume: productionVolume,
     Withheld: isWithheld,
-    County: data[SOURCE_COLUMNS.County],
+    County: data[SOURCE_COLUMNS.County] && data[SOURCE_COLUMNS.County].trim(),
     FipsCode: data[SOURCE_COLUMNS.FipsCode] || getFipsCode(data[SOURCE_COLUMNS.OffshorePlanningArea]),
     State: data[SOURCE_COLUMNS.State],
     OffshoreRegion: data[SOURCE_COLUMNS.OffshoreRegion],

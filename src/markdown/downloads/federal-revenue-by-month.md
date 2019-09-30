@@ -88,7 +88,7 @@ _Commodity_ The Department of the Interior collects revenue on over 60 different
 * _Tar Sands_
 * _Wind_
 
-_Revenue_ Total revenue
+_Revenue_ Total revenue.
 
 
 ## Contact us

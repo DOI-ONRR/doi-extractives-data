@@ -121,11 +121,12 @@ const createRevenueNode = (revenueData, type) => {
       : (revenueNode.RevenueDate.getYear() + 1900).toString()
   }
 
-  let landCat = revenueNode.LandCategory && revenueNode.LandCategory.toLowerCase()
+  let landCat = revenueNode.LandCategory && revenueNode.LandCategory.toLowerCase().trim()
+  let revType = revenueNode.RevenueType && revenueNode.RevenueType.toLowerCase().trim()
 
   if (landCat === 'not tied to a lease' ||
-     revenueNode.RevenueType === 'Civil Penalities' ||
-     revenueNode.RevenueType === 'Other Revenues') {
+      revType === 'civil penalties' ||
+      revType === 'other revenues') {
     if (revenueNode.LandClass !== CONSTANTS.NATIVE_AMERICAN &&
         !revenueNode.OffshoreRegion) {
       revenueNode.State = revenueNode.State || 'Not tied to a location'

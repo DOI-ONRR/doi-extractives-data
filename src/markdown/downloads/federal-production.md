@@ -138,6 +138,6 @@ _Year_
   * _Sodium Bi-Carbonate_ (tons)
   * _Sodium Products_ (tons) include Anhydrous Sodium Sulfate, Sodium Bisulfite, Sodium Decahydrate, Sodium Sesquicarbonate, Sulfide, and Trona Ore
   * _Zinc Concentrate_ (tons)
-_Volume_ Shows the production volume (amount produced). The units for volume are shown in the preceding field (Product).
+* _Volume_ Shows the production volume (amount produced). The units for volume are shown in the preceding field (Product).
 
 ## Contact us

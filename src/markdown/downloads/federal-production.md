@@ -85,58 +85,58 @@ _Year_
 * _Land Class_
   * _Federal_ Federal lands are owned by or under the jurisdiction of the federal government, including: Public domain lands, acquired lands, military acquired lands, and Outer Continental Shelf.
   * _Native American_ includes Tribal lands held in trust by the federal government for a tribe’s use, and allotments held in trust by the federal government for individual Native American use.
-_State_ The state where the production occurred.
-_County_ The county where the production occurred.
-_FIPS Code_ Federal Information Processing Standard (FIPS) code is a five-digit code which uniquely identifies counties and county equivalents in the U.S., certain U.S. possessions, and certain freely associated states. The first two digits are the FIPS state code and the last three are the county code within the state or possession.
-_Offshore Region_ BOEM separates offshore areas into four regions: Gulf of Mexico, Atlantic, Pacific, and Alaska. For more information on offshore regions, including spatial boundaries, see BOEM's [maps and GIS data](http://www.boem.gov/Maps-and-GIS-Data/).
-_Offshore Planning Area_ Offshore regions are broken out into planning areas. There are more offshore planning areas than are represented in our data. Those not represented had no production during the time period. For more information on offshore planning areas, including spatial boundaries, see the Bureau of Ocean Energy Management's (BOEM) [maps and GIS data](http://www.boem.gov/Maps-and-GIS-Data/).
-_Product_ Products are listed individually but may also fall into like categories.
-* _Anhydrous Sodium Sulfate_ (tons)
-* _Borate Products_ (tons) include Borax-Anhydrous, Borax-Decahydrate, Borax-Pentahydrate, and Boric Acid
-* _Brine Products_ include Brine Barrels (converted to tons equivalent) and Magnesium Chloride Brine
-* _Calcium Chloride_ (lbs)
-* _Carbon Dioxide_ (tons)
-* _Cinders_ (tons)
-* _Clay_ (tons)
-* _Coal_ (tons)
-* _Coal-Bituminous-Raw_ (tons)
-* _Other Coal Products_ (tons) include Leonardite and Coal Waste (Sub-Econ)
-* _Copper_ (lbs)
-* _Copper Concentrate_ (tons)
-* _Drip or Scrubber Condensate
-* _Gas_ (mcf)
-* _Geothermal - Direct Utilization_, (gal hundreds)
-* _Geothermal - Direct Utilization_, (MMBtu)
-* _Geothermal - Electrical Generation_, (kWh)
-* _Geothermal - Electrical Generation_, (lbs, thousand)
-* _Geothermal - Electrical Generation_, (Other)
-* _Geothermal - sulfur_
-* _Gilsonite_ (tons)
-* _Gold and Silver Products_ (ozs) include: Gold, Gold Placer, and Silver
-* _Gold and Silver Products_ (tons) include: Gold Ore, Gold and Silver
-* _Gypsum_ (tons)
-* _Hardrock Products_ (tons) include: Limestone (tons) and Wavellite (spcmns)
-* _Humate_ (tons)
-* _Langbeinite_ (tons)
-* _Lead Concentrate_ (tons)
-* _Leonardite_ (tons)
-* _Molybdenum Concentrate_ (tons)
-* _Muriate Of Potash-Granular_ (tons)
-* _Muriate Of Potash-Standard_ (tons)
-* _Oil_ (bbls)
-* _Phosphate Raw Ore_ (tons)
-* _Potash_ (tons)
-* _Potassium Products_ (tons) include Manure Salts and Sylvite-Raw Ore
-* _Potassium Sulphate-Standard_ (tons)
-* _Purge Liquor_ (tons)
-* _Quartz Crystal_ (tickets/lbs)
-* _Salt_(tons)
-* _Sand/Gravel_ (tons)
-* _Sand/Gravel-Cubic Yards_ (cyds)
-* _Soda Ash_ (tons)
-* _Sodium Bi-Carbonate_ (tons)
-* _Sodium Products_ (tons) include Anhydrous Sodium Sulfate, Sodium Bisulfite, Sodium Decahydrate, Sodium Sesquicarbonate, Sulfide, and Trona Ore
-* _Zinc Concentrate_ (tons)
+* _State_ The state where the production occurred.
+* _County_ The county where the production occurred.
+* _FIPS Code_ Federal Information Processing Standard (FIPS) code is a five-digit code which uniquely identifies counties and county equivalents in the U.S., certain U.S. possessions, and certain freely associated states. The first two digits are the FIPS state code and the last three are the county code within the state or possession.
+* _Offshore Region_ BOEM separates offshore areas into four regions: Gulf of Mexico, Atlantic, Pacific, and Alaska. For more information on offshore regions, including spatial boundaries, see BOEM's [maps and GIS data](http://www.boem.gov/Maps-and-GIS-Data/).
+* _Offshore Planning Area_ Offshore regions are broken out into planning areas. There are more offshore planning areas than are represented in our data. Those not represented had no production during the time period. For more information on offshore planning areas, including spatial boundaries, see the Bureau of Ocean Energy Management's (BOEM) [maps and GIS data](http://www.boem.gov/Maps-and-GIS-Data/).
+* _Product_ Products are listed individually but may also fall into like categories.
+  * _Anhydrous Sodium Sulfate_ (tons)
+  * _Borate Products_ (tons) include Borax-Anhydrous, Borax-Decahydrate, Borax-Pentahydrate, and Boric Acid
+  * _Brine Products_ include Brine Barrels (converted to tons equivalent) and Magnesium Chloride Brine
+  * _Calcium Chloride_ (lbs)
+  * _Carbon Dioxide_ (tons)
+  * _Cinders_ (tons)
+  * _Clay_ (tons)
+  * _Coal_ (tons)
+  * _Coal-Bituminous-Raw_ (tons)
+  * _Other Coal Products_ (tons) include Leonardite and Coal Waste (Sub-Econ)
+  * _Copper_ (lbs)
+  * _Copper Concentrate_ (tons)
+  * _Drip or Scrubber Condensate
+  * _Gas_ (mcf)
+  * _Geothermal - Direct Utilization_, (gal hundreds)
+  * _Geothermal - Direct Utilization_, (MMBtu)
+  * _Geothermal - Electrical Generation_, (kWh)
+  * _Geothermal - Electrical Generation_, (lbs, thousand)
+  * _Geothermal - Electrical Generation_, (Other)
+  * _Geothermal - sulfur_
+  * _Gilsonite_ (tons)
+  * _Gold and Silver Products_ (ozs) include: Gold, Gold Placer, and Silver
+  * _Gold and Silver Products_ (tons) include: Gold Ore, Gold and Silver
+  * _Gypsum_ (tons)
+  * _Hardrock Products_ (tons) include: Limestone (tons) and Wavellite (spcmns)
+  * _Humate_ (tons)
+  * _Langbeinite_ (tons)
+  * _Lead Concentrate_ (tons)
+  * _Leonardite_ (tons)
+  * _Molybdenum Concentrate_ (tons)
+  * _Muriate Of Potash-Granular_ (tons)
+  * _Muriate Of Potash-Standard_ (tons)
+  * _Oil_ (bbls)
+  * _Phosphate Raw Ore_ (tons)
+  * _Potash_ (tons)
+  * _Potassium Products_ (tons) include Manure Salts and Sylvite-Raw Ore
+  * _Potassium Sulphate-Standard_ (tons)
+  * _Purge Liquor_ (tons)
+  * _Quartz Crystal_ (tickets/lbs)
+  * _Salt_(tons)
+  * _Sand/Gravel_ (tons)
+  * _Sand/Gravel-Cubic Yards_ (cyds)
+  * _Soda Ash_ (tons)
+  * _Sodium Bi-Carbonate_ (tons)
+  * _Sodium Products_ (tons) include Anhydrous Sodium Sulfate, Sodium Bisulfite, Sodium Decahydrate, Sodium Sesquicarbonate, Sulfide, and Trona Ore
+  * _Zinc Concentrate_ (tons)
 _Volume_ Shows the production volume (amount produced). The units for volume are shown in the preceding field (Product).
 
 ## Contact us

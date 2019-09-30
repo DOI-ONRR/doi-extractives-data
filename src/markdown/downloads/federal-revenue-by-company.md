@@ -68,32 +68,32 @@ _Revenue Type_ Revenues from U.S. natural resources fall into one of several typ
 
 
 _Commodity Type_ The DOI collects revenues on over 60 different products. The majority of revenues come from Oil, Gas, Coal, and Renewables (Geothermal and Wind), but you will find many other product categories in these datasets.
-* _Asphalt
-* _Clay
-* _Coal
-* _Copper
-* _Gas
-* _Gemstones
-* _Geothermal
-* _Gilsonite
-* _Gold
-* _Hardrock
-* _Hot Springs
-* _Locatable Minerals (see below)
-* _Mineral Materials (see below)
-* _N/A
-* _Oil
-* _Oil & Gas
-* _Oil Shale
-* _Other Commodities (see below)
-* _Other Leasable Minerals
-* _Phosphate
-* _Potash
-* _Potassium
-* _Quartz
-* _Sodium
-* _Sulfur
-* _Wind
+* _Asphalt_
+* _Clay_
+* _Coal_
+* _Copper_
+* _Gas_
+* _Gemstones_
+* _Geothermal_
+* _Gilsonite_
+* _Gold_
+* _Hardrock_
+* _Hot Springs_
+* _Locatable Minerals_ (see below)
+* _Mineral Materials_ (see below)
+* _N/A_
+* _Oil_
+* _Oil & Gas_
+* _Oil Shale_
+* _Other Commodities_ (see below)
+* _Other Leasable Minerals_
+* _Phosphate_
+* _Potash_
+* _Potassium_
+* _Quartz_
+* _Sodium_
+* _Sulfur_
+* _Wind_
 
 _Revenue_ Total revenue.
 

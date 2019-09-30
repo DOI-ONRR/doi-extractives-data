@@ -23,7 +23,6 @@ class Tabordion extends React.Component {
     tabClicked (id, content, element) {
     if (this.state.tabId !== id) {
 	this.setState({ tabId: id, tabPanel: content })
-	let pathname  = this.props.location.origin+this.props.location.pathname;
 	navigate('?tab='+id);
 	
     }

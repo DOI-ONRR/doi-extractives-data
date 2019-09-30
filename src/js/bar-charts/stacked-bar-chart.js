@@ -231,6 +231,12 @@ const stackedBarChart = {
       .attr('selected', d => Object.keys(d)[0] === self.selectedDataKey)
       .attr('class', d => (self.styleMap && self.styleMap.bar))
       .attr('data-key', d => Object.keys(d)[0])
+      .attr('tabindex',0)
+      .on('keyup', function (d) {
+	  if(d3.event.keyCode == 13) {
+	      toggleSelectedBar(this, d, props.barSelectedCallback)
+	  }
+      })
       .on('click', function (d) {
         toggleSelectedBar(this, d, props.barSelectedCallback)
       })
@@ -314,7 +320,8 @@ const toggleSelectedBar = (element, data, callBack) => {
   	selectedElement.removeAttribute('selected')
   }
 
-  element.setAttribute('selected', true)
+    element.setAttribute('selected', true)
+    element.setAttribute('tabindex',1)
 
   if (callBack) {
   	callBack(data)

@@ -13,5 +13,5 @@ tag:
 is_cropped: true
 
 case_study_link: |
-    For a detailed view of how iron mining affects communities in Michigan, read the [Marquette County case study](/case-studies/marquette/).
+    For a detailed view of how iron mining affects communities in Michigan, read the [Marquette County case study](/archive/case-studies/marquette/).
 ---

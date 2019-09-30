@@ -102,11 +102,19 @@ a:hover {
 
 /* Author profile */
 
-.author-image {
+.author-profile-container {
   margin-right: 0.725rem;
+}
+
+.author-bio {
+  display: flex;
+}
+
+.author-image {
   margin-bottom: 0;
   width: 3rem;
   height: 3rem;
+  max-width: none;
   border-radius: 50%;
 }
 

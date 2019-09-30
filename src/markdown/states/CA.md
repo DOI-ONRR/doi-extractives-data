@@ -19,7 +19,7 @@ priority: true
 nearby_offshore_region: 'the <a href="/explore/offshore-pacific/">Pacific Ocean</a>'
 
 case_study_link: |
-    For a detailed view of how oil extraction affects communities in southern California, read the [Kern County case study](/case-studies/kern/).
+    For a detailed view of how oil extraction affects communities in southern California, read the [Kern County case study](/archive/case-studies/kern/).
 
 # is_cropped forces the default county map view to use
 # a custom set of viewbox coordinates

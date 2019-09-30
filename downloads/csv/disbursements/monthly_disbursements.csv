@@ -4011,3 +4011,394 @@ July,2019,U.S. TreasuryAI,Onshore,,,,Gas,Royalties,2911.97
 July,2019,U.S. TreasuryAI,Onshore,,,,Oil,Royalties,417.12
 July,2019,U.S. TreasuryAI,Onshore,,,,Oil & Gas,Other Distributions,7.29
 July,2019,U.S. TreasuryAI,Onshore,,,,Oil,Royalties,1357.29
+August,2019,Bureau of Land Management,Onshore,,,,Gas,Royalties,"16,187.41"
+August,2019,Bureau of Land Management,Onshore,,,,Oil,Royalties,"48,167.80"
+August,2019,Bureau of Land Management,Onshore,,,,Oil & Gas,Other Distributions,"1,731.66"
+August,2019,Bureau of Land Management,Onshore,,,,Oil & Gas,Rents & Bonuses,840
+August,2019,Bureau of Ocean Energy Management,Offshore,,,,Oil & Gas,Rents & Bonuses,"2,990,833.91"
+August,2019,Bureau of Safety & Environmental Enforcement,Offshore,,,,,Other Distributions,"1,362,524.20"
+August,2019,Bureau of Safety & Environmental Enforcement,Offshore,,,,,Royalties,"-68,198.44"
+August,2019,Bureau of Safety & Environmental Enforcement,Offshore,,,,Oil & Gas,Rents & Bonuses,"1,323,850.89"
+August,2019,Fish & Wildlife,Onshore,,,,Gas,Royalties,"24,319.30"
+August,2019,Fish & Wildlife,Onshore,,,,Oil,Royalties,"308,783.38"
+August,2019,Fish & Wildlife,Onshore,,,,Oil & Gas,Other Distributions,-468.35
+August,2019,Forest Service,Onshore,,,,Coal,Rents & Bonuses,-280.19
+August,2019,Forest Service,Onshore,,,,Coal,Royalties,"7,552.33"
+August,2019,Forest Service,Onshore,,,,Copper,Royalties,"60,239.07"
+August,2019,Forest Service,Onshore,,,,Gas,Royalties,"1,594,246.65"
+August,2019,Forest Service,Onshore,,,,Hardrock,Other Distributions,-1.95
+August,2019,Forest Service,Onshore,,,,Hardrock,Rents & Bonuses,"-3,649.50"
+August,2019,Forest Service,Onshore,,,,Lead/Zinc,Royalties,"215,702.47"
+August,2019,Forest Service,Onshore,,,,Oil,Royalties,"11,041,128.12"
+August,2019,Forest Service,Onshore,,,,Oil & Gas,Other Distributions,"-342,119.56"
+August,2019,Forest Service,Onshore,,,,Oil & Gas,Rents & Bonuses,"135,493.51"
+August,2019,Forest Service,Onshore,,,,Oil & Gas,Royalties,1.15
+August,2019,Forest Service,Onshore,,,,Quartz,Royalties,1.95
+August,2019,Land & Water Conservation Fund,Offshore,GoMESA,,,Gas,Royalties,"530,572.17"
+August,2019,Land & Water Conservation Fund,Offshore,GoMESA,,,Oil,Royalties,"7,042,435.84"
+August,2019,Land & Water Conservation Fund,Offshore,GoMESA,,,Oil & Gas,Rents & Bonuses,"18,006,041.62"
+August,2019,Land & Water Conservation Fund,Offshore,GoMESA,,,Oil & Gas,Royalties,"-357,833.74"
+August,2019,Lease Process Improvement (BLM),Onshore,,,,Coal,Rents & Bonuses,"7,086.50"
+August,2019,Lease Process Improvement (BLM),Onshore,,,,Gilsonite,Rents & Bonuses,119.5
+August,2019,Lease Process Improvement (BLM),Onshore,,,,Oil & Gas,Rents & Bonuses,"967,909.19"
+August,2019,Lease Process Improvement (BLM),Onshore,,,,Oil Shale,Rents & Bonuses,160
+August,2019,Lease Process Improvement (BLM),Onshore,,,,Phosphate,Rents & Bonuses,-213
+August,2019,Lease Process Improvement (BLM),Onshore,,,,Sodium,Rents & Bonuses,38.76
+August,2019,Native American Tribes & Allottees,Onshore,,,,,Other Distributions,"2,249,065.39"
+August,2019,Native American Tribes & Allottees,Onshore,,,,Coal,Other Distributions,"787,287.18"
+August,2019,Native American Tribes & Allottees,Onshore,,,,Coal,Rents & Bonuses,"14,745.92"
+August,2019,Native American Tribes & Allottees,Onshore,,,,Coal,Royalties,"3,057,702.53"
+August,2019,Native American Tribes & Allottees,Onshore,,,,Gas,Other Distributions,-184.73
+August,2019,Native American Tribes & Allottees,Onshore,,,,Gas,Royalties,"12,226,855.86"
+August,2019,Native American Tribes & Allottees,Onshore,,,,Oil,Other Distributions,"-5,776.84"
+August,2019,Native American Tribes & Allottees,Onshore,,,,Oil,Royalties,"80,085,825.85"
+August,2019,Native American Tribes & Allottees,Onshore,,,,Oil & Gas,Other Distributions,"-370,948.57"
+August,2019,Native American Tribes & Allottees,Onshore,,,,Oil & Gas,Rents & Bonuses,"277,754.28"
+August,2019,Native American Tribes & Allottees,Onshore,,,,Oil & Gas,Royalties,"72,774.29"
+August,2019,Native American Tribes & Allottees,Onshore,,,,Sand & Gravel,Other Distributions,37.01
+August,2019,Reclamation Fund,Onshore,,,,Coal,Other Distributions,"159,492.95"
+August,2019,Reclamation Fund,Onshore,,,,Coal,Rents & Bonuses,"1,376,000.00"
+August,2019,Reclamation Fund,Onshore,,,,Coal,Royalties,"12,109,998.76"
+August,2019,Reclamation Fund,Onshore,,,,Gas,Royalties,"18,594,206.48"
+August,2019,Reclamation Fund,Onshore,,,,Gilsonite,Other Distributions,573.6
+August,2019,Reclamation Fund,Onshore,,,,Gilsonite,Royalties,"82,619.21"
+August,2019,Reclamation Fund,Onshore,,,,Oil,Other Distributions,"1,597.23"
+August,2019,Reclamation Fund,Onshore,,,,Oil,Royalties,"58,861,553.65"
+August,2019,Reclamation Fund,Onshore,,,,Oil & Gas,Other Distributions,"1,708,624.88"
+August,2019,Reclamation Fund,Onshore,,,,Oil & Gas,Rents & Bonuses,"35,546,239.20"
+August,2019,Reclamation Fund,Onshore,,,,Oil & Gas,Royalties,"1,680,675.13"
+August,2019,Reclamation Fund,Onshore,,,,Phosphate,Other Distributions,"6,179.18"
+August,2019,Reclamation Fund,Onshore,,,,Phosphate,Royalties,"168,752.48"
+August,2019,Reclamation Fund,Onshore,,,,Potassium,Other Distributions,"2,835.89"
+August,2019,Reclamation Fund,Onshore,,,,Potassium,Royalties,"232,006.31"
+August,2019,Reclamation Fund,Onshore,,,,Sodium,Other Distributions,0.24
+August,2019,Reclamation Fund,Onshore,,,,Sodium,Rents & Bonuses,"1,960,242.92"
+August,2019,Reclamation Fund,Onshore,,,,Sodium,Royalties,"1,676,013.38"
+August,2019,State,Offshore,8(g),AK,,Oil,Other Distributions,0
+August,2019,State,Offshore,8(g),AK,,Oil,Royalties,"79,135.43"
+August,2019,State,Offshore,8(g),AK,,Oil & Gas,Rents & Bonuses,"4,827.60"
+August,2019,State,Offshore,8(g),AL,,,Royalties,"-142,561.02"
+August,2019,State,Offshore,8(g),AL,,Gas,Royalties,"156,899.97"
+August,2019,State,Offshore,8(g),AL,,Oil,Royalties,265.21
+August,2019,State,Offshore,8(g),AL,,Oil & Gas,Other Distributions,"13,942.16"
+August,2019,State,Offshore,8(g),CA,,Gas,Royalties,"1,032.13"
+August,2019,State,Offshore,8(g),CA,,Oil,Royalties,"210,818.48"
+August,2019,State,Offshore,8(g),CA,,Oil & Gas,Other Distributions,"1,449.69"
+August,2019,State,Offshore,8(g),CA,,Oil & Gas,Royalties,1.19
+August,2019,State,Offshore,8(g),LA,,,Royalties,"-124,593.53"
+August,2019,State,Offshore,8(g),LA,,Gas,Royalties,"154,093.25"
+August,2019,State,Offshore,8(g),LA,,Oil,Other Distributions,-166.25
+August,2019,State,Offshore,8(g),LA,,Oil,Royalties,"160,451.87"
+August,2019,State,Offshore,8(g),LA,,Oil & Gas,Other Distributions,"-63,916.32"
+August,2019,State,Offshore,8(g),LA,,Oil & Gas,Rents & Bonuses,"31,427.23"
+August,2019,State,Offshore,8(g),MS,,,Royalties,"65,106.00"
+August,2019,State,Offshore,8(g),MS,,Gas,Royalties,"3,977.06"
+August,2019,State,Offshore,8(g),TX,,,Royalties,"194,409.00"
+August,2019,State,Offshore,8(g),TX,,Gas,Royalties,"11,126.50"
+August,2019,State,Offshore,8(g),TX,,Oil,Other Distributions,-0.26
+August,2019,State,Offshore,8(g),TX,,Oil,Royalties,62.37
+August,2019,State,Offshore,8(g),TX,,Oil & Gas,Other Distributions,-772.09
+August,2019,State,Onshore,Geothermal,CA,Imperial County,,Sequestration,-310.23
+August,2019,State,Onshore,Geothermal,CA,Imperial County,Geothermal,Royalties,"5,003.75"
+August,2019,State,Onshore,Geothermal,CA,Inyo County,,Sequestration,-75.36
+August,2019,State,Onshore,Geothermal,CA,Inyo County,Geothermal,Other Distributions,"1,215.50"
+August,2019,State,Onshore,Geothermal,CA,Lake County,,Sequestration,"-3,687.62"
+August,2019,State,Onshore,Geothermal,CA,Lake County,Geothermal,Royalties,"59,477.74"
+August,2019,State,Onshore,Geothermal,CA,Lassen County,,Sequestration,-94.39
+August,2019,State,Onshore,Geothermal,CA,Lassen County,Geothermal,Royalties,"1,522.34"
+August,2019,State,Onshore,Geothermal,CA,Mono County,,Sequestration,-135.88
+August,2019,State,Onshore,Geothermal,CA,Mono County,Geothermal,Royalties,"2,191.69"
+August,2019,State,Onshore,Geothermal,CA,Sonoma County,,Sequestration,"-5,594.78"
+August,2019,State,Onshore,Geothermal,CA,Sonoma County,Geothermal,Royalties,"90,238.45"
+August,2019,State,Onshore,Geothermal,ID,Cassia County,,Sequestration,"-1,363.19"
+August,2019,State,Onshore,Geothermal,ID,Cassia County,Geothermal,Rents & Bonuses,"21,986.87"
+August,2019,State,Onshore,Geothermal,ID,Washington County,,Sequestration,-539.4
+August,2019,State,Onshore,Geothermal,ID,Washington County,Geothermal,Rents & Bonuses,"8,700.00"
+August,2019,State,Onshore,Geothermal,NM,Dona Ana County,,Sequestration,-43.81
+August,2019,State,Onshore,Geothermal,NM,Dona Ana County,Geothermal,Other Distributions,706.63
+August,2019,State,Onshore,Geothermal,NV,Churchill County,,Sequestration,"-7,122.04"
+August,2019,State,Onshore,Geothermal,NV,Churchill County,Geothermal,Other Distributions,35.28
+August,2019,State,Onshore,Geothermal,NV,Churchill County,Geothermal,Rents & Bonuses,717.32
+August,2019,State,Onshore,Geothermal,NV,Churchill County,Geothermal,Royalties,"114,119.04"
+August,2019,State,Onshore,Geothermal,NV,Eureka County,,Sequestration,-13.89
+August,2019,State,Onshore,Geothermal,NV,Eureka County,Geothermal,Royalties,224
+August,2019,State,Onshore,Geothermal,NV,Humboldt County,,Sequestration,-255.6
+August,2019,State,Onshore,Geothermal,NV,Humboldt County,Geothermal,Rents & Bonuses,"4,122.50"
+August,2019,State,Onshore,Geothermal,NV,Lander County,,Sequestration,"-1,893.04"
+August,2019,State,Onshore,Geothermal,NV,Lander County,Geothermal,Other Distributions,311.25
+August,2019,State,Onshore,Geothermal,NV,Lander County,Geothermal,Rents & Bonuses,204.27
+August,2019,State,Onshore,Geothermal,NV,Lander County,Geothermal,Royalties,"30,017.45"
+August,2019,State,Onshore,Geothermal,NV,Lyon County,,Sequestration,-282.72
+August,2019,State,Onshore,Geothermal,NV,Lyon County,Geothermal,Rents & Bonuses,"4,560.00"
+August,2019,State,Onshore,Geothermal,NV,Mineral County,Geothermal,Rents & Bonuses,-92.06
+August,2019,State,Onshore,Geothermal,NV,Mineral County,Geothermal,Royalties,92.06
+August,2019,State,Onshore,Geothermal,NV,Pershing County,,Sequestration,-470.24
+August,2019,State,Onshore,Geothermal,NV,Pershing County,Geothermal,Other Distributions,"8,849.25"
+August,2019,State,Onshore,Geothermal,NV,Pershing County,Geothermal,Rents & Bonuses,"-1,337.85"
+August,2019,State,Onshore,Geothermal,NV,Pershing County,Geothermal,Royalties,73.09
+August,2019,State,Onshore,Geothermal,NV,Washoe County,,Sequestration,-89.83
+August,2019,State,Onshore,Geothermal,NV,Washoe County,Geothermal,Royalties,"1,448.84"
+August,2019,State,Onshore,Geothermal,UT,Beaver County,,Sequestration,-762.72
+August,2019,State,Onshore,Geothermal,UT,Beaver County,Geothermal,Rents & Bonuses,"1,411.83"
+August,2019,State,Onshore,Geothermal,UT,Beaver County,Geothermal,Royalties,"10,890.15"
+August,2019,State,Onshore,Geothermal,UT,Millard County,,Sequestration,-430.16
+August,2019,State,Onshore,Geothermal,UT,Millard County,Geothermal,Rents & Bonuses,"6,116.91"
+August,2019,State,Onshore,Geothermal,UT,Millard County,Geothermal,Royalties,821.12
+August,2019,State,Onshore,State,AK,,,Other Distributions,44.82
+August,2019,State,Onshore,State,AK,,,Royalties,"-11,961.93"
+August,2019,State,Onshore,State,AK,,,Sequestration,"-149,578.40"
+August,2019,State,Onshore,State,AK,,Gas,Royalties,"405,098.95"
+August,2019,State,Onshore,State,AK,,Oil,Other Distributions,"21,773.34"
+August,2019,State,Onshore,State,AK,,Oil,Royalties,"1,940,288.71"
+August,2019,State,Onshore,State,AK,,Oil & Gas,Other Distributions,"54,615.77"
+August,2019,State,Onshore,State,AK,,Oil & Gas,Rents & Bonuses,"2,695.17"
+August,2019,State,Onshore,State,AL,,,Royalties,-190.48
+August,2019,State,Onshore,State,AL,,,Sequestration,-725.27
+August,2019,State,Onshore,State,AL,,Coal,Royalties,"7,637.26"
+August,2019,State,Onshore,State,AL,,Gas,Royalties,"2,724.54"
+August,2019,State,Onshore,State,AL,,Oil,Royalties,"1,542.60"
+August,2019,State,Onshore,State,AL,,Oil & Gas,Other Distributions,-28.7
+August,2019,State,Onshore,State,AL,,Oil & Gas,Royalties,12.8
+August,2019,State,Onshore,State,AR,,,Other Distributions,24.21
+August,2019,State,Onshore,State,AR,,,Royalties,-590
+August,2019,State,Onshore,State,AR,,,Sequestration,"-4,635.07"
+August,2019,State,Onshore,State,AR,,Gas,Royalties,"66,872.21"
+August,2019,State,Onshore,State,AR,,Hardrock,Other Distributions,-0.52
+August,2019,State,Onshore,State,AR,,Oil,Royalties,2.19
+August,2019,State,Onshore,State,AR,,Oil & Gas,Other Distributions,"7,576.44"
+August,2019,State,Onshore,State,AR,,Oil & Gas,Rents & Bonuses,874.02
+August,2019,State,Onshore,State,AR,,Quartz,Royalties,0.52
+August,2019,State,Onshore,State,CA,,,Other Distributions,0.96
+August,2019,State,Onshore,State,CA,,,Royalties,"-51,468.09"
+August,2019,State,Onshore,State,CA,,,Sequestration,"-156,360.14"
+August,2019,State,Onshore,State,CA,,Gas,Royalties,"27,820.50"
+August,2019,State,Onshore,State,CA,,Geothermal,Other Distributions,"2,431.00"
+August,2019,State,Onshore,State,CA,,Geothermal,Royalties,"316,868.23"
+August,2019,State,Onshore,State,CA,,Oil,Other Distributions,-0.03
+August,2019,State,Onshore,State,CA,,Oil,Royalties,"1,839,428.76"
+August,2019,State,Onshore,State,CA,,Oil & Gas,Other Distributions,"2,417.52"
+August,2019,State,Onshore,State,CA,,Oil & Gas,Rents & Bonuses,"2,400.00"
+August,2019,State,Onshore,State,CA,,Sodium,Other Distributions,0.31
+August,2019,State,Onshore,State,CA,,Sodium,Rents & Bonuses,38.76
+August,2019,State,Onshore,State,CA,,Sodium,Royalties,"381,999.86"
+August,2019,State,Onshore,State,CO,,,Other Distributions,398.75
+August,2019,State,Onshore,State,CO,,,Royalties,"-100,777.41"
+August,2019,State,Onshore,State,CO,,,Sequestration,"-306,262.34"
+August,2019,State,Onshore,State,CO,,Coal,Other Distributions,"11,760.07"
+August,2019,State,Onshore,State,CO,,Coal,Rents & Bonuses,"2,068.50"
+August,2019,State,Onshore,State,CO,,Coal,Royalties,"1,209,002.01"
+August,2019,State,Onshore,State,CO,,Gas,Royalties,"1,117,634.92"
+August,2019,State,Onshore,State,CO,,Oil,Royalties,"1,346,160.13"
+August,2019,State,Onshore,State,CO,,Oil & Gas,Other Distributions,"-880,032.88"
+August,2019,State,Onshore,State,CO,,Oil & Gas,Rents & Bonuses,"102,121.70"
+August,2019,State,Onshore,State,CO,,Oil & Gas,Royalties,"2,035,277.48"
+August,2019,State,Onshore,State,CO,,Sodium,Royalties,"96,101.88"
+August,2019,State,Onshore,State,FL,,,Royalties,-408.97
+August,2019,State,Onshore,State,FL,,,Sequestration,"-1,242.44"
+August,2019,State,Onshore,State,FL,,Phosphate,Royalties,"20,448.40"
+August,2019,State,Onshore,State,ID,,,Other Distributions,0.6
+August,2019,State,Onshore,State,ID,,,Royalties,"-5,187.55"
+August,2019,State,Onshore,State,ID,,,Sequestration,"-15,759.79"
+August,2019,State,Onshore,State,ID,,Geothermal,Rents & Bonuses,"61,373.75"
+August,2019,State,Onshore,State,ID,,Phosphate,Other Distributions,"7,724.02"
+August,2019,State,Onshore,State,ID,,Phosphate,Rents & Bonuses,-213
+August,2019,State,Onshore,State,ID,,Phosphate,Royalties,"190,492.23"
+August,2019,State,Onshore,State,IL,,,Sequestration,-335.55
+August,2019,State,Onshore,State,IL,,Oil,Royalties,"5,412.09"
+August,2019,State,Onshore,State,KS,,,Royalties,"-1,091.96"
+August,2019,State,Onshore,State,KS,,,Sequestration,"-3,317.36"
+August,2019,State,Onshore,State,KS,,Gas,Royalties,"16,816.02"
+August,2019,State,Onshore,State,KS,,Oil,Royalties,"32,527.57"
+August,2019,State,Onshore,State,KS,,Oil & Gas,Other Distributions,"4,951.05"
+August,2019,State,Onshore,State,KS,,Oil & Gas,Rents & Bonuses,299.5
+August,2019,State,Onshore,State,KS,,Oil & Gas,Royalties,3.68
+August,2019,State,Onshore,State,KY,,,Sequestration,-606.41
+August,2019,State,Onshore,State,KY,,Gas,Royalties,293.08
+August,2019,State,Onshore,State,KY,,Oil & Gas,Other Distributions,"9,487.78"
+August,2019,State,Onshore,State,LA,,,Other Distributions,0.07
+August,2019,State,Onshore,State,LA,,,Royalties,"-5,548.57"
+August,2019,State,Onshore,State,LA,,,Sequestration,"-22,796.49"
+August,2019,State,Onshore,State,LA,,Gas,Royalties,"301,397.96"
+August,2019,State,Onshore,State,LA,,Oil,Royalties,"54,032.10"
+August,2019,State,Onshore,State,LA,,Oil & Gas,Other Distributions,679.87
+August,2019,State,Onshore,State,LA,,Oil & Gas,Rents & Bonuses,"17,124.00"
+August,2019,State,Onshore,State,MI,,,Royalties,-17.92
+August,2019,State,Onshore,State,MI,,,Sequestration,-54.44
+August,2019,State,Onshore,State,MI,,Gas,Royalties,895.64
+August,2019,State,Onshore,State,MI,,Oil & Gas,Other Distributions,0.36
+August,2019,State,Onshore,State,MO,,,Sequestration,"-5,702.79"
+August,2019,State,Onshore,State,MO,,Copper,Royalties,"20,079.67"
+August,2019,State,Onshore,State,MO,,Lead/Zinc,Royalties,"71,900.78"
+August,2019,State,Onshore,State,MS,,,Royalties,-8.68
+August,2019,State,Onshore,State,MS,,,Sequestration,"-3,772.22"
+August,2019,State,Onshore,State,MS,,Gas,Royalties,75.65
+August,2019,State,Onshore,State,MS,,Oil,Royalties,"38,326.77"
+August,2019,State,Onshore,State,MS,,Oil & Gas,Rents & Bonuses,"22,448.50"
+August,2019,State,Onshore,State,MT,,,Other Distributions,28.67
+August,2019,State,Onshore,State,MT,,,Royalties,"-52,299.31"
+August,2019,State,Onshore,State,MT,,,Sequestration,"-158,887.09"
+August,2019,State,Onshore,State,MT,,Coal,Rents & Bonuses,711
+August,2019,State,Onshore,State,MT,,Coal,Royalties,"1,140,813.35"
+August,2019,State,Onshore,State,MT,,Gas,Royalties,"186,559.35"
+August,2019,State,Onshore,State,MT,,Oil,Royalties,"141,545.28"
+August,2019,State,Onshore,State,MT,,Oil & Gas,Other Distributions,"15,780.38"
+August,2019,State,Onshore,State,MT,,Oil & Gas,Rents & Bonuses,"1,129,527.00"
+August,2019,State,Onshore,State,MT,,Oil & Gas,Royalties,29.27
+August,2019,State,Onshore,State,ND,,,Other Distributions,2.77
+August,2019,State,Onshore,State,ND,,,Royalties,"-48,920.09"
+August,2019,State,Onshore,State,ND,,,Sequestration,"-496,721.38"
+August,2019,State,Onshore,State,ND,,Coal,Other Distributions,2.58
+August,2019,State,Onshore,State,ND,,Coal,Royalties,"72,055.97"
+August,2019,State,Onshore,State,ND,,Gas,Royalties,"488,446.40"
+August,2019,State,Onshore,State,ND,,Oil,Other Distributions,0
+August,2019,State,Onshore,State,ND,,Oil,Royalties,"7,305,991.69"
+August,2019,State,Onshore,State,ND,,Oil & Gas,Other Distributions,"191,638.75"
+August,2019,State,Onshore,State,ND,,Oil & Gas,Rents & Bonuses,"2,417.00"
+August,2019,State,Onshore,State,NE,,,Royalties,-22.23
+August,2019,State,Onshore,State,NE,,,Sequestration,-67.53
+August,2019,State,Onshore,State,NE,,Oil,Royalties,696.07
+August,2019,State,Onshore,State,NE,,Oil & Gas,Other Distributions,415.42
+August,2019,State,Onshore,State,NM,,,Other Distributions,102.18
+August,2019,State,Onshore,State,NM,,,Royalties,"-1,319,522.52"
+August,2019,State,Onshore,State,NM,,,Sequestration,"-4,008,715.73"
+August,2019,State,Onshore,State,NM,,Coal,Other Distributions,"1,508.99"
+August,2019,State,Onshore,State,NM,,Coal,Rents & Bonuses,"2,947.50"
+August,2019,State,Onshore,State,NM,,Coal,Royalties,"295,140.19"
+August,2019,State,Onshore,State,NM,,Gas,Royalties,"10,999,490.59"
+August,2019,State,Onshore,State,NM,,Geothermal,Other Distributions,"1,413.26"
+August,2019,State,Onshore,State,NM,,Oil,Other Distributions,"2,241.03"
+August,2019,State,Onshore,State,NM,,Oil,Royalties,"51,751,767.44"
+August,2019,State,Onshore,State,NM,,Oil & Gas,Other Distributions,"2,572,659.21"
+August,2019,State,Onshore,State,NM,,Oil & Gas,Rents & Bonuses,"23,198.80"
+August,2019,State,Onshore,State,NM,,Oil & Gas,Royalties,"34,021.58"
+August,2019,State,Onshore,State,NM,,Potassium,Other Distributions,"3,545.01"
+August,2019,State,Onshore,State,NM,,Potassium,Royalties,"286,730.53"
+August,2019,State,Onshore,State,NM,,Sodium,Royalties,"1,461.55"
+August,2019,State,Onshore,State,NV,,,Other Distributions,"1,170.86"
+August,2019,State,Onshore,State,NV,,,Royalties,"-7,580.07"
+August,2019,State,Onshore,State,NV,,,Sequestration,"-23,100.83"
+August,2019,State,Onshore,State,NV,,Geothermal,Other Distributions,"18,391.58"
+August,2019,State,Onshore,State,NV,,Geothermal,Rents & Bonuses,"16,348.31"
+August,2019,State,Onshore,State,NV,,Geothermal,Royalties,"291,949.41"
+August,2019,State,Onshore,State,NV,,Oil,Royalties,"28,288.33"
+August,2019,State,Onshore,State,NV,,Oil & Gas,Other Distributions,160
+August,2019,State,Onshore,State,NV,,Oil & Gas,Rents & Bonuses,"23,865.50"
+August,2019,State,Onshore,State,OH,,,Royalties,-0.83
+August,2019,State,Onshore,State,OH,,,Sequestration,"-1,080.39"
+August,2019,State,Onshore,State,OH,,Gas,Royalties,"13,609.32"
+August,2019,State,Onshore,State,OH,,Oil,Royalties,"3,286.94"
+August,2019,State,Onshore,State,OH,,Oil & Gas,Other Distributions,469.62
+August,2019,State,Onshore,State,OH,,Oil & Gas,Rents & Bonuses,60.76
+August,2019,State,Onshore,State,OK,,,Other Distributions,36.82
+August,2019,State,Onshore,State,OK,,,Sequestration,"-6,242.83"
+August,2019,State,Onshore,State,OK,,Gas,Royalties,"83,954.72"
+August,2019,State,Onshore,State,OK,,Hardrock,Other Distributions,-0.13
+August,2019,State,Onshore,State,OK,,Hardrock,Rents & Bonuses,-11.32
+August,2019,State,Onshore,State,OK,,Oil,Royalties,"6,436.50"
+August,2019,State,Onshore,State,OK,,Oil & Gas,Other Distributions,"10,015.09"
+August,2019,State,Onshore,State,OK,,Oil & Gas,Rents & Bonuses,259
+August,2019,State,Onshore,State,OK,,Quartz,Royalties,0.13
+August,2019,State,Onshore,State,PA,,,Sequestration,-235.83
+August,2019,State,Onshore,State,PA,,Gas,Royalties,"3,422.42"
+August,2019,State,Onshore,State,PA,,Oil & Gas,Other Distributions,381.22
+August,2019,State,Onshore,State,SD,,,Royalties,"-1,046.68"
+August,2019,State,Onshore,State,SD,,,Sequestration,"-3,179.82"
+August,2019,State,Onshore,State,SD,,Gas,Royalties,"1,081.93"
+August,2019,State,Onshore,State,SD,,Oil,Royalties,"27,690.89"
+August,2019,State,Onshore,State,SD,,Oil & Gas,Other Distributions,999.29
+August,2019,State,Onshore,State,SD,,Oil & Gas,Rents & Bonuses,"22,562.00"
+August,2019,State,Onshore,State,TX,,,Royalties,-71.35
+August,2019,State,Onshore,State,TX,,,Sequestration,"-14,345.14"
+August,2019,State,Onshore,State,TX,,Gas,Royalties,"216,082.28"
+August,2019,State,Onshore,State,TX,,Oil,Royalties,"11,355.62"
+August,2019,State,Onshore,State,TX,,Oil & Gas,Other Distributions,"3,258.54"
+August,2019,State,Onshore,State,TX,,Oil & Gas,Rents & Bonuses,748
+August,2019,State,Onshore,State,UT,,,Other Distributions,0.82
+August,2019,State,Onshore,State,UT,,,Royalties,"-115,299.92"
+August,2019,State,Onshore,State,UT,,,Sequestration,"-353,033.27"
+August,2019,State,Onshore,State,UT,,Coal,Other Distributions,"186,095.04"
+August,2019,State,Onshore,State,UT,,Coal,Rents & Bonuses,"1,723,141.50"
+August,2019,State,Onshore,State,UT,,Coal,Royalties,"731,986.59"
+August,2019,State,Onshore,State,UT,,Gas,Royalties,"771,958.40"
+August,2019,State,Onshore,State,UT,,Geothermal,Rents & Bonuses,"15,057.51"
+August,2019,State,Onshore,State,UT,,Geothermal,Royalties,"23,422.65"
+August,2019,State,Onshore,State,UT,,Gilsonite,Other Distributions,717
+August,2019,State,Onshore,State,UT,,Gilsonite,Rents & Bonuses,119.5
+August,2019,State,Onshore,State,UT,,Gilsonite,Royalties,"103,274.03"
+August,2019,State,Onshore,State,UT,,Oil,Royalties,"2,127,694.34"
+August,2019,State,Onshore,State,UT,,Oil & Gas,Other Distributions,"31,324.85"
+August,2019,State,Onshore,State,UT,,Oil & Gas,Rents & Bonuses,"47,597.35"
+August,2019,State,Onshore,State,UT,,Oil & Gas,Royalties,"7,428.23"
+August,2019,State,Onshore,State,UT,,Oil Shale,Rents & Bonuses,160
+August,2019,State,Onshore,State,UT,,Potassium,Other Distributions,-0.01
+August,2019,State,Onshore,State,UT,,Potassium,Rents & Bonuses,0
+August,2019,State,Onshore,State,UT,,Potassium,Royalties,"39,060.48"
+August,2019,State,Onshore,State,UT,,Sodium,Royalties,346.63
+August,2019,State,Onshore,State,VA,,,Sequestration,-18.37
+August,2019,State,Onshore,State,VA,,Gas,Royalties,262.26
+August,2019,State,Onshore,State,VA,,Oil & Gas,Other Distributions,34.06
+August,2019,State,Onshore,State,WV,,,Sequestration,-147.3
+August,2019,State,Onshore,State,WV,,Gas,Royalties,247.4
+August,2019,State,Onshore,State,WV,,Oil & Gas,Other Distributions,"2,128.42"
+August,2019,State,Onshore,State,WY,,,Other Distributions,589.09
+August,2019,State,Onshore,State,WY,,,Royalties,"-1,678,880.61"
+August,2019,State,Onshore,State,WY,,,Sequestration,"-5,100,475.82"
+August,2019,State,Onshore,State,WY,,Coal,Rents & Bonuses,"-1,782.01"
+August,2019,State,Onshore,State,WY,,Coal,Royalties,"11,688,346.78"
+August,2019,State,Onshore,State,WY,,Gas,Royalties,"9,620,447.30"
+August,2019,State,Onshore,State,WY,,Oil,Other Distributions,-244.5
+August,2019,State,Onshore,State,WY,,Oil,Royalties,"14,197,047.56"
+August,2019,State,Onshore,State,WY,,Oil & Gas,Other Distributions,"304,871.73"
+August,2019,State,Onshore,State,WY,,Oil & Gas,Rents & Bonuses,"44,045,506.68"
+August,2019,State,Onshore,State,WY,,Oil & Gas,Royalties,"24,078.52"
+August,2019,State,Onshore,State,WY,,Sodium,Rents & Bonuses,"2,450,303.65"
+August,2019,State,Onshore,State,WY,,Sodium,Royalties,"1,615,454.94"
+August,2019,U.S. Treasury,Onshore,,,,,Other Distributions,"27,403.90"
+August,2019,U.S. Treasury,Offshore,,,,Oil & Gas,Other Distributions,"314,039.89"
+August,2019,U.S. Treasury,Offshore,GoMESA,,,Oil & Gas,Rents & Bonuses,"14,729.28"
+August,2019,U.S. Treasury,Offshore,GoMESA,,,Oil & Gas,Royalties,79.81
+August,2019,U.S. Treasury,Onshore,,,,Coal,Other Distributions,"1,952.06"
+August,2019,U.S. Treasury,Onshore,,,,Geothermal,Other Distributions,18.25
+August,2019,U.S. Treasury,Onshore,,,,Oil & Gas,Other Distributions,"153,163.86"
+August,2019,U.S. Treasury,Onshore,,,,Phosphate,Other Distributions,29.9
+August,2019,U.S. Treasury,Onshore,,,,Potassium,Other Distributions,709.01
+August,2019,U.S. Treasury,Onshore,,,,Sodium,Other Distributions,0.06
+August,2019,U.S. Treasury,Offshore,,,,,Other Distributions,886.32
+August,2019,U.S. Treasury,Onshore,,,,Coal,Rents & Bonuses,"344,000.00"
+August,2019,U.S. Treasury,Onshore,,,,Geothermal,Rents & Bonuses,"46,389.80"
+August,2019,U.S. Treasury,Onshore,,,,Oil & Gas,Rents & Bonuses,"9,025,478.38"
+August,2019,U.S. Treasury,Onshore,,,,Sodium,Rents & Bonuses,"490,060.73"
+August,2019,U.S. Treasury,Offshore,,,,,Royalties,"68,198.44"
+August,2019,U.S. Treasury,Offshore,,,,Oil & Gas,Rents & Bonuses,"255,206.58"
+August,2019,U.S. Treasury,Offshore,GoMESA,,,Oil & Gas,Rents & Bonuses,"76,223,288.94"
+August,2019,U.S. Treasury,Offshore,,,,Gas,Other Distributions,"11,471.65"
+August,2019,U.S. Treasury,Offshore,,,,Gas,Royalties,"22,995,514.37"
+August,2019,U.S. Treasury,Offshore,,,,Oil,Other Distributions,"-329,833.24"
+August,2019,U.S. Treasury,Offshore,,,,Oil,Royalties,"338,273,469.75"
+August,2019,U.S. Treasury,Offshore,,,,Oil & Gas,Other Distributions,"-3,407,456.41"
+August,2019,U.S. Treasury,Offshore,,,,Oil & Gas,Royalties,5.91
+August,2019,U.S. Treasury,Offshore,GoMESA,,,Gas,Royalties,"2,122,292.12"
+August,2019,U.S. Treasury,Offshore,GoMESA,,,Oil,Royalties,"28,169,745.99"
+August,2019,U.S. Treasury,Offshore,GoMESA,,,Oil & Gas,Royalties,"-1,431,415.09"
+August,2019,U.S. Treasury,Onshore,,,,,Other Distributions,"-2,400.62"
+August,2019,U.S. Treasury,Onshore,,,,,Royalties,"3,400,895.17"
+August,2019,U.S. Treasury,Onshore,,,,Clay,Royalties,"1,009.17"
+August,2019,U.S. Treasury,Onshore,,,,Coal,Other Distributions,"37,921.25"
+August,2019,U.S. Treasury,Onshore,,,,Coal,Royalties,"3,052,455.02"
+August,2019,U.S. Treasury,Onshore,,,,Gas,Royalties,"5,535,605.21"
+August,2019,U.S. Treasury,Onshore,,,,Geothermal,Other Distributions,"11,099.67"
+August,2019,U.S. Treasury,Onshore,,,,Geothermal,Royalties,"316,120.12"
+August,2019,U.S. Treasury,Onshore,,,,Gilsonite,Other Distributions,143.4
+August,2019,U.S. Treasury,Onshore,,,,Gilsonite,Royalties,"20,654.81"
+August,2019,U.S. Treasury,Onshore,,,,Oil,Other Distributions,"22,172.67"
+August,2019,U.S. Treasury,Onshore,,,,Oil,Royalties,"19,981,370.38"
+August,2019,U.S. Treasury,Onshore,,,,Oil & Gas,Other Distributions,"320,635.55"
+August,2019,U.S. Treasury,Onshore,,,,Oil & Gas,Royalties,"420,383.53"
+August,2019,U.S. Treasury,Onshore,,,,Phosphate,Other Distributions,"1,514.90"
+August,2019,U.S. Treasury,Onshore,,,,Phosphate,Royalties,"42,188.12"
+August,2019,U.S. Treasury,Onshore,,,,Potassium,Royalties,"58,104.61"
+August,2019,U.S. Treasury,Onshore,,,,Sodium,Royalties,"419,003.69"
+August,2019,U.S. TreasuryAI,Onshore,,,,Gas,Royalties,"2,318.75"
+August,2019,U.S. TreasuryAI,Onshore,,,,Oil,Royalties,218.75
+August,2019,U.S. TreasuryAI,Onshore,,,,Oil & Gas,Other Distributions,642.17
+August,2019,U.S. TreasuryAI,Onshore,,,,Oil,Royalties,954.11

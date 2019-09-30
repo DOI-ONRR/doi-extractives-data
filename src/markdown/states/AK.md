@@ -27,12 +27,12 @@ locality_name: 'Borough or census area'
 nearby_offshore_region: '<Link to="/explore/offshore-alaska/">offshore Alaska</Link>'
 
 case_study_link: |
-    For a detailed view of how oil extraction affects communities in Alaska, read the [North Slope Borough case study](/case-studies/north-slope/).
+    For a detailed view of how oil extraction affects communities in Alaska, read the [North Slope Borough case study](/archive/case-studies/north-slope/).
 
 state_optin_intro: |
     To understand the extractive industries in Alaska, learn about Alaska's unique [land ownership](#understanding-land-ownership), [trust funds](#saving-and-spending), and [revenue sustainability considerations](#revenue-sustainability).
 state_production: |
-    Most of Alaska's crude oil production takes place in the [North Slope Borough](/case-studies/north-slope/), where exploration, drilling, and transportation costs are high, but high volume and the Trans-Alaska Pipeline make commercial drilling feasible.
+    Most of Alaska's crude oil production takes place in the [North Slope Borough](/archive/case-studies/north-slope/), where exploration, drilling, and transportation costs are high, but high volume and the Trans-Alaska Pipeline make commercial drilling feasible.
 
     About three-fourths of Alaska's natural gas withdrawals are consumed on site after extraction, because it is not commercially feasible to transport to distant markets. For more information about the Alaska Natural Gas pipeline, see the Federal Energy Regulatory Commission's [Alaska Natural Gas Transportation Projects](https://www.ferc.gov/industries/gas/indus-act/angtp.asp).
 
@@ -163,7 +163,7 @@ Alaska has two [local government structures (PDF)](https://www.commerce.alaska.g
 
 In addition to generating [revenue](#revenue) and [economic activity](#economic-impact), extractive industries can bring costs to state and local communities. Development and activity related to the extractive industries are concentrated on Alaska's northern coast, so attention to costs is concentrated in that part of the state.
 
-For a holistic look at how the North Slope Borough has met the transportation, water, emergency services, and reclamation needs of extractive industries, see [the North Slope Borough case study](/case-studies/north-slope/#costs).
+For a holistic look at how the North Slope Borough has met the transportation, water, emergency services, and reclamation needs of extractive industries, see [the North Slope Borough case study](/archive/case-studies/north-slope/#costs).
 
 Multiple organizations in the Alaska state government work on the reclamation and remediation of sites related to extraction. The Alaska state government invests significant tax dollars to prevent and respond to oil and hazardous substance emergencies, including reclamation services such as managing contaminated drilling sites. The [Oil and Hazardous Substance Release Prevention and Response Fund](https://dec.alaska.gov/spar/rfa/history.htm) imposes a 4 cent surcharge per barrel of oil for prevention, and a 1 cent surcharge per barrel of oil for response. The [Division of Spill Prevention and Response (SPAR)](https://dec.alaska.gov/spar/) had a total operating budget of $19.9 million in fiscal year 2016. $12.3 million of that went to spill prevention and response in fiscal year 2016.
 

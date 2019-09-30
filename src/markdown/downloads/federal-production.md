@@ -79,19 +79,27 @@ The federal government rarely gets 100% of “mixed exploratory” volumes. You 
 _Year_
 * _Calendar Year_ is the period between January 1 and December 31 for a given year.
 * _Fiscal year_ The year the production occurred. The federal fiscal year runs from October 1 of the prior year through September 30 of the year being described. For example, Fiscal Year 2018 is between October 1, 2017, and September 30, 2018.
-* _Land Category_
+
+_Land Category_
   * _Onshore_ Situated or occurring on land.
   * _Offshore_ Submerged lands located farther than three miles off a state’s coastline, or three marine leagues into the Gulf of Mexico off of Texas and Western Florida.
-* _Land Class_
+
+_Land Class_
   * _Federal_ Federal lands are owned by or under the jurisdiction of the federal government, including: Public domain lands, acquired lands, military acquired lands, and Outer Continental Shelf.
   * _Native American_ includes Tribal lands held in trust by the federal government for a tribe’s use, and allotments held in trust by the federal government for individual Native American use.
   * _Mixed Exploratory_ is a temporary jurisdictional unit that is used until production is proven on that location (see above).
-* _State_ The state where the production occurred.
-* _County_ The county where the production occurred.
-* _FIPS Code_ Federal Information Processing Standard (FIPS) code is a five-digit code which uniquely identifies counties and county equivalents in the U.S., certain U.S. possessions, and certain freely associated states. The first two digits are the FIPS state code and the last three are the county code within the state or possession.
-* _Offshore Region_ BOEM separates offshore areas into four regions: Gulf of Mexico, Atlantic, Pacific, and Alaska. For more information on offshore regions, including spatial boundaries, see BOEM's [maps and GIS data](http://www.boem.gov/Maps-and-GIS-Data/).
-* _Offshore Planning Area_ Offshore regions are broken out into planning areas. There are more offshore planning areas than are represented in our data. Those not represented had no production during the time period. For more information on offshore planning areas, including spatial boundaries, see the Bureau of Ocean Energy Management's (BOEM) [maps and GIS data](http://www.boem.gov/Maps-and-GIS-Data/).
-* _Product_ Products are listed individually but may also fall into like categories.
+
+_State_ The state where the production occurred.
+
+_County_ The county where the production occurred.
+
+_FIPS Code_ Federal Information Processing Standard (FIPS) code is a five-digit code which uniquely identifies counties and county equivalents in the U.S., certain U.S. possessions, and certain freely associated states. The first two digits are the FIPS state code and the last three are the county code within the state or possession.
+
+_Offshore Region_ BOEM separates offshore areas into four regions: Gulf of Mexico, Atlantic, Pacific, and Alaska. For more information on offshore regions, including spatial boundaries, see BOEM's [maps and GIS data](http://www.boem.gov/Maps-and-GIS-Data/).
+
+_Offshore Planning Area_ Offshore regions are broken out into planning areas. There are more offshore planning areas than are represented in our data. Those not represented had no production during the time period. For more information on offshore planning areas, including spatial boundaries, see the Bureau of Ocean Energy Management's (BOEM) [maps and GIS data](http://www.boem.gov/Maps-and-GIS-Data/).
+
+_Product_ Products are listed individually but may also fall into like categories.
   * _Anhydrous Sodium Sulfate_ (tons)
   * _Borate Products_ (tons) include Borax-Anhydrous, Borax-Decahydrate, Borax-Pentahydrate, and Boric Acid
   * _Brine Products_ include Brine Barrels (converted to tons equivalent) and Magnesium Chloride Brine
@@ -138,6 +146,7 @@ _Year_
   * _Sodium Bi-Carbonate_ (tons)
   * _Sodium Products_ (tons) include Anhydrous Sodium Sulfate, Sodium Bisulfite, Sodium Decahydrate, Sodium Sesquicarbonate, Sulfide, and Trona Ore
   * _Zinc Concentrate_ (tons)
-* _Volume_ Shows the production volume (amount produced). The units for volume are shown in the preceding field (Product).
+
+_Volume_ Shows the production volume (amount produced). The units for volume are shown in the preceding field (Product).
 
 ## Contact us

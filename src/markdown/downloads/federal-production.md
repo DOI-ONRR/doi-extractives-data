@@ -79,12 +79,12 @@ The federal government rarely gets 100% of “mixed exploratory” volumes. You 
 _Year_
 * _Calendar Year_ is the period between January 1 and December 31 for a given year.
 * _Fiscal year_ The year the production occurred. The federal fiscal year runs from October 1 of the prior year through September 30 of the year being described. For example, Fiscal Year 2018 is between October 1, 2017, and September 30, 2018.
-_Land Category_
-* _Onshore_ Situated or occurring on land.
-* _Offshore_ Submerged lands located farther than three miles off a state’s coastline, or three marine leagues into the Gulf of Mexico off of Texas and Western Florida.
-_Land Class_
-* _Federal_ Federal lands are owned by or under the jurisdiction of the federal government, including: Public domain lands, acquired lands, military acquired lands, and Outer Continental Shelf.
-* _Native American_ includes Tribal lands held in trust by the federal government for a tribe’s use, and allotments held in trust by the federal government for individual Native American use.
+* _Land Category_
+  * _Onshore_ Situated or occurring on land.
+  * _Offshore_ Submerged lands located farther than three miles off a state’s coastline, or three marine leagues into the Gulf of Mexico off of Texas and Western Florida.
+* _Land Class_
+  * _Federal_ Federal lands are owned by or under the jurisdiction of the federal government, including: Public domain lands, acquired lands, military acquired lands, and Outer Continental Shelf.
+  * _Native American_ includes Tribal lands held in trust by the federal government for a tribe’s use, and allotments held in trust by the federal government for individual Native American use.
 _State_ The state where the production occurred.
 _County_ The county where the production occurred.
 _FIPS Code_ Federal Information Processing Standard (FIPS) code is a five-digit code which uniquely identifies counties and county equivalents in the U.S., certain U.S. possessions, and certain freely associated states. The first two digits are the FIPS state code and the last three are the county code within the state or possession.

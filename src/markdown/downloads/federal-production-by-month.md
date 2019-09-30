@@ -57,9 +57,9 @@ _Land Category_ This field distinguishes between onshore and offshore production
 
 _Commodity_ We have monthly data for oil, gas, and coal, since these are high-volume commodities that result in the most revenue. This field includes the units for each commodity in parentheses.
 
-- _Oil Prod Vol (bbl)_ Oil production is measured in barrels (bbl)
-- _Gas Prod Vol (Mcf)_ Gas (natural gas) is measured in thousand cubic feet (mcf)
-- _Coal Prod Vol (ton)_ Coal is measured in tons. A ton is 2000 pounds.
+  - _Oil Prod Vol (bbl)_ Oil production is measured in barrels (bbl)
+  - _Gas Prod Vol (Mcf)_ Gas (natural gas) is measured in thousand cubic feet (mcf)
+  - _Coal Prod Vol (ton)_ Coal is measured in tons. A ton is 2000 pounds.
 
 _Volume_ Shows the production volume (amount produced). The units for volume are shown in the preceding field (Commodity).
 

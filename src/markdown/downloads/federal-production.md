@@ -68,7 +68,7 @@ We can only compare production that is reported in the same unit. The standard u
 To build our data visualizations, we've aggregated production from two types of jurisdictions: “federal” and “mixed exploratory.”
 
 * Federal production is production from federal lands and waters.
-* "Mixed exploratory” is a temporary jurisdictional unit that is used until production is proven on that location. BLM then creates a permanent unit with allocation schedules that may split that area between federal and other ownership. Payors then resubmit royalties based on the new unit  allocations. These royalties are retroactive to the first production.
+* “Mixed exploratory” is a temporary jurisdictional unit that is used until production is proven on that location. BLM then creates a permanent unit with allocation schedules that may split that area between federal and other ownership. Payors then resubmit royalties based on the new unit allocations. These royalties are retroactive to the first production.
 
 The federal government rarely gets 100% of “mixed exploratory” volumes. You can see these categories disaggregated in the federal production dataset, downloadable on this page.
 
@@ -85,6 +85,7 @@ _Year_
 * _Land Class_
   * _Federal_ Federal lands are owned by or under the jurisdiction of the federal government, including: Public domain lands, acquired lands, military acquired lands, and Outer Continental Shelf.
   * _Native American_ includes Tribal lands held in trust by the federal government for a tribe’s use, and allotments held in trust by the federal government for individual Native American use.
+  * _Mixed Exploratory_ is a temporary jurisdictional unit that is used until production is proven on that location (see above).
 * _State_ The state where the production occurred.
 * _County_ The county where the production occurred.
 * _FIPS Code_ Federal Information Processing Standard (FIPS) code is a five-digit code which uniquely identifies counties and county equivalents in the U.S., certain U.S. possessions, and certain freely associated states. The first two digits are the FIPS state code and the last three are the county code within the state or possession.

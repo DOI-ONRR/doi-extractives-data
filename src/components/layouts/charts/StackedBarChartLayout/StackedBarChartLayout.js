@@ -47,7 +47,7 @@ class StackedBarChartLayout extends React.Component {
   }
 
   getChartLegend () {
-    let { legendTitle, legendDataFormatFunc, sortOrder, styleMap } = this.props
+      let { legendTitle, legendDataFormatFunc, sortOrder, styleMap, showUnits } = this.props
     let { data, legendLabels, selectedDataKey, units } = this.state.dataSet
     let legendData
     if (this.state.barHovered) {
@@ -59,11 +59,14 @@ class StackedBarChartLayout extends React.Component {
       let selectedData = data.find(dataItem => Object.keys(dataItem)[0] === selectedDataKey)
       legendData = selectedData && selectedData[selectedDataKey][0]
     }
-
+      let unitsForValues='';
+      if(showUnits) {
+	  unitsForValues=' ('+units+')';
+      }
     return (
       <ChartLegendStandard
         headerName={legendTitle}
-        headerNameForValues={(legendLabels && legendLabels[selectedDataKey])}
+        headerNameForValues={(legendLabels && legendLabels[selectedDataKey]) +unitsForValues }
         data={legendData}
         dataFormatFunc={legendDataFormatFunc}
         styleMap={styleMap}
@@ -74,12 +77,15 @@ class StackedBarChartLayout extends React.Component {
   }
 
   render () {
-    let { title, sortOrder, styleMap, barSelectedCallback } = this.props
+      let { title, sortOrder, styleMap, barSelectedCallback, showUnits } = this.props
     let { data, selectedDataKey, groupNames, longUnits, xAxisLabels } = this.state.dataSet
-
+      let titleUnits='';
+      if(showUnits) {
+	  titleUnits=' ('+longUnits+')';
+      }
     return (
       <div className={styles.root}>
-        <ChartTitle>{title}</ChartTitle>
+            <ChartTitle>{title} {titleUnits}</ChartTitle>
 
         {this.state.dataSet &&
           <div>

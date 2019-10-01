@@ -323,7 +323,9 @@ class TotalProductionDeprecated extends React.Component {
 
 	        legendDataFormatFunc= {dataFormatFunc || utils.formatToCommaInt}
 
-	        barSelectedCallback= {this.dataKeySelectedHandler.bind(this, dataSetId, this.state[dataSetId].syncId)}
+	      barSelectedCallback= {this.dataKeySelectedHandler.bind(this, dataSetId, this.state[dataSetId].syncId)}
+
+	      showUnits={true}
 
 	      >
 	      </StackedBarChartLayout>

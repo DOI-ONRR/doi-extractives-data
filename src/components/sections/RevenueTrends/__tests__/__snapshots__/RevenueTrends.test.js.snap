@@ -96,7 +96,7 @@ exports[`RevenueTrends renders correctly 1`] = `
         <td
           className="alignRight"
         >
-          $73.80 million
+          $73.82 million
         </td>
       </tr>
       <tr>
@@ -126,7 +126,7 @@ exports[`RevenueTrends renders correctly 1`] = `
         <td
           className="alignRight"
         >
-          $103.00 million
+          $103.46 million
         </td>
       </tr>
       <tr>

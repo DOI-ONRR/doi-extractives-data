@@ -80,7 +80,7 @@ const CustomTableSummaryRow_Item = ({ getMessage, ...restProps }) => {
     <div {...restProps} className={styles.summaryCell}>
       {restProps.children.type
         ? restProps.children.type(restProps)
-        : restProps.value + '-'
+        : (restProps.value)? restProps.value : '-'
       }
     </div>
   )
@@ -129,6 +129,22 @@ const AllTypeProvider = props => {
   )
 }
 
+const VolumeFormatter = ({ value }) => {
+  return (
+    <span>
+      {utils.formatToCommaInt(value)}
+    </span>
+  )
+}
+
+const VolumeTypeProvider = props => {
+  return (
+    <DataTypeProvider
+      formatterComponent={VolumeFormatter}
+      {...props}
+    />
+  )
+}
 class GroupTable extends React.Component {
   constructor (props) {
     super(props)
@@ -137,6 +153,7 @@ class GroupTable extends React.Component {
       columns: props.columns,
       rows: props.rows,
       currencyColumns: props.currencyColumns,
+      volumeColumns: props.volumeColumns,
       allColumns: props.allColumns,
       tableColumnExtension: props.tableColumnExtension,
       columnBands: [],
@@ -164,6 +181,7 @@ class GroupTable extends React.Component {
       rows,
       columns,
       currencyColumns,
+      volumeColumns,
       allColumns,
       tableColumnExtension,
       columnBands,
@@ -189,6 +207,9 @@ class GroupTable extends React.Component {
             <AllTypeProvider
               for={allColumns}
             />
+            <VolumeTypeProvider
+              for={volumeColumns}
+            />
             <SortingState
               defaultSorting={defaultSorting}
             />
@@ -211,9 +232,7 @@ class GroupTable extends React.Component {
               totalRowComponent={CustomTableSummaryRow_TotalRow}
               itemComponent={CustomTableSummaryRow_Item}
             />
-            <TableGroupRow
-              contentComponent={CustomTableGroupRow_Content}
-            />
+            <TableGroupRow/>
             <TableBandHeader
               columnBands={columnBands}
             />

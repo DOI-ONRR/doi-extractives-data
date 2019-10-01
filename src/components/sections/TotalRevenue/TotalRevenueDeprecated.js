@@ -310,7 +310,6 @@ class TotalRevenueDeprecated extends React.Component {
 	  return (
 	    <div is="chart">
 	      <StackedBarChartLayout
-
 	        dataSet= {this.state[dataSetId]}
 
 	        title= {title}
@@ -352,7 +351,7 @@ class TotalRevenueDeprecated extends React.Component {
 		  <div className={styles.toggle}>
 		  Show:
 	            <Toggle action={this.revenueToggleClicked.bind(this)} buttons={[{ key: TOGGLE_VALUES.Year, name: CONSTANTS.YEARLY, default: true },
-			    { key: TOGGLE_VALUES.Month, name: CONSTANTS.MONTHLY }]}></Toggle>
+										    { key: TOGGLE_VALUES.Month, name: CONSTANTS.MONTHLY }]} ></Toggle>
 		  </div>
 		  {(this.state.revenueToggle === TOGGLE_VALUES.Month) ?
 		      <div className={styles.dropdown}>

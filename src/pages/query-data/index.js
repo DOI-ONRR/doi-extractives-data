@@ -5,6 +5,7 @@ import { graphql } from 'gatsby'
 
 import { normalize as normalizeDataSetAction,
   REVENUES_FISCAL_YEAR,
+  PRODUCT_VOLUMES_FISCAL_YEAR,
   BY_ID, BY_COMMODITY,
   BY_STATE, BY_COUNTY,
   BY_OFFSHORE_REGION,
@@ -36,7 +37,6 @@ import Button from '@material-ui/core/Button'
 import Dialog from '@material-ui/core/Dialog'
 import DialogActions from '@material-ui/core/DialogActions'
 import DialogContent from '@material-ui/core/DialogContent'
-import DialogTitle from '@material-ui/core/DialogTitle'
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles'
 
 const PAGE_TITLE = 'Federal Revenue | Natural Resources Revenue Data'
@@ -47,6 +47,11 @@ const TOGGLE_VALUES = {
 
 const DEFAULT_GROUP_BY_INDEX = 0
 const DEFAULT_ADDITIONAL_COLUMN_INDEX = 1
+
+const DATA_TYPE_OPTIONS = {
+  'Revenue': REVENUES_FISCAL_YEAR,
+  'Production': PRODUCT_VOLUMES_FISCAL_YEAR,
+}
 
 const LAND_CATEGORY_OPTIONS = {
   'All land categories': [BY_REVENUE_TYPE],
@@ -150,7 +155,7 @@ class QueryData extends React.Component {
 	}
 
 	getTableColumns = () => {
-	  let columns = []; let columnExtensions = []; let grouping = []; let currencyColumns = []; let defaultSorting = []
+	  let columns = []; let columnExtensions = []; let grouping = []; let currencyColumns = []; let volumeColumns = []; let defaultSorting = []
 	  let { filter } = this.state
 
 	  let groupBySlug = utils.formatToSlug(filter.groupBy)
@@ -173,15 +178,25 @@ class QueryData extends React.Component {
 	  })
 
 	  // Have to add all the data provider types initially or they wont work??
-	  this.state.yearOptions.forEach(year => {
-	    currencyColumns.push('fy-' + year)
-	  })
+	  if (this.state.dataType === 'Revenue') {
+	    this.state.yearOptions.forEach(year => {
+	      currencyColumns.push('fy-' + year)
+	    })
+	  }
+	  else if (this.state.dataType === 'Production') {
+	    this.state.yearOptions.forEach(year => {
+	      volumeColumns.push('fy-' + year)
+	    })
+	  }
+
+	  console.log(volumeColumns)
 
 	  return {
 	    columns: columns,
 	    columnExtensions: columnExtensions,
 	    grouping: grouping,
 	    currencyColumns: currencyColumns,
+	    volumeColumns: volumeColumns,
 	    allColumns: allColumns,
 	    defaultSorting: defaultSorting,
 	  }
@@ -209,16 +224,29 @@ class QueryData extends React.Component {
 	}
 
 	getTableData = () => {
-	  if (this.state[REVENUES_FISCAL_YEAR] === undefined || this.state.dataType === undefined) return { tableData: undefined, expandedGroups: undefined }
-	  let dataSet = this.state[REVENUES_FISCAL_YEAR]
+	  const getSumValueProperty = () => {
+	    switch (this.state.dataType) {
+	    case 'Revenue':
+	      return 'Revenue'
+	    case 'Production':
+	      return 'Volume'
+	    }
+	  }
+
+	  let dataSetKey = DATA_TYPE_OPTIONS[this.state.dataType]
+	  console.log(dataSetKey)
+	  if (this.state[dataSetKey] === undefined || this.state.dataType === undefined) return { tableData: undefined, expandedGroups: undefined }
+	  let dataSet = this.state[dataSetKey]
 	  let groupBySlug = utils.formatToSlug(this.state.filter.groupBy)
-	  let allDataSetGroupBy = GROUP_BY_OPTIONS[this.state.filter.groupBy].map(groupBy => this.state[REVENUES_FISCAL_YEAR][groupBy])
+	  let allDataSetGroupBy = GROUP_BY_OPTIONS[this.state.filter.groupBy].map(groupBy => this.state[dataSetKey][groupBy])
 	  let tableData = []
 	  let expandedGroups = []
+	  // console.log(dataSet)
 
 	  // Iterate over all group by data sets asociated with this filter group by
 	  allDataSetGroupBy.forEach((dataSetGroupBy, indexGroupBy) => {
 	    Object.keys(dataSetGroupBy).forEach(name => {
+	      // console.log(name)
 	      let sums = {}
 	      let sumsByAdditionalColumns = {}
 
@@ -228,8 +256,15 @@ class QueryData extends React.Component {
 	      dataSetGroupBy[name].forEach(dataId => {
 	        let data = dataSet[BY_ID][dataId]
 
+	        /* console.log(this.state.filter.years.includes(data.FiscalYear),
+          this.hasLandCategory(data),
+          this.hasLocation(data),
+          this.hasCommodity(data),
+          this.hasRevenueType(data),
+          this.hasCounty(data)) */
+
 	        // Apply filters
-	        if (this.state.filter.years.includes(data.FiscalYear) &&
+	        if (this.state.filter.years.includes(parseInt(data.FiscalYear)) &&
 						this.hasLandCategory(data) &&
             this.hasLocation(data) &&
             this.hasCommodity(data) &&
@@ -240,7 +275,7 @@ class QueryData extends React.Component {
 	          }
 
 	          let fiscalYearSlug = 'fy-' + data.FiscalYear
-	          sums[fiscalYearSlug] = (sums[fiscalYearSlug]) ? sums[fiscalYearSlug] + data.Revenue : data.Revenue
+	          sums[fiscalYearSlug] = (sums[fiscalYearSlug]) ? sums[fiscalYearSlug] + data[getSumValueProperty()] : data[getSumValueProperty()]
 
 	          this.state.additionalColumns.forEach(additionalColumn => {
 	            // Get the data columns related to the column in the table. Could have multiple data source columns mapped to 1 table column
@@ -260,7 +295,7 @@ class QueryData extends React.Component {
 	                  sumsByAdditionalColumns[additionalColumn][newValue] = {}
 	                }
 
-	                let fyRevenue = data.Revenue || 0
+	                let fyRevenue = data[getSumValueProperty()] || 0
 
 	                sumsByAdditionalColumns[additionalColumn][newValue][fiscalYearSlug] = (sumsByAdditionalColumns[additionalColumn][newValue][fiscalYearSlug])
 	                  ? sumsByAdditionalColumns[additionalColumn][newValue][fiscalYearSlug] + fyRevenue
@@ -372,25 +407,31 @@ class QueryData extends React.Component {
 	handleTableToolbarSubmit (updatedFilters) {
 	  let additionalColumns = ['Land category']
 	  let groupBy = 'Revenue type'
-	  if (updatedFilters.revenueType !== 'All') {
-	    if (updatedFilters.commodities.length === 1 && updatedFilters.commodities[0] !== 'All') {
-	      groupBy = 'Land category'
-	      additionalColumns = []
+	  if (updatedFilters.dataType === 'Revenue') {
+	    if (updatedFilters.revenueType !== 'All') {
+	      if (updatedFilters.commodities.length === 1 && updatedFilters.commodities[0] !== 'All') {
+	        groupBy = 'Land category'
+	        additionalColumns = []
+	      }
+	      else {
+	        groupBy = 'Commodity'
+	        additionalColumns = ['Land category']
+	      }
 	    }
-	    else {
-	      groupBy = 'Commodity'
-	      additionalColumns = ['Land category']
+	    if ((updatedFilters.landCategory === 'Federal onshore' || updatedFilters.landCategory === 'Federal offshore') && updatedFilters.revenueType !== 'All') {
+	      if (updatedFilters.commodities.length === 1 && updatedFilters.commodities[0] !== 'All') {
+	        groupBy = 'Land category'
+	        additionalColumns = (updatedFilters.counties.length > 1) ? ['County'] : []
+	      }
+	      else {
+	        groupBy = 'Commodity'
+	        additionalColumns = ['Land category']
+	      }
 	    }
 	  }
-	  if ((updatedFilters.landCategory === 'Federal onshore' || updatedFilters.landCategory === 'Federal offshore') && updatedFilters.revenueType !== 'All') {
-	    if (updatedFilters.commodities.length === 1 && updatedFilters.commodities[0] !== 'All') {
-	      groupBy = 'Land category'
-	      additionalColumns = (updatedFilters.counties.length > 1) ? ['County'] : []
-	    }
-	    else {
-	      groupBy = 'Commodity'
-	      additionalColumns = ['Land category']
-	    }
+	  else {
+	    groupBy = 'Commodity'
+	    additionalColumns = ['Land category']
 	  }
 
 	  this.setState({
@@ -448,6 +489,35 @@ class QueryData extends React.Component {
           }
         ]
       },
+      { key: PRODUCT_VOLUMES_FISCAL_YEAR,
+        data: data.allProduction.data,
+        groups: [
+          {
+            key: BY_COMMODITY,
+            groups: data.allProductionGroupByCommodity.group,
+          },
+          {
+            key: BY_STATE,
+            groups: data.allProductionGroupByState.group,
+          },
+          {
+            key: BY_OFFSHORE_REGION,
+            groups: data.allProductionGroupByOffshoreRegion.group,
+          },
+          {
+            key: BY_COUNTY,
+            groups: data.allProductionGroupByCounty.group,
+          },
+          {
+            key: BY_REVENUE_CATEGORY,
+            groups: data.allProductionGroupByRevenueCategory.group,
+          },
+          {
+            key: BY_FISCAL_YEAR,
+            groups: data.allProductionGroupByFiscalYear.group
+          }
+        ]
+      },
     ])
   }
 
@@ -458,9 +528,11 @@ class QueryData extends React.Component {
     this.setState({ openGroupByDialog: false })
   }
   render () {
-    let { columns, columnExtensions, grouping, currencyColumns, allColumns, defaultSorting } = this.getTableColumns()
+    let { columns, columnExtensions, grouping, currencyColumns, volumeColumns, allColumns, defaultSorting } = this.getTableColumns()
     let { totalSummaryItems, groupSummaryItems } = this.getTableSummaries()
     let { tableData, expandedGroups } = this.getTableData()
+
+    console.log(tableData)
 
     return (
       <DefaultLayout>
@@ -477,6 +549,7 @@ class QueryData extends React.Component {
 
           {this.state[REVENUES_FISCAL_YEAR] &&
 						<TableToolbar
+						  dataTypeOptions={DATA_TYPE_OPTIONS}
 						  fiscalYearOptions={this.getFiscalYearOptions()}
 						  locationOptions={this.getLocationOptions()}
 						  commodityOptions={this.getCommodityOptions()}
@@ -567,6 +640,7 @@ class QueryData extends React.Component {
 						    tableColumnExtension={columnExtensions}
 						    grouping={grouping}
 						    currencyColumns={currencyColumns}
+						    volumeColumns={volumeColumns}
 						    allColumns={allColumns}
 						    expandedGroups={expandedGroups}
 						    totalSummaryItems={totalSummaryItems}
@@ -584,6 +658,7 @@ class QueryData extends React.Component {
 export default connect(
   state => ({
     [REVENUES_FISCAL_YEAR]: state[CONSTANTS.DATA_SETS_STATE_KEY][REVENUES_FISCAL_YEAR],
+    [PRODUCT_VOLUMES_FISCAL_YEAR]: state[CONSTANTS.DATA_SETS_STATE_KEY][PRODUCT_VOLUMES_FISCAL_YEAR],
   }),
   dispatch => ({ normalizeDataSet: dataSets => dispatch(normalizeDataSetAction(dataSets)),
   })
@@ -592,7 +667,7 @@ export default connect(
 const LocationMessage = ({ styles }) => (
   <div className={styles.locationMessage}>For privacy reasons, location is <GlossaryTerm>withheld</GlossaryTerm> for Native American data.</div>
 )
-const TableToolbar = ({ fiscalYearOptions, locationOptions, commodityOptions, countyOptions, defaultFiscalYearsSelected, onSubmitAction }) => {
+const TableToolbar = ({ dataTypeOptions, fiscalYearOptions, locationOptions, commodityOptions, countyOptions, defaultFiscalYearsSelected, onSubmitAction }) => {
   const [dataType, setDataType] = useState()
   const [landCategory, setLandCategory] = useState()
   const [locations, setLocations] = useState()
@@ -602,9 +677,6 @@ const TableToolbar = ({ fiscalYearOptions, locationOptions, commodityOptions, co
   const [fiscalYearStart, setFiscalYearStart] = useState()
   const [fiscalYearEnd, setFiscalYearEnd] = useState()
   const [fiscalYearsSelected, setFiscalYearSelected] = useState()
-  const [groupBy, setGroupBy] = useState(Object.keys(GROUP_BY_OPTIONS)[DEFAULT_GROUP_BY_INDEX])
-  const [additionalColumn, setAdditionalColumn] = useState(Object.keys(ADDITIONAL_COLUMN_OPTIONS)[DEFAULT_ADDITIONAL_COLUMN_INDEX])
-  const getAdditionalColumnOptions = () => Object.keys(ADDITIONAL_COLUMN_OPTIONS).filter(column => column !== groupBy)
 
   const getLocationOptions = () => {
     if (landCategory === 'Native American') {
@@ -719,7 +791,7 @@ const TableToolbar = ({ fiscalYearOptions, locationOptions, commodityOptions, co
           </Grid>
           <Grid item sm={5} xs={12}>
             <DropDown
-              options={[{ name: '-Select-', placeholder: true }, 'Revenue']}
+              options={[{ name: '-Select-', placeholder: true }].concat(Object.keys(dataTypeOptions))}
               sortType={'none'}
               action={value => setDataType(value)}
             />
@@ -866,6 +938,113 @@ const TableToolbar = ({ fiscalYearOptions, locationOptions, commodityOptions, co
 
 export const query = graphql`
   query QueryDataPageQuery {
+    allProduction:allProductVolumesFiscalYear (filter:{FiscalYear:{ne:null}}, sort: {fields: [FiscalYear], order: DESC}) {
+      data:edges {
+        node {
+          id
+          Volume
+          FiscalYear
+          Commodity:ProductName
+          LandClass:LandCategory
+          LandCategory:OnshoreOffshore
+          RevenueCategory:LandCategory_OnshoreOffshore
+          OffshoreRegion
+          ProductionDate
+          County
+          State
+        }
+      }
+    }
+	  allProductionGroupByCommodity: allProductVolumesFiscalYear(
+	  	filter: {
+	  		FiscalYear: {ne: null},
+	  		ProductName: {nin: [null,""]},
+	  	}, 
+	  	sort: {fields: [FiscalYear], order: DESC}) {
+	    group(field: ProductName) {
+	      id:fieldValue
+	      data:edges {
+	        node {
+	          id
+	        }
+	      }
+	    }
+	  }
+	  allProductionGroupByState: allProductVolumesFiscalYear(
+	  	filter: {
+		  	FiscalYear: {ne: null}, 
+	      State: {nin: [null,""]},
+	    },  
+	  	sort: {fields: [FiscalYear], order: DESC}) {
+	    group(field: State) {
+	      id:fieldValue
+	      data:edges {
+	        node {
+	          id
+	        }
+	      }
+	    }
+	  }
+	  allProductionGroupByOffshoreRegion: allProductVolumesFiscalYear(
+	  	filter: {
+		  	FiscalYear: {ne: null}, 
+	      OffshoreRegion: {nin: [null,""]},
+	    }, 
+	  	sort: {fields: [FiscalYear], order: DESC}) {
+	    group(field: OffshoreRegion) {
+	      id:fieldValue
+	      data:edges {
+	        node {
+	          id
+	        }
+	      }
+	    }
+	  }
+	  allProductionGroupByCounty: allProductVolumesFiscalYear(
+	  	filter: {
+	  		FiscalYear: {ne: null}, 
+	      County: {nin: [null,""]},
+	    }, 
+	  	sort: {fields: [FiscalYear], order: DESC}) {
+	    group(field: County) {
+	      id:fieldValue
+	      data:edges {
+	        node {
+            id
+            State
+	        }
+	      }
+	    }
+	  }
+	  allProductionGroupByRevenueCategory: allProductVolumesFiscalYear(
+	  	filter: {
+	  		FiscalYear: {ne: null}, 
+	      LandCategory_OnshoreOffshore: {nin: [null,""]},
+	  	}, 
+	  	sort: {fields: [FiscalYear], order: DESC}) {
+	    group(field: LandCategory_OnshoreOffshore) {
+	      id:fieldValue
+	      data:edges {
+	        node {
+	          id
+	        }
+	      }
+	    }
+	  }
+	  allProductionGroupByFiscalYear: allProductVolumesFiscalYear(
+	  	filter: {
+	  		FiscalYear: {ne: null}
+	  	}, 
+	  	sort: {fields: [FiscalYear], order: DESC}) {
+	    group(field: FiscalYear) {
+	      id:fieldValue
+	      data:edges {
+	        node {
+	          id
+	        }
+	      }
+	    }
+	  }
 		allRevenues:allResourceRevenuesFiscalYear (filter:{FiscalYear:{ne:null}}, sort: {fields: [FiscalYear], order: DESC}) {
 		  data:edges {
 		    node {
@@ -991,24 +1170,3 @@ export const query = graphql`
 	  }
   }
 `
-/*
-          <Grid item sm xs={12}>
-            <h6>Group by:</h6>
-            <DropDown
-              sortType={'none'}
-              options={Object.keys(GROUP_BY_OPTIONS)}
-              action={value => setGroupBy(value)}
-              defaultOptionValue={groupBy}
-              sortType={'none'}
-            />
-          </Grid>
-          <Grid item sm xs={12}>
-            <h6>Additional column:</h6>
-            <DropDown
-              sortType={'none'}
-              options={getAdditionalColumnOptions()}
-              action={value => setAdditionalColumn(value)}
-              selectedOptionValue={additionalColumn}
-            />
-          </Grid>
-*/

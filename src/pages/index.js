@@ -18,7 +18,7 @@ import {
   BY_FISCAL_YEAR,
   BY_CALENDAR_YEAR
 } from '../state/reducers/data-sets'
-
+import 'url-search-params-polyfill';
 import * as CONSTANTS from '../js/constants'
 import utils from '../js/utils'
 import GlossaryTerm from '../components/utils/glossary-term.js';

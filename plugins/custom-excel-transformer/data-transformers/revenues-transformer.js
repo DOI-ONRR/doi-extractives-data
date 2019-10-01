@@ -121,16 +121,10 @@ const createRevenueNode = (revenueData, type) => {
       : (revenueNode.RevenueDate.getYear() + 1900).toString()
   }
 
-  let landCat = revenueNode.LandCategory && revenueNode.LandCategory.toLowerCase().trim()
-  let revType = revenueNode.RevenueType && revenueNode.RevenueType.toLowerCase().trim()
-
-  if (landCat === 'not tied to a lease' ||
-      revType === 'civil penalties' ||
-      revType === 'other revenues') {
-    if (revenueNode.LandClass !== CONSTANTS.NATIVE_AMERICAN &&
-        !revenueNode.OffshoreRegion) {
-      revenueNode.State = revenueNode.State || 'Not tied to a location'
-    }
+  if (revenueNode.LandClass === CONSTANTS.FEDERAL &&
+      !revenueNode.OffshoreRegion &&
+      !revenueNode.State) {
+    revenueNode.State = 'Not tied to a location'
   }
 
   return revenueNode
@@ -166,7 +160,5 @@ function getFipsCode (offshorePlanningArea) {
     return 'CHU'
   }
 
-
   return undefined
 }
-

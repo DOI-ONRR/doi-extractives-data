@@ -6,7 +6,7 @@ const BASEURL = process.env.BASEURL || '';
 const GOOGLE_ANALYTICS_ID = (process.env.google_analytics) ?
                 (process.env.google_analytics[process.env.BRANCH] || process.env.google_analytics.default)
                 :
-                "UA-48605964-8";
+                "UA-33523145-1";
 
 module.exports = {
   siteMetadata: {

@@ -134,8 +134,13 @@ const getPreviousYear = (data) => {
 }
 
 const getMaxMonth = (data) => {
-    let r=data.reduce((max, p) => p.date > max ? p.date : max, data[0].date );
+     let r=data.reduce((max, p) => p.date > max ? p.date : max, data[0].date );
 
+    //let dates=data.map((row,i) => row.date.getTime());
+    //let max_epoch=Math.max.apply(null,dates)
+    //let  r=new Date(max_epoch)
+
+    
     return r;
 }
 const monthLookup= (month) => {
@@ -250,9 +255,9 @@ const sumMonthlyData= (item,r,index,currentYear) => {
 const monthlyDate = (obj) => {
 
     let month=monthLookup(obj.Month);
+    if(month < 10) { month='0'+month};
     let year=Math.floor(obj.DisplayYear.substring(1))+2000;
-
-    let date=new Date(year+'-'+month+'-01')
+    let date=new Date(year+'-'+month+'-02')
     return date;
 }
 

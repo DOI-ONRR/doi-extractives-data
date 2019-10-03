@@ -1,5 +1,5 @@
 ---
-title: Audits and Assurances | Archive
+title: Audits and Assurances | How it works
 layout: content
 tag:
 - How it works
@@ -8,8 +8,7 @@ tag:
 - Standards
 - Oversight
 - Regulations
-- archive
-permalink: /archive/audits-and-assurances/
+permalink: /how-it-works/audits-and-assurances/
 ---
 
 <custom-link to="/how-it-works/" className="breadcrumb link-charlie">How it works</custom-link> /

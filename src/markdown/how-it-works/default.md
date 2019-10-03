@@ -169,11 +169,6 @@ redirect_from: /how-it-works/production/
             <p>Data about revenue from the extractive industries is subject to a number of controls, standards, and regulations.</p>
             <p><custom-link to="/how-it-works/audits-and-assurances">Learn about audits and assurances</custom-link></p>
           </div>
-          <div>
-            <h3 class="h3 landing-heading"><custom-link to="/how-it-works/reconciliation/2016">Reconciliation</custom-link></h3>
-            <p>During the reconciliation process, company reports of payments are compared to government records of revenue received.</p>
-            <p><custom-link to="/how-it-works/reconciliation/2016">Learn about reconciliation</custom-link></p>
-          </div>
         </div>
       </section>
     </article>

@@ -58,7 +58,7 @@ const NationalRevenue = props => {
   let annualTotalRevenue = commodities && commodities.All && commodities.All[year]
 
   return (
-    <section id="revenue" is="year-switcher-section" className="federal revenue">
+    <section is="year-switcher-section" className="federal revenue">
 
       <h2>Revenue</h2>
 

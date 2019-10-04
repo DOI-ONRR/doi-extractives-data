@@ -98,7 +98,6 @@ class ExplorePage extends React.Component {
               { name: 'og:title', content: 'Explore data | Natural Resources Revenue Data' },
               { name: 'twitter:title', content: 'Explore data | Natural Resources Revenue Data' },
             ]}
-
           />
 
           <section id="title" className="slab-delta">
@@ -144,7 +143,7 @@ class ExplorePage extends React.Component {
 
               <MobileNav navItems={NAV_ITEMS} navTitle={NAV_TITLE} />
 
-              <section id="production">
+              <section>
                 <h2 className="state-page-overview">Production</h2>
 
                 <NationalFederalProduction allProducts={this.props.data.FederalProductionByProduct.group} allYears={this.props.data.FederalProductionByYear.group}/>

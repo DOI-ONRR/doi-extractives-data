@@ -290,18 +290,18 @@ const RevenueTypeTable = props => {
     <table id={props.id} is="bar-chart-table" class="revenue table-arrow_box">
       <thead id="revenue-phase">
         <tr>
-          <th className="arrow_box"><span>Commodity</span></th>
-          <th className="arrow_box"><span>1. Securing rights</span></th>
-          <th className="arrow_box"><span>2. Before production</span></th>
-          <th className="arrow_box-last"><span>3. During production</span></th>
-          <th><span>Other revenue</span></th>
+          <th scope="col" className="arrow_box"><span>Commodity</span></th>
+          <th scope="col" className="arrow_box"><span>1. Securing rights</span></th>
+          <th scope="col" className="arrow_box"><span>2. Before production</span></th>
+          <th scope="col" className="arrow_box-last"><span>3. During production</span></th>
+          <th scope="col"><span>Other revenue</span></th>
         </tr>
       </thead>
 
       {oilGasExists &&
         <tbody id={'revenue-types-' + utils.formatToSlug('oil gas')}>
           <tr className="table-arrow_box-category">
-            <td colSpan="5">
+            <td scope="row" colSpan="5">
               Oil and Gas <span className="icon-padded"><OilGasIcon /></span>
             </td>
           </tr>

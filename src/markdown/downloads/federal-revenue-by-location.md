@@ -75,7 +75,7 @@ _Year_
 
 _Land Class_
 
-* _Federal_ [Federal lands](https://fas.org/sgp/crs/misc/R42346.pdf) are owned by or under the jurisdiction of the federal government, including: Public domain lands, acquired lands, military acquired lands, and [Outer Continental Shelf](https://www.boem.gov/OCS-Lands-Act-History/)
+* _Federal_ [Federal lands](https://fas.org/sgp/crs/misc/R42346.pdf) are owned by or under the jurisdiction of the federal government, including: public domain lands, acquired lands, military acquired lands, and [Outer Continental Shelf](https://www.boem.gov/OCS-Lands-Act-History/)
 * _Native American_ Includes Tribal lands held in trust by the federal government for a tribe’s use, and allotments held in trust by the federal government for individual Native American use
 
 _Land Category_
@@ -93,7 +93,7 @@ _Offshore Region_ The Bureau of Ocean Energy Management separates offshore area 
 
 _Offshore Planning Area_ Offshore regions are broken out into planning areas. For more information on offshore planning areas, including spatial boundaries, see the Bureau of Ocean Energy Management's maps and GIS data.
 
-_Offshore Block or offshore area_ is a geographic bound area found inside offshore planning areas.
+_Offshore Block or Offshore Area_ is a geographic bound area found inside offshore planning areas.
 Offshore Protraction is a geographic bound area found inside offshore areas.
 
 _Revenue Type_ Revenues from U.S. natural resources fall into one of several types:
@@ -118,7 +118,7 @@ _Mineral Lease Type_ Is the type of lease revenue is being generated from. An oi
 * _Gypsum_
 * _Hardrock_
 * _Hot Springs_
-* _Limestone
+* _Limestone_
 * _Mining - unspecified_
 * _Oil & Gas_
 * _Oil Shale_
@@ -149,7 +149,7 @@ _Commodity Type_ The Department of the Interior collects revenues on over 60 dif
 * _Hardrock_
 * _Helium_
 * _Hot Springs_
-* _Limestone
+* _Limestone_
 * _Mining - unspecified_
 * _NGL_
 * _Oil_

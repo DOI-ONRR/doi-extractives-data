@@ -21,7 +21,6 @@ permalink: /how-it-works/coal/
 		  </div>
 		  <h1>Coal</h1>
 		  <p class="revenues_subpage-intro_text">The Department of the Interior is responsible for 570 million acres of federal land with coal resources. This responsibility comes from the Mineral Leasing Act of 1920 and the Mineral Leasing Act for Acquired Lands of 1947, as amended.</p>
-		  <p class="revenues_subpage-intro_text">In 2013, the United States was the world’s second largest coal producer after China. The U.S. has significant available coal reserves: There are 19.7 billion <glossary-term termKey="tons">short tons</glossary-term> of recoverable reserves in active mines, and another 479.9 billion short tons that could be mined with current technologies.</p>
 		</div>
 		<div class="revenues_subpage-office_container revenues_subpage-office_container_layout">
 		  <div class="revenues_subpage-office container">
@@ -88,38 +87,6 @@ permalink: /how-it-works/coal/
 		</section>
   </div>
 </section>
-<div class="slab-beta revenues_page-forms">
-	<section class="container-outer">
-	  <h1>Revenue collected by the Department of the Interior</h1>
-	  <div class="revenues_page-forms_options">
-	    <div>
-	      <h2>Bonus</h2>
-	      <p>The amount the highest bidder paid for a natural resource lease.</p>
-	    </div>
-	    <div>
-	      <h2>Rent</h2>
-	      <p class="revenues_page-forms_numbers"><span>$3.00</span> per acre or a fraction thereof</p>
-	    </div>
-	    <div>
-	      <h2>Royalty</h2>
-	      <p class="revenues_page-forms_numbers_first">
-	        <span>12.5%</span>
-	        <br>surface
-	        <br><span>8%</span>
-	        <br>subsurface</p>
-	      <p>The rate depends on whether the coal was extracted by surface or subsurface mining.</p>
-	    </div>
-	    <div>
-	      <h2>Fees</h2>
-	      <p class="revenues_page-forms_numbers_first"><span>$0.28</span> per ton
-	      <br>surface mining
-	      <br><span>$0.12</span> per ton
-	      <br>subsurface mining</p>
-	      <p>This is the Abandoned Mine Land Fee.</p>
-	    </div>
-	  </div>
-	</section>
-</div>
 <div class="slab-alpha revenues_subpage-involved">
     <section class="container-outer">
       <div class="container-left-4">

@@ -55,21 +55,14 @@ class BlogPostTemplate extends React.Component {
         
       {
         (post.frontmatter.authors).map((author, index) => (
-          <div key={index}
-            style={{
-              display: 'flex',
-            }}
-          >
-            <img
+          <div key={index} className="author-bio">
+           <div className="author-profile-container">
+             <img
                     src={author.pic}
-                    alt={`Author profile image`}
-                    style={{
-                      marginRight: rhythm(1 / 2),
-                      marginBottom: 0,
-                      width: rhythm(2),
-                      height: rhythm(2),
-                    }}
-                  />
+                    alt={author.id + ` profile image`}
+                    className="author-image"
+              />
+            </div>  
             <p
               style={{
                 marginRight: rhythm(1 / 2),

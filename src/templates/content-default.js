@@ -18,7 +18,7 @@ import DefaultLayout from '../components/layouts/DefaultLayout'
 class DefaultTemplate extends React.Component {
   constructor (props) {
     super(props)
-    if (this.props.pathContext.disbursements) {
+    if (this.props.pageContext.disbursements) {
       this.hydrateStore()
     }
   }
@@ -30,16 +30,16 @@ class DefaultTemplate extends React.Component {
    **/
   hydrateStore () {
     this.props.hydateDataManager([
-      { key: CONSTANTS.DISBURSEMENTS_ALL_KEY, data: this.props.pathContext.disbursements },
+      { key: CONSTANTS.DISBURSEMENTS_ALL_KEY, data: this.props.pageContext.disbursements },
     ])
   }
 
   render () {
-    let title = this.props.pathContext.markdown.frontmatter.title || 'Natural Resources Revenue Data'
+    let title = this.props.pageContext.markdown.frontmatter.title || 'Natural Resources Revenue Data'
 
     return (
       <DefaultLayout>
-        <main>
+        <main id="main-content">
           <Helmet
             title={title}
             meta={[
@@ -51,7 +51,7 @@ class DefaultTemplate extends React.Component {
           />
           <section className='layout-content container-page-wrapper container-margin'>
             <article className="container-left-9">
-              {hastReactRenderer(this.props.pathContext.markdown.htmlAst)}
+              {hastReactRenderer(this.props.pageContext.markdown.htmlAst)}
             </article>
             <MediaQuery minWidth={768}>
               <div className="container-right-3">

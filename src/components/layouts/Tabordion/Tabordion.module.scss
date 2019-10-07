@@ -1,12 +1,12 @@
 @value colors: "../../../css-global/colors.scss";
-@value grayDarkest as --grayDarkest, grayLight as --grayLight , grayPale as --grayPale from colors;
+@value gray as --gray, grayDarkest as --grayDarkest, grayLight as --grayLight , grayPale as --grayPale from colors;
 
 .root {
 
 }
 
 .tabContainer {
-	margin-top: 5rem;
+margin-top: 1rem;
   display: flex;
   justify-content: flex-start;
   flex-wrap: nowrap;
@@ -14,10 +14,12 @@
 }
 
 .tab {
-	background-color: white;
-	border-top: 1px solid --grayLight;
-	border-left: 1px solid --grayLight;
-	border-bottom: 1px solid --grayLight;
+    background-color: --grayPale;
+    margin-left: 10px;
+    border-top: 0px solid --grayLight;
+    border-right: 0px solid --grayLight;
+	border-left: 0px solid --grayLight;
+	border-bottom: 0px solid --grayLight;
 	color: --grayDarkest;
 	cursor: pointer;
 	font-size: 16px;
@@ -26,11 +28,6 @@
 	padding: 10px 20px;
 	text-align: center;
 	float: left;
-  z-index: 10;
-}
-
-.tab:last-of-type {
-	border-right: 1px solid --grayLight;
 }
 
 .tab:hover{
@@ -38,15 +35,27 @@
 }
 
 .tabSelected {
-	background-color: --grayPale;
+    
+    background-color: white;
+    border-top: 5px solid --grayDarkest;
+	border-left: 1px solid --gray;
+	border-right: 1px solid --gray;
 	border-bottom: none;
+	padding-top: 6px;
 	font-weight: bold;
+	z-index: 20;
+	outline: none;
+
+	:last-of-type {
+		border-right: 1px solid --grayLight;
+	}
 }
 
 .tabPanelContainer {
-	background-color: --grayPale;
-	border: 1px solid --grayLight;
-  overflow: hidden;
+    background-color: white;
+    border-top: 1px solid --gray;
+
+    overflow: hidden;
   position: relative;
   top: -1px;
   z-index: 0;
@@ -69,19 +78,35 @@
 }
 
 @media screen and (max-width: 481px) {
+	
 	.tabContainer {
-		flex-wrap: wrap;
+	flex-wrap: wrap;
   	padding-right: 0;
-		width: 100%;
-	}
-	.tab {
-		float: none;
-		border: 1px solid --grayLight;
-		text-align: left;
-		width: 100%;
+	width: 100%;
+	margin-left: 0px;
 	}
 
+	.tab {
+		border: 1px solid --gray;
+		float: none;
+		text-align: left;
+		width: 100%;
+		margin-left: 0px;
+	}
+
+	.tab:not(:last-of-type) {
+		border-bottom: 0px;
+	}
+
+	.tabSelected {
+		border-top: 5px solid --grayDarkest;
+		border-left: none;
+		border-right: none;
+		border-bottom: none;
+	}
+	
 	.tabPanelContainer {
+		border-top: none;
 		top: 0px;
 	}
 

@@ -111,7 +111,7 @@ const createRevenueNode = (revenueData, type) => {
     }
   }
 
-  if (revenueNode.Commodity === undefined) {
+  if (revenueNode.Commodity === undefined || revenueNode.Commodity === '') {
     revenueNode.Commodity = 'Not tied to a commodity'
   }
 
@@ -121,15 +121,10 @@ const createRevenueNode = (revenueData, type) => {
       : (revenueNode.RevenueDate.getYear() + 1900).toString()
   }
 
-  let landCat = revenueNode.LandCategory && revenueNode.LandCategory.toLowerCase()
-
-  if (landCat === 'not tied to a lease' ||
-     revenueNode.RevenueType === 'Civil Penalities' ||
-     revenueNode.RevenueType === 'Other Revenues') {
-    if (revenueNode.LandClass !== CONSTANTS.NATIVE_AMERICAN &&
-        !revenueNode.OffshoreRegion) {
-      revenueNode.State = revenueNode.State || 'Not tied to a location'
-    }
+  if (revenueNode.LandClass === CONSTANTS.FEDERAL &&
+      !revenueNode.OffshoreRegion &&
+      !revenueNode.State) {
+    revenueNode.State = 'Not tied to a location'
   }
 
   return revenueNode

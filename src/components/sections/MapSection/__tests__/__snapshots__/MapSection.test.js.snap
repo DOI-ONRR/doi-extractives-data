@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MapSection renders correctly 1`] = `
+<section
+  className="root"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="containerLeft"
+    >
+      <h3 />
+      <p />
+    </div>
+    <div
+      className="containerRight"
+    >
+      <label
+        htmlFor="location-selector"
+      >
+        Explore a state or offshore region:
+      </label>
+      <select
+        className="select-dark-gray"
+        defaultValue="Choose location"
+        id="location-selector"
+        onChange={[Function]}
+      >
+        <option
+          disabled={true}
+          value="Choose location"
+        >
+          Choose location
+        </option>
+        <optgroup
+          label="States"
+        />
+        <optgroup
+          label="Offshore Regions"
+        />
+      </select>
+    </div>
+    <div
+      className="containerBottom"
+    >
+      <div
+        className="map"
+      />
+       
+    </div>
+  </div>
+</section>
+`;

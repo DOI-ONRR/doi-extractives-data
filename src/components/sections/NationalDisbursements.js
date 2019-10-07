@@ -26,6 +26,7 @@ const DATA_KEYS = {
   GOMESA: 'GOMESA',
   EIGHT_G: '8(g)',
   OFFSHORE: 'Offshore',
+  ONSHORE_OFFSHORE: 'Onshore & Offshore',
 }
 // Also sets the default order to display in the legend based on order below
 const LEGEND_NAMES = {
@@ -49,6 +50,11 @@ const LEGEND_NAMES = {
 		  displayName: 'Other offshore',
 		  sortOrderNum: 3
 		},
+  [DATA_KEYS.ONSHORE_OFFSHORE]:
+    {
+      displayName: 'Onshore & Offshore',
+      sortOrderNum: 4
+    },
 }
 
 class NationalDisbursements extends React.Component {
@@ -74,7 +80,7 @@ class NationalDisbursements extends React.Component {
 
 	  return (
 	    <section>
-	      <h2 id="federal-disbursements">Federal disbursements</h2>
+	      <h2 id="federal-disbursements" alt="Disbursements">Federal disbursements</h2>
 
 	      <p>After collecting revenue from natural resource extraction, the Office of Natural Resources Revenue (ONRR) distributes that money to different agencies, funds, and local governments for public use. This process is called “disbursement.”
 

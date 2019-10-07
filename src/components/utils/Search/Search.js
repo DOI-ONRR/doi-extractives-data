@@ -1,12 +1,15 @@
 import React from 'react'
 import { withPrefix } from '../../utils/temp-link'
 
+// eslint-disable-next-line css-modules/no-unused-class
 import styles from './Search.module.css'
 
 const Search = props => {
   let searchPath = '/search-results/'
 
+  // eslint-disable-next-line no-undef
   if (typeof location !== 'undefined' && location) {
+    // eslint-disable-next-line no-undef
     searchPath = location.origin + withPrefix(searchPath)
   }
   else {
@@ -21,13 +24,13 @@ const Search = props => {
       }
       <form action={searchPath} className={styles.searchForm} >
 
-        <input type="search"
+        <input title="search input" type="search"
           className={props.isMobile ? styles.searchBoxMobile : styles.searchBox}
           placeholder={props.isMobile ? '' : 'Search'}
           id="search-input" name="q" role="search"/>
         <button type="submit"
           className={props.isMobile ? styles.searchButtonMobile : styles.searchButton}
-          title="search">
+          title="submit search">
           <label className="sr-only">Search</label></button>
       </form>
     </div>

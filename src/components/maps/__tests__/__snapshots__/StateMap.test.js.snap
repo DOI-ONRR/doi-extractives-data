@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StateMap renders correctly 1`] = `
+<div
+  class="state svg-container map-container wide"
+  is="eiti-tooltip-wrapper"
+  style={
+    Object {
+      "paddingBottom": "60.15169270833333%",
+    }
+  }
+>
+  <svg
+    className="states map  ownership  no-outlines "
+    viewBox="22 60 936 525"
+  />
+</div>
+`;

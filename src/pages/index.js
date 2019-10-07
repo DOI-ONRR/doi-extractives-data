@@ -2,56 +2,69 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { connect } from 'react-redux'
 import Link from '../components/utils/temp-link'
-
+import { withPrefix as withPrefixGatsby } from 'gatsby-link'
+import { hydrate as hydateDataManagerAction } from '../state/reducers/data-sets'
+import { normalize as normalizeDataSetAction } from '../state/reducers/data-sets'
 import {
-  hydrate as hydateDataManagerAction,
-  normalize as normalizeDataSetAction,
   PRODUCT_VOLUMES_FISCAL_YEAR,
   REVENUES_MONTHLY,
   REVENUES_FISCAL_YEAR,
+  BY_ID, BY_COMMODITY,
+  BY_STATE, BY_COUNTY,
+  BY_OFFSHORE_REGION,
+  BY_LAND_CATEGORY,
+  BY_LAND_CLASS,
+  BY_REVENUE_TYPE,
   BY_FISCAL_YEAR,
   BY_CALENDAR_YEAR
 } from '../state/reducers/data-sets'
 
 import * as CONSTANTS from '../js/constants'
-import { KeyStatsSection } from '../components/sections/KeyStatsSection'
-import { WhatsNew } from '../components/sections/WhatsNew'
-import { Tabordion, Tab } from '../components/layouts/Tabordion'
-import StateMap from '../components/maps/StateMap'
-import FederalLandOwnershipLegend from '../components/maps/FederalLandOwnershipLegend'
-import LocationSelector from '../components/selectors/LocationSelector'
-import { ExploreDataButton } from '../components/layouts/buttons/ExploreDataButton'
-import { BlueButton } from '../components/layouts/buttons/BlueButton'
-import { ExploreDataLink } from '../components/layouts/icon-links/ExploreDataLink'
-import { DownloadDataLink } from '../components/layouts/icon-links/DownloadDataLink'
-import MapLink from '../components/layouts/icon-links/MapLink'
-import RevenueTrends from '../components/sections/RevenueTrends'
+import utils from '../js/utils'
+import GlossaryTerm from '../components/utils/glossary-term.js';
+
 
 import DefaultLayout from '../components/layouts/DefaultLayout'
+import { Tabordion, Tab } from '../components/layouts/Tabordion'
+import TabContainer from '../components/layouts/Tabordion/TabContainer.js'
+import RevenueTrends from '../components/sections/RevenueTrends'
+import TotalRevenue from '../components/sections/TotalRevenue/TotalRevenueDeprecated'
+import TotalDisbursements from '../components/sections/TotalDisbursements/TotalDisbursementsDeprecated'
+import TotalProduction from '../components/sections/TotalProduction/TotalProductionDeprecated'
+import DisbursementTrends from '../components/sections/DisbursmentTrends'
+import ExploreRevenue from '../components/sections/Explore/Revenue'
+import ExploreDisbursements from '../components/sections/Explore/Disbursements'
+import ExploreProduction from '../components/sections/Explore/Production'
+import { MapSection } from '../components/sections/MapSection'
 
-import styles from './index.module.css'
+import { WhatsNew } from '../components/sections/WhatsNew'
+let mapJson = require("../../static/maps/land/us-topology.json")
+let  mapOffshoreJson =require("../../static/maps/offshore/offshore.json")
 
-class HomePage extends React.Component {
+
+class Beta extends React.Component {
   constructor (props) {
     super(props)
 
     this.hydrateStore()
   }
 
+
+    
   /**
    * Add the data to the redux store to enable
    * the components to access filtered data using the
    * reducers
    **/
   hydrateStore () {
-    let data = this.props.data
+    let data = this.props.data;
 
     this.props.normalizeDataSet([
       { key: REVENUES_MONTHLY,
         data: data.allMonthlyRevenues.data,
         groups: [
           {
-            key: BY_CALENDAR_YEAR,
+            key:BY_CALENDAR_YEAR,
             groups: data.allMonthlyRevenuesByCalendarYear.group
           }
         ]
@@ -60,7 +73,7 @@ class HomePage extends React.Component {
         data: data.allFiscalYearRevenues.data,
         groups: [
           {
-            key: BY_FISCAL_YEAR,
+            key:BY_FISCAL_YEAR,
             groups: data.allFiscalYearRevenuesByFiscalYear.group
           }
         ]
@@ -70,20 +83,20 @@ class HomePage extends React.Component {
         data: data.allFiscalYearProductVolumes.data,
         groups: [
           {
-            key: BY_FISCAL_YEAR + '_Gas',
+            key:BY_FISCAL_YEAR+"_Gas",
             groups: data.allFiscalYearProductVolumesByFiscalYear_Gas.group
           },
           {
-            key: BY_FISCAL_YEAR + '_Oil',
+            key:BY_FISCAL_YEAR+"_Oil",
             groups: data.allFiscalYearProductVolumesByFiscalYear_Oil.group
           },
           {
-            key: BY_FISCAL_YEAR + '_Coal',
+            key:BY_FISCAL_YEAR+"_Coal",
             groups: data.allFiscalYearProductVolumesByFiscalYear_Coal.group
           }
         ]
       }
-    ])
+    ]);
 
     this.props.hydateDataManager([
       { key: CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY, data: this.props.data.OilVolumes.volumes },
@@ -94,142 +107,93 @@ class HomePage extends React.Component {
     ])
   }
 
-  render () {
-    return (
-      <DefaultLayout>
-        <main>
-          <Helmet
-            title="Home | Natural Resources Revenue Data"
-            meta={[
-              // title
-              { name: 'og:title', content: 'Home | Natural Resources Revenue Data' },
-              { name: 'twitter:title', content: 'Home | Natural Resources Revenue Data' },
-            ]}
-
-          />
-          <Tabordion>
-            <Tab id="tab-overview" name="Overview">
-              <div className={styles.tabContentContainer} >
-                <div className={styles.tabContent}>
-                  <p>When companies extract natural resources on federal lands and offshore areas, they pay bonuses, rent, and royalties to the federal government. The Office of Natural Resources Revenue (ONRR) distributes these funds for public use in a variety of ways.</p>
-                  <div className={styles.tabContentBottomContainer}>
-                    <div>
-                      <ExploreDataButton />
-                    </div>
-                    <div>
-                      <Link to="/how-it-works">Learn how it works</Link>
-                    </div>
-                    <div className={styles.tabContentBottomContainerLinks}>
-                      <div>
-                        <ExploreDataLink to="/explore/revenue">Revenue data</ExploreDataLink>
-                      </div>
-                      <div>
-                        <MapLink to="#map-section" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className={styles.tabContentAside}>
-                  <RevenueTrends />
-                </div>
-              </div>
-            </Tab>
-            <Tab id="tab-production" name="Production">
-              <div className={styles.tabContentContainer} >
-                <div className={styles.tabContent} >
-                  <p>The United States is among the world's top producers of oil, natural gas, and coal. The U.S. is also a global leader in renewable energy production. We have data for energy and mineral production on federal lands and waters and Native American lands.</p>
-                  <div className={styles.tabContentBottomContainer}>
-                    <div>
-                      <BlueButton to="/how-it-works/#production">How production works</BlueButton>
-                    </div>
-                  </div>
-                </div>
-                <div className={styles.tabContentAside}>
-                  <h5>Explore production data</h5>
-                  <div className={styles.linkContainer}>
-                    <ExploreDataLink to="/explore/#federal-production">Federal lands and waters</ExploreDataLink>
-                    <ExploreDataLink to="/how-it-works/native-american-production/#production-on-native-american-land">Native American lands</ExploreDataLink>
-                    <DownloadDataLink to="/downloads/#production">Downloads and documentation</DownloadDataLink>
-                  </div>
-                </div>
-              </div>
-            </Tab>
-            <Tab id="tab-revenue" name="Revenue">
-              <div className={styles.tabContentContainer} >
-                <div className={styles.tabContent} >
-                  <p>Companies pay to extract natural resources on federal lands and waters. These payments include bonuses, rents, and royalties, resulting in revenue to the American public. The Office of Natural Resources Revenue (ONRR) collects and distributes this revenue.</p>
-                  <div className={styles.tabContentBottomContainer}>
-                    <div>
-                      <BlueButton to="/how-it-works/revenues">How revenue works</BlueButton>
-                    </div>
-                  </div>
-                </div>
-                <div className={styles.tabContentAside}>
-                  <h5>Explore revenue data</h5>
-                  <div className={styles.linkContainer}>
-                    <ExploreDataLink to="/explore/revenue">Revenue in detail</ExploreDataLink>
-                    <ExploreDataLink to="/how-it-works/federal-revenue-by-company/">Revenue by company</ExploreDataLink>
-                    <DownloadDataLink to="/downloads/#revenue">Downloads and documentation</DownloadDataLink>
-                  </div>
-                </div>
-              </div>
-            </Tab>
-            <Tab id="tab-disbursements" name="Disbursements">
-              <div className={styles.tabContentContainer} >
-                <div className={styles.tabContent} >
-                  <p>After collecting revenue from natural resource extraction, the Office of Natural Resources Revenue (ONRR) distributes that money to different agencies, funds, and local governments for public use. This process is called “disbursement.”</p>
-                  <div className={styles.tabContentBottomContainer}>
-                    <div>
-                      <BlueButton to="/how-it-works/#disbursements">How disbursements work</BlueButton>
-                    </div>
-                  </div>
-                </div>
-                <div className={styles.tabContentAside}>
-                  <h5>Explore disbursements data</h5>
-                  <div className={styles.linkContainer}>
-                    <ExploreDataLink to="/explore/#by-fund">By recipient</ExploreDataLink>
-                    <DownloadDataLink to="/downloads/disbursements">Downloads and documentation</DownloadDataLink>
-                  </div>
-                </div>
-              </div>
-            </Tab>
-          </Tabordion>
-
-          <KeyStatsSection />
-
-          <section id="map-section" className={styles.mapSection}>
-            <div className={styles.mapSectionContainer + ' container-page-wrapper'}>
-              <div className={styles.mapSectionLeft}>
-                <h3>Learn about extractive industries in each state</h3>
-                <p>Explore production, revenue, and disbursements data for each state.</p>
-                <div className={styles.mapSectionLocationSelector}>
-                  <label htmlFor="location-selector">State or offshore region:</label>
-                  <LocationSelector
-                    default='Choose location'
-                    states={this.props.data.states_data.states}
-                    offshore_regions={this.props.data.offshore_data.offshore_regions}/>
-                </div>
-              </div>
-              <div className={styles.mapSectionRight}>
-                <figure>
-                  <StateMap
-                    ownership={true}
-                    no_outline={true}
-                    offshore_regions={this.props.data.offshore_data.offshore_regions}
-                    states={this.props.data.states_data.states}/>
-                </figure>
-                <aside>
-                  <FederalLandOwnershipLegend land={true} />
-                </aside>
-              </div>
-            </div>
-          </section>
-
-          <WhatsNew />
-        </main>
-      </DefaultLayout>
-    )
-  }
+//const Beta = (props) => {
+    render () {
+	console.debug(mapJson);
+	return(
+	    <DefaultLayout>
+	      <main id="main-content">
+		<Helmet
+		  title="Home | Natural Resources Revenue Data"
+		  meta={[
+		      // title
+		      { name: 'og:title', content: 'Home | Natural Resources Revenue Data' },
+		      { name: 'twitter:title', content: 'Home | Natural Resources Revenue Data' },
+		  ]} >
+		</Helmet>
+	        <section className="container-page-wrapper" >
+		<h3 className="h3-bar"></h3>
+		<p> When companies extract energy and mineral resources on property leased from the federal government and Native Americans, they pay <GlossaryTerm termKey="Bonus">bonuses</GlossaryTerm>, <GlossaryTerm>rent</GlossaryTerm>, and <GlossaryTerm termKey="Royalty">royalties</GlossaryTerm>. The Office of Natural Resources Revenue (ONRR) collects and <GlossaryTerm termKey="disbursement">disburses</GlossaryTerm> revenue from federal lands and waters to different agencies, funds, and local governments for public use. All revenue collected from extraction on Native American lands is disbursed to Native American tribes, nations, or individuals.</p>
+		</section>
+		<Tabordion>
+		<Tab id="tab-revenue" name="Revenue">
+		    <TabContainer id="tab-container-revenue" name="Revenue"
+				  title="Revenue"
+				  info="The amount of money collected by the federal government from energy and mineral extraction on federal lands and waters and Native American lands."
+				  contentLeft={<TotalRevenue/>}
+				  contentRight={<RevenueTrends/>}
+				  contentBottom={<ExploreRevenue />}
+				  />
+		  </Tab>
+		  <Tab id="tab-disbursements" name="Disbursements" >
+		    <TabContainer id="tab-container-disbursements" 
+				  title="Disbursements"
+				  info="The amount of money the federal government distributed to various funds, agencies, local governments, and Native Americans."
+				  contentRight={<DisbursementTrends/>}
+         			  contentLeft={<TotalDisbursements/>}
+				  contentBottom={<ExploreDisbursements/>}
+				  
+				  />
+		    
+		  </Tab>  
+		  <Tab id="tab-production" name="Production" >
+		    <TabContainer id="tab-container-production" 
+			      title="Production"
+				  info="The volume of major commodities extracted on federal lands and waters and Native American lands."
+				  contentBottom={<ExploreProduction/>}
+				  >
+				  <TotalProduction />
+		    </TabContainer>
+		    
+		    
+		  </Tab>  
+		  <Tab id="tab-by-state" name="Data by state" >
+		    <TabContainer id="tab-container-by-state" 
+				  title="Data by state"
+				  
+				  >
+      <p><em>Select a state for detailed production, revenue, and disbursements data.</em></p>
+		      <MapSection 
+			info="Federal revenue by state and offshore region for fiscal year 2018"
+			states={this.props.data.states_data.states}
+			offshore_regions={this.props.data.offshore_data.offshore_regions}
+			mapFeatures="states"
+			mapTitle="Revenue"
+			mapJson="/maps/land/us-topology.json"
+			mapOffshoreJson="/maps/offshore/offshore.json"
+			mapJsonObject={{us:mapJson, offshore:mapOffshoreJson}}
+			onClick={ (d,i) => {
+			    let state=fipsAbbrev[d.id] || d.id;
+			    let url="/explore/"+state
+			    if(state.match(/offshore/)) {
+				url="/explore/"+state;
+			    }
+			    url=withPrefixGatsby(url);
+			    window.location.href = url;
+			    
+			} }
+			/>
+		    </TabContainer>
+		  </Tab>  
+		</Tabordion>	
+		
+		
+		
+		<WhatsNew />
+	      </main>
+	    </DefaultLayout>
+	)
+    }
 }
 
 export default connect(
@@ -238,11 +202,28 @@ export default connect(
     hydateDataManager: dataSets => dispatch(hydateDataManagerAction(dataSets)),
     normalizeDataSet: dataSets => dispatch(normalizeDataSetAction(dataSets))
   })
-)(HomePage)
+)(Beta)
+
+/*
+		<TabContainer id="tab-container-revenue" name="Revenue"
+			      title="Revenue"
+			      info="How much money do energy and mineral resources bring into federal government?"
+			      tabContentRight={<RevenueTrends/>}
+         		      tabContentLeft={<RevenueTrends/>}
+			      />
+		<TabContainer id="tab-container-disbursements" 
+		  title="Disbursements"
+		  info="Where does the money that is brought in go?"
+		  tabContentRight={<DisbursementTrends/>}
+         	  tabContentLeft={<DisbursementTrends/>}
+		  
+		  />
+*/
+
 
 export const query = graphql`
-  query HomePageQuery {
-    offshore_data:allMarkdownRemark (filter:{fileAbsolutePath: {regex: "/offshore_regions/"}} sort:{fields: [frontmatter___title], order: ASC}) {
+  query BetaQuery {
+   offshore_data:allMarkdownRemark (filter:{fileAbsolutePath: {regex: "/offshore_regions/"}} sort:{fields: [frontmatter___title], order: ASC}) {
       offshore_regions:edges {
         offshore_region:node {
           frontmatter {
@@ -473,3 +454,92 @@ export const query = graphql`
     }
   }
 `
+
+
+const fipsAbbrev={
+ "02":  "AK",
+ "01":  "AL",
+ "05":  "AR",
+ "60":  "AS",
+ "04":  "AZ",
+ "06":  "CA",
+ "08":  "CO",
+ "09":  "CT",
+ "11":  "DC",
+ "10":  "DE",
+ "12":  "FL",
+ "13":  "GA",
+ "66":  "GU",
+ "15":  "HI",
+ "19":  "IA",
+ "16":  "ID",
+ "17":  "IL",
+ "18":  "IN",
+ "20":  "KS",
+ "21":  "KY",
+ "22":  "LA",
+ "25":  "MA",
+ "24":  "MD",
+ "23":  "ME",
+ "26":  "MI",
+ "27":  "MN",
+ "29":  "MO",
+ "28":  "MS",
+ "30":  "MT",
+ "37":  "NC",
+ "38":  "ND",
+ "31":  "NE",
+ "33":  "NH",
+ "34":  "NJ",
+ "35":  "NM",
+ "32":  "NV",
+ "36":  "NY",
+ "39":  "OH",
+ "40":  "OK",
+ "41":  "OR",
+ "42":  "PA",
+ "72":  "PR",
+ "44":  "RI",
+ "45":  "SC",
+ "46":  "SD",
+ "47":  "TN",
+ "48":  "TX",
+ "49":  "UT",
+ "51":  "VA",
+ "78":  "VI",
+ "50":  "VT",
+ "53":  "WA",
+ "55":  "WI",
+ "54":  "WV",
+ "56":  "WY",
+    "ALA":"offshore-alaska",
+    "ALB":"offshore-alaska",
+    "BFT":"offshore-alaska",
+    "BOW":"offshore-alaska",
+    "CHU":"offshore-alaska",
+    "COK":"offshore-alaska",
+    "GEO":"offshore-alaska",
+    "GOA":"offshore-alaska",
+    "HOP":"offshore-alaska",
+    "KOD":"offshore-alaska",
+    "MAT":"offshore-alaska",
+    "NAL":"offshore-alaska",
+    "NAV":"offshore-alaska",
+    "NOR":"offshore-alaska",
+    "SHU":"offshore-alaska",
+
+    "FLS":"offshore-atlantic",
+    "MDA":"offshore-atlantic",
+    "NOA":"offshore-atlantic",
+    "SOA":"offshore-atlantic",
+
+    "WGM":"offshore-gulf",
+    "CGM":"offshore-gulf",
+    "EGM":"offshore-gulf",
+
+    "CEC":"offshore-pacific",
+    "NOC":"offshore-pacific", 
+    "SOC":"offshore-pacific",
+    "WAO":"offshore-pacific"
+
+}

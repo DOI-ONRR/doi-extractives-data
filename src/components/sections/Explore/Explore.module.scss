@@ -1,0 +1,60 @@
+
+.root {
+	font-size: 0.875rem;
+	font-weight: 300;
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+
+	margin-bottom: 50px;
+}
+
+.title {
+    color: #435159;	
+    font-size: 1.125rem;
+    font-weight: 700;
+    min-width: 300px;
+}
+.contentHeader {
+    min-width: 100%;
+    flex-basis: 100%;
+    
+    order: 0;
+}
+.contentLeft {
+    display: block;
+    // border: 1px dashed green;
+    min-width: 300px;
+     flex-basis: 33%;
+     display: flex;
+     flex-wrap: wrap;
+    order: 1;
+}
+
+.contentRight {
+   //  border: 1px dashed green;
+        min-width: 300px;
+    flex-basis: 33%;
+    order: 3;
+     display: flex;
+     flex-wrap: wrap;
+
+}
+
+.contentCenter {
+   //  border: 1px dashed green;
+    min-width: 300px;
+    flex-basis: 34%;
+    order: 2;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+
+.contentChildren{
+   //  border: 1px dashed red;
+    min-width: 100%;
+    flex-basis: 100%;
+    order: 4;
+}

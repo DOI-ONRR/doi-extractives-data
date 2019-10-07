@@ -1,4 +1,4 @@
-States:
+State:
   name: State and local governments
   description: Funds disbursed to states fall under the jurisdiction of each state, and each state determines how the funds will be used.
 U.S. Treasury:
@@ -7,13 +7,13 @@ U.S. Treasury:
 Reclamation:
   name: Reclamation Fund
   description: Supports the establishment of critical infrastructure projects like dams and power plants.
-Land & Water Conservation:
+Land & Water Conservation Fund:
   name: Land and Water Conservation Fund
   description: Provides matching grants to states and local governments to buy and develop public outdoor recreation areas across the 50 states.
   link: 
     name: How this fund works
     to: /how-it-works/land-and-water-conservation-fund/
-Historic Preservation:
+Historic Preservation Fund:
   name: Historic Preservation Fund
   description: Helps preserve U.S. historical and archaeological sites and cultural heritage through grants to state and tribal historic preservation offices.
   link: 

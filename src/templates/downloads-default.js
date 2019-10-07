@@ -16,11 +16,11 @@ import DefaultLayout from '../components/layouts/DefaultLayout'
 
 class DownloadsTemplate extends React.Component {
   render () {
-    let title = this.props.pathContext.markdown.frontmatter.title || 'Natural Resources Revenue Data'
+    let title = this.props.pageContext.markdown.frontmatter.title || 'Natural Resources Revenue Data'
 
     return (
       <DefaultLayout>
-        <main>
+        <main id="main-content">
           <Helmet
             title={title}
             meta={[
@@ -32,7 +32,7 @@ class DownloadsTemplate extends React.Component {
           />
           <section className='layout-content container-page-wrapper container-margin'>
             <article className="container-left-9">
-              {hastReactRenderer(this.props.pathContext.markdown.htmlAst)}
+              {hastReactRenderer(this.props.pageContext.markdown.htmlAst)}
               <p>Do you have questions about the data or need data that isn't here?
 
 						Contact our { CONTACT_INFO.data_retrieval.name } at <a href={'mailto:' + CONTACT_INFO.data_retrieval.email}>{CONTACT_INFO.data_retrieval.email }</a>.</p>

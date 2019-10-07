@@ -54,8 +54,8 @@ class OffshoreRegion extends React.Component {
   }
 
   render () {
-    let title = this.props.pathContext.markdown.frontmatter.title || 'Natural Resources Revenue Data'
-    let regionId = this.props.pathContext.markdown.frontmatter.unique_id
+    let title = this.props.pageContext.markdown.frontmatter.title || 'Natural Resources Revenue Data'
+    let regionId = this.props.pageContext.markdown.frontmatter.unique_id
 
     return (
       <DefaultLayout>
@@ -97,12 +97,12 @@ class OffshoreRegion extends React.Component {
             </div>
             <MediaQuery minWidth={768}>
               <div className="container-right-3">
-                <PageToc displayTitle={this.props.pathContext.markdown.frontmatter.title } excludeClassNames={['sticky-header-wrapper', 'chart-title']} scrollOffset={190}/>
+                <PageToc displayTitle={this.props.pageContext.markdown.frontmatter.title } excludeClassNames={['sticky-header-wrapper', 'chart-title']} scrollOffset={190}/>
               </div>
             </MediaQuery>
             <MediaQuery maxWidth={767}>
               <div style={{ position: 'absolute', width: '100%', top: '-45px' }}>
-                <PageToc displayTitle={this.props.pathContext.markdown.frontmatter.title } excludeClassNames={['sticky-header-wrapper', 'chart-title']} scrollOffset={190}/>
+                <PageToc displayTitle={this.props.pageContext.markdown.frontmatter.title } excludeClassNames={['sticky-header-wrapper', 'chart-title']} scrollOffset={190}/>
               </div>
             </MediaQuery>
           </section>

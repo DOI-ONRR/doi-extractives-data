@@ -15,13 +15,30 @@ const Toggle = props => {
     }
   }
 
+    const onKeyUpHandler = (e, key) => {
+	console.debug("E", e)
+	let keypressed=e.keyCode;
+	if(keypressed==13) {
+	    e.stopPropagation()
+	    
+	    Array.from(e.currentTarget.parentNode.childNodes).forEach(node => node.classList.remove(styles.selected))
+	    
+	    e.currentTarget.classList.add(styles.selected)
+	    
+	    if (props.action) {
+		props.action(e.currentTarget.dataset.value)
+	    }
+	}
+
+    }
+    
   return (
     <div className={styles.toggle}>
       {props.buttons &&
 				props.buttons.map((button, index) => {
 				  let classNames = (button.default) ? styles.selected : ''
 				  return (
-				    <div key={index} type="button" onClick={onClickHandler} className={classNames} data-value={button.key}>
+					  <div key={index} type="button" onClick={onClickHandler} className={classNames} data-value={button.key} tabIndex={0} onKeyUp={onKeyUpHandler}>
 				      {button.name}
 				    </div>
 				  )

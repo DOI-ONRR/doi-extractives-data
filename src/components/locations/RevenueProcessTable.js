@@ -375,7 +375,7 @@ const RevenueProcessTable = props => {
 				    </tr>
 				    <RevenueTypeTableRow commodityName='Coal' commodityData={revenueTypes['Coal']} year={props.year} />
 		            <tr>
-		              <th scope="row"></th>
+		              <th></th>
 		              <td>
 		                <strong>Bonus:</strong> The amount offered by the highest bidder
 		              </td>

@@ -291,7 +291,7 @@ const RevenueProcessTable = props => {
   function getOffshoreHtml () {
     return (
       <tr>
-        <th className="table-arrow_box-subcategory">Offshore</th>
+        <th scope="row" className="table-arrow_box-subcategory">Offshore</th>
         <td>
           <strong>Bonus:</strong> The amount offered by the highest bidder
         </td>
@@ -309,7 +309,7 @@ const RevenueProcessTable = props => {
   function getOnshoreHtml () {
     return (
       <tr>
-        <th className="table-arrow_box-subcategory">Onshore</th>
+        <th scope="row" className="table-arrow_box-subcategory">Onshore</th>
         <td>
           <strong>Bonus:</strong> The amount offered by the highest bidder
         </td>
@@ -328,11 +328,11 @@ const RevenueProcessTable = props => {
     <table id={props.id} is="bar-chart-table" class="revenue table-arrow_box">
       <thead>
         <tr>
-          <th className="arrow_box"><span>Commodity</span></th>
-          <th className="arrow_box"><span>1. Securing rights</span>Companies pay bonuses or other fees to secure rights to resources on federal land</th>
-          <th className="arrow_box"><span>2. Before production</span>Companies pay rent on federal land while exploring for resources</th>
-          <th className="arrow_box-last"><span>3. During production</span>Companies pay royalties after production begins</th>
-          <th><span>Other revenue</span>Minimum or estimated royalties, settlements, and interest payments</th>
+          <th scope="col" className="arrow_box"><span>Commodity</span></th>
+          <th scope="col" className="arrow_box"><span>1. Securing rights</span>Companies pay bonuses or other fees to secure rights to resources on federal land</th>
+          <th scope="col" className="arrow_box"><span>2. Before production</span>Companies pay rent on federal land while exploring for resources</th>
+          <th scope="col" className="arrow_box-last"><span>3. During production</span>Companies pay royalties after production begins</th>
+          <th scope="col"><span>Other revenue</span>Minimum or estimated royalties, settlements, and interest payments</th>
         </tr>
       </thead>
 
@@ -375,7 +375,7 @@ const RevenueProcessTable = props => {
 				    </tr>
 				    <RevenueTypeTableRow commodityName='Coal' commodityData={revenueTypes['Coal']} year={props.year} />
 		            <tr>
-		              <th></th>
+		              <th scope="row"></th>
 		              <td>
 		                <strong>Bonus:</strong> The amount offered by the highest bidder
 		              </td>
@@ -399,7 +399,7 @@ const RevenueProcessTable = props => {
 				    </tr>
 				    <RevenueTypeTableRow commodityName='Geothermal' commodityData={revenueTypes['Geothermal']} year={props.year} />
 		            <tr>
-		              <th className="table-arrow_box-subcategory">Competitive leasing</th>
+		              <th scope="row" className="table-arrow_box-subcategory">Competitive leasing</th>
 		              <td>
 		                <strong>Nomination fee:</strong> $110 per nomination + $0.11 per acre<br/>
 		                <strong>Bonus:</strong> The amount offered by the highest bidder<br/>
@@ -418,7 +418,7 @@ const RevenueProcessTable = props => {
 		              <td></td>
 		            </tr>
 		            <tr>
-		              <th className="table-arrow_box-subcategory">Noncompetitive leasing</th>
+		              <th scope="row" className="table-arrow_box-subcategory">Noncompetitive leasing</th>
 		              <td><strong>Lease:</strong> $410 payment
 		              </td>
 		              <td><strong>$1</strong> annual rent per acre for 10 years<br/> <strong>$5</strong> annual rent per acre thereafter
@@ -436,7 +436,7 @@ const RevenueProcessTable = props => {
 				    </tr>
 				    <RevenueTypeTableRow commodityName='Wind' commodityData={revenueTypes['Wind']} year={props.year} />
 		            <tr>
-		              <th className="table-arrow_box-subcategory">Competitive leasing</th>
+		              <th scope="row" className="table-arrow_box-subcategory">Competitive leasing</th>
 		              <td>
 		                <strong>Bonus:</strong> The amount offered by the highest bidder
 		              </td>
@@ -449,7 +449,7 @@ const RevenueProcessTable = props => {
 		              <td></td>
 		            </tr>
 		            <tr>
-		              <th className="table-arrow_box-subcategory">Noncompetitive leasing</th>
+		              <th scope="row" className="table-arrow_box-subcategory">Noncompetitive leasing</th>
 		              <td>
 		                <strong>Acquisition fee:</strong> $0.25 per acre
 		              </td>
@@ -465,7 +465,7 @@ const RevenueProcessTable = props => {
 				      	</td>
 				    </tr>
 				  <tr>
-				    <th className="table-arrow_box-subcategory">Mining claim fees</th>
+				    <th scope="row" className="table-arrow_box-subcategory">Mining claim fees</th>
 				    <td>
 				    </td>
 				    <td>
@@ -498,13 +498,13 @@ const RevenueProcessTable = props => {
 				    <td colSpan="5">Other revenue streams</td>
 				  </tr>
 				  <tr>
-				    <th>Hardrock mining on public domain lands</th>
+				    <th scope="row">Hardrock mining on public domain lands</th>
 				    <td colSpan="5">
 						  Federal revenue from hardrock mining on public domain land occurs through the claim-staking process and is managed by the Bureau of Land Management (BLM). It is not included here, because the dataset does not have state-level data. Learn more about <Link to="/how-it-works/minerals/">hardrock mining on federal land</Link>.
 				    </td>
 				  </tr>
 				  <tr>
-				    <th>Onshore solar and wind energy</th>
+				    <th scope="row">Onshore solar and wind energy</th>
 				    <td colSpan="5">
 						  Federal revenue from onshore renewable energy generation on federal land is not included here, because that dataset, from BLM, does not have state-level data. Learn more about <Link to="/how-it-works/onshore-renewables/">onshore renewables on federal land</Link>.
 				    </td>

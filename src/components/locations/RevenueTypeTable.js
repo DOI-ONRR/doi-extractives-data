@@ -299,7 +299,7 @@ const RevenueTypeTable = props => {
       </thead>
 
       {oilGasExists &&
-        <tbody id={'revenue-types-' + utils.formatToSlug('oil gas')}>
+        <tbody className={'revenue-types-' + utils.formatToSlug('oil gas')}>
           <tr className="table-arrow_box-category">
             <td scope="row" colSpan="5">
               Oil and Gas <span className="icon-padded"><OilGasIcon /></span>
@@ -310,7 +310,7 @@ const RevenueTypeTable = props => {
       }
 
       {coalExists &&
-        <tbody id={'revenue-types-' + utils.formatToSlug('Coal')}>
+        <tbody className={'revenue-types-' + utils.formatToSlug('Coal')}>
           <tr className="table-arrow_box-category">
             <td colSpan="5">
                   Coal <span className="icon-padded"><CoalIcon /></span>
@@ -320,7 +320,7 @@ const RevenueTypeTable = props => {
         </tbody>
       }
       {geothermalExists &&
-        <tbody id={'revenue-types-' + utils.formatToSlug('Geothermal')}>
+        <tbody className={'revenue-types-' + utils.formatToSlug('Geothermal')}>
           <tr className="table-arrow_box-category">
             <td colSpan="5">
                   Geothermal <span className="icon-padded"><GeothermalIcon /></span>
@@ -330,7 +330,7 @@ const RevenueTypeTable = props => {
         </tbody>
       }
       {windExists &&
-        <tbody id={'revenue-types-' + utils.formatToSlug('Wind')}>
+        <tbody className={'revenue-types-' + utils.formatToSlug('Wind')}>
           <tr className="table-arrow_box-category">
             <td colSpan="5">
                   Offshore renewable energy <span className="icon-padded"><RenewablesIcon /></span>
@@ -340,7 +340,7 @@ const RevenueTypeTable = props => {
         </tbody>
       }
       {otherProductExists &&
-        <tbody id={'revenue-types-' + utils.formatToSlug('Other Products')}>
+        <tbody className={'revenue-types-' + utils.formatToSlug('Other Products')}>
           <tr className="table-arrow_box-category">
             <td colSpan="5">
                   Other products
@@ -359,7 +359,7 @@ const RevenueTypeTable = props => {
         </tbody>
       }
       {allExists &&
-        <tbody id={'revenue-types-' + utils.formatToSlug('all')}>
+        <tbody className={'revenue-types-' + utils.formatToSlug('all')}>
           <tr className="table-arrow_box-category">
             <td colSpan="5">
                   All commodities

@@ -1,5 +1,5 @@
 ---
-title: Audits and Assurances | Archive
+title: Audits and Assurances | How it works
 layout: content
 tag:
 - How it works
@@ -8,8 +8,7 @@ tag:
 - Standards
 - Oversight
 - Regulations
-- archive
-permalink: /archive/audits-and-assurances/
+permalink: /how-it-works/audits-and-assurances/
 ---
 
 <custom-link to="/how-it-works/" className="breadcrumb link-charlie">How it works</custom-link> /
@@ -23,7 +22,7 @@ Companies and government agencies are each legally responsible for reporting acc
 
 <ul class="downloads-download_links list-unstyled">
   <li><a href="/downloads/archive/USEITI_budget-audit-factsheet_2017-08-09.pdf"><icon-download></icon-download>Download audit and assurance processes factsheet (pdf, 1.1 MB)</a>
-    <p class="para-sm"><icon-archive></icon-archive> This content was created as part of the <glossary-term termKey="EITI Standard">USEITI</glossary-term> and is no longer being updated.</p>
+    <p class="para-sm"><icon-archive></icon-archive> This content was created as part of the <glossary-term termKey="EITI Standard">USEITI</glossary-term>. We no longer update this resource.</p>
   </li>
 </ul>
 

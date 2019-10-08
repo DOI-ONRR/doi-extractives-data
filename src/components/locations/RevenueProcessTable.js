@@ -88,7 +88,7 @@ const RevenueTypeTableRow = props => {
 
   return (
     <tr>
-		    <th scope="row" data-value={props.commodityData.All[props.year]} name={'#revenue-' + utils.formatToSlug(props.commodityName)} className="table-arrow_box-subheader">
+		    <th headers="col_0" scope="row" data-value={props.commodityData.All[props.year]} name={'#revenue-' + utils.formatToSlug(props.commodityName)} className="table-arrow_box-subheader">
 		      <strong>{ props.commodityName }</strong><br/>
 		      <strong className="table-arrow_box-subheader-value"> { utils.formatToDollarInt(props.commodityData.All[props.year]) }</strong>
 		    </th>
@@ -97,7 +97,7 @@ const RevenueTypeTableRow = props => {
 		  			let yearTotalValue = getOtherRevenuesValues().Sum
 		  			if (revenueTypeName.toLowerCase() == 'other revenues') {
 		  				return (
-		  					<td key={index} data-value={yearTotalValue} className="table-arrow_box-value  table-arrow_box-text">
+		  					<td headers={`col_${index + 1}`} key={index} data-value={yearTotalValue} className="table-arrow_box-value  table-arrow_box-text">
 		  						<span className="text table-arrow_box-subheader-value">
 		  							{ utils.formatToDollarInt(yearTotalValue)}
 		  						</span>
@@ -118,7 +118,7 @@ const RevenueTypeTableRow = props => {
 		  			else {
 		  				let yearValue = getYearValueForCommodityRevenueType(props.commodityData[revenueTypeName], props.year)
 		  				return (
-		  					<td key={index} data-value={yearValue} className="table-arrow_box-value">
+		  					<td headers={`col_${index + 1}`} key={index} data-value={yearValue} className="table-arrow_box-value">
 		  						<span className="text table-arrow_box-subheader-value">
 		  							{ utils.formatToDollarInt(yearValue)}
 		  						</span>
@@ -159,7 +159,7 @@ const RevenueProcessTable = props => {
   let otherProductExists = false
   let allExists = false
 
-  	let oilGasRevenueTypeRowHtml
+  let oilGasRevenueTypeRowHtml
 
   for (let commodity in revenueTypes) {
   		let commodityName = commodity
@@ -213,17 +213,17 @@ const RevenueProcessTable = props => {
   function getOilAndGasRow (valuesAll, valuesBonus, valuesRents, valuesRoyalties, valuesOtherRevenues, slug) {
     return (
       <tr>
-			  <th scope="row" rowSpan="2" data-value={ valuesAll.Sum} name={'#revenue-' + slug} className="table-arrow_box-subheader">
+			  <th headers="col_0" scope="row" rowSpan="2" data-value={ valuesAll.Sum} name={'#revenue-' + slug} className="table-arrow_box-subheader">
 			    <strong>Oil &amp; Gas </strong><br />
 			    <strong className="table-arrow_box-subheader-value">{ utils.formatToDollarInt(valuesAll.Sum) }</strong>
 			  </th>
-			  <td rowSpan="2" data-value={ valuesBonus.Sum } className="table-arrow_box-value">
+			  <td headers="col_1" rowSpan="2" data-value={ valuesBonus.Sum } className="table-arrow_box-value">
 			    <span className="text table-arrow_box-subheader-value">{ utils.formatToDollarInt(valuesBonus.Sum) }</span>
 			  </td>
-			  <td rowSpan="2" data-value={ valuesRents.Sum } className="table-arrow_box-value">
+			  <td headers="col_2" rowSpan="2" data-value={ valuesRents.Sum } className="table-arrow_box-value">
 			    <span className="text table-arrow_box-subheader-value">{ utils.formatToDollarInt(valuesRents.Sum) }</span>
 			  </td>
-			  <td className="bars table-arrow_box-value" data-value={ valuesRoyalties.Oil } >
+			  <td headers="col_3" className="bars table-arrow_box-value" data-value={ valuesRoyalties.Oil } >
 			  	<span data-value={ valuesRoyalties.Gas } />
 			  	<span data-value={ valuesRoyalties.NGL } />
 			  	<span data-value={ valuesRoyalties.OilShale } />
@@ -257,7 +257,7 @@ const RevenueProcessTable = props => {
 				  	</span>
 			  	}
 			  </td>
-			  <td rowSpan="2" data-value={valuesOtherRevenues.Sum} className="table-arrow_box-value">
+			  <td headers="col_4" rowSpan="2" data-value={valuesOtherRevenues.Sum} className="table-arrow_box-value">
 			  	<span className="text table-arrow_box-subheader-value">{ utils.formatToDollarInt(valuesOtherRevenues.Sum) }</span>
 			  </td>
 
@@ -291,36 +291,36 @@ const RevenueProcessTable = props => {
   function getOffshoreHtml () {
     return (
       <tr>
-        <th scope="row" className="table-arrow_box-subcategory">Offshore</th>
-        <td>
+        <th headers="col_0" scope="row" className="table-arrow_box-subcategory">Offshore</th>
+        <td headers="col_1">
           <strong>Bonus:</strong> The amount offered by the highest bidder
         </td>
-        <td>
+        <td headers="col_2">
           <strong>$7</strong> or <strong>$11</strong> annual rent per acre, increasing over time up to <strong>$44</strong> per acre in some cases
         </td>
-        <td>
+        <td headers="col_3">
           <strong>12.5%</strong>, <strong>16.67%</strong>, or 
           <strong>18.75%</strong> of production value
         </td>
-        <td></td>
+        <td headers="col_4"></td>
       </tr>)
   }
 
   function getOnshoreHtml () {
     return (
       <tr>
-        <th scope="row" className="table-arrow_box-subcategory">Onshore</th>
-        <td>
+        <th headers="col_0" scope="row" className="table-arrow_box-subcategory">Onshore</th>
+        <td headers="col_1">
           <strong>Bonus:</strong> The amount offered by the highest bidder
         </td>
-        <td>
+        <td headers="col_2">
           <strong>$1.50</strong> annual rent per acre for 5 years<br/>
           <strong>$2</strong> annual rent per acre thereafter
         </td>
-        <td>
+        <td headers="col_3">
           <strong>12.5%</strong> of production value
         </td>
-        <td></td>
+        <td headers="col_4"></td>
       </tr>)
   }
 
@@ -328,18 +328,18 @@ const RevenueProcessTable = props => {
     <table id={props.id} is="bar-chart-table" class="revenue table-arrow_box">
       <thead>
         <tr>
-          <th scope="col" className="arrow_box"><span>Commodity</span></th>
-          <th scope="col" className="arrow_box"><span>1. Securing rights</span>Companies pay bonuses or other fees to secure rights to resources on federal land</th>
-          <th scope="col" className="arrow_box"><span>2. Before production</span>Companies pay rent on federal land while exploring for resources</th>
-          <th scope="col" className="arrow_box-last"><span>3. During production</span>Companies pay royalties after production begins</th>
-          <th scope="col"><span>Other revenue</span>Minimum or estimated royalties, settlements, and interest payments</th>
+          <th id="col_0" scope="col" className="arrow_box"><span>Commodity</span></th>
+          <th id="col_1" scope="col" className="arrow_box"><span>1. Securing rights</span>Companies pay bonuses or other fees to secure rights to resources on federal land</th>
+          <th id="col_2" scope="col" className="arrow_box"><span>2. Before production</span>Companies pay rent on federal land while exploring for resources</th>
+          <th id="col_3" scope="col" className="arrow_box-last"><span>3. During production</span>Companies pay royalties after production begins</th>
+          <th id="col_4" scope="col"><span>Other revenue</span>Minimum or estimated royalties, settlements, and interest payments</th>
         </tr>
       </thead>
 
       {oilGasExists &&
 				<tbody className={'revenue-types-' + utils.formatToSlug('oil gas')}>
 				  <tr className="table-arrow_box-category">
-				    <td colSpan="5">
+				    <td headers="col_0" colSpan="5">
 							Oil and Gas <span className="icon-padded"><OilGasIcon /></span>
 				    </td>
 				  </tr>
@@ -369,119 +369,122 @@ const RevenueProcessTable = props => {
       {coalExists &&
 				<tbody className={'revenue-types-' + utils.formatToSlug('Coal')}>
 				    <tr className="table-arrow_box-category">
-				    	<td colSpan="5">
+				    	<td headers="col_0" colSpan="5">
 					        Coal <span className="icon-padded"><CoalIcon /></span>
 				      	</td>
 				    </tr>
 				    <RevenueTypeTableRow commodityName='Coal' commodityData={revenueTypes['Coal']} year={props.year} />
 		            <tr>
-		              <th></th>
-		              <td>
+		              <th headers="col_0"></th>
+		              <td headers="col_1">
 		                <strong>Bonus:</strong> The amount offered by the highest bidder
 		              </td>
-		              <td>
+		              <td headers="col_2">
 		                <strong>$3</strong> annual rent per acre
 		              </td>
-		              <td>
+		              <td headers="col_3">
 		                <strong>Surface mining:</strong> 12.5% of production value + $0.28 per ton in AML fees<br/>
 		                <strong>Subsurface mining:</strong> 8% of production value + $0.12 per ton in AML fees
 		              </td>
-		              <td></td>
+		              <td headers="col_4"></td>
 		            </tr>
 				</tbody>
       }
       {geothermalExists &&
 				<tbody className={'revenue-types-' + utils.formatToSlug('Geothermal')}>
 				    <tr className="table-arrow_box-category">
-				    	<td colSpan="5">
+				    	<td headers="col_0" colSpan="5">
 					        Geothermal <span className="icon-padded"><GeothermalIcon /></span>
 				      	</td>
 				    </tr>
 				    <RevenueTypeTableRow commodityName='Geothermal' commodityData={revenueTypes['Geothermal']} year={props.year} />
 		            <tr>
-		              <th scope="row" className="table-arrow_box-subcategory">Competitive leasing</th>
-		              <td>
+		              <th headers="col_0" scope="row" className="table-arrow_box-subcategory">Competitive leasing</th>
+		              <td headers="col_1">
 		                <strong>Nomination fee:</strong> $110 per nomination + $0.11 per acre<br/>
 		                <strong>Bonus:</strong> The amount offered by the highest bidder<br/>
 		                <strong>$160</strong> processing fee
 		              </td>
-		              <td>
+		              <td headers="col_2">
 		                <strong>$2</strong> per acre for the first year<br/>
 		                <strong>$3</strong> annual rent per acre for years 2-10<br/>
 		                <strong>$5</strong> annual rent per acre thereafter
 		              </td>
-		              <td rowSpan="2">
+		              <td  headers="col_3" rowSpan="2">
 		                <strong>Electricity sales:</strong> 1.75% of gross proceeds for 10 years, then 3.5%<br/>
 		                <strong>Arm’s length sales:</strong> 10% of gross proceeds from contract multiplied by lease royalty rate<br/>
 		                <Link to="/downloads/federal-revenue-by-location/#note-geothermal-rate-details">More about geothermal rates</Link>
 		              </td>
-		              <td></td>
+		              <td headers="col_4"></td>
 		            </tr>
 		            <tr>
-		              <th scope="row" className="table-arrow_box-subcategory">Noncompetitive leasing</th>
-		              <td><strong>Lease:</strong> $410 payment
+		              <th headers="col_0" scope="row" className="table-arrow_box-subcategory">Noncompetitive leasing</th>
+		              <td headers="col_1"><strong>Lease:</strong> $410 payment
 		              </td>
-		              <td><strong>$1</strong> annual rent per acre for 10 years<br/> <strong>$5</strong> annual rent per acre thereafter
+		              <td headers="col_2"><strong>$1</strong> annual rent per acre for 10 years<br/> <strong>$5</strong> annual rent per acre thereafter
 		              </td>
-		              <td></td>
+		              <td headers="col_3"></td>
+					  <td headers="col_4"></td>
 		            </tr>
 				</tbody>
       }
       {windExists &&
 				<tbody className={'revenue-types-' + utils.formatToSlug('Wind')}>
 				    <tr className="table-arrow_box-category">
-				    	<td colSpan="5">
+				    	<td headers="col_0" colSpan="5">
 					        Offshore renewable energy <span className="icon-padded"><RenewablesIcon /></span>
 				      	</td>
 				    </tr>
 				    <RevenueTypeTableRow commodityName='Wind' commodityData={revenueTypes['Wind']} year={props.year} />
 		            <tr>
-		              <th scope="row" className="table-arrow_box-subcategory">Competitive leasing</th>
-		              <td>
+		              <th headers="col_0" scope="row" className="table-arrow_box-subcategory">Competitive leasing</th>
+		              <td headers="col_1">
 		                <strong>Bonus:</strong> The amount offered by the highest bidder
 		              </td>
-		              <td rowSpan="2">
+		              <td headers="col_2" rowSpan="2">
 		                <strong>$3</strong> annual rent per acre<br/>
 		              </td>
-		              <td rowSpan="2">
+		              <td headers="col_3" rowSpan="2">
 		                <strong>2%</strong> of anticipated value of wind energy produced (unless otherwise specified)
 		              </td>
-		              <td></td>
+		              <td headers="col_4"></td>
 		            </tr>
 		            <tr>
-		              <th scope="row" className="table-arrow_box-subcategory">Noncompetitive leasing</th>
-		              <td>
+		              <th headers="col_0" scope="row" className="table-arrow_box-subcategory">Noncompetitive leasing</th>
+		              <td headers="col_1">
 		                <strong>Acquisition fee:</strong> $0.25 per acre
 		              </td>
-		              <td></td>
+		              <td headers="col_2"></td>
+					  <td headers="col_3"></td>
+					  <td headers="col_4"></td>
 		            </tr>
 				</tbody>
       }
       {otherProductExists &&
 				<tbody className={'revenue-types-' + utils.formatToSlug('Other Products')}>
-				    <tr className="table-arrow_box-category">
-				    	<td colSpan="5">
+				    <tr scope="row" className="table-arrow_box-category">
+				    	<td headers="col_0" colSpan="5">
 					        Other products
 				      	</td>
 				    </tr>
 				  <tr>
-				    <th scope="row" className="table-arrow_box-subcategory">Mining claim fees</th>
-				    <td>
+				    <th headers="col_0" scope="row" className="table-arrow_box-subcategory">Mining claim fees</th>
+				    <td headers="col_1">
 				    </td>
-				    <td>
+				    <td headers="col_2">
 				      <strong>$40</strong> location fee <strong>$20</strong> processing fee <strong>$165</strong> maintenance fee
 				    </td>
-				    <td>
+				    <td headers="col_3">
 						Royalty rates are determined by leasing officers on an individual case basis (no minimums apply)
 				    </td>
-				    <td></td>
+				    <td headers="col_4"></td>
 				  </tr>
 				</tbody>
       }
       {allExists &&
 				<tbody className={'revenue-types-' + utils.formatToSlug('all')}>
-				    <tr className="table-arrow_box-category">
-				    	<td colSpan="5">
+				    <tr scope="row" className="table-arrow_box-category">
+				    	<td headers="col_0" colSpan="5">
 					        All commodities
 					        { oilGasExists && <span className="icon-padded"> <OilGasIcon /></span> }
 					        { coalExists && <span className="icon-padded"><CoalIcon /></span> }
@@ -495,24 +498,24 @@ const RevenueProcessTable = props => {
       { !props.isOffshorePage &&
 				<tbody>
 				  <tr className="table-arrow_box-category">
-				    <td colSpan="5">Other revenue streams</td>
+				    <td headers="col_0" colSpan="5">Other revenue streams</td>
 				  </tr>
 				  <tr>
-				    <th scope="row">Hardrock mining on public domain lands</th>
-				    <td colSpan="5">
+				    <th headers="col_0" scope="row">Hardrock mining on public domain lands</th>
+				    <td headers="col_1 col_2 col_3 col_4" colSpan="5">
 						  Federal revenue from hardrock mining on public domain land occurs through the claim-staking process and is managed by the Bureau of Land Management (BLM). It is not included here, because the dataset does not have state-level data. Learn more about <Link to="/how-it-works/minerals/">hardrock mining on federal land</Link>.
 				    </td>
 				  </tr>
 				  <tr>
-				    <th scope="row">Onshore solar and wind energy</th>
-				    <td colSpan="5">
+				    <th headers="col_0" scope="row">Onshore solar and wind energy</th>
+				    <td headers="col_1 col_2 col_3 col_4" colSpan="5">
 						  Federal revenue from onshore renewable energy generation on federal land is not included here, because that dataset, from BLM, does not have state-level data. Learn more about <Link to="/how-it-works/onshore-renewables/">onshore renewables on federal land</Link>.
 				    </td>
 				  </tr>
 				  <tr>
-				    <td>
+				    <td headers="col_0">
 				    </td>
-				    <td colSpan="5">
+				    <td headers="col_1 col_2 col_3 col_4" colSpan="5">
 						  To see how much was collected nationwide for all revenue types, including BLM revenues, see <Link to="/how-it-works/federal-revenue-by-company/">federal revenue by company</Link>.
 				    </td>
 				  </tr>

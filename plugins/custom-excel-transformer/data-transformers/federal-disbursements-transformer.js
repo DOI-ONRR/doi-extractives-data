@@ -20,6 +20,7 @@ const SOURCE_COLUMNS = {
   USState: 'State',
   County: 'County',
   CalendarYear: 'Calendar Year',
+  FiscalYear: 'Fiscal Year',
   Month: 'Month',
   Commodity: 'Commodity',
   Category: 'Category',
@@ -61,11 +62,12 @@ const createDisbursementsNode = (disbursementsData, type) => {
     DisplayYear: (disbursementsData[SOURCE_COLUMNS.Year])
       ? "'" + disbursementsData[SOURCE_COLUMNS.Year].toString().substr(2) : "'" + disbursementsData[SOURCE_COLUMNS.CalendarYear].toString().substr(2),
 	  Fund: fund,
-	  Source: source,
+	  Source: source && toTitleCase(source),
 	  Disbursement: disbursementsData[SOURCE_COLUMNS.Total] || disbursementsData[SOURCE_COLUMNS.Disbursement],
 	  USState: disbursementsData[SOURCE_COLUMNS.USState],
 	  County: disbursementsData[SOURCE_COLUMNS.County],
-	  CalendarYear: disbursementsData[SOURCE_COLUMNS.CalendarYear],
+    CalendarYear: disbursementsData[SOURCE_COLUMNS.CalendarYear],
+    FiscalYear: disbursementsData[SOURCE_COLUMNS.FiscalYear],
 	  Month: disbursementsData[SOURCE_COLUMNS.Month],
 	  Commodity: disbursementsData[SOURCE_COLUMNS.Commodity],
 	  Category: disbursementsData[SOURCE_COLUMNS.Category],
@@ -81,4 +83,12 @@ const createDisbursementsNode = (disbursementsData, type) => {
   }
 
   return disbursementNode
+}
+
+function toTitleCase (str) {
+  str = str.toLowerCase().split(' ')
+  for (let i = 0; i < str.length; i++) {
+    str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1)
+  }
+  return str.join(' ')
 }

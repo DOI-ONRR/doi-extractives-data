@@ -48,10 +48,16 @@ const TOGGLE_VALUES = {
 const DEFAULT_GROUP_BY_INDEX = 0
 const DEFAULT_ADDITIONAL_COLUMN_INDEX = 1
 
+const ALL = 'All'
+const REVENUE = 'Revenue'
+const PRODUCTION = 'Production'
+
 const DATA_TYPE_OPTIONS = {
-  'Revenue': REVENUES_FISCAL_YEAR,
-  'Production': PRODUCT_VOLUMES_FISCAL_YEAR,
+  [REVENUE]: REVENUES_FISCAL_YEAR,
+  [PRODUCTION]: PRODUCT_VOLUMES_FISCAL_YEAR,
 }
+
+const REVENUE_TYPE_OPTIONS = [ALL, 'Rents', 'Royalties', 'Bonuses']
 
 const LAND_CATEGORY_OPTIONS = {
   'All land categories': [BY_REVENUE_TYPE],
@@ -141,8 +147,11 @@ class QueryData extends React.Component {
 	    groupBy: Object.keys(GROUP_BY_OPTIONS)[DEFAULT_GROUP_BY_INDEX],
 	    years: []
 	  },
-	  additionalColumns: [Object.keys(GROUP_BY_OPTIONS)[DEFAULT_ADDITIONAL_COLUMN_INDEX]]
+	  additionalColumns: [Object.keys(GROUP_BY_OPTIONS)[DEFAULT_ADDITIONAL_COLUMN_INDEX]],
+	  revenueTypeOptions: undefined,
 	}
+
+
 
 	componentWillReceiveProps (nextProps) {
 	  let yearOptions = Object.keys(nextProps[REVENUES_FISCAL_YEAR][BY_FISCAL_YEAR])
@@ -877,14 +886,14 @@ const TableToolbar = ({ dataTypeOptions, fiscalYearOptions, locationOptions, com
               </Grid>
             </React.Fragment>
           }
-          {commodities &&
+          {(commodities && dataType === REVENUE) &&
             <React.Fragment>
               <Grid item sm={2} xs={12}>
                 <h6>Revenue type:</h6>
               </Grid>
               <Grid item sm={5} xs={12}>
                 <DropDown
-                  options={[{ name: '-Select-', placeholder: true }, 'All', 'Rents', 'Royalties', 'Bonuses']}
+                  options={[{ name: '-Select-', placeholder: true }].concat(REVENUE_TYPE_OPTIONS)}
                   sortType={'none'}
                   action={value => setRevenueType(value)}
                 />
@@ -893,7 +902,7 @@ const TableToolbar = ({ dataTypeOptions, fiscalYearOptions, locationOptions, com
               </Grid>
             </React.Fragment>
           }
-          {revenueType &&
+          {(revenueType || (commodities && dataType !== REVENUE)) &&
             <React.Fragment>
               <Grid item sm={2} xs={12}>
                 <h6>Fiscal year start:</h6>

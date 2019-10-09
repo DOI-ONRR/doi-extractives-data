@@ -240,7 +240,7 @@ class FederalRevenue extends React.Component {
 	              // Add all fiscal years to each row
 	              this.state.filter.years.forEach(year => {
                   let fiscalYearSlug = 'fy-' + year
-	                sumsByAdditionalColumns[column][columnValue][fiscalYearSlug] = Math.round(sumsByAdditionalColumns[column][columnValue][fiscalYearSlug]) || 0
+	                sumsByAdditionalColumns[column][columnValue][fiscalYearSlug] = sumsByAdditionalColumns[column][columnValue][fiscalYearSlug] || 0
 	              })
 	              tableData.push(Object.assign({ [groupBySlug]: name, [columnSlug]: columnValue }, sumsByAdditionalColumns[column][columnValue]))
 	            })
@@ -249,7 +249,7 @@ class FederalRevenue extends React.Component {
 	        else {
 	          this.state.filter.years.forEach(year => {
 	            let fiscalYearSlug = 'fy-' + year
-	            sums[fiscalYearSlug] = Math.round(sums[fiscalYearSlug]) || 0
+	            sums[fiscalYearSlug] = sums[fiscalYearSlug] || 0
 	          })
 
 	          tableData.push(Object.assign({ [groupBySlug]: name }, sums))

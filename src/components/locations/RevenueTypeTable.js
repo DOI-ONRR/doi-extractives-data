@@ -86,7 +86,7 @@ const RevenueTypeTableRow = props => {
 
   return (
     <tr>
-      <th headers="col_0" scope="row" data-value={props.commodityData.All[props.year]} name={'#revenue-' + utils.formatToSlug(props.commodityName)} className="table-arrow_box-subheader">
+      <th headers={`${props.commodityTableName}_col_0`} scope="row" data-value={props.commodityData.All[props.year]} name={'#revenue-' + utils.formatToSlug(props.commodityName)} className="table-arrow_box-subheader">
         <strong>{ props.commodityName }</strong><br/>
         <strong className="table-arrow_box-subheader-value"> { utils.formatToDollarInt(props.commodityData.All[props.year]) }</strong>
       </th>
@@ -95,7 +95,7 @@ const RevenueTypeTableRow = props => {
           let yearTotalValue = getOtherRevenuesValues().Sum
           if (revenueTypeName.toLowerCase() == 'other revenues') {
             return (
-              <td headers={`col_${index + 1}`} key={index} data-value={yearTotalValue} className="table-arrow_box-value  table-arrow_box-text">
+              <td headers={`${props.commodityTableName}_col_${index + 1}`} key={index} data-value={yearTotalValue} className="table-arrow_box-value  table-arrow_box-text">
                 <span className="text table-arrow_box-subheader-value">
                   { utils.formatToDollarInt(yearTotalValue)}
                 </span>
@@ -116,7 +116,7 @@ const RevenueTypeTableRow = props => {
           else {
             let yearValue = getYearValueForCommodityRevenueType(props.commodityData[revenueTypeName], props.year)
             return (
-              <td headers={`col_${index + 1}`} key={index} data-value={yearValue} className="table-arrow_box-value">
+              <td headers={`${props.commodityTableName}_col_${index + 1}`} key={index} data-value={yearValue} className="table-arrow_box-value">
                 <span className="text table-arrow_box-subheader-value">
                   { utils.formatToDollarInt(yearValue)}
                 </span>
@@ -211,17 +211,17 @@ const RevenueTypeTable = props => {
   function getOilAndGasRow (valuesAll, valuesBonus, valuesRents, valuesRoyalties, valuesOtherRevenues, slug) {
     return (
       <tr>
-        <th headers="col_0" scope="row" rowSpan="2" data-value={ valuesAll.Sum} name={'#revenue-' + slug} className="table-arrow_box-subheader">
+        <th headers={`${props.id}_col_0`} scope="row" rowSpan="2" data-value={ valuesAll.Sum} name={'#revenue-' + slug} className="table-arrow_box-subheader">
           <strong>Oil &amp; Gas </strong><br />
           <strong className="table-arrow_box-subheader-value">{ utils.formatToDollarInt(valuesAll.Sum) }</strong>
         </th>
-        <td headers="col_1" rowSpan="2" data-value={ valuesBonus.Sum } className="table-arrow_box-value">
+        <td headers={`${props.id}_col_1`} rowSpan="2" data-value={ valuesBonus.Sum } className="table-arrow_box-value">
           <span className="text table-arrow_box-subheader-value">{ utils.formatToDollarInt(valuesBonus.Sum) }</span>
         </td>
-        <td headers="col_2" rowSpan="2" data-value={ valuesRents.Sum } className="table-arrow_box-value">
+        <td headers={`${props.id}_col_2`} rowSpan="2" data-value={ valuesRents.Sum } className="table-arrow_box-value">
           <span className="text table-arrow_box-subheader-value">{ utils.formatToDollarInt(valuesRents.Sum) }</span>
         </td>
-        <td headers="col_3" className="bars table-arrow_box-value" data-value={ valuesRoyalties.Oil } >
+        <td headers={`${props.id}_col_3`} className="bars table-arrow_box-value" data-value={ valuesRoyalties.Oil } >
           <span data-value={ valuesRoyalties.Gas } />
           <span data-value={ valuesRoyalties.NGL } />
           <span data-value={ valuesRoyalties.OilShale } />
@@ -255,7 +255,7 @@ const RevenueTypeTable = props => {
             </span>
           }
         </td>
-        <td headers="col_4" rowSpan="2" data-value={valuesOtherRevenues.Sum} className="table-arrow_box-value">
+        <td headers={`${props.id}_col_4`} rowSpan="2" data-value={valuesOtherRevenues.Sum} className="table-arrow_box-value">
           <span className="text table-arrow_box-subheader-value">{ utils.formatToDollarInt(valuesOtherRevenues.Sum) }</span>
         </td>
 
@@ -290,18 +290,18 @@ const RevenueTypeTable = props => {
     <table id={props.id} is="bar-chart-table" class="revenue table-arrow_box">
       <thead id="revenue-phase">
         <tr>
-          <th id="col_0" scope="col" className="arrow_box"><span>Commodity</span></th>
-          <th id="col_1" scope="col" className="arrow_box"><span>1. Securing rights</span></th>
-          <th id="col_2" scope="col" className="arrow_box"><span>2. Before production</span></th>
-          <th id="col_3" scope="col" className="arrow_box-last"><span>3. During production</span></th>
-          <th id="col_4" scope="col"><span>Other revenue</span></th>
+          <th id={`${props.id}_col_0`} scope="col" className="arrow_box"><span>Commodity</span></th>
+          <th id={`${props.id}_col_1`} scope="col" className="arrow_box"><span>1. Securing rights</span></th>
+          <th id={`${props.id}_col_2`} scope="col" className="arrow_box"><span>2. Before production</span></th>
+          <th id={`${props.id}_col_3`} scope="col" className="arrow_box-last"><span>3. During production</span></th>
+          <th id={`${props.id}_col_4`} scope="col"><span>Other revenue</span></th>
         </tr>
       </thead>
 
       {oilGasExists &&
         <tbody className={'revenue-types-' + utils.formatToSlug('oil gas')}>
           <tr className="table-arrow_box-category">
-            <td headers="col_0" scope="row" colSpan="5">
+            <td headers={`${props.id}_col_0`} scope="row" colSpan="5">
               Oil and Gas <span className="icon-padded"><OilGasIcon /></span>
             </td>
           </tr>
@@ -312,37 +312,49 @@ const RevenueTypeTable = props => {
       {coalExists &&
         <tbody className={'revenue-types-' + utils.formatToSlug('Coal')}>
           <tr className="table-arrow_box-category">
-            <td headers="col_0" colSpan="5">
+            <td headers={`${props.id}_col_0`} colSpan="5">
                   Coal <span className="icon-padded"><CoalIcon /></span>
             </td>
           </tr>
-          <RevenueTypeTableRow commodityName='Coal' commodityData={revenueTypes['Coal']} year={props.year} />
+          <RevenueTypeTableRow
+            commodityName='Coal'
+            commodityData={revenueTypes['Coal']}
+            year={props.year}
+            commodityTableName={props.id} />
         </tbody>
       }
       {geothermalExists &&
         <tbody className={'revenue-types-' + utils.formatToSlug('Geothermal')}>
           <tr className="table-arrow_box-category">
-            <td headers="col_0" colSpan="5">
+            <td headers={`${props.id}_col_0`} colSpan="5">
                   Geothermal <span className="icon-padded"><GeothermalIcon /></span>
             </td>
           </tr>
-          <RevenueTypeTableRow commodityName='Geothermal' commodityData={revenueTypes['Geothermal']} year={props.year} />
+          <RevenueTypeTableRow
+            commodityName='Geothermal'
+            commodityData={revenueTypes['Geothermal']}
+            year={props.year}
+            commodityTableName={props.id} />
         </tbody>
       }
       {windExists &&
         <tbody className={'revenue-types-' + utils.formatToSlug('Wind')}>
           <tr className="table-arrow_box-category">
-            <td headers="col_0" colSpan="5">
+            <td headers={`${props.id}_col_0`} colSpan="5">
                   Offshore renewable energy <span className="icon-padded"><RenewablesIcon /></span>
             </td>
           </tr>
-          <RevenueTypeTableRow commodityName='Wind' commodityData={revenueTypes['Wind']} year={props.year} />
+          <RevenueTypeTableRow
+            commodityName='Wind'
+            commodityData={revenueTypes['Wind']}
+            year={props.year}
+            commodityTableName={props.id} />
         </tbody>
       }
       {otherProductExists &&
         <tbody className={'revenue-types-' + utils.formatToSlug('Other Products')}>
           <tr className="table-arrow_box-category">
-            <td headers="col_1" colSpan="5">
+            <td headers={`${props.id}_col_1`} colSpan="5">
                   Other products
             </td>
           </tr>
@@ -352,7 +364,14 @@ const RevenueTypeTable = props => {
               let commodityValues = commodity[1]
 
               if (Lazy(otherProductCommodities).contains(commodity[0]) && commodityValues.All[props.year]) {
-                return (<RevenueTypeTableRow key={index} commodityName={commodityName} commodityData={commodityValues} year={props.year} />)
+                return (
+                  <RevenueTypeTableRow
+                    key={index}
+                    commodityName={commodityName}
+                    commodityData={commodityValues}
+                    year={props.year}
+                    commodityTableName={props.id} />
+                )
               }
             })
           }
@@ -361,7 +380,7 @@ const RevenueTypeTable = props => {
       {allExists &&
         <tbody className={'revenue-types-' + utils.formatToSlug('all')}>
           <tr className="table-arrow_box-category">
-            <td headers="col_0" colSpan="5">
+            <td headers={`${props.id}_col_0`} colSpan="5">
                   All commodities
               { oilGasExists && <span className="icon"> <OilGasIcon /></span> }
               { coalExists && <span className="icon"><CoalIcon /></span> }
@@ -373,7 +392,8 @@ const RevenueTypeTable = props => {
             isNationalPage={props.isNationalPage}
             commodityName={utils.getDisplayName_CommodityName('All')}
             commodityData={revenueTypes['All']}
-            year={props.year} />
+            year={props.year}
+            commodityTableName={props.id} />
         </tbody>
       }
 

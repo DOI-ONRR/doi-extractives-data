@@ -108,6 +108,8 @@ const GROUP_BY_OPTIONS = {
   },
   [DISBURSEMENTS]: {
     'Recipient': [BY_FUND],
+    'Source': [BY_SOURCE],
+    'Location': [BY_STATE],
   }
 }
 const ADDITIONAL_COLUMN_OPTIONS = {
@@ -746,7 +748,7 @@ class QueryData extends React.Component {
 						    <ExploreDataLink to={'/how-it-works/#resources_process'}>How it works</ExploreDataLink>
 						    <DownloadDataLink to={'/downloads/federal-revenue-by-location/'}>Documentation</DownloadDataLink>
 						  </div>
-						  <h2 className={theme.sectionHeaderUnderline}>Revenue</h2>
+						  <h2 className={theme.sectionHeaderUnderline}>{this.state.dataType}</h2>
 						  <MuiThemeProvider theme={muiTheme}>
 						    <Grid container spacing={1}>
 						      <Grid item sm={12} xs={12}>

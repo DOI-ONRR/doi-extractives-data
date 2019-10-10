@@ -18,6 +18,7 @@ const initialState = {
 }
 
 // Data set type keys
+export const DISBURSEMENTS_FISCAL_YEAR = 'disbursements_fy'
 export const PRODUCT_VOLUMES_FISCAL_YEAR = 'product_volumes_fy'
 export const REVENUES_FISCAL_YEAR = 'revenues_fy'
 export const REVENUES_MONTHLY = 'revenues_monthly'
@@ -35,6 +36,8 @@ export const BY_REVENUE_TYPE = 'by_revenue_type'
 export const BY_FISCAL_YEAR = 'by_fiscal_year'
 export const BY_CALENDAR_YEAR = 'by_calendar_year'
 export const BY_REVENUE_CATEGORY = 'by_revenue_category'
+export const BY_FUND = 'by_fund'
+export const BY_SOURCE = 'by_source'
 
 // Data set property keys
 export const DATA_SET_KEYS = {

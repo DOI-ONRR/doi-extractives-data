@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useLayoutEffect } from 'react'
 
 import styles from './DisbursementsTableToolbar.module.scss'
 
@@ -44,10 +44,38 @@ const DisbursementsTableToolbar = ({
   const [fiscalYearEnd, setFiscalYearEnd] = useState()
   const [fiscalYearsSelected, setFiscalYearSelected] = useState()
 
+  let fiscalYearStartOptions = []
+
   useEffect(() => {
     setSource(undefined)
-  }, [recipient])  
-  
+    setStates(undefined)
+    setCounties(undefined)
+    setFiscalYearStart(undefined)
+    setFiscalYearEnd(undefined)
+    setFiscalYearSelected(undefined)
+  }, [recipient])
+
+  useEffect(() => {
+    setStates(undefined)
+    setCounties(undefined)
+    setFiscalYearStart(undefined)
+    setFiscalYearEnd(undefined)
+    setFiscalYearSelected(undefined)
+  }, [source])
+
+  useEffect(() => {
+    setCounties(undefined)
+    setFiscalYearStart(undefined)
+    setFiscalYearEnd(undefined)
+    setFiscalYearSelected(undefined)
+  }, [states])
+
+  useEffect(() => {
+    setFiscalYearStart(undefined)
+    setFiscalYearEnd(undefined)
+    setFiscalYearSelected(undefined)
+  }, [counties])
+
   useEffect(() => {
     if (fiscalYearStart && fiscalYearEnd) {
       if (fiscalYearStart <= fiscalYearEnd) {
@@ -76,16 +104,34 @@ const DisbursementsTableToolbar = ({
       states.length === 1 &&
       !states.includes('All'))
   }
+
   const showFiscalYearStart = () => {
     let show = false
-    console.log(counties)
-    if(recipient === 'State' && counties && states) {
+    if (recipient === 'State' && counties && states) {
       show = true
     }
-    else if(source) {
+    else if (source) {
       show = true
     }
+
     return show
+  }
+
+  const getFiscalYearStartOptions = () => {
+    fiscalYearStartOptions = fiscalYearOptions({ source })
+  }
+
+  const getFiscalYearEndOptions = () => {
+    if (fiscalYearStartOptions) {
+      // Assuming if the first option is an object then it is a placeholder option
+      if (typeof fiscalYearStartOptions[0] === 'object') {
+        return [fiscalYearStartOptions[0]].concat(fiscalYearStartOptions.filter(option => (parseInt(option) >= parseInt(fiscalYearStart))))
+      }
+      else {
+        return fiscalYearStartOptions.filter(option => (parseInt(option) >= parseInt(fiscalYearStart)))
+      }
+    }
+    return []
   }
 
   return (
@@ -97,7 +143,7 @@ const DisbursementsTableToolbar = ({
           </Grid>
           <Grid item sm={5} xs={12}>
             <DropDown
-              options={recipientOptions}
+              options={recipientOptions()}
               selectedOptionValue={recipient}
               sortType={'none'}
               action={value => setRecipient(value)}
@@ -112,7 +158,7 @@ const DisbursementsTableToolbar = ({
               </Grid>
               <Grid item sm={5} xs={12}>
                 <DropDown
-                  options={sourceOptions}
+                  options={sourceOptions(recipient)}
                   selectedOptionValue={source}
                   sortType={'none'}
                   action={value => setSource(value)}
@@ -165,7 +211,7 @@ const DisbursementsTableToolbar = ({
               </Grid>
               <Grid item sm={5} xs={12}>
                 <DropDown
-                  options={fiscalYearOptions()}
+                  options={getFiscalYearStartOptions()}
                   sortType={'descending'}
                   action={value => setFiscalYearStart(value)}
                 />
@@ -181,7 +227,7 @@ const DisbursementsTableToolbar = ({
               </Grid>
               <Grid item sm={5} xs={12}>
                 <DropDown
-                  options={fiscalYearOptions()}
+                  options={getFiscalYearEndOptions()}
                   selectedOptionValue={fiscalYearEnd}
                   sortType={'descending'}
                   action={value => setFiscalYearEnd(value)}

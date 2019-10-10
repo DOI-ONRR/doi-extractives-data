@@ -53,9 +53,15 @@ const DEFAULT_GROUP_BY_INDEX = 0
 const DEFAULT_ADDITIONAL_COLUMN_INDEX = 1
 
 const ALL = 'All'
+const SELECT = '-Select-'
 const REVENUE = 'Revenue'
 const PRODUCTION = 'Production'
 const DISBURSEMENTS = 'Disbursements'
+const RECIPIENTS = 'Recipients'
+const SOURCE = 'Source'
+const FILTERED_IDS = 'filtered_ids'
+const FISCAL_YEAR = 'FiscalYear'
+const FISCAL_YEARS = 'fiscal_years'
 
 const DATA_TYPE_OPTIONS = {
   [REVENUE]: REVENUES_FISCAL_YEAR,
@@ -93,6 +99,7 @@ const LAND_CATEGORY_OPTIONS = {
   'Native American': [BY_STATE, BY_OFFSHORE_REGION],
   'Federal (onshore and offshore)': [BY_COMMODITY],
 }
+
 const GROUP_BY_OPTIONS = {
   [REVENUE]: {
     'Revenue type': [BY_REVENUE_TYPE],
@@ -153,18 +160,18 @@ class QueryData extends React.Component {
     this.additionalColumnOptionKeys = Object.keys(ADDITIONAL_COLUMN_OPTIONS)
     this.getFiscalYearOptions = () => this.props[REVENUES_FISCAL_YEAR] && Object.keys(this.props[REVENUES_FISCAL_YEAR][BY_FISCAL_YEAR])
     this.getLocationOptions = () => {
-      let allOption = ['All']
+      let allOption = [ALL]
       let offshoreOptions = this.props[REVENUES_FISCAL_YEAR] && Object.keys(this.props[REVENUES_FISCAL_YEAR][BY_OFFSHORE_REGION])
       let states = this.props[REVENUES_FISCAL_YEAR] && Object.keys(this.props[REVENUES_FISCAL_YEAR][BY_STATE])
       return allOption.concat(offshoreOptions, states)
     }
     this.getCommodityOptions = () => {
-      let allOption = ['All']
+      let allOption = [ALL]
       let commodityOptions = this.props[REVENUES_FISCAL_YEAR] && Object.keys(this.props[REVENUES_FISCAL_YEAR][BY_COMMODITY])
       return allOption.concat(commodityOptions)
     }
     this.getCountyOptions = state => {
-      let allOption = ['All']
+      let allOption = [ALL]
       let countyOptions = []
       this.props.data.allRevenuesGroupByCounty.group.forEach(countyData => {
         if (countyData.data[0].node.State === state) {
@@ -202,14 +209,18 @@ class QueryData extends React.Component {
 	}
 
 	/** Begin getting options for filter **/
+
 	getDisbursementOptions (optionType) {
+	  let getRecipientOptions = () => {
+
+	  }
 	  let getLocationOptions = () => {
-	    let allOption = ['All']
+	    let allOption = [ALL]
 	    let states = this.props[DISBURSEMENTS_FISCAL_YEAR] && Object.keys(this.props[DISBURSEMENTS_FISCAL_YEAR][BY_STATE])
 	    return allOption.concat(states)
 	  }
 	  let getCountyOptions = state => {
-	    let allOption = ['All']
+	    let allOption = [ALL]
 	    let countyOptions = []
 	    Object.keys(this.props[DISBURSEMENTS_FISCAL_YEAR][BY_ID]).forEach(id => {
 	      if (this.props[DISBURSEMENTS_FISCAL_YEAR][BY_ID][id].State === state) {
@@ -239,7 +250,91 @@ class QueryData extends React.Component {
 	  }
 	}
 
-	/** End getting options for filter **/
+  /**
+   * The filter options object contains code to filter the available options that are in the dataset.
+   * As the user makes more selections the data gets filtered and only available options are shown to the user.
+   * Then when we submit we already have a filtered data set and only need to apply the last filtered option.
+   *
+   * Basically this is the filter engine for this query table.
+   */
+  filterEngine = {
+    [DISBURSEMENTS]: {
+      [RECIPIENTS]: () => {
+        let recipients = Object.keys(this.props[DISBURSEMENTS_FISCAL_YEAR][BY_FUND])
+        this.props[DISBURSEMENTS_FISCAL_YEAR][FILTERED_IDS] = undefined
+        return [{ name: SELECT, placeholder: true }].concat([ALL], recipients)
+      },
+      [SOURCE]: recipient => {
+        let sources = []
+        if (recipient && recipient !== ALL) {
+          this.props[DISBURSEMENTS_FISCAL_YEAR][FILTERED_IDS] = this.props[DISBURSEMENTS_FISCAL_YEAR][BY_FUND][recipient]
+          this.props[DISBURSEMENTS_FISCAL_YEAR][FILTERED_IDS].forEach(id => {
+            if (!sources.includes(this.props[DISBURSEMENTS_FISCAL_YEAR][BY_ID][id][SOURCE])) {
+              sources.push(this.props[DISBURSEMENTS_FISCAL_YEAR][BY_ID][id][SOURCE])
+            }
+          })
+          if (sources.length > 1) {
+            sources = [ALL].concat(sources)
+          }
+        }
+        else {
+          sources = [ALL].concat(Object.keys(this.props[DISBURSEMENTS_FISCAL_YEAR][BY_SOURCE]))
+        }
+
+        return [{ name: SELECT, placeholder: true }].concat(sources)
+      },
+      [FISCAL_YEARS]: ({ source, states, counties }) => {
+        let fiscalYears = []
+        if (source) {
+          let fileredIds = []
+          this.props[DISBURSEMENTS_FISCAL_YEAR][FILTERED_IDS].forEach(id => {
+            if (this.hasSource(this.props[DISBURSEMENTS_FISCAL_YEAR][BY_ID][id], source)) {
+              fileredIds.push(id)
+            }
+          })
+          this.props[DISBURSEMENTS_FISCAL_YEAR][FILTERED_IDS] = fileredIds
+        }
+
+        if (this.props[DISBURSEMENTS_FISCAL_YEAR][FILTERED_IDS]) {
+          this.props[DISBURSEMENTS_FISCAL_YEAR][FILTERED_IDS].forEach(id => {
+            if (!fiscalYears.includes(this.props[DISBURSEMENTS_FISCAL_YEAR][BY_ID][id][FISCAL_YEAR])) {
+              fiscalYears.push(this.props[DISBURSEMENTS_FISCAL_YEAR][BY_ID][id][FISCAL_YEAR])
+            }
+          })
+        }
+        else {
+          fiscalYears = Object.keys(this.props[DISBURSEMENTS_FISCAL_YEAR][BY_FISCAL_YEAR])
+        }
+        return [{ name: SELECT, placeholder: true }].concat(fiscalYears)
+      }
+
+    }
+  }
+  /** End getting options for filter **/
+
+  getFilterToolbar () {
+	  switch (this.state.dataType) {
+	  case REVENUE:
+	    return (<TableToolbar
+	      fiscalYearOptions={this.getFiscalYearOptions()}
+	      locationOptions={this.getLocationOptions()}
+	      commodityOptions={this.getCommodityOptions()}
+	      countyOptions={this.getCountyOptions}
+	      defaultFiscalYearsSelected={this.state.filter.years}
+	      onSubmitAction={this.handleTableToolbarSubmit.bind(this)}
+	    />)
+	  case DISBURSEMENTS:
+	    return (<DisbursementsTableToolbar
+	      recipientOptions={this.filterEngine[DISBURSEMENTS][RECIPIENTS]}
+	      sourceOptions={this.filterEngine[DISBURSEMENTS][SOURCE]}
+	      stateOptions={this.getDisbursementOptions('state')}
+	      countyOptions={this.getDisbursementOptions('county')}
+	      fiscalYearOptions={this.filterEngine[DISBURSEMENTS][FISCAL_YEARS]}
+	      onSubmit={this.handleDisbursementsSubmit.bind(this)}
+	    />)
+	  }
+  }
+
 	getTableColumns = () => {
 	  let columns = []; let columnExtensions = []; let grouping = []; let currencyColumns = []; let volumeColumns = []; let defaultSorting = []
 	  let { filter } = this.state
@@ -504,6 +599,15 @@ class QueryData extends React.Component {
 	  return (this.state.filter.recipient === data.Recipient)
 	}
 
+	hasSource (data, source) {
+	  if (this.state.dataType !== DISBURSEMENTS) return true
+	  let sourceValue = source || this.state.filter.source
+	  if (sourceValue === 'All') {
+	    return true
+	  }
+	  return (sourceValue === data.Source)
+	}
+
 	handleTableToolbarSubmit (updatedFilters) {
 	  let additionalColumns = ['Land category']
 	  let groupBy = 'Revenue type'
@@ -659,29 +763,6 @@ class QueryData extends React.Component {
       dataType: value,
       filter: { ...this.state.filter, isUpdated: false }
     })
-  }
-
-  getFilterToolbar () {
-    switch (this.state.dataType) {
-    case REVENUE:
-      return (<TableToolbar
-        fiscalYearOptions={this.getFiscalYearOptions()}
-        locationOptions={this.getLocationOptions()}
-        commodityOptions={this.getCommodityOptions()}
-        countyOptions={this.getCountyOptions}
-        defaultFiscalYearsSelected={this.state.filter.years}
-        onSubmitAction={this.handleTableToolbarSubmit.bind(this)}
-      />)
-    case DISBURSEMENTS:
-      return (<DisbursementsTableToolbar
-        recipientOptions={[{ name: '-Select-', placeholder: true }].concat(Object.keys(RECIPIENT_OPTIONS))}
-        sourceOptions={[{ name: '-Select-', placeholder: true }].concat(Object.keys(SOURCE_OPTIONS))}
-        stateOptions={this.getDisbursementOptions('state')}
-        countyOptions={this.getDisbursementOptions('county')}
-        fiscalYearOptions={this.getDisbursementOptions('fiscalYears')}
-        onSubmit={this.handleDisbursementsSubmit.bind(this)}
-      />)
-    }
   }
 
   handleDisbursementsSubmit (updatedFilters) {

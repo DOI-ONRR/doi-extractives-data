@@ -1,5 +1,6 @@
 // Federalist provides the BASEURL env variable for preview builds.
 // https://github.com/18F/federalist-garden-build#variables-exposed-during-builds
+
 const BASEURL = process.env.BASEURL || undefined
 
 // Federalist provides the google_analytics env variable
@@ -13,6 +14,7 @@ let config = {
     description: 'This site provides open data about natural resource management on federal lands and waters in the United States, including oil, gas, coal, and other extractive industries.',
     version: 'v5.4.6',
     googleAnalyticsId: GOOGLE_ANALYTICS_ID,
+    siteUrl: `localhost:9000`
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -122,36 +124,13 @@ let config = {
       },
     },
     {
+      // https://www.gatsbyjs.org/packages/gatsby-plugin-sitemap/
       resolve: `gatsby-plugin-sitemap`,
       options: {
         output: `/nrrd-sitemap.xml`,
         // Exclude specific pages or groups of pages using glob parameters
         // See: https://github.com/isaacs/minimatch
-        exclude: [],
-        query: `
-          {
-            site {
-              siteMetadata {
-                siteUrl
-              }
-            }
-
-            allSitePage {
-              edges {
-                node {
-                  path
-                }
-              }
-            }
-        }`,
-        serialize: ({ site, allSitePage }) =>
-          allSitePage.edges.map(edge => {
-            return {
-              url: site.siteMetadata.siteUrl + edge.node.path,
-              changefreq: `daily`,
-              priority: 0.7,
-            }
-          })
+        exclude: []
       }
     },
     'custom-excel-transformer',

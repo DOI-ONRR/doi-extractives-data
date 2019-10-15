@@ -17,7 +17,7 @@ tag:
 <custom-link to="/how-it-works/" className="breadcrumb link-charlie">How it works</custom-link> /
 # Land and Water Conservation Fund
 
-> The Land and Water Conservation Fund (LWCF) was enacted in 1964. It supports preservation, development, and access to outdoor lands for public recreation. The LWCF is funded by revenue from offshore oil and gas leases. 
+> Congress created the Land and Water Conservation Fund (LWCF) in 1964. The fund went into effect on January 1, 1965. It supports preservation, development, and access to outdoor lands for public recreation. The LWCF is funded by revenue from offshore oil and gas leases. 
 
 The [Land and Water Conservation Fund](https://www.nps.gov/subjects/lwcf/index.htm) provides competitive grants to states for local preservation and recreation projects, along with a federal portion to acquire lands and waters for public recreation or cultural resource preservation.
 

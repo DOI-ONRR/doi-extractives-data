@@ -211,12 +211,11 @@ const StateDisbursementsSummary = props => {
     const stateName=props.stateName;
     const maxYear=usStateDisbursements.All.MaxYear
     const allDisbursements = (usStateDisbursements && usStateDisbursements.All.All) ? usStateDisbursements.All.All[maxYear] : 0
-
     return (
 	    <div>
 	    <p>Disbursements </p>
 	    { allDisbursements > 0 && <><p> Revenue from federal land in {stateName} resulted in:</p><ul> <li><strong> {utils.formatToDollarInt(allDisbursements)}</strong> disbursed from the federal government to {stateName} in {maxYear}.</li></ul></> }
-	    { allDisbursements == 0 && <p>No disbursements were reported for {stateName} in {maxYear}, probably because there was no revenue from production on federal land.</p> }
+	{ (allDisbursements == null || allDisbursements == 0 ) && <p>No disbursements were reported for {stateName} in {maxYear}, probably because there was no revenue from production on federal land.</p> }
 	</div>
   )
 }

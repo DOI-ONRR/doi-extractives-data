@@ -19,7 +19,7 @@ jobs:
           command: npm run build
       - run:
           name: Run tests
-          command: npm test
+          command: npm test; npm test-pa11y;
 
 workflows:
   version: 2

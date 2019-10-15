@@ -63,6 +63,7 @@
     "serve": "gatsby serve",
     "format": "eslint --fix 'src/**'",
     "test": "jest",
+    "test-pa11y": "./node_modules/.bin/pa11y-ci --sitemap https://revenuedata.doi.gov/sitemap.xml --sitemap-find revenuedata.doi.gov --sitemap-replace localhost",
     "test-update-snapshots": "jest -u",
     "setup-gatsby": "npm install",
     "build-gatsby": "npm run build",
@@ -91,6 +92,7 @@
     "eslint-plugin-standard": "^4.0.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^24.8.0",
+    "pa11y-ci": "^2.3.0",
     "react-test-renderer": "^16.8.4",
     "svg-react-loader": "^0.4.6"
   },

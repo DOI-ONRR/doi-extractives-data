@@ -127,7 +127,7 @@ let config = {
       // https://www.gatsbyjs.org/packages/gatsby-plugin-sitemap/
       resolve: `gatsby-plugin-sitemap`,
       options: {
-        output: `/nrrd-sitemap.xml`,
+        output: `/sitemap.xml`,
         // Exclude specific pages or groups of pages using glob parameters
         // See: https://github.com/isaacs/minimatch
         exclude: []

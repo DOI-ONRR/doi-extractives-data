@@ -45,6 +45,8 @@ export const DATA_SET_KEYS = {
   OFFSHORE_REGION: 'OffshoreRegion',
   LOCATION: 'State',
   COUNTY: 'County',
+  SOURCE: 'Source',
+  RECIPIENT: 'Recipient',
 }
 
 // Define Action Types

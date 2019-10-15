@@ -191,9 +191,6 @@ class GroupTable extends React.Component {
       groupSummaryItems,
       defaultSorting } = this.state
 
-    // console.log(allColumns, currencyColumns)
-    // console.log(totalSummaryItems, groupSummaryItems)
-
     return (
     	<div>
         <MuiThemeProvider theme={theme}>
@@ -204,14 +201,17 @@ class GroupTable extends React.Component {
             <CurrencyTypeProvider
               for={currencyColumns}
             />
-            <AllTypeProvider
-              for={allColumns}
-            />
+            {allColumns &&
+              <AllTypeProvider
+                for={allColumns}
+              />
+            }
             <VolumeTypeProvider
               for={volumeColumns}
             />
             <SortingState
               defaultSorting={defaultSorting}
+              sorting={defaultSorting}
             />
             <IntegratedSorting />
             <GroupingState

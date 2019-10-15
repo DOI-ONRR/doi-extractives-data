@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useLayoutEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 
 import styles from './DisbursementsTableToolbar.module.scss'
 
@@ -31,14 +31,14 @@ const muiTheme = createMuiTheme({
 const DisbursementsTableToolbar = ({
   recipientOptions,
   sourceOptions,
-  stateOptions,
+  locationOptions,
   countyOptions,
   fiscalYearOptions,
   onSubmit
 }) => {
   const [recipient, setRecipient] = useState()
   const [source, setSource] = useState()
-  const [states, setStates] = useState()
+  const [locations, setLocations] = useState()
   const [counties, setCounties] = useState()
   const [fiscalYearStart, setFiscalYearStart] = useState()
   const [fiscalYearEnd, setFiscalYearEnd] = useState()
@@ -48,7 +48,7 @@ const DisbursementsTableToolbar = ({
 
   useEffect(() => {
     setSource(undefined)
-    setStates(undefined)
+    setLocations(undefined)
     setCounties(undefined)
     setFiscalYearStart(undefined)
     setFiscalYearEnd(undefined)
@@ -56,7 +56,19 @@ const DisbursementsTableToolbar = ({
   }, [recipient])
 
   useEffect(() => {
-    setStates(undefined)
+    if (source === 'State') {
+      let filteredLocationOptions = locationOptions()
+      if (filteredLocationOptions && filteredLocationOptions.length === 1) {
+        setLocations(filteredLocationOptions)
+      }
+      else {
+        setLocations(undefined)
+      }
+    }
+    else {
+      setLocations(undefined)
+    }
+
     setCounties(undefined)
     setFiscalYearStart(undefined)
     setFiscalYearEnd(undefined)
@@ -68,7 +80,7 @@ const DisbursementsTableToolbar = ({
     setFiscalYearStart(undefined)
     setFiscalYearEnd(undefined)
     setFiscalYearSelected(undefined)
-  }, [states])
+  }, [locations])
 
   useEffect(() => {
     setFiscalYearStart(undefined)
@@ -93,24 +105,31 @@ const DisbursementsTableToolbar = ({
       onSubmit({
         recipient,
         source,
-        states,
+        locations,
         counties,
         fiscalYearsSelected,
       })
     }
   }
   const showCountyOptions = () => {
-    return (states !== undefined &&
-      states.length === 1 &&
-      !states.includes('All'))
+    return (locations !== undefined &&
+      locations.length === 1 &&
+      !locations.includes('All') &&
+      countyOptions(locations).length > 0)
   }
 
   const showFiscalYearStart = () => {
     let show = false
-    if (recipient === 'State' && counties && states) {
-      show = true
+
+    if (recipient === 'State' && locations) {
+      if (locations.length === 1 && (counties || !showCountyOptions())) {
+        show = true
+      }
+      else if (locations.length > 1 || locations.includes('All')) {
+        show = true
+      }
     }
-    else if (source) {
+    else if (source && recipient !== 'State') {
       show = true
     }
 
@@ -118,7 +137,8 @@ const DisbursementsTableToolbar = ({
   }
 
   const getFiscalYearStartOptions = () => {
-    fiscalYearStartOptions = fiscalYearOptions({ source })
+    fiscalYearStartOptions = fiscalYearOptions({ source, locations, counties })
+    return fiscalYearStartOptions
   }
 
   const getFiscalYearEndOptions = () => {
@@ -177,9 +197,9 @@ const DisbursementsTableToolbar = ({
                 <Select
                   multiple
                   sortType={'none'}
-                  options={stateOptions}
-                  selectedOption={states}
-                  onChangeHandler={values => setStates(values)}
+                  options={locationOptions(source)}
+                  selectedOption={locations}
+                  onChangeHandler={values => setLocations(values)}
                 />
               </Grid>
               <Grid item sm={5}>
@@ -195,7 +215,7 @@ const DisbursementsTableToolbar = ({
                 <Select
                   multiple
                   sortType={'none'}
-                  options={countyOptions(states[0])}
+                  options={countyOptions(locations)}
                   selectedOption={counties}
                   onChangeHandler={values => setCounties(values)}
                 />

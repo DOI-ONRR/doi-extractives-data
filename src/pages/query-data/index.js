@@ -44,24 +44,28 @@ import DialogContent from '@material-ui/core/DialogContent'
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles'
 
 const PAGE_TITLE = 'Federal Revenue | Natural Resources Revenue Data'
-const TOGGLE_VALUES = {
-  Year: 'year',
-  Month: 'month'
-}
-
-const DEFAULT_GROUP_BY_INDEX = 0
-const DEFAULT_ADDITIONAL_COLUMN_INDEX = 1
 
 const ALL = 'All'
 const SELECT = '-Select-'
 const REVENUE = 'Revenue'
 const PRODUCTION = 'Production'
 const DISBURSEMENTS = 'Disbursements'
+const RECIPIENT = 'Recipient'
 const RECIPIENTS = 'Recipients'
+const STATE = 'State'
+const COUNTY = 'County'
 const SOURCE = 'Source'
+const SOURCES = 'Sources'
+const LOCATIONS = 'Locations'
+const LOCATION = 'Location'
+const COUNTIES = 'Counties'
 const FILTERED_IDS = 'filtered_ids'
 const FISCAL_YEAR = 'FiscalYear'
 const FISCAL_YEARS = 'fiscal_years'
+const NO_SECOND_COLUMN = 'No second column'
+const ONSHORE = 'Onshore'
+const OFFSHORE = 'Offshore'
+const ONSHORE_OFFSHORE = 'Onshore & Offshore'
 
 const DATA_TYPE_OPTIONS = {
   [REVENUE]: REVENUES_FISCAL_YEAR,
@@ -71,61 +75,141 @@ const DATA_TYPE_OPTIONS = {
 
 const REVENUE_TYPE_OPTIONS = [ALL, 'Rents', 'Royalties', 'Bonuses']
 
-const RECIPIENT_OPTIONS = {
-  'All': [BY_FUND],
-  'American Indian Tribes': [BY_FUND],
-  'Historic Preservation Fund': [BY_FUND],
-  'Land & Water Conservation Fund': [BY_FUND],
-  'Other': [BY_FUND],
-  'Reclamation': [BY_FUND],
-  'State': [BY_FUND],
-  'U.S. Treasury': [BY_FUND],
-}
-
-const SOURCE_OPTIONS = {
-  'All': [BY_SOURCE],
-  '8(g)': [BY_SOURCE],
-  'Gomesa': [BY_SOURCE],
-  'Offshore': [BY_SOURCE],
-  'Onshore': [BY_SOURCE],
-  'Onshore & Offshore': [BY_SOURCE],
-}
-
 const LAND_CATEGORY_OPTIONS = {
   'All land categories': [BY_REVENUE_TYPE],
   'Federal onshore': [BY_LAND_CLASS, BY_LAND_CATEGORY],
   'Federal offshore': [BY_STATE, BY_OFFSHORE_REGION],
-  'Onshore': [BY_STATE, BY_OFFSHORE_REGION],
+  [ONSHORE]: [BY_STATE, BY_OFFSHORE_REGION],
   'Native American': [BY_STATE, BY_OFFSHORE_REGION],
   'Federal (onshore and offshore)': [BY_COMMODITY],
 }
 
-const GROUP_BY_OPTIONS = {
-  [REVENUE]: {
-    'Revenue type': [BY_REVENUE_TYPE],
-    'Commodity': [BY_COMMODITY],
-    'Land category': [BY_REVENUE_CATEGORY],
-    'Location': [BY_STATE, BY_OFFSHORE_REGION],
-  },
-  [PRODUCTION]: {
-    'Revenue type': [BY_REVENUE_TYPE],
-    'Commodity': [BY_COMMODITY],
-    'Land category': [BY_REVENUE_CATEGORY],
-    'Location': [BY_STATE, BY_OFFSHORE_REGION],
-  },
+const GROUP_BY_MAP_TO_DATA = {
   [DISBURSEMENTS]: {
-    'Recipient': [BY_FUND],
-    'Source': [BY_SOURCE],
-    'Location': [BY_STATE],
+    [RECIPIENT]: [BY_FUND],
+    [SOURCE]: [BY_SOURCE],
+    [LOCATION]: [BY_STATE],
+  }
+}
+const GROUP_BY_OPTIONS = {
+  [REVENUE]: filter => {
+    return ({
+      'Revenue type': [BY_REVENUE_TYPE],
+      'Commodity': [BY_COMMODITY],
+      'Land category': [BY_REVENUE_CATEGORY],
+      'Location': [BY_STATE, BY_OFFSHORE_REGION],
+    })
+  },
+  [PRODUCTION]: filter => {
+    return ({
+      'Revenue type': [BY_REVENUE_TYPE],
+      'Commodity': [BY_COMMODITY],
+      'Land category': [BY_REVENUE_CATEGORY],
+      'Location': [BY_STATE, BY_OFFSHORE_REGION],
+    })
+  },
+  [DISBURSEMENTS]: (filter, additionalColumn) => {
+    if (additionalColumn === NO_SECOND_COLUMN) {
+      return ({})
+    }
+
+    if (filter.recipient === ALL) {
+      if (filter.source === ONSHORE_OFFSHORE || filter.source === OFFSHORE) {
+        if (!additionalColumn || additionalColumn === SOURCE) {
+          return ({
+            options: [RECIPIENT, SOURCE],
+            default: RECIPIENT
+          })
+        }
+        else {
+          return ({
+            options: [RECIPIENT, SOURCE],
+            default: SOURCE
+          })
+        }
+      }
+      else {
+        return ({
+          options: [RECIPIENT],
+          default: RECIPIENT
+        })
+      }
+    }
+    else {
+      if (additionalColumn) {
+        return ({})
+      }
+    }
+
+    return ({
+      options: [RECIPIENT, SOURCE, LOCATION],
+      default: SOURCE
+    })
+  }
+}
+
+const ADDITIONAL_COLUMN_MAP_TO_DATA = {
+  [DISBURSEMENTS]: {
+    [RECIPIENT]: [DATA_SET_KEYS.RECIPIENT],
+    [SOURCE]: [DATA_SET_KEYS.SOURCE],
+    [COUNTY]: [DATA_SET_KEYS.COUNTY],
+    [LOCATION]: [DATA_SET_KEYS.LOCATION],
+    [NO_SECOND_COLUMN]: [],
   }
 }
 const ADDITIONAL_COLUMN_OPTIONS = {
-  'Revenue type': ['RevenueType'],
-  'Commodity': [DATA_SET_KEYS.COMMODITY],
-  'Land category': ['RevenueCategory'],
-  'Location': [DATA_SET_KEYS.LOCATION],
-  'County': [DATA_SET_KEYS.COUNTY],
-  'No second column': [],
+  [REVENUE]: {
+    'Revenue type': ['RevenueType'],
+    'Commodity': [DATA_SET_KEYS.COMMODITY],
+    'Land category': ['RevenueCategory'],
+    'Location': [DATA_SET_KEYS.LOCATION],
+    'County': [DATA_SET_KEYS.COUNTY],
+    [NO_SECOND_COLUMN]: [],
+  },
+  [PRODUCTION]: {
+    'Revenue type': ['RevenueType'],
+    'Commodity': [DATA_SET_KEYS.COMMODITY],
+    'Land category': ['RevenueCategory'],
+    'Location': [DATA_SET_KEYS.LOCATION],
+    'County': [DATA_SET_KEYS.COUNTY],
+    [NO_SECOND_COLUMN]: [],
+  },
+  [DISBURSEMENTS]: (filter, groupBy) => {
+    if (filter.recipient === ALL) {
+      if (filter.source === ONSHORE_OFFSHORE || filter.source === OFFSHORE) {
+        if (groupBy === SOURCE) {
+          return ({
+            options: [RECIPIENT, NO_SECOND_COLUMN],
+            default: RECIPIENT
+          })
+        }
+        else {
+          return ({
+            options: [SOURCE, NO_SECOND_COLUMN],
+            default: SOURCE
+          })
+        }
+      }
+      else {
+        return ({
+          options: undefined,
+          default: undefined
+        })
+      }
+    }
+    else {
+      if (groupBy) {
+        return ({
+          options: [RECIPIENT, SOURCE, LOCATION, NO_SECOND_COLUMN].filter(option => option !== groupBy)
+        })
+      }
+    }
+
+    return ({
+      options: [RECIPIENT, LOCATION, NO_SECOND_COLUMN],
+      default: RECIPIENT
+    })
+  }
 }
 const PLURAL_COLUMNS_MAP = {
   'Revenue type': 'revenue types',
@@ -133,6 +217,8 @@ const PLURAL_COLUMNS_MAP = {
   'Land category': 'land categories',
   'Location': 'locations',
   'County': 'counties',
+  [SOURCE]: SOURCES.toLowerCase(),
+  [RECIPIENT]: RECIPIENTS.toLowerCase(),
 }
 
 const muiTheme = createMuiTheme({
@@ -156,108 +242,98 @@ const muiTheme = createMuiTheme({
 class QueryData extends React.Component {
   constructor (props) {
     super(props)
-    console.log(props)
-    this.additionalColumnOptionKeys = Object.keys(ADDITIONAL_COLUMN_OPTIONS)
-    this.getFiscalYearOptions = () => this.props[REVENUES_FISCAL_YEAR] && Object.keys(this.props[REVENUES_FISCAL_YEAR][BY_FISCAL_YEAR])
-    this.getLocationOptions = () => {
-      let allOption = [ALL]
-      let offshoreOptions = this.props[REVENUES_FISCAL_YEAR] && Object.keys(this.props[REVENUES_FISCAL_YEAR][BY_OFFSHORE_REGION])
-      let states = this.props[REVENUES_FISCAL_YEAR] && Object.keys(this.props[REVENUES_FISCAL_YEAR][BY_STATE])
-      return allOption.concat(offshoreOptions, states)
-    }
-    this.getCommodityOptions = () => {
-      let allOption = [ALL]
-      let commodityOptions = this.props[REVENUES_FISCAL_YEAR] && Object.keys(this.props[REVENUES_FISCAL_YEAR][BY_COMMODITY])
-      return allOption.concat(commodityOptions)
-    }
-    this.getCountyOptions = state => {
-      let allOption = [ALL]
-      let countyOptions = []
-      this.props.data.allRevenuesGroupByCounty.group.forEach(countyData => {
-        if (countyData.data[0].node.State === state) {
-          countyOptions.push(countyData.id)
-        }
-      })
-      return allOption.concat(countyOptions)
-    }
     this.hydrateStore()
   }
 
 	state = {
 	  openGroupByDialog: false,
-	  timeframe: TOGGLE_VALUES.Year,
 	  dataType: undefined,
-	  yearOptions: [],
-	  filter: {
-	    groupBy: Object.keys(GROUP_BY_OPTIONS)[DEFAULT_GROUP_BY_INDEX],
-	    years: [],
-	    isUpdated: false,
-	  },
-	  additionalColumns: [Object.keys(GROUP_BY_OPTIONS)[DEFAULT_ADDITIONAL_COLUMN_INDEX]],
-	  revenueTypeOptions: undefined,
-	}
-
-	componentWillReceiveProps (nextProps) {
-	  let yearOptions = Object.keys(nextProps[REVENUES_FISCAL_YEAR][BY_FISCAL_YEAR])
-	  let additionalColumns = nextProps.additionalColumns || this.state.additionalColumns
-	  let filter = { ...this.state.filter }
-
-	  this.setState({ ...nextProps,
-	    filter: filter,
-	    yearOptions: yearOptions,
-	    additionalColumns: additionalColumns.filter(column => column !== filter.groupBy) })
-	}
-
-	/** Begin getting options for filter **/
-
-	getDisbursementOptions (optionType) {
-	  let getRecipientOptions = () => {
-
-	  }
-	  let getLocationOptions = () => {
-	    let allOption = [ALL]
-	    let states = this.props[DISBURSEMENTS_FISCAL_YEAR] && Object.keys(this.props[DISBURSEMENTS_FISCAL_YEAR][BY_STATE])
-	    return allOption.concat(states)
-	  }
-	  let getCountyOptions = state => {
-	    let allOption = [ALL]
-	    let countyOptions = []
-	    Object.keys(this.props[DISBURSEMENTS_FISCAL_YEAR][BY_ID]).forEach(id => {
-	      if (this.props[DISBURSEMENTS_FISCAL_YEAR][BY_ID][id].State === state) {
-	        if (this.props[DISBURSEMENTS_FISCAL_YEAR][BY_ID][id].County) {
-	          countyOptions.push(this.props[DISBURSEMENTS_FISCAL_YEAR][BY_ID][id].County)
-	        }
-	      }
-	    })
-
-	    return allOption.concat(countyOptions)
-	  }
-
-	  let getFiscalYears = optionsSelected => {
-	    return this.props[DISBURSEMENTS_FISCAL_YEAR] && Object.keys(this.props[DISBURSEMENTS_FISCAL_YEAR][BY_FISCAL_YEAR])
-	  }
-
-	  switch (optionType) {
-	  case 'state': {
-	    return getLocationOptions()
-	  }
-	  case 'county': {
-	    return getCountyOptions
-	  }
-	  case 'fiscalYears': {
-	    return getFiscalYears
-	  }
-	  }
 	}
 
   /**
-   * The filter options object contains code to filter the available options that are in the dataset.
-   * As the user makes more selections the data gets filtered and only available options are shown to the user.
+   * This object contains all the comparison functions to determine if the data has the value in the filter
+   */
+  hasFilterValue = {
+    [RECIPIENTS]: (data, filter) => {
+      if (filter === ALL) {
+        return true
+      }
+      return (filter === data.Recipient)
+    },
+    [SOURCE]: (data, filter) => {
+      if (filter === ALL) {
+        return true
+      }
+      return (filter === data.Source)
+    },
+    [LOCATIONS]: (data, filter) => {
+      if (filter === undefined) {
+        return true
+      }
+      else if (filter.includes(ALL)) {
+        return true
+      }
+      else if (filter.includes(OFFSHORE)) {
+        return (filter.includes(data.OffshoreRegion))
+      }
+      return (filter.includes(data.State))
+    },
+    [COUNTIES]: (data, filter) => {
+      if (filter === undefined || filter.includes(ALL)) {
+        return true
+      }
+      return (filter.includes(data.County))
+    },
+    [FISCAL_YEAR]: (data, filter) => {
+      if (filter === undefined || filter.includes(ALL)) {
+        return true
+      }
+      return (filter.includes(data.FiscalYear))
+    }
+  }
+
+  /**
+   * This sets the filtered data based on the type of filter and the value of the filter
+   * The filter type then determines the hasFilterValue function to use
+   * It uses the state Data Type to determine the correct data set to use
+   */
+  setFilteredIds = (filterType, filter) => {
+    let dataIds = this.props[DATA_TYPE_OPTIONS[this.state.dataType]][FILTERED_IDS] || Object.keys(this.props[DATA_TYPE_OPTIONS[this.state.dataType]][BY_ID])
+    if (filter) {
+      this.props[DATA_TYPE_OPTIONS[this.state.dataType]][FILTERED_IDS] =
+        dataIds.filter(id => this.hasFilterValue[filterType](this.props[DATA_TYPE_OPTIONS[this.state.dataType]][BY_ID][id], filter))
+    }
+    else {
+      this.props[DATA_TYPE_OPTIONS[this.state.dataType]][FILTERED_IDS] = dataIds
+    }
+  }
+
+  /**
+   * This helper function makes a unique array from the filered data using the specified data property
+   */
+  getUniqueOptionValuesFromFilteredData = dataProp => {
+    let options = []
+    this.props[DATA_TYPE_OPTIONS[this.state.dataType]][FILTERED_IDS].forEach(id => {
+      if (this.props[DATA_TYPE_OPTIONS[this.state.dataType]][BY_ID][id][dataProp]) {
+        options.push(this.props[DATA_TYPE_OPTIONS[this.state.dataType]][BY_ID][id][dataProp])
+      }
+    })
+    options = Array.from(new Set(options))
+    if (options.length > 1) {
+      options = [ALL].concat(options)
+    }
+
+    return options
+  }
+
+  /**
+   * The filter data options object contains code to filter the available options that are in the dataset.
+   * As the user makes more selections the data set itself gets filtered and only available options are shown to the user.
    * Then when we submit we already have a filtered data set and only need to apply the last filtered option.
    *
    * Basically this is the filter engine for this query table.
    */
-  filterEngine = {
+  filterDataOptions = {
     [DISBURSEMENTS]: {
       [RECIPIENTS]: () => {
         let recipients = Object.keys(this.props[DISBURSEMENTS_FISCAL_YEAR][BY_FUND])
@@ -265,107 +341,130 @@ class QueryData extends React.Component {
         return [{ name: SELECT, placeholder: true }].concat([ALL], recipients)
       },
       [SOURCE]: recipient => {
-        let sources = []
-        if (recipient && recipient !== ALL) {
-          this.props[DISBURSEMENTS_FISCAL_YEAR][FILTERED_IDS] = this.props[DISBURSEMENTS_FISCAL_YEAR][BY_FUND][recipient]
-          this.props[DISBURSEMENTS_FISCAL_YEAR][FILTERED_IDS].forEach(id => {
-            if (!sources.includes(this.props[DISBURSEMENTS_FISCAL_YEAR][BY_ID][id][SOURCE])) {
-              sources.push(this.props[DISBURSEMENTS_FISCAL_YEAR][BY_ID][id][SOURCE])
-            }
-          })
-          if (sources.length > 1) {
-            sources = [ALL].concat(sources)
-          }
-        }
-        else {
-          sources = [ALL].concat(Object.keys(this.props[DISBURSEMENTS_FISCAL_YEAR][BY_SOURCE]))
-        }
-
-        return [{ name: SELECT, placeholder: true }].concat(sources)
+        this.setFilteredIds(RECIPIENTS, recipient)
+        return [{ name: SELECT, placeholder: true }].concat(this.getUniqueOptionValuesFromFilteredData(SOURCE))
       },
-      [FISCAL_YEARS]: ({ source, states, counties }) => {
-        let fiscalYears = []
-        if (source) {
-          let fileredIds = []
-          this.props[DISBURSEMENTS_FISCAL_YEAR][FILTERED_IDS].forEach(id => {
-            if (this.hasSource(this.props[DISBURSEMENTS_FISCAL_YEAR][BY_ID][id], source)) {
-              fileredIds.push(id)
-            }
-          })
-          this.props[DISBURSEMENTS_FISCAL_YEAR][FILTERED_IDS] = fileredIds
+      [LOCATIONS]: source => {
+        this.setFilteredIds(SOURCE, source)
+        return this.getUniqueOptionValuesFromFilteredData(STATE)
+      },
+      [COUNTIES]: locations => {
+        this.setFilteredIds(LOCATIONS, locations)
+        return this.getUniqueOptionValuesFromFilteredData(COUNTY)
+      },
+      [FISCAL_YEARS]: ({ source, locations, counties }) => {
+        if (counties) {
+          this.setFilteredIds(COUNTIES, counties)
         }
-
-        if (this.props[DISBURSEMENTS_FISCAL_YEAR][FILTERED_IDS]) {
-          this.props[DISBURSEMENTS_FISCAL_YEAR][FILTERED_IDS].forEach(id => {
-            if (!fiscalYears.includes(this.props[DISBURSEMENTS_FISCAL_YEAR][BY_ID][id][FISCAL_YEAR])) {
-              fiscalYears.push(this.props[DISBURSEMENTS_FISCAL_YEAR][BY_ID][id][FISCAL_YEAR])
-            }
-          })
+        else if (locations) {
+          this.setFilteredIds(LOCATIONS, locations)
         }
         else {
-          fiscalYears = Object.keys(this.props[DISBURSEMENTS_FISCAL_YEAR][BY_FISCAL_YEAR])
+          this.setFilteredIds(SOURCE, source)
         }
-        return [{ name: SELECT, placeholder: true }].concat(fiscalYears)
+        return [{ name: SELECT, placeholder: true }].concat(this.getUniqueOptionValuesFromFilteredData(FISCAL_YEAR))
       }
-
     }
   }
-  /** End getting options for filter **/
 
-  getFilterToolbar () {
-	  switch (this.state.dataType) {
-	  case REVENUE:
-	    return (<TableToolbar
-	      fiscalYearOptions={this.getFiscalYearOptions()}
-	      locationOptions={this.getLocationOptions()}
-	      commodityOptions={this.getCommodityOptions()}
-	      countyOptions={this.getCountyOptions}
-	      defaultFiscalYearsSelected={this.state.filter.years}
-	      onSubmitAction={this.handleTableToolbarSubmit.bind(this)}
-	    />)
-	  case DISBURSEMENTS:
-	    return (<DisbursementsTableToolbar
-	      recipientOptions={this.filterEngine[DISBURSEMENTS][RECIPIENTS]}
-	      sourceOptions={this.filterEngine[DISBURSEMENTS][SOURCE]}
-	      stateOptions={this.getDisbursementOptions('state')}
-	      countyOptions={this.getDisbursementOptions('county')}
-	      fiscalYearOptions={this.filterEngine[DISBURSEMENTS][FISCAL_YEARS]}
-	      onSubmit={this.handleDisbursementsSubmit.bind(this)}
-	    />)
-	  }
+  // If group by column is in the additional columns remove it
+  setGroupByFilter (value) {
+    let additionalColumnFiltered = ADDITIONAL_COLUMN_OPTIONS[this.state.dataType](this.state[this.state.dataType].filter, value)
+    additionalColumnFiltered.default = (this.state[this.state.dataType].additionalColumn === value) ? NO_SECOND_COLUMN : additionalColumnFiltered.default
+	  this.setState({
+      [this.state.dataType]: {
+        ...this.state[this.state.dataType],
+        groupBy: value,
+        additionalColumnOptions: additionalColumnFiltered.options || this.state[this.state.dataType].additionalColumnOptions,
+        additionalColumn: additionalColumnFiltered.default || this.state[this.state.dataType].additionalColumn,
+        tableColumns: this.getTableColumns({
+          filter: this.state[this.state.dataType].filter,
+          groupBy: value,
+          additionalColumn: additionalColumnFiltered.default || this.state[this.state.dataType].additionalColumn }),
+        tableData: this.getTableData({
+          filter: this.state[this.state.dataType].filter,
+          groupBy: value,
+          additionalColumn: additionalColumnFiltered.default || this.state[this.state.dataType].additionalColumn })
+      }
+    })
   }
 
-	getTableColumns = () => {
+  setAdditionalColumns (value) {
+    let groupByFiltered = GROUP_BY_OPTIONS[this.state.dataType](this.state[this.state.dataType].filter, value)
+	  this.setState({
+      [this.state.dataType]: {
+        ...this.state[this.state.dataType],
+        additionalColumn: value,
+        groupBy: groupByFiltered.default || this.state[this.state.dataType].groupBy,
+        groupByOptions: groupByFiltered.options || this.state[this.state.dataType].groupByOptions,
+        tableColumns: this.getTableColumns({
+          filter: this.state[this.state.dataType].filter,
+          groupBy: groupByFiltered.default || this.state[this.state.dataType].groupBy,
+          additionalColumn: value }),
+        tableData: this.getTableData({
+          filter: this.state[this.state.dataType].filter,
+          groupBy: groupByFiltered.default || this.state[this.state.dataType].groupBy,
+          additionalColumn: value })
+      }
+    })
+  }
+
+  onSubmitHandler (filter) {
+    this.setFilteredIds(FISCAL_YEAR, filter.fiscalYearsSelected)
+    let groupByFiltered = GROUP_BY_OPTIONS[this.state.dataType](filter)
+    let additionalColumnFiltered = ADDITIONAL_COLUMN_OPTIONS[this.state.dataType](filter)
+
+	  this.setState({
+      [this.state.dataType]: {
+        filter: filter,
+        [FILTERED_IDS]: this.props[DISBURSEMENTS_FISCAL_YEAR][FILTERED_IDS],
+        groupByOptions: groupByFiltered.options,
+        groupBy: groupByFiltered.default,
+        additionalColumnOptions: additionalColumnFiltered.options,
+        additionalColumn: additionalColumnFiltered.default,
+        tableColumns: this.getTableColumns({ filter: filter, groupBy: groupByFiltered.default, additionalColumn: additionalColumnFiltered.default }),
+        tableSummaries: this.getTableSummaries(additionalColumnFiltered.default),
+        tableData: this.getTableData({ filter: filter, groupBy: groupByFiltered.default, additionalColumn: additionalColumnFiltered.default })
+      }
+	  })
+  }
+
+	getTableColumns = dataTypeState => {
 	  let columns = []; let columnExtensions = []; let grouping = []; let currencyColumns = []; let volumeColumns = []; let defaultSorting = []
-	  let { filter } = this.state
+	  let allColumns
 
-	  let groupBySlug = utils.formatToSlug(filter.groupBy)
-
-	  columns.push({ name: groupBySlug, title: filter.groupBy })
-	  if (this.state.additionalColumns && this.state.additionalColumns.length > 0) {
-	    grouping.push({ columnName: groupBySlug })
+	  if (!dataTypeState.groupBy) {
+	    throw new Error('Must have a group by option selected')
 	  }
 
-	  this.state.additionalColumns.forEach(column => {
-	    columns.push({ name: utils.formatToSlug(column), title: column, plural: PLURAL_COLUMNS_MAP[column] })
-	  })
+	  let groupBySlug = utils.formatToSlug(dataTypeState.groupBy)
+	  columns.push({ name: groupBySlug, title: dataTypeState.groupBy })
 
-	  let allColumns = Object.keys(ADDITIONAL_COLUMN_OPTIONS).map(columnName => utils.formatToSlug(columnName))
+	  if (dataTypeState.additionalColumn && dataTypeState.additionalColumn !== NO_SECOND_COLUMN) {
+	    grouping.push({ columnName: groupBySlug })
+	    columns.push({
+	      name: utils.formatToSlug(dataTypeState.additionalColumn),
+	      title: dataTypeState.additionalColumn,
+	      plural: PLURAL_COLUMNS_MAP[dataTypeState.additionalColumn]
+	    })
+	    allColumns = [utils.formatToSlug(dataTypeState.additionalColumn)]
+	  }
 
-	  filter.years.sort().forEach(year => {
+	  dataTypeState.filter.fiscalYearsSelected.sort().forEach(year => {
 	    columns.push({ name: 'fy-' + year, title: year })
 	    columnExtensions.push({ columnName: 'fy-' + year, align: 'right' })
 	    defaultSorting = [{ columnName: 'fy-' + year, direction: 'desc' }]
 	  })
 
 	  // Have to add all the data provider types initially or they wont work??
+	  let allYears = Object.keys(this.props[DATA_TYPE_OPTIONS[this.state.dataType]][BY_FISCAL_YEAR])
 	  if (this.state.dataType === PRODUCTION) {
-	    this.state.yearOptions.forEach(year => {
+	    allYears.forEach(year => {
 	      volumeColumns.push('fy-' + year)
 	    })
 	  }
 	  else {
-	    this.state.yearOptions.forEach(year => {
+	    allYears.forEach(year => {
 	      currencyColumns.push('fy-' + year)
 	    })
 	  }
@@ -381,20 +480,20 @@ class QueryData extends React.Component {
 	  }
 	}
 
-	getTableSummaries = () => {
+	getTableSummaries = additionalColumn => {
 	  let totalSummaryItems = []; let groupSummaryItems = []
-	  let { yearOptions } = this.state
+	  let allYears = Object.keys(this.props[DATA_TYPE_OPTIONS[this.state.dataType]][BY_FISCAL_YEAR])
 
-	  yearOptions.sort().forEach(year => {
+	  allYears.sort().forEach(year => {
 	    totalSummaryItems.push({ columnName: 'fy-' + year, type: 'sum' })
 	    groupSummaryItems.push({ columnName: 'fy-' + year, type: 'sum' })
 	  })
 
 	  // using type avg to attach the custom formatter function
-	  this.state.additionalColumns.forEach(column => {
-	    totalSummaryItems.push({ columnName: utils.formatToSlug(column), type: 'avg' })
-	    groupSummaryItems.push({ columnName: utils.formatToSlug(column), type: 'avg' })
-	  })
+	  if (additionalColumn && additionalColumn !== NO_SECOND_COLUMN) {
+	    totalSummaryItems.push({ columnName: utils.formatToSlug(additionalColumn), type: 'avg' })
+	    groupSummaryItems.push({ columnName: utils.formatToSlug(additionalColumn), type: 'avg' })
+	  }
 
 	  return {
 	    totalSummaryItems: totalSummaryItems,
@@ -402,7 +501,7 @@ class QueryData extends React.Component {
 	  }
 	}
 
-	getTableData = () => {
+	getTableData = dataTypeState => {
 	  const getSumValueProperty = () => {
 	    switch (this.state.dataType) {
 	    case REVENUE:
@@ -414,19 +513,16 @@ class QueryData extends React.Component {
 	    }
 	  }
 
-	  let dataSetKey = DATA_TYPE_OPTIONS[this.state.dataType]
-	  if (this.state[dataSetKey] === undefined || !this.state.filter.isUpdated) return { tableData: undefined, expandedGroups: undefined }
-	  let dataSet = this.state[dataSetKey]
-	  let groupBySlug = utils.formatToSlug(this.state.filter.groupBy)
-	  let allDataSetGroupBy = GROUP_BY_OPTIONS[this.state.dataType][this.state.filter.groupBy].map(groupBy => this.state[dataSetKey][groupBy])
+	  let dataSet = this.props[DATA_TYPE_OPTIONS[this.state.dataType]]
+	  let filterIds = this.props[DATA_TYPE_OPTIONS[this.state.dataType]][FILTERED_IDS]
+
+	  let allDataSetGroupBy = GROUP_BY_MAP_TO_DATA[this.state.dataType][dataTypeState.groupBy].map(groupBy => dataSet[groupBy])
 	  let tableData = []
 	  let expandedGroups = []
-	  // console.log(dataSet)
 
 	  // Iterate over all group by data sets asociated with this filter group by
 	  allDataSetGroupBy.forEach((dataSetGroupBy, indexGroupBy) => {
 	    Object.keys(dataSetGroupBy).forEach(name => {
-	      // console.log(name)
 	      let sums = {}
 	      let sumsByAdditionalColumns = {}
 
@@ -434,59 +530,44 @@ class QueryData extends React.Component {
 
 	      // sum all revenues
 	      dataSetGroupBy[name].forEach(dataId => {
+	        if (!filterIds.includes(dataId)) return
 	        let data = dataSet[BY_ID][dataId]
 
-	        /* console.log(this.state.filter.years.includes(data.FiscalYear),
-          this.hasLandCategory(data),
-          this.hasLocation(data),
-          this.hasCommodity(data),
-          this.hasRevenueType(data),
-          this.hasCounty(data)) */
+	        if (!expandedGroups.includes(name)) {
+	          expandedGroups.push(name)
+	        }
 
-	        // Apply filters
-	        if (this.state.filter.years.includes(parseInt(data.FiscalYear)) &&
-						this.hasLandCategory(data) &&
-            this.hasLocation(data) &&
-            this.hasCommodity(data) &&
-            this.hasRevenueType(data) &&
-            this.hasCounty(data) &&
-            this.hasRecipient(data)) {
-	          if (!expandedGroups.includes(name)) {
-	            expandedGroups.push(name)
-	          }
+	        let fiscalYearSlug = 'fy-' + data.FiscalYear
+	        sums[fiscalYearSlug] = (sums[fiscalYearSlug]) ? sums[fiscalYearSlug] + data[getSumValueProperty()] : data[getSumValueProperty()]
+	        if (dataTypeState.additionalColumn) {
+	          // Get the data columns related to the column in the table. Could have multiple data source columns mapped to 1 table column
+	          let dataColumns = ADDITIONAL_COLUMN_MAP_TO_DATA[this.state.dataType][dataTypeState.additionalColumn]
 
-	          let fiscalYearSlug = 'fy-' + data.FiscalYear
-	          sums[fiscalYearSlug] = (sums[fiscalYearSlug]) ? sums[fiscalYearSlug] + data[getSumValueProperty()] : data[getSumValueProperty()]
+	          dataColumns.map(column => {
+	            let newValue = data[column]
 
-	          this.state.additionalColumns.forEach(additionalColumn => {
-	            // Get the data columns related to the column in the table. Could have multiple data source columns mapped to 1 table column
-	            let dataColumns = ADDITIONAL_COLUMN_OPTIONS[additionalColumn]
+	            if (additionalColumnsRow[dataTypeState.additionalColumn] === undefined) {
+	              additionalColumnsRow[dataTypeState.additionalColumn] = []
+	              sumsByAdditionalColumns[dataTypeState.additionalColumn] = {}
+	            }
 
-	            dataColumns.map(column => {
-	              let newValue = data[column]
-
-	              if (additionalColumnsRow[additionalColumn] === undefined) {
-	                additionalColumnsRow[additionalColumn] = []
-	                sumsByAdditionalColumns[additionalColumn] = {}
+	            if (newValue) {
+	              // Add the fiscal year revenue for the additional column, only works when there is 1 additional column
+	              if (sumsByAdditionalColumns[dataTypeState.additionalColumn][newValue] === undefined) {
+	                sumsByAdditionalColumns[dataTypeState.additionalColumn][newValue] = {}
 	              }
 
-	              if (newValue) {
-	                // Add the fiscal year revenue for the additional column, only works when there is 1 additional column
-	                if (sumsByAdditionalColumns[additionalColumn][newValue] === undefined) {
-	                  sumsByAdditionalColumns[additionalColumn][newValue] = {}
-	                }
+	              let fyRevenue = data[getSumValueProperty()] || 0
 
-	                let fyRevenue = data[getSumValueProperty()] || 0
+	              sumsByAdditionalColumns[dataTypeState.additionalColumn][newValue][fiscalYearSlug] =
+                  (sumsByAdditionalColumns[dataTypeState.additionalColumn][newValue][fiscalYearSlug])
+                    ? sumsByAdditionalColumns[dataTypeState.additionalColumn][newValue][fiscalYearSlug] + fyRevenue
+                    : fyRevenue
 
-	                sumsByAdditionalColumns[additionalColumn][newValue][fiscalYearSlug] = (sumsByAdditionalColumns[additionalColumn][newValue][fiscalYearSlug])
-	                  ? sumsByAdditionalColumns[additionalColumn][newValue][fiscalYearSlug] + fyRevenue
-	                  : fyRevenue
-
-	                if (!additionalColumnsRow[additionalColumn].includes(newValue)) {
-	                  additionalColumnsRow[additionalColumn].push(newValue)
-	                }
+	              if (!additionalColumnsRow[dataTypeState.additionalColumn].includes(newValue)) {
+	                additionalColumnsRow[dataTypeState.additionalColumn].push(newValue)
 	              }
-	            })
+	            }
 	          })
 	        }
 	      })
@@ -499,159 +580,32 @@ class QueryData extends React.Component {
 
 	            Object.keys(sumsByAdditionalColumns[column]).forEach(columnValue => {
 	              // Add all fiscal years to each row
-	              this.state.filter.years.forEach(year => {
+	              dataTypeState.filter.fiscalYearsSelected.forEach(year => {
 	                let fiscalYearSlug = 'fy-' + year
 	                sumsByAdditionalColumns[column][columnValue][fiscalYearSlug] = parseInt(sumsByAdditionalColumns[column][columnValue][fiscalYearSlug]) || 0
 	              })
-	              tableData.push(Object.assign({ [groupBySlug]: name, [columnSlug]: columnValue }, sumsByAdditionalColumns[column][columnValue]))
+	              tableData.push(Object.assign({
+	                [utils.formatToSlug(dataTypeState.groupBy)]: name,
+	                [columnSlug]: columnValue
+	              }, sumsByAdditionalColumns[column][columnValue]))
 	            })
 	          })
 	        }
 	        else {
-	          this.state.filter.years.forEach(year => {
+	          dataTypeState.filter.fiscalYearsSelected.forEach(year => {
 	            let fiscalYearSlug = 'fy-' + year
 	            sums[fiscalYearSlug] = parseInt(sums[fiscalYearSlug]) || 0
 	          })
 
-	          tableData.push(Object.assign({ [groupBySlug]: name }, sums))
+	          tableData.push(Object.assign({ [utils.formatToSlug(dataTypeState.groupBy)]: name }, sums))
 	        }
 	      }
 	    })
 	  })
 
-	  return { tableData: tableData, expandedGroups: expandedGroups }
+	  return { filteredData: tableData, expandedGroups: expandedGroups }
 	}
 
-	setYearsFilter (values) {
-	  this.setState({ filter: { ...this.state.filter, years: values.sort() } })
-	}
-
-	// If group by column is in the additional columns remove it
-	setGroupByFilter (value) {
-	  this.setState({
-	    filter: { ...this.state.filter, groupBy: value },
-	    additionalColumns: this.state.additionalColumns.filter(column => column !== value)
-	  })
-	}
-
-	setAdditionalColumns (value) {
-	  this.setState({ additionalColumns: (value === 'No second column') ? [] : [value] })
-	}
-
-	hasLandCategory (data) {
-	  if (this.state.dataType === DISBURSEMENTS) return true
-	  switch (this.state.filter.landCategory) {
-	  case 'Federal (onshore and offshore)':
-	    return (data.LandClass === 'Federal')
-	  case 'Federal onshore':
-	    return (data.RevenueCategory === 'Federal onshore')
-	  case 'Federal offshore':
-	    return (data.RevenueCategory === 'Federal offshore')
-	  case 'Native American':
-	    return (data.RevenueCategory === 'Native American')
-	  case 'Onshore':
-	    return (data.LandCategory === 'Onshore')
-	  }
-	  return true
-	}
-
-	hasLocation (data) {
-	  if (this.state.filter.locations === undefined) {
-	    return true
-	  }
-	  else if (this.state.filter.locations.includes('All')) {
-	    return true
-	  }
-	  else if (this.state.filter.locations.includes('Offshore')) {
-	    return (this.state.filter.locations.includes(data.OffshoreRegion))
-	  }
-	  return (this.state.filter.locations.includes(data.State))
-	}
-
-	hasCommodity (data) {
-	  if (this.state.dataType === DISBURSEMENTS) return true
-	  if (this.state.filter.commodities === undefined || this.state.filter.commodities.includes('All')) {
-	    return true
-	  }
-	  return (this.state.filter.commodities.includes(data.Commodity))
-	}
-
-	hasRevenueType (data) {
-	  if (this.state.dataType === DISBURSEMENTS) return true
-	  if (this.state.filter.revenueType === undefined || this.state.filter.revenueType === 'All') {
-	    return true
-	  }
-	  return (data.RevenueType === this.state.filter.revenueType)
-	}
-
-	hasCounty (data) {
-	  if (this.state.filter.counties === undefined || this.state.filter.counties.includes('All')) {
-	    return true
-	  }
-	  return (this.state.filter.counties.includes(data.County))
-	}
-
-	hasRecipient (data) {
-	  if (this.state.dataType !== DISBURSEMENTS) return true
-	  if (this.state.filter.recipient === 'All') {
-	    return true
-	  }
-	  return (this.state.filter.recipient === data.Recipient)
-	}
-
-	hasSource (data, source) {
-	  if (this.state.dataType !== DISBURSEMENTS) return true
-	  let sourceValue = source || this.state.filter.source
-	  if (sourceValue === 'All') {
-	    return true
-	  }
-	  return (sourceValue === data.Source)
-	}
-
-	handleTableToolbarSubmit (updatedFilters) {
-	  let additionalColumns = ['Land category']
-	  let groupBy = 'Revenue type'
-	  if (this.state.dataType === REVENUE) {
-	    if (updatedFilters.revenueType !== 'All') {
-	      if (updatedFilters.commodities.length === 1 && updatedFilters.commodities[0] !== 'All') {
-	        groupBy = 'Land category'
-	        additionalColumns = []
-	      }
-	      else {
-	        groupBy = 'Commodity'
-	        additionalColumns = ['Land category']
-	      }
-	    }
-	    if ((updatedFilters.landCategory === 'Federal onshore' || updatedFilters.landCategory === 'Federal offshore') && updatedFilters.revenueType !== 'All') {
-	      if (updatedFilters.commodities.length === 1 && updatedFilters.commodities[0] !== 'All') {
-	        groupBy = 'Land category'
-	        additionalColumns = (updatedFilters.counties.length > 1) ? ['County'] : []
-	      }
-	      else {
-	        groupBy = 'Commodity'
-	        additionalColumns = ['Land category']
-	      }
-	    }
-	  }
-	  else {
-	    groupBy = 'Commodity'
-	    additionalColumns = ['Land category']
-	  }
-
-	  this.setState({
-	    filter: { ...this.state.filter,
-	      years: updatedFilters.fiscalYearsSelected.sort(),
-	      locations: updatedFilters.locations,
-	      commodities: updatedFilters.commodities,
-	      counties: updatedFilters.counties,
-	      landCategory: updatedFilters.landCategory,
-	      revenueType: updatedFilters.revenueType,
-	      groupBy: groupBy,
-	      isUpdated: true,
-	    },
-	    additionalColumns: additionalColumns,
-	  })
-	}
   /**
    * Add the data to the redux store to enable
    * the components to access filtered data using the
@@ -659,7 +613,6 @@ class QueryData extends React.Component {
    **/
   hydrateStore = () => {
     let data = this.props.data
-    console.log(data.allDisbursementsGroupByState.group)
     this.props.normalizeDataSet([
       { key: REVENUES_FISCAL_YEAR,
         data: data.allRevenues.data,
@@ -751,44 +704,37 @@ class QueryData extends React.Component {
     ])
   }
 
-  openGroupByDialog () {
-    this.setState({ openGroupByDialog: true })
-  }
-  closeGroupByDialog () {
-    this.setState({ openGroupByDialog: false })
-  }
-
-  setDataType (value) {
-    this.setState({
-      dataType: value,
-      filter: { ...this.state.filter, isUpdated: false }
-    })
-  }
-
-  handleDisbursementsSubmit (updatedFilters) {
-	  let additionalColumns = []
-    let groupBy = 'Recipient'
-
-	  this.setState({
-	    filter: { ...this.state.filter,
-	      years: updatedFilters.fiscalYearsSelected.sort(),
-        locations: updatedFilters.states,
-        recipient: updatedFilters.recipient,
-	      source: updatedFilters.source,
-	      counties: updatedFilters.counties,
-	      groupBy: groupBy,
-	      isUpdated: true,
-	    },
-	    additionalColumns: additionalColumns,
-	  })
+  getFilterToolbar () {
+	  switch (this.state.dataType) {
+	  case REVENUE:
+	    return (<TableToolbar
+	      fiscalYearOptions={this.getFiscalYearOptions()}
+	      locationOptions={this.getLocationOptions()}
+	      commodityOptions={this.getCommodityOptions()}
+	      countyOptions={this.getCountyOptions}
+	      defaultFiscalYearsSelected={this.state.filter.years}
+	      onSubmitAction={this.handleTableToolbarSubmit.bind(this)}
+	    />)
+	  case DISBURSEMENTS:
+	    return (<DisbursementsTableToolbar
+	      recipientOptions={this.filterDataOptions[DISBURSEMENTS][RECIPIENTS]}
+	      sourceOptions={this.filterDataOptions[DISBURSEMENTS][SOURCE]}
+	      locationOptions={this.filterDataOptions[DISBURSEMENTS][LOCATIONS]}
+	      countyOptions={this.filterDataOptions[DISBURSEMENTS][COUNTIES]}
+	      fiscalYearOptions={this.filterDataOptions[DISBURSEMENTS][FISCAL_YEARS]}
+	      onSubmit={this.onSubmitHandler.bind(this)}
+	    />)
+	  }
   }
 
   render () {
-    let { columns, columnExtensions, grouping, currencyColumns, volumeColumns, allColumns, defaultSorting } = this.getTableColumns()
-    let { totalSummaryItems, groupSummaryItems } = this.getTableSummaries()
-    let { tableData, expandedGroups } = this.getTableData()
-
-    console.log(this.state, tableData)
+    let tableColumns = this.state[this.state.dataType] && this.state[this.state.dataType].tableColumns
+    let tableSummaries = this.state[this.state.dataType] && this.state[this.state.dataType].tableSummaries
+    let tableData = this.state[this.state.dataType] && this.state[this.state.dataType].tableData
+    let groupBy = this.state[this.state.dataType] && this.state[this.state.dataType].groupBy
+    let groupByOptions = this.state[this.state.dataType] && this.state[this.state.dataType].groupByOptions
+    let additionalColumn = this.state[this.state.dataType] && this.state[this.state.dataType].additionalColumn
+    let additionalColumnOptions = this.state[this.state.dataType] && this.state[this.state.dataType].additionalColumnOptions
 
     return (
       <DefaultLayout>
@@ -812,7 +758,7 @@ class QueryData extends React.Component {
                   <DropDown
                     options={[{ name: '-Select-', placeholder: true }].concat(Object.keys(DATA_TYPE_OPTIONS))}
                     sortType={'none'}
-                    action={value => this.setDataType(value)}
+                    action={value => this.setState({ dataType: value })}
                   />
                 </Grid>
                 <Grid item sm={5}>
@@ -833,46 +779,53 @@ class QueryData extends React.Component {
 						  <MuiThemeProvider theme={muiTheme}>
 						    <Grid container spacing={1}>
 						      <Grid item sm={12} xs={12}>
-						        {this.state.filter.groupBy &&
-                      <React.Fragment>
-                        <div className={styles.editGroupingButton}>
-                          Grouped by {this.state.filter.groupBy}
-                          {(this.state.additionalColumns && this.state.additionalColumns.length > 0) &&
-                            <React.Fragment>
-                              {' '}and {this.state.additionalColumns[0]}
-                            </React.Fragment>
-                          }
-                          .
-                        </div>
-                        <div className={styles.editGroupingButton}>
-                          <Button
-                            variant="contained" color="primary"
-                            onClick={() => this.openGroupByDialog()}>
-                              Edit grouping
-                          </Button>
-                        </div>
-                      </React.Fragment>
+						        {groupBy &&
+                      <div className={styles.editGroupingButton}>
+                        Grouped by {groupBy}
+                        {(additionalColumn) &&
+                          <React.Fragment>
+                            {' '}and {additionalColumn}
+                          </React.Fragment>
+                        }
+                        .
+                      </div>
 						        }
-
-						        <Dialog disableBackdropClick disableEscapeKeyDown open={this.state.openGroupByDialog} onClose={() => this.closeGroupByDialog()}>
+						        {(groupByOptions && (additionalColumnOptions && additionalColumnOptions.length > 1)) &&
+                      <div className={styles.editGroupingButton}>
+                        <Button
+                          variant="contained" color="primary"
+                          onClick={() => this.setState({ openGroupByDialog: !this.state.openGroupByDialog })}>
+                            Edit grouping
+                        </Button>
+                      </div>
+						        }
+						        <Dialog
+						          disableBackdropClick={false}
+						          disableEscapeKeyDown={false}
+						          open={this.state.openGroupByDialog}
+						          onClose={() => this.setState({ openGroupByDialog: false })}
+						        >
 						          <DialogContent>
 						            <MuiThemeProvider theme={muiTheme}>
 						              <Grid container spacing={1}>
 						                <Grid item sm={6} xs={12}>
                               Group by:
 						                  <DropDown
-						                    options={[{ name: '-Select-', placeholder: true }].concat(Object.keys(GROUP_BY_OPTIONS[this.state.dataType]))}
+						                    options={[{ name: '-Select-', placeholder: true }].concat(groupByOptions)}
 						                    sortType={'none'}
-						                    selectedOptionValue={this.state.filter.groupBy}
+						                    selectedOptionValue={groupBy}
 						                    action={value => this.setGroupByFilter(value)}
 						                  />
 						                </Grid>
 						                <Grid item sm={6} xs={12}>
                               Breakout by:
 						                  <DropDown
-						                    options={[{ name: '-Select-', placeholder: true }].concat(this.additionalColumnOptionKeys)}
+						                    options={[{ name: '-Select-', placeholder: true }].concat(additionalColumnOptions)}
 						                    sortType={'none'}
-						                    selectedOptionValue={this.state.additionalColumns && this.state.additionalColumns[0]}
+						                    selectedOptionValue={(!additionalColumn && (additionalColumnOptions && additionalColumnOptions.includes(NO_SECOND_COLUMN)))
+						                      ? NO_SECOND_COLUMN
+						                      : additionalColumn
+						                    }
 						                    action={value => this.setAdditionalColumns(value)}
 						                  />
 						                </Grid>
@@ -882,7 +835,7 @@ class QueryData extends React.Component {
 						              <Button
 						                classes={{ root: styles.tableToolbarButton }}
 						                variant="contained" color="primary"
-						                onClick={() => this.closeGroupByDialog()}
+						                onClick={() => this.setState({ openGroupByDialog: false })}
 						                color="primary">
                             Close
 						              </Button>
@@ -898,17 +851,17 @@ class QueryData extends React.Component {
 						    </Grid>
 						  </MuiThemeProvider>
 						  <GroupTable
-						    rows={tableData}
-						    columns={columns}
-						    defaultSorting={defaultSorting}
-						    tableColumnExtension={columnExtensions}
-						    grouping={grouping}
-						    currencyColumns={currencyColumns}
-						    volumeColumns={volumeColumns}
-						    allColumns={allColumns}
-						    expandedGroups={expandedGroups}
-						    totalSummaryItems={totalSummaryItems}
-						    groupSummaryItems={groupSummaryItems}
+						    rows={tableData.filteredData}
+						    columns={tableColumns.columns}
+						    defaultSorting={tableColumns.defaultSorting}
+						    tableColumnExtension={tableColumns.columnExtensions}
+						    grouping={tableColumns.grouping}
+						    currencyColumns={tableColumns.currencyColumns}
+						    volumeColumns={tableColumns.volumeColumns}
+						    allColumns={tableColumns.allColumns}
+						    expandedGroups={tableData.expandedGroups}
+						    totalSummaryItems={tableSummaries.totalSummaryItems}
+						    groupSummaryItems={tableSummaries.groupSummaryItems}
 						  />
 						</div>
           }
@@ -1495,3 +1448,159 @@ export const query = graphql`
 	  }
   }
 `
+/*
+
+	setYearsFilter (values) {
+	  this.setState({ filter: { ...this.state.filter, years: values.sort() } })
+	}
+
+	// If group by column is in the additional columns remove it
+	setGroupByFilter (value) {
+	  this.setState({
+	    filter: { ...this.state.filter, groupBy: value },
+	    additionalColumns: this.state.additionalColumns.filter(column => column !== value)
+	  })
+	}
+
+	setAdditionalColumns (value) {
+	  this.setState({ additionalColumns: (value === 'No second column') ? [] : [value] })
+	}
+
+	hasSource (data, source) {
+	  if (this.state.dataType !== DISBURSEMENTS) return true
+	  let sourceFilter = source || this.state.filter.source
+	  if (sourceFilter === 'All') {
+	    return true
+	  }
+	  return (sourceFilter === data.Source)
+	}
+	hasLocation (data, locations) {
+	  let locationsFilter = locations || this.state.filter.locations
+	  if (locationsFilter === undefined) {
+	    return true
+	  }
+	  else if (locationsFilter.includes('All')) {
+	    return true
+	  }
+	  else if (locationsFilter.includes('Offshore')) {
+	    return (locationsFilter.includes(data.OffshoreRegion))
+	  }
+	  return (locationsFilter.includes(data.State))
+	}
+
+	hasLandCategory (data) {
+	  if (this.state.dataType === DISBURSEMENTS) return true
+	  switch (this.state.filter.landCategory) {
+	  case 'Federal (onshore and offshore)':
+	    return (data.LandClass === 'Federal')
+	  case 'Federal onshore':
+	    return (data.RevenueCategory === 'Federal onshore')
+	  case 'Federal offshore':
+	    return (data.RevenueCategory === 'Federal offshore')
+	  case 'Native American':
+	    return (data.RevenueCategory === 'Native American')
+	  case 'Onshore':
+	    return (data.LandCategory === 'Onshore')
+	  }
+	  return true
+	}
+
+	hasCommodity (data) {
+	  if (this.state.dataType === DISBURSEMENTS) return true
+	  if (this.state.filter.commodities === undefined || this.state.filter.commodities.includes('All')) {
+	    return true
+	  }
+	  return (this.state.filter.commodities.includes(data.Commodity))
+	}
+
+	hasRevenueType (data) {
+	  if (this.state.dataType === DISBURSEMENTS) return true
+	  if (this.state.filter.revenueType === undefined || this.state.filter.revenueType === 'All') {
+	    return true
+	  }
+	  return (data.RevenueType === this.state.filter.revenueType)
+	}
+
+	hasCounty (data) {
+	  if (this.state.filter.counties === undefined || this.state.filter.counties.includes('All')) {
+	    return true
+	  }
+	  return (this.state.filter.counties.includes(data.County))
+	}
+
+	hasRecipient (data) {
+	  if (this.state.dataType !== DISBURSEMENTS) return true
+	  if (this.state.filter.recipient === 'All') {
+	    return true
+	  }
+	  return (this.state.filter.recipient === data.Recipient)
+	}
+
+	handleTableToolbarSubmit (updatedFilters) {
+	  let additionalColumns = ['Land category']
+	  let groupBy = 'Revenue type'
+	  if (this.state.dataType === REVENUE) {
+	    if (updatedFilters.revenueType !== 'All') {
+	      if (updatedFilters.commodities.length === 1 && updatedFilters.commodities[0] !== 'All') {
+	        groupBy = 'Land category'
+	        additionalColumns = []
+	      }
+	      else {
+	        groupBy = 'Commodity'
+	        additionalColumns = ['Land category']
+	      }
+	    }
+	    if ((updatedFilters.landCategory === 'Federal onshore' || updatedFilters.landCategory === 'Federal offshore') && updatedFilters.revenueType !== 'All') {
+	      if (updatedFilters.commodities.length === 1 && updatedFilters.commodities[0] !== 'All') {
+	        groupBy = 'Land category'
+	        additionalColumns = (updatedFilters.counties.length > 1) ? ['County'] : []
+	      }
+	      else {
+	        groupBy = 'Commodity'
+	        additionalColumns = ['Land category']
+	      }
+	    }
+	  }
+	  else {
+	    groupBy = 'Commodity'
+	    additionalColumns = ['Land category']
+	  }
+
+	  this.setState({
+	    filter: { ...this.state.filter,
+	      years: updatedFilters.fiscalYearsSelected.sort(),
+	      locations: updatedFilters.locations,
+	      commodities: updatedFilters.commodities,
+	      counties: updatedFilters.counties,
+	      landCategory: updatedFilters.landCategory,
+	      revenueType: updatedFilters.revenueType,
+	      groupBy: groupBy,
+	    },
+	    additionalColumns: additionalColumns,
+	  })
+  }
+
+    this.additionalColumnOptionKeys = Object.keys(ADDITIONAL_COLUMN_OPTIONS)
+    this.getFiscalYearOptions = () => this.props[REVENUES_FISCAL_YEAR] && Object.keys(this.props[REVENUES_FISCAL_YEAR][BY_FISCAL_YEAR])
+    this.getLocationOptions = () => {
+      let allOption = [ALL]
+      let offshoreOptions = this.props[REVENUES_FISCAL_YEAR] && Object.keys(this.props[REVENUES_FISCAL_YEAR][BY_OFFSHORE_REGION])
+      let states = this.props[REVENUES_FISCAL_YEAR] && Object.keys(this.props[REVENUES_FISCAL_YEAR][BY_STATE])
+      return allOption.concat(offshoreOptions, states)
+    }
+    this.getCommodityOptions = () => {
+      let allOption = [ALL]
+      let commodityOptions = this.props[REVENUES_FISCAL_YEAR] && Object.keys(this.props[REVENUES_FISCAL_YEAR][BY_COMMODITY])
+      return allOption.concat(commodityOptions)
+    }
+    this.getCountyOptions = state => {
+      let allOption = [ALL]
+      let countyOptions = []
+      this.props.data.allRevenuesGroupByCounty.group.forEach(countyData => {
+        if (countyData.data[0].node.State === state) {
+          countyOptions.push(countyData.id)
+        }
+      })
+      return allOption.concat(countyOptions)
+    }
+  */

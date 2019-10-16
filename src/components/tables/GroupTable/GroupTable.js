@@ -80,7 +80,7 @@ const CustomTableSummaryRow_Item = ({ getMessage, ...restProps }) => {
     <div {...restProps} className={styles.summaryCell}>
       {restProps.children.type
         ? restProps.children.type(restProps)
-        : (restProps.value)? restProps.value : '-'
+        : (restProps.value) ? restProps.value : '-'
       }
     </div>
   )
@@ -201,11 +201,9 @@ class GroupTable extends React.Component {
             <CurrencyTypeProvider
               for={currencyColumns}
             />
-            {allColumns &&
-              <AllTypeProvider
-                for={allColumns}
-              />
-            }
+            <AllTypeProvider
+              for={allColumns}
+            />
             <VolumeTypeProvider
               for={volumeColumns}
             />

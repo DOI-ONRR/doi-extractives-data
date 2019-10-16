@@ -134,7 +134,7 @@ class Select extends React.Component {
   };
 
   render () {
-  	let { options, selectedKey, multiple, sortType } = this.props
+  	let { options, selectedKey, multiple, sortType, isDisabled } = this.props
 	  if (sortType !== 'none' && options) {
 	    options.sort()
 	    if (sortType === 'descending') {
@@ -151,7 +151,8 @@ class Select extends React.Component {
 	     			value={this.state.selectedOption}
 	     			onChange={this.handleChange}
           	renderValue={ selected => (selected.join) ? selected.join(',') : selected }
-	     			IconComponent={DownArrowIcon}
+            IconComponent={DownArrowIcon}
+            disabled={isDisabled}
 	     			>
 	          {options &&
 							options.map((option, index) => {

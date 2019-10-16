@@ -44,9 +44,11 @@ export const DATA_SET_KEYS = {
   COMMODITY: 'Commodity',
   OFFSHORE_REGION: 'OffshoreRegion',
   LOCATION: 'State',
+  STATE: 'State',
   COUNTY: 'County',
   SOURCE: 'Source',
   RECIPIENT: 'Recipient',
+  REVENUE_TYPE: 'RevenueType'
 }
 
 // Define Action Types

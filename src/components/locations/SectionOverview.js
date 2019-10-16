@@ -66,8 +66,9 @@ const SectionOverview = props => {
           <SectionOwnership usStateData={usStateData}/>
         </div>
 
-          <StateProductionSummary production={props.production} productionYears={props.productionYears} usState={usStateData.title} />
-          <StateRevenueSummary revenueYears={props.revenueYears} revenue={props.revenue}/>
+          <StateProductionSummary production={props.production} productionYears={props.productionYears} stateName={usStateData.title} />
+          
+          <StateRevenueSummary revenueYears={props.revenueYears} stateName={usStateData.title} revenue={props.revenue}/>
 
           <StateDisbursementsSummary stateId={usStateData.unique_id}  stateName={usStateData.title}  data={usDisbursements} />
 
@@ -175,16 +176,13 @@ const withhelds = Object.keys(props.production).filter(commodity => props.produc
 
   return (
     <div>
-      <p>Production</p>
-      <ul>
-        {commodityCount === 1 && <li><strong>{commodityCount}</strong> energy or mineral commodity was produced on federal land in {props.usState} in {currentYear}.</li>}
+        {commodityCount === 1 && <p><strong>{commodityCount}</strong> energy or mineral commodity was produced on federal land in {props.stateName} in {currentYear}.</p>}
         
-        {commodityCount > 1 && <li><strong>{commodityCount}</strong> energy or mineral commodities were produced on federal land in {props.usState} in {currentYear}.</li>}
+        {commodityCount > 1 && <p><strong>{commodityCount}</strong> energy or mineral commodities were produced on federal land in {props.stateName} in {currentYear}.</p>}
 
-        {commodityCount === 0 && <li>There was no energy or mineral production on federal land in {props.usState} in {currentYear}.</li>}
+        {commodityCount === 0 && <p>There was no energy or mineral production on federal land in {props.stateName} in {currentYear}.</p>}
 
         {withhelds.length > 0 && <em><strong>{withhelds.length}</strong> commodities were <GlossaryTerm>withheld</GlossaryTerm> in {currentYear}.</em>}
-      </ul>
       </div>
   )
 }
@@ -196,27 +194,23 @@ const revenue = props.revenue.All.All[revenueYear]
 
   return (
     <div>
-      <p>Revenue</p>
-      
-      <p>Production on federal land in {props.usState} resulted in:</p>
-
-      <ul><li><strong>{utils.formatToDollarInt(revenue)}</strong> in {revenueYear} revenue.</li></ul>
+      <p>Production on federal land in {props.stateName} resulted in <strong>{utils.formatToDollarInt(revenue)}</strong> in {revenueYear} revenue.</p>
     </div>
   )
 }
-
 
 const StateDisbursementsSummary = props => {
     const usStateDisbursements = FederalDisbursements(props.stateId,props.data);
     const stateName=props.stateName;
     const maxYear=usStateDisbursements.All.MaxYear
     const allDisbursements = (usStateDisbursements && usStateDisbursements.All.All) ? usStateDisbursements.All.All[maxYear] : 0
+    
     return (
 	    <div>
-	    <p>Disbursements </p>
-	    { allDisbursements > 0 && <><p> Revenue from federal land in {stateName} resulted in:</p><ul> <li><strong> {utils.formatToDollarInt(allDisbursements)}</strong> disbursed from the federal government to {stateName} in {maxYear}.</li></ul></> }
-	{ (allDisbursements == null || allDisbursements == 0 ) && <p>No disbursements were reported for {stateName} in {maxYear}, probably because there was no revenue from production on federal land.</p> }
-	</div>
+	    { allDisbursements > 0 && <p>Revenue from federal land in {stateName} resulted in <strong> {utils.formatToDollarInt(allDisbursements)}</strong> disbursed from the federal government to {stateName} in {maxYear}.</p> }
+
+	    { (allDisbursements == null || allDisbursements == 0 ) && <p>No disbursements were reported for {stateName} in {maxYear}, probably because there was no revenue from production on federal land.</p> }
+	    </div>
   )
 }
 

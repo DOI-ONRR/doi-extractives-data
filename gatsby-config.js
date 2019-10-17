@@ -1,6 +1,5 @@
 // Federalist provides the BASEURL env variable for preview builds.
 // https://github.com/18F/federalist-garden-build#variables-exposed-during-builds
-
 const BASEURL = process.env.BASEURL || undefined
 
 // Federalist provides the google_analytics env variable
@@ -14,7 +13,8 @@ let config = {
     description: 'This site provides open data about natural resource management on federal lands and waters in the United States, including oil, gas, coal, and other extractive industries.',
     version: 'v5.4.6',
     googleAnalyticsId: GOOGLE_ANALYTICS_ID,
-    siteUrl: `localhost:9000`
+    // site.siteMetadata.siteUrl is required for sitemap plugin
+    siteUrl: BASEURL || `http://localhost:9000` 
   },
   plugins: [
     'gatsby-plugin-react-helmet',

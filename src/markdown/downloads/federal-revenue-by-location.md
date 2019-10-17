@@ -17,7 +17,7 @@ tag:
 <custom-link to="/downloads/" className="breadcrumb link-charlie">Downloads</custom-link> /
 # Revenue by Year
 
-> We offer revenue data files for both calendar year and fiscal year. The calendar year datasets is for years 2003-2018, and the fiscal year data set is for years 2003-2019. They are all <glossary-term>accounting year</glossary-term> data.
+> We offer revenue data files for both calendar year and fiscal year. Both datasets are for years 2003-2018. They are all <glossary-term>accounting year</glossary-term> data.
 
 Download calendar year data (2003-2018):
 
@@ -26,10 +26,10 @@ Download calendar year data (2003-2018):
   <li><csv-link to="/downloads/csv/revenue/calendar_year_revenue.csv">Calendar year revenue (csv, 5.4 MB)</csv-link></li>
 </ul>
 
-Download fiscal year data (2003-2019):
+Download fiscal year data (2003–2018):
 
 <ul class="downloads-download_links list-unstyled">
-  <li><excel-link to="/downloads/revenue/fiscal_year_revenue.xlsx">Fiscal year revenue (Excel, 3.4 MB)</excel-link></li>
+  <li><excel-link to="/downloads/revenue/fiscal_year_revenue.xlsx">Fiscal year revenue (Excel, 2.5 MB)</excel-link></li>
   <li><csv-link to="/downloads/csv/revenue/fiscal_year_revenue.csv">Fiscal year revenue (csv, 5.2 MB)</csv-link></li>
 </ul>
 

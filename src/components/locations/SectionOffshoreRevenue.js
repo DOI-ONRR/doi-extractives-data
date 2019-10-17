@@ -67,7 +67,7 @@ const SectionOffshoreRevenue = props => {
             </p>
             <p>
           The federal government collects different kinds of fees at each phase of resource extraction. This chart shows
-          how much federal revenue was collected in {commodityYearsSortDesc[0]} for production or potential production of natural resources on federal waters
+          how much federal revenue was collected in <GlossaryTerm>calendar year (CY)</GlossaryTerm> {commodityYearsSortDesc[0]} for production or potential production of natural resources on federal waters
           , broken down by phase of production.
             </p>
 		                <div id="fee-summaries" className="tab-interface">

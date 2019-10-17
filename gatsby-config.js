@@ -14,7 +14,7 @@ let config = {
     version: 'v5.4.6',
     googleAnalyticsId: GOOGLE_ANALYTICS_ID,
     // site.siteMetadata.siteUrl is required for sitemap plugin
-    siteUrl: BASEURL || `http://localhost:9000` 
+    siteUrl: `https://revenuedata.doi.gov` 
   },
   plugins: [
     'gatsby-plugin-react-helmet',

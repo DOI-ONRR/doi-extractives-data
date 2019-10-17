@@ -184,7 +184,7 @@ const withhelds = Object.keys(props.production).filter(commodity => props.produc
 
         {withhelds.length === 1 && <em><strong>{withhelds.length}</strong> commodity was <GlossaryTerm>withheld</GlossaryTerm> in {currentYear}.</em>}
         
-        {withhelds.length > 0 && <em><strong>{withhelds.length}</strong> commodities were <GlossaryTerm>withheld</GlossaryTerm> in {currentYear}.</em>}
+        {withhelds.length > 1 && <em><strong>{withhelds.length}</strong> commodities were <GlossaryTerm>withheld</GlossaryTerm> in {currentYear}.</em>}
         <hr></hr>
       </div>
   )

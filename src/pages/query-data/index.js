@@ -689,9 +689,11 @@ class QueryData extends React.Component {
 	    Object.keys(dataSetGroupBy).forEach(name => {
 	      let sums = {}
 	      let sumsByAdditionalColumns = {}
+	      console.log(dataSetGroupBy)
 
 	      let additionalColumnsRow = {}
 	      filterIds.forEach(filteredDataId => {
+	        if (!dataSetGroupBy[name].includes(filteredDataId)) return
 	        let data = dataSet[BY_ID][filteredDataId]
 
 	        if (!expandedGroups.includes(name)) {

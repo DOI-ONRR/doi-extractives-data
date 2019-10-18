@@ -1,14 +1,25 @@
 @value colors: "../../../css-global/colors.scss";
-@value grayBlueDark as _grayBlueDark, grayBlueMid as _grayBlueMid, grayMidLight as _grayMidLight, grayBlueMidLight as _grayBlueMidLight from colors;
-@value blueMidLight as _blueMidLight, blueMid as _blueMid, blueDark as _blueDark from colors;
-@value greenLight as _greenLight, blueMid as _blueMid, blueDark as _blueDark from colors;
+
+// Grays
+@value black as _black, grayBlueDark as _grayBlueDark, grayBlueMid as _grayBlueMid, grayMidLight as _grayMidLight, grayBlueMidLight as _grayBlueMidLight, grayBlueLight as _grayBlueLight from colors;
+
+// Blues
+@value blueLighter as _blueLighter, blueLight as _blueLight, blueMidLight as _blueMidLight, blueCthru as _blueCthru, blueMid as _blueMid from colors;
+@value blueMidDark as _blueMideDark, blue as _blueDark, blueDark as _blueDark, blueDarker as _blueDarker, blueDeep as _blueDeep, blueDarkest as _blueDarkest from colors;
+
+// Greens
+@value greenLight as _greenLight from colors;
 
 @value federalOffshoreColor: _grayBlueMid;
-@value federalOnshoreColor: _grayBlueDark;
+@value federalOnshoreColor: _black;
 @value nativeAmericanColor: _grayBlueMidLight;
-@value federalOffshoreColor_selected: _blueMid;
-@value federalOnshoreColor_selected: _blueDark;
-@value nativeAmericanColor_selected: _blueMidLight;
+@value notTiedToALeaseColor: _grayBlueMidLight;
+
+@value federalOffshoreColor_selected: _blueDark;
+@value federalOnshoreColor_selected: _blueDarkest;
+@value nativeAmericanColor_selected: _blueMid;
+@value notTiedToALeaseColor_selected: _blueMidLight;
+
 
 .root{}
 .title {
@@ -49,29 +60,42 @@
 	fill: nativeAmericanColor;
 }
 
+.notTiedToALease {
+	background-color: notTiedToALeaseColor_selected;
+	fill: notTiedToALeaseColor;
+}
 
 
-.chartBar[selected=true] .federalOnshore{
+
+.chartBar[selected=true] .federalOnshore {
 	fill: federalOnshoreColor_selected;
 }
-.chartBar[selected=true] .federalOffshore{
+.chartBar[selected=true] .federalOffshore {
 	fill: federalOffshoreColor_selected;
 }
-.chartBar[selected=true] .nativeAmerican{
+.chartBar[selected=true] .nativeAmerican {
 	fill: nativeAmericanColor_selected;
 }
+.chartBar[selected=true] .notTiedToALease {
+	fill: notTiedToALease_selected;
+}
 
-.chartBar:hover .federalOnshore{
+.chartBar:hover .federalOnshore {
 	fill: federalOnshoreColor_selected;
 	opacity: 0.8;
 }
 
-.chartBar:hover .federalOffshore{
+.chartBar:hover .federalOffshore {
 	fill: federalOffshoreColor_selected;
 	opacity: 0.8;
 }
-.chartBar:hover .nativeAmerican{
+.chartBar:hover .nativeAmerican {
 	fill: nativeAmericanColor_selected;
+	opacity: 0.8;
+}
+
+.chartBar:hover .notTiedToALease {
+	fill: notTiedToALease_selected;
 	opacity: 0.8;
 }
 
@@ -85,6 +109,11 @@
 }
 .nativeAmericanHover {
 	background-color: nativeAmericanColor_selected;
+	opacity: 0.8;
+}
+
+.notTiedToALeaseHover {
+	background-color: notTiedToALeaseColor_selected;
 	opacity: 0.8;
 }
 

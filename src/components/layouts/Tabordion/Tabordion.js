@@ -2,22 +2,29 @@ import React from 'react'
 
 import PropTypes from 'prop-types'
 import MediaQuery from 'react-responsive'
-
+import { navigate } from '@reach/router';
 import styles from './Tabordion.module.scss'
 
 class Tabordion extends React.Component {
-  constructor (props) {
-    super(props)
-
-    this.state = {
-      tabId: this.props.children && this.props.children[0].props.id,
-      tabPanel: this.props.children && this.props.children[0].props.children,
+    constructor (props) {
+	super(props)
+	let selected=this.props.selected || '';
+	let selectedIndex=0;
+	if(this.props.children && selected ) {
+	    selectedIndex=this.props.children.findIndex(child=> child.props.id == selected)
+	    if(selectedIndex==-1) { selectedIndex=0 }
+	}
+	this.state = {
+	    tabId: this.props.children &&  this.props.children[selectedIndex].props.id,
+	    tabPanel: this.props.children && this.props.children[selectedIndex].props.children,
+	}
     }
-  }
-
-  tabClicked (id, content, element) {
+    
+    tabClicked (id, content, element) {
     if (this.state.tabId !== id) {
-      this.setState({ tabId: id, tabPanel: content })
+	this.setState({ tabId: id, tabPanel: content })
+	navigate('?tab='+id);
+	
     }
   }
 
@@ -29,7 +36,7 @@ class Tabordion extends React.Component {
             <div className={styles.tabContainer}>
               {this.props.children &&
 							React.Children.map(this.props.children, (child, index) => {
-							    return <Tab key={index} isSelected={(this.state.tabId === child.props.id)} callBack={this.tabClicked.bind(this)} {...child.props} />
+							    return <Tab index={index} key={index} isSelected={(this.state.tabId === child.props.id)} callBack={this.tabClicked.bind(this)} {...child.props} />
 							})
               }
             </div>

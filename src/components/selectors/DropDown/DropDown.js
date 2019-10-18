@@ -52,10 +52,10 @@ class DropDown extends React.Component {
     let { options, selectedKey, defaultKey } = this.state
     let styles = (this.props.theme === 'year') ? yearTheme : standardTheme
     defaultKey = (selectedKey !== undefined) ? undefined : defaultKey
-
+      let label=this.props.label || this.props.aria-label;
     return (
       <div className={styles.root}>
-        <select onChange={this.onChangeHandler.bind(this)} defaultValue={defaultKey} value={selectedKey}>
+            <select onChange={this.onChangeHandler.bind(this)} defaultValue={defaultKey} value={selectedKey} aria-label={label}>
           {options &&
 						options.map((option, index) => {
 						  let name, value, placeholder

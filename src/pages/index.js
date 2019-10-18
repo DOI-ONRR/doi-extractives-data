@@ -18,7 +18,7 @@ import {
   BY_FISCAL_YEAR,
   BY_CALENDAR_YEAR
 } from '../state/reducers/data-sets'
-
+import 'url-search-params-polyfill';
 import * as CONSTANTS from '../js/constants'
 import utils from '../js/utils'
 import GlossaryTerm from '../components/utils/glossary-term.js';
@@ -45,8 +45,8 @@ let  mapOffshoreJson =require("../../static/maps/offshore/offshore.json")
 class Beta extends React.Component {
   constructor (props) {
     super(props)
-
-    this.hydrateStore()
+      console.debug(props);
+      this.hydrateStore()
   }
 
 
@@ -109,10 +109,14 @@ class Beta extends React.Component {
 
 //const Beta = (props) => {
     render () {
-	console.debug(mapJson);
+
+	let urlParams = new URLSearchParams(this.props.location.search)
+	let selected=urlParams.get('tab');
+	
+
 	return(
 	    <DefaultLayout>
-	      <main>
+	      <main id="main-content">
 		<Helmet
 		  title="Home | Natural Resources Revenue Data"
 		  meta={[
@@ -121,11 +125,11 @@ class Beta extends React.Component {
 		      { name: 'twitter:title', content: 'Home | Natural Resources Revenue Data' },
 		  ]} >
 		</Helmet>
-	        <section id="main-content" className="container-page-wrapper" >
+	        <section className="container-page-wrapper" >
 		<h3 className="h3-bar"></h3>
 		<p> When companies extract energy and mineral resources on property leased from the federal government and Native Americans, they pay <GlossaryTerm termKey="Bonus">bonuses</GlossaryTerm>, <GlossaryTerm>rent</GlossaryTerm>, and <GlossaryTerm termKey="Royalty">royalties</GlossaryTerm>. The Office of Natural Resources Revenue (ONRR) collects and <GlossaryTerm termKey="disbursement">disburses</GlossaryTerm> revenue from federal lands and waters to different agencies, funds, and local governments for public use. All revenue collected from extraction on Native American lands is disbursed to Native American tribes, nations, or individuals.</p>
 		</section>
-		<Tabordion>
+		<Tabordion selected={selected}  >
 		<Tab id="tab-revenue" name="Revenue">
 		    <TabContainer id="tab-container-revenue" name="Revenue"
 				  title="Revenue"

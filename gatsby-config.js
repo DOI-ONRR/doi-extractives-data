@@ -5,13 +5,13 @@ const BASEURL = process.env.BASEURL || undefined
 // Federalist provides the google_analytics env variable
 const GOOGLE_ANALYTICS_ID = (process.env.google_analytics)
   ? (process.env.google_analytics[process.env.BRANCH] || process.env.google_analytics.default)
-  : 'UA-48605964-8'
+  : 'UA-33523145-1'
 
 let config = {
   siteMetadata: {
     title: 'Natural Resources Revenue Data',
     description: 'This site provides open data about natural resource management on federal lands and waters in the United States, including oil, gas, coal, and other extractive industries.',
-    version: 'v5.4.4',
+    version: 'v5.4.6',
     googleAnalyticsId: GOOGLE_ANALYTICS_ID,
   },
   plugins: [

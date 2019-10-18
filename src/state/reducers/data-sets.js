@@ -48,7 +48,8 @@ export const DATA_SET_KEYS = {
   COUNTY: 'County',
   SOURCE: 'Source',
   RECIPIENT: 'Recipient',
-  REVENUE_TYPE: 'RevenueType'
+  REVENUE_TYPE: 'RevenueType',
+  LAND_CATEGORY: 'RevenueCategory'
 }
 
 // Define Action Types

@@ -98,6 +98,8 @@ const GROUP_BY_MAP_TO_DATA = {
   [REVENUE]: {
     [REVENUE_TYPE]: [BY_REVENUE_TYPE],
     [COMMODITY]: [BY_COMMODITY],
+    [LAND_CATEGORY]: [BY_LAND_CATEGORY],
+    [LOCATION]: [BY_STATE, BY_OFFSHORE_REGION],
   },
   [PRODUCTION]: {
     [COMMODITY]: [BY_COMMODITY],
@@ -110,9 +112,11 @@ const GROUP_BY_MAP_TO_DATA = {
 }
 const GROUP_BY_OPTIONS = {
   [REVENUE]: filter => {
+    let options = Object.keys(GROUP_BY_MAP_TO_DATA[REVENUE])
+
     return ({
-      options: [REVENUE_TYPE, COMMODITY],
-      default: REVENUE_TYPE
+      options: options,
+      default: options[0]
     })
   },
   [PRODUCTION]: filter => {
@@ -165,6 +169,8 @@ const ADDITIONAL_COLUMN_MAP_TO_DATA = {
   [REVENUE]: {
     [REVENUE_TYPE]: [DATA_SET_KEYS.REVENUE_TYPE],
     [COMMODITY]: [DATA_SET_KEYS.COMMODITY],
+    [LAND_CATEGORY]: [DATA_SET_KEYS.LAND_CATEGORY],
+    [LOCATION]: [DATA_SET_KEYS.STATE],
     [NO_SECOND_COLUMN]: [],
   },
   [PRODUCTION]: {
@@ -180,10 +186,23 @@ const ADDITIONAL_COLUMN_MAP_TO_DATA = {
   }
 }
 const ADDITIONAL_COLUMN_OPTIONS = {
-  [REVENUE]: filter => {
+  [REVENUE]: (filter, groupBy) => {
+    let options = Object.keys(GROUP_BY_MAP_TO_DATA[REVENUE]).concat(NO_SECOND_COLUMN)
+    if (filter.revenueType !== ALL) {
+      options = options.filter(option => option !== REVENUE_TYPE)
+    }
+    if (filter.commodities === undefined || (filter.commodities.length === 1 && filter.commodities[0] !== ALL)) {
+      options = options.filter(option => option !== COMMODITY)
+    }
+    if (filter.landCategory !== ALL) {
+      options = options.filter(option => option !== LAND_CATEGORY)
+    }
+    if (filter.locations === undefined || (filter.locations.length === 1 && filter.locations[0] !== ALL)) {
+      options = options.filter(option => option !== LOCATION)
+    }
     return ({
-      options: [REVENUE_TYPE, COMMODITY, NO_SECOND_COLUMN],
-      default: COMMODITY
+      options: options,
+      default: options.find(option => option !== groupBy)
     })
   },
   [PRODUCTION]: filter => {
@@ -527,11 +546,10 @@ class QueryData extends React.Component {
   }
 
   onSubmitHandler (filter) {
-    console.log(filter.fiscalYearsSelected)
     this.setFilteredIds(FISCAL_YEAR, filter.fiscalYearsSelected)
     let groupByFiltered = GROUP_BY_OPTIONS[this.state.dataType](filter)
-    let additionalColumnFiltered = ADDITIONAL_COLUMN_OPTIONS[this.state.dataType](filter)
-    console.log(this.props[DATA_TYPE_OPTIONS[this.state.dataType]][FILTERED_IDS])
+    let additionalColumnFiltered = ADDITIONAL_COLUMN_OPTIONS[this.state.dataType](filter, groupByFiltered.default)
+
 	  this.setState({
       [this.state.dataType]: {
         filter: filter,
@@ -872,7 +890,11 @@ class QueryData extends React.Component {
     let groupByOptions = this.state[this.state.dataType] && this.state[this.state.dataType].groupByOptions
     let additionalColumn = this.state[this.state.dataType] && this.state[this.state.dataType].additionalColumn
     let additionalColumnOptions = this.state[this.state.dataType] && this.state[this.state.dataType].additionalColumnOptions
-    console.log(this.props[DATA_TYPE_OPTIONS[this.state.dataType]])
+
+    if (this.state[this.state.dataType] && additionalColumnOptions) {
+      additionalColumnOptions = additionalColumnOptions.filter(option => option !== this.state[this.state.dataType].groupBy)
+    }
+    
     return (
       <DefaultLayout>
 	      <Helmet

@@ -85,13 +85,15 @@ const DATA_TYPE_OPTIONS = {
   [DISBURSEMENTS]: DISBURSEMENTS_FISCAL_YEAR,
 }
 
+// Setting true and false to show as a group by option
+// Some Land category options actually are multiple land categories and should be show as a group by option
 const LAND_CATEGORY_OPTIONS = {
-  [ALL]: [BY_REVENUE_TYPE],
-  [FEDERAL_ONSHORE]: [BY_LAND_CLASS, BY_LAND_CATEGORY],
-  [FEDERAL_OFFSHORE]: [BY_STATE, BY_OFFSHORE_REGION],
-  [ONSHORE]: [BY_STATE, BY_OFFSHORE_REGION],
-  [NATIVE_AMERICAN]: [BY_STATE, BY_OFFSHORE_REGION],
-  [FEDERAL_ONSHORE_OFFSHORE]: [BY_COMMODITY],
+  [ALL]: true,
+  [FEDERAL_ONSHORE]: false,
+  [FEDERAL_OFFSHORE]: false,
+  [ONSHORE]: true,
+  [NATIVE_AMERICAN]: false,
+  [FEDERAL_ONSHORE_OFFSHORE]: true,
 }
 
 const GROUP_BY_MAP_TO_DATA = {
@@ -100,6 +102,8 @@ const GROUP_BY_MAP_TO_DATA = {
     [COMMODITY]: [BY_COMMODITY],
     [LAND_CATEGORY]: [BY_REVENUE_CATEGORY],
     [LOCATION]: [BY_STATE, BY_OFFSHORE_REGION],
+    'County': [BY_STATE],
+    'Region': [BY_STATE]
   },
   [PRODUCTION]: {
     [REVENUE_TYPE]: [BY_REVENUE_TYPE],
@@ -689,8 +693,6 @@ class QueryData extends React.Component {
 	    Object.keys(dataSetGroupBy).forEach(name => {
 	      let sums = {}
 	      let sumsByAdditionalColumns = {}
-	      console.log(dataSetGroupBy)
-
 	      let additionalColumnsRow = {}
 	      filterIds.forEach(filteredDataId => {
 	        if (!dataSetGroupBy[name].includes(filteredDataId)) return

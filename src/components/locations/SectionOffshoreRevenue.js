@@ -5,6 +5,7 @@ import StickyHeader from '../layouts/StickyHeader'
 import { StickyWrapper } from '../utils/StickyWrapper'
 import YearSelector from '../selectors/YearSelector'
 import DataAndDocs from '../layouts/DataAndDocs'
+import GlossaryTerm from '../utils/glossary-term.js'
 import RevenueTypeTable from '../locations/RevenueTypeTable'
 import RevenueProcessTable from '../locations/RevenueProcessTable'
 import utils from '../../js/utils'
@@ -64,10 +65,7 @@ const SectionOffshoreRevenue = props => {
           . For details, read more about the processes for <Link to="/how-it-works/offshore-oil-gas/">offshore oil and gas
             </Link> or <Link to="/how-it-works/offshore-renewables/">offshore renewable energy</Link>.
             </p>
-            <p>
-          The federal government collects different kinds of fees at each phase of resource extraction. This chart shows
-          how much federal revenue was collected in <GlossaryTerm>calendar year (CY)</GlossaryTerm> {commodityYearsSortDesc[0]} for production or potential production of natural resources on federal waters, broken down by phase of production.
-            </p>
+            <p>The federal government collects different kinds of fees at each phase of resource extraction. This chart shows how much federal revenue was collected in <GlossaryTerm>calendar year (CY)</GlossaryTerm> {commodityYearsSortDesc[0]} for production or potential production of natural resources on federal waters, broken down by phase of production.</p>
 		                <div id="fee-summaries" className="tab-interface">
 		                    <ul className="eiti-tabs info-tabs" role="tablist">
 		                        <li role="presentation">

@@ -271,7 +271,7 @@ const ADDITIONAL_COLUMN_OPTIONS = {
 const PLURAL_COLUMNS_MAP = {
   'Revenue type': 'revenue types',
   'Commodity': 'commodities',
-  'Land category': 'land categories',
+  'Land Category': 'land categories',
   'Location': 'locations',
   'County': 'counties',
   [SOURCE]: SOURCES.toLowerCase(),
@@ -299,8 +299,9 @@ const muiTheme = createMuiTheme({
 class QueryData extends React.Component {
   constructor (props) {
     super(props)
-    this.allGroupByColumns = Object.keys(GROUP_BY_MAP_TO_DATA).map(dataSetId => Object.keys(GROUP_BY_MAP_TO_DATA[dataSetId]))
-    console.log(this.allGroupByColumns)
+    this.allGroupByColumns = Object.keys(GROUP_BY_MAP_TO_DATA).map(dataSetId => Object.keys(GROUP_BY_MAP_TO_DATA[dataSetId])).flat()
+      .filter((item, i, a) => a.indexOf(item) === i)
+
     this.hydrateStore()
   }
 
@@ -529,6 +530,7 @@ class QueryData extends React.Component {
   setGroupByFilter (value) {
     let additionalColumnFiltered = ADDITIONAL_COLUMN_OPTIONS[this.state.dataType](this.state[this.state.dataType].filter, value)
     additionalColumnFiltered.default = (this.state[this.state.dataType].additionalColumn === value) ? NO_SECOND_COLUMN : additionalColumnFiltered.default
+
 	  this.setState({
       loading: false,
       [this.state.dataType]: {
@@ -589,7 +591,7 @@ class QueryData extends React.Component {
 
 	getTableColumns = dataTypeState => {
 	  let columns = []; let columnExtensions = []; let grouping = []; let currencyColumns = []; let volumeColumns = []; let defaultSorting = []
-	  let allColumns = ['revenue_type', 'commodity', 'recipient', 'source']
+	  let allColumns = this.allGroupByColumns.map(column => utils.formatToSlug(column))
 
 	  if (!dataTypeState.groupBy) {
 	    throw new Error('Must have a group by option selected')
@@ -651,14 +653,11 @@ class QueryData extends React.Component {
 	    groupSummaryItems.push({ columnName: 'fy-' + year, type: 'sum' })
 	  })
 
-	  totalSummaryItems.push({ columnName: utils.formatToSlug(dataTypeState.groupBy), type: 'avg' })
-	  groupSummaryItems.push({ columnName: utils.formatToSlug(dataTypeState.groupBy), type: 'avg' })
-
 	  // using type avg to attach the custom formatter function
-	  if (dataTypeState.additionalColumn && dataTypeState.additionalColumn !== NO_SECOND_COLUMN) {
-	    totalSummaryItems.push({ columnName: utils.formatToSlug(dataTypeState.additionalColumn), type: 'avg' })
-	    groupSummaryItems.push({ columnName: utils.formatToSlug(dataTypeState.additionalColumn), type: 'avg' })
-	  }
+	  this.allGroupByColumns.forEach(column => {
+	    totalSummaryItems.push({ columnName: utils.formatToSlug(column), type: 'avg' })
+	    groupSummaryItems.push({ columnName: utils.formatToSlug(column), type: 'avg' })
+	  })
 
 	  return {
 	    totalSummaryItems: totalSummaryItems,
@@ -692,11 +691,8 @@ class QueryData extends React.Component {
 	      let sumsByAdditionalColumns = {}
 
 	      let additionalColumnsRow = {}
-
-	      // sum all revenues
-	      dataSetGroupBy[name].forEach(dataId => {
-	        if (!filterIds.includes(dataId)) return
-	        let data = dataSet[BY_ID][dataId]
+	      filterIds.forEach(filteredDataId => {
+	        let data = dataSet[BY_ID][filteredDataId]
 
 	        if (!expandedGroups.includes(name)) {
 	          expandedGroups.push(name)

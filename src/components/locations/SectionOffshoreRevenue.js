@@ -51,8 +51,7 @@ const SectionOffshoreRevenue = props => {
       <h2>Federal Revenue</h2>
 
       <p>Natural resource extraction can lead to federal revenue in two ways: non-tax revenue and tax revenue.</p>
-      <p>When companies extract natural resources on federal lands and waters, they pay royalties, rents, bonuses
-        , and other fees, much like they would to any landowner. This non-tax revenue is collected and reported by the Office of Natural Resources Revenue (ONRR).</p>
+      <p>When companies extract natural resources on federal lands and waters, they pay royalties, rents, bonuses, and other fees, much like they would to any landowner. This non-tax revenue is collected and reported by the Office of Natural Resources Revenue (ONRR).</p>
 
       <section id="federal-revenue">
 
@@ -67,8 +66,7 @@ const SectionOffshoreRevenue = props => {
             </p>
             <p>
           The federal government collects different kinds of fees at each phase of resource extraction. This chart shows
-          how much federal revenue was collected in <GlossaryTerm>calendar year (CY)</GlossaryTerm> {commodityYearsSortDesc[0]} for production or potential production of natural resources on federal waters
-          , broken down by phase of production.
+          how much federal revenue was collected in <GlossaryTerm>calendar year (CY)</GlossaryTerm> {commodityYearsSortDesc[0]} for production or potential production of natural resources on federal waters, broken down by phase of production.
             </p>
 		                <div id="fee-summaries" className="tab-interface">
 		                    <ul className="eiti-tabs info-tabs" role="tablist">

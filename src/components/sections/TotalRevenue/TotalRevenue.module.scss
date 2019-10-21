@@ -1,7 +1,8 @@
 @value colors: "../../../css-global/colors.scss";
 
 // Grays
-@value black as _black, grayBlueDark as _grayBlueDark, grayBlueMid as _grayBlueMid, grayMidLight as _grayMidLight, grayBlueMidLight as _grayBlueMidLight, grayBlueLight as _grayBlueLight from colors;
+@value black as _black, grayBlueDark as _grayBlueDark, grayBlueMid as _grayBlueMid, grayMidLight as _grayMidLight from colors;
+@value grayBlueMidLight as _grayBlueMidLight, grayBlueLight as _grayBlueLight from colors;
 
 // Blues
 @value blueLighter as _blueLighter, blueLight as _blueLight, blueMidLight as _blueMidLight, blueCthru as _blueCthru, blueMid as _blueMid from colors;
@@ -10,9 +11,9 @@
 // Greens
 @value greenLight as _greenLight from colors;
 
-@value federalOffshoreColor: _grayBlueMid;
+@value federalOffshoreColor: _grayBlueDark;
 @value federalOnshoreColor: _black;
-@value nativeAmericanColor: _grayBlueMidLight;
+@value nativeAmericanColor: _grayBlueMid;
 @value notTiedToALeaseColor: _grayBlueMidLight;
 
 @value federalOffshoreColor_selected: _blueDark;
@@ -59,7 +60,6 @@
 	background-color: nativeAmericanColor_selected;
 	fill: nativeAmericanColor;
 }
-
 .notTiedToALease {
 	background-color: notTiedToALeaseColor_selected;
 	fill: notTiedToALeaseColor;

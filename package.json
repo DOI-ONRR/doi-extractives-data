@@ -63,7 +63,6 @@
     "serve": "gatsby serve",
     "format": "eslint --fix 'src/**'",
     "test": "jest",
-    "test-lighthouse": "jest ./lighthouse.test.js --verbose --runInBand",
     "test-update-snapshots": "jest -u",
     "setup-gatsby": "npm install",
     "build-gatsby": "npm run build",
@@ -94,7 +93,6 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^24.8.0",
     "lighthouse": "^5.5.0",
-    "puppeteer": "^1.20.0",
     "react-test-renderer": "^16.8.4",
     "svg-react-loader": "^0.4.6"
   },

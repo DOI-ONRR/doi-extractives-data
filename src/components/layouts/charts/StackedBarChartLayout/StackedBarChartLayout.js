@@ -49,12 +49,14 @@ class StackedBarChartLayout extends React.Component {
   }
 
   getChartLegend() {
+    console.log('this.props: ', this.props)
     let {
       legendTitle,
       legendDataFormatFunc,
       sortOrder,
       styleMap,
-      showUnits
+      showUnits,
+      displayNames
     } = this.props;
     let { data, legendLabels, selectedDataKey, units } = this.state.dataSet;
     let legendData;
@@ -84,6 +86,7 @@ class StackedBarChartLayout extends React.Component {
         styleMap={styleMap}
         sortOrder={sortOrder}
         units={units}
+        displayNames={displayNames}
       ></ChartLegendStandard>
     );
   }

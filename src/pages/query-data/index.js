@@ -423,12 +423,13 @@ class QueryData extends React.Component {
     if (isEqual) {
       let dataIds = this.props[DATA_TYPE_OPTIONS[this.state.dataType]][FILTERED_IDS] || Object.keys(this.props[DATA_TYPE_OPTIONS[this.state.dataType]][BY_ID])
       if (filter) {
-        this.props[DATA_TYPE_OPTIONS[this.state.dataType]][FILTERED_IDS] =
+        dataIds =
           dataIds.filter(id => this.hasFilterValue[filterType](this.props[DATA_TYPE_OPTIONS[this.state.dataType]][BY_ID][id], filter))
       }
       else {
         this.props[DATA_TYPE_OPTIONS[this.state.dataType]][FILTERED_IDS] = dataIds
       }
+      this.props[DATA_TYPE_OPTIONS[this.state.dataType]][FILTERED_IDS] = dataIds
     }
     else {
       // Reset dataIds if filter changed and filter the data again using all the filters
@@ -443,17 +444,17 @@ class QueryData extends React.Component {
 
         console.log(filters[type])
         if (filters[type]) {
-          this.props[DATA_TYPE_OPTIONS[this.state.dataType]][FILTERED_IDS] =
+          dataIds =
             dataIds.filter(id => this.hasFilterValue[type](this.props[DATA_TYPE_OPTIONS[this.state.dataType]][BY_ID][id], filters[type].value))
         }
         else {
           delete filters[type]
         }
       })
+      this.props[DATA_TYPE_OPTIONS[this.state.dataType]][FILTERED_IDS] = dataIds
     }
 
     console.log(filters)
-
     this.props[DATA_TYPE_OPTIONS[this.state.dataType]]['filters'] = filters
   }
 

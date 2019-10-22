@@ -40,18 +40,24 @@ const RevenuesTableToolbar = ({
   onSubmit
 }) => {
   const [landCategory, setLandCategory] = useState()
+
   const [locationOptions, setLocationOptions] = useState()
   const [locations, setLocations] = useState()
   const [disableLocation, setDisableLocation] = useState()
+
+  const [countyOptions, setCountyOptions] = useState()
   const [counties, setCounties] = useState()
-  const [countyOptionValues, setCountyOptionValues] = useState()
+
+  const [commodityOptions, setCommodityOptions] = useState()
   const [commodities, setCommodities] = useState()
+
+  const [revenueTypeOptions, setRevenueTypeOptions] = useState()
   const [revenueType, setRevenueType] = useState()
+
+  const [fiscalYearStartOptions, setFiscalYearStartOptions] = useState()
   const [fiscalYearStart, setFiscalYearStart] = useState()
   const [fiscalYearEnd, setFiscalYearEnd] = useState()
   const [fiscalYearsSelected, setFiscalYearSelected] = useState()
-
-  let fiscalYearStartOptions = []
 
   useEffect(() => {
     if (landCategory) {
@@ -73,7 +79,8 @@ const RevenuesTableToolbar = ({
   useEffect(() => {
     setCounties(undefined)
     if (locations) {
-      setCountyOptionValues(getCountyOptions(locations))
+      setCountyOptions(getCountyOptions(locations))
+      setCommodityOptions(getCommodityOptions({ locations, counties }))
     }
     setCommodities(undefined)
     setRevenueType(undefined)
@@ -83,6 +90,9 @@ const RevenuesTableToolbar = ({
   }, [locations])
 
   useEffect(() => {
+    if (counties) {
+      setCommodityOptions(getCommodityOptions({ locations, counties }))
+    }
     setCommodities(undefined)
     setRevenueType(undefined)
     setFiscalYearStart(undefined)
@@ -92,6 +102,9 @@ const RevenuesTableToolbar = ({
 
   useEffect(() => {
     setRevenueType(undefined)
+    if (commodities) {
+      setRevenueTypeOptions(getRevenueTypeOptions(commodities))
+    }
     setFiscalYearStart(undefined)
     setFiscalYearEnd(undefined)
     setFiscalYearSelected(undefined)
@@ -99,6 +112,9 @@ const RevenuesTableToolbar = ({
 
   useEffect(() => {
     setFiscalYearStart(undefined)
+    if (revenueType) {
+      setFiscalYearStartOptions(getFiscalYearOptions(revenueType))
+    }
     setFiscalYearEnd(undefined)
     setFiscalYearSelected(undefined)
   }, [revenueType])
@@ -132,8 +148,8 @@ const RevenuesTableToolbar = ({
     return (locations !== undefined &&
       locations.length === 1 &&
       !locations.includes('All') &&
-      countyOptionValues !== undefined &&
-      countyOptionValues.length > 0)
+      countyOptions !== undefined &&
+      countyOptions.length > 0)
   }
 
   const showCommodity = () => {
@@ -144,11 +160,6 @@ const RevenuesTableToolbar = ({
       return true
     }
     return false
-  }
-
-  const getFiscalYearStartOptions = () => {
-    fiscalYearStartOptions = getFiscalYearOptions(revenueType)
-    return fiscalYearStartOptions
   }
 
   const getFiscalYearEndOptions = () => {
@@ -249,7 +260,7 @@ const RevenuesTableToolbar = ({
                 <Select
                   multiple
                   sortType={'none'}
-                  options={countyOptionValues}
+                  options={countyOptions}
                   selectedOption={counties}
                   onChangeHandler={values => setCounties(values)}
                 />
@@ -267,7 +278,7 @@ const RevenuesTableToolbar = ({
                 <Select
                   multiple
                   sortType={'none'}
-                  options={getCommodityOptions({ locations, counties })}
+                  options={commodityOptions}
                   selectedOption={commodities}
                   onChangeHandler={values => setCommodities(values)}
                 />
@@ -283,7 +294,7 @@ const RevenuesTableToolbar = ({
               </Grid>
               <Grid item sm={5} xs={12}>
                 <DropDown
-                  options={getRevenueTypeOptions(commodities)}
+                  options={revenueTypeOptions}
                   selectedOptionValue={revenueType}
                   sortType={'none'}
                   action={value => setRevenueType(value)}
@@ -300,7 +311,8 @@ const RevenuesTableToolbar = ({
               </Grid>
               <Grid item sm={5} xs={12}>
                 <DropDown
-                  options={getFiscalYearStartOptions()}
+                  options={fiscalYearStartOptions}
+                  selectedOptionValue={fiscalYearStart}
                   sortType={'descending'}
                   action={value => setFiscalYearStart(value)}
                 />

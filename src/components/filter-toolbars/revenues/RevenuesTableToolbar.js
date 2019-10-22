@@ -160,9 +160,6 @@ const RevenuesTableToolbar = ({
     else if (locations && countiesRegions) {
       return true
     }
-    else if (locations) {
-      return true
-    }
     return false
   }
 
@@ -184,7 +181,7 @@ const RevenuesTableToolbar = ({
     case FEDERAL_ONSHORE:
       return 'State:'
     case FEDERAL_OFFSHORE:
-      return 'Region:'
+      return 'Offshore Area:'
     }
 
     return 'Location:'
@@ -197,7 +194,7 @@ const RevenuesTableToolbar = ({
       return 'Parish:'
     }
 
-    return 'County:'
+    return (locations[0] && locations[0].includes('Offshore')) ? 'Region:' : 'County:'
   }
 
   const getLocationsState = options => {

@@ -451,13 +451,11 @@ class QueryData extends React.Component {
       let dataIds = Object.keys(this.props[DATA_TYPE_OPTIONS[this.state.dataType]][BY_ID])
       let filterKeys = Object.keys(filters)
       filterKeys.sort((a, b) => (filters[a].orderNum < filters[b].orderNum) ? -1 : 1)
-      console.log(filterKeys)
+
       filterKeys.forEach(type => {
-        console.log(filters[type])
         // If the order number is higher then the current filter order number then clear the filter
         filters[type] = (filters[type].orderNum && filterOrderNum && filters[type].orderNum <= filterOrderNum) ? filters[type] : undefined
 
-        console.log(filters[type])
         if (filters[type]) {
           dataIds =
             dataIds.filter(id => this.hasFilterValue[type](this.props[DATA_TYPE_OPTIONS[this.state.dataType]][BY_ID][id], filters[type].value))
@@ -469,7 +467,6 @@ class QueryData extends React.Component {
       this.props[DATA_TYPE_OPTIONS[this.state.dataType]][FILTERED_IDS] = dataIds
     }
 
-    console.log(filters)
     this.props[DATA_TYPE_OPTIONS[this.state.dataType]]['filters'] = filters
   }
 
@@ -480,10 +477,6 @@ class QueryData extends React.Component {
     let options = []
     dataProps.forEach(dataProp => {
       this.props[DATA_TYPE_OPTIONS[this.state.dataType]][FILTERED_IDS].forEach(id => {
-        if (dataProp === 'OffshorePlanningArea') {
-          console.log(this.props[DATA_TYPE_OPTIONS[this.state.dataType]][BY_ID][id][dataProp])
-        }
-
         if (this.props[DATA_TYPE_OPTIONS[this.state.dataType]][BY_ID][id][dataProp]) {
           options.push(this.props[DATA_TYPE_OPTIONS[this.state.dataType]][BY_ID][id][dataProp])
         }

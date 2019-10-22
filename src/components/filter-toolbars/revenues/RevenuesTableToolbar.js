@@ -33,7 +33,7 @@ const muiTheme = createMuiTheme({
 const RevenuesTableToolbar = ({
   getLandCategoryOptions,
   getLocationOptions,
-  getCountyOptions,
+  getCountyRegionOptions,
   getCommodityOptions,
   getRevenueTypeOptions,
   getFiscalYearOptions,
@@ -45,8 +45,8 @@ const RevenuesTableToolbar = ({
   const [locations, setLocations] = useState()
   const [disableLocation, setDisableLocation] = useState()
 
-  const [countyOptions, setCountyOptions] = useState()
-  const [counties, setCounties] = useState()
+  const [countyRegionOptions, setCountyRegionOptions] = useState()
+  const [countiesRegions, setCountiesRegions] = useState()
 
   const [commodityOptions, setCommodityOptions] = useState()
   const [commodities, setCommodities] = useState()
@@ -68,7 +68,7 @@ const RevenuesTableToolbar = ({
     else {
       setLocations(undefined)
     }
-    setCounties(undefined)
+    setCountiesRegions(undefined)
     setCommodities(undefined)
     setRevenueType(undefined)
     setFiscalYearStart(undefined)
@@ -77,10 +77,10 @@ const RevenuesTableToolbar = ({
   }, [landCategory])
 
   useEffect(() => {
-    setCounties(undefined)
+    setCountiesRegions(undefined)
     if (locations) {
-      setCountyOptions(getCountyOptions(locations))
-      setCommodityOptions(getCommodityOptions({ locations, counties }))
+      setCountyRegionOptions(getCountyRegionOptions(locations))
+      setCommodityOptions(getCommodityOptions({ locations, countiesRegions }))
     }
     setCommodities(undefined)
     setRevenueType(undefined)
@@ -90,15 +90,15 @@ const RevenuesTableToolbar = ({
   }, [locations])
 
   useEffect(() => {
-    if (counties) {
-      setCommodityOptions(getCommodityOptions({ locations, counties }))
+    if (countiesRegions) {
+      setCommodityOptions(getCommodityOptions({ locations, countiesRegions }))
     }
     setCommodities(undefined)
     setRevenueType(undefined)
     setFiscalYearStart(undefined)
     setFiscalYearEnd(undefined)
     setFiscalYearSelected(undefined)
-  }, [counties])
+  }, [countiesRegions])
 
   useEffect(() => {
     setRevenueType(undefined)
@@ -136,7 +136,7 @@ const RevenuesTableToolbar = ({
       onSubmit({
         landCategory,
         locations,
-        counties,
+        countiesRegions,
         commodities,
         revenueType,
         fiscalYearsSelected
@@ -144,19 +144,23 @@ const RevenuesTableToolbar = ({
     }
   }
 
-  const showCountyOptions = () => {
-    return (locations !== undefined &&
+  const showCountyRegionOptions = () => {
+    return (
+      locations !== undefined &&
       locations.length === 1 &&
       !locations.includes('All') &&
-      countyOptions !== undefined &&
-      countyOptions.length > 0)
+      (countyRegionOptions !== undefined && countyRegionOptions.length > 0)
+    )
   }
 
   const showCommodity = () => {
-    if (locations && !showCountyOptions()) {
+    if (locations && !showCountyRegionOptions()) {
       return true
     }
-    else if (locations && counties) {
+    else if (locations && countiesRegions) {
+      return true
+    }
+    else if (locations) {
       return true
     }
     return false
@@ -251,7 +255,7 @@ const RevenuesTableToolbar = ({
               </Grid>
             </React.Fragment>
           }
-          {showCountyOptions() &&
+          {showCountyRegionOptions() &&
             <React.Fragment>
               <Grid item sm={2} xs={12}>
                 <h6>{getCountyLabel()}</h6>
@@ -260,9 +264,9 @@ const RevenuesTableToolbar = ({
                 <Select
                   multiple
                   sortType={'none'}
-                  options={countyOptions}
-                  selectedOption={counties}
-                  onChangeHandler={values => setCounties(values)}
+                  options={countyRegionOptions}
+                  selectedOption={countiesRegions}
+                  onChangeHandler={values => setCountiesRegions(values)}
                 />
               </Grid>
               <Grid item sm={5}>

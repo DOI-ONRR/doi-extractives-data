@@ -10,6 +10,7 @@ import { normalize as normalizeDataSetAction,
   BY_ID, BY_COMMODITY,
   BY_STATE, BY_COUNTY,
   BY_OFFSHORE_REGION,
+  BY_OFFSHORE_PLANNING_AREA,
   BY_LAND_CATEGORY,
   BY_LAND_CLASS,
   BY_REVENUE_TYPE,
@@ -60,6 +61,7 @@ const RECIPIENTS = 'Recipients'
 const STATE = 'State'
 const COUNTY = 'County'
 const REGION = 'Region'
+const COUNTIES_REGIONS = 'Counties_Regions'
 const SOURCE = 'Source'
 const SOURCES = 'Sources'
 const LOCATIONS = 'Locations'
@@ -105,7 +107,7 @@ const GROUP_BY_MAP_TO_DATA = {
     [LAND_CATEGORY]: [BY_REVENUE_CATEGORY],
     [LOCATION]: [BY_STATE, BY_OFFSHORE_REGION],
     [COUNTY]: [BY_COUNTY],
-    [REGION]: [BY_STATE]
+    [REGION]: [BY_OFFSHORE_PLANNING_AREA],
   },
   [PRODUCTION]: {
     [REVENUE_TYPE]: [BY_REVENUE_TYPE],
@@ -134,11 +136,17 @@ const GROUP_BY_OPTIONS = {
     if (filter.locations === undefined || (filter.locations.length === 1 && filter.locations[0] !== ALL)) {
       options = options.filter(option => option !== LOCATION)
     }
-    if (filter.counties === undefined || (filter.counties.length === 1 && filter.counties[0] !== ALL)) {
+    if (filter.countiesRegions === undefined || (filter.countiesRegions.length === 1 && filter.countiesRegions[0] !== ALL)) {
       options = options.filter(option => option !== COUNTY)
-    }
-    if (filter.regions === undefined || (filter.regions.length === 1 && filter.regions[0] !== ALL)) {
       options = options.filter(option => option !== REGION)
+    }
+    else {
+      if (filter.locations[0].includes('Offshore')) {
+        options = options.filter(option => option !== COUNTY)
+      }
+      else {
+        options = options.filter(option => option !== REGION)
+      }
     }
     options = (options.length === 0) ? [LAND_CATEGORY] : options
     return ({
@@ -289,7 +297,8 @@ const PLURAL_COLUMNS_MAP = {
   'Commodity': 'commodities',
   'Land Category': 'land categories',
   'Location': 'locations',
-  'County': 'counties',
+  [COUNTY]: 'counties',
+  [REGION]: 'regions',
   [SOURCE]: SOURCES.toLowerCase(),
   [RECIPIENT]: RECIPIENTS.toLowerCase(),
 }
@@ -358,6 +367,12 @@ class QueryData extends React.Component {
         return true
       }
       return (filter.includes(data.County))
+    },
+    [COUNTIES_REGIONS]: (data, filter) => {
+      if (filter === undefined || filter.includes(ALL)) {
+        return true
+      }
+      return (filter.includes(data.County) || filter.includes(data.OffshorePlanningArea))
     },
     [FISCAL_YEAR]: (data, filter) => {
       if (filter === undefined || filter.includes(ALL)) {
@@ -465,6 +480,10 @@ class QueryData extends React.Component {
     let options = []
     dataProps.forEach(dataProp => {
       this.props[DATA_TYPE_OPTIONS[this.state.dataType]][FILTERED_IDS].forEach(id => {
+        if (dataProp === 'OffshorePlanningArea') {
+          console.log(this.props[DATA_TYPE_OPTIONS[this.state.dataType]][BY_ID][id][dataProp])
+        }
+
         if (this.props[DATA_TYPE_OPTIONS[this.state.dataType]][BY_ID][id][dataProp]) {
           options.push(this.props[DATA_TYPE_OPTIONS[this.state.dataType]][BY_ID][id][dataProp])
         }
@@ -502,13 +521,13 @@ class QueryData extends React.Component {
 
         return locationOptions
       },
-      [COUNTIES]: locations => {
+      [COUNTIES_REGIONS]: locations => {
         this.setFilteredIds(LOCATIONS, locations, 2)
-        return this.getUniqueOptionValuesFromFilteredData([DATA_SET_KEYS.COUNTY])
+        return this.getUniqueOptionValuesFromFilteredData([DATA_SET_KEYS.COUNTY, DATA_SET_KEYS.OFFSHORE_PLANNING_AREA])
       },
-      [COMMODITIES]: ({ locations, counties }) => {
-        if (counties) {
-          this.setFilteredIds(COUNTIES, counties, 3)
+      [COMMODITIES]: ({ locations, countiesRegions }) => {
+        if (countiesRegions) {
+          this.setFilteredIds(COUNTIES_REGIONS, countiesRegions, 3)
         }
         else {
           this.setFilteredIds(LOCATIONS, locations, 2)
@@ -856,6 +875,10 @@ class QueryData extends React.Component {
             groups: data.allRevenuesGroupByOffshoreRegion.group,
           },
           {
+            key: BY_OFFSHORE_PLANNING_AREA,
+            groups: data.allRevenuesGroupByOffshorePlanningArea.group,
+          },
+          {
             key: BY_COUNTY,
             groups: data.allRevenuesGroupByCounty.group,
           },
@@ -938,7 +961,7 @@ class QueryData extends React.Component {
 	    return (<RevenuesTableToolbar
         getLandCategoryOptions={this.filterDataOptions[dataType][LAND_CATEGORY]}
         getLocationOptions={this.filterDataOptions[dataType][LOCATION]}
-	      getCountyOptions={this.filterDataOptions[dataType][COUNTIES]}
+	      getCountyRegionOptions={this.filterDataOptions[dataType][COUNTIES_REGIONS]}
 	      getCommodityOptions={this.filterDataOptions[dataType][COMMODITIES]}
 	      getRevenueTypeOptions={this.filterDataOptions[dataType][REVENUE_TYPE]}
 	      getFiscalYearOptions={this.filterDataOptions[dataType][FISCAL_YEARS]}
@@ -1338,7 +1361,8 @@ export const query = graphql`
 		      County
 		      State
 		      RevenueDate
-		      OffshoreRegion
+          OffshoreRegion
+          OffshorePlanningArea
 		      RevenueCategory
 		    }
 		  }
@@ -1380,6 +1404,21 @@ export const query = graphql`
 	    }, 
 	  	sort: {fields: [FiscalYear], order: DESC}) {
 	    group(field: OffshoreRegion) {
+	      id:fieldValue
+	      data:edges {
+	        node {
+	          id
+	        }
+	      }
+	    }
+	  }
+	  allRevenuesGroupByOffshorePlanningArea: allResourceRevenuesFiscalYear(
+	  	filter: {
+		  	FiscalYear: {ne: null}, 
+	      OffshorePlanningArea: {nin: [null,""]},
+	    }, 
+	  	sort: {fields: [FiscalYear], order: DESC}) {
+	    group(field: OffshorePlanningArea) {
 	      id:fieldValue
 	      data:edges {
 	        node {

@@ -31,15 +31,16 @@ const muiTheme = createMuiTheme({
 })
 
 const RevenuesTableToolbar = ({
-  landCategoryOptions,
-  locationOptions,
-  countyOptions,
-  commodityOptions,
-  revenueTypeOptions,
-  fiscalYearOptions,
+  getLandCategoryOptions,
+  getLocationOptions,
+  getCountyOptions,
+  getCommodityOptions,
+  getRevenueTypeOptions,
+  getFiscalYearOptions,
   onSubmit
 }) => {
   const [landCategory, setLandCategory] = useState()
+  const [locationOptions, setLocationOptions] = useState()
   const [locations, setLocations] = useState()
   const [disableLocation, setDisableLocation] = useState()
   const [counties, setCounties] = useState()
@@ -53,7 +54,14 @@ const RevenuesTableToolbar = ({
   let fiscalYearStartOptions = []
 
   useEffect(() => {
-    setLocations(getLocationsInitialState())
+    if (landCategory) {
+      let options = getLocationOptions(landCategory)
+      setLocationOptions(options)
+      setLocations(getLocationsState(options))
+    }
+    else {
+      setLocations(undefined)
+    }
     setCounties(undefined)
     setCommodities(undefined)
     setRevenueType(undefined)
@@ -65,7 +73,7 @@ const RevenuesTableToolbar = ({
   useEffect(() => {
     setCounties(undefined)
     if (locations) {
-      setCountyOptionValues(countyOptions(locations))
+      setCountyOptionValues(getCountyOptions(locations))
     }
     setCommodities(undefined)
     setRevenueType(undefined)
@@ -139,7 +147,7 @@ const RevenuesTableToolbar = ({
   }
 
   const getFiscalYearStartOptions = () => {
-    fiscalYearStartOptions = fiscalYearOptions(revenueType)
+    fiscalYearStartOptions = getFiscalYearOptions(revenueType)
     return fiscalYearStartOptions
   }
 
@@ -177,9 +185,8 @@ const RevenuesTableToolbar = ({
     return 'County:'
   }
 
-  const getLocationsInitialState = () => {
+  const getLocationsState = options => {
     if (landCategory) {
-      let options = locationOptions(landCategory)
       if (options && options.length === 1) {
         setDisableLocation(true)
         return options
@@ -199,7 +206,7 @@ const RevenuesTableToolbar = ({
           </Grid>
           <Grid item sm={5} xs={12}>
             <DropDown
-              options={landCategoryOptions()}
+              options={getLandCategoryOptions()}
               selectedOptionValue={landCategory}
               sortType={'none'}
               action={value => setLandCategory(value)}
@@ -216,7 +223,7 @@ const RevenuesTableToolbar = ({
                 <Select
                   multiple
                   sortType={'none'}
-                  options={locationOptions(landCategory)}
+                  options={locationOptions}
                   selectedOption={locations}
                   onChangeHandler={values => setLocations(values)}
                   isDisabled={disableLocation}
@@ -260,19 +267,12 @@ const RevenuesTableToolbar = ({
                 <Select
                   multiple
                   sortType={'none'}
-                  options={commodityOptions({ locations, counties })}
+                  options={getCommodityOptions({ locations, counties })}
                   selectedOption={commodities}
                   onChangeHandler={values => setCommodities(values)}
                 />
               </Grid>
               <Grid item sm={5}>
-              </Grid>
-              <Grid item sm={2} xs={12}>
-              </Grid>
-              <Grid item sm={10}>
-                {(landCategory === 'Native American') &&
-                  <div className={styles.locationMessage}>For privacy reasons, location is <GlossaryTerm>withheld</GlossaryTerm> for Native American data.</div>
-                }
               </Grid>
             </React.Fragment>
           }
@@ -283,7 +283,7 @@ const RevenuesTableToolbar = ({
               </Grid>
               <Grid item sm={5} xs={12}>
                 <DropDown
-                  options={revenueTypeOptions(commodities)}
+                  options={getRevenueTypeOptions(commodities)}
                   selectedOptionValue={revenueType}
                   sortType={'none'}
                   action={value => setRevenueType(value)}

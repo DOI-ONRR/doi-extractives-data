@@ -49,7 +49,8 @@ export const DATA_SET_KEYS = {
   SOURCE: 'Source',
   RECIPIENT: 'Recipient',
   REVENUE_TYPE: 'RevenueType',
-  LAND_CATEGORY: 'RevenueCategory'
+  LAND_CATEGORY: 'RevenueCategory',
+  OFFSHORE_PLANNING_AREA: 'OffshorePlanningArea'
 }
 
 // Define Action Types

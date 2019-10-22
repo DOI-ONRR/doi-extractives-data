@@ -45,6 +45,7 @@ import Dialog from '@material-ui/core/Dialog'
 import DialogActions from '@material-ui/core/DialogActions'
 import DialogContent from '@material-ui/core/DialogContent'
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles'
+import { object } from 'prop-types'
 
 const PAGE_TITLE = 'Federal Revenue | Natural Resources Revenue Data'
 
@@ -58,6 +59,7 @@ const RECIPIENT = 'Recipient'
 const RECIPIENTS = 'Recipients'
 const STATE = 'State'
 const COUNTY = 'County'
+const REGION = 'Region'
 const SOURCE = 'Source'
 const SOURCES = 'Sources'
 const LOCATIONS = 'Locations'
@@ -102,8 +104,8 @@ const GROUP_BY_MAP_TO_DATA = {
     [COMMODITY]: [BY_COMMODITY],
     [LAND_CATEGORY]: [BY_REVENUE_CATEGORY],
     [LOCATION]: [BY_STATE, BY_OFFSHORE_REGION],
-    'County': [BY_STATE],
-    'Region': [BY_STATE]
+    [COUNTY]: [BY_COUNTY],
+    [REGION]: [BY_STATE]
   },
   [PRODUCTION]: {
     [REVENUE_TYPE]: [BY_REVENUE_TYPE],
@@ -120,6 +122,25 @@ const GROUP_BY_MAP_TO_DATA = {
 const GROUP_BY_OPTIONS = {
   [REVENUE]: filter => {
     let options = Object.keys(GROUP_BY_MAP_TO_DATA[REVENUE])
+    if (![ALL, ONSHORE, FEDERAL_ONSHORE_OFFSHORE].includes(filter.landCategory)) {
+      options = options.filter(option => option !== LAND_CATEGORY)
+    }
+    if (filter.revenueType !== ALL) {
+      options = options.filter(option => option !== REVENUE_TYPE)
+    }
+    if (filter.commodities === undefined || (filter.commodities.length === 1 && filter.commodities[0] !== ALL)) {
+      options = options.filter(option => option !== COMMODITY)
+    }
+    if (filter.locations === undefined || (filter.locations.length === 1 && filter.locations[0] !== ALL)) {
+      options = options.filter(option => option !== LOCATION)
+    }
+    if (filter.counties === undefined || (filter.counties.length === 1 && filter.counties[0] !== ALL)) {
+      options = options.filter(option => option !== COUNTY)
+    }
+    if (filter.regions === undefined || (filter.regions.length === 1 && filter.regions[0] !== ALL)) {
+      options = options.filter(option => option !== REGION)
+    }
+    options = (options.length === 0) ? [LAND_CATEGORY] : options
     return ({
       options: options,
       default: options[0]
@@ -178,6 +199,8 @@ const ADDITIONAL_COLUMN_MAP_TO_DATA = {
     [COMMODITY]: [DATA_SET_KEYS.COMMODITY],
     [LAND_CATEGORY]: [DATA_SET_KEYS.LAND_CATEGORY],
     [LOCATION]: [DATA_SET_KEYS.STATE],
+    [COUNTY]: [DATA_SET_KEYS.COUNTY],
+    [REGION]: [DATA_SET_KEYS.OFFSHORE_PLANNING_AREA],
     [NO_SECOND_COLUMN]: [],
   },
   [PRODUCTION]: {
@@ -196,20 +219,9 @@ const ADDITIONAL_COLUMN_MAP_TO_DATA = {
   }
 }
 const ADDITIONAL_COLUMN_OPTIONS = {
-  [REVENUE]: (filter, groupBy) => {
-    let options = Object.keys(GROUP_BY_MAP_TO_DATA[REVENUE]).concat(NO_SECOND_COLUMN)
-    if (filter.revenueType !== ALL) {
-      options = options.filter(option => option !== REVENUE_TYPE)
-    }
-    if (filter.commodities === undefined || (filter.commodities.length === 1 && filter.commodities[0] !== ALL)) {
-      options = options.filter(option => option !== COMMODITY)
-    }
-    if (filter.landCategory !== ALL) {
-      options = options.filter(option => option !== LAND_CATEGORY)
-    }
-    if (filter.locations === undefined || (filter.locations.length === 1 && filter.locations[0] !== ALL)) {
-      options = options.filter(option => option !== LOCATION)
-    }
+  [REVENUE]: (groupByOptions, groupBy) => {
+    let options = groupByOptions && groupByOptions.concat(NO_SECOND_COLUMN)
+
     return ({
       options: options,
       default: options.find(option => option !== groupBy)
@@ -338,6 +350,7 @@ class QueryData extends React.Component {
       else if (filter.includes(ALL)) {
         return true
       }
+
       return (filter.includes(data.State) || filter.includes(data.OffshoreRegion))
     },
     [COUNTIES]: (data, filter) => {
@@ -383,15 +396,65 @@ class QueryData extends React.Component {
    * The filter type then determines the hasFilterValue function to use
    * It uses the state Data Type to determine the correct data set to use
    */
-  setFilteredIds = (filterType, filter) => {
-    let dataIds = this.props[DATA_TYPE_OPTIONS[this.state.dataType]][FILTERED_IDS] || Object.keys(this.props[DATA_TYPE_OPTIONS[this.state.dataType]][BY_ID])
-    if (filter) {
-      this.props[DATA_TYPE_OPTIONS[this.state.dataType]][FILTERED_IDS] =
-        dataIds.filter(id => this.hasFilterValue[filterType](this.props[DATA_TYPE_OPTIONS[this.state.dataType]][BY_ID][id], filter))
+  setFilteredIds = (filterType, filter, filterOrderNum) => {
+    let filters = this.props[DATA_TYPE_OPTIONS[this.state.dataType]]['filters'] || {}
+    let isEqual = true
+    if (filters[filterType]) {
+      if (Array.isArray(filters[filterType].value)) {
+        if (filters[filterType].value.length === filter.length) {
+          // Check to make sure both arrays have all the same values
+          filters[filterType].value.forEach(item => {
+            if (!filter.includes(item)) {
+              isEqual = false
+            }
+          })
+        }
+        else {
+          isEqual = false
+        }
+      }
+      else {
+        isEqual = (filters[filterType].value === filter)
+      }
+    }
+
+    filters[filterType] = { orderNum: filterOrderNum, value: filter }
+
+    if (isEqual) {
+      let dataIds = this.props[DATA_TYPE_OPTIONS[this.state.dataType]][FILTERED_IDS] || Object.keys(this.props[DATA_TYPE_OPTIONS[this.state.dataType]][BY_ID])
+      if (filter) {
+        this.props[DATA_TYPE_OPTIONS[this.state.dataType]][FILTERED_IDS] =
+          dataIds.filter(id => this.hasFilterValue[filterType](this.props[DATA_TYPE_OPTIONS[this.state.dataType]][BY_ID][id], filter))
+      }
+      else {
+        this.props[DATA_TYPE_OPTIONS[this.state.dataType]][FILTERED_IDS] = dataIds
+      }
     }
     else {
-      this.props[DATA_TYPE_OPTIONS[this.state.dataType]][FILTERED_IDS] = dataIds
+      // Reset dataIds if filter changed and filter the data again using all the filters
+      let dataIds = Object.keys(this.props[DATA_TYPE_OPTIONS[this.state.dataType]][BY_ID])
+      let filterKeys = Object.keys(filters)
+      filterKeys.sort((a, b) => (filters[a].orderNum < filters[b].orderNum) ? -1 : 1)
+      console.log(filterKeys)
+      filterKeys.forEach(type => {
+        console.log(filters[type])
+        // If the order number is higher then the current filter order number then clear the filter
+        filters[type] = (filters[type].orderNum && filterOrderNum && filters[type].orderNum <= filterOrderNum) ? filters[type] : undefined
+
+        console.log(filters[type])
+        if (filters[type]) {
+          this.props[DATA_TYPE_OPTIONS[this.state.dataType]][FILTERED_IDS] =
+            dataIds.filter(id => this.hasFilterValue[type](this.props[DATA_TYPE_OPTIONS[this.state.dataType]][BY_ID][id], filters[type].value))
+        }
+        else {
+          delete filters[type]
+        }
+      })
     }
+
+    console.log(filters)
+
+    this.props[DATA_TYPE_OPTIONS[this.state.dataType]]['filters'] = filters
   }
 
   /**
@@ -425,11 +488,10 @@ class QueryData extends React.Component {
   filterDataOptions = {
     [REVENUE]: {
       [LAND_CATEGORY]: () => {
-        this.props[REVENUES_FISCAL_YEAR][FILTERED_IDS] = undefined
         return [{ name: SELECT, placeholder: true }].concat(Object.keys(LAND_CATEGORY_OPTIONS))
       },
       [LOCATION]: landCategory => {
-        this.setFilteredIds(LAND_CATEGORY, landCategory)
+        this.setFilteredIds(LAND_CATEGORY, landCategory, 1)
 
         let locationOptions = [].concat(
           this.getUniqueOptionValuesFromFilteredData([DATA_SET_KEYS.OFFSHORE_REGION], false).sort(),
@@ -440,35 +502,34 @@ class QueryData extends React.Component {
         return locationOptions
       },
       [COUNTIES]: locations => {
-        this.setFilteredIds(LOCATIONS, locations)
+        this.setFilteredIds(LOCATIONS, locations, 2)
         return this.getUniqueOptionValuesFromFilteredData([DATA_SET_KEYS.COUNTY])
       },
       [COMMODITIES]: ({ locations, counties }) => {
         if (counties) {
-          this.setFilteredIds(COUNTIES, counties)
+          this.setFilteredIds(COUNTIES, counties, 3)
         }
         else {
-          this.setFilteredIds(LOCATIONS, locations)
+          this.setFilteredIds(LOCATIONS, locations, 2)
         }
 
         return this.getUniqueOptionValuesFromFilteredData([DATA_SET_KEYS.COMMODITY])
       },
       [REVENUE_TYPE]: commodities => {
-        this.setFilteredIds(COMMODITIES, commodities)
+        this.setFilteredIds(COMMODITIES, commodities, 4)
         return [{ name: SELECT, placeholder: true }].concat(this.getUniqueOptionValuesFromFilteredData([DATA_SET_KEYS.REVENUE_TYPE]))
       },
       [FISCAL_YEARS]: revenueType => {
-        this.setFilteredIds(REVENUE_TYPE, revenueType)
+        this.setFilteredIds(REVENUE_TYPE, revenueType, 5)
         return [{ name: SELECT, placeholder: true }].concat(this.getUniqueOptionValuesFromFilteredData([FISCAL_YEAR], false))
       }
     },
     [PRODUCTION]: {
       [LAND_CATEGORY]: () => {
-        this.props[REVENUES_FISCAL_YEAR][FILTERED_IDS] = undefined
         return [{ name: SELECT, placeholder: true }].concat(Object.keys(LAND_CATEGORY_OPTIONS))
       },
       [LOCATION]: landCategory => {
-        this.setFilteredIds(LAND_CATEGORY, landCategory)
+        this.setFilteredIds(LAND_CATEGORY, landCategory, 1)
 
         let locationOptions = [].concat(
           this.getUniqueOptionValuesFromFilteredData([DATA_SET_KEYS.OFFSHORE_REGION], false).sort(),
@@ -479,51 +540,49 @@ class QueryData extends React.Component {
         return locationOptions
       },
       [COUNTIES]: locations => {
-        this.setFilteredIds(LOCATIONS, locations)
+        this.setFilteredIds(LOCATIONS, locations, 2)
         return this.getUniqueOptionValuesFromFilteredData([DATA_SET_KEYS.COUNTY])
       },
       [COMMODITIES]: ({ locations, counties }) => {
         if (counties) {
-          this.setFilteredIds(COUNTIES, counties)
+          this.setFilteredIds(COUNTIES, counties, 3)
         }
         else {
-          this.setFilteredIds(LOCATIONS, locations)
+          this.setFilteredIds(LOCATIONS, locations, 2)
         }
 
         return this.getUniqueOptionValuesFromFilteredData([DATA_SET_KEYS.COMMODITY])
       },
       [FISCAL_YEARS]: commodities => {
-        this.setFilteredIds(COMMODITIES, commodities)
+        this.setFilteredIds(COMMODITIES, commodities, 4)
         return [{ name: SELECT, placeholder: true }].concat(this.getUniqueOptionValuesFromFilteredData([FISCAL_YEAR], false))
       }
     },
     [DISBURSEMENTS]: {
       [RECIPIENTS]: () => {
-        let recipients = Object.keys(this.props[DISBURSEMENTS_FISCAL_YEAR][BY_FUND])
-        this.props[DISBURSEMENTS_FISCAL_YEAR][FILTERED_IDS] = undefined
-        return [{ name: SELECT, placeholder: true }].concat([ALL], recipients)
+        return [{ name: SELECT, placeholder: true }].concat([ALL], Object.keys(this.props[DISBURSEMENTS_FISCAL_YEAR][BY_FUND]))
       },
       [SOURCE]: recipient => {
-        this.setFilteredIds(RECIPIENTS, recipient)
+        this.setFilteredIds(RECIPIENTS, recipient, 1)
         return [{ name: SELECT, placeholder: true }].concat(this.getUniqueOptionValuesFromFilteredData([SOURCE]))
       },
       [LOCATIONS]: source => {
-        this.setFilteredIds(SOURCE, source)
+        this.setFilteredIds(SOURCE, source, 2)
         return this.getUniqueOptionValuesFromFilteredData([STATE])
       },
       [COUNTIES]: locations => {
-        this.setFilteredIds(LOCATIONS, locations)
+        this.setFilteredIds(LOCATIONS, locations, 3)
         return this.getUniqueOptionValuesFromFilteredData([COUNTY])
       },
       [FISCAL_YEARS]: ({ source, locations, counties }) => {
         if (counties) {
-          this.setFilteredIds(COUNTIES, counties)
+          this.setFilteredIds(COUNTIES, counties, 4)
         }
         else if (locations) {
-          this.setFilteredIds(LOCATIONS, locations)
+          this.setFilteredIds(LOCATIONS, locations, 3)
         }
         else {
-          this.setFilteredIds(SOURCE, source)
+          this.setFilteredIds(SOURCE, source, 2)
         }
         return [{ name: SELECT, placeholder: true }].concat(this.getUniqueOptionValuesFromFilteredData([FISCAL_YEAR], false))
       }
@@ -532,43 +591,43 @@ class QueryData extends React.Component {
 
   // If group by column is in the additional columns remove it
   setGroupByFilter (value) {
-    let additionalColumnFiltered = ADDITIONAL_COLUMN_OPTIONS[this.state.dataType](this.state[this.state.dataType].filter, value)
-    additionalColumnFiltered.default = (this.state[this.state.dataType].additionalColumn === value) ? NO_SECOND_COLUMN : additionalColumnFiltered.default
-
+    let currentAdditionalColumn = this.state[this.state.dataType].additionalColumn
+    if (value === this.state[this.state.dataType].additionalColumn) {
+      currentAdditionalColumn = NO_SECOND_COLUMN
+    }
 	  this.setState({
       loading: false,
       [this.state.dataType]: {
         ...this.state[this.state.dataType],
         groupBy: value,
-        additionalColumnOptions: additionalColumnFiltered.options || this.state[this.state.dataType].additionalColumnOptions,
-        additionalColumn: additionalColumnFiltered.default || this.state[this.state.dataType].additionalColumn,
+        additionalColumnOptions: this.state[this.state.dataType].additionalColumnOptions,
+        additionalColumn: currentAdditionalColumn,
         tableColumns: this.getTableColumns({
           filter: this.state[this.state.dataType].filter,
           groupBy: value,
-          additionalColumn: additionalColumnFiltered.default || this.state[this.state.dataType].additionalColumn }),
+          additionalColumn: currentAdditionalColumn }),
         tableData: this.getTableData({
           filter: this.state[this.state.dataType].filter,
           groupBy: value,
-          additionalColumn: additionalColumnFiltered.default || this.state[this.state.dataType].additionalColumn })
+          additionalColumn: currentAdditionalColumn })
       }
     })
   }
 
   setAdditionalColumns (value) {
-    let groupByFiltered = GROUP_BY_OPTIONS[this.state.dataType](this.state[this.state.dataType].filter, value)
 	  this.setState({
       [this.state.dataType]: {
         ...this.state[this.state.dataType],
         additionalColumn: value,
-        groupBy: groupByFiltered.default || this.state[this.state.dataType].groupBy,
-        groupByOptions: groupByFiltered.options || this.state[this.state.dataType].groupByOptions,
+        groupBy: this.state[this.state.dataType].groupBy,
+        groupByOptions: this.state[this.state.dataType].groupByOptions,
         tableColumns: this.getTableColumns({
           filter: this.state[this.state.dataType].filter,
-          groupBy: groupByFiltered.default || this.state[this.state.dataType].groupBy,
+          groupBy: this.state[this.state.dataType].groupBy,
           additionalColumn: value }),
         tableData: this.getTableData({
           filter: this.state[this.state.dataType].filter,
-          groupBy: groupByFiltered.default || this.state[this.state.dataType].groupBy,
+          groupBy: this.state[this.state.dataType].groupBy,
           additionalColumn: value })
       }
     })
@@ -577,7 +636,7 @@ class QueryData extends React.Component {
   onSubmitHandler (filter) {
     this.setFilteredIds(FISCAL_YEAR, filter.fiscalYearsSelected)
     let groupByFiltered = GROUP_BY_OPTIONS[this.state.dataType](filter)
-    let additionalColumnFiltered = ADDITIONAL_COLUMN_OPTIONS[this.state.dataType](filter, groupByFiltered.default)
+    let additionalColumnFiltered = ADDITIONAL_COLUMN_OPTIONS[this.state.dataType](groupByFiltered.options, groupByFiltered.default)
 
 	  this.setState({
       [this.state.dataType]: {
@@ -872,15 +931,16 @@ class QueryData extends React.Component {
 
   getFilterToolbar () {
     let dataType = this.state.dataType
+
 	  switch (dataType) {
 	  case REVENUE:
 	    return (<RevenuesTableToolbar
-        landCategoryOptions={this.filterDataOptions[dataType][LAND_CATEGORY]}
-        locationOptions={this.filterDataOptions[dataType][LOCATION]}
-	      countyOptions={this.filterDataOptions[dataType][COUNTIES]}
-	      commodityOptions={this.filterDataOptions[dataType][COMMODITIES]}
-	      revenueTypeOptions={this.filterDataOptions[dataType][REVENUE_TYPE]}
-	      fiscalYearOptions={this.filterDataOptions[dataType][FISCAL_YEARS]}
+        getLandCategoryOptions={this.filterDataOptions[dataType][LAND_CATEGORY]}
+        getLocationOptions={this.filterDataOptions[dataType][LOCATION]}
+	      getCountyOptions={this.filterDataOptions[dataType][COUNTIES]}
+	      getCommodityOptions={this.filterDataOptions[dataType][COMMODITIES]}
+	      getRevenueTypeOptions={this.filterDataOptions[dataType][REVENUE_TYPE]}
+	      getFiscalYearOptions={this.filterDataOptions[dataType][FISCAL_YEARS]}
 	      onSubmit={this.onSubmitHandler.bind(this)}
       />)
     case PRODUCTION:
@@ -940,7 +1000,10 @@ class QueryData extends React.Component {
                   <DropDown
                     options={[{ name: '-Select-', placeholder: true }].concat(Object.keys(DATA_TYPE_OPTIONS))}
                     sortType={'none'}
-                    action={value => this.setState({ dataType: value })}
+                    action={value => {
+                      this.props[DATA_TYPE_OPTIONS[value]][FILTERED_IDS] = undefined
+                      this.setState({ dataType: value })
+                    }}
                   />
                 </Grid>
                 <Grid item sm={5}>
@@ -964,7 +1027,7 @@ class QueryData extends React.Component {
 						        {groupBy &&
                       <div className={styles.editGroupingButton}>
                         Grouped by {groupBy}
-                        {(additionalColumn) &&
+                        {(additionalColumn && additionalColumn !== NO_SECOND_COLUMN) &&
                           <React.Fragment>
                             {' '}and {additionalColumn}
                           </React.Fragment>

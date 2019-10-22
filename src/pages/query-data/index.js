@@ -206,7 +206,7 @@ const ADDITIONAL_COLUMN_MAP_TO_DATA = {
     [REVENUE_TYPE]: [DATA_SET_KEYS.REVENUE_TYPE],
     [COMMODITY]: [DATA_SET_KEYS.COMMODITY],
     [LAND_CATEGORY]: [DATA_SET_KEYS.LAND_CATEGORY],
-    [LOCATION]: [DATA_SET_KEYS.STATE],
+    [LOCATION]: [DATA_SET_KEYS.STATE, DATA_SET_KEYS.OFFSHORE_REGION],
     [COUNTY]: [DATA_SET_KEYS.COUNTY],
     [REGION]: [DATA_SET_KEYS.OFFSHORE_PLANNING_AREA],
     [NO_SECOND_COLUMN]: [],
@@ -414,6 +414,8 @@ class QueryData extends React.Component {
   setFilteredIds = (filterType, filter, filterOrderNum) => {
     let filters = this.props[DATA_TYPE_OPTIONS[this.state.dataType]]['filters'] || {}
     let isEqual = true
+
+    // Check to see if the filter has changed, if not then no need to rerun previous filters
     if (filters[filterType]) {
       if (Array.isArray(filters[filterType].value)) {
         if (filters[filterType].value.length === filter.length) {
@@ -453,6 +455,8 @@ class QueryData extends React.Component {
       filterKeys.sort((a, b) => (filters[a].orderNum < filters[b].orderNum) ? -1 : 1)
 
       filterKeys.forEach(type => {
+        // If the filter order number is not defined set it to max number to let all filters run first
+        filterOrderNum = filterOrderNum || Number.MAX_SAFE_INTEGER
         // If the order number is higher then the current filter order number then clear the filter
         filters[type] = (filters[type].orderNum && filterOrderNum && filters[type].orderNum <= filterOrderNum) ? filters[type] : undefined
 
@@ -994,7 +998,7 @@ class QueryData extends React.Component {
     if (this.state[this.state.dataType] && additionalColumnOptions) {
       additionalColumnOptions = additionalColumnOptions.filter(option => option !== this.state[this.state.dataType].groupBy)
     }
-    console.log(this.state)
+
     return (
       <DefaultLayout>
 	      <Helmet

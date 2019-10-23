@@ -52,6 +52,12 @@ h3,
   @include h3-bar;
 }
 
+span.h3-bar {
+  @include h3-bar;
+  display: inline-block;
+  width: 100%;
+}
+
 h4,
 .h4 {
   @include heading(h4);

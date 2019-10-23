@@ -324,8 +324,9 @@ const muiTheme = createMuiTheme({
 class QueryData extends React.Component {
   constructor (props) {
     super(props)
-    this.allGroupByColumns = Object.keys(GROUP_BY_MAP_TO_DATA).map(dataSetId => Object.keys(GROUP_BY_MAP_TO_DATA[dataSetId])).flat()
-      .filter((item, i, a) => a.indexOf(item) === i)
+    this.allGroupByColumns = Object.keys(GROUP_BY_MAP_TO_DATA).map(dataSetId => Object.keys(GROUP_BY_MAP_TO_DATA[dataSetId]))
+    this.allGroupByColumns = [].concat.apply([], this.allGroupByColumns)
+    this.allGroupByColumns = this.allGroupByColumns.filter((item, i, a) => a.indexOf(item) === i)
 
     this.hydrateStore()
   }

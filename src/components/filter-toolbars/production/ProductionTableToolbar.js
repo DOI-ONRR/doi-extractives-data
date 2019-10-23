@@ -234,7 +234,7 @@ const ProductionTableToolbar = ({
               <Grid item sm={2} xs={12}>
               </Grid>
               <Grid item sm={10}>
-                {(landCategory === 'Native American') &&
+                {(landCategory === 'Native American' || landCategory === 'All' || landCategory === 'Onshore') &&
                   <div className={styles.locationMessage}>For privacy reasons, location is <GlossaryTerm>withheld</GlossaryTerm> for Native American data.</div>
                 }
               </Grid>

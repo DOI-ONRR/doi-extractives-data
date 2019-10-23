@@ -120,6 +120,7 @@ const GROUP_BY_MAP_TO_DATA = {
     [RECIPIENT]: [BY_FUND],
     [SOURCE]: [BY_SOURCE],
     [LOCATION]: [BY_STATE],
+    [COUNTY]: [BY_COUNTY],
   }
 }
 const GROUP_BY_OPTIONS = {
@@ -184,42 +185,24 @@ const GROUP_BY_OPTIONS = {
       default: options[0]
     })
   },
-  [DISBURSEMENTS]: (filter, additionalColumn) => {
-    if (additionalColumn === NO_SECOND_COLUMN) {
-      return ({})
+  [DISBURSEMENTS]: filter => {
+    let options = Object.keys(GROUP_BY_MAP_TO_DATA[DISBURSEMENTS])
+    if (![ALL].includes(filter.recipient)) {
+      options = options.filter(option => option !== RECIPIENT)
     }
-
-    if (filter.recipient === ALL) {
-      if (filter.source === ONSHORE_OFFSHORE || filter.source === OFFSHORE) {
-        if (!additionalColumn || additionalColumn === SOURCE) {
-          return ({
-            options: [RECIPIENT, SOURCE],
-            default: RECIPIENT
-          })
-        }
-        else {
-          return ({
-            options: [RECIPIENT, SOURCE],
-            default: SOURCE
-          })
-        }
-      }
-      else {
-        return ({
-          options: [RECIPIENT],
-          default: RECIPIENT
-        })
-      }
+    if (![ALL].includes(filter.source)) {
+      options = options.filter(option => option !== SOURCE)
     }
-    else {
-      if (additionalColumn) {
-        return ({})
-      }
+    if (filter.locations === undefined || (filter.locations.length === 1 && filter.locations[0] !== ALL)) {
+      options = options.filter(option => option !== LOCATION)
     }
-
+    if (filter.counties === undefined || (filter.counties.length === 1 && filter.counties[0] !== ALL)) {
+      options = options.filter(option => option !== COUNTY)
+    }
+    options = (options.length === 0) ? [RECIPIENT] : options
     return ({
-      options: [RECIPIENT, SOURCE, LOCATION],
-      default: RECIPIENT
+      options: options,
+      default: options[0]
     })
   }
 }
@@ -245,8 +228,8 @@ const ADDITIONAL_COLUMN_MAP_TO_DATA = {
   [DISBURSEMENTS]: {
     [RECIPIENT]: [DATA_SET_KEYS.RECIPIENT],
     [SOURCE]: [DATA_SET_KEYS.SOURCE],
-    [COUNTY]: [DATA_SET_KEYS.COUNTY],
     [LOCATION]: [DATA_SET_KEYS.LOCATION],
+    [COUNTY]: [DATA_SET_KEYS.COUNTY],
     [NO_SECOND_COLUMN]: [],
   }
 }
@@ -267,40 +250,12 @@ const ADDITIONAL_COLUMN_OPTIONS = {
       default: options.find(option => option !== groupBy)
     })
   },
-  [DISBURSEMENTS]: (filter, groupBy) => {
-    if (filter.recipient === ALL) {
-      if (filter.source === ONSHORE_OFFSHORE || filter.source === OFFSHORE) {
-        if (groupBy === SOURCE) {
-          return ({
-            options: [RECIPIENT, NO_SECOND_COLUMN],
-            default: RECIPIENT
-          })
-        }
-        else {
-          return ({
-            options: [SOURCE, NO_SECOND_COLUMN],
-            default: SOURCE
-          })
-        }
-      }
-      else {
-        return ({
-          options: undefined,
-          default: undefined
-        })
-      }
-    }
-    else {
-      if (groupBy) {
-        return ({
-          options: [RECIPIENT, SOURCE, LOCATION, NO_SECOND_COLUMN].filter(option => option !== groupBy)
-        })
-      }
-    }
+  [DISBURSEMENTS]: (groupByOptions, groupBy) => {
+    let options = groupByOptions && groupByOptions.concat(NO_SECOND_COLUMN)
 
     return ({
-      options: [SOURCE, LOCATION, NO_SECOND_COLUMN],
-      default: SOURCE
+      options: options,
+      default: options.find(option => option !== groupBy)
     })
   }
 }
@@ -993,11 +948,11 @@ class QueryData extends React.Component {
       />)
 	  case DISBURSEMENTS:
 	    return (<DisbursementsTableToolbar
-	      recipientOptions={this.filterDataOptions[dataType][RECIPIENTS]}
-	      sourceOptions={this.filterDataOptions[dataType][SOURCE]}
-	      locationOptions={this.filterDataOptions[dataType][LOCATIONS]}
-	      countyOptions={this.filterDataOptions[dataType][COUNTIES]}
-	      fiscalYearOptions={this.filterDataOptions[dataType][FISCAL_YEARS]}
+	      getRecipientOptions={this.filterDataOptions[dataType][RECIPIENTS]}
+	      getSourceOptions={this.filterDataOptions[dataType][SOURCE]}
+	      getLocationOptions={this.filterDataOptions[dataType][LOCATIONS]}
+	      getCountyOptions={this.filterDataOptions[dataType][COUNTIES]}
+	      getFiscalYearOptions={this.filterDataOptions[dataType][FISCAL_YEARS]}
 	      onSubmit={this.onSubmitHandler.bind(this)}
 	    />)
 	  }

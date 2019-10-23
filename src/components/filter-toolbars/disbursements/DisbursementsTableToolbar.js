@@ -29,25 +29,35 @@ const muiTheme = createMuiTheme({
 })
 
 const DisbursementsTableToolbar = ({
-  recipientOptions,
-  sourceOptions,
-  locationOptions,
-  countyOptions,
-  fiscalYearOptions,
+  getRecipientOptions,
+  getSourceOptions,
+  getLocationOptions,
+  getCountyOptions,
+  getFiscalYearOptions,
   onSubmit
 }) => {
+  const [recipientOptions] = useState(getRecipientOptions())
   const [recipient, setRecipient] = useState()
+
+  const [sourceOptions, setSourceOptions] = useState()
   const [source, setSource] = useState()
+
+  const [locationOptions, setLocationOptions] = useState()
   const [locations, setLocations] = useState()
+
+  const [countyOptions, setCountyOptions] = useState()
   const [counties, setCounties] = useState()
+
+  const [fiscalYearStartOptions, setFiscalYearStartOptions] = useState()
   const [fiscalYearStart, setFiscalYearStart] = useState()
   const [fiscalYearEnd, setFiscalYearEnd] = useState()
   const [fiscalYearsSelected, setFiscalYearSelected] = useState()
 
-  let fiscalYearStartOptions = []
-
   useEffect(() => {
     setSource(undefined)
+    if (recipient) {
+      setSourceOptions(getSourceOptions(recipient))
+    }
     setLocations(undefined)
     setCounties(undefined)
     setFiscalYearStart(undefined)
@@ -56,19 +66,13 @@ const DisbursementsTableToolbar = ({
   }, [recipient])
 
   useEffect(() => {
-    if (source === 'State') {
-      let filteredLocationOptions = locationOptions()
-      if (filteredLocationOptions && filteredLocationOptions.length === 1) {
-        setLocations(filteredLocationOptions)
-      }
-      else {
-        setLocations(undefined)
-      }
+    if (recipient === 'State') {
+      setLocationOptions(getLocationOptions(source))
     }
     else {
-      setLocations(undefined)
+      setFiscalYearStartOptions(getFiscalYearOptions({ source }))
     }
-
+    setLocations(undefined)
     setCounties(undefined)
     setFiscalYearStart(undefined)
     setFiscalYearEnd(undefined)
@@ -76,6 +80,14 @@ const DisbursementsTableToolbar = ({
   }, [source])
 
   useEffect(() => {
+    if (locations !== undefined &&
+      locations.length === 1 &&
+      !locations.includes('All')) {
+      setCountyOptions(getCountyOptions(locations))
+    }
+    else {
+      setFiscalYearStartOptions(getFiscalYearOptions({ source, locations }))
+    }
     setCounties(undefined)
     setFiscalYearStart(undefined)
     setFiscalYearEnd(undefined)
@@ -83,6 +95,9 @@ const DisbursementsTableToolbar = ({
   }, [locations])
 
   useEffect(() => {
+    if (counties) {
+      setFiscalYearStartOptions(getFiscalYearOptions({ source, locations, counties }))
+    }
     setFiscalYearStart(undefined)
     setFiscalYearEnd(undefined)
     setFiscalYearSelected(undefined)
@@ -115,7 +130,7 @@ const DisbursementsTableToolbar = ({
     return (locations !== undefined &&
       locations.length === 1 &&
       !locations.includes('All') &&
-      countyOptions(locations).length > 0)
+      countyOptions)
   }
 
   const showFiscalYearStart = () => {
@@ -134,11 +149,6 @@ const DisbursementsTableToolbar = ({
     }
 
     return show
-  }
-
-  const getFiscalYearStartOptions = () => {
-    fiscalYearStartOptions = fiscalYearOptions({ source, locations, counties })
-    return fiscalYearStartOptions
   }
 
   const getFiscalYearEndOptions = () => {
@@ -163,7 +173,7 @@ const DisbursementsTableToolbar = ({
           </Grid>
           <Grid item sm={5} xs={12}>
             <DropDown
-              options={recipientOptions()}
+              options={recipientOptions}
               selectedOptionValue={recipient}
               sortType={'none'}
               action={value => setRecipient(value)}
@@ -178,7 +188,7 @@ const DisbursementsTableToolbar = ({
               </Grid>
               <Grid item sm={5} xs={12}>
                 <DropDown
-                  options={sourceOptions(recipient)}
+                  options={sourceOptions}
                   selectedOptionValue={source}
                   sortType={'none'}
                   action={value => setSource(value)}
@@ -197,7 +207,7 @@ const DisbursementsTableToolbar = ({
                 <Select
                   multiple
                   sortType={'none'}
-                  options={locationOptions(source)}
+                  options={locationOptions}
                   selectedOption={locations}
                   onChangeHandler={values => setLocations(values)}
                 />
@@ -215,7 +225,7 @@ const DisbursementsTableToolbar = ({
                 <Select
                   multiple
                   sortType={'none'}
-                  options={countyOptions(locations)}
+                  options={countyOptions}
                   selectedOption={counties}
                   onChangeHandler={values => setCounties(values)}
                 />
@@ -231,7 +241,7 @@ const DisbursementsTableToolbar = ({
               </Grid>
               <Grid item sm={5} xs={12}>
                 <DropDown
-                  options={getFiscalYearStartOptions()}
+                  options={fiscalYearStartOptions}
                   sortType={'descending'}
                   action={value => setFiscalYearStart(value)}
                 />

@@ -11,6 +11,8 @@
 
 const CONSTANTS = require('../../../src/js/constants')
 
+const DISBURSEMENT_TO_STATE = 'Disbursements to the state'
+
 /* Define the column names found in the excel file */
 const SOURCE_COLUMNS = {
   Year: 'Fiscal Year',
@@ -80,6 +82,10 @@ const createDisbursementsNode = (disbursementsData, type) => {
   disbursementNode.DisbursementCategory = FUND_TO_DISBURSEMENTS_CATEGORY[disbursementNode.Fund]
   if (!disbursementNode.DisbursementCategory) {
     disbursementNode.DisbursementCategory = disbursementNode.Source && ONSHOREOFFSHORE_TO_DISBURSEMENTS_CATEGORY[disbursementNode.Source.toLowerCase()]
+  }
+
+  if (['GOMESA', '8(g)'].includes(disbursementNode.Source)) {
+    disbursementNode.County = disbursementNode.County || DISBURSEMENT_TO_STATE
   }
 
   return disbursementNode

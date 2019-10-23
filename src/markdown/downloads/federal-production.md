@@ -139,7 +139,7 @@ _Product_ Products are listed individually but may also fall into like categorie
   * _Potassium Sulphate-Standard_ (tons)
   * _Purge Liquor_ (tons)
   * _Quartz Crystal_ (tickets/lbs)
-  * _Salt_(tons)
+  * _Salt_ (tons)
   * _Sand/Gravel_ (tons)
   * _Sand/Gravel-Cubic Yards_ (cyds)
   * _Soda Ash_ (tons)

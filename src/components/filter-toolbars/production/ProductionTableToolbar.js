@@ -31,60 +31,84 @@ const muiTheme = createMuiTheme({
 })
 
 const ProductionTableToolbar = ({
-  landCategoryOptions,
-  locationOptions,
-  countyOptions,
-  commodityOptions,
-  fiscalYearOptions,
+  getLandCategoryOptions,
+  getLocationOptions,
+  getCountyRegionOptions,
+  getCommodityOptions,
+  getFiscalYearOptions,
   onSubmit
 }) => {
   const [landCategory, setLandCategory] = useState()
+
+  const [locationOptions, setLocationOptions] = useState()
   const [locations, setLocations] = useState()
   const [disableLocation, setDisableLocation] = useState()
-  const [counties, setCounties] = useState()
-  const [countyOptionValues, setCountyOptionValues] = useState()
+
+  const [countyRegionOptions, setCountyRegionOptions] = useState()
+  const [countiesRegions, setCountiesRegions] = useState()
+
+  const [commodityOptions, setCommodityOptions] = useState()
   const [commodities, setCommodities] = useState()
+
+  const [revenueTypeOptions, setRevenueTypeOptions] = useState()
+  const [revenueType, setRevenueType] = useState()
+
+  const [fiscalYearStartOptions, setFiscalYearStartOptions] = useState()
   const [fiscalYearStart, setFiscalYearStart] = useState()
   const [fiscalYearEnd, setFiscalYearEnd] = useState()
   const [fiscalYearsSelected, setFiscalYearSelected] = useState()
 
-  let fiscalYearStartOptions = []
-
   useEffect(() => {
-    setLocations(getLocationsInitialState())
-    setCounties(undefined)
+    if (landCategory) {
+      let options = getLocationOptions(landCategory)
+      setLocationOptions(options)
+      setLocations(getLocationsState(options))
+    }
+    else {
+      setLocations(undefined)
+    }
+    setCountiesRegions(undefined)
     setCommodities(undefined)
+    setRevenueType(undefined)
     setFiscalYearStart(undefined)
     setFiscalYearEnd(undefined)
     setFiscalYearSelected(undefined)
   }, [landCategory])
 
   useEffect(() => {
-    setCounties(undefined)
+    setCountiesRegions(undefined)
     if (locations) {
-      setCountyOptionValues(countyOptions(locations))
+      setCountyRegionOptions(getCountyRegionOptions(locations))
+      setCommodityOptions(getCommodityOptions({ locations, countiesRegions }))
     }
     setCommodities(undefined)
+    setRevenueType(undefined)
     setFiscalYearStart(undefined)
     setFiscalYearEnd(undefined)
     setFiscalYearSelected(undefined)
   }, [locations])
 
   useEffect(() => {
+    if (countiesRegions) {
+      setCommodityOptions(getCommodityOptions({ locations, countiesRegions }))
+    }
     setCommodities(undefined)
+    setRevenueType(undefined)
     setFiscalYearStart(undefined)
     setFiscalYearEnd(undefined)
     setFiscalYearSelected(undefined)
-  }, [counties])
+  }, [countiesRegions])
 
   useEffect(() => {
     setFiscalYearStart(undefined)
     setFiscalYearEnd(undefined)
     setFiscalYearSelected(undefined)
+    if (commodities) {
+      setFiscalYearStartOptions(getFiscalYearOptions(commodities))
+    }
   }, [commodities])
 
   useEffect(() => {
-    console.log(fiscalYearStart, fiscalYearEnd)
     if (fiscalYearStart && fiscalYearEnd) {
       if (fiscalYearStart <= fiscalYearEnd) {
         setFiscalYearSelected(utils.range(parseInt(fiscalYearStart), parseInt(fiscalYearEnd)))
@@ -97,39 +121,34 @@ const ProductionTableToolbar = ({
   }, [fiscalYearStart, fiscalYearEnd])
 
   const handleApply = () => {
-    console.log(fiscalYearsSelected)
     if (onSubmit) {
       onSubmit({
         landCategory,
         locations,
-        counties,
+        countiesRegions,
         commodities,
         fiscalYearsSelected
       })
     }
   }
 
-  const showCountyOptions = () => {
-    return (locations !== undefined &&
+  const showCountyRegionOptions = () => {
+    return (
+      locations !== undefined &&
       locations.length === 1 &&
       !locations.includes('All') &&
-      countyOptionValues !== undefined &&
-      countyOptionValues.length > 0)
+      (countyRegionOptions !== undefined && countyRegionOptions.length > 0)
+    )
   }
 
   const showCommodity = () => {
-    if (locations && !showCountyOptions()) {
+    if (locations && !showCountyRegionOptions()) {
       return true
     }
-    else if (locations && counties) {
+    else if (locations && countiesRegions) {
       return true
     }
     return false
-  }
-
-  const getFiscalYearStartOptions = () => {
-    fiscalYearStartOptions = fiscalYearOptions(commodities)
-    return fiscalYearStartOptions
   }
 
   const getFiscalYearEndOptions = () => {
@@ -150,7 +169,7 @@ const ProductionTableToolbar = ({
     case FEDERAL_ONSHORE:
       return 'State:'
     case FEDERAL_OFFSHORE:
-      return 'Region:'
+      return 'Offshore Area:'
     }
 
     return 'Location:'
@@ -163,12 +182,11 @@ const ProductionTableToolbar = ({
       return 'Parish:'
     }
 
-    return 'County:'
+    return (locations[0] && locations[0].includes('Offshore')) ? 'Region:' : 'County:'
   }
 
-  const getLocationsInitialState = () => {
+  const getLocationsState = options => {
     if (landCategory) {
-      let options = locationOptions(landCategory)
       if (options && options.length === 1) {
         setDisableLocation(true)
         return options
@@ -188,7 +206,7 @@ const ProductionTableToolbar = ({
           </Grid>
           <Grid item sm={5} xs={12}>
             <DropDown
-              options={landCategoryOptions()}
+              options={getLandCategoryOptions()}
               selectedOptionValue={landCategory}
               sortType={'none'}
               action={value => setLandCategory(value)}
@@ -205,7 +223,7 @@ const ProductionTableToolbar = ({
                 <Select
                   multiple
                   sortType={'none'}
-                  options={locationOptions(landCategory)}
+                  options={locationOptions}
                   selectedOption={locations}
                   onChangeHandler={values => setLocations(values)}
                   isDisabled={disableLocation}
@@ -222,7 +240,7 @@ const ProductionTableToolbar = ({
               </Grid>
             </React.Fragment>
           }
-          {showCountyOptions() &&
+          {showCountyRegionOptions() &&
             <React.Fragment>
               <Grid item sm={2} xs={12}>
                 <h6>{getCountyLabel()}</h6>
@@ -231,9 +249,9 @@ const ProductionTableToolbar = ({
                 <Select
                   multiple
                   sortType={'none'}
-                  options={countyOptionValues}
-                  selectedOption={counties}
-                  onChangeHandler={values => setCounties(values)}
+                  options={countyRegionOptions}
+                  selectedOption={countiesRegions}
+                  onChangeHandler={values => setCountiesRegions(values)}
                 />
               </Grid>
               <Grid item sm={5}>
@@ -249,7 +267,7 @@ const ProductionTableToolbar = ({
                 <Select
                   multiple
                   sortType={'none'}
-                  options={commodityOptions({ locations, counties })}
+                  options={commodityOptions}
                   selectedOption={commodities}
                   onChangeHandler={values => setCommodities(values)}
                 />
@@ -272,7 +290,7 @@ const ProductionTableToolbar = ({
               </Grid>
               <Grid item sm={5} xs={12}>
                 <DropDown
-                  options={getFiscalYearStartOptions()}
+                  options={fiscalYearStartOptions}
                   selectedOptionValue={fiscalYearStart}
                   sortType={'descending'}
                   action={value => setFiscalYearStart(value)}

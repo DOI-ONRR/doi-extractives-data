@@ -108,9 +108,9 @@ October,2018,State,Onshore,Geothermal,ID,Cassia County,Geothermal,Other Distribu
 October,2018,State,Onshore,Geothermal,ID,Washington County,,Sequestration," 1,098.60 "
 October,2018,State,Onshore,Geothermal,NM,Dona Ana County,,Sequestration, 447.30 
 October,2018,State,Onshore,Geothermal,NM,Dona Ana County,Geothermal,Rents & Bonuses, 350.00 
-October,2018,State,Onshore,Geothermal,NM,Hidalgo Caounty,,Sequestration, 378.31 
-October,2018,State,Onshore,Geothermal,NM,Hidalgo Caounty,Geothermal,Rents & Bonuses, (98.65)
-October,2018,State,Onshore,Geothermal,NM,Hidalgo Caounty,Geothermal,Royalties, 438.53 
+October,2018,State,Onshore,Geothermal,NM,Hidalgo County,,Sequestration, 378.31 
+October,2018,State,Onshore,Geothermal,NM,Hidalgo County,Geothermal,Rents & Bonuses, (98.65)
+October,2018,State,Onshore,Geothermal,NM,Hidalgo County,Geothermal,Royalties, 438.53 
 October,2018,State,Onshore,Geothermal,NV,Churchill County,,Sequestration," 35,464.72 "
 October,2018,State,Onshore,Geothermal,NV,Churchill County,Geothermal,Other Distributions," 1,920.00 "
 October,2018,State,Onshore,Geothermal,NV,Churchill County,Geothermal,Rents & Bonuses," 29,032.92 "
@@ -524,8 +524,8 @@ November,2018,State,Onshore,Geothermal,CA,Sonoma County,Geothermal,Rents & Bonus
 November,2018,State,Onshore,Geothermal,CA,Sonoma County,Geothermal,Royalties," 98,443.04 "
 November,2018,State,Onshore,Geothermal,CO,Chaffee County,,Sequestration, (37.20)
 November,2018,State,Onshore,Geothermal,CO,Chaffee County,Geothermal,Rents & Bonuses, 600.00 
-November,2018,State,Onshore,Geothermal,NM,Hidalgo Caounty,,Sequestration, (9.92)
-November,2018,State,Onshore,Geothermal,NM,Hidalgo Caounty,Geothermal,Rents & Bonuses, 160.00 
+November,2018,State,Onshore,Geothermal,NM,Hidalgo County,,Sequestration, (9.92)
+November,2018,State,Onshore,Geothermal,NM,Hidalgo County,Geothermal,Rents & Bonuses, 160.00 
 November,2018,State,Onshore,Geothermal,NV,Churchill County,,Sequestration," (7,091.09)"
 November,2018,State,Onshore,Geothermal,NV,Churchill County,Geothermal,Rents & Bonuses," 10,814.25 "
 November,2018,State,Onshore,Geothermal,NV,Churchill County,Geothermal,Royalties," 103,558.23 "
@@ -899,8 +899,8 @@ December,2018,State,Onshore,Geothermal,CA,Sonoma County,,Sequestration," (5,610.
 December,2018,State,Onshore,Geothermal,CA,Sonoma County,Geothermal,Royalties," 90,492.95 "
 December,2018,State,Onshore,Geothermal,NM,Dona Ana County,,Sequestration, (383.63)
 December,2018,State,Onshore,Geothermal,NM,Dona Ana County,Geothermal,Rents & Bonuses," 6,187.50 "
-December,2018,State,Onshore,Geothermal,NM,Hidalgo Caounty,,Sequestration, (26.84)
-December,2018,State,Onshore,Geothermal,NM,Hidalgo Caounty,Geothermal,Royalties, 432.96 
+December,2018,State,Onshore,Geothermal,NM,Hidalgo County,,Sequestration, (26.84)
+December,2018,State,Onshore,Geothermal,NM,Hidalgo County,Geothermal,Royalties, 432.96 
 December,2018,State,Onshore,Geothermal,NV,Churchill County,,Sequestration," (4,994.67)"
 December,2018,State,Onshore,Geothermal,NV,Churchill County,Geothermal,Other Distributions, 940.48 
 December,2018,State,Onshore,Geothermal,NV,Churchill County,Geothermal,Rents & Bonuses," 6,451.71 "
@@ -1294,8 +1294,8 @@ January,2019,State,Onshore,Geothermal,ID,Cassia County,,Sequestration, (141.17)
 January,2019,State,Onshore,Geothermal,ID,Cassia County,Geothermal,Rents & Bonuses," 2,277.00 "
 January,2019,State,Onshore,Geothermal,NM,Dona Ana County,,Sequestration, (115.43)
 January,2019,State,Onshore,Geothermal,NM,Dona Ana County,Geothermal,Other Distributions," 1,861.71 "
-January,2019,State,Onshore,Geothermal,NM,Hidalgo Caounty,,Sequestration, (33.39)
-January,2019,State,Onshore,Geothermal,NM,Hidalgo Caounty,Geothermal,Royalties, 538.52 
+January,2019,State,Onshore,Geothermal,NM,Hidalgo County,,Sequestration, (33.39)
+January,2019,State,Onshore,Geothermal,NM,Hidalgo County,Geothermal,Royalties, 538.52 
 January,2019,State,Onshore,Geothermal,NV,Churchill County,,Rents & Bonuses, -   
 January,2019,State,Onshore,Geothermal,NV,Churchill County,,Sequestration," (4,920.02)"
 January,2019,State,Onshore,Geothermal,NV,Churchill County,Geothermal,Rents & Bonuses, 134.89 
@@ -2070,8 +2070,8 @@ March,2019,State,Onshore,Geothermal,ID,Cassia County,Geothermal,Rents & Bonuses,
 March,2019,State,Onshore,Geothermal,ID,Washington County,,Sequestration, (492.62)
 March,2019,State,Onshore,Geothermal,ID,Washington County,Geothermal,Rents & Bonuses," 7,945.50 "
 March,2019,State,Onshore,Geothermal,NM,Dona Ana County,Geothermal,Rents & Bonuses, -   
-March,2019,State,Onshore,Geothermal,NM,Hidalgo Caounty,,Sequestration, (125.60)
-March,2019,State,Onshore,Geothermal,NM,Hidalgo Caounty,Geothermal,Royalties," 2,025.86 "
+March,2019,State,Onshore,Geothermal,NM,Hidalgo County,,Sequestration, (125.60)
+March,2019,State,Onshore,Geothermal,NM,Hidalgo County,Geothermal,Royalties," 2,025.86 "
 March,2019,State,Onshore,Geothermal,NV,Churchill County,,Sequestration," (5,890.03)"
 March,2019,State,Onshore,Geothermal,NV,Churchill County,Geothermal,Other Distributions, 430.76 
 March,2019,State,Onshore,Geothermal,NV,Churchill County,Geothermal,Rents & Bonuses," 4,200.18 "
@@ -2965,9 +2965,9 @@ May,2019,State,Onshore,Geothermal,CA,Sonoma County,,Sequestration," (5,411.14)"
 May,2019,State,Onshore,Geothermal,CA,Sonoma County,Geothermal,Royalties," 87,276.50 "
 May,2019,State,Onshore,Geothermal,ID,Cassia County,,Sequestration, (35.34)
 May,2019,State,Onshore,Geothermal,ID,Cassia County,Geothermal,Rents & Bonuses, 570.00 
-May,2019,State,Onshore,Geothermal,NM,Hidalgo Caounty,,Sequestration, (252.26)
-May,2019,State,Onshore,Geothermal,NM,Hidalgo Caounty,Geothermal,Rents & Bonuses," (3,126.24)"
-May,2019,State,Onshore,Geothermal,NM,Hidalgo Caounty,Geothermal,Royalties," 7,195.03 "
+May,2019,State,Onshore,Geothermal,NM,Hidalgo County,,Sequestration, (252.26)
+May,2019,State,Onshore,Geothermal,NM,Hidalgo County,Geothermal,Rents & Bonuses," (3,126.24)"
+May,2019,State,Onshore,Geothermal,NM,Hidalgo County,Geothermal,Royalties," 7,195.03 "
 May,2019,State,Onshore,Geothermal,NV,Churchill County,,Sequestration," (5,556.89)"
 May,2019,State,Onshore,Geothermal,NV,Churchill County,Geothermal,Other Distributions, 341.27 
 May,2019,State,Onshore,Geothermal,NV,Churchill County,Geothermal,Rents & Bonuses," 1,832.07 "
@@ -3364,8 +3364,8 @@ June,2019,State,Onshore,Geothermal,CA,Mono County,Geothermal,Other Distributions
 June,2019,State,Onshore,Geothermal,CA,Mono County,Geothermal,Royalties, 526.19 
 June,2019,State,Onshore,Geothermal,CA,Sonoma County,,Sequestration," (4,502.88)"
 June,2019,State,Onshore,Geothermal,CA,Sonoma County,Geothermal,Royalties," 72,627.12 "
-June,2019,State,Onshore,Geothermal,NM,Hidalgo Caounty,,Sequestration, (99.01)
-June,2019,State,Onshore,Geothermal,NM,Hidalgo Caounty,Geothermal,Royalties," 1,596.99 "
+June,2019,State,Onshore,Geothermal,NM,Hidalgo County,,Sequestration, (99.01)
+June,2019,State,Onshore,Geothermal,NM,Hidalgo County,Geothermal,Royalties," 1,596.99 "
 June,2019,State,Onshore,Geothermal,NV,Churchill County,,Sequestration," (4,265.44)"
 June,2019,State,Onshore,Geothermal,NV,Churchill County,Geothermal,Other Distributions, 79.99 
 June,2019,State,Onshore,Geothermal,NV,Churchill County,Geothermal,Rents & Bonuses, 721.57 
@@ -3732,8 +3732,8 @@ July,2019,State,Onshore,Geothermal,CA,Sonoma County,,Sequestration," (4,714.86)"
 July,2019,State,Onshore,Geothermal,CA,Sonoma County,Geothermal,Royalties," 76,046.17 "
 July,2019,State,Onshore,Geothermal,NM,Dona Ana County,,Sequestration, (45.34)
 July,2019,State,Onshore,Geothermal,NM,Dona Ana County,Geothermal,Other Distributions, 731.31 
-July,2019,State,Onshore,Geothermal,NM,Hidalgo Caounty,,Sequestration, (89.14)
-July,2019,State,Onshore,Geothermal,NM,Hidalgo Caounty,Geothermal,Royalties," 1,437.71 "
+July,2019,State,Onshore,Geothermal,NM,Hidalgo County,,Sequestration, (89.14)
+July,2019,State,Onshore,Geothermal,NM,Hidalgo County,Geothermal,Royalties," 1,437.71 "
 July,2019,State,Onshore,Geothermal,NV,Churchill County,,Sequestration," (5,475.56)"
 July,2019,State,Onshore,Geothermal,NV,Churchill County,Geothermal,Other Distributions, 249.66 
 July,2019,State,Onshore,Geothermal,NV,Churchill County,Geothermal,Rents & Bonuses," 6,761.32 "
@@ -4510,8 +4510,8 @@ September,2019,State,Onshore,Geothermal,ID,Washington County,Geothermal,Other Di
 September,2019,State,Onshore,Geothermal,ID,Washington County,Geothermal,Rents & Bonuses," (6,525.00)"
 September,2019,State,Onshore,Geothermal,NM,Dona Ana County,,Sequestration, (21.70)
 September,2019,State,Onshore,Geothermal,NM,Dona Ana County,Geothermal,Rents & Bonuses, 350.00 
-September,2019,State,Onshore,Geothermal,NM,Hidalgo Caounty,,Sequestration, (209.45)
-September,2019,State,Onshore,Geothermal,NM,Hidalgo Caounty,Geothermal,Royalties," 3,378.23 "
+September,2019,State,Onshore,Geothermal,NM,Hidalgo County,,Sequestration, (209.45)
+September,2019,State,Onshore,Geothermal,NM,Hidalgo County,Geothermal,Royalties," 3,378.23 "
 September,2019,State,Onshore,Geothermal,NV,Churchill County,,Sequestration," (9,186.38)"
 September,2019,State,Onshore,Geothermal,NV,Churchill County,Geothermal,Other Distributions, 379.06 
 September,2019,State,Onshore,Geothermal,NV,Churchill County,Geothermal,Rents & Bonuses," 29,706.57 "

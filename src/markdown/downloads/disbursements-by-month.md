@@ -13,13 +13,13 @@ tag:
 <custom-link to="/downloads/" className="breadcrumb link-charlie">Downloads</custom-link> /
 # Disbursements by month
 
-> Revenue collected from extraction of natural resources on federal and Native American lands is distributed to various legislated funds, local governments, and federal agencies. This process is called disbursement. We have disbursements data by month from October 2018 through the most recent month .
+> Revenue collected from extraction of natural resources on federal and Native American lands is distributed to various legislated funds, local governments, and federal agencies. This process is called disbursement. We have disbursements data by month from October 2018 through the most recent month.
 
 Download disbursement by month data:
 
 <ul class="downloads-download_links list-unstyled">
-  <li><excel-link to="/downloads/disbursements/monthly_disbursements.xlsx">Disbursements by month (Excel, 221 KB)</excel-link></li>
-    <li><csv-link to="/downloads/csv/disbursements/monthly_disbursements.csv">Disbursements by month (csv, 309 KB)</csv-link></li>
+  <li><excel-link to="/downloads/disbursements/monthly_disbursements.xlsx">Disbursements by month (Excel,  396 KB)</excel-link></li>
+    <li><csv-link to="/downloads/csv/disbursements/monthly_disbursements.csv">Disbursements by month (csv, 353 KB)</csv-link></li>
 </ul>
 
 ## Scope

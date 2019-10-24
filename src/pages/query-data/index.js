@@ -250,8 +250,11 @@ const ADDITIONAL_COLUMN_OPTIONS = {
       default: options.find(option => option !== groupBy)
     })
   },
-  [DISBURSEMENTS]: (groupByOptions, groupBy) => {
-    let options = groupByOptions && groupByOptions.concat(NO_SECOND_COLUMN)
+  [DISBURSEMENTS]: (groupByOptions, groupBy, filter) => {
+    let options = [NO_SECOND_COLUMN]
+    if (filter.commodities && filter.commodities.length === 1) {
+      options = groupByOptions && options.concat(groupByOptions)
+    }
 
     return ({
       options: options,
@@ -623,7 +626,7 @@ class QueryData extends React.Component {
   onSubmitHandler (filter) {
     this.setFilteredIds(FISCAL_YEAR, filter.fiscalYearsSelected)
     let groupByFiltered = GROUP_BY_OPTIONS[this.state.dataType](filter)
-    let additionalColumnFiltered = ADDITIONAL_COLUMN_OPTIONS[this.state.dataType](groupByFiltered.options, groupByFiltered.default)
+    let additionalColumnFiltered = ADDITIONAL_COLUMN_OPTIONS[this.state.dataType](groupByFiltered.options, groupByFiltered.default, filter)
 
 	  this.setState({
       [this.state.dataType]: {

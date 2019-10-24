@@ -1019,8 +1019,24 @@ class QueryData extends React.Component {
           {tableData &&
 						<div className={styles.tableContainer}>
 						  <div className={styles.downloadLinkContainer}>
-						    <ExploreDataLink to={'/how-it-works/#resources_process'}>How it works</ExploreDataLink>
-						    <DownloadDataLink to={'/downloads/federal-revenue-by-location/'}>Documentation</DownloadDataLink>
+						    {(this.state.dataType === REVENUE) &&
+                  <React.Fragment>
+                    <ExploreDataLink to="/how-it-works/#revenues" icon="works">How revenue works</ExploreDataLink>
+                    <ExploreDataLink to="/downloads/#revenue" icon="download">Downloads</ExploreDataLink>
+                  </React.Fragment>
+						    }
+						    {(this.state.dataType === PRODUCTION) &&
+                  <React.Fragment>
+                    <ExploreDataLink to="/how-it-works/#production_process" icon="works">How production works</ExploreDataLink>
+                    <ExploreDataLink to="/downloads/#production" icon="download">Downloads</ExploreDataLink>
+                  </React.Fragment>
+						    }
+						    {(this.state.dataType === DISBURSEMENTS) &&
+                  <React.Fragment>
+                    <ExploreDataLink to="/how-it-works/#disbursements" icon="works">How disbursements works</ExploreDataLink>
+                    <ExploreDataLink to="/downloads/#disbursements" icon="download">Downloads</ExploreDataLink>
+                  </React.Fragment>
+						    }
 						  </div>
 						  <h2 className={theme.sectionHeaderUnderline}>{this.state.dataType}</h2>
 						  <MuiThemeProvider theme={muiTheme}>

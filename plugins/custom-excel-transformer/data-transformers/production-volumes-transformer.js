@@ -129,7 +129,7 @@ const createProductVolumeNodeByProduct = (productVolumeData, type) => {
 	  LandCategory: data[SOURCE_COLUMNS.LandCategory].trim(),
 	  OnshoreOffshore: data[SOURCE_COLUMNS.OnshoreOffshore],
 	  ProductName: SOURCE_COLUMN_TO_PRODUCT_DISPLAY_NAME[product] || productName,
-	  Commodity: SOURCE_COLUMN_TO_PRODUCT_DISPLAY_NAME[product] || productName,
+    Commodity: SOURCE_COLUMN_TO_PRODUCT_DISPLAY_NAME[product] || productName,
 	  Volume: productionVolume,
     Withheld: isWithheld,
     County: data[SOURCE_COLUMNS.County] && data[SOURCE_COLUMNS.County].trim(),
@@ -145,13 +145,17 @@ const createProductVolumeNodeByProduct = (productVolumeData, type) => {
   node.ProductionDate = (node.ProductionYear)
     ? new Date(node.ProductionYear, getMonthFromString(node.ProductionMonth))
     : new Date(node.FiscalYear, 0)
-
   node.Units = SOURCE_COLUMN_TO_PRODUCT_UNITS[product] || units
   node.LongUnits = PRODUCT_UNITS_TO_LONG_UNITS[node.Units]
+  node.ProductNameUnits = (product.includes('Geothermal')) ? result[1].trim() + ' (' + node.Units + ')' : node.Commodity + ' (' + node.Units + ')'
   node.LandCategory_OnshoreOffshore =
 		node.LandCategory + ((node.OnshoreOffshore && node.LandCategory !== 'Native American') ? ' ' + node.OnshoreOffshore.toLowerCase() : '')
   node.DisplayMonth = node.ProductionMonth && node.ProductionMonth.substring(0, 3)
   node.DisplayYear = node.ProductionYear && ("'" + node.ProductionYear.toString().substring(2))
+
+  if (node.LandCategory === CONSTANTS.NATIVE_AMERICAN) {
+    node.State = 'withheld'
+  }
 
   return node
 }

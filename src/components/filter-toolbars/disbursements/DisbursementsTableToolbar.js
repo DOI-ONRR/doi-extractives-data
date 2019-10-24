@@ -242,6 +242,7 @@ const DisbursementsTableToolbar = ({
               <Grid item sm={5} xs={12}>
                 <DropDown
                   options={fiscalYearStartOptions}
+                  selectedOptionValue={fiscalYearStart}
                   sortType={'descending'}
                   action={value => setFiscalYearStart(value)}
                 />

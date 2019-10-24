@@ -640,7 +640,8 @@ class QueryData extends React.Component {
   }
 
 	getTableColumns = dataTypeState => {
-	  let columns = []; let columnExtensions = []; let grouping = []; let currencyColumns = []; let volumeColumns = []; let defaultSorting = []
+	  let columns = []; let defaultColumnWidths = []; let columnExtensions = []
+	  let grouping = []; let currencyColumns = []; let volumeColumns = []; let defaultSorting = []
 	  let allColumns = this.allGroupByColumns.map(column => utils.formatToSlug(column))
 
 	  if (!dataTypeState.groupBy) {
@@ -661,7 +662,6 @@ class QueryData extends React.Component {
 	      title: dataTypeState.additionalColumn,
 	      plural: PLURAL_COLUMNS_MAP[dataTypeState.additionalColumn]
 	    })
-	    // allColumns = [utils.formatToSlug(dataTypeState.additionalColumn)]
 	  }
 
 	  dataTypeState.filter.fiscalYearsSelected.sort().forEach(year => {
@@ -682,15 +682,24 @@ class QueryData extends React.Component {
 	      currencyColumns.push('fy-' + year)
 	    })
 	  }
+	  allColumns.forEach(column => {
+	    defaultColumnWidths.push({ columnName: column, width: 200 })
+	  })
+	  allYears.forEach(year => {
+	    defaultColumnWidths.push({ columnName: 'fy-' + year, width: 200, minWidth: 100 })
+	  })
 
+	  let fixedColumn = grouping[0] ? columns[1].name : columns[0].name
 	  return {
 	    columns: columns,
+	    defaultColumnWidths: defaultColumnWidths,
 	    columnExtensions: columnExtensions,
 	    grouping: grouping,
 	    currencyColumns: currencyColumns,
 	    volumeColumns: volumeColumns,
 	    allColumns: allColumns,
 	    defaultSorting: defaultSorting,
+	    fixedColumn: fixedColumn
 	  }
 	}
 
@@ -1091,6 +1100,7 @@ class QueryData extends React.Component {
 						  <GroupTable
 						    rows={tableData.filteredData}
 						    columns={tableColumns.columns}
+						    defaultColumnWidths={tableColumns.defaultColumnWidths}
 						    defaultSorting={tableColumns.defaultSorting}
 						    tableColumnExtension={tableColumns.columnExtensions}
 						    grouping={tableColumns.grouping}
@@ -1100,6 +1110,7 @@ class QueryData extends React.Component {
 						    expandedGroups={tableData.expandedGroups}
 						    totalSummaryItems={tableSummaries.totalSummaryItems}
 						    groupSummaryItems={tableSummaries.groupSummaryItems}
+						    fixedColumn={tableColumns.fixedColumn}
 						  />
 						</div>
           }
@@ -1216,7 +1227,7 @@ export const query = graphql`
           id
           Volume
           FiscalYear
-          Commodity:ProductName
+          Commodity:ProductNameUnits
           LandClass:LandCategory
           LandCategory:OnshoreOffshore
           RevenueCategory:LandCategory_OnshoreOffshore
@@ -1231,10 +1242,10 @@ export const query = graphql`
 	  allProductionGroupByCommodity: allProductVolumesFiscalYear(
 	  	filter: {
 	  		FiscalYear: {ne: null},
-	  		ProductName: {nin: [null,""]},
+	  		ProductNameUnits: {nin: [null,""]},
 	  	}, 
 	  	sort: {fields: [FiscalYear], order: DESC}) {
-	    group(field: ProductName) {
+	    group(field: ProductNameUnits) {
 	      id:fieldValue
 	      data:edges {
 	        node {

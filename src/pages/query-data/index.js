@@ -3,6 +3,8 @@ import Helmet from 'react-helmet'
 import { connect } from 'react-redux'
 import { graphql } from 'gatsby'
 
+import 'url-search-params-polyfill' // Temporary polyfill for EdgeHTML 14-16
+
 import { normalize as normalizeDataSetAction,
   DISBURSEMENTS_FISCAL_YEAR,
   REVENUES_FISCAL_YEAR,
@@ -300,14 +302,20 @@ class QueryData extends React.Component {
     this.allGroupByColumns = [].concat.apply([], this.allGroupByColumns)
     this.allGroupByColumns = this.allGroupByColumns.filter((item, i, a) => a.indexOf(item) === i)
 
+    let urlParams = new URLSearchParams()
+    if (typeof window !== 'undefined' && window) {
+      urlParams = new URLSearchParams(window.location.search)
+    }
+    this.dataTypeParam = urlParams.get('dataType')
+
+    this.state = {
+      openGroupByDialog: false,
+      dataType: this.dataTypeParam,
+      loading: false,
+    }
+
     this.hydrateStore()
   }
-
-	state = {
-	  openGroupByDialog: false,
-	  dataType: undefined,
-	  loading: false,
-	}
 
   /**
    * This object contains all the comparison functions to determine if the data has the value in the filter
@@ -984,6 +992,8 @@ class QueryData extends React.Component {
       additionalColumnOptions = additionalColumnOptions.filter(option => option !== this.state[this.state.dataType].groupBy)
     }
 
+    console.log(this.state.dataType, this.dataTypeParam)
+
     return (
       <DefaultLayout>
 	      <Helmet
@@ -1005,6 +1015,7 @@ class QueryData extends React.Component {
                 <Grid item sm={5} xs={12}>
                   <DropDown
                     options={[{ name: '-Select-', placeholder: true }].concat(Object.keys(DATA_TYPE_OPTIONS))}
+                    selectedOptionValue={this.state.dataType}
                     sortType={'none'}
                     action={value => {
                       this.props[DATA_TYPE_OPTIONS[value]][FILTERED_IDS] = undefined
@@ -1018,7 +1029,9 @@ class QueryData extends React.Component {
             </MuiThemeProvider>
           </div>
 
-          {this.state.dataType && this.getFilterToolbar()}
+          {(this.state.dataType && this.props[DATA_TYPE_OPTIONS[this.state.dataType]]) &&
+            this.getFilterToolbar()
+          }
 
           {tableData &&
 						<div className={styles.tableContainer}>

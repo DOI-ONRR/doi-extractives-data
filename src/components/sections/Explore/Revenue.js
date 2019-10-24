@@ -1,15 +1,11 @@
-import React, { useEffect, useRef }  from 'react'
+import React, { useEffect, useRef } from 'react'
 import Explore from './Explore'
-//import MapSection from '../../components/sections/MapSection'
+// import MapSection from '../../components/sections/MapSection'
 import { ExploreDataLink } from '../../layouts/icon-links/ExploreDataLink'
 
-
-
-
-const Revenue = (props) => {
-
-    return (
-	<Explore
+const Revenue = props => {
+  return (
+    <Explore
 	  title="revenue"
 	  contentLeft={
 		  <>
@@ -17,10 +13,10 @@ const Revenue = (props) => {
 					     >Revenue trends
 			    </ExploreDataLink>
 			    <ExploreDataLink
-				  to="/explore/revenue"
+				  to="/query-data?dataType=Revenue"
 				  icon="filter"
 				  >Revenue in detail
-				</ExploreDataLink>
+			    </ExploreDataLink>
 				<ExploreDataLink
 				      to="/how-it-works/federal-revenue-by-company/2018/"
 				      icon="data"
@@ -30,25 +26,22 @@ const Revenue = (props) => {
 		  }
 		  contentCenter={
 			  <ExploreDataLink
-				to="/how-it-works/#revenues"
-				icon="works"
-				>How revenue works
+          to="/how-it-works/#revenues"
+          icon="works"
+        >How revenue works
 			      </ExploreDataLink>
 			  }
-			  
+
 			  contentRight={
 				  <ExploreDataLink
-					to="/downloads/#revenue"
-					icon="download"
-					>Downloads and documentation
+          to="/downloads/#revenue"
+          icon="download"
+        >Downloads and documentation
 				      </ExploreDataLink>
 				  }
 				  />
-	
-    )
-    
+
+  )
 }
 
 export default Revenue
-
-

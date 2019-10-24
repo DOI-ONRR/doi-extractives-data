@@ -3,11 +3,7 @@ import { connect } from 'react-redux'
 
 import utils from '../../../js/utils'
 
-import { updateGraphDataSets as updateGraphDataSetsAction } from '../../../state/reducers/data-sets'
-import { groupByMonth as groupDataSetsByMonthAction } from '../../../state/reducers/data-sets'
-import { groupByYear as groupDataSetsByYearAction } from '../../../state/reducers/data-sets'
-import { setDataSelectedById as setDataSelectedByIdAction } from '../../../state/reducers/data-sets'
-import {
+import { updateGraphDataSets as updateGraphDataSetsAction , groupByMonth as groupDataSetsByMonthAction , groupByYear as groupDataSetsByYearAction , setDataSelectedById as setDataSelectedByIdAction ,
 	PRODUCT_VOLUMES_FISCAL_YEAR,
   REVENUES_MONTHLY,
   REVENUES_FISCAL_YEAR,
@@ -20,6 +16,10 @@ import {
   BY_FISCAL_YEAR,
   BY_CALENDAR_YEAR
 } from '../../../state/reducers/data-sets'
+
+
+
+
 
 import CONSTANTS from '../../../js/constants'
 
@@ -98,9 +98,9 @@ const ALL_PRODUCTION_VOLUMES_BY_YEAR_CONFIGS = [
   { id: KEY_STATS_COAL_DATA_ID, sourceKey: CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY, ...PRODUCTION_VOLUMES_BY_YEAR_CONFIG },
 ]
 const ALL_PRODUCTION_VOLUMES_BY_FISCAL_YEAR_CONFIGS = [
-  { id: KEY_STATS_OIL_DATA_ID, sourceKey: PRODUCT_VOLUMES_FISCAL_YEAR, groupByKey: BY_FISCAL_YEAR+"_Oil", ...PRODUCTION_VOLUMES_BY_FISCAL_YEAR_CONFIG },
-  { id: KEY_STATS_GAS_DATA_ID, sourceKey: PRODUCT_VOLUMES_FISCAL_YEAR, groupByKey: BY_FISCAL_YEAR+"_Gas", ...PRODUCTION_VOLUMES_BY_FISCAL_YEAR_CONFIG },
-  { id: KEY_STATS_COAL_DATA_ID, sourceKey: PRODUCT_VOLUMES_FISCAL_YEAR, groupByKey: BY_FISCAL_YEAR+"_Coal", ...PRODUCTION_VOLUMES_BY_FISCAL_YEAR_CONFIG },
+  { id: KEY_STATS_OIL_DATA_ID, sourceKey: PRODUCT_VOLUMES_FISCAL_YEAR, groupByKey: BY_FISCAL_YEAR + '_Oil', ...PRODUCTION_VOLUMES_BY_FISCAL_YEAR_CONFIG },
+  { id: KEY_STATS_GAS_DATA_ID, sourceKey: PRODUCT_VOLUMES_FISCAL_YEAR, groupByKey: BY_FISCAL_YEAR + '_Gas', ...PRODUCTION_VOLUMES_BY_FISCAL_YEAR_CONFIG },
+  { id: KEY_STATS_COAL_DATA_ID, sourceKey: PRODUCT_VOLUMES_FISCAL_YEAR, groupByKey: BY_FISCAL_YEAR + '_Coal', ...PRODUCTION_VOLUMES_BY_FISCAL_YEAR_CONFIG },
 ]
 
 const PRODUCTION_VOLUMES_BY_MONTH_CONFIG = {
@@ -174,10 +174,10 @@ class TotalProductionDeprecated extends React.Component {
     super(props)
 
     props.updateBarChartDataSets([
-  		{id: KEY_STATS_REVENUES_DATA_ID, sourceKey: REVENUES_FISCAL_YEAR, groupByKey: BY_FISCAL_YEAR, ...REVENUES_BY_FISCALYEAR_CONFIG },
+  		{ id: KEY_STATS_REVENUES_DATA_ID, sourceKey: REVENUES_FISCAL_YEAR, groupByKey: BY_FISCAL_YEAR, ...REVENUES_BY_FISCALYEAR_CONFIG },
   		...ALL_PRODUCTION_VOLUMES_BY_FISCAL_YEAR_CONFIGS
   	])
-    //console.log(this.props)
+    // console.log(this.props)
 
     // Filter Data Sets by Year initially
     props.groupDataSetsByYear([
@@ -198,8 +198,8 @@ class TotalProductionDeprecated extends React.Component {
 	  this.setState({ ...nextProps })
 	}
 
-	componentDidUpdate() {
-		//console.log(this.state)
+	componentDidUpdate () {
+	  // console.log(this.state)
 	}
 
 	productionToggleClicked (value) {
@@ -214,7 +214,7 @@ class TotalProductionDeprecated extends React.Component {
 	  }
 	}
 
-	productionYearlyPeriodSelected(value){
+	productionYearlyPeriodSelected (value) {
 	  if (value !== this.state.productionPeriod) {
 	    this.setStateForProductionVolumes(this.state.productionToggle, this.state.productionPeriod, value)
 	  }
@@ -222,8 +222,8 @@ class TotalProductionDeprecated extends React.Component {
 
 	setStateForProductionVolumes (toggleValue, productionPeriod, productionYearlyPeriod) {
 	  if (toggleValue === TOGGLE_VALUES.Year) {
-	  	if(productionYearlyPeriod === YEARLY_DROPDOWN_VALUES.Fiscal){
-	  		this.props.updateBarChartDataSets([...ALL_PRODUCTION_VOLUMES_BY_FISCAL_YEAR_CONFIGS]);
+	  	if (productionYearlyPeriod === YEARLY_DROPDOWN_VALUES.Fiscal) {
+	  		this.props.updateBarChartDataSets([...ALL_PRODUCTION_VOLUMES_BY_FISCAL_YEAR_CONFIGS])
 	  	}
 	  	else {
 	  		this.props.groupDataSetsByYear([...ALL_PRODUCTION_VOLUMES_BY_YEAR_CONFIGS])
@@ -272,9 +272,9 @@ class TotalProductionDeprecated extends React.Component {
 
 	setStateForRevenues (toggleValue, revenueYearlyPeriod, revenuePeriod) {
 	  if (toggleValue === TOGGLE_VALUES.Year) {
-	  	if(revenueYearlyPeriod === YEARLY_DROPDOWN_VALUES.Fiscal){
+	  	if (revenueYearlyPeriod === YEARLY_DROPDOWN_VALUES.Fiscal) {
 		    this.props.updateBarChartDataSets([
-		  		{id: KEY_STATS_REVENUES_DATA_ID, sourceKey: REVENUES_FISCAL_YEAR, groupByKey: BY_FISCAL_YEAR, ...REVENUES_BY_FISCALYEAR_CONFIG }
+		  		{ id: KEY_STATS_REVENUES_DATA_ID, sourceKey: REVENUES_FISCAL_YEAR, groupByKey: BY_FISCAL_YEAR, ...REVENUES_BY_FISCALYEAR_CONFIG }
 		  	])
 	  	}
 	  	else {
@@ -341,21 +341,26 @@ class TotalProductionDeprecated extends React.Component {
 	render () {
 	  return (
 		  <section className={styles.production} >
-		  <h3 className={styles.title+" h3-bar"}>Total production</h3>
+		  <h3 className={styles.title + ' h3-bar'}>Total production<span className={styles.titleRight}>
+		  <ExploreDataLink
+		    to="/query-data?dataType=Production"
+	            icon="filter"
+		    >Filter production data
+			    </ExploreDataLink></span></h3>
 		  <div className={styles.content}>
 	          <div className={styles.itemToggle}>
-		  
+
 		  <div className={styles.toggle}>
 									Show:
 	                <Toggle action={this.productionToggleClicked.bind(this)} buttons={[{ key: TOGGLE_VALUES.Year, name: 'Yearly', default: true },
 								  { key: TOGGLE_VALUES.Month, name: 'Monthly' }]}></Toggle>
 	              </div>
 
-	              {(this.state.productionToggle === TOGGLE_VALUES.Month) ?
-									<div className={styles.dropdown}>
+	              {(this.state.productionToggle === TOGGLE_VALUES.Month)
+									? <div className={styles.dropdown}>
 										Period:
 									  <DropDown
-										key={'ProductionPeriod'}
+	                key={'ProductionPeriod'}
        										label={'Period'}
 									    action={this.productionPeriodSelected.bind(this)}
 									    options={[
@@ -368,12 +373,11 @@ class TotalProductionDeprecated extends React.Component {
 									      { key: DROPDOWN_VALUES.Calendar,
 									        name: 'Calendar year ' + this.state[PRODUCTION_VOLUMES_CALENDAR_YEAR],
 									        default: (this.state.productionPeriod === DROPDOWN_VALUES.Calendar) }]}></DropDown>
-									</div>
-									:
-									<div className={styles.dropdown}>
+	            </div>
+									:									<div className={styles.dropdown}>
 										Period:
 									    <DropDown
-										label={'Period'}	  
+	                label={'Period'}
 									  	key={'ProductionYearlyPeriod'}
 									    action={this.productionYearlyPeriodSelected.bind(this)}
 									    options={[
@@ -383,23 +387,22 @@ class TotalProductionDeprecated extends React.Component {
 									      { key: YEARLY_DROPDOWN_VALUES.Calendar,
 									        name: 'Calendar year',
 									        default: (this.state.productionYearlyPeriod === YEARLY_DROPDOWN_VALUES.Calendar) }]}></DropDown>
-									</div>
+	            </div>
 	              }
 
 	      		</div>
-	      
+
 	        <div className={styles.productChartContainer}>
 	          {this.getStackedBarChartLayout(KEY_STATS_OIL_DATA_ID, CONSTANTS.OIL)}
-		  
+
 		  {this.getStackedBarChartLayout(KEY_STATS_GAS_DATA_ID, CONSTANTS.GAS)}
-		  
+
 		  {this.getStackedBarChartLayout(KEY_STATS_COAL_DATA_ID, CONSTANTS.COAL)}
 	        </div>
 		  </div>
-		
+
 	      </section>
 
-	      
 	  )
 	}
 }
@@ -425,7 +428,7 @@ export default connect(
     setDataSelectedById: configs => dispatch(setDataSelectedByIdAction(configs)),
 
   })
-    
+
 )(TotalProductionDeprecated)
 
 const getDefaultChartData = dataSet => {

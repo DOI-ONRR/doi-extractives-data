@@ -242,19 +242,20 @@ const ADDITIONAL_COLUMN_OPTIONS = {
       default: options.find(option => option !== groupBy)
     })
   },
-  [PRODUCTION]: (groupByOptions, groupBy) => {
-    let options = groupByOptions && groupByOptions.concat(NO_SECOND_COLUMN)
+  [PRODUCTION]: (groupByOptions, groupBy, filter) => {
+    let options = [NO_SECOND_COLUMN]
+
+    if (filter.commodities && filter.commodities.length === 1 && !filter.commodities.includes(ALL)) {
+      options = groupByOptions && options.concat(groupByOptions)
+    }
 
     return ({
       options: options,
       default: options.find(option => option !== groupBy)
     })
   },
-  [DISBURSEMENTS]: (groupByOptions, groupBy, filter) => {
-    let options = [NO_SECOND_COLUMN]
-    if (filter.commodities && filter.commodities.length === 1) {
-      options = groupByOptions && options.concat(groupByOptions)
-    }
+  [DISBURSEMENTS]: (groupByOptions, groupBy) => {
+    let options = groupByOptions && groupByOptions.concat(NO_SECOND_COLUMN)
 
     return ({
       options: options,
@@ -805,7 +806,7 @@ class QueryData extends React.Component {
 	              // Add all fiscal years to each row
 	              dataTypeState.filter.fiscalYearsSelected.forEach(year => {
 	                let fiscalYearSlug = 'fy-' + year
-	                sumsByAdditionalColumns[column][columnValue][fiscalYearSlug] = parseInt(sumsByAdditionalColumns[column][columnValue][fiscalYearSlug]) || 0
+	                sumsByAdditionalColumns[column][columnValue][fiscalYearSlug] = sumsByAdditionalColumns[column][columnValue][fiscalYearSlug] || 0
 	              })
 	              tableData.push(Object.assign({
 	                [utils.formatToSlug(dataTypeState.groupBy)]: name,
@@ -817,7 +818,7 @@ class QueryData extends React.Component {
 	        else {
 	          dataTypeState.filter.fiscalYearsSelected.forEach(year => {
 	            let fiscalYearSlug = 'fy-' + year
-	            sums[fiscalYearSlug] = parseInt(sums[fiscalYearSlug]) || 0
+	            sums[fiscalYearSlug] = sums[fiscalYearSlug] || 0
 	          })
 
 	          tableData.push(Object.assign({ [utils.formatToSlug(dataTypeState.groupBy)]: name }, sums))

@@ -146,7 +146,7 @@ redirect_from: /how-it-works/production/
           </div>
           <div>
             <h4 class="h3 landing-heading"><custom-link to="/how-it-works/land-and-water-conservation-fund">Land and Water Conservation Fund</custom-link></h4>
-            <p>When <glossary-term termKey="authorization">authorized</glossary-term>, the Land and Water Conservation Fund receives disbursements from offshore oil and gas revenue to support conservation, outdoor recreation, and the needs of local communities.</p>
+            <p>The Land and Water Conservation Fund receives disbursements from offshore oil and gas revenue to support conservation, outdoor recreation, and the needs of local communities.</p>
             <p><custom-link to="/how-it-works/land-and-water-conservation-fund">Learn about the Land and Water Conservation Fund</custom-link></p>
           </div>
           <div>
@@ -168,11 +168,6 @@ redirect_from: /how-it-works/production/
             <h3 class="h3 landing-heading"><custom-link to="/how-it-works/audits-and-assurances">Audits and assurances</custom-link></h3>
             <p>Data about revenue from the extractive industries is subject to a number of controls, standards, and regulations.</p>
             <p><custom-link to="/how-it-works/audits-and-assurances">Learn about audits and assurances</custom-link></p>
-          </div>
-          <div>
-            <h3 class="h3 landing-heading"><custom-link to="/how-it-works/reconciliation/2016">Reconciliation</custom-link></h3>
-            <p>During the reconciliation process, company reports of payments are compared to government records of revenue received.</p>
-            <p><custom-link to="/how-it-works/reconciliation/2016">Learn about reconciliation</custom-link></p>
           </div>
         </div>
       </section>

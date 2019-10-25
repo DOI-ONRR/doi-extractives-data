@@ -18,7 +18,7 @@ tag:
 Download fiscal year data:
 
 <ul class="downloads-download_links list-unstyled">
-  <li><excel-link to="/downloads/disbursements/disbursements.xlsx">Fiscal year disbursements (Excel, 64 KB)</excel-link></li>
+  <li><excel-link to="/downloads/disbursements/disbursements.xlsx">Fiscal year disbursements (Excel, 85 KB)</excel-link></li>
   <li><csv-link to="/downloads/csv/disbursements/disbursements.csv">Fiscal year disbursements (csv, 89 KB)</csv-link></li>
 </ul>
 

@@ -1,1704 +1,1833 @@
-Fiscal Year,Fund Type,Onshore/Offshore,State,County, Total ,,,
-2003,American Indian Tribes,Onshore,,," 224,798,713.60 ",,,
-2003,Historic Preservation Fund,Offshore,,," 150,000,000.00 ",,,
-2003,Land & Water Conservation Fund,Offshore,,," 898,999,960.00 ",,,
-2003,Reclamation,Onshore,,," 753,373,594.30 ",,,
-2003,State,Onshore,AL,," 529,848.84 ",,,
-2003,State,Onshore,AK,," 9,030,501.74 ",,,
-2003,State,Onshore,AZ,," 121,898.09 ",,,
-2003,State,Onshore,AR,," 4,108,480.76 ",,,
-2003,State,Onshore,CA,," 21,837,849.16 ",,,
-2003,State,Onshore,CO,," 53,947,136.92 ",,,
-2003,State,Onshore,FL,," 368,710.50 ",,,
-2003,State,Onshore,ID,," 1,792,864.42 ",,,
-2003,State,Onshore,IL,," 109,312.47 ",,,
-2003,State,Onshore,IN,," 6,379.25 ",,,
-2003,State,Onshore,KS,," 1,823,378.27 ",,,
-2003,State,Onshore,KY,," 50,131.79 ",,,
-2003,State,Onshore,LA,," 1,182,451.37 ",,,
-2003,State,Onshore,MI,," 430,602.31 ",,,
-2003,State,Onshore,MN,," 17,910.30 ",,,
-2003,State,Onshore,MS,," 726,053.89 ",,,
-2003,State,Onshore,MO,," 331,638.48 ",,,
-2003,State,Onshore,MT,," 25,535,373.25 ",,,
-2003,State,Onshore,NE,," 12,992.19 ",,,
-2003,State,Onshore,NV,," 5,054,856.88 ",,,
-2003,State,Onshore,NM,," 297,904,626.20 ",,,
-2003,State,Onshore,ND,," 4,944,294.84 ",,,
-2003,State,Onshore,OH,," 280,731.76 ",,,
-2003,State,Onshore,OK,," 2,370,848.20 ",,,
-2003,State,Onshore,OR,," 32,573.32 ",,,
-2003,State,Onshore,PA,," 20,339.11 ",,,
-2003,State,Onshore,SC,, 102.00 ,,,
-2003,State,Onshore,SD,," 393,042.67 ",,,
-2003,State,Onshore,TX,," 2,142,703.86 ",,,
-2003,State,Onshore,UT,," 50,614,416.24 ",,,
-2003,State,Onshore,WA,," 1,088,464.15 ",,,
-2003,State,Onshore,WV,," 414,101.68 ",,,
-2003,State,Onshore,WY,," 467,266,554.90 ",,,
-2003,State 8(g),Offshore,AL,," 13,201,901.12 ",,,
-2003,State 8(g),Offshore,AK,," 3,732,697.53 ",,,
-2003,State 8(g),Offshore,CA,," 3,626,469.55 ",,,
-2003,State 8(g),Offshore,FL,, 803.23 ,,,
-2003,State 8(g),Offshore,LA,," 29,564,243.63 ",,,
-2003,State 8(g),Offshore,MS,," 430,579.05 ",,,
-2003,State 8(g),Offshore,TX,," 14,932,769.88 ",,,
-2003,U.S. Treasury,Onshore & Offshore,,," 5,183,271,391.00 ",,,
-2004,American Indian Tribes,Onshore,,," 344,255,880.40 ",,,
-2004,Historic Preservation Fund,Offshore,,," 150,000,000.00 ",,,
-2004,Land & Water Conservation Fund,Offshore,,," 899,000,000.00 ",,,
-2004,Reclamation,Onshore,,," 924,485,659.00 ",,,
-2004,State,Onshore,AL,," 608,176.44 ",,,
-2004,State,Onshore,AK,," 10,298,028.81 ",,,
-2004,State,Onshore,AZ,," 152,313.83 ",,,
-2004,State,Onshore,AR,," 2,365,307.98 ",,,
-2004,State,Onshore,CA,," 26,140,289.01 ",,,
-2004,State,Onshore,CO,," 80,531,107.18 ",,,
-2004,State,Onshore,FL,," 23,470.15 ",,,
-2004,State,Onshore,ID,," 2,172,060.51 ",,,
-2004,State,Onshore,IL,," 113,909.46 ",,,
-2004,State,Onshore,IN,, 59.25 ,,,
-2004,State,Onshore,KS,," 1,519,882.03 ",,,
-2004,State,Onshore,KY,," 90,388.49 ",,,
-2004,State,Onshore,LA,," 1,364,964.74 ",,,
-2004,State,Onshore,MI,," 405,313.79 ",,,
-2004,State,Onshore,MN,," 11,184.66 ",,,
-2004,State,Onshore,MS,," 646,837.39 ",,,
-2004,State,Onshore,MO,," 711,804.67 ",,,
-2004,State,Onshore,MT,," 30,294,622.98 ",,,
-2004,State,Onshore,NE,," 20,027.38 ",,,
-2004,State,Onshore,NV,," 2,651,061.97 ",,,
-2004,State,Onshore,NM,," 364,957,736.40 ",,,
-2004,State,Onshore,ND,," 6,155,004.55 ",,,
-2004,State,Onshore,OH,," 350,453.94 ",,,
-2004,State,Onshore,OK,," 4,756,477.44 ",,,
-2004,State,Onshore,OR,," 11,469.56 ",,,
-2004,State,Onshore,PA,," 27,852.04 ",,,
-2004,State,Onshore,SC,, 102.00 ,,,
-2004,State,Onshore,SD,," 473,552.76 ",,,
-2004,State,Onshore,TN,, 99.00 ,,,
-2004,State,Onshore,TX,," 1,958,683.95 ",,,
-2004,State,Onshore,UT,," 69,013,576.09 ",,,
-2004,State,Onshore,VA,," 21,774.43 ",,,
-2004,State,Onshore,WA,," 472,266.23 ",,,
-2004,State,Onshore,WV,," 264,171.98 ",,,
-2004,State,Onshore,WY,," 564,332,554.30 ",,,
-2004,State 8(g),Offshore,AL,," 13,707,950.51 ",,,
-2004,State 8(g),Offshore,AK,," 7,245,906.09 ",,,
-2004,State 8(g),Offshore,CA,," 2,791,501.99 ",,,
-2004,State 8(g),Offshore,FL,," 1,485.91 ",,,
-2004,State 8(g),Offshore,LA,," 38,256,481.63 ",,,
-2004,State 8(g),Offshore,MS,," 518,991.34 ",,,
-2004,State 8(g),Offshore,TX,," 13,254,156.92 ",,,
-2004,U.S. Treasury,Onshore & Offshore,,," 4,663,553,074.00 ",,,
-2005,American Indian Tribes,Onshore,,," 419,793,226.30 ",,,
-2005,Historic Preservation Fund,Offshore,,," 150,000,000.00 ",,,
-2005,Land & Water Conservation Fund,Offshore,,," 898,869,789.00 ",,,
-2005,Reclamation,Onshore,,," 1,287,972,474.00 ",,,
-2005,State,Onshore,AL,," 1,019,468.66 ",,,
-2005,State,Onshore,AK,," 12,098,692.56 ",,,
-2005,State,Onshore,AZ,," 37,828.60 ",,,
-2005,State,Onshore,AR,," 7,059,071.16 ",,,
-2005,State,Onshore,CA,," 18,925,452.42 ",,,
-2005,State,Onshore,CO,," 106,651,980.10 ",,,
-2005,State,Onshore,FL,," 286,174.88 ",,,
-2005,State,Onshore,ID,," 1,664,997.94 ",,,
-2005,State,Onshore,IL,," 145,218.18 ",,,
-2005,State,Onshore,IN,, 59.25 ,,,
-2005,State,Onshore,KS,," 1,967,826.59 ",,,
-2005,State,Onshore,KY,," 78,999.77 ",,,
-2005,State,Onshore,LA,," 1,569,882.38 ",,,
-2005,State,Onshore,MI,," 488,694.35 ",,,
-2005,State,Onshore,MN,," 10,234.88 ",,,
-2005,State,Onshore,MS,," 868,566.78 ",,,
-2005,State,Onshore,MO,," 553,836.99 ",,,
-2005,State,Onshore,MT,," 35,562,307.12 ",,,
-2005,State,Onshore,NE,," 21,277.88 ",,,
-2005,State,Onshore,NV,," 7,771,837.14 ",,,
-2005,State,Onshore,NM,," 444,295,200.40 ",,,
-2005,State,Onshore,ND,," 13,549,513.53 ",,,
-2005,State,Onshore,OH,," 370,254.89 ",,,
-2005,State,Onshore,OK,," 4,230,519.79 ",,,
-2005,State,Onshore,OR,," 13,064.75 ",,,
-2005,State,Onshore,PA,," 32,757.66 ",,,
-2005,State,Onshore,SC,, 277.50 ,,,
-2005,State,Onshore,SD,," 607,348.41 ",,,
-2005,State,Onshore,TN,, 99.00 ,,,
-2005,State,Onshore,TX,," 5,421,011.82 ",,,
-2005,State,Onshore,UT,," 87,444,534.43 ",,,
-2005,State,Onshore,VA,," 322,282.01 ",,,
-2005,State,Onshore,WA,," 267,609.65 ",,,
-2005,State,Onshore,WV,," 831,320.03 ",,,
-2005,State,Onshore,WY,," 878,524,871.10 ",,,
-2005,State 8(g),Offshore,AL,," 14,619,810.59 ",,,
-2005,State 8(g),Offshore,AK,," 10,871,900.85 ",,,
-2005,State 8(g),Offshore,CA,," 4,488,189.24 ",,,
-2005,State 8(g),Offshore,FL,, 96.27 ,,,
-2005,State 8(g),Offshore,LA,," 30,900,445.09 ",,,
-2005,State 8(g),Offshore,MS,," 1,024,462.73 ",,,
-2005,State 8(g),Offshore,TX,," 10,418,423.48 ",,,
-2005,U.S. Treasury,Onshore & Offshore,,," 5,477,357,330.00 ",,,
-2006,American Indian Tribes,Onshore,,," 641,408,924.60 ",,,
-2006,Historic Preservation Fund,Offshore,,, -   ,,,
-2006,Land & Water Conservation Fund,Offshore,,," 898,303,940.10 ",,,
-2006,Reclamation,Onshore,,," 1,649,066,066.00 ",,,
-2006,State,Onshore,AL,," 751,161.46 ",,,
-2006,State,Onshore,AK,," 14,418,930.55 ",,,
-2006,State,Onshore,AZ,," 73,434.85 ",,,
-2006,State,Onshore,AR,," 6,825,233.39 ",,,
-2006,State,Onshore,CA,Imperial County," 53,045.72 ",,,
-2006,State,Onshore,CA,Inyo County," 441,493.74 ",,,
-2006,State,Onshore,CA,Lake County," 1,012,909.47 ",,,
-2006,State,Onshore,CA,Lassen County," 18,773.63 ",,,
-2006,State,Onshore,CA,Mono County," 47,133.27 ",,,
-2006,State,Onshore,CA,Siskiyou County," 17,111.25 ",,,
-2006,State,Onshore,CA,Sonoma County," 1,271,515.98 ",,,
-2006,State,Onshore,CA,," 47,410,896.54 ",,,
-2006,State,Onshore,CO,," 147,194,118.50 ",,,
-2006,State,Onshore,FL,," 141,947.86 ",,,
-2006,State,Onshore,ID,Bingham County, 73.50 ,,,
-2006,State,Onshore,ID,Bonneville County, 73.50 ,,,
-2006,State,Onshore,ID,," 1,256,609.16 ",,,
-2006,State,Onshore,IL,," 180,912.68 ",,,
-2006,State,Onshore,IN,, 59.25 ,,,
-2006,State,Onshore,KS,," 2,457,972.44 ",,,
-2006,State,Onshore,KY,," 379,097.05 ",,,
-2006,State,Onshore,LA,," 1,170,670.38 ",,,
-2006,State,Onshore,MI,," 658,765.54 ",,,
-2006,State,Onshore,MN,," 15,126.42 ",,,
-2006,State,Onshore,MS,," 1,053,167.53 ",,,
-2006,State,Onshore,MO,," 1,979,893.69 ",,,
-2006,State,Onshore,MT,," 38,236,440.10 ",,,
-2006,State,Onshore,NE,," 27,539.36 ",,,
-2006,State,Onshore,NV,Churchill County," 868,487.03 ",,,
-2006,State,Onshore,NV,Elko County," 4,423.75 ",,,
-2006,State,Onshore,NV,Esmeralda County," 17,116.25 ",,,
-2006,State,Onshore,NV,Eureka County," 2,667.77 ",,,
-2006,State,Onshore,NV,Humboldt County," 3,325.75 ",,,
-2006,State,Onshore,NV,Lander County," 49,307.38 ",,,
-2006,State,Onshore,NV,Lyon County, 159.04 ,,,
-2006,State,Onshore,NV,Nye County," 1,558.75 ",,,
-2006,State,Onshore,NV,Pershing County," 19,779.17 ",,,
-2006,State,Onshore,NV,Washoe County," 15,766.24 ",,,
-2006,State,Onshore,NV,White Pine County, 934.50 ,,,
-2006,State,Onshore,NV,," 7,628,076.61 ",,,
-2006,State,Onshore,NM,Dona Ana County," 1,430.75 ",,,
-2006,State,Onshore,NM,," 573,423,823.40 ",,,
-2006,State,Onshore,ND,," 15,511,698.59 ",,,
-2006,State,Onshore,OH,," 489,184.98 ",,,
-2006,State,Onshore,OK,," 5,100,262.76 ",,,
-2006,State,Onshore,OR,Deschutes County, 777.75 ,,,
-2006,State,Onshore,OR,," 651,769.00 ",,,
-2006,State,Onshore,PA,," 92,322.70 ",,,
-2006,State,Onshore,SD,," 850,892.44 ",,,
-2006,State,Onshore,TX,," 8,727,993.74 ",,,
-2006,State,Onshore,UT,Beaver County," 63,372.38 ",,,
-2006,State,Onshore,UT,Iron County, 57.25 ,,,
-2006,State,Onshore,UT,Millard County, 604.42 ,,,
-2006,State,Onshore,UT,," 173,010,678.90 ",,,
-2006,State,Onshore,VA,," 217,103.32 ",,,
-2006,State,Onshore,WA,," 1,081,923.29 ",,,
-2006,State,Onshore,WV,," 494,294.56 ",,,
-2006,State,Onshore,WY,," 1,072,479,294.00 ",,,
-2006,State 8(g),Offshore,AL,," 17,869,013.68 ",,,
-2006,State 8(g),Offshore,AK,," 11,294,550.87 ",,,
-2006,State 8(g),Offshore,CA,," 7,250,885.42 ",,,
-2006,State 8(g),Offshore,FL,," 1,388.58 ",,,
-2006,State 8(g),Offshore,LA,," 32,071,817.30 ",,,
-2006,State 8(g),Offshore,MS,," 545,748.94 ",,,
-2006,State 8(g),Offshore,TX,," 13,321,468.02 ",,,
-2006,U.S. Treasury,Onshore & Offshore,,," 7,432,289,745.00 ",,,
-2007,American Indian Tribes,Onshore,,," 464,998,979.00 ",,,
-2007,Historic Preservation Fund,Offshore,,," 150,000,000.00 ",,,
-2007,Land & Water Conservation Fund,Offshore,,," 899,000,000.00 ",,,
-2007,Reclamation,Onshore,,," 1,469,924,290.00 ",,,
-2007,State,Onshore,AL,," 663,784.05 ",,,
-2007,State,Onshore,AK,," 14,029,489.60 ",,,
-2007,State,Onshore,AZ,," 41,792.37 ",,,
-2007,State,Onshore,AR,," 8,143,230.86 ",,,
-2007,State,Onshore,CA,Imperial County," 31,708.12 ",,,
-2007,State,Onshore,CA,Inyo County," 301,819.36 ",,,
-2007,State,Onshore,CA,Lake County," 845,759.45 ",,,
-2007,State,Onshore,CA,Lassen County," 14,014.89 ",,,
-2007,State,Onshore,CA,Mono County," 31,478.73 ",,,
-2007,State,Onshore,CA,Siskiyou County," 14,980.75 ",,,
-2007,State,Onshore,CA,Sonoma County," 1,087,790.28 ",,,
-2007,State,Onshore,CA,," 52,115,724.39 ",,,
-2007,State,Onshore,CO,," 122,894,226.70 ",,,
-2007,State,Onshore,FL,," 5,056.65 ",,,
-2007,State,Onshore,ID,Bingham County, 26.73 ,,,
-2007,State,Onshore,ID,Bonneville County, 46.77 ,,,
-2007,State,Onshore,ID,Cassia County," 817,901.50 ",,,
-2007,State,Onshore,ID,Washington County," 359,745.00 ",,,
-2007,State,Onshore,ID,," 3,552,092.55 ",,,
-2007,State,Onshore,IL,," 205,558.80 ",,,
-2007,State,Onshore,IN,," 8,046.75 ",,,
-2007,State,Onshore,KS,," 1,876,305.00 ",,,
-2007,State,Onshore,KY,," 714,750.97 ",,,
-2007,State,Onshore,LA,," 940,887.54 ",,,
-2007,State,Onshore,MI,," 616,971.05 ",,,
-2007,State,Onshore,MN,," 13,126.30 ",,,
-2007,State,Onshore,MS,," 1,514,390.96 ",,,
-2007,State,Onshore,MO,," 3,598,352.32 ",,,
-2007,State,Onshore,MT,," 39,158,279.03 ",,,
-2007,State,Onshore,NE,," 24,176.98 ",,,
-2007,State,Onshore,NV,Churchill County," 635,410.97 ",,,
-2007,State,Onshore,NV,Elko County," 6,487.50 ",,,
-2007,State,Onshore,NV,Esmeralda County," 13,789.69 ",,,
-2007,State,Onshore,NV,Eureka County," 5,559.97 ",,,
-2007,State,Onshore,NV,Humboldt County," 6,322.00 ",,,
-2007,State,Onshore,NV,Lander County," 43,343.44 ",,,
-2007,State,Onshore,NV,Lyon County," 3,491.04 ",,,
-2007,State,Onshore,NV,Nye County," 2,138.75 ",,,
-2007,State,Onshore,NV,Pershing County," 22,567.08 ",,,
-2007,State,Onshore,NV,Washoe County," 15,829.50 ",,,
-2007,State,Onshore,NV,White Pine County," 1,248.00 ",,,
-2007,State,Onshore,NV,," 6,907,490.88 ",,,
-2007,State,Onshore,NM,Dona Ana County," 2,269.25 ",,,
-2007,State,Onshore,NM,Hidalgo County," 1,250.50 ",,,
-2007,State,Onshore,NM,," 552,930,945.60 ",,,
-2007,State,Onshore,ND,," 13,775,447.53 ",,,
-2007,State,Onshore,OH,," 493,091.99 ",,,
-2007,State,Onshore,OK,," 6,988,592.26 ",,,
-2007,State,Onshore,OR,Deschutes County," 30,926.31 ",,,
-2007,State,Onshore,OR,Lake County, 627.50 ,,,
-2007,State,Onshore,OR,," 526,569.02 ",,,
-2007,State,Onshore,PA,," 55,584.87 ",,,
-2007,State,Onshore,SC,, 277.50 ,,,
-2007,State,Onshore,SD,," 1,007,068.91 ",,,
-2007,State,Onshore,TX,," 5,892,914.21 ",,,
-2007,State,Onshore,UT,Beaver County," 63,133.09 ",,,
-2007,State,Onshore,UT,Iron County, 57.25 ,,,
-2007,State,Onshore,UT,Millard County, 302.21 ,,,
-2007,State,Onshore,UT,," 135,366,165.70 ",,,
-2007,State,Onshore,VA,," 233,474.14 ",,,
-2007,State,Onshore,WA,," 366,365.07 ",,,
-2007,State,Onshore,WV,," 389,004.34 ",,,
-2007,State,Onshore,WY,," 925,261,906.80 ",,,
-2007,State 8(g),Offshore,AL,," 13,510,124.83 ",,,
-2007,State 8(g),Offshore,AK,," 7,767,181.92 ",,,
-2007,State 8(g),Offshore,CA,," 6,797,664.57 ",,,
-2007,State 8(g),Offshore,FL,," 1,592.73 ",,,
-2007,State 8(g),Offshore,LA,," 23,088,706.49 ",,,
-2007,State 8(g),Offshore,MS,," 712,156.54 ",,,
-2007,State 8(g),Offshore,TX,," 15,774,350.42 ",,,
-2007,U.S. Treasury,Onshore & Offshore,,," 6,715,095,418.00 ",,,
-2008,American Indian Tribes,Onshore,,," 533,950,712.30 ",,,
-2008,Historic Preservation Fund,Offshore,,," 150,000,000.00 ",,,
-2008,Land & Water Conservation Fund,Offshore,,," 896,940,990.00 ",,,
-2008,Reclamation,Onshore,,," 1,961,680,025.00 ",,,
-2008,State,Onshore,AL,," 845,297.42 ",,,
-2008,State,Onshore,AK,," 20,741,906.55 ",,,
-2008,State,Onshore,AZ,," 266,834.26 ",,,
-2008,State,Onshore,AR,," 13,189,227.20 ",,,
-2008,State,Onshore,CA,Imperial County," 113,260.31 ",,,
-2008,State,Onshore,CA,Inyo County," 246,745.75 ",,,
-2008,State,Onshore,CA,Lake County," 2,780,976.80 ",,,
-2008,State,Onshore,CA,Lassen County," 16,944.66 ",,,
-2008,State,Onshore,CA,Mono County," 54,175.82 ",,,
-2008,State,Onshore,CA,Siskiyou County," 24,602.51 ",,,
-2008,State,Onshore,CA,Sonoma County," 1,749,735.98 ",,,
-2008,State,Onshore,CA,," 87,387,219.28 ",,,
-2008,State,Onshore,CO,," 178,377,966.10 ",,,
-2008,State,Onshore,FL,," 6,214.71 ",,,
-2008,State,Onshore,ID,Bingham County, 33.41 ,,,
-2008,State,Onshore,ID,Bonneville County, 40.09 ,,,
-2008,State,Onshore,ID,Caribou County, 324.83 ,,,
-2008,State,Onshore,ID,Cassia County," 257,325.00 ",,,
-2008,State,Onshore,ID,Washington County, 870.00 ,,,
-2008,State,Onshore,ID,," 1,720,262.20 ",,,
-2008,State,Onshore,IL,," 286,561.67 ",,,
-2008,State,Onshore,IN,, 191.50 ,,,
-2008,State,Onshore,KS,," 2,605,367.43 ",,,
-2008,State,Onshore,KY,," 508,473.37 ",,,
-2008,State,Onshore,LA,," 3,703,239.68 ",,,
-2008,State,Onshore,MI,," 1,171,444.97 ",,,
-2008,State,Onshore,MN,," 13,030.27 ",,,
-2008,State,Onshore,MS,," 1,008,265.07 ",,,
-2008,State,Onshore,MO,," 4,561,311.95 ",,,
-2008,State,Onshore,MT,," 48,943,889.42 ",,,
-2008,State,Onshore,NE,," 40,800.27 ",,,
-2008,State,Onshore,NV,Churchill County," 1,391,112.41 ",,,
-2008,State,Onshore,NV,Elko County," 16,486.00 ",,,
-2008,State,Onshore,NV,Esmeralda County," 18,952.14 ",,,
-2008,State,Onshore,NV,Eureka County," 5,410.63 ",,,
-2008,State,Onshore,NV,Humboldt County," 62,697.09 ",,,
-2008,State,Onshore,NV,Lander County," 1,027,340.70 ",,,
-2008,State,Onshore,NV,Lyon County," 3,259.79 ",,,
-2008,State,Onshore,NV,Mineral County," 379,806.14 ",,,
-2008,State,Onshore,NV,Nye County," 589,313.21 ",,,
-2008,State,Onshore,NV,Pershing County," 235,558.04 ",,,
-2008,State,Onshore,NV,Washoe County," 64,703.56 ",,,
-2008,State,Onshore,NV,White Pine County," 1,091.25 ",,,
-2008,State,Onshore,NV,," 13,826,417.76 ",,,
-2008,State,Onshore,NM,Dona Ana County, 987.30 ,,,
-2008,State,Onshore,NM,Hidalgo County," 1,321.50 ",,,
-2008,State,Onshore,NM,," 614,826,895.70 ",,,
-2008,State,Onshore,ND,," 23,392,224.43 ",,,
-2008,State,Onshore,OH,," 574,971.75 ",,,
-2008,State,Onshore,OK,," 7,240,652.39 ",,,
-2008,State,Onshore,OR,Deschutes County," 35,985.75 ",,,
-2008,State,Onshore,OR,Lake County, 627.50 ,,,
-2008,State,Onshore,OR,," 257,487.28 ",,,
-2008,State,Onshore,PA,," 69,368.41 ",,,
-2008,State,Onshore,SC,, 277.50 ,,,
-2008,State,Onshore,SD,," 1,200,905.81 ",,,
-2008,State,Onshore,TN,, 99.00 ,,,
-2008,State,Onshore,TX,," 8,327,399.61 ",,,
-2008,State,Onshore,UT,Beaver County," 70,130.01 ",,,
-2008,State,Onshore,UT,Millard County," 3,976.54 ",,,
-2008,State,Onshore,UT,," 173,765,221.20 ",,,
-2008,State,Onshore,VA,," 227,154.44 ",,,
-2008,State,Onshore,WA,," 202,943.33 ",,,
-2008,State,Onshore,WV,," 776,251.48 ",,,
-2008,State,Onshore,WY,," 1,270,987,014.00 ",,,
-2008,State 8(g),Offshore,AL,," 14,990,923.96 ",,,
-2008,State 8(g),Offshore,AK,," 17,814,996.98 ",,,
-2008,State 8(g),Offshore,CA,," 11,072,302.04 ",,,
-2008,State 8(g),Offshore,FL,, 83.29 ,,,
-2008,State 8(g),Offshore,LA,," 45,763,396.12 ",,,
-2008,State 8(g),Offshore,MS,," 564,068.08 ",,,
-2008,State 8(g),Offshore,TX,," 13,346,657.81 ",,,
-2008,U.S. Treasury,Onshore & Offshore,,," 17,312,534,844.00 ",,,
-2009,American Indian Tribes,Onshore,,," 449,462,056.70 ",,,
-2009,Historic Preservation Fund,Offshore,,," 150,000,000.00 ",,,
-2009,Land & Water Conservation Fund,Offshore,,," 898,090,084.50 ",,,
-2009,Land & Water Conservation Fund - GoMESA,Offshore,,," 909,915.47 ",,,
-2009,Reclamation,Onshore,,," 1,454,102,007.00 ",,,
-2009,State,Onshore,AL,," 2,209,673.31 ",,,
-2009,State,Onshore,AK,," 32,649,656.14 ",,,
-2009,State,Onshore,AZ,," 252,681.83 ",,,
-2009,State,Onshore,AR,," 3,320,709.56 ",,,
-2009,State,Onshore,CA,Imperial County," 43,650.39 ",,,
-2009,State,Onshore,CA,Inyo County," 149,424.52 ",,,
-2009,State,Onshore,CA,Lake County," 824,269.63 ",,,
-2009,State,Onshore,CA,Lassen County," 13,629.58 ",,,
-2009,State,Onshore,CA,Mendocino County," 106,249.92 ",,,
-2009,State,Onshore,CA,Mono County," 46,484.30 ",,,
-2009,State,Onshore,CA,Siskiyou County," 53,015.00 ",,,
-2009,State,Onshore,CA,Sonoma County," 963,562.60 ",,,
-2009,State,Onshore,CA,," 51,315,146.92 ",,,
-2009,State,Onshore,CO,," 187,319,102.00 ",,,
-2009,State,Onshore,FL,," 1,896.85 ",,,
-2009,State,Onshore,ID,Bingham County, 33.41 ,,,
-2009,State,Onshore,ID,Bonneville County, 40.09 ,,,
-2009,State,Onshore,ID,Caribou County, 425.75 ,,,
-2009,State,Onshore,ID,Cassia County," 22,423.70 ",,,
-2009,State,Onshore,ID,Washington County," 1,873.66 ",,,
-2009,State,Onshore,ID,," 1,482,326.90 ",,,
-2009,State,Onshore,IL,," 175,848.97 ",,,
-2009,State,Onshore,IN,," 14,207.73 ",,,
-2009,State,Onshore,KS,," 1,596,202.96 ",,,
-2009,State,Onshore,KY,," 436,751.40 ",,,
-2009,State,Onshore,LA,," 914,420.57 ",,,
-2009,State,Onshore,MI,," 836,787.02 ",,,
-2009,State,Onshore,MN,," 12,996.41 ",,,
-2009,State,Onshore,MS,," 583,180.97 ",,,
-2009,State,Onshore,MO,," 2,060,263.15 ",,,
-2009,State,Onshore,MT,," 46,558,941.78 ",,,
-2009,State,Onshore,NE,," 30,556.70 ",,,
-2009,State,Onshore,NV,Churchill County," 4,207,832.38 ",,,
-2009,State,Onshore,NV,Elko County," 1,045,436.00 ",,,
-2009,State,Onshore,NV,Esmeralda County," 1,358,390.25 ",,,
-2009,State,Onshore,NV,Eureka County," 74,648.52 ",,,
-2009,State,Onshore,NV,Humboldt County," 10,506.47 ",,,
-2009,State,Onshore,NV,Lander County," 434,497.40 ",,,
-2009,State,Onshore,NV,Lyon County," 31,995.03 ",,,
-2009,State,Onshore,NV,Mineral County," 617,458.98 ",,,
-2009,State,Onshore,NV,Nye County," 13,496.60 ",,,
-2009,State,Onshore,NV,Pershing County," 82,381.08 ",,,
-2009,State,Onshore,NV,Washoe County," 21,272.39 ",,,
-2009,State,Onshore,NV,White Pine County," 1,091.25 ",,,
-2009,State,Onshore,NV,," 20,845,475.42 ",,,
-2009,State,Onshore,NM,Dona Ana County, 140.00 ,,,
-2009,State,Onshore,NM,Hidalgo County," 1,410.50 ",,,
-2009,State,Onshore,NM,," 388,526,527.50 ",,,
-2009,State,Onshore,ND,," 61,155,146.06 ",,,
-2009,State,Onshore,OH,," 452,981.60 ",,,
-2009,State,Onshore,OK,," 3,941,950.47 ",,,
-2009,State,Onshore,OR,Deschutes County," 45,992.89 ",,,
-2009,State,Onshore,OR,Lake County," 197,028.75 ",,,
-2009,State,Onshore,OR,," 660,620.50 ",,,
-2009,State,Onshore,PA,," 43,462.03 ",,,
-2009,State,Onshore,SC,, 477.86 ,,,
-2009,State,Onshore,SD,," 950,615.99 ",,,
-2009,State,Onshore,TN,, 99.00 ,,,
-2009,State,Onshore,TX,," 7,406,691.52 ",,,
-2009,State,Onshore,UT,Beaver County," 97,471.22 ",,,
-2009,State,Onshore,UT,Iron County," 15,867.00 ",,,
-2009,State,Onshore,UT,Juab County," 272,867.50 ",,,
-2009,State,Onshore,UT,Millard County," 1,924,233.35 ",,,
-2009,State,Onshore,UT,," 128,636,159.80 ",,,
-2009,State,Onshore,VA,," 142,981.33 ",,,
-2009,State,Onshore,WA,," 345,553.59 ",,,
-2009,State,Onshore,WV,," 399,890.57 ",,,
-2009,State,Onshore,WY,," 957,232,075.30 ",,,
-2009,State - GoMESA,Offshore,AL,Baldwin County," 712,876.87 ",,,
-2009,State - GoMESA,Offshore,AL,Mobile County," 831,892.19 ",,,
-2009,State - GoMESA,Offshore,AL,," 6,179,076.25 ",,,
-2009,State - GoMESA,Offshore,LA,Assumption Parish," 51,906.72 ",,,
-2009,State - GoMESA,Offshore,LA,Calcasieu Parish," 70,168.39 ",,,
-2009,State - GoMESA,Offshore,LA,Cameron Parish," 82,446.35 ",,,
-2009,State - GoMESA,Offshore,LA,Iberia Parish," 69,563.09 ",,,
-2009,State - GoMESA,Offshore,LA,Jefferson Parish," 139,357.71 ",,,
-2009,State - GoMESA,Offshore,LA,Lafourche Parish," 79,152.27 ",,,
-2009,State - GoMESA,Offshore,LA,Livingston Parish," 66,022.77 ",,,
-2009,State - GoMESA,Offshore,LA,Orleans Parish," 145,552.11 ",,,
-2009,State - GoMESA,Offshore,LA,Plaquemines Parish," 164,699.67 ",,,
-2009,State - GoMESA,Offshore,LA,St. Bernard Parish," 97,611.44 ",,,
-2009,State - GoMESA,Offshore,LA,St. Charles Parish," 62,920.89 ",,,
-2009,State - GoMESA,Offshore,LA,St. James Parish," 53,198.55 ",,,
-2009,State - GoMESA,Offshore,LA,St. John the Baptist Parish," 58,394.56 ",,,
-2009,State - GoMESA,Offshore,LA,St. Martin Parish," 55,598.09 ",,,
-2009,State - GoMESA,Offshore,LA,St. Mary Parish," 57,445.49 ",,,
-2009,State - GoMESA,Offshore,LA,St. Tammany Parish," 92,883.26 ",,,
-2009,State - GoMESA,Offshore,LA,Tangipahoa Parish," 69,183.81 ",,,
-2009,State - GoMESA,Offshore,LA,Terrebonne Parish," 106,721.76 ",,,
-2009,State - GoMESA,Offshore,LA,Vermilion Parish," 64,003.35 ",,,
-2009,State - GoMESA,Offshore,LA,," 6,347,321.13 ",,,
-2009,State - GoMESA,Offshore,MS,Hancock County," 248,870.37 ",,,
-2009,State - GoMESA,Offshore,MS,Harrison County," 537,558.48 ",,,
-2009,State - GoMESA,Offshore,MS,Jackson County," 590,130.10 ",,,
-2009,State - GoMESA,Offshore,MS,," 5,506,235.80 ",,,
-2009,State - GoMESA,Offshore,TX,Aransas County," 21,273.54 ",,,
-2009,State - GoMESA,Offshore,TX,Brazoria County," 33,378.48 ",,,
-2009,State - GoMESA,Offshore,TX,Calhoun County," 27,890.96 ",,,
-2009,State - GoMESA,Offshore,TX,Cameron County," 31,982.15 ",,,
-2009,State - GoMESA,Offshore,TX,Chambers County," 18,837.01 ",,,
-2009,State - GoMESA,Offshore,TX,Galveston County," 45,617.03 ",,,
-2009,State - GoMESA,Offshore,TX,Harris County," 104,611.66 ",,,
-2009,State - GoMESA,Offshore,TX,Jackson County," 14,713.76 ",,,
-2009,State - GoMESA,Offshore,TX,Jefferson County," 37,408.74 ",,,
-2009,State - GoMESA,Offshore,TX,Kenedy County," 29,936.17 ",,,
-2009,State - GoMESA,Offshore,TX,Kleberg County," 21,766.76 ",,,
-2009,State - GoMESA,Offshore,TX,Matagorda County," 39,113.73 ",,,
-2009,State - GoMESA,Offshore,TX,Nueces County," 29,024.98 ",,,
-2009,State - GoMESA,Offshore,TX,Orange County," 21,207.74 ",,,
-2009,State - GoMESA,Offshore,TX,Refugio County," 13,910.08 ",,,
-2009,State - GoMESA,Offshore,TX,San Patricio County," 14,923.90 ",,,
-2009,State - GoMESA,Offshore,TX,Victoria County," 16,047.67 ",,,
-2009,State - GoMESA,Offshore,TX,Willacy County," 18,205.56 ",,,
-2009,State - GoMESA,Offshore,TX,," 2,159,399.65 ",,,
-2009,State 8(g),Offshore,AL,," 8,829,652.97 ",,,
-2009,State 8(g),Offshore,AK,," 9,943,557.99 ",,,
-2009,State 8(g),Offshore,CA,," 6,978,830.25 ",,,
-2009,State 8(g),Offshore,FL,," 1,376.54 ",,,
-2009,State 8(g),Offshore,LA,," 22,317,230.37 ",,,
-2009,State 8(g),Offshore,MS,," 451,384.35 ",,,
-2009,State 8(g),Offshore,TX,," 6,129,935.49 ",,,
-2009,U.S. Treasury,Onshore,,," 640,202,103.00 ",,,
-2009,U.S. Treasury,Offshore,,," 5,093,231,404.39 ",,,
-2009,U.S. Treasury - GoMESA,Offshore,,," 3,639,656.61 ",,,
-2010,American Indian Tribes,Onshore,,," 407,559,568.80 ",,,
-2010,Historic Preservation Fund,Offshore,,," 150,000,000.00 ",,,
-2010,Land & Water Conservation Fund,Offshore,,," 898,711,346.20 ",,,
-2010,Land & Water Conservation Fund - GoMESA,Offshore,,," 288,653.84 ",,,
-2010,Reclamation,Onshore,,," 1,363,951,779.00 ",,,
-2010,State,Onshore,AL,," 5,002,689.07 ",,,
-2010,State,Onshore,AK,," 34,329,221.02 ",,,
-2010,State,Onshore,AZ,," 26,249.31 ",,,
-2010,State,Onshore,AR,," 3,107,178.28 ",,,
-2010,State,Onshore,CA,Imperial County," 65,750.81 ",,,
-2010,State,Onshore,CA,Inyo County," 178,786.72 ",,,
-2010,State,Onshore,CA,Lake County," 843,695.13 ",,,
-2010,State,Onshore,CA,Lassen County," 13,302.63 ",,,
-2010,State,Onshore,CA,Mendocino County, 750.00 ,,,
-2010,State,Onshore,CA,Mono County," 33,369.06 ",,,
-2010,State,Onshore,CA,Siskiyou County," 51,807.50 ",,,
-2010,State,Onshore,CA,Sonoma County," 1,189,395.42 ",,,
-2010,State,Onshore,CA,," 61,634,162.41 ",,,
-2010,State,Onshore,CO,," 133,633,985.00 ",,,
-2010,State,Onshore,FL,," 46,844.91 ",,,
-2010,State,Onshore,ID,Bingham County, 33.41 ,,,
-2010,State,Onshore,ID,Bonneville County, 40.09 ,,,
-2010,State,Onshore,ID,Caribou County, 425.75 ,,,
-2010,State,Onshore,ID,Cassia County," 11,880.75 ",,,
-2010,State,Onshore,ID,Washington County," 11,899.00 ",,,
-2010,State,Onshore,ID,," 3,986,545.46 ",,,
-2010,State,Onshore,IL,," 262,412.21 ",,,
-2010,State,Onshore,IN,," 8,203.48 ",,,
-2010,State,Onshore,KS,," 1,461,896.85 ",,,
-2010,State,Onshore,KY,," 136,424.08 ",,,
-2010,State,Onshore,LA,," 3,123,211.44 ",,,
-2010,State,Onshore,MI,," 465,593.44 ",,,
-2010,State,Onshore,MN,," 12,924.25 ",,,
-2010,State,Onshore,MS,," 635,161.56 ",,,
-2010,State,Onshore,MO,," 3,287,656.77 ",,,
-2010,State,Onshore,MT,," 43,764,829.71 ",,,
-2010,State,Onshore,NE,," 162,940.13 ",,,
-2010,State,Onshore,NV,Churchill County," 2,413,536.58 ",,,
-2010,State,Onshore,NV,Elko County," 73,471.59 ",,,
-2010,State,Onshore,NV,Esmeralda County," 380,625.38 ",,,
-2010,State,Onshore,NV,Eureka County," 12,968.64 ",,,
-2010,State,Onshore,NV,Humboldt County," 159,964.36 ",,,
-2010,State,Onshore,NV,Lander County," 148,106.04 ",,,
-2010,State,Onshore,NV,Lyon County," 3,903.20 ",,,
-2010,State,Onshore,NV,Mineral County," 110,318.93 ",,,
-2010,State,Onshore,NV,Nye County," 140,913.17 ",,,
-2010,State,Onshore,NV,Pershing County," 545,197.39 ",,,
-2010,State,Onshore,NV,Washoe County," 31,890.77 ",,,
-2010,State,Onshore,NV,White Pine County," 74,196.50 ",,,
-2010,State,Onshore,NV,," 12,964,199.51 ",,,
-2010,State,Onshore,NM,Dona Ana County, 140.00 ,,,
-2010,State,Onshore,NM,Hidalgo County," 1,410.54 ",,,
-2010,State,Onshore,NM,," 380,694,468.90 ",,,
-2010,State,Onshore,ND,," 37,796,234.57 ",,,
-2010,State,Onshore,OH,," 377,353.87 ",,,
-2010,State,Onshore,OK,," 2,780,065.83 ",,,
-2010,State,Onshore,OR,Deschutes County," 44,807.72 ",,,
-2010,State,Onshore,OR,Lake County," 31,673.75 ",,,
-2010,State,Onshore,OR,," 329,766.50 ",,,
-2010,State,Onshore,PA,," 87,323.92 ",,,
-2010,State,Onshore,SC,, 845.34 ,,,
-2010,State,Onshore,SD,," 767,510.03 ",,,
-2010,State,Onshore,TX,," 14,855,648.72 ",,,
-2010,State,Onshore,UT,Beaver County," 106,143.36 ",,,
-2010,State,Onshore,UT,Iron County," 19,416.00 ",,,
-2010,State,Onshore,UT,Juab County," 87,976.50 ",,,
-2010,State,Onshore,UT,Millard County," 61,250.87 ",,,
-2010,State,Onshore,UT,," 142,696,934.40 ",,,
-2010,State,Onshore,VA,," 58,960.77 ",,,
-2010,State,Onshore,WA,," 87,451.59 ",,,
-2010,State,Onshore,WV,," 404,088.98 ",,,
-2010,State,Onshore,WY,," 886,871,351.80 ",,,
-2010,State - GoMESA,Offshore,AL,Baldwin County," 75,122.19 ",,,
-2010,State - GoMESA,Offshore,AL,Mobile County," 87,669.34 ",,,
-2010,State - GoMESA,Offshore,AL,," 651,166.11 ",,,
-2010,State - GoMESA,Offshore,LA,Assumption Parish," 5,722.40 ",,,
-2010,State - GoMESA,Offshore,LA,Calcasieu Parish," 7,735.62 ",,,
-2010,State - GoMESA,Offshore,LA,Cameron Parish," 9,089.26 ",,,
-2010,State - GoMESA,Offshore,LA,Iberia Parish," 7,668.89 ",,,
-2010,State - GoMESA,Offshore,LA,Jefferson Parish," 15,363.74 ",,,
-2010,State - GoMESA,Offshore,LA,Lafourche Parish," 8,726.36 ",,,
-2010,State - GoMESA,Offshore,LA,Livingston Parish," 7,278.47 ",,,
-2010,State - GoMESA,Offshore,LA,Orleans Parish," 16,046.12 ",,,
-2010,State - GoMESA,Offshore,LA,Plaquemines Parish," 18,157.82 ",,,
-2010,State - GoMESA,Offshore,LA,St. Bernard Parish," 10,760.80 ",,,
-2010,State - GoMESA,Offshore,LA,St. Charles Parish," 6,936.71 ",,,
-2010,State - GoMESA,Offshore,LA,St. James Parish," 5,864.81 ",,,
-2010,State - GoMESA,Offshore,LA,St. John the Baptist Parish," 6,437.50 ",,,
-2010,State - GoMESA,Offshore,LA,St. Martin Parish," 6,129.41 ",,,
-2010,State - GoMESA,Offshore,LA,St. Mary Parish," 6,333.09 ",,,
-2010,State - GoMESA,Offshore,LA,St. Tammany Parish," 10,239.54 ",,,
-2010,State - GoMESA,Offshore,LA,Tangipahoa Parish," 7,626.95 ",,,
-2010,State - GoMESA,Offshore,LA,Terrebonne Parish," 11,765.82 ",,,
-2010,State - GoMESA,Offshore,LA,Vermilion Parish," 7,056.03 ",,,
-2010,State - GoMESA,Offshore,LA,," 699,757.37 ",,,
-2010,State - GoMESA,Offshore,MS,Hancock County," 26,659.93 ",,,
-2010,State - GoMESA,Offshore,MS,Harrison County," 57,583.51 ",,,
-2010,State - GoMESA,Offshore,MS,Jackson County," 63,212.96 ",,,
-2010,State - GoMESA,Offshore,MS,," 589,825.59 ",,,
-2010,State - GoMESA,Offshore,TX,Aransas County," 2,394.39 ",,,
-2010,State - GoMESA,Offshore,TX,Brazoria County," 3,756.84 ",,,
-2010,State - GoMESA,Offshore,TX,Calhoun County," 3,139.20 ",,,
-2010,State - GoMESA,Offshore,TX,Cameron County," 3,599.68 ",,,
-2010,State - GoMESA,Offshore,TX,Chambers County," 2,120.15 ",,,
-2010,State - GoMESA,Offshore,TX,Galveston County," 5,134.31 ",,,
-2010,State - GoMESA,Offshore,TX,Harris County," 11,774.30 ",,,
-2010,State - GoMESA,Offshore,TX,Jackson County," 1,656.06 ",,,
-2010,State - GoMESA,Offshore,TX,Jefferson County," 4,210.45 ",,,
-2010,State - GoMESA,Offshore,TX,Kenedy County," 3,369.39 ",,,
-2010,State - GoMESA,Offshore,TX,Kleberg County," 2,449.91 ",,,
-2010,State - GoMESA,Offshore,TX,Matagorda County," 4,402.36 ",,,
-2010,State - GoMESA,Offshore,TX,Nueces County," 3,266.84 ",,,
-2010,State - GoMESA,Offshore,TX,Orange County," 2,386.97 ",,,
-2010,State - GoMESA,Offshore,TX,Refugio County," 1,565.61 ",,,
-2010,State - GoMESA,Offshore,TX,San Patricio County," 1,679.72 ",,,
-2010,State - GoMESA,Offshore,TX,Victoria County," 1,806.20 ",,,
-2010,State - GoMESA,Offshore,TX,Willacy County," 2,049.09 ",,,
-2010,State - GoMESA,Offshore,TX,," 243,045.87 ",,,
-2010,State 8(g),Offshore,AL,," 7,951,467.51 ",,,
-2010,State 8(g),Offshore,AK,," 5,601,828.86 ",,,
-2010,State 8(g),Offshore,CA,," 6,388,718.03 ",,,
-2010,State 8(g),Offshore,FL,," 1,489.21 ",,,
-2010,State 8(g),Offshore,LA,," 22,605,430.51 ",,,
-2010,State 8(g),Offshore,MS,," 269,418.73 ",,,
-2010,State 8(g),Offshore,TX,," 3,968,196.56 ",,,
-2010,U.S. Treasury,Onshore,,," 607,810,866.00 ",,,
-2010,U.S. Treasury,Offshore,,," 3,907,952,116.65 ",,,
-2010,U.S. Treasury - GoMESA,Offshore,,," 1,154,615.35 ",,,
-2011,American Indian Tribes,Onshore,,," 538,344,246.90 ",,,
-2011,Historic Preservation Fund,Offshore,,," 150,000,000.00 ",,,
-2011,Land & Water Conservation Fund,Offshore,,," 891,870,938.50 ",,,
-2011,Land & Water Conservation Fund - GoMESA,Offshore,,," 104,666.34 ",,,
-2011,Reclamation,Onshore,,," 1,532,623,172.00 ",,,
-2011,State,Onshore,AL,," 4,792,841.65 ",,,
-2011,State,Onshore,AK,," 15,146,718.05 ",,,
-2011,State,Onshore,AZ,Greenlee County," 3,641.54 ",,,
-2011,State,Onshore,AZ,," 12,112.16 ",,,
-2011,State,Onshore,AR,," 4,034,632.05 ",,,
-2011,State,Onshore,CA,Imperial County," 39,377.20 ",,,
-2011,State,Onshore,CA,Inyo County," 147,979.11 ",,,
-2011,State,Onshore,CA,Lake County," 800,270.77 ",,,
-2011,State,Onshore,CA,Lassen County," 12,231.70 ",,,
-2011,State,Onshore,CA,Mendocino County, 750.00 ,,,
-2011,State,Onshore,CA,Mono County," 34,256.68 ",,,
-2011,State,Onshore,CA,Siskiyou County," 64,418.00 ",,,
-2011,State,Onshore,CA,Sonoma County," 1,108,974.78 ",,,
-2011,State,Onshore,CA,," 81,654,340.14 ",,,
-2011,State,Onshore,CO,Chaffee County," 7,800.00 ",,,
-2011,State,Onshore,CO,," 156,811,089.70 ",,,
-2011,State,Onshore,FL,," 233,488.07 ",,,
-2011,State,Onshore,ID,Bingham County, 133.64 ,,,
-2011,State,Onshore,ID,Blaine County, 404.50 ,,,
-2011,State,Onshore,ID,Bonneville County, 160.36 ,,,
-2011,State,Onshore,ID,Camas County, 305.50 ,,,
-2011,State,Onshore,ID,Caribou County, 750.50 ,,,
-2011,State,Onshore,ID,Cassia County," 12,640.75 ",,,
-2011,State,Onshore,ID,Washington County," 10,340.50 ",,,
-2011,State,Onshore,ID,," 4,629,448.97 ",,,
-2011,State,Onshore,IL,," 208,434.61 ",,,
-2011,State,Onshore,IN,," 4,419.87 ",,,
-2011,State,Onshore,KS,," 1,873,412.69 ",,,
-2011,State,Onshore,KY,," 313,472.83 ",,,
-2011,State,Onshore,LA,," 17,982,455.21 ",,,
-2011,State,Onshore,MI,," 450,500.84 ",,,
-2011,State,Onshore,MN,," 10,142.25 ",,,
-2011,State,Onshore,MS,," 1,099,777.24 ",,,
-2011,State,Onshore,MO,," 3,684,804.10 ",,,
-2011,State,Onshore,MT,," 43,124,550.84 ",,,
-2011,State,Onshore,NE,," 27,713.44 ",,,
-2011,State,Onshore,NV,Churchill County," 879,577.55 ",,,
-2011,State,Onshore,NV,Elko County," 41,644.61 ",,,
-2011,State,Onshore,NV,Esmeralda County," 73,612.30 ",,,
-2011,State,Onshore,NV,Eureka County," 16,863.14 ",,,
-2011,State,Onshore,NV,Humboldt County," 76,443.04 ",,,
-2011,State,Onshore,NV,Lander County," 71,646.19 ",,,
-2011,State,Onshore,NV,Lyon County," 6,626.15 ",,,
-2011,State,Onshore,NV,Mineral County," 64,330.92 ",,,
-2011,State,Onshore,NV,Nye County," 48,307.70 ",,,
-2011,State,Onshore,NV,Pershing County," 117,130.93 ",,,
-2011,State,Onshore,NV,Washoe County," 28,026.27 ",,,
-2011,State,Onshore,NV,White Pine County," 26,023.50 ",,,
-2011,State,Onshore,NV,," 8,344,555.81 ",,,
-2011,State,Onshore,NM,Dona Ana County, 160.93 ,,,
-2011,State,Onshore,NM,Hidalgo County," 7,037.75 ",,,
-2011,State,Onshore,NM,," 434,583,873.60 ",,,
-2011,State,Onshore,NC,, 158.00 ,,,
-2011,State,Onshore,ND,," 29,469,248.39 ",,,
-2011,State,Onshore,OH,," 323,228.75 ",,,
-2011,State,Onshore,OK,," 4,394,036.87 ",,,
-2011,State,Onshore,OR,Deschutes County," 41,652.25 ",,,
-2011,State,Onshore,OR,Hood River County," 2,028.00 ",,,
-2011,State,Onshore,OR,Lake County," 31,674.27 ",,,
-2011,State,Onshore,OR,," 379,662.54 ",,,
-2011,State,Onshore,PA,," 48,627.75 ",,,
-2011,State,Onshore,SC,," 1,015.19 ",,,
-2011,State,Onshore,SD,," 921,076.60 ",,,
-2011,State,Onshore,TN,, 99.00 ,,,
-2011,State,Onshore,TX,," 17,304,873.36 ",,,
-2011,State,Onshore,UT,Beaver County," 79,443.10 ",,,
-2011,State,Onshore,UT,Iron County," 1,267.50 ",,,
-2011,State,Onshore,UT,Juab County," 37,913.74 ",,,
-2011,State,Onshore,UT,Millard County," 44,269.11 ",,,
-2011,State,Onshore,UT,," 149,439,229.30 ",,,
-2011,State,Onshore,VA,," 74,219.90 ",,,
-2011,State,Onshore,WA,Whatcom County," 2,109.25 ",,,
-2011,State,Onshore,WA,," 27,058.64 ",,,
-2011,State,Onshore,WV,," 350,541.45 ",,,
-2011,State,Onshore,WY,," 971,498,012.30 ",,,
-2011,State - GoMESA,Offshore,AL,Baldwin County," 23,744.75 ",,,
-2011,State - GoMESA,Offshore,AL,Mobile County," 27,710.68 ",,,
-2011,State - GoMESA,Offshore,AL,," 205,821.74 ",,,
-2011,State - GoMESA,Offshore,LA,Assumption Parish," 1,821.38 ",,,
-2011,State - GoMESA,Offshore,LA,Calcasieu Parish," 2,462.17 ",,,
-2011,State - GoMESA,Offshore,LA,Cameron Parish," 2,893.01 ",,,
-2011,State - GoMESA,Offshore,LA,Iberia Parish," 2,440.93 ",,,
-2011,State - GoMESA,Offshore,LA,Jefferson Parish," 4,890.11 ",,,
-2011,State - GoMESA,Offshore,LA,Lafourche Parish," 2,777.51 ",,,
-2011,State - GoMESA,Offshore,LA,Livingston Parish," 2,316.66 ",,,
-2011,State - GoMESA,Offshore,LA,Orleans Parish," 5,107.31 ",,,
-2011,State - GoMESA,Offshore,LA,Plaquemines Parish," 5,779.44 ",,,
-2011,State - GoMESA,Offshore,LA,St. Bernard Parish," 3,425.05 ",,,
-2011,State - GoMESA,Offshore,LA,St. Charles Parish," 2,207.88 ",,,
-2011,State - GoMESA,Offshore,LA,St. James Parish," 1,866.71 ",,,
-2011,State - GoMESA,Offshore,LA,St. John the Baptist Parish," 2,048.99 ",,,
-2011,State - GoMESA,Offshore,LA,St. Martin Parish," 1,950.92 ",,,
-2011,State - GoMESA,Offshore,LA,St. Mary Parish," 2,015.75 ",,,
-2011,State - GoMESA,Offshore,LA,St. Tammany Parish," 3,259.14 ",,,
-2011,State - GoMESA,Offshore,LA,Tangipahoa Parish," 2,427.58 ",,,
-2011,State - GoMESA,Offshore,LA,Terrebonne Parish," 3,744.93 ",,,
-2011,State - GoMESA,Offshore,LA,Vermilion Parish," 2,245.85 ",,,
-2011,State - GoMESA,Offshore,LA,," 222,725.30 ",,,
-2011,State - GoMESA,Offshore,MS,Hancock County," 8,445.10 ",,,
-2011,State - GoMESA,Offshore,MS,Harrison County," 18,240.81 ",,,
-2011,State - GoMESA,Offshore,MS,Jackson County," 20,024.05 ",,,
-2011,State - GoMESA,Offshore,MS,," 186,839.86 ",,,
-2011,State - GoMESA,Offshore,TX,Aransas County, 762.34 ,,,
-2011,State - GoMESA,Offshore,TX,Brazoria County," 1,196.12 ",,,
-2011,State - GoMESA,Offshore,TX,Calhoun County, 999.48 ,,,
-2011,State - GoMESA,Offshore,TX,Cameron County," 1,146.09 ",,,
-2011,State - GoMESA,Offshore,TX,Chambers County, 675.03 ,,,
-2011,State - GoMESA,Offshore,TX,Galveston County," 1,634.69 ",,,
-2011,State - GoMESA,Offshore,TX,Harris County," 3,748.76 ",,,
-2011,State - GoMESA,Offshore,TX,Jackson County, 527.27 ,,,
-2011,State - GoMESA,Offshore,TX,Jefferson County," 1,340.54 ",,,
-2011,State - GoMESA,Offshore,TX,Kenedy County," 1,072.77 ",,,
-2011,State - GoMESA,Offshore,TX,Kleberg County, 780.01 ,,,
-2011,State - GoMESA,Offshore,TX,Matagorda County," 1,401.65 ",,,
-2011,State - GoMESA,Offshore,TX,Nueces County," 1,040.11 ",,,
-2011,State - GoMESA,Offshore,TX,Orange County, 759.98 ,,,
-2011,State - GoMESA,Offshore,TX,Refugio County, 498.47 ,,,
-2011,State - GoMESA,Offshore,TX,San Patricio County, 534.80 ,,,
-2011,State - GoMESA,Offshore,TX,Victoria County, 575.07 ,,,
-2011,State - GoMESA,Offshore,TX,Willacy County, 652.40 ,,,
-2011,State - GoMESA,Offshore,TX,," 77,382.32 ",,,
-2011,State 8(g),Offshore,AL,," 5,720,171.32 ",,,
-2011,State 8(g),Offshore,AK,," 5,128,697.35 ",,,
-2011,State 8(g),Offshore,CA,," 7,249,128.74 ",,,
-2011,State 8(g),Offshore,FL,," 1,449.94 ",,,
-2011,State 8(g),Offshore,LA,," 20,687,371.40 ",,,
-2011,State 8(g),Offshore,MA,," 23,835.06 ",,,
-2011,State 8(g),Offshore,MS,," 184,527.75 ",,,
-2011,State 8(g),Offshore,TX,," 2,001,314.07 ",,,
-2011,U.S. Treasury,Onshore,,," 655,649,401.00 ",,,
-2011,U.S. Treasury,Offshore,,," 5,394,172,814.65 ",,,
-2011,U.S. Treasury - GoMESA,Offshore,,," 418,665.35 ",,,
-2012,American Indian Tribes,Onshore,,," 717,556,925.10 ",,,
-2012,Historic Preservation Fund,Offshore,,," 150,000,000.00 ",,,
-2012,Land & Water Conservation Fund,Offshore,,," 897,036,446.50 ",,,
-2012,Land & Water Conservation Fund - GoMESA,Offshore,,," 104,666.34 ",,,
-2012,Other,Offshore,,," 205,493,260.07 ",,,
-2012,Other,Onshore,,," 214,991,515.77 ",,,
-2012,Reclamation,Onshore,,," 1,646,314,405.00 ",,,
-2012,State,Onshore,AL,," 4,154,511.68 ",,,
-2012,State,Onshore,AK,," 13,470,141.43 ",,,
-2012,State,Onshore,AZ,Greenlee County," 2,093.02 ",,,
-2012,State,Onshore,AZ,," 12,078.42 ",,,
-2012,State,Onshore,AR,," 2,067,325.96 ",,,
-2012,State,Onshore,CA,Imperial County," 16,657.36 ",,,
-2012,State,Onshore,CA,Inyo County," 168,266.86 ",,,
-2012,State,Onshore,CA,Lake County," 760,858.32 ",,,
-2012,State,Onshore,CA,Lassen County," 14,229.55 ",,,
-2012,State,Onshore,CA,Mendocino County, 750.00 ,,,
-2012,State,Onshore,CA,Mono County," 23,512.05 ",,,
-2012,State,Onshore,CA,Siskiyou County," 30,561.25 ",,,
-2012,State,Onshore,CA,Sonoma County," 1,009,786.30 ",,,
-2012,State,Onshore,CA,," 101,048,217.60 ",,,
-2012,State,Onshore,CO,Chaffee County, 400.00 ,,,
-2012,State,Onshore,CO,," 157,818,984.80 ",,,
-2012,State,Onshore,FL,," 540,929.07 ",,,
-2012,State,Onshore,ID,Bingham County, 33.41 ,,,
-2012,State,Onshore,ID,Blaine County, 404.50 ,,,
-2012,State,Onshore,ID,Bonneville County, 40.09 ,,,
-2012,State,Onshore,ID,Camas County, 305.50 ,,,
-2012,State,Onshore,ID,Canyon County," 1,274.17 ",,,
-2012,State,Onshore,ID,Caribou County, 425.75 ,,,
-2012,State,Onshore,ID,Cassia County," 12,450.75 ",,,
-2012,State,Onshore,ID,Payette County," 42,269.32 ",,,
-2012,State,Onshore,ID,Washington County," 10,068.00 ",,,
-2012,State,Onshore,ID,," 4,538,888.79 ",,,
-2012,State,Onshore,IL,," 263,731.50 ",,,
-2012,State,Onshore,IN,," 4,416.74 ",,,
-2012,State,Onshore,KS,," 1,330,807.09 ",,,
-2012,State,Onshore,KY,," 485,939.20 ",,,
-2012,State,Onshore,LA,," 6,914,438.73 ",,,
-2012,State,Onshore,MI,," 330,883.97 ",,,
-2012,State,Onshore,MN,," 11,502.07 ",,,
-2012,State,Onshore,MS,," 2,598,118.52 ",,,
-2012,State,Onshore,MO,," 3,061,605.90 ",,,
-2012,State,Onshore,MT,," 47,257,456.15 ",,,
-2012,State,Onshore,NE,," 27,550.02 ",,,
-2012,State,Onshore,NV,Churchill County," 929,545.19 ",,,
-2012,State,Onshore,NV,Elko County," 30,004.86 ",,,
-2012,State,Onshore,NV,Esmeralda County," 58,738.15 ",,,
-2012,State,Onshore,NV,Eureka County," 14,251.34 ",,,
-2012,State,Onshore,NV,Humboldt County," 72,421.77 ",,,
-2012,State,Onshore,NV,Lander County," 70,723.46 ",,,
-2012,State,Onshore,NV,Lyon County," 8,249.00 ",,,
-2012,State,Onshore,NV,Mineral County," 33,249.02 ",,,
-2012,State,Onshore,NV,Nye County," 6,705.70 ",,,
-2012,State,Onshore,NV,Pershing County," 93,006.31 ",,,
-2012,State,Onshore,NV,Washoe County," 23,768.00 ",,,
-2012,State,Onshore,NV,White Pine County," 8,962.50 ",,,
-2012,State,Onshore,NV,," 10,435,757.48 ",,,
-2012,State,Onshore,NM,Dona Ana County," 1,442.30 ",,,
-2012,State,Onshore,NM,Hidalgo County," 4,669.82 ",,,
-2012,State,Onshore,NM,," 488,149,571.40 ",,,
-2012,State,Onshore,NC,, 158.00 ,,,
-2012,State,Onshore,ND,," 64,501,003.82 ",,,
-2012,State,Onshore,OH,," 284,145.25 ",,,
-2012,State,Onshore,OK,," 5,372,190.83 ",,,
-2012,State,Onshore,OR,Deschutes County," 39,725.25 ",,,
-2012,State,Onshore,OR,Hood River County," 2,028.00 ",,,
-2012,State,Onshore,OR,Lake County," 31,673.73 ",,,
-2012,State,Onshore,OR,," 343,200.92 ",,,
-2012,State,Onshore,PA,," 67,080.52 ",,,
-2012,State,Onshore,SC,," 1,390.68 ",,,
-2012,State,Onshore,SD,," 1,907,122.32 ",,,
-2012,State,Onshore,TX,," 7,726,719.25 ",,,
-2012,State,Onshore,UT,Beaver County," 77,219.88 ",,,
-2012,State,Onshore,UT,Iron County," 1,267.50 ",,,
-2012,State,Onshore,UT,Juab County," 74,910.35 ",,,
-2012,State,Onshore,UT,Millard County," 39,348.35 ",,,
-2012,State,Onshore,UT,," 164,410,238.00 ",,,
-2012,State,Onshore,VA,," 45,215.12 ",,,
-2012,State,Onshore,WA,Whatcom County," 2,109.25 ",,,
-2012,State,Onshore,WA,," 11,473.69 ",,,
-2012,State,Onshore,WV,," 235,293.96 ",,,
-2012,State,Onshore,WY,," 995,169,510.00 ",,,
-2012,State - GoMESA,Offshore,AL,Baldwin County," 8,824.32 ",,,
-2012,State - GoMESA,Offshore,AL,Mobile County," 9,830.34 ",,,
-2012,State - GoMESA,Offshore,AL,," 74,618.65 ",,,
-2012,State - GoMESA,Offshore,LA,Assumption Parish, 662.20 ,,,
-2012,State - GoMESA,Offshore,LA,Calcasieu Parish, 927.55 ,,,
-2012,State - GoMESA,Offshore,LA,Cameron Parish," 1,042.28 ",,,
-2012,State - GoMESA,Offshore,LA,Iberia Parish, 890.18 ,,,
-2012,State - GoMESA,Offshore,LA,Jefferson Parish," 1,749.89 ",,,
-2012,State - GoMESA,Offshore,LA,Lafourche Parish," 1,028.64 ",,,
-2012,State - GoMESA,Offshore,LA,Livingston Parish, 933.16 ,,,
-2012,State - GoMESA,Offshore,LA,Orleans Parish," 1,548.29 ",,,
-2012,State - GoMESA,Offshore,LA,Plaquemines Parish," 2,088.83 ",,,
-2012,State - GoMESA,Offshore,LA,St. Bernard Parish," 1,171.68 ",,,
-2012,State - GoMESA,Offshore,LA,St. Charles Parish, 815.26 ,,,
-2012,State - GoMESA,Offshore,LA,St. James Parish, 680.54 ,,,
-2012,State - GoMESA,Offshore,LA,St. John the Baptist Parish, 752.92 ,,,
-2012,State - GoMESA,Offshore,LA,St. Martin Parish, 719.41 ,,,
-2012,State - GoMESA,Offshore,LA,St. Mary Parish, 737.44 ,,,
-2012,State - GoMESA,Offshore,LA,St. Tammany Parish," 1,296.79 ",,,
-2012,State - GoMESA,Offshore,LA,Tangipahoa Parish, 936.39 ,,,
-2012,State - GoMESA,Offshore,LA,Terrebonne Parish," 1,382.90 ",,,
-2012,State - GoMESA,Offshore,LA,Vermilion Parish, 828.19 ,,,
-2012,State - GoMESA,Offshore,LA,," 80,770.15 ",,,
-2012,State - GoMESA,Offshore,MS,Hancock County," 3,063.89 ",,,
-2012,State - GoMESA,Offshore,MS,Harrison County," 6,545.16 ",,,
-2012,State - GoMESA,Offshore,MS,Jackson County," 7,326.68 ",,,
-2012,State - GoMESA,Offshore,MS,," 67,742.90 ",,,
-2012,State - GoMESA,Offshore,TX,Aransas County, 275.57 ,,,
-2012,State - GoMESA,Offshore,TX,Brazoria County, 442.20 ,,,
-2012,State - GoMESA,Offshore,TX,Calhoun County, 361.70 ,,,
-2012,State - GoMESA,Offshore,TX,Cameron County, 419.26 ,,,
-2012,State - GoMESA,Offshore,TX,Chambers County, 246.13 ,,,
-2012,State - GoMESA,Offshore,TX,Galveston County, 592.19 ,,,
-2012,State - GoMESA,Offshore,TX,Harris County," 1,387.74 ",,,
-2012,State - GoMESA,Offshore,TX,Jackson County, 190.43 ,,,
-2012,State - GoMESA,Offshore,TX,Jefferson County, 473.68 ,,,
-2012,State - GoMESA,Offshore,TX,Kenedy County, 389.09 ,,,
-2012,State - GoMESA,Offshore,TX,Kleberg County, 281.49 ,,,
-2012,State - GoMESA,Offshore,TX,Matagorda County, 506.13 ,,,
-2012,State - GoMESA,Offshore,TX,Nueces County, 369.17 ,,,
-2012,State - GoMESA,Offshore,TX,Orange County, 270.50 ,,,
-2012,State - GoMESA,Offshore,TX,Refugio County, 180.28 ,,,
-2012,State - GoMESA,Offshore,TX,San Patricio County, 189.95 ,,,
-2012,State - GoMESA,Offshore,TX,Victoria County, 205.15 ,,,
-2012,State - GoMESA,Offshore,TX,Willacy County, 236.22 ,,,
-2012,State - GoMESA,Offshore,TX,," 28,067.50 ",,,
-2012,State 8(g),Offshore,AL,," 3,701,753.59 ",,,
-2012,State 8(g),Offshore,AK,," 3,100,755.83 ",,,
-2012,State 8(g),Offshore,CA,," 8,545,265.51 ",,,
-2012,State 8(g),Offshore,FL,," 1,388.58 ",,,
-2012,State 8(g),Offshore,LA,," 19,765,177.22 ",,,
-2012,State 8(g),Offshore,MA,," 23,835.06 ",,,
-2012,State 8(g),Offshore,MS,," 129,441.43 ",,,
-2012,State 8(g),Offshore,TX,," 1,390,477.38 ",,,
-2012,U.S. Treasury,Onshore,,," 489,059,561.73 ",,,
-2012,U.S. Treasury - GoMESA,Offshore,,," 635,463.24 ",,,
-2012,U.S. Treasury,Offshore,,," 5,705,170,929.42 ",,,
-2013,American Indian Tribes,Onshore,,," 932,956,397.20 ",,,
-2013,Historic Preservation Fund,Offshore,,," 150,000,000.00 ",,,
-2013,Land & Water Conservation Fund,Offshore,,," 894,036,704.95 ",,,
-2013,Land & Water Conservation Fund - GoMESA,Offshore,,," 1,543,777.36 ",,,
-2013,Reclamation,Onshore,,," 1,592,181,337.00 ",,,
-2013,Other,Offshore,,," 228,785,871.95 ",,,
-2013,Other,Onshore,,," 168,544,944.88 ",,,
-2013,State,Onshore,AL,," 2,260,241.40 ",,,
-2013,State,Onshore,AK,," 15,695,140.06 ",,,
-2013,State,Onshore,AZ,," 35,279.91 ",,,
-2013,State,Onshore,AR,," 1,321,553.01 ",,,
-2013,State,Onshore,CA,Imperial County," 11,755.99 ",,,
-2013,State,Onshore,CA,Inyo County," 189,839.62 ",,,
-2013,State,Onshore,CA,Lake County," 802,134.56 ",,,
-2013,State,Onshore,CA,Lassen County," 17,110.64 ",,,
-2013,State,Onshore,CA,Mendocino County, 750.00 ,,,
-2013,State,Onshore,CA,Mono County," 51,852.41 ",,,
-2013,State,Onshore,CA,Siskiyou County," 17,386.39 ",,,
-2013,State,Onshore,CA,Sonoma County," 1,119,660.77 ",,,
-2013,State,Onshore,CA,," 91,606,664.37 ",,,
-2013,State,Onshore,CO,Chaffee County, 759.20 ,,,
-2013,State,Onshore,CO,Gunnison County," 13,873.91 ",,,
-2013,State,Onshore,CO,," 129,646,596.60 ",,,
-2013,State,Onshore,FL,," 654,638.77 ",,,
-2013,State,Onshore,ID,Bingham County, 31.71 ,,,
-2013,State,Onshore,ID,Blaine County, 404.50 ,,,
-2013,State,Onshore,ID,Bonneville County, 38.05 ,,,
-2013,State,Onshore,ID,Camas County, 305.50 ,,,
-2013,State,Onshore,ID,Canyon County, 518.22 ,,,
-2013,State,Onshore,ID,Caribou County, 102.73 ,,,
-2013,State,Onshore,ID,Cassia County," 9,308.18 ",,,
-2013,State,Onshore,ID,Payette County," 17,191.53 ",,,
-2013,State,Onshore,ID,Washington County," 9,554.53 ",,,
-2013,State,Onshore,ID,," 4,996,080.77 ",,,
-2013,State,Onshore,IL,," 211,968.09 ",,,
-2013,State,Onshore,IN,," 3,147.74 ",,,
-2013,State,Onshore,KS,," 1,214,098.87 ",,,
-2013,State,Onshore,KY,," 446,887.49 ",,,
-2013,State,Onshore,LA,," 2,607,490.43 ",,,
-2013,State,Onshore,MI,," 135,489.01 ",,,
-2013,State,Onshore,MN,," 23,305.30 ",,,
-2013,State,Onshore,MS,," 1,093,009.06 ",,,
-2013,State,Onshore,MO,," 2,974,766.51 ",,,
-2013,State,Onshore,MT,," 36,168,220.97 ",,,
-2013,State,Onshore,NE,," 26,734.53 ",,,
-2013,State,Onshore,NV,Churchill County," 533,630.47 ",,,
-2013,State,Onshore,NV,Elko County," 48,103.25 ",,,
-2013,State,Onshore,NV,Esmeralda County," 115,746.91 ",,,
-2013,State,Onshore,NV,Eureka County," 11,801.94 ",,,
-2013,State,Onshore,NV,Humboldt County," 61,582.00 ",,,
-2013,State,Onshore,NV,Lander County," 133,460.63 ",,,
-2013,State,Onshore,NV,Lyon County," 5,961.10 ",,,
-2013,State,Onshore,NV,Mineral County," 29,104.65 ",,,
-2013,State,Onshore,NV,Nye County," 15,979.85 ",,,
-2013,State,Onshore,NV,Pershing County," 73,530.04 ",,,
-2013,State,Onshore,NV,Washoe County," 30,322.43 ",,,
-2013,State,Onshore,NV,White Pine County," 12,474.84 ",,,
-2013,State,Onshore,NV,," 7,746,989.15 ",,,
-2013,State,Onshore,NM,Dona Ana County," 25,645.32 ",,,
-2013,State,Onshore,NM,Hidalgo County," 3,118.65 ",,,
-2013,State,Onshore,NM,," 478,732,193.90 ",,,
-2013,State,Onshore,NC,, 37.49 ,,,
-2013,State,Onshore,ND,," 90,290,490.48 ",,,
-2013,State,Onshore,OH,," 266,026.90 ",,,
-2013,State,Onshore,OK,," 4,283,474.02 ",,,
-2013,State,Onshore,OR,Deschutes County," 40,822.17 ",,,
-2013,State,Onshore,OR,Hood River County," 1,924.57 ",,,
-2013,State,Onshore,OR,Lake County," 29,463.61 ",,,
-2013,State,Onshore,OR,," 300,720.63 ",,,
-2013,State,Onshore,PA,," 69,968.21 ",,,
-2013,State,Onshore,SD,," 1,036,873.76 ",,,
-2013,State,Onshore,TX,," 15,771,654.85 ",,,
-2013,State,Onshore,UT,Beaver County," 74,086.89 ",,,
-2013,State,Onshore,UT,Iron County," 1,202.86 ",,,
-2013,State,Onshore,UT,Juab County," 46,643.82 ",,,
-2013,State,Onshore,UT,Millard County," 37,341.58 ",,,
-2013,State,Onshore,UT,," 138,126,632.30 ",,,
-2013,State,Onshore,VA,," 42,863.38 ",,,
-2013,State,Onshore,WA,Whatcom County," 2,001.68 ",,,
-2013,State,Onshore,WA,," 4,651.50 ",,,
-2013,State,Onshore,WV,," 163,547.46 ",,,
-2013,State,Onshore,WY,," 932,475,423.90 ",,,
-2013,State - GoMESA,Offshore,AL,Baldwin County," 8,824.32 ",,,
-2013,State - GoMESA,Offshore,AL,Mobile County," 9,830.34 ",,,
-2013,State - GoMESA,Offshore,AL,," 69,861.71 ",,,
-2013,State - GoMESA,Offshore,LA,Assumption Parish, 662.20 ,,,
-2013,State - GoMESA,Offshore,LA,Calcasieu Parish, 927.55 ,,,
-2013,State - GoMESA,Offshore,LA,Cameron Parish," 1,042.28 ",,,
-2013,State - GoMESA,Offshore,LA,Iberia Parish, 890.18 ,,,
-2013,State - GoMESA,Offshore,LA,Jefferson Parish," 1,749.89 ",,,
-2013,State - GoMESA,Offshore,LA,Lafourche Parish," 1,028.64 ",,,
-2013,State - GoMESA,Offshore,LA,Livingston Parish, 933.16 ,,,
-2013,State - GoMESA,Offshore,LA,Orleans Parish," 1,548.29 ",,,
-2013,State - GoMESA,Offshore,LA,Plaquemines Parish," 2,088.83 ",,,
-2013,State - GoMESA,Offshore,LA,St. Bernard Parish," 1,171.68 ",,,
-2013,State - GoMESA,Offshore,LA,St. Charles Parish, 815.26 ,,,
-2013,State - GoMESA,Offshore,LA,St. James Parish, 680.54 ,,,
-2013,State - GoMESA,Offshore,LA,St. John the Baptist Parish, 752.92 ,,,
-2013,State - GoMESA,Offshore,LA,St. Martin Parish, 719.41 ,,,
-2013,State - GoMESA,Offshore,LA,St. Mary Parish, 737.44 ,,,
-2013,State - GoMESA,Offshore,LA,St. Tammany Parish," 1,296.79 ",,,
-2013,State - GoMESA,Offshore,LA,Tangipahoa Parish, 936.39 ,,,
-2013,State - GoMESA,Offshore,LA,Terrebonne Parish," 1,382.90 ",,,
-2013,State - GoMESA,Offshore,LA,Vermilion Parish, 828.19 ,,,
-2013,State - GoMESA,Offshore,LA,," 75,621.03 ",,,
-2013,State - GoMESA,Offshore,MS,Hancock County," 3,063.89 ",,,
-2013,State - GoMESA,Offshore,MS,Harrison County," 6,545.16 ",,,
-2013,State - GoMESA,Offshore,MS,Jackson County," 7,326.68 ",,,
-2013,State - GoMESA,Offshore,MS,," 63,424.29 ",,,
-2013,State - GoMESA,Offshore,TX,Aransas County, 275.57 ,,,
-2013,State - GoMESA,Offshore,TX,Brazoria County, 442.20 ,,,
-2013,State - GoMESA,Offshore,TX,Calhoun County, 361.70 ,,,
-2013,State - GoMESA,Offshore,TX,Cameron County, 419.26 ,,,
-2013,State - GoMESA,Offshore,TX,Chambers County, 246.13 ,,,
-2013,State - GoMESA,Offshore,TX,Galveston County, 592.19 ,,,
-2013,State - GoMESA,Offshore,TX,Harris County," 1,387.74 ",,,
-2013,State - GoMESA,Offshore,TX,Jackson County, 190.43 ,,,
-2013,State - GoMESA,Offshore,TX,Jefferson County, 473.68 ,,,
-2013,State - GoMESA,Offshore,TX,Kenedy County, 389.09 ,,,
-2013,State - GoMESA,Offshore,TX,Kleberg County, 281.49 ,,,
-2013,State - GoMESA,Offshore,TX,Matagorda County, 506.13 ,,,
-2013,State - GoMESA,Offshore,TX,Nueces County, 369.17 ,,,
-2013,State - GoMESA,Offshore,TX,Orange County, 270.50 ,,,
-2013,State - GoMESA,Offshore,TX,Refugio County, 180.28 ,,,
-2013,State - GoMESA,Offshore,TX,San Patricio County, 189.95 ,,,
-2013,State - GoMESA,Offshore,TX,Victoria County, 205.15 ,,,
-2013,State - GoMESA,Offshore,TX,Willacy County, 236.22 ,,,
-2013,State - GoMESA,Offshore,TX,," 26,278.21 ",,,
-2013,State 8(g),Offshore,AL,," 3,703,358.16 ",,,
-2013,State 8(g),Offshore,AK,," 2,940,961.63 ",,,
-2013,State 8(g),Offshore,CA,," 8,455,415.31 ",,,
-2013,State 8(g),Offshore,FL,," 1,388.58 ",,,
-2013,State 8(g),Offshore,LA,," 24,533,076.28 ",,,
-2013,State 8(g),Offshore,MA,," 23,835.06 ",,,
-2013,State 8(g),Offshore,MS,," 114,066.00 ",,,
-2013,State 8(g),Offshore,TX,," 869,340.61 ",,,
-2013,U.S. Treasury,Onshore,,," 490,695,402.18 ",,,
-2013,U.S. Treasury - GoMESA,Offshore,,," 539,623.82 ",,,
-2013,U.S. Treasury,Offshore,,," 7,760,122,579.23 ",,,
-2014,American Indian Tribes,Onshore,,," 1,146,119,618.68 ",,,
-2014,Historic Preservation Fund,Offshore,,," 150,000,000.00 ",,,
-2014,Land & Water Conservation Fund,Offshore,,," 894,379,939.88 ",,,
-2014,Land & Water Conservation Fund - GoMESA,Offshore,,," 877,818.12 ",,,
-2014,Other,Offshore,,," 220,518,478.92 ",,,
-2014,Other,Onshore,,," 194,422,815.68 ",,,
-2014,Reclamation,Onshore,,," 1,766,192,706.99 ",,,
-2014,State,Onshore,AL,," 1,821,119.50 ",,,
-2014,State,Onshore,AK,," 17,624,834.91 ",,,
-2014,State,Onshore,AZ,," 17,821.10 ",,,
-2014,State,Onshore,AR,," 1,862,042.11 ",,,
-2014,State,Onshore,CA,Imperial County," 44,286.46 ",,,
-2014,State,Onshore,CA,Inyo County," 235,502.53 ",,,
-2014,State,Onshore,CA,Lake County," 959,019.64 ",,,
-2014,State,Onshore,CA,Lassen County," 15,690.30 ",,,
-2014,State,Onshore,CA,Mendocino County, 690.00 ,,,
-2014,State,Onshore,CA,Mono County," 68,038.93 ",,,
-2014,State,Onshore,CA,Siskiyou County," 18,748.48 ",,,
-2014,State,Onshore,CA,Sonoma County," 1,315,200.99 ",,,
-2014,State,Onshore,CA,," 90,827,274.46 ",,,
-2014,State,Onshore,CO,Gunnison County," 6,559.97 ",,,
-2014,State,Onshore,CO,," 168,751,035.50 ",,,
-2014,State,Onshore,FL,," 36,067.94 ",,,
-2014,State,Onshore,ID,Blaine County, 354.75 ,,,
-2014,State,Onshore,ID,Camas County, 267.92 ,,,
-2014,State,Onshore,ID,Canyon County, 506.75 ,,,
-2014,State,Onshore,ID,Cassia County," 9,372.70 ",,,
-2014,State,Onshore,ID,Payette County," 17,735.00 ",,,
-2014,State,Onshore,ID,Washington County," 9,856.57 ",,,
-2014,State,Onshore,ID,," 5,339,028.39 ",,,
-2014,State,Onshore,IL,," 170,753.84 ",,,
-2014,State,Onshore,IN,," 6,482.09 ",,,
-2014,State,Onshore,KS,," 1,354,119.71 ",,,
-2014,State,Onshore,KY,," 88,263.10 ",,,
-2014,State,Onshore,LA,," 3,417,219.59 ",,,
-2014,State,Onshore,MI,," 343,236.59 ",,,
-2014,State,Onshore,MN,," 17,701.19 ",,,
-2014,State,Onshore,MS,," 1,170,853.22 ",,,
-2014,State,Onshore,MO,," 2,242,480.93 ",,,
-2014,State,Onshore,MT,," 37,718,220.78 ",,,
-2014,State,Onshore,NE,," 38,769.95 ",,,
-2014,State,Onshore,NV,Churchill County," 583,105.89 ",,,
-2014,State,Onshore,NV,Elko County," 38,158.10 ",,,
-2014,State,Onshore,NV,Esmeralda County," 84,830.78 ",,,
-2014,State,Onshore,NV,Eureka County," 12,001.37 ",,,
-2014,State,Onshore,NV,Humboldt County," 57,885.94 ",,,
-2014,State,Onshore,NV,Lander County," 151,695.40 ",,,
-2014,State,Onshore,NV,Lyon County," 6,666.93 ",,,
-2014,State,Onshore,NV,Mineral County," 57,680.15 ",,,
-2014,State,Onshore,NV,Nye County, 683.41 ,,,
-2014,State,Onshore,NV,Pershing County," 55,139.81 ",,,
-2014,State,Onshore,NV,Washoe County," 88,724.27 ",,,
-2014,State,Onshore,NV,White Pine County," 1,537.63 ",,,
-2014,State,Onshore,NV,," 7,206,706.10 ",,,
-2014,State,Onshore,NM,Dona Ana County," 6,653.50 ",,,
-2014,State,Onshore,NM,Hidalgo County," 3,217.24 ",,,
-2014,State,Onshore,NM,," 579,084,340.27 ",,,
-2014,State,Onshore,NC,, 109.97 ,,,
-2014,State,Onshore,ND,," 68,413,590.60 ",,,
-2014,State,Onshore,OH,," 265,854.57 ",,,
-2014,State,Onshore,OK,," 5,353,242.11 ",,,
-2014,State,Onshore,OR,Deschutes County," 41,041.69 ",,,
-2014,State,Onshore,OR,Hood River County, 103.43 ,,,
-2014,State,Onshore,OR,Lake County," 21,856.48 ",,,
-2014,State,Onshore,OR,," 287,703.39 ",,,
-2014,State,Onshore,PA,," 73,003.13 ",,,
-2014,State,Onshore,SC,," 2,076.64 ",,,
-2014,State,Onshore,SD,," 1,333,210.69 ",,,
-2014,State,Onshore,TX,," 10,730,021.17 ",,,
-2014,State,Onshore,UT,Beaver County," 103,181.68 ",,,
-2014,State,Onshore,UT,Iron County," 1,176.24 ",,,
-2014,State,Onshore,UT,Juab County," 30,635.52 ",,,
-2014,State,Onshore,UT,Millard County," 37,656.00 ",,,
-2014,State,Onshore,UT,," 170,644,905.07 ",,,
-2014,State,Onshore,VA,," 52,625.59 ",,,
-2014,State,Onshore,WA,Whatcom County," 2,064.95 ",,,
-2014,State,Onshore,WA,," 4,798.53 ",,,
-2014,State,Onshore,WV,," 322,061.69 ",,,
-2014,State,Onshore,WY,," 1,007,269,375.47 ",,,
-2014,State - GoMESA,Offshore,AL,Baldwin County," 118,220.48 ",,,
-2014,State - GoMESA,Offshore,AL,Mobile County," 131,698.37 ",,,
-2014,State - GoMESA,Offshore,AL,," 1,004,432.36 ",,,
-2014,State - GoMESA,Offshore,LA,Assumption Parish," 9,139.78 ",,,
-2014,State - GoMESA,Offshore,LA,Calcasieu Parish," 12,802.07 ",,,
-2014,State - GoMESA,Offshore,LA,Cameron Parish," 14,385.55 ",,,
-2014,State - GoMESA,Offshore,LA,Iberia Parish," 12,286.24 ",,,
-2014,State - GoMESA,Offshore,LA,Jefferson Parish," 24,152.12 ",,,
-2014,State - GoMESA,Offshore,LA,Lafourche Parish," 14,197.32 ",,,
-2014,State - GoMESA,Offshore,LA,Livingston Parish," 12,879.51 ",,,
-2014,State - GoMESA,Offshore,LA,Orleans Parish," 21,369.55 ",,,
-2014,State - GoMESA,Offshore,LA,Plaquemines Parish," 28,830.17 ",,,
-2014,State - GoMESA,Offshore,LA,St. Bernard Parish," 16,171.64 ",,,
-2014,State - GoMESA,Offshore,LA,St. Charles Parish," 11,252.28 ",,,
-2014,State - GoMESA,Offshore,LA,St. James Parish," 9,392.78 ",,,
-2014,State - GoMESA,Offshore,LA,St. John the Baptist Parish," 10,391.78 ",,,
-2014,State - GoMESA,Offshore,LA,St. Martin Parish," 9,929.26 ",,,
-2014,State - GoMESA,Offshore,LA,St. Mary Parish," 10,178.22 ",,,
-2014,State - GoMESA,Offshore,LA,St. Tammany Parish," 17,898.31 ",,,
-2014,State - GoMESA,Offshore,LA,Tangipahoa Parish," 12,924.07 ",,,
-2014,State - GoMESA,Offshore,LA,Terrebonne Parish," 19,086.81 ",,,
-2014,State - GoMESA,Offshore,LA,Vermilion Parish," 11,430.77 ",,,
-2014,State - GoMESA,Offshore,LA,," 1,119,942.08 ",,,
-2014,State - GoMESA,Offshore,MS,Hancock County," 41,496.66 ",,,
-2014,State - GoMESA,Offshore,MS,Harrison County," 88,646.08 ",,,
-2014,State - GoMESA,Offshore,MS,Jackson County," 99,230.87 ",,,
-2014,State - GoMESA,Offshore,MS,," 921,813.05 ",,,
-2014,State - GoMESA,Offshore,TX,Aransas County," 3,863.71 ",,,
-2014,State - GoMESA,Offshore,TX,Brazoria County," 6,199.97 ",,,
-2014,State - GoMESA,Offshore,TX,Calhoun County," 5,071.24 ",,,
-2014,State - GoMESA,Offshore,TX,Cameron County," 5,878.27 ",,,
-2014,State - GoMESA,Offshore,TX,Chambers County," 3,450.97 ",,,
-2014,State - GoMESA,Offshore,TX,Galveston County," 8,302.87 ",,,
-2014,State - GoMESA,Offshore,TX,Harris County," 19,457.01 ",,,
-2014,State - GoMESA,Offshore,TX,Jackson County," 2,670.01 ",,,
-2014,State - GoMESA,Offshore,TX,Jefferson County," 6,641.24 ",,,
-2014,State - GoMESA,Offshore,TX,Kenedy County," 5,455.23 ",,,
-2014,State - GoMESA,Offshore,TX,Kleberg County," 3,946.64 ",,,
-2014,State - GoMESA,Offshore,TX,Matagorda County," 7,096.33 ",,,
-2014,State - GoMESA,Offshore,TX,Nueces County," 5,176.04 ",,,
-2014,State - GoMESA,Offshore,TX,Orange County," 3,792.61 ",,,
-2014,State - GoMESA,Offshore,TX,Refugio County," 2,527.66 ",,,
-2014,State - GoMESA,Offshore,TX,San Patricio County," 2,663.18 ",,,
-2014,State - GoMESA,Offshore,TX,Victoria County," 2,876.32 ",,,
-2014,State - GoMESA,Offshore,TX,Willacy County," 3,311.91 ",,,
-2014,State - GoMESA,Offshore,TX,," 395,314.02 ",,,
-2014,State 8(g),Offshore,AL,," 3,932,082.07 ",,,
-2014,State 8(g),Offshore,AK,," 2,519,780.45 ",,,
-2014,State 8(g),Offshore,CA,," 6,985,664.23 ",,,
-2014,State 8(g),Offshore,FL,," 2,188.52 ",,,
-2014,State 8(g),Offshore,LA,," 19,466,649.01 ",,,
-2014,State 8(g),Offshore,MA,," 23,835.06 ",,,
-2014,State 8(g),Offshore,MS,," 138,274.04 ",,,
-2014,State 8(g),Offshore,TX,," 1,032,760.07 ",,,
-2014,U.S. Treasury,Offshore,,," 6,303,362,577.86 ",,,
-2014,U.S. Treasury,Onshore,,," 551,361,445.35 ",,,
-2014,U.S. Treasury - GoMESA,Offshore,,," 625,237.05 ",,,
-2015,American Indian Tribes,Onshore,,," 852,729,350.94 ",,,
-2015,Historic Preservation Fund,Offshore,,," 150,000,000.00 ",,,
-2015,Land & Water Conservation Fund,Offshore,,," 888,459,462.86 ",,,
-2015,Land & Water Conservation Fund - GoMESA,Offshore,,," 95,097.14 ",,,
-2015,Other,Offshore,,," 200,739,928.85 ",,,
-2015,Other,Onshore,,," 153,527,706.74 ",,,
-2015,Reclamation,Onshore,,," 1,398,152,074.75 ",,,
-2015,State,Onshore,AL,," 641,237.32 ",,,
-2015,State,Onshore,AK,," 16,200,908.90 ",,,
-2015,State,Onshore,AZ,," 14,769.24 ",,,
-2015,State,Onshore,AR,," 1,375,212.41 ",,,
-2015,State,Onshore,CA,Imperial County," 39,753.45 ",,,
-2015,State,Onshore,CA,Inyo County," 158,775.60 ",,,
-2015,State,Onshore,CA,Lake County," 883,150.28 ",,,
-2015,State,Onshore,CA,Lassen County," 12,870.01 ",,,
-2015,State,Onshore,CA,Mendocino County, 749.25 ,,,
-2015,State,Onshore,CA,Mono County," 74,302.43 ",,,
-2015,State,Onshore,CA,Siskiyou County," 69,485.57 ",,,
-2015,State,Onshore,CA,Sonoma County," 1,178,014.82 ",,,
-2015,State,Onshore,CA,," 58,312,285.38 ",,,
-2015,State,Onshore,CO,Gunnison County," 6,259.24 ",,,
-2015,State,Onshore,CO,," 123,854,763.05 ",,,
-2015,State,Onshore,FL,," 36,855.27 ",,,
-2015,State,Onshore,ID,Blaine County, 29.12 ,,,
-2015,State,Onshore,ID,Camas County, 22.00 ,,,
-2015,State,Onshore,ID,Canyon County, 545.53 ,,,
-2015,State,Onshore,ID,Cassia County," 8,317.56 ",,,
-2015,State,Onshore,ID,Payette County," 18,097.31 ",,,
-2015,State,Onshore,ID,Washington County," 9,300.11 ",,,
-2015,State,Onshore,ID,," 6,934,831.94 ",,,
-2015,State,Onshore,IL,," 78,438.77 ",,,
-2015,State,Onshore,IN,," 5,403.01 ",,,
-2015,State,Onshore,KS,," 695,040.78 ",,,
-2015,State,Onshore,KY,," 72,699.52 ",,,
-2015,State,Onshore,LA,," 1,734,869.30 ",,,
-2015,State,Onshore,MI,," 216,504.06 ",,,
-2015,State,Onshore,MN,," 13,854.36 ",,,
-2015,State,Onshore,MS,," 754,049.98 ",,,
-2015,State,Onshore,MO,," 2,589,888.91 ",,,
-2015,State,Onshore,MT,," 33,984,475.53 ",,,
-2015,State,Onshore,NE,," 14,539.04 ",,,
-2015,State,Onshore,NV,Churchill County," 531,819.50 ",,,
-2015,State,Onshore,NV,Elko County," 27,161.97 ",,,
-2015,State,Onshore,NV,Esmeralda County," 44,689.84 ",,,
-2015,State,Onshore,NV,Eureka County," 14,582.53 ",,,
-2015,State,Onshore,NV,Humboldt County," 59,606.67 ",,,
-2015,State,Onshore,NV,Lander County," 194,372.30 ",,,
-2015,State,Onshore,NV,Lyon County," 8,267.00 ",,,
-2015,State,Onshore,NV,Mineral County," 87,876.64 ",,,
-2015,State,Onshore,NV,Nye County, 172.80 ,,,
-2015,State,Onshore,NV,Pershing County," 40,745.16 ",,,
-2015,State,Onshore,NV,Washoe County," 47,821.23 ",,,
-2015,State,Onshore,NV,White Pine County, 933.56 ,,,
-2015,State,Onshore,NV,," 4,922,434.91 ",,,
-2015,State,Onshore,NM,Dona Ana County," 8,274.87 ",,,
-2015,State,Onshore,NM,Hidalgo County," 4,041.99 ",,,
-2015,State,Onshore,NM,," 496,031,109.49 ",,,
-2015,State,Onshore,NC,, 109.85 ,,,
-2015,State,Onshore,ND,," 47,164,776.69 ",,,
-2015,State,Onshore,OH,," 162,664.19 ",,,
-2015,State,Onshore,OK,," 4,850,761.05 ",,,
-2015,State,Onshore,OR,Deschutes County," 46,701.38 ",,,
-2015,State,Onshore,OR,Lake County," 16,427.62 ",,,
-2015,State,Onshore,OR,," 124,590.54 ",,,
-2015,State,Onshore,PA,," 35,842.17 ",,,
-2015,State,Onshore,SC,, 514.63 ,,,
-2015,State,Onshore,SD,," 1,303,351.30 ",,,
-2015,State,Onshore,TX,," 6,211,317.65 ",,,
-2015,State,Onshore,UT,Beaver County," 140,069.51 ",,,
-2015,State,Onshore,UT,Iron County, 250.47 ,,,
-2015,State,Onshore,UT,Juab County," 2,794.23 ",,,
-2015,State,Onshore,UT,Millard County," 26,261.59 ",,,
-2015,State,Onshore,UT,," 116,197,167.49 ",,,
-2015,State,Onshore,VA,," 48,958.82 ",,,
-2015,State,Onshore,WA,Whatcom County," 2,261.12 ",,,
-2015,State,Onshore,WA,," 4,049.41 ",,,
-2015,State,Onshore,WV,," 225,605.85 ",,,
-2015,State,Onshore,WY,," 885,980,925.49 ",,,
-2015,State - GoMESA,Offshore,AL,Baldwin County," 61,612.41 ",,,
-2015,State - GoMESA,Offshore,AL,Mobile County," 71,740.22 ",,,
-2015,State - GoMESA,Offshore,AL,," 533,410.48 ",,,
-2015,State - GoMESA,Offshore,LA,Assumption Parish," 5,356.73 ",,,
-2015,State - GoMESA,Offshore,LA,Calcasieu Parish," 7,497.63 ",,,
-2015,State - GoMESA,Offshore,LA,Cameron Parish," 8,432.10 ",,,
-2015,State - GoMESA,Offshore,LA,Iberia Parish," 7,200.31 ",,,
-2015,State - GoMESA,Offshore,LA,Jefferson Parish," 14,161.98 ",,,
-2015,State - GoMESA,Offshore,LA,Lafourche Parish," 8,319.53 ",,,
-2015,State - GoMESA,Offshore,LA,Livingston Parish," 7,532.76 ",,,
-2015,State - GoMESA,Offshore,LA,Orleans Parish," 12,573.04 ",,,
-2015,State - GoMESA,Offshore,LA,Plaquemines Parish," 16,903.67 ",,,
-2015,State - GoMESA,Offshore,LA,St. Bernard Parish," 9,484.98 ",,,
-2015,State - GoMESA,Offshore,LA,St. Charles Parish," 6,592.88 ",,,
-2015,State - GoMESA,Offshore,LA,St. James Parish," 5,504.60 ",,,
-2015,State - GoMESA,Offshore,LA,St. John the Baptist Parish," 6,087.90 ",,,
-2015,State - GoMESA,Offshore,LA,St. Martin Parish," 5,817.85 ",,,
-2015,State - GoMESA,Offshore,LA,St. Mary Parish," 5,964.74 ",,,
-2015,State - GoMESA,Offshore,LA,St. Tammany Parish," 10,468.25 ",,,
-2015,State - GoMESA,Offshore,LA,Tangipahoa Parish," 7,564.76 ",,,
-2015,State - GoMESA,Offshore,LA,Terrebonne Parish," 11,184.86 ",,,
-2015,State - GoMESA,Offshore,LA,Vermilion Parish," 6,697.22 ",,,
-2015,State - GoMESA,Offshore,LA,," 653,383.13 ",,,
-2015,State - GoMESA,Offshore,MS,Hancock County," 24,113.46 ",,,
-2015,State - GoMESA,Offshore,MS,Harrison County," 51,494.02 ",,,
-2015,State - GoMESA,Offshore,MS,Jackson County," 57,592.91 ",,,
-2015,State - GoMESA,Offshore,MS,," 532,801.53 ",,,
-2015,State - GoMESA,Offshore,TX,Aransas County," 2,290.95 ",,,
-2015,State - GoMESA,Offshore,TX,Brazoria County," 3,676.52 ",,,
-2015,State - GoMESA,Offshore,TX,Calhoun County," 3,007.50 ",,,
-2015,State - GoMESA,Offshore,TX,Cameron County," 3,482.69 ",,,
-2015,State - GoMESA,Offshore,TX,Chambers County," 2,048.08 ",,,
-2015,State - GoMESA,Offshore,TX,Galveston County," 4,925.68 ",,,
-2015,State - GoMESA,Offshore,TX,Harris County," 11,535.92 ",,,
-2015,State - GoMESA,Offshore,TX,Jackson County," 1,583.76 ",,,
-2015,State - GoMESA,Offshore,TX,Jefferson County," 3,942.48 ",,,
-2015,State - GoMESA,Offshore,TX,Kenedy County," 3,233.40 ",,,
-2015,State - GoMESA,Offshore,TX,Kleberg County," 2,339.31 ",,,
-2015,State - GoMESA,Offshore,TX,Matagorda County," 4,209.11 ",,,
-2015,State - GoMESA,Offshore,TX,Nueces County," 3,069.71 ",,,
-2015,State - GoMESA,Offshore,TX,Orange County," 2,252.48 ",,,
-2015,State - GoMESA,Offshore,TX,Refugio County," 1,498.70 ",,,
-2015,State - GoMESA,Offshore,TX,San Patricio County," 1,578.97 ",,,
-2015,State - GoMESA,Offshore,TX,Victoria County," 1,706.26 ",,,
-2015,State - GoMESA,Offshore,TX,Willacy County," 1,961.47 ",,,
-2015,State - GoMESA,Offshore,TX,," 233,372.09 ",,,
-2015,State 8(g),Offshore,AL,," 3,998,939.68 ",,,
-2015,State 8(g),Offshore,AK,," 1,957,767.13 ",,,
-2015,State 8(g),Offshore,CA,," 3,616,249.11 ",,,
-2015,State 8(g),Offshore,LA,," 11,925,900.48 ",,,
-2015,State 8(g),Offshore,MA,," 23,835.06 ",,,
-2015,State 8(g),Offshore,MS,," 94,763.62 ",,,
-2015,State 8(g),Offshore,RI,, 170.10 ,,,
-2015,State 8(g),Offshore,TX,," 528,605.91 ",,,
-2015,U.S. Treasury,Offshore,,," 3,962,702,079.66 ",,,
-2015,U.S. Treasury,Onshore,,," 430,430,343.81 ",,,
-2015,U.S. Treasury - GoMESA,Offshore,,," 1,232,665.94 ",,,
-2016,American Indian Tribes,Onshore,,," 560,416,155.15 ",,,
-2016,Land & Water Conservation Fund,Offshore,,," 883,627,822.52 ",,,
-2016,Land & Water Conservation Fund - GoMESA,Offshore,,," 342,654.53 ",,,
-2016,Other,Offshore,,," 158,644,486.11 ",,,
-2016,Other,Onshore,,," 91,256,204.90 ",,,
-2016,Reclamation,Onshore,,," 1,009,078,894.56 ",,,
-2016,State,Onshore,AL,," 272,379.38 ",,,
-2016,State,Onshore,AK,," 12,194,958.10 ",,,
-2016,State,Onshore,AZ,," 55,271.38 ",,,
-2016,State,Onshore,AR,," 920,844.21 ",,,
-2016,State,Onshore,CA,Imperial County," 67,582.64 ",,,
-2016,State,Onshore,CA,Inyo County," 143,309.69 ",,,
-2016,State,Onshore,CA,Lake County," 656,127.13 ",,,
-2016,State,Onshore,CA,Lassen County," 13,133.56 ",,,
-2016,State,Onshore,CA,Mendocino County, 753.75 ,,,
-2016,State,Onshore,CA,Mono County," 54,006.57 ",,,
-2016,State,Onshore,CA,Siskiyou County," 14,802.12 ",,,
-2016,State,Onshore,CA,Sonoma County," 926,916.32 ",,,
-2016,State,Onshore,CA,," 35,316,760.11 ",,,
-2016,State,Onshore,CO,Chaffee County," 1,677.60 ",,,
-2016,State,Onshore,CO,Gunnison County," 6,296.83 ",,,
-2016,State,Onshore,CO,," 83,887,389.90 ",,,
-2016,State,Onshore,FL,," 73,540.21 ",,,
-2016,State,Onshore,ID,Canyon County, 548.80 ,,,
-2016,State,Onshore,ID,Cassia County," 8,261.10 ",,,
-2016,State,Onshore,ID,Payette County," 18,206.01 ",,,
-2016,State,Onshore,ID,Washington County," 9,296.76 ",,,
-2016,State,Onshore,ID,," 5,484,922.86 ",,,
-2016,State,Onshore,IL,," 277,233.78 ",,,
-2016,State,Onshore,IN,," 5,263.00 ",,,
-2016,State,Onshore,KS,," 453,748.01 ",,,
-2016,State,Onshore,KY,," 106,112.74 ",,,
-2016,State,Onshore,LA,," 904,498.03 ",,,
-2016,State,Onshore,MI,," 96,174.97 ",,,
-2016,State,Onshore,MN,," 12,504.63 ",,,
-2016,State,Onshore,MS,," 555,058.51 ",,,
-2016,State,Onshore,MO,," 1,808,750.81 ",,,
-2016,State,Onshore,MT,," 23,008,074.00 ",,,
-2016,State,Onshore,NE,," 8,554.21 ",,,
-2016,State,Onshore,NV,Churchill County," 439,998.67 ",,,
-2016,State,Onshore,NV,Elko County," 20,068.32 ",,,
-2016,State,Onshore,NV,Esmeralda County," 29,073.68 ",,,
-2016,State,Onshore,NV,Eureka County," 24,215.69 ",,,
-2016,State,Onshore,NV,Humboldt County," 50,483.47 ",,,
-2016,State,Onshore,NV,Lander County," 254,601.05 ",,,
-2016,State,Onshore,NV,Lyon County," 13,163.82 ",,,
-2016,State,Onshore,NV,Mineral County," 144,403.72 ",,,
-2016,State,Onshore,NV,Nye County, 160.80 ,,,
-2016,State,Onshore,NV,Pershing County," 46,011.64 ",,,
-2016,State,Onshore,NV,Washoe County," 67,623.25 ",,,
-2016,State,Onshore,NV,White Pine County, 939.17 ,,,
-2016,State,Onshore,NV,," 3,521,815.81 ",,,
-2016,State,Onshore,NM,Dona Ana County," 7,212.43 ",,,
-2016,State,Onshore,NM,Hidalgo County," 5,399.16 ",,,
-2016,State,Onshore,NM,," 368,603,571.83 ",,,
-2016,State,Onshore,NC,, 110.44 ,,,
-2016,State,Onshore,ND,," 32,521,124.09 ",,,
-2016,State,Onshore,OH,," 71,846.40 ",,,
-2016,State,Onshore,OK,," 6,682,274.29 ",,,
-2016,State,Onshore,OR,Deschutes County," 37,905.98 ",,,
-2016,State,Onshore,OR,Lake County," 14,574.04 ",,,
-2016,State,Onshore,OR,," 106,888.62 ",,,
-2016,State,Onshore,PA,," 18,528.39 ",,,
-2016,State,Onshore,SC,, 775.89 ,,,
-2016,State,Onshore,SD,," 306,901.22 ",,,
-2016,State,Onshore,TX,," 3,170,788.45 ",,,
-2016,State,Onshore,UT,Beaver County," 127,561.99 ",,,
-2016,State,Onshore,UT,Iron County, 172.61 ,,,
-2016,State,Onshore,UT,Juab County, 663.30 ,,,
-2016,State,Onshore,UT,Millard County," 22,087.54 ",,,
-2016,State,Onshore,UT,," 67,909,865.57 ",,,
-2016,State,Onshore,VA,," 23,235.41 ",,,
-2016,State,Onshore,WA,Whatcom County," 2,119.80 ",,,
-2016,State,Onshore,WA,," 4,331.32 ",,,
-2016,State,Onshore,WV,," 184,630.93 ",,,
-2016,State,Onshore,WY,," 664,312,371.44 ",,,
-2016,State - GoMESA,Offshore,AL,Baldwin County," 8,609.22 ",,,
-2016,State - GoMESA,Offshore,AL,Mobile County," 9,583.25 ",,,
-2016,State - GoMESA,Offshore,AL,," 72,581.37 ",,,
-2016,State - GoMESA,Offshore,LA,Assumption Parish, 659.83 ,,,
-2016,State - GoMESA,Offshore,LA,Calcasieu Parish, 942.62 ,,,
-2016,State - GoMESA,Offshore,LA,Cameron Parish," 1,068.30 ",,,
-2016,State - GoMESA,Offshore,LA,Iberia Parish, 911.19 ,,,
-2016,State - GoMESA,Offshore,LA,Jefferson Parish," 1,790.97 ",,,
-2016,State - GoMESA,Offshore,LA,Lafourche Parish," 1,036.88 ",,,
-2016,State - GoMESA,Offshore,LA,Livingston Parish, 942.62 ,,,
-2016,State - GoMESA,Offshore,LA,Orleans Parish," 1,571.03 ",,,
-2016,State - GoMESA,Offshore,LA,Plaquemines Parish," 2,136.59 ",,,
-2016,State - GoMESA,Offshore,LA,St. Bernard Parish," 1,193.98 ",,,
-2016,State - GoMESA,Offshore,LA,St. Charles Parish, 816.94 ,,,
-2016,State - GoMESA,Offshore,LA,St. James Parish, 691.26 ,,,
-2016,State - GoMESA,Offshore,LA,St. John the Baptist Parish, 754.09 ,,,
-2016,State - GoMESA,Offshore,LA,St. Martin Parish, 722.67 ,,,
-2016,State - GoMESA,Offshore,LA,St. Mary Parish, 754.09 ,,,
-2016,State - GoMESA,Offshore,LA,St. Tammany Parish," 1,319.67 ",,,
-2016,State - GoMESA,Offshore,LA,Tangipahoa Parish, 942.62 ,,,
-2016,State - GoMESA,Offshore,LA,Terrebonne Parish," 1,413.92 ",,,
-2016,State - GoMESA,Offshore,LA,Vermilion Parish, 848.35 ,,,
-2016,State - GoMESA,Offshore,LA,," 82,196.05 ",,,
-2016,State - GoMESA,Offshore,MS,Hancock County," 3,047.79 ",,,
-2016,State - GoMESA,Offshore,MS,Harrison County," 6,504.05 ",,,
-2016,State - GoMESA,Offshore,MS,Jackson County," 7,258.14 ",,,
-2016,State - GoMESA,Offshore,MS,," 67,177.05 ",,,
-2016,State - GoMESA,Offshore,TX,Aransas County, 282.79 ,,,
-2016,State - GoMESA,Offshore,TX,Brazoria County, 471.30 ,,,
-2016,State - GoMESA,Offshore,TX,Calhoun County, 377.05 ,,,
-2016,State - GoMESA,Offshore,TX,Cameron County, 439.89 ,,,
-2016,State - GoMESA,Offshore,TX,Chambers County, 251.36 ,,,
-2016,State - GoMESA,Offshore,TX,Galveston County, 628.41 ,,,
-2016,State - GoMESA,Offshore,TX,Harris County," 1,445.35 ",,,
-2016,State - GoMESA,Offshore,TX,Jackson County, 188.52 ,,,
-2016,State - GoMESA,Offshore,TX,Jefferson County, 502.73 ,,,
-2016,State - GoMESA,Offshore,TX,Kenedy County, 408.47 ,,,
-2016,State - GoMESA,Offshore,TX,Kleberg County, 282.79 ,,,
-2016,State - GoMESA,Offshore,TX,Matagorda County, 534.15 ,,,
-2016,State - GoMESA,Offshore,TX,Nueces County, 377.05 ,,,
-2016,State - GoMESA,Offshore,TX,Orange County, 282.79 ,,,
-2016,State - GoMESA,Offshore,TX,Refugio County, 188.52 ,,,
-2016,State - GoMESA,Offshore,TX,San Patricio County, 188.52 ,,,
-2016,State - GoMESA,Offshore,TX,Victoria County, 219.94 ,,,
-2016,State - GoMESA,Offshore,TX,Willacy County, 251.36 ,,,
-2016,State - GoMESA,Offshore,TX,Willacy County," 29,409.60 ",,,
-2016,State 8(g),Offshore,AL,," 1,537,555.27 ",,,
-2016,State 8(g),Offshore,AK,," 1,064,323.09 ",,,
-2016,State 8(g),Offshore,CA,," 1,648,042.15 ",,,
-2016,State 8(g),Offshore,LA,," 6,313,683.28 ",,,
-2016,State 8(g),Offshore,MA,," 23,835.06 ",,,
-2016,State 8(g),Offshore,MS,," 51,779.37 ",,,
-2016,State 8(g),Offshore,RI,, 170.10 ,,,
-2016,State 8(g),Offshore,TX,," 134,616.82 ",,,
-2016,U.S. Treasury,Offshore,,," 1,865,028,729.49 ",,,
-2016,U.S. Treasury,Onshore,,," 336,570,856.34 ",,,
-2016,U.S. Treasury - GoMESA,Offshore,,," 1,370,611.67 ",,,
-2017,American Indian Tribes,Onshore,,," 675,788,643.34 ",,,
-2017,Historic Preservation Fund,Offshore,,," 150,000,000.00 ",,,
-2017,Land & Water Conservation Fund,Offshore,,," 891,828,225.00 ",,,
-2017,Land & Water Conservation Fund - GoMESA,Offshore,,," 66,982,984.72 ",,,
-2017,Other,Offshore,,," 122,238,329.06 ",,,
-2017,Other,Onshore,,," 111,303,696.59 ",,,
-2017,Reclamation,Onshore,,," 1,142,376,549.00 ",,,
-2017,State,Onshore,AL,," 382,865.12 ",,,
-2017,State,Onshore,AK,," 11,184,061.95 ",,,
-2017,State,Onshore,AZ,," 10,045.97 ",,,
-2017,State,Onshore,AR,," 1,151,448.28 ",,,
-2017,State,Onshore,CA,Imperial County," 41,249.41 ",,,
-2017,State,Onshore,CA,Inyo County," 71,594.49 ",,,
-2017,State,Onshore,CA,Lake County," 733,167.55 ",,,
-2017,State,Onshore,CA,Lassen County," 7,730.08 ",,,
-2017,State,Onshore,CA,Mendocino County, 749.25 ,,,
-2017,State,Onshore,CA,Mono County," 50,767.05 ",,,
-2017,State,Onshore,CA,Siskiyou County," 1,386.94 ",,,
-2017,State,Onshore,CA,Sonoma County," 1,136,605.62 ",,,
-2017,State,Onshore,CA,," 33,592,367.91 ",,,
-2017,State,Onshore,CO,Chaffee County, 681.00 ,,,
-2017,State,Onshore,CO,Gunnison County, 426.05 ,,,
-2017,State,Onshore,CO,," 92,039,200.62 ",,,
-2017,State,Onshore,FL,," 593,587.89 ",,,
-2017,State,Onshore,ID,Canyon County, 546.07 ,,,
-2017,State,Onshore,ID,Cassia County," 8,327.69 ",,,
-2017,State,Onshore,ID,Payette County," 18,115.43 ",,,
-2017,State,Onshore,ID,Washington County," 10,051.21 ",,,
-2017,State,Onshore,ID,," 5,123,410.64 ",,,
-2017,State,Onshore,IL,," 54,868.75 ",,,
-2017,State,Onshore,IN,," 5,257.35 ",,,
-2017,State,Onshore,KS,," 561,249.47 ",,,
-2017,State,Onshore,KY,," 185,904.48 ",,,
-2017,State,Onshore,LA,," 1,010,739.08 ",,,
-2017,State,Onshore,MI,," 77,778.86 ",,,
-2017,State,Onshore,MN,," 11,649.47 ",,,
-2017,State,Onshore,MS,," 706,016.97 ",,,
-2017,State,Onshore,MO,," 2,020,169.14 ",,,
-2017,State,Onshore,MT,," 24,033,546.22 ",,,
-2017,State,Onshore,NE,," 8,113.89 ",,,
-2017,State,Onshore,NV,Churchill County," 521,710.63 ",,,
-2017,State,Onshore,NV,Elko County," 24,697.69 ",,,
-2017,State,Onshore,NV,Esmeralda County," 38,510.65 ",,,
-2017,State,Onshore,NV,Eureka County," 13,474.79 ",,,
-2017,State,Onshore,NV,Humboldt County," 46,478.91 ",,,
-2017,State,Onshore,NV,Lander County," 303,731.34 ",,,
-2017,State,Onshore,NV,Lyon County," 9,391.41 ",,,
-2017,State,Onshore,NV,Mineral County," 153,707.60 ",,,
-2017,State,Onshore,NV,Nye County, 159.84 ,,,
-2017,State,Onshore,NV,Pershing County," 34,669.23 ",,,
-2017,State,Onshore,NV,Washoe County," 72,609.68 ",,,
-2017,State,Onshore,NV,White Pine County, 933.57 ,,,
-2017,State,Onshore,NV,," 3,850,164.97 ",,,
-2017,State,Onshore,NM,Dona Ana County," 8,652.71 ",,,
-2017,State,Onshore,NM,Hidalgo County," 5,908.06 ",,,
-2017,State,Onshore,NM,," 455,139,819.68 ",,,
-2017,State,Onshore,ND,," 39,922,536.16 ",,,
-2017,State,Onshore,OH,," 1,600,454.80 ",,,
-2017,State,Onshore,OK,," 2,625,438.89 ",,,
-2017,State,Onshore,OR,Deschutes County," 19,851.52 ",,,
-2017,State,Onshore,OR,Lake County," 3,796.14 ",,,
-2017,State,Onshore,OR,," 45,539.86 ",,,
-2017,State,Onshore,PA,," 23,914.02 ",,,
-2017,State,Onshore,SC,, 775.06 ,,,
-2017,State,Onshore,SD,," 396,178.04 ",,,
-2017,State,Onshore,TX,," 4,725,825.41 ",,,
-2017,State,Onshore,UT,Beaver County," 105,071.92 ",,,
-2017,State,Onshore,UT,Iron County, 171.58 ,,,
-2017,State,Onshore,UT,Juab County, 659.34 ,,,
-2017,State,Onshore,UT,Millard County," 26,349.48 ",,,
-2017,State,Onshore,UT,," 73,496,260.76 ",,,
-2017,State,Onshore,VA,," 28,181.89 ",,,
-2017,State,Onshore,WA,Whatcom County," 2,107.14 ",,,
-2017,State,Onshore,WA,," 5,057.67 ",,,
-2017,State,Onshore,WV,," 108,373.09 ",,,
-2017,State,Onshore,WY,," 669,010,220.24 ",,,
-2017,State - GoMESA,Offshore,AL,Baldwin County," 24,763.94 ",,,
-2017,State - GoMESA,Offshore,AL,Mobile County," 27,853.86 ",,,
-2017,State - GoMESA,Offshore,AL,," 210,471.20 ",,,
-2017,State - GoMESA,Offshore,LA,Assumption Parish," 2,127.55 ",,,
-2017,State - GoMESA,Offshore,LA,Calcasieu Parish," 2,987.69 ",,,
-2017,State - GoMESA,Offshore,LA,Cameron Parish," 3,358.26 ",,,
-2017,State - GoMESA,Offshore,LA,Iberia Parish," 2,857.63 ",,,
-2017,State - GoMESA,Offshore,LA,Jefferson Parish," 5,577.62 ",,,
-2017,State - GoMESA,Offshore,LA,Lafourche Parish," 3,282.72 ",,,
-2017,State - GoMESA,Offshore,LA,Livingston Parish," 2,972.22 ",,,
-2017,State - GoMESA,Offshore,LA,Orleans Parish," 4,904.01 ",,,
-2017,State - GoMESA,Offshore,LA,Plaquemines Parish," 6,564.56 ",,,
-2017,State - GoMESA,Offshore,LA,St Bernard Parish," 3,630.18 ",,,
-2017,State - GoMESA,Offshore,LA,St Charles Parish," 2,600.00 ",,,
-2017,State - GoMESA,Offshore,LA,St James Parish," 2,180.40 ",,,
-2017,State - GoMESA,Offshore,LA,St John Baptist," 2,397.81 ",,,
-2017,State - GoMESA,Offshore,LA,St Martin Parish," 2,317.19 ",,,
-2017,State - GoMESA,Offshore,LA,St Mary Parish," 2,375.95 ",,,
-2017,State - GoMESA,Offshore,LA,St Tammany Parish," 4,089.98 ",,,
-2017,State - GoMESA,Offshore,LA,Tangipahoa Parish," 2,977.85 ",,,
-2017,State - GoMESA,Offshore,LA,Terrebonne Parish," 4,437.31 ",,,
-2017,State - GoMESA,Offshore,LA,Vermilion Parish," 2,673.60 ",,,
-2017,State - GoMESA,Offshore,LA,," 257,250.18 ",,,
-2017,State - GoMESA,Offshore,MS,Hancock County," 9,218.29 ",,,
-2017,State - GoMESA,Offshore,MS,Harrison County," 19,440.96 ",,,
-2017,State - GoMESA,Offshore,MS,Jackson County," 21,582.54 ",,,
-2017,State - GoMESA,Offshore,MS,," 200,967.16 ",,,
-2017,State - GoMESA,Offshore,TX,Aransas County, 954.07 ,,,
-2017,State - GoMESA,Offshore,TX,Brazoria County," 1,525.12 ",,,
-2017,State - GoMESA,Offshore,TX,Calhoun County," 1,250.46 ",,,
-2017,State - GoMESA,Offshore,TX,Cameron County," 1,454.87 ",,,
-2017,State - GoMESA,Offshore,TX,Chambers County, 844.49 ,,,
-2017,State - GoMESA,Offshore,TX,Galveston County," 2,039.76 ",,,
-2017,State - GoMESA,Offshore,TX,Harris County," 4,788.33 ",,,
-2017,State - GoMESA,Offshore,TX,Jackson County, 658.60 ,,,
-2017,State - GoMESA,Offshore,TX,Jefferson County," 1,627.64 ",,,
-2017,State - GoMESA,Offshore,TX,Kenedy County," 1,348.51 ",,,
-2017,State - GoMESA,Offshore,TX,Kleberg County, 976.29 ,,,
-2017,State - GoMESA,Offshore,TX,Matagorda County," 1,748.07 ",,,
-2017,State - GoMESA,Offshore,TX,Nueces County," 1,278.57 ",,,
-2017,State - GoMESA,Offshore,TX,Orange County, 923.28 ,,,
-2017,State - GoMESA,Offshore,TX,Refugio County, 624.67 ,,,
-2017,State - GoMESA,Offshore,TX,San Patricio County, 659.39 ,,,
-2017,State - GoMESA,Offshore,TX,Victoria County, 709.72 ,,,
-2017,State - GoMESA,Offshore,TX,Willacy County, 822.48 ,,,
-2017,State - GoMESA,Offshore,TX,," 96,937.31 ",,,
-2017,State 8(g),offshore,AL,," 746,267.28 ",,,
-2017,State 8(g),offshore,AK,," 1,247,123.89 ",,,
-2017,State 8(g),offshore,CA,," 606,280.97 ",,,
-2017,State 8(g),offshore,LA,," 7,554,499.53 ",,,
-2017,State 8(g),offshore,MA,," 23,835.06 ",,,
-2017,State 8(g),offshore,MS,," 76,571.54 ",,,
-2017,State 8(g),offshore,RI,," 1,701.00 ",,,
-2017,State 8(g),offshore,TX,," 64,643.72 ",,,
-2017,U.S. Treasury,Offshore,,," 1,748,637,163.69 ",,,
-2017,U.S. Treasury,Onshore,,," 496,239,191.87 ",,,
-2017,U.S. Treasury - GoMESA,Offshore,,," 267,931,822.86 ",,,
-2018,American Indian Tribes,Onshore,,," 1,022,539,457.29 ",,,
-2018,Historic Preservation Fund,Offshore,,," 150,000,000.00 ",,,
-2018,Land & Water Conservation Fund,Offshore,,," 893,887,297.00 ",,,
-2018,Land & Water Conservation Fund - GoMesa,Offshore,,," 76,357,901.97 ",,,
-2018,Other,Offshore,,," 116,875,634.66 ",,,
-2018,Other,Onshore,,," 163,170,752.99 ",,,
-2018,Reclamation,Onshore,,," 1,221,259,347.30 ",,,
-2018,State,Onshore,AL,," 1,376,095.15 ",,,
-2018,State,Onshore,AK,," 34,370,934.21 ",,,
-2018,State,Onshore,AZ,," 9,069.72 ",,,
-2018,State,Onshore,AR,," 854,176.16 ",,,
-2018,State,Onshore,CA,," 41,429,712.41 ",,,
-2018,State,Onshore,CA,Imperial County," 98,778.25 ",,,
-2018,State,Onshore,CA,Inyo County," 81,535.68 ",,,
-2018,State,Onshore,CA,Lake County," 733,502.02 ",,,
-2018,State,Onshore,CA,Lassen County," 17,106.65 ",,,
-2018,State,Onshore,CA,Mendocino County, 51.75 ,,,
-2018,State,Onshore,CA,Mono County," 36,597.08 ",,,
-2018,State,Onshore,CA,Siskiyou County," 3,040.55 ",,,
-2018,State,Onshore,CA,Sonoma County," 1,127,727.93 ",,,
-2018,State,Onshore,CO,," 112,554,166.89 ",,,
-2018,State,Onshore,CO,Chaffee County, 601.80 ,,,
-2018,State,Onshore,CO,Gunnison County," 5,851.98 ",,,
-2018,State,Onshore,FL,," 476,560.88 ",,,
-2018,State,Onshore,ID,," 4,333,975.81 ",,,
-2018,State,Onshore,ID,Canyon County, 37.13 ,,,
-2018,State,Onshore,ID,Cassia County," 16,693.78 ",,,
-2018,State,Onshore,ID,Payette County," 1,231.85 ",,,
-2018,State,Onshore,ID,Washington County," 16,245.22 ",,,
-2018,State,Onshore,IL,," 76,415.92 ",,,
-2018,State,Onshore,IN,," 3,693.97 ",,,
-2018,State,Onshore,KS,," 639,045.52 ",,,
-2018,State,Onshore,KY,," 120,512.24 ",,,
-2018,State,Onshore,LA,," 2,153,237.54 ",,,
-2018,State,Onshore,MI,," 147,823.25 ",,,
-2018,State,Onshore,MN,," 11,554.30 ",,,
-2018,State,Onshore,MS,," 661,429.37 ",,,
-2018,State,Onshore,MO,," 2,299,269.80 ",,,
-2018,State,Onshore,MT,," 25,686,291.77 ",,,
-2018,State,Onshore,NE,," 28,700.58 ",,,
-2018,State,Onshore,NV,," 4,066,416.81 ",,,
-2018,State,Onshore,NV,Churchill County," 668,908.66 ",,,
-2018,State,Onshore,NV,Elko County," 8,387.60 ",,,
-2018,State,Onshore,NV,Esmeralda County," 24,369.59 ",,,
-2018,State,Onshore,NV,Eureka County," 14,095.37 ",,,
-2018,State,Onshore,NV,Humboldt County," 46,051.65 ",,,
-2018,State,Onshore,NV,Lander County," 283,264.18 ",,,
-2018,State,Onshore,NV,Lyon County," 10,805.38 ",,,
-2018,State,Onshore,NV,Mineral County," 144,864.87 ",,,
-2018,State,Onshore,NV,Nye County, 375.30 ,,,
-2018,State,Onshore,NV,Pershing County," 37,278.68 ",,,
-2018,State,Onshore,NV,Washoe County," 46,923.61 ",,,
-2018,State,Onshore,NV,White Pine County, 937.30 ,,,
-2018,State,Onshore,NM,," 634,977,556.71 ",,,
-2018,State,Onshore,NM,Dona Ana County," 7,242.72 ",,,
-2018,State,Onshore,NM,Hidalgo County," 6,062.14 ",,,
-2018,State,Onshore,ND,," 53,223,774.74 ",,,
-2018,State,Onshore,OH,," 862,521.52 ",,,
-2018,State,Onshore,OK,," 7,867,081.65 ",,,
-2018,State,Onshore,OR,," 47,141.71 ",,,
-2018,State,Onshore,OR,Deschutes County," 19,562.58 ",,,
-2018,State,Onshore,OR,Lake County," 3,799.62 ",,,
-2018,State,Onshore,PA,," 9,880.12 ",,,
-2018,State,Onshore,SC,, 518.37 ,,,
-2018,State,Onshore,SD,," 564,521.82 ",,,
-2018,State,Onshore,TX,," 4,847,388.66 ",,,
-2018,State,Onshore,UT,," 76,015,357.68 ",,,
-2018,State,Onshore,UT,Beaver County," 151,694.35 ",,,
-2018,State,Onshore,UT,Iron County, 172.26 ,,,
-2018,State,Onshore,UT,Juab County, 661.98 ,,,
-2018,State,Onshore,UT,Millard County," 24,253.35 ",,,
-2018,State,Onshore,VA,," 39,194.81 ",,,
-2018,State,Onshore,WA,," 7,999.78 ",,,
-2018,State,Onshore,WA,Whatcom County," 2,115.58 ",,,
-2018,State,Onshore,WV,," 470,583.49 ",,,
-2018,State,Onshore,WI,, 233.50 ,,,
-2018,State,Onshore,WY,," 563,955,987.70 ",,,
-2018,State - GoMESA,Offshore,AL,Baldwin County," 2,475,583.07 ",,,
-2018,State - GoMESA,Offshore,AL,Mobile County," 2,879,939.61 ",,,
-2018,State - GoMESA,Offshore,AL,," 21,422,090.73 ",,,
-2018,State - GoMESA,Offshore,LA,Assumption Parish," 553,603.31 ",,,
-2018,State - GoMESA,Offshore,LA,Calcasieu Parish," 862,675.48 ",,,
-2018,State - GoMESA,Offshore,LA,Cameron Parish," 1,090,580.78 ",,,
-2018,State - GoMESA,Offshore,LA,Iberia Parish," 871,009.19 ",,,
-2018,State - GoMESA,Offshore,LA,Jefferson Parish," 1,378,261.30 ",,,
-2018,State - GoMESA,Offshore,LA,Lafourche Parish," 865,540.61 ",,,
-2018,State - GoMESA,Offshore,LA,Livingston Parish," 694,063.94 ",,,
-2018,State - GoMESA,Offshore,LA,Orleans Parish," 1,146,479.67 ",,,
-2018,State - GoMESA,Offshore,LA,Plaquemines Parish," 1,623,361.00 ",,,
-2018,State - GoMESA,Offshore,LA,St Bernard Parish," 781,611.41 ",,,
-2018,State - GoMESA,Offshore,LA,St Charles Parish," 594,151.58 ",,,
-2018,State - GoMESA,Offshore,LA,St James Parish," 517,254.38 ",,,
-2018,State - GoMESA,Offshore,LA,St John Baptist," 559,530.88 ",,,
-2018,State - GoMESA,Offshore,LA,St Martin Parish," 616,852.85 ",,,
-2018,State - GoMESA,Offshore,LA,St Mary Parish," 719,952.25 ",,,
-2018,State - GoMESA,Offshore,LA,St Tammany Parish," 912,548.87 ",,,
-2018,State - GoMESA,Offshore,LA,Tangipahoa Parish," 669,883.58 ",,,
-2018,State - GoMESA,Offshore,LA,Terrebonne Parish," 1,260,426.95 ",,,
-2018,State - GoMESA,Offshore,LA,Vermilion Parish," 850,143.14 ",,,
-2018,State - GoMESA,Offshore,LA,," 66,271,724.59 ",,,
-2018,State - GoMESA,Offshore,MS,Hancock County," 1,059,051.90 ",,,
-2018,State - GoMESA,Offshore,MS,Harrison County," 2,157,883.15 ",,,
-2018,State - GoMESA,Offshore,MS,Jackson County," 2,333,974.83 ",,,
-2018,State - GoMESA,Offshore,MS,," 22,203,639.55 ",,,
-2018,State - GoMESA,Offshore,TX,Aransas County," 413,355.09 ",,,
-2018,State - GoMESA,Offshore,TX,Brazoria County," 662,729.67 ",,,
-2018,State - GoMESA,Offshore,TX,Calhoun County," 549,710.33 ",,,
-2018,State - GoMESA,Offshore,TX,Cameron County," 609,568.15 ",,,
-2018,State - GoMESA,Offshore,TX,Chambers County," 334,599.83 ",,,
-2018,State - GoMESA,Offshore,TX,Galveston County," 868,810.46 ",,,
-2018,State - GoMESA,Offshore,TX,Harris County," 1,962,460.79 ",,,
-2018,State - GoMESA,Offshore,TX,Jackson County," 263,776.12 ",,,
-2018,State - GoMESA,Offshore,TX,Jefferson County," 664,348.78 ",,,
-2018,State - GoMESA,Offshore,TX,Kenedy County," 581,745.01 ",,,
-2018,State - GoMESA,Offshore,TX,Kleberg County," 416,829.42 ",,,
-2018,State - GoMESA,Offshore,TX,Matagorda County," 776,507.45 ",,,
-2018,State - GoMESA,Offshore,TX,Nueces County," 546,154.51 ",,,
-2018,State - GoMESA,Offshore,TX,Orange County," 323,987.83 ",,,
-2018,State - GoMESA,Offshore,TX,Refugio County," 255,666.30 ",,,
-2018,State - GoMESA,Offshore,TX,San Patricio County," 270,666.38 ",,,
-2018,State - GoMESA,Offshore,TX,Victoria County," 276,126.84 ",,,
-2018,State - GoMESA,Offshore,TX,Willacy County," 346,379.91 ",,,
-2018,State - GoMESA,Offshore,TX,," 40,493,691.63 ",,,
-2018,State 8(g),Offshore,AL,," 2,384,757.73 ",,,
-2018,State 8(g),Offshore,AK,," 1,509,923.76 ",,,
-2018,State 8(g),Offshore,CA,," 1,363,323.58 ",,,
-2018,State 8(g),Offshore,LA,," 6,052,631.01 ",,,
-2018,State 8(g),Offshore,MS,," 259,421.06 ",,,
-2018,State 8(g),Offshore,TX,," 4,634,850.84 ",,,
-2018,U.S. Treasury,Offshore,,," 2,789,421,770.94 ",,,
-2018,U.S. Treasury,Onshore,,," 411,828,484.53 ",,,
-2018,U.S. Treasury - GoMESA,Offshore,,," 309,064,093.11 ",,,
+Fiscal Year,Fund Type,Onshore/Offshore,State,County,  Total  
+2003,American Indian Tribes,Onshore,,,"224,798,713.60"
+2003,Historic Preservation Fund,Offshore,,,"150,000,000.00"
+2003,Land & Water Conservation Fund,Offshore,,,"898,999,960.00"
+2003,Reclamation,Onshore,,,"753,373,594.30"
+2003,State,Onshore,AL,,"529,848.84"
+2003,State,Onshore,AK,,"9,030,501.74"
+2003,State,Onshore,AZ,,"121,898.09"
+2003,State,Onshore,AR,,"4,108,480.76"
+2003,State,Onshore,CA,,"21,837,849.16"
+2003,State,Onshore,CO,,"53,947,136.92"
+2003,State,Onshore,FL,,"368,710.50"
+2003,State,Onshore,ID,,"1,792,864.42"
+2003,State,Onshore,IL,,"109,312.47"
+2003,State,Onshore,IN,,"6,379.25"
+2003,State,Onshore,KS,,"1,823,378.27"
+2003,State,Onshore,KY,,"50,131.79"
+2003,State,Onshore,LA,,"1,182,451.37"
+2003,State,Onshore,MI,,"430,602.31"
+2003,State,Onshore,MN,,"17,910.30"
+2003,State,Onshore,MS,,"726,053.89"
+2003,State,Onshore,MO,,"331,638.48"
+2003,State,Onshore,MT,,"25,535,373.25"
+2003,State,Onshore,NE,,"12,992.19"
+2003,State,Onshore,NV,,"5,054,856.88"
+2003,State,Onshore,NM,,"297,904,626.20"
+2003,State,Onshore,ND,,"4,944,294.84"
+2003,State,Onshore,OH,,"280,731.76"
+2003,State,Onshore,OK,,"2,370,848.20"
+2003,State,Onshore,OR,,"32,573.32"
+2003,State,Onshore,PA,,"20,339.11"
+2003,State,Onshore,SC,,102
+2003,State,Onshore,SD,,"393,042.67"
+2003,State,Onshore,TX,,"2,142,703.86"
+2003,State,Onshore,UT,,"50,614,416.24"
+2003,State,Onshore,WA,,"1,088,464.15"
+2003,State,Onshore,WV,,"414,101.68"
+2003,State,Onshore,WY,,"467,266,554.90"
+2003,State 8(g),Offshore,AL,,"13,201,901.12"
+2003,State 8(g),Offshore,AK,,"3,732,697.53"
+2003,State 8(g),Offshore,CA,,"3,626,469.55"
+2003,State 8(g),Offshore,FL,,803.23
+2003,State 8(g),Offshore,LA,,"29,564,243.63"
+2003,State 8(g),Offshore,MS,,"430,579.05"
+2003,State 8(g),Offshore,TX,,"14,932,769.88"
+2003,U.S. Treasury,Onshore & Offshore,,,"5,183,271,391.00"
+2004,American Indian Tribes,Onshore,,,"344,255,880.40"
+2004,Historic Preservation Fund,Offshore,,,"150,000,000.00"
+2004,Land & Water Conservation Fund,Offshore,,,"899,000,000.00"
+2004,Reclamation,Onshore,,,"924,485,659.00"
+2004,State,Onshore,AL,,"608,176.44"
+2004,State,Onshore,AK,,"10,298,028.81"
+2004,State,Onshore,AZ,,"152,313.83"
+2004,State,Onshore,AR,,"2,365,307.98"
+2004,State,Onshore,CA,,"26,140,289.01"
+2004,State,Onshore,CO,,"80,531,107.18"
+2004,State,Onshore,FL,,"23,470.15"
+2004,State,Onshore,ID,,"2,172,060.51"
+2004,State,Onshore,IL,,"113,909.46"
+2004,State,Onshore,IN,,59.25
+2004,State,Onshore,KS,,"1,519,882.03"
+2004,State,Onshore,KY,,"90,388.49"
+2004,State,Onshore,LA,,"1,364,964.74"
+2004,State,Onshore,MI,,"405,313.79"
+2004,State,Onshore,MN,,"11,184.66"
+2004,State,Onshore,MS,,"646,837.39"
+2004,State,Onshore,MO,,"711,804.67"
+2004,State,Onshore,MT,,"30,294,622.98"
+2004,State,Onshore,NE,,"20,027.38"
+2004,State,Onshore,NV,,"2,651,061.97"
+2004,State,Onshore,NM,,"364,957,736.40"
+2004,State,Onshore,ND,,"6,155,004.55"
+2004,State,Onshore,OH,,"350,453.94"
+2004,State,Onshore,OK,,"4,756,477.44"
+2004,State,Onshore,OR,,"11,469.56"
+2004,State,Onshore,PA,,"27,852.04"
+2004,State,Onshore,SC,,102
+2004,State,Onshore,SD,,"473,552.76"
+2004,State,Onshore,TN,,99
+2004,State,Onshore,TX,,"1,958,683.95"
+2004,State,Onshore,UT,,"69,013,576.09"
+2004,State,Onshore,VA,,"21,774.43"
+2004,State,Onshore,WA,,"472,266.23"
+2004,State,Onshore,WV,,"264,171.98"
+2004,State,Onshore,WY,,"564,332,554.30"
+2004,State 8(g),Offshore,AL,,"13,707,950.51"
+2004,State 8(g),Offshore,AK,,"7,245,906.09"
+2004,State 8(g),Offshore,CA,,"2,791,501.99"
+2004,State 8(g),Offshore,FL,,"1,485.91"
+2004,State 8(g),Offshore,LA,,"38,256,481.63"
+2004,State 8(g),Offshore,MS,,"518,991.34"
+2004,State 8(g),Offshore,TX,,"13,254,156.92"
+2004,U.S. Treasury,Onshore & Offshore,,,"4,663,553,074.00"
+2005,American Indian Tribes,Onshore,,,"419,793,226.30"
+2005,Historic Preservation Fund,Offshore,,,"150,000,000.00"
+2005,Land & Water Conservation Fund,Offshore,,,"898,869,789.00"
+2005,Reclamation,Onshore,,,"1,287,972,474.00"
+2005,State,Onshore,AL,,"1,019,468.66"
+2005,State,Onshore,AK,,"12,098,692.56"
+2005,State,Onshore,AZ,,"37,828.60"
+2005,State,Onshore,AR,,"7,059,071.16"
+2005,State,Onshore,CA,,"18,925,452.42"
+2005,State,Onshore,CO,,"106,651,980.10"
+2005,State,Onshore,FL,,"286,174.88"
+2005,State,Onshore,ID,,"1,664,997.94"
+2005,State,Onshore,IL,,"145,218.18"
+2005,State,Onshore,IN,,59.25
+2005,State,Onshore,KS,,"1,967,826.59"
+2005,State,Onshore,KY,,"78,999.77"
+2005,State,Onshore,LA,,"1,569,882.38"
+2005,State,Onshore,MI,,"488,694.35"
+2005,State,Onshore,MN,,"10,234.88"
+2005,State,Onshore,MS,,"868,566.78"
+2005,State,Onshore,MO,,"553,836.99"
+2005,State,Onshore,MT,,"35,562,307.12"
+2005,State,Onshore,NE,,"21,277.88"
+2005,State,Onshore,NV,,"7,771,837.14"
+2005,State,Onshore,NM,,"444,295,200.40"
+2005,State,Onshore,ND,,"13,549,513.53"
+2005,State,Onshore,OH,,"370,254.89"
+2005,State,Onshore,OK,,"4,230,519.79"
+2005,State,Onshore,OR,,"13,064.75"
+2005,State,Onshore,PA,,"32,757.66"
+2005,State,Onshore,SC,,277.5
+2005,State,Onshore,SD,,"607,348.41"
+2005,State,Onshore,TN,,99
+2005,State,Onshore,TX,,"5,421,011.82"
+2005,State,Onshore,UT,,"87,444,534.43"
+2005,State,Onshore,VA,,"322,282.01"
+2005,State,Onshore,WA,,"267,609.65"
+2005,State,Onshore,WV,,"831,320.03"
+2005,State,Onshore,WY,,"878,524,871.10"
+2005,State 8(g),Offshore,AL,,"14,619,810.59"
+2005,State 8(g),Offshore,AK,,"10,871,900.85"
+2005,State 8(g),Offshore,CA,,"4,488,189.24"
+2005,State 8(g),Offshore,FL,,96.27
+2005,State 8(g),Offshore,LA,,"30,900,445.09"
+2005,State 8(g),Offshore,MS,,"1,024,462.73"
+2005,State 8(g),Offshore,TX,,"10,418,423.48"
+2005,U.S. Treasury,Onshore & Offshore,,,"5,477,357,330.00"
+2006,American Indian Tribes,Onshore,,,"641,408,924.60"
+2006,Historic Preservation Fund,Offshore,,,  -    
+2006,Land & Water Conservation Fund,Offshore,,,"898,303,940.10"
+2006,Reclamation,Onshore,,,"1,649,066,066.00"
+2006,State,Onshore,AL,,"751,161.46"
+2006,State,Onshore,AK,,"14,418,930.55"
+2006,State,Onshore,AZ,,"73,434.85"
+2006,State,Onshore,AR,,"6,825,233.39"
+2006,State,Onshore,CA,Imperial County,"53,045.72"
+2006,State,Onshore,CA,Inyo County,"441,493.74"
+2006,State,Onshore,CA,Lake County,"1,012,909.47"
+2006,State,Onshore,CA,Lassen County,"18,773.63"
+2006,State,Onshore,CA,Mono County,"47,133.27"
+2006,State,Onshore,CA,Siskiyou County,"17,111.25"
+2006,State,Onshore,CA,Sonoma County,"1,271,515.98"
+2006,State,Onshore,CA,,"47,410,896.54"
+2006,State,Onshore,CO,,"147,194,118.50"
+2006,State,Onshore,FL,,"141,947.86"
+2006,State,Onshore,ID,Bingham County,73.5
+2006,State,Onshore,ID,Bonneville County,73.5
+2006,State,Onshore,ID,,"1,256,609.16"
+2006,State,Onshore,IL,,"180,912.68"
+2006,State,Onshore,IN,,59.25
+2006,State,Onshore,KS,,"2,457,972.44"
+2006,State,Onshore,KY,,"379,097.05"
+2006,State,Onshore,LA,,"1,170,670.38"
+2006,State,Onshore,MI,,"658,765.54"
+2006,State,Onshore,MN,,"15,126.42"
+2006,State,Onshore,MS,,"1,053,167.53"
+2006,State,Onshore,MO,,"1,979,893.69"
+2006,State,Onshore,MT,,"38,236,440.10"
+2006,State,Onshore,NE,,"27,539.36"
+2006,State,Onshore,NV,Churchill County,"868,487.03"
+2006,State,Onshore,NV,Elko County,"4,423.75"
+2006,State,Onshore,NV,Esmeralda County,"17,116.25"
+2006,State,Onshore,NV,Eureka County,"2,667.77"
+2006,State,Onshore,NV,Humboldt County,"3,325.75"
+2006,State,Onshore,NV,Lander County,"49,307.38"
+2006,State,Onshore,NV,Lyon County,159.04
+2006,State,Onshore,NV,Nye County,"1,558.75"
+2006,State,Onshore,NV,Pershing County,"19,779.17"
+2006,State,Onshore,NV,Washoe County,"15,766.24"
+2006,State,Onshore,NV,White Pine County,934.5
+2006,State,Onshore,NV,,"7,628,076.61"
+2006,State,Onshore,NM,Dona Ana County,"1,430.75"
+2006,State,Onshore,NM,,"573,423,823.40"
+2006,State,Onshore,ND,,"15,511,698.59"
+2006,State,Onshore,OH,,"489,184.98"
+2006,State,Onshore,OK,,"5,100,262.76"
+2006,State,Onshore,OR,Deschutes County,777.75
+2006,State,Onshore,OR,,"651,769.00"
+2006,State,Onshore,PA,,"92,322.70"
+2006,State,Onshore,SD,,"850,892.44"
+2006,State,Onshore,TX,,"8,727,993.74"
+2006,State,Onshore,UT,Beaver County,"63,372.38"
+2006,State,Onshore,UT,Iron County,57.25
+2006,State,Onshore,UT,Millard County,604.42
+2006,State,Onshore,UT,,"173,010,678.90"
+2006,State,Onshore,VA,,"217,103.32"
+2006,State,Onshore,WA,,"1,081,923.29"
+2006,State,Onshore,WV,,"494,294.56"
+2006,State,Onshore,WY,,"1,072,479,294.00"
+2006,State 8(g),Offshore,AL,,"17,869,013.68"
+2006,State 8(g),Offshore,AK,,"11,294,550.87"
+2006,State 8(g),Offshore,CA,,"7,250,885.42"
+2006,State 8(g),Offshore,FL,,"1,388.58"
+2006,State 8(g),Offshore,LA,,"32,071,817.30"
+2006,State 8(g),Offshore,MS,,"545,748.94"
+2006,State 8(g),Offshore,TX,,"13,321,468.02"
+2006,U.S. Treasury,Onshore & Offshore,,,"7,432,289,745.00"
+2007,American Indian Tribes,Onshore,,,"464,998,979.00"
+2007,Historic Preservation Fund,Offshore,,,"150,000,000.00"
+2007,Land & Water Conservation Fund,Offshore,,,"899,000,000.00"
+2007,Reclamation,Onshore,,,"1,469,924,290.00"
+2007,State,Onshore,AL,,"663,784.05"
+2007,State,Onshore,AK,,"14,029,489.60"
+2007,State,Onshore,AZ,,"41,792.37"
+2007,State,Onshore,AR,,"8,143,230.86"
+2007,State,Onshore,CA,Imperial County,"31,708.12"
+2007,State,Onshore,CA,Inyo County,"301,819.36"
+2007,State,Onshore,CA,Lake County,"845,759.45"
+2007,State,Onshore,CA,Lassen County,"14,014.89"
+2007,State,Onshore,CA,Mono County,"31,478.73"
+2007,State,Onshore,CA,Siskiyou County,"14,980.75"
+2007,State,Onshore,CA,Sonoma County,"1,087,790.28"
+2007,State,Onshore,CA,,"52,115,724.39"
+2007,State,Onshore,CO,,"122,894,226.70"
+2007,State,Onshore,FL,,"5,056.65"
+2007,State,Onshore,ID,Bingham County,26.73
+2007,State,Onshore,ID,Bonneville County,46.77
+2007,State,Onshore,ID,Cassia County,"817,901.50"
+2007,State,Onshore,ID,Washington County,"359,745.00"
+2007,State,Onshore,ID,,"3,552,092.55"
+2007,State,Onshore,IL,,"205,558.80"
+2007,State,Onshore,IN,,"8,046.75"
+2007,State,Onshore,KS,,"1,876,305.00"
+2007,State,Onshore,KY,,"714,750.97"
+2007,State,Onshore,LA,,"940,887.54"
+2007,State,Onshore,MI,,"616,971.05"
+2007,State,Onshore,MN,,"13,126.30"
+2007,State,Onshore,MS,,"1,514,390.96"
+2007,State,Onshore,MO,,"3,598,352.32"
+2007,State,Onshore,MT,,"39,158,279.03"
+2007,State,Onshore,NE,,"24,176.98"
+2007,State,Onshore,NV,Churchill County,"635,410.97"
+2007,State,Onshore,NV,Elko County,"6,487.50"
+2007,State,Onshore,NV,Esmeralda County,"13,789.69"
+2007,State,Onshore,NV,Eureka County,"5,559.97"
+2007,State,Onshore,NV,Humboldt County,"6,322.00"
+2007,State,Onshore,NV,Lander County,"43,343.44"
+2007,State,Onshore,NV,Lyon County,"3,491.04"
+2007,State,Onshore,NV,Nye County,"2,138.75"
+2007,State,Onshore,NV,Pershing County,"22,567.08"
+2007,State,Onshore,NV,Washoe County,"15,829.50"
+2007,State,Onshore,NV,White Pine County,"1,248.00"
+2007,State,Onshore,NV,,"6,907,490.88"
+2007,State,Onshore,NM,Dona Ana County,"2,269.25"
+2007,State,Onshore,NM,Hidalgo County,"1,250.50"
+2007,State,Onshore,NM,,"552,930,945.60"
+2007,State,Onshore,ND,,"13,775,447.53"
+2007,State,Onshore,OH,,"493,091.99"
+2007,State,Onshore,OK,,"6,988,592.26"
+2007,State,Onshore,OR,Deschutes County,"30,926.31"
+2007,State,Onshore,OR,Lake County,627.5
+2007,State,Onshore,OR,,"526,569.02"
+2007,State,Onshore,PA,,"55,584.87"
+2007,State,Onshore,SC,,277.5
+2007,State,Onshore,SD,,"1,007,068.91"
+2007,State,Onshore,TX,,"5,892,914.21"
+2007,State,Onshore,UT,Beaver County,"63,133.09"
+2007,State,Onshore,UT,Iron County,57.25
+2007,State,Onshore,UT,Millard County,302.21
+2007,State,Onshore,UT,,"135,366,165.70"
+2007,State,Onshore,VA,,"233,474.14"
+2007,State,Onshore,WA,,"366,365.07"
+2007,State,Onshore,WV,,"389,004.34"
+2007,State,Onshore,WY,,"925,261,906.80"
+2007,State 8(g),Offshore,AL,,"13,510,124.83"
+2007,State 8(g),Offshore,AK,,"7,767,181.92"
+2007,State 8(g),Offshore,CA,,"6,797,664.57"
+2007,State 8(g),Offshore,FL,,"1,592.73"
+2007,State 8(g),Offshore,LA,,"23,088,706.49"
+2007,State 8(g),Offshore,MS,,"712,156.54"
+2007,State 8(g),Offshore,TX,,"15,774,350.42"
+2007,U.S. Treasury,Onshore & Offshore,,,"6,715,095,418.00"
+2008,American Indian Tribes,Onshore,,,"533,950,712.30"
+2008,Historic Preservation Fund,Offshore,,,"150,000,000.00"
+2008,Land & Water Conservation Fund,Offshore,,,"896,940,990.00"
+2008,Reclamation,Onshore,,,"1,961,680,025.00"
+2008,State,Onshore,AL,,"845,297.42"
+2008,State,Onshore,AK,,"20,741,906.55"
+2008,State,Onshore,AZ,,"266,834.26"
+2008,State,Onshore,AR,,"13,189,227.20"
+2008,State,Onshore,CA,Imperial County,"113,260.31"
+2008,State,Onshore,CA,Inyo County,"246,745.75"
+2008,State,Onshore,CA,Lake County,"2,780,976.80"
+2008,State,Onshore,CA,Lassen County,"16,944.66"
+2008,State,Onshore,CA,Mono County,"54,175.82"
+2008,State,Onshore,CA,Siskiyou County,"24,602.51"
+2008,State,Onshore,CA,Sonoma County,"1,749,735.98"
+2008,State,Onshore,CA,,"87,387,219.28"
+2008,State,Onshore,CO,,"178,377,966.10"
+2008,State,Onshore,FL,,"6,214.71"
+2008,State,Onshore,ID,Bingham County,33.41
+2008,State,Onshore,ID,Bonneville County,40.09
+2008,State,Onshore,ID,Caribou County,324.83
+2008,State,Onshore,ID,Cassia County,"257,325.00"
+2008,State,Onshore,ID,Washington County,870
+2008,State,Onshore,ID,,"1,720,262.20"
+2008,State,Onshore,IL,,"286,561.67"
+2008,State,Onshore,IN,,191.5
+2008,State,Onshore,KS,,"2,605,367.43"
+2008,State,Onshore,KY,,"508,473.37"
+2008,State,Onshore,LA,,"3,703,239.68"
+2008,State,Onshore,MI,,"1,171,444.97"
+2008,State,Onshore,MN,,"13,030.27"
+2008,State,Onshore,MS,,"1,008,265.07"
+2008,State,Onshore,MO,,"4,561,311.95"
+2008,State,Onshore,MT,,"48,943,889.42"
+2008,State,Onshore,NE,,"40,800.27"
+2008,State,Onshore,NV,Churchill County,"1,391,112.41"
+2008,State,Onshore,NV,Elko County,"16,486.00"
+2008,State,Onshore,NV,Esmeralda County,"18,952.14"
+2008,State,Onshore,NV,Eureka County,"5,410.63"
+2008,State,Onshore,NV,Humboldt County,"62,697.09"
+2008,State,Onshore,NV,Lander County,"1,027,340.70"
+2008,State,Onshore,NV,Lyon County,"3,259.79"
+2008,State,Onshore,NV,Mineral County,"379,806.14"
+2008,State,Onshore,NV,Nye County,"589,313.21"
+2008,State,Onshore,NV,Pershing County,"235,558.04"
+2008,State,Onshore,NV,Washoe County,"64,703.56"
+2008,State,Onshore,NV,White Pine County,"1,091.25"
+2008,State,Onshore,NV,,"13,826,417.76"
+2008,State,Onshore,NM,Dona Ana County,987.3
+2008,State,Onshore,NM,Hidalgo County,"1,321.50"
+2008,State,Onshore,NM,,"614,826,895.70"
+2008,State,Onshore,ND,,"23,392,224.43"
+2008,State,Onshore,OH,,"574,971.75"
+2008,State,Onshore,OK,,"7,240,652.39"
+2008,State,Onshore,OR,Deschutes County,"35,985.75"
+2008,State,Onshore,OR,Lake County,627.5
+2008,State,Onshore,OR,,"257,487.28"
+2008,State,Onshore,PA,,"69,368.41"
+2008,State,Onshore,SC,,277.5
+2008,State,Onshore,SD,,"1,200,905.81"
+2008,State,Onshore,TN,,99
+2008,State,Onshore,TX,,"8,327,399.61"
+2008,State,Onshore,UT,Beaver County,"70,130.01"
+2008,State,Onshore,UT,Millard County,"3,976.54"
+2008,State,Onshore,UT,,"173,765,221.20"
+2008,State,Onshore,VA,,"227,154.44"
+2008,State,Onshore,WA,,"202,943.33"
+2008,State,Onshore,WV,,"776,251.48"
+2008,State,Onshore,WY,,"1,270,987,014.00"
+2008,State 8(g),Offshore,AL,,"14,990,923.96"
+2008,State 8(g),Offshore,AK,,"17,814,996.98"
+2008,State 8(g),Offshore,CA,,"11,072,302.04"
+2008,State 8(g),Offshore,FL,,83.29
+2008,State 8(g),Offshore,LA,,"45,763,396.12"
+2008,State 8(g),Offshore,MS,,"564,068.08"
+2008,State 8(g),Offshore,TX,,"13,346,657.81"
+2008,U.S. Treasury,Onshore & Offshore,,,"17,312,534,844.00"
+2009,American Indian Tribes,Onshore,,,"449,462,056.70"
+2009,Historic Preservation Fund,Offshore,,,"150,000,000.00"
+2009,Land & Water Conservation Fund,Offshore,,,"898,090,084.50"
+2009,Land & Water Conservation Fund - GoMESA,Offshore,,,"909,915.47"
+2009,Reclamation,Onshore,,,"1,454,102,007.00"
+2009,State,Onshore,AL,,"2,209,673.31"
+2009,State,Onshore,AK,,"32,649,656.14"
+2009,State,Onshore,AZ,,"252,681.83"
+2009,State,Onshore,AR,,"3,320,709.56"
+2009,State,Onshore,CA,Imperial County,"43,650.39"
+2009,State,Onshore,CA,Inyo County,"149,424.52"
+2009,State,Onshore,CA,Lake County,"824,269.63"
+2009,State,Onshore,CA,Lassen County,"13,629.58"
+2009,State,Onshore,CA,Mendocino County,"106,249.92"
+2009,State,Onshore,CA,Mono County,"46,484.30"
+2009,State,Onshore,CA,Siskiyou County,"53,015.00"
+2009,State,Onshore,CA,Sonoma County,"963,562.60"
+2009,State,Onshore,CA,,"51,315,146.92"
+2009,State,Onshore,CO,,"187,319,102.00"
+2009,State,Onshore,FL,,"1,896.85"
+2009,State,Onshore,ID,Bingham County,33.41
+2009,State,Onshore,ID,Bonneville County,40.09
+2009,State,Onshore,ID,Caribou County,425.75
+2009,State,Onshore,ID,Cassia County,"22,423.70"
+2009,State,Onshore,ID,Washington County,"1,873.66"
+2009,State,Onshore,ID,,"1,482,326.90"
+2009,State,Onshore,IL,,"175,848.97"
+2009,State,Onshore,IN,,"14,207.73"
+2009,State,Onshore,KS,,"1,596,202.96"
+2009,State,Onshore,KY,,"436,751.40"
+2009,State,Onshore,LA,,"914,420.57"
+2009,State,Onshore,MI,,"836,787.02"
+2009,State,Onshore,MN,,"12,996.41"
+2009,State,Onshore,MS,,"583,180.97"
+2009,State,Onshore,MO,,"2,060,263.15"
+2009,State,Onshore,MT,,"46,558,941.78"
+2009,State,Onshore,NE,,"30,556.70"
+2009,State,Onshore,NV,Churchill County,"4,207,832.38"
+2009,State,Onshore,NV,Elko County,"1,045,436.00"
+2009,State,Onshore,NV,Esmeralda County,"1,358,390.25"
+2009,State,Onshore,NV,Eureka County,"74,648.52"
+2009,State,Onshore,NV,Humboldt County,"10,506.47"
+2009,State,Onshore,NV,Lander County,"434,497.40"
+2009,State,Onshore,NV,Lyon County,"31,995.03"
+2009,State,Onshore,NV,Mineral County,"617,458.98"
+2009,State,Onshore,NV,Nye County,"13,496.60"
+2009,State,Onshore,NV,Pershing County,"82,381.08"
+2009,State,Onshore,NV,Washoe County,"21,272.39"
+2009,State,Onshore,NV,White Pine County,"1,091.25"
+2009,State,Onshore,NV,,"20,845,475.42"
+2009,State,Onshore,NM,Dona Ana County,140
+2009,State,Onshore,NM,Hidalgo County,"1,410.50"
+2009,State,Onshore,NM,,"388,526,527.50"
+2009,State,Onshore,ND,,"61,155,146.06"
+2009,State,Onshore,OH,,"452,981.60"
+2009,State,Onshore,OK,,"3,941,950.47"
+2009,State,Onshore,OR,Deschutes County,"45,992.89"
+2009,State,Onshore,OR,Lake County,"197,028.75"
+2009,State,Onshore,OR,,"660,620.50"
+2009,State,Onshore,PA,,"43,462.03"
+2009,State,Onshore,SC,,477.86
+2009,State,Onshore,SD,,"950,615.99"
+2009,State,Onshore,TN,,99
+2009,State,Onshore,TX,,"7,406,691.52"
+2009,State,Onshore,UT,Beaver County,"97,471.22"
+2009,State,Onshore,UT,Iron County,"15,867.00"
+2009,State,Onshore,UT,Juab County,"272,867.50"
+2009,State,Onshore,UT,Millard County,"1,924,233.35"
+2009,State,Onshore,UT,,"128,636,159.80"
+2009,State,Onshore,VA,,"142,981.33"
+2009,State,Onshore,WA,,"345,553.59"
+2009,State,Onshore,WV,,"399,890.57"
+2009,State,Onshore,WY,,"957,232,075.30"
+2009,State - GoMESA,Offshore,AL,Baldwin County,"712,876.87"
+2009,State - GoMESA,Offshore,AL,Mobile County,"831,892.19"
+2009,State - GoMESA,Offshore,AL,,"6,179,076.25"
+2009,State - GoMESA,Offshore,LA,Assumption Parish,"51,906.72"
+2009,State - GoMESA,Offshore,LA,Calcasieu Parish,"70,168.39"
+2009,State - GoMESA,Offshore,LA,Cameron Parish,"82,446.35"
+2009,State - GoMESA,Offshore,LA,Iberia Parish,"69,563.09"
+2009,State - GoMESA,Offshore,LA,Jefferson Parish,"139,357.71"
+2009,State - GoMESA,Offshore,LA,Lafourche Parish,"79,152.27"
+2009,State - GoMESA,Offshore,LA,Livingston Parish,"66,022.77"
+2009,State - GoMESA,Offshore,LA,Orleans Parish,"145,552.11"
+2009,State - GoMESA,Offshore,LA,Plaquemines Parish,"164,699.67"
+2009,State - GoMESA,Offshore,LA,St. Bernard Parish,"97,611.44"
+2009,State - GoMESA,Offshore,LA,St. Charles Parish,"62,920.89"
+2009,State - GoMESA,Offshore,LA,St. James Parish,"53,198.55"
+2009,State - GoMESA,Offshore,LA,St. John the Baptist Parish,"58,394.56"
+2009,State - GoMESA,Offshore,LA,St. Martin Parish,"55,598.09"
+2009,State - GoMESA,Offshore,LA,St. Mary Parish,"57,445.49"
+2009,State - GoMESA,Offshore,LA,St. Tammany Parish,"92,883.26"
+2009,State - GoMESA,Offshore,LA,Tangipahoa Parish,"69,183.81"
+2009,State - GoMESA,Offshore,LA,Terrebonne Parish,"106,721.76"
+2009,State - GoMESA,Offshore,LA,Vermilion Parish,"64,003.35"
+2009,State - GoMESA,Offshore,LA,,"6,347,321.13"
+2009,State - GoMESA,Offshore,MS,Hancock County,"248,870.37"
+2009,State - GoMESA,Offshore,MS,Harrison County,"537,558.48"
+2009,State - GoMESA,Offshore,MS,Jackson County,"590,130.10"
+2009,State - GoMESA,Offshore,MS,,"5,506,235.80"
+2009,State - GoMESA,Offshore,TX,Aransas County,"21,273.54"
+2009,State - GoMESA,Offshore,TX,Brazoria County,"33,378.48"
+2009,State - GoMESA,Offshore,TX,Calhoun County,"27,890.96"
+2009,State - GoMESA,Offshore,TX,Cameron County,"31,982.15"
+2009,State - GoMESA,Offshore,TX,Chambers County,"18,837.01"
+2009,State - GoMESA,Offshore,TX,Galveston County,"45,617.03"
+2009,State - GoMESA,Offshore,TX,Harris County,"104,611.66"
+2009,State - GoMESA,Offshore,TX,Jackson County,"14,713.76"
+2009,State - GoMESA,Offshore,TX,Jefferson County,"37,408.74"
+2009,State - GoMESA,Offshore,TX,Kenedy County,"29,936.17"
+2009,State - GoMESA,Offshore,TX,Kleberg County,"21,766.76"
+2009,State - GoMESA,Offshore,TX,Matagorda County,"39,113.73"
+2009,State - GoMESA,Offshore,TX,Nueces County,"29,024.98"
+2009,State - GoMESA,Offshore,TX,Orange County,"21,207.74"
+2009,State - GoMESA,Offshore,TX,Refugio County,"13,910.08"
+2009,State - GoMESA,Offshore,TX,San Patricio County,"14,923.90"
+2009,State - GoMESA,Offshore,TX,Victoria County,"16,047.67"
+2009,State - GoMESA,Offshore,TX,Willacy County,"18,205.56"
+2009,State - GoMESA,Offshore,TX,,"2,159,399.65"
+2009,State 8(g),Offshore,AL,,"8,829,652.97"
+2009,State 8(g),Offshore,AK,,"9,943,557.99"
+2009,State 8(g),Offshore,CA,,"6,978,830.25"
+2009,State 8(g),Offshore,FL,,"1,376.54"
+2009,State 8(g),Offshore,LA,,"22,317,230.37"
+2009,State 8(g),Offshore,MS,,"451,384.35"
+2009,State 8(g),Offshore,TX,,"6,129,935.49"
+2009,U.S. Treasury,Onshore,,,"640,202,103.00"
+2009,U.S. Treasury,Offshore,,,"5,093,231,404.39"
+2009,U.S. Treasury - GoMESA,Offshore,,,"3,639,656.61"
+2010,American Indian Tribes,Onshore,,,"407,559,568.80"
+2010,Historic Preservation Fund,Offshore,,,"150,000,000.00"
+2010,Land & Water Conservation Fund,Offshore,,,"898,711,346.20"
+2010,Land & Water Conservation Fund - GoMESA,Offshore,,,"288,653.84"
+2010,Reclamation,Onshore,,,"1,363,951,779.00"
+2010,State,Onshore,AL,,"5,002,689.07"
+2010,State,Onshore,AK,,"34,329,221.02"
+2010,State,Onshore,AZ,,"26,249.31"
+2010,State,Onshore,AR,,"3,107,178.28"
+2010,State,Onshore,CA,Imperial County,"65,750.81"
+2010,State,Onshore,CA,Inyo County,"178,786.72"
+2010,State,Onshore,CA,Lake County,"843,695.13"
+2010,State,Onshore,CA,Lassen County,"13,302.63"
+2010,State,Onshore,CA,Mendocino County,750
+2010,State,Onshore,CA,Mono County,"33,369.06"
+2010,State,Onshore,CA,Siskiyou County,"51,807.50"
+2010,State,Onshore,CA,Sonoma County,"1,189,395.42"
+2010,State,Onshore,CA,,"61,634,162.41"
+2010,State,Onshore,CO,,"133,633,985.00"
+2010,State,Onshore,FL,,"46,844.91"
+2010,State,Onshore,ID,Bingham County,33.41
+2010,State,Onshore,ID,Bonneville County,40.09
+2010,State,Onshore,ID,Caribou County,425.75
+2010,State,Onshore,ID,Cassia County,"11,880.75"
+2010,State,Onshore,ID,Washington County,"11,899.00"
+2010,State,Onshore,ID,,"3,986,545.46"
+2010,State,Onshore,IL,,"262,412.21"
+2010,State,Onshore,IN,,"8,203.48"
+2010,State,Onshore,KS,,"1,461,896.85"
+2010,State,Onshore,KY,,"136,424.08"
+2010,State,Onshore,LA,,"3,123,211.44"
+2010,State,Onshore,MI,,"465,593.44"
+2010,State,Onshore,MN,,"12,924.25"
+2010,State,Onshore,MS,,"635,161.56"
+2010,State,Onshore,MO,,"3,287,656.77"
+2010,State,Onshore,MT,,"43,764,829.71"
+2010,State,Onshore,NE,,"162,940.13"
+2010,State,Onshore,NV,Churchill County,"2,413,536.58"
+2010,State,Onshore,NV,Elko County,"73,471.59"
+2010,State,Onshore,NV,Esmeralda County,"380,625.38"
+2010,State,Onshore,NV,Eureka County,"12,968.64"
+2010,State,Onshore,NV,Humboldt County,"159,964.36"
+2010,State,Onshore,NV,Lander County,"148,106.04"
+2010,State,Onshore,NV,Lyon County,"3,903.20"
+2010,State,Onshore,NV,Mineral County,"110,318.93"
+2010,State,Onshore,NV,Nye County,"140,913.17"
+2010,State,Onshore,NV,Pershing County,"545,197.39"
+2010,State,Onshore,NV,Washoe County,"31,890.77"
+2010,State,Onshore,NV,White Pine County,"74,196.50"
+2010,State,Onshore,NV,,"12,964,199.51"
+2010,State,Onshore,NM,Dona Ana County,140
+2010,State,Onshore,NM,Hidalgo County,"1,410.54"
+2010,State,Onshore,NM,,"380,694,468.90"
+2010,State,Onshore,ND,,"37,796,234.57"
+2010,State,Onshore,OH,,"377,353.87"
+2010,State,Onshore,OK,,"2,780,065.83"
+2010,State,Onshore,OR,Deschutes County,"44,807.72"
+2010,State,Onshore,OR,Lake County,"31,673.75"
+2010,State,Onshore,OR,,"329,766.50"
+2010,State,Onshore,PA,,"87,323.92"
+2010,State,Onshore,SC,,845.34
+2010,State,Onshore,SD,,"767,510.03"
+2010,State,Onshore,TX,,"14,855,648.72"
+2010,State,Onshore,UT,Beaver County,"106,143.36"
+2010,State,Onshore,UT,Iron County,"19,416.00"
+2010,State,Onshore,UT,Juab County,"87,976.50"
+2010,State,Onshore,UT,Millard County,"61,250.87"
+2010,State,Onshore,UT,,"142,696,934.40"
+2010,State,Onshore,VA,,"58,960.77"
+2010,State,Onshore,WA,,"87,451.59"
+2010,State,Onshore,WV,,"404,088.98"
+2010,State,Onshore,WY,,"886,871,351.80"
+2010,State - GoMESA,Offshore,AL,Baldwin County,"75,122.19"
+2010,State - GoMESA,Offshore,AL,Mobile County,"87,669.34"
+2010,State - GoMESA,Offshore,AL,,"651,166.11"
+2010,State - GoMESA,Offshore,LA,Assumption Parish,"5,722.40"
+2010,State - GoMESA,Offshore,LA,Calcasieu Parish,"7,735.62"
+2010,State - GoMESA,Offshore,LA,Cameron Parish,"9,089.26"
+2010,State - GoMESA,Offshore,LA,Iberia Parish,"7,668.89"
+2010,State - GoMESA,Offshore,LA,Jefferson Parish,"15,363.74"
+2010,State - GoMESA,Offshore,LA,Lafourche Parish,"8,726.36"
+2010,State - GoMESA,Offshore,LA,Livingston Parish,"7,278.47"
+2010,State - GoMESA,Offshore,LA,Orleans Parish,"16,046.12"
+2010,State - GoMESA,Offshore,LA,Plaquemines Parish,"18,157.82"
+2010,State - GoMESA,Offshore,LA,St. Bernard Parish,"10,760.80"
+2010,State - GoMESA,Offshore,LA,St. Charles Parish,"6,936.71"
+2010,State - GoMESA,Offshore,LA,St. James Parish,"5,864.81"
+2010,State - GoMESA,Offshore,LA,St. John the Baptist Parish,"6,437.50"
+2010,State - GoMESA,Offshore,LA,St. Martin Parish,"6,129.41"
+2010,State - GoMESA,Offshore,LA,St. Mary Parish,"6,333.09"
+2010,State - GoMESA,Offshore,LA,St. Tammany Parish,"10,239.54"
+2010,State - GoMESA,Offshore,LA,Tangipahoa Parish,"7,626.95"
+2010,State - GoMESA,Offshore,LA,Terrebonne Parish,"11,765.82"
+2010,State - GoMESA,Offshore,LA,Vermilion Parish,"7,056.03"
+2010,State - GoMESA,Offshore,LA,,"699,757.37"
+2010,State - GoMESA,Offshore,MS,Hancock County,"26,659.93"
+2010,State - GoMESA,Offshore,MS,Harrison County,"57,583.51"
+2010,State - GoMESA,Offshore,MS,Jackson County,"63,212.96"
+2010,State - GoMESA,Offshore,MS,,"589,825.59"
+2010,State - GoMESA,Offshore,TX,Aransas County,"2,394.39"
+2010,State - GoMESA,Offshore,TX,Brazoria County,"3,756.84"
+2010,State - GoMESA,Offshore,TX,Calhoun County,"3,139.20"
+2010,State - GoMESA,Offshore,TX,Cameron County,"3,599.68"
+2010,State - GoMESA,Offshore,TX,Chambers County,"2,120.15"
+2010,State - GoMESA,Offshore,TX,Galveston County,"5,134.31"
+2010,State - GoMESA,Offshore,TX,Harris County,"11,774.30"
+2010,State - GoMESA,Offshore,TX,Jackson County,"1,656.06"
+2010,State - GoMESA,Offshore,TX,Jefferson County,"4,210.45"
+2010,State - GoMESA,Offshore,TX,Kenedy County,"3,369.39"
+2010,State - GoMESA,Offshore,TX,Kleberg County,"2,449.91"
+2010,State - GoMESA,Offshore,TX,Matagorda County,"4,402.36"
+2010,State - GoMESA,Offshore,TX,Nueces County,"3,266.84"
+2010,State - GoMESA,Offshore,TX,Orange County,"2,386.97"
+2010,State - GoMESA,Offshore,TX,Refugio County,"1,565.61"
+2010,State - GoMESA,Offshore,TX,San Patricio County,"1,679.72"
+2010,State - GoMESA,Offshore,TX,Victoria County,"1,806.20"
+2010,State - GoMESA,Offshore,TX,Willacy County,"2,049.09"
+2010,State - GoMESA,Offshore,TX,,"243,045.87"
+2010,State 8(g),Offshore,AL,,"7,951,467.51"
+2010,State 8(g),Offshore,AK,,"5,601,828.86"
+2010,State 8(g),Offshore,CA,,"6,388,718.03"
+2010,State 8(g),Offshore,FL,,"1,489.21"
+2010,State 8(g),Offshore,LA,,"22,605,430.51"
+2010,State 8(g),Offshore,MS,,"269,418.73"
+2010,State 8(g),Offshore,TX,,"3,968,196.56"
+2010,U.S. Treasury,Onshore,,,"607,810,866.00"
+2010,U.S. Treasury,Offshore,,,"3,907,952,116.65"
+2010,U.S. Treasury - GoMESA,Offshore,,,"1,154,615.35"
+2011,American Indian Tribes,Onshore,,,"538,344,246.90"
+2011,Historic Preservation Fund,Offshore,,,"150,000,000.00"
+2011,Land & Water Conservation Fund,Offshore,,,"891,870,938.50"
+2011,Land & Water Conservation Fund - GoMESA,Offshore,,,"104,666.34"
+2011,Reclamation,Onshore,,,"1,532,623,172.00"
+2011,State,Onshore,AL,,"4,792,841.65"
+2011,State,Onshore,AK,,"15,146,718.05"
+2011,State,Onshore,AZ,Greenlee County,"3,641.54"
+2011,State,Onshore,AZ,,"12,112.16"
+2011,State,Onshore,AR,,"4,034,632.05"
+2011,State,Onshore,CA,Imperial County,"39,377.20"
+2011,State,Onshore,CA,Inyo County,"147,979.11"
+2011,State,Onshore,CA,Lake County,"800,270.77"
+2011,State,Onshore,CA,Lassen County,"12,231.70"
+2011,State,Onshore,CA,Mendocino County,750
+2011,State,Onshore,CA,Mono County,"34,256.68"
+2011,State,Onshore,CA,Siskiyou County,"64,418.00"
+2011,State,Onshore,CA,Sonoma County,"1,108,974.78"
+2011,State,Onshore,CA,,"81,654,340.14"
+2011,State,Onshore,CO,Chaffee County,"7,800.00"
+2011,State,Onshore,CO,,"156,811,089.70"
+2011,State,Onshore,FL,,"233,488.07"
+2011,State,Onshore,ID,Bingham County,133.64
+2011,State,Onshore,ID,Blaine County,404.5
+2011,State,Onshore,ID,Bonneville County,160.36
+2011,State,Onshore,ID,Camas County,305.5
+2011,State,Onshore,ID,Caribou County,750.5
+2011,State,Onshore,ID,Cassia County,"12,640.75"
+2011,State,Onshore,ID,Washington County,"10,340.50"
+2011,State,Onshore,ID,,"4,629,448.97"
+2011,State,Onshore,IL,,"208,434.61"
+2011,State,Onshore,IN,,"4,419.87"
+2011,State,Onshore,KS,,"1,873,412.69"
+2011,State,Onshore,KY,,"313,472.83"
+2011,State,Onshore,LA,,"17,982,455.21"
+2011,State,Onshore,MI,,"450,500.84"
+2011,State,Onshore,MN,,"10,142.25"
+2011,State,Onshore,MS,,"1,099,777.24"
+2011,State,Onshore,MO,,"3,684,804.10"
+2011,State,Onshore,MT,,"43,124,550.84"
+2011,State,Onshore,NE,,"27,713.44"
+2011,State,Onshore,NV,Churchill County,"879,577.55"
+2011,State,Onshore,NV,Elko County,"41,644.61"
+2011,State,Onshore,NV,Esmeralda County,"73,612.30"
+2011,State,Onshore,NV,Eureka County,"16,863.14"
+2011,State,Onshore,NV,Humboldt County,"76,443.04"
+2011,State,Onshore,NV,Lander County,"71,646.19"
+2011,State,Onshore,NV,Lyon County,"6,626.15"
+2011,State,Onshore,NV,Mineral County,"64,330.92"
+2011,State,Onshore,NV,Nye County,"48,307.70"
+2011,State,Onshore,NV,Pershing County,"117,130.93"
+2011,State,Onshore,NV,Washoe County,"28,026.27"
+2011,State,Onshore,NV,White Pine County,"26,023.50"
+2011,State,Onshore,NV,,"8,344,555.81"
+2011,State,Onshore,NM,Dona Ana County,160.93
+2011,State,Onshore,NM,Hidalgo County,"7,037.75"
+2011,State,Onshore,NM,,"434,583,873.60"
+2011,State,Onshore,NC,,158
+2011,State,Onshore,ND,,"29,469,248.39"
+2011,State,Onshore,OH,,"323,228.75"
+2011,State,Onshore,OK,,"4,394,036.87"
+2011,State,Onshore,OR,Deschutes County,"41,652.25"
+2011,State,Onshore,OR,Hood River County,"2,028.00"
+2011,State,Onshore,OR,Lake County,"31,674.27"
+2011,State,Onshore,OR,,"379,662.54"
+2011,State,Onshore,PA,,"48,627.75"
+2011,State,Onshore,SC,,"1,015.19"
+2011,State,Onshore,SD,,"921,076.60"
+2011,State,Onshore,TN,,99
+2011,State,Onshore,TX,,"17,304,873.36"
+2011,State,Onshore,UT,Beaver County,"79,443.10"
+2011,State,Onshore,UT,Iron County,"1,267.50"
+2011,State,Onshore,UT,Juab County,"37,913.74"
+2011,State,Onshore,UT,Millard County,"44,269.11"
+2011,State,Onshore,UT,,"149,439,229.30"
+2011,State,Onshore,VA,,"74,219.90"
+2011,State,Onshore,WA,Whatcom County,"2,109.25"
+2011,State,Onshore,WA,,"27,058.64"
+2011,State,Onshore,WV,,"350,541.45"
+2011,State,Onshore,WY,,"971,498,012.30"
+2011,State - GoMESA,Offshore,AL,Baldwin County,"23,744.75"
+2011,State - GoMESA,Offshore,AL,Mobile County,"27,710.68"
+2011,State - GoMESA,Offshore,AL,,"205,821.74"
+2011,State - GoMESA,Offshore,LA,Assumption Parish,"1,821.38"
+2011,State - GoMESA,Offshore,LA,Calcasieu Parish,"2,462.17"
+2011,State - GoMESA,Offshore,LA,Cameron Parish,"2,893.01"
+2011,State - GoMESA,Offshore,LA,Iberia Parish,"2,440.93"
+2011,State - GoMESA,Offshore,LA,Jefferson Parish,"4,890.11"
+2011,State - GoMESA,Offshore,LA,Lafourche Parish,"2,777.51"
+2011,State - GoMESA,Offshore,LA,Livingston Parish,"2,316.66"
+2011,State - GoMESA,Offshore,LA,Orleans Parish,"5,107.31"
+2011,State - GoMESA,Offshore,LA,Plaquemines Parish,"5,779.44"
+2011,State - GoMESA,Offshore,LA,St. Bernard Parish,"3,425.05"
+2011,State - GoMESA,Offshore,LA,St. Charles Parish,"2,207.88"
+2011,State - GoMESA,Offshore,LA,St. James Parish,"1,866.71"
+2011,State - GoMESA,Offshore,LA,St. John the Baptist Parish,"2,048.99"
+2011,State - GoMESA,Offshore,LA,St. Martin Parish,"1,950.92"
+2011,State - GoMESA,Offshore,LA,St. Mary Parish,"2,015.75"
+2011,State - GoMESA,Offshore,LA,St. Tammany Parish,"3,259.14"
+2011,State - GoMESA,Offshore,LA,Tangipahoa Parish,"2,427.58"
+2011,State - GoMESA,Offshore,LA,Terrebonne Parish,"3,744.93"
+2011,State - GoMESA,Offshore,LA,Vermilion Parish,"2,245.85"
+2011,State - GoMESA,Offshore,LA,,"222,725.30"
+2011,State - GoMESA,Offshore,MS,Hancock County,"8,445.10"
+2011,State - GoMESA,Offshore,MS,Harrison County,"18,240.81"
+2011,State - GoMESA,Offshore,MS,Jackson County,"20,024.05"
+2011,State - GoMESA,Offshore,MS,,"186,839.86"
+2011,State - GoMESA,Offshore,TX,Aransas County,762.34
+2011,State - GoMESA,Offshore,TX,Brazoria County,"1,196.12"
+2011,State - GoMESA,Offshore,TX,Calhoun County,999.48
+2011,State - GoMESA,Offshore,TX,Cameron County,"1,146.09"
+2011,State - GoMESA,Offshore,TX,Chambers County,675.03
+2011,State - GoMESA,Offshore,TX,Galveston County,"1,634.69"
+2011,State - GoMESA,Offshore,TX,Harris County,"3,748.76"
+2011,State - GoMESA,Offshore,TX,Jackson County,527.27
+2011,State - GoMESA,Offshore,TX,Jefferson County,"1,340.54"
+2011,State - GoMESA,Offshore,TX,Kenedy County,"1,072.77"
+2011,State - GoMESA,Offshore,TX,Kleberg County,780.01
+2011,State - GoMESA,Offshore,TX,Matagorda County,"1,401.65"
+2011,State - GoMESA,Offshore,TX,Nueces County,"1,040.11"
+2011,State - GoMESA,Offshore,TX,Orange County,759.98
+2011,State - GoMESA,Offshore,TX,Refugio County,498.47
+2011,State - GoMESA,Offshore,TX,San Patricio County,534.8
+2011,State - GoMESA,Offshore,TX,Victoria County,575.07
+2011,State - GoMESA,Offshore,TX,Willacy County,652.4
+2011,State - GoMESA,Offshore,TX,,"77,382.32"
+2011,State 8(g),Offshore,AL,,"5,720,171.32"
+2011,State 8(g),Offshore,AK,,"5,128,697.35"
+2011,State 8(g),Offshore,CA,,"7,249,128.74"
+2011,State 8(g),Offshore,FL,,"1,449.94"
+2011,State 8(g),Offshore,LA,,"20,687,371.40"
+2011,State 8(g),Offshore,MA,,"23,835.06"
+2011,State 8(g),Offshore,MS,,"184,527.75"
+2011,State 8(g),Offshore,TX,,"2,001,314.07"
+2011,U.S. Treasury,Onshore,,,"655,649,401.00"
+2011,U.S. Treasury,Offshore,,,"5,394,172,814.65"
+2011,U.S. Treasury - GoMESA,Offshore,,,"418,665.35"
+2012,American Indian Tribes,Onshore,,,"717,556,925.10"
+2012,Historic Preservation Fund,Offshore,,,"150,000,000.00"
+2012,Land & Water Conservation Fund,Offshore,,,"897,036,446.50"
+2012,Land & Water Conservation Fund - GoMESA,Offshore,,,"104,666.34"
+2012,Other,Offshore,,,"205,493,260.07"
+2012,Other,Onshore,,,"214,991,515.77"
+2012,Reclamation,Onshore,,,"1,646,314,405.00"
+2012,State,Onshore,AL,,"4,154,511.68"
+2012,State,Onshore,AK,,"13,470,141.43"
+2012,State,Onshore,AZ,Greenlee County,"2,093.02"
+2012,State,Onshore,AZ,,"12,078.42"
+2012,State,Onshore,AR,,"2,067,325.96"
+2012,State,Onshore,CA,Imperial County,"16,657.36"
+2012,State,Onshore,CA,Inyo County,"168,266.86"
+2012,State,Onshore,CA,Lake County,"760,858.32"
+2012,State,Onshore,CA,Lassen County,"14,229.55"
+2012,State,Onshore,CA,Mendocino County,750
+2012,State,Onshore,CA,Mono County,"23,512.05"
+2012,State,Onshore,CA,Siskiyou County,"30,561.25"
+2012,State,Onshore,CA,Sonoma County,"1,009,786.30"
+2012,State,Onshore,CA,,"101,048,217.60"
+2012,State,Onshore,CO,Chaffee County,400
+2012,State,Onshore,CO,,"157,818,984.80"
+2012,State,Onshore,FL,,"540,929.07"
+2012,State,Onshore,ID,Bingham County,33.41
+2012,State,Onshore,ID,Blaine County,404.5
+2012,State,Onshore,ID,Bonneville County,40.09
+2012,State,Onshore,ID,Camas County,305.5
+2012,State,Onshore,ID,Canyon County,"1,274.17"
+2012,State,Onshore,ID,Caribou County,425.75
+2012,State,Onshore,ID,Cassia County,"12,450.75"
+2012,State,Onshore,ID,Payette County,"42,269.32"
+2012,State,Onshore,ID,Washington County,"10,068.00"
+2012,State,Onshore,ID,,"4,538,888.79"
+2012,State,Onshore,IL,,"263,731.50"
+2012,State,Onshore,IN,,"4,416.74"
+2012,State,Onshore,KS,,"1,330,807.09"
+2012,State,Onshore,KY,,"485,939.20"
+2012,State,Onshore,LA,,"6,914,438.73"
+2012,State,Onshore,MI,,"330,883.97"
+2012,State,Onshore,MN,,"11,502.07"
+2012,State,Onshore,MS,,"2,598,118.52"
+2012,State,Onshore,MO,,"3,061,605.90"
+2012,State,Onshore,MT,,"47,257,456.15"
+2012,State,Onshore,NE,,"27,550.02"
+2012,State,Onshore,NV,Churchill County,"929,545.19"
+2012,State,Onshore,NV,Elko County,"30,004.86"
+2012,State,Onshore,NV,Esmeralda County,"58,738.15"
+2012,State,Onshore,NV,Eureka County,"14,251.34"
+2012,State,Onshore,NV,Humboldt County,"72,421.77"
+2012,State,Onshore,NV,Lander County,"70,723.46"
+2012,State,Onshore,NV,Lyon County,"8,249.00"
+2012,State,Onshore,NV,Mineral County,"33,249.02"
+2012,State,Onshore,NV,Nye County,"6,705.70"
+2012,State,Onshore,NV,Pershing County,"93,006.31"
+2012,State,Onshore,NV,Washoe County,"23,768.00"
+2012,State,Onshore,NV,White Pine County,"8,962.50"
+2012,State,Onshore,NV,,"10,435,757.48"
+2012,State,Onshore,NM,Dona Ana County,"1,442.30"
+2012,State,Onshore,NM,Hidalgo County,"4,669.82"
+2012,State,Onshore,NM,,"488,149,571.40"
+2012,State,Onshore,NC,,158
+2012,State,Onshore,ND,,"64,501,003.82"
+2012,State,Onshore,OH,,"284,145.25"
+2012,State,Onshore,OK,,"5,372,190.83"
+2012,State,Onshore,OR,Deschutes County,"39,725.25"
+2012,State,Onshore,OR,Hood River County,"2,028.00"
+2012,State,Onshore,OR,Lake County,"31,673.73"
+2012,State,Onshore,OR,,"343,200.92"
+2012,State,Onshore,PA,,"67,080.52"
+2012,State,Onshore,SC,,"1,390.68"
+2012,State,Onshore,SD,,"1,907,122.32"
+2012,State,Onshore,TX,,"7,726,719.25"
+2012,State,Onshore,UT,Beaver County,"77,219.88"
+2012,State,Onshore,UT,Iron County,"1,267.50"
+2012,State,Onshore,UT,Juab County,"74,910.35"
+2012,State,Onshore,UT,Millard County,"39,348.35"
+2012,State,Onshore,UT,,"164,410,238.00"
+2012,State,Onshore,VA,,"45,215.12"
+2012,State,Onshore,WA,Whatcom County,"2,109.25"
+2012,State,Onshore,WA,,"11,473.69"
+2012,State,Onshore,WV,,"235,293.96"
+2012,State,Onshore,WY,,"995,169,510.00"
+2012,State - GoMESA,Offshore,AL,Baldwin County,"8,824.32"
+2012,State - GoMESA,Offshore,AL,Mobile County,"9,830.34"
+2012,State - GoMESA,Offshore,AL,,"74,618.65"
+2012,State - GoMESA,Offshore,LA,Assumption Parish,662.2
+2012,State - GoMESA,Offshore,LA,Calcasieu Parish,927.55
+2012,State - GoMESA,Offshore,LA,Cameron Parish,"1,042.28"
+2012,State - GoMESA,Offshore,LA,Iberia Parish,890.18
+2012,State - GoMESA,Offshore,LA,Jefferson Parish,"1,749.89"
+2012,State - GoMESA,Offshore,LA,Lafourche Parish,"1,028.64"
+2012,State - GoMESA,Offshore,LA,Livingston Parish,933.16
+2012,State - GoMESA,Offshore,LA,Orleans Parish,"1,548.29"
+2012,State - GoMESA,Offshore,LA,Plaquemines Parish,"2,088.83"
+2012,State - GoMESA,Offshore,LA,St. Bernard Parish,"1,171.68"
+2012,State - GoMESA,Offshore,LA,St. Charles Parish,815.26
+2012,State - GoMESA,Offshore,LA,St. James Parish,680.54
+2012,State - GoMESA,Offshore,LA,St. John the Baptist Parish,752.92
+2012,State - GoMESA,Offshore,LA,St. Martin Parish,719.41
+2012,State - GoMESA,Offshore,LA,St. Mary Parish,737.44
+2012,State - GoMESA,Offshore,LA,St. Tammany Parish,"1,296.79"
+2012,State - GoMESA,Offshore,LA,Tangipahoa Parish,936.39
+2012,State - GoMESA,Offshore,LA,Terrebonne Parish,"1,382.90"
+2012,State - GoMESA,Offshore,LA,Vermilion Parish,828.19
+2012,State - GoMESA,Offshore,LA,,"80,770.15"
+2012,State - GoMESA,Offshore,MS,Hancock County,"3,063.89"
+2012,State - GoMESA,Offshore,MS,Harrison County,"6,545.16"
+2012,State - GoMESA,Offshore,MS,Jackson County,"7,326.68"
+2012,State - GoMESA,Offshore,MS,,"67,742.90"
+2012,State - GoMESA,Offshore,TX,Aransas County,275.57
+2012,State - GoMESA,Offshore,TX,Brazoria County,442.2
+2012,State - GoMESA,Offshore,TX,Calhoun County,361.7
+2012,State - GoMESA,Offshore,TX,Cameron County,419.26
+2012,State - GoMESA,Offshore,TX,Chambers County,246.13
+2012,State - GoMESA,Offshore,TX,Galveston County,592.19
+2012,State - GoMESA,Offshore,TX,Harris County,"1,387.74"
+2012,State - GoMESA,Offshore,TX,Jackson County,190.43
+2012,State - GoMESA,Offshore,TX,Jefferson County,473.68
+2012,State - GoMESA,Offshore,TX,Kenedy County,389.09
+2012,State - GoMESA,Offshore,TX,Kleberg County,281.49
+2012,State - GoMESA,Offshore,TX,Matagorda County,506.13
+2012,State - GoMESA,Offshore,TX,Nueces County,369.17
+2012,State - GoMESA,Offshore,TX,Orange County,270.5
+2012,State - GoMESA,Offshore,TX,Refugio County,180.28
+2012,State - GoMESA,Offshore,TX,San Patricio County,189.95
+2012,State - GoMESA,Offshore,TX,Victoria County,205.15
+2012,State - GoMESA,Offshore,TX,Willacy County,236.22
+2012,State - GoMESA,Offshore,TX,,"28,067.50"
+2012,State 8(g),Offshore,AL,,"3,701,753.59"
+2012,State 8(g),Offshore,AK,,"3,100,755.83"
+2012,State 8(g),Offshore,CA,,"8,545,265.51"
+2012,State 8(g),Offshore,FL,,"1,388.58"
+2012,State 8(g),Offshore,LA,,"19,765,177.22"
+2012,State 8(g),Offshore,MA,,"23,835.06"
+2012,State 8(g),Offshore,MS,,"129,441.43"
+2012,State 8(g),Offshore,TX,,"1,390,477.38"
+2012,U.S. Treasury,Onshore,,,"489,059,561.73"
+2012,U.S. Treasury - GoMESA,Offshore,,,"635,463.24"
+2012,U.S. Treasury,Offshore,,,"5,705,170,929.42"
+2013,American Indian Tribes,Onshore,,,"932,956,397.20"
+2013,Historic Preservation Fund,Offshore,,,"150,000,000.00"
+2013,Land & Water Conservation Fund,Offshore,,,"894,036,704.95"
+2013,Land & Water Conservation Fund - GoMESA,Offshore,,,"1,543,777.36"
+2013,Reclamation,Onshore,,,"1,592,181,337.00"
+2013,Other,Offshore,,,"228,785,871.95"
+2013,Other,Onshore,,,"168,544,944.88"
+2013,State,Onshore,AL,,"2,260,241.40"
+2013,State,Onshore,AK,,"15,695,140.06"
+2013,State,Onshore,AZ,,"35,279.91"
+2013,State,Onshore,AR,,"1,321,553.01"
+2013,State,Onshore,CA,Imperial County,"11,755.99"
+2013,State,Onshore,CA,Inyo County,"189,839.62"
+2013,State,Onshore,CA,Lake County,"802,134.56"
+2013,State,Onshore,CA,Lassen County,"17,110.64"
+2013,State,Onshore,CA,Mendocino County,750
+2013,State,Onshore,CA,Mono County,"51,852.41"
+2013,State,Onshore,CA,Siskiyou County,"17,386.39"
+2013,State,Onshore,CA,Sonoma County,"1,119,660.77"
+2013,State,Onshore,CA,,"91,606,664.37"
+2013,State,Onshore,CO,Chaffee County,759.2
+2013,State,Onshore,CO,Gunnison County,"13,873.91"
+2013,State,Onshore,CO,,"129,646,596.60"
+2013,State,Onshore,FL,,"654,638.77"
+2013,State,Onshore,ID,Bingham County,31.71
+2013,State,Onshore,ID,Blaine County,404.5
+2013,State,Onshore,ID,Bonneville County,38.05
+2013,State,Onshore,ID,Camas County,305.5
+2013,State,Onshore,ID,Canyon County,518.22
+2013,State,Onshore,ID,Caribou County,102.73
+2013,State,Onshore,ID,Cassia County,"9,308.18"
+2013,State,Onshore,ID,Payette County,"17,191.53"
+2013,State,Onshore,ID,Washington County,"9,554.53"
+2013,State,Onshore,ID,,"4,996,080.77"
+2013,State,Onshore,IL,,"211,968.09"
+2013,State,Onshore,IN,,"3,147.74"
+2013,State,Onshore,KS,,"1,214,098.87"
+2013,State,Onshore,KY,,"446,887.49"
+2013,State,Onshore,LA,,"2,607,490.43"
+2013,State,Onshore,MI,,"135,489.01"
+2013,State,Onshore,MN,,"23,305.30"
+2013,State,Onshore,MS,,"1,093,009.06"
+2013,State,Onshore,MO,,"2,974,766.51"
+2013,State,Onshore,MT,,"36,168,220.97"
+2013,State,Onshore,NE,,"26,734.53"
+2013,State,Onshore,NV,Churchill County,"533,630.47"
+2013,State,Onshore,NV,Elko County,"48,103.25"
+2013,State,Onshore,NV,Esmeralda County,"115,746.91"
+2013,State,Onshore,NV,Eureka County,"11,801.94"
+2013,State,Onshore,NV,Humboldt County,"61,582.00"
+2013,State,Onshore,NV,Lander County,"133,460.63"
+2013,State,Onshore,NV,Lyon County,"5,961.10"
+2013,State,Onshore,NV,Mineral County,"29,104.65"
+2013,State,Onshore,NV,Nye County,"15,979.85"
+2013,State,Onshore,NV,Pershing County,"73,530.04"
+2013,State,Onshore,NV,Washoe County,"30,322.43"
+2013,State,Onshore,NV,White Pine County,"12,474.84"
+2013,State,Onshore,NV,,"7,746,989.15"
+2013,State,Onshore,NM,Dona Ana County,"25,645.32"
+2013,State,Onshore,NM,Hidalgo County,"3,118.65"
+2013,State,Onshore,NM,,"478,732,193.90"
+2013,State,Onshore,NC,,37.49
+2013,State,Onshore,ND,,"90,290,490.48"
+2013,State,Onshore,OH,,"266,026.90"
+2013,State,Onshore,OK,,"4,283,474.02"
+2013,State,Onshore,OR,Deschutes County,"40,822.17"
+2013,State,Onshore,OR,Hood River County,"1,924.57"
+2013,State,Onshore,OR,Lake County,"29,463.61"
+2013,State,Onshore,OR,,"300,720.63"
+2013,State,Onshore,PA,,"69,968.21"
+2013,State,Onshore,SD,,"1,036,873.76"
+2013,State,Onshore,TX,,"15,771,654.85"
+2013,State,Onshore,UT,Beaver County,"74,086.89"
+2013,State,Onshore,UT,Iron County,"1,202.86"
+2013,State,Onshore,UT,Juab County,"46,643.82"
+2013,State,Onshore,UT,Millard County,"37,341.58"
+2013,State,Onshore,UT,,"138,126,632.30"
+2013,State,Onshore,VA,,"42,863.38"
+2013,State,Onshore,WA,Whatcom County,"2,001.68"
+2013,State,Onshore,WA,,"4,651.50"
+2013,State,Onshore,WV,,"163,547.46"
+2013,State,Onshore,WY,,"932,475,423.90"
+2013,State - GoMESA,Offshore,AL,Baldwin County,"8,824.32"
+2013,State - GoMESA,Offshore,AL,Mobile County,"9,830.34"
+2013,State - GoMESA,Offshore,AL,,"69,861.71"
+2013,State - GoMESA,Offshore,LA,Assumption Parish,662.2
+2013,State - GoMESA,Offshore,LA,Calcasieu Parish,927.55
+2013,State - GoMESA,Offshore,LA,Cameron Parish,"1,042.28"
+2013,State - GoMESA,Offshore,LA,Iberia Parish,890.18
+2013,State - GoMESA,Offshore,LA,Jefferson Parish,"1,749.89"
+2013,State - GoMESA,Offshore,LA,Lafourche Parish,"1,028.64"
+2013,State - GoMESA,Offshore,LA,Livingston Parish,933.16
+2013,State - GoMESA,Offshore,LA,Orleans Parish,"1,548.29"
+2013,State - GoMESA,Offshore,LA,Plaquemines Parish,"2,088.83"
+2013,State - GoMESA,Offshore,LA,St. Bernard Parish,"1,171.68"
+2013,State - GoMESA,Offshore,LA,St. Charles Parish,815.26
+2013,State - GoMESA,Offshore,LA,St. James Parish,680.54
+2013,State - GoMESA,Offshore,LA,St. John the Baptist Parish,752.92
+2013,State - GoMESA,Offshore,LA,St. Martin Parish,719.41
+2013,State - GoMESA,Offshore,LA,St. Mary Parish,737.44
+2013,State - GoMESA,Offshore,LA,St. Tammany Parish,"1,296.79"
+2013,State - GoMESA,Offshore,LA,Tangipahoa Parish,936.39
+2013,State - GoMESA,Offshore,LA,Terrebonne Parish,"1,382.90"
+2013,State - GoMESA,Offshore,LA,Vermilion Parish,828.19
+2013,State - GoMESA,Offshore,LA,,"75,621.03"
+2013,State - GoMESA,Offshore,MS,Hancock County,"3,063.89"
+2013,State - GoMESA,Offshore,MS,Harrison County,"6,545.16"
+2013,State - GoMESA,Offshore,MS,Jackson County,"7,326.68"
+2013,State - GoMESA,Offshore,MS,,"63,424.29"
+2013,State - GoMESA,Offshore,TX,Aransas County,275.57
+2013,State - GoMESA,Offshore,TX,Brazoria County,442.2
+2013,State - GoMESA,Offshore,TX,Calhoun County,361.7
+2013,State - GoMESA,Offshore,TX,Cameron County,419.26
+2013,State - GoMESA,Offshore,TX,Chambers County,246.13
+2013,State - GoMESA,Offshore,TX,Galveston County,592.19
+2013,State - GoMESA,Offshore,TX,Harris County,"1,387.74"
+2013,State - GoMESA,Offshore,TX,Jackson County,190.43
+2013,State - GoMESA,Offshore,TX,Jefferson County,473.68
+2013,State - GoMESA,Offshore,TX,Kenedy County,389.09
+2013,State - GoMESA,Offshore,TX,Kleberg County,281.49
+2013,State - GoMESA,Offshore,TX,Matagorda County,506.13
+2013,State - GoMESA,Offshore,TX,Nueces County,369.17
+2013,State - GoMESA,Offshore,TX,Orange County,270.5
+2013,State - GoMESA,Offshore,TX,Refugio County,180.28
+2013,State - GoMESA,Offshore,TX,San Patricio County,189.95
+2013,State - GoMESA,Offshore,TX,Victoria County,205.15
+2013,State - GoMESA,Offshore,TX,Willacy County,236.22
+2013,State - GoMESA,Offshore,TX,,"26,278.21"
+2013,State 8(g),Offshore,AL,,"3,703,358.16"
+2013,State 8(g),Offshore,AK,,"2,940,961.63"
+2013,State 8(g),Offshore,CA,,"8,455,415.31"
+2013,State 8(g),Offshore,FL,,"1,388.58"
+2013,State 8(g),Offshore,LA,,"24,533,076.28"
+2013,State 8(g),Offshore,MA,,"23,835.06"
+2013,State 8(g),Offshore,MS,,"114,066.00"
+2013,State 8(g),Offshore,TX,,"869,340.61"
+2013,U.S. Treasury,Onshore,,,"490,695,402.18"
+2013,U.S. Treasury - GoMESA,Offshore,,,"539,623.82"
+2013,U.S. Treasury,Offshore,,,"7,760,122,579.23"
+2014,American Indian Tribes,Onshore,,,"1,146,119,618.68"
+2014,Historic Preservation Fund,Offshore,,,"150,000,000.00"
+2014,Land & Water Conservation Fund,Offshore,,,"894,379,939.88"
+2014,Land & Water Conservation Fund - GoMESA,Offshore,,,"877,818.12"
+2014,Other,Offshore,,,"220,518,478.92"
+2014,Other,Onshore,,,"194,422,815.68"
+2014,Reclamation,Onshore,,,"1,766,192,706.99"
+2014,State,Onshore,AL,,"1,821,119.50"
+2014,State,Onshore,AK,,"17,624,834.91"
+2014,State,Onshore,AZ,,"17,821.10"
+2014,State,Onshore,AR,,"1,862,042.11"
+2014,State,Onshore,CA,Imperial County,"44,286.46"
+2014,State,Onshore,CA,Inyo County,"235,502.53"
+2014,State,Onshore,CA,Lake County,"959,019.64"
+2014,State,Onshore,CA,Lassen County,"15,690.30"
+2014,State,Onshore,CA,Mendocino County,690
+2014,State,Onshore,CA,Mono County,"68,038.93"
+2014,State,Onshore,CA,Siskiyou County,"18,748.48"
+2014,State,Onshore,CA,Sonoma County,"1,315,200.99"
+2014,State,Onshore,CA,,"90,827,274.46"
+2014,State,Onshore,CO,Gunnison County,"6,559.97"
+2014,State,Onshore,CO,,"168,751,035.50"
+2014,State,Onshore,FL,,"36,067.94"
+2014,State,Onshore,ID,Blaine County,354.75
+2014,State,Onshore,ID,Camas County,267.92
+2014,State,Onshore,ID,Canyon County,506.75
+2014,State,Onshore,ID,Cassia County,"9,372.70"
+2014,State,Onshore,ID,Payette County,"17,735.00"
+2014,State,Onshore,ID,Washington County,"9,856.57"
+2014,State,Onshore,ID,,"5,339,028.39"
+2014,State,Onshore,IL,,"170,753.84"
+2014,State,Onshore,IN,,"6,482.09"
+2014,State,Onshore,KS,,"1,354,119.71"
+2014,State,Onshore,KY,,"88,263.10"
+2014,State,Onshore,LA,,"3,417,219.59"
+2014,State,Onshore,MI,,"343,236.59"
+2014,State,Onshore,MN,,"17,701.19"
+2014,State,Onshore,MS,,"1,170,853.22"
+2014,State,Onshore,MO,,"2,242,480.93"
+2014,State,Onshore,MT,,"37,718,220.78"
+2014,State,Onshore,NE,,"38,769.95"
+2014,State,Onshore,NV,Churchill County,"583,105.89"
+2014,State,Onshore,NV,Elko County,"38,158.10"
+2014,State,Onshore,NV,Esmeralda County,"84,830.78"
+2014,State,Onshore,NV,Eureka County,"12,001.37"
+2014,State,Onshore,NV,Humboldt County,"57,885.94"
+2014,State,Onshore,NV,Lander County,"151,695.40"
+2014,State,Onshore,NV,Lyon County,"6,666.93"
+2014,State,Onshore,NV,Mineral County,"57,680.15"
+2014,State,Onshore,NV,Nye County,683.41
+2014,State,Onshore,NV,Pershing County,"55,139.81"
+2014,State,Onshore,NV,Washoe County,"88,724.27"
+2014,State,Onshore,NV,White Pine County,"1,537.63"
+2014,State,Onshore,NV,,"7,206,706.10"
+2014,State,Onshore,NM,Dona Ana County,"6,653.50"
+2014,State,Onshore,NM,Hidalgo County,"3,217.24"
+2014,State,Onshore,NM,,"579,084,340.27"
+2014,State,Onshore,NC,,109.97
+2014,State,Onshore,ND,,"68,413,590.60"
+2014,State,Onshore,OH,,"265,854.57"
+2014,State,Onshore,OK,,"5,353,242.11"
+2014,State,Onshore,OR,Deschutes County,"41,041.69"
+2014,State,Onshore,OR,Hood River County,103.43
+2014,State,Onshore,OR,Lake County,"21,856.48"
+2014,State,Onshore,OR,,"287,703.39"
+2014,State,Onshore,PA,,"73,003.13"
+2014,State,Onshore,SC,,"2,076.64"
+2014,State,Onshore,SD,,"1,333,210.69"
+2014,State,Onshore,TX,,"10,730,021.17"
+2014,State,Onshore,UT,Beaver County,"103,181.68"
+2014,State,Onshore,UT,Iron County,"1,176.24"
+2014,State,Onshore,UT,Juab County,"30,635.52"
+2014,State,Onshore,UT,Millard County,"37,656.00"
+2014,State,Onshore,UT,,"170,644,905.07"
+2014,State,Onshore,VA,,"52,625.59"
+2014,State,Onshore,WA,Whatcom County,"2,064.95"
+2014,State,Onshore,WA,,"4,798.53"
+2014,State,Onshore,WV,,"322,061.69"
+2014,State,Onshore,WY,,"1,007,269,375.47"
+2014,State - GoMESA,Offshore,AL,Baldwin County,"118,220.48"
+2014,State - GoMESA,Offshore,AL,Mobile County,"131,698.37"
+2014,State - GoMESA,Offshore,AL,,"1,004,432.36"
+2014,State - GoMESA,Offshore,LA,Assumption Parish,"9,139.78"
+2014,State - GoMESA,Offshore,LA,Calcasieu Parish,"12,802.07"
+2014,State - GoMESA,Offshore,LA,Cameron Parish,"14,385.55"
+2014,State - GoMESA,Offshore,LA,Iberia Parish,"12,286.24"
+2014,State - GoMESA,Offshore,LA,Jefferson Parish,"24,152.12"
+2014,State - GoMESA,Offshore,LA,Lafourche Parish,"14,197.32"
+2014,State - GoMESA,Offshore,LA,Livingston Parish,"12,879.51"
+2014,State - GoMESA,Offshore,LA,Orleans Parish,"21,369.55"
+2014,State - GoMESA,Offshore,LA,Plaquemines Parish,"28,830.17"
+2014,State - GoMESA,Offshore,LA,St. Bernard Parish,"16,171.64"
+2014,State - GoMESA,Offshore,LA,St. Charles Parish,"11,252.28"
+2014,State - GoMESA,Offshore,LA,St. James Parish,"9,392.78"
+2014,State - GoMESA,Offshore,LA,St. John the Baptist Parish,"10,391.78"
+2014,State - GoMESA,Offshore,LA,St. Martin Parish,"9,929.26"
+2014,State - GoMESA,Offshore,LA,St. Mary Parish,"10,178.22"
+2014,State - GoMESA,Offshore,LA,St. Tammany Parish,"17,898.31"
+2014,State - GoMESA,Offshore,LA,Tangipahoa Parish,"12,924.07"
+2014,State - GoMESA,Offshore,LA,Terrebonne Parish,"19,086.81"
+2014,State - GoMESA,Offshore,LA,Vermilion Parish,"11,430.77"
+2014,State - GoMESA,Offshore,LA,,"1,119,942.08"
+2014,State - GoMESA,Offshore,MS,Hancock County,"41,496.66"
+2014,State - GoMESA,Offshore,MS,Harrison County,"88,646.08"
+2014,State - GoMESA,Offshore,MS,Jackson County,"99,230.87"
+2014,State - GoMESA,Offshore,MS,,"921,813.05"
+2014,State - GoMESA,Offshore,TX,Aransas County,"3,863.71"
+2014,State - GoMESA,Offshore,TX,Brazoria County,"6,199.97"
+2014,State - GoMESA,Offshore,TX,Calhoun County,"5,071.24"
+2014,State - GoMESA,Offshore,TX,Cameron County,"5,878.27"
+2014,State - GoMESA,Offshore,TX,Chambers County,"3,450.97"
+2014,State - GoMESA,Offshore,TX,Galveston County,"8,302.87"
+2014,State - GoMESA,Offshore,TX,Harris County,"19,457.01"
+2014,State - GoMESA,Offshore,TX,Jackson County,"2,670.01"
+2014,State - GoMESA,Offshore,TX,Jefferson County,"6,641.24"
+2014,State - GoMESA,Offshore,TX,Kenedy County,"5,455.23"
+2014,State - GoMESA,Offshore,TX,Kleberg County,"3,946.64"
+2014,State - GoMESA,Offshore,TX,Matagorda County,"7,096.33"
+2014,State - GoMESA,Offshore,TX,Nueces County,"5,176.04"
+2014,State - GoMESA,Offshore,TX,Orange County,"3,792.61"
+2014,State - GoMESA,Offshore,TX,Refugio County,"2,527.66"
+2014,State - GoMESA,Offshore,TX,San Patricio County,"2,663.18"
+2014,State - GoMESA,Offshore,TX,Victoria County,"2,876.32"
+2014,State - GoMESA,Offshore,TX,Willacy County,"3,311.91"
+2014,State - GoMESA,Offshore,TX,,"395,314.02"
+2014,State 8(g),Offshore,AL,,"3,932,082.07"
+2014,State 8(g),Offshore,AK,,"2,519,780.45"
+2014,State 8(g),Offshore,CA,,"6,985,664.23"
+2014,State 8(g),Offshore,FL,,"2,188.52"
+2014,State 8(g),Offshore,LA,,"19,466,649.01"
+2014,State 8(g),Offshore,MA,,"23,835.06"
+2014,State 8(g),Offshore,MS,,"138,274.04"
+2014,State 8(g),Offshore,TX,,"1,032,760.07"
+2014,U.S. Treasury,Offshore,,,"6,303,362,577.86"
+2014,U.S. Treasury,Onshore,,,"551,361,445.35"
+2014,U.S. Treasury - GoMESA,Offshore,,,"625,237.05"
+2015,American Indian Tribes,Onshore,,,"852,729,350.94"
+2015,Historic Preservation Fund,Offshore,,,"150,000,000.00"
+2015,Land & Water Conservation Fund,Offshore,,,"888,459,462.86"
+2015,Land & Water Conservation Fund - GoMESA,Offshore,,,"95,097.14"
+2015,Other,Offshore,,,"200,739,928.85"
+2015,Other,Onshore,,,"153,527,706.74"
+2015,Reclamation,Onshore,,,"1,398,152,074.75"
+2015,State,Onshore,AL,,"641,237.32"
+2015,State,Onshore,AK,,"16,200,908.90"
+2015,State,Onshore,AZ,,"14,769.24"
+2015,State,Onshore,AR,,"1,375,212.41"
+2015,State,Onshore,CA,Imperial County,"39,753.45"
+2015,State,Onshore,CA,Inyo County,"158,775.60"
+2015,State,Onshore,CA,Lake County,"883,150.28"
+2015,State,Onshore,CA,Lassen County,"12,870.01"
+2015,State,Onshore,CA,Mendocino County,749.25
+2015,State,Onshore,CA,Mono County,"74,302.43"
+2015,State,Onshore,CA,Siskiyou County,"69,485.57"
+2015,State,Onshore,CA,Sonoma County,"1,178,014.82"
+2015,State,Onshore,CA,,"58,312,285.38"
+2015,State,Onshore,CO,Gunnison County,"6,259.24"
+2015,State,Onshore,CO,,"123,854,763.05"
+2015,State,Onshore,FL,,"36,855.27"
+2015,State,Onshore,ID,Blaine County,29.12
+2015,State,Onshore,ID,Camas County,22
+2015,State,Onshore,ID,Canyon County,545.53
+2015,State,Onshore,ID,Cassia County,"8,317.56"
+2015,State,Onshore,ID,Payette County,"18,097.31"
+2015,State,Onshore,ID,Washington County,"9,300.11"
+2015,State,Onshore,ID,,"6,934,831.94"
+2015,State,Onshore,IL,,"78,438.77"
+2015,State,Onshore,IN,,"5,403.01"
+2015,State,Onshore,KS,,"695,040.78"
+2015,State,Onshore,KY,,"72,699.52"
+2015,State,Onshore,LA,,"1,734,869.30"
+2015,State,Onshore,MI,,"216,504.06"
+2015,State,Onshore,MN,,"13,854.36"
+2015,State,Onshore,MS,,"754,049.98"
+2015,State,Onshore,MO,,"2,589,888.91"
+2015,State,Onshore,MT,,"33,984,475.53"
+2015,State,Onshore,NE,,"14,539.04"
+2015,State,Onshore,NV,Churchill County,"531,819.50"
+2015,State,Onshore,NV,Elko County,"27,161.97"
+2015,State,Onshore,NV,Esmeralda County,"44,689.84"
+2015,State,Onshore,NV,Eureka County,"14,582.53"
+2015,State,Onshore,NV,Humboldt County,"59,606.67"
+2015,State,Onshore,NV,Lander County,"194,372.30"
+2015,State,Onshore,NV,Lyon County,"8,267.00"
+2015,State,Onshore,NV,Mineral County,"87,876.64"
+2015,State,Onshore,NV,Nye County,172.8
+2015,State,Onshore,NV,Pershing County,"40,745.16"
+2015,State,Onshore,NV,Washoe County,"47,821.23"
+2015,State,Onshore,NV,White Pine County,933.56
+2015,State,Onshore,NV,,"4,922,434.91"
+2015,State,Onshore,NM,Dona Ana County,"8,274.87"
+2015,State,Onshore,NM,Hidalgo County,"4,041.99"
+2015,State,Onshore,NM,,"496,031,109.49"
+2015,State,Onshore,NC,,109.85
+2015,State,Onshore,ND,,"47,164,776.69"
+2015,State,Onshore,OH,,"162,664.19"
+2015,State,Onshore,OK,,"4,850,761.05"
+2015,State,Onshore,OR,Deschutes County,"46,701.38"
+2015,State,Onshore,OR,Lake County,"16,427.62"
+2015,State,Onshore,OR,,"124,590.54"
+2015,State,Onshore,PA,,"35,842.17"
+2015,State,Onshore,SC,,514.63
+2015,State,Onshore,SD,,"1,303,351.30"
+2015,State,Onshore,TX,,"6,211,317.65"
+2015,State,Onshore,UT,Beaver County,"140,069.51"
+2015,State,Onshore,UT,Iron County,250.47
+2015,State,Onshore,UT,Juab County,"2,794.23"
+2015,State,Onshore,UT,Millard County,"26,261.59"
+2015,State,Onshore,UT,,"116,197,167.49"
+2015,State,Onshore,VA,,"48,958.82"
+2015,State,Onshore,WA,Whatcom County,"2,261.12"
+2015,State,Onshore,WA,,"4,049.41"
+2015,State,Onshore,WV,,"225,605.85"
+2015,State,Onshore,WY,,"885,980,925.49"
+2015,State - GoMESA,Offshore,AL,Baldwin County,"61,612.41"
+2015,State - GoMESA,Offshore,AL,Mobile County,"71,740.22"
+2015,State - GoMESA,Offshore,AL,,"533,410.48"
+2015,State - GoMESA,Offshore,LA,Assumption Parish,"5,356.73"
+2015,State - GoMESA,Offshore,LA,Calcasieu Parish,"7,497.63"
+2015,State - GoMESA,Offshore,LA,Cameron Parish,"8,432.10"
+2015,State - GoMESA,Offshore,LA,Iberia Parish,"7,200.31"
+2015,State - GoMESA,Offshore,LA,Jefferson Parish,"14,161.98"
+2015,State - GoMESA,Offshore,LA,Lafourche Parish,"8,319.53"
+2015,State - GoMESA,Offshore,LA,Livingston Parish,"7,532.76"
+2015,State - GoMESA,Offshore,LA,Orleans Parish,"12,573.04"
+2015,State - GoMESA,Offshore,LA,Plaquemines Parish,"16,903.67"
+2015,State - GoMESA,Offshore,LA,St. Bernard Parish,"9,484.98"
+2015,State - GoMESA,Offshore,LA,St. Charles Parish,"6,592.88"
+2015,State - GoMESA,Offshore,LA,St. James Parish,"5,504.60"
+2015,State - GoMESA,Offshore,LA,St. John the Baptist Parish,"6,087.90"
+2015,State - GoMESA,Offshore,LA,St. Martin Parish,"5,817.85"
+2015,State - GoMESA,Offshore,LA,St. Mary Parish,"5,964.74"
+2015,State - GoMESA,Offshore,LA,St. Tammany Parish,"10,468.25"
+2015,State - GoMESA,Offshore,LA,Tangipahoa Parish,"7,564.76"
+2015,State - GoMESA,Offshore,LA,Terrebonne Parish,"11,184.86"
+2015,State - GoMESA,Offshore,LA,Vermilion Parish,"6,697.22"
+2015,State - GoMESA,Offshore,LA,,"653,383.13"
+2015,State - GoMESA,Offshore,MS,Hancock County,"24,113.46"
+2015,State - GoMESA,Offshore,MS,Harrison County,"51,494.02"
+2015,State - GoMESA,Offshore,MS,Jackson County,"57,592.91"
+2015,State - GoMESA,Offshore,MS,,"532,801.53"
+2015,State - GoMESA,Offshore,TX,Aransas County,"2,290.95"
+2015,State - GoMESA,Offshore,TX,Brazoria County,"3,676.52"
+2015,State - GoMESA,Offshore,TX,Calhoun County,"3,007.50"
+2015,State - GoMESA,Offshore,TX,Cameron County,"3,482.69"
+2015,State - GoMESA,Offshore,TX,Chambers County,"2,048.08"
+2015,State - GoMESA,Offshore,TX,Galveston County,"4,925.68"
+2015,State - GoMESA,Offshore,TX,Harris County,"11,535.92"
+2015,State - GoMESA,Offshore,TX,Jackson County,"1,583.76"
+2015,State - GoMESA,Offshore,TX,Jefferson County,"3,942.48"
+2015,State - GoMESA,Offshore,TX,Kenedy County,"3,233.40"
+2015,State - GoMESA,Offshore,TX,Kleberg County,"2,339.31"
+2015,State - GoMESA,Offshore,TX,Matagorda County,"4,209.11"
+2015,State - GoMESA,Offshore,TX,Nueces County,"3,069.71"
+2015,State - GoMESA,Offshore,TX,Orange County,"2,252.48"
+2015,State - GoMESA,Offshore,TX,Refugio County,"1,498.70"
+2015,State - GoMESA,Offshore,TX,San Patricio County,"1,578.97"
+2015,State - GoMESA,Offshore,TX,Victoria County,"1,706.26"
+2015,State - GoMESA,Offshore,TX,Willacy County,"1,961.47"
+2015,State - GoMESA,Offshore,TX,,"233,372.09"
+2015,State 8(g),Offshore,AL,,"3,998,939.68"
+2015,State 8(g),Offshore,AK,,"1,957,767.13"
+2015,State 8(g),Offshore,CA,,"3,616,249.11"
+2015,State 8(g),Offshore,LA,,"11,925,900.48"
+2015,State 8(g),Offshore,MA,,"23,835.06"
+2015,State 8(g),Offshore,MS,,"94,763.62"
+2015,State 8(g),Offshore,RI,,170.1
+2015,State 8(g),Offshore,TX,,"528,605.91"
+2015,U.S. Treasury,Offshore,,,"3,962,702,079.66"
+2015,U.S. Treasury,Onshore,,,"430,430,343.81"
+2015,U.S. Treasury - GoMESA,Offshore,,,"1,232,665.94"
+2016,American Indian Tribes,Onshore,,,"560,416,155.15"
+2016,Land & Water Conservation Fund,Offshore,,,"883,627,822.52"
+2016,Land & Water Conservation Fund - GoMESA,Offshore,,,"342,654.53"
+2016,Other,Offshore,,,"158,644,486.11"
+2016,Other,Onshore,,,"91,256,204.90"
+2016,Reclamation,Onshore,,,"1,009,078,894.56"
+2016,State,Onshore,AL,,"272,379.38"
+2016,State,Onshore,AK,,"12,194,958.10"
+2016,State,Onshore,AZ,,"55,271.38"
+2016,State,Onshore,AR,,"920,844.21"
+2016,State,Onshore,CA,Imperial County,"67,582.64"
+2016,State,Onshore,CA,Inyo County,"143,309.69"
+2016,State,Onshore,CA,Lake County,"656,127.13"
+2016,State,Onshore,CA,Lassen County,"13,133.56"
+2016,State,Onshore,CA,Mendocino County,753.75
+2016,State,Onshore,CA,Mono County,"54,006.57"
+2016,State,Onshore,CA,Siskiyou County,"14,802.12"
+2016,State,Onshore,CA,Sonoma County,"926,916.32"
+2016,State,Onshore,CA,,"35,316,760.11"
+2016,State,Onshore,CO,Chaffee County,"1,677.60"
+2016,State,Onshore,CO,Gunnison County,"6,296.83"
+2016,State,Onshore,CO,,"83,887,389.90"
+2016,State,Onshore,FL,,"73,540.21"
+2016,State,Onshore,ID,Canyon County,548.8
+2016,State,Onshore,ID,Cassia County,"8,261.10"
+2016,State,Onshore,ID,Payette County,"18,206.01"
+2016,State,Onshore,ID,Washington County,"9,296.76"
+2016,State,Onshore,ID,,"5,484,922.86"
+2016,State,Onshore,IL,,"277,233.78"
+2016,State,Onshore,IN,,"5,263.00"
+2016,State,Onshore,KS,,"453,748.01"
+2016,State,Onshore,KY,,"106,112.74"
+2016,State,Onshore,LA,,"904,498.03"
+2016,State,Onshore,MI,,"96,174.97"
+2016,State,Onshore,MN,,"12,504.63"
+2016,State,Onshore,MS,,"555,058.51"
+2016,State,Onshore,MO,,"1,808,750.81"
+2016,State,Onshore,MT,,"23,008,074.00"
+2016,State,Onshore,NE,,"8,554.21"
+2016,State,Onshore,NV,Churchill County,"439,998.67"
+2016,State,Onshore,NV,Elko County,"20,068.32"
+2016,State,Onshore,NV,Esmeralda County,"29,073.68"
+2016,State,Onshore,NV,Eureka County,"24,215.69"
+2016,State,Onshore,NV,Humboldt County,"50,483.47"
+2016,State,Onshore,NV,Lander County,"254,601.05"
+2016,State,Onshore,NV,Lyon County,"13,163.82"
+2016,State,Onshore,NV,Mineral County,"144,403.72"
+2016,State,Onshore,NV,Nye County,160.8
+2016,State,Onshore,NV,Pershing County,"46,011.64"
+2016,State,Onshore,NV,Washoe County,"67,623.25"
+2016,State,Onshore,NV,White Pine County,939.17
+2016,State,Onshore,NV,,"3,521,815.81"
+2016,State,Onshore,NM,Dona Ana County,"7,212.43"
+2016,State,Onshore,NM,Hidalgo County,"5,399.16"
+2016,State,Onshore,NM,,"368,603,571.83"
+2016,State,Onshore,NC,,110.44
+2016,State,Onshore,ND,,"32,521,124.09"
+2016,State,Onshore,OH,,"71,846.40"
+2016,State,Onshore,OK,,"6,682,274.29"
+2016,State,Onshore,OR,Deschutes County,"37,905.98"
+2016,State,Onshore,OR,Lake County,"14,574.04"
+2016,State,Onshore,OR,,"106,888.62"
+2016,State,Onshore,PA,,"18,528.39"
+2016,State,Onshore,SC,,775.89
+2016,State,Onshore,SD,,"306,901.22"
+2016,State,Onshore,TX,,"3,170,788.45"
+2016,State,Onshore,UT,Beaver County,"127,561.99"
+2016,State,Onshore,UT,Iron County,172.61
+2016,State,Onshore,UT,Juab County,663.3
+2016,State,Onshore,UT,Millard County,"22,087.54"
+2016,State,Onshore,UT,,"67,909,865.57"
+2016,State,Onshore,VA,,"23,235.41"
+2016,State,Onshore,WA,Whatcom County,"2,119.80"
+2016,State,Onshore,WA,,"4,331.32"
+2016,State,Onshore,WV,,"184,630.93"
+2016,State,Onshore,WY,,"664,312,371.44"
+2016,State - GoMESA,Offshore,AL,Baldwin County,"8,609.22"
+2016,State - GoMESA,Offshore,AL,Mobile County,"9,583.25"
+2016,State - GoMESA,Offshore,AL,,"72,581.37"
+2016,State - GoMESA,Offshore,LA,Assumption Parish,659.83
+2016,State - GoMESA,Offshore,LA,Calcasieu Parish,942.62
+2016,State - GoMESA,Offshore,LA,Cameron Parish,"1,068.30"
+2016,State - GoMESA,Offshore,LA,Iberia Parish,911.19
+2016,State - GoMESA,Offshore,LA,Jefferson Parish,"1,790.97"
+2016,State - GoMESA,Offshore,LA,Lafourche Parish,"1,036.88"
+2016,State - GoMESA,Offshore,LA,Livingston Parish,942.62
+2016,State - GoMESA,Offshore,LA,Orleans Parish,"1,571.03"
+2016,State - GoMESA,Offshore,LA,Plaquemines Parish,"2,136.59"
+2016,State - GoMESA,Offshore,LA,St. Bernard Parish,"1,193.98"
+2016,State - GoMESA,Offshore,LA,St. Charles Parish,816.94
+2016,State - GoMESA,Offshore,LA,St. James Parish,691.26
+2016,State - GoMESA,Offshore,LA,St. John the Baptist Parish,754.09
+2016,State - GoMESA,Offshore,LA,St. Martin Parish,722.67
+2016,State - GoMESA,Offshore,LA,St. Mary Parish,754.09
+2016,State - GoMESA,Offshore,LA,St. Tammany Parish,"1,319.67"
+2016,State - GoMESA,Offshore,LA,Tangipahoa Parish,942.62
+2016,State - GoMESA,Offshore,LA,Terrebonne Parish,"1,413.92"
+2016,State - GoMESA,Offshore,LA,Vermilion Parish,848.35
+2016,State - GoMESA,Offshore,LA,,"82,196.05"
+2016,State - GoMESA,Offshore,MS,Hancock County,"3,047.79"
+2016,State - GoMESA,Offshore,MS,Harrison County,"6,504.05"
+2016,State - GoMESA,Offshore,MS,Jackson County,"7,258.14"
+2016,State - GoMESA,Offshore,MS,,"67,177.05"
+2016,State - GoMESA,Offshore,TX,Aransas County,282.79
+2016,State - GoMESA,Offshore,TX,Brazoria County,471.3
+2016,State - GoMESA,Offshore,TX,Calhoun County,377.05
+2016,State - GoMESA,Offshore,TX,Cameron County,439.89
+2016,State - GoMESA,Offshore,TX,Chambers County,251.36
+2016,State - GoMESA,Offshore,TX,Galveston County,628.41
+2016,State - GoMESA,Offshore,TX,Harris County,"1,445.35"
+2016,State - GoMESA,Offshore,TX,Jackson County,188.52
+2016,State - GoMESA,Offshore,TX,Jefferson County,502.73
+2016,State - GoMESA,Offshore,TX,Kenedy County,408.47
+2016,State - GoMESA,Offshore,TX,Kleberg County,282.79
+2016,State - GoMESA,Offshore,TX,Matagorda County,534.15
+2016,State - GoMESA,Offshore,TX,Nueces County,377.05
+2016,State - GoMESA,Offshore,TX,Orange County,282.79
+2016,State - GoMESA,Offshore,TX,Refugio County,188.52
+2016,State - GoMESA,Offshore,TX,San Patricio County,188.52
+2016,State - GoMESA,Offshore,TX,Victoria County,219.94
+2016,State - GoMESA,Offshore,TX,Willacy County,251.36
+2016,State - GoMESA,Offshore,TX,Willacy County,"29,409.60"
+2016,State 8(g),Offshore,AL,,"1,537,555.27"
+2016,State 8(g),Offshore,AK,,"1,064,323.09"
+2016,State 8(g),Offshore,CA,,"1,648,042.15"
+2016,State 8(g),Offshore,LA,,"6,313,683.28"
+2016,State 8(g),Offshore,MA,,"23,835.06"
+2016,State 8(g),Offshore,MS,,"51,779.37"
+2016,State 8(g),Offshore,RI,,170.1
+2016,State 8(g),Offshore,TX,,"134,616.82"
+2016,U.S. Treasury,Offshore,,,"1,865,028,729.49"
+2016,U.S. Treasury,Onshore,,,"336,570,856.34"
+2016,U.S. Treasury - GoMESA,Offshore,,,"1,370,611.67"
+2017,American Indian Tribes,Onshore,,,"675,788,643.34"
+2017,Historic Preservation Fund,Offshore,,,"150,000,000.00"
+2017,Land & Water Conservation Fund,Offshore,,,"891,828,225.00"
+2017,Land & Water Conservation Fund - GoMESA,Offshore,,,"66,982,984.72"
+2017,Other,Offshore,,,"122,238,329.06"
+2017,Other,Onshore,,,"111,303,696.59"
+2017,Reclamation,Onshore,,,"1,142,376,549.00"
+2017,State,Onshore,AL,,"382,865.12"
+2017,State,Onshore,AK,,"11,184,061.95"
+2017,State,Onshore,AZ,,"10,045.97"
+2017,State,Onshore,AR,,"1,151,448.28"
+2017,State,Onshore,CA,Imperial County,"41,249.41"
+2017,State,Onshore,CA,Inyo County,"71,594.49"
+2017,State,Onshore,CA,Lake County,"733,167.55"
+2017,State,Onshore,CA,Lassen County,"7,730.08"
+2017,State,Onshore,CA,Mendocino County,749.25
+2017,State,Onshore,CA,Mono County,"50,767.05"
+2017,State,Onshore,CA,Siskiyou County,"1,386.94"
+2017,State,Onshore,CA,Sonoma County,"1,136,605.62"
+2017,State,Onshore,CA,,"33,592,367.91"
+2017,State,Onshore,CO,Chaffee County,681
+2017,State,Onshore,CO,Gunnison County,426.05
+2017,State,Onshore,CO,,"92,039,200.62"
+2017,State,Onshore,FL,,"593,587.89"
+2017,State,Onshore,ID,Canyon County,546.07
+2017,State,Onshore,ID,Cassia County,"8,327.69"
+2017,State,Onshore,ID,Payette County,"18,115.43"
+2017,State,Onshore,ID,Washington County,"10,051.21"
+2017,State,Onshore,ID,,"5,123,410.64"
+2017,State,Onshore,IL,,"54,868.75"
+2017,State,Onshore,IN,,"5,257.35"
+2017,State,Onshore,KS,,"561,249.47"
+2017,State,Onshore,KY,,"185,904.48"
+2017,State,Onshore,LA,,"1,010,739.08"
+2017,State,Onshore,MI,,"77,778.86"
+2017,State,Onshore,MN,,"11,649.47"
+2017,State,Onshore,MS,,"706,016.97"
+2017,State,Onshore,MO,,"2,020,169.14"
+2017,State,Onshore,MT,,"24,033,546.22"
+2017,State,Onshore,NE,,"8,113.89"
+2017,State,Onshore,NV,Churchill County,"521,710.63"
+2017,State,Onshore,NV,Elko County,"24,697.69"
+2017,State,Onshore,NV,Esmeralda County,"38,510.65"
+2017,State,Onshore,NV,Eureka County,"13,474.79"
+2017,State,Onshore,NV,Humboldt County,"46,478.91"
+2017,State,Onshore,NV,Lander County,"303,731.34"
+2017,State,Onshore,NV,Lyon County,"9,391.41"
+2017,State,Onshore,NV,Mineral County,"153,707.60"
+2017,State,Onshore,NV,Nye County,159.84
+2017,State,Onshore,NV,Pershing County,"34,669.23"
+2017,State,Onshore,NV,Washoe County,"72,609.68"
+2017,State,Onshore,NV,White Pine County,933.57
+2017,State,Onshore,NV,,"3,850,164.97"
+2017,State,Onshore,NM,Dona Ana County,"8,652.71"
+2017,State,Onshore,NM,Hidalgo County,"5,908.06"
+2017,State,Onshore,NM,,"455,139,819.68"
+2017,State,Onshore,ND,,"39,922,536.16"
+2017,State,Onshore,OH,,"1,600,454.80"
+2017,State,Onshore,OK,,"2,625,438.89"
+2017,State,Onshore,OR,Deschutes County,"19,851.52"
+2017,State,Onshore,OR,Lake County,"3,796.14"
+2017,State,Onshore,OR,,"45,539.86"
+2017,State,Onshore,PA,,"23,914.02"
+2017,State,Onshore,SC,,775.06
+2017,State,Onshore,SD,,"396,178.04"
+2017,State,Onshore,TX,,"4,725,825.41"
+2017,State,Onshore,UT,Beaver County,"105,071.92"
+2017,State,Onshore,UT,Iron County,171.58
+2017,State,Onshore,UT,Juab County,659.34
+2017,State,Onshore,UT,Millard County,"26,349.48"
+2017,State,Onshore,UT,,"73,496,260.76"
+2017,State,Onshore,VA,,"28,181.89"
+2017,State,Onshore,WA,Whatcom County,"2,107.14"
+2017,State,Onshore,WA,,"5,057.67"
+2017,State,Onshore,WV,,"108,373.09"
+2017,State,Onshore,WY,,"669,010,220.24"
+2017,State - GoMESA,Offshore,AL,Baldwin County,"24,763.94"
+2017,State - GoMESA,Offshore,AL,Mobile County,"27,853.86"
+2017,State - GoMESA,Offshore,AL,,"210,471.20"
+2017,State - GoMESA,Offshore,LA,Assumption Parish,"2,127.55"
+2017,State - GoMESA,Offshore,LA,Calcasieu Parish,"2,987.69"
+2017,State - GoMESA,Offshore,LA,Cameron Parish,"3,358.26"
+2017,State - GoMESA,Offshore,LA,Iberia Parish,"2,857.63"
+2017,State - GoMESA,Offshore,LA,Jefferson Parish,"5,577.62"
+2017,State - GoMESA,Offshore,LA,Lafourche Parish,"3,282.72"
+2017,State - GoMESA,Offshore,LA,Livingston Parish,"2,972.22"
+2017,State - GoMESA,Offshore,LA,Orleans Parish,"4,904.01"
+2017,State - GoMESA,Offshore,LA,Plaquemines Parish,"6,564.56"
+2017,State - GoMESA,Offshore,LA,St. Bernard Parish,"3,630.18"
+2017,State - GoMESA,Offshore,LA,St. Charles Parish,"2,600.00"
+2017,State - GoMESA,Offshore,LA,St. James Parish,"2,180.40"
+2017,State - GoMESA,Offshore,LA,St. John the Baptist Parish,"2,397.81"
+2017,State - GoMESA,Offshore,LA,St. Martin Parish,"2,317.19"
+2017,State - GoMESA,Offshore,LA,St. Mary Parish,"2,375.95"
+2017,State - GoMESA,Offshore,LA,St. Tammany Parish,"4,089.98"
+2017,State - GoMESA,Offshore,LA,Tangipahoa Parish,"2,977.85"
+2017,State - GoMESA,Offshore,LA,Terrebonne Parish,"4,437.31"
+2017,State - GoMESA,Offshore,LA,Vermilion Parish,"2,673.60"
+2017,State - GoMESA,Offshore,LA,,"257,250.18"
+2017,State - GoMESA,Offshore,MS,Hancock County,"9,218.29"
+2017,State - GoMESA,Offshore,MS,Harrison County,"19,440.96"
+2017,State - GoMESA,Offshore,MS,Jackson County,"21,582.54"
+2017,State - GoMESA,Offshore,MS,,"200,967.16"
+2017,State - GoMESA,Offshore,TX,Aransas County,954.07
+2017,State - GoMESA,Offshore,TX,Brazoria County,"1,525.12"
+2017,State - GoMESA,Offshore,TX,Calhoun County,"1,250.46"
+2017,State - GoMESA,Offshore,TX,Cameron County,"1,454.87"
+2017,State - GoMESA,Offshore,TX,Chambers County,844.49
+2017,State - GoMESA,Offshore,TX,Galveston County,"2,039.76"
+2017,State - GoMESA,Offshore,TX,Harris County,"4,788.33"
+2017,State - GoMESA,Offshore,TX,Jackson County,658.6
+2017,State - GoMESA,Offshore,TX,Jefferson County,"1,627.64"
+2017,State - GoMESA,Offshore,TX,Kenedy County,"1,348.51"
+2017,State - GoMESA,Offshore,TX,Kleberg County,976.29
+2017,State - GoMESA,Offshore,TX,Matagorda County,"1,748.07"
+2017,State - GoMESA,Offshore,TX,Nueces County,"1,278.57"
+2017,State - GoMESA,Offshore,TX,Orange County,923.28
+2017,State - GoMESA,Offshore,TX,Refugio County,624.67
+2017,State - GoMESA,Offshore,TX,San Patricio County,659.39
+2017,State - GoMESA,Offshore,TX,Victoria County,709.72
+2017,State - GoMESA,Offshore,TX,Willacy County,822.48
+2017,State - GoMESA,Offshore,TX,,"96,937.31"
+2017,State 8(g),offshore,AL,,"746,267.28"
+2017,State 8(g),offshore,AK,,"1,247,123.89"
+2017,State 8(g),offshore,CA,,"606,280.97"
+2017,State 8(g),offshore,LA,,"7,554,499.53"
+2017,State 8(g),offshore,MA,,"23,835.06"
+2017,State 8(g),offshore,MS,,"76,571.54"
+2017,State 8(g),offshore,RI,,"1,701.00"
+2017,State 8(g),offshore,TX,,"64,643.72"
+2017,U.S. Treasury,Offshore,,,"1,748,637,163.69"
+2017,U.S. Treasury,Onshore,,,"496,239,191.87"
+2017,U.S. Treasury - GoMESA,Offshore,,,"267,931,822.86"
+2018,American Indian Tribes,Onshore,,,"1,022,539,457.29"
+2018,Historic Preservation Fund,Offshore,,,"150,000,000.00"
+2018,Land & Water Conservation Fund,Offshore,,,"893,887,297.00"
+2018,Land & Water Conservation Fund - GoMesa,Offshore,,,"76,357,901.97"
+2018,Other,Offshore,,,"116,875,634.66"
+2018,Other,Onshore,,,"163,170,752.99"
+2018,Reclamation,Onshore,,,"1,221,259,347.30"
+2018,State,Onshore,AL,,"1,376,095.15"
+2018,State,Onshore,AK,,"34,370,934.21"
+2018,State,Onshore,AZ,,"9,069.72"
+2018,State,Onshore,AR,,"854,176.16"
+2018,State,Onshore,CA,,"41,429,712.41"
+2018,State,Onshore,CA,Imperial County,"98,778.25"
+2018,State,Onshore,CA,Inyo County,"81,535.68"
+2018,State,Onshore,CA,Lake County,"733,502.02"
+2018,State,Onshore,CA,Lassen County,"17,106.65"
+2018,State,Onshore,CA,Mendocino County,51.75
+2018,State,Onshore,CA,Mono County,"36,597.08"
+2018,State,Onshore,CA,Siskiyou County,"3,040.55"
+2018,State,Onshore,CA,Sonoma County,"1,127,727.93"
+2018,State,Onshore,CO,,"112,554,166.89"
+2018,State,Onshore,CO,Chaffee County,601.8
+2018,State,Onshore,CO,Gunnison County,"5,851.98"
+2018,State,Onshore,FL,,"476,560.88"
+2018,State,Onshore,ID,,"4,333,975.81"
+2018,State,Onshore,ID,Canyon County,37.13
+2018,State,Onshore,ID,Cassia County,"16,693.78"
+2018,State,Onshore,ID,Payette County,"1,231.85"
+2018,State,Onshore,ID,Washington County,"16,245.22"
+2018,State,Onshore,IL,,"76,415.92"
+2018,State,Onshore,IN,,"3,693.97"
+2018,State,Onshore,KS,,"639,045.52"
+2018,State,Onshore,KY,,"120,512.24"
+2018,State,Onshore,LA,,"2,153,237.54"
+2018,State,Onshore,MI,,"147,823.25"
+2018,State,Onshore,MN,,"11,554.30"
+2018,State,Onshore,MS,,"661,429.37"
+2018,State,Onshore,MO,,"2,299,269.80"
+2018,State,Onshore,MT,,"25,686,291.77"
+2018,State,Onshore,NE,,"28,700.58"
+2018,State,Onshore,NV,,"4,066,416.81"
+2018,State,Onshore,NV,Churchill County,"668,908.66"
+2018,State,Onshore,NV,Elko County,"8,387.60"
+2018,State,Onshore,NV,Esmeralda County,"24,369.59"
+2018,State,Onshore,NV,Eureka County,"14,095.37"
+2018,State,Onshore,NV,Humboldt County,"46,051.65"
+2018,State,Onshore,NV,Lander County,"283,264.18"
+2018,State,Onshore,NV,Lyon County,"10,805.38"
+2018,State,Onshore,NV,Mineral County,"144,864.87"
+2018,State,Onshore,NV,Nye County,375.3
+2018,State,Onshore,NV,Pershing County,"37,278.68"
+2018,State,Onshore,NV,Washoe County,"46,923.61"
+2018,State,Onshore,NV,White Pine County,937.3
+2018,State,Onshore,NM,,"634,977,556.71"
+2018,State,Onshore,NM,Dona Ana County,"7,242.72"
+2018,State,Onshore,NM,Hidalgo County,"6,062.14"
+2018,State,Onshore,ND,,"53,223,774.74"
+2018,State,Onshore,OH,,"862,521.52"
+2018,State,Onshore,OK,,"7,867,081.65"
+2018,State,Onshore,OR,,"47,141.71"
+2018,State,Onshore,OR,Deschutes County,"19,562.58"
+2018,State,Onshore,OR,Lake County,"3,799.62"
+2018,State,Onshore,PA,,"9,880.12"
+2018,State,Onshore,SC,,518.37
+2018,State,Onshore,SD,,"564,521.82"
+2018,State,Onshore,TX,,"4,847,388.66"
+2018,State,Onshore,UT,,"76,015,357.68"
+2018,State,Onshore,UT,Beaver County,"151,694.35"
+2018,State,Onshore,UT,Iron County,172.26
+2018,State,Onshore,UT,Juab County,661.98
+2018,State,Onshore,UT,Millard County,"24,253.35"
+2018,State,Onshore,VA,,"39,194.81"
+2018,State,Onshore,WA,,"7,999.78"
+2018,State,Onshore,WA,Whatcom County,"2,115.58"
+2018,State,Onshore,WV,,"470,583.49"
+2018,State,Onshore,WI,,233.5
+2018,State,Onshore,WY,,"563,955,987.70"
+2018,State - GoMESA,Offshore,AL,Baldwin County,"2,475,583.07"
+2018,State - GoMESA,Offshore,AL,Mobile County,"2,879,939.61"
+2018,State - GoMESA,Offshore,AL,,"21,422,090.73"
+2018,State - GoMESA,Offshore,LA,Assumption Parish,"553,603.31"
+2018,State - GoMESA,Offshore,LA,Calcasieu Parish,"862,675.48"
+2018,State - GoMESA,Offshore,LA,Cameron Parish,"1,090,580.78"
+2018,State - GoMESA,Offshore,LA,Iberia Parish,"871,009.19"
+2018,State - GoMESA,Offshore,LA,Jefferson Parish,"1,378,261.30"
+2018,State - GoMESA,Offshore,LA,Lafourche Parish,"865,540.61"
+2018,State - GoMESA,Offshore,LA,Livingston Parish,"694,063.94"
+2018,State - GoMESA,Offshore,LA,Orleans Parish,"1,146,479.67"
+2018,State - GoMESA,Offshore,LA,Plaquemines Parish,"1,623,361.00"
+2018,State - GoMESA,Offshore,LA,St. Bernard Parish,"781,611.41"
+2018,State - GoMESA,Offshore,LA,St. Charles Parish,"594,151.58"
+2018,State - GoMESA,Offshore,LA,St. James Parish,"517,254.38"
+2018,State - GoMESA,Offshore,LA,St. John the Baptist Parish,"559,530.88"
+2018,State - GoMESA,Offshore,LA,St. Martin Parish,"616,852.85"
+2018,State - GoMESA,Offshore,LA,St. Mary Parish,"719,952.25"
+2018,State - GoMESA,Offshore,LA,St. Tammany Parish,"912,548.87"
+2018,State - GoMESA,Offshore,LA,Tangipahoa Parish,"669,883.58"
+2018,State - GoMESA,Offshore,LA,Terrebonne Parish,"1,260,426.95"
+2018,State - GoMESA,Offshore,LA,Vermilion Parish,"850,143.14"
+2018,State - GoMESA,Offshore,LA,,"66,271,724.59"
+2018,State - GoMESA,Offshore,MS,Hancock County,"1,059,051.90"
+2018,State - GoMESA,Offshore,MS,Harrison County,"2,157,883.15"
+2018,State - GoMESA,Offshore,MS,Jackson County,"2,333,974.83"
+2018,State - GoMESA,Offshore,MS,,"22,203,639.55"
+2018,State - GoMESA,Offshore,TX,Aransas County,"413,355.09"
+2018,State - GoMESA,Offshore,TX,Brazoria County,"662,729.67"
+2018,State - GoMESA,Offshore,TX,Calhoun County,"549,710.33"
+2018,State - GoMESA,Offshore,TX,Cameron County,"609,568.15"
+2018,State - GoMESA,Offshore,TX,Chambers County,"334,599.83"
+2018,State - GoMESA,Offshore,TX,Galveston County,"868,810.46"
+2018,State - GoMESA,Offshore,TX,Harris County,"1,962,460.79"
+2018,State - GoMESA,Offshore,TX,Jackson County,"263,776.12"
+2018,State - GoMESA,Offshore,TX,Jefferson County,"664,348.78"
+2018,State - GoMESA,Offshore,TX,Kenedy County,"581,745.01"
+2018,State - GoMESA,Offshore,TX,Kleberg County,"416,829.42"
+2018,State - GoMESA,Offshore,TX,Matagorda County,"776,507.45"
+2018,State - GoMESA,Offshore,TX,Nueces County,"546,154.51"
+2018,State - GoMESA,Offshore,TX,Orange County,"323,987.83"
+2018,State - GoMESA,Offshore,TX,Refugio County,"255,666.30"
+2018,State - GoMESA,Offshore,TX,San Patricio County,"270,666.38"
+2018,State - GoMESA,Offshore,TX,Victoria County,"276,126.84"
+2018,State - GoMESA,Offshore,TX,Willacy County,"346,379.91"
+2018,State - GoMESA,Offshore,TX,,"40,493,691.63"
+2018,State 8(g),Offshore,AL,,"2,384,757.73"
+2018,State 8(g),Offshore,AK,,"1,509,923.76"
+2018,State 8(g),Offshore,CA,,"1,363,323.58"
+2018,State 8(g),Offshore,LA,,"6,052,631.01"
+2018,State 8(g),Offshore,MS,,"259,421.06"
+2018,State 8(g),Offshore,TX,,"4,634,850.84"
+2018,U.S. Treasury,Offshore,,,"2,789,421,770.94"
+2018,U.S. Treasury,Onshore,,,"411,828,484.53"
+2018,U.S. Treasury - GoMESA,Offshore,,,"309,064,093.11"
+2019,American Indian Tribes,Onshore,,,"1,139,867,748.00"
+2019,Historic Preservation Fund,Offshore,,,"150,000,000.00"
+2019,Reclamation,Onshore,,,"1,759,494,867.00"
+2019,State,Onshore,AL,,"2,667,502.68"
+2019,State,Onshore,AK,,"24,409,487.27"
+2019,State,Onshore,AR,,"854,119.40"
+2019,State,Onshore,AZ,,"7,664.43"
+2019,State,Onshore,CA,Imperial County,"44,504.49"
+2019,State,Onshore,CA,Inyo County,"86,622.18"
+2019,State,Onshore,CA,Lake County,"758,861.40"
+2019,State,Onshore,CA,Lassen County,"21,823.72"
+2019,State,Onshore,CA,Mono County,"96,203.20"
+2019,State,Onshore,CA,Siskiyou County,"3,212.80"
+2019,State,Onshore,CA,Sonoma County,"1,139,738.69"
+2019,State,Onshore,CA,,"43,890,494.06"
+2019,State,Onshore,CO,Chaffee County,602.4
+2019,State,Onshore,CO,Gunnison County,"12,167.60"
+2019,State,Onshore,CO,,"108,037,705.10"
+2019,State,Onshore,FL,,"611,413.19"
+2019,State,Onshore,ID,Cassia County,"44,878.65"
+2019,State,Onshore,ID,Washington County,"16,712.08"
+2019,State,Onshore,ID,,"3,652,216.28"
+2019,State,Onshore,IL,,"74,636.31"
+2019,State,Onshore,KS,,"666,194.52"
+2019,State,Onshore,KY,,"339,158.34"
+2019,State,Onshore,LA,,"2,862,668.77"
+2019,State,Onshore,MI,,"44,851.22"
+2019,State,Onshore,MN,,"105,617.58"
+2019,State,Onshore,MO,,"1,760,238.90"
+2019,State,Onshore,MS,,"613,880.51"
+2019,State,Onshore,MT,,"29,991,520.41"
+2019,State,Onshore,ND,,"93,654,131.99"
+2019,State,Onshore,NE,,"22,947.87"
+2019,State,Onshore,NM,,"1,165,936,660.00"
+2019,State,Onshore,NM,Dona Ana County,"10,024.54"
+2019,State,Onshore,NM,Hidalgo County,"16,951.48"
+2019,State,Onshore,NV,,"4,949,740.03"
+2019,State,Onshore,NV,Churchill County,"1,197,023.76"
+2019,State,Onshore,NV,Elko County,"3,551.11"
+2019,State,Onshore,NV,Esmeralda County,"16,962.28"
+2019,State,Onshore,NV,Eureka County,"26,582.50"
+2019,State,Onshore,NV,Humboldt County,"41,359.84"
+2019,State,Onshore,NV,Lander County,"359,626.21"
+2019,State,Onshore,NV,Lyon County,"14,090.27"
+2019,State,Onshore,NV,Mineral County,"133,959.16"
+2019,State,Onshore,NV,Nye County,391.56
+2019,State,Onshore,NV,Pershing County,"31,406.68"
+2019,State,Onshore,NV,Washoe County,"38,855.84"
+2019,State,Onshore,NV,White Pine County,61.68
+2019,State,Onshore,OH,,"285,310.40"
+2019,State,Onshore,OK,,"3,431,820.08"
+2019,State,Onshore,OR,,"30,447.94"
+2019,State,Onshore,OR,Deschutes County,"15,929.57"
+2019,State,Onshore,OR,Lake County,253.74
+2019,State,Onshore,PA,,"17,185.29"
+2019,State,Onshore,SC,,780.88
+2019,State,Onshore,SD,,"479,110.53"
+2019,State,Onshore,TX,,"4,792,638.94"
+2019,State,Onshore,UT,,"71,529,311.65"
+2019,State,Onshore,UT,Beaver County,"146,055.19"
+2019,State,Onshore,UT,Iron County,279.84
+2019,State,Onshore,UT,Juab County,43.56
+2019,State,Onshore,UT,Millard County,"19,146.32"
+2019,State,Onshore,VA,,"49,018.46"
+2019,State,Onshore,WA,,"5,191.07"
+2019,State,Onshore,WA,Whatcom County,"2,117.69"
+2019,State,Onshore,WI,,234.5
+2019,State,Onshore,WV,,"92,881.20"
+2019,State,Onshore,WY,,"641,109,255.60"
+2019,State - GoMESA,Offshore,AL,,"24,476,087.60"
+2019,State - GoMESA,Offshore,AL,Baldwin County,"2,751,485.44"
+2019,State - GoMESA,Offshore,AL,Mobile County,"3,367,536.46"
+2019,State - GoMESA,Offshore,LA,,"75,782,553.46"
+2019,State - GoMESA,Offshore,LA,Assumption Parish,"624,301.84"
+2019,State - GoMESA,Offshore,LA,Calcasieu Parish,"1,006,346.20"
+2019,State - GoMESA,Offshore,LA,Cameron Parish,"1,294,393.87"
+2019,State - GoMESA,Offshore,LA,Iberia Parish,"993,921.56"
+2019,State - GoMESA,Offshore,LA,Jefferson Parish,"1,571,308.46"
+2019,State - GoMESA,Offshore,LA,Lafourche Parish,"980,198.20"
+2019,State - GoMESA,Offshore,LA,Livingston Parish,"783,550.00"
+2019,State - GoMESA,Offshore,LA,Orleans Parish,"1,299,392.45"
+2019,State - GoMESA,Offshore,LA,Plaquemines Parish,"1,856,690.72"
+2019,State - GoMESA,Offshore,LA,St. Bernard Parish,"892,386.94"
+2019,State - GoMESA,Offshore,LA,St. Charles Parish,"666,344.39"
+2019,State - GoMESA,Offshore,LA,St. James Parish,"582,115.69"
+2019,State - GoMESA,Offshore,LA,St. John the Baptist Parish,"629,068.20"
+2019,State - GoMESA,Offshore,LA,St. Martin Parish,"704,743.85"
+2019,State - GoMESA,Offshore,LA,St. Mary Parish,"833,307.13"
+2019,State - GoMESA,Offshore,LA,St. Tammany Parish,"1,030,784.21"
+2019,State - GoMESA,Offshore,LA,Tangipahoa Parish,"752,643.60"
+2019,State - GoMESA,Offshore,LA,Terrebonne Parish,"1,450,355.84"
+2019,State - GoMESA,Offshore,LA,Vermilion Parish,"993,785.17"
+2019,State - GoMESA,Offshore,MS,,"25,379,084.76"
+2019,State - GoMESA,Offshore,MS,Hancock County,"1,188,862.91"
+2019,State - GoMESA,Offshore,MS,Harrison County,"2,470,050.41"
+2019,State - GoMESA,Offshore,MS,Jackson County,"2,685,857.87"
+2019,State - GoMESA,Offshore,TX,,"46,313,471.21"
+2019,State - GoMESA,Offshore,TX,Aransas County,"466,178.75"
+2019,State - GoMESA,Offshore,TX,Brazoria County,"779,380.51"
+2019,State - GoMESA,Offshore,TX,Calhoun County,"628,382.99"
+2019,State - GoMESA,Offshore,TX,Cameron County,"658,510.61"
+2019,State - GoMESA,Offshore,TX,Chambers County,"406,855.52"
+2019,State - GoMESA,Offshore,TX,Galveston County,"1,024,591.91"
+2019,State - GoMESA,Offshore,TX,Harris County,"2,263,694.49"
+2019,State - GoMESA,Offshore,TX,Jackson County,"300,964.36"
+2019,State - GoMESA,Offshore,TX,Jefferson County,"794,042.37"
+2019,State - GoMESA,Offshore,TX,Kenedy County,"633,309.25"
+2019,State - GoMESA,Offshore,TX,Kleberg County,"459,956.66"
+2019,State - GoMESA,Offshore,TX,Matagorda County,"901,868.30"
+2019,State - GoMESA,Offshore,TX,Nueces County,"614,486.78"
+2019,State - GoMESA,Offshore,TX,Orange County,"392,328.39"
+2019,State - GoMESA,Offshore,TX,Refugio County,"285,845.51"
+2019,State - GoMESA,Offshore,TX,San Patricio County,"298,699.69"
+2019,State - GoMESA,Offshore,TX,Victoria County,"310,203.11"
+2019,State - GoMESA,Offshore,TX,Willacy County,"359,068.63"
+2019,State 8(g),Offshore,AK,,"1,504,454.76"
+2019,State 8(g),Offshore,AL,,"774,834.16"
+2019,State 8(g),Offshore,CA,,"1,224,333.20"
+2019,State 8(g),Offshore,LA,,"3,736,426.28"
+2019,State 8(g),Offshore,MA,,"23,835.06"
+2019,State 8(g),Offshore,MS,,"837,624.60"
+2019,State 8(g),Offshore,TX,,"2,436,980.24"
+2019,Land & Water Conservation Fund,Offshore,,,"877,772,576.00"
+2019,Land & Water Conservation Fund - GoMESA,Offshore,,,"129,981,811.50"
+2019,U.S. Treasury,Onshore,,,"550,389,297.20"
+2019,U.S. Treasury,Offshore,,,"3,826,926,987.00"
+2019,U.S. Treasury - GoMESA,Offshore,,,"526,724,874.90"
+2019,Other,Offshore,,,"110,056,156.60"
+2019,Other,Onshore,,,"185,298,293.70"

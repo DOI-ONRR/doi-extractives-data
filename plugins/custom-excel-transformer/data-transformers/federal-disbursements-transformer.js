@@ -58,7 +58,11 @@ const createDisbursementsNode = (disbursementsData, type) => {
 
   let totalProp = Object.keys(disbursementsData).filter(prop => prop.trim().includes(SOURCE_COLUMNS.Total.trim()))
   let disbursementValue = disbursementsData[totalProp] || disbursementsData[SOURCE_COLUMNS.Disbursement]
-  
+
+
+  if(disbursementValue === undefined) {
+    console.log(disbursementsData, disbursementValue)
+  }
   let disbursementNode = {
 	  Year: disbursementsData[SOURCE_COLUMNS.Year],
     DisplayYear: (disbursementsData[SOURCE_COLUMNS.Year])
@@ -81,6 +85,14 @@ const createDisbursementsNode = (disbursementsData, type) => {
   disbursementNode.DisbursementCategory = FUND_TO_DISBURSEMENTS_CATEGORY[disbursementNode.Fund]
   if (!disbursementNode.DisbursementCategory) {
     disbursementNode.DisbursementCategory = disbursementNode.Source && ONSHOREOFFSHORE_TO_DISBURSEMENTS_CATEGORY[disbursementNode.Source.toLowerCase()]
+  }
+
+  disbursementNode.Disbursement = disbursementNode.Disbursement || 0
+
+  if(typeof disbursementNode.Disbursement !== "number") {
+    disbursementNode.Disbursement = 0
+    //console.log(disbursementsData, disbursementNode.Disbursement)
+    //throw new Error('Not a number?')
   }
 
   return disbursementNode

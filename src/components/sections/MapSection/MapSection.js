@@ -29,7 +29,7 @@ const MapSection = (props) => {
 
     const results=useStaticQuery(graphql`
 query MyQuery {
-  allResourceRevenuesFiscalYear(filter: {FiscalYear: {eq: 2018}, State: {nin: ["withheld", "Not tied to a location"]}}) {
+  allResourceRevenuesFiscalYear(filter: {FiscalYear: {eq: 2019}, State: {nin: ["withheld", "Not tied to a location"]}}) {
     nodes {
       Revenue
       State
@@ -40,6 +40,7 @@ query MyQuery {
 }
 
 `) 
+
     let data=[];
     let onClick=props.onClick;
     if(props.mapFeatures == 'states' ) {

@@ -37,6 +37,13 @@ let config = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        path: `${ __dirname }/src/components`,
+        name: 'components',
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         path: `${ __dirname }/src/pages`,
         name: 'pages',
       },
@@ -120,6 +127,12 @@ let config = {
         filter: (node, getNode) =>
           node.frontmatter.tags !== 'exempt',
       },
+    },
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: [`.mdx`],
+      }
     },
     'custom-excel-transformer',
     `gatsby-plugin-meta-redirect`, // make sure to put last in the array

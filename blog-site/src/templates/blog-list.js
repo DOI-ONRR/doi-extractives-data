@@ -117,7 +117,7 @@ export const pageQuery = graphql`
   query blogPageQuery($skip: Int!, $limit: Int!) {
     site {
       siteMetadata {
-        title,
+        title
         description
       }
     }

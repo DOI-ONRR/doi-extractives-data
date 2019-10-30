@@ -144,7 +144,7 @@ class ExplorePage extends React.Component {
 
               <MobileNav navItems={NAV_ITEMS} navTitle={NAV_TITLE} />
 
-              <section id="production">
+              <section>
                 <h2 className="state-page-overview">Production</h2>
 
                 <NationalFederalProduction allProducts={this.props.data.FederalProductionByProduct.group} allYears={this.props.data.FederalProductionByYear.group}/>

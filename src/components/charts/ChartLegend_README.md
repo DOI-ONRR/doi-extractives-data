@@ -12,7 +12,7 @@ The Chart Legend is legendary. Ryan and/or Shannon please add a description.
 
 ## How to use
 
-The legend can be used with any chart to display the values of each fo the data poitns with a calculated sum for the total. 
+The legend can be used with any chart to display the values of each of the data points with a calculated sum for the total. 
 
 ### Chart Data:
 This is an array of objects that will be used to populate the legend

@@ -25,13 +25,13 @@ const DisbursementTrends = () => {
 
     const results=useStaticQuery(graphql`
        query DisbursementTrendsQuery {
-allYearlyDispursements :  allDisbursementsXlsxData(sort: {fields: [Fiscal_Year], order: DESC}) {
+allYearlyDispursements : allFederalDisbursements (sort: {fields: [Year], order: DESC}){
     nodes {
-      Fiscal_Year
-      Fund_Type
-      State
+      _Total_:Disbursement
+      Fiscal_Year:Year
+      Fund_Type:Fund
       County
-      _Total_
+      State:USState
     }
   }
     currentMonthlyDispursements : allDisbursementsMonthly {

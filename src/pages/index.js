@@ -611,8 +611,9 @@ const fipsAbbrev = {
   CGM: 'offshore-gulf',
   EGM: 'offshore-gulf',
 
-  CEC: 'offshore-pacific',
-  NOC: 'offshore-pacific',
-  SOC: 'offshore-pacific',
-  WAO: 'offshore-pacific'
+
+    "CEC":"offshore-pacific",
+    "NOC":"offshore-pacific", 
+    "SOC":"offshore-pacific",
+    "WAO":"offshore-pacific"
 }

@@ -1,8 +1,9 @@
 import React from 'react'
-import { withStyles } from '@material-ui/core/styles'
+import { makeStyles } from '@material-ui/core/styles'
 import Grid from '@material-ui/core/Grid'
+import Typography from '@material-ui/core/Typography'
 
-const styles = theme => ({
+const useStyles = makeStyles(theme => ({
   section: {
     marginTop: theme.spacing(2),
     flexGrow: 1
@@ -13,14 +14,6 @@ const styles = theme => ({
     justifyContent: 'flex-start',
     flexWrap: 'wrap',
     zIndex: 10
-  },
-  title: {
-    fontFamily: theme.typography.fontFamily,
-    fontWeight: theme.typography.fontWeightBold,
-    // fontSize: theme.typography.title.fontSize,
-    // color: theme.typography.title.color,
-    // textAlign: theme.typography.title.textAlign,
-    // lineHeight: theme.typography.title.lineHeight
   },
   contentTop: {
     flexBasis: '100%',
@@ -48,16 +41,20 @@ const styles = theme => ({
     minWidth: 280,
     order: 4
   }
-})
+}))
 
 const TabContainer = props => {
-  const { classes } = props
+  const classes = useStyles()
   return (
     <section className={classes.section}>
       <Grid container spacing={2} direction={'row'} justify={'space-between'} align={'flex-start'}>
         <Grid item xs='12'>
-          <h3 className={classes.title}>{props.title}</h3>
-          <span className={classes.info}>{props.info}</span>
+          <Typography variant="h4">
+            {props.title}
+          </Typography>
+          <Typography variant="body1">
+            {props.info}
+          </Typography>
         </Grid>
         <Grid item xs='6'>{props.contentLeft}</Grid>
         <Grid item xs='6'>{props.contentRight}</Grid>
@@ -69,7 +66,7 @@ const TabContainer = props => {
         </Grid>
       </Grid>
     </section>
-  );
-};
+  )
+}
 
-export default withStyles(styles)(TabContainer)
+export default TabContainer

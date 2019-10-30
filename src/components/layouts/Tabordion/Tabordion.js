@@ -127,7 +127,7 @@ class Tabordion extends React.Component {
   }
 
   render() {
-    let classes = this.props.classes
+    const { classes } = this.props
     return (
       <Fragment>
         <MediaQuery minWidth={81}>
@@ -233,7 +233,7 @@ export class Tab extends React.Component {
 Tab.propTypes = {
   /** The Id for the element, used to ensure expandable containers have unique Ids. */
   id: PropTypes.string.isRequired,
-  classes: PropTypes.object.isRequired
+  // classes: PropTypes.object.isRequired
 }
 
 Tabordion.propTypes = {

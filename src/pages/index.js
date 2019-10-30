@@ -44,6 +44,7 @@ import ExploreProduction from '../components/sections/Explore/Production'
 import { MapSection } from '../components/sections/MapSection'
 
 import { WhatsNew } from '../components/sections/WhatsNew'
+import { Typography } from '@material-ui/core'
 let mapJson = require('../../static/maps/land/us-topology.json')
 let mapOffshoreJson = require('../../static/maps/offshore/offshore.json')
 
@@ -51,8 +52,18 @@ const styles = theme => ({
   section: {
     marginTop: theme.spacing(2)
   },
+  fluid: {
+    marginLeft: theme.spacing(0),
+    marginRight: theme.spacing(0),
+    paddingLeft: theme.spacing(0),
+    paddingRight: theme.spacing(0)
+  },
   heroContent: {
-    marginBottom: theme.spacing(5)
+    paddingLeft: theme.spacing(1),
+    paddingRight: theme.spacing(1),
+    paddingTop: theme.spacing(2),
+    paddingBottom: theme.spacing(5),
+    fontWeight: 300
   }
 })
 
@@ -160,8 +171,7 @@ class IndexPage extends React.Component {
           ></Helmet>
           <Container maxWidth="lg">
             <h3 className="h3-bar"></h3>
-            <p className={classes.heroContent}>
-              {' '}
+            <Typography className={classes.heroContent} variant="h5">
               When companies extract energy and mineral resources on property
               leased from the federal government and Native Americans, they pay{' '}
               <GlossaryTerm termKey="Bonus">bonuses</GlossaryTerm>,{' '}
@@ -173,7 +183,9 @@ class IndexPage extends React.Component {
               funds, and local governments for public use. All revenue collected
               from extraction on Native American lands is disbursed to Native
               American tribes, nations, or individuals.
-            </p>
+            </Typography>
+          </Container>
+          <Container maxWidth="lg">
             <Tabordion selected={selected}>
               <Tab id="tab-revenue" name="Revenue">
                 <TabContainer
@@ -238,6 +250,8 @@ class IndexPage extends React.Component {
                 </TabContainer>
               </Tab>
             </Tabordion>
+          </Container>
+          <Container className={classes.fluid} maxWidth="false">
             <WhatsNew />
           </Container>
         </main>

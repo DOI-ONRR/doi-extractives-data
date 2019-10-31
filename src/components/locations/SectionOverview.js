@@ -29,9 +29,11 @@ const SectionOverview = props => {
           <SectionOwnership usStateData={usStateData}/>
         </div>
 
-        <KeyGDPJobs usStateData={usStateData}/>
+        <StateProductionSummary production={props.production} productionYears={props.productionYears} stateName={usStateData.title} />
+          
+          <StateRevenueSummary revenueYears={props.revenueYears} stateName={usStateData.title} revenue={props.revenue}/>
 
-        <KeyAllProduction usStateData={usStateData} />
+          <StateDisbursementsSummary stateId={usStateData.unique_id}  stateName={usStateData.title}  data={usDisbursements} />
 
         {usStateData.nearby_offshore_region &&
                   <OffshoreRegion usStateData={usStateData} />
@@ -129,6 +131,59 @@ const SectionOwnership = props => {
     </section>
   )
 }
+
+const StateProductionSummary = props => {
+  const currentYear = props.productionYears[props.productionYears.length - 1]
+  const commodityCurrentYear = Object.keys(props.production).filter(commodity => props.production[commodity].volume[currentYear] > 0)
+  const commodityCount = commodityCurrentYear && commodityCurrentYear.length
+  const withhelds = Object.keys(props.production).filter(commodity => props.production[commodity].volume[currentYear] === 0)
+  
+  console.log(commodityCurrentYear);
+  
+    return (
+      <div>
+          {commodityCount === 1 && <p><strong>{commodityCount}</strong> energy or mineral commodity was produced on federal land in {props.stateName} in {currentYear}.</p>}
+          
+          {commodityCount > 1 && <p><strong>{commodityCount}</strong> energy or mineral commodities were produced on federal land in {props.stateName} in {currentYear}.</p>}
+  
+          {commodityCount === 0 && <p>There was no energy or mineral production on federal land in {props.stateName} in {currentYear}.</p>}
+  
+          {withhelds.length === 1 && <em><strong>{withhelds.length}</strong> commodity was <GlossaryTerm>withheld</GlossaryTerm> in {currentYear}.</em>}
+          
+          {withhelds.length > 1 && <em><strong>{withhelds.length}</strong> commodities were <GlossaryTerm>withheld</GlossaryTerm> in {currentYear}.</em>}
+          <hr></hr>
+        </div>
+    )
+  }
+  
+  
+  const StateRevenueSummary = props => {
+  const revenueYear = props.revenueYears[props.revenueYears.length - 1]
+  const revenue = props.revenue.All.All[revenueYear]
+  
+    return (
+      <div>
+        <p>Production on federal land in {props.stateName} resulted in <strong>{utils.formatToDollarInt(revenue)}</strong> in {revenueYear} revenue.</p>
+        <hr></hr>
+      </div>
+    )
+  }
+  
+  const StateDisbursementsSummary = props => {
+      const usStateDisbursements = FederalDisbursements(props.stateId,props.data);
+      const stateName=props.stateName;
+      const maxYear=usStateDisbursements.All.MaxYear
+      const allDisbursements = (usStateDisbursements && usStateDisbursements.All.All) ? usStateDisbursements.All.All[maxYear] : 0
+      
+      return (
+        <div>
+        { allDisbursements > 0 && <p>Revenue from federal land resulted in <strong> {utils.formatToDollarInt(allDisbursements)}</strong> disbursed from the federal government to {stateName} in {maxYear}.</p> }
+  
+        { (allDisbursements == null || allDisbursements == 0 ) && <p>No disbursements were reported for {stateName} in {maxYear}, probably because there was no revenue from production on federal land.</p> }
+        <hr></hr>
+        </div>
+    )
+  }
 
 /* Includes the GDP percentage, then outputs employment percentage if it’s over 2%. */
 const KeyGDPJobs = props => {

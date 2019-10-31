@@ -1,23 +1,85 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import Helmet from 'react-helmet'
 
 import { useStaticQuery, graphql } from 'gatsby'
+import { makeStyles } from '@material-ui/core/styles'
+import PropTypes from 'prop-types'
 
 import { Banner } from '../Banner'
 import { AlertBanner } from '../AlertBanner'
 import { Header } from '../Header'
 import { Footer } from '../Footer'
 import Glossary from '../../utils/Glossary'
+// import Glossary from '../Drawer'
 import utils from '../../../js/utils'
 
-import styles from '../../../css-global/base-theme.module.scss'
-import '../../../styles/_main.scss'
+// import styles from '../../../css-global/base-theme.module.scss'
+// import '../../../styles/_main.scss'
 // import "../../../styles/print.scss";
 
 import { withPrefixSVG } from '../../utils/temp-link'
 
+// Render Meta Image with Prefix SVG
+function renderMetaImage () {
+  return withPrefixSVG('/img/unfurl_image.png')
+}
+
+const useStyles = makeStyles(theme => ({
+  '@global': {
+    body: {
+      background: (theme.paletteType === 'light') ? '#000' : '#fff',
+      margin: 0
+    }
+  },
+  root: {
+    paddingTop: theme.spacing(2),
+    paddingLeft: 0,
+    paddingRight: 0,
+    [theme.breakpoints.up('sm')]: {
+      paddingLeft: theme.spacing(0),
+      paddingRight: theme.spacing(0)
+    }
+  },
+  skipNav: {
+    position: 'absolute',
+    top: '-1000px',
+    left: '-1000px',
+    height: '1px',
+    width: '1px',
+    textAlign: 'left',
+    overflow: 'hidden',
+
+    '&:active': {
+      left: '0',
+      top: '0',
+      padding: '5px',
+      width: 'auto',
+      height: 'auto',
+      overflow: 'visible'
+    },
+    '&:focus': {
+      left: '0',
+      top: '0',
+      padding: '5px',
+      width: 'auto',
+      height: 'auto',
+      overflow: 'visible'
+    },
+    '&:hover': {
+      left: '0',
+      top: '0',
+      padding: '5px',
+      width: 'auto',
+      height: 'auto',
+      overflow: 'visible'
+    }
+  }
+}))
+
 const DefaultLayout = ({ children }) => {
-  let meta_image = withPrefixSVG('/img/unfurl_image.png')
+
+  const classes = useStyles()
+
   const data = useStaticQuery(graphql`
 	  query IndexLayoutQuery{
 	    site {
@@ -34,7 +96,7 @@ const DefaultLayout = ({ children }) => {
   utils.hashLinkScroll()
 
   return (
-    <div>
+    <Fragment>
       <Helmet
         htmlAttributes={{ lang: 'en' }}
         meta={[
@@ -51,9 +113,9 @@ const DefaultLayout = ({ children }) => {
           { name: 'twitter:title', content: 'Home | Natural Resources Revenue Data' },
 
           // img
-          { name: 'og:image', content: meta_image },
+          { name: 'og:image', content: renderMetaImage() },
           { name: 'twitter:card', content: 'summary_large_image' },
-          { name: 'twitter:image', content: meta_image },
+          { name: 'twitter:image', content: renderMetaImage() },
 
           // description
           { name: 'og:description', content: 'This site provides open data about natural resource management on federal lands and waters in the United States, including oil, gas, coal, and other extractive industries.' },
@@ -80,18 +142,18 @@ const DefaultLayout = ({ children }) => {
         
       </Helmet>
 
-      <a href="#main-content" className={styles.skipNav}>Skip to main content</a>  
+      <a href="#main-content" className={classes.skipNav}>Skip to main content</a>
 
       <Banner />
 
       <Header siteMetadata={data && data.site.siteMetadata} />
 
-      <Glossary />
+      {/* <Glossary /> */}
 
-      {children}
+      <div className={classes.root}>{children}</div>
 
       <Footer version={data && data.site.siteMetadata.version} />
-    </div>
+    </Fragment>
   )
 }
 

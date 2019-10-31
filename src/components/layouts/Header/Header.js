@@ -2,9 +2,16 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import MediaQuery from 'react-responsive'
 import { connect } from 'react-redux'
-import Link from '../../utils/temp-link'
+import { Link } from 'gatsby'
 
-import styles from './Header.module.scss'
+import { makeStyles } from '@material-ui/core/styles'
+import useMediaQueries from '@material-ui/core/useMediaQuery'
+import Container from '@material-ui/core/Container'
+import Grid from '@material-ui/core/Grid'
+
+// import Link from '@material-ui/core/Link'
+
+// import styles from './Header.module.scss'
 
 import { Search } from '../../utils/Search'
 
@@ -17,12 +24,89 @@ import IconCloseX from '-!svg-react-loader!../../../img/icons/icon-close-x.svg'
 
 import { glossaryTermSelected as glossaryTermSelectedAction } from '../../../state/reducers/glossary'
 
+const useStyles = makeStyles(theme => ({
+  root: {
+    flexGrow: 1,
+    boxShadow: 'none',
+    maxHeight: '135px',
+    borderBottom: '2px solid #cde3c3',
+    paddingBottom: theme.spacing(2)
+  },
+  title: {
+    flexGrow: 1,
+    display: 'none',
+    [theme.breakpoints.up('sm')]: {
+      display: 'block',
+    },
+  },
+  headerImage: {
+    marginTop: theme.spacing(2),
+    marginBottom: 'auto',
+    width: '400px',
+    [theme.breakpoints.down('sm')]: {
+      width: '225px'
+    }
+  },
+  headerRight: {
+    width: 'auto',
+    textAlign: 'right',
+    marginRight: '0',
+    fontFamily: theme.typography.fontFamily,
+    listStyle: 'none',
+    display: 'inline-block',
+    '& li > a': {
+      marginLeft: theme.spacing(1),
+      marginRight: theme.spacing(2),
+      paddingTop: theme.spacing(2),
+      cursor: 'pointer',
+      textDecoration: 'none',
+      color: theme.palette.common.black
+    },
+    '& li': {
+      listStyle: 'none',
+      display: 'inline-block',
+      margin: theme.palette.margin
+    }
+  },
+  headerNavItem: {
+    fontSize: theme.typography.h4.fontSize
+  },
+  top: {
+    '& li > a': {
+      fontSize: theme.typography.button.fontSize,
+      marginTop: theme.spacing(4),
+      paddingTop: theme.spacing(4)
+    },
+    '& li': {
+      position: 'relative',
+      top: theme.spacing(1)
+    },
+    '& li:last-child': {
+      position: 'relative',
+      top: theme.spacing(0)
+    }
+  },
+  bottom: {
+    '& li > a': {
+      fontSize: theme.typography.h6.fontSize
+    },
+    '& li.active a': {
+      fontWeight: theme.typography.fontWeightBold
+    },
+    '& li:last-child a': {
+      marginRight: theme.spacing(0)
+    }
+  }
+
+}))
+
 const Header = props => {
-  let defaultNavClassNames = { 'className': ' header-nav_item ' }
-  let homeClassNames = { 'className': ' header-nav_item ' }
-  let aboutClassNames = { 'className': ' header-nav_item ' }
-  let howItWorksClassNames = { 'className': ' header-nav_item ' }
-  let exploreClassNames = { 'className': ' header-nav_item ' }
+  const classes = useStyles()
+
+  let homeClassNames = { 'className': classes.headerNavItem }
+  let aboutClassNames = { 'className': classes.headerNavItem }
+  let howItWorksClassNames = { 'className': classes.headerNavItem }
+  let exploreClassNames = { 'className': classes.headerNavItem }
   let downloadClassNames = { 'className': ' header-nav_item_link_top ' }
 
   if (typeof location !== 'undefined' && location) {
@@ -51,47 +135,79 @@ const Header = props => {
     }
   }
   return (
-    <header className={styles.root + ' container-page-wrapper'}>
-      { isIE && <BrowserBanner /> }
-      <div className="header-left">
-        <Link className="header-image_link" to="/">
-          <h1 className="sr-only">
-            US Department of the Interior Natural Resources Revenue Data
-          </h1>
-          <img className="header-image" src={NRRDLogo} alt="Logo" />
-        </Link>
-      </div>
-      <MediaQuery maxWidth={768}>
-        <MobileNav glossaryTermSelected={props.glossaryTermSelected}/>
-      </MediaQuery>
-      <MediaQuery minWidth={769}>
-        <nav className="header-nav header-right">
-          <ul className="header-nav_top">
-            <li style={{ width: '200px' }} className="header-nav_item_top">{' '}</li>
-            <li className="header-nav_item_top">
-              <a href="#" onClick={() => props.glossaryTermSelected('', true)} className="header-nav_item_link_top js-glossary-toggle" alt="this is the glossary drawer">Glossary</a>
-            </li>
-            <li className="header-nav_item_top">
-              <Link {...downloadClassNames} to="/downloads/">Download data </Link>
-            </li> <li className="header-nav_item_top">
-              <Search />
-            </li>
-
-          </ul>
-          <ul className="header-nav_bottom">
-            <li {...homeClassNames}>
-              <Link className="header-nav_item_link" to="/"> Home </Link>
-            </li> <li {...howItWorksClassNames}>
-              <Link className="header-nav_item_link" to="/how-it-works/"> How it works </Link>
-            </li> <li {...exploreClassNames}>
-              <Link className="header-nav_item_link" to="/explore/"> Explore data </Link>
-            </li> <li {...aboutClassNames}>
-              <Link className="header-nav_item_link" to="/about/"> About </Link>
-            </li>
-          </ul>
-        </nav>
-      </MediaQuery>
-    </header>
+    <Container maxWidth="lg">
+      <header className={classes.root}>
+        {isIE && <BrowserBanner />}
+        <Grid
+          container
+          spacing={2}
+          direction={'row'}
+          justify={'space-between'}
+          align={'flex-start'}
+        >
+          <Grid item xs="6">
+            <Link className="classes.headerImageLink" to="/">
+              <img
+                className={classes.headerImage}
+                src={NRRDLogo}
+                alt="US Department of the Interior Natural Resources Revenue Data"
+              />
+            </Link>
+          </Grid>
+          <Grid item xs="6" className={classes.headerRight}>
+            <nav className={`${ classes.headerRight } ${ classes.top }`}>
+              <ul>
+                <li>
+                  <Link
+                    href="#"
+                    onClick={() => props.glossaryTermSelected('', true)}
+                    className={classes.link}
+                    alt="this is the glossary drawer"
+                  >
+                    Glossary
+                  </Link>
+                </li>
+                <li>
+                  <Link className={classes.link} to="/downloads/">
+                    Download data{' '}
+                  </Link>
+                </li>
+                <li>
+                  <Search />
+                </li>
+              </ul>
+            </nav>
+            <nav className={`${ classes.headerRight } ${ classes.bottom }`}>
+              <ul>
+                <li {...homeClassNames}>
+                  <Link className={classes.link} to="/">
+                      Home
+                  </Link>
+                </li>
+                <li {...howItWorksClassNames}>
+                  <Link className={classes.link} to="/how-it-works/">
+                      How it works
+                  </Link>
+                </li>
+                <li {...exploreClassNames}>
+                  <Link className={classes.link} to="/explore/">
+                      Explore data
+                  </Link>
+                </li>
+                <li {...aboutClassNames}>
+                  <Link className={classes.link} to="/about/">
+                      About{' '}
+                  </Link>
+                </li>
+              </ul>
+            </nav>
+            <MediaQuery maxWidth={768}>
+              <MobileNav glossaryTermSelected={props.glossaryTermSelected}/>
+            </MediaQuery>
+          </Grid>
+        </Grid>
+      </header>
+    </Container>
   )
 }
 export default connect(

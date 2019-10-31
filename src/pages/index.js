@@ -1,6 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Helmet from 'react-helmet'
 import { connect } from 'react-redux'
+
+import { withStyles } from '@material-ui/core/styles'
+import Container from '@material-ui/core/Container'
+import withRoot from '../js/mui/withRoot'
+import DefaultLayout from '../components/layouts/DefaultLayout'
+
 import Link from '../components/utils/temp-link'
 import { withPrefix as withPrefixGatsby } from 'gatsby-link'
 import { hydrate as hydateDataManagerAction } from '../state/reducers/data-sets'
@@ -9,8 +15,10 @@ import {
   PRODUCT_VOLUMES_FISCAL_YEAR,
   REVENUES_MONTHLY,
   REVENUES_FISCAL_YEAR,
-  BY_ID, BY_COMMODITY,
-  BY_STATE, BY_COUNTY,
+  BY_ID,
+  BY_COMMODITY,
+  BY_STATE,
+  BY_COUNTY,
   BY_OFFSHORE_REGION,
   BY_LAND_CATEGORY,
   BY_LAND_CLASS,
@@ -18,13 +26,11 @@ import {
   BY_FISCAL_YEAR,
   BY_CALENDAR_YEAR
 } from '../state/reducers/data-sets'
-import 'url-search-params-polyfill';
+import 'url-search-params-polyfill'
 import * as CONSTANTS from '../js/constants'
 import utils from '../js/utils'
-import GlossaryTerm from '../components/utils/glossary-term.js';
+import GlossaryTerm from '../components/utils/glossary-term.js'
 
-
-import DefaultLayout from '../components/layouts/DefaultLayout'
 import { Tabordion, Tab } from '../components/layouts/Tabordion'
 import TabContainer from '../components/layouts/Tabordion/TabContainer.js'
 import RevenueTrends from '../components/sections/RevenueTrends'
@@ -38,42 +44,61 @@ import ExploreProduction from '../components/sections/Explore/Production'
 import { MapSection } from '../components/sections/MapSection'
 
 import { WhatsNew } from '../components/sections/WhatsNew'
-let mapJson = require("../../static/maps/land/us-topology.json")
-let  mapOffshoreJson =require("../../static/maps/offshore/offshore.json")
+import { Typography } from '@material-ui/core'
+let mapJson = require('../../static/maps/land/us-topology.json')
+let mapOffshoreJson = require('../../static/maps/offshore/offshore.json')
 
+const styles = theme => ({
+  section: {
+    marginTop: theme.spacing(2)
+  },
+  fluid: {
+    marginLeft: theme.spacing(0),
+    marginRight: theme.spacing(0),
+    paddingLeft: theme.spacing(0),
+    paddingRight: theme.spacing(0)
+  },
+  heroContent: {
+    paddingLeft: theme.spacing(1),
+    paddingRight: theme.spacing(1),
+    paddingTop: theme.spacing(2),
+    paddingBottom: theme.spacing(5),
+    fontWeight: 300
+  }
+})
 
-class Beta extends React.Component {
-  constructor (props) {
+class IndexPage extends React.Component {
+  constructor(props) {
     super(props)
-      console.debug(props);
-      this.hydrateStore()
+    console.debug(props)
+    this.hydrateStore()
   }
 
-
-    
   /**
    * Add the data to the redux store to enable
    * the components to access filtered data using the
    * reducers
    **/
-  hydrateStore () {
-    let data = this.props.data;
+  hydrateStore() {
+    let data = this.props.data
 
     this.props.normalizeDataSet([
-      { key: REVENUES_MONTHLY,
+      {
+        key: REVENUES_MONTHLY,
         data: data.allMonthlyRevenues.data,
         groups: [
           {
-            key:BY_CALENDAR_YEAR,
+            key: BY_CALENDAR_YEAR,
             groups: data.allMonthlyRevenuesByCalendarYear.group
           }
         ]
       },
-      { key: REVENUES_FISCAL_YEAR,
+      {
+        key: REVENUES_FISCAL_YEAR,
         data: data.allFiscalYearRevenues.data,
         groups: [
           {
-            key:BY_FISCAL_YEAR,
+            key: BY_FISCAL_YEAR,
             groups: data.allFiscalYearRevenuesByFiscalYear.group
           }
         ]
@@ -83,121 +108,156 @@ class Beta extends React.Component {
         data: data.allFiscalYearProductVolumes.data,
         groups: [
           {
-            key:BY_FISCAL_YEAR+"_Gas",
+            key: BY_FISCAL_YEAR + '_Gas',
             groups: data.allFiscalYearProductVolumesByFiscalYear_Gas.group
           },
           {
-            key:BY_FISCAL_YEAR+"_Oil",
+            key: BY_FISCAL_YEAR + '_Oil',
             groups: data.allFiscalYearProductVolumesByFiscalYear_Oil.group
           },
           {
-            key:BY_FISCAL_YEAR+"_Coal",
+            key: BY_FISCAL_YEAR + '_Coal',
             groups: data.allFiscalYearProductVolumesByFiscalYear_Coal.group
           }
         ]
       }
-    ]);
+    ])
 
     this.props.hydateDataManager([
-      { key: CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY, data: this.props.data.OilVolumes.volumes },
-      { key: CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY, data: this.props.data.GasVolumes.volumes },
-      { key: CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY, data: this.props.data.CoalVolumes.volumes },
-      { key: CONSTANTS.REVENUES_ALL_KEY, data: this.props.data.allRevenues.revenues },
-      { key: CONSTANTS.DISBURSEMENTS_ALL_KEY, data: this.props.data.Disbursements.disbursements },
+      {
+        key: CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY,
+        data: this.props.data.OilVolumes.volumes
+      },
+      {
+        key: CONSTANTS.PRODUCTION_VOLUMES_GAS_KEY,
+        data: this.props.data.GasVolumes.volumes
+      },
+      {
+        key: CONSTANTS.PRODUCTION_VOLUMES_COAL_KEY,
+        data: this.props.data.CoalVolumes.volumes
+      },
+      {
+        key: CONSTANTS.REVENUES_ALL_KEY,
+        data: this.props.data.allRevenues.revenues
+      },
+      {
+        key: CONSTANTS.DISBURSEMENTS_ALL_KEY,
+        data: this.props.data.Disbursements.disbursements
+      }
     ])
   }
 
-//const Beta = (props) => {
-    render () {
+  render() {
+    const { classes } = this.props
+    let urlParams = new URLSearchParams(this.props.location.search)
+    let selected = urlParams.get('tab')
 
-	let urlParams = new URLSearchParams(this.props.location.search)
-	let selected=urlParams.get('tab');
-	
-
-	return(
-	    <DefaultLayout>
-	      <main id="main-content">
-		<Helmet
-		  title="Home | Natural Resources Revenue Data"
-		  meta={[
-		      // title
-		      { name: 'og:title', content: 'Home | Natural Resources Revenue Data' },
-		      { name: 'twitter:title', content: 'Home | Natural Resources Revenue Data' },
-		  ]} >
-		</Helmet>
-	  <section className="container-page-wrapper">
-      <span className="h3-bar"></span>
-		  <p> When companies extract energy and mineral resources on property leased from the federal government and Native Americans, they pay <GlossaryTerm termKey="Bonus">bonuses</GlossaryTerm>, <GlossaryTerm>rent</GlossaryTerm>, and <GlossaryTerm termKey="Royalty">royalties</GlossaryTerm>. The Office of Natural Resources Revenue (ONRR) collects and <GlossaryTerm termKey="disbursement">disburses</GlossaryTerm> revenue from federal lands and waters to different agencies, funds, and local governments for public use. All revenue collected from extraction on Native American lands is disbursed to Native American tribes, nations, or individuals.</p>
-		</section>
-		<Tabordion selected={selected}  >
-		<Tab id="tab-revenue" name="Revenue">
-		    <TabContainer id="tab-container-revenue" name="Revenue"
-				  title="Revenue"
-				  info="The amount of money collected by the federal government from energy and mineral extraction on federal lands and waters and Native American lands."
-				  contentLeft={<TotalRevenue/>}
-				  contentRight={<RevenueTrends/>}
-				  contentBottom={<ExploreRevenue />}
-				  />
-		  </Tab>
-		  <Tab id="tab-disbursements" name="Disbursements" >
-		    <TabContainer id="tab-container-disbursements" 
-				  title="Disbursements"
-				  info="The amount of money the federal government distributed to various funds, agencies, local governments, and Native Americans."
-				  contentRight={<DisbursementTrends/>}
-         			  contentLeft={<TotalDisbursements/>}
-				  contentBottom={<ExploreDisbursements/>}
-				  
-				  />
-		    
-		  </Tab>  
-		  <Tab id="tab-production" name="Production" >
-		    <TabContainer id="tab-container-production" 
-			      title="Production"
-				  info="The volume of major commodities extracted on federal lands and waters and Native American lands."
-				  contentBottom={<ExploreProduction/>}
-				  >
-				  <TotalProduction />
-		    </TabContainer>
-		    
-		    
-		  </Tab>  
-		  <Tab id="tab-by-state" name="Data by state" >
-		    <TabContainer id="tab-container-by-state" 
-				  title="Data by state"
-				  
-				  >
-      <p><em>Select a state for detailed production, revenue, and disbursements data.</em></p>
-		      <MapSection 
-			info="Federal revenue by state and offshore region for fiscal year 2019"
-			states={this.props.data.states_data.states}
-			offshore_regions={this.props.data.offshore_data.offshore_regions}
-			mapFeatures="states"
-			mapTitle="Revenue"
-			mapJson="/maps/land/us-topology.json"
-			mapOffshoreJson="/maps/offshore/offshore.json"
-			mapJsonObject={{us:mapJson, offshore:mapOffshoreJson}}
-			onClick={ (d,i) => {
-			    let state=fipsAbbrev[d.id] || d.id;
-			    let url="/explore/"+state
-			    if(state.match(/offshore/)) {
-				url="/explore/"+state;
-			    }
-			    url=withPrefixGatsby(url);
-			    window.location.href = url;
-			    
-			} }
-			/>
-		    </TabContainer>
-		  </Tab>  
-		</Tabordion>	
-		
-		
-		
-		<WhatsNew />
-	      </main>
-	    </DefaultLayout>
-	)
-    }
+    return (
+      <DefaultLayout>
+        <main id="main-content">
+          <Helmet
+            title="Home | Natural Resources Revenue Data"
+            meta={[
+              // title
+              {
+                name: 'og:title',
+                content: 'Home | Natural Resources Revenue Data'
+              },
+              {
+                name: 'twitter:title',
+                content: 'Home | Natural Resources Revenue Data'
+              }
+            ]}
+          ></Helmet>
+          <Container maxWidth="lg">
+            <h3 className="h3-bar"></h3>
+            <Typography className={classes.heroContent} variant="h5">
+              When companies extract energy and mineral resources on property
+              leased from the federal government and Native Americans, they pay{' '}
+              <GlossaryTerm termKey="Bonus">bonuses</GlossaryTerm>,{' '}
+              <GlossaryTerm>rent</GlossaryTerm>, and{' '}
+              <GlossaryTerm termKey="Royalty">royalties</GlossaryTerm>. The
+              Office of Natural Resources Revenue (ONRR) collects and{' '}
+              <GlossaryTerm termKey="disbursement">disburses</GlossaryTerm>{' '}
+              revenue from federal lands and waters to different agencies,
+              funds, and local governments for public use. All revenue collected
+              from extraction on Native American lands is disbursed to Native
+              American tribes, nations, or individuals.
+            </Typography>
+          </Container>
+          <Container maxWidth="lg">
+            <Tabordion selected={selected}>
+              <Tab id="tab-revenue" name="Revenue">
+                <TabContainer
+                  id="tab-container-revenue"
+                  name="Revenue"
+                  title="Revenue"
+                  info="The amount of money collected by the federal government from energy and mineral extraction on federal lands and waters and Native American lands."
+                  contentLeft={<TotalRevenue />}
+                  contentRight={<RevenueTrends />}
+                  contentBottom={<ExploreRevenue />}
+                />
+              </Tab>
+              <Tab id="tab-disbursements" name="Disbursements">
+                <TabContainer
+                  id="tab-container-disbursements"
+                  title="Disbursements"
+                  info="The amount of money the federal government distributed to various funds, agencies, local governments, and Native Americans."
+                  contentRight={<DisbursementTrends />}
+                  contentLeft={<TotalDisbursements />}
+                  contentBottom={<ExploreDisbursements />}
+                />
+              </Tab>
+              <Tab id="tab-production" name="Production">
+                <TabContainer
+                  id="tab-container-production"
+                  title="Production"
+                  info="The volume of major commodities extracted on federal lands and waters and Native American lands."
+                  contentBottom={<ExploreProduction />}
+                >
+                  <TotalProduction />
+                </TabContainer>
+              </Tab>
+              <Tab id="tab-by-state" name="Data by state">
+                <TabContainer id="tab-container-by-state" title="Data by state">
+                  <p>
+                    <em>
+                      Select a state for detailed production, revenue, and
+                      disbursements data.
+                    </em>
+                  </p>
+                  <MapSection
+                    info="Federal revenue by state and offshore region for fiscal year 2018"
+                    states={this.props.data.states_data.states}
+                    offshore_regions={
+                      this.props.data.offshore_data.offshore_regions
+                    }
+                    mapFeatures="states"
+                    mapTitle="Revenue"
+                    mapJson="/maps/land/us-topology.json"
+                    mapOffshoreJson="/maps/offshore/offshore.json"
+                    mapJsonObject={{ us: mapJson, offshore: mapOffshoreJson }}
+                    onClick={(d, i) => {
+                      let state = fipsAbbrev[d.id] || d.id;
+                      let url = '/explore/' + state;
+                      if (state.match(/offshore/)) {
+                        url = '/explore/' + state;
+                      }
+                      url = withPrefixGatsby(url);
+                      window.location.href = url;
+                    }}
+                  />
+                </TabContainer>
+              </Tab>
+            </Tabordion>
+          </Container>
+          <Container className={classes.fluid} maxWidth="false">
+            <WhatsNew />
+          </Container>
+        </main>
+      </DefaultLayout>
+    );
+  }
 }
 
 export default connect(
@@ -206,7 +266,7 @@ export default connect(
     hydateDataManager: dataSets => dispatch(hydateDataManagerAction(dataSets)),
     normalizeDataSet: dataSets => dispatch(normalizeDataSetAction(dataSets))
   })
-)(Beta)
+)(withStyles(styles)(IndexPage))
 
 /*
 		<TabContainer id="tab-container-revenue" name="Revenue"
@@ -224,12 +284,14 @@ export default connect(
 		  />
 */
 
-
 export const query = graphql`
   query BetaQuery {
-   offshore_data:allMarkdownRemark (filter:{fileAbsolutePath: {regex: "/offshore_regions/"}} sort:{fields: [frontmatter___title], order: ASC}) {
-      offshore_regions:edges {
-        offshore_region:node {
+    offshore_data: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/offshore_regions/" } }
+      sort: { fields: [frontmatter___title], order: ASC }
+    ) {
+      offshore_regions: edges {
+        offshore_region: node {
           frontmatter {
             title
             unique_id
@@ -239,9 +301,12 @@ export const query = graphql`
         }
       }
     }
-    states_data:allMarkdownRemark (filter:{fileAbsolutePath: {regex: "/states/"}} sort:{fields: [frontmatter___title], order: ASC}) {
-      states:edges {
-        state:node {
+    states_data: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/states/" } }
+      sort: { fields: [frontmatter___title], order: ASC }
+    ) {
+      states: edges {
+        state: node {
           frontmatter {
             title
             unique_id
@@ -250,12 +315,12 @@ export const query = graphql`
         }
       }
     }
-    OilVolumes:allProductVolumesMonthly (
-      filter:{ProductName:{eq: "Oil"}}
-      sort:{fields:[ProductionDate], order: DESC}
+    OilVolumes: allProductVolumesMonthly(
+      filter: { ProductName: { eq: "Oil" } }
+      sort: { fields: [ProductionDate], order: DESC }
     ) {
-      volumes:edges {
-        data:node {
+      volumes: edges {
+        data: node {
           LandCategory
           OnshoreOffshore
           Volume
@@ -271,12 +336,12 @@ export const query = graphql`
         }
       }
     }
-    GasVolumes:allProductVolumesMonthly (
-      filter:{ProductName:{eq: "Gas"}}
-      sort:{fields:[ProductionDate], order: DESC}
+    GasVolumes: allProductVolumesMonthly(
+      filter: { ProductName: { eq: "Gas" } }
+      sort: { fields: [ProductionDate], order: DESC }
     ) {
-      volumes:edges {
-        data:node {
+      volumes: edges {
+        data: node {
           LandCategory
           OnshoreOffshore
           Volume
@@ -292,12 +357,12 @@ export const query = graphql`
         }
       }
     }
-    CoalVolumes:allProductVolumesMonthly (
-      filter:{ProductName:{eq: "Coal"}}
-      sort:{fields:[ProductionDate], order: DESC}
+    CoalVolumes: allProductVolumesMonthly(
+      filter: { ProductName: { eq: "Coal" } }
+      sort: { fields: [ProductionDate], order: DESC }
     ) {
-      volumes:edges {
-        data:node {
+      volumes: edges {
+        data: node {
           LandCategory
           OnshoreOffshore
           Volume
@@ -313,27 +378,26 @@ export const query = graphql`
         }
       }
     }
-    allRevenues:allResourceRevenuesMonthly(
-      filter:{RevenueCategory:{ne: null}}
-      sort:{fields:[RevenueDate], order: DESC}
+    allRevenues: allResourceRevenuesMonthly(
+      filter: { RevenueCategory: { ne: null } }
+      sort: { fields: [RevenueDate], order: DESC }
     ) {
-      revenues:edges {
-        data:node {
+      revenues: edges {
+        data: node {
           RevenueDate
-          RevenueMonth:RevenueDate(formatString: "MMMM")
-          RevenueYear:RevenueDate(formatString: "YYYY")
-          DisplayYear:RevenueDate(formatString: "'YY")
-          DisplayMonth:RevenueDate(formatString: "MMM")
+          RevenueMonth: RevenueDate(formatString: "MMMM")
+          RevenueYear: RevenueDate(formatString: "YYYY")
+          DisplayYear: RevenueDate(formatString: "'YY")
+          DisplayMonth: RevenueDate(formatString: "MMM")
           Revenue
           RevenueCategory
         }
       }
     }
     allMonthlyRevenues: allResourceRevenuesMonthly(
-      filter: {
-        RevenueCategory: {ne: null}
-      },
-      sort: {fields: [RevenueDate], order: DESC}) {
+      filter: { RevenueCategory: { ne: null } }
+      sort: { fields: [RevenueDate], order: DESC }
+    ) {
       data: edges {
         node {
           id
@@ -348,8 +412,9 @@ export const query = graphql`
       }
     }
     allMonthlyRevenuesByCalendarYear: allResourceRevenuesMonthly(
-      filter: {RevenueCategory: {ne: null}},
-      sort: {fields: [RevenueDate], order: DESC}) {
+      filter: { RevenueCategory: { ne: null } }
+      sort: { fields: [RevenueDate], order: DESC }
+    ) {
       group(field: CalendarYear) {
         id: fieldValue
         data: edges {
@@ -360,8 +425,9 @@ export const query = graphql`
       }
     }
     allFiscalYearRevenues: allResourceRevenuesFiscalYear(
-      filter: {RevenueCategory: {ne: null}},
-      sort: {fields: [RevenueDate], order: DESC}) {
+      filter: { RevenueCategory: { ne: null } }
+      sort: { fields: [RevenueDate], order: DESC }
+    ) {
       data: edges {
         node {
           id
@@ -374,8 +440,9 @@ export const query = graphql`
       }
     }
     allFiscalYearRevenuesByFiscalYear: allResourceRevenuesFiscalYear(
-      filter: {RevenueCategory: {ne: null}},
-      sort: {fields: [RevenueDate], order: DESC}) {
+      filter: { RevenueCategory: { ne: null } }
+      sort: { fields: [RevenueDate], order: DESC }
+    ) {
       group(field: FiscalYear) {
         id: fieldValue
         data: edges {
@@ -385,9 +452,10 @@ export const query = graphql`
         }
       }
     }
-    allFiscalYearProductVolumes: allProductVolumesFiscalYear (
-      filter: {ProductName: {in: ["Gas","Coal","Oil"]}},
-      sort: {fields: [ProductionDate], order: DESC}){
+    allFiscalYearProductVolumes: allProductVolumesFiscalYear(
+      filter: { ProductName: { in: ["Gas", "Coal", "Oil"] } }
+      sort: { fields: [ProductionDate], order: DESC }
+    ) {
       data: edges {
         node {
           id
@@ -401,11 +469,12 @@ export const query = graphql`
       }
     }
     allFiscalYearProductVolumesByFiscalYear_Gas: allProductVolumesFiscalYear(
-      filter: {ProductName: {eq: "Gas"}},
-      sort: {fields: [ProductionDate], order: DESC}) {
+      filter: { ProductName: { eq: "Gas" } }
+      sort: { fields: [ProductionDate], order: DESC }
+    ) {
       group(field: FiscalYear) {
         id: fieldValue
-        data:edges {
+        data: edges {
           node {
             id
           }
@@ -413,11 +482,12 @@ export const query = graphql`
       }
     }
     allFiscalYearProductVolumesByFiscalYear_Oil: allProductVolumesFiscalYear(
-      filter: {ProductName: {eq: "Oil"}},
-      sort: {fields: [ProductionDate], order: DESC}) {
+      filter: { ProductName: { eq: "Oil" } }
+      sort: { fields: [ProductionDate], order: DESC }
+    ) {
       group(field: FiscalYear) {
         id: fieldValue
-        data:edges {
+        data: edges {
           node {
             id
           }
@@ -425,22 +495,23 @@ export const query = graphql`
       }
     }
     allFiscalYearProductVolumesByFiscalYear_Coal: allProductVolumesFiscalYear(
-      filter: {ProductName: {eq: "Coal"}},
-      sort: {fields: [ProductionDate], order: DESC}) {
+      filter: { ProductName: { eq: "Coal" } }
+      sort: { fields: [ProductionDate], order: DESC }
+    ) {
       group(field: FiscalYear) {
         id: fieldValue
-        data:edges {
+        data: edges {
           node {
             id
           }
         }
       }
     }
-    Disbursements:allFederalDisbursements (
-      sort:{fields:[Year], order: DESC}
-    ){
-      disbursements:edges {
-        data:node {
+    Disbursements: allFederalDisbursements(
+      sort: { fields: [Year], order: DESC }
+    ) {
+      disbursements: edges {
+        data: node {
           id
           Year
           DisplayYear
@@ -459,87 +530,87 @@ export const query = graphql`
   }
 `
 
+const fipsAbbrev = {
+  '02': 'AK',
+  '01': 'AL',
+  '05': 'AR',
+  '60': 'AS',
+  '04': 'AZ',
+  '06': 'CA',
+  '08': 'CO',
+  '09': 'CT',
+  '11': 'DC',
+  '10': 'DE',
+  '12': 'FL',
+  '13': 'GA',
+  '66': 'GU',
+  '15': 'HI',
+  '19': 'IA',
+  '16': 'ID',
+  '17': 'IL',
+  '18': 'IN',
+  '20': 'KS',
+  '21': 'KY',
+  '22': 'LA',
+  '25': 'MA',
+  '24': 'MD',
+  '23': 'ME',
+  '26': 'MI',
+  '27': 'MN',
+  '29': 'MO',
+  '28': 'MS',
+  '30': 'MT',
+  '37': 'NC',
+  '38': 'ND',
+  '31': 'NE',
+  '33': 'NH',
+  '34': 'NJ',
+  '35': 'NM',
+  '32': 'NV',
+  '36': 'NY',
+  '39': 'OH',
+  '40': 'OK',
+  '41': 'OR',
+  '42': 'PA',
+  '72': 'PR',
+  '44': 'RI',
+  '45': 'SC',
+  '46': 'SD',
+  '47': 'TN',
+  '48': 'TX',
+  '49': 'UT',
+  '51': 'VA',
+  '78': 'VI',
+  '50': 'VT',
+  '53': 'WA',
+  '55': 'WI',
+  '54': 'WV',
+  '56': 'WY',
+  ALA: 'offshore-alaska',
+  ALB: 'offshore-alaska',
+  BFT: 'offshore-alaska',
+  BOW: 'offshore-alaska',
+  CHU: 'offshore-alaska',
+  COK: 'offshore-alaska',
+  GEO: 'offshore-alaska',
+  GOA: 'offshore-alaska',
+  HOP: 'offshore-alaska',
+  KOD: 'offshore-alaska',
+  MAT: 'offshore-alaska',
+  NAL: 'offshore-alaska',
+  NAV: 'offshore-alaska',
+  NOR: 'offshore-alaska',
+  SHU: 'offshore-alaska',
 
-const fipsAbbrev={
- "02":  "AK",
- "01":  "AL",
- "05":  "AR",
- "60":  "AS",
- "04":  "AZ",
- "06":  "CA",
- "08":  "CO",
- "09":  "CT",
- "11":  "DC",
- "10":  "DE",
- "12":  "FL",
- "13":  "GA",
- "66":  "GU",
- "15":  "HI",
- "19":  "IA",
- "16":  "ID",
- "17":  "IL",
- "18":  "IN",
- "20":  "KS",
- "21":  "KY",
- "22":  "LA",
- "25":  "MA",
- "24":  "MD",
- "23":  "ME",
- "26":  "MI",
- "27":  "MN",
- "29":  "MO",
- "28":  "MS",
- "30":  "MT",
- "37":  "NC",
- "38":  "ND",
- "31":  "NE",
- "33":  "NH",
- "34":  "NJ",
- "35":  "NM",
- "32":  "NV",
- "36":  "NY",
- "39":  "OH",
- "40":  "OK",
- "41":  "OR",
- "42":  "PA",
- "72":  "PR",
- "44":  "RI",
- "45":  "SC",
- "46":  "SD",
- "47":  "TN",
- "48":  "TX",
- "49":  "UT",
- "51":  "VA",
- "78":  "VI",
- "50":  "VT",
- "53":  "WA",
- "55":  "WI",
- "54":  "WV",
- "56":  "WY",
-    "ALA":"offshore-alaska",
-    "ALB":"offshore-alaska",
-    "BFT":"offshore-alaska",
-    "BOW":"offshore-alaska",
-    "CHU":"offshore-alaska",
-    "COK":"offshore-alaska",
-    "GEO":"offshore-alaska",
-    "GOA":"offshore-alaska",
-    "HOP":"offshore-alaska",
-    "KOD":"offshore-alaska",
-    "MAT":"offshore-alaska",
-    "NAL":"offshore-alaska",
-    "NAV":"offshore-alaska",
-    "NOR":"offshore-alaska",
-    "SHU":"offshore-alaska",
+  FLS: 'offshore-atlantic',
+  MDA: 'offshore-atlantic',
+  NOA: 'offshore-atlantic',
+  SOA: 'offshore-atlantic',
 
-    "FLS":"offshore-atlantic",
-    "MDA":"offshore-atlantic",
-    "NOA":"offshore-atlantic",
-    "SOA":"offshore-atlantic",
+  WGM: 'offshore-gulf',
+  CGM: 'offshore-gulf',
+  EGM: 'offshore-gulf',
 
-    "WGM":"offshore-gulf",
-    "CGM":"offshore-gulf",
-    "EGM":"offshore-gulf",
 
     "CEC":"offshore-pacific",
     "NOC":"offshore-pacific", 

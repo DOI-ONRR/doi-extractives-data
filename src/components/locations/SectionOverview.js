@@ -303,7 +303,6 @@ const FederalLandInfo = props => {
 
 /* Includes link to relevant offshore region, if there is one */
 const OffshoreRegion = props => {
-  /// console.og(props.usStateData.nearby_offshore_region);
   return (
     <p>
       {props.usStateData.title} also borders an offshore area with significant natural resource extraction, which may contribute to the state’s economy

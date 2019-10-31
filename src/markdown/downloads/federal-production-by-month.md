@@ -22,8 +22,8 @@ tag:
 
 <p class="downloads-download_links-intro">Download production data by month:
   <ul class="downloads-download_links list-unstyled">
-    <li><excel-link to="/downloads/production/monthly_production.xlsx">Production by month, 1/2008–5/2019 (Excel, 54 KB)</excel-link></li>
-    <li><csv-link to="/downloads/csv/production/monthly_production.csv">Production by month, 1/2008–5/2019 (csv, 72 KB)</csv-link></li>
+    <li><excel-link to="/downloads/production/monthly_production.xlsx">Production by month, 1/2008–6/2019 (Excel, 55 KB)</excel-link></li>
+    <li><csv-link to="/downloads/csv/production/monthly_production.csv">Production by month, 1/2008–6/2019 (csv, 71 KB)</csv-link></li>
   </ul>
 </p>
 
@@ -47,19 +47,19 @@ The sum of 12-month production totals for a given calendar or fiscal year may no
 
 ### Fields and definitions
 
-_Month_ The month for which the production was reported.
+_Month_ The month for which the production occurred.
 
-_Calendar Year_ The calendar year for the month in which the production was reported.
+_Calendar Year_ The calendar year for the month in which the production occurred.
 
 _Land Class_ This field distinguishes federal lands and waters from Native American lands.
 
-_Land Category_ This field distinguishes between onshore and offshore revenue. Some revenues – such as civil penalties – are not tied to either onshore or offshore.
+_Land Category_ This field distinguishes between onshore and offshore production.
 
 _Commodity_ We have monthly data for oil, gas, and coal, since these are high-volume commodities that result in the most revenue. This field includes the units for each commodity in parentheses.
 
-- _Oil Prod Vol (bbl)_ Oil production is measured in barrels (bbl)
-- _Gas Prod Vol (Mcf)_ Gas (natural gas) is measured in thousand cubic feet (mcf)
-- _Coal Prod Vol (ton)_ Coal is measured in tons. A ton is 2000 pounds.
+  - _Oil Prod Vol (bbl)_ Oil production is measured in barrels (bbl)
+  - _Gas Prod Vol (Mcf)_ Gas (natural gas) is measured in thousand cubic feet (mcf)
+  - _Coal Prod Vol (ton)_ Coal is measured in tons. A ton is 2000 pounds.
 
 _Volume_ Shows the production volume (amount produced). The units for volume are shown in the preceding field (Commodity).
 

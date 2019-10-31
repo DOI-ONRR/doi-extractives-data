@@ -5,6 +5,7 @@ import StickyHeader from '../layouts/StickyHeader'
 import { StickyWrapper } from '../utils/StickyWrapper'
 import YearSelector from '../selectors/YearSelector'
 import DataAndDocs from '../layouts/DataAndDocs'
+import GlossaryTerm from '../utils/glossary-term.js'
 import RevenueTypeTable from '../locations/RevenueTypeTable'
 import RevenueProcessTable from '../locations/RevenueProcessTable'
 import utils from '../../js/utils'
@@ -51,8 +52,7 @@ const SectionOffshoreRevenue = props => {
       <h2>Federal Revenue</h2>
 
       <p>Natural resource extraction can lead to federal revenue in two ways: non-tax revenue and tax revenue.</p>
-      <p>When companies extract natural resources on federal lands and waters, they pay royalties, rents, bonuses
-        , and other fees, much like they would to any landowner. This non-tax revenue is collected and reported by the Office of Natural Resources Revenue (ONRR).</p>
+      <p>When companies extract natural resources on federal lands and waters, they pay royalties, rents, bonuses, and other fees, much like they would to any landowner. This non-tax revenue is collected and reported by the Office of Natural Resources Revenue (ONRR).</p>
 
       <section id="federal-revenue">
 
@@ -65,11 +65,7 @@ const SectionOffshoreRevenue = props => {
           . For details, read more about the processes for <Link to="/how-it-works/offshore-oil-gas/">offshore oil and gas
             </Link> or <Link to="/how-it-works/offshore-renewables/">offshore renewable energy</Link>.
             </p>
-            <p>
-          The federal government collects different kinds of fees at each phase of resource extraction. This chart shows
-          how much federal revenue was collected in {commodityYearsSortDesc[0]} for production or potential production of natural resources on federal waters
-          , broken down by phase of production.
-            </p>
+            <p>The federal government collects different kinds of fees at each phase of resource extraction. This chart shows how much federal revenue was collected in <GlossaryTerm>calendar year (CY)</GlossaryTerm> {commodityYearsSortDesc[0]} for production or potential production of natural resources on federal waters, broken down by phase of production.</p>
 		                <div id="fee-summaries" className="tab-interface">
 		                    <ul className="eiti-tabs info-tabs" role="tablist">
 		                        <li role="presentation">

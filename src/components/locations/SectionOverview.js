@@ -2,9 +2,6 @@ import React from 'react'
 import hastReactRenderer from '../../js/hast-react-renderer'
 import ReactHtmlParser from 'react-html-parser'
 import { withPrefixSVG } from '../utils/temp-link'
-import ALL_US_STATES_GDP from '../../data/state_gdp.yml'
-import ALL_US_STATES_JOBS from '../../data/state_jobs.yml'
-import * as TOP_STATE_PRODUCTS from '../../data/top_state_products'
 import LAND_STATS from '../../data/land_stats.yml'
 import VIEWBOXES_CROPPED from '../../data/viewboxes_cropped.yml'
 import FederalLandOwnershipLegend from '../maps/FederalLandOwnershipLegend'
@@ -185,74 +182,7 @@ const StateProductionSummary = props => {
     )
   }
 
-/* Includes the GDP percentage, then outputs employment percentage if it’s over 2%. */
-const KeyGDPJobs = props => {
-  const usStateGDP = ALL_US_STATES_GDP[props.usStateData.unique_id]
-  year = (usStateGDP) ? Math.max(...Object.keys(usStateGDP)) : 2017
-  const usStateJobs = ALL_US_STATES_JOBS[props.usStateData.unique_id]
-
-  return (
-    <p>
-            Natural resource extraction varies widely from state to state.{' '}
-      {(usStateGDP && usStateGDP[year] && usStateGDP[year].dollars > 0) 
-        ? <span>
-          In {props.usStateData.title}, extractive industries accounted for { utils.round(usStateGDP[year].percent, 1) }% of gross domestic product (GDP) in {year}
-          { usStateJobs[year] && (usStateJobs[year].percent > 2) &&
-            <span>
-              , and jobs in the extractive industries made up {utils.round(usStateJobs[year].percent, 1)}% of statewide employment
-            </span>
-          }
-          .
-        </span>
-        :         <span>
-          Extractive industries did not have any effect on gross domestic product (GDP) in
-          {props.usStateData.title} in {year}.
-        </span>
-      }
-    </p>
-  )
-}
-
-/* If the state leads U.S. production for any commodities, those commodities are listed along with percentage of US production. */
-const KeyAllProduction = props => {
-  const usStateTopProducts =
-      (TOP_STATE_PRODUCTS[props.usStateData.unique_id] && TOP_STATE_PRODUCTS[props.usStateData.unique_id]['all_production'])
-        ? TOP_STATE_PRODUCTS[props.usStateData.unique_id]['all_production'][year] : undefined
-
-  let productsRankedOne = []
-  if (usStateTopProducts) {
-    usStateTopProducts.map((product, index) => {
-      if (product.rank === 1) {
-        productsRankedOne.push(product)
-      }
-    })
-  }
-
-  let getProductListItems = () => {
-    return (
-      <ul>
-        {productsRankedOne &&
-          productsRankedOne.map((product, index) => {
-            return (<li key={index}>{utils.getDisplayName_CommodityName(product.name)}: {utils.round(product.percent, 1)}% of U.S. Production</li>)
-          })
-        }
-      </ul>
-    )
-  }
-
-  return (
-    <div>
-      {productsRankedOne.length > 0 &&
-                <div>
-                  <p>{props.usStateData.title} leads the nation in production of:</p>
-                  {getProductListItems()}
-                </div>
-      }
-    </div>
-  )
-}
-
-/* Sets up the federal-land focus of USEITI data, specifies what percentage of land is federally owned, and outputs the total revenue from federal land. */
+/* Specifies what percentage of land is federally owned, and outputs the total revenue from federal land. */
 
 const FederalLandInfo = props => {
   return (

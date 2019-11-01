@@ -92,7 +92,7 @@ const SectionRevenue = props => {
               , <Link to="/how-it-works/onshore-renewables/">renewable resources</Link>, and <Link to="/how-it-works/minerals/">hardrock minerals</Link>.</p>
 
             <p>The federal government collects different kinds of fees at each phase of natural resource extraction
-              . This chart shows how much federal revenue was collected in <GlossaryTerm>Calendar year (CY)</GlossaryTerm>
+              . This chart shows how much federal revenue was collected in <GlossaryTerm>calendar year (CY)</GlossaryTerm>
             { commodityYearsSortDesc[0] } for production or potential production of natural resources on federal land in
             { " "+usStateData.title }, broken down by phase of production.</p>
 

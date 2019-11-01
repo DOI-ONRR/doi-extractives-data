@@ -44,17 +44,22 @@ const YEARLY_DROPDOWN_VALUES = {
 
 const CHART_LEGEND_TITLE = 'Source'
 
-const CHART_SORT_ORDER = [CONSTANTS.FEDERAL_ONSHORE, CONSTANTS.FEDERAL_OFFSHORE, CONSTANTS.NATIVE_AMERICAN]
+const CHART_SORT_ORDER = [CONSTANTS.FEDERAL_ONSHORE, CONSTANTS.FEDERAL_OFFSHORE, CONSTANTS.NATIVE_AMERICAN, CONSTANTS.NOT_TIED_TO_A_LEASE]
+
+const CHART_DISPLAY_NAMES = {}
+CHART_DISPLAY_NAMES[CONSTANTS.NOT_TIED_TO_A_LEASE] = { displayName: 'Federal - not tied to a lease' }
 
 const CHART_STYLE_MAP = {
   'bar': styles.chartBar,
   [CONSTANTS.FEDERAL_OFFSHORE]: styles.federalOffshore,
   [CONSTANTS.FEDERAL_ONSHORE]: styles.federalOnshore,
-  [CONSTANTS.NATIVE_AMERICAN]: styles.nativeAmerican,
+	[CONSTANTS.NATIVE_AMERICAN]: styles.nativeAmerican,
+	[CONSTANTS.NOT_TIED_TO_A_LEASE]: styles.notTiedToALease,
   hover: {
     [CONSTANTS.FEDERAL_OFFSHORE]: styles.federalOffshoreHover,
     [CONSTANTS.FEDERAL_ONSHORE]: styles.federalOnshoreHover,
-    [CONSTANTS.NATIVE_AMERICAN]: styles.nativeAmericanHover,
+		[CONSTANTS.NATIVE_AMERICAN]: styles.nativeAmericanHover,
+		[CONSTANTS.NOT_TIED_TO_A_LEASE]: styles.notTiedToALeaseHover
   }
 }
 
@@ -314,7 +319,9 @@ class TotalRevenueDeprecated extends React.Component {
 
 	        sortOrder= {CHART_SORT_ORDER}
 
-	        legendTitle= {CHART_LEGEND_TITLE}
+					legendTitle= {CHART_LEGEND_TITLE}
+					
+					displayNames= {CHART_DISPLAY_NAMES}
 
 	        legendDataFormatFunc= {dataFormatFunc || utils.formatToCommaInt}
 

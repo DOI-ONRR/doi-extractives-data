@@ -439,10 +439,14 @@ const dataSetByYear = (id, key, source, filter, options) => {
   longUnits = source[0].data.Units || 'dollars'
 
   results = Object.entries(utils.groupBy(source, getYearKey(source[0].data))).map(e => ({ [e[0]]: e[1] }))
+  console.log(results)
 
-  // We assume if the data matches current year that we dont have the year of data, so we remove it
-  let currentYear = new Date().getFullYear()
-  results = results.filter(yearData => parseInt(Object.keys(yearData)[0]) !== currentYear)
+  // We assume if its Monthly data and  if the data matches current year that we dont have the year of data, so we remove it
+  if (source[0].data.Month) {
+    let currentYear = new Date().getFullYear()
+    results = results.filter(yearData => parseInt(Object.keys(yearData)[0]) !== currentYear)
+  }
+
 
   results.sort((a, b) => (getYear(a[Object.keys(a)[0]][0].data) - getYear(b[Object.keys(b)[0]][0].data)))
 

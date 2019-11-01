@@ -1,14 +1,15 @@
 @value colors: "../../../css-global/colors.scss";
-@value grayBlueDark as _grayBlueDark, grayBlueMid as _grayBlueMid, grayMidLight as _grayMidLight, grayBlueMidLight as _grayBlueMidLight from colors;
-@value blueMidLight as _blueMidLight, blueMid as _blueMid, blueDark as _blueDark from colors;
+@value black as _black, grayBlueDark as _grayBlueDark, grayBlueMid as _grayBlueMid, grayMidLight as _grayMidLight, grayBlueMidLight as _grayBlueMidLight from colors;
+@value blueMidLight as _blueMidLight, blueMid as _blueMid, blueDark as _blueDark, blueDarkest as _blueDarkest from colors;
 @value greenLight as _greenLight, blueMid as _blueMid, blueDark as _blueDark from colors;
 
-@value federalOffshoreColor: _grayBlueMid;
-@value federalOnshoreColor: _grayBlueDark;
-@value nativeAmericanColor: _grayBlueMidLight;
-@value federalOffshoreColor_selected: _blueMid;
-@value federalOnshoreColor_selected: _blueDark;
-@value nativeAmericanColor_selected: _blueMidLight;
+@value federalOffshoreColor: _grayBlueDark;
+@value federalOnshoreColor: _black;
+@value nativeAmericanColor: _grayBlueMid;
+
+@value federalOffshoreColor_selected: _blueDark;
+@value federalOnshoreColor_selected: _black;
+@value nativeAmericanColor_selected: _blueMid;
 
 .root{}
 .title {

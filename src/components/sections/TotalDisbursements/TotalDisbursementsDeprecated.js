@@ -304,7 +304,8 @@ class TotalDisbursementsDeprecated extends React.Component {
 	getStackedBarChartLayout (dataSetId, title, dataFormatFunc) {
 	  if (this.state[dataSetId] === undefined) {
 	    return
-	  }
+		}
+		console.log(this.state[dataSetId])
 
 	  return (
 	    <div is="chart">

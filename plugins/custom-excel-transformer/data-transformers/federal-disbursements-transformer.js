@@ -59,13 +59,16 @@ const createDisbursementsNode = (disbursementsData, type) => {
     source = '8(g)'
   }
 
+  let totalProp = Object.keys(disbursementsData).filter(prop => prop.trim().includes(SOURCE_COLUMNS.Total.trim()))
+  let disbursementValue = disbursementsData[totalProp] || disbursementsData[SOURCE_COLUMNS.Disbursement]
+
   let disbursementNode = {
 	  Year: disbursementsData[SOURCE_COLUMNS.Year],
     DisplayYear: (disbursementsData[SOURCE_COLUMNS.Year])
       ? "'" + disbursementsData[SOURCE_COLUMNS.Year].toString().substr(2) : "'" + disbursementsData[SOURCE_COLUMNS.CalendarYear].toString().substr(2),
 	  Fund: fund,
-	  Source: source && toTitleCase(source),
-	  Disbursement: disbursementsData[SOURCE_COLUMNS.Total] || disbursementsData[SOURCE_COLUMNS.Disbursement],
+	  Source: source,
+	  Disbursement: disbursementValue,
 	  USState: disbursementsData[SOURCE_COLUMNS.USState],
 	  County: disbursementsData[SOURCE_COLUMNS.County],
     CalendarYear: disbursementsData[SOURCE_COLUMNS.CalendarYear],
@@ -86,6 +89,10 @@ const createDisbursementsNode = (disbursementsData, type) => {
 
   if (['GOMESA', '8(g)'].includes(disbursementNode.Source)) {
     disbursementNode.County = disbursementNode.County || DISBURSEMENT_TO_STATE
+  }
+
+  if (typeof disbursementNode.Disbursement !== 'number') {
+    disbursementNode.Disbursement = 0
   }
 
   return disbursementNode

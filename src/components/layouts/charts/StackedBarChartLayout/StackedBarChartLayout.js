@@ -1,93 +1,122 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import MediaQuery from 'react-responsive'
+import React from "react";
+import PropTypes from "prop-types";
+import MediaQuery from "react-responsive";
 
-import styles from './StackedBarChartLayout.module.scss'
+import styles from "./StackedBarChartLayout.module.scss";
 
-import { ChartTitle } from '../../../charts/ChartTitle'
-import { StackedBarChart } from '../../../charts/StackedBarChart'
-import { ChartLegendStandard } from '../../../charts/ChartLegendStandard'
-import { Accordion } from '../../Accordion'
+import { ChartTitle } from "../../../charts/ChartTitle";
+import { StackedBarChart } from "../../../charts/StackedBarChart";
+import { ChartLegendStandard } from "../../../charts/ChartLegendStandard";
+import { Accordion } from "../../Accordion";
 
-import utils from '../../../../js/utils'
+import utils from "../../../../js/utils";
 
-const MAX_CHART_BAR_SIZE = 15
+const MAX_CHART_BAR_SIZE = 15;
 
 class StackedBarChartLayout extends React.Component {
   state = {
     dataSet: this.props.dataSet,
-    barHovered: this.props.barHovered,
+    barHovered: this.props.barHovered
+  };
+
+  componentWillReceiveProps(nextProps) {
+    this.setState({ dataSet: nextProps.dataSet, barHovered: undefined });
   }
 
-  componentWillReceiveProps (nextProps) {
-    this.setState({ dataSet: nextProps.dataSet, barHovered: undefined })
-  }
-
-  shouldComponentUpdate (nextProps, nextState) {
+  shouldComponentUpdate(nextProps, nextState) {
     return (
-      (this.state.dataSet !== undefined && (this.state.dataSet.lastUpdated !== nextProps.dataSet.lastUpdated)) ||
-      (this.state.barHovered !== nextState.barHovered) ||
-      (this.state.dataSet.selectedDataKey !== nextProps.dataSet.selectedDataKey)
-    )
+      (this.state.dataSet !== undefined &&
+        this.state.dataSet.lastUpdated !== nextProps.dataSet.lastUpdated) ||
+      this.state.barHovered !== nextState.barHovered ||
+      this.state.dataSet.selectedDataKey !== nextProps.dataSet.selectedDataKey
+    );
   }
 
-  barHoveredCallback (data, isHover) {
+  barHoveredCallback(data, isHover) {
     if (isHover) {
-      this.setState({ barHovered: data })
-    }
-    else {
-      this.setState({ barHovered: undefined })
+      this.setState({ barHovered: data });
+    } else {
+      this.setState({ barHovered: undefined });
     }
   }
 
-  getStyleMap () {
-    return (this.state.chartDataKeyHovered &&
-        (this.props.chartDisplayConfig.styleMap && this.props.chartDisplayConfig.styleMap.hover))
-      ? this.props.chartDisplayConfig.styleMap.hover : this.props.chartDisplayConfig.styleMap
+  getStyleMap() {
+    return this.state.chartDataKeyHovered &&
+      (this.props.chartDisplayConfig.styleMap &&
+        this.props.chartDisplayConfig.styleMap.hover)
+      ? this.props.chartDisplayConfig.styleMap.hover
+      : this.props.chartDisplayConfig.styleMap;
   }
 
-  getChartLegend () {
-      let { legendTitle, legendDataFormatFunc, sortOrder, styleMap, showUnits } = this.props
-    let { data, legendLabels, selectedDataKey, units } = this.state.dataSet
-    let legendData
+  getChartLegend() {
+    console.log('this.props: ', this.props)
+    let {
+      legendTitle,
+      legendDataFormatFunc,
+      sortOrder,
+      styleMap,
+      showUnits,
+      displayNames
+    } = this.props;
+    let { data, legendLabels, selectedDataKey, units } = this.state.dataSet;
+    let legendData;
     if (this.state.barHovered) {
-      selectedDataKey = Object.keys(this.state.barHovered)[0]
-      legendData = this.state.barHovered[selectedDataKey][0]
-      styleMap = styleMap.hover
+      selectedDataKey = Object.keys(this.state.barHovered)[0];
+      legendData = this.state.barHovered[selectedDataKey][0];
+      styleMap = styleMap.hover;
+    } else {
+      let selectedData = data.find(
+        dataItem => Object.keys(dataItem)[0] === selectedDataKey
+      );
+      legendData = selectedData && selectedData[selectedDataKey][0];
     }
-    else {
-      let selectedData = data.find(dataItem => Object.keys(dataItem)[0] === selectedDataKey)
-      legendData = selectedData && selectedData[selectedDataKey][0]
+    let unitsForValues = "";
+    if (showUnits) {
+      unitsForValues = " (" + units + ")";
     }
-      let unitsForValues='';
-      if(showUnits) {
-	  unitsForValues=' ('+units+')';
-      }
+
     return (
       <ChartLegendStandard
         headerName={legendTitle}
-        headerNameForValues={(legendLabels && legendLabels[selectedDataKey]) +unitsForValues }
+        headerNameForValues={
+          (legendLabels && legendLabels[selectedDataKey]) + unitsForValues
+        }
         data={legendData}
         dataFormatFunc={legendDataFormatFunc}
         styleMap={styleMap}
         sortOrder={sortOrder}
-        units={units} >
-      </ChartLegendStandard>
-    )
+        units={units}
+        displayNames={displayNames}
+      ></ChartLegendStandard>
+    );
   }
 
-  render () {
-      let { title, sortOrder, styleMap, barSelectedCallback, showUnits } = this.props
-    let { data, selectedDataKey, groupNames, longUnits, xAxisLabels } = this.state.dataSet
-      let titleUnits='';
-      if(showUnits) {
-	  titleUnits=' ('+longUnits+')';
-      }
+  render() {
+    let {
+      title,
+      sortOrder,
+      styleMap,
+      barSelectedCallback,
+      showUnits
+    } = this.props;
+    let {
+      data,
+      selectedDataKey,
+      groupNames,
+      longUnits,
+      xAxisLabels
+    } = this.state.dataSet;
+    let titleUnits = "";
+    if (showUnits) {
+      titleUnits = " (" + longUnits + ")";
+    }
     return (
       <div className={styles.root}>
-            <ChartTitle>{title} {titleUnits}</ChartTitle>
+        <ChartTitle>
+          {title} {titleUnits}
+        </ChartTitle>
 
-        {this.state.dataSet &&
+        {this.state.dataSet && (
           <div>
             <div className={styles.chart}>
               <StackedBarChart
@@ -103,19 +132,19 @@ class StackedBarChartLayout extends React.Component {
                 xAxisLabels={xAxisLabels}
               />
             </div>
-            <MediaQuery minWidth={769}>
-              {this.getChartLegend()}
-            </MediaQuery>
+            <MediaQuery minWidth={769}>{this.getChartLegend()}</MediaQuery>
             <MediaQuery maxWidth={768}>
-              <Accordion id={utils.formatToSlug(title)} text={['Show details', 'Hide details']}>
+              <Accordion
+                id={utils.formatToSlug(title)}
+                text={["Show details", "Hide details"]}
+              >
                 {this.getChartLegend()}
               </Accordion>
             </MediaQuery>
           </div>
-        }
-
+        )}
       </div>
-    )
+    );
   }
 }
 
@@ -128,11 +157,10 @@ StackedBarChartLayout.propTypes = {
   styleMap: PropTypes.object,
   /** This object holds all the related information for the dataSet.
     It also provides a LastUpdated property to verify this component should update. */
-  dataSet: PropTypes.object,
+  dataSet: PropTypes.object
+};
 
-}
-
-export default StackedBarChartLayout
+export default StackedBarChartLayout;
 
 /*
 

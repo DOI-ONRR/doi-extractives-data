@@ -235,7 +235,7 @@ const ProductionTableToolbar = ({
               </Grid>
               <Grid item sm={10}>
                 {(landCategory === 'Native American' || landCategory === 'All' || landCategory === 'Onshore') &&
-                  <div className={styles.locationMessage}>For privacy reasons, location is <GlossaryTerm>withheld</GlossaryTerm> for Native American data. Select a federal-only land category to view location.</div>
+                  <div className={styles.locationMessage}>For privacy reasons, location is <GlossaryTerm>withheld</GlossaryTerm> for Native American data.</div>
                 }
               </Grid>
             </React.Fragment>

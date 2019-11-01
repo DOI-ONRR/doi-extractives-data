@@ -13,7 +13,7 @@ const Revenue = props => {
 			      Production trends on federal lands and waters
 			    </ExploreDataLink>
           <ExploreDataLink
-				  to="/query-data?dataType=Production"
+				  to="/query-data/?dataType=Production"
 				  icon="filter"
 				  >Production in detail
 			    </ExploreDataLink>

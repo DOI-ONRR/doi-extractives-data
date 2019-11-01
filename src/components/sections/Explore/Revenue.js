@@ -13,7 +13,7 @@ const Revenue = props => {
 					     >Revenue trends
 			    </ExploreDataLink>
 			    <ExploreDataLink
-				  to="/query-data?dataType=Revenue"
+				  to="/query-data/?dataType=Revenue"
 				  icon="filter"
 				  >Revenue in detail
 			    </ExploreDataLink>

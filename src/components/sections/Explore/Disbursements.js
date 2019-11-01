@@ -16,7 +16,7 @@ const Disbursements = props => {
 			Disbursements trends
 		      </ExploreDataLink>
           <ExploreDataLink
-				  to="/query-data?dataType=Disbursements"
+				  to="/query-data/?dataType=Disbursements"
 				  icon="filter"
 				  >Disbursements in detail
 			    </ExploreDataLink>

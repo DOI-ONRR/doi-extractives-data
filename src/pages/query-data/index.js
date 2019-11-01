@@ -247,9 +247,9 @@ const ADDITIONAL_COLUMN_OPTIONS = {
   [PRODUCTION]: (groupByOptions, groupBy, filter) => {
     let options = [NO_SECOND_COLUMN]
 
-    if (filter.commodities && filter.commodities.length === 1 && !filter.commodities.includes(ALL)) {
-      options = groupByOptions && options.concat(groupByOptions)
-    }
+    //if (filter.commodities && filter.commodities.length === 1 && !filter.commodities.includes(ALL)) {
+      //options = groupByOptions && options.concat(groupByOptions)
+    //}
 
     return ({
       options: options,
@@ -563,7 +563,8 @@ class QueryData extends React.Component {
       },
       [SOURCE]: recipient => {
         this.setFilteredIds(RECIPIENTS, recipient, 1)
-        return [{ name: SELECT, placeholder: true }].concat(this.getUniqueOptionValuesFromFilteredData([SOURCE]))
+        let options = this.getUniqueOptionValuesFromFilteredData([SOURCE])
+        return [{ name: SELECT, placeholder: true }].concat(options.filter(option => option === ONSHORE_OFFSHORE))
       },
       [LOCATIONS]: source => {
         this.setFilteredIds(SOURCE, source, 2)

@@ -18,7 +18,7 @@ import { useStaticQuery, graphql } from "gatsby"
 let year
 
 const FederalDisbursements=(id,data) => {
-   // console.debug("id:", id,data);
+    console.debug("id:", id,data);
     let max_year=data[0].Fiscal_Year;
     let nodes=data.filter( node => node.State==id && node.Fiscal_Year==max_year);
     let All=nodes.map(item => item._Total_).reduce((prev, next) => prev + next,null);
@@ -32,7 +32,7 @@ const FederalDisbursements=(id,data) => {
     r.All.Onshore[max_year]=Onshore;
     r.All.Offshore[max_year]=Offshore;
     r.All.MaxYear=max_year;	   
-    //console.debug("results:", r);
+    console.debug("results:", r);
     return r;
 }
 
@@ -40,22 +40,30 @@ const FederalDisbursements=(id,data) => {
 const SectionOverview = props => {
   const results=useStaticQuery(graphql`
        query DisbursementSummaryQuery {
-       StateDisbursements :   allDisbursementsXlsxData(sort: {fields: Fiscal_Year, order: DESC})  {
-    nodes {
-      State
-      Fiscal_Year
-      Onshore_Offshore
-      _Total_
+  StateDisbursements: allFederalDisbursements(sort: {fields: [Year], order: DESC}) {
+      nodes {
+        Fiscal_Year: Year
+        State: USState
+        Onshore_Offshore: Source
+        _Total_:Disbursement
+
     }
   }
-}
+    }
+
 `)
    
-  const usStateData = props.usStateMarkdown.frontmatter
-  const usStateFields = props.usStateMarkdown.fields || {}
-
+    const usStateData = props.usStateMarkdown.frontmatter
+    const usStateFields = props.usStateMarkdown.fields || {}
     const usDisbursements=results.StateDisbursements.nodes
-  return (
+    console.debug(results)
+    
+    
+
+    console.debug(props);
+    
+    return (
+	
     <section className="state-pages-top">
 
       <section className="container">
@@ -65,11 +73,11 @@ const SectionOverview = props => {
           <FederalLandInfo usStateData={usStateData} />
           <SectionOwnership usStateData={usStateData}/>
         </div>
-
+	    {/*
           <StateProductionSummary production={props.production} productionYears={props.productionYears} stateName={usStateData.title} />
           
           <StateRevenueSummary revenueYears={props.revenueYears} stateName={usStateData.title} revenue={props.revenue}/>
-
+*/}
           <StateDisbursementsSummary stateId={usStateData.unique_id}  stateName={usStateData.title}  data={usDisbursements} />
 
         {usStateData.nearby_offshore_region &&

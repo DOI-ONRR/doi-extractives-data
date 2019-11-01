@@ -43,7 +43,7 @@ const useStyles = makeStyles(theme => ({
 }))
 
 const GlossaryDrawer = props => {
-  console.log('props: ', props)
+
   const classes = useStyles()
   const [state, setState] = useState({
     right: false,
@@ -53,8 +53,6 @@ const GlossaryDrawer = props => {
   })
 
   let filteredTerms = filterGlossaryTerms(state.glossaryTerm)
-
-  console.log('filteredTerms: ', filteredTerms)
 
   const handleClickAway = () => {
     setState({ ...state, right: false })

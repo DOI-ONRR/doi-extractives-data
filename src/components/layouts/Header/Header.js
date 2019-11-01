@@ -73,12 +73,13 @@ const useStyles = makeStyles(theme => ({
   top: {
     '& li > a': {
       fontSize: theme.typography.button.fontSize,
-      marginTop: theme.spacing(4),
-      paddingTop: theme.spacing(4)
+      paddingRight: theme.spacing(2),
+      display: 'table-cell',
+      verticalAlign: 'middle'
     },
     '& li': {
       position: 'relative',
-      top: theme.spacing(1)
+      top: theme.spacing(0)
     },
     '& li:last-child': {
       position: 'relative',

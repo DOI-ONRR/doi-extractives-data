@@ -1,14 +1,13 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { withPrefix } from '../../utils/temp-link'
 
 import { makeStyles } from '@material-ui/core/styles'
 import InputAdornment from '@material-ui/core/InputAdornment'
-import FormControl from '@material-ui/core/FormControl'
 import SearchIcon from '@material-ui/icons/Search'
 import OutlinedInput from '@material-ui/core/OutlinedInput'
 
 // eslint-disable-next-line css-modules/no-unused-class
-// import styles from './Search.module.css'
+// import classes from './Search.module.css'
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -37,36 +36,24 @@ const Search = props => {
   }
 
   return (
-    <FormControl variant="outlined">
-      <div className={classes.search}>
+    <Fragment>
+      <form action={searchPath} className={classes.searchForm}>
         <OutlinedInput
-          id="input-with-icon-adornment"
+          id="search-input"
           margin="dense"
+          title="search input" type="search"
+          className={props.isMobile ? classes.searchBoxMobile : classes.searchBox}
+          placeholder={props.isMobile ? '' : 'Search'}
+          name="q"
+          role="search"
           startAdornment={
             <InputAdornment position="start">
               <SearchIcon />
             </InputAdornment>
           }
         />
-      </div>
-    </FormControl>
-    // <div style={{ height: '60px' }}>
-    //   { props.isMobile
-    //     ? <label className={styles.searchLabel} htmlFor="q">Search</label>
-    //     : <label className={styles.srOnly} htmlFor="q">Search</label>
-    //   }
-    //   <form action={searchPath} className={styles.searchForm} >
-
-    //     <input title="search input" type="search"
-    //       className={props.isMobile ? styles.searchBoxMobile : styles.searchBox}
-    //       placeholder={props.isMobile ? '' : 'Search'}
-    //       id="search-input" name="q" role="search"/>
-    //     <button type="submit"
-    //       className={props.isMobile ? styles.searchButtonMobile : styles.searchButton}
-    //       title="submit search">
-    //       <label className="sr-only">Search</label></button>
-    //   </form>
-    // </div>
+      </form>
+    </Fragment>
   )
 }
 

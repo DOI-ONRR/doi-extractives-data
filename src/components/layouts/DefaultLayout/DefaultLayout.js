@@ -28,7 +28,8 @@ const useStyles = makeStyles(theme => ({
   '@global': {
     body: {
       background: (theme.paletteType === 'light') ? '#000' : '#fff',
-      margin: 0
+      margin: 0,
+      fontFamily: theme.typography.fontFamily
     }
   },
   root: {
@@ -38,8 +39,7 @@ const useStyles = makeStyles(theme => ({
     [theme.breakpoints.up('sm')]: {
       paddingLeft: theme.spacing(0),
       paddingRight: theme.spacing(0)
-    },
-    fontFamily: theme.fontFamily
+    }
   },
   skipNav: {
     position: 'absolute',

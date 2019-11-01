@@ -1,10 +1,9 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import Helmet from 'react-helmet'
 import { connect } from 'react-redux'
 
 import { withStyles } from '@material-ui/core/styles'
 import Container from '@material-ui/core/Container'
-import withRoot from '../js/mui/withRoot'
 import DefaultLayout from '../components/layouts/DefaultLayout'
 
 import Link from '../components/utils/temp-link'

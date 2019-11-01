@@ -5,7 +5,6 @@ import MediaQuery from 'react-responsive'
 import { navigate } from '@reach/router'
 
 import { withStyles } from '@material-ui/core/styles'
-// import styles from "./Tabordion.module.scss"
 
 const styles = theme => ({
   tabContainer: {

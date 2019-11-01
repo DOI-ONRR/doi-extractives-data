@@ -9,8 +9,8 @@ import { Banner } from '../Banner'
 import { AlertBanner } from '../AlertBanner'
 import { Header } from '../Header'
 import { Footer } from '../Footer'
-import Glossary from '../../utils/Glossary'
-// import Glossary from '../Drawer'
+// import Glossary from '../../utils/Glossary'
+import GlossaryDrawer from '../GlossaryDrawer'
 import utils from '../../../js/utils'
 
 // import styles from '../../../css-global/base-theme.module.scss'
@@ -38,7 +38,8 @@ const useStyles = makeStyles(theme => ({
     [theme.breakpoints.up('sm')]: {
       paddingLeft: theme.spacing(0),
       paddingRight: theme.spacing(0)
-    }
+    },
+    fontFamily: theme.fontFamily
   },
   skipNav: {
     position: 'absolute',
@@ -148,7 +149,7 @@ const DefaultLayout = ({ children }) => {
 
       <Header siteMetadata={data && data.site.siteMetadata} />
 
-      <Glossary />
+      <GlossaryDrawer />
 
       <div className={classes.root}>{children}</div>
 

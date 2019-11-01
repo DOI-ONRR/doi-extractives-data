@@ -103,6 +103,13 @@ let config = {
       },
     },
     {
+      resolve: `gatsby-plugin-material-ui`,
+      options: {
+        disableAutoprefixing: false,
+        disableMinification: false,
+      },
+    },
+    {
       resolve: `@gatsby-contrib/gatsby-plugin-elasticlunr-search`,
       options: {
         // Fields to index

@@ -29,7 +29,7 @@ const useStyles = makeStyles(theme => ({
 const Banner = () => {
   const classes = useStyles()
   return (
-    <Container className={classes.root} maxWidth="false">
+    <Container className={classes.root} maxWidth={false}>
       <section>
         <span>
           <img

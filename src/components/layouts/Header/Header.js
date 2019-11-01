@@ -9,10 +9,6 @@ import useMediaQueries from '@material-ui/core/useMediaQuery'
 import Container from '@material-ui/core/Container'
 import Grid from '@material-ui/core/Grid'
 
-// import Link from '@material-ui/core/Link'
-
-// import styles from './Header.module.scss'
-
 import { Search } from '../../utils/Search'
 
 import { isIE } from 'react-device-detect'
@@ -66,6 +62,9 @@ const useStyles = makeStyles(theme => ({
       listStyle: 'none',
       display: 'inline-block',
       margin: theme.palette.margin
+    },
+    '& li a:hover': {
+      textDecoration: 'underline'
     }
   },
   headerNavItem: {
@@ -145,7 +144,7 @@ const Header = props => {
           justify={'space-between'}
           align={'flex-start'}
         >
-          <Grid item xs="6">
+          <Grid item xs={6}>
             <Link className="classes.headerImageLink" to="/">
               <img
                 className={classes.headerImage}
@@ -154,18 +153,18 @@ const Header = props => {
               />
             </Link>
           </Grid>
-          <Grid item xs="6" className={classes.headerRight}>
+          <Grid item xs={6} className={classes.headerRight}>
             <nav className={`${ classes.headerRight } ${ classes.top }`}>
               <ul>
                 <li>
-                  <Link
+                  <a
                     href="#"
                     onClick={() => props.glossaryTermSelected('', true)}
                     className={classes.link}
                     alt="this is the glossary drawer"
                   >
                     Glossary
-                  </Link>
+                  </a>
                 </li>
                 <li>
                   <Link className={classes.link} to="/downloads/">

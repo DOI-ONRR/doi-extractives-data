@@ -148,7 +148,7 @@ const DefaultLayout = ({ children }) => {
 
       <Header siteMetadata={data && data.site.siteMetadata} />
 
-      {/* <Glossary /> */}
+      <Glossary />
 
       <div className={classes.root}>{children}</div>
 

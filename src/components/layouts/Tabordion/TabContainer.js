@@ -48,7 +48,7 @@ const TabContainer = props => {
   return (
     <section className={classes.section}>
       <Grid container spacing={2} direction={'row'} justify={'space-between'} align={'flex-start'}>
-        <Grid item xs='12'>
+        <Grid item xs={12}>
           <Typography variant="h4">
             {props.title}
           </Typography>
@@ -56,12 +56,12 @@ const TabContainer = props => {
             {props.info}
           </Typography>
         </Grid>
-        <Grid item xs='6'>{props.contentLeft}</Grid>
-        <Grid item xs='6'>{props.contentRight}</Grid>
-        <Grid item xs='12'>
+        <Grid item xs={6}>{props.contentLeft}</Grid>
+        <Grid item xs={6}>{props.contentRight}</Grid>
+        <Grid item xs={12}>
           <div className={classes.contentChildren}>{props.children}</div>
         </Grid>
-        <Grid item xs='12'>
+        <Grid item xs={12}>
           <div className={classes.contentBottom}>{props.contentBottom}</div>
         </Grid>
       </Grid>

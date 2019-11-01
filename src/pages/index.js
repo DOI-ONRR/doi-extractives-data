@@ -251,7 +251,7 @@ class IndexPage extends React.Component {
               </Tab>
             </Tabordion>
           </Container>
-          <Container className={classes.fluid} maxWidth="false">
+          <Container className={classes.fluid} maxWidth={false}>
             <WhatsNew />
           </Container>
         </main>
@@ -611,9 +611,8 @@ const fipsAbbrev = {
   CGM: 'offshore-gulf',
   EGM: 'offshore-gulf',
 
-
-    "CEC":"offshore-pacific",
-    "NOC":"offshore-pacific", 
-    "SOC":"offshore-pacific",
-    "WAO":"offshore-pacific"
+  CEC: 'offshore-pacific',
+  NOC: 'offshore-pacific',
+  SOC: 'offshore-pacific',
+  WAO: 'offshore-pacific',
 }

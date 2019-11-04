@@ -35,7 +35,7 @@ tag:
 
 The calendar year dataset includes natural resource production for U.S. federal lands and offshore areas. The fiscal year dataset also includes Native American lands (2009-2018). Neither dataset includes privately owned lands or state-owned lands.
 
-Federal revenue data is available by location, but Native American data is only available at the national level to protect private and personally identifiable information.
+Federal production data is available by location, but Native American data is only available at the national level to protect private and personally identifiable information.
 
 The dataset currently include data tracked and managed by the Department of the Interior’s Office of Natural Resources Revenue (ONRR). The production data for Oil and Gas is collected on Form ONRR-4054 (Oil and Gas Operations Report). Coal and hardrock production is collected on Form ONRR-4430 (Solid Minerals Production and Royalty Report).
 

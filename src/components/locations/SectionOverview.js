@@ -73,12 +73,12 @@ const SectionOverview = props => {
           <FederalLandInfo usStateData={usStateData} />
           <SectionOwnership usStateData={usStateData}/>
         </div>
-	    {/*
+	    
           <StateProductionSummary production={props.production} productionYears={props.productionYears} stateName={usStateData.title} />
           
-          <StateRevenueSummary revenueYears={props.revenueYears} stateName={usStateData.title} revenue={props.revenue}/>
-*/}
-          <StateDisbursementsSummary stateId={usStateData.unique_id}  stateName={usStateData.title}  data={usDisbursements} />
+            <StateRevenueSummary revenueYears={props.revenueYears} stateName={usStateData.title} revenue={props.revenue}/>
+
+	    <StateDisbursementsSummary stateId={usStateData.unique_id}  stateName={usStateData.title}  data={usDisbursements} />
 
         {usStateData.nearby_offshore_region &&
                   <OffshoreRegion usStateData={usStateData} />
@@ -203,7 +203,8 @@ console.log(commodityCurrentYear);
 
 
 const StateRevenueSummary = props => {
-const revenueYear = props.revenueYears[props.revenueYears.length - 1]
+    const revenueYear = props.revenueYears[props.revenueYears.length - 1]
+    console.debug(props)
 const revenue = props.revenue.All.All[revenueYear]
 
   return (

@@ -26,11 +26,11 @@ Companies and government agencies are each legally responsible for reporting acc
   </li>
 </ul>
 
-## Resources
+## Standards, reporting, and oversight
 
 ### Company standards and oversight
 
-* The [American Institute of CPAs](http://www.aicpa.org/Pages/default.aspx) publishes [Generally Accepted Auditing Standards (PDF)](http://www.aicpa.org/Research/Standards/AuditAttest/DownloadableDocuments/AU-00150.pdf).
+* The [American Institute of CPAs](http://www.aicpa.org/Pages/default.aspx) publishes [Generally Accepted Auditing Standards](https://pcaobus.org/Standards/Auditing/Pages/AU150.aspx).
 * The [Financial Accounting Standards Board](http://www.fasb.org/jsp/FASB/Page/LandingPage&cid=1175805317350) Accounting Standards Codification is the single official source of authoritative, nongovernmental U.S. generally accepted accounting principles (GAAP).
 * The [Public Company Accounting Oversight Board](https://pcaobus.org/Pages/default.aspx) helps confirm that registered public accounting firms are operating in accordance with auditing standards.
 * The [Security and Exchange Commission](https://www.sec.gov/) maintains a searchable database of filings by public companies, called [EDGAR](https://www.sec.gov/edgar/searchedgar/companysearch.html).
@@ -38,7 +38,7 @@ Companies and government agencies are each legally responsible for reporting acc
 ### Federal standards and audits
 
 - [OMB Circular No. A-123](https://obamawhitehouse.archives.gov/omb/circulars_a123_rev) prescribes responsibilities for establishing and maintaining effective internal controls and financial management systems.
-- The roles and responsibilities of each agency are governed by the [The Chief Financial Officers Act: A Mandate for Federal Financial Management Reform (PDF)](http://www.gao.gov/special.pubs/af12194.pdf).
+- The roles and responsibilities of each agency are governed by the [The Chief Financial Officers Act: A Mandate for Federal Financial Management Reform](https://www.congress.gov/bill/101st-congress/house-bill/5687/text/enr).
 - The [Government Accountability Office](http://www.gao.gov/) (GAO) publishes _Standards for Internal Control in the Federal Government_, also known as the [Green Book](http://www.gao.gov/greenbook/overview).
 - Audits are supported by standards like the GAO's _Generally Accepted Government Auditing Standards_, also known as the [Yellow Book](http://www.gao.gov/yellowbook/overview).
 - The [U.S. Standard General Ledger](https://www.fiscal.treasury.gov/fsreports/ref/ussgl/ussgl_home.htm) provides a uniform chart of accounts and technical guidance for standardizing federal agency accounting to OMB and the U.S. Treasury.

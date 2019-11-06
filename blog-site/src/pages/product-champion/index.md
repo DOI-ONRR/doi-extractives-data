@@ -10,8 +10,6 @@ tags:
 date: "2019-11-15"
 ---
 
-# How to effectively champion a government product
-
 Every product needs a champion. We are fortunate to have had one of the best product champions on board for the last 5 years. Judy Wilson was the champion of our website from the time she came over to the Office of Natural Resources Revenue (ONRR) on a short-term assignment to work on the U.S. Extractive Industries Transparency Initiative (EITI) in 2014. That detail turned into her taking on the role of Program Manager for the U.S. Extractive Industries Transparency Initiative (EITI) in 2015 and then moving up to be the Program Manager of Information and Data Management (a team in charge of data at ONRR).
 
 Judy recently moved on because she was selected for a Senior Executive Service (SES) position in the Assistant Secretary, Indian Affairs Office of the Deputy Assistant Secretary, Management as the Director, Office of Facilities, Property and Safety. She was the first product owner of the website and did everything in her power to build our team to the point we’re at today.

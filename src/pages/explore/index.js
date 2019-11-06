@@ -98,7 +98,6 @@ class ExplorePage extends React.Component {
               { name: 'og:title', content: 'Explore data | Natural Resources Revenue Data' },
               { name: 'twitter:title', content: 'Explore data | Natural Resources Revenue Data' },
             ]}
-
           />
 
           <section id="title" className="slab-delta">

@@ -197,7 +197,6 @@ const NationalFederalProduction = props => {
             </ul>
             <button is="aria-toggle"
               aria-expanded="false"
-              aria-toggles="aria-expanded"
               aria-controls="federal-production-withheld-products"
               className="aria-toggle-large aria-toggle-white">
               <span className="hide-expanded">

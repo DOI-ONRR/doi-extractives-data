@@ -38,10 +38,9 @@ class BlogPostTemplate extends React.Component {
           style={{
             ...scale(-1 / 5),
             display: 'block',
-            color: '#768d99',
+            color: '#627884',
             marginBottom: rhythm(1),
             marginTop: rhythm(-.7),
-            color: '#768d99',
           }}
         >
           {post.frontmatter.date}

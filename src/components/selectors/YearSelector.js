@@ -5,6 +5,8 @@ import { connect } from 'react-redux'
 
 const YearSelector = props => {
   const selectClassNames = { className: 'chart-selector ' + props.classNames }
+  const selectName = 'selectYear'
+  const selectLabel = 'Select Year'
 
   function onChangeHandler (e) {
     e.stopPropagation()
@@ -14,7 +16,7 @@ const YearSelector = props => {
   }
 
   return (
-    <select {...selectClassNames} onChange={onChangeHandler.bind(this)}>
+    <select {...selectClassNames} onChange={onChangeHandler.bind(this)} name={selectName} aria-label={selectLabel}>
       {props.years.map((year, index) => (
         <option key={index} value={year}>{ year}</option>
       ))}

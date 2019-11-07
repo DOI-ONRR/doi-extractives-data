@@ -3,7 +3,7 @@ title: "How to effectively champion a government product"
 authors:
 - Shannon McHarg
 - Chris Mentasti
-excerpt: "Our product manager came to her position from a very different career path. In this post, she discusses how she came to this role, what she has learned, and how she applies what she's learned to her responsibility as a public servant."
+excerpt: "Every product needs a champion. Be like Judy Wilson."
 tags:
 - product management
 - public service

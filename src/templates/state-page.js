@@ -144,7 +144,7 @@ class StatePages extends React.Component {
 		production={this.props.pageContext.commoditiesProduction}
 		revenue={this.props.pageContext.commodities}
 		revenueYears={this.commodityYears} />
-		    />
+
 
               </section>
 

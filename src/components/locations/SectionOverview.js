@@ -332,7 +332,9 @@ const OptIn = props => {
             {ReactHtmlParser(props.optInIntroHtml)}
           </div>
       }
-    </div>
+
+      </div>
+
   )
 }
 

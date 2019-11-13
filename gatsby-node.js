@@ -404,6 +404,7 @@ const createStatePages = (createPage, graphql) => {
             }
           }
         }
+
       }`
 	      ).then(result => {
 	        if (result.errors) {

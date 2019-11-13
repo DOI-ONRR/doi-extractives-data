@@ -14,23 +14,21 @@ import utils from '../../js/utils'
 let year = 2018
 
 const FederalDisbursements = (id, data) => {
-  // console.debug("id:", id,data);
   let max_year = data[0].Fiscal_Year
   year = max_year
-    let nodes = data.filter(node => node.State == id && node.Fiscal_Year == max_year)
-    let All = nodes.map(item => item.Disbursement).reduce((prev, next) => prev + next, null)
-    let Onshore = nodes.filter(node => node.Onshore_Offshore == 'Onshore')
+  let nodes = data.filter(node => node.State === id && node.Fiscal_Year === max_year)
+  let All = nodes.map(item => item.Disbursement).reduce((prev, next) => prev + next, null)
+  let Onshore = nodes.filter(node => node.Onshore_Offshore === 'Onshore')
     .map(item => item.Disbursement).reduce((prev, next) => prev + next, 0)
-    let Offshore = nodes.filter(node => node.Onshore_Offshore == 'Offshore')
+  let Offshore = nodes.filter(node => (node.Onshore_Offshore === 'Offshore' || node.Onshore_Offshore === '8(g)'))
     .map(item => item.Disbursement).reduce((prev, next) => prev + next, 0)
-    let r = { All: { All: {}, Onshore: {}, Offshore: {} } }
+  let r = { All: { All: {}, Onshore: {}, Offshore: {} } }
 
-    r.All.All[max_year] = All
-    r.All.Onshore[max_year] = Onshore
-    r.All.Offshore[max_year] = Offshore
-	   
-    //console.debug("results:", r);
-    return r
+  r.All.All[max_year] = All
+  r.All.Onshore[max_year] = Onshore
+  r.All.Offshore[max_year] = Offshore
+
+  return r
 }
 
 const SectionDisbursements = props => {
@@ -48,8 +46,6 @@ const SectionDisbursements = props => {
 `)
 
   const usStateData = props.usStateMarkdown.frontmatter
-  //    const usStateDisbursements = FEDERAL_DISBURSEMENTS[usStateData.unique_id]
-  //   console.debug("Federal", usStateDisbursements)
   const usStateDisbursements = FederalDisbursements(usStateData.unique_id, results.StateDisbursements.nodes)
   const usGomesaStateDisbursements = GOMESA_STATE_DISBURSEMENTS[usStateData.unique_id]
   const usGomesaStateDisbursementsYears = usGomesaStateDisbursements && Object.keys(usGomesaStateDisbursements)

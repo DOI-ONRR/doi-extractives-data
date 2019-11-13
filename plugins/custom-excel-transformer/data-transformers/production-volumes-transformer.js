@@ -156,6 +156,7 @@ const createProductVolumeNodeByProduct = (productVolumeData, type) => {
   if (node.LandCategory === CONSTANTS.NATIVE_AMERICAN) {
     node.State = 'withheld'
   }
+  node.State = (node.State === 'Withheld')? 'withheld' : node.State 
 
   return node
 }

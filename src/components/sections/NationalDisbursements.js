@@ -10,6 +10,7 @@ import { selectYear } from '../../state/reducers/disbursements'
 import slugify from 'slugify'
 import lazy from 'lazy.js'
 import utils from '../../js/utils'
+import { ExploreDataLink } from '../layouts/icon-links/ExploreDataLink'
 
 import DataAndDocs from '../layouts/DataAndDocs'
 import GlossaryTerm from '../utils/glossary-term.js'
@@ -91,6 +92,11 @@ class NationalDisbursements extends React.Component {
 	        }
 	      </p>
 	      <p>
+	        <ExploreDataLink
+	          to="/query-data/?dataType=Disbursements"
+	          icon="filter">
+                  Disbursements in detail
+	        </ExploreDataLink>
 	        <Link to="/downloads/disbursements/" className="data-downloads">
 	          <DataAndDocs />
 	        </Link>

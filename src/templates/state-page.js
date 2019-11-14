@@ -98,7 +98,9 @@ class StatePages extends React.Component {
     this.commoditiesCounty = props.pageContext.commoditiesCounty
     this.commodityYears = props.pageContext.commodityYears
     this.usStateData = this.usStateMarkdown.frontmatter
-    	this.usStateFields = this.usStateMarkdown.fields || {}
+      this.usStateFields = this.usStateMarkdown.fields || {}
+      
+      console.log(this.commodityYears);
   }
 
   componentDidMount () {

@@ -51,6 +51,11 @@ module.exports = {
     "import/no-webpack-loader-syntax": "off",
 
     "css-modules/no-unused-class": 1,
+    "at-rule-no-unknown": [true, {
+      "ignoreAtRules": [
+        "value"
+      ]
+    }],
   },
   parser: "babel-eslint",
   parserOptions: {

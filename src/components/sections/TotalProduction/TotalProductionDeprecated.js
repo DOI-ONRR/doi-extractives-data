@@ -325,7 +325,7 @@ class TotalProductionDeprecated extends React.Component {
 
 	      barSelectedCallback= {this.dataKeySelectedHandler.bind(this, dataSetId, this.state[dataSetId].syncId)}
 
-	      showUnits={true}
+	      showUnits={ (this.state.productionYearlyPeriod === YEARLY_DROPDOWN_VALUES.Fiscal) }
 
 	      >
 	      </StackedBarChartLayout>

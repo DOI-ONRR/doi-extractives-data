@@ -21,7 +21,8 @@ import {
   GroupingPanel,
   DragDropProvider,
   Toolbar,
-  TableFixedColumns
+  TableFixedColumns,
+  TableColumnResizing
 } from '@devexpress/dx-react-grid-material-ui'
 
 import utils from '../../../js/utils'
@@ -129,21 +130,40 @@ const AllTypeProvider = props => {
   )
 }
 
+const VolumeFormatter = ({ value }) => {
+  return (
+    <span>
+      {utils.formatToCommaInt(value)}
+    </span>
+  )
+}
+
+const VolumeTypeProvider = props => {
+  return (
+    <DataTypeProvider
+      formatterComponent={VolumeFormatter}
+      {...props}
+    />
+  )
+}
 class GroupTable extends React.Component {
   constructor (props) {
     super(props)
 
     this.state = {
       columns: props.columns,
+      defaultColumnWidths: props.defaultColumnWidths,
       rows: props.rows,
       currencyColumns: props.currencyColumns,
+      volumeColumns: props.volumeColumns,
       allColumns: props.allColumns,
       tableColumnExtension: props.tableColumnExtension,
-      columnBands: [],
+      columnBands: props.columnBands,
       totalSummaryItems: props.totalSummaryItems,
       groupSummaryItems: props.groupSummaryItems,
       tableGroupColumnExtension: props.tableGroupColumnExtension,
       grouping: props.grouping,
+      fixedColumn: props.fixedColumn,
       expandedGroups: props.expandedGroups,
       defaultSorting: props.defaultSorting,
     }
@@ -163,7 +183,9 @@ class GroupTable extends React.Component {
     const {
       rows,
       columns,
+      defaultColumnWidths,
       currencyColumns,
+      volumeColumns,
       allColumns,
       tableColumnExtension,
       columnBands,
@@ -171,13 +193,11 @@ class GroupTable extends React.Component {
       expandedGroups,
       totalSummaryItems,
       groupSummaryItems,
-      defaultSorting } = this.state
-
-    // console.log(allColumns, currencyColumns)
-    // console.log(totalSummaryItems, groupSummaryItems)
+      defaultSorting,
+      fixedColumn } = this.state
 
     return (
-    	<div>
+      <div>
         <MuiThemeProvider theme={theme}>
           <Grid
             rows={rows}
@@ -189,8 +209,12 @@ class GroupTable extends React.Component {
             <AllTypeProvider
               for={allColumns}
             />
+            <VolumeTypeProvider
+              for={volumeColumns}
+            />
             <SortingState
               defaultSorting={defaultSorting}
+              sorting={defaultSorting}
             />
             <IntegratedSorting />
             <GroupingState
@@ -205,19 +229,23 @@ class GroupTable extends React.Component {
             />
             <IntegratedSummary />
             <Table columnExtensions={tableColumnExtension} />
+            {defaultColumnWidths &&
+              <TableColumnResizing defaultColumnWidths={defaultColumnWidths} />
+            }
             <TableHeaderRow showSortingControls />
             <TableSummaryRow
               groupRowComponent={CustomTableSummaryRow_GroupRow}
               totalRowComponent={CustomTableSummaryRow_TotalRow}
               itemComponent={CustomTableSummaryRow_Item}
             />
-            <TableGroupRow
-              contentComponent={CustomTableGroupRow_Content}
-            />
-            <TableBandHeader
-              columnBands={columnBands}
-            />
-            <TableFixedColumns leftColumns={[TableGroupRow.Row, 'rev']}/>
+            <TableGroupRow/>
+            {columnBands &&
+              <TableBandHeader columnBands={columnBands} />
+            }
+            {fixedColumn &&
+              <TableFixedColumns leftColumns={[TableGroupRow.Row, fixedColumn]}/>
+            }
+            
           </Grid>
         </MuiThemeProvider>
 	    </div>

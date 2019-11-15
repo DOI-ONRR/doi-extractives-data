@@ -11,14 +11,59 @@ import FederalLandOwnershipLegend from '../maps/FederalLandOwnershipLegend'
 import FederalLandOwnershipSvg from '../maps/FederalLandOwnershipSvg'
 import utils from '../../js/utils'
 import styles from './SectionOverview.module.scss'
+import GlossaryTerm from '../utils/glossary-term.js'
+import { useStaticQuery, graphql } from "gatsby"
+
 
 let year
 
-const SectionOverview = props => {
-  const usStateData = props.usStateMarkdown.frontmatter
-  const usStateFields = props.usStateMarkdown.fields || {}
+const FederalDisbursements=(id,data) => {
+    console.debug("id:", id,data);
+    let max_year=data[0].Fiscal_Year;
+    let nodes=data.filter( node => node.State==id && node.Fiscal_Year==max_year);
+    let All=nodes.map(item => item._Total_).reduce((prev, next) => prev + next,null);
+    let Onshore=nodes.filter(node=>node.Onshore_Offshore=="Onshore")
+	.map(item => item._Total_).reduce((prev, next) => prev + next, 0);
+    let Offshore=nodes.filter(node=>node.Onshore_Offshore=="Offshore")
+	.map(item => item._Total_).reduce((prev, next) => prev + next, 0);
+    let r={All: {All: {}, Onshore: {}, Offshore: {} }};
 
-  return (
+    r.All.All[max_year]=All;
+    r.All.Onshore[max_year]=Onshore;
+    r.All.Offshore[max_year]=Offshore;
+    r.All.MaxYear=max_year;	   
+    console.debug("results:", r);
+    return r;
+}
+
+
+const SectionOverview = props => {
+  const results=useStaticQuery(graphql`
+       query DisbursementSummaryQuery {
+  StateDisbursements: allFederalDisbursements(sort: {fields: [Year], order: DESC}) {
+      nodes {
+        Fiscal_Year: Year
+        State: USState
+        Onshore_Offshore: Source
+        _Total_:Disbursement
+
+    }
+  }
+    }
+
+`)
+   
+    const usStateData = props.usStateMarkdown.frontmatter
+    const usStateFields = props.usStateMarkdown.fields || {}
+    const usDisbursements=results.StateDisbursements.nodes
+    console.debug(results)
+    
+    
+
+    console.debug(props);
+    
+    return (
+	
     <section className="state-pages-top">
 
       <section className="container">
@@ -28,10 +73,12 @@ const SectionOverview = props => {
           <FederalLandInfo usStateData={usStateData} />
           <SectionOwnership usStateData={usStateData}/>
         </div>
+	    
+          <StateProductionSummary production={props.production} productionYears={props.productionYears} stateName={usStateData.title} />
+          
+            <StateRevenueSummary revenueYears={props.revenueYears} stateName={usStateData.title} revenue={props.revenue}/>
 
-        <KeyGDPJobs usStateData={usStateData}/>
-
-        <KeyAllProduction usStateData={usStateData} />
+	    <StateDisbursementsSummary stateId={usStateData.unique_id}  stateName={usStateData.title}  data={usDisbursements} />
 
         {usStateData.nearby_offshore_region &&
                   <OffshoreRegion usStateData={usStateData} />
@@ -130,6 +177,60 @@ const SectionOwnership = props => {
   )
 }
 
+const StateProductionSummary = props => {
+const currentYear = props.productionYears[props.productionYears.length - 1]
+const commodityCurrentYear = Object.keys(props.production).filter(commodity => props.production[commodity].volume[currentYear] > 0)
+const commodityCount = commodityCurrentYear && commodityCurrentYear.length
+const withhelds = Object.keys(props.production).filter(commodity => props.production[commodity].volume[currentYear] === 0)
+
+console.log(commodityCurrentYear);
+
+  return (
+    <div>
+        {commodityCount === 1 && <p><strong>{commodityCount}</strong> energy or mineral commodity was produced on federal land in {props.stateName} in <GlossaryTerm>calendar year</GlossaryTerm> {currentYear}.</p>}
+        
+        {commodityCount > 1 && <p><strong>{commodityCount}</strong> energy or mineral commodities were produced on federal land in {props.stateName} in <GlossaryTerm>calendar year</GlossaryTerm>  {currentYear}.</p>}
+
+        {commodityCount === 0 && <p>There was no energy or mineral production on federal land in {props.stateName} in <GlossaryTerm>calendar year</GlossaryTerm> {currentYear}.</p>}
+
+        {withhelds.length === 1 && <em><strong>{withhelds.length}</strong> commodity was <GlossaryTerm>withheld</GlossaryTerm> in {currentYear}.</em>}
+        
+        {withhelds.length > 1 && <em><strong>{withhelds.length}</strong> commodities were <GlossaryTerm>withheld</GlossaryTerm> in {currentYear}.</em>}
+        <hr></hr>
+      </div>
+  )
+}
+
+
+const StateRevenueSummary = props => {
+    const revenueYear = props.revenueYears[props.revenueYears.length - 1]
+    console.debug(props)
+const revenue = props.revenue.All.All[revenueYear]
+
+  return (
+    <div>
+      <p>Production on federal land in {props.stateName} resulted in <strong>{utils.formatToDollarInt(revenue)}</strong> in <GlossaryTerm>calendar year</GlossaryTerm> {revenueYear} revenue.</p>
+      <hr></hr>
+    </div>
+  )
+}
+
+const StateDisbursementsSummary = props => {
+    const usStateDisbursements = FederalDisbursements(props.stateId,props.data);
+    const stateName=props.stateName;
+    const maxYear=usStateDisbursements.All.MaxYear
+    const allDisbursements = (usStateDisbursements && usStateDisbursements.All.All) ? usStateDisbursements.All.All[maxYear] : 0
+    
+    return (
+	    <div>
+	    { allDisbursements > 0 && <p>Revenue from federal land resulted in <strong> {utils.formatToDollarInt(allDisbursements)}</strong> disbursed from the federal government to {stateName} in <GlossaryTerm>fiscal year</GlossaryTerm> {maxYear}.</p> }
+
+      { (allDisbursements == null || allDisbursements == 0 ) && <p>No disbursements were reported for {stateName} in <GlossaryTerm>fiscal year</GlossaryTerm> {maxYear}, probably because there was no revenue from production on federal land.</p> }
+      <hr></hr>
+	    </div>
+  )
+}
+
 /* Includes the GDP percentage, then outputs employment percentage if it’s over 2%. */
 const KeyGDPJobs = props => {
   const usStateGDP = ALL_US_STATES_GDP[props.usStateData.unique_id]
@@ -211,7 +312,6 @@ const FederalLandInfo = props => {
 
 /* Includes link to relevant offshore region, if there is one */
 const OffshoreRegion = props => {
-  /// console.log(props.usStateData.nearby_offshore_region);
   return (
     <p>
       {props.usStateData.title} also borders an offshore area with significant natural resource extraction, which may contribute to the state’s economy
@@ -232,7 +332,9 @@ const OptIn = props => {
             {ReactHtmlParser(props.optInIntroHtml)}
           </div>
       }
-    </div>
+
+      </div>
+
   )
 }
 

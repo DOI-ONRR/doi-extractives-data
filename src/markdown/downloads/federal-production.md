@@ -35,7 +35,7 @@ tag:
 
 The calendar year dataset includes natural resource production for U.S. federal lands and offshore areas. The fiscal year dataset also includes Native American lands (2009-2018). Neither dataset includes privately owned lands or state-owned lands.
 
-Federal revenue data is available by location, but Native American data is only available at the national level to protect private and personally identifiable information.
+Federal production data is available by location, but Native American data is only available at the national level to protect private and personally identifiable information.
 
 The dataset currently include data tracked and managed by the Department of the Interior’s Office of Natural Resources Revenue (ONRR). The production data for Oil and Gas is collected on Form ONRR-4054 (Oil and Gas Operations Report). Coal and hardrock production is collected on Form ONRR-4430 (Solid Minerals Production and Royalty Report).
 
@@ -68,35 +68,85 @@ We can only compare production that is reported in the same unit. The standard u
 To build our data visualizations, we've aggregated production from two types of jurisdictions: “federal” and “mixed exploratory.”
 
 * Federal production is production from federal lands and waters.
-* "Mixed exploratory” is a temporary jurisdictional unit that is used until production is proven on that location. BLM then creates a permanent unit with allocation schedules that may split that area between federal and other ownership. Payors then resubmit royalties based on the new unit  allocations. These royalties are retroactive to the first production.
+* “Mixed exploratory” is a temporary jurisdictional unit that is used until production is proven on that location. BLM then creates a permanent unit with allocation schedules that may split that area between federal and other ownership. Payors then resubmit royalties based on the new unit allocations. These royalties are retroactive to the first production.
 
 The federal government rarely gets 100% of “mixed exploratory” volumes. You can see these categories disaggregated in the federal production dataset, downloadable on this page.
 
 ## Data dictionary
 
-The offshore dataset is organized by offshore planning areas. There are more offshore planning areas than are represented in our data. Those not represented had no production during the time period. For more information on offshore planning areas, including spatial boundaries, see the Bureau of Ocean Energy Management's (BOEM) [maps and GIS data](http://www.boem.gov/Maps-and-GIS-Data/).
+### Fields and definitions
 
-### FIPS code
+_Year_
+* _Calendar Year_ is the period between January 1 and December 31 for a given year.
+* _Fiscal year_ The year the production occurred. The federal fiscal year runs from October 1 of the prior year through September 30 of the year being described. For example, Fiscal Year 2018 is between October 1, 2017, and September 30, 2018.
 
-Federal Information Processing Standard (FIPS) code is a five-digit code which uniquely identifies counties and county equivalents in the U.S., certain U.S. possessions, and certain freely associated states. The first two digits are the FIPS state code and the last three are the county code within the state or possession.
+_Land Category_
+  * _Onshore_ Situated or occurring on land.
+  * _Offshore_ Submerged lands located farther than three miles off a state’s coastline, or three marine leagues into the Gulf of Mexico off of Texas and Western Florida.
 
-### Region
+_Land Class_
+  * _Federal_ Federal lands are owned by or under the jurisdiction of the federal government, including: Public domain lands, acquired lands, military acquired lands, and Outer Continental Shelf.
+  * _Native American_ includes Tribal lands held in trust by the federal government for a tribe’s use, and allotments held in trust by the federal government for individual Native American use.
+  * _Mixed Exploratory_ is a temporary jurisdictional unit that is used until production is proven on that location (see above).
 
-BOEM separates offshore areas into four regions: Gulf of Mexico, Atlantic, Pacific, and Alaska. For more information on offshore regions, including spatial boundaries, see BOEM's [maps and GIS data](http://www.boem.gov/Maps-and-GIS-Data/).
+_State_ The state where the production occurred.
 
-### Planning area
+_County_ The county where the production occurred.
 
-Offshore regions are broken out into planning areas. For more information on offshore planning areas, including spatial boundaries, see BOEM's [maps and GIS data](http://www.boem.gov/Maps-and-GIS-Data/).
+_FIPS Code_ Federal Information Processing Standard (FIPS) code is a five-digit code which uniquely identifies counties and county equivalents in the U.S., certain U.S. possessions, and certain freely associated states. The first two digits are the FIPS state code and the last three are the county code within the state or possession.
 
-### Product groupings
+_Offshore Region_ BOEM separates offshore areas into four regions: Gulf of Mexico, Atlantic, Pacific, and Alaska. For more information on offshore regions, including spatial boundaries, see BOEM's [maps and GIS data](http://www.boem.gov/Maps-and-GIS-Data/).
 
-* Borate Products include: Borax-Anhydrous, Borax-Decahydrate, Borax-Pentahydrate and Boric Acid
-* Brine Products include: Brine Barrels (converted to ton equivalent) and Magnesium Chloride Brine
-* Gold and Silver Products (oz) include: Gold, Gold Placer, and Silver
-* Hardrock Products include: Limestone and Wavelite
-* Other Coal Products include: Leonardite and Coal Waste (Sub-Econ)
-* Gold Products (tons) includes: Gold Ore
-* Other Potassium Products include: Manure Salts and Sylvite-Raw Ore
-* Other Sodium Products include: Anhydrous Sodium Sulfate, Sodium Bisulfite, Sodium Decahydrate, Sodium Sesquicarbonate, Sulfide and Trona Ore
+_Offshore Planning Area_ Offshore regions are broken out into planning areas. There are more offshore planning areas than are represented in our data. Those not represented had no production during the time period. For more information on offshore planning areas, including spatial boundaries, see the Bureau of Ocean Energy Management's (BOEM) [maps and GIS data](http://www.boem.gov/Maps-and-GIS-Data/).
+
+_Product_ Products are listed individually but may also fall into like categories.
+  * _Anhydrous Sodium Sulfate_ (tons)
+  * _Borate Products_ (tons) include Borax-Anhydrous, Borax-Decahydrate, Borax-Pentahydrate, and Boric Acid
+  * _Brine Products_ include Brine Barrels (converted to tons equivalent) and Magnesium Chloride Brine
+  * _Calcium Chloride_ (lbs)
+  * _Carbon Dioxide_ (tons)
+  * _Cinders_ (tons)
+  * _Clay_ (tons)
+  * _Coal_ (tons)
+  * _Coal-Bituminous-Raw_ (tons)
+  * _Other Coal Products_ (tons) include Leonardite and Coal Waste (Sub-Econ)
+  * _Copper_ (lbs)
+  * _Copper Concentrate_ (tons)
+  * _Drip or Scrubber Condensate_
+  * _Gas_ (mcf)
+  * _Geothermal - Direct Utilization_, (gal hundreds)
+  * _Geothermal - Direct Utilization_, (MMBtu)
+  * _Geothermal - Electrical Generation_, (kWh)
+  * _Geothermal - Electrical Generation_, (lbs, thousand)
+  * _Geothermal - Electrical Generation_, (Other)
+  * _Geothermal - sulfur_
+  * _Gilsonite_ (tons)
+  * _Gold and Silver Products_ (ozs) include: Gold, Gold Placer, and Silver
+  * _Gold and Silver Products_ (tons) include: Gold Ore, Gold and Silver
+  * _Gypsum_ (tons)
+  * _Hardrock Products_ (tons) include: Limestone (tons) and Wavellite (spcmns)
+  * _Humate_ (tons)
+  * _Langbeinite_ (tons)
+  * _Lead Concentrate_ (tons)
+  * _Leonardite_ (tons)
+  * _Molybdenum Concentrate_ (tons)
+  * _Muriate Of Potash-Granular_ (tons)
+  * _Muriate Of Potash-Standard_ (tons)
+  * _Oil_ (bbls)
+  * _Phosphate Raw Ore_ (tons)
+  * _Potash_ (tons)
+  * _Potassium Products_ (tons) include Manure Salts and Sylvite-Raw Ore
+  * _Potassium Sulphate-Standard_ (tons)
+  * _Purge Liquor_ (tons)
+  * _Quartz Crystal_ (tickets/lbs)
+  * _Salt_ (tons)
+  * _Sand/Gravel_ (tons)
+  * _Sand/Gravel-Cubic Yards_ (cyds)
+  * _Soda Ash_ (tons)
+  * _Sodium Bi-Carbonate_ (tons)
+  * _Sodium Products_ (tons) include Anhydrous Sodium Sulfate, Sodium Bisulfite, Sodium Decahydrate, Sodium Sesquicarbonate, Sulfide, and Trona Ore
+  * _Zinc Concentrate_ (tons)
+
+_Volume_ Shows the production volume (amount produced). The units for volume are shown in the preceding field (Product).
 
 ## Contact us

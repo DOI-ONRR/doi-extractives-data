@@ -18,13 +18,13 @@ tag:
 Download fiscal year data:
 
 <ul class="downloads-download_links list-unstyled">
-  <li><excel-link to="/downloads/disbursements/disbursements.xlsx">Fiscal year disbursements (Excel, 64 KB)</excel-link></li>
+  <li><excel-link to="/downloads/disbursements/disbursements.xlsx">Fiscal year disbursements (Excel, 84 KB)</excel-link></li>
   <li><csv-link to="/downloads/csv/disbursements/disbursements.csv">Fiscal year disbursements (csv, 83 KB)</csv-link></li>
 </ul>
 
 ## Scope
 
-This dataset includes natural resource disbursements for U.S. federal lands, federal offshore areas, and Native American lands. It does not include privately owned lands or U.S. state lands. The dataset is tracked and managed by the Department of the Interior’s Office of Natural Resources Revenue. It contains disbursement information to funds for fiscal years 2003-2018. Disbursements of revenue from extractive activities on U.S. federal lands occur monthly; this dataset is a sum of those disbursements by fiscal year.
+This dataset includes natural resource disbursements for U.S. federal lands, federal offshore areas, and Native American lands. It does not include privately owned lands or U.S. state lands. The dataset is tracked and managed by the Department of the Interior’s Office of Natural Resources Revenue. It contains disbursement information to funds for fiscal years 2003-2019. Disbursements of revenue from extractive activities on U.S. federal lands occur monthly; this dataset is a sum of those disbursements by fiscal year.
 
 ## Data publication
 

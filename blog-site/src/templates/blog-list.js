@@ -75,11 +75,13 @@ class BlogIndex extends React.Component {
             padding: 0,
           }}
         >
+          <li style={{ marginBottom: '0' }}>
           {!isFirst && (
             <Link to={prevPage} rel="prev">
               ← Newer
             </Link>
           )}
+          </li>
           {Array.from({ length: numPages }, (_, i) => (
             <li
               key={`pagination-number${i + 1}`}
@@ -100,11 +102,13 @@ class BlogIndex extends React.Component {
               </Link>
             </li>
           ))}
+          <li style={{ marginBottom: '0' }}>
           {!isLast && (
             <Link to={nextPage} rel="next">
               Older →
             </Link>
           )}
+          </li>
         </ul>
       </Layout>
     )

@@ -11,6 +11,7 @@ import YearSelector from '../selectors/YearSelector'
 import DataAndDocs from '../layouts/DataAndDocs'
 import GlossaryTerm from '../utils/glossary-term.js'
 import { filterTerms } from '../utils/Glossary'
+import { ExploreDataLink } from '../layouts/icon-links/ExploreDataLink'
 
 import ChartTitle from '../charts/ChartTitleCollapsible'
 
@@ -37,7 +38,7 @@ const createProductionData = (groupByCommodity, groupByYear) => {
         total[item.id].volume[year] = (total[item.id].volume[year])
           ? total[item.id].volume[year] + node.Volume
           : node.Volume
-        
+
         total[item.id].total += node.Volume
       }
     })
@@ -111,6 +112,11 @@ const NationalFederalProduction = props => {
               The Office of Natural Resources Revenue collects detailed data about natural resource <GlossaryTerm>production</GlossaryTerm> on federal lands and waters.
             </p>
             <p>
+              <ExploreDataLink
+                to="/query-data/?dataType=Production"
+                icon="filter">
+                  Production in detail
+              </ExploreDataLink>
               <Link to="/downloads/federal-production" >
                 <DataAndDocs />
               </Link>
@@ -191,7 +197,6 @@ const NationalFederalProduction = props => {
             </ul>
             <button is="aria-toggle"
               aria-expanded="false"
-              aria-toggles="aria-expanded"
               aria-controls="federal-production-withheld-products"
               className="aria-toggle-large aria-toggle-white">
               <span className="hide-expanded">

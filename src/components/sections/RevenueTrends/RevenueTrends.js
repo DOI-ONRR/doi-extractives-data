@@ -45,9 +45,11 @@ const RevenueTrends = () => {
 `)
 
   let fiscalYearData = JSON.parse(JSON.stringify(data.allMonthlyRevenuesByFiscalYear.group)).sort((a, b) => (a.fiscalYear < b.fiscalYear) ? 1 : -1)
+  console.log(fiscalYearData)
 
   // Get the latest date then subtract 1 year to filter previous year data to compare current year data
   let currentYearDate = new Date(fiscalYearData[0].data[0].node.RevenueDate)
+  console.log(currentYearDate)
   let previousYearMaxDate = new Date(fiscalYearData[0].data[0].node.RevenueDate)
 
   previousYearMaxDate.setFullYear(previousYearMaxDate.getUTCFullYear() - 1)
@@ -61,7 +63,7 @@ const RevenueTrends = () => {
 
   // If current fiscal year date is September then we have the full year and we should include it in the trend lines
   let beginTrendDataLimit = (currentYearDate.getMonth() === 8) ? 0 : 1
-  let trendData = fiscalYearData.splice(beginTrendDataLimit, TREND_LIMIT + beginTrendDataLimit)
+  let trendData = fiscalYearData.splice(beginTrendDataLimit, TREND_LIMIT)
 
   let previousYearDataIndex = (beginTrendDataLimit === 0) ? 1 : 0
   let previousYearData = JSON.parse(JSON.stringify(trendData))[previousYearDataIndex]

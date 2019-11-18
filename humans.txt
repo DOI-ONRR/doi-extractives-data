@@ -94,15 +94,5 @@
 
 # TECHNOLOGY COLOPHON
 
-    Standards: HTML5, CSS3
-    Components:
-        Bourbon, a simple and lightweight mixin library for Sass:
-            bourbon.io
-        Neat, a lightweight semantic grid framework for Sass and Bourbon:
-            neat.bourbon.io
-        Bitters, scaffold styles, variables and structure for Bourbon projects:
-            bitters.bourbon.io
-        All developed and maintained by Thoughtbot:
-            thoughtbot.com
-    Software: Sass, Jekyll, D3
+    Software: GatsbyJS, Material UI, D3, React, CSS modules
     Typography: Lato

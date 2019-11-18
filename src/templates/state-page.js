@@ -98,7 +98,9 @@ class StatePages extends React.Component {
     this.commoditiesCounty = props.pageContext.commoditiesCounty
     this.commodityYears = props.pageContext.commodityYears
     this.usStateData = this.usStateMarkdown.frontmatter
-    	this.usStateFields = this.usStateMarkdown.fields || {}
+      this.usStateFields = this.usStateMarkdown.fields || {}
+      
+      console.log(this.commodityYears);
   }
 
   componentDidMount () {
@@ -117,7 +119,8 @@ class StatePages extends React.Component {
     document.body.appendChild(script2)
   }
 
-  render () {
+    render () {
+	console.debug(this.props);
 	    return (
       <DefaultLayout>
         <main id={'state-' + this.usStateData.unique_id} className="container-page-wrapper layout-state-pages">
@@ -138,7 +141,12 @@ class StatePages extends React.Component {
             <div className="container-left-9">
               <section id="overview" className="section-top">
 
-                <SectionOverview usStateMarkdown={this.usStateMarkdown} />
+                    <SectionOverview usStateMarkdown={this.usStateMarkdown}
+		productionYears={this.props.pageContext.commodityProductionYears}
+		production={this.props.pageContext.commoditiesProduction}
+		revenue={this.props.pageContext.commodities}
+		revenueYears={this.commodityYears} />
+
 
               </section>
 
@@ -150,7 +158,8 @@ class StatePages extends React.Component {
                 <SectionFederalProduction usStateMarkdown={this.usStateMarkdown}
                   production={this.props.pageContext.commoditiesProduction}
                   countyProduction={this.props.pageContext.commoditiesFipsCode}
-                  productionYears={this.props.pageContext.commodityProductionYears}/>
+                productionYears={this.props.pageContext.commodityProductionYears}
+		    />
 
                 {this.usStateFields.state_land &&
 								<div id="production-state-land">

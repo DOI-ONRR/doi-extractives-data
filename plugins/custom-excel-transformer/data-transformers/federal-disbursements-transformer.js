@@ -11,6 +11,8 @@
 
 const CONSTANTS = require('../../../src/js/constants')
 
+const DISBURSEMENT_TO_STATE = 'Disbursements to the state'
+
 /* Define the column names found in the excel file */
 const SOURCE_COLUMNS = {
   Year: 'Fiscal Year',
@@ -20,6 +22,7 @@ const SOURCE_COLUMNS = {
   USState: 'State',
   County: 'County',
   CalendarYear: 'Calendar Year',
+  FiscalYear: 'Fiscal Year',
   Month: 'Month',
   Commodity: 'Commodity',
   Category: 'Category',
@@ -59,10 +62,6 @@ const createDisbursementsNode = (disbursementsData, type) => {
   let totalProp = Object.keys(disbursementsData).filter(prop => prop.trim().includes(SOURCE_COLUMNS.Total.trim()))
   let disbursementValue = disbursementsData[totalProp] || disbursementsData[SOURCE_COLUMNS.Disbursement]
 
-
-  if(disbursementValue === undefined) {
-    console.log(disbursementsData, disbursementValue)
-  }
   let disbursementNode = {
 	  Year: disbursementsData[SOURCE_COLUMNS.Year],
     DisplayYear: (disbursementsData[SOURCE_COLUMNS.Year])
@@ -72,7 +71,8 @@ const createDisbursementsNode = (disbursementsData, type) => {
 	  Disbursement: disbursementValue,
 	  USState: disbursementsData[SOURCE_COLUMNS.USState],
 	  County: disbursementsData[SOURCE_COLUMNS.County],
-	  CalendarYear: disbursementsData[SOURCE_COLUMNS.CalendarYear],
+    CalendarYear: disbursementsData[SOURCE_COLUMNS.CalendarYear],
+    FiscalYear: disbursementsData[SOURCE_COLUMNS.FiscalYear],
 	  Month: disbursementsData[SOURCE_COLUMNS.Month],
 	  Commodity: disbursementsData[SOURCE_COLUMNS.Commodity],
 	  Category: disbursementsData[SOURCE_COLUMNS.Category],
@@ -87,13 +87,21 @@ const createDisbursementsNode = (disbursementsData, type) => {
     disbursementNode.DisbursementCategory = disbursementNode.Source && ONSHOREOFFSHORE_TO_DISBURSEMENTS_CATEGORY[disbursementNode.Source.toLowerCase()]
   }
 
-  disbursementNode.Disbursement = disbursementNode.Disbursement || 0
+  if (['GOMESA', '8(g)'].includes(disbursementNode.Source)) {
+    disbursementNode.County = disbursementNode.County || DISBURSEMENT_TO_STATE
+  }
 
-  if(typeof disbursementNode.Disbursement !== "number") {
+  if (typeof disbursementNode.Disbursement !== 'number') {
     disbursementNode.Disbursement = 0
-    //console.log(disbursementsData, disbursementNode.Disbursement)
-    //throw new Error('Not a number?')
   }
 
   return disbursementNode
+}
+
+function toTitleCase (str) {
+  str = str.toLowerCase().split(' ')
+  for (let i = 0; i < str.length; i++) {
+    str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1)
+  }
+  return str.join(' ')
 }

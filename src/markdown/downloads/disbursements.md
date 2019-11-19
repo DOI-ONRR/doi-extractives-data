@@ -1,5 +1,5 @@
 ---
-title: Disbursements | Documentation
+title: Disbursements | Downloads | Natural Resources Revenue Data
 title_display: Disbursements
 layout: downloads
 permalink: /downloads/disbursements/

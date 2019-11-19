@@ -1,5 +1,5 @@
 ---
-title: Renewables | Archive
+title: Renewables | Archive | Natural Resources Revenue Data
 layout: content
 permalink: /archive/renewables/
 tag:

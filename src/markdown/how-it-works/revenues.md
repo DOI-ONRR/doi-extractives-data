@@ -1,5 +1,5 @@
 ---
-title: Revenues | How It Works
+title: Revenues | How It Works | Natural Resources Revenue Data
 layout: content
 permalink: /how-it-works/revenues/
 tag:

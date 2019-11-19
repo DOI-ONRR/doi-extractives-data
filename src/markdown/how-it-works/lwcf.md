@@ -1,5 +1,5 @@
 ---
-title: Land and Water Conservation Fund | How It Works
+title: Land and Water Conservation Fund | How It Works | Natural Resources Revenue Data
 layout: content
 permalink: /how-it-works/land-and-water-conservation-fund/
 tag:

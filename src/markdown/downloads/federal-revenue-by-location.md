@@ -1,5 +1,5 @@
 ---
-title: Revenue by Year | Documentation
+title: Revenue by Year | Downloads | Natural Resources Revenue Data
 layout: downloads
 permalink: /downloads/federal-revenue-by-location/
 tag:

@@ -1,5 +1,5 @@
 ---
-title: Disbursements | How It Works
+title: Disbursements | How It Works | Natural Resources Revenue Data
 layout: content
 permalink: /how-it-works/disbursements/
 tag:

@@ -1,5 +1,5 @@
 ---
-title: State laws and regulations | Archive
+title: State laws and regulations | Archive | Natural Resources Revenue Data
 layout: content
 permalink: /archive/state-laws-and-regulations/
 redirect_from: /how-it-works/state-legal-fiscal-info/

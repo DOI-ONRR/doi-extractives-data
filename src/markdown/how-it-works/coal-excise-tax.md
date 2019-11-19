@@ -1,5 +1,5 @@
 ---
-title: 'Coal Excise Tax | How It Works'
+title: 'Coal Excise Tax | How It Works | Natural Resources Revenue Data'
 title_display: Coal excise tax
 permalink: /how-it-works/coal-excise-tax/
 layout: content

@@ -1,5 +1,5 @@
 ---
-title: Downloads
+title: Downloads | Natural Resources Revenue Data
 layout: downloads
 permalink: /downloads/
 tag:

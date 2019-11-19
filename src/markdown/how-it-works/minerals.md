@@ -1,5 +1,5 @@
 ---
-title: Nonenergy Minerals | How it Works
+title: Nonenergy Minerals | How it Works | Natural Resources Revenue Data
 layout: howitworks-process
 tag:
 - How it works

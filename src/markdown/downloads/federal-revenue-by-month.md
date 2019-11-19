@@ -1,5 +1,5 @@
 ---
-title: Revenue by Month | Documentation
+title: Revenue by Month | Downloads | Natural Resources Revenue Data
 layout: downloads
 permalink: /downloads/federal-revenue-by-month/
 tag:

@@ -1,5 +1,5 @@
 ---
-title: How It Works
+title: How It Works | Natural Resources Revenue Data
 layout: howitworks-default
 permalink: /how-it-works/
 redirect_from: /how-it-works/production/

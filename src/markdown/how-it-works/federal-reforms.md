@@ -1,5 +1,5 @@
 ---
-title: Federal Reforms | How It Works
+title: Federal Reforms | How It Works | Natural Resources Revenue Data
 layout: content
 permalink: /how-it-works/federal-reforms/
 tag:

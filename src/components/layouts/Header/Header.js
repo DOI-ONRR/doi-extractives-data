@@ -55,10 +55,7 @@ const Header = props => {
       { isIE && <BrowserBanner /> }
       <div className="header-left">
         <Link className="header-image_link" to="/">
-          <h1 className="sr-only">
-            US Department of the Interior Natural Resources Revenue Data
-          </h1>
-          <img className="header-image" src={NRRDLogo} alt="Logo" />
+          <img className="header-image" src={NRRDLogo} alt="U.S. Department of the Interior Natural Resources Revenue Data wordmark with oil platform rig pulling up a dollar sign" />
         </Link>
       </div>
       <MediaQuery maxWidth={768}>

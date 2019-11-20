@@ -92,7 +92,7 @@
   definition: "The percentage difference that the USEITI Multi-Stakeholder Group defined as significant for each revenue type as part of the reconciliation process."
 - name: "Material variance"
   definition: "A discrepancy between government-reported and company-reported revenue payments that is considered significant by the Independent Administrator. Margins of variance vary by revenue type, and were approved by the Multi-Stakeholder Group as part of the USEITI process."
-- name: "Mcf"
+- name: "mcf"
   definition: "1000 cubic feet, a unit of measure for natural gas."
 - name: "Megawatt Capacity (MC) fee"
   definition: "A revenue payment for the calculated value of electricity generated on federal lands."

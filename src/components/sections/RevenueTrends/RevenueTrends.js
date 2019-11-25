@@ -22,7 +22,6 @@ const TREND_LIMIT = 10
 */
 
 const RevenueTrends = () => {
-
   const data = useStaticQuery(graphql`
           query RevenueTrendsQuery {
         allMonthlyRevenuesByFiscalYear: allResourceRevenuesMonthly(
@@ -45,7 +44,6 @@ const RevenueTrends = () => {
       }
 `)
 
-
   let fiscalYearData = JSON.parse(JSON.stringify(data.allMonthlyRevenuesByFiscalYear.group)).sort((a, b) => (a.fiscalYear < b.fiscalYear) ? 1 : -1)
 
   // Get the latest date then subtract 1 year to filter previous year data to compare current year data
@@ -61,11 +59,13 @@ const RevenueTrends = () => {
             currentYearData.amountByRevenueType.Rents +
             currentYearData.amountByRevenueType['Other Revenues'])
 
-  let trendData = fiscalYearData.splice(0, TREND_LIMIT)
+  // If current fiscal year date is September then we have the full year and we should include it in the trend lines
+  let beginTrendDataLimit = (currentYearDate.getMonth() === 8) ? 0 : 1
+  let trendData = fiscalYearData.splice(beginTrendDataLimit, TREND_LIMIT)
 
-  let previousYearData = JSON.parse(JSON.stringify(trendData))[1]
+  let previousYearDataIndex = (beginTrendDataLimit === 0) ? 1 : 0
+  let previousYearData = JSON.parse(JSON.stringify(trendData))[previousYearDataIndex]
   previousYearData.data = previousYearData.data.filter(item => new Date(item.node.RevenueDate) <= previousYearMaxDate)
-
 
   previousYearData = [previousYearData].map(calculateRevenueTypeAmountsByYear)[0]
   calculateOtherRevenues(previousYearData)
@@ -73,7 +73,6 @@ const RevenueTrends = () => {
                               previousYearData.amountByRevenueType.Bonus +
                               previousYearData.amountByRevenueType.Rents +
                               previousYearData.amountByRevenueType['Other Revenues']
-
 
   let currentFiscalYearText = 'FY' + currentYearData.year.slice(2) + ' so far'
   let previousFiscalYearText = 'from FY' + previousYearData.year.slice(2)
@@ -108,7 +107,8 @@ const RevenueTrends = () => {
       <table className={styles.revenueTable}>
         <thead>
           <tr>
-            <th>10-year trend</th>
+            <th>{'FY' + trendData[0].fiscalYear.slice(2) + ' - ' +
+              'FY' + trendData[trendData.length - 1].fiscalYear.slice(2)} trend</th>
             <th className={styles.alignRight}>{currentFiscalYearText}</th>
           </tr>
         </thead>
@@ -210,17 +210,15 @@ const calculateOtherRevenues = data => {
 **/
 
 const calculateRevenueTypeAmountsByYear = (yearData, index) => {
-
   let fiscalYear = yearData.fiscalYear
   let sums = yearData.data.reduce((total, item) => {
     total[item.node.RevenueType] =
       (total[item.node.RevenueType] !== undefined)
         ? total[item.node.RevenueType] + item.node.Revenue
-          : item.node.Revenue
+        : item.node.Revenue
 
     return total
   }, {})
-
 
   return { 'year': fiscalYear, 'amountByRevenueType': sums }
 }

@@ -49,7 +49,6 @@ class StackedBarChartLayout extends React.Component {
   }
 
   getChartLegend() {
-    console.log('this.props: ', this.props)
     let {
       legendTitle,
       legendDataFormatFunc,

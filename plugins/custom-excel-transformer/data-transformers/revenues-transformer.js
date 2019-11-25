@@ -93,7 +93,7 @@ const createRevenueNode = (revenueData, type) => {
   let year = revenueNode.CalendarYear || revenueNode.FiscalYear
   let month = (revenueNode.Month) ? getMonthFromString(revenueNode.Month) : 0
 
-  revenueNode.RevenueDate = new Date(year, month)
+  revenueNode.RevenueDate = new Date(year, month, 15)
 
   if (revenueNode.LandClass === CONSTANTS.NATIVE_AMERICAN) {
     revenueNode.LandCategory = CONSTANTS.ONSHORE

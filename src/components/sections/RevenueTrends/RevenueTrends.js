@@ -226,7 +226,7 @@ const calculateRevenueTypeAmountsByYear = (yearData, index) => {
 }
 
 /**
-* PercentDifference({currentAmount,previousAmount}) - calculates other revenus from other revenues, inspections fees and civil penalties.
+*  PercentDifference({currentAmount,previousAmount}) - calculates other revenus from other revenues, inspections fees and civil penalties.
 *
 *  @return TriangleUpIcon || TriangleDownIcon
 **/

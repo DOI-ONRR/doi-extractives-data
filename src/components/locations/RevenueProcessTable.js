@@ -71,7 +71,7 @@ const getYearValueForCommodityRevenueType = (commodityRevenueType, year) => {
   return (commodityRevenueType && commodityRevenueType[year] ? commodityRevenueType[year] : 0)
 }
 
-const RevenueTypeTableRow = props => {
+const RevenueTypeTableRow2 = props => {
   const revenueTypeNames = ['Bonus', 'Rents', 'Royalties', 'Other Revenues']
 
   function getOtherRevenuesValues () {
@@ -373,7 +373,7 @@ const RevenueProcessTable = props => {
 					        Coal <span className="icon-padded"><CoalIcon /></span>
 				      	</td>
 				    </tr>
-					<RevenueTypeTableRow
+					<RevenueTypeTableRow2
 						commodityName='Coal'
 						commodityData={revenueTypes['Coal']}
 						year={props.year}
@@ -443,7 +443,7 @@ const RevenueProcessTable = props => {
 					        Offshore renewable energy <span className="icon-padded"><RenewablesIcon /></span>
 				      	</td>
 				    </tr>
-				    <RevenueTypeTableRow
+				    <RevenueTypeTableRow2
 						commodityName='Wind'
 						commodityData={revenueTypes['Wind']}
 						year={props.year}
@@ -504,7 +504,7 @@ const RevenueProcessTable = props => {
 					        { windExists && <span className="icon-padded"><RenewablesIcon /></span> }
 				      	</td>
 				    </tr>
-				    <RevenueTypeTableRow
+				    <RevenueTypeTableRow2
 						isNationalPage={props.isNationalPage}
 						commodityName={utils.getDisplayName_CommodityName('All')}
 						commodityData={revenueTypes['All']}

@@ -4,7 +4,7 @@ import MediaQuery from "react-responsive";
 
 import styles from "./StackedBarChartLayout.module.scss";
 
-import { ChartTitle } from "../../../charts/ChartTitle";
+import ChartTitle from "../../../charts/ChartTitle";
 import { StackedBarChart } from "../../../charts/StackedBarChart";
 import { ChartLegendStandard } from "../../../charts/ChartLegendStandard";
 import { Accordion } from "../../Accordion";

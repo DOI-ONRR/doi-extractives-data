@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState }  from 'react'
 import ReactDOM from 'react-dom'
 import { useStaticQuery, graphql } from "gatsby"
-import styles from './TotalRevenue.module.scss'
+import styles from './TotalProduction.module.scss'
 import CONSTANTS from '../../../js/constants'
 //import ToggleButton from '@material-ui/lab/ToggleButton';
 //import ToggleButtonGroup from '@material-ui/lab/ToggleButtonGroup';

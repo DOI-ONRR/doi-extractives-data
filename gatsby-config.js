@@ -34,10 +34,11 @@ let config = {
         includePaths: [`${ __dirname }/src/styles`, `${ __dirname }/src/css-global`, `${ __dirname }/src/components`],
       },
     },
+    `gatsby-transformer-react-docgen`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${ __dirname }/src/components`,
+        path: `${ __dirname }/src/components/`,
         name: 'components',
       },
     },

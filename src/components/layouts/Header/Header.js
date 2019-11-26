@@ -62,7 +62,7 @@ const Header = props => {
         </Link>
       </div>
       <MediaQuery maxWidth={768}>
-        <MobileNav glossaryTermSelected={props.glossaryTermSelected}/>
+        <MobileNav2 glossaryTermSelected={props.glossaryTermSelected}/>
       </MediaQuery>
       <MediaQuery minWidth={769}>
         <nav className="header-nav header-right">
@@ -99,7 +99,7 @@ export default connect(
   dispatch => ({ glossaryTermSelected: (term, doOpen) => dispatch(glossaryTermSelectedAction(term, doOpen)) })
 )(Header)
 
-class MobileNav extends React.Component {
+class MobileNav2 extends React.Component {
   state = {
     drawOpen: false,
   }

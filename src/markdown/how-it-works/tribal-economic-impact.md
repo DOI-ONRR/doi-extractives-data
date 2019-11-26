@@ -1,5 +1,5 @@
 ---
-title: Native American Lands | Economic Impact
+title: Native American Lands | Economic Impact | Natural Resources Revenue Data
 layout: content
 permalink: /how-it-works/native-american-economic-impact/
 redirect_from: /how-it-works/tribal-economic-impact/

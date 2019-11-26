@@ -1,5 +1,5 @@
 ---
-title: Federal Laws | How It Works
+title: Federal Laws | How It Works | Natural Resources Revenue Data
 layout: content
 permalink: /how-it-works/federal-laws/
 tag:

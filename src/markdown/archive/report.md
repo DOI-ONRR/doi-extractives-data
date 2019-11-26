@@ -1,5 +1,5 @@
 ---
-title: Executive Summaries | Archive
+title: Executive Summaries | Archive | Natural Resources Revenue Data
 layout: downloads
 permalink: /archive/report/
 tags:

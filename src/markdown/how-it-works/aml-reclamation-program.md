@@ -1,5 +1,5 @@
 ---
-title: AML Reclamation Program | How It Works
+title: AML Reclamation Program | How It Works | Natural Resources Revenue Data
 layout: content
 tag:
 - How it works

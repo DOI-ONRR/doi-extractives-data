@@ -1,5 +1,5 @@
 ---
-title: Offshore Oil & Gas | How it Works
+title: Offshore Oil & Gas | How it Works | Natural Resources Revenue Data
 layout: howitworks-process
 tag:
 - How it works

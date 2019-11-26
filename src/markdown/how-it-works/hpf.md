@@ -1,5 +1,5 @@
 ---
-title: Historic Preservation Fund | How It Works
+title: Historic Preservation Fund | How It Works | Natural Resources Revenue Data
 layout: content
 permalink: /how-it-works/historic-preservation-fund/
 tag:

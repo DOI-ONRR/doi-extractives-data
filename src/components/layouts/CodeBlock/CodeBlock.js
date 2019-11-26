@@ -3,12 +3,10 @@ import Highlight, { defaultProps } from 'prism-react-renderer'
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live'
 import { mdx } from '@mdx-js/react'
 import * as components from '../../../../.cache/components'
-//import ChartTitle from "/Development/doi-extractives-data/src/components/charts/ChartTitle/ChartTitle"
-//import TempLink from "/Development/doi-extractives-data/src/components/utils/temp-link.js"
 
 const CodeBlock = ({ children, className, live, render }) => {
   const language = className.replace(/language-/, '')
-  console.log(...components)
+
   if (live) {
     return (
       <div style={{ marginTop: '40px', backgroundColor: 'black' }}>

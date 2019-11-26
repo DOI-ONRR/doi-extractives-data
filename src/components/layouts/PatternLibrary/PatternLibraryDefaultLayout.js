@@ -61,7 +61,6 @@ const PatternLibraryDefaultLayout = props => {
   const [mobileOpen, setMobileOpen] = React.useState(false)
 
   const handleDrawerToggle = () => {
-    console.log('togglert ' + mobileOpen)
     setMobileOpen(!mobileOpen)
   }
 

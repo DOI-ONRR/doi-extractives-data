@@ -401,7 +401,7 @@ const RevenueProcessTable = props => {
 					        Geothermal <span className="icon-padded"><GeothermalIcon /></span>
 				      	</td>
 				    </tr>
-				    <RevenueTypeTableRow
+				    <RevenueTypeTableRow2
 						commodityName='Geothermal'
 						commodityData={revenueTypes['Geothermal']}
 						year={props.year}

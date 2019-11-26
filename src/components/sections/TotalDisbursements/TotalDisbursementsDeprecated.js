@@ -305,7 +305,7 @@ class TotalDisbursementsDeprecated extends React.Component {
 	  if (this.state[dataSetId] === undefined) {
 	    return
 		}
-		console.log(this.state[dataSetId])
+		//console.log(this.state[dataSetId])
 
 	  return (
 	    <div is="chart">

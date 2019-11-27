@@ -12,7 +12,7 @@ tags:
 - open data
 - development
 - natural resources revenue data
-date: "2019-10-10"
+date: "2019-12-03"
 ---
 
 [Natural Resources Revenue Data](https://revenuedata.doi.gov/) has been a static site since its inception. At the time, [static site generation](https://18f.gsa.gov/2016/07/11/conversation-about-static-dynamic-websites/) was on the rise as an alternative to dynamic, database-driven websites. Static site generation was (and is) particularly suited to content-heavy sites with little or no user interaction in the form of commenting, ecommerce transactions, form submission, or profile management.
@@ -29,15 +29,15 @@ Our goal was to create a workflow that would:
 - allow non-developers to update the site’s data (with little or no special software)
 - maintain just one canonical data file for each dataset
 
-While we successfully met each of these goals, we encountered significant downsides. 
+While we successfully met each of these goals, we encountered significant downsides.
 
-First, a static site must be compiled (built) before deployment, and our build times ballooned from just a few minutes to over 30 minutes, most of which time was spent processing these new data queries and subsequent transformations. This slowed down our development process and hindered our productivity. 
+First, a static site must be compiled (built) before deployment, and our build times ballooned from just a few minutes to over 30 minutes, most of which time was spent processing these new data queries and subsequent transformations. This slowed down our development process and hindered our productivity.
 
 Second, the builds taxed our local computer memory and that of our hosting service, [Federalist](https://federalist.18f.gov/), crashing builds and limiting the number of concurrent builds we could run.
 
 Third, we’re transferring to the user’s computer all the data for a given page at once, as opposed to accessing from a database only what the user requests at any given time.
 
-And finally, we’ve been contemplating the idea of adding lease-level data to the site (based on user research), which would include tens of thousands of additional data points. We weren’t going to be able to manage this much data with our current setup. 
+And finally, we’ve been contemplating the idea of adding lease-level data to the site (based on user research), which would include tens of thousands of additional data points. We weren’t going to be able to manage this much data with our current setup.
 
 We needed another solution.
 

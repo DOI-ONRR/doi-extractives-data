@@ -28,6 +28,8 @@ let config = {
         icon: 'src/img/favicon-32x32.png', // This path is relative to the root of the site.
       },
     },
+    'gatsby-plugin-mdx',
+    'gatsby-transformer-react-docgen',
     {
       resolve: 'gatsby-plugin-sass',
       options: {

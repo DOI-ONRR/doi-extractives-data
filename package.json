@@ -17,6 +17,7 @@
     "@typescript-eslint/parser": "^1.11.0",
     "acorn": "^6.1.1",
     "ajv": "^6.10.0",
+    "app-root-dir": "^1.0.2",
     "copy-dir": "^0.4.0",
     "currency-formatter": "^1.5.3",
     "d3": "^5.5.0",

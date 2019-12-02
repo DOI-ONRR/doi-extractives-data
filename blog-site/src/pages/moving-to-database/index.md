@@ -1,5 +1,5 @@
 ---
-title: "Finding the limits of static: building a database for natural resource revenue data"
+title: "Finding the limits of static: building a database for natural resources revenue data"
 authors:
 - Mojo Nichols
 - Ryan Johnson

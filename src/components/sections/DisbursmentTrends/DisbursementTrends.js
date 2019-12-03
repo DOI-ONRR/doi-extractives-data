@@ -37,6 +37,7 @@ allYearlyDispursements : allFederalDisbursements (sort: {fields: [Year], order: 
     currentMonthlyDispursements : allDisbursementsMonthly {
     nodes {
       Month
+      FiscalYear
       DisplayYear
       Disbursement
       Fund
@@ -47,7 +48,7 @@ allYearlyDispursements : allFederalDisbursements (sort: {fields: [Year], order: 
 `) 
 
     let dataYearly=results.allYearlyDispursements.nodes;
-    let currentMonthly=results.currentMonthlyDispursements.nodes.map(obj=> ({...obj, month:monthLookup(obj.Month), FiscalMonth: fiscalMonthLookup(obj.Month), date: monthlyDate(obj),fiscalYear:2019}));
+    let currentMonthly=results.currentMonthlyDispursements.nodes.map(obj=> ({...obj, month:monthLookup(obj.Month), FiscalMonth: fiscalMonthLookup(obj.Month), date: monthlyDate(obj)}));
     let currentTrends=aggregateMonthlyData(currentMonthly);
 
     let maxMonth=getMaxMonth(currentMonthly).toLocaleString(undefined, { month: 'long' });
@@ -57,9 +58,14 @@ allYearlyDispursements : allFederalDisbursements (sort: {fields: [Year], order: 
     //    let currentYear=data[0].Fiscal_Year
     let previousYear=getPreviousYear(currentMonthly);
     let trends=aggregateData(dataYearly);
+
+    console.debug("-------------------------------------------trends");    console.debug(trends);
     
-    let currentFiscalYearText = 'FY'+currentYear.substring(1)+' so far';
-    let longCurrentText= maxMonth+" 20"+currentYear.substring(1);
+    let minYear=trends[0].histData[0].year.substring(2);
+    let maxYear=trends[0].histData[trends[0].histData.length-1].year.substring(2);
+    
+    let currentFiscalYearText = 'FY'+currentYear.substring(2)+' so far';
+    let longCurrentText= maxMonth+" 20"+currentYear.substring(2);
     let previousFiscalYearText = 'from FY'+previousYear;
     
       return (
@@ -69,7 +75,7 @@ allYearlyDispursements : allFederalDisbursements (sort: {fields: [Year], order: 
           <table className={styles.dispersementTable}>
             <thead>
               <tr>
-                <th>10-year trend</th>
+              <th>FY{minYear} - FY{maxYear} trend</th>
                 <th className={styles.alignRight}>{currentFiscalYearText}</th>
               </tr>
             </thead>
@@ -118,20 +124,22 @@ allYearlyDispursements : allFederalDisbursements (sort: {fields: [Year], order: 
 export default DisbursementTrends
 
 const getCurrentYear = (data) => {
-
-    let r=data.reduce((max, p) => p.DisplayYear > max ? p.DisplayYear : max, data[0].DisplayYear );
-
+    console.debug(data);
+    let r=data.reduce((max, p) => p.FiscalYear > max ? p.FiscalYear : max, data[0].FiscalYear );
+    console.debug(r);
     return r;
     
 }
 
 const getPreviousYear = (data) => {
 
-    let r=data.reduce((min, p) => p.DisplayYear < min ? p.DisplayYear : min, data[0].DisplayYear );
+    let r=data.reduce((min, p) => p.FiscalYear < min ? p.FiscalYear : min, data[0].FiscalYear );
 
     return r;
     
 }
+
+
 
 const getMaxMonth = (data) => {
      let r=data.reduce((max, p) => p.date > max ? p.date : max, data[0].date );
@@ -343,7 +351,7 @@ const calculateOtherRevenues = (data) => {
 
 
 const calculateRevenueTypeAmountsByYear = (yearData, index) => {
-  let fiscalYear = yearData.fiscalYear;
+  let fiscalYear = yearData.FiscalYear;
   let sums = yearData.data.reduce((total, item) => {
     total[item.node.RevenueType] =
       (total[item.node.RevenueType] !== undefined)

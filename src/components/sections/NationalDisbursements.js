@@ -143,7 +143,7 @@ class NationalDisbursements extends React.Component {
 			            					chartData={fundDisbursements[fundKey].disbursements}
 			            					maxValue={disbursementsForYear.highestFundValue}
 			            					additionalData={fundAdditionalData}
-	            		      noDataExplanation={fundNoDataExplanation}
+	            		      				noDataExplanation={fundNoDataExplanation}
 			            					/>)
 	            			}
 	            		})

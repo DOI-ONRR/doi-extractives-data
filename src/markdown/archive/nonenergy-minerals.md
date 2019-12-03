@@ -1,5 +1,5 @@
 ---
-title: Nonenergy Minerals | Archive
+title: Nonenergy Minerals | Archive | Natural Resources Revenue Data
 layout: content
 permalink: /archive/nonenergy-minerals/
 description: 

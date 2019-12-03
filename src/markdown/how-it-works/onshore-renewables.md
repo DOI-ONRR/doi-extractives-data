@@ -1,5 +1,5 @@
 ---
-title: Onshore Renewables | How it Works
+title: Onshore Renewables | How it Works | Natural Resources Revenue Data
 layout: howitworks-process
 tag:
 - How it works

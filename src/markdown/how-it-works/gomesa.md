@@ -1,5 +1,5 @@
 ---
-title: Gulf of Mexico Energy Security Act (GOMESA) | How It Works
+title: Gulf of Mexico Energy Security Act (GOMESA) | How It Works | Natural Resources Revenue Data
 layout: content
 permalink: /how-it-works/gomesa/
 tag:

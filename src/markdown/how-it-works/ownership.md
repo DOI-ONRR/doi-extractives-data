@@ -1,5 +1,5 @@
 ---
-title: Ownership | How it Works
+title: Ownership | How it Works | Natural Resources Revenue Data
 layout: content
 permalink: /how-it-works/ownership/
 tag:

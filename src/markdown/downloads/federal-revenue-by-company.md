@@ -1,5 +1,5 @@
 ---
-title: Revenue by Company | Documentation
+title: Revenue by Company | Downloads | Natural Resources Revenue Data
 layout: downloads
 permalink: /downloads/federal-revenue-by-company/
 tag:

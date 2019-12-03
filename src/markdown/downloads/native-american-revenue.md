@@ -1,5 +1,5 @@
 ---
-title: Native American Revenue | Documentation
+title: Native American Revenue | Downloads | Natural Resources Revenue Data
 layout: downloads
 permalink: /downloads/native-american-revenue/
 tag:

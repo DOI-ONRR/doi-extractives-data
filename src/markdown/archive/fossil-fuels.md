@@ -1,5 +1,5 @@
 ---
-title: Fossil Fuels | Archive
+title: Fossil Fuels | Archive | Natural Resources Revenue Data
 layout: content
 permalink: /archive/fossil-fuels/
 tag:

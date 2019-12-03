@@ -1,5 +1,5 @@
 ---
-title: Audits and Assurances | How it works
+title: Audits and Assurances | How it works | Natural Resources Revenue Data
 layout: content
 tag:
 - How it works

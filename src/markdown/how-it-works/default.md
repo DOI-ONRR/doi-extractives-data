@@ -1,5 +1,5 @@
 ---
-title: How It Works
+title: How It Works | Natural Resources Revenue Data
 layout: howitworks-default
 permalink: /how-it-works/
 redirect_from: /how-it-works/production/
@@ -48,11 +48,6 @@ redirect_from: /how-it-works/production/
             <h3 class="h3 landing-heading"><custom-link to="/how-it-works/federal-reforms">Federal reforms</custom-link></h3>
             <p>The government reforms laws and regulations by enacting new legislation and proposing new rules for implementation.</p>
             <p><custom-link to="/how-it-works/federal-reforms">Learn about reforms</custom-link></p>
-          </div>
-          <div>
-            <h3 class="h3 landing-heading"><custom-link to="/how-it-works/#native-american-overview">Native American laws and regulations</custom-link></h3>
-            <p>Extracting natural resources on Native American land and distributing the associated revenue involves a unique set of processes and stakeholders.</p>
-            <p><custom-link to="/how-it-works/#native-american-overview">Learn about Native American laws</custom-link></p>
           </div>
         </div>
       </section>

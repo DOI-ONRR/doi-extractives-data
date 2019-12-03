@@ -1,5 +1,5 @@
 ---
-title: Archive
+title: Archive | Natural Resources Revenue Data
 layout: archive-default
 permalink: /archive/
 tag:

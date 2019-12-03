@@ -1,5 +1,5 @@
 ---
-title: Native American Lands | Natural Resource Production
+title: Native American Lands | Natural Resource Production | Natural Resources Revenue Data
 layout: content
 permalink: /how-it-works/native-american-production/
 redirect_from: /how-it-works/tribal-production/

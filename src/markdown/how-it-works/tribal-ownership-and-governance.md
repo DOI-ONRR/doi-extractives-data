@@ -1,5 +1,5 @@
 ---
-title: Native American Lands | Ownership and Governance
+title: Native American Lands | Ownership and Governance | Natural Resources Revenue Data
 layout: content
 permalink: /how-it-works/native-american-ownership-governance/
 redirect_from: /how-it-works/tribal-ownership-governance/

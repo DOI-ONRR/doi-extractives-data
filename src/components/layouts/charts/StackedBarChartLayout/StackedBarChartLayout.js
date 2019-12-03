@@ -49,7 +49,6 @@ class StackedBarChartLayout extends React.Component {
   }
 
   getChartLegend() {
-    console.log('this.props: ', this.props)
     let {
       legendTitle,
       legendDataFormatFunc,
@@ -106,14 +105,11 @@ class StackedBarChartLayout extends React.Component {
       longUnits,
       xAxisLabels
     } = this.state.dataSet;
-    let titleUnits = "";
-    if (showUnits) {
-      titleUnits = " (" + longUnits + ")";
-    }
+
     return (
       <div className={styles.root}>
         <ChartTitle>
-          {title} {titleUnits}
+          {title} {" (" + longUnits + ")"}
         </ChartTitle>
 
         {this.state.dataSet && (

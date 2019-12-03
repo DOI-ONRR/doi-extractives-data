@@ -1,5 +1,5 @@
 ---
-title: Native American Lands | Revenue
+title: Native American Lands | Revenue | Natural Resources Revenue Data
 layout: content
 permalink: /how-it-works/native-american-revenue/
 redirect_from: /how-it-works/tribal-revenue/

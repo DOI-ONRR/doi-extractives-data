@@ -7,9 +7,9 @@ const TabContainer = (props) => {
     return (
 	    <section className={styles.root}>
 	      <div className={styles.contentTop}>
-		<h3 className={styles.title}>
+		<h2 className={styles.title}>
 		  {props.title}
-		</h3>					      
+		</h2>					      
 		<span className={styles.info}>
 		  {props.info}
 		</span>

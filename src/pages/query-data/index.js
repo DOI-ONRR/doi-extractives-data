@@ -1068,7 +1068,6 @@ class QueryData extends React.Component {
                             {' '}and {additionalColumn}
                           </React.Fragment>
                         }
-                        .
                       </div>
 						        }
 						        {(groupByOptions && (additionalColumnOptions && additionalColumnOptions.length > 1)) &&

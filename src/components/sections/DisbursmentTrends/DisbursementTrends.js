@@ -57,7 +57,7 @@ allYearlyDispursements : allFederalDisbursements (sort: {fields: [Year], order: 
    
     //    let currentYear=data[0].Fiscal_Year
     let previousYear=getPreviousYear(currentMonthly);
-    let trends=aggregateData(dataYearly);
+    let trends=aggregateData(dataYearly)
 
     console.debug("-------------------------------------------trends");    console.debug(trends);
     
@@ -303,8 +303,8 @@ const aggregateData= (data) => {
     r.map((row,i) => { let a=[];
 		       let years=Object.keys(row.histSum).sort();
 		       a=years.map((year,i)=> ({year: year, amount:row.histSum[year]}))
-		       r[i].histData=a;
-		       return a
+		       r[i].histData=a.slice(-10);
+		       return a.slice(-10)
 		     })
     
     

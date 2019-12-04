@@ -23,8 +23,8 @@
 }
 
 .titleRight {
-  float:right;
-      font-weight: 300;
+  	float:right;
+    font-weight: 300;
 }
 .content {
     padding-left: 10px;
@@ -251,4 +251,10 @@
 	.dropdown div:first-child{
 		width: 212px;
 	}
+
+	.titleRight {
+		display: block;
+		float: none;
+	  	font-weight: 300;
+  }
 }

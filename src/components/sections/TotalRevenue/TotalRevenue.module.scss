@@ -34,7 +34,7 @@
 }
 .titleRight {
     float:right;
-        font-weight: 300;
+	font-weight: 300;
 }
 
 .content {
@@ -283,4 +283,9 @@
 	.dropdown div:first-child{
 		width: 212px;
 	}
+	.titleRight {
+		display: block;
+		float: none;
+	  	font-weight: 300;
+  }
 }

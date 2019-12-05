@@ -52,20 +52,19 @@ allYearlyDispursements : allFederalDisbursements (sort: {fields: [Year], order: 
 
 
     let maxMonth=getMaxMonth(currentMonthly).toLocaleString(undefined, { month: 'long' });
-
+    let calendarYear=getMaxMonth(currentMonthly).getFullYear();
     let currentYear=getCurrentYear(currentMonthly);
     let currentTrends=aggregateMonthlyData(currentMonthly,currentYear);   
     //    let currentYear=data[0].Fiscal_Year
     let previousYear=getPreviousYear(currentMonthly);
     let trends=aggregateData(dataYearly)
 
-    console.debug("-------------------------------------------trends");    console.debug(trends);
     
     let minYear=trends[0].histData[0].year.substring(2);
     let maxYear=trends[0].histData[trends[0].histData.length-1].year.substring(2);
     
     let currentFiscalYearText = 'FY'+currentYear.substring(2)+' so far';
-    let longCurrentText= maxMonth+" 20"+currentYear.substring(2);
+    let longCurrentText= maxMonth+" "+calendarYear;
     let previousFiscalYearText = 'from FY'+previousYear;
     
       return (
@@ -89,12 +88,12 @@ allYearlyDispursements : allFederalDisbursements (sort: {fields: [Year], order: 
                       <td><Sparkline key={'spark'+index} data={trend.histData} /></td>
                 <td className={styles.alignRight}>
 
-		  {/*		      <PercentDifference key={'percent'+index}
-                    currentAmount={trend.current} 
-                    previousAmount={trend.previous} 
-                  />{' '+previousFiscalYearText}
-		   */}
-                </td>
+		      <PercentDifference key={'percent'+index}
+                  currentAmount={trend.current} 
+                  previousAmount={trend.previous} 
+                      />{' '+previousFiscalYearText}
+		  
+                  </td>
 		      </tr>
 		      </tbody>
 	      ))}
@@ -124,9 +123,9 @@ allYearlyDispursements : allFederalDisbursements (sort: {fields: [Year], order: 
 export default DisbursementTrends
 
 const getCurrentYear = (data) => {
-    console.debug(data);
+
     let r=data.reduce((max, p) => p.FiscalYear > max ? p.FiscalYear : max, data[0].FiscalYear );
-    console.debug(r);
+
     return r;
     
 }
@@ -236,11 +235,9 @@ const aggregateMonthlyData= (data,currentYear) => {
     ]
 
 //    let currentYear=2019;
-
     
     for(let ii=0; ii<data.length; ii++) {
 	let item=data[ii];
-	if(item.FiscalYear==currentYear){
     	if(item.Fund.match(/U.S. Treasury/))  {
 	    sumMonthlyData(item,r,0,currentYear); //sum into us treasury
 	} else if (item.Fund.match(/State/))  {
@@ -253,12 +250,19 @@ const aggregateMonthlyData= (data,currentYear) => {
 	    sumMonthlyData(item,r,4, currentYear); //sum into other
 	}
 	sumMonthlyData(item,r,5, currentYear); //sum into Total
-	}
+    
     }
     return r;
 }
 const sumMonthlyData= (item,r,index,currentYear) => {
-    r[index].current+=item.Disbursement;
+    let previousYear=currentYear-1;
+    if(item.FiscalYear==currentYear){
+	r[index].current+=item.Disbursement;
+    }
+    if(item.FiscalYear==previousYear){
+	r[index].previous+=item.Disbursement;
+    }
+    
  }
 
 const monthlyDate = (obj) => {

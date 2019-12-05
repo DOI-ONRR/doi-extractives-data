@@ -21,7 +21,7 @@ Our team’s goal is  to understand how people use our site and the questions th
 
 ## External users
 Digitally sign giving us permission to conduct the study. It just states your rights as a participant and that we won't be capturing any personally identifiable information
-Consent form: [Google form](https://goo.gl/forms/gAN773PPJOA0YiXL2)
+
 
 ## Interview questions
 Take some time to look around and tell us what you think this website is about? 

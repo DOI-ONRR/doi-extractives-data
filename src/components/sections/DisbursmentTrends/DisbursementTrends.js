@@ -49,12 +49,12 @@ allYearlyDispursements : allFederalDisbursements (sort: {fields: [Year], order: 
 
     let dataYearly=results.allYearlyDispursements.nodes;
     let currentMonthly=results.currentMonthlyDispursements.nodes.map(obj=> ({...obj, month:monthLookup(obj.Month), FiscalMonth: fiscalMonthLookup(obj.Month), date: monthlyDate(obj)}));
-    let currentTrends=aggregateMonthlyData(currentMonthly);
+
 
     let maxMonth=getMaxMonth(currentMonthly).toLocaleString(undefined, { month: 'long' });
 
     let currentYear=getCurrentYear(currentMonthly);
-   
+    let currentTrends=aggregateMonthlyData(currentMonthly,currentYear);   
     //    let currentYear=data[0].Fiscal_Year
     let previousYear=getPreviousYear(currentMonthly);
     let trends=aggregateData(dataYearly)
@@ -225,7 +225,7 @@ const fiscalMonthLookup= (month) => {
     }
 */   
 
-const aggregateMonthlyData= (data) => {
+const aggregateMonthlyData= (data,currentYear) => {
     let r=[
 	{fund: 'U.S. Treasury', current: 0, previous: 0, histSum: {}, histData:[] },
 	{fund: 'States & counties', current: 0, previous: 0, histSum:{}, histData:[] },
@@ -235,11 +235,12 @@ const aggregateMonthlyData= (data) => {
 	{fund: 'Total', current: 0, previous: 0, histSum: {},histData:[], className : 'strong'}
     ]
 
-    let currentYear=2019;
-    
+//    let currentYear=2019;
+
     
     for(let ii=0; ii<data.length; ii++) {
 	let item=data[ii];
+	if(item.FiscalYear==currentYear){
     	if(item.Fund.match(/U.S. Treasury/))  {
 	    sumMonthlyData(item,r,0,currentYear); //sum into us treasury
 	} else if (item.Fund.match(/State/))  {
@@ -252,7 +253,7 @@ const aggregateMonthlyData= (data) => {
 	    sumMonthlyData(item,r,4, currentYear); //sum into other
 	}
 	sumMonthlyData(item,r,5, currentYear); //sum into Total
-
+	}
     }
     return r;
 }

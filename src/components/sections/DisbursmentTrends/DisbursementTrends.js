@@ -58,7 +58,6 @@ allYearlyDispursements : allFederalDisbursements (sort: {fields: [Year], order: 
     //    let currentYear=data[0].Fiscal_Year
     let previousYear=getPreviousYear(currentMonthly);
     let trends=aggregateData(dataYearly)
-
     
     let minYear=trends[0].histData[0].year.substring(2);
     let maxYear=trends[0].histData[trends[0].histData.length-1].year.substring(2);
@@ -89,8 +88,8 @@ allYearlyDispursements : allFederalDisbursements (sort: {fields: [Year], order: 
                 <td className={styles.alignRight}>
 
 		      <PercentDifference key={'percent'+index}
-                  currentAmount={trend.current} 
-                  previousAmount={trend.previous} 
+                  currentAmount={currentTrends[index].current} 
+                  previousAmount={currentTrends[index].previous} 
                       />{' '+previousFiscalYearText}
 		  
                   </td>
@@ -236,18 +235,18 @@ const aggregateMonthlyData= (data,currentYear) => {
 
     let maxFiscalMonth=data.filter((item,i)=>(item.FiscalYear == 2020)).reduce((max,p)=>  p.FiscalMonth > max ? p.FiscalMonth : max, 0);
     
-//    let currentYear=2019;
+    //    let currentYear=2019;
 
     for(let ii=0; ii<data.length; ii++) {
 	let item=data[ii];
 	if(item.FiscalMonth <= maxFiscalMonth) {
-	    if(item.Fund.match(/U.S. Treasury/))  {
+	    if(item.Fund=='U.S. Treasury')  {
 		sumMonthlyData(item,r,0,currentYear); //sum into us treasury
 	    } else if (item.Fund.match(/State/))  {
 		sumMonthlyData(item,r,1, currentYear); //sum into state
 	    } else if (item.Fund.match(/Reclamation/))  {
 		sumMonthlyData(item,r,2, currentYear); //sum into Reclamation
-	    } else if (item.Fund.match(/Native American/))  {
+	    } else if (item.Fund.match(/Native American/) || item.Fund=='U.S. TreasuryAI' )  {
 		sumMonthlyData(item,r,3, currentYear); //sum into Native
 	    } else {
 		sumMonthlyData(item,r,4, currentYear); //sum into other
@@ -255,6 +254,8 @@ const aggregateMonthlyData= (data,currentYear) => {
 	    sumMonthlyData(item,r,5, currentYear); //sum into Total
 	}
     }
+
+
     return r;
 }
 const sumMonthlyData= (item,r,index,currentYear) => {

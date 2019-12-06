@@ -234,23 +234,26 @@ const aggregateMonthlyData= (data,currentYear) => {
 	{fund: 'Total', current: 0, previous: 0, histSum: {},histData:[], className : 'strong'}
     ]
 
-//    let currentYear=2019;
+    let maxFiscalMonth=data.filter((item,i)=>(item.FiscalYear == 2020)).reduce((max,p)=>  p.FiscalMonth > max ? p.FiscalMonth : max, 0);
     
+//    let currentYear=2019;
+
     for(let ii=0; ii<data.length; ii++) {
 	let item=data[ii];
-    	if(item.Fund.match(/U.S. Treasury/))  {
-	    sumMonthlyData(item,r,0,currentYear); //sum into us treasury
-	} else if (item.Fund.match(/State/))  {
-	    sumMonthlyData(item,r,1, currentYear); //sum into state
-	} else if (item.Fund.match(/Reclamation/))  {
-	    sumMonthlyData(item,r,2, currentYear); //sum into Reclamation
-	} else if (item.Fund.match(/Native American/))  {
-	    sumMonthlyData(item,r,3, currentYear); //sum into Native
-	} else {
-	    sumMonthlyData(item,r,4, currentYear); //sum into other
+	if(item.FiscalMonth <= maxFiscalMonth) {
+	    if(item.Fund.match(/U.S. Treasury/))  {
+		sumMonthlyData(item,r,0,currentYear); //sum into us treasury
+	    } else if (item.Fund.match(/State/))  {
+		sumMonthlyData(item,r,1, currentYear); //sum into state
+	    } else if (item.Fund.match(/Reclamation/))  {
+		sumMonthlyData(item,r,2, currentYear); //sum into Reclamation
+	    } else if (item.Fund.match(/Native American/))  {
+		sumMonthlyData(item,r,3, currentYear); //sum into Native
+	    } else {
+		sumMonthlyData(item,r,4, currentYear); //sum into other
+	    }
+	    sumMonthlyData(item,r,5, currentYear); //sum into Total
 	}
-	sumMonthlyData(item,r,5, currentYear); //sum into Total
-    
     }
     return r;
 }

@@ -1,8 +1,9 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 
-import Header from './header'
+import Drawer from './ResponsiveDrawer'
 import './layout.css'
 
 const Layout = ({ children }) => (
@@ -18,17 +19,14 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <div
-          style={{
-            margin: '0 auto',
-            maxWidth: 960,
-            padding: '0px 1.0875rem 1.45rem',
-            paddingTop: 0,
-          }}
-        >
+        <Helmet htmlAttributes={{ lang: 'en' }}>
+          <title>{data.site.siteMetadata.title}</title>
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+          <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+        </Helmet>
+        <Drawer title={data.site.siteMetadata.title}>
           {children}
-        </div>
+        </Drawer>
       </>
     )}
   />

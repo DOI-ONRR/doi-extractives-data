@@ -150,6 +150,11 @@ redirect_from: /how-it-works/production/
             <p><custom-link to="/how-it-works/historic-preservation-fund">Learn about the Historic Preservation Fund</custom-link></p>
           </div>
           <div>
+            <h4 class="h3 landing-heading"><custom-link to="/how-it-works/reclamation-fund">Reclamation Fund</custom-link></h4>
+            <p>The Reclamation Fund receives 40% of revenue from onshore natural resource extraction. The fund supports the construction, operation, and maintenance of irrigation and hydropower projects overseen by the U.S. Bureau of Reclamation.</p>
+            <p><custom-link to="/how-it-works/historic-preservation-fund">Learn about the Reclamation Fund</custom-link></p>
+          </div>
+          <div>
             <h4 class="h3 landing-heading"><custom-link to="/how-it-works/gomesa">Gulf of Mexico Energy Security Act (GOMESA)</custom-link></h4>
             <p>The Gulf of Mexico Energy Security Act (GOMESA) created a revenue-sharing model for gulf states. Four states receive a portion of the revenue from oil and gas production in the Gulf of Mexico.</p>
             <p><custom-link to="/how-it-works/gomesa">Learn about GOMESA</custom-link></p>

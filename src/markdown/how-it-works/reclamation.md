@@ -18,7 +18,7 @@ tags:
 
 > Congress created the Reclamation Fund in 1902. The fund now receives disbursements from onshore natural resources revenue, and largely supports irrigation and hydropower projects overseen by the [Bureau of Reclamation](https://www.usbr.gov/).
 
-The Reclamation Fund was created through [The Reclamation Act of 1902](https://www.usbr.gov/lc/region/programs/contracts/Legislation.pdf). The fund was originally designed to support irrigation projects in the western United States, and its funding came primarily from the sale of federal land. Over the years, Congress explored new revenue sources for the fund, and expanded the projects the fund was authorized to support.
+The Reclamation Fund was created through [The Reclamation Act of 1902](https://www.usbr.gov/lc/region/programs/contracts/Legislation.pdf). The fund was originally designed to support irrigation projects in the western United States, and its funding came primarily from the sale of federal land and timber. Over the years, Congress explored new revenue sources for the fund, and expanded the projects the fund was authorized to support.
 
 ## Funding priorities
 

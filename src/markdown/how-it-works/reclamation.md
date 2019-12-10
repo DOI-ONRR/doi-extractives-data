@@ -22,7 +22,7 @@ The Reclamation Fund was created through [The Reclamation Act of 1902](https://w
 
 ## Funding priorities
 
-Reclamation Fund disbursements go to the Bureau of Reclamation for the construction, operation, and administration of irrigation and hydropower projects. [The bureau has constructed more than 600 dams and reservoirs in the western U.S.](https://www.usbr.gov/main/about/mission.html) throughout its history.
+Reclamation Fund disbursements go to the Bureau of Reclamation for the construction, operation, and administration of irrigation and hydropower projects. [The bureau has constructed more than 600 dams and reservoirs](https://www.usbr.gov/main/about/mission.html) throughout its history.
 
 ## Authorization and funding
 

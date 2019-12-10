@@ -53,7 +53,7 @@ Between fiscal years 2003 and 2018, average appropriations from the Reclamation 
 
 Through legislation, Congress has redistributed some funds for a certain number of years. [Title X of the Omnibus Public Lands Management Act of 2009](https://www.congress.gov/bill/111th-congress/house-bill/146) will redirect $120 million per year between fiscal years 2020 and 2034 toward Native American water rights settlement projects.
 
-Congress has shown interest in redirecting additional funds, such as in [H.R. 2473](https://www.congress.gov/bill/116th-congress/house-bill/2473).
+Congress has shown interest in redirecting additional funds, such as described in [H.R. 2473](https://www.congress.gov/bill/116th-congress/house-bill/2473).
 
 ## Sources and further reading
 

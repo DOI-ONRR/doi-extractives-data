@@ -4404,11 +4404,11 @@ August,2019,U.S. TreasuryAI,Onshore,,,,Gas,Royalties,"2,318.75"
 August,2019,U.S. TreasuryAI,Onshore,,,,Oil,Royalties,218.75
 August,2019,U.S. TreasuryAI,Onshore,,,,Oil & Gas,Other Distributions,642.17
 August,2019,U.S. TreasuryAI,Onshore,,,,Oil,Royalties,954.11
-September,2019,BLM - Permit Processing and Improvement,Onshore,,,,Coal,Rents & Bonuses,"18,540.01"
-September,2019,BLM - Permit Processing and Improvement,Onshore,,,,Gilsonite,Rents & Bonuses,-71.25
-September,2019,BLM - Permit Processing and Improvement,Onshore,,,,Oil & Gas,Rents & Bonuses,"564,760.67"
-September,2019,BLM - Permit Processing and Improvement,Onshore,,,,Phosphate,Rents & Bonuses,"3,792.00"
-September,2019,BLM - Permit Processing and Improvement,Onshore,,,,Sodium,Rents & Bonuses,"1,570.54"
+September,2019,Lease Process Improvement (BLM),Onshore,,,,Coal,Rents & Bonuses,"18,540.01"
+September,2019,Lease Process Improvement (BLM),Onshore,,,,Gilsonite,Rents & Bonuses,-71.25
+September,2019,Lease Process Improvement (BLM),Onshore,,,,Oil & Gas,Rents & Bonuses,"564,760.67"
+September,2019,Lease Process Improvement (BLM),Onshore,,,,Phosphate,Rents & Bonuses,"3,792.00"
+September,2019,Lease Process Improvement (BLM),Onshore,,,,Sodium,Rents & Bonuses,"1,570.54"
 September,2019,BLM-Nav Petrol Reserve-2,Onshore,,,,Oil & Gas,Rents & Bonuses,"5,066.00"
 September,2019,Bureau of Land Management,Onshore,,,,Gas,Royalties,"23,678.08"
 September,2019,Bureau of Land Management,Onshore,,,,Oil,Royalties,"62,155.40"
@@ -4828,3 +4828,408 @@ September,2019,U.S. TreasuryAI,Onshore,,,,Gas,Royalties,"2,191.78"
 September,2019,U.S. TreasuryAI,Onshore,,,,Oil,Royalties,312.35
 September,2019,U.S. TreasuryAI,Onshore,,,,Oil & Gas,Other Distributions,9.46
 September,2019,U.S. TreasuryAI,Onshore,,,,Oil,Royalties,"1,246.68"
+October,2019,Lease Process Improvement (BLM),Onshore,,,,Coal,Rents & Bonuses,46581
+October,2019,Lease Process Improvement (BLM),Onshore,,,,Gas,Rents & Bonuses,3.19
+October,2019,Lease Process Improvement (BLM),Onshore,,,,Gilsonite,Rents & Bonuses,-68.25
+October,2019,Lease Process Improvement (BLM),Onshore,,,,Oil & Gas,Rents & Bonuses,576696.35
+October,2019,Lease Process Improvement (BLM),Onshore,,,,Phosphate,Rents & Bonuses,869.5
+October,2019,Lease Process Improvement (BLM),Onshore,,,,Sodium,Rents & Bonuses,38.86
+October,2019,Bureau of Land Management,Onshore,,,,Gas,Royalties,32412.75
+October,2019,Bureau of Land Management,Onshore,,,,Oil,Royalties,56486.2
+October,2019,Bureau of Land Management,Onshore,,,,Oil & Gas,Other Distributions,10829.64
+October,2019,Bureau of Ocean Energy Management,Offshore,,,,Oil & Gas,Rents & Bonuses,2665914.8
+October,2019,Bureau of Safety & Environmental Enforcement,Offshore,,,,,Other Distributions,1390814.41
+October,2019,Bureau of Safety & Environmental Enforcement,Offshore,,,,Oil & Gas,Rents & Bonuses,1160405.2
+October,2019,Fish & Wildlife,Onshore,,,,Gas,Royalties,23335.85
+October,2019,Fish & Wildlife,Onshore,,,,Oil,Royalties,116666.36
+October,2019,Fish & Wildlife,Onshore,,,,Oil & Gas,Other Distributions,-7962.69
+October,2019,Forest Service,Onshore,,,,Coal,Royalties,9146.26
+October,2019,Forest Service,Onshore,,,,Gas,Royalties,1670868.67
+October,2019,Forest Service,Onshore,,,,Hardrock,Other Distributions,-2.74
+October,2019,Forest Service,Onshore,,,,Lead/Zinc,Royalties,786438.19
+October,2019,Forest Service,Onshore,,,,Limestone,Royalties,5740.97
+October,2019,Forest Service,Onshore,,,,Oil,Royalties,13166582.8
+October,2019,Forest Service,Onshore,,,,Oil & Gas,Other Distributions,222265.42
+October,2019,Forest Service,Onshore,,,,Oil & Gas,Rents & Bonuses,82650.6
+October,2019,Forest Service,Onshore,,,,Oil & Gas,Royalties,1.11
+October,2019,Forest Service,Onshore,,,,Quartz,Royalties,2.74
+October,2019,Land & Water Conservation Fund,Offshore,GoMESA,,,Gas,Royalties,349589.48
+October,2019,Land & Water Conservation Fund,Offshore,GoMESA,,,Oil,Royalties,5788110.7
+October,2019,Land & Water Conservation Fund,Offshore,GoMESA,,,Oil & Gas,Rents & Bonuses,1778277.13
+October,2019,Land & Water Conservation Fund,Offshore,GoMESA,,,Oil & Gas,Royalties,162204.74
+October,2019,Native American Tribes & Allottees,Onshore,,,,,Other Distributions,3361770.04
+October,2019,Native American Tribes & Allottees,Onshore,,,,Coal,Rents & Bonuses,32617.28
+October,2019,Native American Tribes & Allottees,Onshore,,,,Coal,Royalties,8476518.36
+October,2019,Native American Tribes & Allottees,Onshore,,,,Gas,Other Distributions,-133.76
+October,2019,Native American Tribes & Allottees,Onshore,,,,Gas,Royalties,8562596.3
+October,2019,Native American Tribes & Allottees,Onshore,,,,Oil,Other Distributions,-5750.06
+October,2019,Native American Tribes & Allottees,Onshore,,,,Oil,Royalties,84426734.36
+October,2019,Native American Tribes & Allottees,Onshore,,,,Oil & Gas,Other Distributions,3281095.72
+October,2019,Native American Tribes & Allottees,Onshore,,,,Oil & Gas,Rents & Bonuses,388728.45
+October,2019,Native American Tribes & Allottees,Onshore,,,,Oil & Gas,Royalties,96266.08
+October,2019,Reclamation Fund,Onshore,,,,Coal,Other Distributions,-4020856.48
+October,2019,Reclamation Fund,Onshore,,,,Coal,Royalties,17167942.04
+October,2019,Reclamation Fund,Onshore,,,,Gas,Other Distributions,-76.02
+October,2019,Reclamation Fund,Onshore,,,,Gas,Royalties,19600083.96
+October,2019,Reclamation Fund,Onshore,,,,Gilsonite,Other Distributions,-135.6
+October,2019,Reclamation Fund,Onshore,,,,Gilsonite,Royalties,68104.43
+October,2019,Reclamation Fund,Onshore,,,,Oil,Other Distributions,-745.9
+October,2019,Reclamation Fund,Onshore,,,,Oil,Royalties,64236026.8
+October,2019,Reclamation Fund,Onshore,,,,Oil & Gas,Other Distributions,2523283.36
+October,2019,Reclamation Fund,Onshore,,,,Oil & Gas,Rents & Bonuses,2972701.61
+October,2019,Reclamation Fund,Onshore,,,,Oil & Gas,Royalties,1801975.48
+October,2019,Reclamation Fund,Onshore,,,,Phosphate,Other Distributions,5930.55
+October,2019,Reclamation Fund,Onshore,,,,Phosphate,Royalties,369553.87
+October,2019,Reclamation Fund,Onshore,,,,Potassium,Royalties,237742.15
+October,2019,Reclamation Fund,Onshore,,,,Sodium,Other Distributions,109.39
+October,2019,Reclamation Fund,Onshore,,,,Sodium,Royalties,1443126.93
+October,2019,State,Offshore,8(g),AK,,Oil,Royalties,67075.26
+October,2019,State,Offshore,8(g),AK,,Oil & Gas,Rents & Bonuses,23834.82
+October,2019,State,Offshore,8(g),AL,,,Royalties,-134850
+October,2019,State,Offshore,8(g),AL,,Gas,Royalties,130218
+October,2019,State,Offshore,8(g),AL,,Oil,Royalties,0.1
+October,2019,State,Offshore,8(g),AL,,Oil & Gas,Other Distributions,5881.67
+October,2019,State,Offshore,8(g),AL,,Oil & Gas,Royalties,-0.05
+October,2019,State,Offshore,8(g),CA,,Gas,Royalties,1245.59
+October,2019,State,Offshore,8(g),CA,,Oil,Royalties,118417.39
+October,2019,State,Offshore,8(g),CA,,Oil & Gas,Royalties,1.24
+October,2019,State,Offshore,8(g),LA,,,Royalties,-124665
+October,2019,State,Offshore,8(g),LA,,Gas,Royalties,98896.47
+October,2019,State,Offshore,8(g),LA,,Oil,Other Distributions,-811.12
+October,2019,State,Offshore,8(g),LA,,Oil,Royalties,152301.2
+October,2019,State,Offshore,8(g),LA,,Oil & Gas,Other Distributions,-10392.27
+October,2019,State,Offshore,8(g),MS,,,Royalties,65106
+October,2019,State,Offshore,8(g),MS,,Gas,Royalties,3276.23
+October,2019,State,Offshore,8(g),TX,,,Royalties,194409
+October,2019,State,Offshore,8(g),TX,,Gas,Royalties,2856.03
+October,2019,State,Offshore,8(g),TX,,Oil,Other Distributions,-0.22
+October,2019,State,Offshore,8(g),TX,,Oil,Royalties,130.81
+October,2019,State,Offshore,8(g),TX,,Oil & Gas,Other Distributions,3515.56
+October,2019,State,Onshore,Geothermal,CA,Imperial County,,Sequestration,2492.94
+October,2019,State,Onshore,Geothermal,CA,Imperial County,Geothermal,Rents & Bonuses,1939.5
+October,2019,State,Onshore,Geothermal,CA,Imperial County,Geothermal,Royalties,-1939.5
+October,2019,State,Onshore,Geothermal,CA,Inyo County,,Sequestration,5344.57
+October,2019,State,Onshore,Geothermal,CA,Inyo County,Geothermal,Royalties,366.2
+October,2019,State,Onshore,Geothermal,CA,Lake County,,Sequestration,43227.07
+October,2019,State,Onshore,Geothermal,CA,Lake County,Geothermal,Royalties,63475.51
+October,2019,State,Onshore,Geothermal,CA,Lassen County,,Sequestration,1214.22
+October,2019,State,Onshore,Geothermal,CA,Lassen County,Geothermal,Royalties,2555.06
+October,2019,State,Onshore,Geothermal,CA,Mono County,,Sequestration,5757.23
+October,2019,State,Onshore,Geothermal,CA,Mono County,Geothermal,Royalties,7576.8
+October,2019,State,Onshore,Geothermal,CA,Siskiyou County,,Sequestration,198.4
+October,2019,State,Onshore,Geothermal,CA,Sonoma County,,Sequestration,63942.47
+October,2019,State,Onshore,Geothermal,CA,Sonoma County,Geothermal,Other Distributions,9490
+October,2019,State,Onshore,Geothermal,CA,Sonoma County,Geothermal,Rents & Bonuses,1586.25
+October,2019,State,Onshore,Geothermal,CA,Sonoma County,Geothermal,Royalties,99041.08
+October,2019,State,Onshore,Geothermal,CO,Chaffee County,,Sequestration,37.2
+October,2019,State,Onshore,Geothermal,CO,Gunnison County,,Sequestration,776.92
+October,2019,State,Onshore,Geothermal,ID,Cassia County,,Sequestration,2891.11
+October,2019,State,Onshore,Geothermal,ID,Washington County,,Sequestration,1032.02
+October,2019,State,Onshore,Geothermal,NM,Dona Ana County,,Sequestration,631.61
+October,2019,State,Onshore,Geothermal,NM,Hidalgo County,,Sequestration,1094.05
+October,2019,State,Onshore,Geothermal,NV,Churchill County,,Sequestration,67649.45
+October,2019,State,Onshore,Geothermal,NV,Churchill County,Geothermal,Other Distributions,-1151.76
+October,2019,State,Onshore,Geothermal,NV,Churchill County,Geothermal,Rents & Bonuses,23834.5
+October,2019,State,Onshore,Geothermal,NV,Churchill County,Geothermal,Royalties,121684.3
+October,2019,State,Onshore,Geothermal,NV,Elko County,,Sequestration,76.65
+October,2019,State,Onshore,Geothermal,NV,Elko County,Geothermal,Other Distributions,2152.09
+October,2019,State,Onshore,Geothermal,NV,Esmeralda County,,Sequestration,1020.02
+October,2019,State,Onshore,Geothermal,NV,Eureka County,,Sequestration,1584.88
+October,2019,State,Onshore,Geothermal,NV,Eureka County,Geothermal,Other Distributions,925.16
+October,2019,State,Onshore,Geothermal,NV,Eureka County,Geothermal,Rents & Bonuses,800
+October,2019,State,Onshore,Geothermal,NV,Eureka County,Geothermal,Royalties,146.22
+October,2019,State,Onshore,Geothermal,NV,Humboldt County,,Sequestration,2089.76
+October,2019,State,Onshore,Geothermal,NV,Humboldt County,Geothermal,Rents & Bonuses,3691.97
+October,2019,State,Onshore,Geothermal,NV,Humboldt County,Geothermal,Royalties,3831.47
+October,2019,State,Onshore,Geothermal,NV,Lander County,,Sequestration,20473.15
+October,2019,State,Onshore,Geothermal,NV,Lander County,Geothermal,Rents & Bonuses,8602.92
+October,2019,State,Onshore,Geothermal,NV,Lander County,Geothermal,Royalties,26540.36
+October,2019,State,Onshore,Geothermal,NV,Lyon County,,Sequestration,883.81
+October,2019,State,Onshore,Geothermal,NV,Mineral County,,Sequestration,6851.26
+October,2019,State,Onshore,Geothermal,NV,Mineral County,Geothermal,Rents & Bonuses,17631.44
+October,2019,State,Onshore,Geothermal,NV,Mineral County,Geothermal,Royalties,5695.59
+October,2019,State,Onshore,Geothermal,NV,Nye County,,Sequestration,24.18
+October,2019,State,Onshore,Geothermal,NV,Pershing County,,Sequestration,1565.19
+October,2019,State,Onshore,Geothermal,NV,Pershing County,Geothermal,Rents & Bonuses,5828.75
+October,2019,State,Onshore,Geothermal,NV,Pershing County,Geothermal,Royalties,61.24
+October,2019,State,Onshore,Geothermal,NV,Washoe County,,Sequestration,2372.64
+October,2019,State,Onshore,Geothermal,NV,Washoe County,Geothermal,Rents & Bonuses,160
+October,2019,State,Onshore,Geothermal,NV,Washoe County,Geothermal,Royalties,-160
+October,2019,State,Onshore,Geothermal,OR,Deschutes County,,Sequestration,970.75
+October,2019,State,Onshore,Geothermal,UT,Beaver County,,Sequestration,8401.65
+October,2019,State,Onshore,Geothermal,UT,Beaver County,Geothermal,Royalties,9783.02
+October,2019,State,Onshore,Geothermal,UT,Iron County,,Sequestration,17.75
+October,2019,State,Onshore,Geothermal,UT,Millard County,,Sequestration,1117.64
+October,2019,State,Onshore,Geothermal,UT,Millard County,Geothermal,Royalties,732.42
+October,2019,State,Onshore,Geothermal,WA,Whatcom County,,Sequestration,130.77
+October,2019,State,Onshore,State,AK,,,Other Distributions,0
+October,2019,State,Onshore,State,AK,,,Rents & Bonuses,0
+October,2019,State,Onshore,State,AK,,,Royalties,-11135.58
+October,2019,State,Onshore,State,AK,,,Sequestration,395806.41
+October,2019,State,Onshore,State,AK,,Gas,Royalties,344310.5
+October,2019,State,Onshore,State,AK,,Oil,Other Distributions,24600.46
+October,2019,State,Onshore,State,AK,,Oil,Royalties,1540874.19
+October,2019,State,Onshore,State,AK,,Oil & Gas,Other Distributions,30195.75
+October,2019,State,Onshore,State,AK,,Oil & Gas,Rents & Bonuses,758937.8
+October,2019,State,Onshore,State,AL,,,Royalties,-41.32
+October,2019,State,Onshore,State,AL,,,Sequestration,166409.8
+October,2019,State,Onshore,State,AL,,Gas,Royalties,2443.71
+October,2019,State,Onshore,State,AL,,Oil,Royalties,3801.38
+October,2019,State,Onshore,State,AL,,Oil & Gas,Other Distributions,67.36
+October,2019,State,Onshore,State,AL,,Oil & Gas,Rents & Bonuses,82
+October,2019,State,Onshore,State,AL,,Oil & Gas,Royalties,16.72
+October,2019,State,Onshore,State,AR,,,Other Distributions,6.68
+October,2019,State,Onshore,State,AR,,,Royalties,-737.79
+October,2019,State,Onshore,State,AR,,,Sequestration,24828.07
+October,2019,State,Onshore,State,AR,,Gas,Royalties,50771.4
+October,2019,State,Onshore,State,AR,,Hardrock,Other Distributions,-0.74
+October,2019,State,Onshore,State,AR,,Oil,Royalties,1.82
+October,2019,State,Onshore,State,AR,,Oil & Gas,Other Distributions,3676.43
+October,2019,State,Onshore,State,AR,,Oil & Gas,Rents & Bonuses,4385.27
+October,2019,State,Onshore,State,AR,,Quartz,Royalties,0.74
+October,2019,State,Onshore,State,AZ,,,Sequestration,466.35
+October,2019,State,Onshore,State,CA,,,Other Distributions,162.15
+October,2019,State,Onshore,State,CA,,,Royalties,-55905.48
+October,2019,State,Onshore,State,CA,,,Sequestration,2556776.62
+October,2019,State,Onshore,State,CA,,Gas,Royalties,11876.46
+October,2019,State,Onshore,State,CA,,Geothermal,Other Distributions,18980
+October,2019,State,Onshore,State,CA,,Geothermal,Rents & Bonuses,7051.5
+October,2019,State,Onshore,State,CA,,Geothermal,Royalties,349448.28
+October,2019,State,Onshore,State,CA,,Oil,Royalties,2331146.73
+October,2019,State,Onshore,State,CA,,Oil & Gas,Other Distributions,2022.76
+October,2019,State,Onshore,State,CA,,Oil & Gas,Rents & Bonuses,1425
+October,2019,State,Onshore,State,CA,,Sodium,Other Distributions,0.2
+October,2019,State,Onshore,State,CA,,Sodium,Rents & Bonuses,38.87
+October,2019,State,Onshore,State,CA,,Sodium,Royalties,73284.1
+October,2019,State,Onshore,State,CO,,,Other Distributions,1388.3
+October,2019,State,Onshore,State,CO,,,Royalties,-117472.68
+October,2019,State,Onshore,State,CO,,,Sequestration,6304497.09
+October,2019,State,Onshore,State,CO,,Coal,Other Distributions,1915.67
+October,2019,State,Onshore,State,CO,,Coal,Rents & Bonuses,9867
+October,2019,State,Onshore,State,CO,,Coal,Royalties,1053962.71
+October,2019,State,Onshore,State,CO,,Gas,Royalties,1676546.01
+October,2019,State,Onshore,State,CO,,Oil,Royalties,1381939.43
+October,2019,State,Onshore,State,CO,,Oil & Gas,Other Distributions,-401630.61
+October,2019,State,Onshore,State,CO,,Oil & Gas,Rents & Bonuses,29736.95
+October,2019,State,Onshore,State,CO,,Oil & Gas,Royalties,2025914.1
+October,2019,State,Onshore,State,CO,,Sodium,Royalties,96410.08
+October,2019,State,Onshore,State,FL,,,Royalties,-478.22
+October,2019,State,Onshore,State,FL,,,Sequestration,37008.49
+October,2019,State,Onshore,State,FL,,Phosphate,Other Distributions,91.5
+October,2019,State,Onshore,State,FL,,Phosphate,Rents & Bonuses,30.5
+October,2019,State,Onshore,State,FL,,Phosphate,Royalties,23789.03
+October,2019,State,Onshore,State,ID,,,Royalties,-8926.28
+October,2019,State,Onshore,State,ID,,,Sequestration,196996.22
+October,2019,State,Onshore,State,ID,,Phosphate,Other Distributions,7321.84
+October,2019,State,Onshore,State,ID,,Phosphate,Rents & Bonuses,839
+October,2019,State,Onshore,State,ID,,Phosphate,Royalties,438153.36
+October,2019,State,Onshore,State,IL,,,Sequestration,-418.91
+October,2019,State,Onshore,State,IL,,Oil,Royalties,6932.12
+October,2019,State,Onshore,State,IL,,Oil & Gas,Other Distributions,168
+October,2019,State,Onshore,State,KS,,,Other Distributions,2.27
+October,2019,State,Onshore,State,KS,,,Royalties,-1112.03
+October,2019,State,Onshore,State,KS,,,Sequestration,37924.25
+October,2019,State,Onshore,State,KS,,Gas,Royalties,31450.28
+October,2019,State,Onshore,State,KS,,Oil,Royalties,26873.41
+October,2019,State,Onshore,State,KS,,Oil & Gas,Other Distributions,-3602.5
+October,2019,State,Onshore,State,KS,,Oil & Gas,Rents & Bonuses,877
+October,2019,State,Onshore,State,KS,,Oil & Gas,Royalties,3.37
+October,2019,State,Onshore,State,KY,,,Sequestration,-65.29
+October,2019,State,Onshore,State,KY,,Gas,Royalties,269.32
+October,2019,State,Onshore,State,KY,,Limestone,Royalties,2.54
+October,2019,State,Onshore,State,KY,,Oil & Gas,Other Distributions,834.79
+October,2019,State,Onshore,State,LA,,,Other Distributions,14.08
+October,2019,State,Onshore,State,LA,,,Royalties,-2997.06
+October,2019,State,Onshore,State,LA,,,Sequestration,80052.28
+October,2019,State,Onshore,State,LA,,Gas,Royalties,79672.98
+October,2019,State,Onshore,State,LA,,Oil,Royalties,68536.03
+October,2019,State,Onshore,State,LA,,Oil & Gas,Other Distributions,3598.43
+October,2019,State,Onshore,State,LA,,Oil & Gas,Rents & Bonuses,17134.94
+October,2019,State,Onshore,State,MI,,,Other Distributions,3253.33
+October,2019,State,Onshore,State,MI,,,Royalties,-1628.06
+October,2019,State,Onshore,State,MI,,,Sequestration,-2596.98
+October,2019,State,Onshore,State,MI,,Gas,Royalties,64641.11
+October,2019,State,Onshore,State,MI,,Oil,Royalties,6671.9
+October,2019,State,Onshore,State,MI,,Oil & Gas,Other Distributions,2569.02
+October,2019,State,Onshore,State,MI,,Oil & Gas,Rents & Bonuses,7520.81
+October,2019,State,Onshore,State,MN,,,Sequestration,21.36
+October,2019,State,Onshore,State,MO,,,Sequestration,-15466.61
+October,2019,State,Onshore,State,MO,,Lead/Zinc,Royalties,262145.97
+October,2019,State,Onshore,State,MS,,,Royalties,-17.58
+October,2019,State,Onshore,State,MS,,,Sequestration,-2966.18
+October,2019,State,Onshore,State,MS,,Gas,Royalties,554.45
+October,2019,State,Onshore,State,MS,,Oil,Royalties,37464.14
+October,2019,State,Onshore,State,MS,,Oil & Gas,Other Distributions,29.38
+October,2019,State,Onshore,State,MS,,Oil & Gas,Rents & Bonuses,33440.5
+October,2019,State,Onshore,State,MT,,,Other Distributions,0.64
+October,2019,State,Onshore,State,MT,,,Royalties,-52740.95
+October,2019,State,Onshore,State,MT,,,Sequestration,1717734.51
+October,2019,State,Onshore,State,MT,,Coal,Other Distributions,2826.97
+October,2019,State,Onshore,State,MT,,Coal,Rents & Bonuses,4138.5
+October,2019,State,Onshore,State,MT,,Coal,Royalties,2313644.68
+October,2019,State,Onshore,State,MT,,Gas,Other Distributions,-87.52
+October,2019,State,Onshore,State,MT,,Gas,Royalties,104181.41
+October,2019,State,Onshore,State,MT,,Oil,Royalties,164379.46
+October,2019,State,Onshore,State,MT,,Oil & Gas,Other Distributions,47003.06
+October,2019,State,Onshore,State,MT,,Oil & Gas,Rents & Bonuses,961
+October,2019,State,Onshore,State,MT,,Oil & Gas,Royalties,0
+October,2019,State,Onshore,State,ND,,,Other Distributions,248.1
+October,2019,State,Onshore,State,ND,,,Royalties,-94605.86
+October,2019,State,Onshore,State,ND,,,Sequestration,3081395.75
+October,2019,State,Onshore,State,ND,,Coal,Other Distributions,159.13
+October,2019,State,Onshore,State,ND,,Coal,Royalties,67190.05
+October,2019,State,Onshore,State,ND,,Gas,Royalties,409020.29
+October,2019,State,Onshore,State,ND,,Oil,Royalties,7994207
+October,2019,State,Onshore,State,ND,,Oil & Gas,Other Distributions,26151.91
+October,2019,State,Onshore,State,ND,,Oil & Gas,Rents & Bonuses,-1049898.25
+October,2019,State,Onshore,State,NE,,,Royalties,-15.29
+October,2019,State,Onshore,State,NE,,,Sequestration,1341.15
+October,2019,State,Onshore,State,NE,,Oil,Royalties,764.48
+October,2019,State,Onshore,State,NM,,,Other Distributions,358.23
+October,2019,State,Onshore,State,NM,,,Royalties,-1377409.77
+October,2019,State,Onshore,State,NM,,,Sequestration,70267588.48
+October,2019,State,Onshore,State,NM,,Coal,Royalties,302010.12
+October,2019,State,Onshore,State,NM,,Gas,Royalties,10370408.43
+October,2019,State,Onshore,State,NM,,Oil,Other Distributions,-423.31
+October,2019,State,Onshore,State,NM,,Oil,Royalties,55206532.53
+October,2019,State,Onshore,State,NM,,Oil & Gas,Other Distributions,2600200.74
+October,2019,State,Onshore,State,NM,,Oil & Gas,Rents & Bonuses,30598.81
+October,2019,State,Onshore,State,NM,,Oil & Gas,Royalties,43260.54
+October,2019,State,Onshore,State,NM,,Potassium,Royalties,290310.29
+October,2019,State,Onshore,State,NM,,Sodium,Royalties,27590.45
+October,2019,State,Onshore,State,NV,,,Other Distributions,41.23
+October,2019,State,Onshore,State,NV,,,Royalties,-14557.25
+October,2019,State,Onshore,State,NV,,,Sequestration,267143.89
+October,2019,State,Onshore,State,NV,,Geothermal,Other Distributions,3388.86
+October,2019,State,Onshore,State,NV,,Geothermal,Rents & Bonuses,97909.21
+October,2019,State,Onshore,State,NV,,Geothermal,Royalties,309947.61
+October,2019,State,Onshore,State,NV,,Oil,Royalties,162761.84
+October,2019,State,Onshore,State,NV,,Oil & Gas,Other Distributions,239.02
+October,2019,State,Onshore,State,NV,,Oil & Gas,Rents & Bonuses,153616.25
+October,2019,State,Onshore,State,OH,,,Royalties,-0.76
+October,2019,State,Onshore,State,OH,,,Sequestration,-771.45
+October,2019,State,Onshore,State,OH,,Gas,Royalties,10774.93
+October,2019,State,Onshore,State,OH,,Oil,Royalties,2930.77
+October,2019,State,Onshore,State,OH,,Oil & Gas,Other Distributions,1045
+October,2019,State,Onshore,State,OH,,Oil & Gas,Rents & Bonuses,38.63
+October,2019,State,Onshore,State,OK,,,Other Distributions,195.42
+October,2019,State,Onshore,State,OK,,,Royalties,-10036.37
+October,2019,State,Onshore,State,OK,,,Sequestration,149286.98
+October,2019,State,Onshore,State,OK,,Gas,Royalties,298823.82
+October,2019,State,Onshore,State,OK,,Hardrock,Other Distributions,-0.17
+October,2019,State,Onshore,State,OK,,Oil,Royalties,238967.06
+October,2019,State,Onshore,State,OK,,Oil & Gas,Other Distributions,-17779.51
+October,2019,State,Onshore,State,OK,,Oil & Gas,Rents & Bonuses,15.5
+October,2019,State,Onshore,State,OK,,Quartz,Royalties,0.17
+October,2019,State,Onshore,State,OR,,,Sequestration,1805.64
+October,2019,State,Onshore,State,PA,,,Sequestration,-9.71
+October,2019,State,Onshore,State,PA,,Gas,Royalties,113.74
+October,2019,State,Onshore,State,PA,,Oil & Gas,Other Distributions,50.76
+October,2019,State,Onshore,State,SD,,,Other Distributions,1.05
+October,2019,State,Onshore,State,SD,,,Royalties,-666.27
+October,2019,State,Onshore,State,SD,,,Sequestration,27237.1
+October,2019,State,Onshore,State,SD,,Gas,Royalties,186.12
+October,2019,State,Onshore,State,SD,,Oil,Royalties,27307.73
+October,2019,State,Onshore,State,SD,,Oil & Gas,Other Distributions,3899.58
+October,2019,State,Onshore,State,SD,,Oil & Gas,Rents & Bonuses,1920
+October,2019,State,Onshore,State,TX,,,Royalties,-724.29
+October,2019,State,Onshore,State,TX,,,Sequestration,7658.25
+October,2019,State,Onshore,State,TX,,Gas,Royalties,270334.79
+October,2019,State,Onshore,State,TX,,Oil,Royalties,13733.97
+October,2019,State,Onshore,State,TX,,Oil & Gas,Other Distributions,7146.28
+October,2019,State,Onshore,State,TX,,Oil & Gas,Rents & Bonuses,9402.71
+October,2019,State,Onshore,State,TX,,Oil & Gas,Royalties,496.9
+October,2019,State,Onshore,State,UT,,,Other Distributions,59.31
+October,2019,State,Onshore,State,UT,,,Royalties,-155309.59
+October,2019,State,Onshore,State,UT,,,Sequestration,3947417.37
+October,2019,State,Onshore,State,UT,,Coal,Rents & Bonuses,15349.5
+October,2019,State,Onshore,State,UT,,Coal,Royalties,1021992.25
+October,2019,State,Onshore,State,UT,,Gas,Royalties,907122.56
+October,2019,State,Onshore,State,UT,,Geothermal,Royalties,21030.97
+October,2019,State,Onshore,State,UT,,Gilsonite,Other Distributions,-169.5
+October,2019,State,Onshore,State,UT,,Gilsonite,Rents & Bonuses,-68.25
+October,2019,State,Onshore,State,UT,,Gilsonite,Royalties,85130.56
+October,2019,State,Onshore,State,UT,,Oil,Royalties,2029232.5
+October,2019,State,Onshore,State,UT,,Oil & Gas,Other Distributions,18028.5
+October,2019,State,Onshore,State,UT,,Oil & Gas,Rents & Bonuses,3663516.01
+October,2019,State,Onshore,State,UT,,Oil & Gas,Royalties,4408.41
+October,2019,State,Onshore,State,UT,,Potassium,Royalties,6868
+October,2019,State,Onshore,State,UT,,Sodium,Royalties,53.24
+October,2019,State,Onshore,State,VA,,,Sequestration,-125.71
+October,2019,State,Onshore,State,VA,,Gas,Royalties,248.75
+October,2019,State,Onshore,State,VA,,Limestone,Royalties,1862.1
+October,2019,State,Onshore,State,VA,,Oil & Gas,Other Distributions,19.76
+October,2019,State,Onshore,State,WA,,,Sequestration,307.41
+October,2019,State,Onshore,State,WV,,,Sequestration,-4909.21
+October,2019,State,Onshore,State,WV,,Gas,Royalties,439.81
+October,2019,State,Onshore,State,WV,,Limestone,Royalties,49.01
+October,2019,State,Onshore,State,WV,,Oil & Gas,Other Distributions,82718.15
+October,2019,State,Onshore,State,WY,,,Other Distributions,1190.89
+October,2019,State,Onshore,State,WY,,,Royalties,-892741.5
+October,2019,State,Onshore,State,WY,,,Sequestration,37377437.59
+October,2019,State,Onshore,State,WY,,Coal,Other Distributions,413
+October,2019,State,Onshore,State,WY,,Coal,Rents & Bonuses,17226
+October,2019,State,Onshore,State,WY,,Coal,Royalties,16697388.57
+October,2019,State,Onshore,State,WY,,Gas,Rents & Bonuses,3.2
+October,2019,State,Onshore,State,WY,,Gas,Royalties,10555489.19
+October,2019,State,Onshore,State,WY,,Oil,Other Distributions,-509.13
+October,2019,State,Onshore,State,WY,,Oil,Royalties,13244297.65
+October,2019,State,Onshore,State,WY,,Oil & Gas,Other Distributions,879182.47
+October,2019,State,Onshore,State,WY,,Oil & Gas,Rents & Bonuses,1458344.35
+October,2019,State,Onshore,State,WY,,Oil & Gas,Royalties,178376.01
+October,2019,State,Onshore,State,WY,,Sodium,Other Distributions,136.61
+October,2019,State,Onshore,State,WY,,Sodium,Rents & Bonuses,154.6
+October,2019,State,Onshore,State,WY,,Sodium,Royalties,1606572.45
+October,2019,U.S. Treasury,Onshore,,,,,Other Distributions,11692.88
+October,2019,U.S. Treasury,Onshore,,,,,Other Distributions,41352.79
+October,2019,U.S. Treasury,Offshore,,,,,Other Distributions,0
+October,2019,U.S. Treasury,Offshore,,,,Oil & Gas,Other Distributions,352638.09
+October,2019,U.S. Treasury,Offshore,GoMESA,,,Oil & Gas,Rents & Bonuses,69365.91
+October,2019,U.S. Treasury,Offshore,GoMESA,,,Oil & Gas,Royalties,3922.36
+October,2019,U.S. Treasury,Onshore,,,,Coal,Other Distributions,758.62
+October,2019,U.S. Treasury,Onshore,,,,Geothermal,Other Distributions,-1422.75
+October,2019,U.S. Treasury,Onshore,,,,Oil & Gas,Other Distributions,110776.37
+October,2019,U.S. Treasury,Onshore,,,,Phosphate,Other Distributions,103.07
+October,2019,U.S. Treasury,Onshore,,,,Sodium,Other Distributions,27.33
+October,2019,U.S. Treasury,Offshore,,,,,Other Distributions,34804.41
+October,2019,U.S. Treasury,Onshore,,,,Clay,Rents & Bonuses,160
+October,2019,U.S. Treasury,Onshore,,,,Coal,Rents & Bonuses,8106
+October,2019,U.S. Treasury,Onshore,,,,Geothermal,Rents & Bonuses,53760.37
+October,2019,U.S. Treasury,Onshore,,,,Oil & Gas,Rents & Bonuses,1159781.24
+October,2019,U.S. Treasury,Offshore,,,,Oil & Gas,Rents & Bonuses,281394.21
+October,2019,U.S. Treasury,Offshore,,,,Wind,Rents & Bonuses,494250
+October,2019,U.S. Treasury,Offshore,GoMESA,,,Oil & Gas,Rents & Bonuses,7021268.39
+October,2019,U.S. Treasury,Offshore,,,,Gas,Other Distributions,8302.83
+October,2019,U.S. Treasury,Offshore,,,,Gas,Royalties,13991743.28
+October,2019,U.S. Treasury,Offshore,,,,Oil,Other Distributions,-424623.1
+October,2019,U.S. Treasury,Offshore,,,,Oil,Royalties,337779292.9
+October,2019,U.S. Treasury,Offshore,,,,Oil & Gas,Other Distributions,5952042.31
+October,2019,U.S. Treasury,Offshore,,,,Oil & Gas,Royalties,6.1
+October,2019,U.S. Treasury,Offshore,GoMESA,,,Gas,Royalties,1398360.7
+October,2019,U.S. Treasury,Offshore,GoMESA,,,Oil,Royalties,23152446.2
+October,2019,U.S. Treasury,Offshore,GoMESA,,,Oil & Gas,Royalties,644896.79
+October,2019,U.S. Treasury,Onshore,,,,,Other Distributions,-6921.68
+October,2019,U.S. Treasury,Onshore,,,,,Royalties,2799259.98
+October,2019,U.S. Treasury,Onshore,,,,Clay,Other Distributions,480
+October,2019,U.S. Treasury,Onshore,,,,Clay,Royalties,359.65
+October,2019,U.S. Treasury,Onshore,,,,Coal,Other Distributions,-1005893.88
+October,2019,U.S. Treasury,Onshore,,,,Coal,Royalties,4321856.25
+October,2019,U.S. Treasury,Onshore,,,,Gas,Other Distributions,-17.08
+October,2019,U.S. Treasury,Onshore,,,,Gas,Royalties,5604981.09
+October,2019,U.S. Treasury,Onshore,,,,Geothermal,Other Distributions,14287.18
+October,2019,U.S. Treasury,Onshore,,,,Geothermal,Royalties,345934.86
+October,2019,U.S. Treasury,Onshore,,,,Gilsonite,Other Distributions,-33.9
+October,2019,U.S. Treasury,Onshore,,,,Gilsonite,Royalties,17026.11
+October,2019,U.S. Treasury,Onshore,,,,Oil,Other Distributions,24414
+October,2019,U.S. Treasury,Onshore,,,,Oil,Royalties,19689960.02
+October,2019,U.S. Treasury,Onshore,,,,Oil & Gas,Other Distributions,536810.52
+October,2019,U.S. Treasury,Onshore,,,,Oil & Gas,Rents & Bonuses,-278592.4
+October,2019,U.S. Treasury,Onshore,,,,Oil & Gas,Royalties,450657.31
+October,2019,U.S. Treasury,Onshore,,,,Phosphate,Other Distributions,1379.6
+October,2019,U.S. Treasury,Onshore,,,,Phosphate,Royalties,92388.49
+October,2019,U.S. Treasury,Onshore,,,,Potassium,Royalties,59651.79
+October,2019,U.S. Treasury,Onshore,,,,Sodium,Royalties,360783.88
+October,2019,U.S. TreasuryAI,Onshore,,,,Gas,Royalties,2583.09
+October,2019,U.S. TreasuryAI,Onshore,,,,Oil,Royalties,301.67
+October,2019,U.S. TreasuryAI,Onshore,,,,Oil & Gas,Other Distributions,2.65
+October,2019,U.S. TreasuryAI,Onshore,,,,Oil,Royalties,970.06

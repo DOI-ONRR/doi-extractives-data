@@ -151,7 +151,7 @@ redirect_from: /how-it-works/production/
           </div>
           <div>
             <h4 class="h3 landing-heading"><custom-link to="/how-it-works/reclamation-fund">Reclamation Fund</custom-link></h4>
-            <p>The Reclamation Fund receives revenue from onshore natural resource extraction. The fund supports the construction, operation, and maintenance of irrigation and hydropower projects overseen by the Bureau of Reclamation.</p>
+            <p>The Reclamation Fund receives revenue from onshore natural resources extraction. The fund supports the construction, operation, and maintenance of irrigation and hydropower projects.</p>
             <p><custom-link to="/how-it-works/historic-preservation-fund">Learn about the Reclamation Fund</custom-link></p>
           </div>
           <div>

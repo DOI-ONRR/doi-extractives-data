@@ -64,7 +64,7 @@ Congress has shown interest in redirecting additional funds, such as described i
 - [Congressional Research Service, The Reclamation Fund (May 21, 2019)](https://fas.org/sgp/crs/misc/IF10042.pdf)
 
 ### Legislation
-- [30 U.S.C. 191 - Disposition of moneys received](https://www.govinfo.gov/app/details/USCODE-2011-title30/USCODE-2011-title30-chap3A-subchapI-sec191)
-- [43 U.S.C. 391 - Establishment of “reclamation fund”](https://www.govinfo.gov/app/details/USCODE-2005-title43/USCODE-2005-title43-chap12-subchapII-sec391)
-- [43 U.S.C. 392a - Payment into reclamation fund of receipts from irrigation projects; transfer of power revenues to General Treasury after repayment of construction costs](https://www.govinfo.gov/app/details/USCODE-2004-title43/USCODE-2004-title43-chap12-subchapII-sec392a)
-- [30 U.S.C. § 181 et seq. - Mineral Leasing Act of 1920](https://www.blm.gov/or/regulations/files/mla_1920_amendments1.pdf)
+- [Disposition of moneys received (30 U.S.C. § 191)](https://www.govinfo.gov/app/details/USCODE-2011-title30/USCODE-2011-title30-chap3A-subchapI-sec191)
+- [Establishment of “reclamation fund” (43 U.S.C. § 391)](https://www.govinfo.gov/app/details/USCODE-2005-title43/USCODE-2005-title43-chap12-subchapII-sec391)
+- [Payment into reclamation fund of receipts from irrigation projects; transfer of power revenues to General Treasury after repayment of construction costs (43 U.S.C. § 392a)](https://www.govinfo.gov/app/details/USCODE-2004-title43/USCODE-2004-title43-chap12-subchapII-sec392a)
+- [Mineral Leasing Act of 1920 (30 U.S.C. § 181 et seq.)](https://www.blm.gov/or/regulations/files/mla_1920_amendments1.pdf)

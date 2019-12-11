@@ -31,7 +31,7 @@ The fund was originally designed to be revolving. That is, after initial funding
 - federal land and timber sales
 - payments from reclamation projects and water sales
 
-That funding model didn't pan out, and Congress later directed additional revenue to the fund, including 40% of onshore royalties from natural resource leasing on federal land, except in Alaska (see section 35 of the [Mineral Leasing Act of 1920](https://www.blm.gov/or/regulations/files/mla_1920_amendments1.pdf)).
+That funding model didn't pan out, and Congress later directed additional revenue to the fund, including 40% of onshore revenue from natural resource leasing on federal land, except in Alaska.
 
 Funding now comes from four major revenue sources:
 
@@ -67,7 +67,3 @@ Congress has shown interest in redirecting additional funds, such as described i
 - [30 U.S.C. 191 - Disposition of moneys received](https://www.govinfo.gov/app/details/USCODE-2011-title30/USCODE-2011-title30-chap3A-subchapI-sec191)
 - [43 U.S.C. 391 - Establishment of “reclamation fund”](https://www.govinfo.gov/app/details/USCODE-2005-title43/USCODE-2005-title43-chap12-subchapII-sec391)
 - [43 U.S.C. 392a - Payment into reclamation fund of receipts from irrigation projects; transfer of power revenues to General Treasury after repayment of construction costs](https://www.govinfo.gov/app/details/USCODE-2004-title43/USCODE-2004-title43-chap12-subchapII-sec392a)
-- [Omnibus Public Land Management Act of 2009](https://www.govinfo.gov/app/details/PLAW-111publ11)
-
-### Proposed legislation
-- [H.R.2473 - Securing Access for the central Valley and Enhancing (SAVE) Water Resources Act](https://www.congress.gov/bill/116th-congress/house-bill/2473)

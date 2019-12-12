@@ -20,7 +20,7 @@ Prototype: https://vavl06.axshare.com/#g=1&p=start_1
 
 # Who we interviewed
 We interviewed 2 domain learners, 1 domain learner/storyteller, 1 question answerer/storyteller, and 1 agenda supporter.
-![Image of User Types on a Matrix](https://github.com/ONRR/doi-extractives-data/blob/research/research/20_fledglingfox/KeyFactsUsers.PNG)
+![Image of User Types on a Matrix](https://github.com/ONRR/doi-extractives-data/blob/research/research/20_fledglingfox_jun2018_keyfacts/KeyFactsUsers.PNG)
 # Findings summary
 Determine the best approach for presenting **key facts** on the website.
 * Users liked seeing trends over time and picked the options that showed trends.

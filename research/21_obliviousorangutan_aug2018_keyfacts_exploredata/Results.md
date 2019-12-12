@@ -1,6 +1,6 @@
 # Who We Interviewed
 5 Domain Learners, 4 General Public, 2 Agenda Supporters, 1 Storyteller, 1 Question Answerer
-![Users interviewed on a matrix by type](https://github.com/ONRR/doi-extractives-data/blob/research/research/21_obliviousorangutan/KeyFactsExploreDataUsers.PNG)
+![Users interviewed on a matrix by type](https://github.com/ONRR/doi-extractives-data/blob/research/research/21_obliviousorangutan_aug2018_keyfacts_exploredata/KeyFactsExploreDataUsers.PNG)
 
 # What We Tested
 Prototype: https://1rn7bf.axshare.com/start_2.html

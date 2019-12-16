@@ -19,11 +19,12 @@ import { glossaryTermSelected as glossaryTermSelectedAction } from '../../../sta
 
 const Header = props => {
   let defaultNavClassNames = { 'className': ' header-nav_item ' }
-  let homeClassNames = { 'className': ' header-nav_item ' }
-  let aboutClassNames = { 'className': ' header-nav_item ' }
+  let homeClassNames = { 'className': ' header-nav_item_link_top ' }
+  let aboutClassNames = { 'className': ' header-nav_item_link_top ' }
   let howItWorksClassNames = { 'className': ' header-nav_item ' }
   let exploreClassNames = { 'className': ' header-nav_item ' }
   let downloadClassNames = { 'className': ' header-nav_item_link_top ' }
+  let queryClassNames = { 'className': ' header-nav_item ' }
 
   if (typeof location !== 'undefined' && location) {
     let prefix = __PATH_PREFIX__
@@ -42,6 +43,9 @@ const Header = props => {
     }
     else if (location.pathname.includes('/explore')) {
       exploreClassNames.className += ' active '
+    }
+    else if (location.pathname.includes('/query-data')) {
+      queryClassNames.className += ' active '
     }
     else if (location.pathname.includes('/archive')) {
       aboutClassNames.className
@@ -66,24 +70,31 @@ const Header = props => {
           <ul className="header-nav_top">
             <li style={{ width: '200px' }} className="header-nav_item_top">{' '}</li>
             <li className="header-nav_item_top">
-              <a href="#" onClick={() => props.glossaryTermSelected('', true)} className="header-nav_item_link_top js-glossary-toggle" alt="this is the glossary drawer">Glossary</a>
+              <Link {...homeClassNames} to="/">Home </Link>
             </li>
             <li className="header-nav_item_top">
-              <Link {...downloadClassNames} to="/downloads/">Download data </Link>
-            </li> <li className="header-nav_item_top">
+              <Link {...aboutClassNames} to="/">About </Link>
+            </li>
+            <li className="header-nav_item_top">  
+              <a href="#" onClick={() => props.glossaryTermSelected('', true)} className="header-nav_item_link_top js-glossary-toggle" alt="this is the glossary drawer">Glossary</a>
+            </li>
+             <li className="header-nav_item_top">
               <Search />
             </li>
 
           </ul>
           <ul className="header-nav_bottom">
-            <li {...homeClassNames}>
-              <Link className="header-nav_item_link" to="/"> Home </Link>
-            </li> <li {...howItWorksClassNames}>
-              <Link className="header-nav_item_link" to="/how-it-works/"> How it works </Link>
-            </li> <li {...exploreClassNames}>
+           <li {...exploreClassNames}>
               <Link className="header-nav_item_link" to="/explore/"> Explore data </Link>
-            </li> <li {...aboutClassNames}>
-              <Link className="header-nav_item_link" to="/about/"> About </Link>
+            </li> 
+            <li {...queryClassNames}>
+              <Link className="header-nav_item_link" to="/query-data/"> Query data </Link>
+            </li>
+            <li {...downloadClassNames}>
+              <Link className="header-nav_item_link" to="/downloads/"> Download data </Link>
+            </li>
+            <li {...howItWorksClassNames}>
+              <Link className="header-nav_item_link" to="/how-it-works/"> How revenue works </Link>
             </li>
           </ul>
         </nav>

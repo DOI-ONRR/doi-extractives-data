@@ -72,6 +72,12 @@ To build our data visualizations, we've aggregated production from two types of 
 
 The federal government rarely gets 100% of “mixed exploratory” volumes. You can see these categories disaggregated in the federal production dataset, downloadable on this page.
 
+<h3 alt="Quartz crystal units">Why is quartz crystal measured in “tickets/pounds”?</h3>
+
+Quartz crystal is sometimes sold in relatively small quantities in gift shops and tourist attractions. In some cases, tourists can buy admission tickets to dig for their own minerals. For those transactions, ONRR may collect royalties on the admission tickets, not on the weight of minerals collected. Furthermore, some minerals are sold by quality, not by weight. 
+
+The unit “tickets/pounds” shows quantities measured in both tickets sold and weight sold, combined, even though the units measure different things. The royalty amount for ticket transactions often don't meet ONRR's review threshold, so the specific quantities in weight are unknown.
+
 ## Data dictionary
 
 ### Fields and definitions

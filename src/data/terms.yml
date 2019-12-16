@@ -164,7 +164,7 @@
   definition: "A leaseholder’s right to use as much of the surface of the land as necessary to operate under the lease."
 - name: "Tax expenditures"
   definition: "Revenue lossess attributed to provisions of federal tax laws that allow a special exclusion, exemption, or deduction from gross income, or which provide a special credit, a preferential rate of tax, or a deferral of tax liability."
-- name: "Tickets/pounds"
+- name: "Tickets"
   definition: "Some minerals, such as quartz crystal, are sold in relatively small quantities in gift shops and tourist attractions. In some cases, tourists can buy admission tickets to dig for their own minerals. For those transactions, the Office of Natural Resources Revenue may collect royalties on the admission tickets, not on the weight of minerals collected. Furthermore, some minerals are sold by quality, not by weight. The unit “tickets/pounds” shows quantities measured in both tickets sold and weight sold, combined."  
 - name: "Ton"
   definition: "In the U.S., one ton is 2,000 pounds. In some countries this is referred to as a short ton."

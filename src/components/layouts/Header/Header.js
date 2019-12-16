@@ -23,7 +23,7 @@ const Header = props => {
   let aboutClassNames = { 'className': ' header-nav_item_link_top ' }
   let howItWorksClassNames = { 'className': ' header-nav_item ' }
   let exploreClassNames = { 'className': ' header-nav_item ' }
-  let downloadClassNames = { 'className': ' header-nav_item_link_top ' }
+  let downloadClassNames = { 'className': ' header-nav_item ' }
   let queryClassNames = { 'className': ' header-nav_item ' }
 
   if (typeof location !== 'undefined' && location) {

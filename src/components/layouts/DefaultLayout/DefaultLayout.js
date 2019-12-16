@@ -83,7 +83,7 @@ const DefaultLayout = ({ children }) => {
       <a href="#main-content" className={styles.skipNav}>Skip to main content</a>  
 
       <Banner />
-
+      <AlertBanner />
       <Header siteMetadata={data && data.site.siteMetadata} />
 
       <Glossary />

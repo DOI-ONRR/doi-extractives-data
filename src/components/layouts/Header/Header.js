@@ -73,7 +73,7 @@ const Header = props => {
               <Link {...homeClassNames} to="/">Home </Link>
             </li>
             <li className="header-nav_item_top">
-              <Link {...aboutClassNames} to="/">About </Link>
+              <Link {...aboutClassNames} to="/about/">About </Link>
             </li>
             <li className="header-nav_item_top">  
               <a href="#" onClick={() => props.glossaryTermSelected('', true)} className="header-nav_item_link_top js-glossary-toggle" alt="this is the glossary drawer">Glossary</a>

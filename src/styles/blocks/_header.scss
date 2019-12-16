@@ -158,10 +158,8 @@
   font-weight: $weight-light;
   padding-right: $base-padding-lite;
 
-  &:nth-child(2),
-  &:nth-child(3) {
+  &:not(:first-child) {
     padding-left: $base-padding-lite;
-
   }
 
   &:last-child {

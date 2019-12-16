@@ -81,7 +81,6 @@ const Header = props => {
              <li className="header-nav_item_top">
               <Search />
             </li>
-
           </ul>
           <ul className="header-nav_bottom">
            <li {...exploreClassNames}>

@@ -64,7 +64,7 @@ The federal government may only release information about natural resource extra
 
 In the tables below, revenue may be grouped differently depending on the stage of production; see [documentation about the federal revenue dataset](/downloads/federal-revenue-by-location/) for more detailed explanations.
 
-<native-american-revenue-table></native-american-revenue-table>
+<Link to="/query-data/?dataType=Revenue">Query revenue data</Link>
 
 ## Audits and assurances
 

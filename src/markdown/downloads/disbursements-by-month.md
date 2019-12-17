@@ -11,7 +11,7 @@ tag:
 ---
 
 <custom-link to="/downloads/" className="breadcrumb link-charlie">Downloads</custom-link> /
-# Disbursements by month
+# Disbursements by Month
 
 > Revenue collected from extraction of natural resources on federal and Native American lands is distributed to various legislated funds, local governments, and federal agencies. This process is called disbursement. We have disbursements data by month from October 2018 through the most recent month.
 

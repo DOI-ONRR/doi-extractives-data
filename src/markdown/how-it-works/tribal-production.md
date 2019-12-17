@@ -11,7 +11,7 @@ tag:
 - Tribal
 ---
 
-# Natural Resource Production On Native American Land
+# Natural Resource Production on Native American Land
 
 > Extracting natural resources on Native American lands and distributing the associated revenue is a unique process involving multiple stakeholders.
 

@@ -12,7 +12,7 @@ tag:
 ---
 
 <custom-link to="/how-it-works/" className="breadcrumb link-charlie">How it works</custom-link> /
-# Revenue From Natural Resources on Native American Land
+# Revenue from Natural Resources on Native American Land
 
 > Natural resources are increasingly a key source of income for many Native American tribes and individuals. In <display-year data-set-key="disbursements" accounting-type='fiscal'></display-year>, <glossary-term>ONRR</glossary-term> and <glossary-term>OST</glossary-term> disbursed <display-disbursement filter='{"Fund": "American Indian Tribes"}'></display-disbursement> to tribes and allottees.
 

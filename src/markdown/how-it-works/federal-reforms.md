@@ -12,7 +12,7 @@ tag:
 ---
 
 <custom-link to="/how-it-works/" className="breadcrumb link-charlie">How it works</custom-link> /
-# Federal reforms
+# Federal Reforms
 
 > The federal government reforms laws and regulations by enacting new legislation and proposing new rules to implement the legislation. Reforms are recommended by oversight organizations, such as the Inspector General or the Government Accountability Office.
 

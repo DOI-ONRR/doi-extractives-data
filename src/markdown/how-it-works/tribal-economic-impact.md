@@ -12,7 +12,7 @@ tag:
 ---
 
 <custom-link to="/how-it-works/" className="breadcrumb link-charlie">How it works</custom-link> /
-# Impact of Natural Resource Extraction On Native American Land
+# Impact of Natural Resource Extraction on Native American Land
 
 > Extraction affects Native American economies in a number of ways, though the effects can vary widely depending on the level of extraction on a given reservation and the details of the lease agreement.
 

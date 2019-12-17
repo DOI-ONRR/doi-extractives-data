@@ -11,7 +11,7 @@ tag:
 ---
 
 <custom-link to="/how-it-works/" className="breadcrumb link-charlie">How it works</custom-link> /
-# Federal laws and regulations
+# Federal Laws and Regulations
 
 > The legislative branch of the federal government has passed many laws that govern natural resource extraction on federal lands.
 

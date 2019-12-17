@@ -13,7 +13,7 @@ tag:
 - biomass
 ---
 
-# Natural resource production on Native American land
+# Natural Resource Production On Native American Land
 
 > Extracting natural resources on Native American lands and distributing the associated revenue is a unique process involving multiple stakeholders.
 

@@ -20,13 +20,13 @@ tag:
 
 [The Office of Inspector General](https://www.doioig.gov/) (OIG) is responsible for the independent oversight and promotion of excellence, integrity, and accountability within the programs, operations, and management of the Department of the Interior. OIG also identifies and prevents fraud, waste, and mismanagement within the agency.
 
-[Review OIG reports](https://www.doioig.gov/reports).
+[Review OIG reports](https://www.doioig.gov/reports)
 
 <h2 id="gao-reports">Government Accountability Office (GAO) reports</h2>
 
 The GAO is an independent, nonpartisan agency that investigates how the federal government spends taxpayer funds, including those for natural resource management on federal and Indian lands.
 
-[Review GAO oil and gas reports](http://www.gao.gov/key_issues/oil_and_natural_gas/issue_summary).
+[Review GAO oil and gas reports](http://www.gao.gov/key_issues/oil_and_natural_gas/issue_summary)
 
 ## Proposed rules
 

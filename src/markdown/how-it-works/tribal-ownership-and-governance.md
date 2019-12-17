@@ -17,7 +17,7 @@ tag:
 ---
 
 <custom-link to="/how-it-works/" className="breadcrumb link-charlie">How it works</custom-link> /
-# Native American ownership and governance of natural resources
+# Native American Ownership and Governance of Natural Resources
 
 > Native American land ownership involves a complex patchwork of titles, restrictions, obligations, statutes, and regulations. Extracting natural resources on Native American lands and distributing the associated revenue is a unique process involving multiple stakeholders.
 

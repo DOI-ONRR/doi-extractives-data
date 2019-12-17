@@ -6,11 +6,6 @@ redirect_from: /how-it-works/tribal-revenue/
 tag:
 - how it works
 - production
-- renewable energy
-- geothermal
-- wind
-- water power
-- biomass
 - Native American
 - Indian
 - tribal

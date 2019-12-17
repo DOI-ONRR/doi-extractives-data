@@ -44,9 +44,21 @@ class HowItWorksProcess extends React.Component {
           <Helmet
             title={title}
             meta={[
+              // type
+              { name: 'og:type', content: 'website' },
+              
               // title
-              { name: 'og:title', content: title },
-              { name: 'twitter:title', content: title },
+              { name: 'og:title', content: title + ' | Natural Resources Revenue Data' },
+              { name: 'twitter:title', content: title + ' | Natural Resources Revenue Data' },
+
+              // img
+              { name: 'og:image', content: meta_image },
+              { name: 'twitter:card', content: 'summary_large_image' },
+              { name: 'twitter:image', content: meta_image },
+
+              // description
+              { name: 'og:description', content: 'This site provides open data about natural resource management on federal lands and waters in the United States, including oil, gas, coal, and other extractive industries.' },
+              { name: 'twitter:description', content: 'This site provides open data about natural resource management on federal lands and waters in the United States, including oil, gas, coal, and other extractive industries.' },
             ]}
 
           />

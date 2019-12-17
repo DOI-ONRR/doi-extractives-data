@@ -6,14 +6,9 @@ redirect_from: /how-it-works/tribal-ownership-governance/
 tag:
 - how it works
 - production
-- renewable energy
-- geothermal
-- wind
-- water power
-- biomass
-- tribal
-- native american
+- Native American
 - Indian
+- Tribal
 ---
 
 <custom-link to="/how-it-works/" className="breadcrumb link-charlie">How it works</custom-link> /

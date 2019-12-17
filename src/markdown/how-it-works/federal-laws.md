@@ -99,7 +99,7 @@ The following table lists the laws that provide the backbone of the fiscal regim
   <td>Coal</td>
   </tr>
   <tr>
-    <td><a href="https://www.boem.gov/uploadedFiles/BOEM/Oil_and_Gas_Energy_Program/Leasing/Outer_Continental_Shelf/Lands_Act_History/federal%20og%20royalty%20mgmt.pdf">Federal Oil and Gas Royalty Management Act (FOGRMA) of 1982</a> (30 USC § 1701 et seq.)</td>
+    <td><a href="https://www.onrr.gov/Laws_R_D/PubLaws/PDFDocs/97-451.pdf">Federal Oil and Gas Royalty Management Act (FOGRMA) of 1982</a> (30 USC § 1701 et seq.)</td>
     <td>Grants the Secretary of the Interior authority for managing and collecting oil and gas royalties from leases on federal and Indian lands.</td>
     <td>Federal onshore, Indian, and Outer Continental Shelf</td>
   <td>Oil and gas</td>

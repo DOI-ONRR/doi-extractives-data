@@ -39,10 +39,11 @@ const RevenuesTableToolbar = ({
   getFiscalYearOptions,
   onSubmit
 }) => {
-  const [landCategory, setLandCategory] = useState('Onshore')
+  let initialState = true
+  const [landCategory, setLandCategory] = useState()
 
   const [locationOptions, setLocationOptions] = useState()
-  const [locations, setLocations] = useState(['AK'])
+  const [locations, setLocations] = useState()
   const [disableLocation, setDisableLocation] = useState()
 
   const [countyRegionOptions, setCountyRegionOptions] = useState()
@@ -74,10 +75,11 @@ const RevenuesTableToolbar = ({
     setFiscalYearStart(undefined)
     setFiscalYearEnd(undefined)
     setFiscalYearSelected(undefined)
+    
   }, [landCategory])
 
   useEffect(() => {
-    setCountiesRegions(undefined)
+    setCountiesRegions(countiesRegions)
     if (locations) {
       setCountyRegionOptions(getCountyRegionOptions(locations))
       setCommodityOptions(getCommodityOptions({ locations, countiesRegions }))
@@ -205,11 +207,9 @@ const RevenuesTableToolbar = ({
       }
       else {
         setDisableLocation(false)
-        return ['AK']
       }
     }
   }
-  console.log(locations)
 
   return (
     <div className={styles.tableToolbarContainer}>

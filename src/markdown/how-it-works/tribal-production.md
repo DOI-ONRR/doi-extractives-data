@@ -202,4 +202,4 @@ The WSR must stipulate what will happen to the infrastructure after the lease te
 
 ## Production on Native American land
 
-<Link to="/query-data/?dataType=Production">Query production data</Link>
+<a href="/query-data/?dataType=Production">Query production data</a>

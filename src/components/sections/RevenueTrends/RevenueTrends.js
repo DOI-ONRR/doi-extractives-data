@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import ReactDOM from 'react-dom'
 import { useStaticQuery, graphql } from 'gatsby'
+import Link from '../../utils/temp-link'
 
 import * as d3 from 'd3'
 import utils from '../../../js/utils'
@@ -176,6 +177,12 @@ const RevenueTrends = () => {
                 currentAmount={currentYearTotal}
                 previousAmount={previousYearTotal}
               />{' ' + previousFiscalYearText}</td>
+          </tr>
+          <tr>
+            <td><Link to='./downloads/federal-revenue-by-location/'>Source File</Link></td>
+            <td className={styles.alignRight}>
+              <Link to='./downloads/federal-revenue-by-month/'>Source File</Link>
+            </td>
           </tr>
         </tbody>
       </table>

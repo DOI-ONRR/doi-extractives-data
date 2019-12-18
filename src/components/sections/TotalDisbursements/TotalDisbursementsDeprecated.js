@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from '../../utils/temp-link'
 import { connect } from 'react-redux'
 
 import utils from '../../../js/utils'
@@ -391,6 +392,9 @@ class TotalDisbursementsDeprecated extends React.Component {
 	        <div className={styles.itemChart + ' ' + styles.itemDisbursements}>
 	          {this.getStackedBarChartLayout(KEY_STATS_DISBURSEMENTS_DATA_ID, CONSTANTS.DISBURSEMENTS, utils.formatToDollarInt)}
 	      </div>
+	        <div className={styles.sourceLink}>
+	          <Link to='./downloads/disbursements/'>Source File</Link>
+	        </div>
 		  </div>
 	      </section>
 

@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from '../../utils/temp-link'
 import { connect } from 'react-redux'
 
 import utils from '../../../js/utils'
@@ -53,13 +54,13 @@ const CHART_STYLE_MAP = {
   'bar': styles.chartBar,
   [CONSTANTS.FEDERAL_OFFSHORE]: styles.federalOffshore,
   [CONSTANTS.FEDERAL_ONSHORE]: styles.federalOnshore,
-	[CONSTANTS.NATIVE_AMERICAN]: styles.nativeAmerican,
-	[CONSTANTS.NOT_TIED_TO_A_LEASE]: styles.notTiedToALease,
+  [CONSTANTS.NATIVE_AMERICAN]: styles.nativeAmerican,
+  [CONSTANTS.NOT_TIED_TO_A_LEASE]: styles.notTiedToALease,
   hover: {
     [CONSTANTS.FEDERAL_OFFSHORE]: styles.federalOffshoreHover,
     [CONSTANTS.FEDERAL_ONSHORE]: styles.federalOnshoreHover,
-		[CONSTANTS.NATIVE_AMERICAN]: styles.nativeAmericanHover,
-		[CONSTANTS.NOT_TIED_TO_A_LEASE]: styles.notTiedToALeaseHover
+    [CONSTANTS.NATIVE_AMERICAN]: styles.nativeAmericanHover,
+    [CONSTANTS.NOT_TIED_TO_A_LEASE]: styles.notTiedToALeaseHover
   }
 }
 
@@ -319,9 +320,9 @@ class TotalRevenueDeprecated extends React.Component {
 
 	        sortOrder= {CHART_SORT_ORDER}
 
-					legendTitle= {CHART_LEGEND_TITLE}
-					
-					displayNames= {CHART_DISPLAY_NAMES}
+	        legendTitle= {CHART_LEGEND_TITLE}
+
+	        displayNames= {CHART_DISPLAY_NAMES}
 
 	        legendDataFormatFunc= {dataFormatFunc || utils.formatToCommaInt}
 
@@ -394,6 +395,12 @@ class TotalRevenueDeprecated extends React.Component {
 		  <div className={styles.itemChart}>
 		    {this.getStackedBarChartLayout(KEY_STATS_REVENUES_DATA_ID, CONSTANTS.REVENUE, utils.formatToDollarInt)}
 	          </div>
+	        <div className={styles.sourceLink}>
+	          {(this.state.revenueToggle === TOGGLE_VALUES.Month)
+	            ? <Link to='./downloads/federal-revenue-by-month/'>Source File</Link>
+	            : <Link to='./downloads/federal-revenue-by-location/'>Source File</Link>
+	          }
+	        </div>
 		  </div>
 	      </section>
 

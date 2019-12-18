@@ -38,6 +38,7 @@ class HowItWorksReconciliation extends React.Component {
               { name: 'twitter:title', content: title + ' | Natural Resources Revenue Data' },
 
               // description
+              { name: 'description', content: 'This site provides open data about natural resource management on federal lands and waters in the United States, including oil, gas, coal, and other extractive industries.' },
               { name: 'og:description', content: 'This site provides open data about natural resource management on federal lands and waters in the United States, including oil, gas, coal, and other extractive industries.' },
               { name: 'twitter:description', content: 'This site provides open data about natural resource management on federal lands and waters in the United States, including oil, gas, coal, and other extractive industries.' },
             ]}

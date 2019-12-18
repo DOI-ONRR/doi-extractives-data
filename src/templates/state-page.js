@@ -134,6 +134,7 @@ class StatePages extends React.Component {
                       { name: 'og:type', content: 'website' },
                       
                       // description
+                      { name: 'description', content: 'This site provides open data about natural resource management on federal lands and waters in ' + this.usStateData.title + ', including oil, gas, coal, and other extractive industries.' },
                       { name: 'og:description', content: 'This site provides open data about natural resource management on federal lands and waters in ' + this.usStateData.title + ', including oil, gas, coal, and other extractive industries.' },
                       { name: 'twitter:description', content: 'This site provides open data about natural resource management on federal lands and waters in ' + this.usStateData.title + ', including oil, gas, coal, and other extractive industries.' },
 	                ]}

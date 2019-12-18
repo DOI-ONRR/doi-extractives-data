@@ -37,6 +37,7 @@ allYearlyDispursements : allFederalDisbursements (sort: {fields: [Year], order: 
     currentMonthlyDispursements : allDisbursementsMonthly {
     nodes {
       Month
+      FiscalYear
       DisplayYear
       Disbursement
       Fund
@@ -47,19 +48,22 @@ allYearlyDispursements : allFederalDisbursements (sort: {fields: [Year], order: 
 `) 
 
     let dataYearly=results.allYearlyDispursements.nodes;
-    let currentMonthly=results.currentMonthlyDispursements.nodes.map(obj=> ({...obj, month:monthLookup(obj.Month), FiscalMonth: fiscalMonthLookup(obj.Month), date: monthlyDate(obj),fiscalYear:2019}));
-    let currentTrends=aggregateMonthlyData(currentMonthly);
+    let currentMonthly=results.currentMonthlyDispursements.nodes.map(obj=> ({...obj, month:monthLookup(obj.Month), FiscalMonth: fiscalMonthLookup(obj.Month), date: monthlyDate(obj)}));
+
 
     let maxMonth=getMaxMonth(currentMonthly).toLocaleString(undefined, { month: 'long' });
-
+    let calendarYear=getMaxMonth(currentMonthly).getFullYear();
     let currentYear=getCurrentYear(currentMonthly);
-   
+    let currentTrends=aggregateMonthlyData(currentMonthly,currentYear);   
     //    let currentYear=data[0].Fiscal_Year
     let previousYear=getPreviousYear(currentMonthly);
-    let trends=aggregateData(dataYearly);
+    let trends=aggregateData(dataYearly)
     
-    let currentFiscalYearText = 'FY'+currentYear.substring(1)+' so far';
-    let longCurrentText= maxMonth+" 20"+currentYear.substring(1);
+    let minYear=trends[0].histData[0].year.substring(2);
+    let maxYear=trends[0].histData[trends[0].histData.length-1].year.substring(2);
+    
+    let currentFiscalYearText = 'FY'+currentYear.substring(2)+' so far';
+    let longCurrentText= maxMonth+" "+calendarYear;
     let previousFiscalYearText = 'from FY'+previousYear;
     
       return (
@@ -69,7 +73,7 @@ allYearlyDispursements : allFederalDisbursements (sort: {fields: [Year], order: 
           <table className={styles.dispersementTable}>
             <thead>
               <tr>
-                <th>10-year trend</th>
+              <th>FY{minYear} - FY{maxYear} trend</th>
                 <th className={styles.alignRight}>{currentFiscalYearText}</th>
               </tr>
             </thead>
@@ -83,12 +87,12 @@ allYearlyDispursements : allFederalDisbursements (sort: {fields: [Year], order: 
                       <td><Sparkline key={'spark'+index} data={trend.histData} /></td>
                 <td className={styles.alignRight}>
 
-		  {/*		      <PercentDifference key={'percent'+index}
-                    currentAmount={trend.current} 
-                    previousAmount={trend.previous} 
-                  />{' '+previousFiscalYearText}
-		   */}
-                </td>
+		      <PercentDifference key={'percent'+index}
+                  currentAmount={currentTrends[index].current} 
+                  previousAmount={currentTrends[index].previous} 
+                      />{' '+previousFiscalYearText}
+		  
+                  </td>
 		      </tr>
 		      </tbody>
 	      ))}
@@ -119,7 +123,7 @@ export default DisbursementTrends
 
 const getCurrentYear = (data) => {
 
-    let r=data.reduce((max, p) => p.DisplayYear > max ? p.DisplayYear : max, data[0].DisplayYear );
+    let r=data.reduce((max, p) => p.FiscalYear > max ? p.FiscalYear : max, data[0].FiscalYear );
 
     return r;
     
@@ -127,11 +131,13 @@ const getCurrentYear = (data) => {
 
 const getPreviousYear = (data) => {
 
-    let r=data.reduce((min, p) => p.DisplayYear < min ? p.DisplayYear : min, data[0].DisplayYear );
+    let r=data.reduce((min, p) => p.FiscalYear < min ? p.FiscalYear : min, data[0].FiscalYear );
 
     return r;
     
 }
+
+
 
 const getMaxMonth = (data) => {
      let r=data.reduce((max, p) => p.date > max ? p.date : max, data[0].date );
@@ -217,39 +223,50 @@ const fiscalMonthLookup= (month) => {
     }
 */   
 
-const aggregateMonthlyData= (data) => {
+const aggregateMonthlyData= (data,currentYear) => {
     let r=[
 	{fund: 'U.S. Treasury', current: 0, previous: 0, histSum: {}, histData:[] },
 	{fund: 'States & counties', current: 0, previous: 0, histSum:{}, histData:[] },
-	{fund: 'Reclamation fund', current: 0, previous: 0, histSum:{}, histData:[]},
+	{fund: 'Reclamation Fund', current: 0, previous: 0, histSum:{}, histData:[]},
 	{fund: 'Native Americans', current: 0, previous: 0, histSum:{}, histData:[]},
-	{fund: 'Other Funds', current: 0, previous: 0, histSum:{}, histData:[]},
+	{fund: 'Other funds', current: 0, previous: 0, histSum:{}, histData:[]},
 	{fund: 'Total', current: 0, previous: 0, histSum: {},histData:[], className : 'strong'}
     ]
 
-    let currentYear=2019;
+    let maxFiscalMonth=data.filter((item,i)=>(item.FiscalYear == 2020)).reduce((max,p)=>  p.FiscalMonth > max ? p.FiscalMonth : max, 0);
     
-    
+    //    let currentYear=2019;
+
     for(let ii=0; ii<data.length; ii++) {
 	let item=data[ii];
-    	if(item.Fund.match(/U.S. Treasury/))  {
-	    sumMonthlyData(item,r,0,currentYear); //sum into us treasury
-	} else if (item.Fund.match(/State/))  {
-	    sumMonthlyData(item,r,1, currentYear); //sum into state
-	} else if (item.Fund.match(/Reclamation/))  {
-	    sumMonthlyData(item,r,2, currentYear); //sum into Reclamation
-	} else if (item.Fund.match(/Native American/))  {
-	    sumMonthlyData(item,r,3, currentYear); //sum into Native
-	} else {
-	    sumMonthlyData(item,r,4, currentYear); //sum into other
+	if(item.FiscalMonth <= maxFiscalMonth) {
+	    if(item.Fund=='U.S. Treasury')  {
+		sumMonthlyData(item,r,0,currentYear); //sum into us treasury
+	    } else if (item.Fund.match(/State/))  {
+		sumMonthlyData(item,r,1, currentYear); //sum into state
+	    } else if (item.Fund.match(/Reclamation/))  {
+		sumMonthlyData(item,r,2, currentYear); //sum into Reclamation
+	    } else if (item.Fund.match(/Native American/) || item.Fund=='U.S. TreasuryAI' )  {
+		sumMonthlyData(item,r,3, currentYear); //sum into Native
+	    } else {
+		sumMonthlyData(item,r,4, currentYear); //sum into other
+	    }
+	    sumMonthlyData(item,r,5, currentYear); //sum into Total
 	}
-	sumMonthlyData(item,r,5, currentYear); //sum into Total
-
     }
+
+
     return r;
 }
 const sumMonthlyData= (item,r,index,currentYear) => {
-    r[index].current+=item.Disbursement;
+    let previousYear=currentYear-1;
+    if(item.FiscalYear==currentYear){
+	r[index].current+=item.Disbursement;
+    }
+    if(item.FiscalYear==previousYear){
+	r[index].previous+=item.Disbursement;
+    }
+    
  }
 
 const monthlyDate = (obj) => {
@@ -267,9 +284,9 @@ const aggregateData= (data) => {
     let r=[
 	{fund: 'U.S. Treasury', current: 0, previous: 0, histSum: {}, histData:[] },
 	{fund: 'States & counties', current: 0, previous: 0, histSum:{}, histData:[] },
-	{fund: 'Reclamation fund', current: 0, previous: 0, histSum:{}, histData:[]},
+	{fund: 'Reclamation Fund', current: 0, previous: 0, histSum:{}, histData:[]},
 	{fund: 'Native Americans', current: 0, previous: 0, histSum:{}, histData:[]},
-	{fund: 'Other Funds', current: 0, previous: 0, histSum:{}, histData:[]},
+	{fund: 'Other funds', current: 0, previous: 0, histSum:{}, histData:[]},
 	{fund: 'Total', current: 0, previous: 0, histSum: {},histData:[], className : 'strong'}
     ]
     let currentYear=data[0].Fiscal_Year
@@ -295,8 +312,8 @@ const aggregateData= (data) => {
     r.map((row,i) => { let a=[];
 		       let years=Object.keys(row.histSum).sort();
 		       a=years.map((year,i)=> ({year: year, amount:row.histSum[year]}))
-		       r[i].histData=a;
-		       return a
+		       r[i].histData=a.slice(-10);
+		       return a.slice(-10)
 		     })
     
     
@@ -343,7 +360,7 @@ const calculateOtherRevenues = (data) => {
 
 
 const calculateRevenueTypeAmountsByYear = (yearData, index) => {
-  let fiscalYear = yearData.fiscalYear;
+  let fiscalYear = yearData.FiscalYear;
   let sums = yearData.data.reduce((total, item) => {
     total[item.node.RevenueType] =
       (total[item.node.RevenueType] !== undefined)

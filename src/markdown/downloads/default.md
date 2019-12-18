@@ -34,13 +34,13 @@ tag:
 <ul class="list-sections list-unstyled">
   <!--Revenue by month-->
   <li class="downloads-download_links">
-    <h3 id="all-revenue">Revenue by month</h3>
+    <h3 id="revenue-by-month">Revenue by month</h3>
     <p>This dataset is for revenue by month for January 2008 through the most recently completed month of the current year. The data includes federal offshore and onshore revenue, along with revenue from Native American lands. The data is further broken down by revenue type (i.e., bonuses, rents, and royalties) and commodity.</p>
     <download-data-link to="/downloads/federal-revenue-by-month/">Downloads and documentation</download-data-link>
   </li>
   <!--Federal revenue by location-->
   <li class="downloads-download_links">
-    <h3 id="all-revenue">Revenue by year</h3>
+    <h3 id="revenue-by-year">Revenue by year</h3>
     <p>This dataset includes natural resource revenue for Native American lands and U.S. federal lands and offshore areas by calendar and fiscal years. It does not include privately owned lands or state-owned lands.</p>
     <download-data-link to="/downloads/federal-revenue-by-location/">Downloads and documentation</download-data-link>
   </li>

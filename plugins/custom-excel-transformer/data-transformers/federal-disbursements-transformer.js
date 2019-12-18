@@ -82,6 +82,20 @@ const createDisbursementsNode = (disbursementsData, type) => {
 	  },
   }
 
+
+
+
+
+    let year = disbursementNode.CalendarYear || disbursementNode.FiscalYear
+  let month = (disbursementNode.Month) ? getMonthFromString(disbursementNode.Month) : 0
+
+  disbursementNode.DisbursementDate = new Date(year, month, 15)
+   if (disbursementNode.FiscalYear === undefined) {
+    disbursementNode.FiscalYear = (disbursementNode.DisbursementDate.getMonth() >= 9)
+      ? (disbursementNode.DisbursementDate.getYear() + 1901).toString()
+      : (disbursementNode.DisbursementDate.getYear() + 1900).toString()
+  }
+ 
   disbursementNode.DisbursementCategory = FUND_TO_DISBURSEMENTS_CATEGORY[disbursementNode.Fund]
   if (!disbursementNode.DisbursementCategory) {
     disbursementNode.DisbursementCategory = disbursementNode.Source && ONSHOREOFFSHORE_TO_DISBURSEMENTS_CATEGORY[disbursementNode.Source.toLowerCase()]
@@ -104,4 +118,12 @@ function toTitleCase (str) {
     str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1)
   }
   return str.join(' ')
+}
+
+function getMonthFromString (month) {
+  let d = Date.parse(month + '1, 2012')
+  if (!isNaN(d)) {
+    return new Date(d).getMonth()
+  }
+  return -1
 }

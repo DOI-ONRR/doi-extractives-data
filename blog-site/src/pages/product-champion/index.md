@@ -14,7 +14,7 @@ Every product needs a champion. We are fortunate to have had one of the best pro
 
 Judy recently moved on because she was selected for a Senior Executive Service (SES) position in the Assistant Secretary, Indian Affairs Office of the Deputy Assistant Secretary, Management as the Director, Office of Facilities, Property and Safety. She was the first product owner of the website and did everything in her power to build our team to the point we’re at today.
 
-[![Photo of Judy Wilson dressed as a super hero](./SuperJudy.jpg)](./SuperJudy.jpg)
+![Photo of Judy Wilson dressed as a super hero](./SuperJudy.jpg)
 
 Judy was an excellent product champion, and we’ve done some reflecting on what makes a good champion in the hopes that it will help people in other agencies replicate some of the magic Judy brought to the Office of Natural Resources Revenue.
 
@@ -54,7 +54,7 @@ Judy was great at managing up. From the beginning, she had the support of the di
 
 Judy was able to make the transition between two administrations feel seamless. She never cared who was in office and continues to work to serve the American public, no matter what. She adjusted some of the messaging to her audience by citing different laws that were enacted by each administration as reasons why the site needed to continue to exist, and as a result, the team and website weren’t affected much by the transition.
 
-[![Photo of Judy Wilson accepting an award from Department Secretary Ryan Zinke](./JudyZinke.png)](./JudyZinke.png)
+![Photo of Judy Wilson accepting an award from Department Secretary Ryan Zinke](./JudyZinke.png)
 
 ## Positioned for success
 

@@ -132,12 +132,7 @@ class StatePages extends React.Component {
                       { name: 'twitter:title', content: (this.usStateData.title + ' | Natural Resources Revenue Data') },
                       // type
                       { name: 'og:type', content: 'website' },
-
-                      // img
-                      { name: 'og:image', content: meta_image },
-                      { name: 'twitter:card', content: 'summary_large_image' },
-                      { name: 'twitter:image', content: meta_image },
-
+                      
                       // description
                       { name: 'og:description', content: 'This site provides open data about natural resource management on federal lands and waters in ' + this.usStateData.title + ', including oil, gas, coal, and other extractive industries.' },
                       { name: 'twitter:description', content: 'This site provides open data about natural resource management on federal lands and waters in ' + this.usStateData.title + ', including oil, gas, coal, and other extractive industries.' },

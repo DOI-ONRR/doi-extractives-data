@@ -40,6 +40,25 @@
 	text-align: right;
 }
 
+.sourceLinkRight {
+  text-align: right;
+  width: 100%;
+  font-size: 0.8rem;
+  font-style: italic;
+  a {
+    font-size: 0.8rem;
+  }
+}
+.sourceLinkLeft {
+  text-align: left;
+  width: 100%;
+  a {
+    font-size: 0.8rem;
+  }
+  
+  font-style: italic;
+}
+
 @media screen and (max-width: 481px) {
 	.root {
 		padding-left: 0;

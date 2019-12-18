@@ -179,8 +179,8 @@ const RevenueTrends = () => {
               />{' ' + previousFiscalYearText}</td>
           </tr>
           <tr>
-            <td><Link to='./downloads/federal-revenue-by-location/'>Source File</Link></td>
-            <td className={styles.alignRight}>
+            <td className={styles.sourceLinkLeft}><Link to='./downloads/federal-revenue-by-location/'>Source File</Link></td>
+            <td className={styles.sourceLinkRight}>
               <Link to='./downloads/federal-revenue-by-month/'>Source File</Link>
             </td>
           </tr>

@@ -393,7 +393,7 @@ class TotalDisbursementsDeprecated extends React.Component {
 	          {this.getStackedBarChartLayout(KEY_STATS_DISBURSEMENTS_DATA_ID, CONSTANTS.DISBURSEMENTS, utils.formatToDollarInt)}
 	      </div>
 	        <div className={styles.sourceLink}>
-	          <Link to='./downloads/disbursements/'>Source File</Link>
+	          <Link to='./downloads/disbursements/'>Source file</Link>
 	        </div>
 		  </div>
 	      </section>

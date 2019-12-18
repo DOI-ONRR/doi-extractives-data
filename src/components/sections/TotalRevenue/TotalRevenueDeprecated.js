@@ -397,8 +397,8 @@ class TotalRevenueDeprecated extends React.Component {
 	          </div>
 	        <div className={styles.sourceLink}>
 	          {(this.state.revenueToggle === TOGGLE_VALUES.Month)
-	            ? <Link to='./downloads/federal-revenue-by-month/'>Source File</Link>
-	            : <Link to='./downloads/federal-revenue-by-location/'>Source File</Link>
+	            ? <Link to='./downloads/federal-revenue-by-month/'>Source file</Link>
+	            : <Link to='./downloads/federal-revenue-by-location/'>Source file</Link>
 	          }
 	        </div>
 		  </div>

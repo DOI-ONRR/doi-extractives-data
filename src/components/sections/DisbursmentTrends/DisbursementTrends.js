@@ -99,9 +99,9 @@ allYearlyDispursements : allFederalDisbursements (sort: {fields: [Year], order: 
           </React.Fragment>
 	      ))}
         <tr>
-          <td><Link to='./downloads/disbursements/'>Source File</Link></td>
-          <td className={styles.alignRight}>
-            <Link to='./downloads/federal-disbursements-by-month/'>Source File</Link>
+          <td className={styles.sourceLinkLeft}><Link to='./downloads/disbursements/'>Source file</Link></td>
+          <td className={styles.sourceLinkRight}>
+            <Link to='./downloads/federal-disbursements-by-month/'>Source file</Link>
           </td>
         </tr>
         </tbody>

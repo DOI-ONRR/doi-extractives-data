@@ -402,8 +402,8 @@ class TotalProductionDeprecated extends React.Component {
 	        </div>
 	        <div className={styles.sourceLink}>
 	          {(this.state.productionToggle === TOGGLE_VALUES.Month)
-	            ? <Link to='./downloads/federal-production-by-month/'>Source File</Link>
-	            : <Link to='./downloads/federal-production/'>Source File</Link>
+	            ? <Link to='./downloads/federal-production-by-month/'>Source file</Link>
+	            : <Link to='./downloads/federal-production/'>Source file</Link>
 	          }
 	        </div>
 		  </div>

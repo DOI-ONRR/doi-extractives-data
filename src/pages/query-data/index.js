@@ -323,6 +323,7 @@ class QueryData extends React.Component {
       openGroupByDialog: false,
       dataType: urlParams.get('dataType'),
       loading: false,
+      urlFilter: undefined,
     }
     
   }

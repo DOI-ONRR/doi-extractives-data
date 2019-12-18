@@ -1,3 +1,4 @@
+# Glossary lookup in unit captions requires term defined below
 # units that stay the same
 mcf:
   long: mcf
@@ -89,6 +90,7 @@ sulfur:
 tickets/pounds:
   short: lbs
   long: tickets/pounds
+  term: tickets/pounds
 tons - equivalent:
   short: tons
   long: equivalent tons

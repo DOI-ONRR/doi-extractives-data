@@ -85,16 +85,6 @@ const COMMODITY = 'Commodity'
 const COMMODITIES = 'Commodities'
 const REVENUE_TYPE = 'Revenue type'
 
-const DATA_TYPE_URL_PARAM = 'dataType'
-const LAND_CATEGORY_URL_PARAM = 'landCategory'
-const STATE_URL_PARAM = 'state'
-const COUNTY_URL_PARAM = 'county'
-const COMMODITY_URL_PARAM = 'commodity'
-const REVENUE_TYPE_URL_PARAM = 'revenueType'
-const FY_START_URL_PARAM = 'fyStart'
-const FY_END_URL_PARAM = 'fyEnd'
-
-
 const DATA_TYPE_OPTIONS = {
   [REVENUE]: REVENUES_FISCAL_YEAR,
   [PRODUCTION]: PRODUCT_VOLUMES_FISCAL_YEAR,
@@ -257,9 +247,9 @@ const ADDITIONAL_COLUMN_OPTIONS = {
   [PRODUCTION]: (groupByOptions, groupBy, filter) => {
     let options = [NO_SECOND_COLUMN]
 
-    //if (filter.commodities && filter.commodities.length === 1 && !filter.commodities.includes(ALL)) {
+    // if (filter.commodities && filter.commodities.length === 1 && !filter.commodities.includes(ALL)) {
     options = groupByOptions && options.concat(groupByOptions)
-    //}
+    // }
 
     return ({
       options: options,
@@ -305,6 +295,14 @@ const muiTheme = createMuiTheme({
   },
 })
 
+const DATA_TYPE_URL_PARAM = 'dataType'
+const LAND_CATEGORY_URL_PARAM = 'landCategory'
+const LOCATIONS_URL_PARAM = 'locations'
+const COUNTIES_REGIONS_URL_PARAM = 'countiesRegions'
+const COMMODITIES_URL_PARAM = 'commodities'
+const REVENUE_TYPE_URL_PARAM = 'revenueType'
+const FY_YEARS_URL_PARAM = 'fiscalYearsSelected'
+
 class QueryData extends React.Component {
   constructor (props) {
     super(props)
@@ -318,30 +316,33 @@ class QueryData extends React.Component {
     if (typeof window !== 'undefined' && window) {
       urlParams = new URLSearchParams(window.location.search)
     }
-    
+
+    let dataType = urlParams.get(DATA_TYPE_URL_PARAM)
+
     this.state = {
       openGroupByDialog: false,
-      dataType: urlParams.get('dataType'),
+      dataType: dataType,
       loading: false,
-      urlFilter: undefined,
+      urlFilter: this.getFilterFromUrl(urlParams, dataType)
     }
-    
   }
 
-  getUrlFilter =  (urlParams) => {
-    let urlFilter = {}
-    let landCategory = urlParams.get('landCategory')
-    if(landCategory) {
-      urlFilter = {
-        landCategory: landCategory,
-        locations: ['All'],
-        countiesRegions: ['All'],
-        commodities: ['All'],
-        revenueType: 'All',
-        fiscalYearsSelected: ['2018']
-      }
+  getFilterFromUrl = (urlParams, dataType) => {
+    switch (dataType) {
+    case REVENUE:
+      let currentYear = new Date().getFullYear()
+      let locations = urlParams.get(LOCATIONS_URL_PARAM) && urlParams.get(LOCATIONS_URL_PARAM).split(',')
+      return (
+        {
+          [LAND_CATEGORY]: { orderNum: 1, value: urlParams.get(LAND_CATEGORY_URL_PARAM) || ALL },
+          [LOCATIONS]: { orderNum: 2, value: locations || [ALL] },
+          [COUNTIES_REGIONS]: { orderNum: 3, value: urlParams.get(COUNTIES_REGIONS_URL_PARAM) || [ALL] },
+          [COMMODITIES]: { orderNum: 4, value: urlParams.get(COMMODITIES_URL_PARAM) || [ALL] },
+          [REVENUE_TYPE]: { orderNum: 5, value: urlParams.get(REVENUE_TYPE_URL_PARAM) || ALL },
+          [FISCAL_YEAR]: { orderNum: Number.MAX_SAFE_INTEGER, value: urlParams.get(FY_YEARS_URL_PARAM) || [currentYear] },
+        }
+      )
     }
-    return urlFilter
   }
 
   /**
@@ -420,9 +421,9 @@ class QueryData extends React.Component {
    * It uses the state Data Type to determine the correct data set to use
    */
   setFilteredIds = (filterType, filter, filterOrderNum, forceReset) => {
-    
     let filters = this.props[DATA_TYPE_OPTIONS[this.state.dataType]]['filters'] || {}
-    let isEqual = (forceReset)? !forceReset : true
+
+    let isEqual = (forceReset) ? !forceReset : true
 
     // Check to see if the filter has changed, if not then no need to rerun previous filters
     if (filters[filterType]) {
@@ -467,6 +468,7 @@ class QueryData extends React.Component {
       filterKeys.forEach(type => {
         // If the filter order number is not defined set it to max number to let all filters run first
         filterOrderNum = filterOrderNum || Number.MAX_SAFE_INTEGER
+
         // If the order number is higher then the current filter order number then clear the filter
         filters[type] = (filters[type].orderNum && filterOrderNum && filters[type].orderNum <= filterOrderNum) ? filters[type] : undefined
 
@@ -482,7 +484,6 @@ class QueryData extends React.Component {
     }
 
     this.props[DATA_TYPE_OPTIONS[this.state.dataType]]['filters'] = filters
-
   }
 
   /**
@@ -625,6 +626,7 @@ class QueryData extends React.Component {
     if (value === this.state[this.state.dataType].additionalColumn) {
       currentAdditionalColumn = NO_SECOND_COLUMN
     }
+
 	  this.setState({
       loading: false,
       [this.state.dataType]: {
@@ -664,9 +666,12 @@ class QueryData extends React.Component {
   }
 
   onSubmitHandler (filter, forceReset) {
-    this.setFilteredIds(FISCAL_YEAR, filter.fiscalYearsSelected, undefined, forceReset)
+    this.setFilteredIds(FISCAL_YEAR, filter.fiscalYearsSelected, Number.MAX_SAFE_INTEGER, forceReset)
+
     let groupByFiltered = GROUP_BY_OPTIONS[this.state.dataType](filter)
     let additionalColumnFiltered = ADDITIONAL_COLUMN_OPTIONS[this.state.dataType](groupByFiltered.options, groupByFiltered.default, filter)
+
+    console.log(filter, groupByFiltered, additionalColumnFiltered)
 
 	  this.setState({
       [this.state.dataType]: {
@@ -678,7 +683,8 @@ class QueryData extends React.Component {
         tableColumns: this.getTableColumns({ filter: filter, groupBy: groupByFiltered.default, additionalColumn: additionalColumnFiltered.default }),
         tableSummaries: this.getTableSummaries({ filter: filter, groupBy: groupByFiltered.default, additionalColumn: additionalColumnFiltered.default }),
         tableData: this.getTableData({ filter: filter, groupBy: groupByFiltered.default, additionalColumn: additionalColumnFiltered.default })
-      }
+      },
+      urlFilter: undefined
 	  })
   }
 
@@ -705,8 +711,8 @@ class QueryData extends React.Component {
 	      title: dataTypeState.additionalColumn,
 	      plural: PLURAL_COLUMNS_MAP[dataTypeState.additionalColumn]
 	    })
-    }
-    
+	  }
+
 	  // Have to add all the data provider types initially or they wont work??
 	  let allYears = Object.keys(this.props[DATA_TYPE_OPTIONS[this.state.dataType]][BY_FISCAL_YEAR])
 	  if (this.state.dataType === PRODUCTION) {
@@ -780,7 +786,7 @@ class QueryData extends React.Component {
 	  }
 
 	  let dataSet = this.props[DATA_TYPE_OPTIONS[this.state.dataType]]
-    let filterIds = this.props[DATA_TYPE_OPTIONS[this.state.dataType]][FILTERED_IDS]
+	  let filterIds = this.props[DATA_TYPE_OPTIONS[this.state.dataType]][FILTERED_IDS]
 	  let allDataSetGroupBy = GROUP_BY_MAP_TO_DATA[this.state.dataType][dataTypeState.groupBy].map(groupBy => dataSet[groupBy])
 	  let tableData = []
 	  let expandedGroups = []
@@ -1010,16 +1016,23 @@ class QueryData extends React.Component {
 	  }
   }
 
-  componentDidUpdate() {
-    if(this.state.urlFilter && this.props[DATA_TYPE_OPTIONS[this.state.dataType]]){
-      this.props[DATA_TYPE_OPTIONS[this.state.dataType]].filters = {}
-      this.props[DATA_TYPE_OPTIONS[this.state.dataType]].filters[LAND_CATEGORY] = { orderNum: 1, value: this.state.urlFilter.landCategory }
-      this.onSubmitHandler(this.state.urlFilter, true)
+  componentDidUpdate () {
+    if (this.props[DATA_TYPE_OPTIONS[this.state.dataType]] && this.state.urlFilter) {
+      console.log(this.state.urlFilter)
+      this.props[DATA_TYPE_OPTIONS[this.state.dataType]]['filters'] = {}
+      Object.assign(this.props[DATA_TYPE_OPTIONS[this.state.dataType]]['filters'], this.state.urlFilter)
+      this.onSubmitHandler({
+        landCategory: this.state.urlFilter[LAND_CATEGORY].value,
+        locations: this.state.urlFilter[LOCATIONS].value,
+        countiesRegions: this.state.urlFilter[COUNTIES_REGIONS].value,
+        commodities: this.state.urlFilter[COMMODITIES].value,
+        revenueType: this.state.urlFilter[REVENUE_TYPE].value,
+        fiscalYearsSelected: this.state.urlFilter[FISCAL_YEAR].value
+      }, true)
     }
   }
 
   render () {
-
     let tableColumns = this.state[this.state.dataType] && this.state[this.state.dataType].tableColumns
     let tableSummaries = this.state[this.state.dataType] && this.state[this.state.dataType].tableSummaries
     let tableData = this.state[this.state.dataType] && this.state[this.state.dataType].tableData
@@ -1031,8 +1044,6 @@ class QueryData extends React.Component {
     if (this.state[this.state.dataType] && additionalColumnOptions) {
       additionalColumnOptions = additionalColumnOptions.filter(option => option !== this.state[this.state.dataType].groupBy)
     }
-
-    console.log(this.state.dataType, this.dataTypeParam)
 
     return (
       <DefaultLayout>

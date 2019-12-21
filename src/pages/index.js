@@ -45,7 +45,6 @@ let  mapOffshoreJson =require("../../static/maps/offshore/offshore.json")
 class Beta extends React.Component {
   constructor (props) {
     super(props)
-      console.debug(props);
       this.hydrateStore()
   }
 

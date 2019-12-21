@@ -183,7 +183,6 @@ const commodityCurrentYear = Object.keys(props.production).filter(commodity => p
 const commodityCount = commodityCurrentYear && commodityCurrentYear.length
 const withhelds = Object.keys(props.production).filter(commodity => props.production[commodity].volume[currentYear] === 0)
 
-console.log(commodityCurrentYear);
 
   return (
     <div>

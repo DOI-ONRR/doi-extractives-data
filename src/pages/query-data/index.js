@@ -671,8 +671,6 @@ class QueryData extends React.Component {
     let groupByFiltered = GROUP_BY_OPTIONS[this.state.dataType](filter)
     let additionalColumnFiltered = ADDITIONAL_COLUMN_OPTIONS[this.state.dataType](groupByFiltered.options, groupByFiltered.default, filter)
 
-    console.log(filter, groupByFiltered, additionalColumnFiltered)
-
 	  this.setState({
       [this.state.dataType]: {
         filter: filter,
@@ -1018,7 +1016,7 @@ class QueryData extends React.Component {
 
   componentDidUpdate () {
     if (this.props[DATA_TYPE_OPTIONS[this.state.dataType]] && this.state.urlFilter) {
-      console.log(this.state.urlFilter)
+
       this.props[DATA_TYPE_OPTIONS[this.state.dataType]]['filters'] = {}
       Object.assign(this.props[DATA_TYPE_OPTIONS[this.state.dataType]]['filters'], this.state.urlFilter)
       this.onSubmitHandler({

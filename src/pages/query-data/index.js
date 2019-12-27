@@ -301,6 +301,8 @@ const LOCATIONS_URL_PARAM = 'locations'
 const COUNTIES_REGIONS_URL_PARAM = 'countiesRegions'
 const COMMODITIES_URL_PARAM = 'commodities'
 const REVENUE_TYPE_URL_PARAM = 'revenueType'
+const RECIPIENT_URL_PARAM = 'recipient'
+const SOURCE_URL_PARAM = 'source'
 const FY_YEARS_URL_PARAM = 'fiscalYearsSelected'
 
 class QueryData extends React.Component {
@@ -328,20 +330,72 @@ class QueryData extends React.Component {
   }
 
   getFilterFromUrl = (urlParams, dataType) => {
+    let landCategory = urlParams.get(LAND_CATEGORY_URL_PARAM) || ALL
+    let locations = urlParams.get(LOCATIONS_URL_PARAM) && urlParams.get(LOCATIONS_URL_PARAM).split(',')
+    locations = locations || [ALL]
+    let countiesRegions = urlParams.get(COUNTIES_REGIONS_URL_PARAM) || [ALL]
+    let commodities = urlParams.get(COMMODITIES_URL_PARAM) || [ALL]
+    let revenueType = urlParams.get(REVENUE_TYPE_URL_PARAM) || ALL
+    let recipient = urlParams.get(RECIPIENT_URL_PARAM) || ALL
+    let source = urlParams.get(SOURCE_URL_PARAM) || ALL
+    let fiscalYearsSelected = urlParams.get(FY_YEARS_URL_PARAM)
     switch (dataType) {
     case REVENUE:
-      let currentYear = new Date().getFullYear()
-      let locations = urlParams.get(LOCATIONS_URL_PARAM) && urlParams.get(LOCATIONS_URL_PARAM).split(',')
-      return (
-        {
-          [LAND_CATEGORY]: { orderNum: 1, value: urlParams.get(LAND_CATEGORY_URL_PARAM) || ALL },
-          [LOCATIONS]: { orderNum: 2, value: locations || [ALL] },
-          [COUNTIES_REGIONS]: { orderNum: 3, value: urlParams.get(COUNTIES_REGIONS_URL_PARAM) || [ALL] },
-          [COMMODITIES]: { orderNum: 4, value: urlParams.get(COMMODITIES_URL_PARAM) || [ALL] },
-          [REVENUE_TYPE]: { orderNum: 5, value: urlParams.get(REVENUE_TYPE_URL_PARAM) || ALL },
-          [FISCAL_YEAR]: { orderNum: Number.MAX_SAFE_INTEGER, value: urlParams.get(FY_YEARS_URL_PARAM) || [currentYear] },
+      return ({
+        dataFilter: {
+          [LAND_CATEGORY]: { orderNum: 1, value: landCategory },
+          [LOCATIONS]: { orderNum: 2, value: locations },
+          [COUNTIES_REGIONS]: { orderNum: 3, value: countiesRegions },
+          [COMMODITIES]: { orderNum: 4, value: commodities },
+          [REVENUE_TYPE]: { orderNum: 5, value: revenueType },
+          [FISCAL_YEAR]: { orderNum: Number.MAX_SAFE_INTEGER, value: fiscalYearsSelected },
+        },
+        toolbarFilter: {
+          landCategory,
+          locations,
+          countiesRegions,
+          commodities,
+          revenueType,
+          fiscalYearsSelected
         }
-      )
+      })
+    case PRODUCTION:
+      return ({
+        dataFilter: {
+          [LAND_CATEGORY]: { orderNum: 1, value: landCategory },
+          [LOCATIONS]: { orderNum: 2, value: locations },
+          [COUNTIES_REGIONS]: { orderNum: 3, value: countiesRegions },
+          [COMMODITIES]: { orderNum: 4, value: commodities },
+          [FISCAL_YEAR]: { orderNum: Number.MAX_SAFE_INTEGER, value: fiscalYearsSelected },
+        },
+        toolbarFilter: {
+          landCategory,
+          locations,
+          countiesRegions,
+          commodities,
+          fiscalYearsSelected
+        }
+      })
+    case DISBURSEMENTS:
+      if (urlParams.get(RECIPIENT_URL_PARAM) || urlParams.get(SOURCE_URL_PARAM)) {
+        return ({
+          dataFilter: {
+            [RECIPIENTS]: { orderNum: 1, value: recipient },
+            [SOURCE]: { orderNum: 2, value: source },
+            [LOCATIONS]: { orderNum: 3, value: (source === STATE) ? locations : undefined },
+            [COUNTIES]: { orderNum: 4, value: (source === STATE) ? countiesRegions : undefined },
+            [FISCAL_YEAR]: { orderNum: Number.MAX_SAFE_INTEGER, value: fiscalYearsSelected },
+          },
+          toolbarFilter: {
+            recipient,
+            source,
+            locations: (source === STATE) ? locations : undefined,
+            counties: (source === STATE) ? countiesRegions : undefined,
+            fiscalYearsSelected
+          }
+        })
+      }
+      break
     }
   }
 
@@ -1016,17 +1070,14 @@ class QueryData extends React.Component {
 
   componentDidUpdate () {
     if (this.props[DATA_TYPE_OPTIONS[this.state.dataType]] && this.state.urlFilter) {
-
       this.props[DATA_TYPE_OPTIONS[this.state.dataType]]['filters'] = {}
-      Object.assign(this.props[DATA_TYPE_OPTIONS[this.state.dataType]]['filters'], this.state.urlFilter)
-      this.onSubmitHandler({
-        landCategory: this.state.urlFilter[LAND_CATEGORY].value,
-        locations: this.state.urlFilter[LOCATIONS].value,
-        countiesRegions: this.state.urlFilter[COUNTIES_REGIONS].value,
-        commodities: this.state.urlFilter[COMMODITIES].value,
-        revenueType: this.state.urlFilter[REVENUE_TYPE].value,
-        fiscalYearsSelected: this.state.urlFilter[FISCAL_YEAR].value
-      }, true)
+      if (!this.state.urlFilter.dataFilter[FISCAL_YEAR].value) {
+        let allYears = Object.keys(this.props[DATA_TYPE_OPTIONS[this.state.dataType]][BY_FISCAL_YEAR]).sort().reverse()
+        this.state.urlFilter.dataFilter[FISCAL_YEAR].value = [parseInt(allYears[0])]
+        this.state.urlFilter.toolbarFilter.fiscalYearsSelected = [parseInt(allYears[0])]
+      }
+      Object.assign(this.props[DATA_TYPE_OPTIONS[this.state.dataType]]['filters'], this.state.urlFilter.dataFilter)
+      this.onSubmitHandler(this.state.urlFilter.toolbarFilter, true)
     }
   }
 

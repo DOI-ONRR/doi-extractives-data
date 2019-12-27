@@ -341,41 +341,47 @@ class QueryData extends React.Component {
     let fiscalYearsSelected = urlParams.get(FY_YEARS_URL_PARAM)
     switch (dataType) {
     case REVENUE:
-      return ({
-        dataFilter: {
-          [LAND_CATEGORY]: { orderNum: 1, value: landCategory },
-          [LOCATIONS]: { orderNum: 2, value: locations },
-          [COUNTIES_REGIONS]: { orderNum: 3, value: countiesRegions },
-          [COMMODITIES]: { orderNum: 4, value: commodities },
-          [REVENUE_TYPE]: { orderNum: 5, value: revenueType },
-          [FISCAL_YEAR]: { orderNum: Number.MAX_SAFE_INTEGER, value: fiscalYearsSelected },
-        },
-        toolbarFilter: {
-          landCategory,
-          locations,
-          countiesRegions,
-          commodities,
-          revenueType,
-          fiscalYearsSelected
-        }
-      })
+      if (urlParams.get(LAND_CATEGORY_URL_PARAM)) {
+        return ({
+          dataFilter: {
+            [LAND_CATEGORY]: { orderNum: 1, value: landCategory },
+            [LOCATIONS]: { orderNum: 2, value: locations },
+            [COUNTIES_REGIONS]: { orderNum: 3, value: countiesRegions },
+            [COMMODITIES]: { orderNum: 4, value: commodities },
+            [REVENUE_TYPE]: { orderNum: 5, value: revenueType },
+            [FISCAL_YEAR]: { orderNum: Number.MAX_SAFE_INTEGER, value: fiscalYearsSelected },
+          },
+          toolbarFilter: {
+            landCategory,
+            locations,
+            countiesRegions,
+            commodities,
+            revenueType,
+            fiscalYearsSelected
+          }
+        })
+      }
+      break
     case PRODUCTION:
-      return ({
-        dataFilter: {
-          [LAND_CATEGORY]: { orderNum: 1, value: landCategory },
-          [LOCATIONS]: { orderNum: 2, value: locations },
-          [COUNTIES_REGIONS]: { orderNum: 3, value: countiesRegions },
-          [COMMODITIES]: { orderNum: 4, value: commodities },
-          [FISCAL_YEAR]: { orderNum: Number.MAX_SAFE_INTEGER, value: fiscalYearsSelected },
-        },
-        toolbarFilter: {
-          landCategory,
-          locations,
-          countiesRegions,
-          commodities,
-          fiscalYearsSelected
-        }
-      })
+      if (urlParams.get(LAND_CATEGORY_URL_PARAM)) {
+        return ({
+          dataFilter: {
+            [LAND_CATEGORY]: { orderNum: 1, value: landCategory },
+            [LOCATIONS]: { orderNum: 2, value: locations },
+            [COUNTIES_REGIONS]: { orderNum: 3, value: countiesRegions },
+            [COMMODITIES]: { orderNum: 4, value: commodities },
+            [FISCAL_YEAR]: { orderNum: Number.MAX_SAFE_INTEGER, value: fiscalYearsSelected },
+          },
+          toolbarFilter: {
+            landCategory,
+            locations,
+            countiesRegions,
+            commodities,
+            fiscalYearsSelected
+          }
+        })
+      }
+      break
     case DISBURSEMENTS:
       if (urlParams.get(RECIPIENT_URL_PARAM) || urlParams.get(SOURCE_URL_PARAM)) {
         return ({

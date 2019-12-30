@@ -89,6 +89,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 
   createRedirect({ fromPath: '/how-it-works/federal-revenue-by-company', toPath: '/how-it-works/federal-revenue-by-company/2018', redirectInBrowser: true })
   createRedirect({ fromPath: '/how-it-works/federal-revenue-by-company/', toPath: '/how-it-works/federal-revenue-by-company/2018', redirectInBrowser: true })
+  createRedirect({ fromPath: '/explore/revenue/', toPath: '/query-data/', redirectInBrowser: true })
 
   //const used = process.memoryUsage().heapUsed / 1024 / 1024
   //console.log(`#Create Pages: ${ Math.round(used * 100) / 100 } MB`)

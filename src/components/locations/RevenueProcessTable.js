@@ -329,7 +329,7 @@ const RevenueProcessTable = props => {
       <thead>
         <tr>
           <th id={`${props.id}_col_0`} scope="col" className="arrow_box"><span>Commodity</span></th>
-          <th id={`${props.id}_col_1`} scope="col" className="arrow_box"><span>1. Securing rights</span>Companies pay bonuses or other fees to secure rights to resources on federal land</th>
+          <th id={`${props.id}_col_1`} scope="col" className="arrow_box"><span>1. Securing a lease or claim</span>Companies pay bonuses or other fees to secure rights to resources on federal land</th>
           <th id={`${props.id}_col_2`} scope="col" className="arrow_box"><span>2. Before production</span>Companies pay rent on federal land while exploring for resources</th>
           <th id={`${props.id}_col_3`} scope="col" className="arrow_box-last"><span>3. During production</span>Companies pay royalties after production begins</th>
           <th id={`${props.id}_col_4`} scope="col"><span>Other revenue</span>Minimum or estimated royalties, settlements, and interest payments</th>

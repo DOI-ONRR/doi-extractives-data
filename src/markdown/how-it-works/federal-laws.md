@@ -81,7 +81,7 @@ The following table lists the laws that provide the backbone of the fiscal regim
   <td>Geothermal</td>
   </tr>
   <tr>
-    <td><a href="http://www.gpo.gov/fdsys/pkg/USCODE-2011-title30/pdf/USCODE-2011-title30-chap2-sec21a.pdf">Mining and Minerals Policy Act of 1970</a> (30 USC § 21a et seq.)	</td>
+    <td><a href="https://legcounsel.house.gov/Comps/Mining%20And%20Minerals%20Policy%20Act%20Of%201970.pdf">Mining and Minerals Policy Act of 1970</a> (30 USC § 21a et seq.)	</td>
     <td>Amends the Mining Act of 1920. Establishes the national interest to develop a domestic private enterprise mining industry, while addressing adverse environmental impacts.</td>
     <td>Federal onshore</td>
   <td>All natural resources</td>

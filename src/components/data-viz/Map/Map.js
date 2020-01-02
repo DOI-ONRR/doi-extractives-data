@@ -30,14 +30,14 @@ const Map = (props) => {
     const colorScheme=props.colorScheme || "green" ;
     const offshoreColorScheme=props.offshoreColorScheme || colorScheme;
     const mapTitle=props.mapTitle;
-    const onClick=props.onClick || function (d,i) {console.debug("Default onClick function", d,i)};
+    const onClick=props.onClick || function (d,i) {////console.debug("Default onClick function", d,i)};
     useEffect( () => {
-	console.debug("DWGHE1 SDFSDFSDFSDFSDFSDF");
-	console.debug(mapJsonObject);
+	////console.debug("DWGHE1 SDFSDFSDFSDFSDFSDF");
+	////console.debug(mapJsonObject);
 
 	if(typeof(mapJsonObject) != "object") {
-	    console.debug("DWGH string  SDFSDFSDFSDFSDFSDF");
-	    console.debug(mapJson);
+	    //console.debug("DWGH string  SDFSDFSDFSDFSDFSDF");
+	    //console.debug(mapJson);
 	    let promise = d3.json(mapJson)
 		.then( us => {
 		    let states = get_states(us);
@@ -73,8 +73,8 @@ const Map = (props) => {
 	    let states = get_states(us);
 	    let data=observable_data(mapData);
 	    data.title=mapTitle;
-	    console.debug("DWGH SDFSDFSDFSDFSDFSDF");
-	    console.debug(mapJsonObject);
+	    //console.debug("DWGH SDFSDFSDFSDFSDFSDF");
+	    //console.debug(mapJsonObject);
 	    let svg=chart(elemRef.current, us,mapFeatures,data, colorScheme,onClick);
 	    for(let region in  offshore.objects ) {
 		offshore_chart(svg,offshore,region,data, offshoreColorScheme ,onClick);
@@ -124,7 +124,7 @@ const chart = (node,us,mapFeatures,data, colorScheme,onClick) => {
     };
     const path = d3.geoPath(projection);
 
-    console.debug(projection.scale);
+    //console.debug(projection.scale);
     let color = ()=>{};
     // switch quick and dirty to let users change color beter to use d3.interpolateRGB??
     switch(colorScheme) {

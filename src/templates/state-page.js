@@ -120,7 +120,7 @@ class StatePages extends React.Component {
   }
 
     render () {
-	console.debug(this.props);
+	//console.debug(this.props);
 	    return (
       <DefaultLayout>
         <main id={'state-' + this.usStateData.unique_id} className="container-page-wrapper layout-state-pages">

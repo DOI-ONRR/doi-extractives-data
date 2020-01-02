@@ -96,7 +96,7 @@ export class Tab extends React.Component {
         ref={node => this.node = node}
         className={this.props.isSelected ? styles.tabSelected + ' ' + styles.tab : styles.tab}
         onClick={() => this.props.callBack(this.props.id, this.props.children)}
-	onKeyUp={(event) => { console.debug(event); if(event.keyCode==13) { this.props.callBack(this.props.id, this.props.children)}}}
+	onKeyUp={(event) => { //console.debug(event); if(event.keyCode==13) { this.props.callBack(this.props.id, this.props.children)}}}
 	tabIndex={0}
 	    >
         {(this.props.name || 'Tabsdss')}

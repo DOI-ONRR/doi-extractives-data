@@ -100,7 +100,7 @@ class StatePages extends React.Component {
     this.usStateData = this.usStateMarkdown.frontmatter
       this.usStateFields = this.usStateMarkdown.fields || {}
       
-      console.log(this.commodityYears);
+      //console.log(this.commodityYears);
   }
 
   componentDidMount () {

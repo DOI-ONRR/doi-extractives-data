@@ -16,7 +16,7 @@ const Toggle = props => {
   }
 
     const onKeyUpHandler = (e, key) => {
-	console.debug("E", e)
+	//console.debug("E", e)
 	let keypressed=e.keyCode;
 	if(keypressed==13) {
 	    e.stopPropagation()

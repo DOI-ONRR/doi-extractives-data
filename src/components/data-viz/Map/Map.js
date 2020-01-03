@@ -32,8 +32,8 @@ const Map = (props) => {
     const mapTitle=props.mapTitle;
     const onClick=props.onClick || function (d,i) {console.debug("Default onClick function", d,i)};
     useEffect( () => {
-	//console.debug("DWGHE1 SDFSDFSDFSDFSDFSDF");
-	//console.debug(mapJsonObject);
+	////console.debug("DWGHE1 SDFSDFSDFSDFSDFSDF");
+	////console.debug(mapJsonObject);
 
 	if(typeof(mapJsonObject) != "object") {
 	    //console.debug("DWGH string  SDFSDFSDFSDFSDFSDF");

@@ -19,7 +19,8 @@ exports[`RevenueTrends renders correctly 1`] = `
     <thead>
       <tr>
         <th>
-          10-year trend
+          FY09 - FY18
+           trend
         </th>
         <th
           className="alignRight"
@@ -181,6 +182,26 @@ exports[`RevenueTrends renders correctly 1`] = `
             </span>
           </span>
            from FY18
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="sourceLinkLeft"
+        >
+          <a
+            href="/./downloads/federal-revenue-by-location/"
+          >
+            Source file
+          </a>
+        </td>
+        <td
+          className="sourceLinkRight"
+        >
+          <a
+            href="/./downloads/federal-revenue-by-month/"
+          >
+            Source file
+          </a>
         </td>
       </tr>
     </tbody>

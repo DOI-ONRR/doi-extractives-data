@@ -68,7 +68,7 @@ const SectionFederalProduction = props => {
         <div className="chart-list">
           {Object.keys(usStateFederalProducts).map((productKey, index) => {
             if (usStateFederalProducts[productKey].total === 0) return
-
+            // console.log(productKey)
             let product = usStateFederalProducts[productKey]
             let productName = product.name
             let productSlug = utils.formatToSlug(productKey, { lower: true })

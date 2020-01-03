@@ -1100,6 +1100,8 @@ class QueryData extends React.Component {
       additionalColumnOptions = additionalColumnOptions.filter(option => option !== this.state[this.state.dataType].groupBy)
     }
 
+    // console.log(this.state.dataType, this.dataTypeParam)
+
     return (
       <DefaultLayout>
 	      <Helmet

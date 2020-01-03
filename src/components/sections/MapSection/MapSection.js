@@ -54,7 +54,7 @@ query MyQuery {
     let states=props.states || [];
     let options=states.map((value)=>{ return {value:value.state.frontmatter.unique_id,
 					      name:value.state.frontmatter.title}})
-//    console.debug(options);
+//    //console.debug(options);
     let offshoreJson=withPrefixGatsby(props.mapOffshoreJson);
     let mapJson=withPrefixGatsby(props.mapJson);
     let mapJsonObject=props.mapJsonObject;

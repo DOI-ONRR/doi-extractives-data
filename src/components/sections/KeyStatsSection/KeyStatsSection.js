@@ -302,8 +302,8 @@ class KeyStatsSection extends React.Component {
 	  if (this.state[dataSetId] === undefined) {
 	    return
 	  }
-	    console.debug("========================================================================+>");
-	    console.debug(this.state[dataSetId]);
+	    //console.debug("========================================================================+>");
+	    //console.debug(this.state[dataSetId]);
 	    
 	  return (
 	    <div is="chart">

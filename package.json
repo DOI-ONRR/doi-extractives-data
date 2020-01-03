@@ -4,6 +4,8 @@
   "version": "1.0.0",
   "author": "Jeff Keene <jeff.keene@onrr.gov>",
   "dependencies": {
+    "@babel/plugin-proposal-export-default-from": "^7.7.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.7.4",
     "@devexpress/dx-react-core": "^1.11.2",
     "@devexpress/dx-react-grid": "^1.11.2",
     "@devexpress/dx-react-grid-material-ui": "^1.11.2",
@@ -72,8 +74,6 @@
     "federalist": "npm run release-blog && npm run release-gatsby"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-export-default-from": "^7.7.4",
-    "@babel/plugin-proposal-object-rest-spread": "^7.7.4",
     "babel-eslint": "^10.0.3",
     "babel-jest": "^24.9.0",
     "babel-preset-gatsby": "^0.1.9",

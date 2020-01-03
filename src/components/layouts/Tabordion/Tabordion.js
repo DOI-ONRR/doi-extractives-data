@@ -2,29 +2,30 @@ import React from 'react'
 
 import PropTypes from 'prop-types'
 import MediaQuery from 'react-responsive'
-import { navigate } from '@reach/router';
+import { navigate } from '@reach/router'
 import styles from './Tabordion.module.scss'
 
 class Tabordion extends React.Component {
-    constructor (props) {
-	super(props)
-	let selected=this.props.selected || '';
-	let selectedIndex=0;
-	if(this.props.children && selected ) {
-	    selectedIndex=this.props.children.findIndex(child=> child.props.id == selected)
-	    if(selectedIndex==-1) { selectedIndex=0 }
-	}
-	this.state = {
-	    tabId: this.props.children &&  this.props.children[selectedIndex].props.id,
-	    tabPanel: this.props.children && this.props.children[selectedIndex].props.children,
-	}
+  constructor (props) {
+    super(props)
+    let selected = this.props.selected || ''
+    let selectedIndex = 0
+    if (this.props.children && selected) {
+	    selectedIndex = this.props.children.findIndex(child => child.props.id === selected)
+	    if (selectedIndex === -1) {
+        selectedIndex = 0
+      }
     }
-    
-    tabClicked (id, content, element) {
+    this.state = {
+	    tabId: this.props.children && this.props.children[selectedIndex].props.id,
+	    tabPanel: this.props.children && this.props.children[selectedIndex].props.children,
+    }
+  }
+
+  tabClicked (id, content, element) {
     if (this.state.tabId !== id) {
-	this.setState({ tabId: id, tabPanel: content })
-	navigate('?tab='+id);
-	
+      this.setState({ tabId: id, tabPanel: content })
+      navigate('?tab=' + id)
     }
   }
 
@@ -96,10 +97,14 @@ export class Tab extends React.Component {
         ref={node => this.node = node}
         className={this.props.isSelected ? styles.tabSelected + ' ' + styles.tab : styles.tab}
         onClick={() => this.props.callBack(this.props.id, this.props.children)}
-	onKeyUp={(event) => { console.debug(event); if(event.keyCode==13) { this.props.callBack(this.props.id, this.props.children)}}}
-	tabIndex={0}
+        onKeyUp={event => {
+          if (event.keyCode === 13) {
+            this.props.callBack(this.props.id, this.props.children)
+          }
+        }}
+        tabIndex={0}
 	    >
-        {(this.props.name || 'Tabsdss')}
+        {(this.props.name || 'Tab')}
 		  </div>
     )
   }

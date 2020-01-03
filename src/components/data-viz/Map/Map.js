@@ -30,7 +30,7 @@ const Map = (props) => {
     const colorScheme=props.colorScheme || "green" ;
     const offshoreColorScheme=props.offshoreColorScheme || colorScheme;
     const mapTitle=props.mapTitle;
-    const onClick=props.onClick || function (d,i) {////console.debug("Default onClick function", d,i)};
+    const onClick=props.onClick || function (d,i) {console.debug("Default onClick function", d,i)};
     useEffect( () => {
 	////console.debug("DWGHE1 SDFSDFSDFSDFSDFSDF");
 	////console.debug(mapJsonObject);

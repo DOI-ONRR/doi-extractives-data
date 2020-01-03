@@ -11,8 +11,8 @@ class Tabordion extends React.Component {
     let selected = this.props.selected || ''
     let selectedIndex = 0
     if (this.props.children && selected) {
-	    selectedIndex = this.props.children.findIndex(child => child.props.id == selected)
-	    if (selectedIndex == -1) {
+	    selectedIndex = this.props.children.findIndex(child => child.props.id === selected)
+	    if (selectedIndex === -1) {
         selectedIndex = 0
       }
     }

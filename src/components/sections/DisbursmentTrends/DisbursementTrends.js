@@ -1,4 +1,5 @@
 import React, { useEffect, useRef }  from 'react'
+import Link from '../../utils/temp-link'
 import ReactDOM from 'react-dom'
 import { useStaticQuery, graphql } from "gatsby"
 
@@ -77,8 +78,9 @@ allYearlyDispursements : allFederalDisbursements (sort: {fields: [Year], order: 
                 <th className={styles.alignRight}>{currentFiscalYearText}</th>
               </tr>
             </thead>
+		      <tbody >
 	      {trends.map( (trend, index) => (
-		      <tbody key={'tbody'+index} >
+          <React.Fragment>
 		      <tr className={styles[trend.className]}>
                       <td>{trend.fund}</td>
                 <td className={styles.alignRight}>{utils.formatToSigFig_Dollar(currentTrends[index].current, 3)}</td>
@@ -94,8 +96,15 @@ allYearlyDispursements : allFederalDisbursements (sort: {fields: [Year], order: 
 		  
                   </td>
 		      </tr>
-		      </tbody>
+          </React.Fragment>
 	      ))}
+        <tr>
+          <td className={styles.sourceLinkLeft}><Link to='./downloads/disbursements/'>Source file</Link></td>
+          <td className={styles.sourceLinkRight}>
+            <Link to='./downloads/federal-disbursements-by-month/'>Source file</Link>
+          </td>
+        </tr>
+        </tbody>
 
 
           </table>
@@ -227,9 +236,9 @@ const aggregateMonthlyData= (data,currentYear) => {
     let r=[
 	{fund: 'U.S. Treasury', current: 0, previous: 0, histSum: {}, histData:[] },
 	{fund: 'States & counties', current: 0, previous: 0, histSum:{}, histData:[] },
-	{fund: 'Reclamation fund', current: 0, previous: 0, histSum:{}, histData:[]},
+	{fund: 'Reclamation Fund', current: 0, previous: 0, histSum:{}, histData:[]},
 	{fund: 'Native Americans', current: 0, previous: 0, histSum:{}, histData:[]},
-	{fund: 'Other Funds', current: 0, previous: 0, histSum:{}, histData:[]},
+	{fund: 'Other funds', current: 0, previous: 0, histSum:{}, histData:[]},
 	{fund: 'Total', current: 0, previous: 0, histSum: {},histData:[], className : 'strong'}
     ]
 
@@ -284,9 +293,9 @@ const aggregateData= (data) => {
     let r=[
 	{fund: 'U.S. Treasury', current: 0, previous: 0, histSum: {}, histData:[] },
 	{fund: 'States & counties', current: 0, previous: 0, histSum:{}, histData:[] },
-	{fund: 'Reclamation fund', current: 0, previous: 0, histSum:{}, histData:[]},
+	{fund: 'Reclamation Fund', current: 0, previous: 0, histSum:{}, histData:[]},
 	{fund: 'Native Americans', current: 0, previous: 0, histSum:{}, histData:[]},
-	{fund: 'Other Funds', current: 0, previous: 0, histSum:{}, histData:[]},
+	{fund: 'Other funds', current: 0, previous: 0, histSum:{}, histData:[]},
 	{fund: 'Total', current: 0, previous: 0, histSum: {},histData:[], className : 'strong'}
     ]
     let currentYear=data[0].Fiscal_Year

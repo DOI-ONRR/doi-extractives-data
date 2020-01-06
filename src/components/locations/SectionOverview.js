@@ -18,7 +18,7 @@ import { useStaticQuery, graphql } from "gatsby"
 let year
 
 const FederalDisbursements=(id,data) => {
-    console.debug("id:", id,data);
+    //console.debug("id:", id,data);
     let max_year=data[0].Fiscal_Year;
     let nodes=data.filter( node => node.State==id && node.Fiscal_Year==max_year);
     let All=nodes.map(item => item._Total_).reduce((prev, next) => prev + next,null);
@@ -32,7 +32,7 @@ const FederalDisbursements=(id,data) => {
     r.All.Onshore[max_year]=Onshore;
     r.All.Offshore[max_year]=Offshore;
     r.All.MaxYear=max_year;	   
-    console.debug("results:", r);
+    //console.debug("results:", r);
     return r;
 }
 
@@ -56,11 +56,11 @@ const SectionOverview = props => {
     const usStateData = props.usStateMarkdown.frontmatter
     const usStateFields = props.usStateMarkdown.fields || {}
     const usDisbursements=results.StateDisbursements.nodes
-    console.debug(results)
+    //console.debug(results)
     
     
 
-    console.debug(props);
+    //console.debug(props);
     
     return (
 	
@@ -183,7 +183,7 @@ const commodityCurrentYear = Object.keys(props.production).filter(commodity => p
 const commodityCount = commodityCurrentYear && commodityCurrentYear.length
 const withhelds = Object.keys(props.production).filter(commodity => props.production[commodity].volume[currentYear] === 0)
 
-console.log(commodityCurrentYear);
+// console.log(commodityCurrentYear);
 
   return (
     <div>
@@ -204,7 +204,7 @@ console.log(commodityCurrentYear);
 
 const StateRevenueSummary = props => {
     const revenueYear = props.revenueYears[props.revenueYears.length - 1]
-    console.debug(props)
+    //console.debug(props)
 const revenue = props.revenue.All.All[revenueYear]
 
   return (

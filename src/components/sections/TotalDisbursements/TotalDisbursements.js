@@ -54,14 +54,14 @@ const TotalDisbursements = (props) => {
     }
     const toggleValue= (newValue) => {
 
-	console.debug("TOGGGGGGGGGGGGLED",newValue);
+	//console.debug("TOGGGGGGGGGGGGLED",newValue);
 	setRevenueToggle(newValue);
     }
     const revenuePeriodSelected = (e,v) => {
-		console.debug("period", v);
+		//console.debug("period", v);
     }
     const revenueYearlyPeriodSelected = (e,v) => {
-		console.debug("period", v);
+		//console.debug("period", v);
     }
 
     const getDropdown = () => {

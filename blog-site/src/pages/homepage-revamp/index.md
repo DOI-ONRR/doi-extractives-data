@@ -70,19 +70,19 @@ Equipped with the knowledge that our homepage was valuable to our users, we set 
 
 ### First round
 
-In addition to making our homepage more in line with our new strategy, we were getting requests from users who fall into our "domain learner" and "question answerer" user types. They wanted summarized numbers on the homepage so they wouldn't have to dig through the [Explore Data](https://revenuedata.doi.gov/explore/) page to find them. We [tested 6 options](https://github.com/ONRR/doi-extractives-data/blob/research/research/20_fledglingfox/Results.md) with users matching a variety of user types. We landed on a couple options to test in the second round.
+In addition to making our homepage more in line with our new strategy, we were getting requests from users who fall into our "domain learner" and "question answerer" user types. They wanted summarized numbers on the homepage so they wouldn't have to dig through the [Explore Data](https://revenuedata.doi.gov/explore/) page to find them. We [tested 6 options](https://github.com/ONRR/doi-extractives-data/blob/research/research/20_fledglingfox_jun2018_keyfacts/Results.md) with users matching a variety of user types. We landed on a couple options to test in the second round.
 
 ![homepage prototypes, we showed 6 prototypes to users, all of the prototypes summarized production, revenue, and disbursements data, one prototype shown is a sankey diagram, which shows the flow of money between its source and what it funds](./homepage-concepts.png)
 
 ### Second round
 
-In the [second round of testing](https://github.com/ONRR/doi-extractives-data/blob/research/research/21_obliviousorangutan/Results.md), we included new users to make sure our additions didn't scare away those without a basic understanding of the data. We also hadn't done extensive testing on the existing homepage with new users. In addition, we tested with more domain learners to make sure we were meeting their needs. We learned that we needed to summarily explain the production, revenue, and disbursement process on the homepage and Explore Data page and landed on the best approach for the new summary information.
+In the [second round of testing](https://github.com/ONRR/doi-extractives-data/blob/research/research/21_obliviousorangutan_aug2018_keyfacts_exploredata/Results.md), we included new users to make sure our additions didn't scare away those without a basic understanding of the data. We also hadn't done extensive testing on the existing homepage with new users. In addition, we tested with more domain learners to make sure we were meeting their needs. We learned that we needed to summarily explain the production, revenue, and disbursement process on the homepage and Explore Data page and landed on the best approach for the new summary information.
 
 ![option 1 shows a mix of bar charts and a sankey diagram with a map of the U.S., option 2 shows all bar charts with a map of the U.S.](./options.jpg)
 
 ### Third round
 
-We then [tested 3 concepts](https://github.com/ONRR/doi-extractives-data/blob/research/research/22_QuietQuail/Results.md) with additional content at the top of the homepage to explain the data and how the different pieces of data work together. We landed on one concept that worked best and also learned that general-public users are most likely to use the site to explore data related to their geographic area, so the map needed to come before the new summary information on the homepage.
+We then [tested 3 concepts](https://github.com/ONRR/doi-extractives-data/blob/research/research/22_QuietQuail_sept2018_homepage/Results.md) with additional content at the top of the homepage to explain the data and how the different pieces of data work together. We landed on one concept that worked best and also learned that general-public users are most likely to use the site to explore data related to their geographic area, so the map needed to come before the new summary information on the homepage.
 
 ![round 3 testing with summarized process information](./round3.png)
 

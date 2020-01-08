@@ -51,13 +51,13 @@ Among other problems, this scale had the effect of visually equating (for exampl
 
 Using Pandas, I soon discovered the reason why:
 
-**Median:** $30,928.34<br>
+**Median:** $30,928.34<br />
 `df['rate'].median()`
 
-**Mean:** $5,903,835.33<br>
+**Mean:** $5,903,835.33<br />
 `df['rate'].mean()`
 
-**Standard deviation:** $39,062,215.48<br>
+**Standard deviation:** $39,062,215.48<br />
 `df['rate'].std()`
 
 As you can see, the median is only $30,928, while the mean is $5,903,835. There are clearly outliers on the top end of the data pulling on the mean. We can see from the standard deviation — which is nearly $40 million — there is significant variation in the data.

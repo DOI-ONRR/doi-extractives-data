@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { Link,graphql } from 'gatsby'
 import get from 'lodash/get'
+import { MDXRenderer } from "gatsby-plugin-mdx"
 
 import Layout from '../components/layout'
 import { rhythm, scale } from '../utils/typography'
@@ -10,7 +11,7 @@ import favicon from '../../static/img/favicon.ico'
 class BlogPostTemplate extends React.Component {
   render() {
     const siteAnalytics = get(this.props, 'data.site.siteMetadata.googleAnalyticsId')
-    const post = this.props.data.markdownRemark
+    const post = this.props.data.mdx
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
     const siteDescription = post.excerpt
     const { previous, next } = this.props.pageContext
@@ -45,7 +46,7 @@ class BlogPostTemplate extends React.Component {
         >
           {post.frontmatter.date}
         </p>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <MDXRenderer>{post.body}</MDXRenderer>
         <hr
           style={{
             marginBottom: rhythm(1),
@@ -112,10 +113,10 @@ export const pageQuery = graphql`
         title
       }
     }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+    mdx(fields: { slug: { eq: $slug } }) {
       id
       excerpt
-      html
+      body
       frontmatter {
         title
         authors {

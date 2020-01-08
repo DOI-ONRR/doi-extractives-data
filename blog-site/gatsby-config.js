@@ -18,7 +18,7 @@ module.exports = {
   },
   pathPrefix: `${BASEURL}/blog`,
   mapping: {
-    "MarkdownRemark.frontmatter.authors": `AuthorYaml`,
+    "Mdx.frontmatter.authors": `AuthorYaml`,
   },
   plugins: [
     `gatsby-transformer-yaml`,
@@ -37,8 +37,9 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: `gatsby-plugin-mdx`,
       options: {
+        extensions: [`.mdx`, `.md`],
         plugins: [
           {
             resolve: `gatsby-remark-autolink-headers`,

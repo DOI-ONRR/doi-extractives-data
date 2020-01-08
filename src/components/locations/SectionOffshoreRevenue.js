@@ -187,7 +187,7 @@ const SectionOffshoreRevenue = props => {
                             year={commodityYearsSortDesc[0]}>
                             <thead>
                               <tr>
-                                <th>{utils.toTitleCase(usStateData.unique_id)}</th>
+                                <th>{'Region'}</th>
                                 <th colSpan='2' className='numeric' data-series='volume'>Revenue</th>
                               </tr>
                             </thead>

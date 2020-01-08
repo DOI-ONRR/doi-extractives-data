@@ -179,7 +179,7 @@ const SectionRevenue = props => {
                           <span className="eiti-bar-chart-x-value">{ commodityYearsSortDesc[0] }</span>.
                         </span>
                         <span className="caption-no-data" aria-hidden="true">
-                                                    There is no data about production of {allCommoditiesChartName.toLowerCase()} in{' '}
+                                                    There is no data about revenue from natural resources on federal land in {' ' + usStateData.title + ' in '}
                           <span className="eiti-bar-chart-x-value">{ commodityYearsSortDesc[0] }</span>.
                         </span>
                       </figcaption>

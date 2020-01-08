@@ -172,10 +172,10 @@ const SectionRevenue = props => {
                       </eiti-bar-chart>
                       <figcaption id={'federal-revenue-county-figures-' + allCommoditiesSlug} aria-hidden='false'>
                         <span className="caption-data">
-                          <span className="eiti-bar-chart-y-value" data-format="$,">
+                          Companies paid <span className="eiti-bar-chart-y-value" data-format="$,">
                             {(allCommoditiesValues[commodityYearsSortDesc[0]]) ? (allCommoditiesValues[commodityYearsSortDesc[0]]).toLocaleString() : ('0').toLocaleString() }{' '}
                           </span>
-                            Companies paid{' '}of revenue to produce natural resources on federal land in {' ' + usStateData.title + ' in '}
+                             to produce natural resources on federal land in {' ' + usStateData.title + ' in '}
                           <span className="eiti-bar-chart-x-value">{ commodityYearsSortDesc[0] }</span>.
                         </span>
                         <span className="caption-no-data" aria-hidden="true">

@@ -105,12 +105,9 @@ const SectionDisbursements = props => {
         <StickyHeader headerText={'Federal disbursements'} />
       </StickyWrapper>
 
-      <p>After collecting revenue from natural resource extraction, the Office of Natural Resources Revenue distributes that money to different agencies
-        , funds, and local governments for public use. This process is called “disbursement.”</p>
+      <p>After collecting revenue from natural resource extraction, the Office of Natural Resources Revenue distributes that money to different agencies, funds, and local governments for public use. This process is called “disbursement.”</p>
       <p>
-				Most federal revenue disbursements go into national funds
-        . For detailed data about which expenditures and projects from those national funds are in {usStateData.title}
-        , see <Link to="/explore/#federal-disbursements">nationwide federal disbursements</Link>.
+				Most federal revenue disbursements go into national funds. For detailed data about which expenditures and projects from those national funds are in {usStateData.title}, see <Link to="/explore/#federal-disbursements">nationwide federal disbursements</Link>.
       </p>
 
       {getDisbursementsContent()}

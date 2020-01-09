@@ -6,18 +6,13 @@ redirect_from: /how-it-works/tribal-revenue/
 tag:
 - how it works
 - production
-- renewable energy
-- geothermal
-- wind
-- water power
-- biomass
 - Native American
 - Indian
 - tribal
 ---
 
 <custom-link to="/how-it-works/" className="breadcrumb link-charlie">How it works</custom-link> /
-# Revenue from natural resources on Native American land
+# Revenue from Natural Resources on Native American Land
 
 > Natural resources are increasingly a key source of income for many Native American tribes and individuals. In <display-year data-set-key="disbursements" accounting-type='fiscal'></display-year>, <glossary-term>ONRR</glossary-term> and <glossary-term>OST</glossary-term> disbursed <display-disbursement filter='{"Fund": "American Indian Tribes"}'></display-disbursement> to tribes and allottees.
 
@@ -69,12 +64,12 @@ The federal government may only release information about natural resource extra
 
 In the tables below, revenue may be grouped differently depending on the stage of production; see [documentation about the federal revenue dataset](/downloads/federal-revenue-by-location/) for more detailed explanations.
 
-<native-american-revenue-table></native-american-revenue-table>
+<a href="/query-data/?dataType=Revenue">Query revenue data</a> →
 
 ## Audits and assurances
 
 Native American revenue data, like federal revenue data, is subject to standards, audits, and assurances. These include:
 
 - The [Onshore Energy and Mineral Lease Management Interagency Standard Operating Procedures (PDF)](https://www.onrr.gov/about/pdfdocs/FINAL%20Interagency%20SOP%20-%2009-23-13.pdf) outlines the procedures that BLM, ONRR, and BIA follow to verify and enforce compliance for production and revenue collection from Native American lands
-- The [Indian Self-Determination and Education Act (Public Law 93-638)](https://www.doi.gov/ost/tribal_beneficiaries/contracting) and Section 202 of the [Federal Oil & Gas Royalty Management Act of 1982 (PDF)](https://www.boem.gov/uploadedFiles/BOEM/Oil_and_Gas_Energy_Program/Leasing/Outer_Continental_Shelf/Lands_Act_History/federal%20og%20royalty%20mgmt.pdf) (FOGRMA) outline how DOI may contract with a tribe to perform compliance activities
+- The [Indian Self-Determination and Education Act (Public Law 93-638)](https://www.doi.gov/ost/tribal_beneficiaries/contracting) and Section 202 of the [Federal Oil & Gas Royalty Management Act of 1982 (PDF)](https://www.onrr.gov/Laws_R_D/PubLaws/PDFDocs/97-451.pdf) (FOGRMA) outline how DOI may contract with a tribe to perform compliance activities
 - The Office of the Special Trustee for American Indians (OST) [Annual Report of the Tribal and Other Trust Funds and Individual Indian Monies Trust Funds Managed by the U.S. Department of the Interior OST](https://www.doi.gov/ost) includes the annual auditor’s report for tribal and other trust funds under the [American Indian Trust Fund Management Reform Act of 1994 (PDF)](https://www.doi.gov/sites/doi.gov/files/migrated/ost/trust_documents/upload/American-IndianTrustFundManagementReformActof1994.pdf). [Archived audits are available here](https://www.doi.gov/ost/trust_documents/Annual-Audits).

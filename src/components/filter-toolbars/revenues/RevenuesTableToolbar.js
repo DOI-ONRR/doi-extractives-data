@@ -214,7 +214,7 @@ const RevenuesTableToolbar = ({
       <MuiThemeProvider theme={muiTheme}>
         <Grid container spacing={1}>
           <Grid item sm={2} xs={12}>
-            <h6>Land Category:</h6>
+            <h6>Land category:</h6>
           </Grid>
           <Grid item sm={5} xs={12}>
             <DropDown

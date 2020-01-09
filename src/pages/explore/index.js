@@ -92,18 +92,18 @@ class ExplorePage extends React.Component {
       <DefaultLayout>
         <main id="main-content" className="layout-state-pages national-page">
           <Helmet
-            title="Explore data | Natural Resources Revenue Data"
+            title="Explore Data | Natural Resources Revenue Data"
             meta={[
               // title
-              { name: 'og:title', content: 'Explore data | Natural Resources Revenue Data' },
-              { name: 'twitter:title', content: 'Explore data | Natural Resources Revenue Data' },
+              { name: 'og:title', content: 'Explore Data | Natural Resources Revenue Data' },
+              { name: 'twitter:title', content: 'Explore Data | Natural Resources Revenue Data' },
             ]}
           />
 
           <section id="title" className="slab-delta">
             <div className="container-page-wrapper landing-section_top ribbon ribbon-column">
               <div className="container-left-8 ribbon-hero ribbon-hero-column">
-                <h1>Explore data</h1>
+                <h1>Explore Data</h1>
                 <figure>
                   <StateMap
                     ownership={true}

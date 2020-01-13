@@ -23,6 +23,7 @@ const AboutPage = () => {
           title="About | Natural Resources Revenue Data"
           meta={[
             // title
+            { name: 'description', content: 'Archive of open data about natural resource management on federal lands and waters in the United States, including oil, gas, coal, and other extractive industries.' },
             { name: 'og:title', content: 'About | Natural Resources Revenue Data' },
             { name: 'twitter:title', content: 'About | Natural Resources Revenue Data' },
           ]} />

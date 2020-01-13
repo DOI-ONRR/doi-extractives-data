@@ -3,9 +3,9 @@ title: Offshore Renewables | How it Works | Natural Resources Revenue Data
 layout: howitworks-process
 tag:
 - How it works
-- Onshore
-- Oil
-- Gas
+- Offshore
+- Renewable energy
+- Wind
 - Process
 - Resources
 permalink: /how-it-works/offshore-renewables/

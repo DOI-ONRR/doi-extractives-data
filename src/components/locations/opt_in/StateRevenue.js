@@ -30,7 +30,7 @@ const StateRevenue = props => {
 				  </p>
 
 				  <p>
-				    <Link to={'/downloads/USEITI_' + props.usStateData.title + '_revenue_streams.pdf'} className="data-downloads">
+				    <Link to={'/downloads/archive/USEITI_' + props.usStateData.title + '_revenue_streams.pdf'} className="data-downloads">
 				      <DataAndDocs> Download: {props.usStateData.title} revenue streams (PDF)</DataAndDocs>
 				    </Link>
 				  </p>

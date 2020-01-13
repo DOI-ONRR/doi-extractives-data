@@ -342,7 +342,7 @@ class TotalDisbursementsDeprecated extends React.Component {
 	      <section className={styles.revenueDisbursementsSection} >
 		  <h3 className={styles.title + ' h3-bar'}>Total disbursements<span className={styles.titleRight}>
 		  <ExploreDataLink
-		    to="/query-data?dataType=Disbursements"
+		    to="/query-data/?dataType=Disbursements"
 	            icon="filter"
 		    >Filter disbursements data
 			    </ExploreDataLink></span></h3>

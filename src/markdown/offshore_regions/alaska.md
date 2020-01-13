@@ -1,6 +1,6 @@
 ---
 unique_id: alaska
-title: Alaska offshore region
+title: Alaska Offshore Region
 permalink: /explore/offshore-alaska/
 layout: offshore-region
 

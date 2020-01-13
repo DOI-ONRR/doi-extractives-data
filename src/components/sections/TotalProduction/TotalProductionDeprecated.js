@@ -344,7 +344,7 @@ class TotalProductionDeprecated extends React.Component {
 		  <section className={styles.production} >
 		  <h3 className={styles.title + ' h3-bar'}>Total production<span className={styles.titleRight}>
 		  <ExploreDataLink
-		    to="/query-data?dataType=Production"
+		    to="/query-data/?dataType=Production"
 	            icon="filter"
 		    >Filter production data
 			    </ExploreDataLink></span></h3>

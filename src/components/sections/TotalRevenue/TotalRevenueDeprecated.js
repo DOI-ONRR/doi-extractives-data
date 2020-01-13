@@ -345,7 +345,7 @@ class TotalRevenueDeprecated extends React.Component {
 
 		  <h3 className={styles.title + ' h3-bar'}>Total revenue<span className={styles.titleRight}>
 		  <ExploreDataLink
-		    to="/query-data?dataType=Revenue"
+		    to="/query-data/?dataType=Revenue"
 	            icon="filter"
 		    >Filter revenue data
 			    </ExploreDataLink></span> </h3>

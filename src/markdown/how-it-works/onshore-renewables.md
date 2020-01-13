@@ -4,8 +4,9 @@ layout: howitworks-process
 tag:
 - How it works
 - Onshore
-- Oil
-- Gas
+- Solar
+- Wind
+- Renewable energy
 - Process
 - Resources
 permalink: /how-it-works/onshore-renewables/

@@ -1113,7 +1113,7 @@ class QueryData extends React.Component {
 	        ]} />
 	      <section className='layout-content container-page-wrapper container-margin'>
 
-          <h1>Data query tool</h1>
+          <h1>Data Query Tool</h1>
           <div className={styles.tableToolbarContainer}>
             <MuiThemeProvider theme={muiTheme}>
               <Grid container spacing={1}>
@@ -1175,7 +1175,6 @@ class QueryData extends React.Component {
                             {' '}and {additionalColumn}
                           </React.Fragment>
                         }
-                        .
                       </div>
 						        }
 						        {(groupByOptions && (additionalColumnOptions && additionalColumnOptions.length > 1)) &&

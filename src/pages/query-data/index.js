@@ -306,7 +306,7 @@ class QueryData extends React.Component {
     if (typeof window !== 'undefined' && window) {
       urlParams = new URLSearchParams(window.location.search)
     }
-    this.dataTypeParam = urlParams.get('dataType')
+    this.dataTypeParam = urlParams.get('dataType').replace(/\/$/, '')
 
     this.state = {
       openGroupByDialog: false,

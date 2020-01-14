@@ -4,8 +4,8 @@ import Link from '../../utils/temp-link'
 
 import utils from '../../../js/utils'
 
-import { updateGraphDataSets as updateGraphDataSetsAction , groupByMonth as groupDataSetsByMonthAction , groupByYear as groupDataSetsByYearAction , setDataSelectedById as setDataSelectedByIdAction ,
-	PRODUCT_VOLUMES_FISCAL_YEAR,
+import { updateGraphDataSets as updateGraphDataSetsAction, groupByMonth as groupDataSetsByMonthAction, groupByYear as groupDataSetsByYearAction, setDataSelectedById as setDataSelectedByIdAction,
+  PRODUCT_VOLUMES_FISCAL_YEAR,
   REVENUES_MONTHLY,
   REVENUES_FISCAL_YEAR,
   BY_ID, BY_COMMODITY,
@@ -17,10 +17,6 @@ import { updateGraphDataSets as updateGraphDataSetsAction , groupByMonth as grou
   BY_FISCAL_YEAR,
   BY_CALENDAR_YEAR
 } from '../../../state/reducers/data-sets'
-
-
-
-
 
 import CONSTANTS from '../../../js/constants'
 
@@ -358,7 +354,7 @@ class TotalProductionDeprecated extends React.Component {
 	              </div>
 
 	              {(this.state.productionToggle === TOGGLE_VALUES.Month)
-									? <div className={styles.dropdown}>
+	            ? <div className={styles.dropdown}>
 										Period:
 									  <DropDown
 	                key={'ProductionPeriod'}
@@ -375,7 +371,7 @@ class TotalProductionDeprecated extends React.Component {
 									        name: 'Calendar year ' + this.state[PRODUCTION_VOLUMES_CALENDAR_YEAR],
 									        default: (this.state.productionPeriod === DROPDOWN_VALUES.Calendar) }]}></DropDown>
 	            </div>
-									:									<div className={styles.dropdown}>
+	            :							<div className={styles.dropdown}>
 										Period:
 									    <DropDown
 	                label={'Period'}
@@ -419,17 +415,11 @@ export default connect(
     [KEY_STATS_OIL_DATA_ID]: state[CONSTANTS.DATA_SETS_STATE_KEY][KEY_STATS_OIL_DATA_ID],
     [KEY_STATS_GAS_DATA_ID]: state[CONSTANTS.DATA_SETS_STATE_KEY][KEY_STATS_GAS_DATA_ID],
     [KEY_STATS_COAL_DATA_ID]: state[CONSTANTS.DATA_SETS_STATE_KEY][KEY_STATS_COAL_DATA_ID],
-    [KEY_STATS_REVENUES_DATA_ID]: state[CONSTANTS.DATA_SETS_STATE_KEY][KEY_STATS_REVENUES_DATA_ID],
-    [KEY_STATS_DISBURSEMENTS_DATA_ID]: state[CONSTANTS.DATA_SETS_STATE_KEY][KEY_STATS_DISBURSEMENTS_DATA_ID],
     [PRODUCTION_VOLUMES_FISCAL_YEAR]: state[CONSTANTS.DATA_SETS_STATE_KEY][CONSTANTS.FISCAL_YEAR_KEY][CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY],
-    [PRODUCTION_VOLUMES_CALENDAR_YEAR]: state[CONSTANTS.DATA_SETS_STATE_KEY][CONSTANTS.CALENDAR_YEAR_KEY][CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY],
-    [REVENUES_FISCAL_YEAR_OLD]: state[CONSTANTS.DATA_SETS_STATE_KEY][CONSTANTS.FISCAL_YEAR_KEY][CONSTANTS.REVENUES_ALL_KEY],
-    [REVENUES_CALENDAR_YEAR]: state[CONSTANTS.DATA_SETS_STATE_KEY][CONSTANTS.CALENDAR_YEAR_KEY][CONSTANTS.REVENUES_ALL_KEY],
-    [REVENUES_FISCAL_YEAR]: state[CONSTANTS.DATA_SETS_STATE_KEY][REVENUES_FISCAL_YEAR]
+    [PRODUCTION_VOLUMES_CALENDAR_YEAR]: state[CONSTANTS.DATA_SETS_STATE_KEY][CONSTANTS.CALENDAR_YEAR_KEY][CONSTANTS.PRODUCTION_VOLUMES_OIL_KEY]
   }),
   dispatch => ({
   	updateBarChartDataSets: dataSets => dispatch(updateGraphDataSetsAction(dataSets)),
-  	groupDataSetsByMonth: configs => dispatch(groupDataSetsByMonthAction(configs)),
   	groupDataSetsByMonth: configs => dispatch(groupDataSetsByMonthAction(configs)),
     groupDataSetsByYear: configs => dispatch(groupDataSetsByYearAction(configs)),
     setDataSelectedById: configs => dispatch(setDataSelectedByIdAction(configs)),

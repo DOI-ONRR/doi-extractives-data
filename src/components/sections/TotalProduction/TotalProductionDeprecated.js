@@ -4,8 +4,8 @@ import Link from '../../utils/temp-link'
 
 import utils from '../../../js/utils'
 
-import { updateGraphDataSets as updateGraphDataSetsAction , groupByMonth as groupDataSetsByMonthAction , groupByYear as groupDataSetsByYearAction , setDataSelectedById as setDataSelectedByIdAction ,
-	PRODUCT_VOLUMES_FISCAL_YEAR,
+import { updateGraphDataSets as updateGraphDataSetsAction, groupByMonth as groupDataSetsByMonthAction, groupByYear as groupDataSetsByYearAction, setDataSelectedById as setDataSelectedByIdAction,
+  PRODUCT_VOLUMES_FISCAL_YEAR,
   REVENUES_MONTHLY,
   REVENUES_FISCAL_YEAR,
   BY_ID, BY_COMMODITY,
@@ -17,10 +17,6 @@ import { updateGraphDataSets as updateGraphDataSetsAction , groupByMonth as grou
   BY_FISCAL_YEAR,
   BY_CALENDAR_YEAR
 } from '../../../state/reducers/data-sets'
-
-
-
-
 
 import CONSTANTS from '../../../js/constants'
 
@@ -358,7 +354,7 @@ class TotalProductionDeprecated extends React.Component {
 	              </div>
 
 	              {(this.state.productionToggle === TOGGLE_VALUES.Month)
-									? <div className={styles.dropdown}>
+	            ? <div className={styles.dropdown}>
 										Period:
 									  <DropDown
 	                key={'ProductionPeriod'}
@@ -375,7 +371,7 @@ class TotalProductionDeprecated extends React.Component {
 									        name: 'Calendar year ' + this.state[PRODUCTION_VOLUMES_CALENDAR_YEAR],
 									        default: (this.state.productionPeriod === DROPDOWN_VALUES.Calendar) }]}></DropDown>
 	            </div>
-									:									<div className={styles.dropdown}>
+	            :									<div className={styles.dropdown}>
 										Period:
 									    <DropDown
 	                label={'Period'}
@@ -401,10 +397,7 @@ class TotalProductionDeprecated extends React.Component {
 		  {this.getStackedBarChartLayout(KEY_STATS_COAL_DATA_ID, CONSTANTS.COAL)}
 	        </div>
 	        <div className={styles.sourceLink}>
-	          {(this.state.productionToggle === TOGGLE_VALUES.Month)
-	            ? <Link to='./downloads/federal-production-by-month/'>Source file</Link>
-	            : <Link to='./downloads/federal-production/'>Source file</Link>
-	          }
+	          <Link to='./downloads/federal-production-by-month/'>Source file</Link>
 	        </div>
 		  </div>
 

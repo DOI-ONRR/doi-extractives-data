@@ -143,6 +143,8 @@ const groupByYearHandler = (state, action) => {
   let results = {}
   results.SyncIds = { ...state.SyncIds }
 
+  console.log(state)
+
   payload.forEach(config => {
     results[config.id] = dataSetByYear(config.id, config.sourceKey, state.SourceData[config.sourceKey], config.filter, config.options)
 
@@ -440,12 +442,15 @@ const dataSetByYear = (id, key, source, filter, options) => {
 
   results = Object.entries(utils.groupBy(source, getYearKey(source[0].data))).map(e => ({ [e[0]]: e[1] }))
 
-  // We assume if its Monthly data and  if the data matches current year that we dont have the year of data, so we remove it
-  if (source[0].data.Month) {
-    let currentYear = new Date().getFullYear()
-    results = results.filter(yearData => parseInt(Object.keys(yearData)[0]) !== currentYear)
+  let fiscalYearItem = source.find(item => (getMonth(item.data) === 'September'))
+  let calendarYearItem = source.find(item => (getMonth(item.data) === 'December'))
+  let fiscalYear = (fiscalYearItem) ? parseInt(getYear(fiscalYearItem.data)) : parseInt(getYear(source[0].data))
+  let calendarYear = (calendarYearItem) ? parseInt(getYear(calendarYearItem.data)) : parseInt(getYear(source[0].data))
+  // We assume if its Monthly data and if the data matches current year that we dont have the year of data, so we remove it
+  if (source[0].data.Month || source[0].data.DisplayMonth) {
+    let year = (options.subGroupName === 'Calendar year')? calendarYear : fiscalYear
+    results = results.filter(yearData => (parseInt(Object.keys(yearData)[0]) <= year))
   }
-
 
   results.sort((a, b) => (getYear(a[Object.keys(a)[0]][0].data) - getYear(b[Object.keys(b)[0]][0].data)))
 

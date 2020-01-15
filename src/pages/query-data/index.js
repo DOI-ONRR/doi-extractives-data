@@ -247,9 +247,9 @@ const ADDITIONAL_COLUMN_OPTIONS = {
   [PRODUCTION]: (groupByOptions, groupBy, filter) => {
     let options = [NO_SECOND_COLUMN]
 
-    //if (filter.commodities && filter.commodities.length === 1 && !filter.commodities.includes(ALL)) {
+    // if (filter.commodities && filter.commodities.length === 1 && !filter.commodities.includes(ALL)) {
     options = groupByOptions && options.concat(groupByOptions)
-    //}
+    // }
 
     return ({
       options: options,
@@ -295,6 +295,16 @@ const muiTheme = createMuiTheme({
   },
 })
 
+const DATA_TYPE_URL_PARAM = 'dataType'
+const LAND_CATEGORY_URL_PARAM = 'landCategory'
+const LOCATIONS_URL_PARAM = 'locations'
+const COUNTIES_REGIONS_URL_PARAM = 'countiesRegions'
+const COMMODITIES_URL_PARAM = 'commodities'
+const REVENUE_TYPE_URL_PARAM = 'revenueType'
+const RECIPIENT_URL_PARAM = 'recipient'
+const SOURCE_URL_PARAM = 'source'
+const FY_YEARS_URL_PARAM = 'fiscalYearsSelected'
+
 class QueryData extends React.Component {
   constructor (props) {
     super(props)
@@ -302,19 +312,96 @@ class QueryData extends React.Component {
     this.allGroupByColumns = [].concat.apply([], this.allGroupByColumns)
     this.allGroupByColumns = this.allGroupByColumns.filter((item, i, a) => a.indexOf(item) === i)
 
+    this.hydrateStore()
+
     let urlParams = new URLSearchParams()
     if (typeof window !== 'undefined' && window) {
       urlParams = new URLSearchParams(window.location.search)
     }
-    this.dataTypeParam = urlParams.get('dataType') && urlParams.get('dataType').replace(/\/$/, '')
+    let dataType = urlParams.get('dataType') && urlParams.get('dataType').replace(/\/$/, '')
 
     this.state = {
       openGroupByDialog: false,
-      dataType: this.dataTypeParam,
+      dataType: dataType,
       loading: false,
+      urlFilter: this.getFilterFromUrl(urlParams, dataType)
     }
+  }
 
-    this.hydrateStore()
+  getFilterFromUrl = (urlParams, dataType) => {
+    let landCategory = urlParams.get(LAND_CATEGORY_URL_PARAM) || ALL
+    let locations = urlParams.get(LOCATIONS_URL_PARAM) && urlParams.get(LOCATIONS_URL_PARAM).split(',')
+    locations = locations || [ALL]
+    let countiesRegions = urlParams.get(COUNTIES_REGIONS_URL_PARAM) || [ALL]
+    let commodities = urlParams.get(COMMODITIES_URL_PARAM) || [ALL]
+    let revenueType = urlParams.get(REVENUE_TYPE_URL_PARAM) || ALL
+    let recipient = urlParams.get(RECIPIENT_URL_PARAM) || ALL
+    let source = urlParams.get(SOURCE_URL_PARAM) || ALL
+    let fiscalYearsSelected = urlParams.get(FY_YEARS_URL_PARAM)
+    switch (dataType) {
+    case REVENUE:
+      if (urlParams.get(LAND_CATEGORY_URL_PARAM)) {
+        return ({
+          dataFilter: {
+            [LAND_CATEGORY]: { orderNum: 1, value: landCategory },
+            [LOCATIONS]: { orderNum: 2, value: locations },
+            [COUNTIES_REGIONS]: { orderNum: 3, value: countiesRegions },
+            [COMMODITIES]: { orderNum: 4, value: commodities },
+            [REVENUE_TYPE]: { orderNum: 5, value: revenueType },
+            [FISCAL_YEAR]: { orderNum: Number.MAX_SAFE_INTEGER, value: fiscalYearsSelected },
+          },
+          toolbarFilter: {
+            landCategory,
+            locations,
+            countiesRegions,
+            commodities,
+            revenueType,
+            fiscalYearsSelected
+          }
+        })
+      }
+      break
+    case PRODUCTION:
+      if (urlParams.get(LAND_CATEGORY_URL_PARAM)) {
+        return ({
+          dataFilter: {
+            [LAND_CATEGORY]: { orderNum: 1, value: landCategory },
+            [LOCATIONS]: { orderNum: 2, value: locations },
+            [COUNTIES_REGIONS]: { orderNum: 3, value: countiesRegions },
+            [COMMODITIES]: { orderNum: 4, value: commodities },
+            [FISCAL_YEAR]: { orderNum: Number.MAX_SAFE_INTEGER, value: fiscalYearsSelected },
+          },
+          toolbarFilter: {
+            landCategory,
+            locations,
+            countiesRegions,
+            commodities,
+            fiscalYearsSelected
+          }
+        })
+      }
+      break
+    case DISBURSEMENTS:
+      if (urlParams.get(RECIPIENT_URL_PARAM) || urlParams.get(SOURCE_URL_PARAM)) {
+        return ({
+          dataFilter: {
+            [RECIPIENTS]: { orderNum: 1, value: recipient },
+            [SOURCE]: { orderNum: 2, value: source },
+            [LOCATIONS]: { orderNum: 3, value: (source === STATE) ? locations : undefined },
+            [COUNTIES]: { orderNum: 4, value: (source === STATE) ? countiesRegions : undefined },
+            [FISCAL_YEAR]: { orderNum: Number.MAX_SAFE_INTEGER, value: fiscalYearsSelected },
+          },
+          toolbarFilter: {
+            recipient,
+            source,
+            locations: (source === STATE) ? locations : undefined,
+            counties: (source === STATE) ? countiesRegions : undefined,
+            fiscalYearsSelected
+          }
+        })
+      }
+      break
+    }
   }
 
   /**
@@ -392,9 +479,10 @@ class QueryData extends React.Component {
    * The filter type then determines the hasFilterValue function to use
    * It uses the state Data Type to determine the correct data set to use
    */
-  setFilteredIds = (filterType, filter, filterOrderNum) => {
+  setFilteredIds = (filterType, filter, filterOrderNum, forceReset) => {
     let filters = this.props[DATA_TYPE_OPTIONS[this.state.dataType]]['filters'] || {}
-    let isEqual = true
+
+    let isEqual = (forceReset) ? !forceReset : true
 
     // Check to see if the filter has changed, if not then no need to rerun previous filters
     if (filters[filterType]) {
@@ -433,11 +521,13 @@ class QueryData extends React.Component {
       // Reset dataIds if filter changed and filter the data again using all the filters
       let dataIds = Object.keys(this.props[DATA_TYPE_OPTIONS[this.state.dataType]][BY_ID])
       let filterKeys = Object.keys(filters)
+
       filterKeys.sort((a, b) => (filters[a].orderNum < filters[b].orderNum) ? -1 : 1)
 
       filterKeys.forEach(type => {
         // If the filter order number is not defined set it to max number to let all filters run first
         filterOrderNum = filterOrderNum || Number.MAX_SAFE_INTEGER
+
         // If the order number is higher then the current filter order number then clear the filter
         filters[type] = (filters[type].orderNum && filterOrderNum && filters[type].orderNum <= filterOrderNum) ? filters[type] : undefined
 
@@ -595,6 +685,7 @@ class QueryData extends React.Component {
     if (value === this.state[this.state.dataType].additionalColumn) {
       currentAdditionalColumn = NO_SECOND_COLUMN
     }
+
 	  this.setState({
       loading: false,
       [this.state.dataType]: {
@@ -633,8 +724,9 @@ class QueryData extends React.Component {
     })
   }
 
-  onSubmitHandler (filter) {
-    this.setFilteredIds(FISCAL_YEAR, filter.fiscalYearsSelected)
+  onSubmitHandler (filter, forceReset) {
+    this.setFilteredIds(FISCAL_YEAR, filter.fiscalYearsSelected, Number.MAX_SAFE_INTEGER, forceReset)
+
     let groupByFiltered = GROUP_BY_OPTIONS[this.state.dataType](filter)
     let additionalColumnFiltered = ADDITIONAL_COLUMN_OPTIONS[this.state.dataType](groupByFiltered.options, groupByFiltered.default, filter)
 
@@ -648,7 +740,8 @@ class QueryData extends React.Component {
         tableColumns: this.getTableColumns({ filter: filter, groupBy: groupByFiltered.default, additionalColumn: additionalColumnFiltered.default }),
         tableSummaries: this.getTableSummaries({ filter: filter, groupBy: groupByFiltered.default, additionalColumn: additionalColumnFiltered.default }),
         tableData: this.getTableData({ filter: filter, groupBy: groupByFiltered.default, additionalColumn: additionalColumnFiltered.default })
-      }
+      },
+      urlFilter: undefined
 	  })
   }
 
@@ -677,12 +770,6 @@ class QueryData extends React.Component {
 	    })
 	  }
 
-	  dataTypeState.filter.fiscalYearsSelected.sort().forEach(year => {
-	    columns.push({ name: 'fy-' + year, title: year })
-	    columnExtensions.push({ columnName: 'fy-' + year, align: 'right' })
-	    defaultSorting = [{ columnName: 'fy-' + year, direction: 'desc' }]
-	  })
-
 	  // Have to add all the data provider types initially or they wont work??
 	  let allYears = Object.keys(this.props[DATA_TYPE_OPTIONS[this.state.dataType]][BY_FISCAL_YEAR])
 	  if (this.state.dataType === PRODUCTION) {
@@ -700,6 +787,12 @@ class QueryData extends React.Component {
 	  })
 	  allYears.forEach(year => {
 	    defaultColumnWidths.push({ columnName: 'fy-' + year, width: 200, minWidth: 100 })
+	  })
+
+	  dataTypeState.filter.fiscalYearsSelected.sort().forEach(year => {
+	    columns.push({ name: 'fy-' + year, title: year })
+	    columnExtensions.push({ columnName: 'fy-' + year, align: 'right' })
+	    defaultSorting = [{ columnName: 'fy-' + year, direction: 'desc' }]
 	  })
 
 	  let fixedColumn = grouping[0] ? columns[1].name : columns[0].name
@@ -978,6 +1071,19 @@ class QueryData extends React.Component {
 	      onSubmit={this.onSubmitHandler.bind(this)}
 	    />)
 	  }
+  }
+
+  componentDidUpdate () {
+    if (this.props[DATA_TYPE_OPTIONS[this.state.dataType]] && this.state.urlFilter) {
+      this.props[DATA_TYPE_OPTIONS[this.state.dataType]]['filters'] = {}
+      if (!this.state.urlFilter.dataFilter[FISCAL_YEAR].value) {
+        let allYears = Object.keys(this.props[DATA_TYPE_OPTIONS[this.state.dataType]][BY_FISCAL_YEAR]).sort().reverse()
+        this.state.urlFilter.dataFilter[FISCAL_YEAR].value = [parseInt(allYears[0])]
+        this.state.urlFilter.toolbarFilter.fiscalYearsSelected = [parseInt(allYears[0])]
+      }
+      Object.assign(this.props[DATA_TYPE_OPTIONS[this.state.dataType]]['filters'], this.state.urlFilter.dataFilter)
+      this.onSubmitHandler(this.state.urlFilter.toolbarFilter, true)
+    }
   }
 
   render () {

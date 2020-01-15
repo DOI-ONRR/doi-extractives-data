@@ -39,6 +39,7 @@ const RevenuesTableToolbar = ({
   getFiscalYearOptions,
   onSubmit
 }) => {
+  let initialState = true
   const [landCategory, setLandCategory] = useState()
 
   const [locationOptions, setLocationOptions] = useState()
@@ -74,10 +75,11 @@ const RevenuesTableToolbar = ({
     setFiscalYearStart(undefined)
     setFiscalYearEnd(undefined)
     setFiscalYearSelected(undefined)
+    
   }, [landCategory])
 
   useEffect(() => {
-    setCountiesRegions(undefined)
+    setCountiesRegions(countiesRegions)
     if (locations) {
       setCountyRegionOptions(getCountyRegionOptions(locations))
       setCommodityOptions(getCommodityOptions({ locations, countiesRegions }))

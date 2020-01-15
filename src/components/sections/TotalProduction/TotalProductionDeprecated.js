@@ -280,10 +280,7 @@ class TotalProductionDeprecated extends React.Component {
 		  {this.getStackedBarChartLayout(KEY_STATS_COAL_DATA_ID, CONSTANTS.COAL)}
 	        </div>
 	        <div className={styles.sourceLink}>
-	          {(this.state.productionToggle === TOGGLE_VALUES.Month)
-	            ? <Link to='./downloads/federal-production-by-month/'>Source file</Link>
-	            : <Link to='./downloads/federal-production/'>Source file</Link>
-	          }
+	          <Link to='./downloads/federal-production-by-month/'>Source file</Link>
 	        </div>
 		  </div>
 

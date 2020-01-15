@@ -396,10 +396,7 @@ class TotalRevenueDeprecated extends React.Component {
 		    {this.getStackedBarChartLayout(KEY_STATS_REVENUES_DATA_ID, CONSTANTS.REVENUE, utils.formatToDollarInt)}
 	          </div>
 	        <div className={styles.sourceLink}>
-	          {(this.state.revenueToggle === TOGGLE_VALUES.Month)
-	            ? <Link to='./downloads/federal-revenue-by-month/'>Source file</Link>
-	            : <Link to='./downloads/federal-revenue-by-location/'>Source file</Link>
-	          }
+	          <Link to='./downloads/federal-revenue-by-month/'>Source file</Link>
 	        </div>
 		  </div>
 	      </section>

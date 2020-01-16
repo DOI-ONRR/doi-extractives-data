@@ -356,7 +356,7 @@ const getMonthKey = data => {
 }
 const getYearKey = (data, options) => {
   let key
-  if (options.groupBy === DATA_SET_KEYS.FISCAL_YEAR) {
+  if (options && (options.groupBy === DATA_SET_KEYS.FISCAL_YEAR)) {
     key = 'data.FiscalYear'
   }
   else if (data.ProductionYear) {

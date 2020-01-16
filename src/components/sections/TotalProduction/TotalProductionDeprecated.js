@@ -78,6 +78,7 @@ const PRODUCTION_VOLUMES_BY_FISCAL_YEAR_CONFIG = {
     subGroupName: CONSTANTS.FISCAL_YEAR,
     syncId: 'KEY_STATS_PROD_VOLUMES_YEAR',
     selectedDataKeyIndex: 'last',
+    groupBy: 'FiscalYear'
   },
   filter: {
     sumBy: 'LandCategory_OnshoreOffshore',

@@ -251,6 +251,8 @@ export const query = graphql`
           ProductionMonth
           DisplayMonth
           ProductionYear
+          FiscalYear
+          DisplayFiscalYear
           DisplayYear
           ProductionDate
           Units
@@ -272,6 +274,8 @@ export const query = graphql`
           ProductionMonth
           DisplayMonth
           ProductionYear
+          FiscalYear
+          DisplayFiscalYear
           DisplayYear
           ProductionDate
           Units
@@ -293,6 +297,8 @@ export const query = graphql`
           ProductionMonth
           DisplayMonth
           ProductionYear
+          FiscalYear
+          DisplayFiscalYear
           DisplayYear
           ProductionDate
           Units

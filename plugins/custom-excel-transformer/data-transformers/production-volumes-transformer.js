@@ -158,6 +158,13 @@ const createProductVolumeNodeByProduct = (productVolumeData, type) => {
   }
   node.State = (node.State === 'Withheld')? 'withheld' : node.State 
 
+  if (!node.FiscalYear) {
+    node.FiscalYear = parseInt(node.ProductionYear)
+    if(node.ProductionMonth === 'October' || node.ProductionMonth === 'November' || node.ProductionMonth === 'December') {
+      node.FiscalYear = parseInt(node.ProductionYear) + 1
+    }   
+  }
+
   return node
 }
 

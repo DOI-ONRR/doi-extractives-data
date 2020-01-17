@@ -118,7 +118,12 @@ const updateGraphDataSetsHandler = (state, action) => {
   results.SyncIds = { ...state.SyncIds }
 
   payload.forEach(dataSet => {
-    results[dataSet.id] = updateGraphDataSet(dataSet.id, state[dataSet.sourceKey], dataSet.groupByKey, dataSet.filter, dataSet.options)
+    results[dataSet.id] = updateGraphDataSet(
+      dataSet.id,
+      state[dataSet.sourceKey],
+      dataSet.groupByKey,
+      dataSet.filter,
+      dataSet.options)
 
     addDataSetSync(dataSet.options.syncId, dataSet.id, results)
   })
@@ -269,6 +274,20 @@ const updateGraphDataSet = (id, source, groupByKey, filter, options) => {
   // Defaults
   units = '$'
   longUnits = 'dollars'
+
+  if (filter.onlyFullFiscalYears) {
+    for (const groupKey in source[groupByKey]) {
+      let isFullFiscalYear = false
+      source[groupByKey][groupKey].forEach(dataId => {
+        if (!isFullFiscalYear) {
+          isFullFiscalYear = getMonth(source[BY_ID][dataId]) === 'September'
+        }
+      })
+      if (!isFullFiscalYear) {
+        delete source[groupByKey][groupKey]
+      }
+    }
+  }
 
   results = []
   let ignoreLimit = Object.keys(source[groupByKey]).length - filter.limit

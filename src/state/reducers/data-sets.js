@@ -51,7 +51,8 @@ export const DATA_SET_KEYS = {
   RECIPIENT: 'Recipient',
   REVENUE_TYPE: 'RevenueType',
   LAND_CATEGORY: 'RevenueCategory',
-  OFFSHORE_PLANNING_AREA: 'OffshorePlanningArea'
+  OFFSHORE_PLANNING_AREA: 'OffshorePlanningArea',
+  FISCAL_YEAR: 'FiscalYear'
 }
 
 // Define Action Types
@@ -117,7 +118,12 @@ const updateGraphDataSetsHandler = (state, action) => {
   results.SyncIds = { ...state.SyncIds }
 
   payload.forEach(dataSet => {
-    results[dataSet.id] = updateGraphDataSet(dataSet.id, state[dataSet.sourceKey], dataSet.groupByKey, dataSet.filter, dataSet.options)
+    results[dataSet.id] = updateGraphDataSet(
+      dataSet.id,
+      state[dataSet.sourceKey],
+      dataSet.groupByKey,
+      dataSet.filter,
+      dataSet.options)
 
     addDataSetSync(dataSet.options.syncId, dataSet.id, results)
   })
@@ -144,7 +150,14 @@ const groupByYearHandler = (state, action) => {
   results.SyncIds = { ...state.SyncIds }
 
   payload.forEach(config => {
-    results[config.id] = dataSetByYear(config.id, config.sourceKey, state.SourceData[config.sourceKey], config.filter, config.options)
+    results[config.id] = dataSetByYear(
+      config.id,
+      config.sourceKey,
+      state.SourceData[config.sourceKey],
+      config.filter,
+      config.options,
+      state.FiscalYear[config.sourceKey],
+      state.CalendarYear[config.sourceKey])
 
     addDataSetSync(config.options.syncId, config.id, results)
   })
@@ -262,6 +275,20 @@ const updateGraphDataSet = (id, source, groupByKey, filter, options) => {
   units = '$'
   longUnits = 'dollars'
 
+  if (filter.onlyFullFiscalYears) {
+    for (const groupKey in source[groupByKey]) {
+      let isFullFiscalYear = false
+      source[groupByKey][groupKey].forEach(dataId => {
+        if (!isFullFiscalYear) {
+          isFullFiscalYear = getMonth(source[BY_ID][dataId]) === 'September'
+        }
+      })
+      if (!isFullFiscalYear) {
+        delete source[groupByKey][groupKey]
+      }
+    }
+  }
+
   results = []
   let ignoreLimit = Object.keys(source[groupByKey]).length - filter.limit
   let count = 1
@@ -333,6 +360,7 @@ const updateGraphDataSet = (id, source, groupByKey, filter, options) => {
 // Our data will become more consistent so this should go away
 const getDate = data => data.ProductionDate || data.RevenueDate
 const getMonth = data => data.ProductionMonth || data.RevenueMonth
+const getFiscalYear = data => data.FiscalYear
 const getYear = data => data.ProductionYear || data.RevenueYear || data.Year || data.CalendarYear
 const getMonthKey = data => {
   let key
@@ -345,9 +373,12 @@ const getMonthKey = data => {
 
   return key
 }
-const getYearKey = data => {
+const getYearKey = (data, options) => {
   let key
-  if (data.ProductionYear) {
+  if (options && (options.groupBy === DATA_SET_KEYS.FISCAL_YEAR)) {
+    key = 'data.FiscalYear'
+  }
+  else if (data.ProductionYear) {
     key = 'data.ProductionYear'
   }
   else if (data.RevenueYear) {
@@ -429,7 +460,7 @@ const filterSourceData = (key, state, filter, options) => {
  *
  * @returns {Object}
  **/
-const dataSetByYear = (id, key, source, filter, options) => {
+const dataSetByYear = (id, key, source, filter, options, fiscalYear, calendarYear) => {
   if (source === undefined) return source
 
   let results, xAxisLabels, legendLabels, groupNames, units, longUnits, selectedDataKey
@@ -438,16 +469,20 @@ const dataSetByYear = (id, key, source, filter, options) => {
   units = source[0].data.Units || '$'
   longUnits = source[0].data.Units || 'dollars'
 
-  results = Object.entries(utils.groupBy(source, getYearKey(source[0].data))).map(e => ({ [e[0]]: e[1] }))
+  results = Object.entries(utils.groupBy(source, getYearKey(source[0].data, options))).map(e => ({ [e[0]]: e[1] }))
 
-  // We assume if its Monthly data and  if the data matches current year that we dont have the year of data, so we remove it
-  if (source[0].data.Month) {
-    let currentYear = new Date().getFullYear()
-    results = results.filter(yearData => parseInt(Object.keys(yearData)[0]) !== currentYear)
+  // We assume if its Monthly data and if the data matches current year that we dont have the year of data, so we remove it
+  if (source[0].data.Month || source[0].data.DisplayMonth) {
+    let year = (options.groupBy === DATA_SET_KEYS.FISCAL_YEAR) ? fiscalYear : calendarYear
+    results = results.filter(yearData => (parseInt(Object.keys(yearData)[0]) <= year))
   }
 
-
-  results.sort((a, b) => (getYear(a[Object.keys(a)[0]][0].data) - getYear(b[Object.keys(b)[0]][0].data)))
+  if (options.groupBy === DATA_SET_KEYS.FISCAL_YEAR) {
+    results.sort((a, b) => (getFiscalYear(a[Object.keys(a)[0]][0].data) - getFiscalYear(b[Object.keys(b)[0]][0].data)))
+  }
+  else {
+    results.sort((a, b) => (getYear(a[Object.keys(a)[0]][0].data) - getYear(b[Object.keys(b)[0]][0].data)))
+  }
 
   // Get display names before we filter the data.
   if (options && options.includeDisplayNames) {
@@ -456,10 +491,10 @@ const dataSetByYear = (id, key, source, filter, options) => {
     results.forEach(item => {
       xAxisLabels[Object.keys(item)[0]] = item[Object.keys(item)[0]][0].data.DisplayYear
       if (units === '$') {
-        legendLabels[Object.keys(item)[0]] = getYear(item[Object.keys(item)[0]][0].data).toString()
+        legendLabels[Object.keys(item)[0]] = (options.groupBy === DATA_SET_KEYS.FISCAL_YEAR) ? getFiscalYear(item[Object.keys(item)[0]][0].data).toString() : getYear(item[Object.keys(item)[0]][0].data).toString()
       }
       else {
-        legendLabels[Object.keys(item)[0]] = getYear(item[Object.keys(item)[0]][0].data) + ' (' + units + ')'
+        legendLabels[Object.keys(item)[0]] = (options.groupBy === DATA_SET_KEYS.FISCAL_YEAR) ? getFiscalYear(item[Object.keys(item)[0]][0].data) + ' (' + units + ')' : getYear(item[Object.keys(item)[0]][0].data) + ' (' + units + ')'
       }
     })
   }

@@ -4,7 +4,6 @@ import { connect } from 'react-redux'
 import Link from '../components/utils/temp-link'
 import { withPrefix as withPrefixGatsby } from 'gatsby-link'
 import { hydrate as hydateDataManagerAction, normalize as normalizeDataSetAction,
-  PRODUCT_VOLUMES_FISCAL_YEAR,
   REVENUES_MONTHLY,
   REVENUES_FISCAL_YEAR,
   BY_ID, BY_COMMODITY,
@@ -65,29 +64,11 @@ class Beta extends React.Component {
         ]
       },
       { key: REVENUES_FISCAL_YEAR,
-        data: data.allFiscalYearRevenues.data,
+        data: data.allMonthlyRevenues.data,
         groups: [
           {
             key: BY_FISCAL_YEAR,
-            groups: data.allFiscalYearRevenuesByFiscalYear.group
-          }
-        ]
-      },
-      {
-        key: PRODUCT_VOLUMES_FISCAL_YEAR,
-        data: data.allFiscalYearProductVolumes.data,
-        groups: [
-          {
-            key: BY_FISCAL_YEAR + '_Gas',
-            groups: data.allFiscalYearProductVolumesByFiscalYear_Gas.group
-          },
-          {
-            key: BY_FISCAL_YEAR + '_Oil',
-            groups: data.allFiscalYearProductVolumesByFiscalYear_Oil.group
-          },
-          {
-            key: BY_FISCAL_YEAR + '_Coal',
-            groups: data.allFiscalYearProductVolumesByFiscalYear_Coal.group
+            groups: data.allMonthlyRevenuesByFiscalYear.group
           }
         ]
       }
@@ -120,8 +101,13 @@ class Beta extends React.Component {
           </Helmet>
 	  <section className="container-page-wrapper">
             <span className="h3-bar"></span>
-            <h1 class="sr-only">U.S. Department of the Interior Natural Resources Revenue Data</h1>
-		  <p> When companies extract energy and mineral resources on property leased from the federal government and Native Americans, they pay <GlossaryTerm termKey="Bonus">bonuses</GlossaryTerm>, <GlossaryTerm>rent</GlossaryTerm>, and <GlossaryTerm termKey="Royalty">royalties</GlossaryTerm>. The Office of Natural Resources Revenue (ONRR) collects and <GlossaryTerm termKey="disbursement">disburses</GlossaryTerm> revenue from federal lands and waters to different agencies, funds, and local governments for public use. All revenue collected from extraction on Native American lands is disbursed to Native American tribes, nations, or individuals.</p>
+            <h1 className="sr-only">U.S. Department of the Interior Natural Resources Revenue Data</h1>
+		  <p> When companies extract energy and mineral resources on property leased from the federal government and Native Americans
+        , they pay <GlossaryTerm termKey="Bonus">bonuses</GlossaryTerm>, <GlossaryTerm>rent</GlossaryTerm>
+        , and <GlossaryTerm termKey="Royalty">royalties</GlossaryTerm>. The Office of Natural Resources Revenue (ONRR) collects and <GlossaryTerm termKey="disbursement">
+          disburses</GlossaryTerm> revenue from federal lands and waters to different agencies, funds
+          , and local governments for public use. All revenue collected from extraction on Native American lands is disbursed to Native American tribes
+          , nations, or individuals.</p>
           </section>
           <Tabordion selected={selected} >
             <Tab id="tab-revenue" name="Revenue">
@@ -138,7 +124,7 @@ class Beta extends React.Component {
 				  title="Disbursements"
 				  info="The amount of money the federal government distributed to various funds, agencies, local governments, and Native Americans."
 				  contentRight={<DisbursementTrends/>}
-         			  contentLeft={<TotalDisbursements/>}
+                contentLeft={<TotalDisbursements/>}
 				  contentBottom={<ExploreDisbursements/>}
 
 				  />
@@ -251,6 +237,8 @@ export const query = graphql`
           ProductionMonth
           DisplayMonth
           ProductionYear
+          FiscalYear
+          DisplayFiscalYear
           DisplayYear
           ProductionDate
           Units
@@ -272,6 +260,8 @@ export const query = graphql`
           ProductionMonth
           DisplayMonth
           ProductionYear
+          FiscalYear
+          DisplayFiscalYear
           DisplayYear
           ProductionDate
           Units
@@ -293,6 +283,8 @@ export const query = graphql`
           ProductionMonth
           DisplayMonth
           ProductionYear
+          FiscalYear
+          DisplayFiscalYear
           DisplayYear
           ProductionDate
           Units
@@ -340,6 +332,18 @@ export const query = graphql`
       filter: {RevenueCategory: {ne: null}},
       sort: {fields: [RevenueDate], order: DESC}) {
       group(field: CalendarYear) {
+        id: fieldValue
+        data: edges {
+          node {
+            id
+          }
+        }
+      }
+    }
+    allMonthlyRevenuesByFiscalYear: allResourceRevenuesMonthly(
+      filter: {RevenueCategory: {ne: null}},
+      sort: {fields: [RevenueDate], order: DESC}) {
+      group(field: FiscalYear) {
         id: fieldValue
         data: edges {
           node {

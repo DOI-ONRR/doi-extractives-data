@@ -98,9 +98,9 @@ class StatePages extends React.Component {
     this.commoditiesCounty = props.pageContext.commoditiesCounty
     this.commodityYears = props.pageContext.commodityYears
     this.usStateData = this.usStateMarkdown.frontmatter
-      this.usStateFields = this.usStateMarkdown.fields || {}
-      
-      console.log(this.commodityYears);
+    this.usStateFields = this.usStateMarkdown.fields || {}
+
+    // console.log(this.commodityYears);
   }
 
   componentDidMount () {
@@ -119,8 +119,8 @@ class StatePages extends React.Component {
     document.body.appendChild(script2)
   }
 
-    render () {
-	console.debug(this.props);
+  render () {
+    // console.debug(this.props);
 	    return (
       <DefaultLayout>
         <main id={'state-' + this.usStateData.unique_id} className="container-page-wrapper layout-state-pages">
@@ -129,7 +129,14 @@ class StatePages extends React.Component {
 	                meta={[
 	                    // title
 	                    { name: 'og:title', content: (this.usStateData.title + ' | Natural Resources Revenue Data') },
-	                    { name: 'twitter:title', content: (this.usStateData.title + ' | Natural Resources Revenue Data') },
+                      { name: 'twitter:title', content: (this.usStateData.title + ' | Natural Resources Revenue Data') },
+                      // type
+                      { name: 'og:type', content: 'website' },
+                      
+                      // description
+                      { name: 'description', content: 'This site provides open data about natural resource management on federal lands and waters in ' + this.usStateData.title + ', including oil, gas, coal, and other extractive industries.' },
+                      { name: 'og:description', content: 'This site provides open data about natural resource management on federal lands and waters in ' + this.usStateData.title + ', including oil, gas, coal, and other extractive industries.' },
+                      { name: 'twitter:description', content: 'This site provides open data about natural resource management on federal lands and waters in ' + this.usStateData.title + ', including oil, gas, coal, and other extractive industries.' },
 	                ]}
 
 	                />
@@ -141,12 +148,11 @@ class StatePages extends React.Component {
             <div className="container-left-9">
               <section id="overview" className="section-top">
 
-                    <SectionOverview usStateMarkdown={this.usStateMarkdown}
-		productionYears={this.props.pageContext.commodityProductionYears}
-		production={this.props.pageContext.commoditiesProduction}
-		revenue={this.props.pageContext.commodities}
-		revenueYears={this.commodityYears} />
-
+                <SectionOverview usStateMarkdown={this.usStateMarkdown}
+                  productionYears={this.props.pageContext.commodityProductionYears}
+                  production={this.props.pageContext.commoditiesProduction}
+                  revenue={this.props.pageContext.commodities}
+                  revenueYears={this.commodityYears} />
 
               </section>
 
@@ -158,7 +164,7 @@ class StatePages extends React.Component {
                 <SectionFederalProduction usStateMarkdown={this.usStateMarkdown}
                   production={this.props.pageContext.commoditiesProduction}
                   countyProduction={this.props.pageContext.commoditiesFipsCode}
-                productionYears={this.props.pageContext.commodityProductionYears}
+                  productionYears={this.props.pageContext.commodityProductionYears}
 		    />
 
                 {this.usStateFields.state_land &&
@@ -206,30 +212,30 @@ class StatePages extends React.Component {
               <h3 className="state-page-nav-title container">
                 <div className="nav-title">{this.usStateData.title}</div>
                 <figure is="data-map">
-                <Link to="/explore/" title="Explore data main page">
-                  <svg className = "states map icon" viewBox="22 60 936 525">
-                    <g className ="states features">
-                      <use xlinkHref={withPrefixSVG('/maps/states/all.svg#states')}></use>
-                    </g>
-                    <g className="offshore states features">
-                      <use xlinkHref={withPrefixSVG('/maps/offshore/all.svg#alaska')}></use>
-                    </g>
-                    <g className="offshore states features">
-                      <use xlinkHref={withPrefixSVG('/maps/offshore/all.svg#atlantic')}></use>
-                    </g>
-                    <g className="offshore states features">
-                      <use xlinkHref={withPrefixSVG('/maps/offshore/all.svg#gulf')}></use>
-                    </g>
-                    <g className="offshore states features">
-                      <use xlinkHref={withPrefixSVG('/maps/offshore/all.svg#pacific')}></use>
-                    </g>
-                    <g className="state feature">
-                      <use xlinkHref={withPrefixSVG('/maps/states/all.svg#state-' + this.usStateData.unique_id)}></use>
-                    </g>
-                  </svg>
-                </Link>
-              </figure>
-              <label className="nav-prompt">Explore data main page</label>
+                  <Link to="/explore/" title="Explore data main page">
+                    <svg className = "states map icon" viewBox="22 60 936 525">
+                      <g className ="states features">
+                        <use xlinkHref={withPrefixSVG('/maps/states/all.svg#states')}></use>
+                      </g>
+                      <g className="offshore states features">
+                        <use xlinkHref={withPrefixSVG('/maps/offshore/all.svg#alaska')}></use>
+                      </g>
+                      <g className="offshore states features">
+                        <use xlinkHref={withPrefixSVG('/maps/offshore/all.svg#atlantic')}></use>
+                      </g>
+                      <g className="offshore states features">
+                        <use xlinkHref={withPrefixSVG('/maps/offshore/all.svg#gulf')}></use>
+                      </g>
+                      <g className="offshore states features">
+                        <use xlinkHref={withPrefixSVG('/maps/offshore/all.svg#pacific')}></use>
+                      </g>
+                      <g className="state feature">
+                        <use xlinkHref={withPrefixSVG('/maps/states/all.svg#state-' + this.usStateData.unique_id)}></use>
+                      </g>
+                    </svg>
+                  </Link>
+                </figure>
+                <label className="nav-prompt">Explore data main page</label>
               </h3>
               <nav>
                 <NavList navItems={NAV_ITEMS} />

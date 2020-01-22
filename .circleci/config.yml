@@ -3,6 +3,7 @@ jobs:
   build:
     docker:
       - image: circleci/node:10.16.0
+    resource_class: large # implements a machine with 4 vCPUS and 8gb of ram.
     steps:
       - checkout
       - restore_cache:

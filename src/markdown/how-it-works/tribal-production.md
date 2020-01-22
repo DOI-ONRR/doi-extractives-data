@@ -6,14 +6,12 @@ redirect_from: /how-it-works/tribal-production/
 tag:
 - how it works
 - production
-- renewable energy
-- geothermal
-- wind
-- water power
-- biomass
+- Native American
+- Indian
+- Tribal
 ---
 
-# Natural resource production on Native American land
+# Natural Resource Production on Native American Land
 
 > Extracting natural resources on Native American lands and distributing the associated revenue is a unique process involving multiple stakeholders.
 
@@ -204,100 +202,4 @@ The WSR must stipulate what will happen to the infrastructure after the lease te
 
 ## Production on Native American land
 
-This is accounting year data.
-
-<table class="table-basic">
-  <thead>
-    <tr>
-      <th>Commodity</th>
-      <th>FY 2013</th>
-      <th>FY 2014</th>
-      <th>FY 2015</th>
-      <th>FY 2016</th>
-    </tr>
-  </thead>
-  <tr>
-    <td>Oil (bbl)</td>
-    <td class="numeric">49,244,502</td>
-    <td class="numeric">60,173,618</td>
-    <td class="numeric">64,145,576</td>
-    <td class="numeric">58,570,842</td>
-  </tr>
-  <tr>
-    <td>Gas (mcf)</td>
-    <td class="numeric">313,218,037</td>
-    <td class="numeric">324,457,237</td>
-    <td class="numeric">316,547,513</td>
-    <td class="numeric">317,746,651</td>
-  </tr>
-  <tr>
-    <td>Cinders (ton)</td>
-    <td class="numeric">7,021</td>
-    <td class="numeric">4,926</td>
-    <td class="numeric">7,835</td>
-    <td class="numeric">2,992</td>
-  </tr>
-  <tr>
-    <td>Coal (ton)</td>
-    <td class="numeric">17,710,995</td>
-    <td class="numeric">20,270,190</td>
-    <td class="numeric">19,675,009</td>
-    <td class="numeric">13,925,942</td>
-  </tr>
-  <tr>
-    <td>Coal-Bituminous-Raw (ton)</td>
-    <td class="numeric">6,034</td>
-    <td class="numeric">935</td>
-    <td class="numeric">-</td>
-    <td class="numeric">-</td>
-  </tr>
-  <tr>
-    <td>Copper Concentrate (ton)</td>
-    <td class="numeric">3,177</td>
-    <td class="numeric">-</td>
-    <td class="numeric">8,476</td>
-    <td class="numeric">159</td>
-  </tr>
-  <tr>
-    <td>Gypsum (ton)</td>
-    <td class="numeric">328,196</td>
-    <td class="numeric">310,828</td>
-    <td class="numeric">229,131</td>
-    <td class="numeric">385,257</td>
-  </tr>
-  <tr>
-    <td>Humate (ton)</td>
-    <td class="numeric">-</td>
-    <td class="numeric">-</td>
-    <td class="numeric">-</td>
-    <td class="numeric">14,202</td>
-  </tr>
-  <tr>
-    <td>Molybdenum Concentrate (ton)</td>
-    <td class="numeric">0</td>
-    <td class="numeric">-</td>
-    <td class="numeric">11</td>
-    <td class="numeric">13</td>
-  </tr>
-  <tr>
-    <td>Sand/Gravel (ton)</td>
-    <td class="numeric">2,605,479</td>
-    <td class="numeric">1,410,816</td>
-    <td class="numeric">622,816</td>
-    <td class="numeric">2,042,576</td>
-  </tr>
-  <tr>
-    <td>Sand/Gravel (cyd)</td>
-    <td class="numeric">7,260</td>
-    <td class="numeric">7,860</td>
-    <td class="numeric">5,688</td>
-    <td class="numeric">5,184</td>
-  </tr>
-  <tr>
-    <td>Geothermal (kwh)</td>
-    <td class="numeric">1,695,636</td>
-    <td class="numeric">1,784,470</td>
-    <td class="numeric">1,502,682</td>
-    <td class="numeric">1,508,963</td>
-  </tr>
-</table>
+<a href="/query-data/?dataType=Production">Query production data</a> →

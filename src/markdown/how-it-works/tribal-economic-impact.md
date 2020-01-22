@@ -5,16 +5,14 @@ permalink: /how-it-works/native-american-economic-impact/
 redirect_from: /how-it-works/tribal-economic-impact/
 tag:
 - how it works
-- production
-- renewable energy
-- geothermal
-- wind
-- water power
-- biomass
+- revenue
+- Native American
+- Indian
+- Tribal
 ---
 
 <custom-link to="/how-it-works/" className="breadcrumb link-charlie">How it works</custom-link> /
-# Impact of natural resource extraction on Native American land
+# Impact of Natural Resource Extraction on Native American Land
 
 > Extraction affects Native American economies in a number of ways, though the effects can vary widely depending on the level of extraction on a given reservation and the details of the lease agreement.
 

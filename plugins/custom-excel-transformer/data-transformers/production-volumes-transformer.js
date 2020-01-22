@@ -156,7 +156,15 @@ const createProductVolumeNodeByProduct = (productVolumeData, type) => {
   if (node.LandCategory === CONSTANTS.NATIVE_AMERICAN) {
     node.State = 'withheld'
   }
-  node.State = (node.State === 'Withheld')? 'withheld' : node.State 
+  node.State = (node.State === 'Withheld') ? 'withheld' : node.State
+
+  if (!node.FiscalYear) {
+    node.FiscalYear = parseInt(node.ProductionYear)
+    if (node.ProductionMonth === 'October' || node.ProductionMonth === 'November' || node.ProductionMonth === 'December') {
+      node.FiscalYear = parseInt(node.ProductionYear) + 1
+    }
+  }
+  node.DisplayFiscalYear = node.FiscalYear && ("'" + node.FiscalYear.toString().substring(2))
 
   return node
 }

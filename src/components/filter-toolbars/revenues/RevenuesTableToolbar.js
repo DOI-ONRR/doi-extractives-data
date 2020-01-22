@@ -39,6 +39,7 @@ const RevenuesTableToolbar = ({
   getFiscalYearOptions,
   onSubmit
 }) => {
+  let initialState = true
   const [landCategory, setLandCategory] = useState()
 
   const [locationOptions, setLocationOptions] = useState()
@@ -74,10 +75,11 @@ const RevenuesTableToolbar = ({
     setFiscalYearStart(undefined)
     setFiscalYearEnd(undefined)
     setFiscalYearSelected(undefined)
+    
   }, [landCategory])
 
   useEffect(() => {
-    setCountiesRegions(undefined)
+    setCountiesRegions(countiesRegions)
     if (locations) {
       setCountyRegionOptions(getCountyRegionOptions(locations))
       setCommodityOptions(getCommodityOptions({ locations, countiesRegions }))
@@ -214,7 +216,7 @@ const RevenuesTableToolbar = ({
       <MuiThemeProvider theme={muiTheme}>
         <Grid container spacing={1}>
           <Grid item sm={2} xs={12}>
-            <h6>Land Category:</h6>
+            <h6>Land category:</h6>
           </Grid>
           <Grid item sm={5} xs={12}>
             <DropDown

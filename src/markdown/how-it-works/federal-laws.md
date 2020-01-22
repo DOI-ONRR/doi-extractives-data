@@ -11,7 +11,7 @@ tag:
 ---
 
 <custom-link to="/how-it-works/" className="breadcrumb link-charlie">How it works</custom-link> /
-# Federal laws and regulations
+# Federal Laws and Regulations
 
 > The legislative branch of the federal government has passed many laws that govern natural resource extraction on federal lands.
 
@@ -81,7 +81,7 @@ The following table lists the laws that provide the backbone of the fiscal regim
   <td>Geothermal</td>
   </tr>
   <tr>
-    <td><a href="http://www.gpo.gov/fdsys/pkg/USCODE-2011-title30/pdf/USCODE-2011-title30-chap2-sec21a.pdf">Mining and Minerals Policy Act of 1970</a> (30 USC § 21a et seq.)	</td>
+    <td><a href="https://legcounsel.house.gov/Comps/Mining%20And%20Minerals%20Policy%20Act%20Of%201970.pdf">Mining and Minerals Policy Act of 1970</a> (30 USC § 21a et seq.)	</td>
     <td>Amends the Mining Act of 1920. Establishes the national interest to develop a domestic private enterprise mining industry, while addressing adverse environmental impacts.</td>
     <td>Federal onshore</td>
   <td>All natural resources</td>
@@ -99,7 +99,7 @@ The following table lists the laws that provide the backbone of the fiscal regim
   <td>Coal</td>
   </tr>
   <tr>
-    <td><a href="https://www.boem.gov/uploadedFiles/BOEM/Oil_and_Gas_Energy_Program/Leasing/Outer_Continental_Shelf/Lands_Act_History/federal%20og%20royalty%20mgmt.pdf">Federal Oil and Gas Royalty Management Act (FOGRMA) of 1982</a> (30 USC § 1701 et seq.)</td>
+    <td><a href="https://www.onrr.gov/Laws_R_D/PubLaws/PDFDocs/97-451.pdf">Federal Oil and Gas Royalty Management Act (FOGRMA) of 1982</a> (30 USC § 1701 et seq.)</td>
     <td>Grants the Secretary of the Interior authority for managing and collecting oil and gas royalties from leases on federal and Indian lands.</td>
     <td>Federal onshore, Indian, and Outer Continental Shelf</td>
   <td>Oil and gas</td>

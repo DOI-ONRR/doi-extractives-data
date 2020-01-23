@@ -209,7 +209,7 @@ _Product_ Commodity type is often further broken down into product.
 * _Geothermal - Electrical Generation, Kilowatt Hours_
 * _Geothermal - Electrical Generation, Other_
 * _Geothermal - Electrical Generation, Thousands of Pounds_
-* _Geothermal - Sulfur, tons_
+* _Geothermal - Sulfur, long tons_
 * _Gilsonite_
 * _Gold_
 * _Gold Ore_

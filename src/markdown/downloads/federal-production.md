@@ -61,7 +61,7 @@ We can only compare production that is reported in the same unit. The standard u
 * Lassen County, CA reports direct use of geothermal resources in _million BTUs_
 * Lassen County, CA reports geothermal energy generation as _other_ (no unit)
 * Lake County, CA; Sonoma County, CA; and Beaver County, UT report geothermal energy generation in _thousand pounds_
-* Inyo County, CA reports sulfur from geothermal resources as _tons_
+* Inyo County, CA reports sulfur from geothermal resources as _long tons_
 
 <h3 alt="Mixed exploratory and federal categories">A note about “Mixed Exploratory” versus “Federal” categories of production</h3>
 
@@ -125,7 +125,7 @@ _Product_ Products are listed individually but may also fall into like categorie
   * _Geothermal - Electrical Generation_, (kWh)
   * _Geothermal - Electrical Generation_, (lbs, thousand)
   * _Geothermal - Electrical Generation_, (Other)
-  * _Geothermal - Sulfur_, (tons)
+  * _Geothermal - Sulfur_, (long tons)
   * _Gilsonite_ (tons)
   * _Gold and Silver Products_ (ozs) include: Gold, Gold Placer, and Silver
   * _Gold and Silver Products_ (tons) include: Gold Ore, Gold and Silver

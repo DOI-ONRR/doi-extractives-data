@@ -65,8 +65,7 @@ Because most of my colleagues at the Office of Natural Resources Revenue don’t
 
 Wireframe created using a word processor:
 
-![Example of a wireframe created using a word processor](./Wireframe.png)
-
+![Wireframe created in a word processor, with breadcrumb navigation at top, title of Information and Data Management, and sections for mission, data display, data governance, and data retrieval in the main column, with a right column containing contact information and related links](./Wireframe.png)
 
 ## Conclusion
 

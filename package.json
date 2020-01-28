@@ -71,7 +71,7 @@
     "build-gatsby": "npm run build",
     "release-gatsby": "npm run setup-gatsby && npm run build-gatsby",
     "setup-blog": "cd blog-site && npm install",
-    "build-blog": "cd blog-site && npm run build",
+    "build-blog": "cd blog-site && npm run build --prefix-paths",
     "release-blog": "npm run setup-blog && npm run build-blog",
     "federalist": "npm run release-blog && npm run build-gatsby"
   },

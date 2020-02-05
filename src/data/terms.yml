@@ -88,6 +88,8 @@
   definition: "Light liquid hydrocarbons recovered from oil and natural gas wells during production."
 - name: "Locatable minerals"
   definition: "Locatable minerals are minerals that may be “located” and obtained by filing a mining claim. Locatable minerals include gold, silver, copper, lead, and many other metallic and nonmetallic minerals."
+- name: "long ton"
+  definition: "A long ton (also known as “imperial ton” or “displacement ton”) is 2,240 pounds, compared to a conventional ton (or “short ton”), which is 2,000 pounds."
 - name: "Margin of variance"
   definition: "The percentage difference that the USEITI Multi-Stakeholder Group defined as significant for each revenue type as part of the reconciliation process."
 - name: "Material variance"

@@ -90,6 +90,11 @@ Coal Excise Tax payments are collected by the Internal Revenue Service and trans
       <td>$224,094,000</td>
       <td><strong>$431,725,000</strong></td>
     </tr>
+    <td>2018</td>
+    <td>$190,356,000</td>
+    <td>$191,773,000</td>
+    <td><strong>$382,129,000</strong></td>
+  </tr>
   </tbody>
 </table>
 
@@ -97,7 +102,7 @@ This data is from federal excise taxes reported to or collected by the Internal 
 
 ## Rates
 
-On January 1, 2019, the tax rate changed from $1.10 per ton for coal from subsurface mines and $0.55 per ton for coal from surface mines. Both rates were limited to a maximum of 4.4% of the coal’s selling price. The new tax rate is $0.50 per ton for coal from subsurface mines and $0.25 per ton for coal from surface mines. Both rates are limited to 2% of the coal's selling price.
+As of January 1, 2020, the tax rate changed back to $1.10 per ton for coal from subsurface mines and $0.55 per ton for coal from surface mines. Both rates are limited to a maximum of 4.4% of the coal’s selling price. In 2019, the tax rate was $0.50 per ton for coal from subsurface mines and $0.25 per ton for coal from surface mines. Both rates were limited to 2% of the coal's selling price.
 
 <table class="article_table">
   <thead>
@@ -110,14 +115,14 @@ On January 1, 2019, the tax rate changed from $1.10 per ton for coal from subsur
     <tr>
       <td>Surface mining</td>
       <td>
-          $0.25 per ton or 2% of the sales price<br>
+          $0.55 per ton or 4.4% of the sales price<br>
           (whichever is lower)
       </td>
     </tr>
     <tr>
       <td>Subsurface mining</td>
       <td>
-          $0.50 per ton or 2% of the sales price<br>
+          $1.10 per ton or 4.4% of the sales price<br>
           (whichever is lower)
       </td>
     </tr>

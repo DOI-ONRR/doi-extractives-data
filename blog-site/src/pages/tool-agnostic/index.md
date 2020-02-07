@@ -8,7 +8,7 @@ tags:
 - design
 - tools
 - software
-date: "2020-01-30"
+date: "2020-02-07"
 ---
 Many designers get hung up on what tools to use, and most job descriptions call for skills using a specific software package.  I’ve worked in UX for about 17 years, and, with the exception of one short contract, the teams I’ve worked on have been constrained to working in one particular operating system that many designers don’t like. It’s fine to have your favorite software, but the truth is that software is just a tool to facilitate the user-centered design process, and being able to work with multiple tools makes you a more resilient designer.
 

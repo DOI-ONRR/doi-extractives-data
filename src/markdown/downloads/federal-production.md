@@ -61,7 +61,7 @@ We can only compare production that is reported in the same unit. The standard u
 * Lassen County, CA reports direct use of geothermal resources in _million BTUs_
 * Lassen County, CA reports geothermal energy generation as _other_ (no unit)
 * Lake County, CA; Sonoma County, CA; and Beaver County, UT report geothermal energy generation in _thousand pounds_
-* Inyo County, CA reports sulfur from geothermal resources as _sulfur_ (no unit)
+* Inyo County, CA reports sulfur from geothermal resources as _long tons_
 
 <h3 alt="Mixed exploratory and federal categories">A note about “Mixed Exploratory” versus “Federal” categories of production</h3>
 
@@ -74,7 +74,7 @@ The federal government rarely gets 100% of “mixed exploratory” volumes. You 
 
 <h3 alt="Quartz crystal units">Why is quartz crystal measured in “tickets/pounds”?</h3>
 
-Quartz crystal is sometimes sold in relatively small quantities in gift shops and tourist attractions. In some cases, tourists can buy admission tickets to dig for their own minerals. For those transactions, ONRR may collect royalties on the admission tickets, not on the weight of minerals collected. Furthermore, some minerals are sold by quality, not by weight. 
+Quartz crystal is sometimes sold in relatively small quantities in gift shops and tourist attractions. In some cases, tourists can buy admission tickets to dig for their own minerals. For those transactions, ONRR may collect royalties on the admission tickets, not on the weight of minerals collected. Furthermore, some minerals are sold by quality, not by weight.
 
 The unit “tickets/pounds” shows quantities measured in both tickets sold and weight sold combined, even though the units measure different things. The royalty amount for ticket transactions often don't meet ONRR's review threshold, so the specific quantities in weight may be unknown.
 
@@ -125,7 +125,7 @@ _Product_ Products are listed individually but may also fall into like categorie
   * _Geothermal - Electrical Generation_, (kWh)
   * _Geothermal - Electrical Generation_, (lbs, thousand)
   * _Geothermal - Electrical Generation_, (Other)
-  * _Geothermal - sulfur_
+  * _Geothermal - Sulfur_, (long tons)
   * _Gilsonite_ (tons)
   * _Gold and Silver Products_ (ozs) include: Gold, Gold Placer, and Silver
   * _Gold and Silver Products_ (tons) include: Gold Ore, Gold and Silver

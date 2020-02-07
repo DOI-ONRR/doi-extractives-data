@@ -17,13 +17,13 @@ tag:
 <custom-link to="/downloads/" className="breadcrumb link-charlie">Downloads</custom-link> /
 # Revenue by Year
 
-> We offer revenue data files for both calendar year and fiscal year. The calendar year datasets is for years 2003-2018, and the fiscal year data set is for years 2003-2019. They are all <glossary-term>accounting year</glossary-term> data.
+> We offer revenue data files for both calendar and fiscal years for 2003-2019. They are all <glossary-term>accounting year</glossary-term> data.
 
-Download calendar year data (2003-2018):
+Download calendar year data (2003-2019):
 
 <ul class="downloads-download_links list-unstyled">
-  <li><excel-link to="/downloads/revenue/calendar_year_revenue.xlsx">Calendar year revenue (Excel, 2.8 MB)</excel-link></li>
-  <li><csv-link to="/downloads/csv/revenue/calendar_year_revenue.csv">Calendar year revenue (csv, 5.4 MB)</csv-link></li>
+  <li><excel-link to="/downloads/revenue/calendar_year_revenue.xlsx">Calendar year revenue (Excel, 2.6 MB)</excel-link></li>
+  <li><csv-link to="/downloads/csv/revenue/calendar_year_revenue.csv">Calendar year revenue (csv, 5.1 MB)</csv-link></li>
 </ul>
 
 Download fiscal year data (2003-2019):
@@ -209,7 +209,7 @@ _Product_ Commodity type is often further broken down into product.
 * _Geothermal - Electrical Generation, Kilowatt Hours_
 * _Geothermal - Electrical Generation, Other_
 * _Geothermal - Electrical Generation, Thousands of Pounds_
-* _Geothermal - sulfur_
+* _Geothermal - Sulfur, long tons_
 * _Gilsonite_
 * _Gold_
 * _Gold Ore_

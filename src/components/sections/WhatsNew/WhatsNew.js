@@ -7,7 +7,11 @@ const WhatsNew = props => (
   <section className={styles.root + ' slab-delta'}>
   	<div className="container-page-wrapper">
       <h2>What's new</h2>
-      <p>In our latest release on February 7, 2020, we made the following changes:</p>
+      <p>In our latest release on February 11, 2020, we made the following changes:</p>
+      <ul className="list-bullet ribbon-card-top-list">
+        <li>Fixed bug with state and county disbursements trend line</li>
+        </ul>
+      <p>In our release on February 7, 2020, we made the following changes:</p>
       <ul className="list-bullet ribbon-card-top-list">
         <li>Added <Link to="/downloads/federal-disbursements-by-month/">monthly disbursements data for December 2019</Link></li>
         <li>Added <Link to="/explore/#revenue">calendar year revenue data for 2019</Link></li>

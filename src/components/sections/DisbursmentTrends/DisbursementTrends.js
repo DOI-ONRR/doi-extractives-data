@@ -300,13 +300,12 @@ const aggregateData= (data) => {
     ]
     let currentYear=data[0].Fiscal_Year
 
-
     for(let ii=0; ii<data.length; ii++) {
 	let item=data[ii];
 	if(item.Fund_Type.match(/U.S. Treasury/))  {
 	    sumData(item,r,0,currentYear); //sum into us treasury
 	} else if (item.Fund_Type.match(/State/))  {
-	    sumData(item,r,1, currentYear); //sum into state
+	  sumData(item,r,1, currentYear); //sum into state
 	} else if (item.Fund_Type.match(/Reclamation/))  {
 	    sumData(item,r,2, currentYear); //sum into Reclamation
 	} else if (item.Fund_Type.match(/American Indian/))  {
@@ -324,20 +323,19 @@ const aggregateData= (data) => {
 		       r[i].histData=a.slice(-10);
 		       return a.slice(-10)
 		     })
-    
-    
     return r;
 }
 
 const sumData= (item,r,index,currentYear) => {
-    let previousYear=currentYear - 1;
+  let previousYear=currentYear - 1;
     if(item.Fiscal_Year==currentYear) r[index].current+=item._Total_ ;
     if(item.Fiscal_Year==previousYear) r[index].previous+=item._Total_;
-    if(r[0].histSum[item.Fiscal_Year]) {
-	if(! isNaN(Number(item._Total_)))  r[index].histSum[item.Fiscal_Year]+=Number(item._Total_);
+    if (r[index].histSum[item.Fiscal_Year]) {
+      if(! isNaN(Number(item._Total_)))   r[index].histSum[item.Fiscal_Year]+=Number(item._Total_);
     } else {
-	r[index].histSum[item.Fiscal_Year]=Number(item._Total_);
+      r[index].histSum[item.Fiscal_Year]=Number(item._Total_);
     }
+
 }
 
 

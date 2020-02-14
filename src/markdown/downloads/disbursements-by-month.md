@@ -2,7 +2,7 @@
 title: Disbursements by Month | Downloads | Natural Resources Revenue Data
 title_display: Disbursements by month
 layout: downloads
-permalink: /downloads/federal-disbursements-by-month/
+permalink: /downloads/disbursements/
 tag:
 - Data
 - Downloads

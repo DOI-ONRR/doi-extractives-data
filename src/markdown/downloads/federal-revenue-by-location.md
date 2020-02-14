@@ -1,7 +1,7 @@
 ---
 title: Revenue by Year | Downloads | Natural Resources Revenue Data
 layout: downloads
-permalink: /downloads/federal-revenue-by-location/
+permalink: /downloads/revenue/
 tag:
 - Data
 - Downloads

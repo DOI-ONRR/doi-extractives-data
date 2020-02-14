@@ -1,7 +1,7 @@
 ---
 title: Production by Month | Downloads | Natural Resources Revenue Data
 layout: downloads
-permalink: /downloads/federal-production-by-month/
+permalink: /downloads/production/
 tag:
 - Data
 - Downloads
@@ -37,7 +37,7 @@ We update this production data every month, but final production numbers aren't 
 
 ## Monthly totals and annual totals
 
-The sum of 12-month production totals for a given calendar or fiscal year may not add up to the annual total found in the [production by year data](/downloads/federal-production/). While the production volume (amount of a commodity coming out of the ground) doesn't change, the way it is accounted for might. There are two main reasons why:
+The sum of 12-month production totals for a given calendar or fiscal year may not add up to the annual total found in the [production by year data](/downloads/production/). While the production volume (amount of a commodity coming out of the ground) doesn't change, the way it is accounted for might. There are two main reasons why:
 
 - Operators may not report on time, meaning production for a past month might increase when the operator submits the report and ONRR updates the data.
 

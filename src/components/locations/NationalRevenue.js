@@ -88,7 +88,7 @@ const NationalRevenue = props => {
             icon="filter">
               Revenue in detail
           </ExploreDataLink>
-          <Link className="data-downloads" to="/downloads/federal-revenue-by-location/" >
+          <Link className="data-downloads" to="/downloads/revenue/" >
             <DataAndDocs />
           </Link>
         </p>
@@ -144,7 +144,7 @@ const NationalRevenue = props => {
             icon="filter">
               Revenue in detail
           </ExploreDataLink>
-              <Link to="/downloads/federal-revenue-by-location/" className="data-downloads">
+              <Link to="/downloads/revenue/" className="data-downloads">
                 <DataAndDocs />
               </Link>
             </p>

@@ -46,7 +46,7 @@ Companies can adjust and correct their payments for up to seven years after a tr
 
 <h3 alt="Revenue by location and company">Why is the calendar year <span style='font-style:italic'>revenue by location national total</span> slightly different than the <span style='font-style:italic'>revenue by company total</span>?</h3>
 
-Our site has two federal revenue datasets. The one on this page is organized by the company that paid the revenue. The [federal revenue by location dataset](/downloads/federal-revenue-by-location/) is organized by location. However, the national revenue totals are slightly different (by about $90 million). This is because the revenue by location dataset excludes revenue from offshore rights-of-way because they don't map to an offshore planning area.
+Our site has two federal revenue datasets. The one on this page is organized by the company that paid the revenue. The [federal revenue by location dataset](/downloads/revenue/) is organized by location. However, the national revenue totals are slightly different (by about $90 million). This is because the revenue by location dataset excludes revenue from offshore rights-of-way because they don't map to an offshore planning area.
 
 ## Data dictionary
 

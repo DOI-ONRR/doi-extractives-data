@@ -1,7 +1,7 @@
 ---
 title: Federal Production | Downloads | Natural Resources Revenue Data
 layout: downloads
-permalink: /downloads/federal-production/
+permalink: /downloads/production/
 tag:
 - Data
 - Downloads

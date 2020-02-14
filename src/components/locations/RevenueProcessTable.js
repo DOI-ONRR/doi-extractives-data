@@ -421,7 +421,7 @@ const RevenueProcessTable = props => {
 		              <td  headers={`${props.id}_col_3`} rowSpan="2">
 		                <strong>Electricity sales:</strong> 1.75% of gross proceeds for 10 years, then 3.5%<br/>
 		                <strong>Arm’s length sales:</strong> 10% of gross proceeds from contract multiplied by lease royalty rate<br/>
-		                <Link to="/downloads/federal-revenue-by-location/#note-geothermal-rate-details">More about geothermal rates</Link>
+		                <Link to="/downloads/revenue/#note-geothermal-rate-details">More about geothermal rates</Link>
 		              </td>
 		              <td headers={`${props.id}_col_4`}></td>
 		            </tr>

@@ -13,7 +13,7 @@ const WhatsNew = props => (
         </ul>
       <p>In our release on February 7, 2020, we made the following changes:</p>
       <ul className="list-bullet ribbon-card-top-list">
-        <li>Added <Link to="/downloads/federal-disbursements-by-month/">monthly disbursements data for December 2019</Link></li>
+        <li>Added <Link to="/downloads/disbursements/">monthly disbursements data for December 2019</Link></li>
         <li>Added <Link to="/explore/#revenue">calendar year revenue data for 2019</Link></li>
         <li>Added <Link to="/blog/tool-agnostic/">blog post about being tool agnostic</Link></li>
       </ul>

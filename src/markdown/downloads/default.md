@@ -77,15 +77,17 @@ tag:
 <ul class="list-sections list-unstyled">
   <li class="downloads-download_links">
     <h3>Introduction</h3>
-    As the steward of natural resources and energy revenue, ONRR is responsible for the three functions that encompass this responsibility. These functions are collecting the revenue, verifying the revenue and disbursing the revenue. This outlines how data is collected during this process and how this data is transformed into the production, revenue, and disbursements data found on ONRR's [revenue data website](revenuedata.doi.gov)
+    As the steward of natural resources and energy revenue, ONRR is responsible for the three functions that encompass this responsibility. These functions are collecting the revenue, verifying the revenue and disbursing the revenue. This outlines how data is collected during this process and how this data is transformed into the production, revenue, and disbursements data found on ONRR's  [revenue data website](https://www.revenuedata.doi.gov).
+
 
 
 
  <h3>Process</h3>
- Collect:
- Each month, companies self-report data to ONRR on the amount of resources they produced and sold, the value of this production, and the amount of royalties they owe the federal government.  Oil and gas companies are required to submit two key monthly reports to ONRR; the first report is Oil and Gas Operations Report, [OGOR](https://www.onrr.gov/ReportPay/PDFDocs/4054-a.pdf), specifying the total production and disposition of oil and gas, and the second report is for royalties due based on production, [Form-2014](https://www.onrr.gov/ReportPay/royalty-reporting.htm). Solid minerals companies are only required to submit one monthly Production and Royalty (P&R) Report, [Form-4430](https://www.onrr.gov/ReportPay/solids.htm).
+ <h4>Collect:</h4>
+ Each month, companies self-report data to ONRR on the amount of resources they produced and sold, the value of this production, and the amount of royalties they owe the federal government.  Oil and gas companies are required to submit two key monthly reports to ONRR; the first report is Oil and Gas Operations Report, [OGOR](https://www.onrr.gov/ReportPay/PDFDocs/4054-a.pdf), specifying the total production and disposition of oil and gas, and the second report is for royalties due based on production,  [Form-2014](https://www.onrr.gov/ReportPay/royalty-reporting.htm).  Solid minerals companies are only required to submit one monthly Production and Royalty (P&R) Report, [Form-4430](https://www.onrr.gov/ReportPay/solids.htm).
 
- Verify:
+
+ <h4>Verify:</h4>
  ONRR is responsible for verifying royalties through its compliance management program, which ensures that the royalty revenues generated from the sales of commodities extracted from leased federal lands are accurately paid and reported. The compliance program includes upfront edits, data mining, audits, and compliance reviews.
 
  •	Upfront edits: Data goes through initial upfront system edits before being accepted into ONRR’s financial systems.

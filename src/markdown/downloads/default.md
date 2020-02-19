@@ -77,7 +77,8 @@ tag:
 <ul class="list-sections list-unstyled">
   <li class="downloads-download_links">
     <h3>Introduction</h3>
-    As the steward of natural resources and energy revenue, ONRR is responsible for the three functions that encompass this responsibility. These functions are collecting the revenue, verifying the revenue and disbursing the revenue. This outlines how data is collected during this process and how this data is transformed into the production, revenue, and disbursements data found on ONRR's [revenue data website.](revenuedata.doi.gov)
+    As the steward of natural resources and energy revenue, ONRR is responsible for the three functions that encompass this responsibility. These functions are collecting the revenue, verifying the revenue and disbursing the revenue. This outlines how data is collected during this process and how this data is transformed into the production, revenue, and disbursements data found on ONRR's [revenue data website](revenuedata.doi.gov)
+
 
  <h3>Process</h3>
 
@@ -89,6 +90,15 @@ tag:
  •	Data mining: Data mining is a partially automated activity to identify and resolve data errors prior to audits and compliance reviews. Data mining examines large sets of company-reported data for common errors, such as irregularities in the volume of oil or gas extracted.  If errors are identified, ONRR staff work with companies to have them correct the data.
  •	Audits: An audit involves detailed examinations of companies’ royalty payments and corresponding reporting to ONRR.  Audits ensure that royalty payments and other obligations to ONRR comply with lease terms, federal laws and regulations, and other policies.
  •	Compliance reviews: A compliance review is an analysis that determines the reasonableness of company-reported production and royalty data.
+
+
+ <h3>Datasets</h3>
+ 
+ <b>Revenue:</b> Revenue data found on this site comes from several places. Oil and gas companies report revenue on ONRR’s [Form-2014](https://www.onrr.gov/ReportPay/royalty-reporting.htm). Companies report solid minerals revenue on ONRR’s Production and Royalty (P&R) Report, [Form-4430](https://www.onrr.gov/ReportPay/solids.htm). Companies use these forms to electronically report their revenue payment information. This company-reported data goes through initial upfront system edits before being accepted into ONRR’s financial systems.
+
+ <b>Production:</b> Production data found on this site comes from several places. Oil and gas companies report production on ONRR’s Oil and Gas Operations Report (OGOR), [OGOR](https://www.onrr.gov/ReportPay/PDFDocs/4054-a.pdf). Companies report solid minerals production on ONRR’s Production and Royalty (P&R) Report, [Form-4430](https://www.onrr.gov/ReportPay/solids.htm). Companies use these forms to electronically report their production information. This self-reported data goes through initial upfront system edits before being accepted into ONRR’s financial systems.
+
+ <b>Disbursements:</b> Disbursement data found on this site comes from ONRR.  Once ONRR reconciles the company-reported royalty payment data from the monthly royalty report, [Form-2014](https://www.onrr.gov/ReportPay/royalty-reporting.htm), with the payments to Treasury, ONRR disburses the royalties from the Treasury account to the appropriate federal, state, or tribal accounts. All these transactions are reported and stored in ONRR’s systems.
 
   </li>
 </ul>

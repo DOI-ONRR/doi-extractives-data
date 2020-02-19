@@ -77,9 +77,9 @@ tag:
 <ul class="list-sections list-unstyled">
   <li class="downloads-download_links">
     <h3>Introduction</h3>
-    <p>As the steward of natural resources and energy revenue, ONRR is responsible for the three functions that encompass this responsibility. These functions are collecting the revenue, verifying the revenue and disbursing the revenue. This outlines how data is collected during this process and how this data is transformed into the production, revenue, and disbursements data found on ONRR's [revenue data website](revenuedata.doi.gov).
+    <p>As the steward of natural resources and energy revenue, ONRR is responsible for the three functions that encompass this responsibility. These functions are collecting the revenue, verifying the revenue and disbursing the revenue. This outlines how data is collected during this process and how this data is transformed into the production, revenue, and disbursements data found on ONRR's [revenue data website.](revenuedata.doi.gov)
     </p>
-
+ <h3>Process</h3>
   </li>
 </ul>
 

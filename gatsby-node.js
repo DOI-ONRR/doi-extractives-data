@@ -91,10 +91,10 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
   createRedirect({ fromPath: '/how-it-works/federal-revenue-by-company/', toPath: '/how-it-works/federal-revenue-by-company/2018', redirectInBrowser: true })
   createRedirect({ fromPath: '/explore/revenue/', toPath: '/query-data/?dataType=Revenue', redirectInBrowser: true })
   createRedirect({ fromPath: '/downloads/federal-production/', toPath: '/downloads/production/', redirectInBrowser: true })
-  createRedirect({ fromPath: '/downloads/federal-production-by-month/', toPath: '/downloads/production/', redirectInBrowser: true })
+  createRedirect({ fromPath: '/downloads/federal-production-by-month/', toPath: '/downloads/production-by-month/', redirectInBrowser: true })
   createRedirect({ fromPath: '/downloads/federal-revenue-by-location/', toPath: '/downloads/revenue/', redirectInBrowser: true })
-  createRedirect({ fromPath: '/downloads/federal-revenue-by-month/', toPath: '/downloads/revenue/', redirectInBrowser: true })
-  createRedirect({ fromPath: '/downloads/federal-disbursements-by-month/', toPath: '/downloads/disbursements/', redirectInBrowser: true })
+  createRedirect({ fromPath: '/downloads/federal-revenue-by-month/', toPath: '/downloads/revenue-by-month/', redirectInBrowser: true })
+  createRedirect({ fromPath: '/downloads/federal-disbursements-by-month/', toPath: '/downloads/disbursements-by-month/', redirectInBrowser: true })
 
   //const used = process.memoryUsage().heapUsed / 1024 / 1024
   //console.log(`#Create Pages: ${ Math.round(used * 100) / 100 } MB`)

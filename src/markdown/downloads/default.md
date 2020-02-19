@@ -20,7 +20,7 @@ tag:
   <li class="downloads-download_links">
     <h3 id="production-by-month">Production by month</h3>
     <p>This dataset includes commodity volumes of natural resources extracted from federal lands and waters and Native American lands by month. We offer data from January 2008 through the most recently available month.</p>
-    <download-data-link to="/downloads/production/">Downloads and documentation</download-data-link>
+    <download-data-link to="/downloads/production-by-month/">Downloads and documentation</download-data-link>
   </li>
   <li class="downloads-download_links">
     <h3 id="federal-lands-and-waters">Production by year</h3>
@@ -36,7 +36,7 @@ tag:
   <li class="downloads-download_links">
     <h3 id="revenue-by-month">Revenue by month</h3>
     <p>This dataset is for revenue by month for January 2008 through the most recently completed month of the current year. The data includes federal offshore and onshore revenue, along with revenue from Native American lands. The data is further broken down by revenue type (i.e., bonuses, rents, and royalties) and commodity.</p>
-    <download-data-link to="/downloads/revenue/">Downloads and documentation</download-data-link>
+    <download-data-link to="/downloads/revenue-by-month/">Downloads and documentation</download-data-link>
   </li>
   <!--Federal revenue by location-->
   <li class="downloads-download_links">
@@ -59,7 +59,7 @@ tag:
   <li class="downloads-download_links">
     <h3 id="disbursements-by-month">Disbursements by month</h3>
     <p>The amount of money earned from extraction of natural resources on federal lands that is disbursed to various legislated funds every month.</p>
-    <download-data-link to="/downloads/disbursements/">Downloads and documentation</download-data-link>
+    <download-data-link to="/downloads/disbursements-by-month/">Downloads and documentation</download-data-link>
   </li>
 </ul>
 

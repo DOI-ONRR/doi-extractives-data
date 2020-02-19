@@ -1,7 +1,7 @@
 ---
 title: Production by Month | Downloads | Natural Resources Revenue Data
 layout: downloads
-permalink: /downloads/production/
+permalink: /downloads/production-by-month/
 tag:
 - Data
 - Downloads

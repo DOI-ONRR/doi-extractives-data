@@ -77,20 +77,19 @@ tag:
 <ul class="list-sections list-unstyled">
   <li class="downloads-download_links">
     <h3>Introduction</h3>
-    <p>As the steward of natural resources and energy revenue, ONRR is responsible for the three functions that encompass this responsibility. These functions are collecting the revenue, verifying the revenue and disbursing the revenue. This outlines how data is collected during this process and how this data is transformed into the production, revenue, and disbursements data found on ONRR's [revenue data website.](revenuedata.doi.gov)
-    </p>
+    As the steward of natural resources and energy revenue, ONRR is responsible for the three functions that encompass this responsibility. These functions are collecting the revenue, verifying the revenue and disbursing the revenue. This outlines how data is collected during this process and how this data is transformed into the production, revenue, and disbursements data found on ONRR's [revenue data website.](revenuedata.doi.gov)
+
  <h3>Process</h3>
- <p><b>Collect:</b> Each month, companies self-report data to ONRR on the amount of resources they produced and sold, the value of this production, and the amount of royalties they owe the federal government.  Oil and gas companies are required to submit two key monthly reports to ONRR; the first report is Oil and Gas Operations Report, [OGOR](https://www.onrr.gov/ReportPay/PDFDocs/4054-a.pdf), specifying the total production and disposition of oil and gas, and the second report is for royalties due based on production, [Form-2014](https://www.onrr.gov/ReportPay/royalty-reporting.htm). Solid minerals companies are only required to submit one monthly Production and Royalty (P&R) Report, [Form-4430](https://www.onrr.gov/ReportPay/solids.htm).</p>
 
- <p><b>Verify:</b> ONRR is responsible for verifying royalties through its compliance management program, which ensures that the royalty revenues generated from the sales of commodities extracted from leased federal lands are accurately paid and reported. The compliance program includes upfront edits, data mining, audits, and compliance reviews.
+ Collect: Each month, companies self-report data to ONRR on the amount of resources they produced and sold, the value of this production, and the amount of royalties they owe the federal government.  Oil and gas companies are required to submit two key monthly reports to ONRR; the first report is Oil and Gas Operations Report, [OGOR](https://www.onrr.gov/ReportPay/PDFDocs/4054-a.pdf), specifying the total production and disposition of oil and gas, and the second report is for royalties due based on production, [Form-2014](https://www.onrr.gov/ReportPay/royalty-reporting.htm). Solid minerals companies are only required to submit one monthly Production and Royalty (P&R) Report, [Form-4430](https://www.onrr.gov/ReportPay/solids.htm).
 
- <ul>
- <li>•	Upfront edits: Data goes through initial upfront system edits before being accepted into ONRR’s financial systems.</li>
- <li>•	Data mining: Data mining is a partially automated activity to identify and resolve data errors prior to audits and compliance reviews. Data mining examines large sets of company-reported data for common errors, such as irregularities in the volume of oil or gas extracted.  If errors are identified, ONRR staff work with companies to have them correct the data.</li>
- <li>•	Audits: An audit involves detailed examinations of companies’ royalty payments and corresponding reporting to ONRR.  Audits ensure that royalty payments and other obligations to ONRR comply with lease terms, federal laws and regulations, and other policies. </li>
- <li>•	Compliance reviews: A compliance review is an analysis that determines the reasonableness of company-reported production and royalty data. </li>
- </ul>
- </p>
+ Verify: ONRR is responsible for verifying royalties through its compliance management program, which ensures that the royalty revenues generated from the sales of commodities extracted from leased federal lands are accurately paid and reported. The compliance program includes upfront edits, data mining, audits, and compliance reviews.
+
+ •	Upfront edits: Data goes through initial upfront system edits before being accepted into ONRR’s financial systems.
+ •	Data mining: Data mining is a partially automated activity to identify and resolve data errors prior to audits and compliance reviews. Data mining examines large sets of company-reported data for common errors, such as irregularities in the volume of oil or gas extracted.  If errors are identified, ONRR staff work with companies to have them correct the data.
+ •	Audits: An audit involves detailed examinations of companies’ royalty payments and corresponding reporting to ONRR.  Audits ensure that royalty payments and other obligations to ONRR comply with lease terms, federal laws and regulations, and other policies.
+ •	Compliance reviews: A compliance review is an analysis that determines the reasonableness of company-reported production and royalty data.
+
   </li>
 </ul>
 

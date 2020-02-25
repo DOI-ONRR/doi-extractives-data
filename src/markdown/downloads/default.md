@@ -82,7 +82,7 @@ ONRR's data management processes include collection and validation.
 
 ####Collection
 
-Each month, companies report data to ONRR on the amount of resources they produced and sold, the value of this production, and the amount of royalties they owe the federal government.  Oil and gas companies are required to submit two key monthly reports to ONRR; the first report is the [Oil and Gas Operations Report,(OGOR)](https://www.onrr.gov/ReportPay/PDFDocs/4054-a.pdf), specifying the total production and disposition of oil and gas. The second report is for royalties due based on sales or use of the production, the [Report of Sales and Royalty Remittance, Form ONRR-2014](https://www.onrr.gov/ReportPay/royalty-reporting.htm). Solid minerals companies are only required to submit one monthly [Production and Royalty (P&R) Report, Form-4430](https://www.onrr.gov/ReportPay/solids.htm).
+Each month, companies report data to ONRR on the amount of resources they produced and sold, the value of this production, and the amount of royalties they owe the federal government.  Oil and gas companies are required to submit two key monthly reports to ONRR; the first report is the [Oil and Gas Operations Report (OGOR)](https://www.onrr.gov/ReportPay/PDFDocs/4054-a.pdf), specifying the total production and disposition of oil and gas. The second report is for royalties due based on sales or use of the production, the [Report of Sales and Royalty Remittance, Form ONRR-2014](https://www.onrr.gov/ReportPay/royalty-reporting.htm). Solid minerals companies are only required to submit one monthly [Production and Royalty (P&R) Report, Form-4430](https://www.onrr.gov/ReportPay/solids.htm).
 
 ####Validation
 

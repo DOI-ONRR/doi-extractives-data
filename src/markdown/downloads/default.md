@@ -98,7 +98,7 @@ ONRR is responsible for verifying royalties through its compliance management pr
 
 ###Data sets
 
-The data sets ONRR maintains and provides to the public through this site include production, revenue, and disbursements. These datasets each have their own unique attributes.
+The data sets ONRR maintains and provides to the public through this site include production, revenue, and disbursements. These data sets each have their own unique attributes.
 
 ####Production
 

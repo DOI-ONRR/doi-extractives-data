@@ -80,12 +80,10 @@ As the steward of natural resources and energy revenue, the Office of Natural Re
 
 ONRR's data management processes include collection and validation.
 
-####Collection
-
+__Collection__
 Each month, companies report data to ONRR on the amount of resources they produced and sold, the value of their sold or used  production, and the amount of royalties they owe the federal government.  Oil and gas companies are required to submit two key monthly reports to ONRR; the first report is the [Oil and Gas Operations Report (OGOR)](https://www.onrr.gov/ReportPay/PDFDocs/4054-a.pdf), specifying the total production and disposition of oil and gas. The second report is for royalties due based on sales or use of the production, the [Report of Sales and Royalty Remittance, Form ONRR-2014](https://www.onrr.gov/ReportPay/royalty-reporting.htm). Solid minerals companies are only required to submit one monthly [Production and Royalty (P&R) Report, Form-4430](https://www.onrr.gov/ReportPay/solids.htm).
 
-####Validation
-
+__Validation__
 ONRR is responsible for verifying royalties through its compliance management program, which ensures that the royalty revenues generated from the sales of commodities extracted from leased federal lands are accurately paid and reported. The compliance program includes validation of the reported data using upfront edits, data mining, audits, and compliance reviews.
 
 - Upfront edits: Data goes through initial upfront system edits before being accepted into ONRR’s financial systems.
@@ -100,16 +98,13 @@ ONRR is responsible for verifying royalties through its compliance management pr
 
 The data sets ONRR maintains and provides to the public through this site include production, revenue, and disbursements. These data sets each have their own unique attributes.
 
-####Production
-
+__Production__
 Production data found on this site comes from several places. Oil and gas companies report production on ONRR’s Oil and Gas Operations Report (OGOR), [OGOR](https://www.onrr.gov/ReportPay/PDFDocs/4054-a.pdf). Companies report solid minerals production on ONRR’s Production and Royalty (P&R) Report, [Form-4430](https://www.onrr.gov/ReportPay/solids.htm). Companies use these forms to electronically report their production information. The companies' reported data goes through initial upfront system edits before being accepted into ONRR’s financial systems.
 
-####Revenue
+__Revenue__
+Revenue data found on this site comes from several places. Oil and gas companies report royalties, rents, and other revenues on ONRR’s [Form-2014](https://www.onrr.gov/ReportPay/royalty-reporting.htm). Companies report solid minerals royalties, rents, bonuses, and other revenues on ONRR’s Production and Royalty (P&R) Report, [Form-4430](https://www.onrr.gov/ReportPay/solids.htm). . Companies use these forms to electronically report their revenue payment information. This company-reported data goes through initial upfront system edits before being accepted into ONRR’s financial systems. Additional revenue comes from ONRR’s Accounts Receivable (AR) data. These payments are not tied to sales volumes and royalties, such as interest payments and civil penalties and are submitted directly to ONRR by companies and matched to ONRR generated receivables.
 
-Revenue data found on this site comes from several places. Oil and gas and geothermal companies report revenue on ONRR’s [Form-2014](https://www.onrr.gov/ReportPay/royalty-reporting.htm). Companies report solid minerals revenue on ONRR’s Production and Royalty (P&R) Report, [Form-4430](https://www.onrr.gov/ReportPay/solids.htm). Companies use these forms to electronically report their royalty payment information. This company-reported data goes through initial upfront system edits before being accepted into ONRR’s financial systems.
-
-####Disbursements
-
+__Disbursements__
 Disbursement data found on this site comes from ONRR.  Once ONRR reconciles the company-reported royalty data and other revenue data with the payments to Treasury, ONRR disburses the funds from the Treasury account to the appropriate federal, state, or tribal accounts. All these transactions are reported and stored in ONRR’s systems.
 
 ## Contact us

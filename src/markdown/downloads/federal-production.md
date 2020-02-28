@@ -24,7 +24,7 @@ tag:
   </ul>
 </p>
 
-<p class="downloads-download_links-intro">Download fiscal year data (2003-2018):
+<p class="downloads-download_links-intro">Download fiscal year data (2003-2019):
   <ul class="downloads-download_links list-unstyled">
     <li><excel-link to="/downloads/production/fiscal_year_production.xlsx">Fiscal year production (Excel, 409 KB)</excel-link></li>
     <li><csv-link to="/downloads/csv/production/fiscal_year_production.csv">Fiscal year production (csv, 528 KB)</csv-link></li>
@@ -41,16 +41,6 @@ The dataset currently include data tracked and managed by the Department of the 
 
 ## About the data
 
-<h3 alt="Withheld data">Why was some solids data withheld?</h3>
-
-ONRR <glossary-term>withheld</glossary-term> some solids production information out of an abundance of caution to ensure that there were no violations of the Trade Secrets Act.
-
-* "W" is displayed in the Production Volume column for those products that reveal proprietary data at the county level.
-* All "W" volumes are accounted for in separate line totals where state and county have been "Withheld" (columns C, D and E).
-
-<h3 alt="National and state totals">Why aren’t national totals equal to the sum of all state totals?</h3>
-
-In some cases, national totals include amounts that are withheld at the state or county level.
 
 <h3 alt="Geothermal energy">Why is geothermal energy listed so many times?</h3>
 

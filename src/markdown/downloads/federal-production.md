@@ -26,8 +26,8 @@ tag:
 
 <p class="downloads-download_links-intro">Download fiscal year data (2003-2019):
   <ul class="downloads-download_links list-unstyled">
-    <li><excel-link to="/downloads/production/fiscal_year_production.xlsx">Fiscal year production (Excel, 409 KB)</excel-link></li>
-    <li><csv-link to="/downloads/csv/production/fiscal_year_production.csv">Fiscal year production (csv, 528 KB)</csv-link></li>
+    <li><excel-link to="/downloads/production/fiscal_year_production.xlsx">Fiscal year production (Excel, 585 KB)</excel-link></li>
+    <li><csv-link to="/downloads/csv/production/fiscal_year_production.csv">Fiscal year production (csv, 854 KB)</csv-link></li>
   </ul>
 </p>
 

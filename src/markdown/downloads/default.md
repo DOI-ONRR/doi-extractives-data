@@ -74,7 +74,7 @@ tag:
 ## Data Collection and Validation
 --------------------------------------------------------------------------------
 
-As the steward of natural resources and energy revenue, the Office of Natural Resources Revenue (ONRR) is responsible for three main functions. These functions are: collecting the revenue, verifying the revenue, and disbursing the revenue. ONRR collects and manages data in order to accomplish complete its functions. This data is the foundation for the production, revenue, and disbursements data sets found on this site.
+As the steward of natural resources and energy revenue, the Office of Natural Resources Revenue (ONRR) is responsible for three main functions. These functions are: collecting the revenue, verifying the revenue, and disbursing the revenue. ONRR collects and manages data in order to accomplish its functions. This data is the foundation for the production, revenue, and disbursements data sets found on this site.
 
 ###Process
 
@@ -104,7 +104,7 @@ Production data found on this site comes from several places. Oil and gas compan
 __Revenue:__
 Revenue data found on this site comes from several places. Oil and gas companies report royalties, rents, and other revenues on ONRR’s [Form-2014](https://www.onrr.gov/ReportPay/royalty-reporting.htm). Companies report solid minerals royalties, rents, bonuses, and other revenues on ONRR’s Production and Royalty (P&R) Report, [Form-4430](https://www.onrr.gov/ReportPay/solids.htm). . Companies use these forms to electronically report their revenue payment information. This company-reported data goes through initial upfront system edits before being accepted into ONRR’s financial systems. Additional revenue comes from ONRR’s Accounts Receivable (AR) data. These payments are not tied to sales volumes and royalties, such as interest payments and civil penalties and are submitted directly to ONRR by companies and matched to ONRR generated receivables.
 
-__Disbursements:__ 
+__Disbursements:__
 Disbursement data found on this site comes from ONRR.  Once ONRR reconciles the company-reported royalty data and other revenue data with the payments to Treasury, ONRR disburses the funds from the Treasury account to the appropriate federal, state, or tribal accounts. All these transactions are reported and stored in ONRR’s systems.
 
 ## Contact us

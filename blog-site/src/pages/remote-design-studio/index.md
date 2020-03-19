@@ -7,7 +7,7 @@ tags:
 - user experience
 - design
 - remote
-date: "2020-02-19"
+date: "2020-03-19"
 ---
 
 ## How we work remotely

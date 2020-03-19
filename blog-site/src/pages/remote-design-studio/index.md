@@ -12,7 +12,7 @@ date: "2020-02-19"
 
 ## How we work remotely
 
-The Office of Natural Resources Revenue (ONRR) is a relatively telework-friendly agency and has allowed full-time telework for qualified positions since May 2017 and some telework throughout its 10-year existence. In addition to remote employees, the agency has offices located in several cities across the country including Washington D.C., Denver, Dallas, Oklahoma City, Houston, Tulsa, and Farmington, New Mexico. Because of this, the agency is committed to creating a seamless work environment that empowers employees regardless of their location.  
+The Office of Natural Resources Revenue (ONRR) is a relatively telework-friendly agency and has allowed telework throughout its 10-year existence. In addition to remote employees, the agency has offices located in several cities across the country including Washington D.C., Denver, Dallas, Oklahoma City, Houston, Tulsa, and Farmington, New Mexico. Because of this, the agency is committed to creating a seamless work environment that empowers employees regardless of their location.  
 
 When our innovation design team was created, two members of our team were the first fully-remote employees who don’t live near an agency office, and we’ve been testing the infrastructure as a result. For instance, we’ve learned we have to follow special procedures when resetting computer passwords or risk a lock out that requires taking your laptop to an office (I learned that one the hard way!).
 

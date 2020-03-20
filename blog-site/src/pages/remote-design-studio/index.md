@@ -7,7 +7,7 @@ tags:
 - user experience
 - design
 - remote
-date: "2020-03-19"
+date: "2020-03-20"
 ---
 
 ## How we work remotely
@@ -24,7 +24,7 @@ We also conduct all of our user research sessions using video conferencing, whic
 
 One of the things that has taken the most effort to get to work well remotely is design studios. We conduct design studios at the beginning of larger projects when we’re doing things like adding a new feature or extensively redesigning an existing one. The purpose is to get everyone on the team to be on board with the project and on the same page with the problem we’re aiming to solve.  We also want to get as many ideas onto the table as possible before committing to a given solution.
 
-Given how distributed we are, it’s often not possible to get us all in the same room at the same time. Once, we tried conducting a design studio from both DC and Denver, and that didn’t work very well. It lacked the all of benefits of being in person because we were in two rooms and still had more drawbacks than it would have if we were all remote. We even had smart whiteboards, but had to spend a significant amount of time figuring out how to get them to work and ended up just taking cell phone pictures of sketches instead.
+Given how distributed we are, it’s often not possible to get us all in the same room at the same time. Once, we tried conducting a design studio from both DC and Denver, and that didn’t work very well. It lacked all of the benefits of being in person because we were in two rooms and still had more drawbacks than it would have if we were all remote. We even had smart whiteboards, but had to spend a significant amount of time figuring out how to get them to work and ended up just taking cell phone pictures of sketches instead.
 
 After that attempt, we decided to try doing a design studio completely remotely.  It was also in conjunction with an attempt to slow down agile a bit to improve the feedback we got on designs and get the whole team more engaged in thinking about the details. The process of slowing down agile was inspired by Basecamp’s free, online book [Shape Up: Stop Running in Circles and Ship Work that Matters](https://basecamp.com/shapeup) by Ryan Singer (Note: this isn’t an endorsement of Basecamp). To slow down the process, we decided to break it down into 4 two-hour meetings with each person assigned homework in between meetings.
 

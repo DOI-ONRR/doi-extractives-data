@@ -142,6 +142,7 @@ const createProductVolumeNodeByProduct = (productVolumeData, type) => {
 	  }
   }
 
+  node.OffshorePlanningArea = node.OffshorePlanningArea || ''
   node.ProductionDate = (node.ProductionYear)
     ? new Date(node.ProductionYear, getMonthFromString(node.ProductionMonth))
     : new Date(node.FiscalYear, 0)

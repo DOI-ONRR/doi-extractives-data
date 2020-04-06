@@ -37,17 +37,17 @@ The Office of Natural Resources Revenue disburses GOMESA revenue to both state a
 <table class="table-basic u-margin-top u-margin-bottom">
     <thead>
     <tr>
-        <th>Recipient</th>
-        <th>FY2019</th>
+        <th>Recipient (state and local total)</th>
+        <th>FY2020</th>
     </tr>
     </thead>
     <tbody>
-        <tr><td><a href="/explore/AL#federal-disbursements">Alabama</a></td><td class="numeric">$30,595,109.50</td></tr>
-        <tr><td><a href="/explore/LA#federal-disbursements">Louisiana</a></td><td class="numeric">$94,728,191.78</td></tr>
-        <tr><td><a href="/explore/MS#federal-disbursements">Mississippi</a></td><td class="numeric">$31,723,855.95</td></tr>
-        <tr><td><a href="/explore/TX#federal-disbursements">Texas</a></td><td class="numeric">$57,891,839.04</td></tr>
+        <tr><td><a href="/explore/AL#federal-disbursements">Alabama</a></td><td class="numeric">$50,046,761.81</td></tr>
+        <tr><td><a href="/explore/LA#federal-disbursements">Louisiana</a></td><td class="numeric">$155,718,469.97</td></tr>
+        <tr><td><a href="/explore/MS#federal-disbursements">Mississippi</a></td><td class="numeric">$51,913,975.74</td></tr>
+        <tr><td><a href="/explore/TX#federal-disbursements">Texas</a></td><td class="numeric">$95,283,932.14</td></tr>
     </tbody>
-</table> 
+</table>
 
 ### Land and Water Conservation Fund
 The act also directs a portion of gulf revenue to the [Land and Water Conservation Fund](/how-it-works/land-and-water-conservation-fund/), which supports preservation, development, and access to outdoor lands for public recreation.

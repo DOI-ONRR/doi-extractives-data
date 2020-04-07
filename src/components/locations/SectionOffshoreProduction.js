@@ -41,7 +41,7 @@ const SectionOffshoreProduction = props => {
               , there was no natural resource <GlossaryTerm>production</GlossaryTerm> on federal waters in the {usStateData.title} in { year }.
             </p>
             <p>
-              <Link to="/downloads/federal-production/">
+              <Link to="/downloads/production/">
                 <DataAndDocs />
               </Link>
             </p>
@@ -53,7 +53,7 @@ const SectionOffshoreProduction = props => {
                   production</GlossaryTerm> on federal waters in the {usStateData.title}.
               </p>
               <p>
-                <Link to="/downloads/federal-production/">
+                <Link to="/downloads/production/">
                   <DataAndDocs />
                 </Link>
               </p>

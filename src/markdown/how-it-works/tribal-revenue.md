@@ -62,7 +62,7 @@ ONRR provides a financial distribution report called an Explanation of Payment r
 
 The federal government may only release information about natural resource extraction and revenue in aggregate across all Native American lands. This is because of confidentiality and proprietary constraints on Native American data. These constraints arise from treaties, laws, and regulations that the government consistently and uniformly applies.
 
-In the tables below, revenue may be grouped differently depending on the stage of production; see [documentation about the federal revenue dataset](/downloads/federal-revenue-by-location/) for more detailed explanations.
+In the tables below, revenue may be grouped differently depending on the stage of production; see [documentation about the federal revenue dataset](/downloads/revenue/) for more detailed explanations.
 
 <a href="/query-data/?dataType=Revenue">Query revenue data</a> →
 

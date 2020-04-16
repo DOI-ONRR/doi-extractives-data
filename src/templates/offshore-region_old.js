@@ -175,7 +175,7 @@ class OffshoreRegion extends React.Component {
                             ONRR collects detailed data about natural resources produced in the {title}.
                         </p>
                         <p>
-                          <DownloadDataLink to="/downloads/federal-production/">Downloads and documentation</DownloadDataLink>
+                          <DownloadDataLink to="/downloads/production/">Downloads and documentation</DownloadDataLink>
                         </p>
                       </div>
                     </div>

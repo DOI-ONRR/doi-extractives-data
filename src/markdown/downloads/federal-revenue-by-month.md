@@ -1,7 +1,7 @@
 ---
 title: Revenue by Month | Downloads | Natural Resources Revenue Data
 layout: downloads
-permalink: /downloads/federal-revenue-by-month/
+permalink: /downloads/revenue-by-month/
 tag:
 - Data
 - Downloads
@@ -20,8 +20,8 @@ tag:
 Download revenue by month:
 
 <ul class="downloads-download_links list-unstyled">
-  <li><excel-link to="/downloads/revenue/monthly_revenue.xlsx">Revenue by month, 1/2008–2/2020 (Excel, 302 KB)</excel-link></li>
-  <li><csv-link to="/downloads/csv/revenue/monthly_revenue.csv">Revenue by month, 1/2008–2/2020 (csv, 506 KB)</csv-link></li>
+  <li><excel-link to="/downloads/revenue/monthly_revenue.xlsx">Revenue by month, 1/2008–3/2020 (Excel, 303 KB)</excel-link></li>
+  <li><csv-link to="/downloads/csv/revenue/monthly_revenue.csv">Revenue by month, 1/2008–3/2020 (csv, 486 KB)</csv-link></li>
 </ul>
 
 ## Scope

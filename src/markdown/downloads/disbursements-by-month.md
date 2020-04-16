@@ -2,7 +2,7 @@
 title: Disbursements by Month | Downloads | Natural Resources Revenue Data
 title_display: Disbursements by month
 layout: downloads
-permalink: /downloads/federal-disbursements-by-month/
+permalink: /downloads/disbursements-by-month/
 tag:
 - Data
 - Downloads
@@ -18,8 +18,8 @@ tag:
 Download disbursement by month data:
 
 <ul class="downloads-download_links list-unstyled">
-  <li><excel-link to="/downloads/disbursements/monthly_disbursements.xlsx">Disbursements by month (Excel, 303 KB)</excel-link></li>
-    <li><csv-link to="/downloads/csv/disbursements/monthly_disbursements.csv">Disbursements by month (csv, 456 KB)</csv-link></li>
+  <li><excel-link to="/downloads/disbursements/monthly_disbursements.xlsx">Disbursements by month (Excel, 319 KB)</excel-link></li>
+    <li><csv-link to="/downloads/csv/disbursements/monthly_disbursements.csv">Disbursements by month (csv, 478 KB)</csv-link></li>
 </ul>
 
 ## Scope

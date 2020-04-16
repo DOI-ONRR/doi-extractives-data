@@ -45,7 +45,7 @@ const SectionFederalProduction = props => {
               , there was no natural resource <GlossaryTerm>production</GlossaryTerm> on federal land in {usStateData.title} in { year }.
             </p>
             <p>
-              <Link to="/downloads/federal-production/">
+              <Link to="/downloads/production/">
                 <DataAndDocs />
               </Link>
             </p>
@@ -57,7 +57,7 @@ const SectionFederalProduction = props => {
                   production</GlossaryTerm> on federal land in {usStateData.title}.
               </p>
               <p>
-                <Link to="/downloads/federal-production/">
+                <Link to="/downloads/production/">
                   <DataAndDocs />
                 </Link>
               </p>

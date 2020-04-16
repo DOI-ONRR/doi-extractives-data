@@ -1,5 +1,5 @@
 ---
-title: "Teaching Digital Skills: Progress on Usability testing by peer training"
+title: "Teaching digital skills: Progress on usability testing by peer training"
 authors:
 - Maroya Faied
 - Lindsay Goldstein
@@ -14,13 +14,15 @@ date: "2020-04-16"
 
 Last year, our term-limited UX designer taught us career government employee program analysts how to conduct user research. We want to tell you how it’s been going since then.
 
-We can’t believe it has already been a year since we [wrote] (https://revenuedata.doi.gov/blog/usability-testing-training/) about learning user research because we haven’t taken a break since we started learning. The past year has just flown by. We conducted several real studies for revenuedata.doi.gov, learned new software, brought in
+We can’t believe it has already been a year since we [wrote](https://revenuedata.doi.gov/blog/usability-testing-training/) about learning user research because we haven’t taken a break since we started learning. The past year has just flown by. We conducted several real studies for revenuedata.doi.gov, learned new software, brought in
 
 virtual UX interns, spoke about our work at conferences, and recently took on another Office of Natural Resources Revenue website for which we have started user research. Writing this blog post gives us a moment to pause and evaluate our work over the past year and, hopefully, gain some insight into what we’ve learned and how we can do even better going forward.
 
-In the closing of our last [blog post] (https://revenuedata.doi.gov/blog/usability-testing-training/)we mentioned that our next steps would be to conduct real studies, try using spreadsheets to take notes to cut down on time used to consolidate findings, and perform outreach activities to help other teams in our organization adopt our work approach.
+In the closing of our last [blog post](https://revenuedata.doi.gov/blog/usability-testing-training/)we mentioned that our next steps would be to conduct real studies, try using spreadsheets to take notes to cut down on time used to consolidate findings, and perform outreach activities to help other teams in our organization adopt our work approach.
 
-## Progress We conducted 7 – yes 7 – distinct rounds of user research for NRRD over the past year and that includes a massive undertaking where we catalogued and analyzed every task or question a user has about the site data to make sure our product framing accurately reflected the needs of our users and that we are staying within scope as we move forward with new designs and incorporate more data. It involved going through previous interview notes, requests to our data retrieval team, and Freedom of Information Act requests. In the end, we used what we learned from the study and made minor changes to our problem statement and bigger changes to the key user scenarios and product goals in our [product framing documentation](https://github.com/ONRR/doi-extractives-data/wiki/Product-framing).
+## Progress
+
+We conducted 7 – yes 7 – distinct rounds of user research for NRRD over the past year and that includes a massive undertaking where we catalogued and analyzed every task or question a user has about the site data to make sure our product framing accurately reflected the needs of our users and that we are staying within scope as we move forward with new designs and incorporate more data. It involved going through previous interview notes, requests to our data retrieval team, and Freedom of Information Act requests. In the end, we used what we learned from the study and made minor changes to our problem statement and bigger changes to the key user scenarios and product goals in our [product framing documentation](https://github.com/ONRR/doi-extractives-data/wiki/Product-framing).
 
 Certain areas of user research have become easier. We use a standard process where we write a plan, conduct the interviews, analyze the findings, and present our research. We are becoming more comfortable doing user interviews. We are learning to look at the site and our data from a user-focused perspective and can provide more critical feedback. We are also able to now make simple changes to prototypes within design software and can help communicate these changes to our developers.
 

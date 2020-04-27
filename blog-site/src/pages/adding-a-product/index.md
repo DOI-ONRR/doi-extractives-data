@@ -10,8 +10,6 @@ tags:
 date: "2020-04-29"
 ---
 
-#Adding a Product to Our Team’s Portfolio
-
 Our organization’s leaders made the decision that both our public websites should be managed by the same team. So, our team inherited ownership of the [onrr.gov](onrr.gov) site in March. So far, we’ve made progress on understanding the site’s users and documenting its current state, and what we’ve learned working on the [Natural Resources Revenue Data (NRRD) site](revenuedata.doi.gov) will serve as our roadmap as we look to enhance the user experience on onrr.gov.
 
 ##Benefits of the move

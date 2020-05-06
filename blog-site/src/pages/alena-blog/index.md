@@ -41,10 +41,6 @@ Earlier in my internship, I helped in brainstorming different ways to visualize 
 Style tile:
 ![Style tile with color scheme for onrr.gov](./onrr-style-01.jpg)
 
-Prototype:
-![Partial homepage wireframe for onrr.gov](./prototype-example.png)
-[Clickable prototype](https://w8tuba.axshare.com/#id=fnhupi&p=home__template_&g=1)
-
 ## Favorite part
 Although my internship was completely virtual, I enjoyed getting to know everyone on the ONRR team. Everyone is so welcoming and willing to teach me more about the process of developing a live, open-source government product. Whenever I went onto their conference calls for sync ups, they always included me in the conversation. I would especially like to thank Shannon McHarg and Lindsay Goldstein for being amazing mentors, as well as Annie Persson for being the best co-intern! I am incredibly thankful for everything that they have taught me and for giving me the opportunity to really dive deep into the process of user experience.
 

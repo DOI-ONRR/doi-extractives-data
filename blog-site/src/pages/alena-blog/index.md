@@ -1,5 +1,5 @@
 ---
-title: "Reflections from our virtual student federal service user experience intern"
+title: "Reflections from our Virtual Student Federal Service (VSFS) user experience intern"
 authors:
 - Alena Huang
 excerpt: "Our UX intern has made numerous contributions during her time with us. In this post, she discusses the projects she has been working on and takeaways from her experience."

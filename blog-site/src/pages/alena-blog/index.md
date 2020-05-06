@@ -24,14 +24,15 @@ I’ve learned about all the different aspects of user experience and how they a
 The very first thing that I worked on was a content audit and [sitemap](https://92ix0j.axshare.com/) for ONRR.gov. This was really helpful in understanding the content and getting a sense of the scale of the information that the ONRR website provided. It was so surprising to see how many files were available to the public!
 
 Snapshots of the content audit:
-![Image of content audit spreadsheet showing the structure of pages on onrr.gov](./content audit 1.png)
-![Image of content audit spreadsheet showing details of a few pages](./content audit 2.png)
+![Image of content audit spreadsheet showing the structure of pages on onrr.gov](./content-audit-1.png)
+
+![Image of content audit spreadsheet showing details of a few pages](./content-audit-2.png)
 
 ### User research
 Throughout the internship, I learned how not only to create questions for interviews, but also how to conduct user interviews and testing. I enjoyed user interviews because this is where you get a sense of how users interact with the product. After researching through user interviews, analysis reports (reports from old surveys, comparative analysis reports, etc.), and site analytics, my team and I were able to come up with [five personas](https://os2cz3.axshare.com/#id=yiu1lh&p=user_types&g=1) and their [user flows](https://os2cz3.axshare.com/#id=6yg8m7&p=user_type__operator&g=1) for ONRR.gov. Additionally, I recently created a card sort to better understand how users grouped information on the website!
 
 One of the personas that we created, including pain points and main tasks:
-![Image of a persona for an operator of a leased well](./persona example.png)
+![Image of a persona for an operator of a leased well](./persona-example.png)
 
 
 ### Visual design & interaction design
@@ -41,7 +42,7 @@ Style tile:
 ![Style tile with color scheme for onrr.gov](./onrr-style-01.jpg)
 
 Prototype:
-![Partial homepage wireframe for onrr.gov](./prototype example.png)
+![Partial homepage wireframe for onrr.gov](./prototype-example.png)
 [Clickable prototype](https://w8tuba.axshare.com/#id=fnhupi&p=home__template_&g=1)
 
 ## Favorite part

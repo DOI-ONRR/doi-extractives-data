@@ -10,7 +10,7 @@ tags:
 - design
 - user research
 - virtual student federal service
-date: "2020-05-11"
+date: "2020-05-14"
 ---
 
 Hello everyone! I am, Alena Huang, a student at the University of Notre Dame studying Visual Communication Design. I joined the team as a User Experience Intern for 9 months during the school year.

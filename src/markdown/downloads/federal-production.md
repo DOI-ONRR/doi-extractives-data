@@ -17,10 +17,10 @@ tag:
 
 > This dataset contains information on natural resource production volumes on Native American lands and federal lands and waters. We only provide production volumes for Native American lands by fiscal year.
 
-<p class="downloads-download_links-intro">Download calendar year data (2003-2018):
+<p class="downloads-download_links-intro">Download calendar year data (2003-2019):
   <ul class="downloads-download_links list-unstyled">
-    <li><excel-link to="/downloads/production/calendar_year_production.xlsx">Calendar year production (Excel, 631 KB)</excel-link></li>
-    <li><csv-link to="/downloads/csv/production/calendar_year_production.csv">Calendar year production (csv, 835 KB)</csv-link></li>
+    <li><excel-link to="/downloads/production/calendar_year_production.xlsx">Calendar year production (Excel, 579 KB)</excel-link></li>
+    <li><csv-link to="/downloads/csv/production/calendar_year_production.csv">Calendar year production (csv, 843 KB)</csv-link></li>
   </ul>
 </p>
 

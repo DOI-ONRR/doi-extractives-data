@@ -189,7 +189,7 @@ exports[`RevenueTrends renders correctly 1`] = `
           className="sourceLinkLeft"
         >
           <a
-            href="/./downloads/revenue/"
+            href="/./downloads/revenue-by-month/"
           >
             Source file
           </a>
@@ -198,7 +198,7 @@ exports[`RevenueTrends renders correctly 1`] = `
           className="sourceLinkRight"
         >
           <a
-            href="/./downloads/revenue/"
+            href="/./downloads/revenue-by-month/"
           >
             Source file
           </a>

@@ -783,10 +783,9 @@ exports.onPostBuild = () => {
 	// copydir.sync(__dirname + '/static/pages', __dirname + '/_site')
 	// console.log('Finished Copying static html pages to _site.')
 
-  console.log('Copying Files from public to _site...')
-  fs.rename(__dirname + '/public', __dirname + '/_site')
-	//copydir.sync(__dirname + '/public', './_site')
-	console.log('Finished Copying Files to _site.')
+  console.log('Renaming public to _site...')
+  fs.renameSync(__dirname + '/public', __dirname + '/_site')
+	console.log('Finished Renaming to _site.')
 
 	console.log('Copying Files from downloads to _site...')
 	copydir.sync(__dirname + '/downloads', './_site/downloads')

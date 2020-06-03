@@ -7,11 +7,11 @@ const WhatsNew = props => (
   <section className={styles.root + ' slab-delta'}>
   	<div className="container-page-wrapper">
       <h2>What's new</h2>
-      <p>In our latest release on May 14, 2020, we made the following changes:</p>
+      <p>In our latest release on June 3, 2020, we made the following changes:</p>
       <ul className="list-bullet ribbon-card-top-list">
-        <li>Updated <Link to="/downloads/revenue-by-month">monthly revenue data through April 2020</Link></li>
-                <li>Updated <Link to="/downloads/production-by-month">monthly production data through January 2020</Link></li>
-                <li>Added <Link to="/blog/intern-experience">blog post on our virtual student intern's experience with us</Link></li>
+        <li>Released our new <a href="https://nrrd-beta.app.cloud.gov/exploredata">beta site</a></li>
+        <li>Updated <Link to="/downloads/disbursements-by-month">monthly disbursements data through April 2020</Link></li>
+        <li>Added <a href="https://nrrd-beta.app.cloud.gov/downloads/production">calendar year 2019 production data file</a> on our beta site</li>
       </ul>
 
       <p>Review our <a href="https://github.com/ONRR/doi-extractives-data/releases">full release details</a>.</p>

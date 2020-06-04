@@ -7,7 +7,7 @@ const WhatsNew = props => (
   <section className={styles.root + ' slab-delta'}>
   	<div className="container-page-wrapper">
       <h2>What's new</h2>
-      <p>In our latest release on June 3, 2020, we made the following changes:</p>
+      <p>In our latest release on June 4, 2020, we made the following changes:</p>
       <ul className="list-bullet ribbon-card-top-list">
         <li>Released our new <a href="https://beta-nrrd.app.cloud.gov">beta site</a></li>
         <li>Updated <Link to="/downloads/disbursements-by-month">monthly disbursements data through April 2020</Link></li>

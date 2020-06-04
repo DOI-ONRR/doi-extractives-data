@@ -27,7 +27,7 @@ const BetaSiteBanner = () => {
   return (
     <Box component="section" className={classes.root}>
       <Box component="span">
-        We've been hard at work on a new version of the site.  Test out the new <a href="https://nrrd-beta.app.cloud.gov" target="_blank">beta site</a>.
+        We've been hard at work on a new version of the site.  Test out the new <a href="https://beta-nrrd.app.cloud.gov" target="_blank">beta site</a>.
       </Box>
     </Box>
   )

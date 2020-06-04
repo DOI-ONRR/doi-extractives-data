@@ -5,6 +5,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 
 import { Banner } from '../Banner'
 import { AlertBanner } from '../AlertBanner'
+import { BetaSiteBanner } from '../BetaSiteBanner'
 import { Header } from '../Header'
 import { Footer } from '../Footer'
 import Glossary from '../../utils/Glossary'
@@ -84,6 +85,8 @@ const DefaultLayout = ({ children }) => {
       <a href="#main-content" className={styles.skipNav}>Skip to main content</a>  
 
       <Banner />
+
+      <BetaSiteBanner />
 
       <Header siteMetadata={data && data.site.siteMetadata} />
 

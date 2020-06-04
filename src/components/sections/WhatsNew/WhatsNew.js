@@ -9,7 +9,7 @@ const WhatsNew = props => (
       <h2>What's new</h2>
       <p>In our latest release on June 3, 2020, we made the following changes:</p>
       <ul className="list-bullet ribbon-card-top-list">
-        <li>Released our new <a href="https://beta-nrrd.app.cloud.gov/exploredata">beta site</a></li>
+        <li>Released our new <a href="https://beta-nrrd.app.cloud.gov">beta site</a></li>
         <li>Updated <Link to="/downloads/disbursements-by-month">monthly disbursements data through April 2020</Link></li>
         <li>Added <a href="https://beta-nrrd.app.cloud.gov/downloads/production">calendar year 2019 production data file</a> on our beta site</li>
       </ul>

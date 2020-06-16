@@ -102,6 +102,8 @@ We discovered a lot of the features we were working on were better viewed throug
 
 Reframing the roadmap chunks of work as epics has helped us take a wider view of our priorities to identify trade-offs, better coordinate our work, and identify blockages or dependencies.​​  We kept the two-week sprints within epics instead of making a wholesale conversion to 6-week sprints to better manage the “metabolism” of the work.​
 
+ ![Image showing recent epics on a timeline](./Epics.png)
+
 ### Shaping new features
 
 Our version of shaping includes five phases: defining the project scope, generating ideas, grounding in reality, scoping for build, and building.
@@ -135,18 +137,16 @@ From <a href="https://basecamp.com/shapeup/3.3-chapter-11">*Shape Up*, Chapter 1
 
 What our task list looked like halfway through the project.
 ![Image showing our task list halfway through the project](./Board.png)
-​
 
 The *Shape Up* book stresses the importance of defining done against a baseline of what customers already have versus some perfect ideal. As we progressed through the issues, we came up with a definition of when we would be done and decided to do a soft launch to enable us to start providing benefit to users while working out some of the harder or less important kinks for the hard launch. This also allows us to obtain input and feedback from users to make sure we didn’t miss anything big with our re-design.
 
 One of the tasks we put off until after the soft launch was working on the search engine optimization from pages that exist on the site today but do not exist in our rebuilt site.  We defined it as being ready for soft launch as when all the data was accurate and no major bugs for things that were present in the site.  Ready for hard launch is in a state where we don’t lose anything valuable by replacing the old site with the new one.  At that point we went through all the issues with that lens and identified which were required for the soft launch, which were required for the hard launch, and which could wait until later.
 
 ## Final deliverable
-![Image showing detailed cards with circle charts from beta site](./beta-cards.png)
 
 We released the <a href="https://beta-nrrd.app.cloud.gov/">soft launch</a> a couple of weeks ago and are diligently working through all the things we need to do to be ready for the hard launch.
 
-<img alt="Image of new features including map, circle charts, and line chart in beta site" src="beta-site.png"/>
+<img src="beta-map" alt="image of new map on beta site" />
 
 ## Lessons learned
 

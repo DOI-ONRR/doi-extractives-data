@@ -146,8 +146,6 @@ One of the tasks we put off until after the soft launch was working on the searc
 ## Final deliverable
 
 We released the <a href="https://beta-nrrd.app.cloud.gov/">soft launch</a> a couple of weeks ago and are diligently working through all the things we need to do to be ready for the hard launch.
-<img alt="Image of new features including map, circle charts, and line chart in beta site" src="beta-site.png">
-<img alt="Image of new map from beta site" src="beta-map.png">
 
 ![Image showing detailed cards with circle charts from beta site](./beta-cards.png)
 

@@ -144,10 +144,11 @@ The *Shape Up* book stresses the importance of defining done against a baseline 
 One of the tasks we put off until after the soft launch was working on the search engine optimization from pages that exist on the site today but do not exist in our rebuilt site.  We defined it as being ready for soft launch as when all the data was accurate and no major bugs for things that were present in the site.  Ready for hard launch is in a state where we don’t lose anything valuable by replacing the old site with the new one.  At that point we went through all the issues with that lens and identified which were required for the soft launch, which were required for the hard launch, and which could wait until later.
 
 ## Final deliverable
+![Image showing detailed cards with circle charts from beta site](./beta-cards.png)
 
 We released the <a href="https://beta-nrrd.app.cloud.gov/">soft launch</a> a couple of weeks ago and are diligently working through all the things we need to do to be ready for the hard launch.
 
-![Image showing detailed cards with circle charts from beta site](./beta-cards.png)
+<img alt="Image of new features including map, circle charts, and line chart in beta site" src="beta-site.png"/>
 
 ## Lessons learned
 

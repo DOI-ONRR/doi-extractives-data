@@ -34,7 +34,7 @@ We also wanted to start talking to users of the site as soon as we could, so we 
 
 After our first round of research, one of our interns developed two prototypes for the homepage and reporter checklists to address a couple high-priority problems we had learned about from the survey results, the analytics, and our first round of user research. We then [tested the prototypes with users](https://github.com/ONRR/research/tree/master/onnr-dot-gov-research/02_homepage_concepts) to get an idea whether the simplified designs address the issues that we knew some users experience with the current site. One of the high-priority issues is that users, especially those who are not frequent site visitors, struggle to find the pages or resources they need to complete their intended tasks. While this prototype will not be our final version, the testing gave us some good feedback about narrowing down the content on the homepage.
 
-![Image of a homepage prototype including four cards with links to commonly used resources throughout the site](./homepage-prototype.png)
+![Image of a hompage prototype including four cards with links to commonly used resources throughout the site](./homepage-prototype.png)
 Image: Homepage prototype that was tested with users
 
 ##What’s next?

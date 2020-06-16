@@ -9,7 +9,7 @@ tags:
 - agile
 - collaboration
 - training
-date: "2020-06-16"
+date: "2020-06-17"
 ---
 
 Most of us in government have by now heard the familiar phrase: The strategy is delivery. (Or its variant: Delivery is the strategy.)​ It’s a useful phrase. ​
@@ -42,7 +42,7 @@ When we determined that we needed to make significant enhancements to the site t
 
 We are dedicated to getting the most out of agile—and that includes an openness to adjust our implementation of agile. So, when members of the team were concerned about our collaboration and processes, we wanted to do better. First, we conducted a retro on the existing process to get into the details of  what was working and determine which problems the team wanted to solve.​  
 
-Here’s are the results of that retro.
+Here are the results of that retro.
 
 What was working:​
 
@@ -52,27 +52,26 @@ What was working:​
 * Multiple team members are looking at and improving content.​
 * User research allows us to understand user needs.​
 * Prototyping allows us to test out options with users quickly before spending time building them.
-* We’d made a lot of improvements to the tech stack and code and addressed some tech debt.​
-* Training and co-working with program analysts to teach them user research and content management skills.​
+* We’ve made a lot of improvements to the tech stack and code and addressed some tech debt.​
+* We were training and co-working with program analysts to teach them user research and content management skills.​
 
 Short-term thinking problems:​
 * We often ended up focusing on what individuals could do within the coming two weeks, without much long-term thinking and consensus building about the direction we wanted to head in. ​
 * We often rolled over work to the next sprint, which largely defeats the purpose. ​
 * Sprint planning and roadmapping often felt disconnected.  ​
 * Roadmapping was a high-level look at the long-term direction, but it wasn’t detailed enough to make sure we were all on the same page with where we wanted to go. ​
-* We also had a separate project plan for upper management and a content calendar that didn’t always map to the roadmap. ​
+* We also had a separate project plan for upper management and a content calendar that didn’t always align with the roadmap. ​
 * We didn’t have a shared understanding of what was a priority. ​
 
 Collaboration & communication problems:​
 * We often didn’t have a shared understanding of the problem space. ​
 * We weren’t bringing the team’s full expertise to evaluating and scoping our new work. ​
 * We didn’t leave time for iterating the design during development. ​
-* Moving too fast resulted in “throwing things over the wall” and lack of collaboration because we were all focused on doing our individual tasks in a given sprint. ​
-* Requests from leadership took precedence over what we worked on, resulting in having to react quickly and not follow our standard process. ​
+* Moving too fast resulted in “throwing things over the wall” and a lack of collaboration because we were all focused on doing our individual tasks in a given sprint. ​​
 
 ## Our inspiration
 
-We found inspiration in Basecamp’s free, online book [*Shape Up: Stop Running in Circles and Ship Work that Matters*](https://basecamp.com/shapeup​) ​by Ryan Singer​ (this isn't an endorsement of Basecamp). Many of the examples and illustrations you’ll see below are from that book.
+We found inspiration in Basecamp’s free, online book <a href="https://basecamp.com/shapeup">*Shape Up: Stop Running in Circles and Ship Work that Matters*</a> ​by Ryan Singer​ (this isn't an endorsement of Basecamp). Many of the examples and illustrations you’ll see below are from that book.
 
 In the book, Ryan Singer details how they follow a process called “shaping” to develop their ideas when framing a problem to be solved. Shaping involves taking a raw idea and turning it into a scoped piece of work that is ready to be built.
 

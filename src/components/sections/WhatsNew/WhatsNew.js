@@ -12,7 +12,7 @@ const WhatsNew = props => (
         <li>Updated <Link to="/downloads/revenue-by-month>monthly revenue data</Link> through May 2020</li>
         <li>Updated <Link to="/downloads/production-by-month">monthly production data</Link> through February 2020</li>
         <li>Added <Link to="/downloads/production"> calendar year 2019 production data file</Link></li>
-        <li>Added <Link to="/blog/shaping-beta-site">blog post on how we adjusted our design process and created our beta site</Link></li>
+        <li>Added <Link to="/blog/shaping">blog post on how we adjusted our work process to maximize collaboration</Link></li>
       </ul>
 
       <p>Review our <a href="https://github.com/ONRR/doi-extractives-data/releases">full release details</a>.</p>

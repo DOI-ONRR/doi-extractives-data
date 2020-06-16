@@ -72,26 +72,26 @@ Collaboration & communication problems:​
 
 ## Our inspiration
 
-We found inspiration in Basecamp’s free, online book [*Shape Up: Stop Running in Circles and Ship Work that Matters*](basecamp.com/shapeup​) ​by Ryan Singer​ (this isn't an endorsement of Basecamp). Many of the examples and illustrations you’ll see below are from that book.
+We found inspiration in Basecamp’s free, online book [*Shape Up: Stop Running in Circles and Ship Work that Matters*](https://basecamp.com/shapeup​) ​by Ryan Singer​ (this isn't an endorsement of Basecamp). Many of the examples and illustrations you’ll see below are from that book.
 
 In the book, Ryan Singer details how they follow a process called “shaping” to develop their ideas when framing a problem to be solved. Shaping involves taking a raw idea and turning it into a scoped piece of work that is ready to be built.
 
 ![Image of the work process flow from *Shape Up* including raw idea, shaped pitch, betting, and building](./Shaping.png)
-From *Shape Up*: basecamp.com/shapeup/4.1-appendix-02
+From *Shape Up*: [basecamp.com/shapeup/4.1-appendix-02](https://basecamp.com/shapeup/4.1-appendix-02)
 
 Shaping has three main properties described in *Shape Up*
 
 ### Property 1: It’s rough​
 
-“Everyone can tell by looking at it that it’s unfinished. They can see the open spaces where their contributions will go. Work that’s too fine, too early commits everyone to the wrong details. Designers and programmers need room to apply their own judgement and expertise when they roll up their sleeves and discover all the real trade-offs that emerge.”​ From *Shape Up*: basecamp.com/shapeup/1.1-chapter-02​
+“Everyone can tell by looking at it that it’s unfinished. They can see the open spaces where their contributions will go. Work that’s too fine, too early commits everyone to the wrong details. Designers and programmers need room to apply their own judgement and expertise when they roll up their sleeves and discover all the real trade-offs that emerge.”​ From *Shape Up*: [basecamp.com/shapeup/1.1-chapter-02]​(https://basecamp.com/shapeup/1.1-chapter-02)
 
 ### Property 2: It’s solved ​
 
-“Despite being rough and unfinished, shaped work has been thought through. All the main elements of the solution are there at the macro level and they connect together. The work isn’t specified down to individual tasks, but the overall solution is spelled out. While surprises might still happen and icebergs could still emerge, there is clear direction showing what to do. Any open questions or rabbit holes we could see up front have been removed to reduce the project’s risk.”​ From *Shape Up*: basecamp.com/shapeup/1.1-chapter-02​
+“Despite being rough and unfinished, shaped work has been thought through. All the main elements of the solution are there at the macro level and they connect together. The work isn’t specified down to individual tasks, but the overall solution is spelled out. While surprises might still happen and icebergs could still emerge, there is clear direction showing what to do. Any open questions or rabbit holes we could see up front have been removed to reduce the project’s risk.”​ From *Shape Up*: [basecamp.com/shapeup/1.1-chapter-02​](https://basecamp.com/shapeup/1.1-chapter-02)
 
 ### Property 3: It’s bounded ​
 
-“Lastly, shaped work indicates what not to do. It tells the team where to stop. There’s a specific appetite—the amount of time the team is allowed to spend on the project. Completing the project within that fixed amount of time requires limiting the scope and leaving specific things out.”​ From *Shape Up*: basecamp.com/shapeup/1.1-chapter-02​
+“Lastly, shaped work indicates what not to do. It tells the team where to stop. There’s a specific appetite—the amount of time the team is allowed to spend on the project. Completing the project within that fixed amount of time requires limiting the scope and leaving specific things out.”​ From *Shape Up*: [basecamp.com/shapeup/1.1-chapter-02​](https://basecamp.com/shapeup/1.1-chapter-02)
 
 ## How we used shaping​
 
@@ -120,7 +120,7 @@ After the design studio, we started building the product.
 At the end of the series of design studios, we split up the pieces of the project into scopes for building.  We ordered them such that it was easy to get one, highly-visible piece done to build momentum and quickly show progress.  We also ordered all the pieces to the importance of what needed to be done first in terms of priority and dependencies.
 
 ![Image showing how they build one workable piece at a time](./OneThingDone.png)  
-From *Shape Up*: basecamp.com/shapeup/3.2-chapter-10​
+From *Shape Up*: [basecamp.com/shapeup/3.2-chapter-10​](https://basecamp.com/shapeup/3.2-chapter-10)
 
 The key to getting one thing done is to identify something that is core functionality that shows the novel capabilities you want to improve with a new feature.  For us, we decided that it would be the map.  We had already started building a new map for revenue, so it was also an easy place to start in addition to being a core piece of the new design.
 
@@ -130,11 +130,11 @@ As we progressed through the build phase, we assigned each task to a mini-team i
 
 How the number of tasks increases over time:
 ![Image showing how the number of tasks increases over time](./MoreTasks.png)
-From *Shape Up*: basecamp.com/shapeup/3.3-chapter-11
+From *Shape Up*: [basecamp.com/shapeup/3.3-chapter-11](https://basecamp.com/shapeup/3.3-chapter-11)
 
 How details are fleshed out as you build:
 ![Image showing how the scope gets clarified with more details](./ClarifiedScope.png)
-From *Shape Up*: basecamp.com/shapeup/3.3-chapter-11
+From *Shape Up*: [basecamp.com/shapeup/3.3-chapter-11](https://basecamp.com/shapeup/3.3-chapter-11)
 
 What our task list looked like halfway through the project.
 ![Image showing our task list halfway through the project](./Board.png)
@@ -146,7 +146,7 @@ One of the tasks we put off until after the soft launch was working on the searc
 
 ## Final deliverable
 
-We released the [soft launch]( https://beta-nrrd.app.cloud.gov/) a couple of weeks ago and are diligently working through all the things we need to do to be ready for the hard launch.
+We released the [soft launch](https://beta-nrrd.app.cloud.gov/) a couple of weeks ago and are diligently working through all the things we need to do to be ready for the hard launch.
 
 ![Images of new features, including a map, circle charts, and line chart, from the soft launch site](./Beta-site.png)
 

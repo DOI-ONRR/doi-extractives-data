@@ -82,15 +82,15 @@ Shaping has three main properties described in *Shape Up*
 
 ### Property 1: It’s rough​
 
-“Everyone can tell by looking at it that it’s unfinished. They can see the open spaces where their contributions will go. Work that’s too fine, too early commits everyone to the wrong details. Designers and programmers need room to apply their own judgement and expertise when they roll up their sleeves and discover all the real trade-offs that emerge.”​ From <a href="https://basecamp.com/shapeup/1.1-chapter-02">*Shape Up*, chapter 2</a>
+“Everyone can tell by looking at it that it’s unfinished. They can see the open spaces where their contributions will go. Work that’s too fine, too early commits everyone to the wrong details. Designers and programmers need room to apply their own judgement and expertise when they roll up their sleeves and discover all the real trade-offs that emerge.”​ From <a href="https://basecamp.com/shapeup/1.1-chapter-02">*Shape Up*, Chapter 2</a>
 
 ### Property 2: It’s solved ​
 
-“Despite being rough and unfinished, shaped work has been thought through. All the main elements of the solution are there at the macro level and they connect together. The work isn’t specified down to individual tasks, but the overall solution is spelled out. While surprises might still happen and icebergs could still emerge, there is clear direction showing what to do. Any open questions or rabbit holes we could see up front have been removed to reduce the project’s risk.”​ From <a href="https://basecamp.com/shapeup/1.1-chapter-02">*Shape Up*, chapter 2</a>
+“Despite being rough and unfinished, shaped work has been thought through. All the main elements of the solution are there at the macro level and they connect together. The work isn’t specified down to individual tasks, but the overall solution is spelled out. While surprises might still happen and icebergs could still emerge, there is clear direction showing what to do. Any open questions or rabbit holes we could see up front have been removed to reduce the project’s risk.”​ From <a href="https://basecamp.com/shapeup/1.1-chapter-02">*Shape Up*, Chapter 2</a>
 
 ### Property 3: It’s bounded ​
 
-“Lastly, shaped work indicates what not to do. It tells the team where to stop. There’s a specific appetite—the amount of time the team is allowed to spend on the project. Completing the project within that fixed amount of time requires limiting the scope and leaving specific things out.”​ From <a href="https://basecamp.com/shapeup/1.1-chapter-02">*Shape Up*, chapter 2</a>
+“Lastly, shaped work indicates what not to do. It tells the team where to stop. There’s a specific appetite—the amount of time the team is allowed to spend on the project. Completing the project within that fixed amount of time requires limiting the scope and leaving specific things out.”​ From <a href="https://basecamp.com/shapeup/1.1-chapter-02">*Shape Up*, Chapter 2</a>
 
 ## How we used shaping​
 
@@ -145,9 +145,11 @@ One of the tasks we put off until after the soft launch was working on the searc
 
 ## Final deliverable
 
-We released the [soft launch](https://beta-nrrd.app.cloud.gov/) a couple of weeks ago and are diligently working through all the things we need to do to be ready for the hard launch.
+We released the <a href="https://beta-nrrd.app.cloud.gov/">soft launch</a> a couple of weeks ago and are diligently working through all the things we need to do to be ready for the hard launch.
+<img alt="Image of new features including map, circle charts, and line chart in beta site" src="beta-site.png">
+<img alt="Image of new map from beta site" src="beta-map.png">
 
-<img alt="Image of new features, including a map, circle charts, and line chart, from the soft launch site" src="Beta-site.png">
+![Image showing detailed cards with circle charts from beta site](./beta-cards.png)
 
 ## Lessons learned
 

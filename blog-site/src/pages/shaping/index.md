@@ -138,7 +138,7 @@ From *Shape Up*: basecamp.com/shapeup/3.3-chapter-11
 
 What our task list looked like halfway through the project.
 ![Image showing our task list halfway through the project](./Board.png)
-​C:\Users\mchargs\AppData\Local\Microsoft\Windows\INetCache\Content.MSO\2D398E31.tmp
+​
 
 The *Shape Up* book stresses the importance of defining done against a baseline of what customers already have versus some perfect ideal. As we progressed through the issues, we came up with a definition of when we would be done and decided to do a soft launch to enable us to start providing benefit to users while working out some of the harder or less important kinks for the hard launch. This also allows us to obtain input and feedback from users to make sure we didn’t miss anything big with our re-design.
 
@@ -148,10 +148,10 @@ One of the tasks we put off until after the soft launch was working on the searc
 
 We released the [soft launch]( https://beta-nrrd.app.cloud.gov/) a couple of weeks ago and are diligently working through all the things we need to do to be ready for the hard launch.
 
-![Images of new features, including a map, circle charts, and line chart, from the soft launch site](./Beta.png)
+![Images of new features, including a map, circle charts, and line chart, from the soft launch site](./Beta-site.png)
 
 ## Lessons learned
 
 We’re still learning how to do this. We definitely solved many of our communication issues by doing the up-front shaping work and working collaboratively on issues instead of throwing things over the wall.
 
-What we’re still not good at is estimating. This project has taken more time than our initial appetite – mostly because we had to rebuild the whole site to get the database. We probably bit off more than we knew with redesigning such a core part of our site and changing our process at the same time, but  we expect this large scope of work will add a lot of user value with the introduction of our new features. The infrastructure we’ve put in place will also provide our team more flexibility and opportunity to deliver future value to users through new, expanded datasets and tools. 
+What we’re still not good at is estimating. This project has taken more time than our initial appetite – mostly because we had to rebuild the whole site to get the database. We probably bit off more than we knew with redesigning such a core part of our site and changing our process at the same time, but  we expect this large scope of work will add a lot of user value with the introduction of our new features. The infrastructure we’ve put in place will also provide our team more flexibility and opportunity to deliver future value to users through new, expanded datasets and tools.

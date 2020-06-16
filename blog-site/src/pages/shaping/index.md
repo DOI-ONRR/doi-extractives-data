@@ -102,8 +102,6 @@ We discovered a lot of the features we were working on were better viewed throug
 
 Reframing the roadmap chunks of work as epics has helped us take a wider view of our priorities to identify trade-offs, better coordinate our work, and identify blockages or dependencies.​​  We kept the two-week sprints within epics instead of making a wholesale conversion to 6-week sprints to better manage the “metabolism” of the work.​
 
- ![Image showing recent epics on a timeline](./Epics.png)
-
 ### Shaping new features
 
 Our version of shaping includes five phases: defining the project scope, generating ideas, grounding in reality, scoping for build, and building.

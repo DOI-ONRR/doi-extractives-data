@@ -72,7 +72,7 @@ Collaboration & communication problems:​
 
 ## Our inspiration
 
-We found inspiration in Basecamp’s free, online book [*Shape Up: Stop Running in Circles and Ship Work that Matters*](https://basecamp.com/shapeup​) ​by Ryan Singer​ (Note: this isn't an endorsement of Basecamp). Many of the examples and illustrations you’ll see below are from that book.
+We found inspiration in Basecamp’s free, online book [Shape Up: Stop Running in Circles and Ship Work that Matters](https://basecamp.com/shapeup) by Ryan Singer (Note: this isn’t an endorsement of Basecamp). Many of the examples and illustrations you’ll see below are from that book.
 
 In the book, Ryan Singer details how they follow a process called “shaping” to develop their ideas when framing a problem to be solved. Shaping involves taking a raw idea and turning it into a scoped piece of work that is ready to be built.
 

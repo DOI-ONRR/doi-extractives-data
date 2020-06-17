@@ -146,6 +146,8 @@ One of the tasks we put off until after the soft launch was working on the searc
 
 We released the <a href="https://beta-nrrd.app.cloud.gov/">soft launch</a> a couple of weeks ago and are diligently working through all the things we need to do to be ready for the hard launch.
 
+![Image showing the Explore Data page in the soft launch](./Beta-screenshot.png)
+
 ## Lessons learned
 
 We’re still learning how to do this. We definitely solved many of our communication issues by doing the up-front shaping work and working collaboratively on issues instead of throwing things over the wall.

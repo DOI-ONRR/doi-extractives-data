@@ -20,7 +20,7 @@ tag:
 <p class="downloads-download_links-intro">Download calendar year data:
   <ul class="downloads-download_links list-unstyled">
     <li><excel-link to="/downloads/federal_revenue_by_company_CY2013-CY2019.xlsx">Revenue by company (Excel, 563 KB)</excel-link></li>
-    <li><csv-link to="/downloads/federal_revenue_by_company_CY2013-CY2019.csv">Revenue by company (csv, 1.12 KB)</csv-link></li>
+    <li><csv-link to="/downloads/federal_revenue_by_company_CY2013-CY2019.csv">Revenue by company (csv, 1.12 MB)</csv-link></li>
   </ul>
 </p>
 

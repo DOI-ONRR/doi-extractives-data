@@ -10,7 +10,7 @@ tags:
 - design
 - user research
 - virtual student federal service
-date: "2020-07-07"
+date: "2020-07-17"
 ---
 
 When I learned I had been selected for the user experience (UX) apprenticeship, I was incredibly excited about experiencing what it is like working within a federal government agency. Admittedly, my first impression of the material I’d be working with was that it was a little dry, but it wasn’t long after a deep exploration into ONRR.gov that I was hooked. The overall structure and navigation of the site needed some help and I was motivated by the opportunity it presented to design for impact with meaningful, evidence-based solutions. But most importantly, I wanted my work to improve the lives of those who interface with the product on an ongoing basis.

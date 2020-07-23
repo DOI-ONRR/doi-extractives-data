@@ -15,12 +15,12 @@ tag:
 <custom-link to="/downloads/" className="breadcrumb link-charlie">Downloads</custom-link> /
 # Production by Year
 
-> This dataset contains information on natural resource production volumes on Native American lands and federal lands and waters. We only provide production volumes for Native American lands by fiscal year.
+> These datasets contain information on natural resource production volumes on Native American lands and federal lands and waters.
 
 <p class="downloads-download_links-intro">Download calendar year data (2003-2019):
   <ul class="downloads-download_links list-unstyled">
-    <li><excel-link to="/downloads/production/calendar_year_production_03-19.xlsx">Calendar year production (Excel, 579 KB)</excel-link></li>
-    <li><csv-link to="/downloads/csv/production/calendar_year_production_03-19.csv">Calendar year production (csv, 831 KB)</csv-link></li>
+    <li><excel-link to="/downloads/production/calendar_year_production.xlsx">Calendar year production (Excel, 531 KB)</excel-link></li>
+    <li><csv-link to="/downloads/csv/production/calendar_year_production.csv">Calendar year production (csv, 854 KB)</csv-link></li>
   </ul>
 </p>
 
@@ -33,7 +33,7 @@ tag:
 
 ## Scope
 
-The calendar year dataset includes natural resource production for U.S. federal lands and offshore areas. The fiscal year dataset also includes Native American lands (2009-2018). Neither dataset includes privately owned lands or state-owned lands.
+These datasets include natural resource production for U.S. federal lands and offshore areas. Neither dataset includes privately owned lands or state-owned lands.
 
 Federal production data is available by location, but Native American data is only available at the national level to protect private and personally identifiable information.
 
@@ -98,6 +98,7 @@ _Offshore Planning Area_ Offshore regions are broken out into planning areas. Th
 _Product_ Products are listed individually but may also fall into like categories.
   * _Anhydrous Sodium Sulfate_ (tons)
   * _Borate Products_ (tons) include Borax-Anhydrous, Borax-Decahydrate, Borax-Pentahydrate, and Boric Acid
+  * _Borrow Sand and Gravel_ (tons)
   * _Brine Products_ include Brine Barrels (converted to tons equivalent) and Magnesium Chloride Brine
   * _Calcium Chloride_ (lbs)
   * _Carbon Dioxide_ (tons)

@@ -19,8 +19,8 @@ tag:
 
 <p class="downloads-download_links-intro">Download calendar year data (2003-2019):
   <ul class="downloads-download_links list-unstyled">
-    <li><excel-link to="/downloads/production/calendar_year_production.xlsx">Calendar year production (Excel, 531 KB)</excel-link></li>
-    <li><csv-link to="/downloads/csv/production/calendar_year_production.csv">Calendar year production (csv, 854 KB)</csv-link></li>
+    <li><excel-link to="/downloads/production/calendar_year_production_072020.xlsx">Calendar year production (Excel, 531 KB)</excel-link></li>
+    <li><csv-link to="/downloads/csv/production/calendar_year_production_072020.csv">Calendar year production (csv, 854 KB)</csv-link></li>
   </ul>
 </p>
 

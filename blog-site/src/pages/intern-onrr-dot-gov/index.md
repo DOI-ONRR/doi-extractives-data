@@ -44,7 +44,6 @@ Using the insights captured from self-reported survey data and interviews, I dev
 With a stronger sense of our participants’ pains, needs, and goals, I was ready to define the problem. To begin, I made a list of “How might we?” statements. For example:
 *	How might we simplify the structure and organization of content on ONRR.gov?
 *	How might we reduce friction in finding and locating frequently accessed reports, forms, and handbooks?
-Next, I sorted our findings from participant interviews into a spine diagram illustrating the common tasks and the associated mental model of our personas.
 
 Next, I sorted our findings from participant interviews into a spine diagram illustrating the common tasks and the associated mental model of our personas.
 

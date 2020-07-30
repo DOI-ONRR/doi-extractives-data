@@ -1,0 +1,29 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:10.16.0
+    resource_class: large # implements a machine with 4 vCPUS and 8gb of ram.
+    steps:
+      - checkout
+      - restore_cache:
+          key: v2-node-modules-{{ checksum "package-lock.json" }}
+      - run:
+          name: Install node dependencies
+          command: npm install
+      - save_cache:
+          key: v2-node-modules-{{ checksum "package-lock.json" }}
+          paths:
+            - node_modules
+      - run:
+          name: Build gatsby
+          command: npm run build
+      - run:
+          name: Run tests
+          command: npm test
+
+workflows:
+  version: 2
+  commit:
+    jobs:
+      - build

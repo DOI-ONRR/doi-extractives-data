@@ -72,7 +72,8 @@
     "setup-blog": "cd blog-site && npm install",
     "build-blog": "cd blog-site && npm run build",
     "release-blog": "npm run setup-blog && npm run build-blog",
-    "federalist": "npm run release-blog && npm run build-gatsby"
+    "federalist": "npm run release-blog && npm run build-gatsby",
+    "cloud-gov": "npm run release-blog && npm run build-gatsby"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.3",

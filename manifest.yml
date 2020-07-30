@@ -1,0 +1,7 @@
+---
+applications:
+- name: doi-extractives-data
+  path: ./public
+  buildpacks:
+   - staticfile_buildpack
+  memory: 100M

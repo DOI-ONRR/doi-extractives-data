@@ -18,8 +18,8 @@ tag:
 Download disbursement by month data:
 
 <ul class="downloads-download_links list-unstyled">
-  <li><excel-link to="/downloads/disbursements/monthly_disbursements.xlsx">Disbursements by month (Excel, 337 KB)</excel-link></li>
-    <li><csv-link to="/downloads/csv/disbursements/monthly_disbursements.csv">Disbursements by month (csv, 587 KB)</csv-link></li>
+  <li><excel-link to="/downloads/disbursements/monthly_disbursements.xlsx">Disbursements by month (Excel, 354 KB)</excel-link></li>
+    <li><csv-link to="/downloads/csv/disbursements/monthly_disbursements.csv">Disbursements by month (csv, 592 KB)</csv-link></li>
 </ul>
 
 ## Scope

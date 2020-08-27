@@ -71,9 +71,3 @@ workflows:
             branches:
               only: master
 
-  dev:
-    jobs:
-      - dev:
-          filters:
-            branches:
-              only: dev

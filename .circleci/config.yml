@@ -76,4 +76,4 @@ workflows:
       - dev:
           filters:
             branches:
-              only: cloud-gov-deploy
+              only: dev

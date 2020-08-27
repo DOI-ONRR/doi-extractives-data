@@ -1,29 +1,79 @@
-version: 2
+version: 2.1
 jobs:
-  build:
+  dev:
     docker:
       - image: circleci/node:10.16.0
-    resource_class: large # implements a machine with 4 vCPUS and 8gb of ram.
+    resource_class: large
     steps:
       - checkout
       - restore_cache:
-          key: v2-node-modules-{{ checksum "package-lock.json" }}
+          key: v3-node-modules-{{ checksum "package-lock.json" }}
       - run:
           name: Install node dependencies
           command: npm install
       - save_cache:
-          key: v2-node-modules-{{ checksum "package-lock.json" }}
+          key: v3-node-modules-{{ checksum "package-lock.json" }}
           paths:
             - node_modules
       - run:
           name: Build gatsby
-          command: npm run build
+          command: npm run cloud-gov
       - run:
-          name: Run tests
-          command: npm test
+          name: deploy to cloud.gov
+          command: |
+            pwd && ls -l	
+            curl -v -L -o cf-cli_amd64.deb 'https://cli.run.pivotal.io/stable?release=debian64&source=github'
+            sudo dpkg -i cf-cli_amd64.deb	  
+            # Set $CF_USERNAME and $CF_PASSWORD in CircleCI settings.
+            # $CF_ORG, $CF_SPACE, and $APP_NAME can also be set in CircleCI settings or hardcoded here.
+            cf api https://api.fr.cloud.gov
+            cf auth "$DEV_CF_USERNAME" "$DEV_CF_PASSWORD"
+            cf target -o "$DEV_CF_ORG" -s "$DEV_CF_SPACE"
+            cf push dev-doi-extractives-data -f ./manifest.yml
+
+  deploy:
+    docker:
+      - image: circleci/node:10.16.0
+    resource_class: large
+    steps:
+      - checkout
+      - restore_cache:
+          key: v3-node-modules-{{ checksum "package-lock.json" }}
+      - run:
+          name: Install node dependencies
+          command: npm install
+      - save_cache:
+          key: v3-node-modules-{{ checksum "package-lock.json" }}
+          paths:
+            - node_modules
+      - run:
+          name: Build gatsby
+          command: npm run cloud-gov
+      - run:
+          name: deploy preview to cloud.gov
+          command: |
+            pwd && ls -l	
+            curl -v -L -o cf-cli_amd64.deb 'https://cli.run.pivotal.io/stable?release=debian64&source=github'
+            sudo dpkg -i cf-cli_amd64.deb	  
+            # Set $CF_USERNAME and $CF_PASSWORD in CircleCI settings.
+            # $CF_ORG, $CF_SPACE, and $APP_NAME can also be set in CircleCI settings or hardcoded here.
+            cf api https://api.fr.cloud.gov
+            cf auth "$PROD_CF_USERNAME" "$PROD_CF_PASSWORD"
+            cf target -o "$PROD_CF_ORG" -s "$PROD_CF_SPACE"
+            cf push doi-extractives-data -f ./manifest.yml
+
 
 workflows:
-  version: 2
-  commit:
+  deploy:
     jobs:
-      - build
+      - deploy:
+          filters:
+            branches:
+              only: master
+
+  dev:
+    jobs:
+      - dev:
+          filters:
+            branches:
+              only: cloud-gov-deploy

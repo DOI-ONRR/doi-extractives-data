@@ -5,7 +5,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 
 import { Banner } from '../Banner'
 import { AlertBanner } from '../AlertBanner'
-import { BetaSiteBanner } from '../BetaSiteBanner'
+import { ArchiveSiteBanner } from '../../info/ArchiveSiteBanner'
 import { Header } from '../Header'
 import { Footer } from '../Footer'
 import Glossary from '../../utils/Glossary'
@@ -86,7 +86,7 @@ const DefaultLayout = ({ children }) => {
 
       <Banner />
 
-      <BetaSiteBanner />
+      <ArchiveSiteBanner />
 
       <Header siteMetadata={data && data.site.siteMetadata} />
 

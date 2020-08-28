@@ -7,7 +7,7 @@ import DataArchiveIcon from '-!svg-react-loader!../../../img/svg/icon-archive.sv
 const ArchiveSiteBanner = () => (
   <div className={styles.root}>
     <p className={styles.content}>
-      <DataArchiveIcon/> This is an archived version of this website that is no longer being updated. For current data, visit the <Link to="https://revenuedata.doi.gov/">latest version of the site.</Link>
+      <DataArchiveIcon/> This is an archived version of this website that is no longer being updated. For current data, visit the <a href="https://revenuedata.doi.gov/">latest version of the site.</a>
     </p>
   </div>
 )

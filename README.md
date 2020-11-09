@@ -1,8 +1,7 @@
-[![CircleCI](https://circleci.com/gh/onrr/doi-extractives-data/tree/dev.svg?style=svg)](https://circleci.com/gh/onrr/doi-extractives-data/tree/dev)
 
 # U.S. Department of the Interior Natural Resource Revenue Data
 
-This is and archived repository for previous development work on [revenuedata.doi.gov](https://revenuedata.doi.gov). See [our current repo](https://github.com/ONRR/nrrd) for information about the current version of the site.
+This is an archived repository for previous development work on [revenuedata.doi.gov](https://revenuedata.doi.gov). See [our current repo](https://github.com/ONRR/nrrd) for information about the current version of the site.
 
 **Content below is for archive purposes and is no longer being updated.**
 
